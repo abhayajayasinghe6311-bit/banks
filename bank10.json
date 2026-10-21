@@ -1229,19 +1229,19 @@
     "stem": "A 48-year-old taking warfarin for a mechanical valve falls and develops acute severe headache. CT shows intracerebral haemorrhage. INR is 5.1.",
     "ask": "Which immediate reversal strategy is MOST appropriate?",
     "options": [
-      "Give aspirin for the headache",
-      "Use oral vitamin K alone and wait",
-      "Withhold warfarin only and recheck INR tomorrow",
-      "IV vitamin K plus four-factor prothrombin complex concentrate, with urgent specialist care",
-      "Start heparin to prevent valve thrombosis"
+      "Give aspirin now and reassess coagulation and neurological status tomorrow.",
+      "Give oral vitamin K and reassess after correction of the INR over days.",
+      "Withhold warfarin and observe the haemorrhage without reversal therapy.",
+      "Give IV vitamin K and four-factor PCC with urgent stroke/neurosurgical care.",
+      "Start heparin now because the mechanical valve is at immediate thrombosis risk."
     ],
     "key": "D",
     "explanations": [
-      "Aspirin increases bleeding risk.",
-      "Oral vitamin K acts too slowly for emergency reversal.",
-      "Stopping warfarin alone is too slow in life-threatening intracranial bleeding.",
-      "Four-factor PCC rapidly restores vitamin K-dependent factors; IV vitamin K sustains reversal.",
-      "Anticoagulation worsens current bleeding."
+      "Aspirin adds antiplatelet effects and does not reverse warfarin. An evolving intracranial haemorrhage requires urgent reversal and specialist monitoring.",
+      "Oral vitamin K alone is too slow to reverse INR 5.1 promptly in life-threatening intracerebral bleeding; rapid factor repletion is also indicated.",
+      "Stopping warfarin is essential but insufficient on its own in major intracranial haemorrhage; waiting risks further haematoma expansion.",
+      "Four-factor PCC provides rapid replacement of vitamin K-dependent coagulation factors and IV vitamin K maintains reversal; coordinate controlled BP treatment, urgent stroke and neurosurgical evaluation.",
+      "Heparin would worsen active cerebral bleeding. Decisions about restarting anticoagulation for the mechanical valve require specialist reassessment after haemorrhage stabilisation."
     ],
     "pearl": "Life-threatening warfarin bleeding requires rapid factor replacement plus vitamin K.",
     "pivot": "For a direct Xa inhibitor, reversal strategies differ and may include andexanet alfa or PCC according to availability and protocol.",
@@ -1293,6 +1293,11 @@
       ],
       "safety": "This is a decision framework, not a substitute for drug-specific instructions. Prescribing, dosing and escalation must be verified locally.",
       "local": "Exact doses, escalation thresholds and contraindications must be verified against current local protocols and senior advice."
+    },
+    "alternate": {
+      "scenario": "The patient with the same mechanical valve takes warfarin but has only a modestly elevated INR without any active bleeding or new neurological signs.",
+      "management": "Withhold or adjust warfarin according to the measured INR, valve-specific target and locally recommended non-bleeding protocol, then arrange a prompt repeat INR. Do not routinely give four-factor PCC for a non-bleeding INR abnormality; urgent reversal applies to major/life-threatening bleeding.",
+      "reason": "The presence of confirmed active intracranial bleeding, not the INR result alone, justifies emergency PCC and IV vitamin K."
     }
   },
   {
