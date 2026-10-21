@@ -3047,19 +3047,19 @@
     "stem": "A 30-year-old at 29 weeks has preterm premature rupture of membranes confirmed by sterile speculum exam. Afebrile, no contractions or uterine tenderness, fetus reassuring.",
     "ask": "Which management is MOST appropriate?",
     "options": [
-      "Admit or closely manage under obstetric protocol, administer antenatal corticosteroids and latency antibiotics, monitor for infection and labour",
-      "Repeated digital vaginal exams to assess cervix",
-      "Send home with no follow-up",
-      "Give oxytocin and prostaglandins immediately",
-      "Immediate induction in every case"
+      "Use monitored PPROM care with corticosteroids, antibiotics and surveillance.",
+      "Perform repeated digital vaginal exams to detect early cervical changes.",
+      "Discharge without maternal infection precautions or planned fetal review.",
+      "Induce labour immediately solely because the membranes have ruptured.",
+      "Begin continuous oxytocin augmentation despite the absence of contractions."
     ],
     "key": "A",
     "explanations": [
-      "PPROM at 29 weeks often calls for expectant management, corticosteroids, suitable antibiotics and surveillance.",
-      "Digital exams increase ascending infection risk.",
-      "Unmonitored discharge is unsafe.",
-      "Routine induction sacrifices fetal maturity without a clear immediate indication.",
-      "Immediate delivery is not routine without infection or other indications at this gestation."
+      "At 29 weeks, uncomplicated PPROM often warrants admission or selected protocol-based monitored expectant care, antenatal corticosteroids, latency antibiotics and careful assessment for infection, abruption or fetal compromise.",
+      "Repeated digital examination increases ascending infection risk. Confirm rupture by sterile speculum and avoid digital exams unless clinically necessary.",
+      "PPROM can progress to infection or preterm birth despite initial reassuring observations, so surveillance and clear escalation arrangements are necessary.",
+      "Rupture alone does not require immediate induction at 29 weeks if there are no contraindications to expectant management. Weigh neonatal prematurity risks against infection and other evolving risks.",
+      "Oxytocin promotes labour and does not prevent infection. Without an indication for delivery, it undermines gestation-based expectant management."
     ],
     "pearl": "PPROM management changes with gestation, infection and fetal status.",
     "pivot": "Chorioamnionitis or non-reassuring fetal status usually requires delivery rather than continued expectant management.",
@@ -3092,24 +3092,45 @@
     "management": {
       "steps": [
         [
-          "Assess the decision point",
-          "Identify pregnancy or neonatal context and the patient's immediate stability; check whether an emergency escalation is needed."
+          "Assess membrane rupture and risk",
+          "Confirm PPROM with sterile speculum when indicated, minimise digital exams and assess maternal fever, tenderness, bleeding, contractions and fetal status."
         ],
         [
-          "Act on the best option",
-          "Admit or closely manage under obstetric protocol, administer antenatal corticosteroids and latency antibiotics, monitor for infection and labour. PPROM at 29 weeks often calls for expectant management, corticosteroids, suitable antibiotics and surveillance."
+          "Provide fetal maturation measures",
+          "Give antenatal corticosteroids and latency antibiotics at 29 weeks according to current local PPROM guidelines; discuss GBS prophylaxis when labour begins."
         ],
         [
-          "Reassess the effect",
-          "Check symptoms, vital signs, relevant results and adverse effects after the first intervention; revise the plan if the patient deteriorates."
+          "Monitor mother and fetus",
+          "Inpatient or protocol-defined surveillance for infection, abruption, labour, fetal compromise and fluid status; coordinate obstetrics and neonatal consultation."
         ],
         [
-          "Plan ongoing care",
-          "Arrange appropriate senior review, investigations, safety-netting and follow-up; check local protocols for the precise treatment sequence."
+          "Reassess need for delivery",
+          "Continue expectant management only while clinically safe; if chorioamnionitis, significant bleeding or fetal compromise occurs, organise birth rather than delaying for steroid completion."
         ]
       ],
-      "safety": "This is a decision framework, not a substitute for drug-specific instructions. Prescribing, dosing and escalation must be verified locally.",
-      "local": "Exact doses, escalation thresholds and contraindications must be verified against current local protocols and senior advice."
+      "source": {
+        "name": "Queensland Health — Maternity and Neonatal Clinical Guidelines (PPROM)",
+        "url": "https://www.health.qld.gov.au/qcg/publications"
+      }
+    },
+    "legacyOptions": [
+      "Admit or closely manage under obstetric protocol, administer antenatal corticosteroids and latency antibiotics, monitor for infection and labour",
+      "Repeated digital vaginal exams to assess cervix",
+      "Send home with no follow-up",
+      "Give oxytocin and prostaglandins immediately",
+      "Immediate induction in every case"
+    ],
+    "legacyExplanations": [
+      "PPROM at 29 weeks often calls for expectant management, corticosteroids, suitable antibiotics and surveillance.",
+      "Digital exams increase ascending infection risk.",
+      "Unmonitored discharge is unsafe.",
+      "Routine induction sacrifices fetal maturity without a clear immediate indication.",
+      "Immediate delivery is not routine without infection or other indications at this gestation."
+    ],
+    "alternate": {
+      "scenario": "At 29 weeks after PPROM, the mother becomes febrile with uterine tenderness, maternal tachycardia and non-reassuring fetal assessment.",
+      "management": "Stop routine expectant management, urgently assess for intra-amniotic infection and maternal sepsis, give broad-spectrum IV antibiotics and coordinate prompt birth planning after stabilisation with senior obstetric/neonatal teams. Continue monitoring and decide delivery mode for obstetric indications.",
+      "reason": "Maternal infection or fetal compromise removes the expected benefit of deferring delivery to gain gestational age."
     }
   },
   {
