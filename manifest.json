@@ -1,6 +1,6 @@
 {
   "title": "SPA-W Study Garden",
-  "version": "2026-10-21-bank10",
+  "version": "2026-10-21-bank12",
   "banks": [
     {
       "id": 1,
@@ -70,6 +70,20 @@
       "name": "Summit Garden",
       "emoji": "🏔️",
       "description": "100 challenging Monash-style integrated clinical scenarios and high-stakes decision traps",
+      "count": 100
+    },
+    {
+      "id": 11,
+      "name": "Clinical Judgement Garden",
+      "emoji": "🌿",
+      "description": "100 advanced, original Monash-inspired clinical decisions with actionable management notes",
+      "count": 100
+    },
+    {
+      "id": 12,
+      "name": "Final-Year Challenge Garden",
+      "emoji": "✨",
+      "description": "100 difficult integrated exam-style cases with competing management options and safety pearls",
       "count": 100
     }
   ]
