@@ -467,6 +467,9 @@ body.palette-theme a{color:var(--violet)}
 body.palette-theme a.btn:not(.soft):not(.rose){color:#fff}
 body.palette-theme .site-footer{border-color:var(--edge)}
 body.palette-theme .footer-signature{font-size:12px;color:var(--violet)}
+/* Sage green needs dark text for readable primary actions (contrast >=4.5:1). */
+body.midnight-sage .btn:not(.soft):not(.rose),body.midnight-sage a.btn:not(.soft):not(.rose){color:#040D12}
+
 
 /* Readable answer choices in ALL five themes.
    Previously the bank layout reduced option text from 15px to just 14px. */
