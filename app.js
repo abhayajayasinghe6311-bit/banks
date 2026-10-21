@@ -337,6 +337,9 @@ function searchAttempted(term,scopeBank=null){
     {label:'Specialty',value:q.domain},
     ...q.options.map((v,i)=>({label:'Answer option '+ABC[i],value:v})),
     ...(q.explanations||[]).map((v,i)=>({label:'Explanation '+ABC[i],value:v})),
+    ...(q.lesson?.wrong||[]).flatMap((v,i)=>v?[{label:'Reasoning trap '+ABC[i],value:v.trap},{label:'Exam decision check '+ABC[i],value:v.check}]:[]),
+    ...(q.management?.steps||[]).map(step=>({label:'Practical management: '+step[0],value:step[1]})),
+    ...(q.management?.safety?[{label:'Safety and escalation',value:q.management.safety}]:[]),
     {label:'Exam pearl',value:q.pearl},{label:'Scenario change',value:q.pivot}
    ];
    const hits=fields.filter(x=>String(x.value||'').toLocaleLowerCase().includes(query));
