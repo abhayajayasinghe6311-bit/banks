@@ -544,17 +544,17 @@
     "stem": "A 71-year-old with fever, productive cough and a new left lower lobe opacity is found to have pleural fluid. Thoracocentesis shows pleural pH 7.05, low glucose and neutrophil predominance.",
     "ask": "Which management is MOST APPROPRIATE?",
     "options": [
-      "Antibiotics and urgent pleural drainage assessment",
-      "Oral diuretics as sole treatment",
-      "Observation until the effusion resolves spontaneously",
-      "Reassure and discharge"
+      "Give IV antibiotics and arrange ultrasound-guided intercostal drainage.",
+      "Treat with oral diuretics and schedule outpatient chest radiography.",
+      "Give oral antibiotics alone and reassess the effusion after one month.",
+      "Observe without treatment because the pleural fluid is inflammatory."
     ],
     "key": "A",
     "explanations": [
-      "Pleural pH below 7.2 in a parapneumonic effusion strongly supports need for drainage as well as antibiotics.",
-      "Diuretics treat transudates from volume overload, not infected effusions.",
-      "Delay risks empyema and sepsis.",
-      "Low pH indicates complicated parapneumonic effusion requiring treatment."
+      "A pleural pH of 7.05 with low glucose in a febrile pneumonia patient strongly supports complicated parapneumonic effusion/pleural infection. Give prompt antibiotics and arrange safe image-guided chest drainage with respiratory/pleural specialists.",
+      "Diuretics are appropriate for some transudative effusions (for example heart failure) but do not treat infected exudative fluid or establish source control.",
+      "Antibiotics are required but alone may be inadequate for pleural infection when pH is ≤7.2; a suitable accessible collection should generally be drained promptly.",
+      "Untreated pleural infection can develop loculations, sepsis and trapped lung; fever with pH 7.05 and low glucose is not a benign effusion for observation."
     ],
     "pearl": "Parapneumonic effusion with pleural pH <7.2 or frank pus warrants urgent drainage consideration.",
     "pivot": "Examine which specific clue makes the competing options less appropriate; a change in stability, duration or examination findings can change the best answer.",
@@ -583,24 +583,31 @@
     "management": {
       "steps": [
         [
-          "Resuscitate",
-          "Sepsis ABC, cultures, IV antibiotics, fluids/vasopressors as indicated."
+          "Stabilise and treat pneumonia",
+          "Assess sepsis and oxygenation, collect appropriate cultures without delaying suitable IV antibiotics, and involve the respiratory/pleural service."
         ],
         [
-          "Relieve obstruction",
-          "Urgent ERCP or alternative biliary drainage for severe ascending cholangitis."
+          "Define the collection",
+          "Use thoracic ultrasound to identify size, septations and a safe drainage route; interpret pleural pH, glucose, culture and other biochemistry."
         ],
         [
-          "Monitor",
-          "LFT, lactate, renal function and organ dysfunction."
+          "Drain infected pleural fluid",
+          "Pleural pH 7.05 meets a high-risk threshold: arrange prompt small-bore intercostal catheter drainage if a suitable safe collection is accessible."
         ],
         [
-          "Prevent recurrence",
-          "Arrange later definitive stone/gallbladder treatment when stabilised."
+          "Reassess source control",
+          "Follow symptoms, fever, inflammatory markers and drainage; consider intrapleural tPA-DNase or surgical review if infected fluid persists despite appropriate tube drainage."
         ]
       ],
-      "safety": "Antibiotics alone cannot reliably clear an infected obstructed duct.",
-      "local": "Exact doses, escalation thresholds and contraindications must be verified against current local protocols and senior advice."
+      "source": {
+        "name": "British Thoracic Society Pleural Disease Guideline 2023; use local Australian pleural pathways",
+        "url": "https://www.brit-thoracic.org.uk/clinical-resources/guidelines/pleural-disease-full-guideline/"
+      }
+    },
+    "alternate": {
+      "scenario": "The patient has a small uncomplicated parapneumonic effusion with pleural fluid pH 7.45, reassuring clinical trajectory and no septations or other high-risk features.",
+      "management": "Treat the underlying pneumonia with appropriate antibiotics and follow the effusion clinically and radiologically. A routine intercostal drain may not be needed when pleural infection risk is low and the patient is improving, but reassess for persistent fever, pain or increasing fluid.",
+      "reason": "Pleural pH ≤7.2 with signs of infection favors urgent drainage; a higher-pH uncomplicated effusion can respond to antibiotics alone."
     }
   },
   {
