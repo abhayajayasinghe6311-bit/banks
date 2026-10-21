@@ -1161,7 +1161,22 @@
       "scenario": "Heavy postpartum bleeding continues despite the uterus being firm and contracted, with an apparently complete placenta.",
       "management": "Continue haemorrhage resuscitation and reassess the other 4 Ts: inspect for cervical, vaginal or perineal trauma, reassess for retained tissue and evaluate coagulopathy; repair genital tract injuries or perform source-control procedures as indicated. Continue monitoring and use the major haemorrhage protocol when needed.",
       "reason": "A firm uterus makes atony less likely and shifts the search toward trauma, tissue or coagulation without interrupting resuscitation."
-    }
+    },
+    "legacyOptions": [
+      "Immediate methotrexate",
+      "Long-term oral iron as sole treatment",
+      "Uterine massage and prompt uterotonic treatment while activating postpartum haemorrhage resuscitation",
+      "Abdominal CT before any resuscitation",
+      "Wait for blood group testing before stimulating the uterus"
+    ],
+    "legacyExplanations": [
+      "Methotrexate treats select trophoblastic/ectopic indications, not uterine atony.",
+      "Iron replaces stores later but does not stop acute bleeding.",
+      "An atonic uterus is the commonest postpartum haemorrhage cause; massage, oxytocin and haemorrhage protocols start immediately.",
+      "Imaging should not delay haemorrhage control.",
+      "Resuscitation and uterotonics must begin while labs and crossmatch are obtained."
+    ],
+    "questionRevision": 2
   },
   {
     "n": 21,
@@ -2194,7 +2209,22 @@
       "scenario": "After oxytocin is stopped and reversible causes are addressed, contraction frequency and fetal heart rate features return promptly to a reassuring pattern.",
       "management": "Continue appropriate maternal/fetal surveillance and review labour progression and the oxytocin plan with the responsible obstetric team. Consider cautious recommencement only if justified under local protocol; urgent delivery is not automatic once the pathological features resolve.",
       "reason": "Persistent abnormal findings necessitate possible expedited birth, while documented resolution allows reassessment and continued supervised labour."
-    }
+    },
+    "legacyOptions": [
+      "Increase oxytocin to shorten labour",
+      "Ignore the CTG because late decelerations are normal",
+      "Continue unchanged for two hours before notifying anyone",
+      "Perform fetal scalp stimulation as the only intervention",
+      "Stop oxytocin, correct reversible causes and urgently escalate for possible expedited birth"
+    ],
+    "legacyExplanations": [
+      "More oxytocin worsens uterine hyperstimulation.",
+      "Persistent late decelerations are not physiologic reassurance.",
+      "Delay prolongs suspected hypoxia.",
+      "Scalp stimulation alone does not address ongoing hyperstimulation and possible fetal compromise.",
+      "Tachysystole with late decelerations and minimal variability suggests fetal compromise; stop uterotonic stimulation and initiate intrauterine resuscitative measures with senior review."
+    ],
+    "questionRevision": 2
   },
   {
     "n": 38,
@@ -3850,7 +3880,22 @@
       "scenario": "The patient develops fever, jaundice, hypotension and imaging evidence of an obstructed common bile duct during gallstone pancreatitis.",
       "management": "Treat as ascending cholangitis with sepsis resuscitation, prompt broad-spectrum IV antibiotics and urgent biliary decompression, usually ERCP, under gastroenterology/surgical care. Do not continue uncomplicated pancreatitis observation.",
       "reason": "Infected obstructed bile ducts require source control; uncomplicated gallstone pancreatitis does not benefit from automatic ERCP."
-    }
+    },
+    "legacyOptions": [
+      "Perform urgent ERCP for every case of gallstone pancreatitis",
+      "Perform immediate laparoscopic cholecystectomy before treating acute pancreatitis in all cases",
+      "Give prophylactic IV antibiotics to prevent pancreatic necrosis",
+      "Obtain a routine MRCP and ERCP in every gallstone-pancreatitis patient regardless of obstruction",
+      "Reserve urgent ERCP for evidence of cholangitis or ongoing biliary obstruction"
+    ],
+    "legacyExplanations": [
+      "ERCP without cholangitis/obstruction offers limited benefit and has harms.",
+      "Cholecystectomy is important, often during the same admission for mild disease, but its exact timing depends on acute severity.",
+      "Antibiotics are not routinely given for sterile pancreatitis.",
+      "Duct imaging may help uncertain obstruction; automatically doing both is unwarranted.",
+      "Gallstone pancreatitis usually needs supportive care and definitive gallbladder management; ERCP is urgent when cholangitis or persistent biliary obstruction is suspected."
+    ],
+    "questionRevision": 2
   },
   {
     "n": 65,
@@ -4550,7 +4595,22 @@
         "name": "Queensland Clinical Guidelines — Preterm labour and birth",
         "url": "https://www.health.qld.gov.au/__data/assets/pdf_file/0019/140149/g-ptl.pdf"
       }
-    }
+    },
+    "legacyOptions": [
+      "Routine elective caesarean section immediately for all preterm labour",
+      "Give oxytocin to accelerate labour",
+      "Prolong pregnancy indefinitely with continuous tocolysis",
+      "Antenatal corticosteroids, consideration of short-course tocolysis and magnesium sulfate for fetal neuroprotection",
+      "Withhold corticosteroids because membranes are intact"
+    ],
+    "legacyExplanations": [
+      "Preterm labour alone does not mandate caesarean delivery.",
+      "Oxytocin counters the aim of gaining steroid benefit.",
+      "Tocolysis is not a durable long-term prevention strategy.",
+      "At 31 weeks, steroids enhance fetal lung maturation, short tocolysis may allow steroid/transfer benefit, and magnesium sulfate may provide neuroprotection under local guidance.",
+      "Intact membranes are not a contraindication to steroids."
+    ],
+    "questionRevision": 2
   },
   {
     "n": 77,
