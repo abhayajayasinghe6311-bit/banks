@@ -4082,19 +4082,19 @@
     "stem": "A 24-year-old at 30 weeks has ruptured membranes for 2 hours, is afebrile, has no contractions and fetal assessment is reassuring. No evidence of intra-amniotic infection is present.",
     "ask": "What is the MOST APPROPRIATE broad management plan?",
     "options": [
-      "Give a contraindicated live vaccine to prolong pregnancy",
-      "Immediate induction without assessment in every case",
-      "Perform repeated digital vaginal examinations hourly",
-      "Discharge without infection or fetal surveillance",
-      "Expectant inpatient management with antenatal corticosteroids and latency antibiotics according to protocol"
+      "Give a cervical cerclage to retain pregnancy following membrane rupture.",
+      "Induce labour immediately despite normal observations and reassuring CTG.",
+      "Use repeated digital vaginal examinations to assess cervical dilatation.",
+      "Discharge without review once contractions and fever are absent.",
+      "Manage PPROM expectantly with steroids, antibiotics and surveillance."
     ],
     "key": "E",
     "explanations": [
-      "Vaccination has no role.",
-      "At 30 weeks, delivery is not automatic if stable and no contraindication to expectant care.",
-      "Repeated digital exams increase infection risk.",
-      "Maternal and fetal monitoring are essential.",
-      "PPROM before 34 weeks often warrants surveillance, steroids and latency antibiotics with specialist review."
+      "A cerclage after confirmed PPROM is not standard acute management and can increase infectious risks; assess maternal and fetal condition and infection instead.",
+      "At 30 weeks, immediate delivery is not generally required when there is no infection, abruption, labour or fetal compromise; gestational benefits may favour monitored expectant care.",
+      "Repeated digital vaginal examinations increase ascending infection risk and should be avoided unless birth is imminent or another indication exists; use sterile speculum assessment where appropriate.",
+      "Afebrile status and reassuring early fetal monitoring do not eliminate infection or preterm labour risk; PPROM needs planned maternal/fetal surveillance and specialist review.",
+      "At 30 weeks with uncomplicated PPROM, specialist expectant management includes antenatal steroids, latency antibiotics according to local policy, infection monitoring and neonatal preparation. Delivery is indicated if complications arise."
     ],
     "pearl": "PPROM management balances prematurity against infection; avoid unnecessary digital exams.",
     "pivot": "Clinical chorioamnionitis, fetal compromise or significant abruption changes the balance towards delivery.",
@@ -4127,24 +4127,31 @@
     "management": {
       "steps": [
         [
-          "Assess the decision point",
-          "Identify pregnancy or neonatal context and the patient's immediate stability; check whether an emergency escalation is needed."
+          "Confirm PPROM without unnecessary examinations",
+          "Confirm rupture by sterile speculum when appropriate, assess gestation, contractions, maternal temperature, tenderness, fluid characteristics and fetal heart pattern; avoid repeated digital exams."
         ],
         [
-          "Act on the best option",
-          "Expectant inpatient management with antenatal corticosteroids and latency antibiotics according to protocol. PPROM before 34 weeks often warrants surveillance, steroids and latency antibiotics with specialist review."
+          "Provide preterm fetal benefit",
+          "Give antenatal corticosteroids and pregnancy-prolonging antibiotics according to a current gestation-based PPROM pathway; review GBS prophylaxis needs when labour begins."
         ],
         [
-          "Reassess the effect",
-          "Check symptoms, vital signs, relevant results and adverse effects after the first intervention; revise the plan if the patient deteriorates."
+          "Monitor for complications",
+          "Assess maternal vital signs, evidence of infection or abruption, labour progression and fetal well-being; plan inpatient versus other surveillance with senior obstetrics."
         ],
         [
-          "Plan ongoing care",
-          "Arrange appropriate senior review, investigations, safety-netting and follow-up; check local protocols for the precise treatment sequence."
+          "Deliver if indicated",
+          "Reconsider expectant care for clinical infection, fetal compromise, significant bleeding or active labour; organise neonatal support and individualized birth planning."
         ]
       ],
-      "safety": "This is a decision framework, not a substitute for drug-specific instructions. Prescribing, dosing and escalation must be verified locally.",
-      "local": "Exact doses, escalation thresholds and contraindications must be verified against current local protocols and senior advice."
+      "source": {
+        "name": "Queensland Clinical Guideline: Prelabour preterm rupture of membranes",
+        "url": "https://www.health.qld.gov.au/__data/assets/pdf_file/0035/736964/g-pprom.pdf"
+      }
+    },
+    "alternate": {
+      "scenario": "After PPROM at 30 weeks, the patient develops fever, uterine tenderness and fetal tachycardia suggesting clinical intra-amniotic infection.",
+      "management": "Activate a maternal sepsis and obstetric emergency assessment, obtain appropriate cultures without delaying broad-spectrum IV antibiotics, stabilise the mother and arrange prompt birth planning; stop expectant latency management. Mode of delivery depends on obstetric indications rather than chorioamnionitis alone.",
+      "reason": "Suspected intra-amniotic infection makes continued pregnancy hazardous; expectant PPROM care applies only while maternal and fetal status are reassuring."
     }
   },
   {
