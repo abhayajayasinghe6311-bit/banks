@@ -622,18 +622,18 @@
     "stem": "A 31-year-old seven days after delivery has slept only two hours nightly, is euphoric and irritable, believes her baby has a divine mission and hears a voice giving instructions about the infant. She is restless and repeatedly attempts to leave the ward with the baby.",
     "ask": "What is the MOST appropriate management?",
     "options": [
-      "Urgently assess mother–infant safety and arrange psychiatric admission/supervision with acute antipsychotic or mood stabilising treatment as indicated.",
-      "Keep the baby with her unsupervised to preserve bonding while observing her mood.",
-      "Start an SSRI alone and review at the routine six-week postnatal check.",
-      "Reassure her that 'baby blues' commonly include delusions and advise rest at home.",
-      "Offer CBT as sole treatment because symptoms started after childbirth."
+      "Arrange urgent psychiatric admission, joint mother–infant safety planning and treatment.",
+      "Allow unsupervised infant care with follow-up after sleep has improved.",
+      "Prescribe an SSRI alone and reassess at the six-week postnatal visit.",
+      "Diagnose normal baby blues and provide reassurance without observation.",
+      "Offer psychotherapy alone while postponing emergency psychiatric assessment."
     ],
     "explanations": [
-      "Correct: postpartum psychosis needs rapid specialist inpatient care, risk assessment and appropriate pharmacological treatment.",
-      "Safety of mother and infant is paramount; supervision and safeguarding must precede routine bonding arrangements.",
-      "Antidepressant monotherapy can worsen mania and is inadequate for psychosis with infant-related risk.",
-      "Postpartum blues do not cause frank psychosis; this presentation is a psychiatric emergency.",
-      "Psychotherapy is supportive later but cannot replace emergency treatment of postpartum psychosis."
+      "Delusions, auditory instructions, severe sleep loss and behaviour placing the infant at risk indicate postpartum psychosis. Arrange immediate supervised psychiatric assessment, assess safeguarding and medical mimics, and use specialist antipsychotic/mood-stabilising treatment and sleep restoration, with mother–baby unit care when safe.",
+      "Maternal and infant safety require immediate supervision. Unsupervised care while actively psychotic and obeying potentially dangerous commands risks accidental or intentional harm regardless of strong emotional attachment.",
+      "Antidepressant monotherapy does not control psychosis or mania and may exacerbate manic activation. Six-week follow-up is too late for an acute perinatal psychiatric emergency.",
+      "Baby blues are common, transient mood lability after birth, not fixed infant-related delusions, marked behavioural disturbance or hallucinations. Misclassification delays essential treatment.",
+      "Psychological support is important during recovery, but standalone CBT will not rapidly control a high-risk acute psychosis or restore safe care capacity."
     ],
     "key": "A",
     "pearl": "Postpartum psychosis usually emerges rapidly after childbirth, often with mood elevation or psychotic symptoms, and requires urgent safety-focused care.",
@@ -658,9 +658,18 @@
         ]
       ],
       "safety": "Never assume psychotic beliefs are harmless because the parent seems affectionate toward the baby.",
-      "local": "Educational pathway: follow local mental health, prescribing, capacity and safeguarding policies and seek immediate senior help where indicated."
+      "local": "Educational pathway: follow local mental health, prescribing, capacity and safeguarding policies and seek immediate senior help where indicated.",
+      "source": {
+        "name": "RACGP — Management of bipolar disorder over the perinatal period",
+        "url": "https://www.racgp.org.au/afp/2016/december/management-of-bipolar-disorder-over-the-perinatal"
+      }
     },
-    "n": 14
+    "n": 14,
+    "alternate": {
+      "scenario": "The parent has transient tearfulness and irritability four days after delivery, sleeps when the infant is cared for, is functioning, and has no delusions, hallucinations, mania, suicidal thoughts or infant safety concerns.",
+      "management": "Assess mood and available support, reassure about the typical self-limited course of baby blues, promote sleep, practical infant-care help and follow-up. Give clear return advice for worsening mood, new psychosis, persistent symptoms beyond about two weeks or any safety concerns. Psychiatric admission is not routine in uncomplicated baby blues.",
+      "reason": "Infant-focused psychotic beliefs and markedly disrupted behaviour elevate the original case to postpartum psychosis requiring emergency safeguarding and treatment."
+    }
   },
   {
     "domain": "Infectious diseases & medicine",
