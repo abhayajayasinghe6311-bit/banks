@@ -979,17 +979,19 @@
     "stem": "A 60-year-old with coronary disease develops bradycardia at 32/min, hypotension and dizziness. ECG shows complete heart block.",
     "ask": "What is the MOST APPROPRIATE immediate plan?",
     "options": [
-      "Routine outpatient Holter in six weeks",
-      "Observe for 24 hours without monitoring",
-      "Oral beta-blocker",
-      "Urgent pacing-capable resuscitation, with temporising drugs if needed"
+      "Give oral metoprolol and arrange an urgent rhythm review after six hours.",
+      "Monitor the ECG overnight without pacing despite persistent hypotension.",
+      "Give atropine alone and discharge if the pulse briefly increases.",
+      "Prepare immediate transcutaneous pacing and urgent expert cardiac support.",
+      "Administer an IV beta-blocker to slow the ventricular escape rhythm."
     ],
     "key": "D",
     "explanations": [
-      "Outpatient assessment is unsafe.",
-      "Observation risks collapse",
-      "Beta-blockers can worsen block",
-      "Symptomatic complete heart block with haemodynamic compromise requires immediate stabilisation and pacing preparation."
+      "Oral beta blockade may worsen complete heart block and haemodynamic collapse. Medication review matters, but shock requires immediate bradycardia resuscitation rather than delayed observation.",
+      "Complete heart block at 32/min with hypotension risks asystole. Continuous monitoring is necessary, but waiting without pacing capability and active stabilisation is not safe.",
+      "Atropine may be attempted in the appropriate ALS pathway but can fail in infranodal block; temporary improvement does not justify discharge or replace preparation for pacing.",
+      "Treat symptomatic complete heart block as an unstable bradyarrhythmia: summon resuscitation and cardiology help, attach pacing pads, support ABC and prepare transcutaneous pacing with further transvenous pacing as required.",
+      "Beta-blockers suppress AV nodal conduction and may further slow the escape rhythm. They should be withheld in unstable complete heart block."
     ],
     "pearl": "Atropine may be ineffective in infranodal block; do not delay transcutaneous pacing readiness.",
     "pivot": "Exam check: identify the decisive positive finding, then the urgent risk or distinguishing negative clue that eliminates the alternatives.",
@@ -1018,24 +1020,44 @@
     "management": {
       "steps": [
         [
-          "Assess the decision point",
-          "Identify haemodynamic instability and the patient's immediate stability; check whether an emergency escalation is needed."
+          "Recognise instability",
+          "Check perfusion, chest pain, consciousness and BP with continuous ECG; establish venous access, oxygen if needed and seek experienced resuscitation help."
         ],
         [
-          "Act on the best option",
-          "Urgent pacing-capable resuscitation, with temporising drugs if needed. Symptomatic complete heart block with haemodynamic compromise requires immediate stabilisation and pacing preparation."
+          "Prepare pacing immediately",
+          "Attach transcutaneous pacing pads and prepare to initiate pacing for shock or ongoing compromise. Consider atropine/vasoactive infusions as temporising measures per ALS, without delaying pacing."
         ],
         [
-          "Reassess the effect",
-          "Check symptoms, vital signs, relevant results and adverse effects after the first intervention; revise the plan if the patient deteriorates."
+          "Identify causes",
+          "Review rate-limiting drugs, electrolytes, acute coronary ischaemia and other reversible triggers while supporting the circulation."
         ],
         [
-          "Plan ongoing care",
-          "Arrange appropriate senior review, investigations, safety-netting and follow-up; check local protocols for the precise treatment sequence."
+          "Secure definitive care",
+          "Arrange cardiology support for temporary transvenous pacing when needed and permanent pacemaker assessment after reversible causes are addressed."
         ]
       ],
-      "safety": "This is a decision framework, not a substitute for drug-specific instructions. Prescribing, dosing and escalation must be verified locally.",
-      "local": "Exact doses, escalation thresholds and contraindications must be verified against current local protocols and senior advice."
+      "safety": "Do not give additional AV-nodal blockers in unstable high-grade AV block or delay pacing for outpatient testing.",
+      "source": {
+        "name": "Australian Resuscitation Council, adult advanced life support",
+        "url": "https://resus.org.au/guidelines/"
+      }
+    },
+    "legacyOptions": [
+      "Routine outpatient Holter in six weeks",
+      "Observe for 24 hours without monitoring",
+      "Oral beta-blocker",
+      "Urgent pacing-capable resuscitation, with temporising drugs if needed"
+    ],
+    "legacyExplanations": [
+      "Outpatient assessment is unsafe.",
+      "Observation risks collapse",
+      "Beta-blockers can worsen block",
+      "Symptomatic complete heart block with haemodynamic compromise requires immediate stabilisation and pacing preparation."
+    ],
+    "alternate": {
+      "scenario": "The ECG shows asymptomatic chronic complete AV block with a stable ventricular escape rate, normal blood pressure and no syncope.",
+      "management": "Admit or arrange urgent monitored cardiology evaluation for underlying causes and pacemaker planning; check reversible drugs, ischaemia and electrolytes. Emergency transcutaneous pacing may be unnecessary while stable, but complete AV block should not be treated as routine outpatient palpitations.",
+      "reason": "Haemodynamic compromise rather than the label of AV block alone determines the emergency pacing priority."
     }
   },
   {
@@ -2129,17 +2151,19 @@
     "stem": "A 66-year-old on chronic prednisolone stops it abruptly and presents with vomiting, BP 75/40, glucose 2.7 mmol/L and Na 126 mmol/L. Most appropriate immediate treatment?",
     "ask": "Choose the SINGLE BEST answer for this clinical scenario.",
     "options": [
-      "IV insulin infusion",
-      "Fluid restriction",
-      "IV hydrocortisone and isotonic fluid resuscitation",
-      "Restart oral prednisolone in a week"
+      "Start an insulin infusion and review the next capillary glucose in one hour.",
+      "Give an isotonic fluid restriction plan with oral rehydration only.",
+      "Give immediate IV hydrocortisone and isotonic saline; correct low glucose.",
+      "Prescribe oral prednisolone at the usual dose once vomiting has stopped.",
+      "Await morning cortisol and ACTH results before administering any steroid."
     ],
     "key": "C",
     "explanations": [
-      "Insulin worsens hypoglycaemia.",
-      "Restriction worsens shock",
-      "Abrupt steroid cessation may precipitate adrenal crisis; give stress-dose parenteral glucocorticoids and fluids immediately.",
-      "Delay is dangerous"
+      "Glucose is already 2.7 mmol/L; insulin worsens hypoglycaemia. Sudden steroid withdrawal, shock and hyponatraemia suggest an adrenal crisis rather than DKA.",
+      "Restricting fluid is dangerous in hypotensive adrenal crisis. Isotonic IV fluid replacement and circulatory monitoring are required while treating cortisol deficiency.",
+      "Adrenal crisis is a clinical emergency: give parenteral stress-dose hydrocortisone immediately, resuscitate with 0.9% saline and treat hypoglycaemia, without awaiting confirmation.",
+      "Oral dosing is unreliable during active vomiting and shock, and routine replacement is inadequate for an acute adrenal crisis. Parenteral stress dosing is indicated now.",
+      "ACTH and cortisol can be drawn before treatment if this causes no delay, but tests must not postpone hydrocortisone or resuscitation in suspected crisis."
     ],
     "pearl": "Do not delay lifesaving steroid treatment while awaiting cortisol testing in suspected adrenal crisis.",
     "pivot": "Exam check: identify the decisive positive finding, then the urgent risk or distinguishing negative clue that eliminates the alternatives.",
@@ -2168,24 +2192,43 @@
     "management": {
       "steps": [
         [
-          "Suspect adrenal crisis",
-          "Assess shock, vomiting, glucose, sodium/potassium and recent steroid withdrawal or stressor."
+          "Recognise adrenal crisis",
+          "Recent chronic steroid withdrawal plus shock, vomiting, hypoglycaemia and low sodium is highly concerning; assess ABC, mental state, IV access and continuous observations."
         ],
         [
-          "Treat immediately",
-          "Parenteral hydrocortisone and isotonic crystalloid without waiting for cortisol results."
+          "Replace cortisol without delay",
+          "Give hydrocortisone 100 mg IV/IM immediately under the adult emergency protocol and involve senior emergency/endocrine staff; collect cortisol/ACTH only if this will not delay treatment."
         ],
         [
-          "Correct triggers",
-          "Give glucose for hypoglycaemia and identify/treat infection or other precipitant."
+          "Restore circulation and glucose",
+          "Give protocol-guided 0.9% saline boluses while reassessing BP, cardiac status and urine output, and promptly correct hypoglycaemia with IV glucose."
         ],
         [
-          "Monitor",
-          "BP, glucose, electrolytes and urine output; educate sick-day dosing once recovered."
+          "Sustain recovery",
+          "Continue stress-dose steroids, monitor BP, glucose and electrolytes, investigate infection or other triggers and plan safe steroid replacement and sick-day education."
         ]
       ],
-      "safety": "Blood for cortisol/ACTH may be obtained first only if it causes no delay.",
-      "local": "Exact doses, escalation thresholds and contraindications must be verified against current local protocols and senior advice."
+      "source": {
+        "name": "NSW Health adult ECAT adrenal insufficiency protocol",
+        "url": "https://aci.health.nsw.gov.au/ecat/adult/adrenal-insufficiency"
+      }
+    },
+    "legacyOptions": [
+      "IV insulin infusion",
+      "Fluid restriction",
+      "IV hydrocortisone and isotonic fluid resuscitation",
+      "Restart oral prednisolone in a week"
+    ],
+    "legacyExplanations": [
+      "Insulin worsens hypoglycaemia.",
+      "Restriction worsens shock",
+      "Abrupt steroid cessation may precipitate adrenal crisis; give stress-dose parenteral glucocorticoids and fluids immediately.",
+      "Delay is dangerous"
+    ],
+    "alternate": {
+      "scenario": "A steroid-dependent patient has mild viral symptoms, normal BP and glucose, can retain oral medication and has an established adrenal sick-day plan.",
+      "management": "Continue an agreed increased oral glucocorticoid sick-day dose, maintain fluids and monitor closely; obtain clinician advice for escalation if vomiting persists, oral doses are missed or hypotension develops. The need for immediate IM/IV rescue hydrocortisone arises when oral treatment is unreliable or crisis is suspected.",
+      "reason": "Stable oral tolerance permits sick-day dosing, while shock and vomiting require emergency parenteral replacement."
     }
   },
   {
@@ -2856,17 +2899,19 @@
     "stem": "A primigravida at 38 weeks has rupture of membranes and a pulsating loop of umbilical cord is palpable below the presenting part.",
     "ask": "What is the priority while preparing emergency delivery?",
     "options": [
-      "Manually elevate the presenting part to relieve cord compression and call for emergency obstetric help",
-      "Apply a fetal scalp electrode",
-      "Observe until cervical dilation is complete",
-      "Encourage pushing with each contraction"
+      "Lift the presenting part off the cord and urgently organise emergency birth.",
+      "Apply a fetal scalp electrode before contacting the obstetric team.",
+      "Wait for full dilatation while monitoring the cord pulsation and fetal trace.",
+      "Encourage active pushing to shorten the duration of cord compression.",
+      "Replace the prolapsed cord repeatedly into the vagina between contractions."
     ],
     "key": "A",
     "explanations": [
-      "Cord prolapse compromises fetal blood flow; elevate the presenting part and expedite birth, usually emergency Caesarean.",
-      "A scalp electrode delays intervention.",
-      "Waiting risks hypoxia",
-      "Pushing may worsen compression"
+      "Palpable pulsatile cord below the presenting part after rupture indicates cord prolapse. Relieve compression by manual elevation, call for emergency obstetric/anaesthesia help, position the mother and expedite birth.",
+      "An electrode does not relieve the threatened cord blood flow and wastes critical time; urgent decompression and delivery take priority.",
+      "Waiting allows sustained cord compression and fetal hypoxaemia. Emergency delivery is generally required unless birth is immediately possible vaginally.",
+      "Pushing can increase compression unless immediate controlled vaginal birth is feasible and directed by the obstetric team; manual decompression and coordinated birth planning are first.",
+      "Repeated handling/replacement can provoke vasospasm and delay delivery. Keep manual elevation of the presenting part and avoid unnecessary cord manipulation."
     ],
     "pearl": "Call for help, minimise cord handling, relieve pressure and prepare emergency birth.",
     "pivot": "Exam check: identify the decisive positive finding, then the urgent risk or distinguishing negative clue that eliminates the alternatives.",
@@ -2890,6 +2935,47 @@
           "check": "Name the specific danger described in the explanation before prescribing; check pregnancy or neonatal context and relevant contraindications."
         }
       ]
+    },
+    "legacyOptions": [
+      "Manually elevate the presenting part to relieve cord compression and call for emergency obstetric help",
+      "Apply a fetal scalp electrode",
+      "Observe until cervical dilation is complete",
+      "Encourage pushing with each contraction"
+    ],
+    "legacyExplanations": [
+      "Cord prolapse compromises fetal blood flow; elevate the presenting part and expedite birth, usually emergency Caesarean.",
+      "A scalp electrode delays intervention.",
+      "Waiting risks hypoxia",
+      "Pushing may worsen compression"
+    ],
+    "alternate": {
+      "scenario": "The cord is felt below the presenting part while membranes remain intact, without fetal heart abnormalities.",
+      "management": "Avoid rupturing the membranes, seek immediate senior obstetric assessment, maintain an appropriate maternal position and prepare for controlled delivery or other intervention depending on lie, labour and fetal status. If membranes rupture or fetal compromise develops, institute emergency decompression and birth.",
+      "reason": "An intact amniotic sac may change immediate handling, but a prolapsed cord after membrane rupture is an obstetric emergency."
+    },
+    "management": {
+      "steps": [
+        [
+          "Call an obstetric emergency",
+          "Recognise cord prolapse, summon consultant obstetrics/anaesthesia/neonatal teams and rapidly assess fetal heart rate."
+        ],
+        [
+          "Relieve cord compression",
+          "Manually elevate the fetal presenting part above the cord; use knee-chest or left-lateral head-down positioning and keep the hand in place until transfer/delivery."
+        ],
+        [
+          "Prepare emergency birth",
+          "Arrange category-appropriate emergency caesarean unless rapid safe vaginal birth is immediately feasible; avoid prolonged unnecessary cord handling."
+        ],
+        [
+          "Continue support",
+          "Maintain maternal monitoring and fetal surveillance while preparations proceed, and document event timings and neonatal condition."
+        ]
+      ],
+      "source": {
+        "name": "Pregnancy, Birth and Baby (Australia) — Umbilical cord prolapse",
+        "url": "https://www.pregnancybirthbaby.org.au/labour-and-birth/labour-complications/umbilical-cord-prolapse"
+      }
     }
   },
   {
