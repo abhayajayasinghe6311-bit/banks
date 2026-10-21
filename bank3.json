@@ -1664,17 +1664,19 @@
     "stem": "A 7-year-old with known type 1 diabetes is alert but shaky and sweaty during school sport. Finger-prick blood glucose is 3.1 mmol/L and he can swallow safely.",
     "ask": "Which intervention is MOST APPROPRIATE now?",
     "options": [
-      "A fast-acting oral carbohydrate, then recheck glucose",
-      "Send him back to sport without intervention",
-      "An immediate dose of long-acting insulin",
-      "An intravenous insulin bolus"
+      "Give fast-acting oral carbohydrate now, then repeat glucose after 15 minutes.",
+      "Allow immediate return to exercise after recording the low glucose result.",
+      "Give long-acting insulin to prevent post-exercise hyperglycaemia.",
+      "Give an IV insulin bolus before any food to suppress hepatic glucose release.",
+      "Give IM glucagon instead of oral glucose despite normal conscious swallowing."
     ],
     "key": "A",
     "explanations": [
-      "Conscious children with mild hypoglycaemia can take rapid oral carbohydrate, adjusted to age/local protocol, followed by glucose reassessment.",
-      "Exercise can worsen the low glucose.",
-      "Basal insulin is not a rescue treatment.",
-      "Insulin will worsen hypoglycaemia."
+      "The child is conscious and able to swallow. Give age-appropriate quick oral glucose/carbohydrate promptly, recheck BGL in about 15 minutes, repeat if under 4 mmol/L and follow with sustaining carbohydrate when recovered.",
+      "Exercise can drive the glucose lower. A confirmed BGL of 3.1 mmol/L needs treatment and repeat assessment before a safe return to activity.",
+      "Insulin further lowers glucose and is never a rescue treatment for a symptomatic low BGL; future insulin adjustment is a separate preventive decision.",
+      "IV insulin is contraindicated in this hypoglycaemia; it shifts circulating glucose into tissues and can provoke neuroglycopenia and seizures.",
+      "IM glucagon is appropriate when a child has severe hypoglycaemia and cannot swallow safely or is unconscious. Oral carbohydrate is preferred here because swallowing is intact."
     ],
     "pearl": "Always recheck blood glucose about 15 minutes after fast-acting carbohydrate and follow with longer-acting carbohydrate if indicated.",
     "pivot": "Examine which specific clue makes the competing options less appropriate; a change in stability, duration or examination findings can change the best answer.",
@@ -1702,24 +1704,43 @@
     "management": {
       "steps": [
         [
-          "Assess the decision point",
-          "Identify critical laboratory or acid–base finding and the patient's immediate stability; check whether an emergency escalation is needed."
+          "Confirm and pause exercise",
+          "Check capillary glucose promptly; stop activity and make sure the child is alert and able to swallow."
         ],
         [
-          "Act on the best option",
-          "A fast-acting oral carbohydrate, then recheck glucose. Conscious children with mild hypoglycaemia can take rapid oral carbohydrate, adjusted to age/local protocol, followed by glucose reassessment."
+          "Treat with quick carbohydrate",
+          "For a conscious child aged seven, give approximately 10 g fast-acting carbohydrate according to the child’s personal diabetes plan or RCH advice."
         ],
         [
-          "Reassess the effect",
-          "Check symptoms, vital signs, relevant results and adverse effects after the first intervention; revise the plan if the patient deteriorates."
+          "Reassess after 15 minutes",
+          "Repeat glucose at 15 minutes; if still below 4 mmol/L, repeat quick carbohydrate and recheck."
         ],
         [
-          "Plan ongoing care",
-          "Arrange appropriate senior review, investigations, safety-netting and follow-up; check local protocols for the precise treatment sequence."
+          "Prevent recurrence",
+          "Once recovered give a longer-acting snack if indicated, review exercise and insulin factors with carers/diabetes team, and escalate if consciousness or swallowing deteriorates."
         ]
       ],
-      "safety": "This is a decision framework, not a substitute for drug-specific instructions. Prescribing, dosing and escalation must be verified locally.",
-      "local": "Exact doses, escalation thresholds and contraindications must be verified against current local protocols and senior advice."
+      "source": {
+        "name": "Royal Children's Hospital Melbourne, low blood glucose",
+        "url": "https://www.rch.org.au/diabetes/type-1-diabetes-toolkit/How_to_treat_low_blood_glucose_levels/"
+      }
+    },
+    "legacyOptions": [
+      "A fast-acting oral carbohydrate, then recheck glucose",
+      "Send him back to sport without intervention",
+      "An immediate dose of long-acting insulin",
+      "An intravenous insulin bolus"
+    ],
+    "legacyExplanations": [
+      "Conscious children with mild hypoglycaemia can take rapid oral carbohydrate, adjusted to age/local protocol, followed by glucose reassessment.",
+      "Exercise can worsen the low glucose.",
+      "Basal insulin is not a rescue treatment.",
+      "Insulin will worsen hypoglycaemia."
+    ],
+    "alternate": {
+      "scenario": "During school sport the same child has a seizure, cannot swallow and is found to have glucose 2.1 mmol/L.",
+      "management": "Call emergency help, protect airway and position safely. Give age-appropriate IM/SC glucagon if IV access is not immediately available, or IV glucose in a medical setting, recheck glucose frequently and provide oral carbohydrate once awake and able to swallow. Do not place drinks or gels in the mouth during a seizure.",
+      "reason": "The ability to swallow safely determines whether oral glucose is appropriate or parenteral rescue is required."
     }
   },
   {
