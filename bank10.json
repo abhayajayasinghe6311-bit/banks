@@ -5597,19 +5597,19 @@
     "stem": "A 64-year-old suddenly loses painless vision in one eye. Fundoscopy shows a pale retina with a cherry-red fovea; there is no retinal detachment.",
     "ask": "Which action is MOST appropriate?",
     "options": [
-      "Activate urgent stroke/ophthalmology evaluation for central retinal artery occlusion",
-      "Treat as conjunctivitis with drops",
-      "Advise eye exercises",
-      "Reassure because there is no eye pain",
-      "Arrange routine optometry next month"
+      "Arrange immediate stroke and ophthalmology assessment for retinal arterial occlusion.",
+      "Treat as conjunctivitis with drops and review when eye pain develops.",
+      "Prescribe eye exercises and recommend gradual visual rehabilitation.",
+      "Reassure because painless loss of vision excludes ocular vascular injury.",
+      "Refer to a routine optometry appointment in four to six weeks."
     ],
     "key": "A",
     "explanations": [
-      "CRAO is a retinal infarction needing emergent vascular and ophthalmic assessment.",
-      "Conjunctivitis causes discomfort and discharge, not profound sudden loss.",
-      "Exercises do not restore arterial perfusion.",
-      "Painlessness is characteristic of vascular loss.",
-      "Retinal arterial occlusion is time-critical, not routine follow-up."
+      "A pale retina and cherry-red fovea with sudden monocular painless vision loss is typical of CRAO—an ocular stroke. Activate urgent ophthalmology/stroke assessment, vascular risk workup and check for giant cell arteritis when relevant.",
+      "Conjunctivitis causes irritation, redness and discharge, not sudden profound monocular vision loss with a cherry-red retinal spot. Drops will not restore retinal arterial perfusion.",
+      "Eye exercises cannot reopen an occluded retinal artery, and delay forfeits any time-sensitive specialist treatment and secondary stroke prevention.",
+      "Absence of pain is common in retinal artery occlusion. Acute vascular eye disease is still an emergency because retinal ischaemia can be irreversible.",
+      "Routine optometry in weeks is inappropriate. CRAO requires urgent emergency stroke/ophthalmology services and embolic or vasculitic cause assessment."
     ],
     "pearl": "CRAO is an eye stroke; evaluate embolic sources and giant cell arteritis when relevant.",
     "pivot": "Flashes and a curtain-like field defect instead suggest retinal detachment.",
@@ -5641,24 +5641,31 @@
     "management": {
       "steps": [
         [
-          "Activate",
-          "Document last-known-well, ABC, glucose, focused neuro exam/NIHSS and stroke team."
+          "Recognise acute monocular retinal ischaemia",
+          "Confirm time of symptom onset, perform rapid visual acuity, fields, pupil and fundoscopic assessment and urgently contact ophthalmology/stroke emergency services."
         ],
         [
-          "Image urgently",
-          "Noncontrast brain CT to exclude haemorrhage, vascular imaging for thrombectomy suitability."
+          "Evaluate systemic causes",
+          "Check glucose, ECG/arrhythmia, vascular risk factors and carotid/cardiac embolic sources; evaluate giant cell arteritis promptly if age and features suggest it."
         ],
         [
-          "Choose reperfusion",
-          "Assess thrombolysis/thrombectomy time windows and contraindications with specialists."
+          "Consider time-sensitive intervention individually",
+          "Discuss reperfusion eligibility and acute retinal management with stroke/ophthalmology experts; evidence for interventions differs from cerebral large-vessel stroke and is not a routine mechanical thrombectomy pathway."
         ],
         [
-          "Support",
-          "Swallow screening, BP, glucose and secondary prevention after appropriate imaging."
+          "Prevent future vascular events",
+          "Arrange tailored vascular imaging and specialist secondary prevention for stroke/embolism and address cardiovascular risk factors."
         ]
       ],
-      "safety": "Do not give antithrombotics before excluding intracranial haemorrhage.",
-      "local": "Exact doses, escalation thresholds and contraindications must be verified against current local protocols and senior advice."
+      "source": {
+        "name": "RACGP — Sudden vision loss, investigation and management",
+        "url": "https://www.racgp.org.au/afp/2009/october/sudden-vision-loss/"
+      }
+    },
+    "alternate": {
+      "scenario": "A patient reports flashes and floaters followed by a progressive curtain-like visual field defect; fundoscopy suggests rhegmatogenous retinal detachment instead of a cherry-red spot.",
+      "management": "Arrange same-day urgent dilated retinal examination and ophthalmology referral for possible retinal tear/detachment repair. A retinal-detachment pathway differs from embolic CRAO stroke evaluation, although both need prompt specialist assessment.",
+      "reason": "The fundoscopic pattern and visual symptom history differentiate retinal arterial occlusion from retinal detachment."
     }
   },
   {
