@@ -129,7 +129,22 @@
       "scenario": "Following immediate initial antimicrobial therapy and clinical assessment, a patient with febrile neutropenia is confirmed to meet a validated low-risk outpatient pathway and has reliable follow-up.",
       "management": "After specialist review, consider the pathway's recommended oral antibiotic regimen and structured outpatient monitoring, with explicit return precautions and prompt review. If unstable, high risk or unable to attend follow-up, continue inpatient IV therapy.",
       "reason": "Being initially haemodynamically stable alone does not establish low-risk febrile neutropenia."
-    }
+    },
+    "legacyOptions": [
+      "Prescribe oral paracetamol and discharge",
+      "Wait for blood cultures to grow before antibiotics",
+      "Give a live attenuated vaccine immediately",
+      "Treat with topical antifungal cream only",
+      "Give broad-spectrum IV antipseudomonal antibiotics urgently after cultures if obtainable without delay"
+    ],
+    "legacyExplanations": [
+      "Discharge is inappropriate at this risk level.",
+      "Neutropenic sepsis is time critical despite initial stability.",
+      "Live vaccines are generally contraindicated during significant immunosuppression.",
+      "A topical antifungal will not treat bloodstream sepsis.",
+      "Cultures should be collected promptly without delaying IV empiric antibiotics; admission and monitoring are usual."
+    ],
+    "questionRevision": 2
   },
   {
     "n": 3,
@@ -1243,7 +1258,22 @@
       "scenario": "The same 9-week patient develops syncope, shoulder-tip pain, BP 78/45 mmHg and free intraperitoneal fluid on repeat ultrasound.",
       "management": "Treat as ruptured ectopic pregnancy: call urgent gynaecology and anaesthesia, resuscitate with IV access and blood products if required and arrange emergency operative treatment. Do not offer outpatient methotrexate or expectant management when haemodynamically unstable.",
       "reason": "The initial case asks for diagnosis; shock and free fluid alter subsequent management to surgical emergency care."
-    }
+    },
+    "legacyOptions": [
+      "Cervical insufficiency",
+      "Ovarian hyperstimulation syndrome",
+      "Placenta praevia",
+      "Threatened intrauterine miscarriage",
+      "Tubal ectopic pregnancy"
+    ],
+    "legacyExplanations": [
+      "Cervical insufficiency produces painless second-trimester dilation.",
+      "OHSS occurs in the context of ovarian stimulation with ovarian enlargement and third spacing.",
+      "Placenta praevia presents later in pregnancy.",
+      "Threatened miscarriage requires an intrauterine pregnancy, usually with a closed os.",
+      "Pain/bleeding, no intrauterine gestation and a suspicious adnexal mass favour ectopic pregnancy; urgent gynaecology assessment is required."
+    ],
+    "questionRevision": 2
   },
   {
     "n": 21,
@@ -4159,7 +4189,22 @@
       "scenario": "After PPROM at 30 weeks, the patient develops fever, uterine tenderness and fetal tachycardia suggesting clinical intra-amniotic infection.",
       "management": "Activate a maternal sepsis and obstetric emergency assessment, obtain appropriate cultures without delaying broad-spectrum IV antibiotics, stabilise the mother and arrange prompt birth planning; stop expectant latency management. Mode of delivery depends on obstetric indications rather than chorioamnionitis alone.",
       "reason": "Suspected intra-amniotic infection makes continued pregnancy hazardous; expectant PPROM care applies only while maternal and fetal status are reassuring."
-    }
+    },
+    "legacyOptions": [
+      "Give a contraindicated live vaccine to prolong pregnancy",
+      "Immediate induction without assessment in every case",
+      "Perform repeated digital vaginal examinations hourly",
+      "Discharge without infection or fetal surveillance",
+      "Expectant inpatient management with antenatal corticosteroids and latency antibiotics according to protocol"
+    ],
+    "legacyExplanations": [
+      "Vaccination has no role.",
+      "At 30 weeks, delivery is not automatic if stable and no contraindication to expectant care.",
+      "Repeated digital exams increase infection risk.",
+      "Maternal and fetal monitoring are essential.",
+      "PPROM before 34 weeks often warrants surveillance, steroids and latency antibiotics with specialist review."
+    ],
+    "questionRevision": 2
   },
   {
     "n": 71,
