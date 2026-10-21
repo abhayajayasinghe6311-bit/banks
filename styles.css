@@ -491,3 +491,15 @@ body.midnight-sage .btn:not(.soft):not(.rose),body.midnight-sage a.btn:not(.soft
  #app .learning-layout .stem,
  #app .learning-layout.has-notes .stem{font-size:17px}
 }
+
+
+/* October readability pass: clinical reasoning must be as legible as answer options. */
+#app .management-guide li,#app .management-guide li strong,#app .management-guide li span,
+#app .management-safety p,#app .management-safety b{font-size:15px;line-height:1.75}
+#app .management-intro{font-size:14px!important;line-height:1.75}
+#app .management-local{font-size:13px!important;line-height:1.65}
+#app .explainline,#app .learning-missed-details p,#app .learning-missed-takeaway,
+#app .learning-alternative,#app .analysis-review-item strong{font-size:15px;line-height:1.7}
+#app .analysis-review-choice,#app .analysis-review-open{font-size:14px;line-height:1.6}
+#app .choice:focus-visible,#app .btn:focus-visible,#app .theme-picker select:focus-visible{outline:3px solid var(--violet);outline-offset:3px}
+@media(max-width:580px){#app .management-guide li,#app .management-guide li strong,#app .management-guide li span,#app .explainline{font-size:15px}}
