@@ -1650,19 +1650,19 @@
     "stem": "A 33-year-old at 32 weeks has severe itching of palms and soles without a rash. Serum bile acids are 112 µmol/L, ALT mildly raised and BP is normal.",
     "ask": "What is the MOST IMPORTANT fetal implication to discuss with obstetrics?",
     "options": [
-      "It indicates that immediate chemotherapy is required",
-      "There is no fetal risk when maternal blood pressure is normal",
-      "It proves fetal chromosomal abnormality",
-      "Severe intrahepatic cholestasis can increase stillbirth risk and requires specialist delivery planning",
-      "The only concern is maternal cosmetic skin change"
+      "Arrange chemotherapy immediately to prevent progression of maternal itching.",
+      "Reassure that a normal BP eliminates any fetal risk from bile acids.",
+      "Diagnose a chromosomal disorder based on bile acid elevation alone.",
+      "Discuss increased stillbirth risk and specialist obstetric birth planning.",
+      "Treat pruritus as a cosmetic issue without fetal assessment or review."
     ],
     "key": "D",
     "explanations": [
-      "Chemotherapy has no role.",
-      "Normotension does not negate cholestasis-related fetal risk.",
-      "Cholestasis does not diagnose genetic aneuploidy.",
-      "Markedly elevated bile acids indicate severe intrahepatic cholestasis with increased risk of adverse fetal outcomes and warrant close specialist care.",
-      "Maternal itch is not the sole concern."
+      "Chemotherapy has no role in intrahepatic cholestasis of pregnancy. Elevated bile acids indicate a maternal hepatic pregnancy condition, not malignancy requiring cytotoxic treatment.",
+      "Severe bile-acid elevations carry fetal risks independent of BP; normal BP does not exclude stillbirth risk with very severe intrahepatic cholestasis.",
+      "Bile acids do not diagnose fetal aneuploidy and should not be used as chromosomal screening. They indicate hepatobiliary dysfunction in this pruritic pregnancy.",
+      "Peak bile acids 112 µmol/L meet SOMANZ criteria for very severe ICP (≥100), associated with increased stillbirth risk. Obstetric review, repeated bile-acid assessment and an individualised birth plan are essential.",
+      "Maternal itching is not the only consequence. Bile-acid severity determines the urgency of fetal counselling, clinical monitoring and delivery planning."
     ],
     "pearl": "Palmar/plantar pruritus without primary rash + high bile acids → ICP; risk rises at very high bile acids.",
     "pivot": "New headache, hypertension and thrombocytopenia would shift concern toward severe pre-eclampsia/HELLP.",
@@ -1690,6 +1690,49 @@
           "check": "Identify the actual threat in pregnancy or neonatal context and choose the intervention that addresses it, rather than an adjunct alone."
         }
       ]
+    },
+    "legacyOptions": [
+      "It indicates that immediate chemotherapy is required",
+      "There is no fetal risk when maternal blood pressure is normal",
+      "It proves fetal chromosomal abnormality",
+      "Severe intrahepatic cholestasis can increase stillbirth risk and requires specialist delivery planning",
+      "The only concern is maternal cosmetic skin change"
+    ],
+    "legacyExplanations": [
+      "Chemotherapy has no role.",
+      "Normotension does not negate cholestasis-related fetal risk.",
+      "Cholestasis does not diagnose genetic aneuploidy.",
+      "Markedly elevated bile acids indicate severe intrahepatic cholestasis with increased risk of adverse fetal outcomes and warrant close specialist care.",
+      "Maternal itch is not the sole concern."
+    ],
+    "alternate": {
+      "scenario": "The same itching occurs but bile acids remain only mildly elevated at 24 µmol/L, other investigations are reassuring and no other fetal risk factors are present.",
+      "management": "Discuss a lower estimated stillbirth risk, repeat bile acids and liver tests, provide symptom treatment and arrange obstetric follow-up. Individualise delivery timing based on peak bile acids, symptoms and comorbidities; do not automatically apply the very severe ICP birth plan.",
+      "reason": "The peak bile-acid level, especially a value ≥100 µmol/L, changes the fetal risk and delivery discussion."
+    },
+    "management": {
+      "steps": [
+        [
+          "Confirm and classify",
+          "Evaluate pruritus without primary rash, repeat non-fasting bile acids and liver function tests and exclude alternative causes of hepatic or skin symptoms."
+        ],
+        [
+          "Counsel on risk",
+          "Explain that very severe ICP (peak bile acids at least 100 µmol/L) is associated with materially higher risk of stillbirth and requires senior obstetric input."
+        ],
+        [
+          "Plan surveillance and symptom care",
+          "Discuss itch treatment, repeated bile acid trends and any coexisting risks; monitoring cannot guarantee prevention of stillbirth."
+        ],
+        [
+          "Make an individualised delivery plan",
+          "Agree timing and route of birth considering gestation, peak values and other maternal/fetal factors; SOMANZ recommends a planned birth discussion for very severe ICP from about 36 weeks, while some guidance considers 35–36 weeks."
+        ]
+      ],
+      "source": {
+        "name": "SOMANZ 2023 consensus on intrahepatic cholestasis of pregnancy",
+        "url": "https://obgyn.onlinelibrary.wiley.com/doi/full/10.1111/ajo.13719"
+      }
     }
   },
   {
