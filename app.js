@@ -31,7 +31,7 @@ function updateProgress(bank,n,choice){
  const nav=questionCard.querySelector('.navbox');
  const message=b[n].correct?'✓ Correct — nicely reasoned!':'✗ Not quite. Correct answer: '+q.key+'.';
  nav?.insertAdjacentHTML('beforebegin','<div class="feedback '+(b[n].correct?'yes':'no')+'">'+message+' Your first response is locked.</div>');
- notes.outerHTML=learningNotes(q);
+ notes.outerHTML=learningNotes(q,'learningNotes',choice);
  const layout=questionCard.closest('.learning-layout');
  layout?.classList.add('has-notes');
  const status=answeredStatus(bank),total=bankData[bank].length;
@@ -243,7 +243,7 @@ function answerPractice(bank,n,choice){
  const nav=card.querySelector('.navbox');
  const ok=choice===q.key;
  nav?.insertAdjacentHTML('beforebegin',`<div class="feedback ${ok?'yes':'no'}">${ok?'✓ Correct — nicely reasoned!':'✗ Not quite. Correct answer: '+q.key+'.'} Your practice response is saved.</div>`);
- placeholder.outerHTML=learningNotes(q);
+ placeholder.outerHTML=learningNotes(q,'learningNotes',choice);
  card.closest('.learning-layout')?.classList.add('has-notes');
  const stats=practiceStats();
  if($('practiceSummary'))$('practiceSummary').textContent=`${stats.attempted}/${stats.total} answered · ${stats.correct} correct · ${stats.attempted-stats.correct} incorrect`;
@@ -283,7 +283,7 @@ function renderPractice(){
        <button class="btn" id="next" ${idx===stats.total-1&&finished?'disabled':''}>${idx===stats.total-1&&!finished?'Find unanswered →':'Next →'}</button></div>
       ${finished&&idx===stats.total-1?practiceFinishActions():''}
     </div>
-    ${answered?learningNotes(q):`<aside class="learning-card learning-placeholder" aria-label="Learning notes preview"><div class="learning-placeholder-emoji">🌷</div><h2>Your learning notes</h2><p>The explanations and clinical pearls will appear after you answer.</p></aside>`}
+    ${answered?learningNotes(q,'learningNotes',answered.choice):`<aside class="learning-card learning-placeholder" aria-label="Learning notes preview"><div class="learning-placeholder-emoji">🌷</div><h2>Your learning notes</h2><p>The explanations and clinical pearls will appear after you answer.</p></aside>`}
    </div>`;
  $('choices').onclick=ev=>{const btn=ev.target.closest('[data-choice]');if(btn)answerPractice(bank,n,btn.dataset.choice)};
  const move=(delta)=>{sess.cursor=Math.max(0,Math.min(idx+delta,stats.total-1));save();renderPractice();window.scrollTo({top:130,behavior:'instant'});};
@@ -295,8 +295,122 @@ function renderPracticeResults(){
  route={practiceResults:true};
  const sess=state.practice;
  if(!sess?.order?.length){renderPractice();return;}
- const entries=sess.order.map(id=>practiceEntry(id)).filter(Boolean).map(item=>({q:item.q,answer:sess.answers?.[item.id]}));
+ const entries=sess.order.map(id=>practiceEntry(id)).filter(Boolean).map(item=>({q:item.q,bank:item.bank,answer:sess.answers?.[item.id]}));
  $('app').innerHTML=buildResultMarkup({title:'Specialty Mix · Results',subtitle:`${entries.length} randomised questions · ${safe((sess.selected||[]).map(studyGroupName).join(', '))}`,entries,backHref:'?practice=1',backText:'Back to practice',reviewHref:'?review=1',mode:'practice'});
+}
+
+function searchPanel(bank=null){
+ const bankMode=Number.isInteger(bank);
+ return `<section class="garden-search" aria-label="Search answered questions">
+ <div class="garden-search-heading"><span aria-hidden="true">🔎</span><div><strong>Find something you've learned</strong><p>Search questions, answers, explanations and clinical pearls you've already attempted.</p></div></div>
+ <div class="garden-search-controls"><label class="sr-only" for="studySearchInput">Search answered questions and explanations</label>
+  <input id="studySearchInput" type="search" autocomplete="off" maxlength="120" placeholder="e.g. hyperkalaemia, pre-eclampsia, shock…">
+  ${bankMode?`<label class="sr-only" for="studySearchScope">Search scope</label><select id="studySearchScope"><option value="bank" selected>Within this bank</option><option value="all">All banks</option></select>`:''}
+  <button type="button" class="garden-search-clear" id="studySearchClear">Clear</button>
+ </div><div class="garden-search-results" id="studySearchResults" aria-live="polite" hidden></div>
+ </section>`;
+}
+
+function searchPreview(value,word){
+ const raw=String(value??''),low=raw.toLocaleLowerCase(),idx=low.indexOf(word);
+ if(idx<0)return safe(raw.slice(0,156))+(raw.length>156?'…':'');
+ const start=Math.max(0,idx-59),end=Math.min(raw.length,idx+word.length+100);
+ return (start?'…':'')+safe(raw.slice(start,idx))+'<mark>'+safe(raw.slice(idx,idx+word.length))+'</mark>'+safe(raw.slice(idx+word.length,end))+(end<raw.length?'…':'');
+}
+
+function searchAttempted(term,scopeBank=null){
+ const query=String(term||'').trim().toLocaleLowerCase();
+ if(!query)return[];
+ const attempted=new Set();
+ for(const [bank,answers] of Object.entries(state.banks||{})){
+  for(const [n,answer] of Object.entries(answers||{}))if(answer)attempted.add(idOf(bank,n));
+ }
+ for(const [id,answer] of Object.entries(state.practice?.answers||{}))if(answer)attempted.add(id);
+ const results=[];
+ for(const bm of manifest.banks){
+  if(scopeBank!==null&&bm.id!==scopeBank)continue;
+  for(const q of bankData[bm.id]||[]){
+   const id=idOf(bm.id,q.n);if(!attempted.has(id))continue;
+   const fields=[
+    {label:'Clinical scenario',value:q.stem},
+    {label:'Question',value:q.ask},
+    {label:'Specialty',value:q.domain},
+    ...q.options.map((v,i)=>({label:'Answer option '+ABC[i],value:v})),
+    ...(q.explanations||[]).map((v,i)=>({label:'Explanation '+ABC[i],value:v})),
+    {label:'Exam pearl',value:q.pearl},{label:'Scenario change',value:q.pivot}
+   ];
+   const hits=fields.filter(x=>String(x.value||'').toLocaleLowerCase().includes(query));
+   if(!hits.length)continue;
+   const best=hits.find(x=>x.label==='Clinical scenario')||hits.find(x=>x.label==='Question')||hits[0];
+   results.push({bank:bm.id,n:q.n,title:q.stem,where:best.label,excerpt:best.value,matchCount:hits.length});
+  }
+ }
+ return results;
+}
+
+function renderSearchMatches(root,items,query,limit=20){
+ if(!root)return;
+ root.hidden=false;
+ if(!items.length){root.innerHTML='<p class="garden-search-empty">No matches in your attempted questions yet. 🌱 Try another keyword.</p>';return;}
+ const shown=items.slice(0,limit);
+ root.innerHTML=`<p class="garden-search-count">${items.length} matching question${items.length===1?'':'s'} from your attempted work</p><div class="garden-search-matches">${shown.map(item=>`<a class="garden-search-match" href="?bank=${item.bank}&question=${item.n}">
+ <span class="garden-search-match-top"><b>Bank ${item.bank} · Q${item.n}</b><span>${safe(item.where)}</span></span>
+ <span class="garden-search-match-stem">${safe(String(item.title||'Clinical scenario').slice(0,140))}${String(item.title||'').length>140?'…':''}</span>
+ <span class="garden-search-excerpt">${searchPreview(item.excerpt,query)}</span></a>`).join('')}</div>${items.length>limit?`<button type="button" class="garden-show-more" id="searchShowMore">Show ${Math.min(20,items.length-limit)} more results ↓</button>`:''}`;
+ if(items.length>limit)$('searchShowMore').onclick=()=>renderSearchMatches(root,items,query,limit+20);
+}
+
+function wireStudySearch(bank=null){
+ const input=$('studySearchInput'),results=$('studySearchResults');
+ if(!input||!results)return;
+ let requestId=0;
+ const run=async()=>{
+  const request=++requestId,word=input.value.trim().toLocaleLowerCase();
+  if(!word){results.hidden=true;results.innerHTML='';return;}
+  if(word.length<2){results.hidden=false;results.innerHTML='<p class="garden-search-empty">Type at least two characters to search. 🌷</p>';return;}
+  results.hidden=false;results.innerHTML='<p class="garden-search-empty">Searching your attempted questions…</p>';
+  try{
+   const scope=bank!==null&&$('studySearchScope')?.value==='bank'?bank:null;
+   if(scope===null)await ensureAllBanks();
+   if(request!==requestId||$('studySearchInput')!==input)return;
+   renderSearchMatches(results,searchAttempted(word,scope),word);
+  }catch(e){
+   if(request===requestId)results.innerHTML='<p class="garden-search-empty">Search is unavailable right now. Please try again.</p>';
+  }
+ };
+ input.oninput=run;
+ const selector=$('studySearchScope');if(selector)selector.onchange=run;
+ $('studySearchClear').onclick=()=>{input.value='';run();input.focus();};
+}
+
+function bookmarksPanel(){
+ const count=Object.values(state.bookmarks||{}).filter(Boolean).length;
+ return `<section class="bookmark-garden" aria-label="Your bookmarked questions"><div class="bookmark-heading"><div><div class="eyebrow">SAVED FOR LATER ✿</div><h2>⭐ Your bookmarked questions</h2><p>Keep tricky or important clinical scenarios close at hand.</p></div><span class="bookmark-total">${count} saved</span></div>
+ <div id="bookmarkGardenList"><p class="small">Gathering your saved flowers… 🌷</p></div></section>`;
+}
+
+async function hydrateBookmarks(){
+ const root=$('bookmarkGardenList');if(!root)return;
+ try{
+  await ensureAllBanks();
+  if(root!==$('bookmarkGardenList'))return;
+  const entries=Object.entries(state.bookmarks||{}).filter(([,v])=>!!v).map(([id])=>{
+   const [bank,n]=id.split(':').map(Number);
+   if(!Number.isInteger(bank)||!Number.isInteger(n))return null;
+   const q=bankData[bank]?.find(q=>q.n===n);
+   return q?{bank,n,q,attempted:!!(state.banks[bank]||{})[n]||!!state.practice?.answers?.[id]}:null;
+  }).filter(Boolean).sort((a,b)=>a.bank-b.bank||a.n-b.n);
+  if(!entries.length){root.innerHTML='<div class="bookmark-empty">🌼 No bookmarks yet. Tap <b>☆ Bookmark</b> beside any question to collect it here.</div>';return;}
+  const show=(all=false)=>{
+   const limit=all?entries.length:Math.min(8,entries.length);
+   root.innerHTML=`<div class="bookmark-rows">${entries.slice(0,limit).map(e=>`<a class="bookmark-row" href="?bank=${e.bank}&question=${e.n}">
+    <span class="bookmark-row-label">⭐ Bank ${e.bank} · Q${e.n}</span><span class="bookmark-row-text">${safe(String(e.q.stem).slice(0,124))}${e.q.stem.length>124?'…':''}</span>
+    <span class="bookmark-row-right">${e.attempted?'Answered':'Not answered'} <span aria-hidden="true">↗</span></span>
+   </a>`).join('')}</div>${entries.length>8?`<button type="button" class="bookmark-more" id="bookmarkExpand">${all?'Show fewer':'Show all '+entries.length+' bookmarks'} ↓</button>`:''}`;
+   if(entries.length>8)$('bookmarkExpand').onclick=()=>show(!all);
+  };
+  show();
+ }catch(e){if(root===$('bookmarkGardenList'))root.innerHTML='<p class="small">Could not load bookmarks right now. Please refresh to try again.</p>';}
 }
 
 function renderHome(){route={};
@@ -309,28 +423,48 @@ function renderHome(){route={};
  const nextBankButton=nextBank
   ? `<a class="btn soft" href="${url(nextBank.id)}" target="_blank" rel="noopener">${nextBank.emoji} ${nextAttempts?'Continue':'Start'} Bank ${nextBank.id} ↗</a>`
   : `<a class="btn soft" href="?review=1">🎉 All banks attempted — Review mistakes ↗</a>`;
- $('app').innerHTML=`<section class="hero"><div class="eyebrow">YOUR LITTLE MED SCHOOL SANCTUARY ✿</div><h1>Grow your clinical confidence, one question at a time. 🌷</h1><p>${manifest.banks.length} banks of original Monash-inspired clinical scenarios, instant feedback, and explanations that teach you how to distinguish the tempting alternatives.</p><div class="flex"><a class="btn" href="?review=1">🌿 Open Wrong Answers Garden (${pending()})</a>${nextBankButton}</div></section>${overview()}${practicePicker()}${section('Choose your question garden','<span class="small">Each opens in a new browser tab ↗</span>')}<div class="tiles">${manifest.banks.map(tile).join('')}</div>${backupPanel()}<div class="notice">These are <b>unofficial, original educational questions</b>, not faculty questions. Clinical management should always follow local protocols and senior supervision.</div>`;wireBackupPanel();updateBadge();hydratePracticePicker();}
-async function getBank(b){if(!bankData[b]){const resp=await fetch('bank'+b+'.json',{cache:'no-cache'});if(!resp.ok)throw new Error('Could not fetch Bank '+b);bankData[b]=await resp.json();}return bankData[b];}
+ $('app').innerHTML=`<section class="hero"><div class="eyebrow">YOUR LITTLE MED SCHOOL SANCTUARY ✿</div><h1>Grow your clinical confidence, one question at a time. 🌷</h1><p>${manifest.banks.length} banks of original Monash-inspired clinical scenarios, instant feedback, and explanations that teach you how to distinguish the tempting alternatives.</p><div class="flex"><a class="btn" href="?review=1">🌿 Open Wrong Answers Garden (${pending()})</a>${nextBankButton}</div></section>${searchPanel()}${overview()}${section('Choose your question garden','<span class="small">Each opens in a new browser tab ↗</span>')}<div class="tiles">${manifest.banks.map(tile).join('')}</div>${practicePicker()}${bookmarksPanel()}${backupPanel()}<div class="notice">These are <b>unofficial, original educational questions</b>, not faculty questions. Clinical management should always follow local protocols and senior supervision.</div>`;wireBackupPanel();updateBadge();wireStudySearch();hydrateBookmarks();hydratePracticePicker();}
+const bankLoading={};
+async function getBank(b){
+ if(bankData[b])return bankData[b];
+ if(!bankLoading[b])bankLoading[b]=(async()=>{
+  const resp=await fetch('bank'+b+'.json',{cache:'no-cache'});
+  if(!resp.ok)throw new Error('Could not fetch Bank '+b);
+  const data=await resp.json();
+  if(!Array.isArray(data))throw new Error('Invalid question data in Bank '+b);
+  bankData[b]=data;return data;
+ })().catch(error=>{delete bankLoading[b];throw error;});
+ return bankLoading[b];
+}
 function answeredStatus(b){const a=state.banks[b]||{};return {attempted:Object.keys(a).length,correct:Object.values(a).filter(x=>x.correct).length};}
 function filteredQuestions(b){const all=bankData[b]||[];return all.filter(q=>{if(domain!=='all'&&q.domain!==domain)return false;const answer=(state.banks[b]||{})[q.n];const rid=idOf(b,q.n);if(filter==='unanswered')return !answer;if(filter==='wrong')return answer&&!answer.correct;if(filter==='bookmarks')return !!state.bookmarks[rid];return true;});}
 function optionHtml(q,selected,review=false){return q.options.map((option,i)=>{const letter=ABC[i],correct=letter===q.key,isSelected=letter===selected;let cls='choice';if(selected){if(correct)cls+=' true';if(isSelected)cls+=correct?' selected correct':' selected incorrect';}return `<button type="button" class="${cls}" data-choice="${letter}" ${selected?'disabled':''}><span class="letter">${letter}</span><span>${safe(option)}</span></button>`;}).join('');}
 function explHtml(q){return `<details class="answer" ${''}><summary>📖 Reveal teaching explanation and exam pearls</summary><div class="answer-body"><p><b>Correct answer: ${safe(q.key)} — ${safe(q.options[ABC.indexOf(q.key)])}</b></p>${q.options.map((o,i)=>`<div class="explainline ${ABC[i]===q.key?'is-correct':''}"><b>${ABC[i]}. ${ABC[i]===q.key?'✓ Correct':'Why not'}:</b> ${safe(q.explanations?.[i]||'Review this option against the key features.')}</div>`).join('')}${q.pearl?`<div class="pearl">💡 <b>Exam pearl:</b> ${safe(q.pearl)}</div>`:''}${q.pivot?`<div class="pivot">🔄 <b>What would change the answer?</b> ${safe(q.pivot)}</div>`:''}</div></details>`;}
-function learningNotes(q,anchorId='learningNotes'){
- const keyIndex=ABC.indexOf(q.key);
+function learningNotes(q,anchorId='learningNotes',selected=null){
+ const keyIndex=ABC.indexOf(q.key),selectedIndex=ABC.indexOf(selected);
  const options=q.options||[];
  const good=options[keyIndex]||'';
- const rationale=q.explanations?.[keyIndex]||'The decisive clue favours this single best answer.';
- const others=options.map((option,i)=>{
-  if(i===keyIndex)return '';
-  return `<div class="learning-alternative"><div class="learning-option-head"><span class="learning-letter">${ABC[i]}</span><strong>${safe(option)}</strong></div><p>${safe(q.explanations?.[i]||'This alternative does not best fit the decisive clinical finding.')}</p></div>`;
+ const rationale=q.explanations?.[keyIndex]||'Review the decisive clinical clue that supports this answer.';
+ const wrong=selectedIndex>=0&&selectedIndex!==keyIndex;
+ const otherOptions=options.map((option,i)=>{
+  if(i===keyIndex||(wrong&&i===selectedIndex))return '';
+  return `<div class="learning-alternative"><div class="learning-option-head"><span class="learning-letter">${ABC[i]}</span><strong>${safe(option)}</strong></div><p>${safe(q.explanations?.[i]||'Compare this option with the decisive features of the scenario.')}</p></div>`;
  }).join('');
  return `<aside class="learning-card" id="${safe(anchorId)}" aria-label="Clinical reasoning notes">
- <div class="learning-header"><span aria-hidden="true">🌷</span><div><div class="learning-eyebrow">YOUR LEARNING NOTES</div><h2>Understand the <em>why</em></h2></div></div>
- <div class="learning-section learning-correct"><div class="learning-tag">✓ The best answer</div><h3>${safe(q.key)}. ${safe(good)}</h3><p>${safe(rationale)}</p></div>
- <div class="learning-section"><h3 class="learning-section-title">🔎 Why the other answers lose</h3><div class="learning-alternatives">${others}</div></div>
- ${q.pearl?`<div class="learning-section learning-pearl"><h3>💡 Remember this principle</h3><p>${safe(q.pearl)}</p></div>`:''}
- ${q.pivot?`<div class="learning-section learning-pivot"><h3>🔄 If the scenario changed…</h3><p>${safe(q.pivot)}</p></div>`:''}
- <p class="learning-footer">Read the reasoning, then try explaining the answer aloud before moving on. ♡</p>
+  <div class="learning-header"><span aria-hidden="true">🌷</span><div><div class="learning-eyebrow">YOUR LEARNING NOTES</div><h2>Understand the <em>why</em></h2></div></div>
+  ${wrong?`<div class="learning-missed-choice">
+   <div class="learning-missed-heading">↻ Let's unpack your answer</div>
+   <h3>You chose ${safe(selected)}. ${safe(options[selectedIndex])}</h3>
+   <div class="learning-missed-details"><b>Why this wasn't the best choice</b><p>${safe(q.explanations?.[selectedIndex]||'This option does not best account for the key finding in this particular case.')}</p></div>
+   <div class="learning-missed-details"><b>Why ${safe(q.key)} is better here</b><p>${safe(rationale)}</p></div>
+   ${q.pearl?`<div class="learning-missed-takeaway"><b>💡 The distinction to remember</b><p>${safe(q.pearl)}</p></div>`:''}
+   </div>`:''}
+  <div class="learning-section learning-correct"><div class="learning-tag">✓ The best answer</div><h3>${safe(q.key)}. ${safe(good)}</h3><p>${safe(rationale)}</p></div>
+  ${otherOptions?`<div class="learning-section"><h3 class="learning-section-title">🔎 Why the other options are less suitable</h3><div class="learning-alternatives">${otherOptions}</div></div>`:''}
+  ${q.pearl&&!wrong?`<div class="learning-section learning-pearl"><h3>💡 Remember this principle</h3><p>${safe(q.pearl)}</p></div>`:''}
+  ${q.management?.steps?.length?`<div class="learning-section management-guide"><h3>🩺 Practical management — what to do</h3><p class="management-intro">Use this as a study sequence; assess clinical severity and follow your hospital's current protocols and senior advice.</p><ol>${q.management.steps.map(step=>`<li><strong>${safe(step[0])}</strong><span>${safe(step[1])}</span></li>`).join('')}</ol>${q.management.safety?`<div class="management-safety"><b>⚠ Safety / escalation</b><p>${safe(q.management.safety)}</p></div>`:''}${q.management.local?`<p class="management-local">${safe(q.management.local)}</p>`:''}</div>`:''}
+  ${q.pivot?`<div class="learning-section learning-pivot"><h3>🔄 When would the answer change?</h3><p>${safe(q.pivot)}</p></div>`:''}
+  <p class="learning-footer">${wrong?'Review the distinction, then try explaining it in your own words. ♡':'Understand the principle, then move on when you are ready. ♡'}</p>
  </aside>`;
 }
 const PRACTICE_TOPICS=[{"id":"medicine","name":"Medicine","icon":"🫀","help":"Cardiac, respiratory, renal, endocrine & infection"},{"id":"surgery","name":"Surgery","icon":"🩺","help":"GI, general surgery & perioperative care"},{"id":"obgyn","name":"O&G","icon":"🌸","help":"Pregnancy, childbirth & gynaecology"},{"id":"paeds","name":"Paediatrics","icon":"🧸","help":"Children and newborns"},{"id":"psychiatry","name":"Psychiatry","icon":"🧠","help":"Mental health & addictions"},{"id":"gp","name":"GP & Ethics","icon":"🌿","help":"Primary care, prescribing, screening & ethics"},{"id":"emergency","name":"Emergency","icon":"🚑","help":"Urgent decisions & resuscitation"},{"id":"neurology","name":"Neurology","icon":"🧬","help":"Brain, spine, stroke & nervous system"},{"id":"msk","name":"Eyes, ENT & MSK","icon":"👁️","help":"Eye, ear, orthopaedics & anatomy"},{"id":"integrated","name":"Mixed clinical","icon":"✨","help":"Interdisciplinary reasoning"}];
@@ -357,8 +491,8 @@ function primaryStudyGroup(domain){
 function studyGroupName(id){return PRACTICE_TOPICS.find(g=>g.id===id)?.name||id;}
 function bankFinishActions(bank){
  return `<section class="bank-finish-actions" id="bankFinishActions" aria-label="Bank finished">
-  <div class="bank-finish-copy"><span class="bank-finish-flower">🌷</span><div><strong>You've completed Bank ${bank}!</strong><p>Your answers are saved. Ready to see what you learned?</p></div></div>
-  <div class="bank-finish-buttons"><a class="btn soft" href="./">⌂ Return Home</a><a class="btn" href="?results=${bank}">📊 View Result Analysis →</a></div>
+  <div class="bank-finish-copy"><span class="bank-finish-flower">🎉</span><div><strong>Last question answered — Bank ${bank} complete!</strong><p>Your score and specialty-by-specialty analysis are ready on the next page. 🌷</p></div></div>
+  <div class="bank-finish-buttons"><a class="btn soft" href="./">⌂ Return Home</a><a class="btn bank-analysis-primary" href="?results=${bank}">📊 View Analysis →</a></div>
  </section>`;
 }
 function buildResultMarkup({title,subtitle,entries,backHref,backText,reviewHref,mode}){
@@ -367,43 +501,77 @@ function buildResultMarkup({title,subtitle,entries,backHref,backText,reviewHref,
  const byGroup=new Map();
  for(const e of entries){
   const name=studyGroupName(primaryStudyGroup(e.q.domain));
-  if(!byGroup.has(name))byGroup.set(name,{name,count:0,correct:0,wrong:0});
-  const row=byGroup.get(name);row.count++;
-  if(e.answer?.correct)row.correct++;else if(e.answer)row.wrong++;
+  if(!byGroup.has(name))byGroup.set(name,{name,count:0,attempted:0,correct:0,wrong:0});
+  const group=byGroup.get(name);group.count++;
+  if(e.answer){group.attempted++;if(e.answer.correct)group.correct++;else group.wrong++;}
  }
- const groups=[...byGroup.values()].sort((a,b)=>a.name.localeCompare(b.name));
- const rated=groups.filter(x=>x.count>=2);
- const strongest=[...rated].sort((a,b)=>b.correct/b.count-a.correct/a.count||b.count-a.count)[0];
- const focus=[...rated].sort((a,b)=>a.correct/a.count-b.correct/b.count||b.wrong-a.wrong)[0];
- const rows=groups.map(g=>{
-  const percent=Math.round(g.correct/g.count*100);
-  return `<div class="result-domain-row"><div class="result-domain-heading"><span>${safe(g.name)} <small>${g.count} questions</small></span><strong>${g.correct}/${g.count} · ${percent}%</strong></div><div class="result-domain-track"><span style="width:${percent}%"></span></div></div>`;
+ const groups=[...byGroup.values()].sort((a,b)=>b.attempted-a.attempted||a.name.localeCompare(b.name));
+ const rated=groups.filter(g=>g.attempted>=2);
+ const strongest=[...rated].sort((a,b)=>b.correct/b.attempted-a.correct/a.attempted||b.attempted-a.attempted)[0];
+ const focus=[...rated].filter(g=>g.wrong>0).sort((a,b)=>a.correct/a.attempted-b.correct/b.attempted||b.wrong-a.wrong)[0];
+ const wrongEntries=entries.filter(e=>e.answer&&!e.answer.correct);
+ const groupRows=groups.map(g=>{
+  const percent=g.attempted?Math.round(g.correct/g.attempted*100):0;
+  return `<div class="analysis-domain">
+    <div class="analysis-domain-main"><span>${safe(g.name)} <small>${g.attempted} attempted${g.count>g.attempted?` / ${g.count} available`:''}</small></span>
+    <strong>${g.attempted?`${g.correct}/${g.attempted} · ${percent}%`:'Not attempted'}</strong></div>
+    <div class="result-domain-track"><span style="width:${percent}%"></span></div>
+  </div>`;
  }).join('');
- const praise=complete?'🌷 A whole bank of practice, completed.':'🌱 Your progress so far';
- const advice=missed?`You have <strong>${missed} question${missed===1?'':'s'}</strong> worth revisiting. Read their explanations and try them again in your Wrong Answers Garden.`:'No incorrect answers recorded in this set — lovely work!';
- const focusHtml=focus&&focus.wrong?`<p>📚 <b>Suggested revision focus:</b> ${safe(focus.name)} (${focus.correct}/${focus.count} correct). Review the decisive clinical clues and the common distractors.</p>`:'<p>Keep revising across specialties to strengthen your clinical reasoning.</p>';
+ const wrongCards=wrongEntries.slice(0,6).map(e=>{
+  const q=e.q,answer=e.answer,link=Number.isInteger(e.bank)?`?bank=${e.bank}&question=${q.n}`:backHref;
+  const chosen=q.options?.[ABC.indexOf(answer.choice)]||'';
+  return `<a class="analysis-review-item" href="${link}">
+   <div class="analysis-review-top"><span>Bank ${safe(e.bank??'—')} · Q${safe(q.n)}</span><span>${safe(studyGroupName(primaryStudyGroup(q.domain)))}</span></div>
+   <strong>${safe(String(q.stem||'').slice(0,150))}${String(q.stem||'').length>150?'…':''}</strong>
+   <span class="analysis-review-choice">Your choice: ${safe(answer.choice||'?')}${chosen?' · '+safe(String(chosen).slice(0,65)):''}</span>
+   <span class="analysis-review-open">Review explanation ↗</span>
+  </a>`;
+ }).join('');
+ const advice=focus?`<p><b>First priority:</b> ${safe(focus.name)} — ${focus.correct}/${focus.attempted} correct from your attempted questions. Revisit the clinical clues that distinguish the best answer.</p>`
+   :`<p>${missed?'Review your incorrect answers to strengthen the clinical reasoning.':'No incorrect answers recorded in this session. Keep challenging yourself with unfamiliar scenarios.'}</p>`;
  return `<div class="results-page">
-   <div class="results-breadcrumb"><a href="${backHref}">← ${safe(backText)}</a><a href="./">⌂ Home</a></div>
-   <section class="results-hero">
-    <div class="results-overline">YOUR STUDY GARDEN · ${complete?'COMPLETED':'IN PROGRESS'} ✿</div>
-    <h1>🌷 ${safe(title)}</h1>
-    <p>${safe(subtitle)}</p>
-    <div class="results-hero-core"><div class="results-ring" style="--score-angle:${pct*3.6}deg"><div><strong>${pct}%</strong><small>${complete?'Final accuracy':'Accuracy so far'}</small></div></div>
-    <div class="results-overview"><strong>${correct} out of ${answered} correct</strong><p>${praise}</p><div class="results-pills"><span>✓ ${correct} correct</span><span>↻ ${missed} to review</span>${complete?'':`<span>⏳ ${n-answered} unanswered</span>`}</div></div></div>
+   <nav class="results-breadcrumb" aria-label="Results navigation"><a href="${backHref}">← ${safe(backText)}</a><a href="./">⌂ Home</a></nav>
+   <section class="results-hero" aria-label="Results summary">
+    <div class="results-overline">YOUR STUDY GARDEN · ${complete?'SESSION COMPLETE':'PROGRESS SO FAR'} ✿</div>
+    <h1>🌷 ${safe(title)}</h1><p>${safe(subtitle)}</p>
+    <div class="results-hero-core"><div class="results-ring" style="--score-angle:${pct*3.6}deg"><div><strong>${pct}%</strong><small>First-attempt accuracy</small></div></div>
+     <div class="results-overview"><strong>${correct} of ${answered} correct</strong><p>${complete?'A lovely milestone — keep understanding the why behind each answer.':'Results are calculated only from the questions you have answered.'}</p>
+      <div class="results-pills"><span>✓ ${correct} correct</span><span>↻ ${missed} incorrect</span><span>${answered}/${n} attempted</span></div></div>
+    </div>
    </section>
-   <section class="results-breakdown"><div class="results-section-heading"><h2>📊 Specialty breakdown</h2><p>Find your strengths and your next revision priorities.</p></div><div class="results-domains">${rows}</div></section>
-   <section class="results-insights"><div class="results-section-heading"><h2>💡 What to work on next</h2></div>
-    ${strongest?`<p>🌼 <b>Strongest area:</b> ${safe(strongest.name)} (${strongest.correct}/${strongest.count} correct).</p>`:''}
-    ${focusHtml}<p>${advice}</p>
+   <nav class="analysis-sections" aria-label="Analysis sections">
+    <a href="#specialtyBreakdown">📊 By specialty</a><a href="#revisionPlan">🎯 Revision priorities</a><a href="#missedQuestions">🌿 Missed questions</a>
+   </nav>
+   <section id="specialtyBreakdown" class="results-breakdown"><div class="results-section-heading"><h2>📊 Performance by specialty</h2><p>Scores reflect attempted questions only; unattempted questions never count as incorrect.</p></div><div class="results-domains">${groupRows}</div></section>
+   <section id="revisionPlan" class="results-insights"><div class="results-section-heading"><h2>🎯 Your next revision steps</h2><p>Use these to decide what to practise next, rather than just chasing a percentage.</p></div>
+    <div class="analysis-insight-grid">
+     <div class="analysis-insight"><span class="analysis-insight-icon">💪</span><h3>What is going well</h3><p>${strongest?`${safe(strongest.name)} — ${strongest.correct}/${strongest.attempted} correct (${Math.round(strongest.correct/strongest.attempted*100)}%).`:'Finish at least two questions in a specialty to identify a meaningful trend.'}</p></div>
+     <div class="analysis-insight"><span class="analysis-insight-icon">🌱</span><h3>Where to focus</h3>${advice}</div>
+    </div>
+    <p class="analysis-sample-note">Small sample sizes can make specialty percentages swing considerably. Review why you missed individual scenarios as well as the score.</p>
    </section>
-   <div class="results-actions"><a class="btn soft" href="./">⌂ Return Home</a><a class="btn soft" href="${reviewHref}">🌿 Wrong Answers Garden</a><a class="btn" href="${backHref}">${mode==='practice'?'↻ Back to practice':'← Back to Bank'}</a></div>
+   <section id="missedQuestions" class="results-breakdown analysis-mistakes"><div class="results-section-heading"><h2>🌿 Questions worth revisiting</h2>
+    <p>${wrongEntries.length?`${wrongEntries.length} incorrect first attempt${wrongEntries.length===1?'':'s'}. Tap any card to revisit its teaching notes.`:'No incorrect answers in this set so far.'}</p></div>
+    ${wrongEntries.length?`<div class="analysis-review-list">${wrongCards}</div>${wrongEntries.length>6?`<p class="analysis-more-notice">Showing 6 of ${wrongEntries.length}. Open Wrong Answers Garden for your full review list.</p>`:''}`:'<div class="bookmark-empty">🌼 Keep practising — the trickiest cases often teach us the most.</div>'}
+   </section>
+   <div class="results-actions"><a class="btn" href="${backHref}">${mode==='practice'?'↻ Back to practice':'← Back to bank'}</a><a class="btn soft" href="${reviewHref}">🌿 Wrong Answers Garden</a><a class="btn soft" href="./">⌂ Return Home</a></div>
  </div>`;
 }
 function renderBankResults(bank){
  const bm=manifest.banks.find(x=>x.id===bank),qs=bankData[bank];
  if(!bm||!qs){$('app').innerHTML='<div class="empty">Bank not found.</div>';return;}
  route={results:bank};
- $('app').innerHTML=buildResultMarkup({title:`Bank ${bank} · ${bm.name}`,subtitle:`${qs.length} questions · First-attempt results and study priorities`,entries:qs.map(q=>({q,answer:(state.banks[bank]||{})[q.n]})),backHref:url(bank),backText:`Back to Bank ${bank}`,reviewHref:`?review=1&bank=${bank}`,mode:'bank'});
+ $('app').innerHTML=buildResultMarkup({title:`Bank ${bank} · ${bm.name}`,subtitle:`${qs.length} questions · First-attempt results and study priorities`,entries:qs.map(q=>({q,bank,answer:(state.banks[bank]||{})[q.n]})),backHref:url(bank),backText:`Back to Bank ${bank}`,reviewHref:`?review=1&bank=${bank}`,mode:'bank'});
+}
+function jumpToBankQuestion(bank,number){
+ const set=bankData[bank]||[],n=Number(number),index=set.findIndex(q=>q.n===n);
+ if(!Number.isInteger(n)||index<0)return false;
+ // A direct jump always reveals the requested question, even if a filter hides it.
+ filter='all';domain='all';cursor=index;
+ renderBank();
+ window.scrollTo({top:120,behavior:'instant'});
+ return true;
 }
 function renderBank(){const b=route.bank;const bm=manifest.banks.find(x=>x.id===b);if(!bm)return;const qset=bankData[b];if(!qset){$('app').innerHTML='<div class="loading">Opening your questions… 🌷</div>';return;}activeList=filteredQuestions(b);cursor=Math.max(0,Math.min(cursor,activeList.length-1));const q=activeList[cursor],tot=answeredStatus(b);const pct=qset.length?Math.round(tot.attempted*100/qset.length):0;const cats=[...new Set(qset.map(q=>q.domain))].sort();const summary=`${tot.attempted}/${qset.length} answered · ${tot.correct} correct · ${tot.attempted-tot.correct} incorrect`;
  const finished=tot.attempted===qset.length;
@@ -428,8 +596,13 @@ function renderBank(){const b=route.bank;const bm=manifest.banks.find(x=>x.id===
   <span class="small bank-progress-percent"><span id="bankPercent">${pct}%</span> complete</span>
  </div>
  <div class="progress bank-progress"><span id="bankProgressBar" style="width:${pct}%"></span></div>
- </section>${finalSummary}<div class="toolbar bank-toolbar"><div class="flex"><label class="small">Show <select id="filter"><option value="all">All questions</option><option value="unanswered">Unanswered</option><option value="wrong">Original mistakes</option><option value="bookmarks">Bookmarked</option></select></label><label class="small">Specialty <select id="domain"><option value="all">All specialties</option>${cats.map(x=>`<option value="${safe(x)}">${safe(x)}</option>`).join('')}</select></label></div><div class="small">${activeList.length?`${cursor+1} / ${activeList.length} shown`:'No matches'}</div></div>${q?`<div class="learning-layout ${(state.banks[b]||{})[q.n]?'has-notes':''}"><div class="quizbox quiz-question"><div class="meta"><b>Domain:</b> ${safe(q.domain)} &nbsp; · &nbsp; <b>Skillset:</b> ${safe(q.skill||'Clinical reasoning')} &nbsp; · &nbsp; <b>Context:</b> ${safe(q.context||'Clinical')}</div><div class="question-label">EMQ ${q.n}</div><div class="stem">${safe(q.stem)}</div><p class="ask">${safe(q.ask||'Which of the following is the single BEST answer?')}</p><div class="choices" id="choices">${optionHtml(q,(state.banks[b]||{})[q.n]?.choice)}</div>${(state.banks[b]||{})[q.n]?`<div class="feedback ${(state.banks[b][q.n].correct?'yes':'no')}">${state.banks[b][q.n].correct?'✓ Correct — nicely reasoned!':'✗ Not quite. Correct answer: '+q.key+'.'} Your first response is locked.</div>`:``}<div class="navbox"><button class="btn soft" id="prev" ${cursor===0?'disabled':''}>← Previous</button><button class="btn rose" id="bookmark">${state.bookmarks[idOf(b,q.n)]?'★ Bookmarked':'☆ Bookmark'}</button><button class="btn" id="next" ${cursor===activeList.length-1&&!canJumpToUnanswered?'disabled':''}>${canJumpToUnanswered?'Find unanswered →':'Next →'}</button></div>${finished&&cursor===activeList.length-1?bankFinishActions(b):''}</div>${(state.banks[b]||{})[q.n]?learningNotes(q):`<aside class="learning-card learning-placeholder" aria-label="Learning notes preview"><div class="learning-placeholder-emoji" aria-hidden="true">🌷</div><h2>Learning notes will bloom here</h2><p>Choose your answer and explore the <b>clinical reasoning</b>, why the alternatives lose, and the principles worth remembering.</p></aside>`}</div>`:`<div class="empty">No questions here 🌷 Try another filter.</div>`}`;
+ </section>${finalSummary}${searchPanel(b)}<div class="toolbar bank-toolbar"><div class="flex"><label class="small">Show <select id="filter"><option value="all">All questions</option><option value="unanswered">Unanswered</option><option value="wrong">Original mistakes</option><option value="bookmarks">Bookmarked</option></select></label><label class="small">Specialty <select id="domain"><option value="all">All specialties</option>${cats.map(x=>`<option value="${safe(x)}">${safe(x)}</option>`).join('')}</select></label></div><div class="bank-jumper"><label for="jumpNumber">Jump to Q</label><input id="jumpNumber" type="number" inputmode="numeric" min="1" max="${qset.length}" value="${q?.n||''}" aria-label="Question number in this bank"><span>/ ${qset.length}</span><button type="button" id="jumpGo" class="bank-jump-btn">Go →</button></div></div>${q?`<div class="learning-layout ${(state.banks[b]||{})[q.n]?'has-notes':''}"><div class="quizbox quiz-question"><div class="meta"><b>Domain:</b> ${safe(q.domain)} &nbsp; · &nbsp; <b>Skillset:</b> ${safe(q.skill||'Clinical reasoning')} &nbsp; · &nbsp; <b>Context:</b> ${safe(q.context||'Clinical')}</div><div class="question-label">EMQ ${q.n}</div><div class="stem">${safe(q.stem)}</div><p class="ask">${safe(q.ask||'Which of the following is the single BEST answer?')}</p><div class="choices" id="choices">${optionHtml(q,(state.banks[b]||{})[q.n]?.choice)}</div>${(state.banks[b]||{})[q.n]?`<div class="feedback ${(state.banks[b][q.n].correct?'yes':'no')}">${state.banks[b][q.n].correct?'✓ Correct — nicely reasoned!':'✗ Not quite. Correct answer: '+q.key+'.'} Your first response is locked.</div>`:``}<div class="navbox"><button class="btn soft" id="prev" ${cursor===0?'disabled':''}>← Previous</button><button class="btn rose" id="bookmark">${state.bookmarks[idOf(b,q.n)]?'★ Bookmarked':'☆ Bookmark'}</button><button class="btn" id="next" ${cursor===activeList.length-1&&!canJumpToUnanswered?'disabled':''}>${canJumpToUnanswered?'Find unanswered →':'Next →'}</button></div>${finished&&cursor===activeList.length-1?bankFinishActions(b):''}</div>${(state.banks[b]||{})[q.n]?learningNotes(q,'learningNotes',(state.banks[b]||{})[q.n].choice):`<aside class="learning-card learning-placeholder" aria-label="Learning notes preview"><div class="learning-placeholder-emoji" aria-hidden="true">🌷</div><h2>Learning notes will bloom here</h2><p>Choose your answer and explore the <b>clinical reasoning</b>, why the alternatives lose, and the principles worth remembering.</p></aside>`}</div>`:`<div class="empty">No questions here 🌷 Try another filter.</div>`}`;
  $('filter').value=filter;$('domain').value=domain;$('filter').onchange=e=>{filter=e.target.value;cursor=0;renderBank()};$('domain').onchange=e=>{domain=e.target.value;cursor=0;renderBank()};
+ wireStudySearch(b);
+ const jumpInput=$('jumpNumber'),jumpAction=()=>{if(!jumpToBankQuestion(b,jumpInput.value)){jumpInput.setCustomValidity('Choose an available question number.');jumpInput.reportValidity();jumpInput.setCustomValidity('');}};
+ if($('jumpGo'))$('jumpGo').onclick=jumpAction;
+ if(jumpInput){jumpInput.oninput=()=>jumpInput.setCustomValidity('');jumpInput.onkeydown=e=>{if(e.key==='Enter'){e.preventDefault();jumpAction();}};}
+
  $('restartBank').onclick=()=>{
    if(!confirm('Restart Bank '+b+'? This will erase all '+tot.attempted+' saved first attempts and reset this bank score to 0. Other banks, bookmarks and your Wrong Answers Garden will remain unchanged. Export a progress backup first if you want to keep this attempt.'))return;
    delete state.banks[b];filter='all';domain='all';cursor=0;save();renderBank();
@@ -437,7 +610,7 @@ function renderBank(){const b=route.bank;const bm=manifest.banks.find(x=>x.id===
  };
  if(!q)return;$('choices').onclick=e=>{const choice=e.target.closest('[data-choice]');if(choice)updateProgress(b,q.n,choice.dataset.choice)};$('prev').onclick=()=>{cursor--;renderBank();window.scrollTo({top:120,behavior:'smooth'})};$('next').onclick=()=>{if(canJumpToUnanswered){filter='all';domain='all';cursor=qset.findIndex(x=>!(state.banks[b]||{})[x.n]);}else cursor++;renderBank();window.scrollTo({top:120,behavior:'smooth'})};$('bookmark').onclick=()=>{let k=idOf(b,q.n);state.bookmarks[k]=!state.bookmarks[k];save();renderBank()};}
 async function ensureAllBanks(){await Promise.all(manifest.banks.map(x=>getBank(x.id)));}
-function reviewChoice(card,r,q){const answer=r.currentAnswer;return `<div class="choices">${q.options.map((o,i)=>{const letter=ABC[i];let cls='choice';if(answer){if(letter===q.key)cls+=' true';if(letter===answer)cls+=answer===q.key?' selected correct':' selected incorrect';}return `<button class="${cls}" data-review-choice="${letter}" data-review-id="${idOf(r.bank,r.n)}" ${answer||r.mastered?'disabled':''}><span class="letter">${letter}</span><span>${safe(o)}</span></button>`;}).join('')}</div>${answer?`<div class="feedback ${answer===q.key?'yes':'no'}">${answer===q.key?'✓ Correct! Added to Mastered.':'✗ Still learning — retry after reviewing the explanation.'}</div>${learningNotes(q,`review-notes-${r.bank}-${r.n}`)}`:''}`;}
+function reviewChoice(card,r,q){const answer=r.currentAnswer;return `<div class="choices">${q.options.map((o,i)=>{const letter=ABC[i];let cls='choice';if(answer){if(letter===q.key)cls+=' true';if(letter===answer)cls+=answer===q.key?' selected correct':' selected incorrect';}return `<button class="${cls}" data-review-choice="${letter}" data-review-id="${idOf(r.bank,r.n)}" ${answer||r.mastered?'disabled':''}><span class="letter">${letter}</span><span>${safe(o)}</span></button>`;}).join('')}</div>${answer?`<div class="feedback ${answer===q.key?'yes':'no'}">${answer===q.key?'✓ Correct! Added to Mastered.':'✗ Still learning — retry after reviewing the explanation.'}</div>${learningNotes(q,`review-notes-${r.bank}-${r.n}`,answer)}`:''}`;}
 let transientReview={};
 function reviewCards(rows){return rows.map(r=>{const q=bankData[r.bank]?.find(x=>x.n===r.n);if(!q)return '';const id=idOf(r.bank,r.n);return `<article class="reviewitem" id="review-${r.bank}-${r.n}"><div class="flex between"><span class="pill">Bank ${r.bank} · EMQ ${r.n}</span><strong class="${r.mastered?'status-mastered':'status-pending'}">${r.mastered?'✓ Mastered':'↻ Needs review'}</strong></div><div class="small">${safe(q.domain)} · ${r.tries||0} review attempt(s)</div><h3>${safe(q.stem)}</h3><p><b>${safe(q.ask||'Choose the single best answer.')}</b></p>${reviewChoice(null,{...r,currentAnswer:transientReview[id]},q)}${!r.mastered?`<div class="flex" style="margin-top:10px"><button class="btn soft" data-retry="${safe(id)}">↻ Clear review selection to try again</button></div>`:''}</article>`;}).join('');}
 function renderReview(){route={review:true};if(!Object.keys(bankData).length){$('app').innerHTML='<p>Loading review data…</p>';return;}const records=recs().sort((a,b)=>(b.firstWrongAt||0)-(a.firstWrongAt||0));const all=records.filter(r=>(reviewFilter==='all'||(reviewFilter==='mastered'?r.mastered:(!r.mastered||!!transientReview[idOf(r.bank,r.n)])))&&(reviewBank==='all'||String(r.bank)===reviewBank));const shown=all.slice(reviewOffset,reviewOffset+8);const mastery=records.filter(r=>r.mastered).length;
@@ -499,7 +672,9 @@ async function boot(){try{const resp=await fetch('manifest.json',{cache:'no-cach
  // Resume from the earliest unanswered EMQ when reopening a bank.
  // Keep the complete bank visible so Previous/Next and old answers remain reviewable.
  filter='all';domain='all';
+ const explicitNumber=Number(params.get('question'));
+ const requested=Number.isInteger(explicitNumber)&&explicitNumber>0?bankData[b].findIndex(q=>q.n===explicitNumber):-1;
  const firstUnanswered=bankData[b].findIndex(q=>!(state.banks[b]||{})[q.n]);
- cursor=firstUnanswered>=0?firstUnanswered:0;
+ cursor=requested>=0?requested:firstUnanswered>=0?firstUnanswered:0;
  renderBank();}else renderHome();updateBadge();}catch(e){$('app').innerHTML='<div class="load-error"><h2>Could not load the Study Garden 😢</h2><p>'+safe(e.message)+'</p><p>If you are opening the site from a downloaded ZIP, this online-ready version needs a web server. Publish it using GitHub Pages or run a local preview server.</p></div>';}}
 boot();
