@@ -4473,19 +4473,19 @@
     "stem": "A 34-year-old woman at 31+2 weeks presents with regular contractions, intact membranes and cervical dilatation 3 cm. There is no fever, bleeding or fetal distress. She has no contraindication to tocolysis.",
     "ask": "Which ONE combination MOST APPROPRIATELY supports fetal outcomes while transfer is arranged?",
     "options": [
-      "Routine elective caesarean section immediately for all preterm labour",
-      "Give oxytocin to accelerate labour",
-      "Prolong pregnancy indefinitely with continuous tocolysis",
-      "Antenatal corticosteroids, consideration of short-course tocolysis and magnesium sulfate for fetal neuroprotection",
-      "Withhold corticosteroids because membranes are intact"
+      "Proceed directly to elective caesarean because contractions began before term.",
+      "Give oxytocin infusion to shorten labour before the planned transfer.",
+      "Maintain continuous tocolysis until 37 weeks regardless of cervical changes.",
+      "Give antenatal steroids, consider short tocolysis and magnesium by protocol.",
+      "Withhold corticosteroids because the membranes have not ruptured."
     ],
     "key": "D",
     "explanations": [
-      "Preterm labour alone does not mandate caesarean delivery.",
-      "Oxytocin counters the aim of gaining steroid benefit.",
-      "Tocolysis is not a durable long-term prevention strategy.",
-      "At 31 weeks, steroids enhance fetal lung maturation, short tocolysis may allow steroid/transfer benefit, and magnesium sulfate may provide neuroprotection under local guidance.",
-      "Intact membranes are not a contraindication to steroids."
+      "Preterm labour in a stable singleton pregnancy is not an automatic indication for caesarean birth; mode of birth depends on maternal and fetal factors.",
+      "Oxytocin augments contractions and can prevent the time needed for neonatal-unit transfer and antenatal corticosteroid benefit.",
+      "Tocolysis is a short-term intervention to gain time for corticosteroids and transport, not a safe or effective means of postponing birth indefinitely.",
+      "At 31+2 weeks with likely preterm birth, antenatal corticosteroids improve neonatal outcomes; short-course tocolysis can help enable therapy/transfer, and magnesium sulfate may be considered for neuroprotection under the local gestation threshold.",
+      "Intact membranes do not remove the indication for antenatal steroids when meaningful preterm-birth risk is present."
     ],
     "pearl": "Tocolysis aims to buy about 48 hours, not to prevent preterm birth indefinitely.",
     "pivot": "If there is chorioamnionitis, major haemorrhage or fetal compromise, tocolysis may be inappropriate and delivery indicated.",
@@ -4514,6 +4514,35 @@
           "check": "Name the specific danger described in the explanation before prescribing; check pregnancy or neonatal context and relevant contraindications."
         }
       ]
+    },
+    "alternate": {
+      "scenario": "The same woman at 31 weeks has fever, uterine tenderness, maternal and fetal tachycardia, and foul-smelling fluid consistent with intra-amniotic infection.",
+      "management": "Do not administer tocolysis; assess for maternal sepsis, promptly give broad-spectrum IV antibiotics and plan birth after initial stabilisation with senior obstetrics and neonatal teams. Antenatal steroids or magnesium must not delay urgently indicated delivery.",
+      "reason": "Suspected intra-amniotic infection makes delaying labour unsafe, even if corticosteroids could otherwise be useful."
+    },
+    "management": {
+      "steps": [
+        [
+          "Confirm and risk-stratify preterm labour",
+          "Assess contractions, cervical change, membranes, maternal vitals, fetal well-being and contraindications to tocolysis; involve obstetrics and neonatal care."
+        ],
+        [
+          "Support fetal lung maturity",
+          "Give antenatal corticosteroids when birth is likely within the recommended window, and plan safe in-utero transfer where possible."
+        ],
+        [
+          "Consider brief delay and neuroprotection",
+          "If safe, consider short-course tocolysis to allow steroid effect/transfer. Queensland guidelines recommend magnesium sulfate before 30+0 weeks and say consider it at 30+0–33+6 weeks when birth is imminent."
+        ],
+        [
+          "Prepare for birth",
+          "Monitor for maternal infection, fetal compromise and progressive labour, and adjust birth mode and neonatal support to clinical circumstances."
+        ]
+      ],
+      "source": {
+        "name": "Queensland Clinical Guidelines — Preterm labour and birth",
+        "url": "https://www.health.qld.gov.au/__data/assets/pdf_file/0019/140149/g-ptl.pdf"
+      }
     }
   },
   {
