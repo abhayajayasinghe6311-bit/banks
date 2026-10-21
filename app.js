@@ -7,7 +7,7 @@ const load=()=>{try{const d=JSON.parse(localStorage.getItem(STORE)||'null');retu
 let state=load(),manifest=null,bankData={},route={},activeList=[],cursor=0,filter='all',domain='all',reviewFilter='pending',reviewBank='all',reviewOffset=0;
 let channel;try{channel=new BroadcastChannel('spaw-garden-online');channel.onmessage=()=>syncUI();}catch(e){}
 function save(){state.updated=Date.now();try{localStorage.setItem(STORE,JSON.stringify(state));}catch(e){showNotice('Browser storage is disabled or full. Export your progress backup to avoid losing answers.');}try{channel?.postMessage({updated:state.updated});}catch(e){}updateBadge();}
-function syncUI(){state=load();updateBadge();if(route.review)renderReview();else if(route.bank)renderBank();else renderHome();}
+function syncUI(){state=load();updateBadge();if(route.review)renderReview();else if(route.bank)renderBank();else if(route.results)renderBankResults(route.results);else if(route.practice)renderPractice();else if(route.practiceResults)renderPracticeResults();else renderHome();}
 window.addEventListener('storage',e=>{if(e.key===STORE)syncUI();});window.addEventListener('focus',()=>{const n=load();if(n.updated>state.updated){state=n;syncUI();}});
 function idOf(b,n){return b+':'+n;}
 function recs(){return Object.values(state.review||{});}function pending(){return recs().filter(r=>!r.mastered).length;}
@@ -39,9 +39,11 @@ function updateProgress(bank,n,choice){
  if($('bankProgressBar'))$('bankProgressBar').style.width=Math.round(status.attempted*100/total)+'%';
  if($('bankPercent'))$('bankPercent').textContent=Math.round(status.attempted*100/total)+'%';
  if($('restartBank'))$('restartBank').disabled=false;
- if(status.attempted===total){
-  const done=document.createElement('div');done.className='bank-finished-note';done.textContent='🌸 Bank completed! Your results are saved — review the explanations or return to the garden.';
-  questionCard.append(done);
+ if(status.attempted===total&&!$('bankFinishActions')){
+  // Add the actions below the question: no reflow above the reader's position.
+  nav?.insertAdjacentHTML('afterend',bankFinishActions(bank));
+  const header=document.querySelector('.bank-title-area');
+  if(header&&!document.querySelector('.bank-results-inline'))header.insertAdjacentHTML('afterend','<div class="bank-results-inline">🌷 Bank complete <a href="?results='+bank+'">View result analysis →</a></div>');
  }
 }
 function retryAnswer(bank,n,choice){const id=idOf(bank,n),q=bankData[bank]?.find(q=>q.n===n);if(!q)return;const r=state.review[id];if(!r||r.mastered)return;r.tries=(r.tries||0)+1;r.lastChoice=choice;r.lastAt=Date.now();if(choice===q.key){r.mastered=true;r.masteredAt=Date.now();}save();renderReview();}
@@ -140,10 +142,163 @@ function applySelectedImport(){
   for(const k of Object.keys(next[field]))if(chosen.has(Number(k.split(':')[0])))delete next[field][k];
   for(const [k,value] of Object.entries(incoming[field]||{}))if(chosen.has(Number(k.split(':')[0])))next[field][k]=value;
  }
+ if(ids.length===manifest.banks.length&&incoming.practice?.version===1)next.practice=incoming.practice;
  state=next;pendingImport=null;transientReview={};save();renderHome();
  alert('Progress restored for '+names+' 🌷\\nAll other banks are unchanged.');
 }
 function showNotice(msg){console.warn(msg);const app=$('app');let n=$('storageNotice');if(!n){n=document.createElement('div');n.id='storageNotice';n.className='notice';app.prepend(n);}n.textContent=msg;}
+function practicePicker(){
+ const s=state.practice;
+ const existing=s&&Array.isArray(s.order)&&s.order.length;
+ const count=existing?Object.keys(s.answers||{}).length:0;
+ return `<section class="practice-builder" aria-label="Custom mixed-specialty practice">
+  <div class="practice-title-row"><div><div class="eyebrow">A GARDEN MADE FOR YOU ✿</div><h2>🦋 Create your own practice mix</h2><p>Choose your specialties, then practise randomly selected clinical scenarios from all ten banks.</p></div><span class="practice-sparkle" aria-hidden="true">🌷✨</span></div>
+  ${existing?`<div class="practice-resume"><div><b>🌱 Your current practice</b><p>${count}/${s.order.length} answered · ${safe((s.selected||[]).map(studyGroupName).join(', '))}</p></div><div class="practice-resume-actions"><a class="btn soft" href="?practice=1">${count===s.order.length?'Revisit questions':'Continue session'} ↗</a>${count===s.order.length?'<a class="btn" href="?practiceResults=1">📊 View results</a>':''}</div></div>`:''}
+  <div id="practiceBuilderBody" class="practice-builder-body"><p class="small">Gathering the specialties in your question garden… 🌼</p></div>
+  <p class="practice-fine">Fresh practice attempts won't change your original bank scores. Incorrect answers still join your Wrong Answers Garden.</p>
+ </section>`;
+}
+
+function practicePool(selected){
+ const allow=new Set(selected),list=[];
+ for(const bm of manifest.banks){
+  for(const q of bankData[bm.id]||[]){
+   if(practiceGroups(q.domain).some(x=>allow.has(x)))list.push(`${bm.id}:${q.n}`);
+  }
+ }
+ return list;
+}
+
+async function hydratePracticePicker(){
+ const root=$('practiceBuilderBody');if(!root)return;
+ try{
+  await ensureAllBanks();
+  if($('practiceBuilderBody')!==root)return;
+  const counts=Object.fromEntries(PRACTICE_TOPICS.map(g=>[g.id,practicePool([g.id]).length]));
+  const boxes=PRACTICE_TOPICS.map(g=>`<label class="practice-topic"><input type="checkbox" value="${g.id}" data-practice-topic><span class="practice-topic-icon">${g.icon}</span><span class="practice-topic-copy"><strong>${safe(g.name)}</strong><small>${safe(g.help)}</small></span><span class="practice-topic-count">${counts[g.id]} Qs</span></label>`).join('');
+  root.innerHTML=`<div class="practice-topic-top"><h3>Pick your specialties</h3><div><button type="button" id="practiceSelectAll" class="practice-link">Select all</button><button type="button" id="practiceClear" class="practice-link">Clear</button></div></div>
+   <div class="practice-topic-grid">${boxes}</div>
+   <div class="practice-setup-row"><label class="practice-length-label">Questions in this session <select id="practiceLength"><option value="20">20 questions</option><option value="40" selected>40 questions</option><option value="80">80 questions</option><option value="all">All matching questions</option></select></label><span class="practice-count" id="practiceAvailable">Select at least one specialty</span><button class="btn" type="button" id="practiceBegin" disabled>🎲 Shuffle & practise</button></div>`;
+  const items=[...root.querySelectorAll('[data-practice-topic]')];
+  const current=()=>items.filter(el=>el.checked).map(el=>el.value);
+  const redraw=()=>{
+   const pool=practicePool(current());
+   $('practiceAvailable').textContent=pool.length?`${pool.length} matching questions available`:'Select at least one specialty';
+   $('practiceBegin').disabled=!pool.length;
+   items.forEach(el=>el.closest('.practice-topic')?.classList.toggle('selected',el.checked));
+  };
+  items.forEach(el=>el.onchange=redraw);
+  $('practiceSelectAll').onclick=()=>{items.forEach(el=>el.checked=true);redraw()};
+  $('practiceClear').onclick=()=>{items.forEach(el=>el.checked=false);redraw()};
+  $('practiceBegin').onclick=()=>{
+   const selection=current(),pool=practicePool(selection);
+   if(!pool.length){alert('Please choose a specialty first. 🌷');return;}
+   const old=state.practice;
+   if(old?.order?.length&&Object.keys(old.answers||{}).length&&!confirm('Start a new specialty mix? This will replace the previous practice session and its results. Your original bank scores will remain safe. You can export an All Banks backup first if you want to preserve the previous session.'))return;
+   for(let i=pool.length-1;i>0;i--){const j=Math.floor(Math.random()*(i+1));[pool[i],pool[j]]=[pool[j],pool[i]];}
+   const size=$('practiceLength').value;
+   const order=size==='all'?pool:pool.slice(0,Math.min(Number(size),pool.length));
+   state.practice={version:1,created:new Date().toISOString(),selected:selection,order,answers:{},cursor:0};
+   save();
+   location.href='?practice=1';
+  };
+  redraw();
+ }catch(e){
+  if($('practiceBuilderBody')===root)root.innerHTML=`<p class="small">Couldn't load the specialties right now. Please refresh the page to try again. ${safe(e.message)}</p>`;
+ }
+}
+
+function practiceEntry(id){
+ const [bank,n]=String(id).split(':').map(Number);
+ const q=bankData[bank]?.find(item=>item.n===n);
+ return q?{id,bank,n,q}:null;
+}
+
+function practiceStats(){
+ const session=state.practice;
+ if(!session?.order?.length)return {attempted:0,correct:0,total:0};
+ const records=Object.values(session.answers||{});
+ return {attempted:records.length,correct:records.filter(x=>x.correct).length,total:session.order.length};
+}
+
+function practiceFinishActions(){
+ return `<section class="bank-finish-actions" id="practiceFinishActions">
+  <div class="bank-finish-copy"><span class="bank-finish-flower">🦋</span><div><strong>You've finished your specialty mix!</strong><p>Take a moment to celebrate what you learned.</p></div></div>
+  <div class="bank-finish-buttons"><a href="./" class="btn soft">⌂ Return Home</a><a href="?practiceResults=1" class="btn">📊 View Result Analysis →</a></div>
+ </section>`;
+}
+
+function answerPractice(bank,n,choice){
+ const session=state.practice,id=idOf(bank,n),q=bankData[bank]?.find(x=>x.n===n);
+ if(!session||!q||session.answers[id])return;
+ session.answers[id]={choice,correct:choice===q.key,at:Date.now()};
+ if(choice!==q.key){
+  const r=state.review[id]||{bank:Number(bank),n,firstChoice:choice,tries:0,lastChoice:null,mastered:false,firstWrongAt:Date.now()};
+  r.mastered=false;state.review[id]=r;
+ }
+ save();
+ const buttons=$('choices'),card=buttons?.closest('.quiz-question'),placeholder=document.querySelector('.learning-placeholder');
+ if(!card||!placeholder){renderPractice();return;}
+ buttons.innerHTML=optionHtml(q,choice);
+ const nav=card.querySelector('.navbox');
+ const ok=choice===q.key;
+ nav?.insertAdjacentHTML('beforebegin',`<div class="feedback ${ok?'yes':'no'}">${ok?'✓ Correct — nicely reasoned!':'✗ Not quite. Correct answer: '+q.key+'.'} Your practice response is saved.</div>`);
+ placeholder.outerHTML=learningNotes(q);
+ card.closest('.learning-layout')?.classList.add('has-notes');
+ const stats=practiceStats();
+ if($('practiceSummary'))$('practiceSummary').textContent=`${stats.attempted}/${stats.total} answered · ${stats.correct} correct · ${stats.attempted-stats.correct} incorrect`;
+ if($('practiceProgressBar'))$('practiceProgressBar').style.width=(stats.attempted/stats.total*100)+'%';
+ if($('practicePercent'))$('practicePercent').textContent=Math.round(stats.attempted/stats.total*100)+'%';
+ if(stats.attempted===stats.total&&!$('practiceFinishActions'))nav?.insertAdjacentHTML('afterend',practiceFinishActions());
+}
+
+function renderPractice(){
+ route={practice:true};
+ const sess=state.practice;
+ if(!sess?.order?.length){$('app').innerHTML='<div class="empty"><h2>No practice session yet 🌷</h2><p>Choose your specialties on the homepage to begin.</p><a class="btn" href="./">Create a practice mix</a></div>';return;}
+ const idx=Math.max(0,Math.min(sess.cursor||0,sess.order.length-1));
+ const e=practiceEntry(sess.order[idx]);
+ if(!e){$('app').innerHTML='<div class="empty">This session refers to questions that could not be loaded. <a href="./">Return home</a></div>';return;}
+ sess.cursor=idx;const {q,bank,n,id}=e,stats=practiceStats(),answered=sess.answers[id],finished=stats.attempted===stats.total;
+ const pct=Math.round(stats.attempted/stats.total*100);
+ const summary=`${stats.attempted}/${stats.total} answered · ${stats.correct} correct · ${stats.attempted-stats.correct} incorrect`;
+ $('app').innerHTML=`<section class="bank-intro practice-intro">
+   <div class="bank-intro-nav"><a class="bank-back-link" href="./">← All banks</a><span class="small">🦋 Randomised specialty practice</span></div>
+   <div class="bank-title-area"><div class="eyebrow">YOUR PERSONALISED PRACTICE ✿</div><h1 class="page-title">🌸 Specialty Mix</h1>
+     <p class="small bank-description">${safe((sess.selected||[]).map(studyGroupName).join(' · '))} · ${stats.total} questions shuffled from across your banks</p></div>
+   <div class="bank-progress-details"><span class="small" id="practiceSummary">${summary}</span><span class="small"><span id="practicePercent">${pct}%</span> complete</span></div>
+   <div class="progress bank-progress"><span id="practiceProgressBar" style="width:${pct}%"></span></div>
+   </section>
+   ${finished?'<div class="bank-results-inline">🦋 Practice completed <a href="?practiceResults=1">View result analysis →</a></div>':''}
+   <div class="practice-position"><span>Question ${idx+1} of ${stats.total}</span><span>From Bank ${bank} · ${safe(q.domain)}</span></div>
+   <div class="learning-layout ${answered?'has-notes':''}">
+    <div class="quizbox quiz-question">
+      <div class="meta"><b>Domain:</b> ${safe(q.domain)} &nbsp; · &nbsp; <b>Skillset:</b> ${safe(q.skill||'Clinical reasoning')} &nbsp; · &nbsp; <b>Source:</b> Bank ${bank}</div>
+      <div class="question-label">EMQ ${n}</div><div class="stem">${safe(q.stem)}</div>
+      <p class="ask">${safe(q.ask||'Which of the following is the single BEST answer?')}</p>
+      <div class="choices" id="choices">${optionHtml(q,answered?.choice)}</div>
+      ${answered?`<div class="feedback ${answered.correct?'yes':'no'}">${answered.correct?'✓ Correct — nicely reasoned!':'✗ Not quite. Correct answer: '+q.key+'.'} Your practice response is saved.</div>`:''}
+      <div class="navbox"><button class="btn soft" id="prev" ${idx===0?'disabled':''}>← Previous</button>
+       <button class="btn rose" id="bookmark">${state.bookmarks[id]?'★ Bookmarked':'☆ Bookmark'}</button>
+       <button class="btn" id="next" ${idx===stats.total-1&&finished?'disabled':''}>${idx===stats.total-1&&!finished?'Find unanswered →':'Next →'}</button></div>
+      ${finished&&idx===stats.total-1?practiceFinishActions():''}
+    </div>
+    ${answered?learningNotes(q):`<aside class="learning-card learning-placeholder" aria-label="Learning notes preview"><div class="learning-placeholder-emoji">🌷</div><h2>Your learning notes</h2><p>The explanations and clinical pearls will appear after you answer.</p></aside>`}
+   </div>`;
+ $('choices').onclick=ev=>{const btn=ev.target.closest('[data-choice]');if(btn)answerPractice(bank,n,btn.dataset.choice)};
+ const move=(delta)=>{sess.cursor=Math.max(0,Math.min(idx+delta,stats.total-1));save();renderPractice();window.scrollTo({top:130,behavior:'instant'});};
+ $('prev').onclick=()=>move(-1);$('next').onclick=()=>{if(idx===stats.total-1&&!finished){sess.cursor=sess.order.findIndex(id=>!sess.answers[id]);save();renderPractice();window.scrollTo({top:130,behavior:'instant'});}else move(1);};
+ $('bookmark').onclick=()=>{state.bookmarks[id]=!state.bookmarks[id];save();renderPractice();};
+}
+
+function renderPracticeResults(){
+ route={practiceResults:true};
+ const sess=state.practice;
+ if(!sess?.order?.length){renderPractice();return;}
+ const entries=sess.order.map(id=>practiceEntry(id)).filter(Boolean).map(item=>({q:item.q,answer:sess.answers?.[item.id]}));
+ $('app').innerHTML=buildResultMarkup({title:'Specialty Mix · Results',subtitle:`${entries.length} randomised questions · ${safe((sess.selected||[]).map(studyGroupName).join(', '))}`,entries,backHref:'?practice=1',backText:'Back to practice',reviewHref:'?review=1',mode:'practice'});
+}
+
 function renderHome(){route={};
  const nextBank=[...manifest.banks].sort((a,b)=>a.id-b.id).find(b=>{
   const answers=state.banks[b.id]||{};
@@ -154,7 +309,7 @@ function renderHome(){route={};
  const nextBankButton=nextBank
   ? `<a class="btn soft" href="${url(nextBank.id)}" target="_blank" rel="noopener">${nextBank.emoji} ${nextAttempts?'Continue':'Start'} Bank ${nextBank.id} ↗</a>`
   : `<a class="btn soft" href="?review=1">🎉 All banks attempted — Review mistakes ↗</a>`;
- $('app').innerHTML=`<section class="hero"><div class="eyebrow">YOUR LITTLE MED SCHOOL SANCTUARY ✿</div><h1>Grow your clinical confidence, one question at a time. 🌷</h1><p>${manifest.banks.length} banks of original Monash-inspired clinical scenarios, instant feedback, and explanations that teach you how to distinguish the tempting alternatives.</p><div class="flex"><a class="btn" href="?review=1">🌿 Open Wrong Answers Garden (${pending()})</a>${nextBankButton}</div></section>${overview()}${section('Choose your question garden','<span class="small">Each opens in a new browser tab ↗</span>')}<div class="tiles">${manifest.banks.map(tile).join('')}</div>${backupPanel()}<div class="notice">These are <b>unofficial, original educational questions</b>, not faculty questions. Clinical management should always follow local protocols and senior supervision.</div>`;wireBackupPanel();updateBadge();}
+ $('app').innerHTML=`<section class="hero"><div class="eyebrow">YOUR LITTLE MED SCHOOL SANCTUARY ✿</div><h1>Grow your clinical confidence, one question at a time. 🌷</h1><p>${manifest.banks.length} banks of original Monash-inspired clinical scenarios, instant feedback, and explanations that teach you how to distinguish the tempting alternatives.</p><div class="flex"><a class="btn" href="?review=1">🌿 Open Wrong Answers Garden (${pending()})</a>${nextBankButton}</div></section>${overview()}${practicePicker()}${section('Choose your question garden','<span class="small">Each opens in a new browser tab ↗</span>')}<div class="tiles">${manifest.banks.map(tile).join('')}</div>${backupPanel()}<div class="notice">These are <b>unofficial, original educational questions</b>, not faculty questions. Clinical management should always follow local protocols and senior supervision.</div>`;wireBackupPanel();updateBadge();hydratePracticePicker();}
 async function getBank(b){if(!bankData[b]){const resp=await fetch('bank'+b+'.json',{cache:'no-cache'});if(!resp.ok)throw new Error('Could not fetch Bank '+b);bankData[b]=await resp.json();}return bankData[b];}
 function answeredStatus(b){const a=state.banks[b]||{};return {attempted:Object.keys(a).length,correct:Object.values(a).filter(x=>x.correct).length};}
 function filteredQuestions(b){const all=bankData[b]||[];return all.filter(q=>{if(domain!=='all'&&q.domain!==domain)return false;const answer=(state.banks[b]||{})[q.n];const rid=idOf(b,q.n);if(filter==='unanswered')return !answer;if(filter==='wrong')return answer&&!answer.correct;if(filter==='bookmarks')return !!state.bookmarks[rid];return true;});}
@@ -178,10 +333,83 @@ function learningNotes(q,anchorId='learningNotes'){
  <p class="learning-footer">Read the reasoning, then try explaining the answer aloud before moving on. ♡</p>
  </aside>`;
 }
+const PRACTICE_TOPICS=[{"id":"medicine","name":"Medicine","icon":"🫀","help":"Cardiac, respiratory, renal, endocrine & infection"},{"id":"surgery","name":"Surgery","icon":"🩺","help":"GI, general surgery & perioperative care"},{"id":"obgyn","name":"O&G","icon":"🌸","help":"Pregnancy, childbirth & gynaecology"},{"id":"paeds","name":"Paediatrics","icon":"🧸","help":"Children and newborns"},{"id":"psychiatry","name":"Psychiatry","icon":"🧠","help":"Mental health & addictions"},{"id":"gp","name":"GP & Ethics","icon":"🌿","help":"Primary care, prescribing, screening & ethics"},{"id":"emergency","name":"Emergency","icon":"🚑","help":"Urgent decisions & resuscitation"},{"id":"neurology","name":"Neurology","icon":"🧬","help":"Brain, spine, stroke & nervous system"},{"id":"msk","name":"Eyes, ENT & MSK","icon":"👁️","help":"Eye, ear, orthopaedics & anatomy"},{"id":"integrated","name":"Mixed clinical","icon":"✨","help":"Interdisciplinary reasoning"}];
+function practiceGroups(domain){
+ const d=String(domain||'').toLowerCase();
+ const found=new Set();
+ if(/medicine|cardio|respir|renal|endocrin|electrolyte|infect|haemat|oncolog|vascular/.test(d))found.add('medicine');
+ if(/surg|gastro|perioperative/.test(d))found.add('surgery');
+ if(/obstetric|gynae/.test(d))found.add('obgyn');
+ if(/paediatr|neonat|developmental/.test(d))found.add('paeds');
+ if(/psychiatr|substance|addiction/.test(d))found.add('psychiatry');
+ if(/general practice|\bgp\b|ethic|palliative|primary care|public health|screening|prescribing|safety systems/.test(d))found.add('gp');
+ if(/emergency|resuscitat|critical care|intern preparedness|patient safety/.test(d))found.add('emergency');
+ if(/neurol|neurosurg|stroke/.test(d))found.add('neurology');
+ if(/ophthalm|eye|orthop|msk|ent\b|anatomy/.test(d))found.add('msk');
+ if(!found.size)found.add('integrated');
+ return [...found];
+}
+function primaryStudyGroup(domain){
+ const groups=practiceGroups(domain);
+ const order=['obgyn','paeds','psychiatry','surgery','gp','emergency','neurology','msk','medicine','integrated'];
+ return order.find(id=>groups.includes(id))||'integrated';
+}
+function studyGroupName(id){return PRACTICE_TOPICS.find(g=>g.id===id)?.name||id;}
+function bankFinishActions(bank){
+ return `<section class="bank-finish-actions" id="bankFinishActions" aria-label="Bank finished">
+  <div class="bank-finish-copy"><span class="bank-finish-flower">🌷</span><div><strong>You've completed Bank ${bank}!</strong><p>Your answers are saved. Ready to see what you learned?</p></div></div>
+  <div class="bank-finish-buttons"><a class="btn soft" href="./">⌂ Return Home</a><a class="btn" href="?results=${bank}">📊 View Result Analysis →</a></div>
+ </section>`;
+}
+function buildResultMarkup({title,subtitle,entries,backHref,backText,reviewHref,mode}){
+ const n=entries.length,answered=entries.filter(e=>e.answer).length,correct=entries.filter(e=>e.answer?.correct).length;
+ const missed=answered-correct,pct=answered?Math.round(correct*100/answered):0,complete=answered===n;
+ const byGroup=new Map();
+ for(const e of entries){
+  const name=studyGroupName(primaryStudyGroup(e.q.domain));
+  if(!byGroup.has(name))byGroup.set(name,{name,count:0,correct:0,wrong:0});
+  const row=byGroup.get(name);row.count++;
+  if(e.answer?.correct)row.correct++;else if(e.answer)row.wrong++;
+ }
+ const groups=[...byGroup.values()].sort((a,b)=>a.name.localeCompare(b.name));
+ const rated=groups.filter(x=>x.count>=2);
+ const strongest=[...rated].sort((a,b)=>b.correct/b.count-a.correct/a.count||b.count-a.count)[0];
+ const focus=[...rated].sort((a,b)=>a.correct/a.count-b.correct/b.count||b.wrong-a.wrong)[0];
+ const rows=groups.map(g=>{
+  const percent=Math.round(g.correct/g.count*100);
+  return `<div class="result-domain-row"><div class="result-domain-heading"><span>${safe(g.name)} <small>${g.count} questions</small></span><strong>${g.correct}/${g.count} · ${percent}%</strong></div><div class="result-domain-track"><span style="width:${percent}%"></span></div></div>`;
+ }).join('');
+ const praise=complete?'🌷 A whole bank of practice, completed.':'🌱 Your progress so far';
+ const advice=missed?`You have <strong>${missed} question${missed===1?'':'s'}</strong> worth revisiting. Read their explanations and try them again in your Wrong Answers Garden.`:'No incorrect answers recorded in this set — lovely work!';
+ const focusHtml=focus&&focus.wrong?`<p>📚 <b>Suggested revision focus:</b> ${safe(focus.name)} (${focus.correct}/${focus.count} correct). Review the decisive clinical clues and the common distractors.</p>`:'<p>Keep revising across specialties to strengthen your clinical reasoning.</p>';
+ return `<div class="results-page">
+   <div class="results-breadcrumb"><a href="${backHref}">← ${safe(backText)}</a><a href="./">⌂ Home</a></div>
+   <section class="results-hero">
+    <div class="results-overline">YOUR STUDY GARDEN · ${complete?'COMPLETED':'IN PROGRESS'} ✿</div>
+    <h1>🌷 ${safe(title)}</h1>
+    <p>${safe(subtitle)}</p>
+    <div class="results-hero-core"><div class="results-ring" style="--score-angle:${pct*3.6}deg"><div><strong>${pct}%</strong><small>${complete?'Final accuracy':'Accuracy so far'}</small></div></div>
+    <div class="results-overview"><strong>${correct} out of ${answered} correct</strong><p>${praise}</p><div class="results-pills"><span>✓ ${correct} correct</span><span>↻ ${missed} to review</span>${complete?'':`<span>⏳ ${n-answered} unanswered</span>`}</div></div></div>
+   </section>
+   <section class="results-breakdown"><div class="results-section-heading"><h2>📊 Specialty breakdown</h2><p>Find your strengths and your next revision priorities.</p></div><div class="results-domains">${rows}</div></section>
+   <section class="results-insights"><div class="results-section-heading"><h2>💡 What to work on next</h2></div>
+    ${strongest?`<p>🌼 <b>Strongest area:</b> ${safe(strongest.name)} (${strongest.correct}/${strongest.count} correct).</p>`:''}
+    ${focusHtml}<p>${advice}</p>
+   </section>
+   <div class="results-actions"><a class="btn soft" href="./">⌂ Return Home</a><a class="btn soft" href="${reviewHref}">🌿 Wrong Answers Garden</a><a class="btn" href="${backHref}">${mode==='practice'?'↻ Back to practice':'← Back to Bank'}</a></div>
+ </div>`;
+}
+function renderBankResults(bank){
+ const bm=manifest.banks.find(x=>x.id===bank),qs=bankData[bank];
+ if(!bm||!qs){$('app').innerHTML='<div class="empty">Bank not found.</div>';return;}
+ route={results:bank};
+ $('app').innerHTML=buildResultMarkup({title:`Bank ${bank} · ${bm.name}`,subtitle:`${qs.length} questions · First-attempt results and study priorities`,entries:qs.map(q=>({q,answer:(state.banks[bank]||{})[q.n]})),backHref:url(bank),backText:`Back to Bank ${bank}`,reviewHref:`?review=1&bank=${bank}`,mode:'bank'});
+}
 function renderBank(){const b=route.bank;const bm=manifest.banks.find(x=>x.id===b);if(!bm)return;const qset=bankData[b];if(!qset){$('app').innerHTML='<div class="loading">Opening your questions… 🌷</div>';return;}activeList=filteredQuestions(b);cursor=Math.max(0,Math.min(cursor,activeList.length-1));const q=activeList[cursor],tot=answeredStatus(b);const pct=qset.length?Math.round(tot.attempted*100/qset.length):0;const cats=[...new Set(qset.map(q=>q.domain))].sort();const summary=`${tot.attempted}/${qset.length} answered · ${tot.correct} correct · ${tot.attempted-tot.correct} incorrect`;
  const finished=tot.attempted===qset.length;
+ const canJumpToUnanswered=!finished&&cursor===activeList.length-1&&qset.some(x=>!(state.banks[b]||{})[x.n]);
  const specialtySummary=[...new Set(qset.map(x=>x.domain))].map(d=>{const subset=qset.filter(x=>x.domain===d);const count=subset.filter(x=>(state.banks[b]||{})[x.n]?.correct).length;return `<div class="flex between"><span>${safe(d)}</span><b>${count}/${subset.length} · ${Math.round(count/subset.length*100)}%</b></div>`;}).join('');
- const finalSummary=finished?`<div class="panel"><div class="eyebrow">BANK ${b} COMPLETED 🎉</div><h2>Final score: ${tot.correct}/${qset.length} (${Math.round(100*tot.correct/qset.length)}%)</h2><p class="small">Your original answers are locked. Review mistakes separately to build mastery without changing this score.</p><div style="display:grid;gap:8px">${specialtySummary}</div><div class="flex" style="margin-top:16px"><a href="?review=1" class="btn rose">🌿 Review your mistakes</a></div></div>`:'';
+ const finalSummary=finished?`<div class="bank-results-inline">🌷 Bank complete <a href="?results=${b}">View result analysis →</a></div>`:'';
  $('app').innerHTML=`<section class="bank-intro" aria-label="Bank overview">
  <div class="bank-intro-nav">
   <a class="bank-back-link" href="./">← All banks</a>
@@ -200,14 +428,14 @@ function renderBank(){const b=route.bank;const bm=manifest.banks.find(x=>x.id===
   <span class="small bank-progress-percent"><span id="bankPercent">${pct}%</span> complete</span>
  </div>
  <div class="progress bank-progress"><span id="bankProgressBar" style="width:${pct}%"></span></div>
- </section>${finalSummary}<div class="toolbar bank-toolbar"><div class="flex"><label class="small">Show <select id="filter"><option value="all">All questions</option><option value="unanswered">Unanswered</option><option value="wrong">Original mistakes</option><option value="bookmarks">Bookmarked</option></select></label><label class="small">Specialty <select id="domain"><option value="all">All specialties</option>${cats.map(x=>`<option value="${safe(x)}">${safe(x)}</option>`).join('')}</select></label></div><div class="small">${activeList.length?`${cursor+1} / ${activeList.length} shown`:'No matches'}</div></div>${q?`<div class="learning-layout ${(state.banks[b]||{})[q.n]?'has-notes':''}"><div class="quizbox quiz-question"><div class="meta"><b>Domain:</b> ${safe(q.domain)} &nbsp; · &nbsp; <b>Skillset:</b> ${safe(q.skill||'Clinical reasoning')} &nbsp; · &nbsp; <b>Context:</b> ${safe(q.context||'Clinical')}</div><div class="question-label">EMQ ${q.n}</div><div class="stem">${safe(q.stem)}</div><p class="ask">${safe(q.ask||'Which of the following is the single BEST answer?')}</p><div class="choices" id="choices">${optionHtml(q,(state.banks[b]||{})[q.n]?.choice)}</div>${(state.banks[b]||{})[q.n]?`<div class="feedback ${(state.banks[b][q.n].correct?'yes':'no')}">${state.banks[b][q.n].correct?'✓ Correct — nicely reasoned!':'✗ Not quite. Correct answer: '+q.key+'.'} Your first response is locked.</div>`:``}<div class="navbox"><button class="btn soft" id="prev" ${cursor===0?'disabled':''}>← Previous</button><button class="btn rose" id="bookmark">${state.bookmarks[idOf(b,q.n)]?'★ Bookmarked':'☆ Bookmark'}</button><button class="btn" id="next" ${cursor===activeList.length-1?'disabled':''}>Next →</button></div></div>${(state.banks[b]||{})[q.n]?learningNotes(q):`<aside class="learning-card learning-placeholder" aria-label="Learning notes preview"><div class="learning-placeholder-emoji" aria-hidden="true">🌷</div><h2>Learning notes will bloom here</h2><p>Choose your answer and explore the <b>clinical reasoning</b>, why the alternatives lose, and the principles worth remembering.</p></aside>`}</div>`:`<div class="empty">No questions here 🌷 Try another filter.</div>`}`;
+ </section>${finalSummary}<div class="toolbar bank-toolbar"><div class="flex"><label class="small">Show <select id="filter"><option value="all">All questions</option><option value="unanswered">Unanswered</option><option value="wrong">Original mistakes</option><option value="bookmarks">Bookmarked</option></select></label><label class="small">Specialty <select id="domain"><option value="all">All specialties</option>${cats.map(x=>`<option value="${safe(x)}">${safe(x)}</option>`).join('')}</select></label></div><div class="small">${activeList.length?`${cursor+1} / ${activeList.length} shown`:'No matches'}</div></div>${q?`<div class="learning-layout ${(state.banks[b]||{})[q.n]?'has-notes':''}"><div class="quizbox quiz-question"><div class="meta"><b>Domain:</b> ${safe(q.domain)} &nbsp; · &nbsp; <b>Skillset:</b> ${safe(q.skill||'Clinical reasoning')} &nbsp; · &nbsp; <b>Context:</b> ${safe(q.context||'Clinical')}</div><div class="question-label">EMQ ${q.n}</div><div class="stem">${safe(q.stem)}</div><p class="ask">${safe(q.ask||'Which of the following is the single BEST answer?')}</p><div class="choices" id="choices">${optionHtml(q,(state.banks[b]||{})[q.n]?.choice)}</div>${(state.banks[b]||{})[q.n]?`<div class="feedback ${(state.banks[b][q.n].correct?'yes':'no')}">${state.banks[b][q.n].correct?'✓ Correct — nicely reasoned!':'✗ Not quite. Correct answer: '+q.key+'.'} Your first response is locked.</div>`:``}<div class="navbox"><button class="btn soft" id="prev" ${cursor===0?'disabled':''}>← Previous</button><button class="btn rose" id="bookmark">${state.bookmarks[idOf(b,q.n)]?'★ Bookmarked':'☆ Bookmark'}</button><button class="btn" id="next" ${cursor===activeList.length-1&&!canJumpToUnanswered?'disabled':''}>${canJumpToUnanswered?'Find unanswered →':'Next →'}</button></div>${finished&&cursor===activeList.length-1?bankFinishActions(b):''}</div>${(state.banks[b]||{})[q.n]?learningNotes(q):`<aside class="learning-card learning-placeholder" aria-label="Learning notes preview"><div class="learning-placeholder-emoji" aria-hidden="true">🌷</div><h2>Learning notes will bloom here</h2><p>Choose your answer and explore the <b>clinical reasoning</b>, why the alternatives lose, and the principles worth remembering.</p></aside>`}</div>`:`<div class="empty">No questions here 🌷 Try another filter.</div>`}`;
  $('filter').value=filter;$('domain').value=domain;$('filter').onchange=e=>{filter=e.target.value;cursor=0;renderBank()};$('domain').onchange=e=>{domain=e.target.value;cursor=0;renderBank()};
  $('restartBank').onclick=()=>{
    if(!confirm('Restart Bank '+b+'? This will erase all '+tot.attempted+' saved first attempts and reset this bank score to 0. Other banks, bookmarks and your Wrong Answers Garden will remain unchanged. Export a progress backup first if you want to keep this attempt.'))return;
    delete state.banks[b];filter='all';domain='all';cursor=0;save();renderBank();
    window.scrollTo({top:0,behavior:'smooth'});
  };
- if(!q)return;$('choices').onclick=e=>{const choice=e.target.closest('[data-choice]');if(choice)updateProgress(b,q.n,choice.dataset.choice)};$('prev').onclick=()=>{cursor--;renderBank();window.scrollTo({top:120,behavior:'smooth'})};$('next').onclick=()=>{cursor++;renderBank();window.scrollTo({top:120,behavior:'smooth'})};$('bookmark').onclick=()=>{let k=idOf(b,q.n);state.bookmarks[k]=!state.bookmarks[k];save();renderBank()};}
+ if(!q)return;$('choices').onclick=e=>{const choice=e.target.closest('[data-choice]');if(choice)updateProgress(b,q.n,choice.dataset.choice)};$('prev').onclick=()=>{cursor--;renderBank();window.scrollTo({top:120,behavior:'smooth'})};$('next').onclick=()=>{if(canJumpToUnanswered){filter='all';domain='all';cursor=qset.findIndex(x=>!(state.banks[b]||{})[x.n]);}else cursor++;renderBank();window.scrollTo({top:120,behavior:'smooth'})};$('bookmark').onclick=()=>{let k=idOf(b,q.n);state.bookmarks[k]=!state.bookmarks[k];save();renderBank()};}
 async function ensureAllBanks(){await Promise.all(manifest.banks.map(x=>getBank(x.id)));}
 function reviewChoice(card,r,q){const answer=r.currentAnswer;return `<div class="choices">${q.options.map((o,i)=>{const letter=ABC[i];let cls='choice';if(answer){if(letter===q.key)cls+=' true';if(letter===answer)cls+=answer===q.key?' selected correct':' selected incorrect';}return `<button class="${cls}" data-review-choice="${letter}" data-review-id="${idOf(r.bank,r.n)}" ${answer||r.mastered?'disabled':''}><span class="letter">${letter}</span><span>${safe(o)}</span></button>`;}).join('')}</div>${answer?`<div class="feedback ${answer===q.key?'yes':'no'}">${answer===q.key?'✓ Correct! Added to Mastered.':'✗ Still learning — retry after reviewing the explanation.'}</div>${learningNotes(q,`review-notes-${r.bank}-${r.n}`)}`:''}`;}
 let transientReview={};
@@ -224,6 +452,7 @@ function exportProgress(){
  const chosen=new Set(ids);
  for(const [id,item] of Object.entries(state.review||{}))if(chosen.has(Number(id.split(':')[0])))subset.review[id]=item;
  for(const [id,item] of Object.entries(state.bookmarks||{}))if(chosen.has(Number(id.split(':')[0])))subset.bookmarks[id]=item;
+ if(ids.length===manifest.banks.length&&state.practice?.version===1)subset.practice=state.practice;
  const content=JSON.stringify({kind:'SPAW_ONLINE_PROGRESS_BACKUP',created:new Date().toISOString(),includedBanks:ids,state:subset},null,2);
  const blob=new Blob([content],{type:'application/json'}),uri=URL.createObjectURL(blob),a=document.createElement('a');
  a.href=uri;
@@ -266,7 +495,7 @@ let initialTheme='light';
 try{initialTheme=localStorage.getItem('spaw.theme')||(localStorage.getItem('spaw-highcontrast')==='1'?'contrast':'light')}catch(e){}
 applyTheme(initialTheme);
 $('themeSelect').onchange=e=>applyTheme(e.target.value);
-async function boot(){try{const resp=await fetch('manifest.json',{cache:'no-cache'});if(!resp.ok)throw Error('Cannot load question manifest.');manifest=await resp.json();const params=new URLSearchParams(location.search);if(params.has('review')){route={review:true};await ensureAllBanks();renderReview();}else if(params.has('bank')){const b=Number(params.get('bank'));if(!manifest.banks.some(x=>x.id===b))throw Error('That bank is not published yet.');route={bank:b};await getBank(b);
+async function boot(){try{const resp=await fetch('manifest.json',{cache:'no-cache'});if(!resp.ok)throw Error('Cannot load question manifest.');manifest=await resp.json();const params=new URLSearchParams(location.search);if(params.has('practiceResults')){await ensureAllBanks();renderPracticeResults();}else if(params.has('practice')){await ensureAllBanks();renderPractice();}else if(params.has('review')){route={review:true};reviewBank=params.get('bank')||'all';await ensureAllBanks();renderReview();}else if(params.has('results')){const b=Number(params.get('results'));if(!manifest.banks.some(x=>x.id===b))throw Error('Unknown bank.');await getBank(b);renderBankResults(b);}else if(params.has('bank')){const b=Number(params.get('bank'));if(!manifest.banks.some(x=>x.id===b))throw Error('That bank is not published yet.');route={bank:b};await getBank(b);
  // Resume from the earliest unanswered EMQ when reopening a bank.
  // Keep the complete bank visible so Previous/Next and old answers remain reviewable.
  filter='all';domain='all';
