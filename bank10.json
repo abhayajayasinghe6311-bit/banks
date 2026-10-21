@@ -1650,19 +1650,19 @@
     "stem": "A 29-year-old presents with severe epigastric pain radiating to the back and lipase >3 times normal. Ultrasound shows gallstones. He has no cholangitis and bilirubin has normalised.",
     "ask": "Which statement about early ERCP is MOST accurate?",
     "options": [
-      "Urgent ERCP is mandatory because lipase is raised",
-      "Delay all IV fluids until ERCP",
-      "Perform diagnostic ERCP instead of ultrasound in every case",
-      "All gallstone pancreatitis requires urgent ERCP",
-      "Urgent ERCP is most strongly indicated with cholangitis or persistent biliary obstruction"
+      "Schedule ERCP immediately for every case with lipase elevation.",
+      "Withhold IV fluids until ERCP confirms a retained biliary stone.",
+      "Perform invasive ERCP before checking for cholangitis or obstruction.",
+      "Use urgent ERCP in all patients with gallstones on ultrasound.",
+      "Use urgent ERCP for cholangitis or continuing biliary obstruction."
     ],
     "key": "E",
     "explanations": [
-      "Lipase magnitude does not indicate duct obstruction.",
-      "Early appropriate fluids remain important.",
-      "Ultrasound helps identify biliary cause without ERCP-associated pancreatitis risk.",
-      "Routine ERCP in uncomplicated gallstone pancreatitis adds risk without proven benefit.",
-      "Concomitant cholangitis or ongoing obstruction warrants early duct decompression."
+      "Raised lipase diagnoses pancreatic inflammation; it does not establish a retained CBD stone or benefit from ERCP in uncomplicated pancreatitis.",
+      "Fluids and analgesia are part of early pancreatitis care; postponing supportive treatment for a procedure is unsafe.",
+      "ERCP is primarily therapeutic and carries risk. Evaluate for duct obstruction or cholangitis rather than subjecting every pancreatitis patient to invasive diagnostic ERCP.",
+      "Gallbladder stones alone do not indicate ongoing common duct obstruction, especially when bilirubin has normalised and the patient has no cholangitis.",
+      "Urgent ERCP is most useful when gallstone pancreatitis is complicated by acute cholangitis or evidence of persistent obstruction; otherwise provide supportive care and plan definitive cholecystectomy when appropriate."
     ],
     "pearl": "Treat pancreatitis supportively and reserve ERCP for obstructed or infected ducts.",
     "pivot": "Persistent jaundice with dilated duct changes the likelihood of benefit from ERCP.",
@@ -1694,24 +1694,31 @@
     "management": {
       "steps": [
         [
-          "Resuscitate",
-          "Sepsis ABC, cultures, IV antibiotics, fluids/vasopressors as indicated."
+          "Recognise uncomplicated biliary pancreatitis",
+          "Assess hydration, pain, organ dysfunction and evidence of bile-duct obstruction; normalised bilirubin and no fever/cholangitis reduce urgency for ERCP."
         ],
         [
-          "Relieve obstruction",
-          "Urgent ERCP or alternative biliary drainage for severe ascending cholangitis."
+          "Treat pancreatitis supportively",
+          "Give protocol-appropriate IV fluids, analgesia, nausea treatment, nutrition and monitoring based on severity."
         ],
         [
-          "Monitor",
-          "LFT, lactate, renal function and organ dysfunction."
+          "Target ERCP to its indication",
+          "Order MRCP/EUS if retained duct stone remains suspected; urgently refer for ERCP when acute cholangitis or ongoing obstruction is confirmed or highly suspected."
         ],
         [
           "Prevent recurrence",
-          "Arrange later definitive stone/gallbladder treatment when stabilised."
+          "Plan index-admission laparoscopic cholecystectomy in suitable mild gallstone pancreatitis after recovery; individualize for severe disease."
         ]
       ],
-      "safety": "Antibiotics alone cannot reliably clear an infected obstructed duct.",
-      "local": "Exact doses, escalation thresholds and contraindications must be verified against current local protocols and senior advice."
+      "source": {
+        "name": "Queensland Health hepatobiliary/pancreatic surgery pathway",
+        "url": "https://www.health.qld.gov.au/cpc/general-surgery/hepatobiliary-surgery"
+      }
+    },
+    "alternate": {
+      "scenario": "Bilirubin rises again and the patient becomes febrile, jaundiced and hypotensive with ultrasound evidence of a dilated obstructed common bile duct.",
+      "management": "Assess and treat septic cholangitis immediately using resuscitation and broad-spectrum IV antibiotics, and arrange urgent therapeutic ERCP for drainage or another biliary decompression route if ERCP is unavailable.",
+      "reason": "New infected biliary obstruction creates an urgent need for source control not present in uncomplicated pancreatitis."
     }
   },
   {
