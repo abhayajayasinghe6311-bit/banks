@@ -15,6 +15,8 @@ jobs:
       - uses: actions/checkout@v4
       - name: Check JavaScript syntax
         run: node --check app.js
+      - name: Check historical saved answer option mapping
+        run: node scripts/test_choice_versioning.cjs
       - name: Validate bank identity, option/explanation mapping and report bias
         run: python3 scripts/audit_question_quality.py
       - name: Block publication while clinical-content release gates fail
