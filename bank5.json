@@ -1663,17 +1663,17 @@
     "stem": "A 22-year-old with type 1 diabetes has vomiting, Kussmaul breathing, pH 7.12, ketones 5.8 mmol/L and potassium 2.8 mmol/L. Fluids are being commenced.",
     "ask": "Which management decision is MOST APPROPRIATE at this moment?",
     "options": [
-      "Start insulin infusion immediately without replacement",
-      "Prioritise potassium replacement with cardiac monitoring and delay insulin until potassium is safe",
-      "Give IV sodium bicarbonate routinely",
-      "Discharge on increased long-acting insulin"
+      "Commence fixed-rate insulin immediately while monitoring serum potassium.",
+      "Replace potassium urgently under ECG monitoring before starting IV insulin.",
+      "Give intravenous bicarbonate routinely to normalise the acidosis first.",
+      "Stop IV resuscitation and discharge on increased basal insulin doses."
     ],
     "key": "B",
     "explanations": [
-      "Insulin drives potassium into cells and can precipitate fatal arrhythmia when starting potassium is severely low.",
-      "In DKA, marked hypokalaemia must be corrected urgently before insulin is started, alongside fluid resuscitation and close monitoring.",
-      "Bicarbonate is not routinely indicated for this degree of DKA acidaemia.",
-      "This is a life-threatening metabolic emergency requiring monitored inpatient care."
+      "Insulin rapidly shifts potassium intracellularly and would worsen the already severe hypokalaemia, risking arrhythmia. Do not commence infusion when K is 2.8 mmol/L.",
+      "DKA is present, but serum K of 2.8 mmol/L demands urgent monitored potassium replacement before insulin. Give isotonic fluids, recheck K and start insulin when it meets the local safe threshold.",
+      "At pH 7.12 bicarbonate is not routine treatment; correcting dehydration, insulin deficiency and electrolytes is essential. Bicarbonate can itself worsen hypokalaemia.",
+      "A patient with DKA, acidaemia and K 2.8 requires emergency monitored hospital treatment and repeat biochemical assessments, not outpatient insulin adjustment."
     ],
     "pearl": "DKA can conceal a profound whole-body potassium deficit, even if the initial serum potassium looks normal/high.",
     "pivot": "If K were 5.5 mmol/L, initial replacement would usually be withheld but frequent monitoring is essential.",
@@ -1701,24 +1701,33 @@
     "management": {
       "steps": [
         [
-          "Resuscitate DKA",
-          "Assess circulation, glucose, ketones, blood gas and dehydration; start appropriate isotonic fluids."
+          "Initial assessment",
+          "ABCDE, ECG and monitoring; obtain bedside glucose and ketones, venous blood gas, renal function/electrolytes and assess dehydration or infection."
         ],
         [
-          "Correct potassium first",
-          "Marked hypokalaemia requires monitored IV replacement; hold insulin until potassium reaches protocol safe level."
+          "Resuscitate and replace potassium",
+          "Start protocol-guided isotonic fluids and monitored IV potassium replacement for K 2.8 mmol/L; check renal function, urine output and frequent repeat K."
         ],
         [
-          "Clear ketones",
-          "Start fixed-rate insulin once safe and add dextrose when glucose falls so insulin can continue."
+          "Start insulin only when safe",
+          "Defer insulin until potassium rises above the local safety threshold (Queensland adult pathway specifies >3.5 mmol/L); then begin a fixed-rate IV insulin infusion under protocol."
         ],
         [
-          "Monitor",
-          "Frequent potassium, glucose, ketones, acid-base status and mental state until resolution."
+          "Follow biochemical recovery",
+          "Track glucose, ketones, acid–base status and electrolytes frequently; give glucose-containing fluids when needed to allow insulin to continue, and assess the DKA trigger."
         ]
       ],
-      "safety": "Insulin rapidly lowers serum potassium and can cause fatal arrhythmia if K is already very low.",
-      "local": "Exact doses, escalation thresholds and contraindications must be verified against current local protocols and senior advice."
+      "safety": "Insulin in severe hypokalaemia may cause life-threatening arrhythmia and respiratory weakness; electrolyte thresholds and infusion rates require current local guidance.",
+      "local": "Use the local adult DKA chart; paediatric thresholds and rates differ.",
+      "source": {
+        "name": "Queensland Health Management of Diabetic Ketoacidosis in Adults",
+        "url": "https://www.health.qld.gov.au/__data/assets/pdf_file/0019/621640/diabetic-ketoacidosis.pdf"
+      }
+    },
+    "alternate": {
+      "scenario": "The same patient has DKA but potassium is 5.5 mmol/L, with preserved renal function and urine output.",
+      "management": "Start appropriate IV fluid replacement and a protocol-guided IV insulin infusion with frequent glucose, ketone, acid–base and potassium monitoring. Withhold potassium initially while K remains above the local supplementation threshold, then replace as it falls; add glucose-containing fluids as glucose normalises so ketones can continue to clear.",
+      "reason": "Severe initial hypokalaemia makes insulin unsafe until K correction; higher initial potassium changes supplementation timing but not the requirement for close monitoring."
     }
   },
   {
