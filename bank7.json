@@ -2580,19 +2580,19 @@
     "stem": "A pregnant woman at 27 weeks has persistent fever, maternal tachycardia, uterine tenderness and foul-smelling amniotic fluid following prolonged rupture of membranes. Fetal heart rate is 175/min.",
     "ask": "Which ONE is the MOST APPROPRIATE management strategy?",
     "options": [
-      "Tocolysis to maintain pregnancy for another month",
-      "Broad-spectrum IV antibiotics and prompt delivery planning after stabilisation",
-      "Await final cultures before starting antibiotics",
-      "Discharge with oral analgesics only",
-      "Administer a cervical cerclage"
+      "Use long-term tocolysis and delay delivery until infection resolves.",
+      "Give IV antibiotics promptly and plan delivery after maternal stabilisation.",
+      "Wait for final amniotic-fluid culture before any antimicrobial therapy.",
+      "Discharge on oral analgesia while awaiting spontaneous labour.",
+      "Perform an emergency cervical cerclage to reduce ascending infection."
     ],
     "key": "B",
     "explanations": [
-      "Tocolysis is generally contraindicated in suspected infection.",
-      "Clinical intra-amniotic infection requires prompt antimicrobials and obstetric evaluation for birth; prolonged expectant management can endanger both mother and fetus.",
-      "Cultures should not delay antibiotics.",
-      "Infection may progress to sepsis.",
-      "Cerclage does not treat infection or ruptured membranes."
+      "Suspected intra-amniotic infection is a contraindication to routine tocolysis; delaying birth can worsen maternal sepsis and neonatal infection.",
+      "Fever, uterine tenderness, malodorous fluid and fetal tachycardia suggest intra-amniotic infection. Urgently give broad-spectrum IV antimicrobials, assess mother and fetus, then organise birth with senior obstetric and neonatal input.",
+      "Obtaining cultures may guide later therapy, but waiting for final growth is unsafe when clinical infection and potential sepsis are present.",
+      "Oral analgesics do not treat chorioamnionitis or maternal infection risk. The pregnancy requires admission, antimicrobial therapy and birth planning.",
+      "Cerclage has no role in infected, ruptured membranes and risks worsening maternal or fetal infection."
     ],
     "pearl": "Maternal fever, uterine tenderness, fetal tachycardia and purulent fluid suggest chorioamnionitis.",
     "pivot": "If membranes are ruptured but there is no evidence of infection or compromise, gestation-specific expectant PPROM protocols may apply.",
@@ -2626,24 +2626,45 @@
     "management": {
       "steps": [
         [
-          "Assess the decision point",
-          "Identify pregnancy or neonatal context and the patient's immediate stability; check whether an emergency escalation is needed."
+          "Recognise intra-amniotic infection",
+          "Escalate to senior obstetrics and anaesthesia; assess maternal sepsis criteria, fever, abdominal tenderness, fluid appearance and fetal tachycardia."
         ],
         [
-          "Act on the best option",
-          "Broad-spectrum IV antibiotics and prompt delivery planning after stabilisation. Clinical intra-amniotic infection requires prompt antimicrobials and obstetric evaluation for birth; prolonged expectant management can endanger both mother and fetus."
+          "Resuscitate and give antimicrobials",
+          "Obtain appropriate cultures if feasible without delaying broad-spectrum IV antibiotics; check lactate, blood tests and maternal perfusion and provide fluids as indicated."
         ],
         [
-          "Reassess the effect",
-          "Check symptoms, vital signs, relevant results and adverse effects after the first intervention; revise the plan if the patient deteriorates."
+          "Plan birth without unsafe delay",
+          "Avoid tocolysis; agree on timing and mode of birth, usually according to standard obstetric indications rather than infection alone."
         ],
         [
-          "Plan ongoing care",
-          "Arrange appropriate senior review, investigations, safety-netting and follow-up; check local protocols for the precise treatment sequence."
+          "Prevent ongoing complications",
+          "Monitor maternal vitals and fetal condition; prepare neonatal infection assessment and post-delivery antibiotic decisions using the current maternity guideline."
         ]
       ],
-      "safety": "This is a decision framework, not a substitute for drug-specific instructions. Prescribing, dosing and escalation must be verified locally.",
-      "local": "Exact doses, escalation thresholds and contraindications must be verified against current local protocols and senior advice."
+      "source": {
+        "name": "Queensland Clinical Guidelines: Preterm labour and birth (2026 updates)",
+        "url": "https://www.health.qld.gov.au/qcg/guidelinehistory"
+      }
+    },
+    "legacyOptions": [
+      "Tocolysis to maintain pregnancy for another month",
+      "Broad-spectrum IV antibiotics and prompt delivery planning after stabilisation",
+      "Await final cultures before starting antibiotics",
+      "Discharge with oral analgesics only",
+      "Administer a cervical cerclage"
+    ],
+    "legacyExplanations": [
+      "Tocolysis is generally contraindicated in suspected infection.",
+      "Clinical intra-amniotic infection requires prompt antimicrobials and obstetric evaluation for birth; prolonged expectant management can endanger both mother and fetus.",
+      "Cultures should not delay antibiotics.",
+      "Infection may progress to sepsis.",
+      "Cerclage does not treat infection or ruptured membranes."
+    ],
+    "alternate": {
+      "scenario": "The pregnancy is 27 weeks with confirmed PPROM but the mother is afebrile, has no uterine tenderness, fetal status is reassuring and there are no signs of abruption or labour.",
+      "management": "Follow an expectant PPROM pathway with antenatal corticosteroids and appropriate latency antibiotics, maternal/fetal infection surveillance and neonatal counselling. Defer delivery while safe, but switch to urgent infection treatment and birth planning if chorioamnionitis develops.",
+      "reason": "Clinical infection removes the benefit of continuing expectant PPROM management."
     }
   },
   {
