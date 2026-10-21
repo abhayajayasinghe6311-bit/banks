@@ -450,6 +450,7 @@ function learningNotes(q,anchorId='learningNotes',selected=null){
  const wrong=selectedIndex>=0&&selectedIndex!==keyIndex;
  const selectedReason=wrong?explanations[selectedIndex]||'This option does not best explain or address the key finding in the case.':'';
  const mini=q.lesson?.wrong?.[selectedIndex]||null;
+ const specific=q.lesson?.wrong?.[selectedIndex]?.clinical||null;
  const signs=q.lesson?.clues||[];
  const hasManagement=Array.isArray(q.management?.steps)&&q.management.steps.length>0;
  const usefulPivot=q.pivot&&!/^(?:(?:exam check|pivot):?\s*)?(?:ask yourself|examine which|identify the decisive|which finding in the stem)/i.test(String(q.pivot));
@@ -461,15 +462,15 @@ function learningNotes(q,anchorId='learningNotes',selected=null){
  }).join('');
  const managementMarkup=hasManagement?'<details class="learning-section management-guide" '+(wrong?'open':'')+'><summary>🩺 What would I do in practice? <span>'+q.management.steps.length+' useful steps</span></summary>'+
    '<p class="management-intro">A practical study sequence. Follow local guidelines and your supervising team for patient-specific treatment.</p>'+
-   '<ol>'+q.management.steps.map(step=>'<li><strong>'+safe(step[0])+'</strong><span>'+safe(step[1])+'</span></li>').join('')+'</ol>'+
+   '<ol>'+q.management.steps.map(step=>'<li><strong>'+safe(step[0])+'</strong><span>'+safe(step[1])+'</span></li>').join('')+'</ol>'+(Array.isArray(q.management.specifics)&&q.management.specifics.length?'<div class="management-specifics"><b>💊 Treatment specifics to remember</b><ul>'+q.management.specifics.map(item=>'<li>'+safe(item)+'</li>').join('')+'</ul></div>':'')+
    (q.management.safety?'<div class="management-safety"><b>⚠ Safety / escalation</b><p>'+safe(q.management.safety)+'</p></div>':'')+
-   (q.management.local?'<p class="management-local">'+safe(q.management.local)+'</p>':'')+'</details>':'';
+   (q.management.local?'<p class="management-local">'+safe(q.management.local)+'</p>':'')+(q.management.source?.url&&/^https:\/\//.test(q.management.source.url)?'<p class="management-source">Australian source: <a href="'+safe(q.management.source.url)+'" target="_blank" rel="noopener noreferrer">'+safe(q.management.source.name||'Clinical guideline')+' ↗</a></p>':'')+'</details>':'';
  return '<aside class="learning-card" id="'+safe(anchorId)+'" aria-label="Clinical reasoning notes">'+
    '<div class="learning-header"><span aria-hidden="true">🌷</span><div><div class="learning-eyebrow">YOUR LEARNING NOTES</div><h2>Understand the <em>why</em></h2></div></div>'+
    (wrong?
     '<section class="learning-missed-choice"><div class="learning-missed-heading">↻ LET’S LEARN FROM THIS ONE</div>'+
      '<h3>You chose '+safe(selected)+'. '+safe(opts[selectedIndex])+'</h3>'+
-     '<div class="learning-missed-details"><b>Why it isn’t best here</b><p>'+safe(selectedReason)+'</p></div>'+
+     '<div class="learning-missed-details"><b>Why it isn’t best here</b><p>'+safe(selectedReason)+'</p></div>'+(specific?'<div class="learning-specific-distinction"><b>🧠 The distinction that prevents this mistake</b><p>'+safe(specific)+'</p></div>':'')+
      (mini?'<div class="learning-mistake-pattern"><b>🧩 The reasoning trap</b><p>'+safe(mini.trap)+'</p></div>'+
        '<div class="learning-decision-check"><b>🔎 What to check next time</b><p>'+safe(mini.check)+'</p></div>':'')+
     '</section>':'')+
