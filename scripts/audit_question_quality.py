@@ -11,9 +11,14 @@ ROOT = Path(__file__).resolve().parent.parent
 ABC = "ABCDE"
 parser = argparse.ArgumentParser()
 parser.add_argument("--strict-parity", action="store_true", help="Fail when >20% of correct options are 25% longer than every distractor")
+parser.add_argument("--release-ready", action="store_true", help="Apply stricter content publication gates: 100+ questions per bank, 5 options, explanatory depth, answer fairness")
 args = parser.parse_args()
 manifest = json.loads((ROOT / "manifest.json").read_text(encoding="utf-8"))
 total = 0
+option_count_short = 0
+wrong_explanations_short = 0
+missing_practical_alternates = 0
+release_violations = []
 errors = []
 suspects = []
 metrics = []
@@ -26,6 +31,8 @@ for bank in manifest["banks"]:
     total += count
     if bank["count"] != count:
         errors.append(f"Bank {number}: manifest count {bank['count']} != {count}")
+    if count < 100:
+        release_violations.append(f"Bank {number}: only {count}/100 questions")
     numbers = [q.get("n") for q in questions]
     if len(set(numbers)) != len(numbers) or numbers != list(range(1, count + 1)):
         errors.append(f"Bank {number}: question identifiers are not uniquely sequential")
@@ -39,6 +46,12 @@ for bank in manifest["banks"]:
         if q.get("key") not in ABC[:len(opts)]:
             errors.append(f"Bank {number} Q{n}: invalid key")
             continue
+        if len(opts) != 5:
+            option_count_short += 1
+        if any(len(str(explanations[i]).strip()) < 80 for i in range(len(opts)) if i != ABC.index(q["key"])):
+            wrong_explanations_short += 1
+        if q.get("management", {}).get("steps") and not (q.get("alternate") or {}).get("management"):
+            missing_practical_alternates += 1
         if any(not str(o).strip() for o in opts) or any(not str(e).strip() for e in explanations):
             errors.append(f"Bank {number} Q{n}: blank option or explanation")
         if len(set(o.casefold().strip() for o in opts)) != len(opts):
@@ -76,16 +89,30 @@ for bank in manifest["banks"]:
 print("Study Garden QA AUDIT")
 for row in metrics:
     print("Bank {bank:2d}: {questions:3d} q | correct longest {correct_longest:3d} | >25% longer {correct_25pct_longer:3d} | alternate management {alternate_management:3d} | structured plans {structured_management:3d} | vague pivots {generic_pivots:3d}".format(**row))
+print(f"CONTENT REMAINING: {option_count_short} four-option questions; {wrong_explanations_short} questions have short wrong explanations; {missing_practical_alternates} management questions lack a concrete alternative-scenario plan")
 print(f"TOTAL {total} questions, {sum(m['correct_25pct_longer'] for m in metrics)} strong answer-length cues, {sum(m['alternate_management'] for m in metrics)} specific alternative plans")
 print(f"Review flags: {len(suspects)} (first 40 shown)")
 for item in suspects[:40]:
     print(" REVIEW:", item)
 for item in errors:
     print(" ERROR:", item, file=sys.stderr)
-if total != 1090:
+if total < 1090:
     errors.append(f"Total question count changed unexpectedly: {total}")
 if "spaw.study.garden.online.v1" not in (ROOT / "app.js").read_text(encoding="utf-8"):
     errors.append("Progress storage key is missing/changed")
+if args.release_ready:
+    if total < 1240:
+        release_violations.append(f"Only {total}/1240 total questions for requested minimum 100 per bank")
+    if option_count_short:
+        release_violations.append(f"{option_count_short} questions do not have 5 answer options")
+    if wrong_explanations_short:
+        release_violations.append(f"{wrong_explanations_short} questions have a wrong-option explanation shorter than 80 characters")
+    strong = sum(m["correct_25pct_longer"] for m in metrics)
+    if strong > 0.1 * total:
+        release_violations.append(f"{strong} questions have correct options >=25% longer than distractors")
+    if missing_practical_alternates > 0.3 * sum(m["structured_management"] for m in metrics):
+        release_violations.append(f"{missing_practical_alternates} management questions lack concrete alternative-case treatment")
+    errors.extend(release_violations)
 if args.strict_parity and sum(m["correct_25pct_longer"] for m in metrics) > total * .2:
     errors.append("Excessive answer-length bias: >20% of correct options are >=25% longer than alternatives")
 if errors:
