@@ -4597,17 +4597,17 @@
     "stem": "A woman at 30 weeks reports reduced fetal movements since yesterday.",
     "ask": "What is the MOST APPROPRIATE action?",
     "options": [
-      "Same-day obstetric assessment with fetal heart rate evaluation and appropriate surveillance",
-      "Induce labour at home",
-      "Ask her to wait three days",
-      "Reassure without assessment"
+      "Arrange prompt maternity review with fetal heart assessment and CTG.",
+      "Ask the patient to count movements at home for the next 72 hours.",
+      "Recommend sweet drinks and a kick-count diary instead of assessment.",
+      "Schedule a routine growth scan at the next antenatal appointment."
     ],
     "key": "A",
     "explanations": [
-      "Reduced fetal movement requires prompt assessment for fetal compromise, using gestational-age-appropriate tests.",
-      "Attempting induction outside a clinical setting is dangerous and not an appropriate response to reduced fetal movement.",
-      "Waiting days delays identification of fetal compromise.",
-      "Reassurance without fetal assessment misses possible placental dysfunction or fetal jeopardy."
+      "At 30 weeks, maternal concern about decreased fetal movement warrants immediate maternity assessment, confirmation of fetal heart activity, clinical risk evaluation and antenatal CTG; ultrasound for growth and liquor may be needed based on findings.",
+      "Waiting three days can miss fetal compromise or placental insufficiency; reduced movements should be assessed when reported, not after an arbitrary period of monitoring at home.",
+      "Feeding, sweet drinks or home stimulation have not been shown to exclude fetal compromise, and should not delay clinical assessment of a changed movement pattern.",
+      "A planned scan alone is insufficient without prompt fetal heart assessment and CTG; ultrasound is indicated if movements stay reduced, fetal growth restriction is suspected or other clinical abnormalities arise."
     ],
     "pearl": "Reduced fetal movement should prompt timely in-person fetal assessment.",
     "pivot": "Ask yourself: which finding in the stem made Same-day obstetric assessment with fetal heart rate evaluation and appropriate surveillance the SINGLE BEST answer, rather than merely a possible answer?",
@@ -4632,6 +4632,35 @@
           "check": "Check which diagnosis or intervention best explains fetal-wellbeing concern together with the other clues."
         }
       ]
+    },
+    "alternate": {
+      "scenario": "A first episode of reduced movements is assessed promptly; clinical examination and CTG are normal and the mother feels the usual movement pattern again.",
+      "management": "Reassure following documented normal assessment, give clear return precautions for any recurrent change, and continue routine antenatal care where no risk factors remain. Perform an ultrasound if movement remains reduced, growth restriction is suspected or other concerns emerge.",
+      "reason": "The symptom still needs assessment; reassuring findings after investigation change the need for further testing, rather than justifying delay before evaluation."
+    },
+    "management": {
+      "steps": [
+        [
+          "Act on the concern immediately",
+          "Advise prompt presentation to the maternity assessment unit; do not delay with food, cold water or waiting for kick counts."
+        ],
+        [
+          "Assess mother and fetus",
+          "Review pregnancy history and placental risk factors, perform maternal examination and check fetal heart activity."
+        ],
+        [
+          "Investigate as indicated",
+          "From 28 weeks, obtain antenatal CTG and interpret in the clinical context; offer ultrasound of fetal growth and amniotic fluid when movements persist reduced or concerning features are present."
+        ],
+        [
+          "Plan follow-up",
+          "Document findings, consider further or repeat assessment with obstetrics for repeated episodes, and provide clear advice to return immediately for further reduced movements."
+        ]
+      ],
+      "source": {
+        "name": "PSANZ / Stillbirth CRE Decreased Fetal Movement Guideline",
+        "url": "https://learn.stillbirthcre.org.au/wp-content/uploads/2023/05/DFM_Clinical-Practice-Guideline_V2.5_Mar2023.pdf"
+      }
     }
   },
   {
