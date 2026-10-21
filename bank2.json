@@ -3596,17 +3596,17 @@
     "stem": "A 3-year-old has barky cough, inspiratory stridor at rest and subcostal recession but remains alert.",
     "ask": "Which treatment improves upper airway obstruction most rapidly?",
     "options": [
-      "Oral amoxicillin only",
-      "Nebulised adrenaline with systemic dexamethasone",
-      "Bronchodilator salbutamol only",
-      "Immediate chest physiotherapy"
+      "Give oral amoxicillin now and arrange outpatient throat examination.",
+      "Give nebulised adrenaline and dexamethasone; observe clinical response.",
+      "Try inhaled salbutamol and discharge if the cough temporarily settles.",
+      "Use chest physiotherapy and steam inhalation as the primary treatment."
     ],
     "key": "B",
     "explanations": [
-      "Typical croup is viral",
-      "Moderate-severe croup with stridor at rest benefits from nebulised adrenaline for rapid relief and dexamethasone for sustained benefit.",
-      "Salbutamol acts on lower airways",
-      "Physiotherapy is not useful."
+      "Croup is usually viral; amoxicillin alone will neither promptly shrink subglottic oedema nor relieve stridor at rest. Antibiotics have no routine role in uncomplicated croup.",
+      "Stridor at rest and recession are concerning. Nebulised adrenaline produces rapid, temporary relief of upper-airway oedema; dexamethasone provides longer-lasting benefit. Keep the child calm, reassess and observe for at least three hours after adrenaline.",
+      "Salbutamol treats bronchospasm in the lower airways; it is not the principal therapy for subglottic upper-airway narrowing. Improvement in cough does not confirm airway stability.",
+      "Steam and chest physiotherapy do not address the swollen upper airway and can distress the child, worsening obstruction. Avoid unnecessary handling and prioritize appropriate airway support."
     ],
     "pearl": "Stridor at rest or fatigue suggests more severe croup and requires monitoring for rebound.",
     "pivot": "Exam check: identify the decisive positive finding, then the urgent risk or distinguishing negative clue that eliminates the alternatives.",
@@ -3634,24 +3634,31 @@
     "management": {
       "steps": [
         [
-          "Keep calm",
-          "Avoid distressing procedures, assess stridor at rest, recession, feeding and fatigue."
+          "Assess severity without distressing child",
+          "Observe alertness, stridor at rest, recession, oxygenation and fatigue; avoid upsetting examinations and call experienced help for worsening obstruction."
         ],
         [
-          "Reduce swelling",
-          "Give dexamethasone for croup and nebulised adrenaline for moderate/severe distress per child protocol."
+          "Relieve oedema",
+          "Give dexamethasone at the locally recommended severity-based dose and nebulised adrenaline for severe or persistently worsening obstruction, with resuscitation support available."
         ],
         [
-          "Reassess",
-          "Observe after adrenaline for recurrence when its temporary effect fades."
+          "Observe and reassess",
+          "Monitor breathing and stridor and observe at least three hours after nebulised adrenaline as its effect may wear off."
         ],
         [
-          "Escalate",
-          "Airway support for exhaustion, hypoxaemia or atypical signs."
+          "Escalate or discharge appropriately",
+          "Repeated adrenaline, persistent severe stridor or exhaustion require senior paediatric/airway assessment. Discharge only when stridor free at rest with clear return precautions."
         ]
       ],
-      "safety": "Drooling, toxic appearance or tripod positioning suggests alternative airway emergencies needing expert airway control.",
-      "local": "Exact doses, escalation thresholds and contraindications must be verified against current local protocols and senior advice."
+      "source": {
+        "name": "Royal Children's Hospital Melbourne — Croup",
+        "url": "https://www.rch.org.au/clinicalguide/guideline_index/Croup_Laryngotracheobronchitis/"
+      }
+    },
+    "alternate": {
+      "scenario": "A child has a barky cough and intermittent stridor only when upset, no stridor at rest, normal work of breathing and is otherwise well.",
+      "management": "Keep calm, consider an oral glucocorticoid if stridor/risk factors are present, and arrange reassessment and safety-netting as appropriate. Nebulised adrenaline is not automatically needed in uncomplicated mild croup; advise return for stridor at rest, fatigue or increased work of breathing.",
+      "reason": "Persistent stridor at rest and recession change the need for urgent temporary upper-airway decongestion and observation."
     }
   },
   {
