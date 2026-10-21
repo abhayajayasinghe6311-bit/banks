@@ -4061,19 +4061,19 @@
     "stem": "A 26-year-old presents after deliberate self-poisoning. She now denies suicidal thoughts but describes a specific detailed plan used earlier, hopelessness and access to more medication at home.",
     "ask": "What is the BEST next step?",
     "options": [
-      "Discharge immediately because she denies current thoughts",
-      "Use a numeric risk score as the sole disposition tool",
-      "Promise absolute confidentiality regardless of imminent risk",
-      "Tell her never to discuss suicidal thoughts again",
-      "Comprehensive psychosocial and suicide risk assessment with a collaborative safety and disposition plan"
+      "Discharge after documenting current denial of suicidal thoughts alone.",
+      "Apply a numerical suicide risk scale as the only basis for disposition.",
+      "Promise confidentiality regardless of future imminent harm indicators.",
+      "Advise the patient to avoid discussing self-harm thoughts with family.",
+      "Conduct full psychosocial and risk assessment, supervision and safety planning."
     ],
     "key": "E",
     "explanations": [
-      "Misses high-risk context.",
-      "Risk scores should not replace clinical formulation.",
-      "Safety may require appropriate information sharing.",
-      "Harmful and invalidating.",
-      "Current denial alone does not neutralise recent intent, planning and access to means."
+      "Denial of current thoughts does not eliminate recent self-poisoning, a detailed plan, hopelessness and access to medication. A comprehensive assessment and safe disposition are still needed.",
+      "Risk tools alone cannot predict an individual’s immediate risk or substitute for a clinical formulation, collateral information and assessment of current supports and access to means.",
+      "Trust and privacy matter, but absolute secrecy is not appropriate where serious imminent harm requires lawful, proportionate information sharing to protect the patient.",
+      "Suppressing disclosure damages therapeutic engagement and prevents help-seeking. Explore circumstances openly and include supportive people where consent or safety arrangements allow.",
+      "The person has already self-poisoned and describes concerning recent suicidal planning. Secure immediate safety, assess intent, means, mental state and protective factors, then agree on admission or safe discharge with a collaborative documented plan."
     ],
     "pearl": "Pearl: Evaluate dynamic risk factors, intent, means and supports; document formulation, not a score alone.",
     "pivot": "Pivot: Imminent high risk can require urgent supervised care and statutory assessment according to law.",
@@ -4105,24 +4105,45 @@
     "management": {
       "steps": [
         [
-          "Secure immediate safety",
-          "Appropriate supervision, removal of accessible means and urgent senior mental-health input."
+          "Maintain immediate physical safety",
+          "Assess the effects of overdose medically, provide proportionate observation and reduce access to medication or other means while urgent mental-health support is arranged."
         ],
         [
-          "Assess risk",
-          "Specific plan, intent, preparations, attempts, psychosis, substances, protections, supports and collateral."
+          "Complete collaborative psychosocial assessment",
+          "Explore intent, timeline, planning, past behaviours, hopelessness, intoxication, mental state, supports and protective factors; seek appropriate collateral with privacy safeguards."
         ],
         [
-          "Choose disposition",
-          "Offer voluntary admission when indicated; assess capacity and statutory options if serious risk remains."
+          "Select appropriate disposition",
+          "Discuss voluntary admission or supported follow-up based on clinical risk formulation, medical stability, capacity and relevant mental health legislation if required."
         ],
         [
-          "Plan and document",
-          "Collaborative safety plan, means restriction, supports and clear follow-up."
+          "Document a safe transition",
+          "Make and share a practical safety plan and means-restriction agreement, arrange clearly scheduled follow-up and crisis contacts, and involve nominated supports."
         ]
       ],
-      "safety": "A verbal 'promise to be safe' or score alone cannot exclude imminent suicide risk.",
-      "local": "Exact doses, escalation thresholds and contraindications must be verified against current local protocols and senior advice."
+      "source": {
+        "name": "Australian Commission on Safety and Quality in Health Care — comprehensive care and self-harm",
+        "url": "https://www.safetyandquality.gov.au/standards/nsqhs-standards/comprehensive-care-standard/clinical-governance-and-quality-improvement-support-comprehensive-care"
+      }
+    },
+    "legacyOptions": [
+      "Discharge immediately because she denies current thoughts",
+      "Use a numeric risk score as the sole disposition tool",
+      "Promise absolute confidentiality regardless of imminent risk",
+      "Tell her never to discuss suicidal thoughts again",
+      "Comprehensive psychosocial and suicide risk assessment with a collaborative safety and disposition plan"
+    ],
+    "legacyExplanations": [
+      "Misses high-risk context.",
+      "Risk scores should not replace clinical formulation.",
+      "Safety may require appropriate information sharing.",
+      "Harmful and invalidating.",
+      "Current denial alone does not neutralise recent intent, planning and access to means."
+    ],
+    "alternate": {
+      "scenario": "After a full assessment, a patient describes passive death wishes without plan, intent, recent self-harm or access to means, has strong supports and agrees to follow-up.",
+      "management": "Develop a collaborative safety plan, discuss support contacts and lethal-means safety, address treatable distress, and arrange timely follow-up with a clear crisis response route. Inpatient admission is not automatically needed when the risk formulation and supports justify less restrictive care.",
+      "reason": "Recent self-poisoning, a detailed plan and available means make an immediate comprehensive safety assessment mandatory irrespective of present denial."
     }
   },
   {
