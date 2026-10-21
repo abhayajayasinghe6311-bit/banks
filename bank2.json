@@ -203,7 +203,20 @@
       "scenario": "The same regular broad-complex tachycardia occurs with a normal BP, preserved mentation, no chest pain or pulmonary oedema and otherwise stable perfusion.",
       "management": "Obtain urgent expert/ALS assessment and a 12-lead ECG while continuously monitoring the patient; consider appropriate IV antiarrhythmic therapy or planned synchronised cardioversion under the local stable-VT algorithm. Prepare to cardiovert immediately if instability develops.",
       "reason": "Poor perfusion in the original case makes immediate electrical treatment the priority; stable VT permits a carefully monitored rhythm diagnosis and treatment decision."
-    }
+    },
+    "legacyOptions": [
+      "Oral amiodarone and a repeat ECG tomorrow",
+      "IV metoprolol then observation",
+      "Carotid sinus massage only",
+      "Immediate synchronised electrical cardioversion with resuscitation support"
+    ],
+    "legacyExplanations": [
+      "Oral antiarrhythmics are too slow in instability",
+      "Beta-blockers may worsen shock and delay definitive care",
+      "Vagal manoeuvres do not adequately treat an unstable broad-complex rhythm.",
+      "Unstable tachycardia with a pulse requires urgent synchronised cardioversion."
+    ],
+    "questionRevision": 2
   },
   {
     "n": 4,
@@ -1384,7 +1397,20 @@
       "scenario": "After resuscitation, endoscopy identifies an actively bleeding non-variceal peptic ulcer rather than oesophageal varices.",
       "management": "Treat endoscopically to achieve haemostasis and provide high-dose proton-pump-inhibitor therapy according to the ulcer-bleeding protocol. Continue resuscitation and monitor for rebleeding. Variceal vasoactive treatment and prophylactic antibiotics are not routinely indicated solely for a non-variceal source.",
       "reason": "Identifying a non-variceal source changes the haemostatic treatment pathway."
-    }
+    },
+    "legacyOptions": [
+      "Only oral PPI and discharge",
+      "Vasoactive therapy and IV antibiotics with urgent endoscopic planning",
+      "High-dose anticoagulation",
+      "Routine thrombolysis"
+    ],
+    "legacyExplanations": [
+      "Discharge is unsafe",
+      "Suspected variceal bleed requires resuscitation plus early vasoactive treatment, antibiotic prophylaxis and urgent endoscopy.",
+      "Anticoagulation worsens haemorrhage.",
+      "Thrombolysis causes bleeding"
+    ],
+    "questionRevision": 2
   },
   {
     "n": 26,
@@ -2275,7 +2301,20 @@
       "scenario": "Instead of excluding bleeding, the initial CT confirms a new intracerebral haemorrhage.",
       "management": "Do not give thrombolysis. Assess and manage BP promptly, identify and reverse anticoagulants if relevant, admit to a hyperacute stroke/stroke unit and urgently involve neurosurgery if indicated. Monitor for neurological deterioration and repeat imaging as needed.",
       "reason": "Confirming haemorrhage reverses the reperfusion decision and makes haemostasis/haematoma control the immediate priority."
-    }
+    },
+    "legacyOptions": [
+      "Urgent assessment for reperfusion eligibility including IV thrombolysis and thrombectomy pathways",
+      "Wait 24 hours for MRI before discussing reperfusion",
+      "Discharge with aspirin only",
+      "Give full-dose anticoagulation immediately"
+    ],
+    "legacyExplanations": [
+      "Acute disabling ischaemic stroke within a reperfusion window requires time-critical stroke-team assessment.",
+      "Delay loses brain tissue",
+      "Aspirin alone misses reperfusion opportunity",
+      "Routine immediate full-dose anticoagulation is not standard acute stroke care."
+    ],
+    "questionRevision": 2
   },
   {
     "n": 43,
@@ -2967,7 +3006,20 @@
       "scenario": "The patient has a small unruptured tubal ectopic, stable observations, no significant free fluid and serum β-hCG within the local medical-management criteria.",
       "management": "Discuss options with senior gynaecology: methotrexate if eligibility criteria and follow-up are met, or selected expectant care depending on hCG, size, symptoms and patient wishes. Arrange serial hCG monitoring and strict emergency return instructions for worsening pain, dizziness or bleeding.",
       "reason": "Haemodynamic stability and an unruptured ectopic allow medical or expectant management; shock rules them out."
-    }
+    },
+    "legacyOptions": [
+      "Start combined oral contraceptive",
+      "Immediate resuscitation and urgent gynaecological surgery for suspected ruptured ectopic",
+      "Discharge with repeat urine pregnancy test in one week",
+      "Methotrexate as an outpatient without resuscitation"
+    ],
+    "legacyExplanations": [
+      "Contraception does not treat the emergency.",
+      "Haemodynamic instability plus early pregnancy and free fluid suggests ruptured ectopic pregnancy.",
+      "Waiting risks exsanguination",
+      "Methotrexate is inappropriate in unstable rupture"
+    ],
+    "questionRevision": 2
   },
   {
     "n": 57,
@@ -3659,7 +3711,20 @@
       "scenario": "A child has a barky cough and intermittent stridor only when upset, no stridor at rest, normal work of breathing and is otherwise well.",
       "management": "Keep calm, consider an oral glucocorticoid if stridor/risk factors are present, and arrange reassessment and safety-netting as appropriate. Nebulised adrenaline is not automatically needed in uncomplicated mild croup; advise return for stridor at rest, fatigue or increased work of breathing.",
       "reason": "Persistent stridor at rest and recession change the need for urgent temporary upper-airway decongestion and observation."
-    }
+    },
+    "legacyOptions": [
+      "Oral amoxicillin only",
+      "Nebulised adrenaline with systemic dexamethasone",
+      "Bronchodilator salbutamol only",
+      "Immediate chest physiotherapy"
+    ],
+    "legacyExplanations": [
+      "Typical croup is viral",
+      "Moderate-severe croup with stridor at rest benefits from nebulised adrenaline for rapid relief and dexamethasone for sustained benefit.",
+      "Salbutamol acts on lower airways",
+      "Physiotherapy is not useful."
+    ],
+    "questionRevision": 2
   },
   {
     "n": 70,
@@ -4130,7 +4195,20 @@
       "scenario": "An otherwise stable patient with prostate cancer has isolated new back pain but a normal motor and sensory examination, normal walking and no bowel or bladder symptoms.",
       "management": "Arrange rapid assessment for spinal metastases and a specialist-directed MRI within the non-emergency suspected-metastasis timeframe (often within one week). Treat pain and give strict return advice for leg weakness, numbness or bladder change. Routine emergency MSCC steroid treatment is not indicated without neurological signs unless another specialist rationale exists.",
       "reason": "Progressive bilateral weakness and urinary retention in the original vignette change isolated spinal-pain evaluation to an immediate cord-compression emergency."
-    }
+    },
+    "legacyOptions": [
+      "Urgent MRI spine, immediate specialist review and corticosteroids per protocol",
+      "Oral NSAIDs alone",
+      "Routine physiotherapy and outpatient MRI in six weeks",
+      "Watchful waiting because weakness may be age-related"
+    ],
+    "legacyExplanations": [
+      "Malignant spinal cord compression is a time-critical oncological emergency requiring imaging and treatment.",
+      "Analgesia alone is inadequate",
+      "Delay risks permanent paralysis",
+      "Attributing weakness to age is unsafe."
+    ],
+    "questionRevision": 2
   },
   {
     "n": 79,
