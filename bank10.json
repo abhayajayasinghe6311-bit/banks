@@ -222,19 +222,19 @@
     "stem": "A 79-year-old with atrial fibrillation develops a sudden cold, pale and painful left leg. The foot has absent pedal Doppler signals, paraesthesia and weak toe movement.",
     "ask": "What is the BEST next step?",
     "options": [
-      "Give aspirin alone, monitor the limb overnight and arrange routine review.",
-      "Start warfarin and await a therapeutic INR before vascular consultation.",
-      "Organise outpatient arterial Doppler imaging before any treatment decision.",
-      "Begin IV heparin unless contraindicated and urgently involve vascular surgery.",
-      "Elevate and compress the limb while recording pain and skin temperature."
+      "Give heparin now, but delay vascular review until tomorrow's pulse check.",
+      "Start therapeutic LMWH and defer vascular referral until routine CTA.",
+      "Request CTA before anticoagulation or contacting the vascular service.",
+      "Begin IV heparin unless contraindicated and obtain urgent vascular review.",
+      "Begin IV heparin only and observe until neurological limb signs worsen."
     ],
     "key": "D",
     "explanations": [
-      "Antiplatelet treatment alone is insufficient to stabilise an acute arterial occlusion.",
-      "Warfarin onset is too slow for an acutely threatened limb.",
-      "Acute limb ischaemia with neurological deficit is an immediate limb threat.",
-      "Heparin limits thrombus propagation while urgent revascularisation is arranged.",
-      "Compression worsens arterial perfusion."
+      "Heparin is an appropriate early measure, but motor weakness and sensory change suggest a threatened limb: delay in surgical assessment risks irreversible ischaemia.",
+      "LMWH can be an anticoagulant in some settings, but a threatened limb requires immediate vascular assessment and urgent revascularisation planning, not routine imaging and delayed referral.",
+      "CTA may help determine anatomy if it will not delay limb salvage; heparin and vascular discussion must not wait for imaging in suspected acute limb ischaemia.",
+      "Immediate IV unfractionated heparin limits thrombus propagation unless contraindicated, alongside urgent vascular assessment for threatened-limb revascularisation.",
+      "Heparin is only one part of initial treatment: waiting for further weakness or sensory loss risks irreversible neurological and tissue damage."
     ],
     "pearl": "The six Ps and motor weakness signal threatened limb viability.",
     "pivot": "With active major bleeding, obtain urgent vascular/haematology advice on limb salvage and anticoagulation risk rather than automatically administering heparin.",
