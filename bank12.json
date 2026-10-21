@@ -905,18 +905,18 @@
     "stem": "A 29-year-old taking clozapine for treatment-resistant schizophrenia reports fever 38.9°C, sore throat and oral ulcers. His absolute neutrophil count has fallen to 0.3 × 10^9/L from 2.4 one month ago. He is tachycardic but normotensive.",
     "ask": "What is the MOST appropriate immediate management?",
     "options": [
-      "Stop/withhold clozapine and arrange emergency admission for febrile neutropenia antibiotics and haematology–psychiatry review.",
-      "Start outpatient steroids alone to raise the white count.",
-      "Continue clozapine and repeat full blood count in one month.",
-      "Increase clozapine because fever can accompany breakthrough psychosis.",
-      "Give oral antiseptic mouthwash and observe at home."
+      "Stop clozapine and treat febrile neutropenia urgently with specialist input.",
+      "Start outpatient oral steroids and recheck neutrophils after the weekend.",
+      "Continue clozapine with daily temperature and symptom monitoring alone.",
+      "Increase clozapine to reduce breakthrough psychosis and review later.",
+      "Prescribe antiseptic mouthwash and repeat the blood count next month."
     ],
     "explanations": [
-      "Correct: ANC 0.3 with fever meets high-risk agranulocytosis and needs immediate infection care.",
-      "Steroids do not replace urgent infection treatment and specialist haematologic rescue.",
-      "Severe neutropenia with infection signs is a medical emergency; continued treatment is unsafe.",
-      "Dose escalation may worsen haematologic toxicity.",
-      "Mucositis with profound neutropenia may signal invasive infection."
+      "Fever with ANC 0.3 x 10^9/L indicates profound neutropenia and possible life-threatening infection: withhold clozapine under monitoring programme rules and obtain immediate emergency medical care, cultures, empiric antipseudomonal IV antibiotics and haematology/psychiatry input.",
+      "Steroids alone do not treat neutropenic sepsis and may obscure infection; outpatient review is unsafe with fever, mouth ulcers and ANC 0.3.",
+      "Continuing clozapine despite severe neutropenia risks further marrow suppression and infection progression; immediate action and treatment are required.",
+      "Clozapine escalation worsens the safety risk and does nothing for the suspected neutropenic infection. Medical stabilisation must take priority.",
+      "Mouthwash may ease discomfort but does not address the potentially fatal neutropenia, systemic infection risk and need for urgent assessment."
     ],
     "key": "A",
     "pearl": "Clozapine monitoring thresholds protect against agranulocytosis; fever or sore throat warrants immediate blood counts and urgent assessment.",
@@ -924,26 +924,35 @@
     "management": {
       "steps": [
         [
-          "Stop implicated drug",
-          "Withhold clozapine under monitoring-program rules and contact treating psychiatry."
+          "Stop implicated medication",
+          "Withhold clozapine according to the monitoring programme, contact psychiatry and urgently transfer for medical admission."
         ],
         [
-          "Treat neutropenic infection",
-          "Emergency cultures, IV antipseudomonal antibiotics per febrile-neutropenia pathway and admission."
+          "Treat febrile neutropenia",
+          "Collect blood cultures if this does not delay therapy, assess for sepsis and give urgent empiric IV antipseudomonal antibiotics per local febrile-neutropenia pathway."
         ],
         [
-          "Support counts",
-          "Haematology review for G-CSF and repeated full blood counts."
+          "Support blood counts and complications",
+          "Monitor FBC/ANC, temperature and organ function; obtain haematology input for growth factor consideration and infection investigations."
         ],
         [
-          "Plan psychiatric care",
-          "Alternative antipsychotic/rechallenge decisions require specialist multidisciplinary review."
+          "Protect psychiatric continuity",
+          "Arrange a safe bridging psychiatric plan; later rechallenge decisions are specialist-led and monitoring-program dependent."
         ]
       ],
-      "safety": "Do not assume infection is simple tonsillitis in a patient with ANC under 0.5.",
-      "local": "Educational teaching, not individual clinical orders. Apply current local mental health law, safeguarding procedures and medication monitoring requirements."
+      "safety": "Do not delay IV antibiotics for prolonged testing in febrile severe neutropenia; clozapine interruption/rechallenge follows the specific registered monitoring protocol.",
+      "local": "ANC cut-offs can depend on the product, local monitoring protocol and other clinical factors.",
+      "source": {
+        "name": "Australian medicine information: Clozitor, clozapine neutropenia",
+        "url": "https://www.safetyandquality.gov.au/medicine-finder/clozitor"
+      }
     },
-    "n": 20
+    "n": 20,
+    "alternate": {
+      "scenario": "A clozapine-treated patient has a mildly reduced ANC above the interruption threshold, no fever or infection symptoms, and otherwise remains clinically well.",
+      "management": "Follow the precise clozapine monitoring-service and product-specific ANC algorithm: verify the result, repeat counts at the required frequency, assess for other causes of neutropenia and discuss with the responsible psychiatry/haematology team before any dose continuation or interruption. Do not apply the severe febrile-neutropenia pathway automatically without its clinical features.",
+      "reason": "ANC 0.3 with fever is high-risk severe neutropenia; mildly reduced counts may require intensified surveillance rather than emergency admission."
+    }
   },
   {
     "domain": "Cardiology & Respiratory",
