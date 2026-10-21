@@ -623,18 +623,18 @@
     "stem": "A 24-year-old has slept under two hours nightly for nine days, is excessively talkative, has spent her savings on a 'global media company' and believes her television is communicating directly with her. She is agitated and refuses food. No illicit substances detected.",
     "ask": "Which immediate management is MOST appropriate?",
     "options": [
-      "Treat with psychotherapy alone because medication will affect creativity.",
-      "Discharge because high energy without sadness excludes a mood episode.",
-      "Start an SSRI antidepressant to reduce irritability and review in six weeks.",
-      "Assess risk and capacity, arrange acute psychiatric care and initiate an antipsychotic with mood-stabilising strategy as clinically indicated.",
-      "Diagnose hypomania because she remains able to articulate her ideas."
+      "Offer psychotherapy alone and schedule a routine review in several months.",
+      "Discharge with reassurance because symptoms lack depressed mood or sadness.",
+      "Begin an SSRI without antimanic therapy and review after several weeks.",
+      "Arrange acute psychiatric care, restore sleep and initiate antimanic treatment.",
+      "Label the episode hypomania because she is still able to communicate well."
     ],
     "explanations": [
-      "Therapy may be useful later, but acute severe mania generally needs medication and safe supervision.",
-      "Severe impairment, psychosis, reduced sleep and risky spending indicate mania needing urgent assessment.",
-      "Antidepressant monotherapy can worsen mania and does not address acute psychosis and impaired judgment.",
-      "Correct: severe mania with psychotic features and self-neglect requires urgent containment, sleep restoration and pharmacotherapy.",
-      "Psychosis or marked functional impairment meets mania, not hypomania; communication ability does not downgrade severity."
+      "Psychotherapy is useful in recovery and relapse prevention but is not adequate alone for psychotic mania with self-neglect, agitation and severe functional impairment.",
+      "Mania can involve euphoria or irritability without sadness. Spending savings, psychotic delusions, loss of sleep and poor self-care require urgent assessment regardless of mood polarity.",
+      "Antidepressant monotherapy may worsen or prolong a manic episode and does not treat acute delusions. Antimanic medication and a safe supervised environment are indicated.",
+      "Psychotic mania is a psychiatric emergency. Assess risk, capacity, physical status and underlying causes; provide a calm, supervised setting and use an antipsychotic with mood-stabiliser strategy as appropriate, plus short-term sedation when necessary and monitoring.",
+      "Hypomania has no psychotic features and does not cause marked functional impairment requiring hospitalisation. Communication ability does not negate florid mania."
     ],
     "key": "D",
     "pearl": "Mania is a mood episode with marked impairment or psychosis; psychotic features automatically exclude hypomania.",
@@ -659,9 +659,18 @@
         ]
       ],
       "safety": "Lithium, valproate and antipsychotic selection require pregnancy/reproductive counselling and monitoring.",
-      "local": "Educational safety guide: confirm treatment and statutory reporting with your local specialist guidelines and safeguarding law."
+      "local": "Educational safety guide: confirm treatment and statutory reporting with your local specialist guidelines and safeguarding law.",
+      "source": {
+        "name": "RANZCP Clinical Practice Guideline for Mood Disorders (2020)",
+        "url": "https://www.ranzcp.org/getmedia/a8c79505-c0b5-46b4-9f27-67f79e047674/Mood-disorders-clinical-practice-guideline-2020.pdf"
+      }
     },
-    "n": 14
+    "n": 14,
+    "alternate": {
+      "scenario": "A person has elevated mood for five days and increased energy, but no psychotic symptoms, no serious financial harm, preserves usual functioning and has no need for admission.",
+      "management": "Assess for hypomania and a bipolar-spectrum disorder, review sleep, substances and antidepressant exposure, discuss medication and relapse prevention with psychiatry, and arrange close follow-up and safety planning. Inpatient emergency containment may not be necessary if risk is low and supports are reliable.",
+      "reason": "Psychotic symptoms, severe sleep loss and self-neglect make the original presentation unequivocally more severe than hypomania."
+    }
   },
   {
     "domain": "Emergency / Critical Care",
