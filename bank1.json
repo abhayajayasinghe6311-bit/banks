@@ -4715,17 +4715,17 @@
     "stem": "A 28-year-old at 34 weeks has BP 174/116, headache, visual symptoms and proteinuria.",
     "ask": "What is the immediate priority?",
     "options": [
-      "Arrange outpatient 24-hour urine protein collection",
-      "Send home with paracetamol",
-      "Treat severe hypertension, give magnesium sulfate for seizure prophylaxis as indicated and urgent obstetric assessment",
-      "Wait for abnormal liver enzymes before involving obstetrics"
+      "Request 24-hour urinary protein while deferring BP treatment until tomorrow.",
+      "Prescribe paracetamol and arrange routine obstetric review in one week.",
+      "Control severe BP, give magnesium sulfate as indicated and urgently assess birth.",
+      "Await liver enzyme abnormalities before diagnosing severe pre-eclampsia."
     ],
     "key": "C",
     "explanations": [
-      "Protein quantification can follow, but severe BP and neurological symptoms require immediate obstetric emergency management.",
-      "Paracetamol does not prevent seizures or manage severe hypertension in pre-eclampsia.",
-      "Severe pre-eclampsia risks stroke and eclampsia; stabilize mother and plan timely delivery with specialist care.",
-      "Normal liver enzymes do not exclude severe pre-eclampsia or justify delaying treatment."
+      "Waiting for protein quantification delays treatment of a severe-range BP with neurological symptoms and places the patient at risk of stroke and eclampsia.",
+      "Analgesics do not treat the severe hypertension, prevent convulsions or assess maternal organ dysfunction; inpatient emergency care is required.",
+      "At 34 weeks with BP 174/116, headache and visual symptoms, rapidly treat severe hypertension, assess maternal and fetal status, use magnesium sulfate for seizure prevention as indicated and coordinate specialist delivery planning after stabilisation.",
+      "Serious pre-eclampsia can occur without raised transaminases; severe BP and neurological symptoms are sufficient to require urgent stabilisation and senior obstetric assessment."
     ],
     "pearl": "Severe pre-eclampsia needs admission, BP control and seizure prevention—not delayed outpatient tests.",
     "pivot": "Severe BP (≥160 systolic or ≥110 diastolic) with symptoms requires urgent treatment even before 24-hour protein results.",
@@ -4754,24 +4754,31 @@
     "management": {
       "steps": [
         [
-          "Protect mother",
-          "Admit, assess severe BP, neurologic symptoms, organ dysfunction and fetal status; involve consultant O&G."
+          "Escalate and examine",
+          "Urgent consultant obstetric and anaesthetic review; check repeated BP, symptoms, reflexes, maternal observations, fetal assessment and bloods (platelets, renal/liver function and urine protein)."
         ],
         [
-          "Treat severe features",
-          "Rapid-acting antihypertensive for severe BP and magnesium sulfate for seizure prevention/treatment as indicated."
+          "Treat severe hypertension",
+          "Start a rapid-acting antihypertensive from the local obstetric emergency protocol, with frequent BP measurements and avoidance of hypotension."
         ],
         [
-          "Monitor",
-          "Urine output, reflexes, breathing, liver/renal tests, platelets and fetal wellbeing."
+          "Prevent seizures",
+          "Give magnesium sulfate if severe pre-eclampsia/eclampsia risk warrants it; monitor respiratory rate, reflexes and urine output."
         ],
         [
-          "Plan birth",
-          "Maternal stabilisation before gestation/severity-guided delivery and neonatal preparation."
+          "Plan delivery after stabilisation",
+          "Discuss timing and mode of birth, corticosteroids if indicated for planned preterm delivery, neonatal support and postpartum BP surveillance."
         ]
       ],
-      "safety": "Magnesium prevents seizures but does not treat severe BP. Monitor toxicity and fluid overload.",
-      "local": "Exact doses, escalation thresholds and contraindications must be verified against current local protocols and senior advice."
+      "source": {
+        "name": "Queensland Clinical Guidelines — Hypertension and pregnancy (Sept 2026)",
+        "url": "https://www.health.qld.gov.au/qcg/publications"
+      }
+    },
+    "alternate": {
+      "scenario": "The patient has isolated mild hypertension at 34 weeks (e.g. 144/92), no headache or visual symptoms, reassuring fetal assessment and normal organ-function tests.",
+      "management": "Arrange maternal BP confirmation and appropriate outpatient or inpatient monitoring depending on risks, evaluate pre-eclampsia with urine protein and blood tests, consider maintenance antihypertensives according to local thresholds and plan follow-up/delivery timing with obstetrics. Emergency rapid BP lowering and magnesium sulfate are not automatic without severe features.",
+      "reason": "Severe-range hypertension and neurological symptoms change this case from monitoring to maternal emergency treatment."
     }
   },
   {
