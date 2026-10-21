@@ -440,3 +440,17 @@ body.dark .learning-missed-choice{background:#3d2936}
 
 /* Delicate lower-case signature, one step smaller */
 .site-footer .footer-signature{font-size:12px;font-weight:700;letter-spacing:.015em}
+
+
+/* Clinical depth without visual overload: expandable, softly separated teaching */
+.learning-specific-distinction{margin:11px 0 0;border-radius:11px;padding:11px 13px;background:var(--card);border:1px solid var(--edge);color:var(--ink)}
+.learning-specific-distinction b{font-size:12px;display:block;color:var(--violet);margin-bottom:4px}
+.learning-specific-distinction p{font-size:13px;line-height:1.75;margin:0;color:var(--ink)}
+.management-specifics{margin-top:15px;padding:13px 14px;border-radius:12px;background:var(--lav);border:1px solid var(--edge)}
+.management-specifics>b{display:block;font-size:13px;color:var(--ink);margin-bottom:8px}
+.management-specifics ul{margin:0 0 0 19px;padding:0;display:grid;gap:8px}
+.management-specifics li{font-size:12px;font-weight:400;color:var(--ink);line-height:1.75;padding-left:2px}
+.management-source{font-size:11px!important;line-height:1.6!important;color:var(--muted)!important;margin:11px 0 0!important}
+.management-source a{color:var(--violet);font-weight:700;text-underline-offset:2px}
+body.dark .learning-specific-distinction{background:var(--card)}
+body.dark .management-specifics{background:var(--lav)}
