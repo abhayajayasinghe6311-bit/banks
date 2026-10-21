@@ -2030,18 +2030,18 @@
     "stem": "A 79-year-old two days after hip surgery is disorientated, sees insects on the wall and alternates between drowsiness and agitation over hours. He was cognitively intact before admission. He has a urinary catheter and received opioids overnight.",
     "ask": "What is the MOST appropriate first management strategy?",
     "options": [
-      "Diagnose schizophrenia and commence a long-term antipsychotic plan.",
-      "Ignore confusion because postoperative hallucinations always resolve without complication.",
-      "Treat possible precipitants and provide orientation, sleep, sensory aids and safe supervision; use short-term medication only if severe distress/risk.",
-      "Administer high-dose benzodiazepines routinely as first line for all delirium.",
-      "Obtain a psychiatric inpatient transfer before checking vital signs or glucose."
+      "Treat as new primary schizophrenia and prescribe maintenance antipsychotics.",
+      "Observe without investigations because postoperative confusion is transient.",
+      "Assess reversible precipitants and provide orientation and safe supervision.",
+      "Give regular benzodiazepines regardless of medical causes or withdrawal.",
+      "Transfer to psychiatry before checking observations, glucose or medicines."
     ],
     "explanations": [
-      "Sudden onset with fluctuating attention following illness/surgery indicates delirium, not a chronic primary psychosis.",
-      "Delirium can indicate infection, drug toxicity, hypoxia or metabolic illness and predicts adverse outcomes.",
-      "Correct: delirium care prioritises identifying causes, non-drug measures and cautious symptom management.",
-      "Benzodiazepines often worsen non-withdrawal delirium and carry respiratory/fall risks.",
-      "Immediate medical assessment for reversible precipitants is essential."
+      "New fluctuation in alertness and cognition two days after surgery is classic for delirium. New-onset primary schizophrenia at this age would be unlikely and should not precede medical assessment.",
+      "Postoperative delirium can reflect hypoxia, infection, medication toxicity, pain, retention or metabolic disturbance. Waiting without evaluating these causes may allow a preventable complication to progress.",
+      "Treat likely delirium: assess ABC and glucose, medications/opioids, infection, pain, constipation or retention; promote reorientation, sleep, glasses/hearing aids, family support, hydration and safety. Use short-term medication only for severe distress or immediate risk where justified.",
+      "Benzodiazepines generally worsen non-withdrawal delirium and increase sedation and falls; they may be indicated for alcohol or benzodiazepine withdrawal, but not routinely for postoperative delirium.",
+      "Immediate assessment for reversible medical precipitants is essential. Psychiatric consultation may help if severe behavioural problems persist, but is not a substitute for urgent medical assessment."
     ],
     "key": "C",
     "pearl": "Delirium is an acute fluctuating disturbance of attention/awareness; always seek medical precipitants and medication effects.",
@@ -2066,9 +2066,18 @@
         ]
       ],
       "safety": "Avoid antipsychotics in Lewy body dementia or Parkinsonism unless senior specialist-directed; check QT risk.",
-      "local": "Educational pathway: follow local mental health, prescribing, capacity and safeguarding policies and seek immediate senior help where indicated."
+      "local": "Educational pathway: follow local mental health, prescribing, capacity and safeguarding policies and seek immediate senior help where indicated.",
+      "source": {
+        "name": "Victorian Department of Health — Standardised care: Delirium",
+        "url": "https://www.health.vic.gov.au/sites/default/files/2023-11/standardised-care-delirium.pdf"
+      }
     },
-    "n": 44
+    "n": 44,
+    "alternate": {
+      "scenario": "A similar postoperative patient becomes agitated, tremulous and hallucinating 48 hours after stopping heavy daily alcohol intake, with marked sweating and tachycardia.",
+      "management": "Consider alcohol withdrawal delirium, begin monitored benzodiazepine-based withdrawal treatment and thiamine with appropriate medical/critical-care supervision, while checking for coexisting infection, metabolic problems or medication effects. Benzodiazepines may be first-line for withdrawal delirium even though they are usually avoided in non-withdrawal delirium.",
+      "reason": "The underlying cause determines drug treatment: withdrawal delirium responds to benzodiazepines; postoperative non-withdrawal delirium is treated by correcting precipitants and supportive care."
+    }
   },
   {
     "domain": "Infectious disease / dermatology",
