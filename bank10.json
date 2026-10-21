@@ -291,7 +291,22 @@
       "scenario": "The patient has ongoing life-threatening bleeding that makes immediate systemic anticoagulation unsafe.",
       "management": "Obtain immediate senior vascular and haematology input to weigh haemorrhage risk against limb loss, prioritise urgent revascularisation planning and haemostatic care, and reassess anticoagulation as soon as safe. Do not substitute outpatient waiting for urgent vascular care.",
       "reason": "Immediate limb salvage remains time-critical even when heparin is contraindicated."
-    }
+    },
+    "legacyOptions": [
+      "Give aspirin only and observe overnight",
+      "Start warfarin and wait several days for anticoagulation",
+      "Schedule an outpatient arterial duplex next week",
+      "Begin therapeutic IV unfractionated heparin unless contraindicated and call vascular surgery urgently",
+      "Elevate the limb and apply a tight compression bandage"
+    ],
+    "legacyExplanations": [
+      "Antiplatelet treatment alone is insufficient to stabilise an acute arterial occlusion.",
+      "Warfarin onset is too slow for an acutely threatened limb.",
+      "Acute limb ischaemia with neurological deficit is an immediate limb threat.",
+      "Heparin limits thrombus propagation while urgent revascularisation is arranged.",
+      "Compression worsens arterial perfusion."
+    ],
+    "questionRevision": 2
   },
   {
     "n": 5,
@@ -1298,7 +1313,22 @@
       "scenario": "The patient with the same mechanical valve takes warfarin but has only a modestly elevated INR without any active bleeding or new neurological signs.",
       "management": "Withhold or adjust warfarin according to the measured INR, valve-specific target and locally recommended non-bleeding protocol, then arrange a prompt repeat INR. Do not routinely give four-factor PCC for a non-bleeding INR abnormality; urgent reversal applies to major/life-threatening bleeding.",
       "reason": "The presence of confirmed active intracranial bleeding, not the INR result alone, justifies emergency PCC and IV vitamin K."
-    }
+    },
+    "legacyOptions": [
+      "Give aspirin for the headache",
+      "Use oral vitamin K alone and wait",
+      "Withhold warfarin only and recheck INR tomorrow",
+      "IV vitamin K plus four-factor prothrombin complex concentrate, with urgent specialist care",
+      "Start heparin to prevent valve thrombosis"
+    ],
+    "legacyExplanations": [
+      "Aspirin increases bleeding risk.",
+      "Oral vitamin K acts too slowly for emergency reversal.",
+      "Stopping warfarin alone is too slow in life-threatening intracranial bleeding.",
+      "Four-factor PCC rapidly restores vitamin K-dependent factors; IV vitamin K sustains reversal.",
+      "Anticoagulation worsens current bleeding."
+    ],
+    "questionRevision": 2
   },
   {
     "n": 20,
@@ -1719,7 +1749,22 @@
       "scenario": "Bilirubin rises again and the patient becomes febrile, jaundiced and hypotensive with ultrasound evidence of a dilated obstructed common bile duct.",
       "management": "Assess and treat septic cholangitis immediately using resuscitation and broad-spectrum IV antibiotics, and arrange urgent therapeutic ERCP for drainage or another biliary decompression route if ERCP is unavailable.",
       "reason": "New infected biliary obstruction creates an urgent need for source control not present in uncomplicated pancreatitis."
-    }
+    },
+    "legacyOptions": [
+      "Urgent ERCP is mandatory because lipase is raised",
+      "Delay all IV fluids until ERCP",
+      "Perform diagnostic ERCP instead of ultrasound in every case",
+      "All gallstone pancreatitis requires urgent ERCP",
+      "Urgent ERCP is most strongly indicated with cholangitis or persistent biliary obstruction"
+    ],
+    "legacyExplanations": [
+      "Lipase magnitude does not indicate duct obstruction.",
+      "Early appropriate fluids remain important.",
+      "Ultrasound helps identify biliary cause without ERCP-associated pancreatitis risk.",
+      "Routine ERCP in uncomplicated gallstone pancreatitis adds risk without proven benefit.",
+      "Concomitant cholangitis or ongoing obstruction warrants early duct decompression."
+    ],
+    "questionRevision": 2
   },
   {
     "n": 26,
@@ -4333,7 +4378,22 @@
       "scenario": "The patient instead has a typical brief focal seizure, complete recovery, normal MRI and CSF, and no fever, encephalopathy or other features of encephalitis.",
       "management": "Investigate the first seizure with ECG, blood tests and appropriate neuroimaging/EEG as clinically indicated, arrange neurological risk assessment and discuss antiseizure therapy based on recurrence risk. IV aciclovir is not routinely indicated without clinical suspicion of HSV encephalitis.",
       "reason": "Encephalopathy and a focal temporal brain lesion are what make immediate antiviral therapy essential in the original case."
-    }
+    },
+    "legacyOptions": [
+      "Give aspirin alone",
+      "Treat with oral fluconazole",
+      "Discharge on paracetamol",
+      "Wait for PCR result",
+      "Start IV aciclovir while investigating encephalitis"
+    ],
+    "legacyExplanations": [
+      "Aspirin is not pathogen treatment.",
+      "Fluconazole does not treat HSV.",
+      "Confusion and seizures require admission.",
+      "Treatment delay can worsen HSV encephalitis outcomes.",
+      "Temporal encephalitis warrants early IV aciclovir and supportive care."
+    ],
+    "questionRevision": 2
   },
   {
     "n": 66,
@@ -4608,7 +4668,22 @@
       "scenario": "A patient with metastatic lung cancer reports new back pain only, with normal gait, power, sensation and sphincter function and no neurological red flags.",
       "management": "Arrange rapid specialist evaluation for spinal metastases and MRI according to suspected spinal-metastasis pathways (typically within a week rather than the emergency MSCC pathway), provide analgesia and advise immediate return for weakness, sensory changes, bowel/bladder dysfunction or worsening pain. Do not give routine dexamethasone without neurological signs unless recommended for severe pain or another specific indication.",
       "reason": "Objective neurological deficits and bladder dysfunction in the original case make cord compression an immediate oncological emergency."
-    }
+    },
+    "legacyOptions": [
+      "Lumbar puncture before imaging",
+      "Start anticoagulation empirically",
+      "Routine physiotherapy appointment",
+      "Emergency spinal MRI, immediate specialist referral and dexamethasone as indicated",
+      "Discharge with oral NSAIDs"
+    ],
+    "legacyExplanations": [
+      "LP is not the first investigation and may be inappropriate.",
+      "Anticoagulation does not treat cord compression.",
+      "Therapy alone delays diagnosis.",
+      "Metastatic spinal cord compression needs urgent imaging, steroids where appropriate and surgical or radiation evaluation.",
+      "Analgesia alone risks paralysis."
+    ],
+    "questionRevision": 2
   },
   {
     "n": 70,
@@ -5666,7 +5741,22 @@
       "scenario": "A patient reports flashes and floaters followed by a progressive curtain-like visual field defect; fundoscopy suggests rhegmatogenous retinal detachment instead of a cherry-red spot.",
       "management": "Arrange same-day urgent dilated retinal examination and ophthalmology referral for possible retinal tear/detachment repair. A retinal-detachment pathway differs from embolic CRAO stroke evaluation, although both need prompt specialist assessment.",
       "reason": "The fundoscopic pattern and visual symptom history differentiate retinal arterial occlusion from retinal detachment."
-    }
+    },
+    "legacyOptions": [
+      "Activate urgent stroke/ophthalmology evaluation for central retinal artery occlusion",
+      "Treat as conjunctivitis with drops",
+      "Advise eye exercises",
+      "Reassure because there is no eye pain",
+      "Arrange routine optometry next month"
+    ],
+    "legacyExplanations": [
+      "CRAO is a retinal infarction needing emergent vascular and ophthalmic assessment.",
+      "Conjunctivitis causes discomfort and discharge, not profound sudden loss.",
+      "Exercises do not restore arterial perfusion.",
+      "Painlessness is characteristic of vascular loss.",
+      "Retinal arterial occlusion is time-critical, not routine follow-up."
+    ],
+    "questionRevision": 2
   },
   {
     "n": 87,
