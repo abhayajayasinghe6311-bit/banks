@@ -509,3 +509,203 @@ body.midnight-sage .btn:not(.soft):not(.rose),body.midnight-sage a.btn:not(.soft
 #app .management-below-question ol{grid-template-columns:repeat(2,minmax(0,1fr));column-gap:30px;row-gap:16px}
 #app .management-below-question li{min-width:0}
 @media(max-width:740px){#app .learning-layout > .management-below-question{max-width:850px;margin-inline:auto;padding:18px!important}#app .management-below-question ol{grid-template-columns:minmax(0,1fr)}}
+
+/* Balanced clinical-reading layout — October 2026
+   Question + practical management share the LEFT column;
+   detailed reasoning remains in the RIGHT column. */
+#app .learning-layout,
+#app .learning-layout.has-notes {
+  display:grid;
+  grid-template-columns:minmax(0,1fr) minmax(0,1fr);
+  align-items:start;
+  gap:20px;
+  margin-top:17px;
+}
+#app .learning-layout > .question-stack {
+  display:flex;
+  flex-direction:column;
+  align-items:stretch;
+  gap:16px;
+  min-width:0;
+}
+#app .learning-layout > .question-stack > .quiz-question {
+  width:100%;
+  max-width:none;
+  margin:0;
+  padding:clamp(20px,2.4vw,32px);
+  min-width:0;
+}
+#app .learning-layout > .learning-card {
+  width:100%;
+  margin:0;
+  min-width:0;
+  padding:clamp(18px,2vw,27px);
+}
+/* Compact, genuinely useful management: one vertical sequence, no empty columns. */
+#app .question-stack > .management-under-question {
+  display:block;
+  width:100%;
+  max-width:none;
+  margin:0;
+  padding:20px 22px!important;
+  border-radius:20px;
+  border:1px solid var(--edge);
+  background:var(--card);
+  box-shadow:var(--shadow);
+  min-width:0;
+}
+#app .management-under-question .management-heading {
+  display:flex;
+  align-items:center;
+  gap:11px;
+  padding-bottom:14px;
+  margin-bottom:13px;
+  border-bottom:1px solid var(--edge);
+}
+#app .management-under-question .management-heading > span {
+  display:grid;
+  place-items:center;
+  flex:0 0 38px;
+  height:38px;
+  border-radius:11px;
+  background:var(--lav);
+  font-size:21px;
+}
+#app .management-under-question .management-heading h3 {
+  margin:0;
+  font-size:17px;
+  line-height:1.35;
+  font-weight:770;
+  color:var(--ink);
+}
+#app .management-under-question .management-heading p {
+  margin:2px 0 0;
+  color:var(--muted);
+  font-size:12px;
+  line-height:1.4;
+}
+#app .management-under-question ol {
+  display:grid;
+  grid-template-columns:minmax(0,1fr)!important;
+  row-gap:12px;
+  padding:0 0 0 22px;
+  margin:0;
+}
+#app .management-under-question li {
+  color:var(--violet);
+  padding:0 0 0 3px;
+  font-size:14px;
+  line-height:1.65;
+}
+#app .management-under-question li::marker{font-weight:800}
+#app .management-under-question li strong {
+  display:block;
+  color:var(--ink);
+  font-size:14px;
+  line-height:1.5;
+  font-weight:750;
+}
+#app .management-under-question li span {
+  display:block;
+  color:var(--ink);
+  font-size:14px;
+  line-height:1.65;
+  margin-top:3px;
+  font-weight:400;
+}
+#app .management-under-question .management-safety {
+  background:var(--red);
+  border-color:var(--missed-border,var(--edge));
+  border-radius:12px;
+  margin-top:14px;
+  padding:11px 13px;
+}
+#app .management-under-question .management-safety p {
+  margin-top:4px;
+  font-size:13px;
+  line-height:1.6;
+}
+#app .management-under-question .management-local {
+  margin:14px 0 0!important;
+  padding-top:10px;
+  color:var(--muted);
+  font-size:11px!important;
+  line-height:1.5;
+}
+/* Long distractor rationales are still available, now in an easy-to-scan accordion. */
+#app .learning-alternatives{gap:9px}
+#app details.learning-alternative {
+  display:block;
+  padding:0;
+  border-radius:12px;
+  overflow:hidden;
+  background:var(--alt-surface,var(--card));
+}
+#app .learning-alternative > summary.learning-option-head {
+  display:flex;
+  align-items:center;
+  gap:10px;
+  padding:12px 13px;
+  cursor:pointer;
+  list-style:none;
+  user-select:none;
+  min-height:48px;
+}
+#app .learning-alternative > summary.learning-option-head::-webkit-details-marker{display:none}
+#app .learning-option-head strong {
+  flex:1;
+  font-size:14px;
+  line-height:1.55;
+  font-weight:650;
+}
+#app .learning-letter{
+  flex:0 0 26px;
+  min-height:26px;
+}
+#app .learning-expand-hint {
+  margin-left:auto;
+  white-space:nowrap;
+  font-weight:700;
+  color:var(--violet);
+  font-size:11px;
+}
+#app details.learning-alternative[open] > summary{
+  border-bottom:1px solid var(--edge);
+  background:var(--lav);
+}
+#app details.learning-alternative[open] .learning-expand-hint{color:var(--ink)}
+#app details.learning-alternative > p {
+  margin:0;
+  padding:12px 15px 15px 49px;
+  color:var(--ink);
+  font-size:14px;
+  line-height:1.72;
+  overflow-wrap:anywhere;
+}
+#app .learning-alternative > summary:focus-visible{
+  outline:2px solid var(--violet);
+  outline-offset:-3px;
+}
+#app .learning-card .learning-section p {line-height:1.7}
+#app .learning-card .learning-correct {padding:16px}
+#app .learning-card .learning-correct h3{font-size:15px}
+@media(max-width:900px){
+  #app .learning-layout,
+  #app .learning-layout.has-notes{
+    grid-template-columns:minmax(0,1fr);
+    gap:16px;
+  }
+  #app .learning-layout > .question-stack,
+  #app .learning-layout > .learning-card{
+    width:100%;
+    max-width:850px;
+    margin-inline:auto;
+  }
+}
+@media(max-width:560px){
+  #app .question-stack > .management-under-question{padding:17px!important}
+  #app .learning-layout > .learning-card{padding:18px}
+  #app .learning-alternative > summary.learning-option-head{padding:11px}
+  #app .learning-expand-hint{font-size:10px}
+  #app details.learning-alternative > p{padding-left:14px}
+}
