@@ -665,7 +665,20 @@
       "scenario": "The same patient is alert, haemodynamically stable, has no neurological red flags or LP contraindications, and LP can be performed immediately without delaying treatment.",
       "management": "Arrange prompt blood cultures and lumbar puncture before antibiotics if this can be performed safely without meaningful delay; then start empiric IV antimicrobials promptly. If LP is delayed or becomes unsafe, treat first and defer LP.",
       "reason": "Reduced GCS and potential raised intracranial pressure make immediate LP unsafe in the original stem."
-    }
+    },
+    "legacyOptions": [
+      "Perform lumbar puncture immediately before antibiotics",
+      "Obtain CT brain and await formal reporting before treatment",
+      "Start urgent empirical IV antibiotics after prompt blood cultures if feasible, and resuscitate",
+      "Administer corticosteroid alone while awaiting CSF analysis"
+    ],
+    "legacyExplanations": [
+      "Lumbar puncture can delay antibiotics and may be unsafe with depressed consciousness.",
+      "Imaging may be indicated but must not delay life-saving antimicrobials.",
+      "Suspected bacterial meningitis/meningococcaemia is time critical; do not delay antibiotics for imaging or LP.",
+      "Corticosteroids may have an adjunctive role but are not adequate without antibiotics."
+    ],
+    "questionRevision": 2
   },
   {
     "n": 11,
@@ -1024,7 +1037,20 @@
       "scenario": "The patient instead has non-valvular atrial fibrillation, with no mechanical heart valve or moderate-to-severe mitral stenosis.",
       "management": "Calculate thromboembolic and bleeding risks, assess kidney function, age, weight and drug interactions, then consider a correctly dosed DOAC such as apixaban if anticoagulation is indicated. A mechanical valve still requires warfarin and INR monitoring.",
       "reason": "The prosthetic mechanical valve, rather than AF alone, determines why warfarin cannot be replaced by a DOAC."
-    }
+    },
+    "legacyOptions": [
+      "Aspirin alone is always sufficient",
+      "Mechanical heart valves generally require vitamin K antagonist anticoagulation, not DOACs",
+      "Apixaban is superior for all mechanical valves",
+      "Stop all anticoagulation permanently"
+    ],
+    "legacyExplanations": [
+      "Aspirin is an antiplatelet; it does not provide adequate protection from mechanical-valve thrombosis.",
+      "DOACs are not recommended for mechanical prosthetic valves; use warfarin with appropriate INR monitoring.",
+      "DOACs such as apixaban are not suitable substitutes for vitamin K antagonists in mechanical valves.",
+      "Stopping anticoagulation exposes the prosthetic valve to thrombosis and systemic emboli."
+    ],
+    "questionRevision": 2
   },
   {
     "n": 17,
@@ -4011,7 +4037,20 @@
       "scenario": "The intracerebral haemorrhage instead occurs in a patient taking dabigatran rather than warfarin.",
       "management": "Stop dabigatran, activate the major-bleeding pathway and give urgent idarucizumab if indicated and available; arrange stroke/neurosurgery, blood-pressure control and serial neurological observations. Do not use vitamin K or warfarin-specific PCC reversal routinely as the direct substitute.",
       "reason": "Warfarin and direct thrombin inhibitors require different reversal approaches."
-    }
+    },
+    "legacyOptions": [
+      "Urgent anticoagulation reversal with 4-factor PCC plus IV vitamin K as indicated",
+      "Give aspirin",
+      "Continue warfarin",
+      "Wait 24 hours to recheck INR"
+    ],
+    "legacyExplanations": [
+      "Warfarin-related intracranial bleeding needs urgent reversal alongside neurosurgical/stroke care.",
+      "Aspirin worsens bleeding risk and does not reverse warfarin-associated intracranial haemorrhage.",
+      "Continuing warfarin maintains anticoagulation during active cerebral bleeding.",
+      "Waiting delays reversal, allowing possible haematoma expansion."
+    ],
+    "questionRevision": 2
   },
   {
     "n": 74,
@@ -4661,7 +4700,20 @@
         "name": "PSANZ / Stillbirth CRE Decreased Fetal Movement Guideline",
         "url": "https://learn.stillbirthcre.org.au/wp-content/uploads/2023/05/DFM_Clinical-Practice-Guideline_V2.5_Mar2023.pdf"
       }
-    }
+    },
+    "legacyOptions": [
+      "Same-day obstetric assessment with fetal heart rate evaluation and appropriate surveillance",
+      "Induce labour at home",
+      "Ask her to wait three days",
+      "Reassure without assessment"
+    ],
+    "legacyExplanations": [
+      "Reduced fetal movement requires prompt assessment for fetal compromise, using gestational-age-appropriate tests.",
+      "Attempting induction outside a clinical setting is dangerous and not an appropriate response to reduced fetal movement.",
+      "Waiting days delays identification of fetal compromise.",
+      "Reassurance without fetal assessment misses possible placental dysfunction or fetal jeopardy."
+    ],
+    "questionRevision": 2
   },
   {
     "n": 85,
@@ -4779,7 +4831,20 @@
       "scenario": "The patient has isolated mild hypertension at 34 weeks (e.g. 144/92), no headache or visual symptoms, reassuring fetal assessment and normal organ-function tests.",
       "management": "Arrange maternal BP confirmation and appropriate outpatient or inpatient monitoring depending on risks, evaluate pre-eclampsia with urine protein and blood tests, consider maintenance antihypertensives according to local thresholds and plan follow-up/delivery timing with obstetrics. Emergency rapid BP lowering and magnesium sulfate are not automatic without severe features.",
       "reason": "Severe-range hypertension and neurological symptoms change this case from monitoring to maternal emergency treatment."
-    }
+    },
+    "legacyOptions": [
+      "Arrange outpatient 24-hour urine protein collection",
+      "Send home with paracetamol",
+      "Treat severe hypertension, give magnesium sulfate for seizure prophylaxis as indicated and urgent obstetric assessment",
+      "Wait for abnormal liver enzymes before involving obstetrics"
+    ],
+    "legacyExplanations": [
+      "Protein quantification can follow, but severe BP and neurological symptoms require immediate obstetric emergency management.",
+      "Paracetamol does not prevent seizures or manage severe hypertension in pre-eclampsia.",
+      "Severe pre-eclampsia risks stroke and eclampsia; stabilize mother and plan timely delivery with specialist care.",
+      "Normal liver enzymes do not exclude severe pre-eclampsia or justify delaying treatment."
+    ],
+    "questionRevision": 2
   },
   {
     "n": 87,
