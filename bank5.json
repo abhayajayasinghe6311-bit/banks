@@ -3748,17 +3748,19 @@
     "stem": "A 39-year-old taking clozapine reports no bowel movement for six days, severe bloating, vomiting and increasing abdominal pain. Her abdomen is distended and bowel sounds are reduced.",
     "ask": "Which action is MOST APPROPRIATE?",
     "options": [
-      "Increase clozapine immediately",
-      "Reassure that constipation is never serious with clozapine",
-      "Urgent medical/surgical assessment for possible clozapine-induced gastrointestinal hypomotility or obstruction",
-      "Give only bulk-forming fibre and review in two weeks"
+      "Increase clozapine to improve the mental state while observing stools.",
+      "Arrange a routine fibre supplement and review symptoms in two weeks.",
+      "Refer urgently for suspected clozapine-related ileus or obstruction.",
+      "Give a single oral laxative and discharge without abdominal imaging.",
+      "Attribute abdominal symptoms to anxiety unless the patient develops fever."
     ],
     "key": "C",
     "explanations": [
-      "Dose increase may worsen gut hypomotility.",
-      "Severe constipation on clozapine is a recognised life-threatening adverse effect.",
-      "Clozapine can cause fatal ileus/obstruction. Vomiting, distension and pain require emergency evaluation and treatment, not routine constipation advice.",
-      "Bulk fibre is inappropriate if obstruction/ileus is suspected and delays care."
+      "Increasing clozapine can worsen gastrointestinal hypomotility. Pain, vomiting, distension and six days without stool are alarm features requiring emergency care.",
+      "Bulk-forming fibre can worsen ileus/obstruction and delays assessment. This is not uncomplicated constipation suitable for routine review.",
+      "Clozapine can cause life-threatening bowel hypomotility, ileus and obstruction. Emergency medical/surgical evaluation, physiological assessment, abdominal imaging as indicated and clozapine-prescriber review are needed.",
+      "One laxative dose without examining for obstruction is unsafe, especially with vomiting and reduced bowel sounds. Oral agents may be inappropriate until obstruction is excluded.",
+      "These objective physical red flags are not explained by anxiety; fever may be absent despite serious or evolving gastrointestinal complications."
     ],
     "pearl": "On clozapine, ask routinely about bowel movements—not just neutrophil counts.",
     "pivot": "Mild constipation without red flags still requires an active bowel regimen and close monitoring.",
@@ -3786,24 +3788,44 @@
     "management": {
       "steps": [
         [
-          "Assess the decision point",
-          "Identify the presentation, timing and specific finding in the stem and the patient's immediate stability; check whether an emergency escalation is needed."
+          "Recognise life-threatening gastrointestinal hypomotility",
+          "Treat prolonged constipation with vomiting, distension and pain on clozapine as possible ileus or bowel obstruction."
         ],
         [
-          "Act on the best option",
-          "Urgent medical/surgical assessment for possible clozapine-induced gastrointestinal hypomotility or obstruction. Clozapine can cause fatal ileus/obstruction. Vomiting, distension and pain require emergency evaluation and treatment, not routine constipation advice."
+          "Escalate medically",
+          "Arrange immediate emergency medical/surgical review, assess ABC, circulation and sepsis risk, IV access, electrolytes and abdominal examination; institute nil by mouth and IV fluids when appropriate."
         ],
         [
-          "Reassess the effect",
-          "Check symptoms, vital signs, relevant results and adverse effects after the first intervention; revise the plan if the patient deteriorates."
+          "Investigate obstruction and medication risk",
+          "Arrange urgent imaging as clinically indicated, consider NG decompression if required and contact psychiatry to review clozapine and co-prescribed anticholinergic medications."
         ],
         [
-          "Plan ongoing care",
-          "Arrange appropriate senior review, investigations, safety-netting and follow-up; check local protocols for the precise treatment sequence."
+          "Plan bowel and psychiatric treatment",
+          "Work with medical/surgical and psychiatric teams to treat the cause and determine safe subsequent constipation prevention and clozapine management."
         ]
       ],
-      "safety": "This is a decision framework, not a substitute for drug-specific instructions. Prescribing, dosing and escalation must be verified locally.",
-      "local": "Exact doses, escalation thresholds and contraindications must be verified against current local protocols and senior advice."
+      "safety": "Do not use bulk-forming agents or delay imaging in suspected obstruction. Clozapine constipation can be fatal even without prior severe warning.",
+      "source": {
+        "name": "Therapeutic Goods Administration (Australia) clozapine constipation safety alert",
+        "url": "https://www.tga.gov.au/safety/safety-monitoring-and-information/safety-alerts/clozapine"
+      }
+    },
+    "legacyOptions": [
+      "Increase clozapine immediately",
+      "Reassure that constipation is never serious with clozapine",
+      "Urgent medical/surgical assessment for possible clozapine-induced gastrointestinal hypomotility or obstruction",
+      "Give only bulk-forming fibre and review in two weeks"
+    ],
+    "legacyExplanations": [
+      "Dose increase may worsen gut hypomotility.",
+      "Severe constipation on clozapine is a recognised life-threatening adverse effect.",
+      "Clozapine can cause fatal ileus/obstruction. Vomiting, distension and pain require emergency evaluation and treatment, not routine constipation advice.",
+      "Bulk fibre is inappropriate if obstruction/ileus is suspected and delays care."
+    ],
+    "alternate": {
+      "scenario": "A patient taking clozapine has mild constipation for two days without pain, distension, vomiting, fever or signs of obstruction.",
+      "management": "Review and record bowel habits, hydration and other constipating drugs, start an appropriate stimulant/osmotic laxative regimen per clozapine bowel protocol and arrange early reassessment; give clear emergency instructions for vomiting, abdominal pain, prolonged constipation or distension.",
+      "reason": "Uncomplicated constipation merits proactive treatment and surveillance, whereas obstructive symptoms demand emergency assessment."
     }
   },
   {
