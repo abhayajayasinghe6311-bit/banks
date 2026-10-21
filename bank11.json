@@ -237,7 +237,22 @@
       "scenario": "The patient instead arrives in septic shock with suspected infective endocarditis and requires immediate stabilisation.",
       "management": "Activate the sepsis/resuscitation pathway, draw blood cultures rapidly if doing so causes no significant delay, begin empiric IV antimicrobial therapy promptly with infectious diseases input, and obtain urgent echocardiography and cardiology/cardiothoracic evaluation after initial stabilisation. Never wait prolonged periods for repeated cultures in shock.",
       "reason": "Obtaining microbiology before antibiotics remains preferable when feasible, but shock changes the urgency and allowable delay."
-    }
+    },
+    "legacyOptions": [
+      "Arrange an exercise treadmill ECG to evaluate the murmur.",
+      "Collect multiple appropriately timed blood-culture sets from separate venepunctures and obtain echocardiography.",
+      "Order an isolated antistreptolysin O titre and wait for it before assessment.",
+      "Take one blood culture after giving broad-spectrum antibiotics.",
+      "Prescribe empirical oral amoxicillin for seven days without cardiac imaging."
+    ],
+    "legacyExplanations": [
+      "Stress testing does not evaluate possible valvular infection and risks delaying appropriate care.",
+      "Correct: stable suspected infective endocarditis requires microbiological diagnosis and urgent valve imaging.",
+      "An ASO titre cannot establish active endocarditis or guide urgent treatment.",
+      "A single post-antibiotic culture reduces the chance of identifying the organism.",
+      "Prosthetic-valve endocarditis requires inpatient specialist-directed IV therapy and a longer course."
+    ],
+    "questionRevision": 2
   },
   {
     "domain": "Obstetrics & gynaecology",
@@ -669,7 +684,22 @@
       "scenario": "The parent has transient tearfulness and irritability four days after delivery, sleeps when the infant is cared for, is functioning, and has no delusions, hallucinations, mania, suicidal thoughts or infant safety concerns.",
       "management": "Assess mood and available support, reassure about the typical self-limited course of baby blues, promote sleep, practical infant-care help and follow-up. Give clear return advice for worsening mood, new psychosis, persistent symptoms beyond about two weeks or any safety concerns. Psychiatric admission is not routine in uncomplicated baby blues.",
       "reason": "Infant-focused psychotic beliefs and markedly disrupted behaviour elevate the original case to postpartum psychosis requiring emergency safeguarding and treatment."
-    }
+    },
+    "legacyOptions": [
+      "Urgently assess mother–infant safety and arrange psychiatric admission/supervision with acute antipsychotic or mood stabilising treatment as indicated.",
+      "Keep the baby with her unsupervised to preserve bonding while observing her mood.",
+      "Start an SSRI alone and review at the routine six-week postnatal check.",
+      "Reassure her that 'baby blues' commonly include delusions and advise rest at home.",
+      "Offer CBT as sole treatment because symptoms started after childbirth."
+    ],
+    "legacyExplanations": [
+      "Correct: postpartum psychosis needs rapid specialist inpatient care, risk assessment and appropriate pharmacological treatment.",
+      "Safety of mother and infant is paramount; supervision and safeguarding must precede routine bonding arrangements.",
+      "Antidepressant monotherapy can worsen mania and is inadequate for psychosis with infant-related risk.",
+      "Postpartum blues do not cause frank psychosis; this presentation is a psychiatric emergency.",
+      "Psychotherapy is supportive later but cannot replace emergency treatment of postpartum psychosis."
+    ],
+    "questionRevision": 2
   },
   {
     "domain": "Infectious diseases & medicine",
@@ -913,7 +943,22 @@
       "scenario": "Instead the patient has high fever, agitation, clonus, hyperreflexia and diarrhoea after starting a serotonergic medication rather than haloperidol.",
       "management": "Assess for serotonin toxicity: immediately stop serotonergic agents, give supportive resuscitation, cooling and benzodiazepines for agitation/neuromuscular hyperactivity; consider cyproheptadine under toxicology guidance for moderate/severe cases. Avoid introducing serotonergic drugs or assuming NMS without reconciling medication exposure and neuromuscular findings.",
       "reason": "Clonus/hyperreflexia with serotonergic exposure favours serotonin syndrome; lead-pipe rigidity after dopamine blockade supports NMS."
-    }
+    },
+    "legacyOptions": [
+      "Treat as serotonin syndrome and give more serotonergic medication.",
+      "Stop antipsychotic and initiate emergency supportive and critical-care management with specialist-directed therapy.",
+      "Give oral paracetamol alone and review CK in one week.",
+      "Wait for MRI brain to prove diagnosis before ceasing antipsychotics.",
+      "Increase haloperidol to reduce agitation and muscle rigidity."
+    ],
+    "legacyExplanations": [
+      "NMS follows dopamine antagonists and features severe rigidity rather than clonus/hyperreflexia.",
+      "Correct: NMS risks rhabdomyolysis, renal failure and death.",
+      "Hyperthermia from sustained muscle activity and autonomic instability needs urgent medical care.",
+      "NMS is primarily clinical and treatment cannot wait for imaging.",
+      "Ongoing dopamine blockade worsens probable NMS."
+    ],
+    "questionRevision": 2
   },
   {
     "domain": "Medicine & emergency",
@@ -2077,7 +2122,22 @@
       "scenario": "A similar postoperative patient becomes agitated, tremulous and hallucinating 48 hours after stopping heavy daily alcohol intake, with marked sweating and tachycardia.",
       "management": "Consider alcohol withdrawal delirium, begin monitored benzodiazepine-based withdrawal treatment and thiamine with appropriate medical/critical-care supervision, while checking for coexisting infection, metabolic problems or medication effects. Benzodiazepines may be first-line for withdrawal delirium even though they are usually avoided in non-withdrawal delirium.",
       "reason": "The underlying cause determines drug treatment: withdrawal delirium responds to benzodiazepines; postoperative non-withdrawal delirium is treated by correcting precipitants and supportive care."
-    }
+    },
+    "legacyOptions": [
+      "Diagnose schizophrenia and commence a long-term antipsychotic plan.",
+      "Ignore confusion because postoperative hallucinations always resolve without complication.",
+      "Treat possible precipitants and provide orientation, sleep, sensory aids and safe supervision; use short-term medication only if severe distress/risk.",
+      "Administer high-dose benzodiazepines routinely as first line for all delirium.",
+      "Obtain a psychiatric inpatient transfer before checking vital signs or glucose."
+    ],
+    "legacyExplanations": [
+      "Sudden onset with fluctuating attention following illness/surgery indicates delirium, not a chronic primary psychosis.",
+      "Delirium can indicate infection, drug toxicity, hypoxia or metabolic illness and predicts adverse outcomes.",
+      "Correct: delirium care prioritises identifying causes, non-drug measures and cautious symptom management.",
+      "Benzodiazepines often worsen non-withdrawal delirium and carry respiratory/fall risks.",
+      "Immediate medical assessment for reversible precipitants is essential."
+    ],
+    "questionRevision": 2
   },
   {
     "domain": "Infectious disease / dermatology",
