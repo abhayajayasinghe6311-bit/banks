@@ -181,7 +181,20 @@
       "scenario": "The patient instead has localised erythema without rapid progression, disproportionate pain, tissue necrosis, crepitus, organ dysfunction or haemodynamic instability.",
       "management": "Assess as uncomplicated cellulitis, choose an appropriate narrow-spectrum oral antibiotic according to local guidance, check for abscess/portal of entry, and provide clearly timed reassessment and escalation precautions. Urgent surgical exploration is not routine unless new red flags develop.",
       "reason": "Necrotising infection requires emergency surgical source control; uncomplicated cellulitis usually does not."
-    }
+    },
+    "legacyOptions": [
+      "Apply compression and organise outpatient Doppler ultrasound",
+      "Start oral flucloxacillin and review in 24 hours",
+      "Urgent surgical assessment for debridement with immediate broad-spectrum intravenous antibiotics and resuscitation",
+      "Obtain MRI and wait for the result before antibiotics"
+    ],
+    "legacyExplanations": [
+      "Compression and Doppler do not treat a surgical infection.",
+      "Oral treatment is grossly inadequate for a septic patient with tissue necrosis.",
+      "Pain out of proportion, rapid progression, skin necrosis, crepitus and shock strongly suggest necrotising soft-tissue infection. Surgery must not be delayed for imaging.",
+      "MRI can support diagnosis in uncertain stable cases but must not delay lifesaving surgery."
+    ],
+    "questionRevision": 2
   },
   {
     "n": 4,
@@ -1836,7 +1849,20 @@
       "scenario": "A woman at 33 weeks has BP 145/95, no headache or epigastric pain, normal platelets and liver enzymes, and reassuring fetal assessment.",
       "management": "Confirm BP, investigate for proteinuria and other pre-eclampsia features, arrange maternal/fetal surveillance and antihypertensive treatment based on severity and local protocol, and individualise birth timing with obstetrics. Emergency seizure prophylaxis and imminent delivery are not automatic with isolated nonsevere hypertension.",
       "reason": "Severe BP and laboratory organ dysfunction substantially change the urgency and treatment."
-    }
+    },
+    "legacyOptions": [
+      "Advise bed rest at home",
+      "Treat with oral iron because the platelets are low",
+      "Wait until 37 weeks regardless of deterioration",
+      "Urgent senior obstetric assessment, maternal stabilisation including magnesium sulfate and severe-hypertension treatment, and planning birth"
+    ],
+    "legacyExplanations": [
+      "Home care is inappropriate with organ involvement and severe BP.",
+      "Iron treats iron deficiency, not thrombocytopenia from HELLP.",
+      "Delaying until term is unsafe with severe maternal disease.",
+      "Severe hypertension, neurological/epigastric symptoms, thrombocytopenia and liver injury indicate severe pre-eclampsia with possible HELLP syndrome. Stabilise the mother, prevent seizures, control BP and arrange timing of delivery with specialists."
+    ],
+    "questionRevision": 2
   },
   {
     "n": 34,
@@ -2928,7 +2954,20 @@
       "scenario": "The convulsion stopped spontaneously at three minutes and the patient has gradually regained consciousness with stable airway, breathing and glucose.",
       "management": "Monitor during the postictal period, assess for provoking causes, injuries and recurrent seizures, then decide on imaging, antiseizure therapy and follow-up based on the history and examination. Do not routinely repeat rescue benzodiazepines when the seizure has ceased and no further red flags are present.",
       "reason": "Continuing tonic-clonic activity beyond five minutes warrants immediate rescue medication; a self-limited seizure follows a different pathway."
-    }
+    },
+    "legacyOptions": [
+      "Haloperidol",
+      "A benzodiazepine administered by an appropriate rapid route",
+      "Oral sodium valproate after he wakes",
+      "Aspirin"
+    ],
+    "legacyExplanations": [
+      "Haloperidol treats agitation/psychosis and can lower seizure threshold.",
+      "A convulsive seizure lasting more than 5 minutes is convulsive status epilepticus and needs urgent ABC care, benzodiazepine treatment and escalation to second-line therapy if persistent.",
+      "Oral treatment is impractical and too slow during convulsions.",
+      "Aspirin has no antiseizure role."
+    ],
+    "questionRevision": 2
   },
   {
     "n": 54,
