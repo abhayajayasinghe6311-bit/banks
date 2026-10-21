@@ -370,3 +370,17 @@ body.dark .bookmark-empty{background:var(--lav)}
  .bank-jumper{margin-left:0}
 }
 @media(prefers-reduced-motion:reduce){.bank-finish-actions,.garden-search{scroll-behavior:auto}}
+
+
+/* Actionable, gentle on the eyes, management learning sequence */
+.management-guide{background:var(--alt-surface,var(--card));border:1px solid var(--edge);border-radius:14px;padding:16px!important;margin-top:15px}
+.management-guide h3{font-size:16px;line-height:1.5}
+.management-intro{color:var(--muted)!important;font-size:12px!important;line-height:1.7;margin:3px 0 14px!important}
+.management-guide ol{margin:0 0 0 22px;padding:0;display:grid;gap:13px}
+.management-guide li{padding-left:2px;font-size:13px;color:var(--violet);font-weight:700;line-height:1.55}
+.management-guide li strong{display:block;color:var(--ink);font-size:13px}
+.management-guide li span{display:block;font-weight:400;color:var(--ink);margin-top:3px;line-height:1.75}
+.management-safety{margin-top:16px;border:1px solid var(--missed-border,#d6a3a7);border-radius:12px;background:var(--red);padding:12px 14px}
+.management-safety b{color:var(--red-ink);font-size:13px}
+.management-safety p{color:var(--red-ink);font-size:13px;line-height:1.7;margin:5px 0 0}
+.management-local{font-size:11px!important;color:var(--muted)!important;border-top:1px solid var(--edge);padding-top:9px;margin-top:12px!important}
