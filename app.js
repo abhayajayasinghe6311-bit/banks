@@ -299,6 +299,120 @@ function renderPracticeResults(){
  $('app').innerHTML=buildResultMarkup({title:'Specialty Mix · Results',subtitle:`${entries.length} randomised questions · ${safe((sess.selected||[]).map(studyGroupName).join(', '))}`,entries,backHref:'?practice=1',backText:'Back to practice',reviewHref:'?review=1',mode:'practice'});
 }
 
+function searchPanel(bank=null){
+ const bankMode=Number.isInteger(bank);
+ return `<section class="garden-search" aria-label="Search answered questions">
+ <div class="garden-search-heading"><span aria-hidden="true">🔎</span><div><strong>Find something you've learned</strong><p>Search questions, answers, explanations and clinical pearls you've already attempted.</p></div></div>
+ <div class="garden-search-controls"><label class="sr-only" for="studySearchInput">Search answered questions and explanations</label>
+  <input id="studySearchInput" type="search" autocomplete="off" maxlength="120" placeholder="e.g. hyperkalaemia, pre-eclampsia, shock…">
+  ${bankMode?`<label class="sr-only" for="studySearchScope">Search scope</label><select id="studySearchScope"><option value="bank" selected>Within this bank</option><option value="all">All banks</option></select>`:''}
+  <button type="button" class="garden-search-clear" id="studySearchClear">Clear</button>
+ </div><div class="garden-search-results" id="studySearchResults" aria-live="polite" hidden></div>
+ </section>`;
+}
+
+function searchPreview(value,word){
+ const raw=String(value??''),low=raw.toLocaleLowerCase(),idx=low.indexOf(word);
+ if(idx<0)return safe(raw.slice(0,156))+(raw.length>156?'…':'');
+ const start=Math.max(0,idx-59),end=Math.min(raw.length,idx+word.length+100);
+ return (start?'…':'')+safe(raw.slice(start,idx))+'<mark>'+safe(raw.slice(idx,idx+word.length))+'</mark>'+safe(raw.slice(idx+word.length,end))+(end<raw.length?'…':'');
+}
+
+function searchAttempted(term,scopeBank=null){
+ const query=String(term||'').trim().toLocaleLowerCase();
+ if(!query)return[];
+ const attempted=new Set();
+ for(const [bank,answers] of Object.entries(state.banks||{})){
+  for(const [n,answer] of Object.entries(answers||{}))if(answer)attempted.add(idOf(bank,n));
+ }
+ for(const [id,answer] of Object.entries(state.practice?.answers||{}))if(answer)attempted.add(id);
+ const results=[];
+ for(const bm of manifest.banks){
+  if(scopeBank!==null&&bm.id!==scopeBank)continue;
+  for(const q of bankData[bm.id]||[]){
+   const id=idOf(bm.id,q.n);if(!attempted.has(id))continue;
+   const fields=[
+    {label:'Clinical scenario',value:q.stem},
+    {label:'Question',value:q.ask},
+    {label:'Specialty',value:q.domain},
+    ...q.options.map((v,i)=>({label:'Answer option '+ABC[i],value:v})),
+    ...(q.explanations||[]).map((v,i)=>({label:'Explanation '+ABC[i],value:v})),
+    {label:'Exam pearl',value:q.pearl},{label:'Scenario change',value:q.pivot}
+   ];
+   const hits=fields.filter(x=>String(x.value||'').toLocaleLowerCase().includes(query));
+   if(!hits.length)continue;
+   const best=hits.find(x=>x.label==='Clinical scenario')||hits.find(x=>x.label==='Question')||hits[0];
+   results.push({bank:bm.id,n:q.n,title:q.stem,where:best.label,excerpt:best.value,matchCount:hits.length});
+  }
+ }
+ return results;
+}
+
+function renderSearchMatches(root,items,query,limit=20){
+ if(!root)return;
+ root.hidden=false;
+ if(!items.length){root.innerHTML='<p class="garden-search-empty">No matches in your attempted questions yet. 🌱 Try another keyword.</p>';return;}
+ const shown=items.slice(0,limit);
+ root.innerHTML=`<p class="garden-search-count">${items.length} matching question${items.length===1?'':'s'} from your attempted work</p><div class="garden-search-matches">${shown.map(item=>`<a class="garden-search-match" href="?bank=${item.bank}&question=${item.n}">
+ <span class="garden-search-match-top"><b>Bank ${item.bank} · Q${item.n}</b><span>${safe(item.where)}</span></span>
+ <span class="garden-search-match-stem">${safe(String(item.title||'Clinical scenario').slice(0,140))}${String(item.title||'').length>140?'…':''}</span>
+ <span class="garden-search-excerpt">${searchPreview(item.excerpt,query)}</span></a>`).join('')}</div>${items.length>limit?`<button type="button" class="garden-show-more" id="searchShowMore">Show ${Math.min(20,items.length-limit)} more results ↓</button>`:''}`;
+ if(items.length>limit)$('searchShowMore').onclick=()=>renderSearchMatches(root,items,query,limit+20);
+}
+
+function wireStudySearch(bank=null){
+ const input=$('studySearchInput'),results=$('studySearchResults');
+ if(!input||!results)return;
+ let requestId=0;
+ const run=async()=>{
+  const request=++requestId,word=input.value.trim().toLocaleLowerCase();
+  if(!word){results.hidden=true;results.innerHTML='';return;}
+  if(word.length<2){results.hidden=false;results.innerHTML='<p class="garden-search-empty">Type at least two characters to search. 🌷</p>';return;}
+  results.hidden=false;results.innerHTML='<p class="garden-search-empty">Searching your attempted questions…</p>';
+  try{
+   const scope=bank!==null&&$('studySearchScope')?.value==='bank'?bank:null;
+   if(scope===null)await ensureAllBanks();
+   if(request!==requestId||$('studySearchInput')!==input)return;
+   renderSearchMatches(results,searchAttempted(word,scope),word);
+  }catch(e){
+   if(request===requestId)results.innerHTML='<p class="garden-search-empty">Search is unavailable right now. Please try again.</p>';
+  }
+ };
+ input.oninput=run;
+ const selector=$('studySearchScope');if(selector)selector.onchange=run;
+ $('studySearchClear').onclick=()=>{input.value='';run();input.focus();};
+}
+
+function bookmarksPanel(){
+ const count=Object.values(state.bookmarks||{}).filter(Boolean).length;
+ return `<section class="bookmark-garden" aria-label="Your bookmarked questions"><div class="bookmark-heading"><div><div class="eyebrow">SAVED FOR LATER ✿</div><h2>⭐ Your bookmarked questions</h2><p>Keep tricky or important clinical scenarios close at hand.</p></div><span class="bookmark-total">${count} saved</span></div>
+ <div id="bookmarkGardenList"><p class="small">Gathering your saved flowers… 🌷</p></div></section>`;
+}
+
+async function hydrateBookmarks(){
+ const root=$('bookmarkGardenList');if(!root)return;
+ try{
+  await ensureAllBanks();
+  if(root!==$('bookmarkGardenList'))return;
+  const entries=Object.entries(state.bookmarks||{}).filter(([,v])=>!!v).map(([id])=>{
+   const [bank,n]=id.split(':').map(Number);
+   if(!Number.isInteger(bank)||!Number.isInteger(n))return null;
+   const q=bankData[bank]?.find(q=>q.n===n);
+   return q?{bank,n,q,attempted:!!(state.banks[bank]||{})[n]||!!state.practice?.answers?.[id]}:null;
+  }).filter(Boolean).sort((a,b)=>a.bank-b.bank||a.n-b.n);
+  if(!entries.length){root.innerHTML='<div class="bookmark-empty">🌼 No bookmarks yet. Tap <b>☆ Bookmark</b> beside any question to collect it here.</div>';return;}
+  const show=(all=false)=>{
+   const limit=all?entries.length:Math.min(8,entries.length);
+   root.innerHTML=`<div class="bookmark-rows">${entries.slice(0,limit).map(e=>`<a class="bookmark-row" href="?bank=${e.bank}&question=${e.n}">
+    <span class="bookmark-row-label">⭐ Bank ${e.bank} · Q${e.n}</span><span class="bookmark-row-text">${safe(String(e.q.stem).slice(0,124))}${e.q.stem.length>124?'…':''}</span>
+    <span class="bookmark-row-right">${e.attempted?'Answered':'Not answered'} <span aria-hidden="true">↗</span></span>
+   </a>`).join('')}</div>${entries.length>8?`<button type="button" class="bookmark-more" id="bookmarkExpand">${all?'Show fewer':'Show all '+entries.length+' bookmarks'} ↓</button>`:''}`;
+   if(entries.length>8)$('bookmarkExpand').onclick=()=>show(!all);
+  };
+  show();
+ }catch(e){if(root===$('bookmarkGardenList'))root.innerHTML='<p class="small">Could not load bookmarks right now. Please refresh to try again.</p>';}
+}
+
 function renderHome(){route={};
  const nextBank=[...manifest.banks].sort((a,b)=>a.id-b.id).find(b=>{
   const answers=state.banks[b.id]||{};
@@ -309,7 +423,7 @@ function renderHome(){route={};
  const nextBankButton=nextBank
   ? `<a class="btn soft" href="${url(nextBank.id)}" target="_blank" rel="noopener">${nextBank.emoji} ${nextAttempts?'Continue':'Start'} Bank ${nextBank.id} ↗</a>`
   : `<a class="btn soft" href="?review=1">🎉 All banks attempted — Review mistakes ↗</a>`;
- $('app').innerHTML=`<section class="hero"><div class="eyebrow">YOUR LITTLE MED SCHOOL SANCTUARY ✿</div><h1>Grow your clinical confidence, one question at a time. 🌷</h1><p>${manifest.banks.length} banks of original Monash-inspired clinical scenarios, instant feedback, and explanations that teach you how to distinguish the tempting alternatives.</p><div class="flex"><a class="btn" href="?review=1">🌿 Open Wrong Answers Garden (${pending()})</a>${nextBankButton}</div></section>${overview()}${practicePicker()}${section('Choose your question garden','<span class="small">Each opens in a new browser tab ↗</span>')}<div class="tiles">${manifest.banks.map(tile).join('')}</div>${backupPanel()}<div class="notice">These are <b>unofficial, original educational questions</b>, not faculty questions. Clinical management should always follow local protocols and senior supervision.</div>`;wireBackupPanel();updateBadge();hydratePracticePicker();}
+ $('app').innerHTML=`<section class="hero"><div class="eyebrow">YOUR LITTLE MED SCHOOL SANCTUARY ✿</div><h1>Grow your clinical confidence, one question at a time. 🌷</h1><p>${manifest.banks.length} banks of original Monash-inspired clinical scenarios, instant feedback, and explanations that teach you how to distinguish the tempting alternatives.</p><div class="flex"><a class="btn" href="?review=1">🌿 Open Wrong Answers Garden (${pending()})</a>${nextBankButton}</div></section>${searchPanel()}${overview()}${section('Choose your question garden','<span class="small">Each opens in a new browser tab ↗</span>')}<div class="tiles">${manifest.banks.map(tile).join('')}</div>${bookmarksPanel()}${practicePicker()}${backupPanel()}<div class="notice">These are <b>unofficial, original educational questions</b>, not faculty questions. Clinical management should always follow local protocols and senior supervision.</div>`;wireBackupPanel();updateBadge();wireStudySearch();hydrateBookmarks();hydratePracticePicker();}
 async function getBank(b){if(!bankData[b]){const resp=await fetch('bank'+b+'.json',{cache:'no-cache'});if(!resp.ok)throw new Error('Could not fetch Bank '+b);bankData[b]=await resp.json();}return bankData[b];}
 function answeredStatus(b){const a=state.banks[b]||{};return {attempted:Object.keys(a).length,correct:Object.values(a).filter(x=>x.correct).length};}
 function filteredQuestions(b){const all=bankData[b]||[];return all.filter(q=>{if(domain!=='all'&&q.domain!==domain)return false;const answer=(state.banks[b]||{})[q.n];const rid=idOf(b,q.n);if(filter==='unanswered')return !answer;if(filter==='wrong')return answer&&!answer.correct;if(filter==='bookmarks')return !!state.bookmarks[rid];return true;});}
@@ -499,7 +613,9 @@ async function boot(){try{const resp=await fetch('manifest.json',{cache:'no-cach
  // Resume from the earliest unanswered EMQ when reopening a bank.
  // Keep the complete bank visible so Previous/Next and old answers remain reviewable.
  filter='all';domain='all';
+ const explicitNumber=Number(params.get('question'));
+ const requested=Number.isInteger(explicitNumber)&&explicitNumber>0?bankData[b].findIndex(q=>q.n===explicitNumber):-1;
  const firstUnanswered=bankData[b].findIndex(q=>!(state.banks[b]||{})[q.n]);
- cursor=firstUnanswered>=0?firstUnanswered:0;
+ cursor=requested>=0?requested:firstUnanswered>=0?firstUnanswered:0;
  renderBank();}else renderHome();updateBadge();}catch(e){$('app').innerHTML='<div class="load-error"><h2>Could not load the Study Garden 😢</h2><p>'+safe(e.message)+'</p><p>If you are opening the site from a downloaded ZIP, this online-ready version needs a web server. Publish it using GitHub Pages or run a local preview server.</p></div>';}}
 boot();
