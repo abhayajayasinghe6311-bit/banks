@@ -340,7 +340,9 @@ function searchAttempted(term,scopeBank=null){
     ...(q.lesson?.wrong||[]).flatMap((v,i)=>v?[{label:'Reasoning trap '+ABC[i],value:v.trap},{label:'Exam decision check '+ABC[i],value:v.check}]:[]),
     ...(q.management?.steps||[]).map(step=>({label:'Practical management: '+step[0],value:step[1]})),
     ...(q.management?.safety?[{label:'Safety and escalation',value:q.management.safety}]:[]),
-    {label:'Exam pearl',value:q.pearl},{label:'Scenario change',value:q.pivot}
+    {label:'Exam pearl',value:q.pearl},{label:'Alternate scenario',value:q.alternate?.scenario},
+    {label:'Alternate management',value:q.alternate?.management},
+    {label:'Scenario change',value:q.pivot}
    ];
    const hits=fields.filter(x=>String(x.value||'').toLocaleLowerCase().includes(query));
    if(!hits.length)continue;
@@ -442,7 +444,7 @@ async function getBank(b){
 function answeredStatus(b){const a=state.banks[b]||{};return {attempted:Object.keys(a).length,correct:Object.values(a).filter(x=>x.correct).length};}
 function filteredQuestions(b){const all=bankData[b]||[];return all.filter(q=>{if(domain!=='all'&&q.domain!==domain)return false;const answer=(state.banks[b]||{})[q.n];const rid=idOf(b,q.n);if(filter==='unanswered')return !answer;if(filter==='wrong')return answer&&!answer.correct;if(filter==='bookmarks')return !!state.bookmarks[rid];return true;});}
 function optionHtml(q,selected,review=false){return q.options.map((option,i)=>{const letter=ABC[i],correct=letter===q.key,isSelected=letter===selected;let cls='choice';if(selected){if(correct)cls+=' true';if(isSelected)cls+=correct?' selected correct':' selected incorrect';}return `<button type="button" class="${cls}" data-choice="${letter}" ${selected?'disabled':''}><span class="letter">${letter}</span><span>${safe(option)}</span></button>`;}).join('');}
-function explHtml(q){return `<details class="answer" ${''}><summary>📖 Reveal teaching explanation and exam pearls</summary><div class="answer-body"><p><b>Correct answer: ${safe(q.key)} — ${safe(q.options[ABC.indexOf(q.key)])}</b></p>${q.options.map((o,i)=>`<div class="explainline ${ABC[i]===q.key?'is-correct':''}"><b>${ABC[i]}. ${ABC[i]===q.key?'✓ Correct':'Why not'}:</b> ${safe(q.explanations?.[i]||'Review this option against the key features.')}</div>`).join('')}${q.pearl?`<div class="pearl">💡 <b>Exam pearl:</b> ${safe(q.pearl)}</div>`:''}${q.pivot?`<div class="pivot">🔄 <b>What would change the answer?</b> ${safe(q.pivot)}</div>`:''}</div></details>`;}
+function explHtml(q){return `<details class="answer" ${''}><summary>📖 Reveal teaching explanation and exam pearls</summary><div class="answer-body"><p><b>Correct answer: ${safe(q.key)} — ${safe(q.options[ABC.indexOf(q.key)])}</b></p>${q.options.map((o,i)=>`<div class="explainline ${ABC[i]===q.key?'is-correct':''}"><b>${ABC[i]}. ${ABC[i]===q.key?'✓ Correct':'Why not'}:</b> ${safe(q.explanations?.[i]||'Review this option against the key features.')}</div>`).join('')}${q.pearl?`<div class="pearl">💡 <b>Exam pearl:</b> ${safe(q.pearl)}</div>`:''}${q.alternate?.scenario&&q.alternate?.management?`<div class="pivot">🔀 <b>Different scenario:</b> ${safe(q.alternate.scenario)}<p><b>Different management:</b> ${safe(q.alternate.management)}</p></div>`:''}</div></details>`;}
 function learningNotes(q,anchorId='learningNotes',selected=null){
  const opts=q.options||[],explanations=q.explanations||[];
  const keyIndex=ABC.indexOf(q.key),selectedIndex=ABC.indexOf(selected);
@@ -453,7 +455,7 @@ function learningNotes(q,anchorId='learningNotes',selected=null){
  const specific=q.lesson?.wrong?.[selectedIndex]?.clinical||null;
  const signs=q.lesson?.clues||[];
  const hasManagement=Array.isArray(q.management?.steps)&&q.management.steps.length>0;
- const usefulPivot=q.pivot&&!/^(?:(?:exam check|pivot):?\s*)?(?:ask yourself|examine which|identify the decisive|which finding in the stem)/i.test(String(q.pivot));
+
  const remaining=opts.map((option,i)=>{
   if(i===keyIndex||(wrong&&i===selectedIndex))return '';
   const extra=q.lesson?.wrong?.[i];
@@ -478,7 +480,7 @@ function learningNotes(q,anchorId='learningNotes',selected=null){
    '<section class="learning-section learning-correct"><div class="learning-tag">✓ THE BEST ANSWER</div><h3>'+safe(q.key)+'. '+safe(correct)+'</h3><p>'+safe(rationale)+'</p></section>'+
    (q.pearl?'<section class="learning-section learning-pearl"><h3>💡 The principle to remember</h3><p>'+safe(q.pearl)+'</p></section>':'')+
    managementMarkup+
-   (usefulPivot?'<div class="learning-section learning-pivot"><h3>🔄 What would change the answer?</h3><p>'+safe(q.pivot)+'</p></div>':'')+
+   (q.alternate?.scenario&&q.alternate?.management?'<section class="learning-section learning-pivot"><h3>🔀 What management changes if the scenario is different?</h3><p><b>Changed scenario:</b> '+safe(q.alternate.scenario)+'</p><p><b>Different management:</b> '+safe(q.alternate.management)+'</p>'+(q.alternate.reason?'<p><b>Why the approach changes:</b> '+safe(q.alternate.reason)+'</p>':'')+'</section>':'')+
    (remaining?'<details class="learning-more-alternatives learning-section"><summary>🧠 Compare the other '+(opts.length-1-(wrong?1:0))+' answer option'+(opts.length-1-(wrong?1:0)===1?'':'s')+'</summary>'+
      '<p class="learning-other-intro">Read these if you want to test why a different option is less suitable in this exact vignette.</p>'+
      '<div class="learning-alternatives">'+remaining+'</div></details>':'')+
