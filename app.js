@@ -12,10 +12,36 @@ window.addEventListener('storage',e=>{if(e.key===STORE)syncUI();});window.addEve
 function idOf(b,n){return b+':'+n;}
 function recs(){return Object.values(state.review||{});}function pending(){return recs().filter(r=>!r.mastered).length;}
 function updateBadge(){if($('navWrong'))$('navWrong').textContent=pending();}
-function updateProgress(bank,n,choice){const id=idOf(bank,n),q=bankData[bank]?.find(q=>q.n===n);if(!q)return;const b=state.banks[bank]||(state.banks[bank]={});if(b[n])return;
- b[n]={choice,correct:choice===q.key,at:Date.now()};if(choice!==q.key){const r=state.review[id]||{bank:Number(bank),n,firstChoice:choice,tries:0,lastChoice:null,mastered:false,firstWrongAt:Date.now()};r.mastered=false;state.review[id]=r;}save();renderBank();
- if(window.matchMedia?.('(max-width: 910px)').matches){
-  window.requestAnimationFrame?.(()=>document.getElementById('learningNotes')?.scrollIntoView({behavior:'smooth',block:'start'}));
+function updateProgress(bank,n,choice){
+ const id=idOf(bank,n),q=bankData[bank]?.find(q=>q.n===n);if(!q)return;
+ const b=state.banks[bank]||(state.banks[bank]={});if(b[n])return;
+ b[n]={choice,correct:choice===q.key,at:Date.now()};
+ if(choice!==q.key){
+  const r=state.review[id]||{bank:Number(bank),n,firstChoice:choice,tries:0,lastChoice:null,mastered:false,firstWrongAt:Date.now()};
+  r.mastered=false;state.review[id]=r;
+ }
+ save();
+ // Update only the answered question, not the whole page. This prevents the
+ // browser from rebuilding the document and jolting the reader's position.
+ const answerButtons=$('choices'),questionCard=answerButtons?.closest('.quiz-question');
+ const notes=document.querySelector('.learning-placeholder');
+ if(!questionCard||!notes){renderBank();return;}
+ answerButtons.innerHTML=optionHtml(q,choice);
+ questionCard.querySelector('.answer-hint')?.remove();
+ const nav=questionCard.querySelector('.navbox');
+ const message=b[n].correct?'✓ Correct — nicely reasoned!':'✗ Not quite. Correct answer: '+q.key+'.';
+ nav?.insertAdjacentHTML('beforebegin','<div class="feedback '+(b[n].correct?'yes':'no')+'">'+message+' Your first response is locked.</div>');
+ notes.outerHTML=learningNotes(q);
+ const layout=questionCard.closest('.learning-layout');
+ layout?.classList.add('has-notes');
+ const status=answeredStatus(bank),total=bankData[bank].length;
+ if($('bankSummary'))$('bankSummary').textContent=status.attempted+'/'+total+' answered · '+status.correct+' correct · '+(status.attempted-status.correct)+' incorrect';
+ if($('bankProgressBar'))$('bankProgressBar').style.width=Math.round(status.attempted*100/total)+'%';
+ if($('bankPercent'))$('bankPercent').textContent=Math.round(status.attempted*100/total)+'%';
+ if($('restartBank'))$('restartBank').disabled=false;
+ if(status.attempted===total){
+  const done=document.createElement('div');done.className='bank-finished-note';done.textContent='🌸 Bank completed! Your results are saved — review the explanations or return to the garden.';
+  questionCard.append(done);
  }
 }
 function retryAnswer(bank,n,choice){const id=idOf(bank,n),q=bankData[bank]?.find(q=>q.n===n);if(!q)return;const r=state.review[id];if(!r||r.mastered)return;r.tries=(r.tries||0)+1;r.lastChoice=choice;r.lastAt=Date.now();if(choice===q.key){r.mastered=true;r.masteredAt=Date.now();}save();renderReview();}
@@ -157,7 +183,25 @@ function renderBank(){const b=route.bank;const bm=manifest.banks.find(x=>x.id===
  const finished=tot.attempted===qset.length;
  const specialtySummary=[...new Set(qset.map(x=>x.domain))].map(d=>{const subset=qset.filter(x=>x.domain===d);const count=subset.filter(x=>(state.banks[b]||{})[x.n]?.correct).length;return `<div class="flex between"><span>${safe(d)}</span><b>${count}/${subset.length} · ${Math.round(count/subset.length*100)}%</b></div>`;}).join('');
  const finalSummary=finished?`<div class="panel"><div class="eyebrow">BANK ${b} COMPLETED 🎉</div><h2>Final score: ${tot.correct}/${qset.length} (${Math.round(100*tot.correct/qset.length)}%)</h2><p class="small">Your original answers are locked. Review mistakes separately to build mastery without changing this score.</p><div style="display:grid;gap:8px">${specialtySummary}</div><div class="flex" style="margin-top:16px"><a href="?review=1" class="btn rose">🌿 Review your mistakes</a></div></div>`:'';
- $('app').innerHTML=`<div class="topline"><a class="btn soft" href="./">← All banks</a><a href="?review=1" class="btn rose" target="_blank" rel="noopener">🌿 Wrong Answers (${pending()}) ↗</a><button type="button" class="btn soft" id="restartBank" ${tot.attempted===0?'disabled':''} title="Reset this bank only">↻ Restart Bank ${b}</button></div><div class="eyebrow">BANK ${b} · UNOFFICIAL SPA-W PRACTICE</div><h1 class="page-title">${bm.emoji} ${safe(bm.name)}</h1><p class="small">${safe(bm.description)} · ${qset.length} original questions · ${summary}</p><div class="progress"><span style="width:${pct}%"></span></div>${finalSummary}<div class="toolbar"><div class="flex"><label class="small">Show <select id="filter"><option value="all">All questions</option><option value="unanswered">Unanswered</option><option value="wrong">Original mistakes</option><option value="bookmarks">Bookmarked</option></select></label><label class="small">Specialty <select id="domain"><option value="all">All specialties</option>${cats.map(x=>`<option value="${safe(x)}">${safe(x)}</option>`).join('')}</select></label></div><div class="small">${activeList.length?`${cursor+1} / ${activeList.length} shown`:'No matches'}</div></div>${q?`<div class="learning-layout ${(state.banks[b]||{})[q.n]?'has-notes':''}"><div class="quizbox quiz-question"><div class="meta"><b>Domain:</b> ${safe(q.domain)} &nbsp; · &nbsp; <b>Skillset:</b> ${safe(q.skill||'Clinical reasoning')} &nbsp; · &nbsp; <b>Context:</b> ${safe(q.context||'Clinical')}</div><div class="question-label">EMQ ${q.n}</div><div class="stem">${safe(q.stem)}</div><p class="ask">${safe(q.ask||'Which of the following is the single BEST answer?')}</p><div class="choices" id="choices">${optionHtml(q,(state.banks[b]||{})[q.n]?.choice)}</div>${(state.banks[b]||{})[q.n]?`<div class="feedback ${(state.banks[b][q.n].correct?'yes':'no')}">${state.banks[b][q.n].correct?'✓ Correct — nicely reasoned!':'✗ Not quite. Correct answer: '+q.key+'.'} Your first response is locked.</div>`:`<div class="notice">Choose one answer to mark it immediately. The explanation stays closed until you open it.</div>`}<div class="navbox"><button class="btn soft" id="prev" ${cursor===0?'disabled':''}>← Previous</button><button class="btn rose" id="bookmark">${state.bookmarks[idOf(b,q.n)]?'★ Bookmarked':'☆ Bookmark'}</button><button class="btn" id="next" ${cursor===activeList.length-1?'disabled':''}>Next →</button></div>${(state.banks[b]||{})[q.n]?learningNotes(q):''}</div>`:`<div class="empty">No questions here yet 🌷 Try another filter.</div>`}`;
+ $('app').innerHTML=`<section class="bank-intro" aria-label="Bank overview">
+ <div class="bank-intro-nav">
+  <a class="bank-back-link" href="./">← All banks</a>
+  <div class="bank-intro-actions">
+   <a href="?review=1" class="bank-text-link" target="_blank" rel="noopener">🌿 Review mistakes <span>(${pending()})</span> ↗</a>
+   <button type="button" class="bank-text-link bank-reset-link" id="restartBank" ${tot.attempted===0?'disabled':''} title="Reset this bank only">↻ Restart bank</button>
+  </div>
+ </div>
+ <div class="bank-title-area">
+  <div class="eyebrow">BANK ${b} · CLINICAL PRACTICE</div>
+  <h1 class="page-title">${bm.emoji} ${safe(bm.name)}</h1>
+  <p class="small bank-description">${safe(bm.description)} · ${qset.length} questions</p>
+ </div>
+ <div class="bank-progress-details">
+  <span class="small bank-summary" id="bankSummary">${summary}</span>
+  <span class="small bank-progress-percent"><span id="bankPercent">${pct}%</span> complete</span>
+ </div>
+ <div class="progress bank-progress"><span id="bankProgressBar" style="width:${pct}%"></span></div>
+ </section>${finalSummary}<div class="toolbar bank-toolbar"><div class="flex"><label class="small">Show <select id="filter"><option value="all">All questions</option><option value="unanswered">Unanswered</option><option value="wrong">Original mistakes</option><option value="bookmarks">Bookmarked</option></select></label><label class="small">Specialty <select id="domain"><option value="all">All specialties</option>${cats.map(x=>`<option value="${safe(x)}">${safe(x)}</option>`).join('')}</select></label></div><div class="small">${activeList.length?`${cursor+1} / ${activeList.length} shown`:'No matches'}</div></div>${q?`<div class="learning-layout ${(state.banks[b]||{})[q.n]?'has-notes':''}"><div class="quizbox quiz-question"><div class="meta"><b>Domain:</b> ${safe(q.domain)} &nbsp; · &nbsp; <b>Skillset:</b> ${safe(q.skill||'Clinical reasoning')} &nbsp; · &nbsp; <b>Context:</b> ${safe(q.context||'Clinical')}</div><div class="question-label">EMQ ${q.n}</div><div class="stem">${safe(q.stem)}</div><p class="ask">${safe(q.ask||'Which of the following is the single BEST answer?')}</p><div class="choices" id="choices">${optionHtml(q,(state.banks[b]||{})[q.n]?.choice)}</div>${(state.banks[b]||{})[q.n]?`<div class="feedback ${(state.banks[b][q.n].correct?'yes':'no')}">${state.banks[b][q.n].correct?'✓ Correct — nicely reasoned!':'✗ Not quite. Correct answer: '+q.key+'.'} Your first response is locked.</div>`:`<div class="notice answer-hint">Choose your best answer. Clinical reasoning and exam pearls will appear beside the question. 🌷</div>`}<div class="navbox"><button class="btn soft" id="prev" ${cursor===0?'disabled':''}>← Previous</button><button class="btn rose" id="bookmark">${state.bookmarks[idOf(b,q.n)]?'★ Bookmarked':'☆ Bookmark'}</button><button class="btn" id="next" ${cursor===activeList.length-1?'disabled':''}>Next →</button></div></div>${(state.banks[b]||{})[q.n]?learningNotes(q):`<aside class="learning-card learning-placeholder" aria-label="Learning notes preview"><div class="learning-placeholder-emoji" aria-hidden="true">🌷</div><h2>Learning notes will bloom here</h2><p>Choose your answer and explore the <b>clinical reasoning</b>, why the alternatives lose, and the principles worth remembering.</p></aside>`}</div>`:`<div class="empty">No questions here 🌷 Try another filter.</div>`}`;
  $('filter').value=filter;$('domain').value=domain;$('filter').onchange=e=>{filter=e.target.value;cursor=0;renderBank()};$('domain').onchange=e=>{domain=e.target.value;cursor=0;renderBank()};
  $('restartBank').onclick=()=>{
    if(!confirm('Restart Bank '+b+'? This will erase all '+tot.attempted+' saved first attempts and reset this bank score to 0. Other banks, bookmarks and your Wrong Answers Garden will remain unchanged. Export a progress backup first if you want to keep this attempt.'))return;
