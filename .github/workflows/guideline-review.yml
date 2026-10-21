@@ -1,7 +1,7 @@
 name: Australian guideline clinical-review watch
 on:
   push:
-    branches: [main]
+    branches: [main, feature-live-australian-guideline-watch-20261022]
     paths:
       - '.github/workflows/guideline-review.yml'
       - 'scripts/check_guideline_updates.py'
