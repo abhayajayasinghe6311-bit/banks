@@ -535,7 +535,20 @@
       "scenario": "The same intracerebral haemorrhage occurs in a patient taking warfarin, with an elevated INR.",
       "management": "Stop warfarin; urgently administer four-factor prothrombin complex concentrate plus IV vitamin K per local major-bleeding protocol, alongside controlled BP lowering, urgent stroke/neurosurgical care and neurological monitoring.",
       "reason": "The anticoagulant determines the reversal agent and urgency of correction."
-    }
+    },
+    "legacyOptions": [
+      "Seek immediate specialist guidance on anticoagulant reversal and blood pressure control",
+      "Continue rivaroxaban to prevent stroke",
+      "Discharge because the haemorrhage is small",
+      "Start intravenous alteplase"
+    ],
+    "legacyExplanations": [
+      "Acute ICH on anticoagulants warrants urgent reversal according to available agents and local protocol, monitored BP control, and stroke/neurosurgical input.",
+      "Continued anticoagulation risks haematoma expansion.",
+      "Any symptomatic intracerebral haemorrhage requires urgent inpatient management.",
+      "Thrombolysis is contraindicated in intracerebral bleeding."
+    ],
+    "questionRevision": 2
   },
   {
     "n": 10,
@@ -832,7 +845,20 @@
       "scenario": "The patient is haemodynamically stable, is not hypoxaemic and has low pre-test probability of PE.",
       "management": "Use an appropriate clinical probability rule and D-dimer pathway when indicated; obtain CTPA if results or pre-test probability warrant imaging. If PE is confirmed, commence therapeutic anticoagulation where appropriate and risk-stratify for outpatient versus inpatient care rather than routine thrombolysis.",
       "reason": "Shock moves the original case into a high-risk, time-critical reperfusion pathway."
-    }
+    },
+    "legacyOptions": [
+      "Outpatient oral anticoagulation without monitoring",
+      "Wait for a D-dimer before treating",
+      "Immediate senior resuscitation and consideration of systemic thrombolysis or catheter/surgical reperfusion",
+      "Only inhaled salbutamol"
+    ],
+    "legacyExplanations": [
+      "Haemodynamic instability makes outpatient treatment unsafe.",
+      "D-dimer is not the gating investigation for a shocked patient with high clinical probability.",
+      "Shock with presumed high-risk PE requires urgent reperfusion discussion after weighing contraindications, alongside oxygenation, anticoagulation where appropriate and circulatory support.",
+      "Bronchodilators do not treat pulmonary vascular obstruction."
+    ],
+    "questionRevision": 2
   },
   {
     "n": 16,
@@ -1728,7 +1754,20 @@
       "scenario": "The same patient has DKA but potassium is 5.5 mmol/L, with preserved renal function and urine output.",
       "management": "Start appropriate IV fluid replacement and a protocol-guided IV insulin infusion with frequent glucose, ketone, acid–base and potassium monitoring. Withhold potassium initially while K remains above the local supplementation threshold, then replace as it falls; add glucose-containing fluids as glucose normalises so ketones can continue to clear.",
       "reason": "Severe initial hypokalaemia makes insulin unsafe until K correction; higher initial potassium changes supplementation timing but not the requirement for close monitoring."
-    }
+    },
+    "legacyOptions": [
+      "Start insulin infusion immediately without replacement",
+      "Prioritise potassium replacement with cardiac monitoring and delay insulin until potassium is safe",
+      "Give IV sodium bicarbonate routinely",
+      "Discharge on increased long-acting insulin"
+    ],
+    "legacyExplanations": [
+      "Insulin drives potassium into cells and can precipitate fatal arrhythmia when starting potassium is severely low.",
+      "In DKA, marked hypokalaemia must be corrected urgently before insulin is started, alongside fluid resuscitation and close monitoring.",
+      "Bicarbonate is not routinely indicated for this degree of DKA acidaemia.",
+      "This is a life-threatening metabolic emergency requiring monitored inpatient care."
+    ],
+    "questionRevision": 2
   },
   {
     "n": 32,
