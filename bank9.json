@@ -3649,19 +3649,19 @@
     "stem": "A 24-year-old has sudden severe headache during exercise, peaking within seconds. Noncontrast CT at 14 hours is normal, but clinical concern for subarachnoid haemorrhage remains high.",
     "ask": "What is the MOST APPROPRIATE next diagnostic step?",
     "options": [
-      "Exclude SAH definitively because CT is negative despite delayed imaging.",
-      "Treat as uncomplicated tension headache and discharge without assessment.",
-      "Perform further SAH evaluation with LP or vascular imaging per protocol.",
-      "Treat suspected migraine with a triptan and defer further diagnostics.",
-      "Request a routine EEG to exclude subarachnoid bleeding before discharge."
+      "Exclude subarachnoid bleeding definitively because the CT is negative.",
+      "Diagnose tension headache and discharge without further assessment.",
+      "Continue urgent SAH evaluation with LP or vascular imaging by protocol.",
+      "Give a migraine triptan and defer assessment unless pain persists.",
+      "Order routine EEG as the definitive test for cerebral haemorrhage."
     ],
     "key": "C",
     "explanations": [
-      "CT sensitivity for subarachnoid blood declines with time. A normal scan 14 hours after thunderclap headache cannot reliably exclude SAH when suspicion remains high.",
-      "Sudden maximal-onset headache during exertion is a red flag for SAH and other serious vascular causes; tension headache is not diagnosed by a negative delayed CT alone.",
-      "For a high-risk thunderclap headache after normal CT beyond the early high-sensitivity interval, discuss lumbar puncture for xanthochromia and/or CTA as recommended by the local emergency/neurology pathway.",
-      "Triptans are inappropriate as an empiric substitute for evaluating a possible intracranial vascular emergency; treatment follows exclusion of serious secondary causes.",
-      "EEG can help assess seizures but does not detect blood in the subarachnoid space; a normal EEG would not exclude aneurysmal SAH."
+      "A negative CT performed 14 hours after onset does not fully exclude SAH when suspicion remains high; the early CT-only rule-out pathway is not applicable.",
+      "A sudden thunderclap headache peaking within seconds is a secondary-headache red flag. Discharge without considering aneurysmal bleeding or other vascular causes is unsafe.",
+      "Further urgent investigation is needed following delayed normal CT and high clinical suspicion, typically lumbar puncture for CSF xanthochromia and/or vascular imaging depending on local expertise and pathway.",
+      "Symptom relief cannot substitute for excluding subarachnoid haemorrhage, which can present without focal signs and deteriorate catastrophically.",
+      "EEG can investigate epileptic events but does not rule out intracranial haemorrhage. Use appropriate CSF or vascular investigation instead."
     ],
     "pearl": "Pearl: Time from onset matters when interpreting a negative CT for SAH.",
     "pivot": "Pivot: Very early high-quality CT within six hours in eligible settings may follow a different rule-out pathway.",
@@ -3691,9 +3691,9 @@
       ]
     },
     "alternate": {
-      "scenario": "A neurologically intact patient is scanned within six hours of thunderclap onset with a high-quality, expertly reported normal noncontrast CT and a reliable time of onset.",
-      "management": "Use a validated early-CT rule-out pathway if all technical and clinical criteria are satisfied; discuss any residual concern or atypical features with senior emergency/neurology teams. Further LP or vascular imaging is still appropriate where criteria are unmet or suspicion remains high.",
-      "reason": "A delayed CT at 14 hours is less sensitive than an early high-quality CT, so a negative result may need additional tests."
+      "scenario": "An alert, neurologically intact patient has a well-defined onset of thunderclap headache and an expert-interpreted high-quality noncontrast brain CT obtained within six hours with no bleeding.",
+      "management": "Apply the institution's validated early-CT rule-out criteria and assess remaining pre-test risk. Additional LP or vascular imaging may not be necessary in an eligible very-low-residual-risk patient, but discuss persistent high-risk features and alternative vascular diagnoses with senior emergency/neurology staff.",
+      "reason": "CT sensitivity for SAH is higher in a tightly defined early imaging window with expert interpretation; 14-hour imaging does not meet those criteria."
     },
     "legacyOptions": [
       "Reassure that CT excludes all SAH at any time",
@@ -3709,7 +3709,31 @@
       "Secondary causes must be excluded.",
       "EEG does not rule out SAH."
     ],
-    "questionRevision": 2
+    "questionRevision": 2,
+    "management": {
+      "steps": [
+        [
+          "Treat thunderclap as a red flag",
+          "Assess ABC, vitals, neurological status, meningism and timing; provide analgesia while continuing investigation."
+        ],
+        [
+          "Interpret CT timing carefully",
+          "A normal noncontrast CT at 14 hours is not sufficient to exclude SAH with high ongoing suspicion."
+        ],
+        [
+          "Pursue further targeted investigation",
+          "Obtain urgent senior emergency/neurology advice about lumbar puncture for CSF assessment and/or CT angiography per institutional pathway."
+        ],
+        [
+          "Act on results",
+          "If SAH is diagnosed or remains highly suspected, consult neurosurgery, treat BP/pain as indicated and arrange appropriate monitored transfer or admission."
+        ]
+      ],
+      "source": {
+        "name": "ACEM emergency medicine clinical resources",
+        "url": "https://acem.org.au/Content-Sources/Advancing-Emergency-Medicine/Clinical-Guidelines"
+      }
+    }
   },
   {
     "n": 59,
