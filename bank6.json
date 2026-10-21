@@ -3227,7 +3227,20 @@
       "scenario": "The patient instead takes apixaban for atrial fibrillation, not warfarin, and develops the same major intracranial haemorrhage.",
       "management": "Stop apixaban, establish timing of the last dose and renal function, and seek immediate stroke/haematology advice for factor Xa inhibitor reversal using the locally available agent or PCC pathway. Give controlled BP treatment, neurological monitoring and emergency neurosurgical assessment as indicated; vitamin K is not an antidote for apixaban.",
       "reason": "Warfarin reversal uses PCC with vitamin K, whereas factor Xa inhibitors have a different, drug-specific reversal pathway."
-    }
+    },
+    "legacyOptions": [
+      "Hold the next warfarin tablet and reassess INR in a week",
+      "Urgent four-factor prothrombin complex concentrate with intravenous vitamin K according to protocol",
+      "Give oral vitamin K only and wait for effect",
+      "Start therapeutic low-molecular-weight heparin"
+    ],
+    "legacyExplanations": [
+      "Simply withholding warfarin does not rapidly reverse the anticoagulant effect during active intracranial bleeding.",
+      "Life-threatening warfarin bleeding requires rapid factor replacement (4-factor PCC where available) plus vitamin K for sustained reversal.",
+      "Oral vitamin K alone acts too slowly for evolving intracranial haemorrhage.",
+      "Heparin would worsen bleeding."
+    ],
+    "questionRevision": 2
   },
   {
     "n": 63,
