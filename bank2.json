@@ -4063,19 +4063,19 @@
     "context": "Medicine, Surgery",
     "skill": "Clinical Reasoning",
     "stem": "An 82-year-old with known prostate cancer has acute severe back pain, new bilateral leg weakness and urinary retention. Most important next step?",
-    "ask": "Choose the SINGLE BEST answer for this clinical scenario.",
+    "ask": "What is the most appropriate emergency management pathway?",
     "options": [
-      "Urgent MRI spine, immediate specialist review and corticosteroids per protocol",
-      "Oral NSAIDs alone",
-      "Routine physiotherapy and outpatient MRI in six weeks",
-      "Watchful waiting because weakness may be age-related"
+      "Arrange emergency whole-spine MRI, steroids and spinal oncology assessment.",
+      "Give opioid analgesia, then review neurological function at next week's clinic.",
+      "Order routine lumbar MRI after a physiotherapy trial and pain diary review.",
+      "Monitor urine retention only and attribute leg weakness to general frailty."
     ],
     "key": "A",
     "explanations": [
-      "Malignant spinal cord compression is a time-critical oncological emergency requiring imaging and treatment.",
-      "Analgesia alone is inadequate",
-      "Delay risks permanent paralysis",
-      "Attributing weakness to age is unsafe."
+      "Known metastatic-risk cancer with back pain, bilateral weakness and retention is presumed MSCC. Activate the emergency pathway, give protocol dexamethasone and obtain urgent whole-spine MRI, with specialist discussion of decompression/radiotherapy.",
+      "Analgesia is important but cannot reverse compression of the spinal cord. Waiting for an outpatient appointment risks permanent loss of walking or bladder control.",
+      "Lumbar imaging alone can miss cord compression higher in the spine, and six-week delay is unsafe with evolving neurological signs. Whole-spine MRI is required urgently.",
+      "New leg weakness and urinary retention in a cancer patient are neurological red flags, not expected ageing. Bladder care is supportive while urgent imaging and definitive treatment are organised."
     ],
     "pearl": "Cancer + new axial pain + neurological deficit = consider cord compression.",
     "pivot": "Exam check: identify the decisive positive finding, then the urgent risk or distinguishing negative clue that eliminates the alternatives.",
@@ -4103,24 +4103,33 @@
     "management": {
       "steps": [
         [
-          "Recognise cauda equina",
-          "New bladder/bowel change, saddle sensory loss, bilateral sciatica or motor decline."
+          "Recognise cord-compression red flags",
+          "Ask and examine for progressive weakness, gait difficulty, sensory level and bowel/bladder changes; document neurological deficits and maintain spinal precautions if unstable."
         ],
         [
-          "Escalate immediately",
-          "Urgent spinal surgeon and emergency lumbar MRI; no outpatient delay."
+          "Activate MSCC treatment",
+          "Urgently involve oncology/spinal surgery and administer dexamethasone for neurological signs per local protocol (often 16 mg daily in published MSCC pathways); monitor glucose and give gastroprotection."
         ],
         [
-          "Protect bladder",
-          "Measure retention, catheterise if needed and document serial leg/perineal neurological findings."
+          "Image the whole spine",
+          "Arrange emergency whole-spine MRI as soon as possible; guidance recommends within 24 hours for suspected MSCC with neurological deficits. Do not substitute routine lumbar imaging."
         ],
         [
-          "Treat cause",
-          "Urgent decompression when indicated after imaging."
+          "Arrange definitive treatment",
+          "Urgently determine surgery and/or radiotherapy with specialists, monitor neurological status and manage urinary retention and pain during treatment."
         ]
       ],
-      "safety": "Normal anal tone at a single assessment does not exclude evolving cauda equina.",
-      "local": "Exact doses, escalation thresholds and contraindications must be verified against current local protocols and senior advice."
+      "safety": "Delay can lead to irreversible paralysis. Do not perform lumbar puncture as the initial investigation for suspected MSCC.",
+      "local": "Confirm the steroid regimen and local MSCC service pathway.",
+      "source": {
+        "name": "NICE NG234 MSCC guidance — verify against hospital Australian pathway",
+        "url": "https://www.nice.org.uk/guidance/ng234/chapter/Recommendations"
+      }
+    },
+    "alternate": {
+      "scenario": "An otherwise stable patient with prostate cancer has isolated new back pain but a normal motor and sensory examination, normal walking and no bowel or bladder symptoms.",
+      "management": "Arrange rapid assessment for spinal metastases and a specialist-directed MRI within the non-emergency suspected-metastasis timeframe (often within one week). Treat pain and give strict return advice for leg weakness, numbness or bladder change. Routine emergency MSCC steroid treatment is not indicated without neurological signs unless another specialist rationale exists.",
+      "reason": "Progressive bilateral weakness and urinary retention in the original vignette change isolated spinal-pain evaluation to an immediate cord-compression emergency."
     }
   },
   {
