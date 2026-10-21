@@ -3865,19 +3865,19 @@
     "stem": "A woman taking clozapine for treatment-resistant schizophrenia has not passed stool for six days and now has vomiting, painful abdominal distension and tachycardia.",
     "ask": "What is the MOST APPROPRIATE action?",
     "options": [
-      "Reassure constipation is harmless if she has schizophrenia",
-      "Increase clozapine dose to improve symptoms",
-      "Urgent hospital assessment for clozapine-induced gastrointestinal hypomotility and obstruction",
-      "Give a single fibre supplement and await next appointment",
-      "Treat as anxiety without abdominal examination"
+      "Prescribe a fibre supplement and review bowel movements in one week.",
+      "Increase the clozapine dose and monitor for improvement in agitation.",
+      "Arrange urgent hospital assessment for clozapine-related ileus or obstruction.",
+      "Reassure that prolonged constipation is expected with clozapine use.",
+      "Treat presumed anxiety and defer abdominal examination until follow-up."
     ],
     "key": "C",
     "explanations": [
-      "Potentially fatal complication.",
-      "May worsen hypomotility.",
-      "Clozapine can cause fatal ileus; red flags warrant emergency care.",
-      "Unsafe with possible obstruction.",
-      "Misses serious pathology."
+      "Fibre supplementation can be harmful in suspected ileus/obstruction. Vomiting, painful distension and prolonged constipation require immediate clinical assessment, not a single outpatient remedy.",
+      "Clozapine worsens gastrointestinal hypomotility; dose escalation during suspected obstruction could compound a potentially fatal adverse effect.",
+      "Painful distension, vomiting, tachycardia and six days without stool are red flags for severe clozapine-induced gastrointestinal hypomotility or mechanical obstruction. Arrange emergency medical/surgical review and contact the clozapine team.",
+      "Clozapine-related bowel hypomotility has caused fatal ileus, aspiration and sepsis. A psychiatric diagnosis does not make these physical findings benign.",
+      "Anxiety cannot safely explain vomiting and a distended painful abdomen on clozapine. Immediate physical examination, imaging and blood tests are needed as clinically indicated."
     ],
     "pearl": "Pearl: Clozapine bowel monitoring is as important as haematological monitoring.",
     "pivot": "Pivot: Mild uncomplicated constipation may be managed with a proactive laxative regimen and follow-up.",
@@ -3927,6 +3927,11 @@
       ],
       "safety": "This is a decision framework, not a substitute for drug-specific instructions. Prescribing, dosing and escalation must be verified locally.",
       "local": "Exact doses, escalation thresholds and contraindications must be verified against current local protocols and senior advice."
+    },
+    "alternate": {
+      "scenario": "The patient has only mild constipation, remains well with no vomiting, pain, distension, fever or obstructive features and has normal vital signs.",
+      "management": "Record stool frequency using a bowel chart, assess other constipating medications, start or escalate a proactive stimulant/osmotic laxative regimen appropriate to the clozapine protocol, ensure hydration and arrange early review. Educate about red flags requiring emergency assessment.",
+      "reason": "Uncomplicated constipation can be managed proactively with laxatives and monitoring, but red-flag symptoms demand emergency escalation."
     }
   },
   {
