@@ -2524,17 +2524,19 @@
     "stem": "A 4-week-old infant has a temperature of 38.5°C, poor feeding and lethargy. There is no obvious focus on examination. He remains perfused but is less responsive than usual.",
     "ask": "Which ONE is the MOST APPROPRIATE management?",
     "options": [
-      "Urgent hospital evaluation for serious bacterial infection and prompt parenteral antibiotics as indicated",
-      "Reassure because fever under three months is usually viral",
-      "Treat with cough syrup and reassess in a week",
-      "Provide only antipyretics and discharge without safety-netting"
+      "Admit for neonatal sepsis assessment with cultures and IV antimicrobials.",
+      "Arrange outpatient paediatric review after a trial of oral antipyretics.",
+      "Observe at home because normal peripheral perfusion excludes sepsis.",
+      "Take a urine dipstick and defer all other tests until fever persists.",
+      "Give an oral antibiotic prescription without cultures or admission."
     ],
     "key": "A",
     "explanations": [
-      "Young febrile infants are at meaningful risk of invasive bacterial infection; lethargy requires urgent sepsis evaluation and treatment.",
-      "A well-appearing young infant still needs a structured age-based assessment; lethargy is especially concerning.",
-      "Cough syrup has no role in this possible serious infection.",
-      "Antipyretics do not exclude meningitis or bacteraemia and cannot replace assessment."
+      "A four-week-old with documented fever, poor feeding and lethargy is high-risk. Prompt paediatric review, blood/urine cultures and LP when safe plus empiric IV antibiotics under the neonatal protocol are indicated.",
+      "Antipyretics may lower temperature but do not exclude serious bacterial infection; delaying evaluation in a lethargic young infant is unsafe.",
+      "Normal perfusion at one time point does not exclude invasive infection or evolving deterioration, particularly with abnormal feeding and responsiveness.",
+      "A urine specimen is important, but a dipstick alone cannot evaluate bacteraemia or meningitis and must not delay paediatric assessment and treatment.",
+      "Oral therapy without a sepsis evaluation is inadequate for this infant’s age and concerning appearance. Empiric IV treatment and observation are needed."
     ],
     "pearl": "Fever ≥38°C in an infant younger than three months deserves urgent medical review, with the youngest ages managed most cautiously.",
     "pivot": "Older children with a clear benign viral syndrome may be managed differently if hydration, perfusion and red flags are reassuring.",
@@ -2562,24 +2564,43 @@
     "management": {
       "steps": [
         [
-          "Stabilise newborn",
-          "ABCDE, glucose, perfusion, feeding and temperature; call senior paediatrics."
+          "Recognise a high-risk infant",
+          "Check ABC, level of alertness, work of breathing, perfusion, hydration and bedside glucose. Call senior paediatrics and arrange hospital admission."
         ],
         [
-          "Investigate quickly",
-          "Blood culture, urine studies and CSF when safe, plus inflammatory markers; do not delay antibiotics for a difficult LP."
+          "Investigate serious bacterial infection",
+          "Obtain blood count, inflammatory markers, blood culture and reliable urine culture; perform LP/CSF tests if haemodynamically stable and no contraindications."
         ],
         [
-          "Treat promptly",
-          "Empiric neonatal IV antibiotics per age and local resistance pathway, with fluid/glucose support."
+          "Give empiric intravenous treatment promptly",
+          "Start neonatal-appropriate IV antibiotics using the local formulary; do not delay treatment for difficult IV access or LP in an unwell infant; consider aciclovir if HSV features or risk exist."
         ],
         [
-          "Monitor",
-          "Admit, repeat perfusion/urine, review cultures and de-escalate when safe."
+          "Reassess frequently",
+          "Monitor vitals, feeding, urine output, glucose and culture results; tailor antimicrobial management with neonatal/paediatric staff."
         ]
       ],
-      "safety": "A transient afebrile interval or positive viral test does not rule out invasive infection in a young neonate.",
-      "local": "Exact doses, escalation thresholds and contraindications must be verified against current local protocols and senior advice."
+      "source": {
+        "name": "RCH Melbourne — Febrile child",
+        "url": "https://www.rch.org.au/clinicalguide/guideline_index/Febrile_child/"
+      }
+    },
+    "legacyOptions": [
+      "Urgent hospital evaluation for serious bacterial infection and prompt parenteral antibiotics as indicated",
+      "Reassure because fever under three months is usually viral",
+      "Treat with cough syrup and reassess in a week",
+      "Provide only antipyretics and discharge without safety-netting"
+    ],
+    "legacyExplanations": [
+      "Young febrile infants are at meaningful risk of invasive bacterial infection; lethargy requires urgent sepsis evaluation and treatment.",
+      "A well-appearing young infant still needs a structured age-based assessment; lethargy is especially concerning.",
+      "Cough syrup has no role in this possible serious infection.",
+      "Antipyretics do not exclude meningitis or bacteraemia and cannot replace assessment."
+    ],
+    "alternate": {
+      "scenario": "A healthy, immunised nine-month-old has a brief fever, is playful, feeds normally, is hydrated and has no concerning examination findings.",
+      "management": "Assess fever source and serious-illness warning signs, provide symptom care and specific safety-net advice. Use urine testing or further evaluation as indicated by clinical risk; routine neonatal LP, admission and empiric IV antibiotics are not needed for a well older infant without additional risk factors.",
+      "reason": "Age under 28 days and abnormal clinical appearance markedly increase risk of invasive infection."
     }
   },
   {
@@ -3448,17 +3469,19 @@
     "stem": "A 35-year-old with schizophrenia taking clozapine for six months develops severe constipation, abdominal distension, vomiting and absent bowel sounds. He has not passed stool for seven days.",
     "ask": "Which ONE action is MOST APPROPRIATE?",
     "options": [
-      "Prescribe a bulk-forming laxative and review in two weeks",
-      "Advise increased fibre only and continue without investigation",
-      "Treat as possible clozapine-induced gastrointestinal hypomotility with urgent hospital/surgical evaluation",
-      "Reassure that constipation on clozapine is always benign"
+      "Add a bulk-forming laxative and request a review after two weeks.",
+      "Continue clozapine unchanged with advice to increase dietary fibre.",
+      "Arrange emergency care for possible clozapine-related ileus or obstruction.",
+      "Treat as harmless constipation unless fever or rectal bleeding develops.",
+      "Increase the antipsychotic dose and reassess bowel function tomorrow."
     ],
     "key": "C",
     "explanations": [
-      "Bulking agents can worsen obstruction, and delayed review risks perforation.",
-      "Dietary advice is insufficient with vomiting, distension and absent bowel sounds.",
-      "Clozapine can cause potentially fatal ileus/obstruction; red-flag symptoms require emergency assessment, imaging and medication review.",
-      "Clozapine-associated gastrointestinal hypomotility can be life-threatening."
+      "Bulk-forming fibre can worsen an obstructed bowel; marked distension, vomiting and absent bowel sounds are emergency red flags, not an indication for routine laxative escalation.",
+      "Dietary advice may help uncomplicated constipation but cannot exclude ileus/obstruction in a symptomatic patient. Continue treatment only after urgent multidisciplinary assessment.",
+      "Severe clozapine-induced gastrointestinal hypomotility can be fatal. Arrange ED/surgical assessment, investigations and treatment for suspected ileus or obstruction, with psychiatric medication review.",
+      "Fever or bleeding need not be present in dangerous bowel hypomotility. Vomiting, distension and prolonged absence of stool already require emergency escalation.",
+      "Increasing clozapine may worsen anticholinergic gastrointestinal hypomotility; acute physical safety takes priority over antipsychotic adjustment."
     ],
     "pearl": "Ask every patient on clozapine about bowel motions, not just neutropenia, myocarditis or sedation.",
     "pivot": "Mild constipation without red flags should be managed proactively with appropriate laxatives and routine monitoring.",
@@ -3486,24 +3509,43 @@
     "management": {
       "steps": [
         [
-          "Assess the decision point",
-          "Identify the presentation, timing and specific finding in the stem and the patient's immediate stability; check whether an emergency escalation is needed."
+          "Treat the red flags as an emergency",
+          "Recognise prolonged constipation plus vomiting, absent bowel sounds and abdominal distension as possible clozapine ileus/obstruction."
         ],
         [
-          "Act on the best option",
-          "Treat as possible clozapine-induced gastrointestinal hypomotility with urgent hospital/surgical evaluation. Clozapine can cause potentially fatal ileus/obstruction; red-flag symptoms require emergency assessment, imaging and medication review."
+          "Stabilise and consult",
+          "Assess ABC, vital signs, fluid losses and sepsis signs; arrange urgent medical/surgical assessment, IV fluid support and nil-by-mouth status when appropriate."
         ],
         [
-          "Reassess the effect",
-          "Check symptoms, vital signs, relevant results and adverse effects after the first intervention; revise the plan if the patient deteriorates."
+          "Diagnose and review medications",
+          "Seek urgent abdominal imaging and laboratory assessment per surgical advice; discuss clozapine and other constipating medicines with psychiatry."
         ],
         [
-          "Plan ongoing care",
-          "Arrange appropriate senior review, investigations, safety-netting and follow-up; check local protocols for the precise treatment sequence."
+          "Prevent recurrence after treatment",
+          "Once obstruction resolves, agree on a bowel chart, laxative plan, education and clozapine monitoring with treating specialists."
         ]
       ],
-      "safety": "This is a decision framework, not a substitute for drug-specific instructions. Prescribing, dosing and escalation must be verified locally.",
-      "local": "Exact doses, escalation thresholds and contraindications must be verified against current local protocols and senior advice."
+      "source": {
+        "name": "TGA Australia — Clozapine gastrointestinal hypomotility warning",
+        "url": "https://www.tga.gov.au/safety/safety-monitoring-and-information/safety-alerts/clozapine"
+      }
+    },
+    "legacyOptions": [
+      "Prescribe a bulk-forming laxative and review in two weeks",
+      "Advise increased fibre only and continue without investigation",
+      "Treat as possible clozapine-induced gastrointestinal hypomotility with urgent hospital/surgical evaluation",
+      "Reassure that constipation on clozapine is always benign"
+    ],
+    "legacyExplanations": [
+      "Bulking agents can worsen obstruction, and delayed review risks perforation.",
+      "Dietary advice is insufficient with vomiting, distension and absent bowel sounds.",
+      "Clozapine can cause potentially fatal ileus/obstruction; red-flag symptoms require emergency assessment, imaging and medication review.",
+      "Clozapine-associated gastrointestinal hypomotility can be life-threatening."
+    ],
+    "alternate": {
+      "scenario": "A clozapine-treated patient has new mild constipation but normal abdominal examination, no vomiting or distension, stable observations and no obstructive signs.",
+      "management": "Start a proactive bowel regimen with appropriate stimulant/osmotic laxatives per clozapine constipation protocol, track bowel frequency, review other anticholinergic drugs and arrange early follow-up. Explain that abdominal pain, distension, vomiting or prolonged constipation needs urgent care.",
+      "reason": "Uncomplicated constipation may be managed with monitored laxative therapy, but obstructive features change disposition to immediate hospital assessment."
     }
   },
   {
@@ -3778,17 +3820,19 @@
     "stem": "A 77-year-old with atrial fibrillation takes apixaban. He develops acute kidney injury, is prescribed clarithromycin, and reports black stools with dizziness. BP is 90/55 mmHg.",
     "ask": "Which ONE is the MOST IMPORTANT immediate response?",
     "options": [
-      "Reassure that dark stools are expected with apixaban",
-      "Treat suspected gastrointestinal bleeding as an emergency and review anticoagulation and drug interactions",
-      "Add ibuprofen for abdominal discomfort",
-      "Continue all medications without checking haemoglobin"
+      "Treat the melaena as an expected effect and continue current apixaban.",
+      "Resuscitate suspected GI bleeding and review anticoagulant/drug exposure.",
+      "Add ibuprofen for pain and keep the apixaban regimen unchanged.",
+      "Defer blood tests until renal function and dark stool colour normalise.",
+      "Request routine outpatient endoscopy without addressing hypotension."
     ],
     "key": "B",
     "explanations": [
-      "Dark stools can indicate GI haemorrhage, not a harmless expected effect.",
-      "Melaena with hypotension suggests significant GI bleeding; resuscitate, check blood count and coagulation-related factors, and consider reversal based on severity.",
-      "NSAIDs increase bleeding risk and can worsen kidney injury.",
-      "Continuing high-risk medications without evaluation is unsafe."
+      "Melaena and hypotension signal significant upper GI bleeding rather than a benign direct oral anticoagulant effect. Delay risks persistent haemorrhagic shock.",
+      "Stabilise ABC, obtain IV access, check haemoglobin, renal function and medication timing, stop further anticoagulant doses, obtain urgent GI and haematology input and assess reversal needs according to severity and protocol.",
+      "NSAIDs increase gastrointestinal bleeding and kidney injury, which are already concerns in this patient. They are inappropriate during suspected active anticoagulant-associated bleeding.",
+      "Haemoglobin, group and crossmatch, renal function and haemodynamic assessment are urgent. Clarithromycin and kidney injury can increase drug-exposure concerns and should be reviewed now.",
+      "Urgent endoscopic assessment may be required after resuscitation, but hypotension must be addressed before arranging routine outpatient testing."
     ],
     "pearl": "In prescribing questions, consider renal clearance, CYP/P-gp interactions, antiplatelets/NSAIDs and active bleeding before simply following the drug list.",
     "pivot": "If stools are dark from iron therapy but there is no haemodynamic change or bleeding evidence, the interpretation differs.",
@@ -3817,24 +3861,44 @@
     "management": {
       "steps": [
         [
-          "Assess the decision point",
-          "Identify haemodynamic instability and the patient's immediate stability; check whether an emergency escalation is needed."
+          "Recognise suspected GI bleed with shock",
+          "Obtain ABC assessment, two IV accesses, continuous observations, bedside blood glucose, haemoglobin, UEC, group and crossmatch, and assess transfusion needs."
         ],
         [
-          "Act on the best option",
-          "Treat suspected gastrointestinal bleeding as an emergency and review anticoagulation and drug interactions. Melaena with hypotension suggests significant GI bleeding; resuscitate, check blood count and coagulation-related factors, and consider reversal based on severity."
+          "Stop and review antithrombotics",
+          "Withhold apixaban, document last dose and renal function, review interacting agents including clarithromycin; avoid NSAIDs."
         ],
         [
-          "Reassess the effect",
-          "Check symptoms, vital signs, relevant results and adverse effects after the first intervention; revise the plan if the patient deteriorates."
+          "Control bleeding",
+          "Resuscitate judiciously with blood products as needed and seek urgent endoscopy/gastroenterology consultation. Discuss specific reversal/PCC only for major life-threatening bleeding as local protocol directs."
         ],
         [
-          "Plan ongoing care",
-          "Arrange appropriate senior review, investigations, safety-netting and follow-up; check local protocols for the precise treatment sequence."
+          "Review and plan restart",
+          "Identify the bleeding source, monitor serial haemoglobin and vital signs; later anticoagulant restart requires individualized thromboembolism versus rebleeding assessment."
         ]
       ],
-      "safety": "This is a decision framework, not a substitute for drug-specific instructions. Prescribing, dosing and escalation must be verified locally.",
-      "local": "Exact doses, escalation thresholds and contraindications must be verified against current local protocols and senior advice."
+      "safety": "Do not assume all dark stools are harmless or automatically administer a reversal agent for minor bleeding; decide using severity and anticoagulant context.",
+      "source": {
+        "name": "Queensland Health statewide anticoagulant guideline",
+        "url": "https://www.health.qld.gov.au/__data/assets/pdf_file/0015/1152213/statewide-anticoagulant-guideline.pdf"
+      }
+    },
+    "legacyOptions": [
+      "Reassure that dark stools are expected with apixaban",
+      "Treat suspected gastrointestinal bleeding as an emergency and review anticoagulation and drug interactions",
+      "Add ibuprofen for abdominal discomfort",
+      "Continue all medications without checking haemoglobin"
+    ],
+    "legacyExplanations": [
+      "Dark stools can indicate GI haemorrhage, not a harmless expected effect.",
+      "Melaena with hypotension suggests significant GI bleeding; resuscitate, check blood count and coagulation-related factors, and consider reversal based on severity.",
+      "NSAIDs increase bleeding risk and can worsen kidney injury.",
+      "Continuing high-risk medications without evaluation is unsafe."
+    ],
+    "alternate": {
+      "scenario": "A stable patient taking apixaban reports darker stools after starting iron, with no haemodynamic changes, negative clinical bleeding evaluation and unchanged haemoglobin.",
+      "management": "Evaluate the stool history, interactions, baseline haemoglobin and other signs of bleeding; if significant GI bleeding is reasonably excluded, reassess need for ongoing anticoagulation and counsel on concerning symptoms. There is no routine indication for emergency factor Xa reversal solely because iron caused dark stools.",
+      "reason": "Haemodynamic instability and convincing bleeding features make this case a major-haemorrhage emergency."
     }
   },
   {
