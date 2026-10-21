@@ -141,17 +141,17 @@
     "stem": "A 57-year-old with chest pain is pale and diaphoretic. ECG shows a regular broad-complex tachycardia at 190/min. BP 68/40 mmHg.",
     "ask": "Which intervention is indicated?",
     "options": [
-      "Oral amiodarone and a repeat ECG tomorrow",
-      "IV metoprolol then observation",
-      "Carotid sinus massage only",
-      "Immediate synchronised electrical cardioversion with resuscitation support"
+      "Give oral amiodarone, arrange urgent ECG review and repeat observations.",
+      "Start IV metoprolol and observe for rhythm conversion despite hypotension.",
+      "Try carotid sinus massage with close rhythm monitoring before referral.",
+      "Perform immediate synchronised cardioversion with resuscitation support."
     ],
     "key": "D",
     "explanations": [
-      "Oral antiarrhythmics are too slow in instability",
-      "Beta-blockers may worsen shock and delay definitive care",
-      "Vagal manoeuvres do not adequately treat an unstable broad-complex rhythm.",
-      "Unstable tachycardia with a pulse requires urgent synchronised cardioversion."
+      "Oral antiarrhythmic therapy acts too slowly and is inappropriate as the first intervention in a severely hypotensive patient with unstable tachyarrhythmia.",
+      "IV beta-blockade may worsen circulatory collapse. Restoring rhythm promptly takes precedence over medications that delay cardioversion.",
+      "Carotid sinus massage is not the definitive response to an unstable broad-complex tachycardia, which should be regarded as VT unless proven otherwise.",
+      "Haemodynamic instability with a tachycardia and a pulse requires immediate synchronised electrical cardioversion, airway preparation and full resuscitation support."
     ],
     "pearl": "Decide stable versus unstable before choosing a tachyarrhythmia algorithm.",
     "pivot": "A normal initial ECG does not exclude an evolving acute coronary syndrome; serial ECGs and biomarkers may be needed.",
@@ -198,6 +198,11 @@
       ],
       "safety": "This is a decision framework, not a substitute for drug-specific instructions. Prescribing, dosing and escalation must be verified locally.",
       "local": "Exact doses, escalation thresholds and contraindications must be verified against current local protocols and senior advice."
+    },
+    "alternate": {
+      "scenario": "The same regular broad-complex tachycardia occurs with a normal BP, preserved mentation, no chest pain or pulmonary oedema and otherwise stable perfusion.",
+      "management": "Obtain urgent expert/ALS assessment and a 12-lead ECG while continuously monitoring the patient; consider appropriate IV antiarrhythmic therapy or planned synchronised cardioversion under the local stable-VT algorithm. Prepare to cardiovert immediately if instability develops.",
+      "reason": "Poor perfusion in the original case makes immediate electrical treatment the priority; stable VT permits a carefully monitored rhythm diagnosis and treatment decision."
     }
   },
   {
@@ -2209,17 +2214,17 @@
     "stem": "A 69-year-old has new right-sided weakness and aphasia beginning 75 minutes ago. CT brain excludes haemorrhage.",
     "ask": "What is the key immediate NEXT step?",
     "options": [
-      "Urgent assessment for reperfusion eligibility including IV thrombolysis and thrombectomy pathways",
-      "Wait 24 hours for MRI before discussing reperfusion",
-      "Discharge with aspirin only",
-      "Give full-dose anticoagulation immediately"
+      "Activate a stroke alert and assess urgently for IV lysis and thrombectomy.",
+      "Await routine MRI tomorrow before contacting the stroke service.",
+      "Give aspirin and discharge once the initial CT excludes haemorrhage.",
+      "Begin full-dose heparin now to prevent further cerebral embolisation."
     ],
     "key": "A",
     "explanations": [
-      "Acute disabling ischaemic stroke within a reperfusion window requires time-critical stroke-team assessment.",
-      "Delay loses brain tissue",
-      "Aspirin alone misses reperfusion opportunity",
-      "Routine immediate full-dose anticoagulation is not standard acute stroke care."
+      "This is a potentially disabling acute ischaemic stroke in a time-sensitive window: mobilise the stroke team, assess last-known-well, contraindications and urgent vascular imaging, and evaluate thrombolysis and clot retrieval.",
+      "An MRI may aid selected diagnostic decisions, but routinely waiting until tomorrow forfeits potentially beneficial reperfusion in an eligible disabling stroke.",
+      "Antiplatelets alone are not a substitute for an urgent reperfusion eligibility assessment; admission and stroke-unit monitoring are still needed.",
+      "Routine immediate therapeutic heparin is not standard treatment for undifferentiated acute ischaemic stroke and increases haemorrhagic transformation risk."
     ],
     "pearl": "Last-known-well, glucose, anticoagulants and vascular imaging determine treatment options.",
     "pivot": "Exam check: identify the decisive positive finding, then the urgent risk or distinguishing negative clue that eliminates the alternatives.",
@@ -2265,6 +2270,11 @@
       ],
       "safety": "This is a decision framework, not a substitute for drug-specific instructions. Prescribing, dosing and escalation must be verified locally.",
       "local": "Exact doses, escalation thresholds and contraindications must be verified against current local protocols and senior advice."
+    },
+    "alternate": {
+      "scenario": "Instead of excluding bleeding, the initial CT confirms a new intracerebral haemorrhage.",
+      "management": "Do not give thrombolysis. Assess and manage BP promptly, identify and reverse anticoagulants if relevant, admit to a hyperacute stroke/stroke unit and urgently involve neurosurgery if indicated. Monitor for neurological deterioration and repeat imaging as needed.",
+      "reason": "Confirming haemorrhage reverses the reperfusion decision and makes haemostasis/haematoma control the immediate priority."
     }
   },
   {
@@ -2895,17 +2905,17 @@
     "stem": "A 28-year-old at 7 weeks by dates has unilateral pelvic pain, spotting, positive pregnancy test and BP 80/45. Ultrasound shows free intraperitoneal fluid with no intrauterine pregnancy. Next action?",
     "ask": "Choose the SINGLE BEST answer for this clinical scenario.",
     "options": [
-      "Start combined oral contraceptive",
-      "Immediate resuscitation and urgent gynaecological surgery for suspected ruptured ectopic",
-      "Discharge with repeat urine pregnancy test in one week",
-      "Methotrexate as an outpatient without resuscitation"
+      "Give oral analgesia and a pregnancy advice leaflet, then discharge home.",
+      "Resuscitate immediately and arrange emergency gynaecological surgery.",
+      "Begin outpatient methotrexate and recheck serum β-hCG after a week.",
+      "Repeat urine pregnancy testing in 48 hours before seeking surgical advice."
     ],
     "key": "B",
     "explanations": [
-      "Contraception does not treat the emergency.",
-      "Haemodynamic instability plus early pregnancy and free fluid suggests ruptured ectopic pregnancy.",
-      "Waiting risks exsanguination",
-      "Methotrexate is inappropriate in unstable rupture"
+      "Severe hypotension and free intraperitoneal fluid with a positive pregnancy test indicate possible life-threatening rupture, not simple pregnancy-related pain.",
+      "Suspected ruptured ectopic pregnancy with shock requires ABC resuscitation, senior gynaecology and anaesthesia help, blood products as required and urgent operative haemorrhage control.",
+      "Methotrexate is reserved for selected stable, unruptured ectopic pregnancies with appropriate clinical and biochemical criteria and follow-up capability; it does not control acute intra-abdominal bleeding.",
+      "Observation without urgent intervention risks ongoing haemorrhage and death. Repeat hCG measurements are for stable diagnostic or surveillance pathways, not collapse."
     ],
     "pearl": "In reproductive-age patients with shock and abdominal pain, do a pregnancy test early.",
     "pivot": "Exam check: identify the decisive positive finding, then the urgent risk or distinguishing negative clue that eliminates the alternatives.",
@@ -2952,6 +2962,11 @@
       ],
       "safety": "This is a decision framework, not a substitute for drug-specific instructions. Prescribing, dosing and escalation must be verified locally.",
       "local": "Exact doses, escalation thresholds and contraindications must be verified against current local protocols and senior advice."
+    },
+    "alternate": {
+      "scenario": "The patient has a small unruptured tubal ectopic, stable observations, no significant free fluid and serum β-hCG within the local medical-management criteria.",
+      "management": "Discuss options with senior gynaecology: methotrexate if eligibility criteria and follow-up are met, or selected expectant care depending on hCG, size, symptoms and patient wishes. Arrange serial hCG monitoring and strict emergency return instructions for worsening pain, dizziness or bleeding.",
+      "reason": "Haemodynamic stability and an unruptured ectopic allow medical or expectant management; shock rules them out."
     }
   },
   {
