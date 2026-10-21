@@ -40,5 +40,17 @@
     "name": "ACSQHC clinical standards",
     "url": "https://www.safetyandquality.gov.au/clinical-care-standards",
     "focus": "Patient safety and clinical quality"
+  },
+  {
+    "id": "stroke-standard-2026",
+    "name": "ACSQHC 2026 Stroke Clinical Care Standard",
+    "url": "https://www.safetyandquality.gov.au/clinical-care-standards/stroke",
+    "focus": "Stroke assessment, acute care and rehabilitation"
+  },
+  {
+    "id": "stroke-updates",
+    "name": "Stroke Foundation living guideline changes",
+    "url": "https://informme.org.au/guidelines/living-guidelines-updates",
+    "focus": "Documented updated stroke recommendations"
   }
 ]
