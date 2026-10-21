@@ -152,7 +152,7 @@ function practicePicker(){
  const existing=s&&Array.isArray(s.order)&&s.order.length;
  const count=existing?Object.keys(s.answers||{}).length:0;
  return `<section class="practice-builder" aria-label="Custom mixed-specialty practice">
-  <div class="practice-title-row"><div><div class="eyebrow">A GARDEN MADE FOR YOU ✿</div><h2>🦋 Create your own practice mix</h2><p>Choose your specialties, then practise randomly selected clinical scenarios from all ten banks.</p></div><span class="practice-sparkle" aria-hidden="true">🌷✨</span></div>
+  <div class="practice-title-row"><div><div class="eyebrow">A GARDEN MADE FOR YOU ✿</div><h2>🦋 Create your own practice mix</h2><p>Choose your specialties, then practise randomly selected clinical scenarios from every question bank.</p></div><span class="practice-sparkle" aria-hidden="true">🌷✨</span></div>
   ${existing?`<div class="practice-resume"><div><b>🌱 Your current practice</b><p>${count}/${s.order.length} answered · ${safe((s.selected||[]).map(studyGroupName).join(', '))}</p></div><div class="practice-resume-actions"><a class="btn soft" href="?practice=1">${count===s.order.length?'Revisit questions':'Continue session'} ↗</a>${count===s.order.length?'<a class="btn" href="?practiceResults=1">📊 View results</a>':''}</div></div>`:''}
   <div id="practiceBuilderBody" class="practice-builder-body"><p class="small">Gathering the specialties in your question garden… 🌼</p></div>
   <p class="practice-fine">Fresh practice attempts won't change your original bank scores. Incorrect answers still join your Wrong Answers Garden.</p>
