@@ -437,3 +437,6 @@ body.dark .learning-decision-check{background:#353047;color:var(--ink)}
 body.dark .learning-missed-choice{background:#3d2936}
 @media(max-width:740px){.learning-missed-choice{padding:14px}.learning-card .management-guide ol{padding-right:7px}.learning-more-alternatives summary,.management-guide summary{padding:12px}}
 @media(prefers-reduced-motion:reduce){.learning-more-alternatives summary::after,.management-guide summary::after{transition:none}}
+
+/* Delicate lower-case signature, one step smaller */
+.site-footer .footer-signature{font-size:12px;font-weight:700;letter-spacing:.015em}
