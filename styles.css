@@ -126,3 +126,54 @@ body.dark .theme-picker{background:var(--theme-ctl)}
 body.dark .learning-correct h3,body.dark .learning-correct p{color:var(--green-ink)}
 body.contrast{--alt-surface:#f7f7f7;--pearl-surface:#fff4cf;--pearl-edge:#a17e2e;--pearl-ink:#3b2f1d;--pivot-surface:#f3f1fb;--pivot-ink:#111}
 @media(max-width:570px){.theme-picker{padding:4px 5px}.theme-picker select{max-width:95px;font-size:11px}.theme-picker>span:first-child{display:none}}
+
+/* 2026-10: Focus-preserving study screen. The two columns are present both
+   before AND after answering, so no text or answer choices suddenly resize. */
+.bank-intro{padding:0 3px 5px}
+.bank-intro-nav{display:flex;align-items:center;justify-content:space-between;gap:12px;flex-wrap:wrap;border-bottom:1px solid var(--edge);padding:4px 0 14px}
+.bank-back-link,.bank-text-link{font-size:13px;font-weight:650;color:var(--muted);text-decoration:none;line-height:1.5}
+.bank-back-link:hover,.bank-text-link:hover{text-decoration:underline;color:var(--violet)}
+.bank-intro-actions{display:flex;align-items:center;gap:19px;flex-wrap:wrap}
+.bank-text-link{background:none;border:0;padding:5px 0;cursor:pointer;font:inherit;font-size:13px;font-weight:650}
+.bank-text-link span{color:var(--muted)}
+.bank-reset-link{color:var(--muted);opacity:.85}
+.bank-reset-link:disabled{opacity:.38;cursor:not-allowed;text-decoration:none}
+.bank-title-area{padding:19px 0 10px}
+.bank-title-area .eyebrow{font-size:10px;letter-spacing:.12em}
+.bank-title-area .page-title{font-size:clamp(27px,3.5vw,37px);margin:7px 0 3px}
+.bank-description{margin:5px 0 0;line-height:1.65}
+.bank-progress-details{display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:8px;margin:6px 0 8px}
+.bank-progress-percent{white-space:nowrap}
+.bank-progress{height:7px;margin:0 0 11px;opacity:.87}
+.bank-toolbar{margin:12px 3px 8px;padding:0 0 12px;border-bottom:1px solid var(--edge);gap:12px}
+.bank-toolbar .flex{gap:12px}
+.bank-toolbar select{min-width:150px}
+.bank-finished-note{border:1px solid var(--edge);border-radius:12px;background:var(--lav);color:var(--ink);padding:12px;font-size:13px;margin-top:16px}
+.learning-layout,.learning-layout.has-notes{display:grid;grid-template-columns:minmax(0,1.12fr) minmax(0,.88fr);gap:20px;align-items:start;margin-top:14px}
+.learning-layout:not(.has-notes) .quizbox{max-width:none;margin-inline:0}
+.learning-layout .quiz-question,.learning-layout.has-notes .quiz-question{min-width:0;margin:0;padding:clamp(20px,2.7vw,34px)}
+.learning-layout .stem,.learning-layout.has-notes .stem{font-size:16px;line-height:1.78}
+.learning-layout .choice,.learning-layout.has-notes .choice{font-size:14px;padding:13px 14px}
+.learning-layout .navbox,.learning-layout.has-notes .navbox{gap:10px;flex-wrap:wrap}
+.learning-layout .navbox .btn,.learning-layout.has-notes .navbox .btn{padding:9px 12px}
+.learning-placeholder{border:1px dashed var(--edge);background:var(--card);box-shadow:none;opacity:.82;padding:27px;display:flex;flex-direction:column;align-items:flex-start;gap:7px;min-height:185px}
+.learning-placeholder-emoji{font-size:26px;background:var(--lav);border-radius:13px;padding:7px 12px}
+.learning-placeholder h2{font-size:16px;margin:5px 0 0;color:var(--ink);font-weight:680}
+.learning-placeholder p{margin:0;color:var(--muted);font-size:13px;line-height:1.7;max-width:40ch}
+body.dark .learning-placeholder{background:#22232e;opacity:.78}
+@media(max-width:1020px){
+ .learning-layout,.learning-layout.has-notes{grid-template-columns:minmax(0,1fr);gap:17px}
+ .learning-placeholder{display:none}
+ .learning-layout .quiz-question,.learning-layout.has-notes .quiz-question{max-width:850px;width:100%;margin-inline:auto}
+ .learning-layout .learning-card:not(.learning-placeholder){max-width:850px;width:100%;margin-inline:auto}
+}
+@media(max-width:580px){
+ .bank-intro-nav{align-items:flex-start}
+ .bank-intro-actions{gap:9px 16px}
+ .bank-title-area{padding-top:16px}
+ .bank-progress-details{align-items:flex-start}
+ .bank-toolbar .flex{width:100%;gap:9px}
+ .bank-toolbar label{flex:1 1 150px}
+ .bank-toolbar select{width:100%;min-width:0}
+ .learning-layout .quiz-question,.learning-layout.has-notes .quiz-question{padding:18px}
+}
