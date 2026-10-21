@@ -17,6 +17,9 @@ jobs:
         run: node --check app.js
       - name: Validate bank identity, option/explanation mapping and report bias
         run: python3 scripts/audit_question_quality.py
+      - name: Block publication while clinical-content release gates fail
+        if: github.event_name == 'pull_request'
+        run: python3 scripts/audit_question_quality.py --release-ready
       - name: Ensure footer stays small and lowercase
         run: |
           python3 - <<'PY'
