@@ -1,0 +1,28 @@
+name: Study Garden question safety and UI checks
+on:
+  push:
+    branches:
+      - feature-enhanced-wrong-answer-teaching-banks1-10-20261021
+  pull_request:
+    branches: [main]
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  qa:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Check JavaScript syntax
+        run: node --check app.js
+      - name: Validate bank identity, option/explanation mapping and report bias
+        run: python3 scripts/audit_question_quality.py
+      - name: Ensure footer stays small and lowercase
+        run: |
+          python3 - <<'PY'
+          from pathlib import Path
+          html=Path('index.html').read_text()
+          css=Path('styles.css').read_text()
+          assert 'made by hayly &lt;3' in html, 'Expected lowercase footer signature'
+          assert '.footer-signature' in css, 'Expected small footer styling'
+          PY
