@@ -2464,19 +2464,19 @@
     "stem": "A primigravida has just delivered vaginally and is bleeding briskly. The uterus feels enlarged, soft and boggy. There is no obvious retained placenta and no major genital tract trauma.",
     "ask": "Which is the MOST APPROPRIATE immediate action?",
     "options": [
-      "Perform a routine cervical smear",
-      "Uterine massage and first-line uterotonic treatment while activating PPH management",
-      "Wait for haemoglobin to fall before acting",
-      "Restrict IV access to avoid fluid overload",
-      "Give high-dose IV heparin"
+      "Arrange a cervical smear once blood loss has been formally measured.",
+      "Massage uterus, give uterotonics and activate immediate PPH response.",
+      "Wait for the haemoglobin result before beginning haemorrhage treatment.",
+      "Restrict venous access until fluid overload and anaemia are excluded.",
+      "Administer therapeutic heparin to prevent postpartum thrombosis."
     ],
     "key": "B",
     "explanations": [
-      "Screening is irrelevant during haemorrhage.",
-      "Uterine atony is the commonest cause of primary PPH and needs massage, oxytocin per protocol, tranexamic acid and resuscitation as indicated.",
-      "Early Hb may be misleading in acute loss.",
-      "Adequate IV access is important.",
-      "Heparin worsens bleeding."
+      "A cervical smear is unrelated to treating active postpartum haemorrhage. It is inappropriate to delay resuscitation for unrelated screening.",
+      "A soft, boggy enlarged uterus with brisk post-delivery bleeding indicates uterine atony. Call help, perform uterine massage/compression, administer oxytocin or other uterotonics, provide early tranexamic acid and resuscitate.",
+      "Early haemoglobin can underestimate blood loss and waiting risks haemodynamic collapse. Clinical bleeding and uterine tone should direct emergency management.",
+      "Adequate IV access is essential for resuscitation, blood tests and potential transfusion in PPH. Fluid volume should be guided by maternal status rather than avoiding access.",
+      "Heparin aggravates active bleeding. Postpartum thromboprophylaxis is a later risk-benefit decision after haemostasis."
     ],
     "pearl": "PPH: think 4 Ts—Tone, Trauma, Tissue, Thrombin. A boggy uterus suggests Tone.",
     "pivot": "A firm well-contracted uterus despite bleeding should prompt a search for trauma, retained tissue and coagulopathy.",
@@ -2508,24 +2508,45 @@
     "management": {
       "steps": [
         [
-          "Declare PPH",
-          "Call obstetric/anaesthesia help; estimate loss and ABC, large-bore access and blood availability."
+          "Activate the PPH pathway",
+          "Call obstetric, anaesthetic and blood-bank help; estimate loss, obtain large-bore IV access and blood tests, and assess circulation."
         ],
         [
-          "Control tone",
-          "Uterine massage/compression and oxytocin or appropriate uterotonics, early tranexamic acid per protocol."
+          "Treat atony immediately",
+          "Massage/compress the uterus and administer oxytocin/appropriate uterotonics according to local policy while treating shock."
         ],
         [
-          "Assess 4 Ts",
-          "Tone, Trauma, Tissue, Thrombin; check placenta and birth canal."
+          "Add early antifibrinolytic and find cause",
+          "Administer tranexamic acid early under PPH protocol and investigate the 4 Ts: Tone, Trauma, Tissue, Thrombin."
         ],
         [
-          "Escalate",
-          "Tamponade, surgery and massive transfusion for ongoing bleeding; monitor urine output and coagulation."
+          "Escalate persistent bleeding",
+          "Use blood products and major haemorrhage protocol, tamponade or operative haemostasis as indicated; monitor vitals, urine output and coagulation."
         ]
       ],
-      "safety": "Ergometrine is generally avoided in severe hypertension; carboprost in asthma.",
-      "local": "Exact doses, escalation thresholds and contraindications must be verified against current local protocols and senior advice."
+      "source": {
+        "name": "Queensland Clinical Guidelines — Postpartum haemorrhage",
+        "url": "https://www.health.qld.gov.au/qcg/publications"
+      }
+    },
+    "legacyOptions": [
+      "Perform a routine cervical smear",
+      "Uterine massage and first-line uterotonic treatment while activating PPH management",
+      "Wait for haemoglobin to fall before acting",
+      "Restrict IV access to avoid fluid overload",
+      "Give high-dose IV heparin"
+    ],
+    "legacyExplanations": [
+      "Screening is irrelevant during haemorrhage.",
+      "Uterine atony is the commonest cause of primary PPH and needs massage, oxytocin per protocol, tranexamic acid and resuscitation as indicated.",
+      "Early Hb may be misleading in acute loss.",
+      "Adequate IV access is important.",
+      "Heparin worsens bleeding."
+    ],
+    "alternate": {
+      "scenario": "Heavy vaginal bleeding follows delivery but the uterus is firm, well contracted, and the placenta seems complete.",
+      "management": "Maintain the PPH response, inspect the cervix, vagina and perineum for tears and haematoma, reassess retained tissue and consider coagulopathy with blood tests. Repair or treat the identified source with continuing resuscitation; atony-directed uterotonics alone are insufficient.",
+      "reason": "A firm contracted uterus makes tone a less likely primary cause, directing attention to Trauma, Tissue and Thrombin."
     }
   },
   {
