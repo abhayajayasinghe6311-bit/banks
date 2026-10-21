@@ -226,7 +226,22 @@
       "scenario": "CT instead shows acute ischaemic stroke without haemorrhage, but the patient is still taking apixaban for AF.",
       "management": "Activate a stroke alert, establish last-known-well and time of the last apixaban dose, assess renal function and drug activity where appropriate, and obtain urgent vascular imaging for large-vessel occlusion. Consider mechanical thrombectomy if eligible. IV thrombolysis is not automatic while a factor Xa inhibitor may be active; the specialist stroke team must assess timing, tests and current protocol before any reperfusion drug.",
       "reason": "Ischaemic stroke requires assessment for restoring perfusion, but concurrent apixaban may prohibit immediate IV thrombolysis; established ICH instead requires urgent haemostatic treatment."
-    }
+    },
+    "legacyOptions": [
+      "Administer IV alteplase to prevent clot expansion",
+      "Withhold the next apixaban dose only",
+      "Urgent anticoagulant reversal using the locally recommended factor Xa inhibitor pathway",
+      "Give aspirin for secondary stroke prevention",
+      "Begin prophylactic low-molecular-weight heparin immediately"
+    ],
+    "legacyExplanations": [
+      "Thrombolysis would worsen haemorrhage.",
+      "Omission alone does not promptly reverse major bleeding.",
+      "Life-threatening ICH on a factor Xa inhibitor needs prompt reversal and blood pressure management.",
+      "Antiplatelet therapy worsens bleeding risk in acute ICH.",
+      "Acute haemorrhage is not the time for pharmacological prophylaxis."
+    ],
+    "questionRevision": 2
   },
   {
     "n": 4,
@@ -1161,7 +1176,22 @@
       "scenario": "The patient can speak full sentences, has only mild work of breathing, normal oxygenation and good early response to reliever therapy.",
       "management": "Assess objectively where feasible, administer inhaled reliever treatment according to asthma severity, consider oral corticosteroids where indicated, observe for sustained improvement, and provide inhaler-technique review, an updated asthma action plan and safety-netting. Reserve ICU/airway escalation for deterioration or severe features.",
       "reason": "A silent chest and inability to speak in full sentences indicate life-threatening airflow limitation in the original presentation."
-    }
+    },
+    "legacyOptions": [
+      "Absent wheeze proves there is no bronchospasm",
+      "The patient can be discharged after one inhaler puff",
+      "A silent chest can indicate life-threatening airflow obstruction and impending respiratory arrest",
+      "This is most consistent with uncomplicated anxiety alone",
+      "Normal mentation excludes respiratory failure"
+    ],
+    "legacyExplanations": [
+      "Severe asthma may be silent.",
+      "Severe features mandate emergency treatment and monitoring.",
+      "Minimal air entry can produce fewer wheezes despite extreme obstruction.",
+      "Clinical respiratory distress is substantial.",
+      "Deterioration can be sudden."
+    ],
+    "questionRevision": 2
   },
   {
     "n": 19,
@@ -3664,7 +3694,22 @@
       "scenario": "A neurologically intact patient is scanned within six hours of thunderclap onset with a high-quality, expertly reported normal noncontrast CT and a reliable time of onset.",
       "management": "Use a validated early-CT rule-out pathway if all technical and clinical criteria are satisfied; discuss any residual concern or atypical features with senior emergency/neurology teams. Further LP or vascular imaging is still appropriate where criteria are unmet or suspicion remains high.",
       "reason": "A delayed CT at 14 hours is less sensitive than an early high-quality CT, so a negative result may need additional tests."
-    }
+    },
+    "legacyOptions": [
+      "Reassure that CT excludes all SAH at any time",
+      "Diagnose tension headache and discharge without safety net",
+      "Further evaluation for SAH, such as lumbar puncture or vascular imaging according to local pathway",
+      "Give triptan and ignore the onset pattern",
+      "Perform routine EEG as the definitive test"
+    ],
+    "legacyExplanations": [
+      "A delayed normal CT does not fully exclude SAH.",
+      "Thunderclap onset is a red flag.",
+      "Sensitivity of CT declines over time; high suspicion after delayed CT needs further investigation.",
+      "Secondary causes must be excluded.",
+      "EEG does not rule out SAH."
+    ],
+    "questionRevision": 2
   },
   {
     "n": 59,
@@ -3941,7 +3986,22 @@
       "scenario": "The patient has only mild constipation, remains well with no vomiting, pain, distension, fever or obstructive features and has normal vital signs.",
       "management": "Record stool frequency using a bowel chart, assess other constipating medications, start or escalate a proactive stimulant/osmotic laxative regimen appropriate to the clozapine protocol, ensure hydration and arrange early review. Educate about red flags requiring emergency assessment.",
       "reason": "Uncomplicated constipation can be managed proactively with laxatives and monitoring, but red-flag symptoms demand emergency escalation."
-    }
+    },
+    "legacyOptions": [
+      "Reassure constipation is harmless if she has schizophrenia",
+      "Increase clozapine dose to improve symptoms",
+      "Urgent hospital assessment for clozapine-induced gastrointestinal hypomotility and obstruction",
+      "Give a single fibre supplement and await next appointment",
+      "Treat as anxiety without abdominal examination"
+    ],
+    "legacyExplanations": [
+      "Potentially fatal complication.",
+      "May worsen hypomotility.",
+      "Clozapine can cause fatal ileus; red flags warrant emergency care.",
+      "Unsafe with possible obstruction.",
+      "Misses serious pathology."
+    ],
+    "questionRevision": 2
   },
   {
     "n": 64,
