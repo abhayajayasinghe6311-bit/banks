@@ -5,14 +5,21 @@ Last audited: 22 October 2026. **Clinical revision not finished and not approved
 ## Verified automated audit
 
 - **12 banks / 1,090 published questions** retained without renumbering or changing correct answer letters.
-- **45/1,090** questions on the development branch contain specific alternate-case management (`alternate.scenario`, `management`, `reason`).
-- **583/1,090** questions have structured management notes on the development branch, though many remain generic or need clinical checking.
-- **893/1,090** questions still have at least one incorrect-option explanation shorter than 80 characters.
-- **515/1,090** have a conspicuous answer-length clue (the correct answer is ≥25% longer than *every* distractor).
-- **549/1,090** still contain four answer options rather than the requested five.
+- **60/1,090** questions on the development branch contain specific alternate-case management (`alternate.scenario`, `management`, `reason`).
+- **588/1,090** questions have structured management notes on the development branch, though many remain generic or need clinical checking.
+- **878/1,090** questions still have at least one incorrect-option explanation shorter than 80 characters.
+- **501/1,090** have a conspicuous answer-length clue (the correct answer is ≥25% longer than *every* distractor).
+- **538/1,090** still contain four answer options rather than the requested five.
 - Banks 3, 4, 6, 7, 8 and 9 contain fewer than 100 questions; **150 additional original questions** are needed to bring all 12 banks to at least 100 each, yielding a minimum total of 1,240.
 
 These are **screening metrics**, not clinical validity measures. A paragraph's length does not establish medical accuracy and automated tests cannot replace human guideline-based review.
+
+## Further work completed in this session
+
+- Manually refined 17 priority cases spanning emergency medicine, paediatrics, obstetrics, psychiatry and medicine, with five plausible choices, clinical reasoning for every option, specific alternate-case management and structured action sequences.
+- Checked key guidance for adult adrenal crisis, adult seizures, hyponatraemia, febrile young infants, clozapine hypomotility, occupational HBV post-exposure care and severe pregnancy cholestasis against Australian sources. Added guideline links in updated questions.
+- No answer keys, question identifiers or existing progress-storage identifiers changed. For changed answers, preserved legacy labels and rationale for prior attempts.
+- Latest standard structural checks and automated headless browser regression passed. The **strict release-ready gate is still failing by design**, because more than 500 options remain short or uneven and minimum question count has not been met.
 
 ## High-risk clinical errors corrected in development
 
@@ -29,7 +36,7 @@ All these are **saved on the draft PR**; do not represent a published clinical r
 
 ## Release requirements
 
-1. Preserve existing question IDs, correct-answer letters and browser progress. **Careful:** existing saved answers only store a letter, not the original option text. Rewording choices changes what old attempts appear to have selected. Implement and test a versioned-choice migration/preservation strategy before publishing any changed choice labels.
+1. Preserve existing question IDs, correct-answer letters and browser progress. **A versioned-choice compatibility layer now exists**, with historical option labels and explanations retained for earlier answered questions, tested using browser smoke and compatibility scripts. Continue checking edge cases, particularly mixed bank/practice histories and backups.
 2. Expand and clinically verify all weak wrong-answer explanations; compare close competing diagnoses/treatments with relevant positives, negatives and management consequences.
 3. Improve distractors so the answer cannot be guessed by length, exclusivity or exceptional specificity. Do not use artificial padding.
 4. For relevant clinical cases, explain *which change in findings causes which change in investigation/treatment*, including important medication and monitoring decisions.
