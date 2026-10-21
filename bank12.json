@@ -241,18 +241,18 @@
     "stem": "A 29-year-old at 40 weeks is receiving oxytocin augmentation. CTG shows baseline 175/min, minimal variability and recurrent late decelerations. There are seven uterine contractions per ten minutes. BP is 114/70 mmHg and labour is not close to vaginal delivery.",
     "ask": "What is the MOST appropriate immediate management?",
     "options": [
-      "Give supplemental oxygen alone and continue oxytocin while observing the trace.",
+      "Stop oxytocin and give routine maternal oxygen alone while monitoring for recovery.",
       "Stop oxytocin, reposition, correct reversible causes and urgently involve obstetrics.",
-      "Increase oxytocin and defer review until cervical dilatation has progressed.",
-      "Try fetal scalp stimulation alone and continue oxytocin before further reassessment.",
-      "Observe for another hour because late decelerations occur during normal labour."
+      "Halve the oxytocin rate and review the tracing after another thirty minutes.",
+      "Stop oxytocin and defer senior review until fetal scalp assessment is completed.",
+      "Stop oxytocin, administer a fluid bolus regardless of BP and restart once contractions slow."
     ],
     "explanations": [
-      "Oxygen alone cannot reverse excessive contraction frequency or eliminate need for escalation.",
-      "Correct: this is concerning CTG with uterine hyperstimulation requiring immediate measures and escalation.",
-      "More oxytocin worsens tachysystole and uteroplacental hypoperfusion.",
-      "Stimulation may help assessment in selected cases but does not treat tachysystole and suspected hypoxia.",
-      "Recurrent late decelerations and minimal variability indicate compromised placental reserve."
+      "Stopping oxytocin is appropriate, but routine maternal oxygen when she is not hypoxaemic does not replace urgent assessment of a pathological trace, reversible causes and potential birth planning.",
+      "The combination of tachysystole, fetal tachycardia, reduced variability and late decelerations requires stopping oxytocin, maternal repositioning, assessment and correction of reversible factors, urgent senior review and planning for expedited birth if not resolved.",
+      "With seven contractions per ten minutes and persistent concerning CTG features, halving rather than stopping oxytocin and deferring review is insufficient.",
+      "Fetal scalp testing or assessment may be considered in selected situations, but must not delay senior review and corrective measures in this concerning tracing.",
+      "An indiscriminate fluid bolus in a normotensive mother is not the definitive treatment, and oxytocin must not be automatically restarted before reassessing fetal status and the labour plan."
     ],
     "key": "B",
     "pearl": "CTG interpretation combines baseline, variability, decelerations and contraction frequency; management must address uterine tachysystole.",
@@ -277,7 +277,11 @@
         ]
       ],
       "safety": "Normal maternal SpO2 is not an indication for routine supplemental oxygen; focus on reversible physiology.",
-      "local": "Educational sequence. Use current local obstetric/anaesthetic/neonatal protocols, gestational thresholds and multidisciplinary advice."
+      "local": "Educational sequence. Use current local obstetric/anaesthetic/neonatal protocols, gestational thresholds and multidisciplinary advice.",
+      "source": {
+        "name": "Queensland Clinical Guideline: Intrapartum fetal surveillance",
+        "url": "https://www.health.qld.gov.au/__data/assets/pdf_file/0012/140043/g-ifs.pdf"
+      }
     },
     "n": 6,
     "alternate": {
