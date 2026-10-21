@@ -1431,19 +1431,19 @@
     "context": "Gynaecology",
     "skill": "Management",
     "stem": "A 26-year-old has pelvic pain and a positive pregnancy test. Transvaginal ultrasound shows an empty uterus and a 3.5-cm adnexal mass with free pelvic fluid. BP is 82/45 mmHg.",
-    "ask": "What is the MOST APPROPRIATE management?",
+    "ask": "What is the immediate priority for this suspected ectopic pregnancy?",
     "options": [
-      "Outpatient methotrexate",
-      "Discharge with analgesia",
-      "Urgent resuscitation and operative management",
-      "Repeat pregnancy test in two weeks"
+      "Give outpatient methotrexate once a repeat serum hCG confirms the trend.",
+      "Arrange ultrasound surveillance and return if pelvic pain becomes worse.",
+      "Resuscitate, crossmatch blood and arrange emergency gynaecological surgery.",
+      "Provide analgesia and repeat the pregnancy test at the next clinic."
     ],
     "key": "C",
     "explanations": [
-      "Methotrexate is inappropriate in haemodynamic instability/possible rupture.",
-      "Discharge risks fatal haemorrhage.",
-      "This is a probable ruptured ectopic pregnancy with shock requiring immediate resuscitation and surgical intervention.",
-      "Delayed observation is unsafe."
+      "Methotrexate may be appropriate in selected stable, unruptured ectopic pregnancies under eligibility criteria and reliable follow-up; hypotension and free fluid suggest active haemorrhage requiring surgery.",
+      "A 3.5-cm adnexal mass, BP 82/45 and free fluid cannot be managed by outpatient monitoring because ruptured ectopic pregnancy can cause rapidly fatal bleeding.",
+      "This is haemodynamically unstable suspected ruptured ectopic pregnancy. Call senior gynaecology/anaesthesia, secure IV access, send blood for crossmatch, resuscitate and move urgently for surgical haemorrhage control.",
+      "Analgesia can be given during resuscitation, but does not stop intra-abdominal bleeding. Repeating a urine pregnancy test instead of treating shock delays definitive care."
     ],
     "pearl": "Haemodynamic instability in suspected ectopic pregnancy = resuscitation plus emergency surgery, not methotrexate.",
     "pivot": "Examine which specific clue makes the competing options less appropriate; a change in stability, duration or examination findings can change the best answer.",
@@ -1472,24 +1472,31 @@
     "management": {
       "steps": [
         [
-          "Assess the decision point",
-          "Identify haemodynamic instability and the patient's immediate stability; check whether an emergency escalation is needed."
+          "Recognise haemorrhagic shock",
+          "Assess airway, breathing and circulation, haemodynamics, mental state and suspected intra-abdominal bleeding; urgently call senior obstetric/gynaecological and anaesthetic teams."
         ],
         [
-          "Act on the best option",
-          "Urgent resuscitation and operative management. This is a probable ruptured ectopic pregnancy with shock requiring immediate resuscitation and surgical intervention."
+          "Resuscitate immediately",
+          "Obtain large-bore IV access, blood count, group and crossmatch, pregnancy testing and appropriate IV/blood product resuscitation."
         ],
         [
-          "Reassess the effect",
-          "Check symptoms, vital signs, relevant results and adverse effects after the first intervention; revise the plan if the patient deteriorates."
+          "Do not delay definitive control",
+          "Treat as ruptured ectopic pregnancy; organise immediate operative assessment and surgery while continuing resuscitation. Do not delay solely for serial hCG testing."
         ],
         [
-          "Plan ongoing care",
-          "Arrange appropriate senior review, investigations, safety-netting and follow-up; check local protocols for the precise treatment sequence."
+          "Provide aftercare",
+          "Address transfusion/bleeding monitoring, Rh immunoglobulin per local indications, pathology and future pregnancy counselling."
         ]
       ],
-      "safety": "This is a decision framework, not a substitute for drug-specific instructions. Prescribing, dosing and escalation must be verified locally.",
-      "local": "Exact doses, escalation thresholds and contraindications must be verified against current local protocols and senior advice."
+      "source": {
+        "name": "Queensland Clinical Guidelines — Early pregnancy loss / ectopic pregnancy",
+        "url": "https://www.health.qld.gov.au/qcg/publications"
+      }
+    },
+    "alternate": {
+      "scenario": "The ectopic pregnancy is unruptured, haemodynamically stable, with low serum hCG, no significant haemoperitoneum and no fetal heartbeat.",
+      "management": "Discuss expectant management or methotrexate with gynaecology if size, hCG, symptoms and follow-up criteria are met. Give counselling about rupture warning signs and schedule serial serum hCG; surgery remains an option according to risks and patient preference.",
+      "reason": "The original hypotension and free fluid require surgical source control rather than elective non-operative management."
     }
   },
   {
