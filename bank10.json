@@ -4523,19 +4523,19 @@
     "stem": "A 62-year-old with lung cancer has new severe back pain, progressive leg weakness and urinary retention. Examination reveals a thoracic sensory level.",
     "ask": "What is the MOST appropriate initial pathway?",
     "options": [
-      "Lumbar puncture before imaging",
-      "Start anticoagulation empirically",
-      "Routine physiotherapy appointment",
-      "Emergency spinal MRI, immediate specialist referral and dexamethasone as indicated",
-      "Discharge with oral NSAIDs"
+      "Arrange a routine outpatient physiotherapy review while treating back pain.",
+      "Request non-urgent lumbar MRI after a trial of neuropathic analgesics.",
+      "Begin empiric therapeutic anticoagulation for suspected spinal thrombosis.",
+      "Arrange emergency whole-spine MRI, dexamethasone and spinal oncology review.",
+      "Perform diagnostic lumbar puncture before any steroids or spinal imaging."
     ],
     "key": "D",
     "explanations": [
-      "LP is not the first investigation and may be inappropriate.",
-      "Anticoagulation does not treat cord compression.",
-      "Therapy alone delays diagnosis.",
-      "Metastatic spinal cord compression needs urgent imaging, steroids where appropriate and surgical or radiation evaluation.",
-      "Analgesia alone risks paralysis."
+      "Progressive paraparesis and urinary retention in a patient with cancer signal probable cord compression, not uncomplicated back pain; waiting can cause irreversible paralysis.",
+      "Lumbar-only or delayed imaging risks missing the thoracic level of compression. Obtain urgent MRI of the whole spine and immediate specialist assessment.",
+      "Anticoagulation neither decompresses malignant epidural disease nor addresses the neurological emergency and may introduce bleeding risk before possible surgery.",
+      "Presume metastatic spinal cord compression. Involve the acute spinal oncology pathway, provide urgent whole-spine MRI and dexamethasone for neurological signs, assess immobilisation needs, then determine surgery and/or radiotherapy.",
+      "LP delays the needed MRI, may be unsafe in suspected compressive disease and does not diagnose the likely malignant epidural compression."
     ],
     "pearl": "New bladder dysfunction with cancer and back pain is cord compression until proven otherwise.",
     "pivot": "Early intervention can preserve walking ability.",
@@ -4567,24 +4567,33 @@
     "management": {
       "steps": [
         [
-          "Recognise cauda equina",
-          "New bladder/bowel change, saddle sensory loss, bilateral sciatica or motor decline."
+          "Recognise and protect",
+          "Identify known cancer, new severe back pain, evolving leg weakness, urinary retention and thoracic sensory level as metastatic spinal cord compression. Assess stability and institute movement precautions if spinal instability is suspected."
         ],
         [
-          "Escalate immediately",
-          "Urgent spinal surgeon and emergency lumbar MRI; no outpatient delay."
+          "Treat promptly",
+          "Activate the hospital MSCC/spinal oncology emergency pathway and give dexamethasone for neurological signs (commonly 16 mg orally or equivalent IV daily under protocol). Monitor glucose and provide gastroprotection."
         ],
         [
-          "Protect bladder",
-          "Measure retention, catheterise if needed and document serial leg/perineal neurological findings."
+          "Image the entire spine",
+          "Arrange emergency whole-spine MRI as soon as possible, always within 24 hours in the NICE pathway, with urgent radiology reporting; do not order lumbar-only scans for a thoracic sensory level."
         ],
         [
-          "Treat cause",
-          "Urgent decompression when indicated after imaging."
+          "Restore neurological function",
+          "Discuss urgent surgical decompression/stabilisation versus radiotherapy with spinal surgery and oncology teams; document serial neurological findings, manage retention and provide multidisciplinary support."
         ]
       ],
-      "safety": "Normal anal tone at a single assessment does not exclude evolving cauda equina.",
-      "local": "Exact doses, escalation thresholds and contraindications must be verified against current local protocols and senior advice."
+      "safety": "Avoid lumbar puncture and outpatient delay in suspected malignant spinal cord compression with progressive deficits; treatment should not wait for definitive imaging when clinical suspicion is strong.",
+      "local": "MRI urgency, steroid dosing and decompression decisions must use local Australian MSCC pathways and senior spinal oncology advice.",
+      "source": {
+        "name": "NICE NG234 spinal metastases and MSCC (2023), cross-check local Australian pathway",
+        "url": "https://www.nice.org.uk/guidance/ng234/chapter/Recommendations"
+      }
+    },
+    "alternate": {
+      "scenario": "A patient with metastatic lung cancer reports new back pain only, with normal gait, power, sensation and sphincter function and no neurological red flags.",
+      "management": "Arrange rapid specialist evaluation for spinal metastases and MRI according to suspected spinal-metastasis pathways (typically within a week rather than the emergency MSCC pathway), provide analgesia and advise immediate return for weakness, sensory changes, bowel/bladder dysfunction or worsening pain. Do not give routine dexamethasone without neurological signs unless recommended for severe pain or another specific indication.",
+      "reason": "Objective neurological deficits and bladder dysfunction in the original case make cord compression an immediate oncological emergency."
     }
   },
   {
