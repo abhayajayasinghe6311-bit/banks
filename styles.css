@@ -455,6 +455,8 @@ body.dark .learning-missed-choice{background:#3d2936}
 body.dark .learning-specific-distinction{background:var(--card)}
 body.dark .management-specifics{background:var(--lav)}
 
+.learning-legacy-notice{border:1px solid var(--edge);background:var(--lav);color:var(--ink);border-radius:10px;padding:10px 13px;font-size:12px;line-height:1.55;margin:0 0 14px}
+
 /* Night-inspired palette variants. Preserve the existing Night layout, depth,
    button states and hierarchy; let berry/sage hues accent quiet charcoal surfaces. */
 body.berry-bloom,body.midnight-sage{color-scheme:dark}
