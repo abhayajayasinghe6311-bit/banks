@@ -608,7 +608,20 @@
       "scenario": "The patient has a small uncomplicated parapneumonic effusion with pleural fluid pH 7.45, reassuring clinical trajectory and no septations or other high-risk features.",
       "management": "Treat the underlying pneumonia with appropriate antibiotics and follow the effusion clinically and radiologically. A routine intercostal drain may not be needed when pleural infection risk is low and the patient is improving, but reassess for persistent fever, pain or increasing fluid.",
       "reason": "Pleural pH ≤7.2 with signs of infection favors urgent drainage; a higher-pH uncomplicated effusion can respond to antibiotics alone."
-    }
+    },
+    "legacyOptions": [
+      "Antibiotics and urgent pleural drainage assessment",
+      "Oral diuretics as sole treatment",
+      "Observation until the effusion resolves spontaneously",
+      "Reassure and discharge"
+    ],
+    "legacyExplanations": [
+      "Pleural pH below 7.2 in a parapneumonic effusion strongly supports need for drainage as well as antibiotics.",
+      "Diuretics treat transudates from volume overload, not infected effusions.",
+      "Delay risks empyema and sepsis.",
+      "Low pH indicates complicated parapneumonic effusion requiring treatment."
+    ],
+    "questionRevision": 2
   },
   {
     "n": 11,
@@ -1298,7 +1311,20 @@
       "scenario": "Urgent CT instead excludes haemorrhage and supports acute ischaemic stroke within a relevant reperfusion treatment window.",
       "management": "Activate the acute ischaemic-stroke pathway, evaluate eligibility for IV thrombolysis and/or thrombectomy, and individualise BP management around proposed reperfusion therapy. Do not apply the intracerebral-haemorrhage BP/reversal protocol reflexively.",
       "reason": "Haemorrhagic and ischaemic stroke have materially different time-critical treatments."
-    }
+    },
+    "legacyOptions": [
+      "Discharge after observation if symptoms settle",
+      "Give alteplase immediately",
+      "Prescribe therapeutic heparin",
+      "Promptly involve stroke/neurosurgical teams and initiate controlled blood pressure management"
+    ],
+    "legacyExplanations": [
+      "Acute brain haemorrhage requires admission and close monitoring.",
+      "Thrombolysis is contraindicated in intracerebral haemorrhage.",
+      "Anticoagulation may worsen bleeding.",
+      "Urgent specialist assessment and careful BP reduction are central elements of early care; avoid abrupt unmonitored reductions."
+    ],
+    "questionRevision": 2
   },
   {
     "n": 26,
@@ -1504,7 +1530,20 @@
       "scenario": "The ectopic pregnancy is unruptured, haemodynamically stable, with low serum hCG, no significant haemoperitoneum and no fetal heartbeat.",
       "management": "Discuss expectant management or methotrexate with gynaecology if size, hCG, symptoms and follow-up criteria are met. Give counselling about rupture warning signs and schedule serial serum hCG; surgery remains an option according to risks and patient preference.",
       "reason": "The original hypotension and free fluid require surgical source control rather than elective non-operative management."
-    }
+    },
+    "legacyOptions": [
+      "Outpatient methotrexate",
+      "Discharge with analgesia",
+      "Urgent resuscitation and operative management",
+      "Repeat pregnancy test in two weeks"
+    ],
+    "legacyExplanations": [
+      "Methotrexate is inappropriate in haemodynamic instability/possible rupture.",
+      "Discharge risks fatal haemorrhage.",
+      "This is a probable ruptured ectopic pregnancy with shock requiring immediate resuscitation and surgical intervention.",
+      "Delayed observation is unsafe."
+    ],
+    "questionRevision": 2
   },
   {
     "n": 30,
