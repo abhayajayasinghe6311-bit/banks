@@ -455,45 +455,52 @@ body.dark .learning-missed-choice{background:#3d2936}
 body.dark .learning-specific-distinction{background:var(--card)}
 body.dark .management-specifics{background:var(--lav)}
 
-/* Additional reader-selected palettes. Both inherit accessible Night layout while
-   replacing its visual tokens; original Pink, Night and Contrast remain intact. */
+/* Night-inspired palette variants. Preserve the existing Night layout, depth,
+   button states and hierarchy; let berry/sage hues accent quiet charcoal surfaces. */
 body.berry-bloom,body.midnight-sage{color-scheme:dark}
 body.berry-bloom{
- --bg:#3A0519;--ink:#fff1f6;--muted:#e4b8ca;--card:#670D2F;--edge:#A53860;
- --lav:#771538;--rose:#89254b;--violet:#EF88AD;--green:#174a3a;--green-ink:#c9f2db;
- --red:#79263a;--red-ink:#ffd2dd;--success-edge:#55a582;--alt-surface:#58102d;
- --pearl-surface:#713944;--pearl-edge:#bf768c;--pearl-ink:#ffe6bf;
- --pivot-surface:#65203f;--pivot-ink:#ffe0ec;--theme-ctl:#670D2F;
- --missed-border:#c46885;--shadow:0 12px 32px rgba(25,0,13,.22);
- background:radial-gradient(ellipse 800px 440px at 85% -8%,#670D2F 0,transparent 72%),
-            radial-gradient(ellipse 600px 350px at 1% 30%,#53102c 0,transparent 70%),var(--bg)
+ --bg:#1b151c;--ink:#f2e8ed;--muted:#c4b0bd;--card:#28212c;--edge:#4c3849;
+ --lav:#372634;--rose:#3e2837;--violet:#EF88AD;
+ --green:#203b34;--green-ink:#c0e8cf;--red:#492c39;--red-ink:#ffd0dc;
+ --success-edge:#557862;--alt-surface:#302631;
+ --pearl-surface:#3c332d;--pearl-edge:#67523f;--pearl-ink:#f0dcae;
+ --pivot-surface:#392837;--pivot-ink:#f5daea;--theme-ctl:#322736;
+ --missed-border:#805263;--shadow:0 12px 29px rgba(0,0,0,.16);
+ --palette-deep:#3A0519;--palette-mid:#670D2F;--palette-accent:#A53860;--palette-light:#EF88AD;
+ --palette-head:#221923;--palette-choice:#302732;--palette-choice-hover:#392d3a;
+ background:radial-gradient(ellipse 800px 450px at 85% -8%,#32202d 0,transparent 70%),
+            radial-gradient(ellipse 500px 300px at 1% 30%,#291d29 0,transparent 70%),var(--bg);
 }
 body.midnight-sage{
- --bg:#040D12;--ink:#edf7f2;--muted:#bed3c9;--card:#183D3D;--edge:#5C8374;
- --lav:#214946;--rose:#274843;--violet:#93B1A6;--green:#164c35;--green-ink:#d5f5e5;
- --red:#542f38;--red-ink:#ffdade;--success-edge:#82b9a2;--alt-surface:#103131;
- --pearl-surface:#344939;--pearl-edge:#76886a;--pearl-ink:#f2e8bb;
- --pivot-surface:#214946;--pivot-ink:#d0ece2;--theme-ctl:#183D3D;
- --missed-border:#ba737a;--shadow:0 12px 32px rgba(0,5,7,.28);
- background:radial-gradient(ellipse 800px 440px at 85% -8%,#183D3D 0,transparent 72%),
-            radial-gradient(ellipse 600px 350px at 1% 30%,#0d252a 0,transparent 70%),var(--bg)
+ --bg:#121b1e;--ink:#e8f0ec;--muted:#b9cdc5;--card:#1d2b2d;--edge:#39524f;
+ --lav:#293d3b;--rose:#2c3e3a;--violet:#93B1A6;
+ --green:#1d4034;--green-ink:#c9efda;--red:#442d36;--red-ink:#ffccd4;
+ --success-edge:#638f7d;--alt-surface:#263638;
+ --pearl-surface:#363e32;--pearl-edge:#607256;--pearl-ink:#ede0b7;
+ --pivot-surface:#293f3d;--pivot-ink:#d3eee5;--theme-ctl:#293b3d;
+ --missed-border:#77565c;--shadow:0 12px 29px rgba(0,0,0,.18);
+ --palette-deep:#040D12;--palette-mid:#183D3D;--palette-accent:#5C8374;--palette-light:#93B1A6;
+ --palette-head:#182427;--palette-choice:#253639;--palette-choice-hover:#304441;
+ background:radial-gradient(ellipse 800px 450px at 85% -8%,#1d3434 0,transparent 70%),
+            radial-gradient(ellipse 500px 300px at 1% 30%,#1b292c 0,transparent 70%),var(--bg);
 }
-/* Core surfaces, controls and learning panels use the palette consistently. */
-body.palette-theme .site-head{background:var(--bg)}
-body.palette-theme .site-head nav a,body.palette-theme .navlink{background:var(--card);border-color:var(--edge);color:var(--ink)}
+/* Mirror Night's restrained surfaces, but use the selected palette for highlights. */
+body.palette-theme .site-head{background:var(--palette-head)}
+body.palette-theme .site-head nav a,body.palette-theme .navlink{background:var(--theme-ctl);color:var(--ink);border-color:var(--edge)}
 body.palette-theme .site-head nav a:hover,body.palette-theme .navlink:hover{background:var(--lav)}
-body.palette-theme .hero{background:linear-gradient(115deg,var(--card),var(--lav) 68%,var(--rose));border-color:var(--edge)}
+body.palette-theme .hero{background:linear-gradient(115deg,var(--card) 0%,var(--lav) 65%,var(--rose) 100%);border-color:var(--edge)}
+body.palette-theme .hero::after{opacity:.3}
 body.palette-theme .eyebrow,body.palette-theme .brandflower,body.palette-theme .meta,body.palette-theme .meta b,body.palette-theme .question-label{color:var(--violet)}
-body.palette-theme .tile:hover{border-color:var(--violet)}
+body.palette-theme .tile:hover{border-color:var(--palette-accent)}
 body.palette-theme .pill,body.palette-theme #navWrong{background:var(--lav);color:var(--violet)}
-body.palette-theme .btn:not(.soft):not(.rose){background:var(--violet);border-color:var(--violet);color:var(--bg)}
+body.palette-theme .btn:not(.soft):not(.rose){background:var(--palette-accent);border-color:var(--palette-accent);color:#fff}
 body.palette-theme .btn.soft,body.palette-theme .btn.rose{background:var(--lav);border-color:var(--edge);color:var(--ink)}
-body.palette-theme .btn:hover{filter:brightness(1.09)}
+body.palette-theme .btn:hover{filter:brightness(1.1)}
 body.palette-theme .progress{background:var(--edge)}
-body.palette-theme .progress>span,body.palette-theme .result-domain-track span{background:linear-gradient(90deg,var(--violet),var(--edge))}
-body.palette-theme .choice{background:var(--alt-surface);border-color:var(--edge);color:var(--ink)}
+body.palette-theme .progress>span,body.palette-theme .result-domain-track span{background:linear-gradient(90deg,var(--palette-accent),var(--palette-light))}
+body.palette-theme .choice{background:var(--palette-choice);border-color:var(--edge);color:var(--ink)}
 body.palette-theme .choice .letter{background:var(--lav);color:var(--violet)}
-body.palette-theme .choice:hover:not(:disabled){background:var(--lav);border-color:var(--violet)}
+body.palette-theme .choice:hover:not(:disabled){background:var(--palette-choice-hover);border-color:var(--palette-accent)}
 body.palette-theme .choice.true,body.palette-theme .choice.selected.correct{background:var(--green);color:var(--green-ink);border-color:var(--success-edge)}
 body.palette-theme .choice.selected.incorrect{background:var(--red);color:var(--red-ink);border-color:var(--missed-border)}
 body.palette-theme .answer,body.palette-theme .learning-alternative,body.palette-theme .learning-placeholder,body.palette-theme .learning-missed-takeaway{background:var(--alt-surface)}
@@ -508,9 +515,32 @@ body.palette-theme .empty,body.palette-theme .backup-block,body.palette-theme .b
 body.palette-theme .practice-title-row,body.palette-theme .results-hero{background:linear-gradient(115deg,var(--card),var(--lav))}
 body.palette-theme .practice-topic{background:var(--alt-surface)}
 body.palette-theme .practice-topic.selected{background:var(--lav)}
-body.palette-theme .results-ring{background:conic-gradient(var(--violet) var(--score-angle),var(--edge) var(--score-angle))}
+body.palette-theme .results-ring{background:conic-gradient(var(--palette-light) var(--score-angle),var(--edge) var(--score-angle))}
 body.palette-theme a{color:var(--violet)}
-body.palette-theme a.btn:not(.soft):not(.rose){color:var(--bg)}
+body.palette-theme a.btn:not(.soft):not(.rose){color:#fff}
 body.palette-theme .site-footer{border-color:var(--edge)}
 body.palette-theme .footer-signature{font-size:12px;color:var(--violet)}
+/* Sage green needs dark text for readable primary actions (contrast >=4.5:1). */
+body.midnight-sage .btn:not(.soft):not(.rose),body.midnight-sage a.btn:not(.soft):not(.rose){color:#040D12}
 
+
+/* Readable answer choices in ALL five themes.
+   Previously the bank layout reduced option text from 15px to just 14px. */
+#app .learning-layout .choice,
+#app .learning-layout.has-notes .choice{
+ font-size:17px;line-height:1.6;padding:15px 16px;gap:14px;
+}
+#app .learning-layout .choice .letter,
+#app .learning-layout.has-notes .choice .letter{
+ font-size:14px;min-width:30px;height:30px;flex-shrink:0;
+}
+#app .learning-layout .stem,
+#app .learning-layout.has-notes .stem{font-size:17px;line-height:1.76}
+#app .learning-layout .ask{font-size:17px;line-height:1.5}
+#app .reviewitem .choice{font-size:16px;line-height:1.6}
+@media(max-width:580px){
+ #app .learning-layout .choice,
+ #app .learning-layout.has-notes .choice{font-size:16px;line-height:1.6;padding:14px;gap:12px}
+ #app .learning-layout .stem,
+ #app .learning-layout.has-notes .stem{font-size:17px}
+}
