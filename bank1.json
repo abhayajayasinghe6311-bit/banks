@@ -985,17 +985,17 @@
     "stem": "A young patient with a mechanical aortic valve asks to change warfarin to apixaban.",
     "ask": "What is the MOST APPROPRIATE advice?",
     "options": [
-      "Aspirin alone is always sufficient",
-      "Mechanical heart valves generally require vitamin K antagonist anticoagulation, not DOACs",
-      "Apixaban is superior for all mechanical valves",
-      "Stop all anticoagulation permanently"
+      "Substitute aspirin alone and continue yearly transthoracic echo surveillance.",
+      "Continue warfarin with a valve-specific INR target and routine monitoring.",
+      "Replace warfarin with apixaban at a dose selected for thrombotic risk.",
+      "Stop all antithrombotic drugs once the prosthetic valve is endothelialised."
     ],
     "key": "B",
     "explanations": [
-      "Aspirin is an antiplatelet; it does not provide adequate protection from mechanical-valve thrombosis.",
-      "DOACs are not recommended for mechanical prosthetic valves; use warfarin with appropriate INR monitoring.",
-      "DOACs such as apixaban are not suitable substitutes for vitamin K antagonists in mechanical valves.",
-      "Stopping anticoagulation exposes the prosthetic valve to thrombosis and systemic emboli."
+      "Aspirin does not reliably prevent mechanical-valve thrombosis; a yearly echo does not substitute for effective anticoagulation.",
+      "Mechanical heart valves require a vitamin K antagonist, usually warfarin, with a valve/risk-specific INR goal and anticoagulation-service follow-up.",
+      "Apixaban and other DOACs are not a safe replacement for warfarin in a mechanical prosthesis despite convenience for eligible non-valvular AF.",
+      "Mechanical valves remain thrombogenic; permanent withdrawal without a compelling specialist indication risks valve thrombosis or embolic stroke."
     ],
     "pearl": "Mechanical heart valves require warfarin/VKA rather than standard DOAC substitution.",
     "pivot": "Ask yourself: which finding in the stem made Mechanical heart valves generally require vitamin K antagonist anticoagulation, not DOACs the SINGLE BEST answer, rather than merely a possible answer?",
@@ -1019,6 +1019,11 @@
           "check": "Check which diagnosis or intervention best explains the presentation, timing and specific finding in the stem together with the other clues."
         }
       ]
+    },
+    "alternate": {
+      "scenario": "The patient instead has non-valvular atrial fibrillation, with no mechanical heart valve or moderate-to-severe mitral stenosis.",
+      "management": "Calculate thromboembolic and bleeding risks, assess kidney function, age, weight and drug interactions, then consider a correctly dosed DOAC such as apixaban if anticoagulation is indicated. A mechanical valve still requires warfarin and INR monitoring.",
+      "reason": "The prosthetic mechanical valve, rather than AF alone, determines why warfarin cannot be replaced by a DOAC."
     }
   },
   {
@@ -3945,17 +3950,17 @@
     "stem": "A 73-year-old on warfarin presents with headache and new hemiparesis. CT confirms intracranial haemorrhage and INR is high. Next best step?",
     "ask": "Choose the SINGLE BEST answer for this clinical scenario.",
     "options": [
-      "Urgent anticoagulation reversal with 4-factor PCC plus IV vitamin K as indicated",
-      "Give aspirin",
-      "Continue warfarin",
-      "Wait 24 hours to recheck INR"
+      "Stop warfarin and reverse rapidly with four-factor PCC and IV vitamin K.",
+      "Hold warfarin and begin oral vitamin K, reviewing INR the following day.",
+      "Switch from warfarin to aspirin and continue neurological observation.",
+      "Withhold treatment pending a repeat head CT and INR later this evening."
     ],
     "key": "A",
     "explanations": [
-      "Warfarin-related intracranial bleeding needs urgent reversal alongside neurosurgical/stroke care.",
-      "Aspirin worsens bleeding risk and does not reverse warfarin-associated intracranial haemorrhage.",
-      "Continuing warfarin maintains anticoagulation during active cerebral bleeding.",
-      "Waiting delays reversal, allowing possible haematoma expansion."
+      "Life-threatening warfarin-associated intracranial bleeding requires urgent reversal with four-factor PCC plus IV vitamin K under the major-bleeding protocol, while stroke/neurosurgical care proceeds.",
+      "Oral vitamin K alone is too slow to correct an elevated INR in evolving cerebral bleeding; it does not replace rapid factor repletion with PCC.",
+      "Aspirin worsens bleeding risk and is not a reversal treatment. Acute brain haemorrhage takes priority over longer-term antithrombotic decisions.",
+      "Repeated imaging may be needed but cannot be used as a reason to postpone immediately indicated reversal and BP/neurocritical management."
     ],
     "pearl": "Warfarin-associated intracranial haemorrhage requires urgent anticoagulation reversal.",
     "pivot": "Ask yourself: which finding in the stem made Urgent anticoagulation reversal with 4-factor PCC plus IV vitamin K as indicated the SINGLE BEST answer, rather than merely a possible answer?",
@@ -4001,6 +4006,11 @@
       ],
       "safety": "This is a decision framework, not a substitute for drug-specific instructions. Prescribing, dosing and escalation must be verified locally.",
       "local": "Exact doses, escalation thresholds and contraindications must be verified against current local protocols and senior advice."
+    },
+    "alternate": {
+      "scenario": "The intracerebral haemorrhage instead occurs in a patient taking dabigatran rather than warfarin.",
+      "management": "Stop dabigatran, activate the major-bleeding pathway and give urgent idarucizumab if indicated and available; arrange stroke/neurosurgery, blood-pressure control and serial neurological observations. Do not use vitamin K or warfarin-specific PCC reversal routinely as the direct substitute.",
+      "reason": "Warfarin and direct thrombin inhibitors require different reversal approaches."
     }
   },
   {
