@@ -174,21 +174,25 @@
       ],
       "wrong": [
         {
-          "trap": "This is a patient-safety trap: the proposed option may actively worsen the physiology or expose the patient to an avoidable harm.",
-          "check": "Name the specific danger described in the explanation before prescribing; check active bleeding and relevant contraindications."
+          "trap": "Thrombolysis is for selected ischaemic stroke, not bleeding into the brain.",
+          "clinical": "IV alteplase can worsen an intracerebral haematoma. Even if CT instead confirms ischaemic stroke, check the last apixaban dose and anticoagulant activity before deciding if IV lysis is safe.",
+          "check": "Before considering reperfusion medication, confirm CT excludes haemorrhage and assess anticoagulant exposure."
         },
         {
-          "trap": "This is a patient-safety trap: the proposed option may actively worsen the physiology or expose the patient to an avoidable harm.",
-          "check": "Name the specific danger described in the explanation before prescribing; check active bleeding and relevant contraindications."
+          "trap": "Stopping the drug and actively reversing its effect are different treatment steps.",
+          "clinical": "Withholding apixaban prevents another dose but leaves anticoagulant activity for hours. A large symptomatic ICH needs rapid specialist-guided reversal and blood-pressure treatment; observation alone is insufficient.",
+          "check": "In major bleeding, ask whether anticoagulant reversal is required immediately rather than simply skipping the next dose."
         },
         null,
         {
-          "trap": "This is a patient-safety trap: the proposed option may actively worsen the physiology or expose the patient to an avoidable harm.",
-          "check": "Name the specific danger described in the explanation before prescribing; check active bleeding and relevant contraindications."
+          "trap": "Long-term stroke prevention cannot supersede control of acute active bleeding.",
+          "clinical": "Aspirin may have a later indication for secondary vascular prevention in selected patients, but it has no role in arresting active ICH and may increase haematoma expansion.",
+          "check": "Distinguish acute haemorrhage stabilisation from longer-term secondary prevention."
         },
         {
-          "trap": "This is a patient-safety trap: the proposed option may actively worsen the physiology or expose the patient to an avoidable harm.",
-          "check": "Name the specific danger described in the explanation before prescribing; check active bleeding and relevant contraindications."
+          "trap": "Later VTE prevention is not the same decision as emergency haemorrhage management.",
+          "clinical": "After ICH, mechanical prophylaxis can be used early as indicated; pharmacological thromboprophylaxis is considered later after assessing haematoma stability and local stroke recommendations.",
+          "check": "Before prescribing LMWH, check whether intracranial bleeding is currently active or stable."
         }
       ]
     },
