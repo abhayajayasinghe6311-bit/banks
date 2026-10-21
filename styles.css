@@ -395,3 +395,8 @@ body.dark .bookmark-empty{background:var(--lav)}
 .bank-search-drawer .garden-search{margin:0 0 14px}
 body.dark .bank-search-trigger{background:#292a39;color:var(--ink)}
 body.dark .bank-search-trigger:hover,body.dark .bank-search-trigger.active{background:var(--lav)}
+
+/* Permanent, unobtrusive creator signature on every route */
+.site-footer{display:flex;flex-direction:column;align-items:center;justify-content:center;gap:5px;text-align:center;padding:21px 16px 26px}
+.footer-signature{display:block;font-weight:750;font-size:13px;letter-spacing:.02em;color:var(--violet);opacity:.93}
+.footer-fineprint{font-size:11px;line-height:1.7;max-width:960px;color:var(--muted)}
