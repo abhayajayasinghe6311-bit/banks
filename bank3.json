@@ -2081,17 +2081,19 @@
     "stem": "A 30-year-old healthcare worker has needle-stick exposure to blood from a person with known hepatitis B infection. The worker completed childhood HBV vaccines, but no post-vaccination antibody result is available.",
     "ask": "Which is the MOST APPROPRIATE next step?",
     "options": [
-      "Wait six months for symptoms before testing",
-      "Urgently assess exposure and check HBV immunity, then provide HBIG/vaccination if indicated by protocol",
-      "Reassure that vaccination history alone excludes risk",
-      "Start empiric antibiotics against skin flora"
+      "Arrange repeat blood-borne-virus testing in six months before taking action.",
+      "Check HBV antibody status urgently; give HBIG/vaccine if not immune.",
+      "Assume childhood vaccination confirms lifelong protective antibody levels.",
+      "Prescribe a short oral antibiotic course for the needle-stick puncture.",
+      "Wait until the source patient develops hepatitis symptoms to assess risk."
     ],
     "key": "B",
     "explanations": [
-      "Delay can miss the prophylaxis window.",
-      "Risk assessment, anti-HBs testing and timely HBIG/vaccination when indicated are appropriate.",
-      "Vaccination is reassuring but documented response and source status guide post-exposure prophylaxis.",
-      "Antibacterials do not prevent hepatitis B."
+      "Post-exposure treatment may be time-sensitive; waiting months can miss the benefit of hepatitis B immunoglobulin and vaccination after a high-risk needle-stick.",
+      "The source is known HBsAg positive and the worker's vaccine response is undocumented. Check anti-HBs promptly; if below the protective threshold, provide HBIG and vaccine as indicated by the Australian Immunisation Handbook and occupational protocol.",
+      "Completed vaccination does not automatically document an adequate antibody response. A prior documented anti-HBs of at least 10 mIU/mL is reassuring, but it is absent here.",
+      "Routine antibacterials do not prevent transmission of hepatitis B, HIV or HCV. Perform first aid and occupational exposure risk assessment instead.",
+      "The source patient is already known to have HBV infection; delay until symptoms would be irrelevant and unsafe. Notify occupational health and arrange baseline and follow-up testing now."
     ],
     "pearl": "After sharps injury: immediate wound care, occupational-health reporting, exposure/source testing and timely pathogen-specific prophylaxis.",
     "pivot": "Examine which specific clue makes the competing options less appropriate; a change in stability, duration or examination findings can change the best answer.",
@@ -2119,24 +2121,43 @@
     "management": {
       "steps": [
         [
-          "Assess the decision point",
-          "Identify the presentation, timing and specific finding in the stem and the patient's immediate stability; check whether an emergency escalation is needed."
+          "Provide first aid and report",
+          "Wash the puncture site without squeezing, notify the supervisor/occupational health and document exposure type and source."
         ],
         [
-          "Act on the best option",
-          "Urgently assess exposure and check HBV immunity, then provide HBIG/vaccination if indicated by protocol. Risk assessment, anti-HBs testing and timely HBIG/vaccination when indicated are appropriate."
+          "Check source and worker serology",
+          "Confirm HBsAg status and urgently measure the exposed worker's anti-HBs, plus baseline BBV testing per consent and local protocol."
         ],
         [
-          "Reassess the effect",
-          "Check symptoms, vital signs, relevant results and adverse effects after the first intervention; revise the plan if the patient deteriorates."
+          "Provide time-sensitive prophylaxis",
+          "For anti-HBs below 10 mIU/mL and a positive source, arrange hepatitis B immunoglobulin promptly, ideally within 72 hours, and an appropriate vaccine course/booster as recommended."
         ],
         [
-          "Plan ongoing care",
-          "Arrange appropriate senior review, investigations, safety-netting and follow-up; check local protocols for the precise treatment sequence."
+          "Arrange follow-up",
+          "Document risk counselling and schedule follow-up serology for HBV, HIV and HCV as clinically required."
         ]
       ],
-      "safety": "This is a decision framework, not a substitute for drug-specific instructions. Prescribing, dosing and escalation must be verified locally.",
-      "local": "Exact doses, escalation thresholds and contraindications must be verified against current local protocols and senior advice."
+      "source": {
+        "name": "Australian Immunisation Handbook — Hepatitis B post-exposure management",
+        "url": "https://immunisationhandbook.health.gov.au/contents/vaccine-preventable-diseases/hepatitis-b"
+      }
+    },
+    "legacyOptions": [
+      "Wait six months for symptoms before testing",
+      "Urgently assess exposure and check HBV immunity, then provide HBIG/vaccination if indicated by protocol",
+      "Reassure that vaccination history alone excludes risk",
+      "Start empiric antibiotics against skin flora"
+    ],
+    "legacyExplanations": [
+      "Delay can miss the prophylaxis window.",
+      "Risk assessment, anti-HBs testing and timely HBIG/vaccination when indicated are appropriate.",
+      "Vaccination is reassuring but documented response and source status guide post-exposure prophylaxis.",
+      "Antibacterials do not prevent hepatitis B."
+    ],
+    "alternate": {
+      "scenario": "The healthcare worker has documentation of anti-HBs ≥10 mIU/mL after a completed HBV vaccine series, and the source remains HBsAg positive.",
+      "management": "Provide immediate local wound care and occupational exposure documentation, but HBV immunoglobulin or further vaccine is not routinely needed for a proven vaccine responder; still assess HIV and hepatitis C exposure and follow local testing arrangements.",
+      "reason": "Prior evidence of protective vaccine response removes the HBV PEP indication even when the source is HBsAg positive."
     }
   },
   {
