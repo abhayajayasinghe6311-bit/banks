@@ -690,11 +690,15 @@ async function onImportFileChange(e){
 }
 $('importFile').addEventListener('change',onImportFileChange);
 function applyTheme(mode){
- const theme=['light','dark','contrast'].includes(mode)?mode:'light';
- document.body.classList.toggle('dark',theme==='dark');
+ const theme=['light','dark','contrast','berry-bloom','midnight-sage'].includes(mode)?mode:'light';
+ document.body.classList.toggle('dark',['dark','berry-bloom','midnight-sage'].includes(theme));
  document.body.classList.toggle('contrast',theme==='contrast');
+ document.body.classList.toggle('berry-bloom',theme==='berry-bloom');
+ document.body.classList.toggle('midnight-sage',theme==='midnight-sage');
+ document.body.classList.toggle('palette-theme',['berry-bloom','midnight-sage'].includes(theme));
  if($('themeSelect'))$('themeSelect').value=theme;
- document.querySelector('meta[name="theme-color"]')?.setAttribute('content',theme==='dark'?'#181923':'#fdf6fc');
+ const themeColour={'light':'#fdf6fc','dark':'#181923','contrast':'#ffffff','berry-bloom':'#3A0519','midnight-sage':'#040D12'}[theme];
+ document.querySelector('meta[name="theme-color"]')?.setAttribute('content',themeColour);
  try{localStorage.setItem('spaw.theme',theme)}catch(e){}
 }
 let initialTheme='light';
