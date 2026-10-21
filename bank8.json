@@ -58,19 +58,19 @@
     "stem": "A 64-year-old on chemotherapy has fever 38.6°C and neutrophils 0.2 ×10⁹/L. He is haemodynamically stable and no source is found initially.",
     "ask": "What is the MOST APPROPRIATE initial management?",
     "options": [
-      "Give oral paracetamol, repeat full blood count tomorrow and discharge home.",
-      "Collect blood cultures, then wait for growth before beginning antibiotics.",
-      "Administer a live vaccine now and reassess once immune protection develops.",
-      "Prescribe topical antifungal treatment and arrange routine oncology review.",
-      "Obtain cultures promptly and begin urgent IV antipseudomonal antibiotics."
+      "Admit for observation and begin antibiotics only if another fever is recorded.",
+      "Start oral amoxicillin–clavulanate and arrange urgent oncology follow-up.",
+      "Give IV ceftriaxone alone after cultures and review treatment tomorrow.",
+      "Give IV vancomycin alone while investigating a possible line infection.",
+      "Obtain cultures promptly and start urgent IV antipseudomonal antibiotics."
     ],
     "key": "E",
     "explanations": [
-      "Discharge is inappropriate at this risk level.",
-      "Neutropenic sepsis is time critical despite initial stability.",
-      "Live vaccines are generally contraindicated during significant immunosuppression.",
-      "A topical antifungal will not treat bloodstream sepsis.",
-      "Cultures should be collected promptly without delaying IV empiric antibiotics; admission and monitoring are usual."
+      "Admission and cultures are sensible but are not sufficient: fever with marked chemotherapy-associated neutropenia needs prompt empiric antibiotics even while vital signs are stable.",
+      "Outpatient oral treatment is only for appropriately assessed low-risk patients on an established pathway; oral amoxicillin–clavulanate alone does not provide adequate empiric antipseudomonal cover.",
+      "Ceftriaxone alone does not reliably cover Pseudomonas. In high-risk febrile neutropenia, use a recommended antipseudomonal regimen rather than a narrow substitute.",
+      "Vancomycin targets Gram-positive pathogens and cannot replace the necessary Gram-negative antipseudomonal cover. Add specific Gram-positive cover only when justified.",
+      "Obtain blood cultures without delaying treatment, give prompt empiric IV antipseudomonal antibiotics as guided by local policy, and continue monitoring and source investigation."
     ],
     "pearl": "Neutropenic fever: do not wait for hypotension; early broad-spectrum antipseudomonal IV therapy saves lives.",
     "pivot": "If formally assessed low risk after initial treatment, use a supervised outpatient antibiotic pathway with planned review; otherwise continue inpatient IV therapy.",
@@ -119,7 +119,11 @@
         ]
       ],
       "safety": "This is a decision framework, not a substitute for drug-specific instructions. Prescribing, dosing and escalation must be verified locally.",
-      "local": "Exact doses, escalation thresholds and contraindications must be verified against current local protocols and senior advice."
+      "local": "Exact doses, escalation thresholds and contraindications must be verified against current local protocols and senior advice.",
+      "source": {
+        "name": "NSW Health ECAT: Unwell immunocompromised person",
+        "url": "https://aci.health.nsw.gov.au/ecat/adult/unwell-immunocompromised-person"
+      }
     },
     "alternate": {
       "scenario": "Following immediate initial antimicrobial therapy and clinical assessment, a patient with febrile neutropenia is confirmed to meet a validated low-risk outpatient pathway and has reliable follow-up.",
