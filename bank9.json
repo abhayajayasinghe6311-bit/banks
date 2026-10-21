@@ -151,22 +151,22 @@
     "stem": "A patient taking apixaban for AF arrives with sudden headache, vomiting and a GCS of 12. CT shows a large intracerebral haemorrhage.",
     "ask": "Which action is MOST APPROPRIATE while arranging neurosurgical assessment?",
     "options": [
-      "Administer IV alteplase to prevent clot expansion",
-      "Withhold the next apixaban dose only",
-      "Urgent anticoagulant reversal using the locally recommended factor Xa inhibitor pathway",
-      "Give aspirin for secondary stroke prevention",
-      "Begin prophylactic low-molecular-weight heparin immediately"
+      "Give IV alteplase to restore cerebral blood flow and repeat CT imaging.",
+      "Withhold apixaban without reversing it and monitor the GCS hourly.",
+      "Stop apixaban, urgently reverse factor Xa activity and manage blood pressure.",
+      "Administer aspirin for AF-related stroke prevention and monitor bleeding.",
+      "Start prophylactic low-molecular-weight heparin to prevent immobility-related DVT."
     ],
     "key": "C",
     "explanations": [
-      "Thrombolysis would worsen haemorrhage.",
-      "Omission alone does not promptly reverse major bleeding.",
-      "Life-threatening ICH on a factor Xa inhibitor needs prompt reversal and blood pressure management.",
-      "Antiplatelet therapy worsens bleeding risk in acute ICH.",
-      "Acute haemorrhage is not the time for pharmacological prophylaxis."
+      "Alteplase lyses thrombus in selected ischaemic stroke; it is contraindicated in acute intracerebral haemorrhage because it can expand the haematoma. A neurological deficit alone is not a reason to thrombolyse.",
+      "Withholding further apixaban is essential but does not rapidly remove the drug's anticoagulant effect in a life-threatening bleed. Urgent specialist-directed reversal and BP control are required.",
+      "Correct: stop apixaban and involve acute stroke, neurosurgery and haematology teams. Seek rapid factor Xa inhibitor reversal according to local availability and protocol, control elevated BP carefully and monitor closely for haematoma expansion.",
+      "Aspirin can be used for selected ischaemic cerebrovascular indications after appropriate assessment, but giving it during an active ICH creates additional bleeding risk and does not reverse apixaban.",
+      "Pharmacological VTE prophylaxis is not an immediate response to active anticoagulant-associated ICH. Mechanical measures and later prophylaxis are considered only after bleeding stability and according to an acute stroke protocol."
     ],
     "pearl": "Pearl: Identify anticoagulant type, last dose and renal function, but do not delay life-saving reversal.",
-    "pivot": "Pivot: Ischaemic stroke without haemorrhage uses a very different reperfusion assessment.",
+    "pivot": "For ischaemic stroke on apixaban, urgently assess LVO/thrombectomy and eligibility for thrombolysis based on the last DOAC dose and local stroke protocol; do not give alteplase automatically.",
     "lesson": {
       "kind": "Management",
       "clues": [
@@ -195,24 +195,33 @@
     "management": {
       "steps": [
         [
-          "Assess the decision point",
-          "Identify active bleeding and the patient's immediate stability; check whether an emergency escalation is needed."
+          "Stabilise and escalate",
+          "Assess ABC, glucose and GCS with frequent neurological observations; immediately involve the stroke team, neurosurgery, and haematology/critical care as appropriate."
         ],
         [
-          "Act on the best option",
-          "Urgent anticoagulant reversal using the locally recommended factor Xa inhibitor pathway. Life-threatening ICH on a factor Xa inhibitor needs prompt reversal and blood pressure management."
+          "Stop and reverse apixaban",
+          "Withhold apixaban; identify last dose, renal function and other antithrombotics. Activate the locally recommended urgent factor Xa reversal pathway (specific agent if available or PCC under specialist protocol)."
         ],
         [
-          "Reassess the effect",
-          "Check symptoms, vital signs, relevant results and adverse effects after the first intervention; revise the plan if the patient deteriorates."
+          "Limit haematoma expansion",
+          "Treat significantly elevated systolic BP promptly using a controlled titratable approach according to current stroke guidance; avoid overshooting into hypotension."
         ],
         [
-          "Plan ongoing care",
-          "Arrange appropriate senior review, investigations, safety-netting and follow-up; check local protocols for the precise treatment sequence."
+          "Monitor and reassess",
+          "Provide stroke-unit or intensive monitoring, repeat neuroimaging with deterioration or protocol indications and evaluate neurosurgical needs. Reassess later decisions about VTE prophylaxis and anticoagulation restart."
         ]
       ],
-      "safety": "This is a decision framework, not a substitute for drug-specific instructions. Prescribing, dosing and escalation must be verified locally.",
-      "local": "Exact doses, escalation thresholds and contraindications must be verified against current local protocols and senior advice."
+      "safety": "Never give alteplase, immediate aspirin or prophylactic heparin as a substitute for haemorrhage stabilisation. Reversal therapy carries thrombotic risk and requires specialist input.",
+      "local": "Reversal agent choice and BP targets depend on local availability, patient factors and current Australian stroke protocols.",
+      "source": {
+        "name": "Australian and New Zealand Living Clinical Guidelines for Stroke Management",
+        "url": "https://informme.org.au/guidelines/living-clinical-guidelines-for-stroke-management"
+      }
+    },
+    "alternate": {
+      "scenario": "CT instead shows acute ischaemic stroke without haemorrhage, but the patient is still taking apixaban for AF.",
+      "management": "Activate a stroke alert, establish last-known-well and time of the last apixaban dose, assess renal function and drug activity where appropriate, and obtain urgent vascular imaging for large-vessel occlusion. Consider mechanical thrombectomy if eligible. IV thrombolysis is not automatic while a factor Xa inhibitor may be active; the specialist stroke team must assess timing, tests and current protocol before any reperfusion drug.",
+      "reason": "Ischaemic stroke requires assessment for restoring perfusion, but concurrent apixaban may prohibit immediate IV thrombolysis; established ICH instead requires urgent haemostatic treatment."
     }
   },
   {
