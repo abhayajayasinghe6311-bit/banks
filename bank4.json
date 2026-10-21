@@ -2891,17 +2891,19 @@
     "stem": "A 32-year-old has a generalised tonic-clonic seizure that has continued for 7 minutes. He is cyanosed and has not regained consciousness. Point-of-care glucose is normal.",
     "ask": "What medication is the FIRST-LINE immediate antiseizure treatment?",
     "options": [
-      "Give intramuscular haloperidol for the ongoing convulsion and agitation.",
-      "Administer an appropriately dosed rapid-route benzodiazepine with ABC support.",
-      "Wait for recovery before starting oral maintenance sodium valproate.",
-      "Give intravenous aspirin while arranging EEG before rescue medication."
+      "Administer haloperidol while arranging imaging of the temporal lobes.",
+      "Give an appropriately dosed rapid benzodiazepine with airway support.",
+      "Wait for recovery, then prescribe oral maintenance antiseizure drugs.",
+      "Administer IV aspirin and assess for intracranial thrombosis first.",
+      "Delay rescue treatment until an EEG confirms ongoing convulsions."
     ],
     "key": "B",
     "explanations": [
-      "Haloperidol is not an acute anticonvulsant and may lower seizure threshold; cyanosis during a prolonged convulsion requires airway support and immediate seizure therapy.",
-      "A convulsion continuing beyond five minutes is status epilepticus. Activate help, secure ABC and check glucose, then give appropriately dosed IV or non-IV benzodiazepine per protocol; prepare a second-line IV antiseizure drug if persistent.",
-      "Oral maintenance medication is too slow and cannot be given safely during generalized convulsions; airway and timed rescue medication come first.",
-      "Aspirin does not stop seizures; urgent therapy should not be delayed for EEG or imaging in a patient currently convulsing and hypoxaemic."
+      "Haloperidol does not terminate convulsive status epilepticus and may lower seizure threshold. The immediate priority is ABC and emergency antiseizure therapy.",
+      "A generalised seizure lasting seven minutes meets the five-minute treatment threshold for convulsive status epilepticus. Give a protocol-dosed benzodiazepine via a rapid available route while supporting oxygenation and preparing second-line therapy if seizures persist.",
+      "Oral maintenance treatment is not an effective rescue for continuous convulsions or impaired consciousness and would create aspiration risk.",
+      "Aspirin is not an anticonvulsant and could be harmful in bleeding disorders. Neuroimaging should follow appropriate initial seizure stabilisation unless a separate immediate indication exists.",
+      "Visible ongoing convulsions at seven minutes require immediate treatment; EEG may help assess non-convulsive status later, not delay first-line benzodiazepines."
     ],
     "pearl": "Treat continuous convulsive activity at 5 minutes; don’t wait 30 minutes.",
     "pivot": "Ongoing convulsions after adequate benzodiazepines require prompt second-line antiseizure medication and airway planning.",
@@ -2929,31 +2931,31 @@
     "management": {
       "steps": [
         [
-          "Treat immediately",
-          "Call emergency support, protect from injury, position and support airway and oxygenation, check glucose and record seizure duration."
+          "Time the seizure and resuscitate",
+          "Call senior/resuscitation support, protect head and airway, provide oxygen if needed, establish monitoring and IV access and check bedside glucose."
         ],
         [
-          "Give a rapid-route benzodiazepine",
-          "Use IV lorazepam or an approved non-IV benzodiazepine by local adult status protocol; do not postpone for imaging."
+          "Give first-line rescue",
+          "At five minutes of ongoing convulsion, administer an appropriately dosed benzodiazepine by IV, buccal, intranasal or IM route according to available protocol and prior doses."
         ],
         [
-          "Escalate by time and response",
-          "If convulsions persist after appropriate benzodiazepine treatment, administer second-line IV loading (e.g. levetiracetam, valproate or fosphenytoin according to risks) and prepare critical-care airway support."
+          "Escalate promptly if persistent",
+          "Follow a timed algorithm for second-line IV antiseizure loading and airway/ICU support; avoid repeated excessive benzodiazepine doses."
         ],
         [
-          "Investigate and monitor",
-          "Monitor cardiorespiratory function and assess infection, intoxication, electrolytes, medication adherence and neurological causes after stabilisation."
+          "Investigate after stabilisation",
+          "Check electrolytes, infection or toxin exposure, epilepsy drugs and neuroimaging as indicated, with serial neurological observations."
         ]
       ],
       "source": {
-        "name": "Australian Resuscitation Council adult advanced life support guidelines",
-        "url": "https://www.anzcor.org/home/adult-advanced-life-support"
+        "name": "RCH Melbourne — Seizures: acute management (paediatric treatment principles; use adult local protocol)",
+        "url": "https://www.rch.org.au/clinicalguide/guideline_index/Seizures_-_acute_management/"
       }
     },
     "alternate": {
-      "scenario": "The convulsion stopped spontaneously at three minutes and the patient has gradually regained consciousness with stable airway, breathing and glucose.",
-      "management": "Monitor during the postictal period, assess for provoking causes, injuries and recurrent seizures, then decide on imaging, antiseizure therapy and follow-up based on the history and examination. Do not routinely repeat rescue benzodiazepines when the seizure has ceased and no further red flags are present.",
-      "reason": "Continuing tonic-clonic activity beyond five minutes warrants immediate rescue medication; a self-limited seizure follows a different pathway."
+      "scenario": "The seizure ends at two minutes, airway and glucose are stable, and the patient is recovering steadily without further convulsions.",
+      "management": "Protect against injury, place in recovery position, monitor breathing and neurological recovery, investigate possible precipitating factors and arrange appropriate seizure workup. Routine rescue benzodiazepines are not required for an already resolved isolated brief seizure.",
+      "reason": "The treatment time threshold and ongoing clinical convulsions define the emergency need for benzodiazepine rescue."
     },
     "legacyOptions": [
       "Haloperidol",
