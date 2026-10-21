@@ -295,7 +295,7 @@ function renderPracticeResults(){
  route={practiceResults:true};
  const sess=state.practice;
  if(!sess?.order?.length){renderPractice();return;}
- const entries=sess.order.map(id=>practiceEntry(id)).filter(Boolean).map(item=>({q:item.q,answer:sess.answers?.[item.id]}));
+ const entries=sess.order.map(id=>practiceEntry(id)).filter(Boolean).map(item=>({q:item.q,bank:item.bank,answer:sess.answers?.[item.id]}));
  $('app').innerHTML=buildResultMarkup({title:'Specialty Mix · Results',subtitle:`${entries.length} randomised questions · ${safe((sess.selected||[]).map(studyGroupName).join(', '))}`,entries,backHref:'?practice=1',backText:'Back to practice',reviewHref:'?review=1',mode:'practice'});
 }
 
@@ -489,43 +489,68 @@ function buildResultMarkup({title,subtitle,entries,backHref,backText,reviewHref,
  const byGroup=new Map();
  for(const e of entries){
   const name=studyGroupName(primaryStudyGroup(e.q.domain));
-  if(!byGroup.has(name))byGroup.set(name,{name,count:0,correct:0,wrong:0});
-  const row=byGroup.get(name);row.count++;
-  if(e.answer?.correct)row.correct++;else if(e.answer)row.wrong++;
+  if(!byGroup.has(name))byGroup.set(name,{name,count:0,attempted:0,correct:0,wrong:0});
+  const group=byGroup.get(name);group.count++;
+  if(e.answer){group.attempted++;if(e.answer.correct)group.correct++;else group.wrong++;}
  }
- const groups=[...byGroup.values()].sort((a,b)=>a.name.localeCompare(b.name));
- const rated=groups.filter(x=>x.count>=2);
- const strongest=[...rated].sort((a,b)=>b.correct/b.count-a.correct/a.count||b.count-a.count)[0];
- const focus=[...rated].sort((a,b)=>a.correct/a.count-b.correct/b.count||b.wrong-a.wrong)[0];
- const rows=groups.map(g=>{
-  const percent=Math.round(g.correct/g.count*100);
-  return `<div class="result-domain-row"><div class="result-domain-heading"><span>${safe(g.name)} <small>${g.count} questions</small></span><strong>${g.correct}/${g.count} · ${percent}%</strong></div><div class="result-domain-track"><span style="width:${percent}%"></span></div></div>`;
+ const groups=[...byGroup.values()].sort((a,b)=>b.attempted-a.attempted||a.name.localeCompare(b.name));
+ const rated=groups.filter(g=>g.attempted>=2);
+ const strongest=[...rated].sort((a,b)=>b.correct/b.attempted-a.correct/a.attempted||b.attempted-a.attempted)[0];
+ const focus=[...rated].filter(g=>g.wrong>0).sort((a,b)=>a.correct/a.attempted-b.correct/b.attempted||b.wrong-a.wrong)[0];
+ const wrongEntries=entries.filter(e=>e.answer&&!e.answer.correct);
+ const groupRows=groups.map(g=>{
+  const percent=g.attempted?Math.round(g.correct/g.attempted*100):0;
+  return `<div class="analysis-domain">
+    <div class="analysis-domain-main"><span>${safe(g.name)} <small>${g.attempted} attempted${g.count>g.attempted?` / ${g.count} available`:''}</small></span>
+    <strong>${g.attempted?`${g.correct}/${g.attempted} · ${percent}%`:'Not attempted'}</strong></div>
+    <div class="result-domain-track"><span style="width:${percent}%"></span></div>
+  </div>`;
  }).join('');
- const praise=complete?'🌷 A whole bank of practice, completed.':'🌱 Your progress so far';
- const advice=missed?`You have <strong>${missed} question${missed===1?'':'s'}</strong> worth revisiting. Read their explanations and try them again in your Wrong Answers Garden.`:'No incorrect answers recorded in this set — lovely work!';
- const focusHtml=focus&&focus.wrong?`<p>📚 <b>Suggested revision focus:</b> ${safe(focus.name)} (${focus.correct}/${focus.count} correct). Review the decisive clinical clues and the common distractors.</p>`:'<p>Keep revising across specialties to strengthen your clinical reasoning.</p>';
+ const wrongCards=wrongEntries.slice(0,6).map(e=>{
+  const q=e.q,answer=e.answer,link=Number.isInteger(e.bank)?`?bank=${e.bank}&question=${q.n}`:backHref;
+  const chosen=q.options?.[ABC.indexOf(answer.choice)]||'';
+  return `<a class="analysis-review-item" href="${link}">
+   <div class="analysis-review-top"><span>Bank ${safe(e.bank??'—')} · Q${safe(q.n)}</span><span>${safe(studyGroupName(primaryStudyGroup(q.domain)))}</span></div>
+   <strong>${safe(String(q.stem||'').slice(0,150))}${String(q.stem||'').length>150?'…':''}</strong>
+   <span class="analysis-review-choice">Your choice: ${safe(answer.choice||'?')}${chosen?' · '+safe(String(chosen).slice(0,65)):''}</span>
+   <span class="analysis-review-open">Review explanation ↗</span>
+  </a>`;
+ }).join('');
+ const advice=focus?`<p><b>First priority:</b> ${safe(focus.name)} — ${focus.correct}/${focus.attempted} correct from your attempted questions. Revisit the clinical clues that distinguish the best answer.</p>`
+   :`<p>${missed?'Review your incorrect answers to strengthen the clinical reasoning.':'No incorrect answers recorded in this session. Keep challenging yourself with unfamiliar scenarios.'}</p>`;
  return `<div class="results-page">
-   <div class="results-breadcrumb"><a href="${backHref}">← ${safe(backText)}</a><a href="./">⌂ Home</a></div>
-   <section class="results-hero">
-    <div class="results-overline">YOUR STUDY GARDEN · ${complete?'COMPLETED':'IN PROGRESS'} ✿</div>
-    <h1>🌷 ${safe(title)}</h1>
-    <p>${safe(subtitle)}</p>
-    <div class="results-hero-core"><div class="results-ring" style="--score-angle:${pct*3.6}deg"><div><strong>${pct}%</strong><small>${complete?'Final accuracy':'Accuracy so far'}</small></div></div>
-    <div class="results-overview"><strong>${correct} out of ${answered} correct</strong><p>${praise}</p><div class="results-pills"><span>✓ ${correct} correct</span><span>↻ ${missed} to review</span>${complete?'':`<span>⏳ ${n-answered} unanswered</span>`}</div></div></div>
+   <nav class="results-breadcrumb" aria-label="Results navigation"><a href="${backHref}">← ${safe(backText)}</a><a href="./">⌂ Home</a></nav>
+   <section class="results-hero" aria-label="Results summary">
+    <div class="results-overline">YOUR STUDY GARDEN · ${complete?'SESSION COMPLETE':'PROGRESS SO FAR'} ✿</div>
+    <h1>🌷 ${safe(title)}</h1><p>${safe(subtitle)}</p>
+    <div class="results-hero-core"><div class="results-ring" style="--score-angle:${pct*3.6}deg"><div><strong>${pct}%</strong><small>First-attempt accuracy</small></div></div>
+     <div class="results-overview"><strong>${correct} of ${answered} correct</strong><p>${complete?'A lovely milestone — keep understanding the why behind each answer.':'Results are calculated only from the questions you have answered.'}</p>
+      <div class="results-pills"><span>✓ ${correct} correct</span><span>↻ ${missed} incorrect</span><span>${answered}/${n} attempted</span></div></div>
+    </div>
    </section>
-   <section class="results-breakdown"><div class="results-section-heading"><h2>📊 Specialty breakdown</h2><p>Find your strengths and your next revision priorities.</p></div><div class="results-domains">${rows}</div></section>
-   <section class="results-insights"><div class="results-section-heading"><h2>💡 What to work on next</h2></div>
-    ${strongest?`<p>🌼 <b>Strongest area:</b> ${safe(strongest.name)} (${strongest.correct}/${strongest.count} correct).</p>`:''}
-    ${focusHtml}<p>${advice}</p>
+   <nav class="analysis-sections" aria-label="Analysis sections">
+    <a href="#specialtyBreakdown">📊 By specialty</a><a href="#revisionPlan">🎯 Revision priorities</a><a href="#missedQuestions">🌿 Missed questions</a>
+   </nav>
+   <section id="specialtyBreakdown" class="results-breakdown"><div class="results-section-heading"><h2>📊 Performance by specialty</h2><p>Scores reflect attempted questions only; unattempted questions never count as incorrect.</p></div><div class="results-domains">${groupRows}</div></section>
+   <section id="revisionPlan" class="results-insights"><div class="results-section-heading"><h2>🎯 Your next revision steps</h2><p>Use these to decide what to practise next, rather than just chasing a percentage.</p></div>
+    <div class="analysis-insight-grid">
+     <div class="analysis-insight"><span class="analysis-insight-icon">💪</span><h3>What is going well</h3><p>${strongest?`${safe(strongest.name)} — ${strongest.correct}/${strongest.attempted} correct (${Math.round(strongest.correct/strongest.attempted*100)}%).`:'Finish at least two questions in a specialty to identify a meaningful trend.'}</p></div>
+     <div class="analysis-insight"><span class="analysis-insight-icon">🌱</span><h3>Where to focus</h3>${advice}</div>
+    </div>
+    <p class="analysis-sample-note">Small sample sizes can make specialty percentages swing considerably. Review why you missed individual scenarios as well as the score.</p>
    </section>
-   <div class="results-actions"><a class="btn soft" href="./">⌂ Return Home</a><a class="btn soft" href="${reviewHref}">🌿 Wrong Answers Garden</a><a class="btn" href="${backHref}">${mode==='practice'?'↻ Back to practice':'← Back to Bank'}</a></div>
+   <section id="missedQuestions" class="results-breakdown analysis-mistakes"><div class="results-section-heading"><h2>🌿 Questions worth revisiting</h2>
+    <p>${wrongEntries.length?`${wrongEntries.length} incorrect first attempt${wrongEntries.length===1?'':'s'}. Tap any card to revisit its teaching notes.`:'No incorrect answers in this set so far.'}</p></div>
+    ${wrongEntries.length?`<div class="analysis-review-list">${wrongCards}</div>${wrongEntries.length>6?`<p class="analysis-more-notice">Showing 6 of ${wrongEntries.length}. Open Wrong Answers Garden for your full review list.</p>`:''}`:'<div class="bookmark-empty">🌼 Keep practising — the trickiest cases often teach us the most.</div>'}
+   </section>
+   <div class="results-actions"><a class="btn" href="${backHref}">${mode==='practice'?'↻ Back to practice':'← Back to bank'}</a><a class="btn soft" href="${reviewHref}">🌿 Wrong Answers Garden</a><a class="btn soft" href="./">⌂ Return Home</a></div>
  </div>`;
 }
 function renderBankResults(bank){
  const bm=manifest.banks.find(x=>x.id===bank),qs=bankData[bank];
  if(!bm||!qs){$('app').innerHTML='<div class="empty">Bank not found.</div>';return;}
  route={results:bank};
- $('app').innerHTML=buildResultMarkup({title:`Bank ${bank} · ${bm.name}`,subtitle:`${qs.length} questions · First-attempt results and study priorities`,entries:qs.map(q=>({q,answer:(state.banks[bank]||{})[q.n]})),backHref:url(bank),backText:`Back to Bank ${bank}`,reviewHref:`?review=1&bank=${bank}`,mode:'bank'});
+ $('app').innerHTML=buildResultMarkup({title:`Bank ${bank} · ${bm.name}`,subtitle:`${qs.length} questions · First-attempt results and study priorities`,entries:qs.map(q=>({q,bank,answer:(state.banks[bank]||{})[q.n]})),backHref:url(bank),backText:`Back to Bank ${bank}`,reviewHref:`?review=1&bank=${bank}`,mode:'bank'});
 }
 function jumpToBankQuestion(bank,number){
  const set=bankData[bank]||[],n=Number(number),index=set.findIndex(q=>q.n===n);
