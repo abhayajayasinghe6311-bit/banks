@@ -289,7 +289,22 @@
       "management": "Continue appropriate fetal and maternal monitoring, document the response, review reversible causes and the labour plan with the responsible obstetric team. Consider whether and how to recommence oxytocin cautiously under local protocol; expedited delivery is no longer automatic if the concerning features have fully resolved.",
       "reason": "Persistent recurrent late decelerations with reduced variability and tachysystole need urgent assessment; resolution changes the balance toward reassessment and monitoring."
     },
-    "reviewNote": "QLD intrapartum fetal surveillance guideline verified 2026-10-22"
+    "reviewNote": "QLD intrapartum fetal surveillance guideline verified 2026-10-22",
+    "legacyOptions": [
+      "Give maternal oxygen continuously as the only action despite normal saturation.",
+      "Stop oxytocin, reposition mother, correct reversible causes and urgently involve senior obstetrics for possible expedited delivery.",
+      "Increase oxytocin to shorten the duration of fetal hypoxia.",
+      "Perform fetal scalp stimulation as the sole manoeuvre and continue oxytocin.",
+      "Observe unchanged for an hour because late decelerations are normal with contractions."
+    ],
+    "legacyExplanations": [
+      "Oxygen alone cannot reverse excessive contraction frequency or eliminate need for escalation.",
+      "Correct: this is concerning CTG with uterine hyperstimulation requiring immediate measures and escalation.",
+      "More oxytocin worsens tachysystole and uteroplacental hypoperfusion.",
+      "Stimulation may help assessment in selected cases but does not treat tachysystole and suspected hypoxia.",
+      "Recurrent late decelerations and minimal variability indicate compromised placental reserve."
+    ],
+    "questionRevision": 2
   },
   {
     "domain": "Paediatrics & neonatology",
@@ -670,7 +685,22 @@
       "scenario": "A person has elevated mood for five days and increased energy, but no psychotic symptoms, no serious financial harm, preserves usual functioning and has no need for admission.",
       "management": "Assess for hypomania and a bipolar-spectrum disorder, review sleep, substances and antidepressant exposure, discuss medication and relapse prevention with psychiatry, and arrange close follow-up and safety planning. Inpatient emergency containment may not be necessary if risk is low and supports are reliable.",
       "reason": "Psychotic symptoms, severe sleep loss and self-neglect make the original presentation unequivocally more severe than hypomania."
-    }
+    },
+    "legacyOptions": [
+      "Treat with psychotherapy alone because medication will affect creativity.",
+      "Discharge because high energy without sadness excludes a mood episode.",
+      "Start an SSRI antidepressant to reduce irritability and review in six weeks.",
+      "Assess risk and capacity, arrange acute psychiatric care and initiate an antipsychotic with mood-stabilising strategy as clinically indicated.",
+      "Diagnose hypomania because she remains able to articulate her ideas."
+    ],
+    "legacyExplanations": [
+      "Therapy may be useful later, but acute severe mania generally needs medication and safe supervision.",
+      "Severe impairment, psychosis, reduced sleep and risky spending indicate mania needing urgent assessment.",
+      "Antidepressant monotherapy can worsen mania and does not address acute psychosis and impaired judgment.",
+      "Correct: severe mania with psychotic features and self-neglect requires urgent containment, sleep restoration and pharmacotherapy.",
+      "Psychosis or marked functional impairment meets mania, not hypomania; communication ability does not downgrade severity."
+    ],
+    "questionRevision": 2
   },
   {
     "domain": "Emergency / Critical Care",
@@ -961,7 +991,22 @@
       "scenario": "A clozapine-treated patient has a mildly reduced ANC above the interruption threshold, no fever or infection symptoms, and otherwise remains clinically well.",
       "management": "Follow the precise clozapine monitoring-service and product-specific ANC algorithm: verify the result, repeat counts at the required frequency, assess for other causes of neutropenia and discuss with the responsible psychiatry/haematology team before any dose continuation or interruption. Do not apply the severe febrile-neutropenia pathway automatically without its clinical features.",
       "reason": "ANC 0.3 with fever is high-risk severe neutropenia; mildly reduced counts may require intensified surveillance rather than emergency admission."
-    }
+    },
+    "legacyOptions": [
+      "Stop/withhold clozapine and arrange emergency admission for febrile neutropenia antibiotics and haematology–psychiatry review.",
+      "Start outpatient steroids alone to raise the white count.",
+      "Continue clozapine and repeat full blood count in one month.",
+      "Increase clozapine because fever can accompany breakthrough psychosis.",
+      "Give oral antiseptic mouthwash and observe at home."
+    ],
+    "legacyExplanations": [
+      "Correct: ANC 0.3 with fever meets high-risk agranulocytosis and needs immediate infection care.",
+      "Steroids do not replace urgent infection treatment and specialist haematologic rescue.",
+      "Severe neutropenia with infection signs is a medical emergency; continued treatment is unsafe.",
+      "Dose escalation may worsen haematologic toxicity.",
+      "Mucositis with profound neutropenia may signal invasive infection."
+    ],
+    "questionRevision": 2
   },
   {
     "domain": "Cardiology & Respiratory",
