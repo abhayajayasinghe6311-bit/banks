@@ -441,32 +441,47 @@ function filteredQuestions(b){const all=bankData[b]||[];return all.filter(q=>{if
 function optionHtml(q,selected,review=false){return q.options.map((option,i)=>{const letter=ABC[i],correct=letter===q.key,isSelected=letter===selected;let cls='choice';if(selected){if(correct)cls+=' true';if(isSelected)cls+=correct?' selected correct':' selected incorrect';}return `<button type="button" class="${cls}" data-choice="${letter}" ${selected?'disabled':''}><span class="letter">${letter}</span><span>${safe(option)}</span></button>`;}).join('');}
 function explHtml(q){return `<details class="answer" ${''}><summary>📖 Reveal teaching explanation and exam pearls</summary><div class="answer-body"><p><b>Correct answer: ${safe(q.key)} — ${safe(q.options[ABC.indexOf(q.key)])}</b></p>${q.options.map((o,i)=>`<div class="explainline ${ABC[i]===q.key?'is-correct':''}"><b>${ABC[i]}. ${ABC[i]===q.key?'✓ Correct':'Why not'}:</b> ${safe(q.explanations?.[i]||'Review this option against the key features.')}</div>`).join('')}${q.pearl?`<div class="pearl">💡 <b>Exam pearl:</b> ${safe(q.pearl)}</div>`:''}${q.pivot?`<div class="pivot">🔄 <b>What would change the answer?</b> ${safe(q.pivot)}</div>`:''}</div></details>`;}
 function learningNotes(q,anchorId='learningNotes',selected=null){
+ const opts=q.options||[],explanations=q.explanations||[];
  const keyIndex=ABC.indexOf(q.key),selectedIndex=ABC.indexOf(selected);
- const options=q.options||[];
- const good=options[keyIndex]||'';
- const rationale=q.explanations?.[keyIndex]||'Review the decisive clinical clue that supports this answer.';
+ const correct=opts[keyIndex]||'',rationale=explanations[keyIndex]||'Review the decisive finding that supports the best choice.';
  const wrong=selectedIndex>=0&&selectedIndex!==keyIndex;
- const otherOptions=options.map((option,i)=>{
+ const selectedReason=wrong?explanations[selectedIndex]||'This option does not best explain or address the key finding in the case.':'';
+ const mini=q.lesson?.wrong?.[selectedIndex]||null;
+ const signs=q.lesson?.clues||[];
+ const hasManagement=Array.isArray(q.management?.steps)&&q.management.steps.length>0;
+ const usefulPivot=q.pivot&&!/^(?:(?:exam check|pivot):?\s*)?(?:ask yourself|examine which|identify the decisive|which finding in the stem)/i.test(String(q.pivot));
+ const remaining=opts.map((option,i)=>{
   if(i===keyIndex||(wrong&&i===selectedIndex))return '';
-  return `<div class="learning-alternative"><div class="learning-option-head"><span class="learning-letter">${ABC[i]}</span><strong>${safe(option)}</strong></div><p>${safe(q.explanations?.[i]||'Compare this option with the decisive features of the scenario.')}</p></div>`;
+  const extra=q.lesson?.wrong?.[i];
+  return '<div class="learning-alternative"><div class="learning-option-head"><span class="learning-letter">'+safe(ABC[i])+'</span><strong>'+safe(option)+'</strong></div><p>'+safe(explanations[i]||'Compare the clinical pattern with the best answer.')+'</p>'+
+    (extra?'<p class="learning-check-small"><b>Next-time check:</b> '+safe(extra.check)+'</p>':'')+'</div>';
  }).join('');
- return `<aside class="learning-card" id="${safe(anchorId)}" aria-label="Clinical reasoning notes">
-  <div class="learning-header"><span aria-hidden="true">🌷</span><div><div class="learning-eyebrow">YOUR LEARNING NOTES</div><h2>Understand the <em>why</em></h2></div></div>
-  ${wrong?`<div class="learning-missed-choice">
-   <div class="learning-missed-heading">↻ Let's unpack your answer</div>
-   <h3>You chose ${safe(selected)}. ${safe(options[selectedIndex])}</h3>
-   <div class="learning-missed-details"><b>Why this wasn't the best choice</b><p>${safe(q.explanations?.[selectedIndex]||'This option does not best account for the key finding in this particular case.')}</p></div>
-   <div class="learning-missed-details"><b>Why ${safe(q.key)} is better here</b><p>${safe(rationale)}</p></div>
-   ${q.pearl?`<div class="learning-missed-takeaway"><b>💡 The distinction to remember</b><p>${safe(q.pearl)}</p></div>`:''}
-   </div>`:''}
-  <div class="learning-section learning-correct"><div class="learning-tag">✓ The best answer</div><h3>${safe(q.key)}. ${safe(good)}</h3><p>${safe(rationale)}</p></div>
-  ${otherOptions?`<div class="learning-section"><h3 class="learning-section-title">🔎 Why the other options are less suitable</h3><div class="learning-alternatives">${otherOptions}</div></div>`:''}
-  ${q.pearl&&!wrong?`<div class="learning-section learning-pearl"><h3>💡 Remember this principle</h3><p>${safe(q.pearl)}</p></div>`:''}
-  ${q.management?.steps?.length?`<div class="learning-section management-guide"><h3>🩺 Practical management — what to do</h3><p class="management-intro">Use this as a study sequence; assess clinical severity and follow your hospital's current protocols and senior advice.</p><ol>${q.management.steps.map(step=>`<li><strong>${safe(step[0])}</strong><span>${safe(step[1])}</span></li>`).join('')}</ol>${q.management.safety?`<div class="management-safety"><b>⚠ Safety / escalation</b><p>${safe(q.management.safety)}</p></div>`:''}${q.management.local?`<p class="management-local">${safe(q.management.local)}</p>`:''}</div>`:''}
-  ${q.pivot?`<div class="learning-section learning-pivot"><h3>🔄 When would the answer change?</h3><p>${safe(q.pivot)}</p></div>`:''}
-  <p class="learning-footer">${wrong?'Review the distinction, then try explaining it in your own words. ♡':'Understand the principle, then move on when you are ready. ♡'}</p>
- </aside>`;
+ const managementMarkup=hasManagement?'<details class="learning-section management-guide" '+(wrong?'open':'')+'><summary>🩺 What would I do in practice? <span>'+q.management.steps.length+' useful steps</span></summary>'+
+   '<p class="management-intro">A practical study sequence. Follow local guidelines and your supervising team for patient-specific treatment.</p>'+
+   '<ol>'+q.management.steps.map(step=>'<li><strong>'+safe(step[0])+'</strong><span>'+safe(step[1])+'</span></li>').join('')+'</ol>'+
+   (q.management.safety?'<div class="management-safety"><b>⚠ Safety / escalation</b><p>'+safe(q.management.safety)+'</p></div>':'')+
+   (q.management.local?'<p class="management-local">'+safe(q.management.local)+'</p>':'')+'</details>':'';
+ return '<aside class="learning-card" id="'+safe(anchorId)+'" aria-label="Clinical reasoning notes">'+
+   '<div class="learning-header"><span aria-hidden="true">🌷</span><div><div class="learning-eyebrow">YOUR LEARNING NOTES</div><h2>Understand the <em>why</em></h2></div></div>'+
+   (wrong?
+    '<section class="learning-missed-choice"><div class="learning-missed-heading">↻ LET’S LEARN FROM THIS ONE</div>'+
+     '<h3>You chose '+safe(selected)+'. '+safe(opts[selectedIndex])+'</h3>'+
+     '<div class="learning-missed-details"><b>Why it isn’t best here</b><p>'+safe(selectedReason)+'</p></div>'+
+     (mini?'<div class="learning-mistake-pattern"><b>🧩 The reasoning trap</b><p>'+safe(mini.trap)+'</p></div>'+
+       '<div class="learning-decision-check"><b>🔎 What to check next time</b><p>'+safe(mini.check)+'</p></div>':'')+
+    '</section>':'')+
+   (signs.length?'<p class="learning-clue-line"><b>Key decision signals:</b> '+safe(signs.join(' · '))+'</p>':'')+
+   '<section class="learning-section learning-correct"><div class="learning-tag">✓ THE BEST ANSWER</div><h3>'+safe(q.key)+'. '+safe(correct)+'</h3><p>'+safe(rationale)+'</p></section>'+
+   (q.pearl?'<section class="learning-section learning-pearl"><h3>💡 The principle to remember</h3><p>'+safe(q.pearl)+'</p></section>':'')+
+   managementMarkup+
+   (usefulPivot?'<div class="learning-section learning-pivot"><h3>🔄 What would change the answer?</h3><p>'+safe(q.pivot)+'</p></div>':'')+
+   (remaining?'<details class="learning-more-alternatives learning-section"><summary>🧠 Compare the other '+(opts.length-1-(wrong?1:0))+' answer option'+(opts.length-1-(wrong?1:0)===1?'':'s')+'</summary>'+
+     '<p class="learning-other-intro">Read these if you want to test why a different option is less suitable in this exact vignette.</p>'+
+     '<div class="learning-alternatives">'+remaining+'</div></details>':'')+
+   '<p class="learning-footer">'+(wrong?'Once the distinction makes sense, try recalling the correct first action without looking. ♡':'Understanding the reasoning is more valuable than memorising the letter. ♡')+'</p>'+
+  '</aside>';
 }
+
 const PRACTICE_TOPICS=[{"id":"medicine","name":"Medicine","icon":"🫀","help":"Cardiac, respiratory, renal, endocrine & infection"},{"id":"surgery","name":"Surgery","icon":"🩺","help":"GI, general surgery & perioperative care"},{"id":"obgyn","name":"O&G","icon":"🌸","help":"Pregnancy, childbirth & gynaecology"},{"id":"paeds","name":"Paediatrics","icon":"🧸","help":"Children and newborns"},{"id":"psychiatry","name":"Psychiatry","icon":"🧠","help":"Mental health & addictions"},{"id":"gp","name":"GP & Ethics","icon":"🌿","help":"Primary care, prescribing, screening & ethics"},{"id":"emergency","name":"Emergency","icon":"🚑","help":"Urgent decisions & resuscitation"},{"id":"neurology","name":"Neurology","icon":"🧬","help":"Brain, spine, stroke & nervous system"},{"id":"msk","name":"Eyes, ENT & MSK","icon":"👁️","help":"Eye, ear, orthopaedics & anatomy"},{"id":"integrated","name":"Mixed clinical","icon":"✨","help":"Interdisciplinary reasoning"}];
 function practiceGroups(domain){
  const d=String(domain||'').toLowerCase();
