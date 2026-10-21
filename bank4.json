@@ -3374,17 +3374,19 @@
     "stem": "A 72-year-old admitted with vomiting has serum sodium 116 mmol/L and develops a generalised seizure. She has no history of seizures and no signs of intracranial haemorrhage.",
     "ask": "Which immediate treatment is MOST APPROPRIATE?",
     "options": [
-      "Carefully monitored hypertonic saline for severe symptomatic hyponatraemia",
-      "Routine oral salt tablets as the only treatment",
-      "Large volumes of plain water",
-      "A rapid correction to 140 mmol/L within one hour"
+      "Give monitored 3% hypertonic saline boluses and check serum sodium often.",
+      "Use oral salt tablets only while arranging outpatient medical review.",
+      "Infuse hypotonic fluid rapidly to avoid further volume depletion.",
+      "Correct sodium to 140 mmol/L within an hour using hypertonic saline.",
+      "Restrict all fluids and treat the seizure without sodium correction."
     ],
     "key": "A",
     "explanations": [
-      "Seizures with profound hyponatraemia are a medical emergency. Hypertonic saline is used under protocol to achieve a small early sodium rise that relieves cerebral oedema while avoiding overcorrection.",
-      "Oral salts are insufficient for active seizures.",
-      "Free water worsens hyponatraemia.",
-      "Rapid full normalisation risks osmotic demyelination, especially in chronic hyponatraemia."
+      "A seizure with Na 116 mmol/L is severe symptomatic hyponatraemia requiring emergency treatment. Protocol-guided 3% saline boluses aim for an initial small sodium rise that relieves cerebral oedema, followed by frequent sodium monitoring.",
+      "Oral salt tablets act too slowly and cannot reliably manage a life-threatening seizure due to acute brain swelling. Hospital emergency care is required.",
+      "Hypotonic fluids may further reduce serum sodium and exacerbate cerebral oedema, seizures and neurological deterioration.",
+      "Rapid full normalisation risks osmotic demyelination, particularly if hyponatraemia is chronic. Relieve symptoms with controlled initial correction rather than trying to achieve a normal sodium immediately.",
+      "Fluid restriction may be appropriate later for selected causes such as SIADH, but it does not replace urgent hypertonic treatment for seizures."
     ],
     "pearl": "In severe symptomatic hyponatraemia, treat symptoms urgently but limit total correction carefully.",
     "pivot": "If symptoms are mild and chronic, slower cause-directed correction is usually favoured over emergency hypertonic boluses.",
@@ -3414,24 +3416,43 @@
     "management": {
       "steps": [
         [
-          "Stabilise",
-          "Protect airway and treat seizures; check glucose and repeat sodium as feasible."
+          "Treat seizure and stabilise",
+          "Activate resuscitation, protect airway, assess ABC and glucose and draw urgent electrolytes and blood gas while preparing hypertonic saline."
         ],
         [
-          "Relieve cerebral oedema",
-          "Protocol-driven 3% saline boluses for severe symptomatic hyponatraemia."
+          "Reverse cerebral oedema",
+          "Administer protocol-directed 3% saline boluses for severe symptomatic hyponatraemia and monitor clinical seizure response."
         ],
         [
-          "Prevent overcorrection",
-          "Frequent sodium and urine-output measurements; consider desmopressin with specialist help if correction too rapid."
+          "Measure sodium repeatedly",
+          "Recheck sodium frequently during active correction and track urine output; avoid excessive overall daily sodium rise and consult critical care/endocrinology."
         ],
         [
-          "Treat cause",
-          "Evaluate SIADH, medications and volume status once stabilised."
+          "Treat the precipitant",
+          "Investigate volume status, medications, GI losses or SIADH, and consider specialist interventions if correction accelerates unexpectedly."
         ]
       ],
-      "safety": "Aim for early neurological improvement, not immediate sodium normalisation; rapid correction risks osmotic demyelination.",
-      "local": "Exact doses, escalation thresholds and contraindications must be verified against current local protocols and senior advice."
+      "source": {
+        "name": "Royal Children's Hospital hyponatraemia guideline (paediatric principles only); use local adult protocol",
+        "url": "https://www.rch.org.au/clinicalguide/guideline_index/Hyponatraemia/"
+      }
+    },
+    "legacyOptions": [
+      "Carefully monitored hypertonic saline for severe symptomatic hyponatraemia",
+      "Routine oral salt tablets as the only treatment",
+      "Large volumes of plain water",
+      "A rapid correction to 140 mmol/L within one hour"
+    ],
+    "legacyExplanations": [
+      "Seizures with profound hyponatraemia are a medical emergency. Hypertonic saline is used under protocol to achieve a small early sodium rise that relieves cerebral oedema while avoiding overcorrection.",
+      "Oral salts are insufficient for active seizures.",
+      "Free water worsens hyponatraemia.",
+      "Rapid full normalisation risks osmotic demyelination, especially in chronic hyponatraemia."
+    ],
+    "alternate": {
+      "scenario": "The patient instead has chronic, asymptomatic Na 128 mmol/L, is neurologically well and has no severe symptoms.",
+      "management": "Evaluate fluid status, medications, chronicity and cause, and plan cautious cause-directed management with repeat sodium measurements. For SIADH consider appropriate fluid restriction and treatment of the trigger; emergency 3% saline boluses are unnecessary without severe symptoms.",
+      "reason": "Seizures and profound symptomatic hyponatraemia make urgent osmotic rescue necessary; asymptomatic mild cases allow slower correction."
     }
   },
   {
