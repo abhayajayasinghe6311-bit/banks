@@ -1174,19 +1174,19 @@
     "stem": "A 26-year-old at 9 weeks gestation has unilateral lower abdominal pain and light bleeding. Ultrasound demonstrates an empty uterus and a 3-cm adnexal mass; serum β-hCG is 3800 IU/L.",
     "ask": "Which diagnosis is MOST LIKELY?",
     "options": [
-      "Cervical insufficiency",
-      "Ovarian hyperstimulation syndrome",
-      "Placenta praevia",
-      "Threatened intrauterine miscarriage",
-      "Tubal ectopic pregnancy"
+      "Cervical insufficiency causing painless mid-trimester cervical opening.",
+      "Ovarian hyperstimulation after recent assisted reproductive treatment.",
+      "Placenta praevia causing late-pregnancy painless vaginal bleeding.",
+      "Threatened intrauterine miscarriage confirmed by a gestational sac.",
+      "Tubal ectopic pregnancy with an adnexal mass and empty uterus."
     ],
     "key": "E",
     "explanations": [
-      "Cervical insufficiency produces painless second-trimester dilation.",
-      "OHSS occurs in the context of ovarian stimulation with ovarian enlargement and third spacing.",
-      "Placenta praevia presents later in pregnancy.",
-      "Threatened miscarriage requires an intrauterine pregnancy, usually with a closed os.",
-      "Pain/bleeding, no intrauterine gestation and a suspicious adnexal mass favour ectopic pregnancy; urgent gynaecology assessment is required."
+      "Cervical insufficiency typically causes painless shortening or dilatation in the mid-trimester; it does not explain a 9-week pregnancy with an extrauterine mass.",
+      "Ovarian hyperstimulation is considered following fertility stimulation, often with bilaterally enlarged multicystic ovaries and ascites, rather than an isolated 3-cm adnexal gestational mass.",
+      "Placenta praevia is a cause of antepartum bleeding later in gestation and cannot explain this first-trimester ultrasound pattern.",
+      "A threatened miscarriage refers to bleeding with a known intrauterine gestation and closed cervix. No intrauterine sac is visible while an adnexal mass is present.",
+      "A positive pregnancy test, empty uterus and adnexal mass make a tubal ectopic most likely. Her haemodynamic status and other ultrasound details determine whether expectant, methotrexate or surgical management is appropriate."
     ],
     "pearl": "A positive pregnancy test with pain/bleeding is ectopic until excluded, even without shock.",
     "pivot": "If unstable with peritonism/free fluid, immediate resuscitation and surgical treatment supersede serial β-hCG surveillance.",
@@ -1218,24 +1218,31 @@
     "management": {
       "steps": [
         [
-          "Recognise rupture",
-          "Pregnancy test, BP/perfusion and ultrasound for free fluid; arrange senior gynaecology review."
+          "Confirm diagnosis and stability",
+          "Assess vital signs, pain, bleeding, quantitative serum hCG, transvaginal ultrasound characteristics and signs of haemoperitoneum; consult early pregnancy/gynaecology specialists."
         ],
         [
-          "Resuscitate",
-          "Large-bore IV access, crossmatch, blood products and analgesia without delaying surgery."
+          "Choose treatment for a stable ectopic",
+          "Options may include methotrexate in an eligible, stable unruptured ectopic (normal renal/hepatic/haematological tests and reliable follow-up), surgical removal for concerning features, or carefully selected expectant care if hCG is low and falling."
         ],
         [
-          "Definitive care",
-          "Emergency laparoscopy/laparotomy for ruptured or unstable ectopic pregnancy."
+          "Arrange biochemical surveillance",
+          "For non-operative care, follow the local serum hCG protocol until resolution; counsel about rupture risk, medication precautions and need to return immediately if symptoms escalate."
         ],
         [
-          "Follow",
-          "Rh prophylaxis when indicated, postoperative safety and future early pregnancy planning."
+          "Escalate promptly if unstable",
+          "With shock, increasing pain, peritonism or significant free fluid, resuscitate and arrange emergency operative management rather than outpatient surveillance."
         ]
       ],
-      "safety": "Methotrexate/expectant management are inappropriate for haemodynamic instability or confirmed rupture.",
-      "local": "Exact doses, escalation thresholds and contraindications must be verified against current local protocols and senior advice."
+      "source": {
+        "name": "Queensland Clinical Guideline — Early pregnancy loss (2025)",
+        "url": "https://www.health.qld.gov.au/__data/assets/pdf_file/0033/139947/g-epl.pdf"
+      }
+    },
+    "alternate": {
+      "scenario": "The same 9-week patient develops syncope, shoulder-tip pain, BP 78/45 mmHg and free intraperitoneal fluid on repeat ultrasound.",
+      "management": "Treat as ruptured ectopic pregnancy: call urgent gynaecology and anaesthesia, resuscitate with IV access and blood products if required and arrange emergency operative treatment. Do not offer outpatient methotrexate or expectant management when haemodynamically unstable.",
+      "reason": "The initial case asks for diagnosis; shock and free fluid alter subsequent management to surgical emergency care."
     }
   },
   {
