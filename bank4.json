@@ -2948,8 +2948,8 @@
         ]
       ],
       "source": {
-        "name": "RCH Melbourne — Seizures: acute management (paediatric treatment principles; use adult local protocol)",
-        "url": "https://www.rch.org.au/clinicalguide/guideline_index/Seizures_-_acute_management/"
+        "name": "NSW Health Adult Emergency Care — Seizures",
+        "url": "https://aci.health.nsw.gov.au/ecat/adult/seizures"
       }
     },
     "alternate": {
@@ -3435,8 +3435,8 @@
         ]
       ],
       "source": {
-        "name": "Royal Children's Hospital hyponatraemia guideline (paediatric principles only); use local adult protocol",
-        "url": "https://www.rch.org.au/clinicalguide/guideline_index/Hyponatraemia/"
+        "name": "Queensland Health (2026): Adult severe/symptomatic hyponatraemia",
+        "url": "https://www.health.qld.gov.au/clinical-practice/guidelines-procedures/medicines/safety/electrolyte-disturbances/hypo"
       }
     },
     "legacyOptions": [
