@@ -4257,19 +4257,19 @@
     "stem": "A 42-year-old has headache, confusion, focal seizures and a temporal-lobe MRI lesion. HSV PCR is pending.",
     "ask": "Which intervention is MOST appropriate now?",
     "options": [
-      "Give aspirin alone",
-      "Treat with oral fluconazole",
-      "Discharge on paracetamol",
-      "Wait for PCR result",
-      "Start IV aciclovir while investigating encephalitis"
+      "Give aspirin and arrange outpatient assessment for focal temporal symptoms.",
+      "Start oral fluconazole alone while awaiting lumbar puncture cultures.",
+      "Discharge once a repeat glucose confirms the patient is not hypoglycaemic.",
+      "Wait for HSV PCR positivity before starting targeted antiviral treatment.",
+      "Start urgent IV aciclovir and evaluate encephalitis with senior review."
     ],
     "key": "E",
     "explanations": [
-      "Aspirin is not pathogen treatment.",
-      "Fluconazole does not treat HSV.",
-      "Confusion and seizures require admission.",
-      "Treatment delay can worsen HSV encephalitis outcomes.",
-      "Temporal encephalitis warrants early IV aciclovir and supportive care."
+      "Aspirin neither treats encephalitis nor addresses confusion and focal seizures; urgent inpatient assessment is required.",
+      "Fluconazole targets fungal infections, not HSV. Suspected viral encephalitis with temporal MRI changes warrants empiric IV aciclovir without waiting for confirmatory PCR.",
+      "Confusion, focal seizures and suggestive temporal-lobe imaging represent possible life-threatening encephalitis despite normal glucose; discharge would be unsafe.",
+      "Delay in HSV encephalitis treatment is associated with worse neurological outcomes. Negative early PCR can be misleading; treatment should start when suspicion is high.",
+      "Temporal-lobe encephalitis strongly suggests HSV. Start IV aciclovir now, assess airway/seizures, seek neurology/infectious disease help and obtain CSF testing when safe; monitor renal function and hydration."
     ],
     "pearl": "Treat suspected HSV encephalitis before PCR confirmation.",
     "pivot": "Early negative PCR can occasionally warrant repeat testing if suspicion remains high.",
@@ -4301,24 +4301,31 @@
     "management": {
       "steps": [
         [
-          "Assess the decision point",
-          "Identify neurological or mental-state change and the patient's immediate stability; check whether an emergency escalation is needed."
+          "Stabilise neurological status",
+          "Assess ABC, bedside glucose, seizures, mental status and focal deficits; admit and urgently involve neurology/infectious diseases."
         ],
         [
-          "Act on the best option",
-          "Start IV aciclovir while investigating encephalitis. Temporal encephalitis warrants early IV aciclovir and supportive care."
+          "Do not wait for PCR",
+          "Start renal-adjusted IV aciclovir immediately when HSV encephalitis is suspected and maintain appropriate hydration."
         ],
         [
-          "Reassess the effect",
-          "Check symptoms, vital signs, relevant results and adverse effects after the first intervention; revise the plan if the patient deteriorates."
+          "Confirm and rule out mimics",
+          "Perform lumbar puncture for CSF HSV PCR and studies when safe, consider MRI/EEG and cover bacterial infection if clinically indicated."
         ],
         [
-          "Plan ongoing care",
-          "Arrange appropriate senior review, investigations, safety-netting and follow-up; check local protocols for the precise treatment sequence."
+          "Reassess and monitor",
+          "Monitor renal function, electrolytes, seizures and neurological course. If PCR is negative very early despite strong suspicion, discuss repeat CSF testing and continued therapy."
         ]
       ],
-      "safety": "This is a decision framework, not a substitute for drug-specific instructions. Prescribing, dosing and escalation must be verified locally.",
-      "local": "Exact doses, escalation thresholds and contraindications must be verified against current local protocols and senior advice."
+      "source": {
+        "name": "Australasian Society for Infectious Diseases — encephalitis resources",
+        "url": "https://www.asid.net.au/"
+      }
+    },
+    "alternate": {
+      "scenario": "The patient instead has a typical brief focal seizure, complete recovery, normal MRI and CSF, and no fever, encephalopathy or other features of encephalitis.",
+      "management": "Investigate the first seizure with ECG, blood tests and appropriate neuroimaging/EEG as clinically indicated, arrange neurological risk assessment and discuss antiseizure therapy based on recurrence risk. IV aciclovir is not routinely indicated without clinical suspicion of HSV encephalitis.",
+      "reason": "Encephalopathy and a focal temporal brain lesion are what make immediate antiviral therapy essential in the original case."
     }
   },
   {
