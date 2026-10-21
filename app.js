@@ -15,7 +15,7 @@ function updateBadge(){if($('navWrong'))$('navWrong').textContent=pending();}
 function updateProgress(bank,n,choice){
  const id=idOf(bank,n),q=bankData[bank]?.find(q=>q.n===n);if(!q)return;
  const b=state.banks[bank]||(state.banks[bank]={});if(b[n])return;
- b[n]={choice,correct:choice===q.key,at:Date.now()};
+ b[n]={choice,correct:choice===q.key,at:Date.now(),optionRevision:useLegacyChoiceSet(q)?1:2,choiceText:optionsForDisplay(q)[ABC.indexOf(choice)]};
  if(choice!==q.key){
   const r=state.review[id]||{bank:Number(bank),n,firstChoice:choice,tries:0,lastChoice:null,mastered:false,firstWrongAt:Date.now()};
   r.mastered=false;state.review[id]=r;
@@ -231,7 +231,7 @@ function practiceFinishActions(){
 function answerPractice(bank,n,choice){
  const session=state.practice,id=idOf(bank,n),q=bankData[bank]?.find(x=>x.n===n);
  if(!session||!q||session.answers[id])return;
- session.answers[id]={choice,correct:choice===q.key,at:Date.now()};
+ session.answers[id]={choice,correct:choice===q.key,at:Date.now(),optionRevision:useLegacyChoiceSet(q)?1:2,choiceText:optionsForDisplay(q)[ABC.indexOf(choice)]};
  if(choice!==q.key){
   const r=state.review[id]||{bank:Number(bank),n,firstChoice:choice,tries:0,lastChoice:null,mastered:false,firstWrongAt:Date.now()};
   r.mastered=false;state.review[id]=r;
@@ -437,16 +437,27 @@ async function getBank(b){
   if(!resp.ok)throw new Error('Could not fetch Bank '+b);
   const data=await resp.json();
   if(!Array.isArray(data))throw new Error('Invalid question data in Bank '+b);
+  data.forEach(q=>{q.bankId=Number(b)});
   bankData[b]=data;return data;
  })().catch(error=>{delete bankLoading[b];throw error;});
  return bankLoading[b];
 }
 function answeredStatus(b){const a=state.banks[b]||{};return {attempted:Object.keys(a).length,correct:Object.values(a).filter(x=>x.correct).length};}
 function filteredQuestions(b){const all=bankData[b]||[];return all.filter(q=>{if(domain!=='all'&&q.domain!==domain)return false;const answer=(state.banks[b]||{})[q.n];const rid=idOf(b,q.n);if(filter==='unanswered')return !answer;if(filter==='wrong')return answer&&!answer.correct;if(filter==='bookmarks')return !!state.bookmarks[rid];return true;});}
-function optionHtml(q,selected,review=false){return q.options.map((option,i)=>{const letter=ABC[i],correct=letter===q.key,isSelected=letter===selected;let cls='choice';if(selected){if(correct)cls+=' true';if(isSelected)cls+=correct?' selected correct':' selected incorrect';}return `<button type="button" class="${cls}" data-choice="${letter}" ${selected?'disabled':''}><span class="letter">${letter}</span><span>${safe(option)}</span></button>`;}).join('');}
-function explHtml(q){return `<details class="answer" ${''}><summary>📖 Reveal teaching explanation and exam pearls</summary><div class="answer-body"><p><b>Correct answer: ${safe(q.key)} — ${safe(q.options[ABC.indexOf(q.key)])}</b></p>${q.options.map((o,i)=>`<div class="explainline ${ABC[i]===q.key?'is-correct':''}"><b>${ABC[i]}. ${ABC[i]===q.key?'✓ Correct':'Why not'}:</b> ${safe(q.explanations?.[i]||'Review this option against the key features.')}</div>`).join('')}${q.pearl?`<div class="pearl">💡 <b>Exam pearl:</b> ${safe(q.pearl)}</div>`:''}${q.alternate?.scenario&&q.alternate?.management?`<div class="pivot">🔀 <b>Different scenario:</b> ${safe(q.alternate.scenario)}<p><b>Different management:</b> ${safe(q.alternate.management)}</p></div>`:''}</div></details>`;}
+/* Existing saved attempts must retain the option labels that were visible when answered.
+   New answers tag their option revision; old attempts without that tag are legacy. */
+function useLegacyChoiceSet(q){
+ if(!Array.isArray(q.legacyOptions)||!Number.isInteger(q.bankId))return false;
+ const bankAnswer=(state.banks[q.bankId]||{})[q.n];
+ const practiceAnswer=state.practice?.answers?.[idOf(q.bankId,q.n)];
+ return !!((bankAnswer&&bankAnswer.optionRevision!==2)||(practiceAnswer&&practiceAnswer.optionRevision!==2));
+}
+function optionsForDisplay(q){return useLegacyChoiceSet(q)?q.legacyOptions:q.options;}
+function explanationsForDisplay(q){return useLegacyChoiceSet(q)?(q.legacyExplanations||q.explanations):q.explanations;}
+function optionHtml(q,selected,review=false){return optionsForDisplay(q).map((option,i)=>{const letter=ABC[i],correct=letter===q.key,isSelected=letter===selected;let cls='choice';if(selected){if(correct)cls+=' true';if(isSelected)cls+=correct?' selected correct':' selected incorrect';}return `<button type="button" class="${cls}" data-choice="${letter}" ${selected?'disabled':''}><span class="letter">${letter}</span><span>${safe(option)}</span></button>`;}).join('');}
+function explHtml(q){const opts=optionsForDisplay(q),exps=explanationsForDisplay(q);return `<details class="answer" ${''}><summary>📖 Reveal teaching explanation and exam pearls</summary><div class="answer-body"><p><b>Correct answer: ${safe(q.key)} — ${safe(opts[ABC.indexOf(q.key)])}</b></p>${opts.map((o,i)=>`<div class="explainline ${ABC[i]===q.key?'is-correct':''}"><b>${ABC[i]}. ${ABC[i]===q.key?'✓ Correct':'Why not'}:</b> ${safe(exps?.[i]||'Review this option against the key features.')}</div>`).join('')}${q.pearl?`<div class="pearl">💡 <b>Exam pearl:</b> ${safe(q.pearl)}</div>`:''}${q.alternate?.scenario&&q.alternate?.management?`<div class="pivot">🔀 <b>Different scenario:</b> ${safe(q.alternate.scenario)}<p><b>Different management:</b> ${safe(q.alternate.management)}</p></div>`:''}</div></details>`;}
 function learningNotes(q,anchorId='learningNotes',selected=null){
- const opts=q.options||[],explanations=q.explanations||[];
+ const opts=optionsForDisplay(q)||[],explanations=explanationsForDisplay(q)||[];
  const keyIndex=ABC.indexOf(q.key),selectedIndex=ABC.indexOf(selected);
  const correct=opts[keyIndex]||'',rationale=explanations[keyIndex]||'Review the decisive finding that supports the best choice.';
  const wrong=selectedIndex>=0&&selectedIndex!==keyIndex;
@@ -468,6 +479,7 @@ function learningNotes(q,anchorId='learningNotes',selected=null){
    (q.management.safety?'<div class="management-safety"><b>⚠ Safety / escalation</b><p>'+safe(q.management.safety)+'</p></div>':'')+
    (q.management.local?'<p class="management-local">'+safe(q.management.local)+'</p>':'')+(q.management.source?.url&&/^https:\/\//.test(q.management.source.url)?'<p class="management-source">Australian source: <a href="'+safe(q.management.source.url)+'" target="_blank" rel="noopener noreferrer">'+safe(q.management.source.name||'Clinical guideline')+' ↗</a></p>':'')+'</details>':'';
  return '<aside class="learning-card" id="'+safe(anchorId)+'" aria-label="Clinical reasoning notes">'+
+   (useLegacyChoiceSet(q)?'<p class="learning-legacy-notice">This question was updated after your earlier attempt. Your original answer wording is preserved below. New questions use the revised choices.</p>':'')+
    '<div class="learning-header"><span aria-hidden="true">🌷</span><div><div class="learning-eyebrow">YOUR LEARNING NOTES</div><h2>Understand the <em>why</em></h2></div></div>'+
    (wrong?
     '<section class="learning-missed-choice"><div class="learning-missed-heading">↻ LET’S LEARN FROM THIS ONE</div>'+
@@ -541,7 +553,7 @@ function buildResultMarkup({title,subtitle,entries,backHref,backText,reviewHref,
  }).join('');
  const wrongCards=wrongEntries.slice(0,6).map(e=>{
   const q=e.q,answer=e.answer,link=Number.isInteger(e.bank)?`?bank=${e.bank}&question=${q.n}`:backHref;
-  const chosen=q.options?.[ABC.indexOf(answer.choice)]||'';
+  const chosen=optionsForDisplay(q)?.[ABC.indexOf(answer.choice)]||'';
   return `<a class="analysis-review-item" href="${link}">
    <div class="analysis-review-top"><span>Bank ${safe(e.bank??'—')} · Q${safe(q.n)}</span><span>${safe(studyGroupName(primaryStudyGroup(q.domain)))}</span></div>
    <strong>${safe(String(q.stem||'').slice(0,150))}${String(q.stem||'').length>150?'…':''}</strong>
@@ -643,7 +655,7 @@ function renderBank(){const b=route.bank;const bm=manifest.banks.find(x=>x.id===
  };
  if(!q)return;$('choices').onclick=e=>{const choice=e.target.closest('[data-choice]');if(choice)updateProgress(b,q.n,choice.dataset.choice)};$('prev').onclick=()=>{cursor--;renderBank();window.scrollTo({top:120,behavior:'smooth'})};$('next').onclick=()=>{if(canJumpToUnanswered){filter='all';domain='all';cursor=qset.findIndex(x=>!(state.banks[b]||{})[x.n]);}else cursor++;renderBank();window.scrollTo({top:120,behavior:'smooth'})};$('bookmark').onclick=()=>{let k=idOf(b,q.n);state.bookmarks[k]=!state.bookmarks[k];save();renderBank()};}
 async function ensureAllBanks(){await Promise.all(manifest.banks.map(x=>getBank(x.id)));}
-function reviewChoice(card,r,q){const answer=r.currentAnswer;return `<div class="choices">${q.options.map((o,i)=>{const letter=ABC[i];let cls='choice';if(answer){if(letter===q.key)cls+=' true';if(letter===answer)cls+=answer===q.key?' selected correct':' selected incorrect';}return `<button class="${cls}" data-review-choice="${letter}" data-review-id="${idOf(r.bank,r.n)}" ${answer||r.mastered?'disabled':''}><span class="letter">${letter}</span><span>${safe(o)}</span></button>`;}).join('')}</div>${answer?`<div class="feedback ${answer===q.key?'yes':'no'}">${answer===q.key?'✓ Correct! Added to Mastered.':'✗ Still learning — retry after reviewing the explanation.'}</div>${learningNotes(q,`review-notes-${r.bank}-${r.n}`,answer)}`:''}`;}
+function reviewChoice(card,r,q){const answer=r.currentAnswer;return `<div class="choices">${optionsForDisplay(q).map((o,i)=>{const letter=ABC[i];let cls='choice';if(answer){if(letter===q.key)cls+=' true';if(letter===answer)cls+=answer===q.key?' selected correct':' selected incorrect';}return `<button class="${cls}" data-review-choice="${letter}" data-review-id="${idOf(r.bank,r.n)}" ${answer||r.mastered?'disabled':''}><span class="letter">${letter}</span><span>${safe(o)}</span></button>`;}).join('')}</div>${answer?`<div class="feedback ${answer===q.key?'yes':'no'}">${answer===q.key?'✓ Correct! Added to Mastered.':'✗ Still learning — retry after reviewing the explanation.'}</div>${learningNotes(q,`review-notes-${r.bank}-${r.n}`,answer)}`:''}`;}
 let transientReview={};
 function reviewCards(rows){return rows.map(r=>{const q=bankData[r.bank]?.find(x=>x.n===r.n);if(!q)return '';const id=idOf(r.bank,r.n);return `<article class="reviewitem" id="review-${r.bank}-${r.n}"><div class="flex between"><span class="pill">Bank ${r.bank} · EMQ ${r.n}</span><strong class="${r.mastered?'status-mastered':'status-pending'}">${r.mastered?'✓ Mastered':'↻ Needs review'}</strong></div><div class="small">${safe(q.domain)} · ${r.tries||0} review attempt(s)</div><h3>${safe(q.stem)}</h3><p><b>${safe(q.ask||'Choose the single best answer.')}</b></p>${reviewChoice(null,{...r,currentAnswer:transientReview[id]},q)}${!r.mastered?`<div class="flex" style="margin-top:10px"><button class="btn soft" data-retry="${safe(id)}">↻ Clear review selection to try again</button></div>`:''}</article>`;}).join('');}
 function renderReview(){route={review:true};if(!Object.keys(bankData).length){$('app').innerHTML='<p>Loading review data…</p>';return;}const records=recs().sort((a,b)=>(b.firstWrongAt||0)-(a.firstWrongAt||0));const all=records.filter(r=>(reviewFilter==='all'||(reviewFilter==='mastered'?r.mastered:(!r.mastered||!!transientReview[idOf(r.bank,r.n)])))&&(reviewBank==='all'||String(r.bank)===reviewBank));const shown=all.slice(reviewOffset,reviewOffset+8);const mastery=records.filter(r=>r.mastered).length;
