@@ -402,6 +402,61 @@ body.dark .bank-search-trigger:hover,body.dark .bank-search-trigger.active{backg
 .footer-fineprint{font-size:11px;line-height:1.7;max-width:960px;color:var(--muted)}
 
 
+/* Calm, layered clinical teaching: important mistake feedback first, deeper detail on request */
+.learning-clue-line{margin:0 0 14px;color:var(--muted);font-size:12px;line-height:1.6}
+.learning-clue-line b{color:var(--violet)}
+.learning-missed-choice{padding:16px 17px 14px}
+.learning-missed-choice h3{margin-bottom:9px}
+.learning-missed-details{margin-top:9px;padding-top:10px}
+.learning-missed-details p{font-size:13px;line-height:1.7}
+.learning-mistake-pattern,.learning-decision-check{padding:11px 13px;border-radius:11px;margin-top:11px;background:var(--card);color:var(--ink)}
+.learning-mistake-pattern{border:1px solid var(--edge)}
+.learning-decision-check{background:var(--lav);border:1px solid var(--edge)}
+.learning-mistake-pattern b,.learning-decision-check b{display:block;font-size:12px;color:var(--violet)}
+.learning-mistake-pattern p,.learning-decision-check p{font-size:12px;line-height:1.7;margin:4px 0 0;color:var(--ink)}
+.learning-more-alternatives{padding:0!important;margin-top:16px!important;border:1px solid var(--edge)!important;border-radius:14px;background:var(--card)}
+.learning-more-alternatives summary,.management-guide summary{cursor:pointer;list-style:none;display:flex;align-items:center;gap:10px;justify-content:space-between;padding:13px 15px;color:var(--ink);font-weight:750;font-size:13px;line-height:1.4}
+.learning-more-alternatives summary::-webkit-details-marker,.management-guide summary::-webkit-details-marker{display:none}
+.learning-more-alternatives summary::after,.management-guide summary::after{content:"⌄";font-size:19px;color:var(--violet);font-weight:700;transition:transform .14s ease}
+.learning-more-alternatives[open] summary::after,.management-guide[open] summary::after{transform:rotate(180deg)}
+.learning-more-alternatives summary:hover,.management-guide summary:hover{background:var(--lav);border-radius:12px}
+.learning-more-alternatives summary:focus-visible,.management-guide summary:focus-visible{outline:2px solid var(--violet);outline-offset:2px;border-radius:11px}
+.learning-other-intro{font-size:12px!important;color:var(--muted)!important;margin:0 14px 10px!important;line-height:1.65!important}
+.learning-more-alternatives .learning-alternatives{padding:0 12px 13px;gap:8px}
+.learning-more-alternatives .learning-alternative{padding:11px 12px}
+.learning-check-small{border-top:1px solid var(--edge);padding-top:7px;color:var(--muted)!important;font-size:12px!important;line-height:1.65!important}
+.learning-check-small b{color:var(--violet)}
+.learning-card details.management-guide{padding:0!important;background:var(--alt-surface,var(--card))}
+.learning-card .management-guide summary span{font-size:11px;color:var(--muted);font-weight:500;margin-left:auto}
+.learning-card .management-guide .management-intro{padding:0 15px;margin:0 0 10px!important}
+.learning-card .management-guide ol{padding:0 13px 0 25px;margin:0 8px 13px 10px}
+.learning-card .management-guide .management-safety{margin:13px}
+.learning-card .management-guide .management-local{margin:8px 13px 13px!important}
+body.dark .learning-mistake-pattern{background:#2b2b3b;color:var(--ink);border-color:var(--edge)}
+body.dark .learning-decision-check{background:#353047;color:var(--ink)}
+body.dark .learning-missed-choice{background:#3d2936}
+@media(max-width:740px){.learning-missed-choice{padding:14px}.learning-card .management-guide ol{padding-right:7px}.learning-more-alternatives summary,.management-guide summary{padding:12px}}
+@media(prefers-reduced-motion:reduce){.learning-more-alternatives summary::after,.management-guide summary::after{transition:none}}
+
+/* Delicate lower-case signature, one step smaller */
+.site-footer .footer-signature{font-size:12px;font-weight:700;letter-spacing:.015em}
+
+
+/* Clinical depth without visual overload: expandable, softly separated teaching */
+.learning-specific-distinction{margin:11px 0 0;border-radius:11px;padding:11px 13px;background:var(--card);border:1px solid var(--edge);color:var(--ink)}
+.learning-specific-distinction b{font-size:12px;display:block;color:var(--violet);margin-bottom:4px}
+.learning-specific-distinction p{font-size:13px;line-height:1.75;margin:0;color:var(--ink)}
+.management-specifics{margin-top:15px;padding:13px 14px;border-radius:12px;background:var(--lav);border:1px solid var(--edge)}
+.management-specifics>b{display:block;font-size:13px;color:var(--ink);margin-bottom:8px}
+.management-specifics ul{margin:0 0 0 19px;padding:0;display:grid;gap:8px}
+.management-specifics li{font-size:12px;font-weight:400;color:var(--ink);line-height:1.75;padding-left:2px}
+.management-source{font-size:11px!important;line-height:1.6!important;color:var(--muted)!important;margin:11px 0 0!important}
+.management-source a{color:var(--violet);font-weight:700;text-underline-offset:2px}
+body.dark .learning-specific-distinction{background:var(--card)}
+body.dark .management-specifics{background:var(--lav)}
+
+.learning-legacy-notice{border:1px solid var(--edge);background:var(--lav);color:var(--ink);border-radius:10px;padding:10px 13px;font-size:12px;line-height:1.55;margin:0 0 14px}
+
 /* Night-inspired palette variants. Preserve the existing Night layout, depth,
    button states and hierarchy; let berry/sage hues accent quiet charcoal surfaces. */
 body.berry-bloom,body.midnight-sage{color-scheme:dark}
