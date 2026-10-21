@@ -1,0 +1,56 @@
+[
+  {
+    "id": "rch-clinical",
+    "name": "Royal Children's Hospital clinical practice guidelines",
+    "url": "https://www.rch.org.au/clinicalguide/",
+    "focus": "Paediatrics and neonatal care"
+  },
+  {
+    "id": "rch-anaphylaxis",
+    "name": "Royal Children's Hospital: Anaphylaxis",
+    "url": "https://www.rch.org.au/clinicalguide/guideline_index/Anaphylaxis/",
+    "focus": "Anaphylaxis and adrenaline"
+  },
+  {
+    "id": "australian-sepsis",
+    "name": "ACSQHC Sepsis Clinical Care Standard",
+    "url": "https://www.safetyandquality.gov.au/clinical-care-standards/sepsis",
+    "focus": "Sepsis and shock"
+  },
+  {
+    "id": "heart-acs",
+    "name": "Heart Foundation ACS guideline 2025",
+    "url": "https://www.heartfoundation.au/for-professionals/acs-guideline",
+    "focus": "Acute coronary syndromes"
+  },
+  {
+    "id": "stroke-living",
+    "name": "Stroke Foundation living guidelines",
+    "url": "https://informme.org.au/guidelines/living-clinical-guidelines-for-stroke-management",
+    "focus": "Stroke"
+  },
+  {
+    "id": "queensland-maternity",
+    "name": "Queensland Health maternity guidelines",
+    "url": "https://www.health.qld.gov.au/qcg/publications",
+    "focus": "Obstetrics and neonatology"
+  },
+  {
+    "id": "quality-standards",
+    "name": "ACSQHC clinical standards",
+    "url": "https://www.safetyandquality.gov.au/clinical-care-standards",
+    "focus": "Patient safety and clinical quality"
+  },
+  {
+    "id": "stroke-standard-2026",
+    "name": "ACSQHC 2026 Stroke Clinical Care Standard",
+    "url": "https://www.safetyandquality.gov.au/clinical-care-standards/stroke",
+    "focus": "Stroke assessment, acute care and rehabilitation"
+  },
+  {
+    "id": "stroke-updates",
+    "name": "Stroke Foundation living guideline changes",
+    "url": "https://informme.org.au/guidelines/living-guidelines-updates",
+    "focus": "Documented updated stroke recommendations"
+  }
+]

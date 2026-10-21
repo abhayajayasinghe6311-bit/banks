@@ -1,0 +1,36 @@
+name: Australian guideline clinical-review watch
+on:
+  push:
+    branches: [main, feature-live-australian-guideline-watch-20261022]
+    paths:
+      - '.github/workflows/guideline-review.yml'
+      - 'scripts/check_guideline_updates.py'
+      - 'guideline-sources.json'
+  schedule:
+    - cron: '15 3 * * 1'
+  workflow_dispatch:
+permissions:
+  contents: write
+  issues: write
+concurrency:
+  group: guideline-review
+  cancel-in-progress: false
+jobs:
+  check-guidelines:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Detect official clinical guidance changes
+        env:
+          GITHUB_TOKEN: ${{ github.token }}
+          GITHUB_REPOSITORY: ${{ github.repository }}
+        run: python3 scripts/check_guideline_updates.py
+      - name: Commit source fingerprints only (never MCQs)
+        run: |
+          if [ -n "$(git status --porcelain -- guideline-watch-state.json)" ]; then
+            git config user.name 'github-actions[bot]'
+            git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+            git add guideline-watch-state.json
+            git commit -m 'chore: update guideline website fingerprints'
+            git push
+          fi
