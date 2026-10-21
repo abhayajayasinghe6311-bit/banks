@@ -693,4 +693,16 @@ async function boot(){try{const resp=await fetch('manifest.json',{cache:'no-cach
  const firstUnanswered=bankData[b].findIndex(q=>!(state.banks[b]||{})[q.n]);
  cursor=requested>=0?requested:firstUnanswered>=0?firstUnanswered:0;
  renderBank();}else renderHome();updateBadge();}catch(e){$('app').innerHTML='<div class="load-error"><h2>Could not load the Study Garden 😢</h2><p>'+safe(e.message)+'</p><p>If you are opening the site from a downloaded ZIP, this online-ready version needs a web server. Publish it using GitHub Pages or run a local preview server.</p></div>';}}
+// Give practical management its own full-width row beneath the question and explanations.
+function positionManagementGuides(){
+ document.querySelectorAll('.learning-layout').forEach(layout=>{
+  const notes=layout.querySelector('.learning-card');
+  const management=notes?.querySelector('.management-guide');
+  if(!management)return;
+  management.classList.add('management-below-question');
+  layout.appendChild(management);
+ });
+}
+const managementLayoutObserver=new MutationObserver(()=>positionManagementGuides());
+managementLayoutObserver.observe($('app'),{childList:true,subtree:true});
 boot();
