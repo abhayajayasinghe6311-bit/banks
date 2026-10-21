@@ -172,7 +172,6 @@ function learningNotes(q,anchorId='learningNotes'){
  return `<aside class="learning-card" id="${safe(anchorId)}" aria-label="Clinical reasoning notes">
  <div class="learning-header"><span aria-hidden="true">🌷</span><div><div class="learning-eyebrow">YOUR LEARNING NOTES</div><h2>Understand the <em>why</em></h2></div></div>
  <div class="learning-section learning-correct"><div class="learning-tag">✓ The best answer</div><h3>${safe(q.key)}. ${safe(good)}</h3><p>${safe(rationale)}</p></div>
- <div class="learning-section"><h3 class="learning-section-title">🧠 Think like an examiner</h3><p>Find the decisive clue and explain why this choice is the safest or most appropriate for this patient.</p></div>
  <div class="learning-section"><h3 class="learning-section-title">🔎 Why the other answers lose</h3><div class="learning-alternatives">${others}</div></div>
  ${q.pearl?`<div class="learning-section learning-pearl"><h3>💡 Remember this principle</h3><p>${safe(q.pearl)}</p></div>`:''}
  ${q.pivot?`<div class="learning-section learning-pivot"><h3>🔄 If the scenario changed…</h3><p>${safe(q.pivot)}</p></div>`:''}
