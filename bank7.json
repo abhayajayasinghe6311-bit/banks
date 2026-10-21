@@ -3781,19 +3781,19 @@
     "stem": "A 56-year-old man has severe epigastric pain radiating to the back and serum lipase six times the upper limit of normal. His ALT is markedly elevated and ultrasound shows gallstones but no visible common bile duct stone. He has no fever or jaundice.",
     "ask": "Which ONE is the MOST APPROPRIATE approach to biliary intervention?",
     "options": [
-      "Perform urgent ERCP for every case of gallstone pancreatitis",
-      "Perform immediate laparoscopic cholecystectomy before treating acute pancreatitis in all cases",
-      "Give prophylactic IV antibiotics to prevent pancreatic necrosis",
-      "Obtain a routine MRCP and ERCP in every gallstone-pancreatitis patient regardless of obstruction",
-      "Reserve urgent ERCP for evidence of cholangitis or ongoing biliary obstruction"
+      "Perform urgent ERCP for any pancreatitis with gallstones, even if stable.",
+      "Operate on the gallbladder before giving IV fluids in all presentations.",
+      "Give preventive IV antibiotics to stop sterile pancreatic inflammation.",
+      "Request ERCP for all patients solely because serum ALT is elevated.",
+      "Reserve urgent ERCP for cholangitis or persistent bile-duct obstruction."
     ],
     "key": "E",
     "explanations": [
-      "ERCP without cholangitis/obstruction offers limited benefit and has harms.",
-      "Cholecystectomy is important, often during the same admission for mild disease, but its exact timing depends on acute severity.",
-      "Antibiotics are not routinely given for sterile pancreatitis.",
-      "Duct imaging may help uncertain obstruction; automatically doing both is unwarranted.",
-      "Gallstone pancreatitis usually needs supportive care and definitive gallbladder management; ERCP is urgent when cholangitis or persistent biliary obstruction is suspected."
+      "Routine urgent ERCP does not improve gallstone pancreatitis without cholangitis or ongoing obstruction and exposes patients to procedural complications.",
+      "Supportive pancreatitis care precedes elective prevention of recurrence. Index-admission cholecystectomy is often appropriate after clinical improvement in mild disease, but not as universal first resuscitation.",
+      "Prophylactic antibiotics are not routinely recommended for sterile acute pancreatitis; antibiotics are used for suspected/confirmed infection or cholangitis.",
+      "ALT can implicate gallstone aetiology but does not by itself prove a retained CBD stone. Further biliary imaging is based on clinical, bilirubin and imaging features.",
+      "Without fever/jaundice or a visible obstructing stone, manage acute pancreatitis supportively and assess ongoing obstruction. Urgent ERCP is reserved principally for cholangitis or persistent biliary blockage."
     ],
     "pearl": "Distinguish gallstone pancreatitis from cholangitis: fever, jaundice, sepsis and obstructive features change urgency.",
     "pivot": "If jaundice and ascending cholangitis develop, prompt biliary drainage becomes essential.",
@@ -3825,24 +3825,31 @@
     "management": {
       "steps": [
         [
-          "Resuscitate",
-          "Sepsis ABC, cultures, IV antibiotics, fluids/vasopressors as indicated."
+          "Support acute pancreatitis",
+          "Assess severity, administer individualized IV crystalloid, analgesia, antiemetics and early enteral nutrition as tolerated; avoid unnecessary antibiotics."
         ],
         [
-          "Relieve obstruction",
-          "Urgent ERCP or alternative biliary drainage for severe ascending cholangitis."
+          "Look for persistent bile-duct obstruction",
+          "Trend bilirubin/cholestatic enzymes and repeat duct imaging (MRCP or EUS if indicated) when obstruction remains possible; no fever or jaundice argues against cholangitis."
         ],
         [
-          "Monitor",
-          "LFT, lactate, renal function and organ dysfunction."
+          "Reserve ERCP for correct indication",
+          "Arrange urgent ERCP when cholangitis or persistent CBD obstruction is found; ALT elevation alone is not sufficient."
         ],
         [
           "Prevent recurrence",
-          "Arrange later definitive stone/gallbladder treatment when stabilised."
+          "For mild gallstone pancreatitis, plan cholecystectomy during the index admission after recovery when feasible; tailor to severity and comorbidities."
         ]
       ],
-      "safety": "Antibiotics alone cannot reliably clear an infected obstructed duct.",
-      "local": "Exact doses, escalation thresholds and contraindications must be verified against current local protocols and senior advice."
+      "source": {
+        "name": "Queensland Health Hepatobiliary/Pancreatic Surgery prioritisation",
+        "url": "https://www.health.qld.gov.au/cpc/general-surgery/hepatobiliary-surgery"
+      }
+    },
+    "alternate": {
+      "scenario": "The patient develops fever, jaundice, hypotension and imaging evidence of an obstructed common bile duct during gallstone pancreatitis.",
+      "management": "Treat as ascending cholangitis with sepsis resuscitation, prompt broad-spectrum IV antibiotics and urgent biliary decompression, usually ERCP, under gastroenterology/surgical care. Do not continue uncomplicated pancreatitis observation.",
+      "reason": "Infected obstructed bile ducts require source control; uncomplicated gallstone pancreatitis does not benefit from automatic ERCP."
     }
   },
   {
