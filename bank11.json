@@ -857,18 +857,18 @@
     "stem": "A 35-year-old hospitalised for psychosis was started on high-dose haloperidol four days ago. Now temperature is 40°C, there is marked generalized 'lead-pipe' rigidity, autonomic lability and CK 12,000 U/L. Reflexes are not brisk and no clonus is seen.",
     "ask": "Which is the BEST initial management?",
     "options": [
-      "Treat as serotonin syndrome and give more serotonergic medication.",
-      "Stop antipsychotic and initiate emergency supportive and critical-care management with specialist-directed therapy.",
-      "Give oral paracetamol alone and review CK in one week.",
-      "Wait for MRI brain to prove diagnosis before ceasing antipsychotics.",
-      "Increase haloperidol to reduce agitation and muscle rigidity."
+      "Switch from haloperidol to another high-potency antipsychotic immediately.",
+      "Stop the antipsychotic and begin urgent intensive supportive medical care.",
+      "Give paracetamol only and review creatine kinase after one week.",
+      "Perform MRI before stopping the antipsychotic or starting resuscitation.",
+      "Increase haloperidol and add anticholinergic therapy for the stiffness."
     ],
     "explanations": [
-      "NMS follows dopamine antagonists and features severe rigidity rather than clonus/hyperreflexia.",
-      "Correct: NMS risks rhabdomyolysis, renal failure and death.",
-      "Hyperthermia from sustained muscle activity and autonomic instability needs urgent medical care.",
-      "NMS is primarily clinical and treatment cannot wait for imaging.",
-      "Ongoing dopamine blockade worsens probable NMS."
+      "A further dopamine-receptor blocker may perpetuate NMS and must not replace immediate emergency stabilisation.",
+      "Recent dopamine blockade, 40°C fever, severe lead-pipe rigidity, autonomic instability and markedly elevated CK strongly indicate NMS. Stop the culprit drug, admit urgently for cooling, cardiorespiratory, fluid, renal and electrolyte support and specialist treatment.",
+      "Paracetamol alone does not reverse the hypermetabolic muscular process and does not prevent rhabdomyolysis, renal injury or cardiorespiratory deterioration.",
+      "NMS is diagnosed clinically; imaging may be needed for alternative diagnoses but must not delay stopping the drug and critical-care support.",
+      "Raising the antipsychotic dose can worsen NMS. The severe systemic illness requires cessation of dopamine antagonism and supportive management."
     ],
     "key": "B",
     "pearl": "Severe rigidity and high CK following dopamine blockade distinguish NMS from serotonin toxicity with clonus.",
@@ -876,26 +876,35 @@
     "management": {
       "steps": [
         [
-          "Stop trigger",
-          "Withhold dopamine antagonists and alert psychiatry, medicine and ICU."
+          "Stop the trigger",
+          "Immediately withhold haloperidol and other dopamine-blocking medicines; summon emergency medical, psychiatry, critical-care and toxicology input."
         ],
         [
-          "Support organs",
-          "Aggressive supportive care with careful fluids, cooling, electrolyte/renal and ECG/CK monitoring."
+          "Stabilise organ function",
+          "ABCDE and continuous observations, active cooling, fluid treatment guided by status, electrolytes, kidney function, CK and urine output; assess for rhabdomyolysis, aspiration and thromboembolism."
         ],
         [
-          "Consider targeted care",
-          "Specialist review for bromocriptine, dantrolene or ECT in severe/refractory NMS."
+          "Treat severe refractory symptoms",
+          "Specialists may consider bromocriptine or dantrolene depending on severity and complications; do not delay supportive care for a specific antidote."
         ],
         [
-          "After recovery",
-          "Carefully reassess future antipsychotic choice and dosing."
+          "Plan safe psychiatric treatment",
+          "After full recovery, specialist review of antipsychotic need, safe rechallenge timing, dose and ongoing monitoring."
         ]
       ],
-      "safety": "Avoid restraints that increase heat production; monitor for rhabdomyolysis and thrombosis.",
-      "local": "Follow local mental health, safeguarding and prescribing policy; exact doses and legal requirements vary."
+      "safety": "Paracetamol is not definitive treatment for NMS-related hyperthermia; never continue the responsible dopamine blocker during suspected NMS.",
+      "local": "Refer to local critical-care and poisons guidance.",
+      "source": {
+        "name": "Austin Health Clinical Toxicology: Neuroleptic Malignant Syndrome (2025)",
+        "url": "https://www.austin.org.au/Assets/Files/NMS_V3_8_2025.pdf"
+      }
     },
-    "n": 19
+    "n": 19,
+    "alternate": {
+      "scenario": "Instead the patient has high fever, agitation, clonus, hyperreflexia and diarrhoea after starting a serotonergic medication rather than haloperidol.",
+      "management": "Assess for serotonin toxicity: immediately stop serotonergic agents, give supportive resuscitation, cooling and benzodiazepines for agitation/neuromuscular hyperactivity; consider cyproheptadine under toxicology guidance for moderate/severe cases. Avoid introducing serotonergic drugs or assuming NMS without reconciling medication exposure and neuromuscular findings.",
+      "reason": "Clonus/hyperreflexia with serotonergic exposure favours serotonin syndrome; lead-pipe rigidity after dopamine blockade supports NMS."
+    }
   },
   {
     "domain": "Medicine & emergency",
