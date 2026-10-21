@@ -384,3 +384,14 @@ body.dark .bookmark-empty{background:var(--lav)}
 .management-safety b{color:var(--red-ink);font-size:13px}
 .management-safety p{color:var(--red-ink);font-size:13px;line-height:1.7;margin:5px 0 0}
 .management-local{font-size:11px!important;color:var(--muted)!important;border-top:1px solid var(--edge);padding-top:9px;margin-top:12px!important}
+
+
+/* Keep the question screen quiet: in-bank search opens from header only. */
+.bank-search-trigger{font:inherit;font-size:17px;line-height:1;border:1px solid var(--edge);border-radius:11px;padding:8px 9px;background:var(--card);cursor:pointer;color:var(--ink);display:inline-flex;align-items:center;justify-content:center;min-width:38px;min-height:36px}
+.bank-search-trigger:hover,.bank-search-trigger.active{background:var(--lav);border-color:var(--violet)}
+.bank-search-trigger:focus-visible{outline:2px solid var(--violet);outline-offset:2px}
+.bank-search-drawer[hidden]{display:none!important}
+.bank-search-drawer{margin-top:13px}
+.bank-search-drawer .garden-search{margin:0 0 14px}
+body.dark .bank-search-trigger{background:#292a39;color:var(--ink)}
+body.dark .bank-search-trigger:hover,body.dark .bank-search-trigger.active{background:var(--lav)}
