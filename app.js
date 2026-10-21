@@ -39,9 +39,11 @@ function updateProgress(bank,n,choice){
  if($('bankProgressBar'))$('bankProgressBar').style.width=Math.round(status.attempted*100/total)+'%';
  if($('bankPercent'))$('bankPercent').textContent=Math.round(status.attempted*100/total)+'%';
  if($('restartBank'))$('restartBank').disabled=false;
- if(status.attempted===total){
-  const done=document.createElement('div');done.className='bank-finished-note';done.textContent='🌸 Bank completed! Your results are saved — review the explanations or return to the garden.';
-  questionCard.append(done);
+ if(status.attempted===total&&!$('bankFinishActions')){
+  // Add the actions below the question: no reflow above the reader's position.
+  nav?.insertAdjacentHTML('afterend',bankFinishActions(bank));
+  const header=document.querySelector('.bank-title-area');
+  if(header&&!document.querySelector('.bank-results-inline'))header.insertAdjacentHTML('afterend','<div class="bank-results-inline">🌷 Bank complete <a href="?results='+bank+'">View result analysis →</a></div>');
  }
 }
 function retryAnswer(bank,n,choice){const id=idOf(bank,n),q=bankData[bank]?.find(q=>q.n===n);if(!q)return;const r=state.review[id];if(!r||r.mastered)return;r.tries=(r.tries||0)+1;r.lastChoice=choice;r.lastAt=Date.now();if(choice===q.key){r.mastered=true;r.masteredAt=Date.now();}save();renderReview();}
@@ -178,10 +180,82 @@ function learningNotes(q,anchorId='learningNotes'){
  <p class="learning-footer">Read the reasoning, then try explaining the answer aloud before moving on. ♡</p>
  </aside>`;
 }
+const PRACTICE_TOPICS=[{"id":"medicine","name":"Medicine","icon":"🫀","help":"Cardiac, respiratory, renal, endocrine & infection"},{"id":"surgery","name":"Surgery","icon":"🩺","help":"GI, general surgery & perioperative care"},{"id":"obgyn","name":"O&G","icon":"🌸","help":"Pregnancy, childbirth & gynaecology"},{"id":"paeds","name":"Paediatrics","icon":"🧸","help":"Children and newborns"},{"id":"psychiatry","name":"Psychiatry","icon":"🧠","help":"Mental health & addictions"},{"id":"gp","name":"GP & Ethics","icon":"🌿","help":"Primary care, prescribing, screening & ethics"},{"id":"emergency","name":"Emergency","icon":"🚑","help":"Urgent decisions & resuscitation"},{"id":"neurology","name":"Neurology","icon":"🧬","help":"Brain, spine, stroke & nervous system"},{"id":"msk","name":"Eyes, ENT & MSK","icon":"👁️","help":"Eye, ear, orthopaedics & anatomy"},{"id":"integrated","name":"Mixed clinical","icon":"✨","help":"Interdisciplinary reasoning"}];
+function practiceGroups(domain){
+ const d=String(domain||'').toLowerCase();
+ const found=new Set();
+ if(/medicine|cardio|respir|renal|endocrin|electrolyte|infect|haemat|oncolog|vascular/.test(d))found.add('medicine');
+ if(/surg|gastro|perioperative/.test(d))found.add('surgery');
+ if(/obstetric|gynae/.test(d))found.add('obgyn');
+ if(/paediatr|neonat|developmental/.test(d))found.add('paeds');
+ if(/psychiatr|substance|addiction/.test(d))found.add('psychiatry');
+ if(/general practice|\bgp\b|ethic|palliative|primary care|public health|screening|prescribing|safety systems/.test(d))found.add('gp');
+ if(/emergency|resuscitat|critical care|intern preparedness|patient safety/.test(d))found.add('emergency');
+ if(/neurol|neurosurg|stroke/.test(d))found.add('neurology');
+ if(/ophthalm|eye|orthop|msk|ent\b|anatomy/.test(d))found.add('msk');
+ if(!found.size)found.add('integrated');
+ return [...found];
+}
+function primaryStudyGroup(domain){
+ const groups=practiceGroups(domain);
+ const order=['obgyn','paeds','psychiatry','surgery','gp','emergency','neurology','msk','medicine','integrated'];
+ return order.find(id=>groups.includes(id))||'integrated';
+}
+function studyGroupName(id){return PRACTICE_TOPICS.find(g=>g.id===id)?.name||id;}
+function bankFinishActions(bank){
+ return `<section class="bank-finish-actions" id="bankFinishActions" aria-label="Bank finished">
+  <div class="bank-finish-copy"><span class="bank-finish-flower">🌷</span><div><strong>You've completed Bank ${bank}!</strong><p>Your answers are saved. Ready to see what you learned?</p></div></div>
+  <div class="bank-finish-buttons"><a class="btn soft" href="./">⌂ Return Home</a><a class="btn" href="?results=${bank}">📊 View Result Analysis →</a></div>
+ </section>`;
+}
+function buildResultMarkup({title,subtitle,entries,backHref,backText,reviewHref,mode}){
+ const n=entries.length,answered=entries.filter(e=>e.answer).length,correct=entries.filter(e=>e.answer?.correct).length;
+ const missed=answered-correct,pct=answered?Math.round(correct*100/answered):0,complete=answered===n;
+ const byGroup=new Map();
+ for(const e of entries){
+  const name=studyGroupName(primaryStudyGroup(e.q.domain));
+  if(!byGroup.has(name))byGroup.set(name,{name,count:0,correct:0,wrong:0});
+  const row=byGroup.get(name);row.count++;
+  if(e.answer?.correct)row.correct++;else if(e.answer)row.wrong++;
+ }
+ const groups=[...byGroup.values()].sort((a,b)=>a.name.localeCompare(b.name));
+ const rated=groups.filter(x=>x.count>=2);
+ const strongest=[...rated].sort((a,b)=>b.correct/b.count-a.correct/a.count||b.count-a.count)[0];
+ const focus=[...rated].sort((a,b)=>a.correct/a.count-b.correct/b.count||b.wrong-a.wrong)[0];
+ const rows=groups.map(g=>{
+  const percent=Math.round(g.correct/g.count*100);
+  return `<div class="result-domain-row"><div class="result-domain-heading"><span>${safe(g.name)} <small>${g.count} questions</small></span><strong>${g.correct}/${g.count} · ${percent}%</strong></div><div class="result-domain-track"><span style="width:${percent}%"></span></div></div>`;
+ }).join('');
+ const praise=complete?'🌷 A whole bank of practice, completed.':'🌱 Your progress so far';
+ const advice=missed?`You have <strong>${missed} question${missed===1?'':'s'}</strong> worth revisiting. Read their explanations and try them again in your Wrong Answers Garden.`:'No incorrect answers recorded in this set — lovely work!';
+ const focusHtml=focus&&focus.wrong?`<p>📚 <b>Suggested revision focus:</b> ${safe(focus.name)} (${focus.correct}/${focus.count} correct). Review the decisive clinical clues and the common distractors.</p>`:'<p>Keep revising across specialties to strengthen your clinical reasoning.</p>';
+ return `<div class="results-page">
+   <div class="results-breadcrumb"><a href="${backHref}">← ${safe(backText)}</a><a href="./">⌂ Home</a></div>
+   <section class="results-hero">
+    <div class="results-overline">YOUR STUDY GARDEN · ${complete?'COMPLETED':'IN PROGRESS'} ✿</div>
+    <h1>🌷 ${safe(title)}</h1>
+    <p>${safe(subtitle)}</p>
+    <div class="results-hero-core"><div class="results-ring" style="--score-angle:${pct*3.6}deg"><div><strong>${pct}%</strong><small>${complete?'Final accuracy':'Accuracy so far'}</small></div></div>
+    <div class="results-overview"><strong>${correct} out of ${answered} correct</strong><p>${praise}</p><div class="results-pills"><span>✓ ${correct} correct</span><span>↻ ${missed} to review</span>${complete?'':`<span>⏳ ${n-answered} unanswered</span>`}</div></div></div>
+   </section>
+   <section class="results-breakdown"><div class="results-section-heading"><h2>📊 Specialty breakdown</h2><p>Find your strengths and your next revision priorities.</p></div><div class="results-domains">${rows}</div></section>
+   <section class="results-insights"><div class="results-section-heading"><h2>💡 What to work on next</h2></div>
+    ${strongest?`<p>🌼 <b>Strongest area:</b> ${safe(strongest.name)} (${strongest.correct}/${strongest.count} correct).</p>`:''}
+    ${focusHtml}<p>${advice}</p>
+   </section>
+   <div class="results-actions"><a class="btn soft" href="./">⌂ Return Home</a><a class="btn soft" href="${reviewHref}">🌿 Wrong Answers Garden</a><a class="btn" href="${backHref}">${mode==='practice'?'↻ Back to practice':'← Back to Bank'}</a></div>
+ </div>`;
+}
+function renderBankResults(bank){
+ const bm=manifest.banks.find(x=>x.id===bank),qs=bankData[bank];
+ if(!bm||!qs){$('app').innerHTML='<div class="empty">Bank not found.</div>';return;}
+ route={results:bank};
+ $('app').innerHTML=buildResultMarkup({title:`Bank ${bank} · ${bm.name}`,subtitle:`${qs.length} questions · First-attempt results and study priorities`,entries:qs.map(q=>({q,answer:(state.banks[bank]||{})[q.n]})),backHref:url(bank),backText:`Back to Bank ${bank}`,reviewHref:`?review=1&bank=${bank}`,mode:'bank'});
+}
 function renderBank(){const b=route.bank;const bm=manifest.banks.find(x=>x.id===b);if(!bm)return;const qset=bankData[b];if(!qset){$('app').innerHTML='<div class="loading">Opening your questions… 🌷</div>';return;}activeList=filteredQuestions(b);cursor=Math.max(0,Math.min(cursor,activeList.length-1));const q=activeList[cursor],tot=answeredStatus(b);const pct=qset.length?Math.round(tot.attempted*100/qset.length):0;const cats=[...new Set(qset.map(q=>q.domain))].sort();const summary=`${tot.attempted}/${qset.length} answered · ${tot.correct} correct · ${tot.attempted-tot.correct} incorrect`;
  const finished=tot.attempted===qset.length;
  const specialtySummary=[...new Set(qset.map(x=>x.domain))].map(d=>{const subset=qset.filter(x=>x.domain===d);const count=subset.filter(x=>(state.banks[b]||{})[x.n]?.correct).length;return `<div class="flex between"><span>${safe(d)}</span><b>${count}/${subset.length} · ${Math.round(count/subset.length*100)}%</b></div>`;}).join('');
- const finalSummary=finished?`<div class="panel"><div class="eyebrow">BANK ${b} COMPLETED 🎉</div><h2>Final score: ${tot.correct}/${qset.length} (${Math.round(100*tot.correct/qset.length)}%)</h2><p class="small">Your original answers are locked. Review mistakes separately to build mastery without changing this score.</p><div style="display:grid;gap:8px">${specialtySummary}</div><div class="flex" style="margin-top:16px"><a href="?review=1" class="btn rose">🌿 Review your mistakes</a></div></div>`:'';
+ const finalSummary=finished?`<div class="bank-results-inline">🌷 Bank complete <a href="?results=${b}">View result analysis →</a></div>`:'';
  $('app').innerHTML=`<section class="bank-intro" aria-label="Bank overview">
  <div class="bank-intro-nav">
   <a class="bank-back-link" href="./">← All banks</a>
@@ -200,7 +274,7 @@ function renderBank(){const b=route.bank;const bm=manifest.banks.find(x=>x.id===
   <span class="small bank-progress-percent"><span id="bankPercent">${pct}%</span> complete</span>
  </div>
  <div class="progress bank-progress"><span id="bankProgressBar" style="width:${pct}%"></span></div>
- </section>${finalSummary}<div class="toolbar bank-toolbar"><div class="flex"><label class="small">Show <select id="filter"><option value="all">All questions</option><option value="unanswered">Unanswered</option><option value="wrong">Original mistakes</option><option value="bookmarks">Bookmarked</option></select></label><label class="small">Specialty <select id="domain"><option value="all">All specialties</option>${cats.map(x=>`<option value="${safe(x)}">${safe(x)}</option>`).join('')}</select></label></div><div class="small">${activeList.length?`${cursor+1} / ${activeList.length} shown`:'No matches'}</div></div>${q?`<div class="learning-layout ${(state.banks[b]||{})[q.n]?'has-notes':''}"><div class="quizbox quiz-question"><div class="meta"><b>Domain:</b> ${safe(q.domain)} &nbsp; · &nbsp; <b>Skillset:</b> ${safe(q.skill||'Clinical reasoning')} &nbsp; · &nbsp; <b>Context:</b> ${safe(q.context||'Clinical')}</div><div class="question-label">EMQ ${q.n}</div><div class="stem">${safe(q.stem)}</div><p class="ask">${safe(q.ask||'Which of the following is the single BEST answer?')}</p><div class="choices" id="choices">${optionHtml(q,(state.banks[b]||{})[q.n]?.choice)}</div>${(state.banks[b]||{})[q.n]?`<div class="feedback ${(state.banks[b][q.n].correct?'yes':'no')}">${state.banks[b][q.n].correct?'✓ Correct — nicely reasoned!':'✗ Not quite. Correct answer: '+q.key+'.'} Your first response is locked.</div>`:``}<div class="navbox"><button class="btn soft" id="prev" ${cursor===0?'disabled':''}>← Previous</button><button class="btn rose" id="bookmark">${state.bookmarks[idOf(b,q.n)]?'★ Bookmarked':'☆ Bookmark'}</button><button class="btn" id="next" ${cursor===activeList.length-1?'disabled':''}>Next →</button></div></div>${(state.banks[b]||{})[q.n]?learningNotes(q):`<aside class="learning-card learning-placeholder" aria-label="Learning notes preview"><div class="learning-placeholder-emoji" aria-hidden="true">🌷</div><h2>Learning notes will bloom here</h2><p>Choose your answer and explore the <b>clinical reasoning</b>, why the alternatives lose, and the principles worth remembering.</p></aside>`}</div>`:`<div class="empty">No questions here 🌷 Try another filter.</div>`}`;
+ </section>${finalSummary}<div class="toolbar bank-toolbar"><div class="flex"><label class="small">Show <select id="filter"><option value="all">All questions</option><option value="unanswered">Unanswered</option><option value="wrong">Original mistakes</option><option value="bookmarks">Bookmarked</option></select></label><label class="small">Specialty <select id="domain"><option value="all">All specialties</option>${cats.map(x=>`<option value="${safe(x)}">${safe(x)}</option>`).join('')}</select></label></div><div class="small">${activeList.length?`${cursor+1} / ${activeList.length} shown`:'No matches'}</div></div>${q?`<div class="learning-layout ${(state.banks[b]||{})[q.n]?'has-notes':''}"><div class="quizbox quiz-question"><div class="meta"><b>Domain:</b> ${safe(q.domain)} &nbsp; · &nbsp; <b>Skillset:</b> ${safe(q.skill||'Clinical reasoning')} &nbsp; · &nbsp; <b>Context:</b> ${safe(q.context||'Clinical')}</div><div class="question-label">EMQ ${q.n}</div><div class="stem">${safe(q.stem)}</div><p class="ask">${safe(q.ask||'Which of the following is the single BEST answer?')}</p><div class="choices" id="choices">${optionHtml(q,(state.banks[b]||{})[q.n]?.choice)}</div>${(state.banks[b]||{})[q.n]?`<div class="feedback ${(state.banks[b][q.n].correct?'yes':'no')}">${state.banks[b][q.n].correct?'✓ Correct — nicely reasoned!':'✗ Not quite. Correct answer: '+q.key+'.'} Your first response is locked.</div>`:``}<div class="navbox"><button class="btn soft" id="prev" ${cursor===0?'disabled':''}>← Previous</button><button class="btn rose" id="bookmark">${state.bookmarks[idOf(b,q.n)]?'★ Bookmarked':'☆ Bookmark'}</button><button class="btn" id="next" ${cursor===activeList.length-1?'disabled':''}>Next →</button></div>${finished&&cursor===activeList.length-1?bankFinishActions(b):''}</div>${(state.banks[b]||{})[q.n]?learningNotes(q):`<aside class="learning-card learning-placeholder" aria-label="Learning notes preview"><div class="learning-placeholder-emoji" aria-hidden="true">🌷</div><h2>Learning notes will bloom here</h2><p>Choose your answer and explore the <b>clinical reasoning</b>, why the alternatives lose, and the principles worth remembering.</p></aside>`}</div>`:`<div class="empty">No questions here 🌷 Try another filter.</div>`}`;
  $('filter').value=filter;$('domain').value=domain;$('filter').onchange=e=>{filter=e.target.value;cursor=0;renderBank()};$('domain').onchange=e=>{domain=e.target.value;cursor=0;renderBank()};
  $('restartBank').onclick=()=>{
    if(!confirm('Restart Bank '+b+'? This will erase all '+tot.attempted+' saved first attempts and reset this bank score to 0. Other banks, bookmarks and your Wrong Answers Garden will remain unchanged. Export a progress backup first if you want to keep this attempt.'))return;
@@ -266,7 +340,7 @@ let initialTheme='light';
 try{initialTheme=localStorage.getItem('spaw.theme')||(localStorage.getItem('spaw-highcontrast')==='1'?'contrast':'light')}catch(e){}
 applyTheme(initialTheme);
 $('themeSelect').onchange=e=>applyTheme(e.target.value);
-async function boot(){try{const resp=await fetch('manifest.json',{cache:'no-cache'});if(!resp.ok)throw Error('Cannot load question manifest.');manifest=await resp.json();const params=new URLSearchParams(location.search);if(params.has('review')){route={review:true};await ensureAllBanks();renderReview();}else if(params.has('bank')){const b=Number(params.get('bank'));if(!manifest.banks.some(x=>x.id===b))throw Error('That bank is not published yet.');route={bank:b};await getBank(b);
+async function boot(){try{const resp=await fetch('manifest.json',{cache:'no-cache'});if(!resp.ok)throw Error('Cannot load question manifest.');manifest=await resp.json();const params=new URLSearchParams(location.search);if(params.has('review')){route={review:true};reviewBank=params.get('bank')||'all';await ensureAllBanks();renderReview();}else if(params.has('results')){const b=Number(params.get('results'));if(!manifest.banks.some(x=>x.id===b))throw Error('Unknown bank.');await getBank(b);renderBankResults(b);}else if(params.has('bank')){const b=Number(params.get('bank'));if(!manifest.banks.some(x=>x.id===b))throw Error('That bank is not published yet.');route={bank:b};await getBank(b);
  // Resume from the earliest unanswered EMQ when reopening a bank.
  // Keep the complete bank visible so Previous/Next and old answers remain reviewable.
  filter='all';domain='all';
