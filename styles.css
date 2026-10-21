@@ -503,3 +503,9 @@ body.midnight-sage .btn:not(.soft):not(.rose),body.midnight-sage a.btn:not(.soft
 #app .analysis-review-choice,#app .analysis-review-open{font-size:14px;line-height:1.6}
 #app .choice:focus-visible,#app .btn:focus-visible,#app .theme-picker select:focus-visible{outline:3px solid var(--violet);outline-offset:3px}
 @media(max-width:580px){#app .management-guide li,#app .management-guide li strong,#app .management-guide li span,#app .explainline{font-size:15px}}
+
+/* Management stays under the two-column question + learning-notes row. */
+#app .learning-layout > .management-below-question{grid-column:1 / -1;width:100%;margin-top:0;padding:24px!important;min-width:0}
+#app .management-below-question ol{grid-template-columns:repeat(2,minmax(0,1fr));column-gap:30px;row-gap:16px}
+#app .management-below-question li{min-width:0}
+@media(max-width:740px){#app .learning-layout > .management-below-question{max-width:850px;margin-inline:auto;padding:18px!important}#app .management-below-question ol{grid-template-columns:minmax(0,1fr)}}
