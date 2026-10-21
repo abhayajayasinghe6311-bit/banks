@@ -462,10 +462,10 @@ function learningNotes(q,anchorId='learningNotes',selected=null){
   <div class="learning-section learning-correct"><div class="learning-tag">✓ The best answer</div><h3>${safe(q.key)}. ${safe(good)}</h3><p>${safe(rationale)}</p></div>
   ${otherOptions?`<div class="learning-section"><h3 class="learning-section-title">🔎 Why the other options are less suitable</h3><div class="learning-alternatives">${otherOptions}</div></div>`:''}
   ${q.pearl&&!wrong?`<div class="learning-section learning-pearl"><h3>💡 Remember this principle</h3><p>${safe(q.pearl)}</p></div>`:''}
-  ${q.management?.steps?.length?`<div class="learning-section management-guide"><h3>🩺 Practical management — what to do</h3><p class="management-intro">Use this as a study sequence; assess clinical severity and follow your hospital's current protocols and senior advice.</p><ol>${q.management.steps.map(step=>`<li><strong>${safe(step[0])}</strong><span>${safe(step[1])}</span></li>`).join('')}</ol>${q.management.safety?`<div class="management-safety"><b>⚠ Safety / escalation</b><p>${safe(q.management.safety)}</p></div>`:''}${q.management.local?`<p class="management-local">${safe(q.management.local)}</p>`:''}</div>`:''}
   ${q.pivot?`<div class="learning-section learning-pivot"><h3>🔄 When would the answer change?</h3><p>${safe(q.pivot)}</p></div>`:''}
   <p class="learning-footer">${wrong?'Review the distinction, then try explaining it in your own words. ♡':'Understand the principle, then move on when you are ready. ♡'}</p>
- </aside>`;
+ </aside>
+  ${q.management?.steps?.length?`<div class="learning-section management-guide management-below-question"><h3>🩺 Practical management — what to do</h3><p class="management-intro">Use this as a study sequence; assess clinical severity and follow your hospital's current protocols and senior advice.</p><ol>${q.management.steps.map(step=>`<li><strong>${safe(step[0])}</strong><span>${safe(step[1])}</span></li>`).join('')}</ol>${q.management.safety?`<div class="management-safety"><b>⚠ Safety / escalation</b><p>${safe(q.management.safety)}</p></div>`:''}${q.management.local?`<p class="management-local">${safe(q.management.local)}</p>`:''}</div>`:''}`;
 }
 const PRACTICE_TOPICS=[{"id":"medicine","name":"Medicine","icon":"🫀","help":"Cardiac, respiratory, renal, endocrine & infection"},{"id":"surgery","name":"Surgery","icon":"🩺","help":"GI, general surgery & perioperative care"},{"id":"obgyn","name":"O&G","icon":"🌸","help":"Pregnancy, childbirth & gynaecology"},{"id":"paeds","name":"Paediatrics","icon":"🧸","help":"Children and newborns"},{"id":"psychiatry","name":"Psychiatry","icon":"🧠","help":"Mental health & addictions"},{"id":"gp","name":"GP & Ethics","icon":"🌿","help":"Primary care, prescribing, screening & ethics"},{"id":"emergency","name":"Emergency","icon":"🚑","help":"Urgent decisions & resuscitation"},{"id":"neurology","name":"Neurology","icon":"🧬","help":"Brain, spine, stroke & nervous system"},{"id":"msk","name":"Eyes, ENT & MSK","icon":"👁️","help":"Eye, ear, orthopaedics & anatomy"},{"id":"integrated","name":"Mixed clinical","icon":"✨","help":"Interdisciplinary reasoning"}];
 function practiceGroups(domain){
@@ -693,16 +693,4 @@ async function boot(){try{const resp=await fetch('manifest.json',{cache:'no-cach
  const firstUnanswered=bankData[b].findIndex(q=>!(state.banks[b]||{})[q.n]);
  cursor=requested>=0?requested:firstUnanswered>=0?firstUnanswered:0;
  renderBank();}else renderHome();updateBadge();}catch(e){$('app').innerHTML='<div class="load-error"><h2>Could not load the Study Garden 😢</h2><p>'+safe(e.message)+'</p><p>If you are opening the site from a downloaded ZIP, this online-ready version needs a web server. Publish it using GitHub Pages or run a local preview server.</p></div>';}}
-// Give practical management its own full-width row beneath the question and explanations.
-function positionManagementGuides(){
- document.querySelectorAll('.learning-layout').forEach(layout=>{
-  const notes=layout.querySelector('.learning-card');
-  const management=notes?.querySelector('.management-guide');
-  if(!management)return;
-  management.classList.add('management-below-question');
-  layout.appendChild(management);
- });
-}
-const managementLayoutObserver=new MutationObserver(()=>positionManagementGuides());
-managementLayoutObserver.observe($('app'),{childList:true,subtree:true});
 boot();
