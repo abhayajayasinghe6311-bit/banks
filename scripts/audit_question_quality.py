@@ -67,9 +67,9 @@ for bank in manifest["banks"]:
                 errors.append(f"Bank {number} Q{n}: malformed management steps")
             text = " ".join(" ".join(map(str, step)) for step in steps).lower()
             stem = (q.get("stem", "") + " " + q.get("ask", "")).lower()
-            if ("pulmonary embol" in stem or "high-risk pe" in stem) and any(term in text for term in ("stemi", "primary pci", "coronary reperfusion")):
+            if ("pulmonary embol" in stem or "high-risk pe" in stem) and (re.search(r"\bstemi\b", text) or "primary pci" in text or "coronary reperfusion" in text):
                 suspects.append(f"POSSIBLE CLINICAL MISMATCH: Bank {number} Q{n} pulmonary embolism / coronary pathway")
-            if ("intracerebral haemorrhage" in stem or "intracerebral hemorrhage" in stem) and any(term in text for term in ("stemi", "activate reperfusion", "thrombolysis pathway")):
+            if ("intracerebral haemorrhage" in stem or "intracerebral hemorrhage" in stem) and (re.search(r"\bstemi\b", text) or "activate reperfusion" in text or "thrombolysis pathway" in text):
                 suspects.append(f"POSSIBLE CLINICAL MISMATCH: Bank {number} Q{n} haemorrhage / reperfusion text")
     metrics.append({"bank":number,"questions":count,"correct_longest":longest,"correct_25pct_longer":long25,
                     "generic_pivots":vague_pivot,"alternate_management":alternate,"structured_management":structured_mgmt})
