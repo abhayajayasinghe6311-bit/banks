@@ -63,7 +63,32 @@ function updateProgress(bank,n,choice){
  }
 }
 function retryAnswer(bank,n,choice){const id=idOf(bank,n),q=bankData[bank]?.find(q=>q.n===n);if(!q)return;const r=state.review[id];if(!r||r.mastered)return;r.tries=(r.tries||0)+1;r.lastChoice=choice;r.lastAt=Date.now();if(choice===q.key){r.mastered=true;r.masteredAt=Date.now();}save();renderReview();}
-function url(bank){return 'index.html?bank='+encodeURIComponent(bank);}function tile(b){const done=Object.keys(state.banks[b.id]||{}).length;const wrong=recs().filter(r=>r.bank===b.id&&!r.mastered).length;return `<a class="tile" target="_blank" rel="noopener" href="${url(b.id)}" title="Open Bank ${b.id} in a new tab"><span class="flower">${b.emoji}</span><h3>Bank ${b.id} · ${safe(b.name)}</h3><p>${safe(b.description)}</p><span class="pill">${done}/${b.count} answered</span>${wrong?`<span class="pill">${wrong} to review</span>`:''}<span class="pill">Open in new tab ↗</span></a>`;}
+function url(bank){return 'index.html?bank='+encodeURIComponent(bank);}
+function tile(b){
+ const done=Math.min(b.count,Object.keys(state.banks[b.id]||{}).length);
+ const wrong=recs().filter(r=>r.bank===b.id&&!r.mastered).length;
+ const pct=b.count?Math.round(done/b.count*100):0;
+ return `<a class='tile garden-bank-card' target='_blank' rel='noopener' href='${url(b.id)}' title='Open Bank ${b.id} in a new tab'>
+ <div class='garden-bank-top'><span class='flower' aria-hidden='true'>${b.emoji}</span><span class='garden-bank-number'>BANK ${String(b.id).padStart(2,'0')}</span></div>
+ <h3>${safe(b.name)}</h3><p>${safe(b.description)}</p>
+ <div class='garden-bank-progress' role='progressbar' aria-label='Bank ${b.id} completion' aria-valuemin='0' aria-valuemax='100' aria-valuenow='${pct}'><span style='width:${pct}%'></span></div>
+ <div class='garden-bank-footer'><span>${done}/${b.count} answered${wrong?` · ${wrong} to review`:''}</span><span class='garden-bank-open' aria-hidden='true'>Open ↗</span></div>
+ </a>`;
+}
+function homeTier(start,end,id,level,title,description,emoji){
+ const items=manifest.banks.filter(b=>b.id>=start&&b.id<=end).sort((a,b)=>a.id-b.id);
+ if(!items.length)return '';
+ const answered=items.reduce((sum,b)=>sum+Math.min(b.count,Object.keys(state.banks[b.id]||{}).length),0);
+ const total=items.reduce((sum,b)=>sum+b.count,0),pct=total?Math.round(answered/total*100):0;
+ return `<section id='${id}' class='garden-tier garden-tier-${id}' aria-labelledby='${id}-title'>
+ <header class='garden-tier-header'><div class='garden-tier-emblem' aria-hidden='true'>${emoji}</div>
+ <div class='garden-tier-copy'><div class='garden-tier-kicker'>${level} <span class='garden-tier-dot'>✦</span> BANKS ${start}–${end}</div>
+ <h2 id='${id}-title'>${title}</h2><p>${description}</p></div>
+ <div class='garden-tier-tally'><strong>${items.length}<span>/10</span></strong><small>gardens available</small><span class='garden-tier-tally-progress'>${pct}% explored</span></div>
+ </header>
+ <div class='tiles garden-tier-grid'>${items.map(tile).join('')}</div>
+ </section>`;
+}
 function section(title,right=''){return `<div class="section-head"><h2>${title}</h2>${right}</div>`;}
 function overview(){const n=manifest.banks.reduce((s,b)=>s+b.count,0),done=Object.values(state.banks).reduce((s,b)=>s+Object.keys(b).length,0),correct=Object.values(state.banks).reduce((s,b)=>s+Object.values(b).filter(a=>a.correct).length,0),mastered=recs().filter(r=>r.mastered).length;return `<div class="stats"><div class="stat"><strong>${n}</strong><small>Original MCQs</small></div><div class="stat"><strong>${done}</strong><small>First attempts</small></div><div class="stat"><strong>${pending()}</strong><small>To review</small></div><div class="stat"><strong>${mastered}</strong><small>Mastered mistakes</small></div></div>`;}
 let pendingImport=null;
@@ -456,7 +481,9 @@ function renderHome(){route={};
  const nextBankButton=nextBank
   ? `<a class="btn soft" href="${url(nextBank.id)}" target="_blank" rel="noopener">${nextBank.emoji} ${nextAttempts?'Continue':'Start'} Bank ${nextBank.id} ↗</a>`
   : `<a class="btn soft" href="?review=1">🎉 All banks attempted — Review mistakes ↗</a>`;
- $('app').innerHTML=`<section class="hero"><div class="eyebrow">YOUR LITTLE MED SCHOOL SANCTUARY ✿</div><h1>Grow your clinical confidence, one question at a time. 🌷</h1><p>${manifest.banks.length} banks of original Monash-inspired clinical scenarios, instant feedback, and explanations that teach you how to distinguish the tempting alternatives.</p><div class="flex"><a class="btn" href="?review=1">🌿 Open Wrong Answers Garden (${pending()})</a>${nextBankButton}</div></section>${searchPanel()}${overview()}${section('Choose your question garden','<span class="small">Each opens in a new browser tab ↗</span>')}<div class="tiles">${manifest.banks.map(tile).join('')}</div>${practicePicker()}${bookmarksPanel()}${backupPanel()}<div class="notice">These are <b>unofficial, original educational questions</b>, not faculty questions. Clinical management should always follow local protocols and senior supervision.</div>`;wireBackupPanel();updateBadge();wireStudySearch();hydrateBookmarks();deferPracticePicker();}
+ const futureStarts=[...new Set(manifest.banks.filter(b=>b.id>20).map(b=>21+Math.floor((b.id-21)/10)*10))].sort((a,b)=>a-b);
+ const futureChapters=futureStarts.map(start=>homeTier(start,start+9,'chapter-'+start,'NEXT CHAPTER','The Next Chapter · title to be chosen','Further clinical challenges are growing here.','✨')).join('');
+ $('app').innerHTML=`<section class="hero"><div class="eyebrow">YOUR LITTLE MED SCHOOL SANCTUARY ✿</div><h1>Grow your clinical confidence, one question at a time. 🌷</h1><p>${manifest.banks.length} banks of original Monash-inspired clinical scenarios, instant feedback, and explanations that teach you how to distinguish the tempting alternatives.</p><div class="flex"><a class="btn" href="?review=1">🌿 Open Wrong Answers Garden (${pending()})</a>${nextBankButton}</div></section>${searchPanel()}${overview()}${section('Choose your learning path','<span class="small">Pick a level · every bank opens in its own tab ↗</span>')}<nav class='garden-level-nav' aria-label='Jump to a bank level'><a href='#warmup-gardens'>🌱 <strong>Warm-up & foundations</strong><span> Banks 1–10 ↓</span></a><a href='#challenge-gardens'>🦉 <strong>Clinical challenge</strong><span> Banks 11–20 ↓</span></a></nav>${homeTier(1,10,'warmup-gardens','LEVEL 01 · BUILD YOUR BASE','The Warm-Up Meadow','Start with the essentials, then grow into trickier clinical decisions at your own pace.','🌱')}${homeTier(11,20,'challenge-gardens','LEVEL 02 · THINK DEEPER','The Clinical Challenge Garden','More demanding integrated cases, plausible choices and practical management priorities.','🦉')}${futureChapters}${practicePicker()}${bookmarksPanel()}${backupPanel()}<div class="notice">These are <b>unofficial, original educational questions</b>, not faculty questions. Clinical management should always follow local protocols and senior supervision.</div>`;wireBackupPanel();updateBadge();wireStudySearch();hydrateBookmarks();deferPracticePicker();}
 const bankLoading={};
 async function getBank(b){
  if(bankData[b])return bankData[b];
@@ -654,6 +681,17 @@ function jumpToCurrentQuestion(){
 /* Lightweight, per-question study annotations (including optional private cloud sync). */
 const STUDY_MARK_COLOURS=['theme','yellow','pink','mint','lilac'];
 const STUDY_COLOUR_PREF='spaw.study.highlighter.colour.v1';
+const STUDY_THEME_DUPLICATE={light:'pink',dark:'lilac',contrast:'yellow','berry-bloom':'pink','midnight-sage':'mint'};
+const duplicateStudyColour=()=>STUDY_THEME_DUPLICATE[$('themeSelect')?.value||'light']||'pink';
+function syncStudyColourChoices(){
+ const duplicate=duplicateStudyColour();
+ if(studyActiveColour===duplicate){studyActiveColour='theme';try{localStorage.setItem(STUDY_COLOUR_PREF,studyActiveColour)}catch(e){}}
+ document.querySelectorAll('[data-mark-colour]').forEach(btn=>{
+  const active=btn.dataset.markColour===studyActiveColour;
+  btn.hidden=btn.dataset.markColour===duplicate;
+  btn.classList.toggle('is-active',active);btn.setAttribute('aria-pressed',String(active));
+ });
+}
 let studyActiveColour='theme';
 try{const pref=localStorage.getItem(STUDY_COLOUR_PREF);if(STUDY_MARK_COLOURS.includes(pref)||pref==='off')studyActiveColour=pref;}catch(e){}
 function setStudyColour(colour){studyActiveColour=studyActiveColour===colour?'off':colour;try{localStorage.setItem(STUDY_COLOUR_PREF,studyActiveColour);}catch(e){}}
@@ -668,7 +706,7 @@ function highlightedStudyText(bank,q,part){
  return html+safe(original.slice(pos));
 }
 function studyMarkToolbar(){
- const swatches=STUDY_MARK_COLOURS.map(c=>'<button type="button" class="study-swatch '+c+(studyActiveColour===c?' is-active':'')+'" data-mark-colour="'+c+'" title="'+(c==='theme'?'Theme-matched highlighter':c[0].toUpperCase()+c.slice(1)+' highlighter')+' · click again to pause" aria-label="'+(c==='theme'?'Theme-matched':c)+' highlighter" aria-pressed="'+(studyActiveColour===c)+'">'+(c==='theme'?'<span aria-hidden="true">✦</span>':'')+'</button>').join('');
+ const swatches=STUDY_MARK_COLOURS.map(c=>'<button type="button" class="study-swatch '+c+(studyActiveColour===c?' is-active':'')+'"'+(c===duplicateStudyColour()?' hidden':'')+' data-mark-colour="'+c+'" title="'+(c==='theme'?'Theme-matched highlighter':c[0].toUpperCase()+c.slice(1)+' highlighter')+' · click again to pause" aria-label="'+(c==='theme'?'Theme-matched':c)+' highlighter" aria-pressed="'+(studyActiveColour===c)+'">'+(c==='theme'?'<span aria-hidden="true">✦</span>':'')+'</button>').join('');
  return '<div class="study-tools-bar" role="toolbar" aria-label="Highlighter: choose a colour, then select words"><svg class="study-tools-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m9 11 6 6M20.5 7.5l-4-4-12 12-1 4 4-1 13-11z"/></svg><div class="study-swatches" role="group" aria-label="Choose highlighter colour">'+swatches+'</div><button type="button" class="study-clear-marks" id="clearStudyMarks" aria-label="Erase highlights on this question" title="Erase all highlights on this question">⌫</button><span class="study-tool-status" id="studyToolStatus" role="status" aria-live="polite"></span></div>';
 }
 function studyNotepadMarkup(bank,q){
@@ -847,6 +885,7 @@ function applyTheme(mode){
  const themeColour={'light':'#fdf6fc','dark':'#181923','contrast':'#ffffff','berry-bloom':'#3A0519','midnight-sage':'#040D12'}[theme];
  document.querySelector('meta[name="theme-color"]')?.setAttribute('content',themeColour);
  try{localStorage.setItem('spaw.theme',theme)}catch(e){}
+ syncStudyColourChoices();
 }
 let initialTheme='light';
 try{initialTheme=localStorage.getItem('spaw.theme')||(localStorage.getItem('spaw-highcontrast')==='1'?'contrast':'light')}catch(e){}
