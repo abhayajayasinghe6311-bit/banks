@@ -4,14 +4,14 @@ const $ = id => document.getElementById(id);
 const bridge = window.SPAWCloudBridge;
 const config = window.SPAW_FIREBASE_CONFIG;
 const configured = Boolean(config && config.apiKey && config.authDomain && config.projectId && config.appId);
-const COLLECTIONS = ['banks','review','bookmarks'];
+const COLLECTIONS = ['banks','review','bookmarks','annotations'];
 const clone = value => JSON.parse(JSON.stringify(value));
-const blank = () => ({format:'SPAW_ONLINE_PROGRESS_V1',version:1,banks:{},review:{},bookmarks:{},updated:0});
+const blank = () => ({format:'SPAW_ONLINE_PROGRESS_V1',version:1,banks:{},review:{},bookmarks:{},annotations:{},updated:0});
 const keyFor = uid => 'spaw.study.garden.cloud.queue.v1.'+uid;
 let auth, firestore, fAuth, fStore, user=null, unsubscribe=null, queue=[], busy=false, connected=false, retryTimer=null, flushTimer=null;
 const status = msg => {if($('cloudStatus'))$('cloudStatus').textContent=msg;};
 const feedback = msg => {if($('accountFeedback'))$('accountFeedback').textContent=msg;};
-const nChanges = s => Object.values(s?.banks||{}).reduce((n,v)=>n+Object.keys(v||{}).length,0)+Object.keys(s?.bookmarks||{}).length+Object.keys(s?.review||{}).length;
+const nChanges = s => Object.values(s?.banks||{}).reduce((n,v)=>n+Object.keys(v||{}).length,0)+Object.keys(s?.bookmarks||{}).length+Object.keys(s?.review||{}).length+Object.keys(s?.annotations||{}).length;
 function activeControls(enabled){
  for(const id of ['googleSignIn','emailSignIn','emailRegister','resetPassword'])if($(id))$(id).disabled=!enabled;
 }
@@ -38,16 +38,16 @@ $('accountDialog')?.addEventListener('click',event=>{if(event.target===$('accoun
 function different(a,b){return JSON.stringify(a)!==JSON.stringify(b);}
 // Firestore server timestamps change on every write. Ignore timestamp-only snapshots:
 // redrawing a whole question while someone is reading makes the UI feel laggy.
-function sameProgress(a,b){return ['banks','review','bookmarks','practice'].every(k=>!different(a?.[k],b?.[k]));}
+function sameProgress(a,b){return ['banks','review','bookmarks','annotations','practice'].every(k=>!different(a?.[k]||{},b?.[k]||{}));}
 function makePatch(before,after){
- const patch={banks:{},review:{},bookmarks:{}};
+ const patch={banks:{},review:{},bookmarks:{},annotations:{}};
  for(const b of new Set([...Object.keys(before?.banks||{}),...Object.keys(after?.banks||{})])){
   const oldBank=before?.banks?.[b]||{},newBank=after?.banks?.[b]||{};
   for(const n of new Set([...Object.keys(oldBank),...Object.keys(newBank)])){
    if(different(oldBank[n],newBank[n]))(patch.banks[b]||(patch.banks[b]={}))[n]=newBank[n]===undefined?null:clone(newBank[n]);
   }
  }
- for(const collection of ['review','bookmarks']){
+ for(const collection of ['review','bookmarks','annotations']){
   const oldMap=before?.[collection]||{},newMap=after?.[collection]||{};
   for(const id of new Set([...Object.keys(oldMap),...Object.keys(newMap)])){
    if(different(oldMap[id],newMap[id]))patch[collection][id]=newMap[id]===undefined?null:clone(newMap[id]);
@@ -56,7 +56,7 @@ function makePatch(before,after){
  if(different(before?.practice,after?.practice))patch.practice=after?.practice===undefined?null:clone(after.practice);
  return patch;
 }
-function isEmpty(p){return !Object.keys(p.banks).length&&!Object.keys(p.review).length&&!Object.keys(p.bookmarks).length&&!('practice' in p);}
+function isEmpty(p){return !Object.keys(p.banks).length&&!Object.keys(p.review).length&&!Object.keys(p.bookmarks).length&&!Object.keys(p.annotations).length&&!('practice' in p);}
 function applyPatch(source,p){
  const v=clone(source?.version===1?source:blank());
  for(const [b,entries] of Object.entries(p.banks||{})){
@@ -67,7 +67,7 @@ function applyPatch(source,p){
   }
   if(!Object.keys(bank).length)delete v.banks[b];
  }
- for(const collection of ['review','bookmarks']){
+ for(const collection of ['review','bookmarks','annotations']){
   const map=v[collection]||(v[collection]={});
   for(const [id,rec] of Object.entries(p[collection]||{})){if(rec===null)delete map[id];else map[id]=clone(rec);}
  }
