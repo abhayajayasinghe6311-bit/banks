@@ -8,7 +8,7 @@ const COLLECTIONS = ['banks','review','bookmarks'];
 const clone = value => JSON.parse(JSON.stringify(value));
 const blank = () => ({format:'SPAW_ONLINE_PROGRESS_V1',version:1,banks:{},review:{},bookmarks:{},updated:0});
 const keyFor = uid => 'spaw.study.garden.cloud.queue.v1.'+uid;
-let auth, firestore, fAuth, fStore, user=null, unsubscribe=null, queue=[], busy=false, connected=false, retryTimer=null;
+let auth, firestore, fAuth, fStore, user=null, unsubscribe=null, queue=[], busy=false, connected=false, retryTimer=null, flushTimer=null;
 const status = msg => {if($('cloudStatus'))$('cloudStatus').textContent=msg;};
 const feedback = msg => {if($('accountFeedback'))$('accountFeedback').textContent=msg;};
 const nChanges = s => Object.values(s?.banks||{}).reduce((n,v)=>n+Object.keys(v||{}).length,0)+Object.keys(s?.bookmarks||{}).length+Object.keys(s?.review||{}).length;
@@ -36,6 +36,9 @@ $('accountButton')?.addEventListener('click',showDialog);
 $('accountClose')?.addEventListener('click',()=>$('accountDialog')?.close());
 $('accountDialog')?.addEventListener('click',event=>{if(event.target===$('accountDialog'))$('accountDialog').close();});
 function different(a,b){return JSON.stringify(a)!==JSON.stringify(b);}
+// Firestore server timestamps change on every write. Ignore timestamp-only snapshots:
+// redrawing a whole question while someone is reading makes the UI feel laggy.
+function sameProgress(a,b){return ['banks','review','bookmarks','practice'].every(k=>!different(a?.[k],b?.[k]));}
 function makePatch(before,after){
  const patch={banks:{},review:{},bookmarks:{}};
  for(const b of new Set([...Object.keys(before?.banks||{}),...Object.keys(after?.banks||{})])){
@@ -78,23 +81,33 @@ function displayRemote(remote){
  if(!user||!bridge||!remote)return;
  let merged=remote;
  for(const job of currentPending())merged=applyPatch(merged,job.patch);
- if(different(bridge.getState(),merged))bridge.applyRemote(user.uid,merged);
+ if(!sameProgress(bridge.getState(),merged))bridge.applyRemote(user.uid,merged);
  draw();
+}
+function scheduleFlush(delay=450){
+ if(flushTimer)clearTimeout(flushTimer);
+ flushTimer=setTimeout(()=>{flushTimer=null;flushQueue();},delay);
 }
 async function flushQueue(){
  if(busy||!user||!configured||!queue.length)return;
+ if(flushTimer){clearTimeout(flushTimer);flushTimer=null;}
  busy=true;draw();
  const uid=user.uid;
  try{
   while(user?.uid===uid&&queue.length){
-   const job=queue[0],docRef=fStore.doc(firestore,'users',uid,'progress','main');
+   // Merge rapid answer/bookmark changes into one atomic Firestore transaction.
+   // Keep the durable local queue until the whole batch has committed.
+   const batch=queue.slice(),ids=new Set(batch.map(job=>job.id));
+   const docRef=fStore.doc(firestore,'users',uid,'progress','main');
    await fStore.runTransaction(firestore,async tx=>{
     const snap=await tx.get(docRef);
-    const existing=snap.exists()?snap.data()?.payload:blank();
-    tx.set(docRef,{schemaVersion:1,payload:applyPatch(existing,job.patch),updatedAt:fStore.serverTimestamp()});
+    let merged=snap.exists()?snap.data()?.payload:blank();
+    for(const job of batch)merged=applyPatch(merged,job.patch);
+    tx.set(docRef,{schemaVersion:1,payload:merged,updatedAt:fStore.serverTimestamp()});
    });
    if(user?.uid!==uid)return;
-   queue.shift();persistQueue();draw();
+   queue=queue.filter(job=>!ids.has(job.id));
+   persistQueue();draw();
   }
  }catch(e){feedback('Cloud sync is waiting: '+friendlyError(e));scheduleRetry();}
  finally{busy=false;draw();}
@@ -128,6 +141,7 @@ function takeSnapshot(snap,uid){
 }
 function changeUser(nextUser){
  if(unsubscribe){unsubscribe();unsubscribe=null;}
+ if(flushTimer){clearTimeout(flushTimer);flushTimer=null;}
  user=nextUser;connected=false;queue=nextUser?readQueue(nextUser.uid):[];
  bridge.switchAccount(nextUser?.uid||null);feedback('');draw();
  if(!nextUser)return;
@@ -141,7 +155,7 @@ window.addEventListener('spaw:local-save',event=>{
  const patch=makePatch(event.detail.before,event.detail.after);
  if(isEmpty(patch))return;
  queue.push({id:Date.now().toString(36)+Math.random().toString(36).slice(2),patch});
- persistQueue();draw();flushQueue();
+ persistQueue();draw();scheduleFlush();
 });
 window.addEventListener('online',()=>{if(user)flushQueue();});
 async function operation(work){
