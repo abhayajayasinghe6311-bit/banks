@@ -2,7 +2,7 @@
 const $=id=>document.getElementById(id);
 const safe=x=>String(x??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
 const STORE='spaw.study.garden.online.v1';let accountUID=null;const storageKey=()=>accountUID?STORE+'.account.'+accountUID:STORE;const ABC='ABCDE';
-const empty=()=>({format:'SPAW_ONLINE_PROGRESS_V1',version:1,banks:{},review:{},bookmarks:{},updated:Date.now()});
+const empty=()=>({format:'SPAW_ONLINE_PROGRESS_V1',version:1,banks:{},review:{},bookmarks:{},annotations:{},updated:Date.now()});
 const load=()=>{try{const d=JSON.parse(localStorage.getItem(storageKey())||'null');return d&&d.version===1?d:empty();}catch(e){return empty();}};
 let state=load(),manifest=null,bankData={},route={},activeList=[],cursor=0,filter='all',domain='all',reviewFilter='pending',reviewBank='all',reviewOffset=0;
 let channel;try{channel=new BroadcastChannel('spaw-garden-online');channel.onmessage=e=>{if((e.data?.uid||null)===accountUID)syncUI()};}catch(e){}
@@ -22,7 +22,7 @@ window.SPAWCloudBridge={
  getGuestState:()=>{try{const v=JSON.parse(localStorage.getItem(STORE)||'null');return v?.version===1?v:empty();}catch(e){return empty();}},
  switchAccount(uid){accountUID=uid||null;state=load();if(manifest)syncUI();else updateBadge();},
  applyRemote(uid,next){if(uid!==accountUID||!next||next.version!==1)return;state=structuredClone(next);try{localStorage.setItem(storageKey(),JSON.stringify(state));}catch(e){showNotice('Could not cache cloud progress on this browser.');}if(manifest)syncUI();else updateBadge();},
- importGuest(){if(!accountUID)return false;const g=this.getGuestState();if(!Object.values(g.banks||{}).some(x=>Object.keys(x||{}).length)&&!Object.keys(g.review||{}).length&&!Object.keys(g.bookmarks||{}).length)return false;const imported=new Set();for(const [b,items] of Object.entries(g.banks||{})){const dest=state.banks[b]||(state.banks[b]={});for(const [n,answer] of Object.entries(items||{})){if(!dest[n]){dest[n]=answer;imported.add(b+':'+n);}}}for(const [k,v] of Object.entries(g.review||{}))if(imported.has(k)&&!state.review[k])state.review[k]=v;for(const [k,v] of Object.entries(g.bookmarks||{}))if(!(k in state.bookmarks))state.bookmarks[k]=v;save();if(manifest)syncUI();return true;}
+ importGuest(){if(!accountUID)return false;const g=this.getGuestState();if(!Object.values(g.banks||{}).some(x=>Object.keys(x||{}).length)&&!Object.keys(g.review||{}).length&&!Object.keys(g.bookmarks||{}).length&&!Object.keys(g.annotations||{}).length)return false;const imported=new Set();for(const [b,items] of Object.entries(g.banks||{})){const dest=state.banks[b]||(state.banks[b]={});for(const [n,answer] of Object.entries(items||{})){if(!dest[n]){dest[n]=answer;imported.add(b+':'+n);}}}for(const [k,v] of Object.entries(g.review||{}))if(imported.has(k)&&!state.review[k])state.review[k]=v;for(const [k,v] of Object.entries(g.bookmarks||{}))if(!(k in state.bookmarks))state.bookmarks[k]=v;state.annotations||={};for(const [k,v] of Object.entries(g.annotations||{}))if(!(k in state.annotations))state.annotations[k]=v;save();if(manifest)syncUI();return true;}
 };
 function idOf(b,n){return b+':'+n;}
 function recs(){return Object.values(state.review||{});}function pending(){return recs().filter(r=>!r.mastered).length;}
@@ -149,12 +149,12 @@ function applySelectedImport(){
  const names=ids.map(n=>'Bank '+n).join(', ');
  if(!confirm('Replace the saved answers, scores, review records and bookmarks in '+names+' using this backup?\\n\\nAll OTHER banks will stay unchanged. Export your current progress first if you want to keep the selected bank attempts.'))return;
  const incoming=pendingImport.data, chosen=new Set(ids);
- const next={...state,banks:{...state.banks},review:{...state.review},bookmarks:{...state.bookmarks}};
+ const next={...state,banks:{...state.banks},review:{...state.review},bookmarks:{...state.bookmarks},annotations:{...state.annotations}};
  for(const b of ids){
   const k=String(b);
   if(Object.prototype.hasOwnProperty.call(incoming.banks,k))next.banks[k]=incoming.banks[k];else delete next.banks[k];
  }
- for(const field of ['review','bookmarks']){
+ for(const field of ['review','bookmarks','annotations']){
   for(const k of Object.keys(next[field]))if(chosen.has(Number(k.split(':')[0])))delete next[field][k];
   for(const [k,value] of Object.entries(incoming[field]||{}))if(chosen.has(Number(k.split(':')[0])))next[field][k]=value;
  }
@@ -650,7 +650,66 @@ function jumpToCurrentQuestion(){
  const top=window.scrollY+card.getBoundingClientRect().top-92;
  window.scrollTo({top:Math.max(0,top),behavior:'instant'});
 }
-function renderBank(){const b=route.bank;const bm=manifest.banks.find(x=>x.id===b);if(!bm)return;const qset=bankData[b];if(!qset){$('app').innerHTML='<div class="loading">Opening your questions… 🌷</div>';return;}activeList=filteredQuestions(b);cursor=Math.max(0,Math.min(cursor,activeList.length-1));const q=activeList[cursor],tot=answeredStatus(b);const pct=qset.length?Math.round(tot.attempted*100/qset.length):0;const cats=[...new Set(qset.map(q=>q.domain))].sort();const summary=`${tot.attempted}/${qset.length} answered · ${tot.correct} correct · ${tot.attempted-tot.correct} incorrect`;
+
+/* Lightweight, per-question study annotations (including optional private cloud sync). */
+const STUDY_MARK_COLOURS=['yellow','pink','mint','lilac'];
+const studyText=(q,part)=>String(part==='stem'?q.stem:(q.ask||'Which of the following is the single BEST answer?'));
+function annotationFor(bank,n){return state.annotations?.[idOf(bank,n)]||{};}
+function highlightedStudyText(bank,q,part){
+ const original=studyText(q,part);
+ const marks=(annotationFor(bank,q.n)[part]||[]).filter(m=>Number.isInteger(m.start)&&Number.isInteger(m.end)&&m.start>=0&&m.end>m.start&&m.end<=original.length&&STUDY_MARK_COLOURS.includes(m.color)).sort((a,b)=>a.start-b.start);
+ let html='',pos=0;
+ for(const mark of marks){if(mark.start<pos)continue;html+=safe(original.slice(pos,mark.start))+'<mark class="study-mark study-mark-'+mark.color+'">'+safe(original.slice(mark.start,mark.end))+'</mark>';pos=mark.end;}
+ return html+safe(original.slice(pos));
+}
+function studyMarkToolbar(){
+ return '<div class="study-tools-bar" aria-label="Question highlighting tools"><span class="study-tools-label">Highlight</span><span class="study-tools-hint">Select text, then a colour</span><div class="study-swatches" role="group" aria-label="Highlight selected question text">'+STUDY_MARK_COLOURS.map(c=>'<button type="button" class="study-swatch '+c+'" data-mark-colour="'+c+'" title="Highlight selected text '+c+'" aria-label="Highlight selected text '+c+'"></button>').join('')+'</div><button type="button" class="study-clear-marks" id="clearStudyMarks" title="Remove all highlights from this question">Clear</button><span class="study-tool-status" id="studyToolStatus" role="status" aria-live="polite"></span></div>';
+}
+function studyNotepadMarkup(bank,q){
+ const note=String(annotationFor(bank,q.n).note||'');
+ return '<div class="study-notes-section"><button type="button" class="study-note-toggle" id="studyNoteToggle" aria-expanded="false" aria-controls="studyNotepad"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 19h9"/><path d="m16.5 3.5 4 4L9 19l-5 1 1-5L16.5 3.5Z"/></svg><span>My notes</span>'+(note.trim()?'<span class="study-note-indicator" aria-label="Notes saved">•</span>':'')+'<span class="study-chevron" aria-hidden="true">⌄</span></button><div class="study-notepad" id="studyNotepad" hidden><label for="studyNoteText">Personal notes · Bank '+bank+', Q'+q.n+'</label><textarea id="studyNoteText" rows="4" maxlength="8000" placeholder="Your differential, key clues, practical management, or reminders…">'+safe(note)+'</textarea><div class="study-note-saving" id="studyNoteSaving" role="status">Saved automatically · Private to your account</div></div></div>';
+}
+function selectedStudyRange(){
+ const selection=window.getSelection();if(!selection||selection.isCollapsed||!selection.rangeCount)return null;
+ const range=selection.getRangeAt(0);
+ const root=range.startContainer.parentElement?.closest('[data-highlight-part]');
+ if(!root||root!==range.endContainer.parentElement?.closest('[data-highlight-part]'))return null;
+ if(!root.contains(range.commonAncestorContainer))return null;
+ const before=document.createRange();before.selectNodeContents(root);before.setEnd(range.startContainer,range.startOffset);
+ const start=before.toString().length,end=start+range.toString().length;
+ return end>start?{part:root.dataset.highlightPart,start,end}:null;
+}
+function wireStudyTools(bank,q){
+ let captured=null,noteTimer=null;
+ const status=$('studyToolStatus');
+ const applyMark=colour=>{
+  const selection=captured||selectedStudyRange();captured=null;
+  if(!selection){if(status)status.textContent='Select some question text first';return;}
+  const original=studyText(q,selection.part),start=selection.start,end=selection.end;
+  if(start<0||end>original.length||end<=start)return;
+  state.annotations||={};const id=idOf(bank,q.n),rec=state.annotations[id]||(state.annotations[id]={});
+  const old=(rec[selection.part]||[]),replacement=[];
+  for(const m of old){if(m.end<=start||m.start>=end)replacement.push(m);else{if(m.start<start)replacement.push({...m,end:start});if(m.end>end)replacement.push({...m,start:end});}}
+  replacement.push({start,end,color:colour});rec[selection.part]=replacement.sort((a,b)=>a.start-b.start);rec.updatedAt=Date.now();
+  const target=document.querySelector('[data-highlight-part="'+selection.part+'"]');if(target)target.innerHTML=highlightedStudyText(bank,q,selection.part);
+  window.getSelection()?.removeAllRanges();if(status)status.textContent='Saved';save();
+ };
+ document.querySelectorAll('[data-mark-colour]').forEach(button=>{
+  button.addEventListener('pointerdown',()=>{captured=selectedStudyRange();});
+  button.addEventListener('click',()=>applyMark(button.dataset.markColour));
+ });
+ const clear=$('clearStudyMarks');
+ if(clear)clear.onclick=()=>{const rec=state.annotations?.[idOf(bank,q.n)];if(!rec||!(rec.stem?.length||rec.ask?.length)){if(status)status.textContent='No highlights to clear';return;}rec.stem=[];rec.ask=[];rec.updatedAt=Date.now();for(const part of ['stem','ask']){const el=document.querySelector('[data-highlight-part="'+part+'"]');if(el)el.innerHTML=safe(studyText(q,part));}if(status)status.textContent='Highlights cleared';save();};
+ const toggle=$('studyNoteToggle'),pad=$('studyNotepad'),field=$('studyNoteText');
+ const flushNote=()=>{if(noteTimer){clearTimeout(noteTimer);noteTimer=null;}if(!field)return;const id=idOf(bank,q.n),text=field.value,prior=annotationFor(bank,q.n).note||'';if(text===prior)return;state.annotations||={};const rec=state.annotations[id]||(state.annotations[id]={});rec.note=text;rec.updatedAt=Date.now();save();if($('studyNoteSaving'))$('studyNoteSaving').textContent='✓ Saved · Syncs when signed in';toggle?.classList.toggle('has-note',!!text.trim());};
+ if(toggle&&pad){toggle.onclick=()=>{const opening=pad.hidden;pad.hidden=!opening;toggle.setAttribute('aria-expanded',String(opening));toggle.classList.toggle('open',opening);if(opening)field?.focus();};}
+ if(field){field.oninput=()=>{if($('studyNoteSaving'))$('studyNoteSaving').textContent='Saving…';if(noteTimer)clearTimeout(noteTimer);noteTimer=setTimeout(flushNote,650);};field.onblur=flushNote;}
+ return flushNote;
+}
+let pendingStudyNoteSave=null;
+function saveStudyNoteBeforeNavigation(){if(pendingStudyNoteSave){pendingStudyNoteSave();pendingStudyNoteSave=null;}}
+
+function renderBank(){saveStudyNoteBeforeNavigation();const b=route.bank;const bm=manifest.banks.find(x=>x.id===b);if(!bm)return;const qset=bankData[b];if(!qset){$('app').innerHTML='<div class="loading">Opening your questions… 🌷</div>';return;}activeList=filteredQuestions(b);cursor=Math.max(0,Math.min(cursor,activeList.length-1));const q=activeList[cursor],tot=answeredStatus(b);const pct=qset.length?Math.round(tot.attempted*100/qset.length):0;const cats=[...new Set(qset.map(q=>q.domain))].sort();const summary=`${tot.attempted}/${qset.length} answered · ${tot.correct} correct · ${tot.attempted-tot.correct} incorrect`;
  const finished=tot.attempted===qset.length;
  const canJumpToUnanswered=!finished&&cursor===activeList.length-1&&qset.some(x=>!(state.banks[b]||{})[x.n]);
  const specialtySummary=[...new Set(qset.map(x=>x.domain))].map(d=>{const subset=qset.filter(x=>x.domain===d);const count=subset.filter(x=>(state.banks[b]||{})[x.n]?.correct).length;return `<div class="flex between"><span>${safe(d)}</span><b>${count}/${subset.length} · ${Math.round(count/subset.length*100)}%</b></div>`;}).join('');
@@ -674,7 +733,7 @@ function renderBank(){const b=route.bank;const bm=manifest.banks.find(x=>x.id===
   <span class="small bank-progress-percent"><span id="bankPercent">${pct}%</span> complete</span>
  </div>
  <div class="progress bank-progress"><span id="bankProgressBar" style="width:${pct}%"></span></div>
- </section>${finalSummary}<div id="bankSearchDrawer" class="bank-search-drawer" hidden>${searchPanel(b)}</div><div class="toolbar bank-toolbar"><div class="flex"><label class="small">Show <select id="filter"><option value="all">All questions</option><option value="unanswered">Unanswered</option><option value="wrong">Original mistakes</option><option value="bookmarks">Bookmarked</option></select></label><label class="small">Specialty <select id="domain"><option value="all">All specialties</option>${cats.map(x=>`<option value="${safe(x)}">${safe(x)}</option>`).join('')}</select></label></div><div class="bank-jumper"><label for="jumpNumber">Jump to Q</label><input id="jumpNumber" type="number" inputmode="numeric" min="1" max="${qset.length}" value="${q?.n||''}" aria-label="Question number in this bank"><span>/ ${qset.length}</span><button type="button" id="jumpGo" class="bank-jump-btn">Go →</button></div></div>${q?`<div class="learning-layout ${(state.banks[b]||{})[q.n]?'has-notes':''}"><div class="question-stack"><div class="quizbox quiz-question"><div class="meta"><b>Domain:</b> ${safe(q.domain)} &nbsp; · &nbsp; <b>Skillset:</b> ${safe(q.skill||'Clinical reasoning')} &nbsp; · &nbsp; <b>Context:</b> ${safe(q.context||'Clinical')}</div><div class="question-label">EMQ ${q.n}</div><div class="stem">${safe(q.stem)}</div><p class="ask">${safe(q.ask||'Which of the following is the single BEST answer?')}</p><div class="choices" id="choices">${optionHtml(q,(state.banks[b]||{})[q.n]?.choice)}</div>${(state.banks[b]||{})[q.n]?`<div class="feedback ${(state.banks[b][q.n].correct?'yes':'no')}">${state.banks[b][q.n].correct?'✓ Correct — nicely reasoned!':'✗ Not quite. Correct answer: '+visibleLetter(q,q.key)+'.'} Your first response is locked.</div>`:``}<div class="navbox"><button class="btn soft" id="prev" ${cursor===0?'disabled':''}>← Previous</button><button class="btn rose" id="bookmark">${state.bookmarks[idOf(b,q.n)]?'★ Bookmarked':'☆ Bookmark'}</button><button class="btn" id="next" ${cursor===activeList.length-1&&!canJumpToUnanswered?'disabled':''}>${canJumpToUnanswered?'Find unanswered →':'Next →'}</button></div>${finished&&cursor===activeList.length-1?bankFinishActions(b):''}</div>${(state.banks[b]||{})[q.n]?managementMarkup(q):''}</div>${(state.banks[b]||{})[q.n]?learningNotes(q,'learningNotes',(state.banks[b]||{})[q.n].choice):`<aside class="learning-card learning-placeholder" aria-label="Learning notes preview"><div class="learning-placeholder-emoji" aria-hidden="true">🌷</div><h2>Learning notes will bloom here</h2><p>Choose your answer and explore the <b>clinical reasoning</b>, why the alternatives lose, and the principles worth remembering.</p></aside>`}</div>`:`<div class="empty">No questions here 🌷 Try another filter.</div>`}`;
+ </section>${finalSummary}<div id="bankSearchDrawer" class="bank-search-drawer" hidden>${searchPanel(b)}</div><div class="toolbar bank-toolbar"><div class="flex"><label class="small">Show <select id="filter"><option value="all">All questions</option><option value="unanswered">Unanswered</option><option value="wrong">Original mistakes</option><option value="bookmarks">Bookmarked</option></select></label><label class="small">Specialty <select id="domain"><option value="all">All specialties</option>${cats.map(x=>`<option value="${safe(x)}">${safe(x)}</option>`).join('')}</select></label></div><div class="bank-jumper"><label for="jumpNumber">Jump to Q</label><input id="jumpNumber" type="number" inputmode="numeric" min="1" max="${qset.length}" value="${q?.n||''}" aria-label="Question number in this bank"><span>/ ${qset.length}</span><button type="button" id="jumpGo" class="bank-jump-btn">Go →</button></div></div>${q?`<div class="learning-layout ${(state.banks[b]||{})[q.n]?'has-notes':''}"><div class="question-stack"><div class="quizbox quiz-question"><div class="meta"><b>Domain:</b> ${safe(q.domain)} &nbsp; · &nbsp; <b>Skillset:</b> ${safe(q.skill||'Clinical reasoning')} &nbsp; · &nbsp; <b>Context:</b> ${safe(q.context||'Clinical')}</div><div class="question-label">EMQ ${q.n}</div><div class="stem" data-highlight-part="stem">${highlightedStudyText(b,q,"stem")}</div><p class="ask" data-highlight-part="ask">${highlightedStudyText(b,q,"ask")}</p>${studyMarkToolbar()}<div class="choices" id="choices">${optionHtml(q,(state.banks[b]||{})[q.n]?.choice)}</div>${(state.banks[b]||{})[q.n]?`<div class="feedback ${(state.banks[b][q.n].correct?'yes':'no')}">${state.banks[b][q.n].correct?'✓ Correct — nicely reasoned!':'✗ Not quite. Correct answer: '+visibleLetter(q,q.key)+'.'} Your first response is locked.</div>`:``}<div class="navbox"><button class="btn soft" id="prev" ${cursor===0?'disabled':''}>← Previous</button><button class="btn rose" id="bookmark">${state.bookmarks[idOf(b,q.n)]?'★ Bookmarked':'☆ Bookmark'}</button><button class="btn" id="next" ${cursor===activeList.length-1&&!canJumpToUnanswered?'disabled':''}>${canJumpToUnanswered?'Find unanswered →':'Next →'}</button></div>${studyNotepadMarkup(b,q)}${finished&&cursor===activeList.length-1?bankFinishActions(b):''}</div>${(state.banks[b]||{})[q.n]?managementMarkup(q):''}</div>${(state.banks[b]||{})[q.n]?learningNotes(q,'learningNotes',(state.banks[b]||{})[q.n].choice):`<aside class="learning-card learning-placeholder" aria-label="Learning notes preview"><div class="learning-placeholder-emoji" aria-hidden="true">🌷</div><h2>Learning notes will bloom here</h2><p>Choose your answer and explore the <b>clinical reasoning</b>, why the alternatives lose, and the principles worth remembering.</p></aside>`}</div>`:`<div class="empty">No questions here 🌷 Try another filter.</div>`}`;
  $('filter').value=filter;$('domain').value=domain;$('filter').onchange=e=>{filter=e.target.value;cursor=0;renderBank()};$('domain').onchange=e=>{domain=e.target.value;cursor=0;renderBank()};
  wireStudySearch(b);
  const bankSearchButton=$('bankSearchToggle'),bankSearchDrawer=$('bankSearchDrawer');
@@ -693,11 +752,11 @@ function renderBank(){const b=route.bank;const bm=manifest.banks.find(x=>x.id===
  if(jumpInput){jumpInput.oninput=()=>jumpInput.setCustomValidity('');jumpInput.onkeydown=e=>{if(e.key==='Enter'){e.preventDefault();jumpAction();}};}
 
  $('restartBank').onclick=()=>{
-   if(!confirm('Restart Bank '+b+'? This will erase all '+tot.attempted+' saved first attempts and reset this bank score to 0. Other banks, bookmarks and your Wrong Answers Garden will remain unchanged. Export a progress backup first if you want to keep this attempt.'))return;
+   if(!confirm('Restart Bank '+b+'? This will erase all '+tot.attempted+' saved first attempts and reset this bank score to 0. Your private annotations, bookmarks and Wrong Answers Garden will remain unchanged. Export a progress backup first if you want to keep this attempt.'))return;
    delete state.banks[b];filter='all';domain='all';cursor=0;save();renderBank();
    window.scrollTo({top:0,behavior:'smooth'});
  };
- if(!q)return;$('choices').onclick=e=>{const choice=e.target.closest('[data-choice]');if(choice)updateProgress(b,q.n,choice.dataset.choice)};$('prev').onclick=()=>{cursor--;renderBank();jumpToCurrentQuestion()};$('next').onclick=()=>{if(canJumpToUnanswered){filter='all';domain='all';cursor=qset.findIndex(x=>!(state.banks[b]||{})[x.n]);}else cursor++;renderBank();jumpToCurrentQuestion()};$('bookmark').onclick=()=>{let k=idOf(b,q.n);state.bookmarks[k]=!state.bookmarks[k];save();renderBank()};}
+ if(!q)return;pendingStudyNoteSave=wireStudyTools(b,q);$('choices').onclick=e=>{const choice=e.target.closest('[data-choice]');if(choice)updateProgress(b,q.n,choice.dataset.choice)};$('prev').onclick=()=>{cursor--;renderBank();jumpToCurrentQuestion()};$('next').onclick=()=>{if(canJumpToUnanswered){filter='all';domain='all';cursor=qset.findIndex(x=>!(state.banks[b]||{})[x.n]);}else cursor++;renderBank();jumpToCurrentQuestion()};$('bookmark').onclick=()=>{let k=idOf(b,q.n);state.bookmarks[k]=!state.bookmarks[k];save();renderBank()};}
 async function ensureAllBanks(){await Promise.all(manifest.banks.map(x=>getBank(x.id)));}
 function reviewChoice(card,r,q){const answer=r.currentAnswer;return `<div class="choices">${displayOrder(q).map((i,pos)=>{const o=q.options[i],letter=ABC[i];let cls='choice';if(answer){if(letter===q.key)cls+=' true';if(letter===answer)cls+=answer===q.key?' selected correct':' selected incorrect';}return `<button class="${cls}" data-review-choice="${letter}" data-review-id="${idOf(r.bank,r.n)}" ${answer||r.mastered?'disabled':''}><span class="letter">${ABC[pos]}</span><span>${safe(o)}</span></button>`;}).join('')}</div>${answer?`<div class="feedback ${answer===q.key?'yes':'no'}">${answer===q.key?'✓ Correct! Added to Mastered.':'✗ Still learning — retry after reviewing the explanation.'}</div>${learningNotes(q,`review-notes-${r.bank}-${r.n}`,answer)}${managementMarkup(q)}`:''}`;}
 let transientReview={};
@@ -714,6 +773,7 @@ function exportProgress(){
  const chosen=new Set(ids);
  for(const [id,item] of Object.entries(state.review||{}))if(chosen.has(Number(id.split(':')[0])))subset.review[id]=item;
  for(const [id,item] of Object.entries(state.bookmarks||{}))if(chosen.has(Number(id.split(':')[0])))subset.bookmarks[id]=item;
+ for(const [id,item] of Object.entries(state.annotations||{}))if(chosen.has(Number(id.split(':')[0])))subset.annotations[id]=item;
  if(ids.length===manifest.banks.length&&state.practice?.version===1)subset.practice=state.practice;
  const content=JSON.stringify({kind:'SPAW_ONLINE_PROGRESS_BACKUP',created:new Date().toISOString(),includedBanks:ids,state:subset},null,2);
  const blob=new Blob([content],{type:'application/json'}),uri=URL.createObjectURL(blob),a=document.createElement('a');
