@@ -824,3 +824,18 @@ body.midnight-sage{--study-theme-mark:#a8dbc7}
 .study-notepad textarea:focus{outline:2px solid var(--violet);border-color:transparent}
 .study-note-saving{margin-top:6px;font-size:11px;color:var(--muted)}
 
+
+/* A compact theme picker and a non-jumping cloud-account button. */
+.site-head .theme-picker{padding:5px 6px;gap:0;flex:none}
+.site-head .theme-picker>span:first-child{display:none}
+.site-head .theme-picker select{field-sizing:content;width:auto;min-width:62px;max-width:145px;font-size:12px;padding:0 2px}
+.site-head .account-trigger{width:158px;min-width:158px;flex:0 0 158px;box-sizing:border-box}
+@media(max-width:720px){.site-head .theme-picker{padding:4px 5px}.site-head .theme-picker select{font-size:11px}.site-head .account-trigger{width:144px;min-width:144px;flex-basis:144px}}
+@media(max-width:420px){.site-head .account-trigger{width:39px;min-width:39px;flex-basis:39px}}
+
+/* Softer study marks, without washing out the palette buttons. */
+.study-mark-theme{background:color-mix(in srgb,var(--study-theme-mark) 80%,transparent)}
+.study-mark-yellow{background:rgb(255 231 133 / 80%)}
+.study-mark-pink{background:rgb(255 175 212 / 80%)}
+.study-mark-mint{background:rgb(169 238 211 / 80%)}
+.study-mark-lilac{background:rgb(201 184 250 / 80%)}
