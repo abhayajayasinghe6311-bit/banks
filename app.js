@@ -733,6 +733,14 @@ let pendingStudyNoteSave=null;
 function saveStudyNoteBeforeNavigation(){if(pendingStudyNoteSave){pendingStudyNoteSave.flushNote();pendingStudyNoteSave.cleanup();pendingStudyNoteSave=null;}}
 
 function renderBank(){saveStudyNoteBeforeNavigation();const b=route.bank;const bm=manifest.banks.find(x=>x.id===b);if(!bm)return;const qset=bankData[b];if(!qset){$('app').innerHTML='<div class="loading">Opening your questions… 🌷</div>';return;}activeList=filteredQuestions(b);cursor=Math.max(0,Math.min(cursor,activeList.length-1));const q=activeList[cursor],tot=answeredStatus(b);const pct=qset.length?Math.round(tot.attempted*100/qset.length):0;const cats=[...new Set(qset.map(q=>q.domain))].sort();const summary=`${tot.attempted}/${qset.length} answered · ${tot.correct} correct · ${tot.attempted-tot.correct} incorrect`;
+ // Keep the question number in the address so a refresh resumes the exact EMQ.
+ if(q&&new URLSearchParams(location.search).get('bank')===String(b)){
+  const current=new URL(location.href);
+  if(current.searchParams.get('question')!==String(q.n)){
+   current.searchParams.set('question',String(q.n));
+   history.replaceState(history.state,'',current.pathname+current.search+current.hash);
+  }
+ }
  const finished=tot.attempted===qset.length;
  const canJumpToUnanswered=!finished&&cursor===activeList.length-1&&qset.some(x=>!(state.banks[b]||{})[x.n]);
  const specialtySummary=[...new Set(qset.map(x=>x.domain))].map(d=>{const subset=qset.filter(x=>x.domain===d);const count=subset.filter(x=>(state.banks[b]||{})[x.n]?.correct).length;return `<div class="flex between"><span>${safe(d)}</span><b>${count}/${subset.length} · ${Math.round(count/subset.length*100)}%</b></div>`;}).join('');
