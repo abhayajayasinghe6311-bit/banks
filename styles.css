@@ -895,3 +895,34 @@ body.midnight-sage{--study-theme-mark:#a8dbc7}
 /* Comfortable spacing between the review back button and section eyebrow. */
 #app .topline + .eyebrow{margin-top:20px}
 #app .topline + .eyebrow + .page-title{margin-top:11px}
+
+/* Optical centering and comfortable touch targets for the homepage hero actions. */
+.hero > .flex {
+  display:flex;
+  justify-content:center;
+  align-items:stretch;
+  gap:12px;
+  width:100%;
+  margin-top:20px;
+}
+.hero > .flex > .btn {
+  display:inline-flex;
+  flex:0 1 auto;
+  justify-content:center;
+  align-items:center;
+  min-height:46px;
+  padding:12px 18px;
+  text-align:center;
+  line-height:1.35;
+  white-space:normal;
+}
+@media (max-width:520px) {
+  .hero > .flex {
+    display:grid;
+    grid-template-columns:minmax(0,1fr);
+    width:min(100%,390px);
+    margin-inline:auto;
+    gap:11px;
+  }
+  .hero > .flex > .btn {width:100%;min-height:46px;}
+}
