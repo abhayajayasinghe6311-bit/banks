@@ -1041,3 +1041,35 @@ body.dark .study-mark-lilac,body.berry-bloom .study-mark-lilac,body.midnight-sag
  .site-head .theme-picker{width:98px;min-width:98px;}
  .site-head .account-trigger{width:39px;min-width:39px;flex-basis:39px;}
 }
+
+
+/* Native select text and its chevron occupy unequal visual space in Chrome.
+   Paint a consistently centred label while keeping the real select fully interactive. */
+@supports selector(:has(*)){
+ .site-head .theme-picker{position:relative;isolation:isolate;width:126px;min-width:126px;overflow:visible;}
+ .site-head .theme-picker::before{
+   content:"🌸 Pink";position:absolute;left:0;right:15px;top:0;bottom:0;
+   display:flex;align-items:center;justify-content:center;
+   font:inherit;font-size:13px;font-weight:750;line-height:1.2;
+   color:var(--ink);white-space:nowrap;pointer-events:none;
+ }
+ .site-head .theme-picker:has(#themeSelect option[value="light"]:checked)::before{content:"🌸 Pink";}
+ .site-head .theme-picker:has(#themeSelect option[value="dark"]:checked)::before{content:"🌙 Night";}
+ .site-head .theme-picker:has(#themeSelect option[value="contrast"]:checked)::before{content:"◐ Contrast";}
+ .site-head .theme-picker:has(#themeSelect option[value="berry-bloom"]:checked)::before{content:"🍓 Berry Bloom";}
+ .site-head .theme-picker:has(#themeSelect option[value="midnight-sage"]:checked)::before{content:"🌿 Midnight Sage";}
+ .site-head .theme-picker select{
+   position:absolute;inset:0;width:100%;height:100%;opacity:0;z-index:2;
+   padding:0;border:0;cursor:pointer;
+ }
+ .site-head .theme-picker:focus-within{outline:2px solid var(--violet);outline-offset:2px;}
+ .site-head .theme-picker::after{right:9px;transform:translateY(-57%);}
+ @media(max-width:720px){
+  .site-head .theme-picker{width:120px;min-width:120px;}
+  .site-head .theme-picker::before{font-size:12px;right:13px;}
+ }
+ @media(max-width:420px){
+  .site-head .theme-picker{width:118px;min-width:118px;}
+  .site-head .theme-picker::before{font-size:11px;right:13px;}
+ }
+}
