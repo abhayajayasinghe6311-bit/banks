@@ -478,5 +478,485 @@
     },
     "source": "https://www.health.qld.gov.au/qcg/publications/non-qcg-maternity-and-neonatal",
     "n": 10
+  },
+  {
+    "domain": "Psychiatry & cardiology",
+    "skill": "Clozapine / early myocarditis",
+    "context": "Advanced integrated clinical decisions",
+    "stem": "A 30-year-old began clozapine for treatment-resistant schizophrenia 18 days ago. He reports fatigue and mild chest discomfort, with a persistent resting pulse of 122/min despite a normal temperature. CRP has risen to 112 mg/L and high-sensitivity troponin is more than twice the laboratory upper limit of normal; ECG shows sinus tachycardia.",
+    "ask": "What is the safest immediate course?",
+    "options": [
+      "Continue clozapine and repeat inflammatory markers at the next weekly clinic visit.",
+      "Increase clozapine to improve anxiety-related tachycardia and reassess after sedation.",
+      "Treat presumed viral illness with oral fluids while maintaining the planned titration.",
+      "Add a beta blocker for tachycardia without changing the clozapine regimen.",
+      "Withhold clozapine, urgently assess for myocarditis and involve cardiology and psychiatry."
+    ],
+    "key": "E",
+    "explanations": [
+      "Chest symptoms, disproportionate tachycardia and raised cardiac biomarkers in the early titration period are not suitable for routine monitoring alone. Continuing treatment risks further myocardial injury.",
+      "Anxiety can cause tachycardia, but it does not adequately explain this troponin and CRP pattern. Increasing the suspected causative medicine could worsen an evolving inflammatory cardiomyopathy.",
+      "Viral myocarditis is possible, but the temporal relationship to clozapine requires active drug-related evaluation. Supportive advice at home is unsafe with a markedly abnormal troponin.",
+      "Beta blockade may lower heart rate while masking a warning sign, and it does not remove the suspected trigger. Treat the underlying cardiac risk before considering rate-control symptoms.",
+      "Correct: suspected clozapine-induced myocarditis with significant troponin elevation requires stopping or withholding clozapine under urgent specialist advice and hospital assessment. Obtain serial ECG, troponin and CRP, assess cardiac function, and coordinate ongoing psychiatric care and alternative antipsychotic planning."
+    ],
+    "pearl": "Early clozapine tachycardia plus rising CRP and troponin is a myocarditis warning, not simply an expected titration effect.",
+    "pivot": "Mild isolated tachycardia with reassuring biomarkers may warrant closer daily monitoring, but chest symptoms or significant troponin elevation change the threshold for stopping and urgent assessment.",
+    "management": {
+      "steps": [
+        [
+          "Escalate",
+          "Urgently arrange hospital/cardiology assessment and notify the clozapine-prescribing psychiatric team."
+        ],
+        [
+          "Stop exposure",
+          "Withhold clozapine when myocarditis is strongly suspected; document timing and medication history."
+        ],
+        [
+          "Investigate",
+          "Repeat ECG, high-sensitivity troponin and CRP; assess vitals, oxygenation and echocardiography as directed."
+        ],
+        [
+          "Coordinate",
+          "Manage possible myocarditis medically and plan psychiatric alternatives; any rechallenge requires expert oversight."
+        ]
+      ],
+      "safety": "Do not dismiss new chest symptoms as benign titration tachycardia or treat the pulse in isolation.",
+      "local": "NSW Health guidance on monitoring for clozapine-induced myocarditis."
+    },
+    "source": "https://www1.health.nsw.gov.au/pds/ActivePDSDocuments/GL2022_011.pdf",
+    "n": 11
+  },
+  {
+    "domain": "Paediatric nephrology",
+    "skill": "Post-streptococcal glomerulonephritis / acute nephritic syndrome",
+    "context": "Advanced integrated clinical decisions",
+    "stem": "An 8-year-old develops smoky-brown urine, puffiness around the eyes and reduced urine output two weeks after a skin infection. BP is 146/96 mmHg; urine dipstick shows blood 3+ and protein 2+. Creatinine is above the age-adjusted reference interval and complement C3 is low.",
+    "ask": "What should take priority in the initial plan?",
+    "options": [
+      "Admit for hypertension and fluid assessment, renal monitoring, and targeted supportive therapy.",
+      "Start high-dose corticosteroids before confirming whether this is an immune glomerulonephritis.",
+      "Treat as uncomplicated cystitis with oral antibiotics and repeat urinalysis in a week.",
+      "Encourage extra oral fluid to compensate for oliguria while awaiting complement recovery.",
+      "Arrange elective outpatient nephrology review because the usual course is self-limiting."
+    ],
+    "key": "A",
+    "explanations": [
+      "Correct: the nephritic picture is consistent with post-streptococcal glomerulonephritis, but marked hypertension, oliguria and renal impairment require hospital assessment. Monitor fluid balance and renal function, restrict salt/fluid as appropriate, manage BP and assess complications such as pulmonary oedema or hypertensive encephalopathy.",
+      "Immunosuppression is not routine for typical post-streptococcal disease. Steroids without careful diagnostic evaluation could expose the child to harm and distract from urgent blood-pressure and fluid management.",
+      "Haematuria after streptococcal infection, oedema, hypertension and low C3 support a glomerular rather than lower urinary tract process. Antibiotics may eradicate ongoing streptococcal infection but do not alone manage nephritic complications.",
+      "Reduced urine output with fluid retention is not a reason to force large volumes. Excess intake may worsen hypertension or pulmonary oedema; fluid therapy must be guided by examination and balance.",
+      "Many cases resolve, but this child has clinically important renal and cardiovascular features. Elective review would not safely manage severe hypertension or evolving acute kidney injury."
+    ],
+    "pearl": "PSGN is often self-limited, but oliguria, hypertension and renal impairment determine immediate urgency, not the likely long-term prognosis.",
+    "pivot": "Persistent low C3, severe proteinuria or deteriorating kidney function should prompt evaluation for alternative glomerular disease and nephrology input.",
+    "management": {
+      "steps": [
+        [
+          "Stabilise",
+          "Assess BP repeatedly with an appropriate cuff, fluid overload, neurological symptoms and respiratory compromise."
+        ],
+        [
+          "Confirm",
+          "Obtain urine microscopy/protein ratio, renal function, electrolytes, C3/C4 and evidence of recent streptococcal infection."
+        ],
+        [
+          "Manage",
+          "Admit for strict input/output, weight, salt/fluid management and BP treatment; discuss diuretics with paediatrics/nephrology."
+        ],
+        [
+          "Follow",
+          "Trend renal function, BP, proteinuria and complement recovery; provide clear follow-up for persistent abnormalities."
+        ]
+      ],
+      "safety": "Hypertensive encephalopathy and pulmonary oedema are emergencies; escalate immediately if headache, seizures or hypoxia occur.",
+      "local": "Royal Children's Hospital post-streptococcal glomerulonephritis guideline."
+    },
+    "source": "https://www.rch.org.au/clinicalguide/guideline_index/Post-streptococcal_glomerulonephritis_%28PSGN%29/",
+    "n": 12
+  },
+  {
+    "domain": "Paediatrics & cardiology",
+    "skill": "Exertional syncope / sudden-death risk",
+    "context": "Advanced integrated clinical decisions",
+    "stem": "A 16-year-old collapses without prodrome during a school basketball game and regains consciousness in less than a minute. She denies chest pain now, but an uncle died suddenly while exercising at age 29. Observations are normal, ECG shows a QTc of 525 ms, and the neurological examination is unremarkable.",
+    "ask": "Which approach is most appropriate?",
+    "options": [
+      "Attribute the episode to dehydration, encourage oral fluids and return to sport.",
+      "Request an EEG first because brief loss of consciousness indicates possible seizure.",
+      "Arrange routine GP review and repeat the ECG after unrestricted sporting activity.",
+      "Restrict exertion and obtain urgent specialist cardiac evaluation with monitored assessment.",
+      "Order only a blood count because exercise-related vasovagal syncope is common."
+    ],
+    "key": "D",
+    "explanations": [
+      "Dehydration can contribute to syncope, but collapse during exertion, a family history of sudden death and a long QT interval strongly suggest cardiac risk. Return to sport before evaluation is unsafe.",
+      "Seizures are an important mimic, but there is no described convulsive sequence or postictal state. The ECG and exertional history demand cardiac assessment regardless of whether neurological evaluation is later indicated.",
+      "A routine appointment and ongoing exercise expose her to recurrent malignant arrhythmia risk. Repolarisation abnormality plus family history requires expedited risk assessment.",
+      "Correct: recognise high-risk cardiac syncope, keep the adolescent from strenuous exercise and arrange urgent senior/cardiology review, telemetry or appropriate observation and investigation for inherited arrhythmia. Verify QTc, check medication and electrolyte causes and discuss family screening.",
+      "Although vasovagal episodes are common, syncope during exertion without a warning prodrome is not low risk. A normal neurological examination does not resolve a cardiac red flag."
+    ],
+    "pearl": "Syncope during exercise—not merely after exercise—plus family sudden death or abnormal ECG should trigger urgent cardiac evaluation.",
+    "pivot": "A classic vasovagal episode after prolonged standing with normal ECG and no family history can follow a different, often outpatient pathway.",
+    "management": {
+      "steps": [
+        [
+          "Protect",
+          "Stop competitive exercise and assess ABCs, injury, glucose and recurrent symptoms."
+        ],
+        [
+          "Review ECG",
+          "Confirm QTc with senior interpretation; check rhythm strips, electrolytes and medications that prolong QT."
+        ],
+        [
+          "Escalate",
+          "Seek urgent paediatric/cardiology consultation and monitored assessment to plan further tests."
+        ],
+        [
+          "Prevent",
+          "Provide return-to-play restrictions and family safety-net advice until specialist clearance."
+        ]
+      ],
+      "safety": "Do not clear a student athlete to resume exertion after unexplained exertional syncope with QT prolongation.",
+      "local": "Royal Children's Hospital syncope and paediatric ECG guidelines."
+    },
+    "source": "https://www.rch.org.au/clinicalguide/guideline_index/Syncope/",
+    "n": 13
+  },
+  {
+    "domain": "Women's health & general practice",
+    "skill": "Migraine with aura / contraceptive eligibility",
+    "context": "Advanced integrated clinical decisions",
+    "stem": "A 27-year-old requests the combined oral contraceptive pill to manage contraception and painful periods. She describes a monthly migraine preceded by fifteen minutes of shimmering zigzag lights in both visual fields. She is a nonsmoker, BP is 112/70 mmHg, and she has no known thrombophilia.",
+    "ask": "Which counselling approach is best?",
+    "options": [
+      "Prescribe a low-dose combined pill because she has no other vascular risk factors.",
+      "Avoid estrogen-containing contraception and discuss effective progestogen-only or nonhormonal methods.",
+      "Prescribe the combined pill only during months without migraine attacks or aura.",
+      "Order brain MRI before deciding whether any contraceptive method can be considered.",
+      "Recommend condoms alone because every hormonal method is contraindicated with migraine aura."
+    ],
+    "key": "B",
+    "explanations": [
+      "Low estrogen dose and absence of smoking do not remove the eligibility concern created by migraine with aura. Combined hormonal contraception is generally contraindicated because of ischaemic stroke risk.",
+      "Correct: recognise the visual symptoms as typical aura and explain why estrogen-containing combined pills, patches and rings should be avoided. Discuss a levonorgestrel IUD, implant or suitable progestogen-only pill as well as nonhormonal options, considering her pain and preferences.",
+      "Intermittent estrogen exposure does not solve the contraindication and would make contraception unreliable. A safer sustained method is preferable.",
+      "Imaging is not routinely needed for an otherwise typical stable migraine-aura history without neurological red flags. MRI cannot change the eligibility category for estrogen use.",
+      "Progesterone-only options are not universally contraindicated by aura. A blanket ban on hormonal contraception unnecessarily removes effective alternatives."
+    ],
+    "pearl": "Migraine with aura is a major eligibility red flag for estrogen-containing combined contraception, regardless of age or smoking history.",
+    "pivot": "Migraine without aura has a different medical-eligibility assessment that depends on age, additional vascular risks and the specific contraceptive method.",
+    "management": {
+      "steps": [
+        [
+          "Clarify",
+          "Confirm focal aura characteristics, migraine history, neurological red flags, smoking and thrombotic history."
+        ],
+        [
+          "Counsel",
+          "Explain the relative stroke-risk concern with estrogen and support informed choice rather than simply refusing contraception."
+        ],
+        [
+          "Offer",
+          "Discuss progestogen-only pill, implant, IUD and nonhormonal choices; address dysmenorrhoea and bleeding preferences."
+        ],
+        [
+          "Follow",
+          "Provide initiation guidance, backup contraception rules and review if migraine features change."
+        ]
+      ],
+      "safety": "New focal symptoms, atypical prolonged aura or abrupt severe headache require separate urgent neurological assessment.",
+      "local": "RACGP contraceptive medical eligibility guidance; apply current Australian contraceptive eligibility criteria."
+    },
+    "source": "https://www.racgp.org.au/afp/2017/october/oral-hormonal-contraception-in-special-circumstances/",
+    "n": 14
+  },
+  {
+    "domain": "Paediatric emergencies",
+    "skill": "Life-threatening asthma / silent chest",
+    "context": "Advanced integrated clinical decisions",
+    "stem": "A 9-year-old with asthma has received repeated salbutamol and ipratropium in the emergency department. He is now drowsy, has minimal air movement without audible wheeze, shallow respiratory effort and SpO2 88% despite supplemental oxygen. His pulse is 145/min and he can say only one word at a time.",
+    "ask": "What is the most appropriate immediate response?",
+    "options": [
+      "Observe for wheeze to return before deciding whether further bronchodilator is required.",
+      "Send him for a chest radiograph while continuing the same intermittent inhaler schedule.",
+      "Activate resuscitation/PICU support and deliver life-threatening asthma treatment immediately.",
+      "Discharge with a higher inhaled corticosteroid dose once the heart rate decreases.",
+      "Reduce bronchodilator frequency because absent wheeze indicates the airways have opened."
+    ],
+    "key": "C",
+    "explanations": [
+      "Minimal wheeze in a child with poor effort may mean almost no airflow, not recovery. Waiting for audible wheezing risks respiratory arrest.",
+      "Imaging may be appropriate if pneumothorax or an alternate diagnosis is suspected, but a drowsy hypoxic child needs stabilisation and advanced airway support availability now.",
+      "Correct: this is life-threatening asthma with exhaustion and inadequate ventilation. Call senior emergency/PICU teams, maximise oxygenation and repeated or continuous inhaled bronchodilators, give systemic corticosteroids, consider IV magnesium and prepare for carefully managed ventilatory support if deterioration continues.",
+      "Controller adjustment matters after recovery but cannot manage drowsiness and hypoxaemia in the ED. Discharge is inappropriate.",
+      "A silent chest reflects severely reduced air movement and impending failure. Reducing bronchodilators because wheeze has disappeared misinterprets a dangerous late sign."
+    ],
+    "pearl": "In acute asthma, a quiet chest accompanied by exhaustion or drowsiness is a danger sign—not improvement.",
+    "pivot": "A well-appearing child with normal oxygenation, good air entry and resolved work of breathing may step down treatment and discharge with an action plan after observation.",
+    "management": {
+      "steps": [
+        [
+          "Recognise",
+          "Treat falling consciousness, quiet chest and hypoxaemia as impending respiratory failure; activate resuscitation response."
+        ],
+        [
+          "Treat",
+          "Give oxygen, high-dose inhaled short-acting bronchodilator with ipratropium, early systemic corticosteroids and protocol-based IV therapy."
+        ],
+        [
+          "Prepare",
+          "Involve PICU/anaesthesia early for ventilatory support if fatigue or hypoventilation progresses."
+        ],
+        [
+          "Reassess",
+          "Monitor respiratory effort, pulse oximetry, consciousness and blood gases when indicated; address triggers and discharge prevention after recovery."
+        ]
+      ],
+      "safety": "Do not rely on wheeze intensity alone to grade severity, and do not delay treatment for imaging.",
+      "local": "Royal Children's Hospital acute asthma guideline; doses and escalation follow local paediatric resuscitation pathways."
+    },
+    "source": "https://www.rch.org.au/clinicalguide/guideline_index/Acute_asthma/",
+    "n": 15
+  },
+  {
+    "domain": "General practice & preventive medicine",
+    "skill": "Positive FIT / discordant repeat result",
+    "context": "Advanced integrated clinical decisions",
+    "stem": "A 57-year-old asymptomatic person received a positive immunochemical faecal occult blood test through the National Bowel Cancer Screening Program. Worried about colonoscopy, he bought a second home kit the next week; that test was negative. His haemoglobin is normal and he has no family history of colorectal cancer.",
+    "ask": "What advice most appropriately addresses the discordant tests?",
+    "options": [
+      "Return to routine two-year screening because the most recent test was negative.",
+      "Repeat a third FIT in one month and act only if two results are positive.",
+      "Request abdominal ultrasound before deciding whether bowel investigation is needed.",
+      "Offer colonoscopy only if a complete blood count later shows iron deficiency.",
+      "Recommend diagnostic colonoscopy despite the later negative FIT and normal haemoglobin."
+    ],
+    "key": "E",
+    "explanations": [
+      "Bleeding from neoplastic and non-neoplastic lesions can be intermittent, so a subsequent negative sample does not cancel a prior positive screening result. Routine recall without evaluation is inadequate.",
+      "A third FIT increases the risk of false reassurance and delays diagnostic evaluation. The initial positive screen already merits investigation.",
+      "Ultrasound does not adequately evaluate colonic mucosa or remove polyps. It cannot replace colonoscopy in this pathway.",
+      "Normal haemoglobin and absence of anaemia do not exclude colorectal neoplasia. Waiting for iron deficiency allows a potentially preventable lesion to progress.",
+      "Correct: explain the difference between a screening test and a diagnostic investigation, address procedural concerns and arrange appropriate colonoscopy referral. If colonoscopy is contraindicated, discuss alternative evaluation with the specialist service rather than repeating stool tests."
+    ],
+    "pearl": "A negative repeat FIT does not overrule an earlier positive screening FIT; bleeding may be intermittent.",
+    "pivot": "If the patient has rectal bleeding, unexplained iron deficiency or altered bowel habit, investigate symptoms through a diagnostic pathway even if screening FIT is negative.",
+    "management": {
+      "steps": [
+        [
+          "Explain",
+          "Discuss positive FIT as blood detection, not a cancer diagnosis, and why the negative repeat cannot exclude disease."
+        ],
+        [
+          "Refer",
+          "Arrange diagnostic colonoscopy through the local positive-screen pathway."
+        ],
+        [
+          "Support",
+          "Assess anticoagulants, comorbidities, bowel-prep needs and preferences to minimise barriers."
+        ],
+        [
+          "Close loop",
+          "Track referral, findings and any recommended surveillance or treatment."
+        ]
+      ],
+      "safety": "Do not repeat FIT to avoid referral after a documented positive screening result.",
+      "local": "Cancer Council Australia/National Bowel Cancer Screening Program recommendations."
+    },
+    "source": "https://www.cancer.org.au/cancer-information/screening-tests-and-treatments/early-detection-and-screening/bowel-cancer-screening/understanding-your-fobt-results",
+    "n": 16
+  },
+  {
+    "domain": "Neurology & acute medicine",
+    "skill": "Transient focal deficit / high-risk TIA",
+    "context": "Advanced integrated clinical decisions",
+    "stem": "A 69-year-old with hypertension and diabetes developed sudden right-sided arm weakness and slurred speech lasting twelve minutes. Symptoms have fully resolved by ED arrival; an initial non-contrast CT shows no haemorrhage or obvious infarct. He has no history of seizures or migraine aura.",
+    "ask": "What should happen next?",
+    "options": [
+      "Discharge with reassurance because symptoms resolved and the CT is negative.",
+      "Arrange urgent stroke-pathway assessment, vascular imaging and secondary-prevention planning.",
+      "Book an outpatient neurology appointment in six weeks before changing any medication.",
+      "Treat the episode as a focal seizure because brief symptoms cannot be cerebrovascular.",
+      "Repeat the CT in one month and begin treatment only if a lesion appears."
+    ],
+    "key": "B",
+    "explanations": [
+      "Symptom resolution does not remove early recurrent stroke risk, and a normal CT does not exclude TIA or a small ischaemic lesion. A safety-net alone is insufficient.",
+      "Correct: undertake urgent TIA/stroke evaluation including brain and vascular imaging as indicated, ECG/rhythm monitoring and assessment of cardioembolic/atherosclerotic sources. Begin appropriate antithrombotic and risk-factor management after excluding haemorrhage and determining likely mechanism, following the specialist pathway.",
+      "Delaying for weeks risks a preventable disabling stroke. Secondary prevention and mechanism assessment are time-sensitive even if the examination has normalised.",
+      "A seizure can mimic TIA but the abrupt negative neurological symptoms and vascular risk factors strongly support cerebrovascular evaluation. Brief duration does not exclude ischaemia.",
+      "Follow-up imaging weeks later does not address the early hazard. The first CT's primary role in acute care includes excluding haemorrhage, not proving that no ischaemia occurred."
+    ],
+    "pearl": "TIA is a warning event: resolved symptoms and normal initial CT do not mean low risk.",
+    "pivot": "If symptoms recur or persist, immediately activate the acute stroke pathway and reassess reperfusion eligibility according to onset time and imaging.",
+    "management": {
+      "steps": [
+        [
+          "Triage",
+          "Assess ABCs, glucose, residual deficits and exact symptom timing; involve stroke team urgently."
+        ],
+        [
+          "Investigate",
+          "Arrange MRI or other brain/vascular imaging as appropriate, ECG and rhythm monitoring, carotid/arterial evaluation and key bloods."
+        ],
+        [
+          "Prevent",
+          "Start cause-specific antithrombotic and vascular risk management after appropriate exclusions and specialist advice."
+        ],
+        [
+          "Arrange",
+          "Ensure rapid specialist review, clear safety-netting and follow-up of investigations and medication adherence."
+        ]
+      ],
+      "safety": "Avoid assuming a normal CT rules out TIA, and distinguish antiplatelet from anticoagulation decisions by mechanism.",
+      "local": "Stroke Foundation Australia recommendations and local TIA pathways."
+    },
+    "source": "https://strokefoundation.org.au/About-Stroke/Learn/tia",
+    "n": 17
+  },
+  {
+    "domain": "Paediatrics & safeguarding",
+    "skill": "Bruising in a pre-mobile infant / safety",
+    "context": "Advanced integrated clinical decisions",
+    "stem": "A parent brings a healthy 3-month-old infant for an unrelated feeding question. During examination you notice a 2-cm bruise on the upper arm. The infant cannot yet roll or crawl. The parent says the mark probably came from bumping a cot rail but is uncertain when it appeared. There are no reported bleeding disorders.",
+    "ask": "What is the safest professional response?",
+    "options": [
+      "Reassure the family because a single bruise is common in any infant.",
+      "Document the bruise but investigate only if further injuries develop.",
+      "Complete an objective assessment and urgently consult senior child-safety specialists.",
+      "Tell the parent immediately that the injury proves deliberate physical abuse.",
+      "Order coagulation studies alone and discharge if the results are normal."
+    ],
+    "key": "C",
+    "explanations": [
+      "A bruise in a child who is not independently mobile is unusual and may be a sentinel injury. Automatic reassurance can miss a child at risk.",
+      "Accurate documentation is necessary but not sufficient. Any unexplained injury in a pre-mobile infant warrants prompt clinical evaluation and specialist safeguarding advice rather than waiting for recurrence.",
+      "Correct: assess the infant's immediate safety and medical condition, obtain a careful non-leading history, document size/site and explanations verbatim, and seek senior paediatric/forensic child-protection advice. Investigations for occult injury or bleeding disorders should be planned with the appropriate specialists and statutory processes followed.",
+      "Clinical concern is not the same as proof of abuse; accusing the parent can harm assessment and safety planning. Stay neutral, factual and child-centred while escalating concerns.",
+      "Coagulation disorders are part of the differential, but normal clotting tests do not exclude inflicted injury. A purely laboratory-based discharge bypasses the clinical safeguarding assessment."
+    ],
+    "pearl": "Any bruise in a pre-mobile infant deserves careful, non-accusatory evaluation and senior safeguarding advice.",
+    "pivot": "In an independently mobile child with a plausible accidental mechanism and typical shin bruises, the level of concern may differ, but context remains essential.",
+    "management": {
+      "steps": [
+        [
+          "Assess",
+          "Examine for other injuries and signs of illness; assess pain, development and immediate safety."
+        ],
+        [
+          "Document",
+          "Record a neutral chronology, caregiver's exact words, diagrams/photos per policy and precise lesion measurements."
+        ],
+        [
+          "Consult",
+          "Seek paediatric/forensic safeguarding input promptly and follow local reporting/child-protection procedures."
+        ],
+        [
+          "Investigate",
+          "Coordinate specialist-directed tests for occult injury or bleeding disorders without delaying protection."
+        ]
+      ],
+      "safety": "Do not label injury as proven abuse from one finding, and do not discharge before specialist advice when concern is significant.",
+      "local": "Royal Children's Hospital child abuse guideline and Victorian Forensic Paediatric Medical Service bruising guidance."
+    },
+    "source": "https://www.rch.org.au/clinicalguide/guideline_index/Child_Abuse/",
+    "n": 18
+  },
+  {
+    "domain": "Surgery & oncology",
+    "skill": "Painless testicular mass / malignancy pathway",
+    "context": "Advanced integrated clinical decisions",
+    "stem": "A 29-year-old notices a gradually enlarging, painless firmness in the right testis over six weeks. It is intratesticular on palpation and does not transilluminate; he has no fever or dysuria. He asks for antibiotics because a friend had epididymitis and improved on treatment.",
+    "ask": "What is the best next step?",
+    "options": [
+      "Arrange prompt scrotal ultrasound and expedited urology assessment for possible malignancy.",
+      "Treat empirically for epididymitis and reassess the mass after finishing antibiotics.",
+      "Perform needle biopsy in the clinic to confirm histology before specialist referral.",
+      "Reassure him that pain-free enlargement is usually a benign hydrocele.",
+      "Request a repeat examination in three months and image only if the testis hurts."
+    ],
+    "key": "A",
+    "explanations": [
+      "Correct: a solid intratesticular mass is testicular cancer until properly assessed. Arrange urgent scrotal ultrasound and urology referral, with tumour markers and staging investigations organised along the specialist pathway; avoid delays and explain the significance sensitively.",
+      "Epididymitis typically presents with pain and inflammatory signs and does not justify treating a persistent solid intratesticular mass without imaging. An antibiotic trial could delay cancer diagnosis.",
+      "Percutaneous scrotal biopsy is not the standard initial pathway for suspected testicular cancer and can complicate oncological management. Ultrasound and urological assessment should come first.",
+      "Hydroceles usually surround the testis and often transilluminate; they do not adequately explain a firm intratesticular lesion. Reassurance without imaging is unsafe.",
+      "Waiting months for pain to develop is inappropriate because many testicular tumours are initially painless. Symptoms of metastasis may appear later, so prompt assessment matters."
+    ],
+    "pearl": "Painless does not mean harmless: a firm intratesticular mass needs prompt ultrasound and urology referral.",
+    "pivot": "An acutely painful swollen testis with sudden onset requires immediate torsion exclusion rather than a routine tumour work-up.",
+    "management": {
+      "steps": [
+        [
+          "Assess",
+          "Examine both testes and groins, distinguish scrotal from intratesticular findings and check for systemic symptoms."
+        ],
+        [
+          "Image",
+          "Arrange urgent high-resolution scrotal ultrasound without delaying referral."
+        ],
+        [
+          "Refer",
+          "Seek expedited urology review; follow specialist instructions for AFP, beta-hCG, LDH and staging."
+        ],
+        [
+          "Counsel",
+          "Discuss uncertainty honestly, fertility preservation considerations and expected next steps."
+        ]
+      ],
+      "safety": "Do not attempt trans-scrotal biopsy or prescribe repeated antibiotics for an unexplained solid testicular mass.",
+      "local": "Queensland Health Clinical Prioritisation Criteria for suspected testicular cancer."
+    },
+    "source": "https://www.health.qld.gov.au/cpc/oncology-and-malignant-haematology/testicular-cancer",
+    "n": 19
+  },
+  {
+    "domain": "Obstetrics & respiratory medicine",
+    "skill": "Acute asthma during pregnancy / maternal stabilisation",
+    "context": "Advanced integrated clinical decisions",
+    "stem": "A 26-week pregnant patient with known asthma presents wheezing, speaking in short phrases with RR 30/min and SpO2 91% on room air. She has used salbutamol repeatedly at home but delayed coming in because she worries steroids and inhalers could harm the fetus. Fetal movements are present.",
+    "ask": "Which management strategy is best?",
+    "options": [
+      "Avoid systemic corticosteroids and use only non-drug breathing techniques initially.",
+      "Delay bronchodilator escalation until obstetric ultrasound confirms reassuring fetal growth.",
+      "Use antibiotics as first-line because pregnancy-related respiratory symptoms are usually infectious.",
+      "Treat the exacerbation promptly with oxygen, bronchodilators and indicated systemic steroids.",
+      "Prioritise fetal heart-rate monitoring alone because maternal bronchodilator therapy is potentially teratogenic."
+    ],
+    "key": "D",
+    "explanations": [
+      "Poor maternal oxygenation is dangerous for both mother and fetus, and delaying effective medicines is not safer. Breathing strategies may support comfort but cannot manage this hypoxaemic exacerbation.",
+      "Maternal respiratory stabilisation cannot wait for fetal imaging. Obstetric assessment is valuable in parallel once immediate therapy is underway.",
+      "Infection may trigger asthma, but wheeze, increased work of breathing and prior reliever use call for asthma treatment first. Antibiotics are reserved for evidence of bacterial infection.",
+      "Correct: manage acute asthma in pregnancy with prompt oxygen to correct hypoxaemia, repeated inhaled bronchodilators and early systemic corticosteroids when indicated. Escalate according to severity, monitor maternal response and involve obstetrics for appropriate fetal assessment rather than withholding treatment because of pregnancy.",
+      "Fetal assessment complements, not replaces, maternal stabilisation. Untreated maternal hypoxia is an immediate fetal hazard; standard asthma therapies are generally preferable to delayed care."
+    ],
+    "pearl": "An asthma exacerbation in pregnancy is treated promptly using standard severity-based care; maternal oxygenation is essential fetal care.",
+    "pivot": "If there is fever, focal crackles or another cause of dyspnoea, assess infection, thromboembolism and cardiopulmonary disease while continuing indicated asthma treatment.",
+    "management": {
+      "steps": [
+        [
+          "Stabilise",
+          "Assess severity, give oxygen to correct hypoxaemia, and establish maternal cardiorespiratory monitoring."
+        ],
+        [
+          "Treat",
+          "Provide repeated inhaled short-acting beta-agonist with ipratropium for severe symptoms and systemic steroids when indicated."
+        ],
+        [
+          "Escalate",
+          "Seek senior emergency/respiratory and obstetric support; consider IV magnesium or higher care if response is inadequate."
+        ],
+        [
+          "Follow",
+          "Monitor clinical response, use pregnancy-appropriate fetal surveillance and review preventer adherence/action plan after recovery."
+        ]
+      ],
+      "safety": "Do not withhold bronchodilators or systemic steroids when clinically indicated merely because the patient is pregnant.",
+      "local": "Australian Asthma Handbook asthma-in-pregnancy and acute exacerbation recommendations."
+    },
+    "source": "https://www.asthmahandbook.org.au/clinical-topics/asthma-in-pregnancy",
+    "n": 20
   }
 ]
