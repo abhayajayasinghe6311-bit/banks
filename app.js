@@ -687,12 +687,15 @@ function syncStudyColourChoices(){
  const duplicate=duplicateStudyColour();
  if(studyActiveColour===duplicate){studyActiveColour='theme';try{localStorage.setItem(STUDY_COLOUR_PREF,studyActiveColour)}catch(e){}}
  document.querySelectorAll('[data-mark-colour]').forEach(btn=>{
-  const active=btn.dataset.markColour===studyActiveColour;
+  const active=!studyEraseMode&&btn.dataset.markColour===studyActiveColour;
   btn.hidden=btn.dataset.markColour===duplicate;
   btn.classList.toggle('is-active',active);btn.setAttribute('aria-pressed',String(active));
  });
+ const eraser=document.getElementById('studyEraser');
+ if(eraser){eraser.classList.toggle('is-active',studyEraseMode);eraser.setAttribute('aria-pressed',String(studyEraseMode));}
 }
 let studyActiveColour='theme';
+let studyEraseMode=false;
 try{const pref=localStorage.getItem(STUDY_COLOUR_PREF);if(STUDY_MARK_COLOURS.includes(pref)||pref==='off')studyActiveColour=pref;}catch(e){}
 function setStudyColour(colour){studyActiveColour=studyActiveColour===colour?'off':colour;try{localStorage.setItem(STUDY_COLOUR_PREF,studyActiveColour);}catch(e){}}
 
@@ -706,8 +709,8 @@ function highlightedStudyText(bank,q,part){
  return html+safe(original.slice(pos));
 }
 function studyMarkToolbar(){
- const swatches=STUDY_MARK_COLOURS.map(c=>'<button type="button" class="study-swatch '+c+(studyActiveColour===c?' is-active':'')+'"'+(c===duplicateStudyColour()?' hidden':'')+' data-mark-colour="'+c+'" title="'+(c==='theme'?'Theme-matched highlighter':c[0].toUpperCase()+c.slice(1)+' highlighter')+' · click again to pause" aria-label="'+(c==='theme'?'Theme-matched':c)+' highlighter" aria-pressed="'+(studyActiveColour===c)+'">'+(c==='theme'?'<span aria-hidden="true">✦</span>':'')+'</button>').join('');
- return '<div class="study-tools-bar" role="toolbar" aria-label="Highlighter: choose a colour, then select words"><svg class="study-tools-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m9 11 6 6M20.5 7.5l-4-4-12 12-1 4 4-1 13-11z"/></svg><div class="study-swatches" role="group" aria-label="Choose highlighter colour">'+swatches+'</div><button type="button" class="study-clear-marks" id="clearStudyMarks" aria-label="Erase highlights on this question" title="Erase all highlights on this question">⌫</button><span class="study-tool-status" id="studyToolStatus" role="status" aria-live="polite"></span></div>';
+ const swatches=STUDY_MARK_COLOURS.map(c=>'<button type="button" class="study-swatch '+c+(studyActiveColour===c&&!studyEraseMode?' is-active':'')+'"'+(c===duplicateStudyColour()?' hidden':'')+' data-mark-colour="'+c+'" title="'+(c==='theme'?'Theme-matched highlighter':c[0].toUpperCase()+c.slice(1)+' highlighter')+' · click again to pause" aria-label="'+(c==='theme'?'Theme-matched':c)+' highlighter" aria-pressed="'+(studyActiveColour===c&&!studyEraseMode)+'">'+(c==='theme'?'<span aria-hidden="true">✦</span>':'')+'</button>').join('');
+ return '<div class="study-tools-bar" role="toolbar" aria-label="Highlighter: choose a colour, then select words"><svg class="study-tools-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m9 11 6 6M20.5 7.5l-4-4-12 12-1 4 4-1 13-11z"/></svg><div class="study-swatches" role="group" aria-label="Choose highlighter colour">'+swatches+'</div><button type="button" class="study-eraser'+(studyEraseMode?' is-active':'')+'" id="studyEraser" aria-label="Erase selected highlight" aria-pressed="'+studyEraseMode+'" title="Eraser · select only the highlighted words you want to clear"><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m20.5 10.5-9.8 9.8H6L2.7 17a2 2 0 0 1 0-2.8L13.9 3a2 2 0 0 1 2.8 0l3.8 3.8a2.6 2.6 0 0 1 0 3.7Z"/><path d="m9 8 7 7M10.7 20.3H22"/></svg></button><button type="button" class="study-clear-marks" id="clearStudyMarks" aria-label="Clear all highlights on this question" title="Clear all highlights on this question">×</button><span class="study-tool-status" id="studyToolStatus" role="status" aria-live="polite"></span></div>';
 }
 function studyNotepadMarkup(bank,q){
  const note=String(annotationFor(bank,q.n).note||'');
@@ -728,25 +731,46 @@ function wireStudyTools(bank,q){
  const abort=new AbortController(),signal=abort.signal;
  const status=$('studyToolStatus');
  const applyMark=selection=>{
-  if(studyActiveColour==='off'||!selection)return;
+  if((studyActiveColour==='off'&&!studyEraseMode)||!selection)return;
   const original=studyText(q,selection.part),start=selection.start,end=selection.end;
   if(start<0||end>original.length||end<=start)return;
   state.annotations||={};const id=idOf(bank,q.n),rec=state.annotations[id]||(state.annotations[id]={});
   const old=rec[selection.part]||[],replacement=[];
+  if(studyEraseMode&&!old.some(m=>m.start<end&&m.end>start)){
+   window.getSelection()?.removeAllRanges();if(status)status.textContent='No highlighted colour in that selection';return;
+  }
   for(const m of old){if(m.end<=start||m.start>=end)replacement.push(m);else{if(m.start<start)replacement.push({...m,end:start});if(m.end>end)replacement.push({...m,start:end});}}
-  replacement.push({start,end,color:studyActiveColour});rec[selection.part]=replacement.sort((a,b)=>a.start-b.start);rec.updatedAt=Date.now();
-  const target=document.querySelector('[data-highlight-part="'+selection.part+'"]');if(target)target.innerHTML=highlightedStudyText(bank,q,selection.part);
-  window.getSelection()?.removeAllRanges();if(status)status.textContent='Highlighted';save();
+  if(!studyEraseMode)replacement.push({start,end,color:studyActiveColour});
+  rec[selection.part]=replacement.sort((a,b)=>a.start-b.start);
+  rec.updatedAt=Date.now();
+  const target=document.querySelector('[data-highlight-part="'+selection.part+'"]');
+  if(target)target.innerHTML=highlightedStudyText(bank,q,selection.part);
+  window.getSelection()?.removeAllRanges();
+  if(status)status.textContent=studyEraseMode?'Selected highlight erased':'Highlighted';
+  save();
  };
- const applyCurrentSelection=()=>{if(studyActiveColour!=='off')applyMark(selectedStudyRange());};
+ const applyCurrentSelection=()=>{
+  if(selectionTimer){clearTimeout(selectionTimer);selectionTimer=null;}
+  if(studyEraseMode||studyActiveColour!=='off')applyMark(selectedStudyRange());
+ };
  document.querySelectorAll('[data-mark-colour]').forEach(button=>{
   button.addEventListener('click',()=>{
+   const wasErasing=studyEraseMode;
+   studyEraseMode=false;
+   if(wasErasing&&studyActiveColour===button.dataset.markColour)studyActiveColour='off';
    setStudyColour(button.dataset.markColour);
-   document.querySelectorAll('[data-mark-colour]').forEach(b=>{const active=b.dataset.markColour===studyActiveColour;b.classList.toggle('is-active',active);b.setAttribute('aria-pressed',String(active));});
+   syncStudyColourChoices();
    if(status)status.textContent=studyActiveColour==='off'?'Highlighter paused':'Highlighter ready: select words';
    window.getSelection()?.removeAllRanges();
   },{signal});
  });
+ const eraser=$('studyEraser');
+ if(eraser)eraser.addEventListener('click',()=>{
+  studyEraseMode=!studyEraseMode;
+  syncStudyColourChoices();
+  if(status)status.textContent=studyEraseMode?'Eraser ready: drag over the part to remove':'Highlighter ready: select words';
+  window.getSelection()?.removeAllRanges();
+ },{signal});
  document.querySelectorAll('[data-highlight-part]').forEach(el=>{
   el.addEventListener('mouseup',applyCurrentSelection,{signal});
   el.addEventListener('keyup',e=>{if(e.shiftKey)applyCurrentSelection();},{signal});
@@ -754,7 +778,7 @@ function wireStudyTools(bank,q){
  });
  // Also supports touch-selection handles and keyboard selection where mouseup is not emitted.
  document.addEventListener('selectionchange',()=>{
-  if(studyActiveColour==='off'||!selectedStudyRange())return;
+  if((studyActiveColour==='off'&&!studyEraseMode)||!selectedStudyRange())return;
   if(selectionTimer)clearTimeout(selectionTimer);
   selectionTimer=setTimeout(applyCurrentSelection,950);
  },{signal});
