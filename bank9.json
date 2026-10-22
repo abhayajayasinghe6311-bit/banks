@@ -785,39 +785,43 @@
     "stem": "A 57-year-old develops sudden dyspnoea after central line insertion. BP is 76/40, trachea deviates right, and left breath sounds are absent.",
     "ask": "What is the FIRST intervention?",
     "options": [
-      "Wait for portable chest X-ray confirmation",
-      "Administer IV diuretics",
-      "Start heparin for pulmonary embolism",
-      "Immediate left-sided chest decompression without awaiting radiography",
-      "Perform diagnostic spirometry"
+      "Obtain portable chest radiography before choosing the side or site for emergency decompression.",
+      "Give a rapid intravenous crystalloid bolus and wait for a response before evaluating the pleural space.",
+      "Start intravenous unfractionated heparin for presumed pulmonary embolism after catheter insertion.",
+      "Decompress the left pleural space immediately and arrange definitive tube thoracostomy thereafter.",
+      "Perform urgent bedside lung ultrasound and wait for documented lung point before treatment."
     ],
     "key": "D",
     "explanations": [
-      "Imaging delays a life-saving intervention. The case favours Immediate left-sided chest decompression without awaiting radiography. Pearl: Do not wait for imaging when tension physiology is evident.",
-      "Not cardiogenic volume overload. The case favours Immediate left-sided chest decompression without awaiting radiography. Pearl: Do not wait for imaging when tension physiology is evident.",
-      "The procedural context and unilateral findings support tension pneumothorax. The case favours Immediate left-sided chest decompression without awaiting radiography. Pearl: Do not wait for imaging when tension physiology is evident.",
-      "Tension pneumothorax is a clinical diagnosis with obstructive shock. Pearl: Do not wait for imaging when tension physiology is evident.",
-      "Unsafe and unhelpful in shock. The case favours Immediate left-sided chest decompression without awaiting radiography. Pearl: Do not wait for imaging when tension physiology is evident."
+      "Chest radiography can confirm a pneumothorax in stable patients, but profound hypotension, absent unilateral breath sounds and tracheal deviation after line insertion indicate tension physiology. Imaging first risks cardiovascular collapse.",
+      "Resuscitation and supportive oxygen are appropriate, but obstructed venous return from tension pneumothorax requires immediate decompression. Fluids alone do not treat the mechanical cause of shock.",
+      "Pulmonary embolism is a potential cause of obstructive shock, but the immediate post-procedure onset, asymmetric auscultation and mediastinal shift strongly favour left tension pneumothorax. Anticoagulation would delay the needed intervention.",
+      "This is clinical tension pneumothorax until proved otherwise. Rapidly decompress the affected left side according to local resuscitation skill/protocol, then place a definitive chest drain and reassess haemodynamics.",
+      "Point-of-care ultrasound can help when available without delay, but a lung point may not be seen in a large or tension pneumothorax. Do not require ultrasound proof before emergency decompression."
     ],
     "pearl": "Pearl: Do not wait for imaging when tension physiology is evident.",
     "pivot": "Pivot: A small stable pneumothorax may be managed after imaging and assessment.",
     "management": {
       "steps": [
         [
-          "Best decision in this scenario",
-          "Immediate left-sided chest decompression without awaiting radiography"
+          "Recognise clinical tension",
+          "Check airway, hypotension, unilateral absent breath sounds and the recent central-line procedure; call for emergency help."
         ],
         [
-          "Clinical reasoning",
-          "Tension pneumothorax is a clinical diagnosis with obstructive shock."
+          "Decompress immediately",
+          "Perform immediate left-sided pleural decompression using the locally trained technique and correct anatomical site; do not await radiography."
         ],
         [
-          "What would change the answer?",
-          "Pivot: A small stable pneumothorax may be managed after imaging and assessment."
+          "Definitive drainage",
+          "Insert an appropriate chest drain after emergency decompression and reassess oxygenation, ventilation and blood pressure."
+        ],
+        [
+          "Confirm and monitor",
+          "Use imaging after stabilisation to check re-expansion and line/drain placement; monitor for recurrent pneumothorax."
         ]
       ],
-      "safety": "Pearl: Do not wait for imaging when tension physiology is evident.",
-      "local": "Original case-linked teaching summary, not a newly verified guideline. Confirm current Australian recommendations, local escalation pathways, patient factors and prescribing details."
+      "safety": "The side is determined by the clinical findings: absent left breath sounds with rightward deviation indicates left-sided tension.",
+      "local": "Educational summary checked against emergency and surgical guidelines; follow current Australian hospital protocol and specialist advice."
     }
   },
   {
@@ -1344,39 +1348,43 @@
     "stem": "A 58-year-old with diabetes has severe perineal pain, fever, hypotension and crepitus extending over the scrotum. Skin changes are modest compared with the pain.",
     "ask": "Which action is MOST IMPORTANT?",
     "options": [
-      "Wait for MRI before involving surgeons",
-      "Immediate broad-spectrum IV antibiotics, resuscitation and urgent surgical debridement",
-      "Oral flucloxacillin and discharge",
-      "Incision and drainage of a single superficial spot only",
-      "Topical antifungal treatment"
+      "Arrange urgent pelvic MRI to delineate fascial spread before asking the surgical team to review.",
+      "Start broad-spectrum IV antibiotics and resuscitation, with immediate surgical exploration/debridement.",
+      "Drain the most fluctuant superficial focus and reassess systemic markers after intravenous antibiotics.",
+      "Begin IV flucloxacillin and obtain a bedside scrotal ultrasound before choosing further intervention.",
+      "Admit for intravenous antifungal treatment while arranging microbiology and specialist review."
     ],
     "key": "B",
     "explanations": [
-      "Imaging must not delay operation in an unstable patient. The case favours Immediate broad-spectrum IV antibiotics, resuscitation and urgent surgical debridement. Pearl: Pain out of proportion with systemic toxicity suggests necrotising soft-tissue infection.",
-      "Fournier gangrene is necrotising infection requiring early source control. Pearl: Pain out of proportion with systemic toxicity suggests necrotising soft-tissue infection.",
-      "Grossly inadequate. The case favours Immediate broad-spectrum IV antibiotics, resuscitation and urgent surgical debridement. Pearl: Pain out of proportion with systemic toxicity suggests necrotising soft-tissue infection.",
-      "The infection spreads along fascial planes beyond visible skin. The case favours Immediate broad-spectrum IV antibiotics, resuscitation and urgent surgical debridement. Pearl: Pain out of proportion with systemic toxicity suggests necrotising soft-tissue infection.",
-      "Will not control necrotising bacterial infection. The case favours Immediate broad-spectrum IV antibiotics, resuscitation and urgent surgical debridement. Pearl: Pain out of proportion with systemic toxicity suggests necrotising soft-tissue infection."
+      "MRI can help define anatomical extent in a stable patient when the diagnosis is uncertain, but fever, shock, disproportionate pain and crepitus already suggest Fournier gangrene. Imaging must not delay resuscitation or surgical source control.",
+      "Necrotising perineal infection is a surgical emergency. Treat shock, immediately give broad IV coverage including gram-positive, gram-negative and anaerobic organisms, and call surgeons for prompt aggressive exploration and debridement.",
+      "A local abscess may be treated by targeted drainage, but severe systemic toxicity and crepitus indicate potentially extensive necrotising fascial infection. Limited surface drainage cannot remove dead tissue along fascial planes.",
+      "Flucloxacillin alone may treat uncomplicated staphylococcal cellulitis but does not adequately cover polymicrobial Fournier gangrene. Ultrasound should not postpone surgical exploration in a shocked patient.",
+      "Fungal infection can involve groin skin, but severe disproportionate pain, septic shock and crepitus strongly indicate invasive bacterial necrotising infection. Antifungal monotherapy would miss the primary life-threatening process."
     ],
     "pearl": "Pearl: Pain out of proportion with systemic toxicity suggests necrotising soft-tissue infection.",
     "pivot": "Pivot: Stable superficial cellulitis without fascial signs is treated much less aggressively.",
     "management": {
       "steps": [
         [
-          "Best decision in this scenario",
-          "Immediate broad-spectrum IV antibiotics, resuscitation and urgent surgical debridement"
+          "Recognise and resuscitate",
+          "Identify disproportionate pain, crepitus, perineal swelling and septic shock; secure IV access, cultures if prompt, fluids and haemodynamic monitoring."
         ],
         [
-          "Clinical reasoning",
-          "Fournier gangrene is necrotising infection requiring early source control."
+          "Cover likely pathogens",
+          "Give prompt broad-spectrum IV antibiotics with MRSA, gram-negative and anaerobic coverage according to local policy, adjusting after cultures."
         ],
         [
-          "What would change the answer?",
-          "Pivot: Stable superficial cellulitis without fascial signs is treated much less aggressively."
+          "Get definitive source control",
+          "Call general/urology/colorectal surgeons immediately for exploration and extensive debridement; do not wait for MRI if clinical suspicion is high."
+        ],
+        [
+          "Support ongoing recovery",
+          "Coordinate ICU care, serial wound examination/repeat debridement, glycaemic management and organ-support needs."
         ]
       ],
-      "safety": "Pearl: Pain out of proportion with systemic toxicity suggests necrotising soft-tissue infection.",
-      "local": "Original case-linked teaching summary, not a newly verified guideline. Confirm current Australian recommendations, local escalation pathways, patient factors and prescribing details."
+      "safety": "Delay to operative debridement increases the risk of death; deceptively minor skin findings do not exclude extensive necrosis.",
+      "local": "Educational summary checked against emergency and surgical guidelines; follow current Australian hospital protocol and specialist advice."
     }
   },
   {
