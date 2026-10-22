@@ -643,6 +643,13 @@ function jumpToBankQuestion(bank,number){
  window.scrollTo({top:120,behavior:'instant'});
  return true;
 }
+function jumpToCurrentQuestion(){
+ const card=document.querySelector('.quiz-question');if(!card)return;
+ // One immediate reposition after the next question is rendered avoids a visible
+ // long smooth-scroll over a changing document on phones and slower laptops.
+ const top=window.scrollY+card.getBoundingClientRect().top-92;
+ window.scrollTo({top:Math.max(0,top),behavior:'instant'});
+}
 function renderBank(){const b=route.bank;const bm=manifest.banks.find(x=>x.id===b);if(!bm)return;const qset=bankData[b];if(!qset){$('app').innerHTML='<div class="loading">Opening your questions… 🌷</div>';return;}activeList=filteredQuestions(b);cursor=Math.max(0,Math.min(cursor,activeList.length-1));const q=activeList[cursor],tot=answeredStatus(b);const pct=qset.length?Math.round(tot.attempted*100/qset.length):0;const cats=[...new Set(qset.map(q=>q.domain))].sort();const summary=`${tot.attempted}/${qset.length} answered · ${tot.correct} correct · ${tot.attempted-tot.correct} incorrect`;
  const finished=tot.attempted===qset.length;
  const canJumpToUnanswered=!finished&&cursor===activeList.length-1&&qset.some(x=>!(state.banks[b]||{})[x.n]);
@@ -690,7 +697,7 @@ function renderBank(){const b=route.bank;const bm=manifest.banks.find(x=>x.id===
    delete state.banks[b];filter='all';domain='all';cursor=0;save();renderBank();
    window.scrollTo({top:0,behavior:'smooth'});
  };
- if(!q)return;$('choices').onclick=e=>{const choice=e.target.closest('[data-choice]');if(choice)updateProgress(b,q.n,choice.dataset.choice)};$('prev').onclick=()=>{cursor--;renderBank();window.scrollTo({top:120,behavior:'smooth'})};$('next').onclick=()=>{if(canJumpToUnanswered){filter='all';domain='all';cursor=qset.findIndex(x=>!(state.banks[b]||{})[x.n]);}else cursor++;renderBank();window.scrollTo({top:120,behavior:'smooth'})};$('bookmark').onclick=()=>{let k=idOf(b,q.n);state.bookmarks[k]=!state.bookmarks[k];save();renderBank()};}
+ if(!q)return;$('choices').onclick=e=>{const choice=e.target.closest('[data-choice]');if(choice)updateProgress(b,q.n,choice.dataset.choice)};$('prev').onclick=()=>{cursor--;renderBank();jumpToCurrentQuestion()};$('next').onclick=()=>{if(canJumpToUnanswered){filter='all';domain='all';cursor=qset.findIndex(x=>!(state.banks[b]||{})[x.n]);}else cursor++;renderBank();jumpToCurrentQuestion()};$('bookmark').onclick=()=>{let k=idOf(b,q.n);state.bookmarks[k]=!state.bookmarks[k];save();renderBank()};}
 async function ensureAllBanks(){await Promise.all(manifest.banks.map(x=>getBank(x.id)));}
 function reviewChoice(card,r,q){const answer=r.currentAnswer;return `<div class="choices">${displayOrder(q).map((i,pos)=>{const o=q.options[i],letter=ABC[i];let cls='choice';if(answer){if(letter===q.key)cls+=' true';if(letter===answer)cls+=answer===q.key?' selected correct':' selected incorrect';}return `<button class="${cls}" data-review-choice="${letter}" data-review-id="${idOf(r.bank,r.n)}" ${answer||r.mastered?'disabled':''}><span class="letter">${ABC[pos]}</span><span>${safe(o)}</span></button>`;}).join('')}</div>${answer?`<div class="feedback ${answer===q.key?'yes':'no'}">${answer===q.key?'✓ Correct! Added to Mastered.':'✗ Still learning — retry after reviewing the explanation.'}</div>${learningNotes(q,`review-notes-${r.bank}-${r.n}`,answer)}${managementMarkup(q)}`:''}`;}
 let transientReview={};
