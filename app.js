@@ -1,14 +1,29 @@
 'use strict';
 const $=id=>document.getElementById(id);
 const safe=x=>String(x??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
-const STORE='spaw.study.garden.online.v1';const ABC='ABCDE';
+const STORE='spaw.study.garden.online.v1';let accountUID=null;const storageKey=()=>accountUID?STORE+'.account.'+accountUID:STORE;const ABC='ABCDE';
 const empty=()=>({format:'SPAW_ONLINE_PROGRESS_V1',version:1,banks:{},review:{},bookmarks:{},updated:Date.now()});
-const load=()=>{try{const d=JSON.parse(localStorage.getItem(STORE)||'null');return d&&d.version===1?d:empty();}catch(e){return empty();}};
+const load=()=>{try{const d=JSON.parse(localStorage.getItem(storageKey())||'null');return d&&d.version===1?d:empty();}catch(e){return empty();}};
 let state=load(),manifest=null,bankData={},route={},activeList=[],cursor=0,filter='all',domain='all',reviewFilter='pending',reviewBank='all',reviewOffset=0;
-let channel;try{channel=new BroadcastChannel('spaw-garden-online');channel.onmessage=()=>syncUI();}catch(e){}
-function save(){state.updated=Date.now();try{localStorage.setItem(STORE,JSON.stringify(state));}catch(e){showNotice('Browser storage is disabled or full. Export your progress backup to avoid losing answers.');}try{channel?.postMessage({updated:state.updated});}catch(e){}updateBadge();}
+let channel;try{channel=new BroadcastChannel('spaw-garden-online');channel.onmessage=e=>{if((e.data?.uid||null)===accountUID)syncUI()};}catch(e){}
+function save(){
+ const previous=load();state.updated=Date.now();
+ try{localStorage.setItem(storageKey(),JSON.stringify(state));}catch(e){showNotice('Browser storage is disabled or full. Export your progress backup to avoid losing answers.');}
+ try{channel?.postMessage({uid:accountUID,updated:state.updated});}catch(e){}
+ if(accountUID)window.dispatchEvent(new CustomEvent('spaw:local-save',{detail:{uid:accountUID,before:previous,after:structuredClone(state)}}));
+ updateBadge();
+}
 function syncUI(){state=load();updateBadge();if(route.review)renderReview();else if(route.bank)renderBank();else if(route.results)renderBankResults(route.results);else if(route.practice)renderPractice();else if(route.practiceResults)renderPracticeResults();else renderHome();}
-window.addEventListener('storage',e=>{if(e.key===STORE)syncUI();});window.addEventListener('focus',()=>{const n=load();if(n.updated>state.updated){state=n;syncUI();}});
+window.addEventListener('storage',e=>{if(e.key===storageKey())syncUI();});window.addEventListener('focus',()=>{const n=load();if(n.updated>state.updated){state=n;syncUI();}});
+// The account module can swap local scopes without ever mixing guest and user data.
+window.SPAWCloudBridge={
+ getUID:()=>accountUID,
+ getState:()=>structuredClone(state),
+ getGuestState:()=>{try{const v=JSON.parse(localStorage.getItem(STORE)||'null');return v?.version===1?v:empty();}catch(e){return empty();}},
+ switchAccount(uid){accountUID=uid||null;state=load();if(manifest)syncUI();else updateBadge();},
+ applyRemote(uid,next){if(uid!==accountUID||!next||next.version!==1)return;state=structuredClone(next);try{localStorage.setItem(storageKey(),JSON.stringify(state));}catch(e){showNotice('Could not cache cloud progress on this browser.');}if(manifest)syncUI();else updateBadge();},
+ importGuest(){if(!accountUID)return false;const g=this.getGuestState();if(!Object.values(g.banks||{}).some(x=>Object.keys(x||{}).length)&&!Object.keys(g.review||{}).length&&!Object.keys(g.bookmarks||{}).length)return false;const imported=new Set();for(const [b,items] of Object.entries(g.banks||{})){const dest=state.banks[b]||(state.banks[b]={});for(const [n,answer] of Object.entries(items||{})){if(!dest[n]){dest[n]=answer;imported.add(b+':'+n);}}}for(const [k,v] of Object.entries(g.review||{}))if(imported.has(k)&&!state.review[k])state.review[k]=v;for(const [k,v] of Object.entries(g.bookmarks||{}))if(!(k in state.bookmarks))state.bookmarks[k]=v;save();if(manifest)syncUI();return true;}
+};
 function idOf(b,n){return b+':'+n;}
 function recs(){return Object.values(state.review||{});}function pending(){return recs().filter(r=>!r.mastered).length;}
 function updateBadge(){if($('navWrong'))$('navWrong').textContent=pending();}
