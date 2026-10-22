@@ -926,3 +926,72 @@ body.midnight-sage{--study-theme-mark:#a8dbc7}
   }
   .hero > .flex > .btn {width:100%;min-height:46px;}
 }
+
+/* Cohesive header controls: same optical height, text size and baseline. */
+.site-head nav {align-items:center;gap:10px;}
+.site-head nav > a,
+.site-head .theme-picker,
+.site-head .account-trigger {
+  box-sizing:border-box;
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
+  height:38px;
+  min-height:38px;
+  margin:0;
+  line-height:1;
+  font-size:13px;
+  vertical-align:middle;
+  align-self:center;
+}
+.site-head .theme-picker {padding:0 9px;}
+.site-head .theme-picker select {height:32px;font-size:13px;line-height:1.1;font-weight:700;text-align-last:center;}
+.site-head .account-trigger {gap:8px;padding:0 13px;}
+.site-head .account-trigger > span[aria-hidden] {
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
+  width:18px;
+  height:18px;
+  line-height:1;
+}
+/* Keep the hero call-to-actions anchored to the same left edge as its copy. */
+.hero > .flex {justify-content:flex-start;margin-inline:0;}
+@media(max-width:520px) {
+ .hero > .flex {display:flex;flex-direction:column;align-items:stretch;margin-inline:0;}
+ .hero > .flex > .btn {width:100%;}
+}
+/* Ten banks fit into two tidy rows on generous screens. Keep the full card details. */
+.garden-tier-grid {grid-template-columns:repeat(5,minmax(0,1fr));gap:12px;}
+.garden-bank-card {min-height:224px;}
+.garden-bank-footer {align-items:center;min-height:18px;}
+.garden-bank-open {display:inline-flex;align-items:center;justify-content:flex-end;line-height:1.25;}
+@media(max-width:1090px) {.garden-tier-grid{grid-template-columns:repeat(4,minmax(0,1fr));}}
+@media(max-width:830px) {.garden-tier-grid{grid-template-columns:repeat(3,minmax(0,1fr));}}
+@media(max-width:760px) {.garden-tier-grid{grid-template-columns:repeat(2,minmax(0,1fr));}.garden-bank-card{min-height:181px;}}
+@media(max-width:500px) {
+ .garden-tier-grid{grid-template-columns:minmax(0,1fr);}
+ .garden-bank-card{min-height:0;}
+ .site-head nav > a,.site-head .theme-picker,.site-head .account-trigger{height:34px;min-height:34px;}
+}
+/* Let text retain the theme's readable foreground. Colour only the paper beneath it. */
+.study-mark {color:inherit!important;opacity:1!important;text-shadow:inherit;}
+.study-mark-theme {background:color-mix(in srgb,var(--study-theme-mark) 48%,transparent);}
+.study-mark-yellow {background:rgb(255 231 133 / 48%);}
+.study-mark-pink {background:rgb(255 175 212 / 48%);}
+.study-mark-mint {background:rgb(169 238 211 / 48%);}
+.study-mark-lilac {background:rgb(201 184 250 / 48%);}
+body.dark .study-mark-theme,body.berry-bloom .study-mark-theme,body.midnight-sage .study-mark-theme {background:color-mix(in srgb,var(--study-theme-mark) 32%,transparent);}
+body.dark .study-mark-yellow,body.berry-bloom .study-mark-yellow,body.midnight-sage .study-mark-yellow {background:rgb(255 231 133 / 32%);}
+body.dark .study-mark-pink,body.berry-bloom .study-mark-pink,body.midnight-sage .study-mark-pink {background:rgb(255 175 212 / 32%);}
+body.dark .study-mark-mint,body.berry-bloom .study-mark-mint,body.midnight-sage .study-mark-mint {background:rgb(169 238 211 / 32%);}
+body.dark .study-mark-lilac,body.berry-bloom .study-mark-lilac,body.midnight-sage .study-mark-lilac {background:rgb(201 184 250 / 32%);}
+/* A precise eraser next to the swatches; bulk clearing stays separate. */
+.study-eraser {
+ display:inline-grid;place-items:center;flex:none;width:25px;height:25px;
+ border:1px solid transparent;border-radius:7px;background:transparent;
+ color:var(--muted);cursor:pointer;padding:3px;
+}
+.study-eraser:hover,.study-eraser:focus-visible {color:var(--ink);background:var(--lav);border-color:var(--edge);}
+.study-eraser.is-active {color:var(--violet);background:var(--lav);border-color:var(--violet);box-shadow:0 0 0 1px var(--violet);}
+.study-clear-marks {font-size:16px;width:24px;height:24px;}
