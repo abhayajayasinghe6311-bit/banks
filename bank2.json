@@ -2188,37 +2188,41 @@
     "stem": "A primigravida at 38 weeks has rupture of membranes and a pulsating loop of umbilical cord is palpable below the presenting part.",
     "ask": "What is the priority while preparing emergency delivery?",
     "options": [
-      "Manually elevate the presenting part to relieve cord compression and call for emergency obstetric help",
-      "Apply a fetal scalp electrode",
-      "Observe until cervical dilation is complete",
-      "Encourage pushing with each contraction"
+      "Elevate the presenting fetal part manually while calling obstetrics and preparing urgent delivery.",
+      "Position the mother laterally and await the next fetal heart trace before relieving compression.",
+      "Apply a fetal scalp electrode and perform a full CTG interpretation before calling for delivery.",
+      "Encourage pushing immediately to complete vaginal birth without checking cervical dilatation."
     ],
     "key": "A",
     "explanations": [
-      "Cord prolapse compromises fetal blood flow; elevate the presenting part and expedite birth, usually emergency Caesarean. The key distinction is Call for help, minimise cord handling, relieve pressure and prepare emergency birth.",
-      "A scalp electrode delays intervention. In this scenario, the preferred approach is Manually elevate the presenting part to relieve cord compression and call for emergency obstetric help. Call for help, minimise cord handling, relieve pressure and prepare emergency birth.",
-      "Waiting risks hypoxia. In this scenario, the preferred approach is Manually elevate the presenting part to relieve cord compression and call for emergency obstetric help. Call for help, minimise cord handling, relieve pressure and prepare emergency birth.",
-      "Pushing may worsen compression. In this scenario, the preferred approach is Manually elevate the presenting part to relieve cord compression and call for emergency obstetric help. Call for help, minimise cord handling, relieve pressure and prepare emergency birth."
+      "A palpable pulsating cord below the presenting part after membrane rupture indicates umbilical cord prolapse. Relieve pressure immediately by elevating the presenting part, call for emergency help and prepare the fastest safe delivery, usually caesarean if vaginal birth is not imminent.",
+      "Left lateral or knee-chest positioning can help reduce cord pressure and is useful alongside other manoeuvres. It should not replace direct elevation of the presenting part or delay urgent obstetric assessment and delivery.",
+      "Fetal monitoring is important, but a scalp electrode does not relieve mechanical cord compression. The diagnosis is clinical; do not delay decompression while gathering extra trace information.",
+      "Rapid vaginal birth is appropriate only when it is genuinely imminent and feasible. In a primigravida with unknown dilation, uncontrolled pushing could delay definitive relief of fetal hypoxia and is not the first step."
     ],
     "pearl": "Call for help, minimise cord handling, relieve pressure and prepare emergency birth.",
     "pivot": "Exam check: identify the decisive positive finding, then the urgent risk or distinguishing negative clue that eliminates the alternatives.",
     "management": {
       "steps": [
         [
-          "Best decision in this scenario",
-          "Manually elevate the presenting part to relieve cord compression and call for emergency obstetric help"
+          "Call for emergency help",
+          "Activate cord prolapse response: obstetrics, midwives, anaesthetics and neonatal team."
         ],
         [
-          "Clinical reasoning",
-          "Cord prolapse compromises fetal blood flow; elevate the presenting part and expedite birth, usually emergency Caesarean."
+          "Relieve compression",
+          "With a gloved hand elevate the presenting part off the cord and maintain until delivery; use knee-chest or left-lateral head-down positioning."
         ],
         [
-          "What would change the answer?",
-          "Exam check: identify the decisive positive finding, then the urgent risk or distinguishing negative clue that eliminates the alternatives."
+          "Prepare for birth",
+          "Arrange urgent caesarean unless vaginal delivery is immediately achievable; consider bladder filling or tocolysis under senior direction if transfer delay."
+        ],
+        [
+          "Protect the fetus",
+          "Minimise handling of the cord, monitor fetal heart rate and communicate neonatal resuscitation needs."
         ]
       ],
-      "safety": "Call for help, minimise cord handling, relieve pressure and prepare emergency birth.",
-      "local": "Original case-linked teaching summary, not a newly verified guideline. Confirm current Australian recommendations, local escalation pathways, patient factors and prescribing details."
+      "safety": "Cord compression threatens fetal oxygen delivery; manual elevation is a temporising manoeuvre until expedited birth.",
+      "local": "Cross-checked against RANZCOG/RCOG, ACG or Australian paediatric guidance; follow local protocols and senior advice."
     }
   },
   {
