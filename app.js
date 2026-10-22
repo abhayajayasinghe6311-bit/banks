@@ -652,7 +652,12 @@ function jumpToCurrentQuestion(){
 }
 
 /* Lightweight, per-question study annotations (including optional private cloud sync). */
-const STUDY_MARK_COLOURS=['yellow','pink','mint','lilac'];
+const STUDY_MARK_COLOURS=['theme','yellow','pink','mint','lilac'];
+const STUDY_COLOUR_PREF='spaw.study.highlighter.colour.v1';
+let studyActiveColour='theme';
+try{const pref=localStorage.getItem(STUDY_COLOUR_PREF);if(STUDY_MARK_COLOURS.includes(pref)||pref==='off')studyActiveColour=pref;}catch(e){}
+function setStudyColour(colour){studyActiveColour=studyActiveColour===colour?'off':colour;try{localStorage.setItem(STUDY_COLOUR_PREF,studyActiveColour);}catch(e){}}
+
 const studyText=(q,part)=>String(part==='stem'?q.stem:(q.ask||'Which of the following is the single BEST answer?'));
 function annotationFor(bank,n){return state.annotations?.[idOf(bank,n)]||{};}
 function highlightedStudyText(bank,q,part){
@@ -663,7 +668,8 @@ function highlightedStudyText(bank,q,part){
  return html+safe(original.slice(pos));
 }
 function studyMarkToolbar(){
- return '<div class="study-tools-bar" aria-label="Question highlighting tools"><span class="study-tools-label">Highlight</span><span class="study-tools-hint">Select text, then a colour</span><div class="study-swatches" role="group" aria-label="Highlight selected question text">'+STUDY_MARK_COLOURS.map(c=>'<button type="button" class="study-swatch '+c+'" data-mark-colour="'+c+'" title="Highlight selected text '+c+'" aria-label="Highlight selected text '+c+'"></button>').join('')+'</div><button type="button" class="study-clear-marks" id="clearStudyMarks" title="Remove all highlights from this question">Clear</button><span class="study-tool-status" id="studyToolStatus" role="status" aria-live="polite"></span></div>';
+ const swatches=STUDY_MARK_COLOURS.map(c=>'<button type="button" class="study-swatch '+c+(studyActiveColour===c?' is-active':'')+'" data-mark-colour="'+c+'" title="'+(c==='theme'?'Theme-matched highlighter':c[0].toUpperCase()+c.slice(1)+' highlighter')+' · click again to pause" aria-label="'+(c==='theme'?'Theme-matched':c)+' highlighter" aria-pressed="'+(studyActiveColour===c)+'">'+(c==='theme'?'<span aria-hidden="true">✦</span>':'')+'</button>').join('');
+ return '<div class="study-tools-bar" role="toolbar" aria-label="Highlighter: choose a colour, then select words"><svg class="study-tools-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m9 11 6 6M20.5 7.5l-4-4-12 12-1 4 4-1 13-11z"/></svg><div class="study-swatches" role="group" aria-label="Choose highlighter colour">'+swatches+'</div><button type="button" class="study-clear-marks" id="clearStudyMarks" aria-label="Erase highlights on this question" title="Erase all highlights on this question">⌫</button><span class="study-tool-status" id="studyToolStatus" role="status" aria-live="polite"></span></div>';
 }
 function studyNotepadMarkup(bank,q){
  const note=String(annotationFor(bank,q.n).note||'');
@@ -672,42 +678,59 @@ function studyNotepadMarkup(bank,q){
 function selectedStudyRange(){
  const selection=window.getSelection();if(!selection||selection.isCollapsed||!selection.rangeCount)return null;
  const range=selection.getRangeAt(0);
- const root=range.startContainer.parentElement?.closest('[data-highlight-part]');
- if(!root||root!==range.endContainer.parentElement?.closest('[data-highlight-part]'))return null;
- if(!root.contains(range.commonAncestorContainer))return null;
+ const getRoot=node=>(node.nodeType===1?node:node.parentElement)?.closest('[data-highlight-part]');
+ const root=getRoot(range.startContainer);
+ if(!root||root!==getRoot(range.endContainer)||!root.contains(range.commonAncestorContainer))return null;
  const before=document.createRange();before.selectNodeContents(root);before.setEnd(range.startContainer,range.startOffset);
  const start=before.toString().length,end=start+range.toString().length;
  return end>start?{part:root.dataset.highlightPart,start,end}:null;
 }
 function wireStudyTools(bank,q){
- let captured=null,noteTimer=null;
+ let noteTimer=null,selectionTimer=null;
+ const abort=new AbortController(),signal=abort.signal;
  const status=$('studyToolStatus');
- const applyMark=colour=>{
-  const selection=captured||selectedStudyRange();captured=null;
-  if(!selection){if(status)status.textContent='Select some question text first';return;}
+ const applyMark=selection=>{
+  if(studyActiveColour==='off'||!selection)return;
   const original=studyText(q,selection.part),start=selection.start,end=selection.end;
   if(start<0||end>original.length||end<=start)return;
   state.annotations||={};const id=idOf(bank,q.n),rec=state.annotations[id]||(state.annotations[id]={});
-  const old=(rec[selection.part]||[]),replacement=[];
+  const old=rec[selection.part]||[],replacement=[];
   for(const m of old){if(m.end<=start||m.start>=end)replacement.push(m);else{if(m.start<start)replacement.push({...m,end:start});if(m.end>end)replacement.push({...m,start:end});}}
-  replacement.push({start,end,color:colour});rec[selection.part]=replacement.sort((a,b)=>a.start-b.start);rec.updatedAt=Date.now();
+  replacement.push({start,end,color:studyActiveColour});rec[selection.part]=replacement.sort((a,b)=>a.start-b.start);rec.updatedAt=Date.now();
   const target=document.querySelector('[data-highlight-part="'+selection.part+'"]');if(target)target.innerHTML=highlightedStudyText(bank,q,selection.part);
-  window.getSelection()?.removeAllRanges();if(status)status.textContent='Saved';save();
+  window.getSelection()?.removeAllRanges();if(status)status.textContent='Highlighted';save();
  };
+ const applyCurrentSelection=()=>{if(studyActiveColour!=='off')applyMark(selectedStudyRange());};
  document.querySelectorAll('[data-mark-colour]').forEach(button=>{
-  button.addEventListener('pointerdown',()=>{captured=selectedStudyRange();});
-  button.addEventListener('click',()=>applyMark(button.dataset.markColour));
+  button.addEventListener('click',()=>{
+   setStudyColour(button.dataset.markColour);
+   document.querySelectorAll('[data-mark-colour]').forEach(b=>{const active=b.dataset.markColour===studyActiveColour;b.classList.toggle('is-active',active);b.setAttribute('aria-pressed',String(active));});
+   if(status)status.textContent=studyActiveColour==='off'?'Highlighter paused':'Highlighter ready: select words';
+   window.getSelection()?.removeAllRanges();
+  },{signal});
  });
+ document.querySelectorAll('[data-highlight-part]').forEach(el=>{
+  el.addEventListener('mouseup',applyCurrentSelection,{signal});
+  el.addEventListener('keyup',e=>{if(e.shiftKey)applyCurrentSelection();},{signal});
+  el.addEventListener('touchend',()=>{if(selectionTimer)clearTimeout(selectionTimer);selectionTimer=setTimeout(applyCurrentSelection,350);},{signal});
+ });
+ // Also supports touch-selection handles and keyboard selection where mouseup is not emitted.
+ document.addEventListener('selectionchange',()=>{
+  if(studyActiveColour==='off'||!selectedStudyRange())return;
+  if(selectionTimer)clearTimeout(selectionTimer);
+  selectionTimer=setTimeout(applyCurrentSelection,950);
+ },{signal});
+ abort.signal.addEventListener('abort',()=>{if(selectionTimer)clearTimeout(selectionTimer);},{once:true});
  const clear=$('clearStudyMarks');
- if(clear)clear.onclick=()=>{const rec=state.annotations?.[idOf(bank,q.n)];if(!rec||!(rec.stem?.length||rec.ask?.length)){if(status)status.textContent='No highlights to clear';return;}rec.stem=[];rec.ask=[];rec.updatedAt=Date.now();for(const part of ['stem','ask']){const el=document.querySelector('[data-highlight-part="'+part+'"]');if(el)el.innerHTML=safe(studyText(q,part));}if(status)status.textContent='Highlights cleared';save();};
+ if(clear)clear.onclick=()=>{const rec=state.annotations?.[idOf(bank,q.n)];if(!rec||!(rec.stem?.length||rec.ask?.length)){if(status)status.textContent='No highlights to erase';return;}rec.stem=[];rec.ask=[];rec.updatedAt=Date.now();for(const part of ['stem','ask']){const el=document.querySelector('[data-highlight-part="'+part+'"]');if(el)el.innerHTML=safe(studyText(q,part));}if(status)status.textContent='Highlights erased';save();};
  const toggle=$('studyNoteToggle'),pad=$('studyNotepad'),field=$('studyNoteText');
  const flushNote=()=>{if(noteTimer){clearTimeout(noteTimer);noteTimer=null;}if(!field)return;const id=idOf(bank,q.n),text=field.value,prior=annotationFor(bank,q.n).note||'';if(text===prior)return;state.annotations||={};const rec=state.annotations[id]||(state.annotations[id]={});rec.note=text;rec.updatedAt=Date.now();save();if($('studyNoteSaving'))$('studyNoteSaving').textContent='✓ Saved · Syncs when signed in';toggle?.classList.toggle('has-note',!!text.trim());};
  if(toggle&&pad){toggle.onclick=()=>{const opening=pad.hidden;pad.hidden=!opening;toggle.setAttribute('aria-expanded',String(opening));toggle.classList.toggle('open',opening);if(opening)field?.focus();};}
  if(field){field.oninput=()=>{if($('studyNoteSaving'))$('studyNoteSaving').textContent='Saving…';if(noteTimer)clearTimeout(noteTimer);noteTimer=setTimeout(flushNote,650);};field.onblur=flushNote;}
- return flushNote;
+ return {flushNote,cleanup:()=>abort.abort()};
 }
 let pendingStudyNoteSave=null;
-function saveStudyNoteBeforeNavigation(){if(pendingStudyNoteSave){pendingStudyNoteSave();pendingStudyNoteSave=null;}}
+function saveStudyNoteBeforeNavigation(){if(pendingStudyNoteSave){pendingStudyNoteSave.flushNote();pendingStudyNoteSave.cleanup();pendingStudyNoteSave=null;}}
 
 function renderBank(){saveStudyNoteBeforeNavigation();const b=route.bank;const bm=manifest.banks.find(x=>x.id===b);if(!bm)return;const qset=bankData[b];if(!qset){$('app').innerHTML='<div class="loading">Opening your questions… 🌷</div>';return;}activeList=filteredQuestions(b);cursor=Math.max(0,Math.min(cursor,activeList.length-1));const q=activeList[cursor],tot=answeredStatus(b);const pct=qset.length?Math.round(tot.attempted*100/qset.length):0;const cats=[...new Set(qset.map(q=>q.domain))].sort();const summary=`${tot.attempted}/${qset.length} answered · ${tot.correct} correct · ${tot.attempted-tot.correct} incorrect`;
  const finished=tot.attempted===qset.length;
@@ -733,7 +756,7 @@ function renderBank(){saveStudyNoteBeforeNavigation();const b=route.bank;const b
   <span class="small bank-progress-percent"><span id="bankPercent">${pct}%</span> complete</span>
  </div>
  <div class="progress bank-progress"><span id="bankProgressBar" style="width:${pct}%"></span></div>
- </section>${finalSummary}<div id="bankSearchDrawer" class="bank-search-drawer" hidden>${searchPanel(b)}</div><div class="toolbar bank-toolbar"><div class="flex"><label class="small">Show <select id="filter"><option value="all">All questions</option><option value="unanswered">Unanswered</option><option value="wrong">Original mistakes</option><option value="bookmarks">Bookmarked</option></select></label><label class="small">Specialty <select id="domain"><option value="all">All specialties</option>${cats.map(x=>`<option value="${safe(x)}">${safe(x)}</option>`).join('')}</select></label></div><div class="bank-jumper"><label for="jumpNumber">Jump to Q</label><input id="jumpNumber" type="number" inputmode="numeric" min="1" max="${qset.length}" value="${q?.n||''}" aria-label="Question number in this bank"><span>/ ${qset.length}</span><button type="button" id="jumpGo" class="bank-jump-btn">Go →</button></div></div>${q?`<div class="learning-layout ${(state.banks[b]||{})[q.n]?'has-notes':''}"><div class="question-stack"><div class="quizbox quiz-question"><div class="meta"><b>Domain:</b> ${safe(q.domain)} &nbsp; · &nbsp; <b>Skillset:</b> ${safe(q.skill||'Clinical reasoning')} &nbsp; · &nbsp; <b>Context:</b> ${safe(q.context||'Clinical')}</div><div class="question-label">EMQ ${q.n}</div><div class="stem" data-highlight-part="stem">${highlightedStudyText(b,q,"stem")}</div><p class="ask" data-highlight-part="ask">${highlightedStudyText(b,q,"ask")}</p>${studyMarkToolbar()}<div class="choices" id="choices">${optionHtml(q,(state.banks[b]||{})[q.n]?.choice)}</div>${(state.banks[b]||{})[q.n]?`<div class="feedback ${(state.banks[b][q.n].correct?'yes':'no')}">${state.banks[b][q.n].correct?'✓ Correct — nicely reasoned!':'✗ Not quite. Correct answer: '+visibleLetter(q,q.key)+'.'} Your first response is locked.</div>`:``}<div class="navbox"><button class="btn soft" id="prev" ${cursor===0?'disabled':''}>← Previous</button><button class="btn rose" id="bookmark">${state.bookmarks[idOf(b,q.n)]?'★ Bookmarked':'☆ Bookmark'}</button><button class="btn" id="next" ${cursor===activeList.length-1&&!canJumpToUnanswered?'disabled':''}>${canJumpToUnanswered?'Find unanswered →':'Next →'}</button></div>${studyNotepadMarkup(b,q)}${finished&&cursor===activeList.length-1?bankFinishActions(b):''}</div>${(state.banks[b]||{})[q.n]?managementMarkup(q):''}</div>${(state.banks[b]||{})[q.n]?learningNotes(q,'learningNotes',(state.banks[b]||{})[q.n].choice):`<aside class="learning-card learning-placeholder" aria-label="Learning notes preview"><div class="learning-placeholder-emoji" aria-hidden="true">🌷</div><h2>Learning notes will bloom here</h2><p>Choose your answer and explore the <b>clinical reasoning</b>, why the alternatives lose, and the principles worth remembering.</p></aside>`}</div>`:`<div class="empty">No questions here 🌷 Try another filter.</div>`}`;
+ </section>${finalSummary}<div id="bankSearchDrawer" class="bank-search-drawer" hidden>${searchPanel(b)}</div><div class="toolbar bank-toolbar"><div class="flex"><label class="small">Show <select id="filter"><option value="all">All questions</option><option value="unanswered">Unanswered</option><option value="wrong">Original mistakes</option><option value="bookmarks">Bookmarked</option></select></label><label class="small">Specialty <select id="domain"><option value="all">All specialties</option>${cats.map(x=>`<option value="${safe(x)}">${safe(x)}</option>`).join('')}</select></label></div><div class="bank-jumper"><label for="jumpNumber">Jump to Q</label><input id="jumpNumber" type="number" inputmode="numeric" min="1" max="${qset.length}" value="${q?.n||''}" aria-label="Question number in this bank"><span>/ ${qset.length}</span><button type="button" id="jumpGo" class="bank-jump-btn">Go →</button></div></div>${q?`<div class="learning-layout ${(state.banks[b]||{})[q.n]?'has-notes':''}"><div class="question-stack"><div class="quizbox quiz-question">${studyMarkToolbar()}<div class="meta"><b>Domain:</b> ${safe(q.domain)} &nbsp; · &nbsp; <b>Skillset:</b> ${safe(q.skill||'Clinical reasoning')} &nbsp; · &nbsp; <b>Context:</b> ${safe(q.context||'Clinical')}</div><div class="question-label">EMQ ${q.n}</div><div class="stem" data-highlight-part="stem">${highlightedStudyText(b,q,"stem")}</div><p class="ask" data-highlight-part="ask">${highlightedStudyText(b,q,"ask")}</p><div class="choices" id="choices">${optionHtml(q,(state.banks[b]||{})[q.n]?.choice)}</div>${(state.banks[b]||{})[q.n]?`<div class="feedback ${(state.banks[b][q.n].correct?'yes':'no')}">${state.banks[b][q.n].correct?'✓ Correct — nicely reasoned!':'✗ Not quite. Correct answer: '+visibleLetter(q,q.key)+'.'} Your first response is locked.</div>`:``}<div class="navbox"><button class="btn soft" id="prev" ${cursor===0?'disabled':''}>← Previous</button><button class="btn rose" id="bookmark">${state.bookmarks[idOf(b,q.n)]?'★ Bookmarked':'☆ Bookmark'}</button><button class="btn" id="next" ${cursor===activeList.length-1&&!canJumpToUnanswered?'disabled':''}>${canJumpToUnanswered?'Find unanswered →':'Next →'}</button></div>${studyNotepadMarkup(b,q)}${finished&&cursor===activeList.length-1?bankFinishActions(b):''}</div>${(state.banks[b]||{})[q.n]?managementMarkup(q):''}</div>${(state.banks[b]||{})[q.n]?learningNotes(q,'learningNotes',(state.banks[b]||{})[q.n].choice):`<aside class="learning-card learning-placeholder" aria-label="Learning notes preview"><div class="learning-placeholder-emoji" aria-hidden="true">🌷</div><h2>Learning notes will bloom here</h2><p>Choose your answer and explore the <b>clinical reasoning</b>, why the alternatives lose, and the principles worth remembering.</p></aside>`}</div>`:`<div class="empty">No questions here 🌷 Try another filter.</div>`}`;
  $('filter').value=filter;$('domain').value=domain;$('filter').onchange=e=>{filter=e.target.value;cursor=0;renderBank()};$('domain').onchange=e=>{domain=e.target.value;cursor=0;renderBank()};
  wireStudySearch(b);
  const bankSearchButton=$('bankSearchToggle'),bankSearchDrawer=$('bankSearchDrawer');
