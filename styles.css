@@ -995,3 +995,49 @@ body.dark .study-mark-lilac,body.berry-bloom .study-mark-lilac,body.midnight-sag
 .study-eraser:hover,.study-eraser:focus-visible {color:var(--ink);background:var(--lav);border-color:var(--edge);}
 .study-eraser.is-active {color:var(--violet);background:var(--lav);border-color:var(--violet);box-shadow:0 0 0 1px var(--violet);}
 .study-clear-marks {font-size:16px;width:24px;height:24px;}
+
+
+/* Final optical pass: all four header controls share one visual centre. */
+.site-head nav{display:flex;align-items:center;gap:10px;}
+.site-head nav > a,.site-head .theme-picker,.site-head .account-trigger{
+  box-sizing:border-box;display:inline-flex;align-items:center;justify-content:center;
+  height:40px;min-height:40px;border-radius:14px;
+  padding-block:0;margin:0;line-height:1.2;font-size:13px;font-weight:700;
+  vertical-align:middle;align-self:center;transform:none;
+}
+.site-head nav > a{gap:4px;padding-inline:12px;}
+.site-head #navWrong{
+  display:inline-flex;align-items:center;justify-content:center;
+  min-width:24px;height:19px;line-height:19px;padding-inline:5px;margin:0;
+}
+.site-head .theme-picker{position:relative;width:114px;min-width:114px;padding:0;overflow:hidden;}
+.site-head .theme-picker select{
+  appearance:none;-webkit-appearance:none;box-sizing:border-box;display:block;
+  width:100%;min-width:0;max-width:none;height:100%;padding:0 17px;
+  border:0;background:transparent;color:inherit;font:inherit;
+  font-size:13px;font-weight:700;line-height:40px;text-align:center;text-align-last:center;
+  cursor:pointer;
+}
+.site-head .theme-picker::after{
+  content:"⌄";position:absolute;right:10px;top:50%;transform:translateY(-57%);
+  font-size:16px;line-height:1;pointer-events:none;color:var(--muted);
+}
+.site-head .account-trigger{
+  gap:8px;width:158px;min-width:158px;flex:0 0 158px;
+  padding-inline:12px;text-align:center;white-space:nowrap;
+}
+.site-head .account-trigger>span{display:inline-flex;align-items:center;justify-content:center;line-height:1.2;}
+@media(max-width:720px){
+ .site-head nav{gap:7px;}
+ .site-head nav > a,.site-head .theme-picker,.site-head .account-trigger{
+   height:38px;min-height:38px;font-size:12px;
+ }
+ .site-head .theme-picker{width:104px;min-width:104px;}
+ .site-head .theme-picker select{font-size:12px;line-height:38px;padding-inline:15px;}
+ .site-head .account-trigger{width:144px;min-width:144px;flex-basis:144px;}
+}
+@media(max-width:420px){
+ .site-head nav > a,.site-head .theme-picker,.site-head .account-trigger{height:34px;min-height:34px;}
+ .site-head .theme-picker{width:98px;min-width:98px;}
+ .site-head .account-trigger{width:39px;min-width:39px;flex-basis:39px;}
+}
