@@ -412,7 +412,10 @@ function bookmarksPanel(){
 async function hydrateBookmarks(){
  const root=$('bookmarkGardenList');if(!root)return;
  try{
-  await ensureAllBanks();
+  const savedIds=Object.entries(state.bookmarks||{}).filter(([,v])=>!!v).map(([id])=>id);
+  if(!savedIds.length){root.innerHTML='<div class="bookmark-empty">🌼 No bookmarks yet. Tap <b>☆ Bookmark</b> beside any question to collect it here.</div>';return;}
+  const needed=[...new Set(savedIds.map(id=>Number(id.split(':')[0])))].filter(id=>manifest.banks.some(b=>b.id===id));
+  await Promise.all(needed.map(getBank));
   if(root!==$('bookmarkGardenList'))return;
   const entries=Object.entries(state.bookmarks||{}).filter(([,v])=>!!v).map(([id])=>{
    const [bank,n]=id.split(':').map(Number);
@@ -433,6 +436,16 @@ async function hydrateBookmarks(){
  }catch(e){if(root===$('bookmarkGardenList'))root.innerHTML='<p class="small">Could not load bookmarks right now. Please refresh to try again.</p>';}
 }
 
+function deferPracticePicker(){
+ const root=$('practiceBuilderBody');if(!root)return;
+ if(!('IntersectionObserver' in window)){hydratePracticePicker();return;}
+ const observer=new IntersectionObserver(entries=>{
+  if(!entries.some(entry=>entry.isIntersecting))return;
+  observer.disconnect();
+  if($('practiceBuilderBody')===root)hydratePracticePicker();
+ },{rootMargin:'300px 0px'});
+ observer.observe(root);
+}
 function renderHome(){route={};
  const nextBank=[...manifest.banks].sort((a,b)=>a.id-b.id).find(b=>{
   const answers=state.banks[b.id]||{};
@@ -443,7 +456,7 @@ function renderHome(){route={};
  const nextBankButton=nextBank
   ? `<a class="btn soft" href="${url(nextBank.id)}" target="_blank" rel="noopener">${nextBank.emoji} ${nextAttempts?'Continue':'Start'} Bank ${nextBank.id} ↗</a>`
   : `<a class="btn soft" href="?review=1">🎉 All banks attempted — Review mistakes ↗</a>`;
- $('app').innerHTML=`<section class="hero"><div class="eyebrow">YOUR LITTLE MED SCHOOL SANCTUARY ✿</div><h1>Grow your clinical confidence, one question at a time. 🌷</h1><p>${manifest.banks.length} banks of original Monash-inspired clinical scenarios, instant feedback, and explanations that teach you how to distinguish the tempting alternatives.</p><div class="flex"><a class="btn" href="?review=1">🌿 Open Wrong Answers Garden (${pending()})</a>${nextBankButton}</div></section>${searchPanel()}${overview()}${section('Choose your question garden','<span class="small">Each opens in a new browser tab ↗</span>')}<div class="tiles">${manifest.banks.map(tile).join('')}</div>${practicePicker()}${bookmarksPanel()}${backupPanel()}<div class="notice">These are <b>unofficial, original educational questions</b>, not faculty questions. Clinical management should always follow local protocols and senior supervision.</div>`;wireBackupPanel();updateBadge();wireStudySearch();hydrateBookmarks();hydratePracticePicker();}
+ $('app').innerHTML=`<section class="hero"><div class="eyebrow">YOUR LITTLE MED SCHOOL SANCTUARY ✿</div><h1>Grow your clinical confidence, one question at a time. 🌷</h1><p>${manifest.banks.length} banks of original Monash-inspired clinical scenarios, instant feedback, and explanations that teach you how to distinguish the tempting alternatives.</p><div class="flex"><a class="btn" href="?review=1">🌿 Open Wrong Answers Garden (${pending()})</a>${nextBankButton}</div></section>${searchPanel()}${overview()}${section('Choose your question garden','<span class="small">Each opens in a new browser tab ↗</span>')}<div class="tiles">${manifest.banks.map(tile).join('')}</div>${practicePicker()}${bookmarksPanel()}${backupPanel()}<div class="notice">These are <b>unofficial, original educational questions</b>, not faculty questions. Clinical management should always follow local protocols and senior supervision.</div>`;wireBackupPanel();updateBadge();wireStudySearch();hydrateBookmarks();deferPracticePicker();}
 const bankLoading={};
 async function getBank(b){
  if(bankData[b])return bankData[b];
