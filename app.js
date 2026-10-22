@@ -461,7 +461,7 @@ function learningNotes(q,anchorId='learningNotes',selected=null){
  const wrong=selectedIndex>=0&&selectedIndex!==keyIndex;
  const otherOptions=options.map((option,i)=>{
   if(i===keyIndex||(wrong&&i===selectedIndex))return '';
-  return `<details class="learning-alternative"><summary class="learning-option-head"><span class="learning-letter">${ABC[i]}</span><strong>${safe(option)}</strong><span class="learning-expand-hint">Why not? ▾</span></summary><p>${safe(q.explanations?.[i]||'Compare this option with the decisive features of the scenario.')}</p></details>`;
+  return `<div class="learning-alternative learning-alternative-visible"><div class="learning-option-head"><span class="learning-letter">${ABC[i]}</span><strong>${safe(option)}</strong></div><p>${safe(q.explanations?.[i]||'Compare this option with the decisive features of the scenario.')}</p></div>`;
  }).join('');
  return `<aside class="learning-card" id="${safe(anchorId)}" aria-label="Clinical reasoning notes">
   <div class="learning-header"><span aria-hidden="true">🌷</span><div><div class="learning-eyebrow">YOUR LEARNING NOTES</div><h2>Understand the <em>why</em></h2></div></div>
