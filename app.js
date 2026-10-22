@@ -453,6 +453,19 @@ function managementMarkup(q){
  const safety=m.safety && String(m.safety).trim()!==String(q.pearl||'').trim() ? `<div class="management-safety"><b>⚠ Safety / escalation</b><p>${safe(m.safety)}</p></div>` : '';
  return `<section class="management-guide management-under-question" aria-label="Practical management"><div class="management-heading"><span aria-hidden="true">🩺</span><div><h3>Practical management</h3><p>What to do clinically</p></div></div><ol>${steps.map(step=>`<li><strong>${safe(step[0])}</strong><span>${safe(step[1])}</span></li>`).join('')}</ol>${safety}<p class="management-local">Study guide · Follow current local clinical protocols.</p></section>`;
 }
+function conciseOptionReason(q,index){
+ const raw=String(q.explanations?.[index]||'Compare this option with the defining clinical findings.');
+ if(index===ABC.indexOf(q.key))return raw;
+ // Remove mechanically repeated answer summaries; preserve option-specific rationale.
+ const repeated=[
+  ' In this scenario, the preferred approach is ',
+  ' In this clinical situation, the preferred decision is ',
+  ' In this clinical situation, the preferred approach is ',
+  ' The case favours '
+ ];
+ const first=repeated.map(phrase=>raw.indexOf(phrase)).filter(pos=>pos>=35).sort((a,b)=>a-b)[0];
+ return first===undefined?raw:raw.slice(0,first).trim();
+}
 function learningNotes(q,anchorId='learningNotes',selected=null){
  const keyIndex=ABC.indexOf(q.key),selectedIndex=ABC.indexOf(selected);
  const options=q.options||[];
@@ -461,14 +474,14 @@ function learningNotes(q,anchorId='learningNotes',selected=null){
  const wrong=selectedIndex>=0&&selectedIndex!==keyIndex;
  const otherOptions=options.map((option,i)=>{
   if(i===keyIndex||(wrong&&i===selectedIndex))return '';
-  return `<div class="learning-alternative learning-alternative-visible"><div class="learning-option-head"><span class="learning-letter">${ABC[i]}</span><strong>${safe(option)}</strong></div><p>${safe(q.explanations?.[i]||'Compare this option with the decisive features of the scenario.')}</p></div>`;
+  return `<div class="learning-alternative learning-alternative-visible"><div class="learning-option-head"><span class="learning-letter">${ABC[i]}</span><strong>${safe(option)}</strong></div><p>${safe(conciseOptionReason(q,i))}</p></div>`;
  }).join('');
  return `<aside class="learning-card" id="${safe(anchorId)}" aria-label="Clinical reasoning notes">
   <div class="learning-header"><span aria-hidden="true">🌷</span><div><div class="learning-eyebrow">YOUR LEARNING NOTES</div><h2>Understand the <em>why</em></h2></div></div>
   ${wrong?`<div class="learning-missed-choice">
    <div class="learning-missed-heading">↻ Let's unpack your answer</div>
    <h3>You chose ${safe(selected)}. ${safe(options[selectedIndex])}</h3>
-   <div class="learning-missed-details"><b>Why this wasn't the best choice</b><p>${safe(q.explanations?.[selectedIndex]||'This option does not best account for the key finding in this particular case.')}</p></div>
+   <div class="learning-missed-details"><b>Why this wasn't the best choice</b><p>${safe(conciseOptionReason(q,selectedIndex))}</p></div>
    
    ${q.pearl?`<div class="learning-missed-takeaway"><b>💡 The distinction to remember</b><p>${safe(q.pearl)}</p></div>`:''}
    </div>`:''}
