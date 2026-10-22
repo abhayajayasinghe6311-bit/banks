@@ -68,7 +68,7 @@ function applyPatch(source,p){
   const map=v[collection]||(v[collection]={});
   for(const [id,rec] of Object.entries(p[collection]||{})){if(rec===null)delete map[id];else map[id]=clone(rec);}
  }
- if('practice' in p){if(p.practice===null)delete v.practice;else v.practice=clone(p.practice);}
+ if('practice' in p){if(p.practice===null)delete v.practice;else if(v.practice?.created&&v.practice.created===p.practice.created){const oldAnswers=v.practice.answers||{};v.practice={...clone(v.practice),...clone(p.practice),answers:{...(p.practice.answers||{}),...oldAnswers}};}else v.practice=clone(p.practice);}
  v.updated=Date.now();return v;
 }
 function currentPending(){return user?queue:[];}
