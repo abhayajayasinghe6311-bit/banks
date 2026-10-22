@@ -585,37 +585,41 @@
     "stem": "A patient develops sudden pleuritic chest pain, severe dyspnoea, oxygen saturation 86% and blood pressure 75/42 mmHg. Bedside ultrasound shows a dilated right ventricle, and high-risk pulmonary embolism is strongly suspected.",
     "ask": "Which management pathway is MOST APPROPRIATE?",
     "options": [
-      "Outpatient oral anticoagulation without monitoring",
-      "Wait for a D-dimer before treating",
-      "Immediate senior resuscitation and consideration of systemic thrombolysis or catheter/surgical reperfusion",
-      "Only inhaled salbutamol"
+      "Initiate anticoagulation on the outpatient pathway with arranged ambulatory reassessment tomorrow.",
+      "Obtain a D-dimer and formal CT angiography before initiating resuscitation or treatment planning.",
+      "Activate resuscitation and urgently assess reperfusion options for high-risk pulmonary embolism.",
+      "Give bronchodilators and oxygen first, escalating to anticoagulation only if wheeze persists."
     ],
     "key": "C",
     "explanations": [
-      "Haemodynamic instability makes outpatient treatment unsafe. In this clinical situation, the preferred decision is Immediate senior resuscitation and consideration of systemic thrombolysis or catheter/surgical reperfusion. The haemodynamic state determines PE urgency; unstable PE is a reperfusion problem.",
-      "D-dimer is not the gating investigation for a shocked patient with high clinical probability. In this clinical situation, the preferred decision is Immediate senior resuscitation and consideration of systemic thrombolysis or catheter/surgical reperfusion. The haemodynamic state determines PE urgency; unstable PE is a reperfusion problem.",
-      "Shock with presumed high-risk PE requires urgent reperfusion discussion after weighing contraindications, alongside oxygenation, anticoagulation where appropriate and circulatory support.",
-      "Bronchodilators do not treat pulmonary vascular obstruction. In this clinical situation, the preferred decision is Immediate senior resuscitation and consideration of systemic thrombolysis or catheter/surgical reperfusion. The haemodynamic state determines PE urgency; unstable PE is a reperfusion problem."
+      "Ambulatory anticoagulation is for carefully selected stable low-risk pulmonary embolism. This patient has severe hypotension, hypoxaemia and RV dilatation indicating obstructive shock and need for immediate monitored care.",
+      "D-dimer is inappropriate as a gatekeeper in a high-probability, haemodynamically unstable presentation. Definitive imaging may be useful if safe, but should not defer supportive resuscitation and urgent reperfusion assessment.",
+      "Severe hypotension and bedside right ventricular strain suggest high-risk pulmonary embolism. Call critical-care and PE experts, support haemodynamics and decide on systemic thrombolysis or catheter/surgical reperfusion, balancing contraindications.",
+      "Bronchodilators are useful for bronchospasm but do not resolve massive pulmonary arterial obstruction. Oxygen is supportive, not definitive; delaying PE-directed therapy risks cardiovascular collapse."
     ],
     "pearl": "The haemodynamic state determines PE urgency; unstable PE is a reperfusion problem.",
     "pivot": "If stable with lower clinical probability, structured risk assessment and D-dimer/CTPA pathways are appropriate.",
     "management": {
       "steps": [
         [
-          "Best decision in this scenario",
-          "Immediate senior resuscitation and consideration of systemic thrombolysis or catheter/surgical reperfusion"
+          "Stabilise",
+          "Call senior emergency/ICU help, give oxygen, monitor ECG/BP and establish IV access; use cautious fluids and vasoactive support as needed."
         ],
         [
-          "Clinical reasoning",
-          "Shock with presumed high-risk PE requires urgent reperfusion discussion after weighing contraindications, alongside oxygenation, anticoagulation where appropriate and circulatory support."
+          "Assess rapidly",
+          "Use bedside echo and targeted diagnostics where CT is unsafe; evaluate probability, bleeding risk and alternative causes of shock."
         ],
         [
-          "What would change the answer?",
-          "If stable with lower clinical probability, structured risk assessment and D-dimer/CTPA pathways are appropriate."
+          "Choose reperfusion",
+          "Discuss urgent systemic thrombolysis versus catheter or surgical options with the PE response team, considering recent surgery and contraindications."
+        ],
+        [
+          "Continue targeted therapy",
+          "Provide appropriate anticoagulation under specialist guidance and reassess oxygenation, RV function and haemodynamics."
         ]
       ],
-      "safety": "The haemodynamic state determines PE urgency; unstable PE is a reperfusion problem.",
-      "local": "Original case-linked teaching summary, not a newly verified guideline. Confirm current Australian recommendations, local escalation pathways, patient factors and prescribing details."
+      "safety": "Systemic thrombolysis has major bleeding risks; high-risk PE requires urgent specialist risk-benefit assessment, not an automatic dose.",
+      "local": "Educational summary checked against emergency and surgical guidelines; follow current Australian hospital protocol and specialist advice."
     }
   },
   {
@@ -872,37 +876,41 @@
     "stem": "A 37-year-old man has sudden severe epigastric pain with a board-like abdomen and free subdiaphragmatic gas on erect chest radiograph. He is tachycardic but maintaining blood pressure.",
     "ask": "What is the MOST APPROPRIATE next step?",
     "options": [
-      "Allow oral intake and observe",
-      "Start proton-pump inhibitor alone and discharge",
-      "Urgent surgical assessment with nil by mouth, IV fluids and broad-spectrum antibiotics",
-      "Schedule elective endoscopy next month"
+      "Provide IV fluids and analgesia, allowing oral fluids once vomiting settles while observing overnight.",
+      "Begin high-dose IV proton-pump inhibitor therapy and schedule endoscopy after symptoms improve.",
+      "Keep nil by mouth, resuscitate, give IV antibiotics and arrange immediate surgical assessment.",
+      "Obtain repeat upright radiographs before consulting surgeons because the patient is normotensive."
     ],
     "key": "C",
     "explanations": [
-      "Peritonitis and free intraperitoneal gas indicate a perforated viscus and require emergency management. In this clinical situation, the preferred decision is Urgent surgical assessment with nil by mouth, IV fluids and broad-spectrum antibiotics. Perforation: sudden severe pain + rigid abdomen + pneumoperitoneum.",
-      "Acid suppression alone cannot treat intraperitoneal contamination. In this clinical situation, the preferred decision is Urgent surgical assessment with nil by mouth, IV fluids and broad-spectrum antibiotics. Perforation: sudden severe pain + rigid abdomen + pneumoperitoneum.",
-      "A perforated peptic ulcer is a surgical emergency: resuscitation, NBM, IV antibiotics and urgent operative planning. Clinical distinction: Perforation: sudden severe pain + rigid abdomen + pneumoperitoneum.",
-      "Elective investigation would dangerously delay surgery. In this clinical situation, the preferred decision is Urgent surgical assessment with nil by mouth, IV fluids and broad-spectrum antibiotics. Perforation: sudden severe pain + rigid abdomen + pneumoperitoneum."
+      "Fluid resuscitation and analgesia are appropriate, but oral intake with free intraperitoneal gas and peritonitis risks further contamination. This is likely perforated viscus requiring urgent surgical evaluation and nil by mouth status.",
+      "IV acid suppression may be given adjunctively for suspected peptic ulcer disease, but it cannot close a full-thickness perforation or control peritoneal contamination. Endoscopy can also be inappropriate in an acute perforation.",
+      "Board-like abdomen and pneumoperitoneum suggest perforated hollow viscus, often peptic ulcer perforation. Initiate urgent surgical review, nil by mouth, IV access/fluids, analgesia and broad-spectrum antibiotics for intra-abdominal contamination.",
+      "Additional imaging can be considered if diagnosis is uncertain, but the existing X-ray and peritonitis strongly suggest perforation. Normotension does not mean that surgical consultation can safely wait."
     ],
     "pearl": "Perforation: sudden severe pain + rigid abdomen + pneumoperitoneum.",
     "pivot": "In a non-perforated ulcer with a stable patient, medical therapy and endoscopic evaluation are appropriate.",
     "management": {
       "steps": [
         [
-          "Best decision in this scenario",
-          "Urgent surgical assessment with nil by mouth, IV fluids and broad-spectrum antibiotics"
+          "Call surgery early",
+          "Recognise peritonitis and free subdiaphragmatic gas; obtain urgent general surgical and anaesthetic assessment."
         ],
         [
-          "Clinical reasoning",
-          "A perforated peptic ulcer is a surgical emergency: resuscitation, NBM, IV antibiotics and urgent operative planning."
+          "Resuscitate",
+          "Keep NBM, secure IV access, give isotonic fluids and analgesia, and monitor haemodynamics and urine output."
         ],
         [
-          "What would change the answer?",
-          "In a non-perforated ulcer with a stable patient, medical therapy and endoscopic evaluation are appropriate."
+          "Treat contamination",
+          "Give broad-spectrum IV antibiotics and IV PPI as indicated; obtain blood tests, group and screen and sepsis assessment."
+        ],
+        [
+          "Plan source control",
+          "Arrange operative management or a documented specialist-led alternative after considering perforation size, contamination and clinical stability."
         ]
       ],
-      "safety": "Perforation: sudden severe pain + rigid abdomen + pneumoperitoneum.",
-      "local": "Original case-linked teaching summary, not a newly verified guideline. Confirm current Australian recommendations, local escalation pathways, patient factors and prescribing details."
+      "safety": "A stable blood pressure does not exclude serious perforation; avoid oral intake and delayed outpatient evaluation.",
+      "local": "Educational summary checked against emergency and surgical guidelines; follow current Australian hospital protocol and specialist advice."
     }
   },
   {
@@ -1077,37 +1085,41 @@
     "stem": "A 76-year-old man has abdominal pain and vomiting with a large pulsatile abdominal mass. His blood pressure is 78/48 mmHg, and bedside ultrasound shows a markedly enlarged abdominal aorta.",
     "ask": "What is the MOST APPROPRIATE next step?",
     "options": [
-      "Send him alone for a routine outpatient CT",
-      "Wait for troponin results before escalation",
-      "Give an oral laxative",
-      "Activate emergency vascular surgical and resuscitation pathways for suspected ruptured AAA"
+      "Perform CT angiography after routine admission before informing vascular surgeons of the aneurysm.",
+      "Obtain urgent cardiac troponin and ECG results before deciding whether bleeding is the cause of shock.",
+      "Give analgesia and observe haemodynamics while arranging follow-up abdominal ultrasound tomorrow.",
+      "Activate emergency vascular and resuscitation teams for suspected ruptured abdominal aortic aneurysm."
     ],
     "key": "D",
     "explanations": [
-      "Outpatient imaging is not safe in shock with suspected rupture. In this clinical situation, the preferred decision is Activate emergency vascular surgical and resuscitation pathways for suspected ruptured AAA. Ruptured AAA is a time-critical diagnosis; not all patients have the classic full triad.",
-      "Troponin cannot resolve suspected catastrophic vascular haemorrhage. In this clinical situation, the preferred decision is Activate emergency vascular surgical and resuscitation pathways for suspected ruptured AAA. Ruptured AAA is a time-critical diagnosis; not all patients have the classic full triad.",
-      "Laxatives would be dangerous and irrelevant. In this clinical situation, the preferred decision is Activate emergency vascular surgical and resuscitation pathways for suspected ruptured AAA. Ruptured AAA is a time-critical diagnosis; not all patients have the classic full triad.",
-      "Shock, abdominal pain and aneurysm strongly suggest rupture. Activate immediate vascular intervention and controlled resuscitation, with imaging only if stability and pathway allow."
+      "CT angiography helps plan repair if the patient is stable enough, but urgent surgical notification and resuscitation must occur first in a profoundly hypotensive patient with a large AAA. Transport solely for routine imaging can be hazardous.",
+      "Cardiac assessment can identify concurrent disease, but shock plus a large pulsatile aneurysm is rupture until proved otherwise. Awaiting troponin risks delaying haemorrhage control.",
+      "Analgesia is appropriate, but observation and outpatient imaging are unsafe with severe hypotension and a markedly enlarged abdominal aorta. Rapid deterioration from intra-abdominal bleeding is possible.",
+      "Presume rupture in a hypotensive patient with a large aneurysm. Summon vascular surgery/anaesthesia immediately, secure IV access, crossmatch blood, begin controlled resuscitation and organise emergency repair."
     ],
     "pearl": "Ruptured AAA is a time-critical diagnosis; not all patients have the classic full triad.",
     "pivot": "If haemodynamically stable, urgent CT angiography often helps procedural planning.",
     "management": {
       "steps": [
         [
-          "Best decision in this scenario",
-          "Activate emergency vascular surgical and resuscitation pathways for suspected ruptured AAA"
+          "Activate pathway",
+          "Call vascular surgery, anaesthesia and emergency resuscitation team; assess airway, mental state, perfusion and haemorrhagic shock."
         ],
         [
-          "Clinical reasoning",
-          "Shock, abdominal pain and aneurysm strongly suggest rupture. Activate immediate vascular intervention and controlled resuscitation, with imaging only if stability and pathway allow."
+          "Prepare for repair",
+          "Arrange large-bore IV access, blood typing/crossmatch and rapid availability of blood products; avoid unnecessary transfer or delay."
         ],
         [
-          "What would change the answer?",
-          "If haemodynamically stable, urgent CT angiography often helps procedural planning."
+          "Resuscitate judiciously",
+          "Use controlled haemorrhage resuscitation under specialist direction while prioritising operative control; monitor continuously."
+        ],
+        [
+          "Plan definitive care",
+          "Perform CTA only if stable enough and it will guide endovascular versus open repair without unacceptable delay."
         ]
       ],
-      "safety": "Ruptured AAA is a time-critical diagnosis; not all patients have the classic full triad.",
-      "local": "Original case-linked teaching summary, not a newly verified guideline. Confirm current Australian recommendations, local escalation pathways, patient factors and prescribing details."
+      "safety": "Suspected ruptured AAA with shock requires emergency surgical control; a normal initial haemoglobin would not reassure.",
+      "local": "Educational summary checked against emergency and surgical guidelines; follow current Australian hospital protocol and specialist advice."
     }
   },
   {
