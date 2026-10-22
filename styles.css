@@ -786,3 +786,31 @@ body.midnight-sage .btn:not(.soft):not(.rose),body.midnight-sage a.btn:not(.soft
 .account-privacy{font-size:11px;margin:8px 0 0}
 @media(max-width:720px){.account-trigger{padding:8px 10px;font-size:12px}.account-dialog{padding:20px}.account-actions{grid-template-columns:1fr 1fr}}
 @media(max-width:420px){#accountButtonText{display:none}.account-trigger{min-width:39px}.account-actions{grid-template-columns:1fr}}
+
+/* Study annotations: a quiet toolbar and a notepad that stays collapsed by default. */
+.study-tools-bar{display:flex;align-items:center;gap:9px;flex-wrap:wrap;margin:7px 0 16px;padding:8px 10px;border:1px solid var(--edge);border-radius:12px;background:color-mix(in srgb,var(--card) 90%,var(--lav));font-size:12px;line-height:1.3}
+.study-tools-label{font-weight:700;color:var(--ink)}
+.study-tools-hint{font-size:11px;color:var(--muted)}
+.study-swatches{display:flex;align-items:center;gap:7px;margin-left:2px}
+.study-swatch{width:20px;height:20px;border:1px solid rgba(45,37,66,.22);border-radius:6px;cursor:pointer;box-shadow:inset 0 0 0 2px rgba(255,255,255,.28);transition:transform .12s ease,box-shadow .12s ease;padding:0;flex:none}
+.study-swatch:hover,.study-swatch:focus-visible{transform:translateY(-1px) scale(1.12);outline:2px solid var(--violet);outline-offset:2px}
+.study-swatch.yellow{background:#ffe785}.study-swatch.pink{background:#ffafd4}.study-swatch.mint{background:#a9eed3}.study-swatch.lilac{background:#c9b8fa}
+.study-clear-marks{background:none;border:0;border-left:1px solid var(--edge);padding:3px 2px 3px 10px;color:var(--muted);font:inherit;cursor:pointer}
+.study-clear-marks:hover{color:var(--ink);text-decoration:underline}
+.study-tool-status{font-size:11px;color:var(--muted);min-height:14px;margin-left:auto}
+.study-mark{color:#27313d;border-radius:3px;padding:1px 0;box-decoration-break:clone;-webkit-box-decoration-break:clone}
+.study-mark-yellow{background:#ffe785}.study-mark-pink{background:#ffafd4}.study-mark-mint{background:#a9eed3}.study-mark-lilac{background:#c9b8fa}
+.study-notes-section{border-top:1px solid var(--edge);margin-top:13px;padding-top:10px}
+.study-note-toggle{display:inline-flex;align-items:center;gap:7px;background:transparent;border:1px solid transparent;border-radius:9px;padding:5px 8px;color:var(--muted);font:inherit;font-size:12px;font-weight:700;cursor:pointer}
+.study-note-toggle:hover,.study-note-toggle:focus-visible,.study-note-toggle.open{background:var(--lav);color:var(--ink);border-color:var(--edge);outline-offset:2px}
+.study-note-toggle svg{flex:none}
+.study-chevron{font-size:13px;margin-left:2px;transition:transform .15s ease}
+.study-note-toggle.open .study-chevron{transform:rotate(180deg)}
+.study-note-indicator{color:var(--violet);font-size:17px;line-height:8px}
+.study-notepad{margin:7px 0 2px;padding:12px 13px;background:color-mix(in srgb,var(--card) 88%,var(--lav));border:1px solid var(--edge);border-radius:12px}
+.study-notepad[hidden]{display:none}
+.study-notepad label{display:block;color:var(--muted);font-size:11px;font-weight:700;margin-bottom:7px}
+.study-notepad textarea{display:block;width:100%;min-height:106px;resize:vertical;border:1px solid var(--edge);border-radius:9px;background:var(--card);color:var(--ink);font:inherit;font-size:14px;line-height:1.55;padding:10px 12px;outline-offset:2px}
+.study-notepad textarea:focus{outline:2px solid var(--violet);border-color:transparent}
+.study-note-saving{margin-top:6px;font-size:11px;color:var(--muted)}
+@media(max-width:640px){.study-tools-bar{gap:8px;padding:7px 8px}.study-tools-hint{flex-basis:100%;order:5;font-size:10px}.study-tool-status{margin-left:0}.study-swatches{gap:9px}.study-swatch{width:23px;height:23px}}
