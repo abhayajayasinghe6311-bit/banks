@@ -488,6 +488,7 @@ function learningNotes(q,anchorId='learningNotes',selected=null){
  const rationale=q.explanations?.[keyIndex]||'Review the decisive clinical clue that supports this answer.';
  const wrong=selectedIndex>=0&&selectedIndex!==keyIndex;
  const otherOptions=displayOrder(q).map(i=>{
+  const option=options[i];
   if(i===keyIndex||(wrong&&i===selectedIndex))return '';
   return `<div class="learning-alternative learning-alternative-visible"><div class="learning-option-head"><span class="learning-letter">${displayIndexLetter(q,i)}</span><strong>${safe(option)}</strong></div><p>${safe(conciseOptionReason(q,i))}</p></div>`;
  }).join('');
