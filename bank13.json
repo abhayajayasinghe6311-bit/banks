@@ -958,5 +958,245 @@
     },
     "source": "https://www.asthmahandbook.org.au/clinical-topics/asthma-in-pregnancy",
     "n": 20
+  },
+  {
+    "domain": "Obstetrics & maternal fetal medicine",
+    "skill": "Placenta accreta spectrum / antenatal planning",
+    "context": "Advanced integrated clinical decisions",
+    "stem": "At the 25-week morphology follow-up, a G4P3 with two previous caesareans has an anterior placenta praevia covering the old uterine scar. Ultrasound reports multiple placental lacunae, abnormal uteroplacental vascularity and loss of the clear zone. She has no bleeding and fetal growth is normal.",
+    "ask": "Which is the safest management direction?",
+    "options": [
+      "Reassure and plan vaginal birth if the placenta migrates by the third trimester.",
+      "Arrange a routine thirty-eight-week caesarean without additional specialist preparation.",
+      "Attempt manual placental removal if it fails to separate at the planned delivery.",
+      "Treat with antenatal corticosteroids now and defer specialist review until labour begins.",
+      "Refer to a tertiary multidisciplinary team to assess accreta and plan a controlled birth."
+    ],
+    "key": "E",
+    "explanations": [
+      "Placenta praevia can resolve, but scar implantation plus sonographic features raise concern for placenta accreta spectrum. Reassurance and a routine vaginal-birth plan would ignore potentially catastrophic haemorrhage risk.",
+      "A caesarean may be necessary, but an ordinary booking without experienced teams, blood products and surgical planning is inadequate when accreta is suspected.",
+      "Attempting placental separation in accreta can precipitate life-threatening bleeding. Surgical management must be planned by the specialist team, often with placenta left in situ during planned operative treatment.",
+      "Corticosteroids have gestational-age and imminent-birth indications, not a general role simply because accreta is suspected at 25 weeks. Specialist assessment should not be delayed.",
+      "Correct: organise maternal fetal medicine and specialist obstetric imaging review to define the diagnosis and delivery plan. Multidisciplinary preparation includes senior obstetric surgery, anaesthesia, blood bank, critical care and neonatal services, with individualised timing and contingency planning."
+    ],
+    "pearl": "Placenta praevia over a caesarean scar plus lacunae and abnormal vascularity should prompt accreta-spectrum planning before labour.",
+    "pivot": "A low-lying placenta without previous uterine surgery or accreta features may follow a less intensive repeat-imaging pathway, depending on distance from the os.",
+    "management": {
+      "steps": [
+        [
+          "Recognise",
+          "Review placenta location, number of uterine scars and accreta imaging features; counsel sensitively about uncertainty."
+        ],
+        [
+          "Refer",
+          "Arrange timely tertiary maternal fetal medicine and specialist ultrasound review."
+        ],
+        [
+          "Plan",
+          "Agree a delivery setting and timing with multidisciplinary teams, blood bank and possible major pelvic surgery capability."
+        ],
+        [
+          "Safety-net",
+          "Give clear instructions for any bleeding, contractions or pain and ensure emergency transfer arrangements."
+        ]
+      ],
+      "safety": "Avoid unplanned labour or attempted placental removal without specialist preparation when accreta is strongly suspected.",
+      "local": "Queensland Health maternal fetal medicine prioritisation and antenatal ultrasound referral guidance."
+    },
+    "source": "https://www.health.qld.gov.au/cpc/maternal-fetal-medicine/maternal-fetal-medicine",
+    "n": 21
+  },
+  {
+    "domain": "Neonatology & endocrinology",
+    "skill": "Newborn screening / congenital hypothyroidism",
+    "context": "Advanced integrated clinical decisions",
+    "stem": "A healthy-appearing 9-day-old baby is recalled after newborn bloodspot screening reports a markedly elevated TSH. The parents say feeding and bowel motions are normal. Confirmatory venous thyroid tests have been requested, but an appointment is not available for another week.",
+    "ask": "Which response is best?",
+    "options": [
+      "Repeat the bloodspot sample at six weeks because the baby has no symptoms.",
+      "Wait for clinical hypothyroid signs before prescribing replacement hormone.",
+      "Urgently confirm serum thyroid tests and coordinate prompt levothyroxine treatment.",
+      "Perform thyroid ultrasound before any treatment because anatomy determines urgency.",
+      "Advise observation only unless repeat screening detects a second abnormal hormone."
+    ],
+    "key": "C",
+    "explanations": [
+      "Congenital hypothyroidism may be clinically silent in the neonatal period. Delaying until six weeks risks preventable neurodevelopmental harm.",
+      "Symptoms can emerge only after a period of thyroid hormone deficiency; absence of lethargy or constipation does not reduce the importance of the abnormal screen.",
+      "Correct: promptly obtain venous TSH and free T4 and contact the neonatal/endocrine screening service urgently. Arrange levothyroxine without avoidable delay when primary congenital hypothyroidism is confirmed or strongly suspected, with dose and follow-up guided by the specialist team.",
+      "Imaging can help define thyroid anatomy later but must not hold up biochemical confirmation or treatment. Neurodevelopmental protection depends on timely hormone replacement.",
+      "A second screening result is not a safe prerequisite when the first report is markedly abnormal. The next action is urgent diagnostic testing and specialist coordination."
+    ],
+    "pearl": "A well baby can still have congenital hypothyroidism; early thyroxine protects neurological development before symptoms appear.",
+    "pivot": "Mildly abnormal screening results can follow specified recall algorithms, but a strongly positive result needs urgent venous confirmation and endocrine contact.",
+    "management": {
+      "steps": [
+        [
+          "Contact",
+          "Notify the neonatal screening/endocrinology service and family promptly; confirm sample identifiers and reported values."
+        ],
+        [
+          "Test",
+          "Obtain venous TSH and free T4 urgently, following the screening service's repeat-test algorithm."
+        ],
+        [
+          "Treat",
+          "Commence specialist-directed levothyroxine promptly when indicated, without waiting for imaging."
+        ],
+        [
+          "Follow",
+          "Arrange early biochemical review, growth/development surveillance and practical dosing education for caregivers."
+        ]
+      ],
+      "safety": "Do not wait for physical signs or thyroid imaging before initiating a time-critical confirmed replacement plan.",
+      "local": "Queensland newborn bloodspot screening guideline and South Australian neonatal levothyroxine guidance."
+    },
+    "source": "https://www.health.qld.gov.au/__data/assets/pdf_file/0012/1321230/g-newborn-bloodspot-screening.pdf",
+    "n": 22
+  },
+  {
+    "domain": "Respiratory & infectious diseases",
+    "skill": "Suspected pulmonary tuberculosis / airborne precautions",
+    "context": "Advanced integrated clinical decisions",
+    "stem": "A 33-year-old who recently arrived from a high-TB-incidence region reports four weeks of cough, night sweats, weight loss and occasional blood-streaked sputum. Chest radiograph shows right upper-lobe cavitation. He is currently in a shared emergency waiting area and his oxygenation is normal.",
+    "ask": "Which initial action is most appropriate?",
+    "options": [
+      "Begin latent TB preventive therapy after a single positive interferon-gamma test.",
+      "Implement airborne precautions and arrange urgent sputum testing with TB services.",
+      "Prescribe broad-spectrum antibiotics and reassess the chest radiograph in six weeks.",
+      "Discharge because a normal oxygen saturation excludes contagious pulmonary infection.",
+      "Schedule spirometry first to distinguish bronchiectasis from active pulmonary TB."
+    ],
+    "key": "B",
+    "explanations": [
+      "Latent-TB therapy is inappropriate when clinical and radiological findings suggest active disease. Screening tests for TB infection cannot distinguish latent from active infection.",
+      "Correct: mask and separate the patient promptly, use an airborne infection isolation pathway and appropriate staff respiratory protection, and notify the TB/infectious-disease service. Arrange sputum testing for mycobacterial microscopy, nucleic acid amplification and culture while evaluating severity and public-health needs.",
+      "Other bacterial infection may coexist, but a cavitary upper-lobe lesion with systemic TB symptoms requires airborne protection and targeted testing now. Antibiotics alone may delay diagnosis and expose contacts.",
+      "Normal oxygenation does not rule out infectious pulmonary TB. Transmission risk relates to respiratory disease and airborne particles, not merely respiratory failure.",
+      "Spirometry does not establish or exclude active tuberculosis and can provoke coughing outside appropriate infection-control conditions. Microbiological assessment and isolation take priority."
+    ],
+    "pearl": "Suspected infectious pulmonary TB calls for airborne precautions before confirmatory microbiology returns.",
+    "pivot": "A truly asymptomatic person with normal examination and imaging and evidence of TB infection may enter a latent-TB evaluation pathway instead.",
+    "management": {
+      "steps": [
+        [
+          "Protect",
+          "Place a mask on the patient, minimise waiting-room exposure and implement airborne isolation with staff respiratory protection."
+        ],
+        [
+          "Investigate",
+          "Collect sputum for AFB smear, NAAT and culture using appropriate facilities; assess chest imaging and relevant comorbidities."
+        ],
+        [
+          "Coordinate",
+          "Contact TB/infectious-disease and public-health teams for treatment and contact-tracing decisions."
+        ],
+        [
+          "Follow",
+          "Plan monitored therapy, adherence support and safe discharge/isolation arrangements when appropriate."
+        ]
+      ],
+      "safety": "Do not perform aerosol-generating investigations without the appropriate airborne infection-control setting.",
+      "local": "Australian Department of Health infection-control guidance for suspected or confirmed pulmonary TB."
+    },
+    "source": "https://www1.health.gov.au/internet/main/publishing.nsf/Content/cda-cdi4003i.htm",
+    "n": 23
+  },
+  {
+    "domain": "Cardiology & preventive care",
+    "skill": "Familial hypercholesterolaemia / cascade screening",
+    "context": "Advanced integrated clinical decisions",
+    "stem": "A 24-year-old has an untreated LDL cholesterol of 6.4 mmol/L on repeat testing. Her father underwent coronary stenting at 41 and her paternal aunt died of a myocardial infarction at 38. Examination shows tendon thickening over both Achilles tendons; TSH and liver tests are normal.",
+    "ask": "Which strategy best addresses the risk?",
+    "options": [
+      "Evaluate probable familial hypercholesterolaemia, begin lipid-lowering care and offer cascade screening.",
+      "Recommend dietary modification alone for five years because clinical cardiovascular disease is absent.",
+      "Use a ten-year absolute-risk calculator and start treatment only if that score is high.",
+      "Defer family testing because genetic confirmation is mandatory before relatives can be assessed.",
+      "Repeat LDL at age forty and treat only if there is documented atherosclerotic plaque."
+    ],
+    "key": "A",
+    "explanations": [
+      "Correct: very high LDL, tendon xanthomas and premature familial cardiovascular events are strongly suggestive of familial hypercholesterolaemia. Exclude secondary causes, initiate timely potent lipid-lowering therapy and specialist input, and arrange family cascade screening with genetic testing where appropriate.",
+      "Lifestyle measures are beneficial but cannot reliably normalise lifelong severe monogenic LDL elevation. Years of untreated exposure create cumulative atherosclerotic risk.",
+      "Short-term risk calculators are poorly suited to a young person with inherited lifelong LDL exposure. A low ten-year estimate must not override a probable FH phenotype.",
+      "Genetic testing is valuable but a negative or unavailable result does not exclude clinically diagnosed FH. Relatives can be assessed through lipid and family-history pathways without delaying care.",
+      "Waiting for middle age or visible plaque undermines primary prevention. The purpose of identifying FH early is to reduce atherosclerotic burden before clinical disease."
+    ],
+    "pearl": "Very high LDL at a young age plus tendon xanthomas and premature family events warrants FH assessment even with a low calculated ten-year risk.",
+    "pivot": "A moderate LDL elevation without strong family features may follow standard absolute-risk assessment after excluding secondary causes.",
+    "management": {
+      "steps": [
+        [
+          "Verify",
+          "Repeat fasting/nonfasting lipids as clinically appropriate, review medicines, secondary causes and family pedigree."
+        ],
+        [
+          "Treat",
+          "Discuss lifestyle and initiate high-intensity LDL lowering with specialist guidance, contraception/pregnancy considerations and monitoring."
+        ],
+        [
+          "Screen",
+          "Arrange first-degree relative cascade lipid assessment and genetic counselling/testing where available."
+        ],
+        [
+          "Track",
+          "Follow LDL response, adherence and cardiovascular risk over time, adjusting therapy to guideline targets."
+        ]
+      ],
+      "safety": "Lipid-lowering medicines require individual review in pregnancy or pregnancy planning.",
+      "local": "RACGP familial hypercholesterolaemia recognition and cascade-screening guidance."
+    },
+    "source": "https://www.racgp.org.au/afp/2012/december/familial-hypercholesterolaemia",
+    "n": 24
+  },
+  {
+    "domain": "Psychiatry & reproductive health",
+    "skill": "Valproate / preconception medication review",
+    "context": "Advanced integrated clinical decisions",
+    "stem": "A 29-year-old with bipolar I disorder has been euthymic for two years while taking sodium valproate. She plans to try for pregnancy within six months. A previous manic episode led to hospitalisation, and she fears relapse if treatment changes. She asks whether she should stop the medicine tonight.",
+    "ask": "Which advice is most appropriate?",
+    "options": [
+      "Continue valproate without discussion because stable psychiatric health is the only priority.",
+      "Stop valproate immediately without replacement and monitor for symptoms at home.",
+      "Reduce valproate only after a positive pregnancy test to avoid unnecessary adjustments.",
+      "Arrange urgent specialist preconception review for safer treatment, without abrupt unsupervised cessation.",
+      "Substitute folic acid alone because it eliminates medication-associated fetal risks."
+    ],
+    "key": "D",
+    "explanations": [
+      "Preventing relapse is essential, but valproate carries substantial teratogenic and neurodevelopmental risks that must be addressed before conception. Continuing unchanged without informed review is inadequate.",
+      "Sudden unsupervised cessation can destabilise severe bipolar illness, posing risks to the patient and future pregnancy. Medication changes need an individualised alternative and monitoring plan.",
+      "Organogenesis occurs very early, sometimes before pregnancy recognition. Waiting for a positive test misses the opportunity to reduce exposure risk before conception.",
+      "Correct: discuss valproate-specific fetal risks, reliable contraception during transition, and rapid psychiatrist/obstetric preconception assessment. Create an individualised plan for an effective safer mood stabiliser, relapse monitoring and folate as appropriate; do not advise abrupt self-discontinuation.",
+      "High-dose folate may be recommended in specialist planning but cannot eliminate valproate-related malformation or neurodevelopmental risk. It is an adjunct, not a substitute for medication review."
+    ],
+    "pearl": "Preconception valproate decisions balance two serious harms: fetal exposure and maternal psychiatric relapse; plan changes before pregnancy with specialists.",
+    "pivot": "If pregnancy has already occurred, arrange urgent same-day specialist risk-benefit review rather than independently stopping or continuing without assessment.",
+    "management": {
+      "steps": [
+        [
+          "Counsel",
+          "Explain fetal risks in clear, non-alarming terms and explore pregnancy goals, past episodes and preferences."
+        ],
+        [
+          "Coordinate",
+          "Arrange urgent psychiatry and obstetric/preconception review, with contraceptive advice during transition."
+        ],
+        [
+          "Plan",
+          "Choose an evidence-based alternative regimen and cross-titration strategy with relapse and sleep monitoring."
+        ],
+        [
+          "Protect",
+          "Discuss folate, medication documentation, crisis plan and prompt review if pregnancy or mood symptoms emerge."
+        ]
+      ],
+      "safety": "Do not tell a patient with severe bipolar disorder to stop valproate abruptly without a supervised replacement and relapse plan.",
+      "local": "Therapeutic Goods Administration pregnancy prescribing safety information for sodium valproate."
+    },
+    "source": "https://www.tga.gov.au/resources/health-professional-information-and-resources/australian-categorisation-system-prescribing-medicines-pregnancy/prescribing-medicines-pregnancy-database",
+    "n": 25
   }
 ]
