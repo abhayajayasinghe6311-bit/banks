@@ -1,0 +1,482 @@
+[
+  {
+    "domain": "Cardiology & emergency medicine",
+    "skill": "Irregular broad-complex tachycardia / pre-excitation",
+    "context": "Advanced integrated clinical decisions",
+    "stem": "A 23-year-old with a history of episodic palpitations arrives diaphoretic and presyncopal. The ECG shows an irregular broad-complex tachycardia at approximately 220/min with varying QRS morphology. BP is 78/46 mmHg; he is conscious but confused. An old ECG shows a short PR interval and a delta wave.",
+    "ask": "Which intervention should take priority?",
+    "options": [
+      "Give IV diltiazem while obtaining specialist advice about the irregular rhythm.",
+      "Give an IV amiodarone loading dose while preparing for further rhythm monitoring.",
+      "Perform urgent synchronised electrical cardioversion with appropriate resuscitation support.",
+      "Administer IV adenosine to clarify whether an accessory pathway is present.",
+      "Give IV magnesium and observe briefly for spontaneous conversion of the rhythm."
+    ],
+    "key": "C",
+    "explanations": [
+      "An AV-nodal blocker may favour conduction down the accessory pathway in pre-excited atrial fibrillation and precipitate ventricular fibrillation. Diltiazem may be appropriate for selected ordinary AF presentations, but the irregular wide QRS complexes and delta wave radically change the risk.",
+      "Amiodarone is used in several arrhythmias, but IV amiodarone is not the safest first-line response to haemodynamically unstable pre-excited AF. The patient needs immediate electrical treatment; drug selection in stable pre-excitation requires expert protocol guidance.",
+      "Correct: an unstable tachyarrhythmia with hypotension and altered mentation calls for urgent synchronised cardioversion. Apply monitoring, summon resuscitation expertise, prepare sedation if feasible without delaying the shock, and have defibrillation capability ready if rhythm or synchronisation changes.",
+      "Adenosine is a reasonable option in carefully selected regular narrow-complex SVT, but not this irregular broad-complex rhythm. Transiently blocking the AV node can be dangerous when impulses can conduct through an accessory pathway.",
+      "Magnesium is central in torsades de pointes, typically a polymorphic ventricular tachycardia associated with QT prolongation. It does not replace immediate electrical cardioversion for this unstable rhythm, and waiting risks collapse."
+    ],
+    "pearl": "Irregular broad complexes plus a WPW pattern should trigger suspicion of pre-excited AF; haemodynamic instability takes priority over pharmacological rhythm control.",
+    "pivot": "If the patient is stable, obtain urgent cardiology input for a pre-excitation-safe rhythm-control pathway rather than reflex AV-nodal blockade.",
+    "management": {
+      "steps": [
+        [
+          "Recognise",
+          "Treat hypotension and confusion as instability; call for senior ED/resuscitation support and obtain monitoring plus IV access."
+        ],
+        [
+          "Act",
+          "Deliver synchronised electrical cardioversion promptly; provide procedural sedation when possible without delaying lifesaving treatment."
+        ],
+        [
+          "After conversion",
+          "Repeat 12-lead ECG, monitor recurrence, check electrolytes and relevant triggers, and document the accessory-pathway concern."
+        ],
+        [
+          "Definitive care",
+          "Arrange electrophysiology/cardiology assessment for risk stratification and potential catheter ablation."
+        ]
+      ],
+      "safety": "Avoid adenosine, beta blockers, diltiazem, verapamil or digoxin in suspected pre-excited AF; follow the local resuscitation algorithm.",
+      "local": "Australian ANZCOR acute dysrhythmia guidance; emergency doses and energy settings require local protocol confirmation."
+    },
+    "source": "https://www.anzcor.org/home/adult-advanced-life-support/guideline-11-9-managing-acute-dysrhythmias",
+    "n": 1
+  },
+  {
+    "domain": "Paediatrics & endocrine emergencies",
+    "skill": "DKA complication / cerebral injury",
+    "context": "Advanced integrated clinical decisions",
+    "stem": "A 10-year-old with new type 1 diabetes has received fluid replacement and a controlled insulin infusion for DKA. Two hours later she develops a worsening headache, becomes irritable and has a fall in Glasgow Coma Scale from 15 to 12. Her capillary glucose is declining steadily rather than abruptly.",
+    "ask": "What is the safest next action?",
+    "options": [
+      "Pause all intravenous fluid until CT excludes worsening cerebral swelling.",
+      "Administer sodium bicarbonate to correct acidosis before altering treatment.",
+      "Increase insulin delivery to clear ketones before reassessing neurological status.",
+      "Arrange urgent CT before administering treatment for possible cerebral injury.",
+      "Treat suspected cerebral injury immediately with hyperosmolar therapy and escalate critical care."
+    ],
+    "key": "E",
+    "explanations": [
+      "Excess or inappropriate fluids may worsen risk, but stopping all fluid is not a treatment plan for neurological deterioration. Review fluid rate and physiology with paediatric critical-care expertise while maintaining perfusion.",
+      "Bicarbonate does not treat DKA-related cerebral injury and is generally avoided outside exceptional indications. It can also complicate electrolyte and acid-base management while the neurological emergency remains untreated.",
+      "Ketone clearance matters, but simply increasing insulin risks a more precipitous biochemical shift and does nothing to address cerebral injury. Check glucose, electrolytes and infusion settings while initiating emergency neurological management.",
+      "Neuroimaging can help exclude alternative intracranial pathology, but treatment for clinically significant suspected cerebral injury must not wait for the scan. A deteriorating conscious state during DKA is a time-critical clinical diagnosis.",
+      "Correct: administer hyperosmolar therapy according to the paediatric DKA protocol and urgently involve intensive care or the senior paediatric team. Continue ABC assessment, frequent neurological observations and reassessment of the fluid/insulin plan while arranging imaging once stabilised."
+    ],
+    "pearl": "New headache, altered behaviour or falling GCS during paediatric DKA is cerebral injury until proven otherwise—even if glucose is improving.",
+    "pivot": "If neurological changes are due to hypoglycaemia, immediately confirm and correct the low bedside glucose while simultaneously evaluating other causes.",
+    "management": {
+      "steps": [
+        [
+          "Escalate",
+          "Activate senior paediatric/ICU response, repeat ABCDE examination and assess glucose immediately."
+        ],
+        [
+          "Treat",
+          "Give mannitol or hypertonic saline using the local paediatric DKA cerebral-injury pathway; do not wait for CT."
+        ],
+        [
+          "Review infusions",
+          "Check fluid balance, sodium trend, potassium, glucose and the insulin infusion; adjust under critical-care advice."
+        ],
+        [
+          "Monitor",
+          "Repeat GCS, pupils, vital signs and neurological examination frequently; obtain urgent imaging once clinically appropriate."
+        ]
+      ],
+      "safety": "A normal early CT does not exclude cerebral injury. Avoid reflex bicarbonate or insulin boluses.",
+      "local": "Follow the current Royal Children's Hospital DKA guideline and local ICU dosing protocols."
+    },
+    "source": "https://www.rch.org.au/clinicalguide/guideline_index/Diabetic_ketoacidosis/",
+    "n": 2
+  },
+  {
+    "domain": "Obstetrics & acute care",
+    "skill": "Postpartum haemorrhage / uterine atony",
+    "context": "Advanced integrated clinical decisions",
+    "stem": "Ten minutes after a vaginal delivery, a 31-year-old continues to bleed heavily. Estimated blood loss is 1,200 mL and increasing. The placenta appears complete, the uterus is boggy, HR 124/min and BP 92/58 mmHg. Oxytocin prophylaxis was given immediately after birth.",
+    "ask": "Which combined response is MOST appropriate now?",
+    "options": [
+      "Request pelvic ultrasound first, then select uterotonics once retained tissue is excluded.",
+      "Activate the haemorrhage response, compress the uterus, give early TXA and escalate uterotonics.",
+      "Continue oxytocin alone until a repeat haemoglobin confirms substantial blood loss.",
+      "Transfer immediately for hysterectomy without attempting further resuscitative measures.",
+      "Perform cervical inspection before addressing the uterine tone and haemodynamic changes."
+    ],
+    "key": "B",
+    "explanations": [
+      "Retained tissue is part of the four-T assessment, but an immediately boggy uterus with major ongoing bleeding demands concurrent resuscitation and atony treatment. Imaging must not interrupt control of haemorrhage.",
+      "Correct: summon the obstetric, anaesthetic and blood-bank teams; initiate a major-haemorrhage pathway while performing uterine massage/bimanual compression and additional uterotonics as appropriate. Give tranexamic acid early, ideally within three hours of birth, while examining for other causes and preparing for tamponade or theatre if bleeding persists.",
+      "Haemoglobin may initially underestimate acute blood loss; waiting for a laboratory result delays resuscitation. Oxytocin alone is inadequate if bleeding continues with shock physiology.",
+      "Hysterectomy can be lifesaving in refractory PPH, but immediate management includes resuscitation, treatment of atony and stepwise mechanical or surgical haemostasis. The decision to operate should occur in parallel with these actions, not instead of them.",
+      "Trauma must be assessed, particularly if the uterus is firm, but profound atony and hypotension require action at once. A sequential examination-first approach is too slow for this volume and rate of bleeding."
+    ],
+    "pearl": "PPH treatment is simultaneous: resuscitate, control uterine bleeding, give early TXA and check the four Ts (tone, trauma, tissue, thrombin).",
+    "pivot": "If the uterus is firm but bleeding persists, prioritise genital-tract trauma and retained tissue while maintaining haemorrhage resuscitation.",
+    "management": {
+      "steps": [
+        [
+          "Declare",
+          "Activate PPH/major-haemorrhage protocol; summon obstetrics, anaesthesia and blood bank; assess ABCs and quantify blood loss."
+        ],
+        [
+          "Control",
+          "Massage and compress the uterus; give appropriate uterotonics, inspect placenta and birth canal, and insert urinary catheter."
+        ],
+        [
+          "Resuscitate",
+          "Establish large-bore IV access, send FBC/coagulation/fibrinogen/crossmatch, use balanced blood products when indicated, and give TXA early."
+        ],
+        [
+          "Escalate",
+          "Consider intrauterine balloon tamponade and operative management if ongoing bleeding; repeat haemodynamics and laboratory checks."
+        ]
+      ],
+      "safety": "Do not delay resuscitation for haemoglobin or imaging. Uterotonics have contraindications, including hypertension for ergometrine.",
+      "local": "Use the Queensland Clinical Guideline on primary PPH and local escalation/dosing algorithms."
+    },
+    "source": "https://www.health.qld.gov.au/__data/assets/pdf_file/0015/140136/g-pph.pdf",
+    "n": 3
+  },
+  {
+    "domain": "General practice & women's health",
+    "skill": "Cervical screening / HPV16 self-collection",
+    "context": "Advanced integrated clinical decisions",
+    "stem": "A 34-year-old asymptomatic patient attends to discuss her first Australian cervical screening result. She chose a self-collected vaginal swab and the report states oncogenic HPV type 16 detected. She asks whether a clinician must collect a cervical sample before she can be referred.",
+    "ask": "Which plan best follows the Australian screening pathway?",
+    "options": [
+      "Repeat a self-collected HPV swab in twelve months before arranging any specialist review.",
+      "Treat presumptive cervical infection and repeat the HPV result once antibiotics finish.",
+      "Collect an immediate clinician-taken cytology sample and refer only if it is abnormal.",
+      "Refer for colposcopy now; cervical cytology can be obtained during that assessment.",
+      "Offer HPV vaccination and return to routine five-year screening if she remains asymptomatic."
+    ],
+    "key": "D",
+    "explanations": [
+      "Repeat testing at twelve months can apply to specific lower-risk HPV patterns, but HPV16 is a higher-risk genotype requiring colposcopic assessment. Waiting because symptoms are absent would miss the risk-based indication.",
+      "Oncogenic HPV infection is not eradicated by antibiotics. The result calls for a cancer-prevention assessment rather than empiric antimicrobial treatment.",
+      "Cytology can contribute to assessment, but current self-collection pathways do not require an extra GP cytology appointment before HPV16/18 colposcopy referral. Adding this gate can delay appropriate assessment.",
+      "Correct: explain that HPV16 positivity warrants direct colposcopic assessment even from a self-collected specimen. Arrange referral, support shared decision-making and inform the patient that a cervical sample for cytology may be taken at colposcopy.",
+      "HPV vaccination remains worth discussing if relevant but does not treat an established HPV16 result or replace indicated colposcopy. The screening interval is not routine following this higher-risk result."
+    ],
+    "pearl": "In Australia's screening program, HPV16/18 positivity on self-collection goes directly to colposcopy; a GP-collected cytology sample is not a prerequisite.",
+    "pivot": "For other oncogenic HPV types, the pathway depends on risk, prior results and cytology triage; not every positive HPV result goes directly to colposcopy.",
+    "management": {
+      "steps": [
+        [
+          "Explain",
+          "Describe HPV as common, distinguish infection from cancer and address stigma or anxiety without minimising follow-up."
+        ],
+        [
+          "Refer",
+          "Arrange timely colposcopy for HPV16; do not wait for a separate clinician-collected LBC test."
+        ],
+        [
+          "Coordinate",
+          "Confirm attendance, note pregnancy/immunosuppression or prior abnormal results, and ensure specialist correspondence is followed."
+        ],
+        [
+          "Prevention",
+          "Discuss smoking cessation, HPV vaccination eligibility and future surveillance recommended after colposcopy."
+        ]
+      ],
+      "safety": "Visible symptoms such as postcoital bleeding require diagnostic assessment regardless of screening timing or results.",
+      "local": "Cancer Council Australia/National Cervical Screening Program risk-based recommendations apply."
+    },
+    "source": "https://www.cancer.org.au/assets/pdf/cervical_screening_pathway_for_self_collection.pdf",
+    "n": 4
+  },
+  {
+    "domain": "Paediatrics & adolescent medicine",
+    "skill": "Eating disorder / medical instability",
+    "context": "Advanced integrated clinical decisions",
+    "stem": "A 15-year-old has lost 10 kg over three months while restricting food intake and exercising daily. She denies feeling unwell and asks to return home. Supine HR is 42/min, standing HR 78/min, temperature 35.5°C and serum phosphate is at the lower limit of normal. Her ECG shows sinus bradycardia.",
+    "ask": "What is the best immediate disposition?",
+    "options": [
+      "Arrange urgent hospital assessment for medical instability and supervised nutritional rehabilitation.",
+      "Begin outpatient meal planning with review after one week and repeat electrolyte testing.",
+      "Provide reassurance because sinus bradycardia can occur in well-trained adolescents.",
+      "Start an antidepressant and use outpatient reviews to judge weight restoration.",
+      "Recommend complete exercise cessation but defer admission until phosphate becomes low."
+    ],
+    "key": "A",
+    "explanations": [
+      "Correct: the low resting heart rate, hypothermia, large orthostatic HR change and rapid weight loss indicate physiological compromise despite limited subjective symptoms. A hospital team should assess cardiac monitoring, electrolytes, fluid status and a supervised refeeding plan with eating-disorder expertise.",
+      "Outpatient multidisciplinary treatment is often appropriate for medically stable eating disorders, but this adolescent has physiological red flags. A one-week wait may miss arrhythmia, syncope or refeeding-associated electrolyte changes.",
+      "Athletic bradycardia should not be assumed in the setting of marked restriction, rapid weight loss and orthostatic compromise. Fitness does not explain away the combined instability markers.",
+      "Medication may have a place for a co-occurring psychiatric disorder, but an antidepressant neither restores nutritional stability nor manages immediate cardiac and metabolic risk. Medical stabilisation comes first.",
+      "Exercise cessation is important but insufficient. Normal or near-normal phosphate before refeeding does not exclude subsequent hypophosphataemia; the admission decision rests on the whole clinical picture."
+    ],
+    "pearl": "Eating-disorder medical risk is determined by vital signs, recent change, physiology and behaviour—not by BMI or the patient's sense of wellness alone.",
+    "pivot": "A medically stable adolescent may be treated with family-based outpatient care if reliable monitoring, nutrition and mental-health support are available.",
+    "management": {
+      "steps": [
+        [
+          "Assess risk",
+          "Check orthostatic observations, ECG/QTc, weight trajectory, hydration, suicidality and compensatory behaviours."
+        ],
+        [
+          "Investigate",
+          "Obtain electrolytes including magnesium and phosphate, glucose, renal function, FBC and other tests guided by presentation."
+        ],
+        [
+          "Stabilise",
+          "Arrange urgent medical admission or paediatric/adolescent medicine review for marked physiological compromise."
+        ],
+        [
+          "Refeed safely",
+          "Use a specialist-led nutrition plan with frequent electrolyte and cardiac monitoring and integrated family/mental-health care."
+        ]
+      ],
+      "safety": "Avoid dismissing severe restriction in a patient of normal or high BMI; rapid loss may still be dangerous.",
+      "local": "Royal Children's Hospital eating-disorder ED and adolescent care guidance; local admission thresholds prevail."
+    },
+    "source": "https://www.rch.org.au/clinicalguide/guideline_index/Management_of_Eating_Disorders_in_the_Emergency_Department/",
+    "n": 5
+  },
+  {
+    "domain": "Infectious diseases & general practice",
+    "skill": "Asplenia / fever risk stratification",
+    "context": "Advanced integrated clinical decisions",
+    "stem": "A 46-year-old had a splenectomy following trauma four years ago. He presents to an after-hours clinic with rigors, fever 39.2°C and mild myalgia beginning two hours earlier. BP is 118/74 mmHg and he is alert; he received pneumococcal vaccines but is not taking daily antibiotic prophylaxis.",
+    "ask": "Which response best addresses his immediate risk?",
+    "options": [
+      "Provide antipyretics and reassess tomorrow because haemodynamics are currently normal.",
+      "Obtain respiratory PCR results before deciding whether empiric antibiotics are needed.",
+      "Arrange emergency sepsis assessment and prompt empiric antibiotics without awaiting deterioration.",
+      "Give a routine booster vaccine today and arrange elective infectious-disease review.",
+      "Start oral antibiotics for several days and discharge if the fever initially settles."
+    ],
+    "key": "C",
+    "explanations": [
+      "An asplenic patient can deteriorate rapidly from overwhelming infection even when the first examination is reassuring. Antipyretics provide comfort but cannot safely replace emergency assessment or antimicrobial treatment.",
+      "Viral testing may be useful after initial stabilisation, but it cannot rule out invasive encapsulated bacterial disease. Waiting for results before responding to sepsis risk introduces unnecessary delay.",
+      "Correct: treat fever with rigors after splenectomy as potentially severe infection. Arrange immediate ED transfer, cultures where feasible without delaying care, prompt parenteral empiric antibiotics per local protocol and repeated observations with escalation if shock develops.",
+      "Vaccination is important prevention, but it is not treatment for acute febrile illness. Prior vaccination lowers some risks without eliminating overwhelming postsplenectomy infection.",
+      "Standby oral antibiotics may feature in a personalised emergency plan when urgent care is unavailable, but they are not a substitute for assessment when a febrile asplenic patient can reach emergency services. Fever settling transiently is not proof of safety."
+    ],
+    "pearl": "Asplenia converts an apparently ordinary fever into a time-critical infection-risk problem; a normal initial BP is not reassuring enough.",
+    "pivot": "After recovery, review individualised vaccination, prophylaxis, emergency antibiotic supply and medical-alert education with the treating team.",
+    "management": {
+      "steps": [
+        [
+          "Recognise",
+          "Identify splenectomy and rigors as high risk, even if initial vitals are normal; assess for shock, rash and altered mentation."
+        ],
+        [
+          "Transfer",
+          "Organise urgent emergency evaluation and notify receiving staff of asplenia and possible invasive bacterial sepsis."
+        ],
+        [
+          "Treat",
+          "Obtain blood cultures if rapidly feasible, but do not delay protocol-based broad-spectrum parenteral antibiotics."
+        ],
+        [
+          "Follow-up",
+          "After the acute episode, review immunisation, prophylaxis, travel advice and an emergency fever action plan."
+        ]
+      ],
+      "safety": "Do not reassure solely on prior vaccination or a currently normal blood pressure.",
+      "local": "Australian Immunisation Handbook provides asplenia prevention guidance; acute antibiotics follow local sepsis policy."
+    },
+    "source": "https://immunisationhandbook.health.gov.au/people-with-asplenia-and-hyposplenia",
+    "n": 6
+  },
+  {
+    "domain": "Toxicology & emergency medicine",
+    "skill": "Paracetamol / staggered ingestion",
+    "context": "Advanced integrated clinical decisions",
+    "stem": "A 28-year-old reports taking repeated paracetamol doses for dental pain over the previous 30 hours, estimating 12–14 g altogether but unable to give exact times. She now has nausea and right upper-quadrant discomfort. She asks whether a normal paracetamol concentration on one blood test would prove she is safe.",
+    "ask": "What is the most defensible initial management?",
+    "options": [
+      "Use the Rumack–Matthew nomogram after assigning the time of the most recent dose.",
+      "Start assessment and N-acetylcysteine using the repeated-ingestion pathway with toxicology advice.",
+      "Defer treatment until aminotransferases rise clearly above the reference range.",
+      "Administer activated charcoal now as the principal treatment for the past thirty hours.",
+      "Discharge after one undetectable level provided the ECG and glucose are normal."
+    ],
+    "key": "B",
+    "explanations": [
+      "The nomogram is designed around a single acute ingestion with a known time and cannot be safely applied by arbitrarily choosing one dose in a staggered exposure. That would risk false reassurance despite hepatic injury.",
+      "Correct: obtain timed history as well as serum paracetamol, ALT/AST, INR, renal function and glucose, and urgently contact the poisons/toxicology service. Use the recommended repeated supratherapeutic ingestion algorithm and initiate acetylcysteine where indicated rather than relying on a single nomogram point.",
+      "Paracetamol toxicity can be clinically silent before severe hepatocellular injury; waiting for obvious transaminase elevation can forfeit effective antidote timing. Decisions depend on the exposure pattern and laboratory assessment together.",
+      "Activated charcoal may help in selected recent ingestions with appropriate airway protection, but it does not reverse exposure spread across more than a day. It cannot replace antidote assessment.",
+      "A low or undetectable concentration after delayed or repeated doses does not alone exclude toxicity. ECG and capillary glucose are helpful general assessments but cannot substitute for liver enzymes, INR and a toxicology-informed plan."
+    ],
+    "pearl": "Do not apply the acute single-ingestion paracetamol nomogram to staggered or repeated supratherapeutic dosing.",
+    "pivot": "For a single, clearly timed immediate-release ingestion, obtain an appropriately timed paracetamol concentration and use the validated nomogram pathway.",
+    "management": {
+      "steps": [
+        [
+          "Clarify",
+          "Record formulation, dose estimates, timing, co-ingestants, weight and factors increasing hepatic vulnerability."
+        ],
+        [
+          "Test",
+          "Obtain serum paracetamol, liver enzymes, INR, electrolytes/creatinine, glucose and pregnancy test as relevant."
+        ],
+        [
+          "Treat",
+          "Contact the Australian Poisons Information Centre/clinical toxicologist and initiate IV acetylcysteine according to the repeated-ingestion pathway."
+        ],
+        [
+          "Follow",
+          "Repeat bloods at protocol-defined intervals; assess clinical deterioration and early transfer needs if severe liver injury develops."
+        ]
+      ],
+      "safety": "Do not declare a delayed or staggered ingestion safe from one paracetamol level or an inappropriately plotted nomogram.",
+      "local": "Australian and New Zealand paracetamol poisoning guidance; local poisons centre directs exact thresholds and infusion protocol."
+    },
+    "source": "https://dora.health.qld.gov.au/qldresearchjspui/handle/1/4929?mode=full",
+    "n": 7
+  },
+  {
+    "domain": "Paediatric orthopaedics",
+    "skill": "Referred knee pain / slipped upper femoral epiphysis",
+    "context": "Advanced integrated clinical decisions",
+    "stem": "An overweight 13-year-old boy has three weeks of intermittent left knee pain and a limp. The knee has no effusion or focal tenderness, but hip flexion causes obligatory external rotation and internal rotation is restricted. He can still walk with discomfort.",
+    "ask": "Which plan best prevents avoidable harm?",
+    "options": [
+      "Start knee-focused physiotherapy and obtain hip imaging if symptoms persist.",
+      "Allow protected weight-bearing with crutches while awaiting outpatient orthopaedics.",
+      "Obtain knee MRI first because a normal knee examination excludes hip pathology.",
+      "Attempt gentle passive hip rotation to restore range before ordering plain films.",
+      "Keep him strictly non-weight-bearing and arrange urgent hip imaging and orthopaedic review."
+    ],
+    "key": "E",
+    "explanations": [
+      "An isolated knee treatment plan misses referred pain from a hip disorder. The loss of hip internal rotation and obligatory external rotation should redirect assessment to slipped upper femoral epiphysis.",
+      "Even partial loading risks progression of a suspected slip. In the emergency setting, the Royal Children's Hospital recommends strict non-weight-bearing in bed or wheelchair pending orthopaedic assessment rather than trial walking on crutches.",
+      "Imaging the knee first is poorly targeted when the hip examination is abnormal. AP pelvis and an appropriate lateral hip view are initial tests, with view choice adapted to pain and suspected stability.",
+      "Manipulation or forced rotation can worsen displacement and compromise femoral-head blood supply. Examine gently and stop movements that provoke pain or resistance.",
+      "Correct: treat suspected SUFE as an orthopaedic urgency even in a child who can ambulate. Place him in bed or a wheelchair, avoid weight-bearing and forced hip positioning, obtain appropriate bilateral hip radiographs and seek urgent orthopaedic assessment for fixation."
+    ],
+    "pearl": "Adolescent knee pain with restricted hip internal rotation is a hip problem until proven otherwise; weight-bearing can worsen a slip.",
+    "pivot": "If an acute, unstable slip is suspected, avoid frog-leg positioning and request an appropriate cross-table lateral view in consultation with orthopaedics.",
+    "management": {
+      "steps": [
+        [
+          "Protect",
+          "Stop walking immediately; use bed or wheelchair and provide analgesia without moving the hip forcibly."
+        ],
+        [
+          "Image",
+          "Arrange AP pelvis and appropriate lateral hip radiographs; avoid provocative positioning if acutely unstable."
+        ],
+        [
+          "Refer",
+          "Contact paediatric orthopaedics urgently for admission and operative planning."
+        ],
+        [
+          "Review",
+          "Assess the contralateral hip and endocrine risk factors when clinically indicated; document neurovascular findings."
+        ]
+      ],
+      "safety": "Never attempt closed reduction or forced passive rotation in a suspected SUFE.",
+      "local": "Royal Children's Hospital SUFE emergency guideline."
+    },
+    "source": "https://www.rch.org.au/clinicalguide/guideline_index/fractures/Slipped_upper_femoral_epiphysis_SUFE_-_Emergency_Department/",
+    "n": 8
+  },
+  {
+    "domain": "Paediatrics & inflammatory disease",
+    "skill": "Incomplete Kawasaki disease / cardiac surveillance",
+    "context": "Advanced integrated clinical decisions",
+    "stem": "A 7-month-old infant has had seven days of unexplained fever. Examination shows bilateral non-purulent conjunctival injection and red cracked lips, but no rash or limb swelling. CRP is markedly elevated, platelets are rising and blood and urine cultures have not identified a cause. The infant is otherwise haemodynamically stable.",
+    "ask": "What is the best next diagnostic-management step?",
+    "options": [
+      "Discharge with antibiotics because incomplete criteria exclude Kawasaki disease.",
+      "Arrange a delayed repeat CRP after completing a week of empirical oral antibiotics.",
+      "Observe as an outpatient until all four typical mucocutaneous criteria are present.",
+      "Seek urgent paediatric assessment for incomplete Kawasaki disease and echocardiography.",
+      "Treat presumed bacterial conjunctivitis and review if the eye signs fail to resolve."
+    ],
+    "key": "D",
+    "explanations": [
+      "Fewer than four principal features do not exclude incomplete Kawasaki disease, especially in infants who can develop coronary abnormalities with subtle presentation. Empiric antibiotics without further inflammatory/cardiac evaluation may delay diagnosis.",
+      "Serial inflammatory markers can inform reassessment, but prolonged fever plus compatible features calls for active evaluation now. An antibiotic trial is not a reliable diagnostic test for Kawasaki disease.",
+      "Waiting for a classic complete constellation is unsafe because some children never develop it. Infants with prolonged fever are a recognised group in whom incomplete disease should be considered.",
+      "Correct: involve paediatrics promptly, assess for alternative infections and inflammatory syndromes, and obtain ECG and echocardiography with a Kawasaki-focused work-up. If clinical/laboratory criteria support the diagnosis, specialist-led IVIG and anti-inflammatory treatment should not be postponed until late coronary changes appear.",
+      "Non-purulent bilateral conjunctival injection with systemic fever is not typical bacterial conjunctivitis. A narrow eye-focused diagnosis misses oral changes, inflammation and possible coronary involvement."
+    ],
+    "pearl": "Incomplete Kawasaki disease is a serious diagnosis in infants with prolonged fever and inflammatory features; a normal first echo may not end surveillance.",
+    "pivot": "If the child develops shock or marked myocardial dysfunction, urgently evaluate multisystem inflammatory syndrome and myocarditis as well as Kawasaki disease.",
+    "management": {
+      "steps": [
+        [
+          "Assess",
+          "Request paediatric review, repeat full examination and review day-by-day evolution of fever and features."
+        ],
+        [
+          "Investigate",
+          "Check FBC, ESR/CRP, urine, liver tests, albumin and relevant microbiology; arrange ECG and echocardiogram."
+        ],
+        [
+          "Treat",
+          "Discuss IVIG and aspirin with the paediatric/cardiology team if the diagnostic pathway supports Kawasaki disease."
+        ],
+        [
+          "Follow",
+          "Plan repeat cardiac imaging according to risk and cardiology advice even when the first echocardiogram is reassuring."
+        ]
+      ],
+      "safety": "Do not require all classic criteria or a positive echo to consider and treat clinically supported Kawasaki disease.",
+      "local": "Royal Children's Hospital Kawasaki disease guideline and local paediatric cardiology protocols."
+    },
+    "source": "https://www.rch.org.au/clinicalguide/guideline_index/kawasaki_disease_guideline/",
+    "n": 9
+  },
+  {
+    "domain": "Obstetrics & neurology",
+    "skill": "Postpartum neurological red flags",
+    "context": "Advanced integrated clinical decisions",
+    "stem": "On day 8 after an emergency caesarean under neuraxial anaesthesia, a 27-year-old reports a progressively severe headache that is now continuous rather than positional. Today she had a brief episode of right-arm weakness and difficulty finding words. BP is 132/84 mmHg and she has no fever.",
+    "ask": "Which action is most appropriate?",
+    "options": [
+      "Arrange emergency stroke-pathway assessment and neuroimaging including venous imaging as indicated.",
+      "Treat as a post-dural puncture headache and organise a routine epidural blood patch.",
+      "Give oral analgesia, advise lying flat and review in twenty-four hours.",
+      "Start magnesium sulfate for presumptive eclampsia without evaluating focal symptoms.",
+      "Order a non-urgent sinus CT to investigate headache and possible sinusitis."
+    ],
+    "key": "A",
+    "explanations": [
+      "Correct: focal neurological symptoms postpartum require immediate assessment for stroke and cerebral venous sinus thrombosis, even without hypertension or fever. Activate emergency neurovascular evaluation; urgent brain/vascular imaging including CTV or MRV may be required after initial stabilisation and specialist input.",
+      "A dural-puncture headache is usually positional and does not explain transient focal weakness or language disturbance. A blood patch must not delay investigating intracranial thrombosis, haemorrhage or ischaemia.",
+      "Analgesia may relieve symptoms but cannot safely address the new focal deficit. The postpartum state is prothrombotic and neurological emergencies can initially appear intermittent.",
+      "Eclampsia/preeclampsia remains a consideration in postpartum headache, and magnesium has a role with appropriate features. However, normal BP and focal signs demand urgent neurological assessment rather than choosing one presumptive diagnosis without imaging.",
+      "Sinus disease rarely explains an acute focal neurological episode. Non-urgent investigations are inappropriate when stroke and cerebral venous thrombosis are in the differential."
+    ],
+    "pearl": "Not every post-neuraxial headache is a dural-puncture headache: loss of positional nature or new focal neurology mandates urgent reassessment.",
+    "pivot": "A typical positional headache without red flags may warrant anaesthetic evaluation for post-dural puncture headache, after checking BP and other postpartum causes.",
+    "management": {
+      "steps": [
+        [
+          "Escalate",
+          "Activate emergency stroke assessment; check glucose, ABCs, neurological deficits and timing, and alert obstetric/neurology teams."
+        ],
+        [
+          "Image",
+          "Arrange urgent brain imaging and appropriate arterial/venous studies depending on the differential and specialist advice."
+        ],
+        [
+          "Investigate",
+          "Check BP trend, FBC/platelets, renal/liver tests, coagulation and evidence of pregnancy-related hypertensive disease."
+        ],
+        [
+          "Treat cause",
+          "Initiate stroke or CVST management with specialist guidance once haemorrhage and other contraindications are assessed."
+        ]
+      ],
+      "safety": "Do not perform a routine blood patch before evaluating postpartum focal deficits or a change from positional to persistent headache.",
+      "local": "Follow local emergency stroke, obstetric and neurovascular pathways; anticoagulation decisions require imaging and specialist input."
+    },
+    "source": "https://www.health.qld.gov.au/qcg/publications/non-qcg-maternity-and-neonatal",
+    "n": 10
+  }
+]
