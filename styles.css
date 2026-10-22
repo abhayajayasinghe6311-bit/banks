@@ -709,3 +709,47 @@ body.midnight-sage .btn:not(.soft):not(.rose),body.midnight-sage a.btn:not(.soft
   #app .learning-expand-hint{font-size:10px}
   #app details.learning-alternative > p{padding-left:14px}
 }
+
+/* Always-visible, no-click rationales: consistent compact cards with clear hierarchy. */
+#app .learning-alternatives {display:grid;grid-template-columns:minmax(0,1fr);gap:10px;}
+#app .learning-alternative-visible {
+  display:block;
+  border:1px solid var(--edge);
+  border-radius:12px;
+  background:var(--alt-surface,var(--card));
+  padding:12px 14px;
+  margin:0;
+  overflow-wrap:anywhere;
+}
+#app .learning-alternative-visible .learning-option-head{
+  display:flex;
+  align-items:flex-start;
+  gap:10px;
+  font-size:14px;
+  line-height:1.45;
+  padding:0;
+  margin:0 0 7px;
+}
+#app .learning-alternative-visible .learning-option-head strong{
+  flex:1;
+  color:var(--ink);
+  font-size:14px;
+  font-weight:700;
+  line-height:1.5;
+}
+#app .learning-alternative-visible > p{
+  padding:0 0 0 36px;
+  margin:0;
+  font-size:14px;
+  line-height:1.65;
+  color:var(--muted);
+}
+#app .learning-alternative-visible .learning-letter{
+  flex:0 0 26px;
+  min-height:26px;
+}
+#app .learning-card .learning-section-title{font-size:16px;line-height:1.4;margin-bottom:13px;}
+@media(max-width:560px){
+  #app .learning-alternative-visible{padding:11px 12px;}
+  #app .learning-alternative-visible > p{padding-left:0;}
+}
