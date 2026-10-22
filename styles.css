@@ -753,3 +753,36 @@ body.midnight-sage .btn:not(.soft):not(.rose),body.midnight-sage a.btn:not(.soft
   #app .learning-alternative-visible{padding:11px 12px;}
   #app .learning-alternative-visible > p{padding-left:0;}
 }
+
+
+/* Optional multi-device study accounts: same calm visual language as the garden. */
+.account-trigger{display:inline-flex;align-items:center;justify-content:center;gap:7px;white-space:nowrap;border:1px solid var(--edge);border-radius:999px;padding:9px 14px;background:var(--card);color:var(--ink);font:inherit;font-size:13px;font-weight:700;cursor:pointer;transition:transform .15s,border-color .15s;box-shadow:0 2px 8px #0000000b}
+.account-trigger:hover{transform:translateY(-1px);border-color:var(--accent,#bc6a9e)}
+.account-trigger:focus-visible,.account-dialog button:focus-visible,.account-input:focus-visible{outline:3px solid var(--accent,#bc6a9e);outline-offset:3px}
+.account-dialog{position:fixed;inset:0;max-width:min(530px,calc(100% - 28px));width:100%;max-height:calc(100dvh - 30px);overflow-y:auto;margin:auto;border:1px solid var(--edge);border-radius:22px;background:var(--card);color:var(--ink);box-shadow:0 25px 70px #0006;padding:clamp(18px,4vw,30px);font:inherit;line-height:1.5}
+.account-dialog::backdrop{background:#10131c9c;backdrop-filter:blur(5px)}
+.account-top{display:flex;align-items:flex-start;justify-content:space-between;gap:14px}
+.account-top h2{font-size:clamp(22px,4vw,28px);line-height:1.2;margin:6px 0 10px;color:var(--ink)}
+.account-top .eyebrow{font-size:11px;letter-spacing:.09em;color:var(--muted)}
+.account-close{background:transparent;border:1px solid var(--edge);border-radius:12px;color:var(--ink);width:37px;height:37px;cursor:pointer;flex-shrink:0}
+.account-description,.account-privacy{color:var(--muted);font-size:13px;line-height:1.6;margin:4px 0 15px}
+.account-status{padding:10px 13px;border-radius:12px;background:var(--alt-surface,var(--bg));border:1px solid var(--edge);font-size:13px;font-weight:650;line-height:1.5;margin:12px 0 18px}
+.account-label{display:block;margin:12px 0 5px;color:var(--ink);font-size:13px;font-weight:700}
+.account-input{display:block;width:100%;box-sizing:border-box;border:1px solid var(--edge);border-radius:12px;padding:12px 14px;background:var(--bg);color:var(--ink);font:inherit;font-size:15px}
+.account-actions{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-top:16px}
+.account-primary,.account-secondary{display:inline-flex;align-items:center;justify-content:center;min-height:43px;padding:10px 14px;border-radius:12px;border:1px solid var(--edge);font:inherit;font-size:14px;font-weight:750;cursor:pointer;text-align:center;line-height:1.35}
+.account-primary{color:#fff;background:var(--accent,#9b4676);border-color:transparent}
+.account-secondary{color:var(--ink);background:var(--alt-surface,var(--bg))}
+#googleSignIn{width:100%;background:var(--ink);color:var(--card);font-size:15px}
+.account-link{display:inline-block;background:transparent;border:0;color:var(--ink);text-decoration:underline;text-underline-offset:3px;cursor:pointer;padding:8px 0;margin-top:5px;font:inherit;font-size:13px}
+.account-divider{position:relative;text-align:center;margin:15px 0;color:var(--muted);font-size:12px}
+.account-divider:before{content:'';height:1px;background:var(--edge);position:absolute;inset:50% 0 auto}
+.account-divider span{position:relative;background:var(--card);padding:0 12px}
+.account-welcome{font-size:14px;margin:15px 0 18px;overflow-wrap:anywhere}
+.account-import-panel{background:var(--alt-surface,var(--bg));border:1px solid var(--edge);padding:16px;border-radius:14px}
+.account-import-panel h3{font-size:16px;color:var(--ink);margin:0 0 6px}
+.account-import-panel p{font-size:13px;color:var(--muted);margin:0 0 12px;line-height:1.6}
+.account-feedback{min-height:17px;font-size:13px;line-height:1.5;margin:12px 0 3px;overflow-wrap:anywhere}
+.account-privacy{font-size:11px;margin:8px 0 0}
+@media(max-width:720px){.account-trigger{padding:8px 10px;font-size:12px}.account-dialog{padding:20px}.account-actions{grid-template-columns:1fr 1fr}}
+@media(max-width:420px){#accountButtonText{display:none}.account-trigger{min-width:39px}.account-actions{grid-template-columns:1fr}}
