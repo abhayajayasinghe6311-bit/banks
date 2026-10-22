@@ -1626,39 +1626,43 @@
     "stem": "A 28-year-old has fatigue, weight loss and postural dizziness. BP 85/55 mmHg, Na 126, K 5.9 mmol/L, glucose 3.2 mmol/L and hyperpigmented palmar creases.",
     "ask": "Which management is MOST appropriate now?",
     "options": [
-      "Start fluid restriction for hyponatraemia",
-      "Give levothyroxine alone",
-      "Treat suspected adrenal crisis with IV hydrocortisone and isotonic fluids immediately",
-      "Wait for a confirmatory ACTH stimulation test before treatment",
-      "Give oral spironolactone"
+      "Give isotonic saline and glucose first, then await ACTH stimulation results before starting steroids.",
+      "Treat persistent hypotension with vasopressors alone while arranging routine endocrine assessment.",
+      "Give immediate IV hydrocortisone and isotonic saline, correcting glucose and monitoring electrolytes.",
+      "Start oral fludrocortisone now, adding a glucocorticoid only after formal endocrine confirmation.",
+      "Restrict fluids for the hyponatraemia and correct potassium before commencing hormone replacement."
     ],
     "key": "C",
     "explanations": [
-      "Fluid restriction is inappropriate in hypovolaemic adrenal crisis. In this scenario, the preferred approach is Treat suspected adrenal crisis with IV hydrocortisone and isotonic fluids immediately. Primary adrenal insufficiency often includes hyperpigmentation and hyperkalaemia.",
-      "Thyroid replacement may precipitate crisis if cortisol deficiency is unaddressed. In this scenario, the preferred approach is Treat suspected adrenal crisis with IV hydrocortisone and isotonic fluids immediately. Primary adrenal insufficiency often includes hyperpigmentation and hyperkalaemia.",
-      "Shock, hyperkalaemia, hyponatraemia and hypoglycaemia require immediate parenteral glucocorticoids and resuscitation. The key distinction is Primary adrenal insufficiency often includes hyperpigmentation and hyperkalaemia.",
-      "Samples for cortisol and ACTH can be drawn if this does not delay treatment. In this scenario, the preferred approach is Treat suspected adrenal crisis with IV hydrocortisone and isotonic fluids immediately. Primary adrenal insufficiency often includes hyperpigmentation and hyperkalaemia.",
-      "Spironolactone may worsen hyperkalaemia. In this scenario, the preferred approach is Treat suspected adrenal crisis with IV hydrocortisone and isotonic fluids immediately. Primary adrenal insufficiency often includes hyperpigmentation and hyperkalaemia."
+      "Fluids and glucose are essential, but adrenal crisis requires simultaneous cortisol replacement. Draw cortisol and ACTH only if this can be done without delaying hydrocortisone; a stimulation test can wait until stabilisation.",
+      "Vasopressors may become necessary in refractory shock, but catecholamine responsiveness is impaired during cortisol deficiency. Pressors alone leave the cause untreated; give hydrocortisone and volume resuscitation first.",
+      "Shock with hyperpigmentation, hyponatraemia, hyperkalaemia and hypoglycaemia suggests primary adrenal crisis. Give parenteral hydrocortisone immediately with isotonic saline; treat glucose and electrolyte abnormalities in parallel.",
+      "Fludrocortisone is for longer-term mineralocorticoid replacement in primary adrenal insufficiency, not initial crisis monotherapy. Stress-dose hydrocortisone provides the necessary immediate glucocorticoid effect.",
+      "Fluid restriction may worsen shock in a volume-depleted patient. Assess potassium and ECG urgently, treating dangerous hyperkalaemia in parallel, but do not postpone steroid and saline resuscitation."
     ],
     "pearl": "Primary adrenal insufficiency often includes hyperpigmentation and hyperkalaemia.",
     "pivot": "Secondary adrenal insufficiency usually lacks hyperkalaemia because aldosterone is relatively preserved.",
     "management": {
       "steps": [
         [
-          "Best next decision",
-          "Treat suspected adrenal crisis with IV hydrocortisone and isotonic fluids immediately"
+          "Stabilise",
+          "Use ABCDE, cardiac monitoring and IV access; call senior emergency help and commence isotonic saline with frequent haemodynamic reassessment."
         ],
         [
-          "Why it fits this patient",
-          "Shock, hyperkalaemia, hyponatraemia and hypoglycaemia require immediate parenteral glucocorticoids and resuscitation."
+          "Replace cortisol",
+          "Give IV hydrocortisone promptly (commonly 100 mg initially, then 200 mg/24 h in adult protocols); sample cortisol/ACTH first only if no delay."
         ],
         [
-          "When the clinical decision changes",
-          "Secondary adrenal insufficiency usually lacks hyperkalaemia because aldosterone is relatively preserved."
+          "Correct abnormalities",
+          "Treat hypoglycaemia with dextrose, repeat electrolytes and glucose, and monitor/treat clinically significant hyperkalaemia with ECG guidance."
+        ],
+        [
+          "Investigate and continue",
+          "Find precipitating infection or missed steroids; continue stress dosing, involve endocrinology and later plan oral therapy and sick-day education."
         ]
       ],
-      "safety": "Primary adrenal insufficiency often includes hyperpigmentation and hyperkalaemia.",
-      "local": "Study aid derived from this question's existing teaching notes. Confirm current Australian guidance, local protocols and patient-specific details before clinical use."
+      "safety": "Suspected adrenal crisis is a treat-first emergency; never delay hydrocortisone for confirmation.",
+      "local": "Cross-checked against relevant WHO/clinical emergency guidance; follow current Australian hospital protocols and senior advice."
     }
   },
   {
@@ -2615,39 +2619,43 @@
     "stem": "A 31-year-old develops ascending symmetrical leg weakness and areflexia following diarrhoea. FVC is 17 mL/kg; he cannot count beyond 10 in one breath.",
     "ask": "What is the MOST appropriate immediate step?",
     "options": [
-      "Urgent critical-care respiratory review, serial mechanics and assessment for IVIG",
-      "Give oral prednisolone alone",
-      "Wait for nerve-conduction testing before monitoring",
-      "Start physiotherapy alone",
-      "Discharge because SpO₂ is 98%"
+      "Arrange immediate ICU airway assessment, serial vital capacity and early IVIG or plasma exchange.",
+      "Begin high-dose IV methylprednisolone with respiratory observations on the neurology ward.",
+      "Obtain urgent nerve-conduction studies before deciding whether respiratory support is necessary.",
+      "Trial non-invasive ventilatory support while deferring ICU assessment unless hypoxaemia develops.",
+      "Monitor oxygen saturation on the ward and repeat vital capacity after the next routine round."
     ],
     "key": "A",
     "explanations": [
-      "FVC below about 20 mL/kg raises concern for respiratory failure in GBS; involve critical care and consider IVIG or plasma exchange. The key distinction is Serial FVC and bulbar function are key in Guillain–Barré syndrome.",
-      "Steroids alone do not improve GBS outcomes. In this scenario, the preferred approach is Urgent critical-care respiratory review, serial mechanics and assessment for IVIG. Serial FVC and bulbar function are key in Guillain–Barré syndrome.",
-      "Electrophysiology must not delay airway risk evaluation. In this scenario, the preferred approach is Urgent critical-care respiratory review, serial mechanics and assessment for IVIG. Serial FVC and bulbar function are key in Guillain–Barré syndrome.",
-      "Physiotherapy does not replace acute treatment. In this scenario, the preferred approach is Urgent critical-care respiratory review, serial mechanics and assessment for IVIG. Serial FVC and bulbar function are key in Guillain–Barré syndrome.",
-      "Normal SpO₂ does not exclude neuromuscular ventilatory failure. In this scenario, the preferred approach is Urgent critical-care respiratory review, serial mechanics and assessment for IVIG. Serial FVC and bulbar function are key in Guillain–Barré syndrome."
+      "Ascending weakness and areflexia following infection suggest Guillain–Barré syndrome. FVC 17 mL/kg and poor single-breath count signal impending ventilatory failure: obtain immediate critical-care assessment, repeat mechanics, and arrange IVIG or plasma exchange.",
+      "Corticosteroids do not improve GBS outcomes and cannot replace disease-modifying IVIG or plasma exchange. Ward observation without respiratory escalation is unsafe with this degree of ventilatory muscle impairment.",
+      "Electrophysiology can help diagnose/subtype GBS, but early testing may be nondiagnostic and must not delay an airway decision. Low FVC already demands escalation independent of test confirmation.",
+      "Non-invasive ventilation can fail as weakness worsens or airway clearance/bulbar function deteriorates. ICU assessment for timely controlled intubation is safer than waiting for hypoxaemia.",
+      "SpO₂ can remain normal until late in neuromuscular respiratory failure. Vital capacity, inspiratory pressure, cough and bulbar function are more relevant predictors, so routine ward review is inadequate."
     ],
     "pearl": "Serial FVC and bulbar function are key in Guillain–Barré syndrome.",
     "pivot": "Autonomic instability and poor cough further increase ICU risk.",
     "management": {
       "steps": [
         [
-          "Best next decision",
-          "Urgent critical-care respiratory review, serial mechanics and assessment for IVIG"
+          "Escalate immediately",
+          "Call neurology and critical care; assess speech, cough, secretions, respiratory effort and bulbar function."
         ],
         [
-          "Why it fits this patient",
-          "FVC below about 20 mL/kg raises concern for respiratory failure in GBS; involve critical care and consider IVIG or plasma exchange."
+          "Trend mechanics",
+          "Repeat FVC and inspiratory force frequently, assess autonomic instability and avoid reliance on pulse oximetry alone."
         ],
         [
-          "When the clinical decision changes",
-          "Autonomic instability and poor cough further increase ICU risk."
+          "Plan ventilatory support",
+          "Use monitored critical-care care and discuss early intubation if mechanics decline or airway protection fails."
+        ],
+        [
+          "Give specific treatment",
+          "Arrange IVIG or plasma exchange as appropriate; monitor aspiration, autonomic complications and rehabilitation needs."
         ]
       ],
-      "safety": "Serial FVC and bulbar function are key in Guillain–Barré syndrome.",
-      "local": "Study aid derived from this question's existing teaching notes. Confirm current Australian guidance, local protocols and patient-specific details before clinical use."
+      "safety": "FVC below approximately 20 mL/kg or weak cough/bulbar dysfunction is an urgent airway warning even with normal SpO₂.",
+      "local": "Cross-checked against relevant WHO/clinical emergency guidance; follow current Australian hospital protocols and senior advice."
     }
   },
   {
@@ -2787,39 +2795,43 @@
     "stem": "A 42-year-old has headache, confusion, focal seizures and a temporal-lobe MRI lesion. HSV PCR is pending.",
     "ask": "Which intervention is MOST appropriate now?",
     "options": [
-      "Give aspirin alone",
-      "Treat with oral fluconazole",
-      "Discharge on paracetamol",
-      "Wait for PCR result",
-      "Start IV aciclovir while investigating encephalitis"
+      "Start an antiepileptic and arrange repeat MRI before considering pathogen-directed medication.",
+      "Initiate broad-spectrum antibacterial meningitis therapy as the only treatment pending CSF analysis.",
+      "Arrange urgent lumbar puncture and wait for HSV PCR results before adding any antiviral therapy.",
+      "Begin high-dose corticosteroids for possible autoimmune encephalitis before HSV is excluded.",
+      "Start intravenous aciclovir immediately while continuing CSF studies and seizure management."
     ],
     "key": "E",
     "explanations": [
-      "Aspirin is not pathogen treatment. In this scenario, the preferred approach is Start IV aciclovir while investigating encephalitis. Treat suspected HSV encephalitis before PCR confirmation.",
-      "Fluconazole does not treat HSV. In this scenario, the preferred approach is Start IV aciclovir while investigating encephalitis. Treat suspected HSV encephalitis before PCR confirmation.",
-      "Confusion and seizures require admission. In this scenario, the preferred approach is Start IV aciclovir while investigating encephalitis. Treat suspected HSV encephalitis before PCR confirmation.",
-      "Treatment delay can worsen HSV encephalitis outcomes. In this scenario, the preferred approach is Start IV aciclovir while investigating encephalitis. Treat suspected HSV encephalitis before PCR confirmation.",
-      "Temporal encephalitis warrants early IV aciclovir and supportive care. The key distinction is Treat suspected HSV encephalitis before PCR confirmation."
+      "Seizure treatment is vital but does not treat HSV. A temporal-lobe lesion with encephalopathy and focal seizures strongly supports empiric antiviral coverage while imaging/EEG clarify the syndrome.",
+      "Empiric IV antibiotics may be needed if bacterial infection remains plausible. However, antibacterial drugs do not cover HSV; add early IV aciclovir rather than treating with antibiotics alone.",
+      "CSF HSV PCR confirms the infection but can take time and may occasionally be falsely negative early. Delaying antivirals while waiting for PCR exposes the patient to preventable brain injury.",
+      "Autoimmune encephalitis remains a differential and sometimes requires immunotherapy. In this presentation, however, suspected HSV encephalitis first needs immediate aciclovir and a coordinated infectious/neurology workup.",
+      "Temporal-lobe involvement, seizures and confusion warrant empirical IV aciclovir before PCR confirmation. Adjust for renal function and monitor hydration while investigating alternative causes."
     ],
     "pearl": "Treat suspected HSV encephalitis before PCR confirmation.",
     "pivot": "Early negative PCR can occasionally warrant repeat testing if suspicion remains high.",
     "management": {
       "steps": [
         [
-          "Best next decision",
-          "Start IV aciclovir while investigating encephalitis"
+          "Stabilise and control seizures",
+          "Assess ABCs, GCS, glucose and electrolytes; stop active seizures and involve neurology/infectious diseases."
         ],
         [
-          "Why it fits this patient",
-          "Temporal encephalitis warrants early IV aciclovir and supportive care."
+          "Treat HSV now",
+          "Give renal-adjusted IV aciclovir promptly with hydration and creatinine monitoring."
         ],
         [
-          "When the clinical decision changes",
-          "Early negative PCR can occasionally warrant repeat testing if suspicion remains high."
+          "Investigate",
+          "Arrange LP with CSF PCR when safe, MRI/EEG, and bacterial testing; do not make these prerequisites for aciclovir."
+        ],
+        [
+          "Reassess",
+          "If early HSV PCR is negative but suspicion remains high, discuss repeat CSF testing before stopping therapy."
         ]
       ],
-      "safety": "Treat suspected HSV encephalitis before PCR confirmation.",
-      "local": "Study aid derived from this question's existing teaching notes. Confirm current Australian guidance, local protocols and patient-specific details before clinical use."
+      "safety": "Delayed aciclovir can cause avoidable neurological injury; monitor for kidney toxicity.",
+      "local": "Cross-checked against relevant WHO/clinical emergency guidance; follow current Australian hospital protocols and senior advice."
     }
   },
   {
@@ -3518,39 +3530,43 @@
     "stem": "A 68-year-old with diabetes presents with fever, confusion, neck stiffness and a purpuric rash. Lumbar puncture will be delayed by resuscitation and imaging.",
     "ask": "What is the MOST appropriate antimicrobial approach?",
     "options": [
-      "Wait for CSF results before antibiotics",
-      "Take blood cultures promptly, then give empiric IV antibiotics without waiting for LP",
-      "Give topical antibiotics only",
-      "Wait for the rash to disappear",
-      "Start antiviral treatment alone"
+      "Arrange urgent CT and lumbar puncture first, then tailor antibiotic choice to the initial CSF findings.",
+      "Obtain blood cultures if immediately feasible and start empiric IV meningitis antibiotics without LP delay.",
+      "Initiate IV aciclovir as the sole antimicrobial while awaiting neuroimaging and CSF examination.",
+      "Give IV dexamethasone initially and defer antibiotics until the organism has been identified.",
+      "Treat suspected meningococcal infection with oral antibiotics while organising hospital transfer."
     ],
     "key": "B",
     "explanations": [
-      "Treatment delay increases mortality in bacterial meningitis. In this scenario, the preferred approach is Take blood cultures promptly, then give empiric IV antibiotics without waiting for LP. Never delay meningitis antibiotics for CT or LP.",
-      "Blood cultures and immediate age-appropriate empiric IV antibiotics are required; add other therapy based on guideline. The key distinction is Never delay meningitis antibiotics for CT or LP.",
-      "Topical treatment cannot treat invasive infection. In this scenario, the preferred approach is Take blood cultures promptly, then give empiric IV antibiotics without waiting for LP. Never delay meningitis antibiotics for CT or LP.",
-      "Rash resolution is irrelevant. In this scenario, the preferred approach is Take blood cultures promptly, then give empiric IV antibiotics without waiting for LP. Never delay meningitis antibiotics for CT or LP.",
-      "Antivirals alone do not cover meningococcal or pneumococcal meningitis. In this scenario, the preferred approach is Take blood cultures promptly, then give empiric IV antibiotics without waiting for LP. Never delay meningitis antibiotics for CT or LP."
+      "Neuroimaging and LP may be necessary for diagnosis, especially with altered consciousness, but should not delay antimicrobial treatment. Obtain cultures rapidly if feasible and proceed with diagnostic testing after stabilisation.",
+      "Fever, meningism, confusion and a purpuric rash suggest bacterial meningitis with possible meningococcal sepsis. Start age/risk-appropriate empiric IV antimicrobials promptly after cultures if feasible; consider dexamethasone under local protocol.",
+      "Aciclovir is valuable when HSV encephalitis is suspected but does not treat meningococcus or pneumococcus. If encephalitis remains possible, add antiviral coverage alongside, not instead of, bacterial treatment.",
+      "Dexamethasone may be indicated with or immediately before the first antibiotic dose, but it is adjunctive. Steroid monotherapy leaves invasive bacterial infection uncontrolled and risks harmful delay.",
+      "Oral antibiotics are insufficient for an unstable patient with suspected invasive meningococcal disease. Give appropriate parenteral antibiotics and supportive care during emergency escalation or transfer."
     ],
     "pearl": "Never delay meningitis antibiotics for CT or LP.",
     "pivot": "Where indicated, give adjunct dexamethasone with or just before first antibiotic dose.",
     "management": {
       "steps": [
         [
-          "Best next decision",
-          "Take blood cultures promptly, then give empiric IV antibiotics without waiting for LP"
+          "Resuscitate",
+          "Use ABCDE, assess sepsis/shock and institute appropriate droplet precautions; call critical-care and senior staff."
         ],
         [
-          "Why it fits this patient",
-          "Blood cultures and immediate age-appropriate empiric IV antibiotics are required; add other therapy based on guideline."
+          "Culture without delay",
+          "Take blood cultures promptly if possible, but do not wait for CT, LP or results."
         ],
         [
-          "When the clinical decision changes",
-          "Where indicated, give adjunct dexamethasone with or just before first antibiotic dose."
+          "Give empiric IV treatment",
+          "Start guideline-directed ceftriaxone/cefotaxime-based treatment urgently; add Listeria/resistant pneumococcal cover according to risk and consider dexamethasone."
+        ],
+        [
+          "Complete assessment",
+          "Image and perform LP when safe, adjust to microbiology and arrange public-health steps for suspected meningococcal infection."
         ]
       ],
-      "safety": "Never delay meningitis antibiotics for CT or LP.",
-      "local": "Study aid derived from this question's existing teaching notes. Confirm current Australian guidance, local protocols and patient-specific details before clinical use."
+      "safety": "Do not delay antibiotics because lumbar puncture or CT is delayed.",
+      "local": "Cross-checked against relevant WHO/clinical emergency guidance; follow current Australian hospital protocols and senior advice."
     }
   },
   {
@@ -4206,39 +4222,43 @@
     "stem": "A 34-year-old recently returned from a malaria-endemic region with fever, jaundice, confusion, and thrombocytopenia. Thin smear shows Plasmodium falciparum parasitaemia 8%.",
     "ask": "Which management is MOST appropriate?",
     "options": [
-      "Use antipyretics only",
-      "Oral chloroquine and home observation",
-      "Urgent parenteral artesunate with intensive supportive care for severe malaria",
-      "Wait for repeat smear before treatment",
-      "Give oral doxycycline alone"
+      "Give an oral artemisinin-based combination and monitor response closely on an infectious-diseases ward.",
+      "Begin oral chloroquine after confirming local susceptibility, with repeat neurological observations.",
+      "Start urgent parenteral artesunate with critical-care support and monitoring for organ complications.",
+      "Repeat thick and thin blood films before choosing intravenous therapy because only one smear is positive.",
+      "Start oral quinine and doxycycline, switching to parenteral treatment if the parasite count rises."
     ],
     "key": "C",
     "explanations": [
-      "Supportive antipyretics do not treat parasitaemia. In this scenario, the preferred approach is Urgent parenteral artesunate with intensive supportive care for severe malaria. Falciparum malaria can rapidly cause encephalopathy, acidosis and organ failure.",
-      "Chloroquine resistance and severe manifestations make this inadequate. In this scenario, the preferred approach is Urgent parenteral artesunate with intensive supportive care for severe malaria. Falciparum malaria can rapidly cause encephalopathy, acidosis and organ failure.",
-      "Cerebral symptoms and high parasitaemia indicate severe falciparum malaria requiring immediate IV artesunate per protocol. The key distinction is Falciparum malaria can rapidly cause encephalopathy, acidosis and organ failure.",
-      "Life-threatening malaria should not wait. In this scenario, the preferred approach is Urgent parenteral artesunate with intensive supportive care for severe malaria. Falciparum malaria can rapidly cause encephalopathy, acidosis and organ failure.",
-      "Doxycycline alone is not adequate acute severe malaria therapy. In this scenario, the preferred approach is Urgent parenteral artesunate with intensive supportive care for severe malaria. Falciparum malaria can rapidly cause encephalopathy, acidosis and organ failure."
+      "Oral artemisinin-based combinations are suitable for uncomplicated malaria and may complete treatment after parenteral therapy. Confusion and substantial parasitaemia indicate severe disease needing injectable artesunate now.",
+      "Falciparum malaria is often chloroquine resistant, and oral treatment is unreliable in severe disease. Organ dysfunction and altered mentation require immediate parenteral therapy rather than waiting for drug-susceptibility information.",
+      "Confusion and high parasitaemia are severe falciparum-malaria features. Give prompt IV artesunate under protocol with high-acuity monitoring for hypoglycaemia, renal injury, anaemia, acidosis and parasite clearance.",
+      "Serial films are useful to monitor response and parasite clearance, but a positive smear with severe clinical features already establishes urgent treatment need. Repeating films first would cause an avoidable and potentially fatal delay.",
+      "Quinine may be an alternative in limited settings when artesunate is unavailable, under specialist guidance. Oral quinine-doxycycline is not an appropriate first-line regimen for confused, severely ill patients."
     ],
     "pearl": "Falciparum malaria can rapidly cause encephalopathy, acidosis and organ failure.",
     "pivot": "Uncomplicated malaria can be treated with appropriate oral combination therapy based on species and region.",
     "management": {
       "steps": [
         [
-          "Best next decision",
-          "Urgent parenteral artesunate with intensive supportive care for severe malaria"
+          "Recognise severity",
+          "Assess ABCs, mental status, glucose, renal/liver function, haemoglobin, lactate and acid-base balance."
         ],
         [
-          "Why it fits this patient",
-          "Cerebral symptoms and high parasitaemia indicate severe falciparum malaria requiring immediate IV artesunate per protocol."
+          "Give parenteral treatment",
+          "Start IV artesunate urgently with infectious-diseases and critical-care input; do not await another smear."
         ],
         [
-          "When the clinical decision changes",
-          "Uncomplicated malaria can be treated with appropriate oral combination therapy based on species and region."
+          "Monitor complications",
+          "Repeat parasitaemia, glucose, electrolytes, renal function and haemoglobin; manage acidosis, anaemia and fluid balance carefully."
+        ],
+        [
+          "Complete therapy",
+          "Transition to an effective oral combination regimen when appropriate and arrange post-artesunate delayed-haemolysis monitoring."
         ]
       ],
-      "safety": "Falciparum malaria can rapidly cause encephalopathy, acidosis and organ failure.",
-      "local": "Study aid derived from this question's existing teaching notes. Confirm current Australian guidance, local protocols and patient-specific details before clinical use."
+      "safety": "Severe falciparum malaria can cause cerebral complications and multiorgan failure within hours.",
+      "local": "Cross-checked against relevant WHO/clinical emergency guidance; follow current Australian hospital protocols and senior advice."
     }
   },
   {
