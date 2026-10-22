@@ -29,7 +29,7 @@ function updateProgress(bank,n,choice){
  answerButtons.innerHTML=optionHtml(q,choice);
  questionCard.querySelector('.answer-hint')?.remove();
  const nav=questionCard.querySelector('.navbox');
- const message=b[n].correct?'✓ Correct — nicely reasoned!':'✗ Not quite. Correct answer: '+q.key+'.';
+ const message=b[n].correct?'✓ Correct — nicely reasoned!':'✗ Not quite. Correct answer: '+visibleLetter(q,q.key)+'.';
  nav?.insertAdjacentHTML('beforebegin','<div class="feedback '+(b[n].correct?'yes':'no')+'">'+message+' Your first response is locked.</div>');
  notes.outerHTML=learningNotes(q,'learningNotes',choice);
  questionCard.parentElement?.insertAdjacentHTML('beforeend',managementMarkup(q));
@@ -243,7 +243,7 @@ function answerPractice(bank,n,choice){
  buttons.innerHTML=optionHtml(q,choice);
  const nav=card.querySelector('.navbox');
  const ok=choice===q.key;
- nav?.insertAdjacentHTML('beforebegin',`<div class="feedback ${ok?'yes':'no'}">${ok?'✓ Correct — nicely reasoned!':'✗ Not quite. Correct answer: '+q.key+'.'} Your practice response is saved.</div>`);
+ nav?.insertAdjacentHTML('beforebegin',`<div class="feedback ${ok?'yes':'no'}">${ok?'✓ Correct — nicely reasoned!':'✗ Not quite. Correct answer: '+visibleLetter(q,q.key)+'.'} Your practice response is saved.</div>`);
  placeholder.outerHTML=learningNotes(q,'learningNotes',choice);
  card.parentElement?.insertAdjacentHTML('beforeend',managementMarkup(q));
  card.closest('.learning-layout')?.classList.add('has-notes');
@@ -280,7 +280,7 @@ function renderPractice(){
       <div class="question-label">EMQ ${n}</div><div class="stem">${safe(q.stem)}</div>
       <p class="ask">${safe(q.ask||'Which of the following is the single BEST answer?')}</p>
       <div class="choices" id="choices">${optionHtml(q,answered?.choice)}</div>
-      ${answered?`<div class="feedback ${answered.correct?'yes':'no'}">${answered.correct?'✓ Correct — nicely reasoned!':'✗ Not quite. Correct answer: '+q.key+'.'} Your practice response is saved.</div>`:''}
+      ${answered?`<div class="feedback ${answered.correct?'yes':'no'}">${answered.correct?'✓ Correct — nicely reasoned!':'✗ Not quite. Correct answer: '+visibleLetter(q,q.key)+'.'} Your practice response is saved.</div>`:''}
       <div class="navbox"><button class="btn soft" id="prev" ${idx===0?'disabled':''}>← Previous</button>
        <button class="btn rose" id="bookmark">${state.bookmarks[id]?'★ Bookmarked':'☆ Bookmark'}</button>
        <button class="btn" id="next" ${idx===stats.total-1&&finished?'disabled':''}>${idx===stats.total-1&&!finished?'Find unanswered →':'Next →'}</button></div>
@@ -437,14 +437,29 @@ async function getBank(b){
   if(!resp.ok)throw new Error('Could not fetch Bank '+b);
   const data=await resp.json();
   if(!Array.isArray(data))throw new Error('Invalid question data in Bank '+b);
+  // Keep published keys and stored answers unchanged; only presentation order changes.
+  for(const q of data)q._bank=Number(b);
   bankData[b]=data;return data;
  })().catch(error=>{delete bankLoading[b];throw error;});
  return bankLoading[b];
 }
 function answeredStatus(b){const a=state.banks[b]||{};return {attempted:Object.keys(a).length,correct:Object.values(a).filter(x=>x.correct).length};}
 function filteredQuestions(b){const all=bankData[b]||[];return all.filter(q=>{if(domain!=='all'&&q.domain!==domain)return false;const answer=(state.banks[b]||{})[q.n];const rid=idOf(b,q.n);if(filter==='unanswered')return !answer;if(filter==='wrong')return answer&&!answer.correct;if(filter==='bookmarks')return !!state.bookmarks[rid];return true;});}
-function optionHtml(q,selected,review=false){return q.options.map((option,i)=>{const letter=ABC[i],correct=letter===q.key,isSelected=letter===selected;let cls='choice';if(selected){if(correct)cls+=' true';if(isSelected)cls+=correct?' selected correct':' selected incorrect';}return `<button type="button" class="${cls}" data-choice="${letter}" ${selected?'disabled':''}><span class="letter">${letter}</span><span>${safe(option)}</span></button>`;}).join('');}
-function explHtml(q){return `<details class="answer" ${''}><summary>📖 Reveal teaching explanation and exam pearls</summary><div class="answer-body"><p><b>Correct answer: ${safe(q.key)} — ${safe(q.options[ABC.indexOf(q.key)])}</b></p>${q.options.map((o,i)=>`<div class="explainline ${ABC[i]===q.key?'is-correct':''}"><b>${ABC[i]}. ${ABC[i]===q.key?'✓ Correct':'Why not'}:</b> ${safe(q.explanations?.[i]||'Review this option against the key features.')}</div>`).join('')}${q.pearl?`<div class="pearl">💡 <b>Exam pearl:</b> ${safe(q.pearl)}</div>`:''}${q.pivot?`<div class="pivot">🔄 <b>What would change the answer?</b> ${safe(q.pivot)}</div>`:''}</div></details>`;}
+// Stable per-question shuffle removes predictable answer letters without changing saved answers.
+function displayOrder(q){
+ const order=q.options.map((_,i)=>i);
+ let seed=(0x811c9dc5 ^ Math.imul(Number(q._bank)||0,0x01000193) ^ Math.imul(Number(q.n)||0,0x9e3779b1))>>>0;
+ for(let i=order.length-1;i>0;i--){
+  seed^=seed<<13;seed^=seed>>>17;seed^=seed<<5;
+  const j=(seed>>>0)%(i+1);
+  [order[i],order[j]]=[order[j],order[i]];
+ }
+ return order;
+}
+function visibleLetter(q,canonical){const pos=displayOrder(q).indexOf(ABC.indexOf(canonical));return pos<0?'?':ABC[pos];}
+function displayIndexLetter(q,index){return visibleLetter(q,ABC[index]);}
+function optionHtml(q,selected,review=false){return displayOrder(q).map((i,pos)=>{const option=q.options[i],letter=ABC[i],label=ABC[pos],correct=letter===q.key,isSelected=letter===selected;let cls='choice';if(selected){if(correct)cls+=' true';if(isSelected)cls+=correct?' selected correct':' selected incorrect';}return `<button type="button" class="${cls}" data-choice="${letter}" ${selected?'disabled':''}><span class="letter">${label}</span><span>${safe(option)}</span></button>`;}).join('');}
+function explHtml(q){return `<details class="answer"><summary>📖 Reveal teaching explanation and exam pearls</summary><div class="answer-body"><p><b>Correct answer: ${safe(visibleLetter(q,q.key))} — ${safe(q.options[ABC.indexOf(q.key)])}</b></p>${displayOrder(q).map((i,pos)=>`<div class="explainline ${ABC[i]===q.key?'is-correct':''}"><b>${ABC[pos]}. ${ABC[i]===q.key?'✓ Correct':'Why not'}:</b> ${safe(q.explanations?.[i]||'Review this option against the key features.')}</div>`).join('')}${q.pearl?`<div class="pearl">💡 <b>Exam pearl:</b> ${safe(q.pearl)}</div>`:''}${q.pivot?`<div class="pivot">🔄 <b>What would change the answer?</b> ${safe(q.pivot)}</div>`:''}</div></details>`;}
 function managementMarkup(q){
  const m=q.management;
  if(!m?.steps?.length)return '';
@@ -472,20 +487,20 @@ function learningNotes(q,anchorId='learningNotes',selected=null){
  const good=options[keyIndex]||'';
  const rationale=q.explanations?.[keyIndex]||'Review the decisive clinical clue that supports this answer.';
  const wrong=selectedIndex>=0&&selectedIndex!==keyIndex;
- const otherOptions=options.map((option,i)=>{
+ const otherOptions=displayOrder(q).map(i=>{
   if(i===keyIndex||(wrong&&i===selectedIndex))return '';
-  return `<div class="learning-alternative learning-alternative-visible"><div class="learning-option-head"><span class="learning-letter">${ABC[i]}</span><strong>${safe(option)}</strong></div><p>${safe(conciseOptionReason(q,i))}</p></div>`;
+  return `<div class="learning-alternative learning-alternative-visible"><div class="learning-option-head"><span class="learning-letter">${displayIndexLetter(q,i)}</span><strong>${safe(option)}</strong></div><p>${safe(conciseOptionReason(q,i))}</p></div>`;
  }).join('');
  return `<aside class="learning-card" id="${safe(anchorId)}" aria-label="Clinical reasoning notes">
   <div class="learning-header"><span aria-hidden="true">🌷</span><div><div class="learning-eyebrow">YOUR LEARNING NOTES</div><h2>Understand the <em>why</em></h2></div></div>
   ${wrong?`<div class="learning-missed-choice">
    <div class="learning-missed-heading">↻ Let's unpack your answer</div>
-   <h3>You chose ${safe(selected)}. ${safe(options[selectedIndex])}</h3>
+   <h3>You chose ${safe(visibleLetter(q,selected))}. ${safe(options[selectedIndex])}</h3>
    <div class="learning-missed-details"><b>Why this wasn't the best choice</b><p>${safe(conciseOptionReason(q,selectedIndex))}</p></div>
    
    ${q.pearl?`<div class="learning-missed-takeaway"><b>💡 The distinction to remember</b><p>${safe(q.pearl)}</p></div>`:''}
    </div>`:''}
-  <div class="learning-section learning-correct"><div class="learning-tag">✓ The best answer</div><h3>${safe(q.key)}. ${safe(good)}</h3><p>${safe(rationale)}</p></div>
+  <div class="learning-section learning-correct"><div class="learning-tag">✓ The best answer</div><h3>${safe(visibleLetter(q,q.key))}. ${safe(good)}</h3><p>${safe(rationale)}</p></div>
   ${otherOptions?`<div class="learning-section"><h3 class="learning-section-title">🔎 Why the other options are less suitable</h3><div class="learning-alternatives">${otherOptions}</div></div>`:''}
   ${q.pearl&&!wrong?`<div class="learning-section learning-pearl"><h3>💡 Remember this principle</h3><p>${safe(q.pearl)}</p></div>`:''}
   ${q.pivot?`<div class="learning-section learning-pivot"><h3>🔄 When would the answer change?</h3><p>${safe(q.pivot)}</p></div>`:''}
@@ -623,7 +638,7 @@ function renderBank(){const b=route.bank;const bm=manifest.banks.find(x=>x.id===
   <span class="small bank-progress-percent"><span id="bankPercent">${pct}%</span> complete</span>
  </div>
  <div class="progress bank-progress"><span id="bankProgressBar" style="width:${pct}%"></span></div>
- </section>${finalSummary}<div id="bankSearchDrawer" class="bank-search-drawer" hidden>${searchPanel(b)}</div><div class="toolbar bank-toolbar"><div class="flex"><label class="small">Show <select id="filter"><option value="all">All questions</option><option value="unanswered">Unanswered</option><option value="wrong">Original mistakes</option><option value="bookmarks">Bookmarked</option></select></label><label class="small">Specialty <select id="domain"><option value="all">All specialties</option>${cats.map(x=>`<option value="${safe(x)}">${safe(x)}</option>`).join('')}</select></label></div><div class="bank-jumper"><label for="jumpNumber">Jump to Q</label><input id="jumpNumber" type="number" inputmode="numeric" min="1" max="${qset.length}" value="${q?.n||''}" aria-label="Question number in this bank"><span>/ ${qset.length}</span><button type="button" id="jumpGo" class="bank-jump-btn">Go →</button></div></div>${q?`<div class="learning-layout ${(state.banks[b]||{})[q.n]?'has-notes':''}"><div class="question-stack"><div class="quizbox quiz-question"><div class="meta"><b>Domain:</b> ${safe(q.domain)} &nbsp; · &nbsp; <b>Skillset:</b> ${safe(q.skill||'Clinical reasoning')} &nbsp; · &nbsp; <b>Context:</b> ${safe(q.context||'Clinical')}</div><div class="question-label">EMQ ${q.n}</div><div class="stem">${safe(q.stem)}</div><p class="ask">${safe(q.ask||'Which of the following is the single BEST answer?')}</p><div class="choices" id="choices">${optionHtml(q,(state.banks[b]||{})[q.n]?.choice)}</div>${(state.banks[b]||{})[q.n]?`<div class="feedback ${(state.banks[b][q.n].correct?'yes':'no')}">${state.banks[b][q.n].correct?'✓ Correct — nicely reasoned!':'✗ Not quite. Correct answer: '+q.key+'.'} Your first response is locked.</div>`:``}<div class="navbox"><button class="btn soft" id="prev" ${cursor===0?'disabled':''}>← Previous</button><button class="btn rose" id="bookmark">${state.bookmarks[idOf(b,q.n)]?'★ Bookmarked':'☆ Bookmark'}</button><button class="btn" id="next" ${cursor===activeList.length-1&&!canJumpToUnanswered?'disabled':''}>${canJumpToUnanswered?'Find unanswered →':'Next →'}</button></div>${finished&&cursor===activeList.length-1?bankFinishActions(b):''}</div>${(state.banks[b]||{})[q.n]?managementMarkup(q):''}</div>${(state.banks[b]||{})[q.n]?learningNotes(q,'learningNotes',(state.banks[b]||{})[q.n].choice):`<aside class="learning-card learning-placeholder" aria-label="Learning notes preview"><div class="learning-placeholder-emoji" aria-hidden="true">🌷</div><h2>Learning notes will bloom here</h2><p>Choose your answer and explore the <b>clinical reasoning</b>, why the alternatives lose, and the principles worth remembering.</p></aside>`}</div>`:`<div class="empty">No questions here 🌷 Try another filter.</div>`}`;
+ </section>${finalSummary}<div id="bankSearchDrawer" class="bank-search-drawer" hidden>${searchPanel(b)}</div><div class="toolbar bank-toolbar"><div class="flex"><label class="small">Show <select id="filter"><option value="all">All questions</option><option value="unanswered">Unanswered</option><option value="wrong">Original mistakes</option><option value="bookmarks">Bookmarked</option></select></label><label class="small">Specialty <select id="domain"><option value="all">All specialties</option>${cats.map(x=>`<option value="${safe(x)}">${safe(x)}</option>`).join('')}</select></label></div><div class="bank-jumper"><label for="jumpNumber">Jump to Q</label><input id="jumpNumber" type="number" inputmode="numeric" min="1" max="${qset.length}" value="${q?.n||''}" aria-label="Question number in this bank"><span>/ ${qset.length}</span><button type="button" id="jumpGo" class="bank-jump-btn">Go →</button></div></div>${q?`<div class="learning-layout ${(state.banks[b]||{})[q.n]?'has-notes':''}"><div class="question-stack"><div class="quizbox quiz-question"><div class="meta"><b>Domain:</b> ${safe(q.domain)} &nbsp; · &nbsp; <b>Skillset:</b> ${safe(q.skill||'Clinical reasoning')} &nbsp; · &nbsp; <b>Context:</b> ${safe(q.context||'Clinical')}</div><div class="question-label">EMQ ${q.n}</div><div class="stem">${safe(q.stem)}</div><p class="ask">${safe(q.ask||'Which of the following is the single BEST answer?')}</p><div class="choices" id="choices">${optionHtml(q,(state.banks[b]||{})[q.n]?.choice)}</div>${(state.banks[b]||{})[q.n]?`<div class="feedback ${(state.banks[b][q.n].correct?'yes':'no')}">${state.banks[b][q.n].correct?'✓ Correct — nicely reasoned!':'✗ Not quite. Correct answer: '+visibleLetter(q,q.key)+'.'} Your first response is locked.</div>`:``}<div class="navbox"><button class="btn soft" id="prev" ${cursor===0?'disabled':''}>← Previous</button><button class="btn rose" id="bookmark">${state.bookmarks[idOf(b,q.n)]?'★ Bookmarked':'☆ Bookmark'}</button><button class="btn" id="next" ${cursor===activeList.length-1&&!canJumpToUnanswered?'disabled':''}>${canJumpToUnanswered?'Find unanswered →':'Next →'}</button></div>${finished&&cursor===activeList.length-1?bankFinishActions(b):''}</div>${(state.banks[b]||{})[q.n]?managementMarkup(q):''}</div>${(state.banks[b]||{})[q.n]?learningNotes(q,'learningNotes',(state.banks[b]||{})[q.n].choice):`<aside class="learning-card learning-placeholder" aria-label="Learning notes preview"><div class="learning-placeholder-emoji" aria-hidden="true">🌷</div><h2>Learning notes will bloom here</h2><p>Choose your answer and explore the <b>clinical reasoning</b>, why the alternatives lose, and the principles worth remembering.</p></aside>`}</div>`:`<div class="empty">No questions here 🌷 Try another filter.</div>`}`;
  $('filter').value=filter;$('domain').value=domain;$('filter').onchange=e=>{filter=e.target.value;cursor=0;renderBank()};$('domain').onchange=e=>{domain=e.target.value;cursor=0;renderBank()};
  wireStudySearch(b);
  const bankSearchButton=$('bankSearchToggle'),bankSearchDrawer=$('bankSearchDrawer');
@@ -648,7 +663,7 @@ function renderBank(){const b=route.bank;const bm=manifest.banks.find(x=>x.id===
  };
  if(!q)return;$('choices').onclick=e=>{const choice=e.target.closest('[data-choice]');if(choice)updateProgress(b,q.n,choice.dataset.choice)};$('prev').onclick=()=>{cursor--;renderBank();window.scrollTo({top:120,behavior:'smooth'})};$('next').onclick=()=>{if(canJumpToUnanswered){filter='all';domain='all';cursor=qset.findIndex(x=>!(state.banks[b]||{})[x.n]);}else cursor++;renderBank();window.scrollTo({top:120,behavior:'smooth'})};$('bookmark').onclick=()=>{let k=idOf(b,q.n);state.bookmarks[k]=!state.bookmarks[k];save();renderBank()};}
 async function ensureAllBanks(){await Promise.all(manifest.banks.map(x=>getBank(x.id)));}
-function reviewChoice(card,r,q){const answer=r.currentAnswer;return `<div class="choices">${q.options.map((o,i)=>{const letter=ABC[i];let cls='choice';if(answer){if(letter===q.key)cls+=' true';if(letter===answer)cls+=answer===q.key?' selected correct':' selected incorrect';}return `<button class="${cls}" data-review-choice="${letter}" data-review-id="${idOf(r.bank,r.n)}" ${answer||r.mastered?'disabled':''}><span class="letter">${letter}</span><span>${safe(o)}</span></button>`;}).join('')}</div>${answer?`<div class="feedback ${answer===q.key?'yes':'no'}">${answer===q.key?'✓ Correct! Added to Mastered.':'✗ Still learning — retry after reviewing the explanation.'}</div>${learningNotes(q,`review-notes-${r.bank}-${r.n}`,answer)}${managementMarkup(q)}`:''}`;}
+function reviewChoice(card,r,q){const answer=r.currentAnswer;return `<div class="choices">${displayOrder(q).map((i,pos)=>{const o=q.options[i],letter=ABC[i];let cls='choice';if(answer){if(letter===q.key)cls+=' true';if(letter===answer)cls+=answer===q.key?' selected correct':' selected incorrect';}return `<button class="${cls}" data-review-choice="${letter}" data-review-id="${idOf(r.bank,r.n)}" ${answer||r.mastered?'disabled':''}><span class="letter">${ABC[pos]}</span><span>${safe(o)}</span></button>`;}).join('')}</div>${answer?`<div class="feedback ${answer===q.key?'yes':'no'}">${answer===q.key?'✓ Correct! Added to Mastered.':'✗ Still learning — retry after reviewing the explanation.'}</div>${learningNotes(q,`review-notes-${r.bank}-${r.n}`,answer)}${managementMarkup(q)}`:''}`;}
 let transientReview={};
 function reviewCards(rows){return rows.map(r=>{const q=bankData[r.bank]?.find(x=>x.n===r.n);if(!q)return '';const id=idOf(r.bank,r.n);return `<article class="reviewitem" id="review-${r.bank}-${r.n}"><div class="flex between"><span class="pill">Bank ${r.bank} · EMQ ${r.n}</span><strong class="${r.mastered?'status-mastered':'status-pending'}">${r.mastered?'✓ Mastered':'↻ Needs review'}</strong></div><div class="small">${safe(q.domain)} · ${r.tries||0} review attempt(s)</div><h3>${safe(q.stem)}</h3><p><b>${safe(q.ask||'Choose the single best answer.')}</b></p>${reviewChoice(null,{...r,currentAnswer:transientReview[id]},q)}${!r.mastered?`<div class="flex" style="margin-top:10px"><button class="btn soft" data-retry="${safe(id)}">↻ Clear review selection to try again</button></div>`:''}</article>`;}).join('');}
 function renderReview(){route={review:true};if(!Object.keys(bankData).length){$('app').innerHTML='<p>Loading review data…</p>';return;}const records=recs().sort((a,b)=>(b.firstWrongAt||0)-(a.firstWrongAt||0));const all=records.filter(r=>(reviewFilter==='all'||(reviewFilter==='mastered'?r.mastered:(!r.mastered||!!transientReview[idOf(r.bank,r.n)])))&&(reviewBank==='all'||String(r.bank)===reviewBank));const shown=all.slice(reviewOffset,reviewOffset+8);const mastery=records.filter(r=>r.mastered).length;
