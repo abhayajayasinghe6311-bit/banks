@@ -31,7 +31,7 @@
 .learning-layout .quizbox{margin-top:0}
 .learning-layout.has-notes{display:grid;grid-template-columns:minmax(0,1.1fr) minmax(0,.9fr);gap:20px;align-items:start}
 .quiz-question{min-width:0}
-.learning-card{background:var(--card);border:1px solid var(--edge);border-radius:23px;box-shadow:var(--shadow);padding:23px;min-width:0;overflow-wrap:anywhere;animation:notes-appear .2s ease-out}
+.learning-card{background:var(--card);border:1px solid var(--edge);border-radius:23px;box-shadow:var(--shadow);padding:23px;min-width:0;overflow-wrap:anywhere;animation:none}
 @keyframes notes-appear{from{opacity:0;transform:translateY(6px)}to{opacity:1;transform:translateY(0)}}
 .learning-header{display:flex;gap:12px;align-items:center;margin-bottom:17px}
 .learning-header>span{font-size:27px;background:var(--lav);border-radius:14px;padding:6px 11px}
