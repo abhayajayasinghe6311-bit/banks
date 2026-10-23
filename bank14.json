@@ -1,0 +1,242 @@
+[
+  {
+    "n": 1,
+    "domain": "Vascular surgery & resuscitation",
+    "skill": "Ruptured abdominal aortic aneurysm / prioritising haemostasis",
+    "context": "Advanced integrated clinical decisions",
+    "stem": "A 74-year-old man with a known 6.4 cm infrarenal abdominal aortic aneurysm arrives with sudden severe back pain and syncope. BP is 74/42 mmHg, pulse 128/min, and bedside ultrasound shows an enlarged abdominal aorta. His abdomen is distended, he remains responsive, and the vascular surgeon is available immediately.",
+    "ask": "Which management priority offers the best chance of survival?",
+    "options": [
+      "Activate vascular resuscitation and urgent operative control while giving carefully targeted blood products.",
+      "Administer several litres of crystalloid to normalise blood pressure before involving the vascular team.",
+      "Arrange outpatient CT angiography after haemodynamics stabilise because ultrasound cannot prove rupture.",
+      "Begin therapeutic heparin because an aortic thrombus is likely to have embolised distally.",
+      "Treat the pain with oral analgesia and observe for spontaneous stabilisation of the aneurysm."
+    ],
+    "key": "A",
+    "explanations": [
+      "Correct: presume rupture in this context, activate vascular surgery, major-haemorrhage and anaesthetic support, and move toward endovascular or open repair without avoidable delays. Use carefully titrated resuscitation and blood products according to local protocol; advanced imaging is appropriate only when stable enough.",
+      "Large crystalloid loads may worsen bleeding and coagulopathy. Resuscitation should support essential perfusion without postponing haemorrhage control, using blood products and senior-directed targets.",
+      "CT angiography can define repair anatomy for patients stable enough for scanning, but transfer to routine outpatient imaging is inappropriate in profound shock and suspected rupture.",
+      "Heparin can intensify haemorrhage in a ruptured aneurysm. Distal embolisation does not explain the principal acute haemodynamic presentation or justify anticoagulation now.",
+      "Analgesia is supportive but does not stop intraperitoneal or retroperitoneal bleeding. Untreated rupture can cause sudden death even after a transient rise in pressure."
+    ],
+    "pearl": "Known large AAA with sudden back/abdominal pain and shock is ruptured AAA until proven otherwise; rapid haemorrhage control is decisive.",
+    "pivot": "A haemodynamically stable patient with symptomatic AAA may undergo urgent CT angiography to plan repair while vascular support is mobilised.",
+    "management": {
+      "steps": [
+        [
+          "Recognise",
+          "Assess ABCs and shock; call vascular surgeon, anaesthesia, operating theatre and major-haemorrhage team immediately."
+        ],
+        [
+          "Resuscitate",
+          "Establish large-bore access, send urgent crossmatch and give targeted blood products with frequent perfusion review."
+        ],
+        [
+          "Control bleeding",
+          "Expedite endovascular or open operative treatment; obtain CT only if clinically feasible without dangerous delay."
+        ],
+        [
+          "Monitor",
+          "Review lactate, coagulation, renal function, transfusion needs and postoperative organ perfusion."
+        ]
+      ],
+      "safety": "Avoid routine large-volume crystalloid resuscitation or anticoagulation in suspected ruptured AAA.",
+      "local": "Queensland Health Clinical Prioritisation Criteria for symptomatic and ruptured aortic aneurysm."
+    },
+    "source": "https://www.health.qld.gov.au/cpc/vascular/aortic-aneurysm"
+  },
+  {
+    "n": 2,
+    "domain": "Haematology & thrombosis",
+    "skill": "Heparin-induced thrombocytopenia / new thrombosis",
+    "context": "Advanced integrated clinical decisions",
+    "stem": "A 62-year-old underwent knee replacement eight days ago and has received prophylactic unfractionated heparin. Platelets fall from 245 to 95 × 10^9/L, and ultrasound now confirms a new femoral DVT. She has no active bleeding; the surgical team proposes switching heparin to enoxaparin.",
+    "ask": "Which anticoagulation response is most appropriate?",
+    "options": [
+      "Stop all anticoagulation permanently because thrombocytopenia indicates spontaneous bleeding risk.",
+      "Stop all heparin exposure and seek haematology-guided therapeutic non-heparin anticoagulation.",
+      "Switch to prophylactic enoxaparin because it does not cross-react with heparin-associated antibodies.",
+      "Begin immediate warfarin alone at full dose before documenting the probability of HIT.",
+      "Give a platelet transfusion routinely and continue heparin until antibody tests are complete."
+    ],
+    "key": "B",
+    "explanations": [
+      "Stopping anticoagulation alone leaves a highly prothrombotic HIT state untreated. Platelet count reduction in HIT commonly coexists with new thrombosis.",
+      "Correct: this timing, substantial platelet decline and new DVT give high clinical suspicion for HIT. Discontinue UFH and LMWH, notify haematology, send appropriate immunological/functional tests, and start a therapeutic non-heparin anticoagulant unless contraindicated.",
+      "LMWH can cross-react with HIT antibodies and is not an appropriate substitute for UFH. A non-heparin agent such as argatroban or fondaparinux is chosen by clinical factors and specialist guidance.",
+      "Starting warfarin alone during acute HIT can worsen the thrombotic state and create risks such as limb gangrene. It is introduced later when safe and often after platelet recovery.",
+      "Routine platelet transfusion is generally avoided in HIT without serious bleeding or an indicated procedure, and continuing heparin can provoke further thrombosis. Test results do not need to precede action when suspicion is high."
+    ],
+    "pearl": "A platelet fall five to ten days after heparin plus new thrombosis is HIT until urgently evaluated; stop both UFH and LMWH.",
+    "pivot": "Isolated thrombocytopenia with a low clinical probability score and a clear alternate cause may not warrant empiric non-heparin anticoagulation.",
+    "management": {
+      "steps": [
+        [
+          "Assess probability",
+          "Calculate the 4Ts score and review heparin timing, nadir and newly documented thrombosis."
+        ],
+        [
+          "Remove trigger",
+          "Stop all heparin products including line flushes and LMWH; document suspected HIT."
+        ],
+        [
+          "Anticoagulate",
+          "Initiate haematology-guided non-heparin therapeutic anticoagulation and monitor clot/bleeding status."
+        ],
+        [
+          "Confirm and plan",
+          "Send HIT immunoassay/functional tests, repeat platelets, and plan later transition when appropriate."
+        ]
+      ],
+      "safety": "Do not substitute enoxaparin for unfractionated heparin in suspected HIT or start warfarin monotherapy during acute HIT.",
+      "local": "Thrombosis and Haemostasis Society of Australia and New Zealand HIT consensus, with NSW Health 2024 protocol."
+    },
+    "source": "https://www.mja.com.au/journal/2019/210/11/diagnosis-and-management-heparin-induced-thrombocytopenia-consensus-statement"
+  },
+  {
+    "n": 3,
+    "domain": "Paediatric emergency & gastroenterology",
+    "skill": "Oesophageal button battery / removal within two hours",
+    "context": "Advanced integrated clinical decisions",
+    "stem": "A 20-month-old is brought to hospital after her parent saw her swallow a flat shiny object from a remote control. She is comfortable and swallowing normally. Two-view radiography identifies a 20-mm button battery lodged in the upper oesophagus. Estimated ingestion time was about an hour ago.",
+    "ask": "Which intervention should take priority?",
+    "options": [
+      "Discharge and ask parents to check stools because the child is not drooling or distressed.",
+      "Give several litres of oral fluid to wash the object into the stomach without intervention.",
+      "Arrange immediate specialist endoscopic removal, aiming for treatment within two hours of ingestion.",
+      "Plan repeat radiography after twenty-four hours because an oesophageal battery often passes spontaneously.",
+      "Attempt blind removal in the ED using fingers before involving paediatric gastroenterology or anaesthesia."
+    ],
+    "key": "C",
+    "explanations": [
+      "A lodged oesophageal button battery causes caustic injury through electrical current even in a comfortable child. Discharge is unsafe and serious damage may begin within two hours.",
+      "Oral fluids cannot reliably move an impacted button battery and may increase aspiration risk before anaesthesia. Appropriate treatment requires safe urgent removal.",
+      "Correct: activate paediatric gastroenterology/ENT, anaesthesia and resuscitation resources for time-critical endoscopic retrieval, with no delay for fasting. Follow specialist guidance on honey in a child over one year if ingestion was within twelve hours and airway is protected.",
+      "Waiting for migration risks deep oesophageal burns, tracheo-oesophageal injury and catastrophic haemorrhage. This high-risk location requires emergency action.",
+      "Blind retrieval can injure the airway or displace the battery. Removal belongs to an experienced airway/endoscopy team in a controlled environment."
+    ],
+    "pearl": "A button battery in the oesophagus is a time-critical emergency—even if the child looks well—with removal ideally within two hours.",
+    "pivot": "A battery already past the oesophagus and a completely asymptomatic child may follow a different specialist-directed observation or removal schedule depending on size and age.",
+    "management": {
+      "steps": [
+        [
+          "Confirm location",
+          "Obtain appropriate AP/lateral radiographs without delaying emergency specialist contact."
+        ],
+        [
+          "Mobilise",
+          "Call senior paediatric gastroenterology/ENT and anaesthesia for urgent endoscopy; do not delay for fasting."
+        ],
+        [
+          "Protect tissue",
+          "Follow the local button-battery pathway, including specialist-directed honey when eligible while preparing removal."
+        ],
+        [
+          "Aftercare",
+          "Assess oesophageal injury and plan surveillance for delayed complications and prevention counselling."
+        ]
+      ],
+      "safety": "Do not wait for symptoms, attempt blind retrieval or prolong fasting before oesophageal battery removal.",
+      "local": "RCH Foreign body ingestion guideline and Children's Health Queensland emergency battery pathway."
+    },
+    "source": "https://www.rch.org.au/clinicalguide/guideline_index/Foreign_body_ingestion/"
+  },
+  {
+    "n": 4,
+    "domain": "Travel medicine & public health",
+    "skill": "Rabies exposure / category III prophylaxis in unvaccinated traveller",
+    "context": "Advanced integrated clinical decisions",
+    "stem": "A 29-year-old Australian traveller returns from a rabies-endemic country after a stray dog bit through the skin of her hand two days ago. She washed the wound briefly but received no vaccine. The dog cannot be found and she has no history of pre-exposure rabies vaccination or immunosuppression.",
+    "ask": "Which prevention plan is most appropriate?",
+    "options": [
+      "Observe for neurological symptoms because the dog has disappeared and cannot be laboratory tested.",
+      "Give rabies vaccine only, without immunoglobulin, because prophylaxis is ineffective after forty-eight hours.",
+      "Apply topical antibiotics and delay vaccination until a ten-day observation report is available.",
+      "Clean and assess the wound, then urgently arrange rabies vaccine plus human immunoglobulin.",
+      "Wait for rabies antibody testing to establish baseline immunity before deciding on any intervention."
+    ],
+    "key": "D",
+    "explanations": [
+      "A bite from an untraceable dog in a rabies-endemic area is not safely observed without post-exposure management. Once symptoms develop, rabies is almost universally fatal.",
+      "Unvaccinated people with category III transdermal exposure generally require both vaccine and rabies immunoglobulin. Forty-eight hours is not a reason to withhold prophylaxis.",
+      "The unavailable dog cannot be observed reliably, and topical wound treatment alone does not neutralise viral exposure. Delaying vaccination increases risk.",
+      "Correct: wash and irrigate the wound thoroughly, evaluate tetanus and bacterial infection, and immediately coordinate a category III Australian post-exposure regimen using rabies vaccine and HRIG infiltrated as advised.",
+      "Serology does not establish timely protection after a recent bite in an unvaccinated person, and awaiting it delays effective prevention. Follow the exposure-based PEP algorithm."
+    ],
+    "pearl": "For an unvaccinated person with transdermal animal bite in a rabies-endemic area, vaccine PLUS HRIG are usually indicated; start PEP even when presentation is delayed.",
+    "pivot": "A previously fully vaccinated immunocompetent traveller usually needs booster vaccine doses but not HRIG after a new exposure.",
+    "management": {
+      "steps": [
+        [
+          "Wound care",
+          "Thoroughly wash/irrigate the wound, examine structures and manage bacterial infection/tetanus risk."
+        ],
+        [
+          "Classify",
+          "Confirm exposure category, animal location, immunisation history and availability for observation."
+        ],
+        [
+          "Prevent rabies",
+          "Urgently contact a public-health/infectious-diseases service for HRIG and recommended vaccine schedule."
+        ],
+        [
+          "Follow",
+          "Complete all scheduled vaccinations, check documentation and counsel on future avoidance."
+        ]
+      ],
+      "safety": "Do not wait for symptoms or withhold PEP because the bite was two days ago.",
+      "local": "Australian Immunisation Handbook rabies post-exposure prophylaxis category-based guidance."
+    },
+    "source": "https://immunisationhandbook.health.gov.au/recommendations/people-with-potential-category-ii-or-iii-rabies-virus-exposure-are-recommended-to-receive-rabies-vaccine-as-post-exposure-prophylaxis"
+  },
+  {
+    "n": 5,
+    "domain": "Obstetrics & medication safety",
+    "skill": "Magnesium sulfate toxicity / reverse respiratory compromise",
+    "context": "Advanced integrated clinical decisions",
+    "stem": "A 32-year-old being treated with intravenous magnesium sulfate for pre-eclampsia becomes drowsy while receiving the maintenance infusion. Respiratory rate falls to 8/min, patellar reflexes are absent, oxygen saturation is 89% and urine output has fallen sharply. The clinical team has emergency calcium available.",
+    "ask": "Which immediate management is most appropriate?",
+    "options": [
+      "Increase the magnesium infusion because absent reflexes may indicate insufficient seizure prophylaxis.",
+      "Continue magnesium unchanged and obtain a level only after the scheduled next observation.",
+      "Administer additional antihypertensive therapy alone because poor respiratory effort is caused by hypertension.",
+      "Discontinue all monitoring if the blood pressure has reached the planned treatment range.",
+      "Stop magnesium, support ventilation and administer IV calcium gluconate with senior assistance."
+    ],
+    "key": "E",
+    "explanations": [
+      "Absent reflexes and respiratory depression indicate magnesium accumulation rather than inadequate seizure control. Increasing treatment can cause respiratory or cardiac arrest.",
+      "Waiting for a laboratory level in a patient with slowed breathing delays reversal of a clinically evident high-risk medicine toxicity.",
+      "BP treatment remains important in pre-eclampsia, but antihypertensives do not reverse magnesium-related neuromuscular depression. Airway and antidote treatment are immediate priorities.",
+      "Normalization of BP does not guarantee safe magnesium exposure, especially with decreased renal elimination. Observations must intensify, not stop.",
+      "Correct: stop the infusion immediately, summon obstetric/anaesthetic help, support oxygenation and ventilation, and give protocol-guided IV calcium gluconate for significant respiratory toxicity while assessing renal function and magnesium concentration."
+    ],
+    "pearl": "Loss of tendon reflexes with slow breathing during magnesium infusion is toxicity; stop the infusion and reverse serious respiratory depression with calcium.",
+    "pivot": "Mild flushing or nausea with preserved reflexes, breathing and urine output may be a non-toxic adverse effect and needs assessment but not automatically calcium antidote.",
+    "management": {
+      "steps": [
+        [
+          "Stop exposure",
+          "Immediately halt magnesium sulfate and activate emergency obstetric/anaesthetic response."
+        ],
+        [
+          "Support airway",
+          "Check respiratory effort and oxygenation, administer oxygen and ventilatory support as required."
+        ],
+        [
+          "Reverse toxicity",
+          "Administer IV calcium gluconate using local protocol with continuous monitoring."
+        ],
+        [
+          "Review cause",
+          "Recheck magnesium, renal function and urine output; reassess safe pre-eclampsia seizure prophylaxis."
+        ]
+      ],
+      "safety": "Magnesium is a high-risk medicine; absent reflexes or respiratory rate below 12/min requires urgent escalation.",
+      "local": "Queensland Clinical Guidelines Hypertension and pregnancy: Magnesium sulfate protocol (2025)."
+    },
+    "source": "https://www.health.qld.gov.au/__data/assets/pdf_file/0034/139948/ghdp.pdf"
+  }
+]
