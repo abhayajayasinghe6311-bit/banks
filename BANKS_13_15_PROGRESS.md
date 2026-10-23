@@ -3,7 +3,7 @@
 Status: IN PROGRESS, do not merge the branch or add incomplete banks to `manifest.json`.
 
 - Branch: `codex/banks-13-15-draft-20261023`
-- Bank 13: 45/100 authored in `bank13.json`
+- Bank 13: 55/100 authored in `bank13.json`
 - Bank 14: 0/100
 - Bank 15: 0/100
 - Bank 1–10 content must remain unchanged.
@@ -16,12 +16,12 @@ Status: IN PROGRESS, do not merge the branch or add incomplete banks to `manifes
 - Avoid exact repeats of bank11/12; vary specialty, cognitive task and complexity.
 - Before release, run structural and editorial checks, verify high-stakes doses/thresholds, update manifest counts, test Bank open/navigation/answers, then merge and publish.
 
-## Current QA (Bank 13 questions 1–45)
-- 45 questions, unique numbered 1–45.
-- Answer keys exactly balanced A=9, B=9, C=9, D=9, E=9.
+## Current QA (Bank 13 questions 1–55)
+- 55 questions, unique numbered 1–55.
+- Answer keys exactly balanced A=11, B=11, C=11, D=11, E=11.
 - Every question has five options, five option-specific explanations, four management stages, pearl, pivot, safety and source.
 - Answer-option word-length spread typically 1–5 words.
-- Remaining: 55 questions in Bank 13, then 100 each in Banks 14 and 15.
+- Remaining: 45 questions in Bank 13, then 100 each in Banks 14 and 15.
 
 Never imply the remaining content has been written or published until it actually is.
 
@@ -41,3 +41,9 @@ Never imply the remaining content has been written or published until it actuall
 - Added questions 36–45: paediatric anaphylaxis without rash, SGLT2-associated DKA, reduced fetal movement, AF stroke prophylaxis, serotonin syndrome, anti-D for sensitising bleeding, atypical child UTI, obstructive urosepsis, meningococcal shock, postpartum psychosis.
 - Structural QA: 5 plausible similarly sized options, 5 distinct option rationales, four practical management steps, safety caveat, pearl and clinical pivot in all 10 new questions. Keys balanced: 9 each A–E across first 45.
 - New cases remain draft/unpublished. Need final editorial and Australian guideline verification before release. Bank 14 and 15 not started.
+
+## Checkpoint 2026-10-23: Bank 13 at 55/100
+- Authored and committed Bank 13 questions 46–55: paediatric empyema, mesenteric ischaemia, early neonatal jaundice, cord prolapse, aspirated foreign body, paediatric febrile neutropenia, bronchiolitis, adrenal crisis, retinal arterial occlusion, and COPD hypercapnic failure.
+- Structural QA for new cases: 5 options, 5 tailored explanations, 4 management stages, pearl, pivot, source and safety, balanced lengths. Answer distribution A=11, B=11, C=11, D=11, E=11 across 55.
+- Australian guideline sources consulted for high-risk new clinical actions; full editorial and link review remains pending before release.
+- Banks 14 and 15 remain on independent staggered scheduled continuation tasks and are not yet published.
