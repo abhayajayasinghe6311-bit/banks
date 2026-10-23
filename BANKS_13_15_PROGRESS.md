@@ -4,8 +4,8 @@ Status: IN PROGRESS, do not merge the branch or add incomplete banks to `manifes
 
 - Branch: `codex/banks-13-15-draft-20261023`
 - Bank 13: 100/100 authored in `bank13.json`
-- Bank 14: 0/100
-- Bank 15: 0/100
+- Bank 14: 5/100
+- Bank 15: 5/100
 - Bank 1–10 content must remain unchanged.
 
 ## Requirements
@@ -58,3 +58,10 @@ Never imply the remaining content has been written or published until it actuall
 - Correct answers exactly balanced: A=20, B=20, C=20, D=20, E=20; maximum option length spread 5 words; correct answers not longer on average.
 - Corrected Q52 bronchiolitis oxygen to persistent SpO2 88% under RCH persistent <90% threshold and improved selected Australian guideline URLs.
 - Publish Bank 13 alone from a fresh main-based branch, keeping Banks 14 and 15 draft/unpublished. Monitor live deployment.
+
+## 2026-10-23 additional checkpoint: Banks 14 and 15 started
+- Bank 13: 100/100 authored; 100/100 MERGED into main with manifest via PR #24, confirmed in main. Live GitHub Pages caching may briefly lag.
+- Bank 14: 5/100 original clinical cases committed to bank14.json (ruptured AAA, HIT, oesophageal button battery, rabies post-exposure prophylaxis, magnesium sulfate toxicity).
+- Bank 15: 5/100 original clinical cases committed to bank15.json (neonatal NEC, severe digoxin toxicity, metastatic cord compression, pregnancy syphilis/penicillin allergy, antidepressant-emergent mania).
+- Both new banks contain exactly one each of answer letters A/B/C/D/E; five individually written option rationales, four management actions and Australian medical source links per question.
+- Only publish each bank after 100 questions and verification. No content changes Banks1–12.
