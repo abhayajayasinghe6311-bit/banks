@@ -4318,5 +4318,245 @@
       "local": "Australian Prescriber August 2026 review of PBC therapy and second-line elafibranor."
     },
     "source": "https://test.australianprescriber.tg.org.au/articles/elafibranor-for-primary-biliary-cholangitis.html"
+  },
+  {
+    "n": 91,
+    "domain": "General practice & gastroenterology",
+    "skill": "H. pylori eradication / test-of-cure timing",
+    "context": "Advanced final-year outpatient follow-up",
+    "stem": "A 44-year-old with a duodenal ulcer completed Helicobacter pylori eradication antibiotics ten days ago. He feels well and continues omeprazole daily. He asks whether a negative urea breath test tomorrow would establish cure and whether the previously positive IgG serology could instead be repeated.",
+    "ask": "Which strategy most reliably confirms eradication?",
+    "options": [
+      "Arrange breath or stool antigen testing four weeks after antibiotics, withholding PPI for two weeks.",
+      "Repeat H. pylori IgG now because antibody levels reliably normalise within days of successful therapy.",
+      "Perform a urea breath test tomorrow while continuing omeprazole to maximise the test's sensitivity.",
+      "Skip testing because symptom resolution reliably excludes persistent Helicobacter pylori infection after antibiotics.",
+      "Prescribe a second identical antibiotic course automatically before assessing whether the initial regimen succeeded."
+    ],
+    "key": "A",
+    "explanations": [
+      "Correct: test for active infection at least four weeks after antibiotics, with PPIs withheld for about two weeks. Earlier testing can be falsely negative, and symptom relief does not prove eradication.",
+      "IgG can remain positive for months or years after successful eradication and cannot distinguish old exposure from active infection. It is not a test of cure.",
+      "Recent antibiotics and ongoing PPI suppress bacterial activity, making a breath test falsely reassuring. Wait until the appropriate medication washout has elapsed.",
+      "Symptoms may settle despite persistent infection, allowing recurrent ulcers and further complications. Objective confirmation remains important after therapy.",
+      "Repeating the same regimen without proving failure exposes the patient to unnecessary antibiotic effects and may promote resistance. If positive, select appropriate salvage therapy."
+    ],
+    "pearl": "Confirm H. pylori cure at least four weeks after antibiotics and off PPIs for about two weeks.",
+    "pivot": "Alarm symptoms or bleeding require timely diagnostic assessment rather than waiting for routine test of cure.",
+    "management": {
+      "steps": [
+        [
+          "Review",
+          "Check antibiotic course, adherence, ulcer history and alarm symptoms."
+        ],
+        [
+          "Schedule",
+          "Book urea breath or stool antigen testing after appropriate antibiotic and PPI washout."
+        ],
+        [
+          "Support",
+          "Discuss symptom relief during the PPI break and provide return precautions."
+        ],
+        [
+          "Follow up",
+          "Act on positive results with susceptibility-informed or guideline-supported rescue therapy."
+        ]
+      ],
+      "safety": "A negative test during PPI treatment can be falsely reassuring; IgG serology is unsuitable for test of cure.",
+      "local": "Australian GP H. pylori eradication follow-up principles; verify current therapeutic guidelines."
+    },
+    "source": "https://drhblo.com/learn/h-pylori/"
+  },
+  {
+    "n": 92,
+    "domain": "Paediatric respiratory medicine",
+    "skill": "School-age asthma / low-dose inhaled preventer",
+    "context": "Advanced final-year paediatric primary care",
+    "stem": "An 8-year-old with confirmed asthma wheezes four days weekly, wakes coughing twice weekly and uses salbutamol most school days. He has required two oral steroid courses in the past year. Today he is well with a normal examination and good spacer technique. His family asks whether salbutamol alone remains sufficient.",
+    "ask": "Which ongoing treatment adjustment best reduces exacerbation risk?",
+    "options": [
+      "Continue salbutamol alone because a normal examination between episodes excludes persistent airway inflammation.",
+      "Initiate low-dose inhaled corticosteroid preventer with reliever, education and scheduled reassessment.",
+      "Prescribe daily oral prednisolone indefinitely to prevent all symptoms and avoid inhaled treatments.",
+      "Stop reliever treatment entirely because beta agonists are ineffective in children younger than twelve.",
+      "Use antibiotics every winter because recurrent cough proves bacterial lower respiratory infection."
+    ],
+    "key": "B",
+    "explanations": [
+      "Frequent symptoms, night waking and steroid-requiring exacerbations indicate inadequate control. Normal examination between episodes does not exclude airway inflammation or future risk.",
+      "Correct: low-dose ICS is first-line preventer treatment for most children aged 6–11 with persistent symptoms. Continue an appropriate reliever, review triggers and inhaler technique, and provide a written plan.",
+      "Long-term oral steroids have substantial growth, bone and metabolic harms and are not standard maintenance for this child. Inhaled preventers have a much better risk-benefit profile.",
+      "Salbutamol remains an effective reliever when used appropriately in school-age asthma. Removing rescue treatment without a replacement plan would be unsafe.",
+      "Wheeze is not evidence of bacterial infection, and routine antibiotics do not treat asthma inflammation. Consider other diagnoses only if the pattern or treatment response is atypical."
+    ],
+    "pearl": "Frequent asthma symptoms in ages 6–11 generally require ICS-containing prevention, not SABA alone.",
+    "pivot": "Current exhaustion, hypoxaemia or inability to speak requires acute severe-asthma management before outpatient adjustments.",
+    "management": {
+      "steps": [
+        [
+          "Assess",
+          "Document symptoms, exacerbations, adherence, technique and trigger exposure."
+        ],
+        [
+          "Treat",
+          "Start guideline-appropriate low-dose ICS and maintain a suitable reliever."
+        ],
+        [
+          "Educate",
+          "Demonstrate spacer use and supply a written asthma action plan."
+        ],
+        [
+          "Review",
+          "Reassess control and step therapy according to response and risk."
+        ]
+      ],
+      "safety": "Do not substitute repeated oral steroid courses for indicated maintenance ICS.",
+      "local": "Royal Children's Hospital primary school-aged asthma guideline."
+    },
+    "source": "https://www.rch.org.au/clinicalguide/guideline_index/Asthma_in_primary_school-aged_children_%286-11_years%29/"
+  },
+  {
+    "n": 93,
+    "domain": "Neonatology & paediatric endocrinology",
+    "skill": "Congenital hypothyroidism / immediate hormone replacement",
+    "context": "Advanced final-year newborn screening follow-up",
+    "stem": "A 10-day-old term infant is recalled after an abnormal newborn thyroid screen. Confirmatory TSH is 165 mIU/L and free T4 is well below the neonatal reference range. The infant feeds slowly but is otherwise stable. Thyroid ultrasound is booked next week, and the parents ask whether treatment must await imaging.",
+    "ask": "What is the most appropriate immediate management?",
+    "options": [
+      "Wait for ultrasound because thyroid replacement cannot begin before gland anatomy is known.",
+      "Repeat newborn screening in one month because transient TSH elevation is common after birth.",
+      "Start oral levothyroxine promptly with paediatric endocrine follow-up and biochemical monitoring.",
+      "Prescribe iodine drops alone until thyroid function normalises and the infant gains weight.",
+      "Use liothyronine alone because T3 acts faster and is preferred for neonatal replacement."
+    ],
+    "key": "C",
+    "explanations": [
+      "Imaging may help identify the cause but must not delay replacement in confirmed severe congenital hypothyroidism. Untreated early deficiency threatens neurodevelopment.",
+      "A markedly elevated confirmatory TSH with low free T4 is not a borderline screening result. Waiting a month forfeits a critical treatment window.",
+      "Correct: initiate oral levothyroxine promptly, ideally in the first two weeks, with specialist dosing and frequent TSH/free T4 monitoring. Investigate gland anatomy without postponing therapy.",
+      "Iodine does not replace missing thyroid hormone in most congenital hypothyroidism, and excess iodine may worsen dysfunction. Replacement therapy is required.",
+      "Levothyroxine is standard neonatal replacement. Liothyronine alone is not preferred and can produce unstable thyroid hormone exposure."
+    ],
+    "pearl": "Confirmed congenital hypothyroidism is time critical; do not delay levothyroxine for thyroid imaging.",
+    "pivot": "Borderline isolated TSH elevation with normal free T4 requires specialist interpretation and a different repeat-testing pathway.",
+    "management": {
+      "steps": [
+        [
+          "Confirm",
+          "Review serum neonatal TSH/free T4 and assess feeding and growth."
+        ],
+        [
+          "Treat",
+          "Start weight-based oral levothyroxine promptly under paediatric endocrine guidance."
+        ],
+        [
+          "Investigate",
+          "Arrange imaging or genetic testing when appropriate without treatment delay."
+        ],
+        [
+          "Monitor",
+          "Repeat age-adjusted thyroid tests and follow growth and neurodevelopment."
+        ]
+      ],
+      "safety": "Do not postpone thyroid hormone replacement when marked TSH elevation and low free T4 are confirmed.",
+      "local": "NSW neonatal levothyroxine formulary and endocrine care guidance."
+    },
+    "source": "https://www.seslhd.health.nsw.gov.au/sites/default/files/groups/Royal_Hospital_for_Women/Neonatal/Neomed/neo18thyroxinefull.pdf"
+  },
+  {
+    "n": 94,
+    "domain": "General practice & diabetes safety",
+    "skill": "Insulin-related severe hypoglycaemia / commercial driving restriction",
+    "context": "Advanced final-year occupational safety",
+    "stem": "A 47-year-old insulin-treated delivery driver experienced severe hypoglycaemia yesterday at home requiring help from his partner. He has reduced warning symptoms and wants to resume commercial driving tomorrow because today's fasting glucose is 7 mmol/L. He has not yet had diabetes specialist review.",
+    "ask": "What is the most appropriate immediate driving advice?",
+    "options": [
+      "Permit commercial driving tomorrow because a normal fasting glucose proves restored awareness.",
+      "Advise checking glucose only at shift start and driving whenever it exceeds 3 mmol/L.",
+      "Allow driving after an energy drink because caffeine prevents neuroglycopenic loss of consciousness.",
+      "Advise no driving until medically cleared, addressing hypoglycaemia awareness and treatment.",
+      "Recommend stopping all insulin permanently because occupational safety outweighs glycaemic control."
+    ],
+    "key": "D",
+    "explanations": [
+      "One normal glucose value does not establish safe driving after severe hypoglycaemia or impaired awareness. Recurrent events can occur unexpectedly.",
+      "Glucose monitoring is necessary but cannot replace medical clearance after a severe episode. A glucose of 3 mmol/L is unsafe for driving.",
+      "Caffeine cannot reliably prevent neuroglycopenia or restore warning symptoms. Treat low glucose appropriately and avoid driving until assessed.",
+      "Correct: Austroads recommends no driving after severe hypoglycaemia until medical clearance. Review insulin dosing, meal timing, awareness, monitoring and licence-specific requirements.",
+      "Abrupt insulin cessation risks severe hyperglycaemia and ketoacidosis, particularly in type 1 diabetes. Treatment must be adjusted safely with a diabetes team."
+    ],
+    "pearl": "Severe hypoglycaemia and impaired awareness require fitness-to-drive assessment before returning to the road.",
+    "pivot": "If symptoms occur while driving, stop safely, treat hypoglycaemia and do not immediately resume the journey.",
+    "management": {
+      "steps": [
+        [
+          "Restrict",
+          "Document no-driving advice and applicable commercial licence requirements."
+        ],
+        [
+          "Investigate",
+          "Review glucose patterns, meals, insulin, alcohol, exercise and renal function."
+        ],
+        [
+          "Prevent",
+          "Adjust treatment with diabetes team; consider CGM alerts and rescue glucagon education."
+        ],
+        [
+          "Clear",
+          "Reassess awareness and monitoring competence under Austroads fitness-to-drive criteria."
+        ]
+      ],
+      "safety": "Do not clear driving based solely on a single normal glucose after severe hypoglycaemia.",
+      "local": "Austroads Assessing Fitness to Drive diabetes guidelines."
+    },
+    "source": "https://austroads.gov.au/publications/assessing-fitness-to-drive/ap-g56/diabetes-mellitus/general-assessment-and-management-guidelines"
+  },
+  {
+    "n": 95,
+    "domain": "Women's health & endocrinology",
+    "skill": "Postpartum thyroiditis / symptom treatment without thionamides",
+    "context": "Advanced final-year postpartum diagnostic management",
+    "stem": "A 32-year-old four months after delivery has palpitations, tremor and weight loss. TSH is suppressed, free T4 mildly elevated and thyroid peroxidase antibodies positive. TSH receptor antibodies are negative, and she has no orbitopathy or goitre bruit. She is breastfeeding and haemodynamically stable.",
+    "ask": "Which initial strategy best matches the likely mechanism?",
+    "options": [
+      "Start high-dose carbimazole because postpartum thyrotoxicosis always reflects increased thyroid synthesis.",
+      "Administer radioactive iodine immediately because destructive thyroiditis cannot resolve spontaneously.",
+      "Give iodine supplements alone because breastfeeding increases maternal thyroid hormone production substantially.",
+      "Begin routine high-dose corticosteroids because painless thyroiditis is always an inflammatory emergency.",
+      "Use a compatible beta blocker for symptoms and monitor thyroid function for later hypothyroidism."
+    ],
+    "key": "E",
+    "explanations": [
+      "Carbimazole blocks hormone synthesis, whereas destructive thyroiditis releases preformed hormone. Thionamides are usually ineffective in this phase.",
+      "Radioiodine is unnecessary for self-limited destructive thyroiditis and inappropriate during breastfeeding. Confirm Graves disease before considering definitive thyroid therapy.",
+      "Iodine supplements do not treat release of stored thyroid hormone, and excess iodine can disrupt function. Address dietary iodine needs separately.",
+      "Painless postpartum thyroiditis usually does not require corticosteroids. Steroids have selected uses in other inflammatory thyroid disorders.",
+      "Correct: beta blockade can ease adrenergic symptoms while the thyrotoxic phase resolves. Monitor for subsequent hypothyroidism and possible permanent dysfunction, and reassess if the course suggests Graves disease."
+    ],
+    "pearl": "Postpartum destructive thyroiditis needs symptom relief and follow-up, not routine hormone-synthesis blockade.",
+    "pivot": "Positive TRAb, orbitopathy or persistent hyperthyroidism suggests postpartum Graves disease instead.",
+    "management": {
+      "steps": [
+        [
+          "Differentiate",
+          "Review timing, antibodies, examination and drug history; seek specialist input if unclear."
+        ],
+        [
+          "Relieve",
+          "Use a breastfeeding-compatible beta blocker when indicated and check contraindications."
+        ],
+        [
+          "Monitor",
+          "Repeat thyroid function to detect hypothyroidism after the thyrotoxic phase."
+        ],
+        [
+          "Follow",
+          "Arrange long-term TSH surveillance and counsel about recurrence in later pregnancies."
+        ]
+      ],
+      "safety": "Avoid reflex thionamides or radioiodine for uncomplicated postpartum destructive thyroiditis.",
+      "local": "RACGP thyroid disease in the perinatal period."
+    },
+    "source": "https://www.racgp.org.au/afp/2012/august/thyroid-disease-in-the-perinatal-period"
   }
 ]
