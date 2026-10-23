@@ -1342,5 +1342,101 @@
       "local": "ANZCOR Guideline 11.10 Resuscitation in Special Circumstances (2026)."
     },
     "source": "https://www.anzcor.org/home/adult-advanced-life-support/guideline-11-10-resuscitation-in-special-circumstances"
+  },
+  {
+    "n": 29,
+    "domain": "Hepatology & critical care",
+    "skill": "Acute liver failure / early transplant centre referral",
+    "context": "Advanced integrated clinical decisions",
+    "stem": "A 27-year-old with no known chronic liver disease presents after several days of vomiting and malaise. ALT is 3800 U/L, INR 3.6, glucose 2.8 mmol/L and she is intermittently disoriented. Paracetamol exposure is uncertain and initial viral serology is pending. She has no history of cirrhosis or ascites.",
+    "ask": "What is the safest next management priority?",
+    "options": [
+      "Arrange outpatient repeat liver tests in two days because transaminases often fall spontaneously.",
+      "Treat with lactulose alone because altered mentation implies uncomplicated hepatic encephalopathy.",
+      "Wait for viral serology and paracetamol concentration before discussing definitive management.",
+      "Begin critical-care support and immediate liver-transplant centre discussion while investigating causes.",
+      "Give vitamin K and discharge if the INR improves because synthetic failure is then excluded."
+    ],
+    "key": "D",
+    "explanations": [
+      "Marked injury with coagulopathy, hypoglycaemia and encephalopathy is acute liver failure, not an outpatient monitoring problem.",
+      "Lactulose alone cannot address cerebral oedema risk, hypoglycaemia, synthetic dysfunction or transplant evaluation. Critical care is needed.",
+      "Cause-specific tests are important but may be delayed. Referral and consideration of N-acetylcysteine should occur in parallel.",
+      "Correct: stabilise glucose and organ function, contact ICU and a transplant-capable liver unit early, investigate aetiology and discuss empiric N-acetylcysteine.",
+      "Transient INR improvement after vitamin K does not make encephalopathy and hypoglycaemia safe. Discharge is inappropriate."
+    ],
+    "pearl": "New coagulopathy and encephalopathy without cirrhosis indicate acute liver failure and early specialist referral.",
+    "pivot": "Severe transaminitis with normal INR and mental status is acute liver injury but not necessarily liver failure.",
+    "management": {
+      "steps": [
+        [
+          "Stabilise",
+          "Assess ABCDE and treat hypoglycaemia immediately."
+        ],
+        [
+          "Escalate",
+          "Contact ICU, hepatology and a transplant centre without waiting for tests."
+        ],
+        [
+          "Investigate",
+          "Check paracetamol, viral/autoimmune causes, coagulation, renal function and lactate."
+        ],
+        [
+          "Treat",
+          "Discuss N-acetylcysteine, cause-specific treatment and cerebral oedema surveillance."
+        ]
+      ],
+      "safety": "Falling ALT or transient INR improvement does not establish recovery; follow synthetic function and mental status.",
+      "local": "Queensland Health acute liver failure emergency referral criteria."
+    },
+    "source": "https://www.goldcoast.health.qld.gov.au/referrals/conditions/fibroscan-only"
+  },
+  {
+    "n": 30,
+    "domain": "Obstetrics & haematology",
+    "skill": "Postpartum iron deficiency / IV iron versus transfusion",
+    "context": "Advanced integrated clinical decisions",
+    "stem": "A 29-year-old is five days postpartum after a delivery complicated by moderate blood loss. Haemoglobin is 82 g/L, ferritin is low and she reports fatigue and mild dizziness on standing. She is haemodynamically stable, bleeding has stopped, there is no chest pain or dyspnoea, and she cannot tolerate oral iron.",
+    "ask": "Which treatment option is most appropriate after clinical assessment and shared decision-making?",
+    "options": [
+      "Arrange immediate red-cell transfusion for every postpartum haemoglobin below 90 g/L.",
+      "Discharge without iron replacement because postpartum haemoglobin normally corrects itself.",
+      "Start oral iron despite intolerance and defer reassessment until the next pregnancy.",
+      "Give prophylactic antibiotics because postpartum anaemia is most commonly caused by infection.",
+      "Offer intravenous iron with monitoring and follow-up rather than automatic blood transfusion."
+    ],
+    "key": "E",
+    "explanations": [
+      "Transfusion may be needed with bleeding, severe symptoms or instability, but stable mild symptoms at Hb 82 g/L do not mandate red cells.",
+      "Postpartum iron deficiency impairs recovery and can persist without replacement. Observation alone does not address depleted iron stores.",
+      "Oral iron is often first-line, but this patient cannot tolerate it. Insisting on an unsuitable regimen risks prolonged fatigue.",
+      "Low ferritin after blood loss is not evidence of infection. Antibiotics do not restore iron and are inappropriate without infection.",
+      "Correct: stable mildly symptomatic postpartum patients with Hb 70–90 g/L may be offered IV iron instead of transfusion when oral treatment is unsuitable."
+    ],
+    "pearl": "Stable postpartum iron deficiency with Hb 70–90 g/L can often be treated with IV iron rather than transfusion.",
+    "pivot": "Ongoing bleeding, syncope, chest pain, marked dyspnoea or instability prompts urgent resuscitation and transfusion assessment.",
+    "management": {
+      "steps": [
+        [
+          "Assess",
+          "Review vital signs, ongoing bleeding, symptoms and anaemia causes."
+        ],
+        [
+          "Confirm",
+          "Check FBC, ferritin and relevant iron studies."
+        ],
+        [
+          "Treat",
+          "Discuss IV iron formulation, risks and alternatives under maternity protocol."
+        ],
+        [
+          "Follow",
+          "Monitor administration and repeat haemoglobin and iron studies."
+        ]
+      ],
+      "safety": "IV iron is not a substitute for urgent blood support during active bleeding or severe instability.",
+      "local": "Metro North Health IV iron therapy guideline, maternity appendix, April 2026."
+    },
+    "source": "https://metronorth.health.qld.gov.au/wp-content/uploads/2026/04/004809.pdf"
   }
 ]
