@@ -1678,5 +1678,485 @@
       "local": "WA Country Health lithium guideline and Austin clinical toxicology chronic poisoning guidance."
     },
     "source": "https://www.wacountry.health.wa.gov.au/~/media/WACHS/Documents/About-us/Policies/Specialised-Medication---Lithium-Guideline.pdf?thn=0"
+  },
+  {
+    "n": 36,
+    "domain": "Paediatric emergencies & allergy",
+    "skill": "Anaphylaxis without urticaria / priority treatment",
+    "stem": "A 7-year-old with peanut allergy develops sudden repetitive coughing, hoarseness and wheeze minutes after eating an unfamiliar biscuit. No rash is visible. She is anxious, tachycardic and speaking only in short phrases; blood pressure is preserved. Her parent suggests giving the usual salbutamol first because there are no hives.",
+    "ask": "Which treatment should be given first?",
+    "options": [
+      "Give intramuscular adrenaline promptly and position her safely while summoning resuscitation support.",
+      "Give nebulised salbutamol and reassess after fifteen minutes for persistent bronchospasm.",
+      "Give oral antihistamine to prevent a delayed rash while obtaining an oxygen reading.",
+      "Give intravenous hydrocortisone immediately and observe for improvement in upper-airway symptoms.",
+      "Begin an intravenous fluid bolus as the sole first-line treatment despite preserved perfusion."
+    ],
+    "key": "A",
+    "explanations": [
+      "Correct: abrupt airway and breathing compromise after a likely allergen is anaphylaxis even without skin findings. IM adrenaline is the first-line treatment; lay her flat or with legs extended if breathing dictates, summon help, monitor and repeat adrenaline per protocol if required.",
+      "Salbutamol may help persistent lower-airway bronchospasm after adrenaline, but it does not reverse laryngeal oedema or the systemic process. Treating this as ordinary asthma first could delay lifesaving treatment.",
+      "Antihistamines can relieve isolated allergic skin symptoms but are not a treatment for airway compromise or circulatory collapse. Absence of hives does not reduce the need for adrenaline.",
+      "Corticosteroids have delayed onset and are not recommended as routine acute anaphylaxis treatment. Giving them first leaves the immediate airway emergency untreated.",
+      "IV fluids are important for shock or persistent hypotension, but this child first requires adrenaline. Fluids alone cannot adequately address respiratory anaphylaxis and do not replace repeated reassessment."
+    ],
+    "pearl": "Anaphylaxis can occur without any rash; acute airway or breathing features after an allergen warrant IM adrenaline.",
+    "pivot": "Isolated urticaria without breathing, airway, circulation or significant gastrointestinal symptoms follows a different allergy pathway and may need antihistamine rather than adrenaline.",
+    "management": {
+      "steps": [
+        [
+          "Call and position",
+          "Activate anaphylaxis response; prevent standing/walking and use a safe flat or legs-extended position."
+        ],
+        [
+          "Treat immediately",
+          "Administer IM adrenaline into the outer mid-thigh using the child's weight and local guideline."
+        ],
+        [
+          "Reassess",
+          "Monitor airway, SpO2 and circulation; repeat adrenaline or escalate for refractory features; add bronchodilator for residual wheeze."
+        ],
+        [
+          "Prevent recurrence",
+          "Observe after treatment, supply autoinjector and action plan as indicated, teach carers and arrange allergy follow-up."
+        ]
+      ],
+      "safety": "Do not wait for hives, IV access or diagnostic blood tests before giving IM adrenaline.",
+      "local": "Royal Children's Hospital Anaphylaxis clinical practice guideline."
+    },
+    "source": "https://www.rch.org.au/clinicalguide/guideline_index/Anaphylaxis/",
+    "context": "Advanced integrated clinical decisions"
+  },
+  {
+    "n": 37,
+    "domain": "Acute medicine & endocrinology",
+    "skill": "SGLT2 inhibitor / euglycaemic ketoacidosis",
+    "stem": "A 61-year-old taking empagliflozin for type 2 diabetes presents two days after abdominal surgery with nausea, deep breathing and increasing fatigue. Glucose is 10.7 mmol/L, pH 7.18, bicarbonate 12 mmol/L, anion gap 23 mmol/L and blood beta-hydroxybutyrate 5.8 mmol/L. Lactate is 1.4 mmol/L.",
+    "ask": "Which approach best addresses the underlying metabolic emergency?",
+    "options": [
+      "Treat as starvation ketosis with oral carbohydrate alone and arrange an afternoon review.",
+      "Manage as euglycaemic DKA: stop the SGLT2 inhibitor and initiate supervised insulin, fluids and glucose.",
+      "Withhold all insulin until glucose exceeds 15 mmol/L to prevent treatment-related hypoglycaemia.",
+      "Administer bicarbonate alone to normalise arterial pH before investigating why ketones are elevated.",
+      "Treat as isolated lactic acidosis with volume replacement and repeat the lactate in four hours."
+    ],
+    "key": "B",
+    "explanations": [
+      "Starvation can cause ketosis, but marked ketonaemia, a large anion-gap acidosis and SGLT2 exposure suggest euglycaemic DKA. Oral intake alone does not reliably clear severe insulin-deficient ketosis.",
+      "Correct: stop empagliflozin, arrange senior acute/endocrine care and use a DKA protocol adapted for lower glucose, with fluids, insulin and early dextrose as necessary. Closely monitor potassium, ketones, acid-base status and precipitating perioperative factors.",
+      "Insulin treats the underlying ketogenesis; withholding it because glucose is near normal lets acidosis progress. Give dextrose support and electrolyte replacement to make insulin treatment safe.",
+      "Bicarbonate does not correct ketone production and is reserved for selected severe situations under specialist protocols. It may obscure the biochemical trend while leaving the cause untreated.",
+      "A normal lactate argues against lactic acidosis as the primary driver. The combination of ketones and acidaemia requires urgent targeted DKA treatment rather than watchful waiting."
+    ],
+    "pearl": "Normal or mildly elevated glucose cannot exclude DKA in patients receiving an SGLT2 inhibitor.",
+    "pivot": "Simple starvation ketosis typically causes less severe acidosis and can improve rapidly with carbohydrate; severe ketonaemic acidosis needs DKA-level care regardless of glucose.",
+    "management": {
+      "steps": [
+        [
+          "Recognise",
+          "Check bedside ketones, venous gas, anion gap, potassium, renal function and precipitating illness."
+        ],
+        [
+          "Stop trigger",
+          "Withhold SGLT2 therapy and notify acute/endocrine teams; evaluate infection, surgery and fasting."
+        ],
+        [
+          "Reverse ketosis",
+          "Start protocol-directed IV fluids and insulin with concurrent dextrose when needed; replace potassium carefully."
+        ],
+        [
+          "Confirm resolution",
+          "Trend ketones, anion gap, glucose and electrolytes; arrange safe transition and future medication counselling."
+        ]
+      ],
+      "safety": "Do not use the glucose result alone to dismiss ketonaemic acidosis or delay insulin treatment.",
+      "local": "Australian Diabetes Society DKA and perioperative SGLT2 inhibitor safety guidance."
+    },
+    "source": "https://www.diabetessociety.com.au/",
+    "context": "Advanced integrated clinical decisions"
+  },
+  {
+    "n": 38,
+    "domain": "Obstetrics & antenatal care",
+    "skill": "Reduced fetal movements / immediate evaluation",
+    "stem": "A 31-year-old primigravida at 33+4 weeks calls the maternity assessment unit because fetal movements have been much less frequent since yesterday evening. There is no vaginal bleeding or abdominal pain. Her last growth scan at 28 weeks was normal, and she has a home Doppler that detected a fetal heartbeat this morning.",
+    "ask": "What is the safest response?",
+    "options": [
+      "Arrange a routine growth ultrasound next week because recent growth appeared normal.",
+      "Advise eating a snack and counting movements overnight before seeking obstetric assessment.",
+      "Ask her to attend the maternity unit now for fetal assessment and CTG as appropriate.",
+      "Reassure her because a detected heartbeat on a home Doppler proves adequate fetal wellbeing.",
+      "Offer a telephone follow-up tomorrow unless she develops painful contractions or vaginal bleeding."
+    ],
+    "key": "C",
+    "explanations": [
+      "A previous normal growth scan does not establish current fetal wellbeing or placental function. Delaying assessment for a week after reduced movement is unsafe.",
+      "Food intake and movement counting must not delay assessment once the mother perceives a meaningful change. Maternal awareness of her baby's usual pattern is a valid clinical trigger.",
+      "Correct: arrange prompt in-person maternity assessment, history and maternal observations, fetal heart-rate assessment and CTG for gestational age. Escalate for ultrasound of growth, fluid and Dopplers according to findings or recurrent symptoms.",
+      "A home Doppler confirms only detectable heart activity at that instant and cannot reliably evaluate hypoxia, fetal compromise or placental dysfunction. It risks false reassurance.",
+      "Reduced movements can precede other symptoms; pain and bleeding are not required for concern. Telephone reassessment tomorrow fails to address today's change."
+    ],
+    "pearl": "A normal previous scan or positive home Doppler does not rule out current compromise after reduced fetal movements.",
+    "pivot": "Before viability or at earlier gestations, fetal assessment options differ, but an important reported reduction still warrants timely maternity advice and examination.",
+    "management": {
+      "steps": [
+        [
+          "Invite promptly",
+          "Arrange assessment at the maternity unit without waiting for food, movement counts or a home Doppler."
+        ],
+        [
+          "Assess",
+          "Review gestation, movement pattern, risks, maternal observations and fetal heart rate."
+        ],
+        [
+          "Investigate",
+          "Perform CTG when gestationally appropriate and ultrasound assessment where risk or initial findings indicate."
+        ],
+        [
+          "Safety-net",
+          "Explain when to return for repeated reduction, bleeding, pain or other warning symptoms, even after a reassuring visit."
+        ]
+      ],
+      "safety": "Do not advise sleep or routine review instead of prompt assessment when movements are reduced.",
+      "local": "Stillbirth Centre of Research Excellence and Australian maternity reduced fetal movement pathways."
+    },
+    "source": "https://stillbirthcre.org.au/",
+    "context": "Advanced integrated clinical decisions"
+  },
+  {
+    "n": 39,
+    "domain": "General practice & stroke prevention",
+    "skill": "Atrial fibrillation / anticoagulation over aspirin",
+    "stem": "A 74-year-old with persistent atrial fibrillation, hypertension and a previous transient ischaemic attack attends a GP review. Rate is controlled and he feels well. He takes aspirin 100 mg daily because he believes anticoagulants are necessary only when palpitations are severe. Renal function is stable and there is no active bleeding.",
+    "ask": "Which management discussion has the highest priority?",
+    "options": [
+      "Continue aspirin because absence of palpitations suggests a low current stroke risk.",
+      "Use a beta blocker alone as reliable embolic stroke prevention when the rate is controlled.",
+      "Arrange elective cardioversion first and reassess the need for anticoagulation after sinus rhythm returns.",
+      "Recommend oral anticoagulation after bleeding and contraindication assessment, rather than aspirin alone.",
+      "Prescribe short-course dual antiplatelet therapy whenever atrial fibrillation symptoms are noticed."
+    ],
+    "key": "D",
+    "explanations": [
+      "Aspirin does not provide sufficient protection against AF-related cardioembolic stroke in someone with this history. Being asymptomatic or rate controlled does not meaningfully eliminate risk.",
+      "Rate-control medicines reduce symptoms and prevent tachycardia-related effects but do not stop left-atrial thrombus formation. Stroke prevention is a separate treatment decision.",
+      "Cardioversion has its own anticoagulation requirements and does not remove long-term risk from age and previous TIA. Waiting for restoration of sinus rhythm delays protection.",
+      "Correct: discuss the substantial thromboembolic risk, assess bleeding factors, kidney function, interactions and preferences, and arrange appropriate oral anticoagulation—usually a DOAC if eligible—with monitoring and review.",
+      "Intermittent dual antiplatelet therapy is not an evidence-based replacement for sustained AF anticoagulation. Stroke risk is driven by underlying factors, not just symptoms."
+    ],
+    "pearl": "AF-related stroke risk is not proportional to the patient's perception of palpitations, and aspirin is not an anticoagulant substitute.",
+    "pivot": "Mechanical prosthetic valves or moderate-to-severe rheumatic mitral stenosis change anticoagulant selection; warfarin is generally required rather than a DOAC.",
+    "management": {
+      "steps": [
+        [
+          "Risk assessment",
+          "Confirm AF, assess vascular history, stroke risk and modifiable bleeding risk."
+        ],
+        [
+          "Discuss",
+          "Explain benefit and bleeding risks of oral anticoagulation through shared decision-making."
+        ],
+        [
+          "Initiate safely",
+          "Check renal function, dosing criteria, drug interactions and bleeding history; select warfarin or eligible DOAC."
+        ],
+        [
+          "Review",
+          "Arrange adherence, renal monitoring, falls-risk mitigation and periodic reassessment."
+        ]
+      ],
+      "safety": "Do not treat rate control or successful cardioversion as equivalent to stroke prevention.",
+      "local": "Australian AF management guidelines and Stroke Foundation secondary prevention recommendations."
+    },
+    "source": "https://strokefoundation.org.au/what-we-do/for-health-professionals/clinical-guidelines",
+    "context": "Advanced integrated clinical decisions"
+  },
+  {
+    "n": 40,
+    "domain": "Psychiatry & toxicology",
+    "skill": "Serotonin toxicity / clonus versus NMS",
+    "stem": "A 32-year-old taking sertraline is prescribed tramadol after minor surgery. Within hours she develops agitation, sweating, diarrhoea and a temperature of 38.9°C. Examination shows spontaneous ankle clonus and marked lower-limb hyperreflexia. She is tachycardic but maintaining blood pressure.",
+    "ask": "Which immediate treatment strategy is most appropriate?",
+    "options": [
+      "Give an additional dose of sertraline to prevent withdrawal during the febrile illness.",
+      "Begin high-dose antipsychotic therapy to settle agitation before reviewing current medicines.",
+      "Treat presumed bacterial gastroenteritis with oral antibiotics and repeat observations in six hours.",
+      "Administer dantrolene for malignant hyperthermia without assessing the serotonergic drug history.",
+      "Stop serotonergic agents, provide supportive monitoring and use benzodiazepines when clinically indicated."
+    ],
+    "key": "E",
+    "explanations": [
+      "More serotonergic medication could worsen the toxicity. Withdrawal risk is not the immediate priority compared with hyperthermia, clonus and autonomic instability.",
+      "Antipsychotics are not first-line treatment for this toxidrome and some may complicate temperature regulation. Sedation with benzodiazepines is commonly favoured when needed.",
+      "Diarrhoea alone may resemble infection, but new serotonergic drug combination and clonus are key diagnostic clues. Delayed outpatient reassessment is unsafe.",
+      "Malignant hyperthermia generally follows triggering anaesthetic agents; tramadol and SSRI exposure plus clonus instead point toward serotonin toxicity. Treatment must follow the correct toxidrome.",
+      "Correct: discontinue offending agents, assess ABCs, monitor ECG, temperature and complications, and provide IV fluids, cooling and titrated benzodiazepines as required with toxicology guidance. Severe hyperthermia needs immediate escalation."
+    ],
+    "pearl": "Clonus and hyperreflexia with recent serotonergic medication exposure favour serotonin toxicity over neuroleptic malignant syndrome.",
+    "pivot": "If there is prolonged antipsychotic exposure with lead-pipe rigidity and markedly reduced reflexes, neuroleptic malignant syndrome moves higher in the differential.",
+    "management": {
+      "steps": [
+        [
+          "Recognise",
+          "Review drug changes and examine clonus, reflexes, rigidity, temperature and autonomic signs."
+        ],
+        [
+          "Stop trigger",
+          "Withhold sertraline, tramadol and any other serotonergic agents; seek toxicology input."
+        ],
+        [
+          "Support",
+          "Monitor vital signs and ECG, provide IV fluids and external cooling, and titrate benzodiazepines for agitation."
+        ],
+        [
+          "Escalate",
+          "Arrange critical care for severe hyperthermia, seizures, rhabdomyolysis or cardiorespiratory instability."
+        ]
+      ],
+      "safety": "Do not delay supportive treatment while waiting for a diagnostic serotonin level; none is needed.",
+      "local": "Royal Children's Hospital serotonin toxicity guideline; adapted to adult emergency toxicology."
+    },
+    "source": "https://www.rch.org.au/clinicalguide/guideline_index/Serotonin_toxicity/",
+    "context": "Advanced integrated clinical decisions"
+  },
+  {
+    "n": 41,
+    "domain": "Obstetrics & antenatal immunoprophylaxis",
+    "skill": "RhD-negative pregnancy / sensitising bleeding",
+    "stem": "A 24-year-old at 18 weeks of her first pregnancy presents after moderate vaginal bleeding. She is haemodynamically stable and ultrasound confirms a viable intrauterine pregnancy. Blood group is O RhD-negative, her antibody screen was negative at booking, and the baby's RhD status is unknown.",
+    "ask": "Which additional management action matters now?",
+    "options": [
+      "Assess the sensitising event and arrange indicated anti-D immunoglobulin promptly under local guidance.",
+      "Defer anti-D prophylaxis until the standard antenatal dose because the pregnancy remains viable.",
+      "Avoid anti-D because fetal RhD status is unknown and prophylaxis may cause maternal sensitisation.",
+      "Order anti-D only if the repeat antibody screen confirms she is already alloimmunised.",
+      "Give RhD-positive red cells to prevent further antibody formation during the remainder of pregnancy."
+    ],
+    "key": "A",
+    "explanations": [
+      "Correct: antepartum bleeding in an unsensitised RhD-negative woman is a potentially sensitising event. Assess the bleed, confirm the antibody history and administer anti-D at the appropriate gestational dose and timing; consider fetomaternal haemorrhage testing when indicated.",
+      "Routine scheduled antenatal prophylaxis is distinct from event-based prophylaxis. A sensitising bleed warrants separate assessment and usually prompt treatment.",
+      "Unknown fetal RhD status does not remove maternal risk; anti-D is intended to prevent immunisation if fetal erythrocytes enter maternal circulation. Product and dose depend on local policy.",
+      "Anti-D is preventive treatment for those not already sensitised; established immune anti-D requires specialist monitoring rather than routine prophylaxis. Waiting for conversion defeats prevention.",
+      "RhD-positive blood increases alloimmunisation risk and is not a prophylactic measure. Transfusion, if needed, should follow the obstetric blood bank's compatibility protocol."
+    ],
+    "pearl": "Routine antenatal anti-D and anti-D for sensitising events are separate indications; a bleed may require prophylaxis even after routine dosing.",
+    "pivot": "If immune anti-D antibodies are already present, refer for fetal anaemia risk assessment and antibody surveillance instead of assuming prophylaxis reverses alloimmunisation.",
+    "management": {
+      "steps": [
+        [
+          "Stabilise",
+          "Assess bleeding severity, maternal vitals, pain and pregnancy complications."
+        ],
+        [
+          "Check",
+          "Confirm ABO/RhD status, antibody history, gestational age and any prior anti-D doses."
+        ],
+        [
+          "Prevent",
+          "Give local-protocol anti-D promptly if indicated; request fetomaternal haemorrhage quantification where appropriate."
+        ],
+        [
+          "Follow",
+          "Document product, dose and timing, arrange obstetric review and ongoing antibody screening."
+        ]
+      ],
+      "safety": "Anti-D does not replace assessment of the bleeding cause or a maternal haemorrhage response.",
+      "local": "Australian National Blood Authority guideline for RhD immunoglobulin in obstetric care."
+    },
+    "source": "https://www.blood.gov.au/anti-d",
+    "context": "Advanced integrated clinical decisions"
+  },
+  {
+    "n": 42,
+    "domain": "Paediatric infectious diseases",
+    "skill": "Atypical urinary tract infection / imaging and antimicrobial review",
+    "stem": "A 20-month-old girl is being treated with oral antibiotics for a febrile urinary infection. After 48 hours she remains febrile to 39°C, is vomiting and is now less active. The initial urine culture is growing Proteus rather than E. coli and shows susceptibility to a different agent. She is mildly dehydrated and has no known renal anomaly.",
+    "ask": "What is the safest revised management?",
+    "options": [
+      "Continue the initial antibiotic for another week because fever may persist after appropriate treatment.",
+      "Reassess urgently, treat dehydration, adjust antibiotics to culture and arrange renal tract ultrasound.",
+      "Stop antibiotics because non-E. coli growth is usually a contaminated collection rather than pyelonephritis.",
+      "Use antibiotic prophylaxis alone and defer evaluation until a second culture is obtained in a month.",
+      "Reassure the family that ultrasound is unnecessary after every first urinary tract infection."
+    ],
+    "key": "B",
+    "explanations": [
+      "Persistent fever, clinical deterioration and non-E. coli infection make this atypical UTI; continuing ineffective therapy risks renal infection and sepsis. Immediate reassessment is more appropriate than routine waiting.",
+      "Correct: review hydration and sepsis signs, inspect the specimen quality and susceptibility report, escalate treatment—often to IV therapy if unwell—and obtain renal tract ultrasound for atypical UTI while discussing paediatric admission.",
+      "Contamination is possible with poor sampling, but a compatible illness plus pyuria and significant single-organism growth warrants treatment. Abandoning antibiotics without assessment is unsafe.",
+      "Prophylaxis is not treatment for active febrile infection and is not routinely recommended after an initial UTI. Imaging and targeted therapy address the current concern.",
+      "Ultrasound is not routine for all uncomplicated first UTIs, but this episode meets atypical criteria because of non-E. coli growth and failure to respond. The usual no-imaging rule does not apply."
+    ],
+    "pearl": "Non-E. coli urinary pathogens or failure to improve within 48 hours are atypical UTI features and justify early imaging.",
+    "pivot": "A child with straightforward E. coli UTI who improves promptly on appropriate therapy may not need acute renal ultrasound.",
+    "management": {
+      "steps": [
+        [
+          "Reassess",
+          "Check hydration, perfusion, urine output, fever and severity; assess for sepsis."
+        ],
+        [
+          "Review microbiology",
+          "Confirm culture collection quality, pyuria and susceptibility; change antimicrobial treatment accordingly."
+        ],
+        [
+          "Image",
+          "Arrange renal ultrasound during the acute illness for atypical UTI."
+        ],
+        [
+          "Escalate",
+          "Admit or administer IV treatment when unable to tolerate oral therapy, systemically unwell or deteriorating."
+        ]
+      ],
+      "safety": "Do not assume a persistent high fever is normal or leave a child on an antibiotic shown to be ineffective.",
+      "local": "Royal Children's Hospital urinary tract infection guideline, updated 2025."
+    },
+    "source": "https://www.rch.org.au/clinicalguide/guideline_index/Urinary_tract_infection/",
+    "context": "Advanced integrated clinical decisions"
+  },
+  {
+    "n": 43,
+    "domain": "Emergency medicine & infectious diseases",
+    "skill": "Septic shock / antibiotic and source-control timing",
+    "stem": "A 68-year-old with diabetes arrives with fever, right flank pain and confusion. HR is 128/min, BP 78/45 mmHg, RR 30/min and lactate 5.1 mmol/L. Urinalysis suggests infection; bedside ultrasound shows right hydronephrosis with a proximal ureteric stone. An ambulance is available to transfer to a centre with emergency urology.",
+    "ask": "Which combined plan best addresses the immediate threat?",
+    "options": [
+      "Start oral antibiotics and arrange elective stone removal after inflammatory markers normalise.",
+      "Give intravenous fluids only until renal function improves enough to permit contrast imaging.",
+      "Initiate sepsis resuscitation, prompt IV antibiotics and urgent drainage of the infected obstruction.",
+      "Wait for the urine culture result before involving urology to ensure a targeted intervention.",
+      "Administer diuretics to increase urine flow and avoid procedural intervention during active infection."
+    ],
+    "key": "C",
+    "explanations": [
+      "Oral outpatient treatment cannot manage shock or an infected obstructed collecting system. Effective source control and parenteral antibiotics are urgent.",
+      "Fluids are necessary but insufficient: infection persists behind the obstruction. Delaying antibiotics and urological drainage for imaging or renal function risks irreversible shock.",
+      "Correct: activate sepsis response, take cultures if feasible without delaying antibiotics, give IV antimicrobials and haemodynamic resuscitation, and urgently arrange decompression by stent or nephrostomy. Definitive stone treatment follows sepsis control.",
+      "Culture-directed therapy follows initial broad-spectrum treatment. Waiting for results prolongs ongoing bacteraemia and shock; emergency specialist transfer can occur in parallel.",
+      "Diuretics do not reliably drain an obstructed infected kidney and may worsen hypovolaemia. Mechanical decompression is required when infection and obstruction coexist."
+    ],
+    "pearl": "An infected obstructed kidney is both septic shock and an emergency source-control problem—antibiotics alone are not enough.",
+    "pivot": "An uncomplicated non-infected ureteric stone with stable observations may follow analgesia, observation or elective intervention, depending on size and obstruction.",
+    "management": {
+      "steps": [
+        [
+          "Resuscitate",
+          "Activate sepsis pathway, obtain IV access, cultures, lactate and appropriate fluid resuscitation with frequent perfusion review."
+        ],
+        [
+          "Treat infection",
+          "Administer prompt broad-spectrum IV antibiotics according to local resistance and renal function."
+        ],
+        [
+          "Relieve obstruction",
+          "Call emergency urology/interventional radiology for urgent stent or nephrostomy drainage; transfer as needed."
+        ],
+        [
+          "Review",
+          "Monitor vasopressor requirement, renal function, cultures, lactate and definitive stone plan once stabilised."
+        ]
+      ],
+      "safety": "Do not delay antibiotics or decompression for CT contrast, final cultures or spontaneous stone passage.",
+      "local": "Australian sepsis clinical care standard and emergency urological source-control guidance."
+    },
+    "source": "https://www.safetyandquality.gov.au/standards/clinical-care-standards/sepsis-clinical-care-standard",
+    "context": "Advanced integrated clinical decisions"
+  },
+  {
+    "n": 44,
+    "domain": "Paediatric emergency medicine",
+    "skill": "Possible meningococcal sepsis / lumbar puncture contraindication",
+    "stem": "A 5-year-old is brought to the emergency department with fever, progressive lethargy and a spreading non-blanching rash. HR is 160/min, capillary refill 5 seconds and BP 78/42 mmHg. A junior doctor proposes lumbar puncture immediately to confirm meningitis before the first antibiotic dose.",
+    "ask": "What should be done instead?",
+    "options": [
+      "Perform a lumbar puncture while another clinician prepares IV fluids and oxygen.",
+      "Wait for a platelet count before giving antibiotics in case meningococcal disease is present.",
+      "Perform CT brain first because imaging must precede all lumbar punctures in febrile children.",
+      "Treat suspected meningococcal sepsis now with resuscitation and antibiotics, deferring lumbar puncture.",
+      "Give oral antibiotics while arranging outpatient reassessment after hydration and observation."
+    ],
+    "key": "D",
+    "explanations": [
+      "The child is shocked, making immediate lumbar puncture unsafe and unnecessary for initial treatment. The priority is stabilisation, not obtaining CSF before antibiotics.",
+      "Blood tests including FBC and culture should be obtained rapidly if they do not delay treatment, but antibiotic delivery must not wait for platelet results when sepsis is likely.",
+      "Neuroimaging does not treat septic shock, and routine CT before LP is not indicated. In this unstable child, LP is deferred regardless of whether a scan can be arranged.",
+      "Correct: recognise likely invasive meningococcal disease, isolate as appropriate, activate paediatric resuscitation, obtain blood cultures if quickly possible, give immediate empirical IV antibiotics and support circulation and breathing. Delay LP until clinically stable and only if indicated.",
+      "Oral treatment and outpatient review are wholly inappropriate in a child with poor perfusion, hypotension and purpura. This presentation demands immediate hospital-level resuscitation."
+    ],
+    "pearl": "In suspected meningococcal sepsis, treat first; shock is a reason to defer LP, not a reason to delay antibiotics.",
+    "pivot": "A stable child with suspected meningitis and no contraindications may undergo timely lumbar puncture, provided it does not delay empiric treatment.",
+    "management": {
+      "steps": [
+        [
+          "Recognise and call",
+          "Activate emergency paediatric/sepsis response; assess airway, breathing, circulation and neurological state."
+        ],
+        [
+          "Treat now",
+          "Administer age-appropriate empiric IV antibiotics immediately and begin shock resuscitation per local protocol."
+        ],
+        [
+          "Investigate safely",
+          "Draw blood cultures and relevant bloods rapidly; defer LP while unstable."
+        ],
+        [
+          "Escalate",
+          "Involve paediatric ICU and public health services for ongoing treatment and contact prophylaxis advice."
+        ]
+      ],
+      "safety": "A non-blanching rash with poor perfusion is an emergency; do not delay antibiotics for LP, CT or lab confirmation.",
+      "local": "Royal Children's Hospital meningococcal infection and lumbar puncture clinical guidelines."
+    },
+    "source": "https://www.rch.org.au/clinicalguide/guideline_index/Meningococcal_infection/",
+    "context": "Advanced integrated clinical decisions"
+  },
+  {
+    "n": 45,
+    "domain": "Psychiatry & women's health",
+    "skill": "Postpartum psychosis / mother-infant safety",
+    "stem": "A 29-year-old, ten days after her first birth, has slept only a few hours over four nights. She believes her baby has divine powers, speaks rapidly and reports hearing a voice instructing her to carry the infant outside at night to 'protect' him. Her partner is frightened; she refuses to attend psychiatric care because she feels unusually well.",
+    "ask": "Which immediate response is most appropriate?",
+    "options": [
+      "Reassure the partner this is typical baby blues and arrange review after several days of sleep.",
+      "Offer an antidepressant as the primary treatment and allow unsupervised home care of the baby.",
+      "Arrange routine psychology referral once the mother recognises that her beliefs are unusual.",
+      "Advise the partner to avoid confronting the beliefs and wait for spontaneous resolution at home.",
+      "Arrange emergency psychiatric and medical assessment with immediate mother-infant safety measures."
+    ],
+    "key": "E",
+    "explanations": [
+      "Baby blues cause transient tearfulness and mood lability, not delusions, auditory hallucinations and disorganised high-risk behaviour. Delaying emergency review endangers both people.",
+      "Antidepressant monotherapy does not treat acute postpartum psychosis and can worsen mania in susceptible people. A comprehensive urgent mood and psychosis assessment is required.",
+      "Insight may be severely impaired during acute psychosis, so waiting for voluntary recognition and routine psychotherapy is unsafe. Urgency depends on risk, not consent to a standard clinic.",
+      "Family support is essential, but home observation without professional assessment cannot reliably protect the infant or manage rapidly changing psychotic symptoms.",
+      "Correct: treat postpartum psychosis as a psychiatric emergency. Arrange urgent perinatal psychiatry/ED assessment, assess suicide and infant-harm risk, ensure the infant is supervised and arrange inpatient care including a mother-baby unit if safe and available."
+    ],
+    "pearl": "New delusions or hallucinations in the days after delivery are not normal baby blues; postpartum psychosis is an emergency.",
+    "pivot": "Brief tearfulness with preserved reality testing, normal judgement and no safety concerns may represent baby blues and warrant support and planned follow-up.",
+    "management": {
+      "steps": [
+        [
+          "Secure safety",
+          "Arrange immediate supervision of infant care and do not leave an acutely psychotic parent caring alone while risk is being assessed."
+        ],
+        [
+          "Assess",
+          "Urgent perinatal psychiatric evaluation including mood, psychosis, sleep, suicidality, infant-harm thoughts and medical mimics."
+        ],
+        [
+          "Treat",
+          "Facilitate hospital care and specialist-guided antipsychotic/mood stabilising treatment, managing agitation as necessary."
+        ],
+        [
+          "Plan family care",
+          "Coordinate partner support, appropriate mother-baby admission where possible and subsequent relapse-prevention follow-up."
+        ]
+      ],
+      "safety": "The mother may lack insight, and infant safety planning must be practical and non-accusatory.",
+      "local": "Queensland Health Primary Clinical Care Manual postpartum psychosis emergency management."
+    },
+    "source": "https://www.health.qld.gov.au/__data/assets/pdf_file/0022/1447051/PCCM_full.pdf",
+    "context": "Advanced integrated clinical decisions"
   }
 ]
