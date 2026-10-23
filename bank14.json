@@ -4558,5 +4558,245 @@
       "local": "Royal Children's Hospital Melbourne Trauma Service: Abdominal injury, delayed splenic rupture section."
     },
     "source": "https://www.rch.org.au/trauma-service/manual/abdominal-injury/"
+  },
+  {
+    "n": 96,
+    "domain": "Emergency general surgery",
+    "skill": "Perforated peptic ulcer / peritonitis requiring operative source control",
+    "context": "Advanced final-year clinical prioritisation",
+    "stem": "A 62-year-old taking regular ibuprofen develops sudden severe epigastric pain that becomes generalised. He lies still with a rigid abdomen, pulse 124/min and BP 98/62 mmHg. Upright chest radiography shows free air under the right hemidiaphragm. He has no history of recent abdominal surgery.",
+    "ask": "Which treatment plan is most appropriate?",
+    "options": [
+      "Resuscitate, start IV antibiotics and arrange urgent surgical source control for perforated viscus.",
+      "Give a high-dose oral proton pump inhibitor and discharge after two hours of observation.",
+      "Perform elective outpatient endoscopy before seeking surgery because peptic ulcer disease is likely.",
+      "Start oral Helicobacter pylori eradication therapy alone because this treats the underlying ulcer cause.",
+      "Prescribe antispasmodics and repeat the abdominal examination next week once pain settles."
+    ],
+    "key": "A",
+    "explanations": [
+      "Correct: free intraperitoneal air with sudden peritonitis strongly suggests perforated peptic ulcer. Initiate ABC resuscitation, nil by mouth, IV fluids, broad antibiotics, gastric decompression when indicated and urgent surgical assessment for repair.",
+      "Acid suppression helps ulcer disease but cannot close a perforation or treat contaminated peritoneum. Discharge in evolving shock risks sepsis and death.",
+      "Endoscopy is not the priority in frank perforation with peritonitis and can introduce insufflation risks. Operative assessment should not wait for elective luminal investigation.",
+      "H. pylori eradication may reduce later recurrence if infection is confirmed, but oral therapy alone cannot treat an acute full-thickness perforation.",
+      "Analgesia is appropriate during resuscitation, yet delaying definitive treatment for days in a rigid abdomen with free air is unsafe."
+    ],
+    "pearl": "Sudden rigid abdomen plus pneumoperitoneum indicates perforated hollow viscus and time-critical surgical source control.",
+    "pivot": "An uncomplicated dyspeptic ulcer without peritoneal signs may be managed with acid suppression and appropriate outpatient investigation.",
+    "management": {
+      "steps": [
+        [
+          "Resuscitate",
+          "Assess ABCs, give IV access, fluids, analgesia and continuous haemodynamic monitoring."
+        ],
+        [
+          "Contain contamination",
+          "Keep nil by mouth, administer IV broad-spectrum antibiotics and IV acid suppression as indicated."
+        ],
+        [
+          "Escalate",
+          "Call emergency general surgery and anaesthesia urgently and prepare for operative repair."
+        ],
+        [
+          "Prevent recurrence",
+          "After recovery review NSAID exposure, H. pylori testing and ulcer risk reduction."
+        ]
+      ],
+      "safety": "Do not postpone surgical assessment for routine endoscopy or outpatient ulcer therapy in peritonitis.",
+      "local": "World Society of Emergency Surgery perforated peptic ulcer guidelines, applicable to Australian emergency surgical pathways."
+    },
+    "source": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6947898/"
+  },
+  {
+    "n": 97,
+    "domain": "Addiction medicine & antenatal care",
+    "skill": "Opioid agonist therapy in pregnancy / avoid abrupt withdrawal",
+    "context": "Advanced final-year clinical prioritisation",
+    "stem": "A 25-year-old at 18 weeks' gestation is stable on prescribed methadone for opioid use disorder and has stopped using illicit opioids. She worries that the baby may experience neonatal withdrawal and asks to stop methadone abruptly tonight. She has reliable antenatal follow-up and no intoxication or respiratory compromise.",
+    "ask": "What is the most appropriate recommendation?",
+    "options": [
+      "Stop methadone immediately and substitute a short course of benzodiazepines for withdrawal symptoms.",
+      "Continue supervised opioid agonist therapy with coordinated antenatal and addiction follow-up.",
+      "Switch every stable pregnant patient from methadone to naltrexone without specialist review.",
+      "Lower methadone to a token dose regardless of cravings to prevent all neonatal withdrawal.",
+      "Avoid discussion of neonatal care because maintenance therapy removes any infant monitoring need."
+    ],
+    "key": "B",
+    "explanations": [
+      "Abrupt cessation can cause maternal withdrawal, relapse and fetal stress. Unplanned detoxification has poorer retention and does not provide a safer pregnancy pathway.",
+      "Correct: continuing methadone or other appropriate opioid agonist treatment reduces illicit use and supports maternal stability. Coordinate dosing, psychosocial care, obstetric review and neonatal withdrawal preparation.",
+      "Naltrexone is not a routine substitute for established methadone therapy in pregnancy. Changing agents without a structured specialist plan can precipitate withdrawal or relapse.",
+      "Undertreatment increases craving and relapse risk. Doses should be individualised to prevent withdrawal, sometimes requiring adjustment as pregnancy progresses.",
+      "Neonatal opioid withdrawal can still occur with maternal maintenance treatment, but it is manageable with planned observation and family-centred care. Counselling improves preparation and support."
+    ],
+    "pearl": "Stable methadone or buprenorphine treatment is generally continued during pregnancy; maternal withdrawal and relapse are important harms.",
+    "pivot": "If the patient is acutely oversedated or has respiratory compromise, urgent toxicity assessment takes precedence over routine maintenance dosing.",
+    "management": {
+      "steps": [
+        [
+          "Review",
+          "Assess current dose, adherence, cravings, withdrawal symptoms, other substance use and psychosocial needs."
+        ],
+        [
+          "Continue treatment",
+          "Coordinate ongoing methadone with an experienced prescriber; adjust dose if clinically needed."
+        ],
+        [
+          "Integrate care",
+          "Provide antenatal screening, infectious disease testing, mental-health support and harm reduction."
+        ],
+        [
+          "Plan newborn care",
+          "Discuss neonatal withdrawal monitoring, breastfeeding suitability and postpartum relapse prevention."
+        ]
+      ],
+      "safety": "Do not abruptly discontinue maintenance opioids or change to an antagonist without addiction-obstetric specialist guidance.",
+      "local": "RACGP Australian Family Physician: Managing opioid dependence in pregnancy; Australian opioid treatment practice."
+    },
+    "source": "https://www.racgp.org.au/afp/2013/october/opioid-dependence-in-pregnancy"
+  },
+  {
+    "n": 98,
+    "domain": "Psychiatry & dermatological emergencies",
+    "skill": "Lamotrigine-associated SJS / stop causative medicine immediately",
+    "context": "Advanced final-year clinical prioritisation",
+    "stem": "A 24-year-old with bipolar disorder started lamotrigine three weeks ago. He presents with fever, severe skin pain, dusky target-like lesions, mouth ulcers and red painful eyes. Some epidermis is beginning to blister. He is alert but dehydrated. A colleague suggests waiting for biopsy confirmation before changing his mood stabiliser.",
+    "ask": "Which immediate action is most appropriate?",
+    "options": [
+      "Continue lamotrigine until histology proves SJS because sudden withdrawal risks mood destabilisation.",
+      "Treat as uncomplicated urticaria with antihistamines and review after the weekend.",
+      "Stop lamotrigine immediately and admit for urgent specialist SJS/TEN supportive care.",
+      "Increase the lamotrigine dose because rash often resolves when serum concentrations stabilise.",
+      "Give topical steroid alone because mucosal involvement does not predict systemic complications."
+    ],
+    "key": "C",
+    "explanations": [
+      "Continuing the likely causative medicine can increase epidermal injury and mortality. Histology may support diagnosis but is not required before withdrawal.",
+      "Urticaria typically produces transient itchy wheals without painful dusky lesions, blistering or mucosal erosions. This presentation needs hospital assessment.",
+      "Correct: stop lamotrigine at once, assess fluid status and extent of skin/mucosal disease, and involve dermatology, ophthalmology and an appropriate burns/critical-care service. Provide supportive care and document a severe drug reaction.",
+      "Dose escalation would increase exposure to a suspected causative drug and is contraindicated. Lamotrigine titration errors are a recognised risk factor for severe rash.",
+      "Topical treatments cannot replace systemic monitoring, fluid care and specialist assessment when mucosa and epidermis are involved. Eye injury can have permanent consequences."
+    ],
+    "pearl": "Lamotrigine plus painful rash and mucosal lesions in the first weeks is SJS/TEN until excluded; stop the drug immediately.",
+    "pivot": "A localised benign rash clearly attributable to another cause still warrants careful medication review, but lacks systemic and mucosal red flags.",
+    "management": {
+      "steps": [
+        [
+          "Stop culprit",
+          "Withhold lamotrigine immediately and record a suspected severe cutaneous adverse drug reaction."
+        ],
+        [
+          "Stabilise",
+          "Assess airway, hydration, skin detachment, pain, temperature and electrolyte status."
+        ],
+        [
+          "Escalate",
+          "Seek urgent dermatology, ophthalmology and burns/ICU input for specialist supportive management."
+        ],
+        [
+          "Plan alternatives",
+          "Coordinate psychiatric or neurology treatment without rechallenging after confirmed SJS/TEN."
+        ]
+      ],
+      "safety": "Do not restart lamotrigine after confirmed SJS/TEN; do not wait for biopsy before stopping a suspected culprit.",
+      "local": "Australian Commission on Safety and Quality in Health Care lamotrigine product safety information (October 2026)."
+    },
+    "source": "https://www.safetyandquality.gov.au/medicine-finder/apx-lamotrigine"
+  },
+  {
+    "n": 99,
+    "domain": "Maternal fetal medicine & hypertensive emergencies",
+    "skill": "Severe pre-eclampsia at 27 weeks / stabilise before delivery planning",
+    "context": "Advanced final-year clinical prioritisation",
+    "stem": "A 34-year-old at 27+2 weeks has new severe hypertension 184/116 mmHg, headache, proteinuria and platelets 91 × 10⁹/L. The fetus is growth-restricted with abnormal umbilical Doppler, but CTG currently has no acute bradycardia. She is conscious with no seizure. A junior doctor asks to send her directly for caesarean before giving medication.",
+    "ask": "Which immediate sequence is safest?",
+    "options": [
+      "Proceed straight to caesarean under general anaesthesia without addressing maternal blood pressure.",
+      "Give antenatal steroids only and postpone treatment of severe hypertension until tomorrow morning.",
+      "Observe fetal CTG alone because a viable fetal heart rate excludes urgent maternal complications.",
+      "Stabilise severe hypertension and seizure risk, then make an urgent senior-led delivery plan.",
+      "Discharge after a single normal repeat blood pressure because pre-eclampsia resolves with rest."
+    ],
+    "key": "D",
+    "explanations": [
+      "Uncontrolled severe hypertension increases maternal intracranial haemorrhage risk and complicates anaesthesia. Resuscitation and stabilisation should precede a controlled birth whenever possible.",
+      "Antenatal corticosteroids are useful if preterm birth is anticipated, but they cannot replace immediate maternal antihypertensive treatment and assessment for magnesium sulfate.",
+      "A currently reassuring CTG does not make severe maternal hypertension, thrombocytopenia and neurological symptoms safe. Maternal disease may worsen abruptly.",
+      "Correct: urgently control BP, give magnesium sulfate when indicated, assess HELLP and organ function, and coordinate senior obstetric, anaesthetic, neonatal and ICU input for timing and route of birth after stabilisation.",
+      "Pre-eclampsia with severe features requires hospital-level care. One improved reading does not negate sustained severe hypertension and organ involvement."
+    ],
+    "pearl": "With severe pre-eclampsia, maternal stabilisation comes before delivery logistics; urgent birth planning follows immediately.",
+    "pivot": "At <34 weeks with stable mother and fetus and no severe deterioration, carefully selected inpatient expectant management may be possible.",
+    "management": {
+      "steps": [
+        [
+          "Stabilise",
+          "Repeat BP and neurological assessment, secure access, control severe BP and assess magnesium sulfate indication."
+        ],
+        [
+          "Investigate",
+          "Check platelets, liver/renal function, coagulation and maternal fluid/respiratory status."
+        ],
+        [
+          "Assess fetus",
+          "Continue CTG and Doppler review, consider antenatal corticosteroids and magnesium neuroprotection per gestation."
+        ],
+        [
+          "Plan delivery",
+          "Hold urgent multidisciplinary discussion on maternal/fetal triggers, timing, location and safe anaesthesia."
+        ]
+      ],
+      "safety": "Do not rush an unstable hypertensive patient to anaesthesia without resuscitation; do not defer maternal treatment for fetal steroids.",
+      "local": "Safer Care Victoria severe pre-eclampsia management good-practice point (March 2025) and NSW ACI pregnancy hypertension guide (2026)."
+    },
+    "source": "https://www.safercare.vic.gov.au/publications/eclampsia-and-severe-preeclampsia"
+  },
+  {
+    "n": 100,
+    "domain": "Endocrinology & acute gastroenterology",
+    "skill": "Hypertriglyceridaemic pancreatitis with DKA / treat both acute processes",
+    "context": "Advanced final-year clinical prioritisation",
+    "stem": "A 38-year-old with poorly controlled type 2 diabetes presents with severe epigastric pain radiating to the back, vomiting and Kussmaul breathing. Glucose is 27 mmol/L, ketones 5.8 mmol/L, pH 7.18 and lipase is elevated. Serum is markedly lipaemic with triglycerides 29 mmol/L. Potassium is 4.6 mmol/L and he is clinically dehydrated.",
+    "ask": "Which immediate treatment approach is most appropriate?",
+    "options": [
+      "Start oral fenofibrate alone and repeat the blood gas after several hours of observation.",
+      "Arrange emergency pancreatic surgery because severe triglyceride elevation proves infected necrosis.",
+      "Administer routine high-dose heparin solely to release lipoprotein lipase and lower triglycerides.",
+      "Give a large insulin bolus without fluids because insulin alone rapidly treats every DKA complication.",
+      "Start protocol-based DKA resuscitation with IV fluids, insulin and electrolyte monitoring plus pancreatitis care."
+    ],
+    "key": "E",
+    "explanations": [
+      "Fibrates are useful for longer-term triglyceride reduction but do not treat active ketoacidosis, dehydration or acute pancreatitis. Hospital resuscitation is required.",
+      "Hypertriglyceridaemic pancreatitis does not imply infected necrosis or an immediate surgical indication. Initial care is medical unless a separate complication develops.",
+      "Heparin is not a routine triglyceride-lowering strategy in this setting and may cause bleeding; its lipoprotein-lipase effects are transient. DKA-specific treatment is essential.",
+      "Uncontrolled insulin boluses can cause dangerous potassium and glucose shifts. DKA protocols require initial fluid assessment, monitored infusion and serial electrolyte management.",
+      "Correct: manage DKA with careful isotonic fluids, IV insulin after potassium review, frequent glucose/ketone/electrolyte checks and supportive pancreatitis care. Insulin also lowers triglycerides; arrange endocrine/gastroenterology input for longer-term prevention."
+    ],
+    "pearl": "DKA and severe hypertriglyceridaemia can coexist with pancreatitis; insulin treats ketoacidosis and helps clear triglycerides.",
+    "pivot": "If lipase is normal and there is no characteristic pain or imaging, marked triglycerides alone do not establish pancreatitis.",
+    "management": {
+      "steps": [
+        [
+          "Resuscitate",
+          "Assess shock, pain, fluid deficit, urine output and need for high-dependency care."
+        ],
+        [
+          "Treat DKA",
+          "Use local IV fluid and insulin infusion protocols with potassium and glucose monitoring."
+        ],
+        [
+          "Support pancreas",
+          "Provide analgesia, antiemetics, nutrition planning and complication surveillance."
+        ],
+        [
+          "Prevent recurrence",
+          "Investigate secondary lipid causes, plan triglyceride-lowering therapy and improve long-term diabetes control."
+        ]
+      ],
+      "safety": "Insulin can precipitate hypokalaemia; check potassium before and during infusion and avoid reflex heparin or surgery.",
+      "local": "NSW ACI DKA/HHS emergency clinical tool and RACGP AJGP hypertriglyceridaemia review (November 2025)."
+    },
+    "source": "https://aci.health.nsw.gov.au/networks/eci/clinical/tools/dka-hhs"
   }
 ]
