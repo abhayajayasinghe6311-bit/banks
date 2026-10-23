@@ -3358,5 +3358,485 @@
       "local": "RACGP type 2 diabetes recommendations updated November 2024: SGLT2 therapy reduces CKD progression at eGFR ≥20 with albuminuria."
     },
     "source": "https://www.racgp.org.au/clinical-resources/clinical-guidelines/key-racgp-guidelines/view-all-racgp-guidelines/management-of-type-2-diabetes/summary-of-recommendations"
+  },
+  {
+    "n": 71,
+    "domain": "Obstetrics & haematology",
+    "skill": "Obstetric antiphospholipid syndrome / preventing recurrent pregnancy loss",
+    "context": "Advanced final-year integrated management",
+    "stem": "A 31-year-old at 7 weeks' gestation has had three consecutive unexplained first-trimester miscarriages. Lupus anticoagulant was positive on two tests 13 weeks apart; anticardiolipin IgG is persistently high. She has never had a venous or arterial thrombosis, has normal platelets and no bleeding. An early scan confirms a viable intrauterine pregnancy.",
+    "ask": "Which intervention is most likely to improve the chance of live birth?",
+    "options": [
+      "Commence low-dose aspirin and prophylactic low-molecular-weight heparin with specialist antenatal review.",
+      "Prescribe therapeutic-dose warfarin throughout pregnancy because antibodies confer a high thrombotic risk.",
+      "Use aspirin alone until the fetal anatomy scan excludes congenital abnormalities and growth restriction.",
+      "Defer all antithrombotic treatment until a placental Doppler abnormality confirms developing insufficiency.",
+      "Arrange prophylactic platelet transfusions every month to prevent antibody-mediated placental thrombosis."
+    ],
+    "key": "A",
+    "explanations": [
+      "Correct: recurrent pregnancy loss with persistently positive antiphospholipid tests supports obstetric APS. Low-dose aspirin combined with prophylactic LMWH from early pregnancy improves outcomes; coordinate dosing and postpartum thrombosis prevention with obstetric and haematology teams.",
+      "Warfarin crosses the placenta and risks fetal harm; therapeutic-intensity anticoagulation is generally reserved for APS with a thrombotic history or other specific indications, not isolated obstetric APS.",
+      "Aspirin alone does not provide the same evidence-supported live-birth benefit as aspirin plus heparin in established obstetric APS. The indication exists now rather than after the anomaly scan.",
+      "Waiting for abnormal Dopplers misses the opportunity for early placental protection. APS-related pregnancy loss can occur before detectable fetal growth restriction or Doppler changes.",
+      "Platelet transfusion treats selected severe thrombocytopenic bleeding, not antiphospholipid antibody-mediated pregnancy loss. Routine transfusions add risks without preventing placental thrombosis."
+    ],
+    "pearl": "Distinguish obstetric APS without thrombosis from thrombotic APS: anticoagulant intensity and postpartum plans differ.",
+    "pivot": "If antiphospholipid antibodies are absent and loss is unexplained, routine aspirin/heparin has not shown live-birth benefit.",
+    "management": {
+      "steps": [
+        [
+          "Confirm phenotype",
+          "Review pregnancy-loss history, repeat antibody timing, thrombosis history and current pregnancy viability."
+        ],
+        [
+          "Prevent recurrence",
+          "Coordinate low-dose aspirin and prophylactic LMWH promptly with maternal-fetal medicine and haematology."
+        ],
+        [
+          "Surveil pregnancy",
+          "Monitor fetal growth, blood pressure, pre-eclampsia risk, bleeding and anticoagulant tolerance."
+        ],
+        [
+          "Plan delivery",
+          "Arrange neuraxial-anaesthesia anticoagulant timing and individualised postpartum prophylaxis and follow-up."
+        ]
+      ],
+      "safety": "Do not substitute warfarin for LMWH in early pregnancy or use therapeutic-dose heparin reflexively without thrombotic indications.",
+      "local": "Australasian recurrent pregnancy loss clinical management guideline, 2024; individualise aspirin and LMWH dosing locally."
+    },
+    "source": "https://obgyn.onlinelibrary.wiley.com/doi/10.1111/ajo.13820"
+  },
+  {
+    "n": 72,
+    "domain": "Adolescent gynaecology & endocrinology",
+    "skill": "Adolescent PCOS / avoid ultrasound overdiagnosis",
+    "context": "Advanced final-year diagnostic reasoning",
+    "stem": "A 16-year-old, three years after menarche, reports persistent cycles 60–90 days apart, progressive hirsutism and troublesome acne. Pregnancy is excluded, and thyroid function, prolactin and 17-hydroxyprogesterone are normal. An ultrasound requested elsewhere shows multiple small follicles, and she worries this alone proves severe ovarian disease.",
+    "ask": "What is the most appropriate diagnostic approach at this stage?",
+    "options": [
+      "Diagnose PCOS solely from ovarian follicle number because adolescent cycles are usually irregular.",
+      "Assess ovulatory dysfunction and hyperandrogenism without using ultrasound morphology as a diagnostic criterion.",
+      "Use anti-Müllerian hormone instead of clinical features because it is more reliable before adulthood.",
+      "Reassure that menstrual irregularity at any point after menarche cannot indicate endocrine pathology.",
+      "Start infertility medication immediately before confirming a diagnosis or discussing her current goals."
+    ],
+    "key": "B",
+    "explanations": [
+      "Polycystic-appearing ovaries are common during normal adolescent maturation and are not diagnostic. The sonographic appearance should not displace careful assessment of symptoms and alternative endocrine causes.",
+      "Correct: adolescent PCOS diagnosis requires both persistent ovulatory dysfunction and clinical or biochemical hyperandrogenism after exclusion of mimics. Ultrasound and AMH are not recommended for diagnosis within eight years of menarche.",
+      "AMH may substitute for ultrasound in some adults, but it should not be used to diagnose adolescent PCOS. Its cut-offs and physiological variation can promote false-positive labels.",
+      "Some cycle irregularity is physiological early after menarche, but sustained oligomenorrhoea at three years with hirsutism warrants evaluation. Dismissing the presentation misses metabolic and psychological needs.",
+      "Ovulation induction is for appropriately assessed infertility, not a first response to a teenager seeking diagnostic clarity and symptom relief. Management should reflect her preferences and contraception needs."
+    ],
+    "pearl": "For adolescents, require both irregular cycles and hyperandrogenism; neither ovarian ultrasound nor AMH establishes PCOS.",
+    "pivot": "If only one feature is present, label 'at increased risk' and arrange reassessment rather than prematurely diagnosing PCOS.",
+    "management": {
+      "steps": [
+        [
+          "Clarify features",
+          "Document cycle intervals, hyperandrogenism, pubertal timing, medications and pregnancy possibility."
+        ],
+        [
+          "Exclude mimics",
+          "Assess thyroid, prolactin, non-classic CAH and other causes when clinically indicated."
+        ],
+        [
+          "Support symptoms",
+          "Discuss acne/hirsutism options, cycle protection, lifestyle and mental health without weight stigma."
+        ],
+        [
+          "Follow longitudinally",
+          "Screen metabolic risks and revisit diagnostic criteria as reproductive maturity progresses."
+        ]
+      ],
+      "safety": "Do not interpret multifollicular ovaries or a single elevated AMH as proof of adolescent PCOS.",
+      "local": "Monash-led 2023 International Evidence-based PCOS Guideline, adolescent diagnostic criteria."
+    },
+    "source": "https://www.monash.edu/__data/assets/pdf_file/0003/3379521/Evidence-Based-Guidelines-2023.pdf"
+  },
+  {
+    "n": 73,
+    "domain": "General practice & breast surgery",
+    "skill": "Palpable breast lump / discordant triple assessment",
+    "context": "Advanced final-year cancer safety",
+    "stem": "A 46-year-old notices a new firm, irregular 2-cm breast lump. Diagnostic mammography and targeted ultrasound are reported as probably benign, but the palpable lesion remains clinically suspicious and a small ipsilateral axillary node is palpable. She asks whether reassuring imaging means biopsy can safely be omitted.",
+    "ask": "What is the safest next step in investigating this discordance?",
+    "options": [
+      "Repeat routine population screening in two years because diagnostic imaging is already reassuring.",
+      "Prescribe empirical antibiotics and repeat imaging only if the lump becomes tender or red.",
+      "Arrange breast specialist assessment and image-guided or clinically directed core biopsy despite benign imaging.",
+      "Reassure that the axillary node is reactive and discharge after one normal mammogram report.",
+      "Request serum tumour markers first because normal values would exclude an invasive breast malignancy."
+    ],
+    "key": "C",
+    "explanations": [
+      "Population screening is designed for asymptomatic people; a suspicious palpable mass requires diagnostic assessment now. A long interval could delay detection of a mammographically occult tumour.",
+      "Antibiotics are not justified without convincing infective features such as erythema, warmth or fever. A hard irregular mass and node are not typical uncomplicated mastitis.",
+      "Correct: clinical examination, imaging and tissue sampling form the triple assessment. A suspicious or discordant component warrants specialist review and tissue diagnosis; benign imaging cannot overrule persistent concerning clinical findings.",
+      "Axillary lymphadenopathy alongside a suspicious mass raises rather than resolves concern. Even technically adequate imaging can miss malignancy, particularly with dense tissue or certain tumour types.",
+      "Serum tumour markers have inadequate sensitivity and specificity to rule out early breast cancer. They do not replace histopathology when examination remains suspicious."
+    ],
+    "pearl": "The triple assessment is concordance-based; a suspicious clinical examination still needs resolution despite reassuring imaging.",
+    "pivot": "A soft, mobile lump with concordant benign examination and imaging may follow a different safety-net pathway.",
+    "management": {
+      "steps": [
+        [
+          "Examine",
+          "Document mass site, size, mobility, skin and nipple changes plus axillary and supraclavicular nodes."
+        ],
+        [
+          "Reconcile tests",
+          "Review the quality and lesion concordance of targeted ultrasound and diagnostic mammography."
+        ],
+        [
+          "Obtain tissue",
+          "Refer promptly for specialist-directed core biopsy of the palpable abnormality and suspicious node."
+        ],
+        [
+          "Close loop",
+          "Track pathology, arrange multidisciplinary review if malignant and communicate results with clear follow-up."
+        ]
+      ],
+      "safety": "Do not substitute screening intervals, tumour markers or empirical antibiotics for biopsy of a persistently suspicious mass.",
+      "local": "Cancer Australia triple-test guidance for investigation of new breast symptoms."
+    },
+    "source": "https://www.canceraustralia.gov.au/cancer-types/breast-cancer/health-professionals/breast-cancer-diagnosis"
+  },
+  {
+    "n": 74,
+    "domain": "Endocrinology & general practice",
+    "skill": "Primary adrenal insufficiency / confirm and localise",
+    "context": "Advanced final-year endocrine investigation",
+    "stem": "A 35-year-old reports months of fatigue, postural dizziness, salt craving and weight loss. Examination shows diffuse hyperpigmentation, BP 94/58 mmHg without shock, and laboratory tests show sodium 128 mmol/L and potassium 5.5 mmol/L. At 8 am, cortisol is low and ACTH markedly elevated; she is alert and tolerating oral intake.",
+    "ask": "Which investigation best confirms the suspected endocrine diagnosis when clinically stable?",
+    "options": [
+      "Perform an oral glucose tolerance test to exclude diabetes as the cause of her weight loss.",
+      "Obtain a pituitary MRI before testing because the ACTH result suggests central adrenal failure.",
+      "Measure a random afternoon cortisol repeatedly and treat only if every result remains low.",
+      "Arrange a short ACTH stimulation test using laboratory-specific cortisol response thresholds.",
+      "Order urinary catecholamines as the definitive investigation for adrenal cortex insufficiency."
+    ],
+    "key": "D",
+    "explanations": [
+      "Diabetes can cause weight loss, but hyperpigmentation, hyperkalaemia and high ACTH strongly point to primary adrenal failure. Glucose testing would not establish cortisol reserve.",
+      "High ACTH suggests loss of adrenal negative feedback, not primary pituitary ACTH deficiency. Pituitary MRI is reserved for suspected central disease or relevant neurological features.",
+      "Random cortisol is influenced by circadian rhythm and illness and is not a robust confirmatory strategy. A morning sample and dynamic testing are more interpretable.",
+      "Correct: the short Synacthen (ACTH stimulation) test evaluates adrenal cortisol reserve in a stable patient. Elevated baseline ACTH with inadequate stimulated cortisol supports primary adrenal insufficiency; interpret against the local assay.",
+      "Urinary catecholamines investigate selected catecholamine-secreting tumours, not adrenal cortical failure. They cannot explain the cortisol–ACTH pattern or confirm Addison disease."
+    ],
+    "pearl": "Low morning cortisol plus high ACTH points to primary adrenal insufficiency; Synacthen response confirms inadequate reserve.",
+    "pivot": "If hypotension, vomiting or altered consciousness develops, treat suspected adrenal crisis immediately without waiting for stimulation testing.",
+    "management": {
+      "steps": [
+        [
+          "Assess stability",
+          "Check haemodynamics, glucose, sodium, potassium and features of impending adrenal crisis."
+        ],
+        [
+          "Confirm",
+          "Arrange morning cortisol/ACTH review and short Synacthen test with assay-specific cut-offs."
+        ],
+        [
+          "Treat cause",
+          "Start supervised glucocorticoid replacement and mineralocorticoid when indicated; investigate autoimmunity."
+        ],
+        [
+          "Prevent crisis",
+          "Provide sick-day rules, emergency hydrocortisone plan, medical alert and endocrine follow-up."
+        ]
+      ],
+      "safety": "Never delay emergency parenteral hydrocortisone for confirmatory testing in a patient with suspected adrenal crisis.",
+      "local": "RCPA Manual short Synacthen test, reviewed February 2026; confirm assay-specific cut-offs."
+    },
+    "source": "https://www.rcpa.edu.au/Manuals/RCPA-Manual/Pathology-Tests/S/Short-Synacthen-test"
+  },
+  {
+    "n": 75,
+    "domain": "Neonatology & transfusion medicine",
+    "skill": "Neonatal alloimmune thrombocytopenia / intracranial haemorrhage prevention",
+    "context": "Advanced final-year neonatal emergencies",
+    "stem": "A well-looking term neonate develops widespread petechiae within hours of birth. Platelets are 9 × 10⁹/L, haemoglobin and coagulation studies are normal, and the mother has a normal platelet count. A previous sibling had unexplained severe neonatal thrombocytopenia. Cranial ultrasound has been requested but is not yet available.",
+    "ask": "What is the most appropriate immediate treatment and investigation strategy?",
+    "options": [
+      "Observe without treatment because the baby is clinically well and clotting studies are normal.",
+      "Give vitamin K alone and repeat the platelet count after routine discharge the next day.",
+      "Administer oral prednisolone to the mother to raise the newborn platelet count rapidly.",
+      "Delay platelet treatment until cranial imaging demonstrates an intracranial haemorrhage.",
+      "Urgently involve neonatology and transfusion medicine for compatible platelets and IV immunoglobulin."
+    ],
+    "key": "E",
+    "explanations": [
+      "Severe thrombocytopenia in an apparently well neonate can still cause catastrophic intracranial bleeding. A count below 10 × 10⁹/L requires urgent specialist treatment, not outpatient observation.",
+      "Vitamin K prevents vitamin-K-deficiency bleeding but does not correct alloimmune platelet destruction. Normal coagulation tests and profound isolated thrombocytopenia indicate a different mechanism.",
+      "Maternal oral steroids cannot rapidly treat the newborn's dangerously low platelet count. The baby needs immediate neonatal haemostatic support and diagnostic evaluation.",
+      "Waiting for intracranial bleeding defeats prevention; ultrasound is important but must not postpone indicated platelet support. Haemorrhage may be clinically silent early.",
+      "Correct: suspect fetal/neonatal alloimmune thrombocytopenia with severe isolated thrombocytopenia, normal maternal platelets and affected sibling. Urgently arrange appropriate platelet transfusion, IVIg when indicated, cranial imaging and maternal/paternal platelet-antigen studies."
+    ],
+    "pearl": "Severe isolated neonatal thrombocytopenia with normal maternal platelets suggests alloimmune destruction and silent intracranial bleeding risk.",
+    "pivot": "If the mother also has immune thrombocytopenia, neonatal thrombocytopenia may be autoimmune rather than alloimmune; management still depends on severity.",
+    "management": {
+      "steps": [
+        [
+          "Stabilise",
+          "Assess bleeding, neurological status and platelet count; minimise traumatic procedures."
+        ],
+        [
+          "Protect haemostasis",
+          "Urgently obtain compatible platelet support and consider IVIg under neonatal/transfusion protocols."
+        ],
+        [
+          "Investigate",
+          "Perform cranial ultrasound and HPA antibody/typing studies with transfusion specialists."
+        ],
+        [
+          "Plan recurrence",
+          "Arrange maternal-fetal medicine counselling because future pregnancies can be affected more severely."
+        ]
+      ],
+      "safety": "Do not defer platelet support for neuroimaging in a neonate with profound thrombocytopenia.",
+      "local": "Australian National Blood Authority Ig Governance criteria for neonatal alloimmune thrombocytopenia."
+    },
+    "source": "https://www.criteria.blood.gov.au/MedicalCondition/View/2715"
+  },
+  {
+    "n": 76,
+    "domain": "Psychiatry & longitudinal care",
+    "skill": "Borderline personality disorder / structured psychological treatment",
+    "context": "Advanced final-year psychiatry and safety",
+    "stem": "A 24-year-old with longstanding affective instability, impulsive self-injury, fear of abandonment and unstable relationships has no current psychosis or mania. After assessment, she denies imminent suicidal intent and collaborates on a safety plan. She asks for a treatment that builds skills to manage repeated interpersonal crises and self-harm urges.",
+    "ask": "Which ongoing therapeutic approach most directly addresses these difficulties?",
+    "options": [
+      "Offer structured dialectical behaviour therapy alongside collaborative risk assessment and continuity of care.",
+      "Prescribe long-term high-dose benzodiazepines as the main intervention for emotional regulation and impulsivity.",
+      "Recommend repeated brief admissions whenever interpersonal conflict arises, without outpatient skills training.",
+      "Use antipsychotic polypharmacy indefinitely because personality disorder symptoms imply underlying psychosis.",
+      "Advise avoidance of close relationships until distressing thoughts and emotions have completely disappeared."
+    ],
+    "key": "A",
+    "explanations": [
+      "Correct: DBT combines acceptance and change strategies, including distress tolerance, emotion regulation, mindfulness and interpersonal effectiveness. It is an evidence-supported structured therapy for recurrent self-harm and emotion dysregulation, integrated with ongoing safety assessment.",
+      "Benzodiazepines do not teach coping skills and can worsen disinhibition, dependence and overdose risk. Medication may target specific comorbid conditions but is not a substitute for psychotherapy.",
+      "Hospital admission can be necessary for acute safety, but automatic repeated admissions without a community treatment plan may undermine autonomy and continuity. Match crisis response to current risk.",
+      "BPD does not itself imply psychosis, and routine antipsychotic polypharmacy lacks a sound long-term rationale. Reassess for comorbid illness before considering targeted medication.",
+      "Avoidance of relationships reinforces isolation and does not build interpersonal effectiveness. DBT explicitly teaches safer communication, boundary setting and distress management within valued relationships."
+    ],
+    "pearl": "DBT develops skills in four areas: mindfulness, distress tolerance, emotion regulation and interpersonal effectiveness.",
+    "pivot": "Active suicidal intent, inability to maintain immediate safety or severe intoxication requires urgent crisis assessment before routine psychotherapy.",
+    "management": {
+      "steps": [
+        [
+          "Assess risk",
+          "Review suicidal intent, means, recent self-injury, protective factors and coexisting disorders at each relevant contact."
+        ],
+        [
+          "Plan therapy",
+          "Offer structured DBT or another evidence-based personality-disorder psychotherapy with shared goals."
+        ],
+        [
+          "Coordinate care",
+          "Agree on a crisis plan, consistent follow-up, family involvement when appropriate and treatment of comorbidities."
+        ],
+        [
+          "Review function",
+          "Track self-harm frequency, emotional regulation, relationships, service use and quality of life."
+        ]
+      ],
+      "safety": "A diagnosis of BPD must never be used to dismiss genuine acute suicide risk or physical injury.",
+      "local": "Australian healthdirect DBT clinical overview and structured psychological care principles."
+    },
+    "source": "https://www.healthdirect.gov.au/treatments-and-self-care/dialectical-behaviour-therapy-dbt"
+  },
+  {
+    "n": 77,
+    "domain": "Neonatology & congenital cardiology",
+    "skill": "Obstructed total anomalous pulmonary venous drainage / urgent cardiac repair",
+    "context": "Advanced final-year congenital heart reasoning",
+    "stem": "A newborn develops marked cyanosis and tachypnoea soon after delivery. SpO₂ remains 75% despite oxygen; chest radiography shows diffuse pulmonary oedema with a relatively small heart. Echocardiography identifies pulmonary veins draining below the diaphragm with severe obstruction and an interatrial communication. The infant is becoming acidotic.",
+    "ask": "Which management priority best addresses the underlying cause of deterioration?",
+    "options": [
+      "Give repeated inhaled bronchodilators because pulmonary oedema in newborns usually reflects bronchospasm.",
+      "Urgently stabilise in intensive care and arrange cardiac surgical correction of obstructed venous return.",
+      "Start routine diuretics and schedule elective repair after several weeks of feeding and weight gain.",
+      "Close the interatrial communication immediately because atrial mixing is the source of hypoxaemia.",
+      "Administer prostaglandin alone and wait for ductal patency to resolve the pulmonary venous obstruction."
+    ],
+    "key": "B",
+    "explanations": [
+      "Bronchodilators do not relieve obstruction to pulmonary venous drainage. The cyanosis, oedema and echocardiographic anatomy indicate a mechanical cardiovascular emergency.",
+      "Correct: obstructed TAPVD causes pulmonary venous hypertension, oedema and severe hypoxaemia. Provide neonatal intensive-care respiratory and circulatory support and urgent paediatric cardiac surgery to reconnect pulmonary veins to the left atrium.",
+      "Diuretics may be adjunctive in selected settings but cannot relieve fixed pulmonary venous obstruction. Delaying repair risks progressive acidosis, pulmonary injury and circulatory collapse.",
+      "An interatrial communication allows oxygenated pulmonary venous blood reaching the right atrium to access systemic circulation. Closing it before definitive repair could eliminate essential mixing.",
+      "Prostaglandin is lifesaving in selected duct-dependent lesions, but obstructed TAPVD is not corrected by opening the ductus. Do not let empiric ductal therapy delay expert diagnosis and surgery."
+    ],
+    "pearl": "Severe neonatal cyanosis with pulmonary oedema and obstructed anomalous pulmonary veins is a surgical emergency.",
+    "pivot": "Unobstructed TAPVD may present later with pulmonary overcirculation and a less dramatic oxygenation deficit.",
+    "management": {
+      "steps": [
+        [
+          "Stabilise",
+          "Call neonatal intensive care, support oxygenation and ventilation, correct acidosis and assess perfusion."
+        ],
+        [
+          "Define anatomy",
+          "Obtain urgent expert echocardiography and identify the site of pulmonary venous obstruction."
+        ],
+        [
+          "Definitive action",
+          "Arrange immediate transfer and paediatric cardiac surgical repair without elective delay."
+        ],
+        [
+          "Follow through",
+          "Monitor postoperative pulmonary vein patency, pulmonary pressures and feeding/growth."
+        ]
+      ],
+      "safety": "Do not assume oxygen-refractory cyanosis is primary lung disease or that prostaglandin relieves pulmonary venous obstruction.",
+      "local": "Children's Health Queensland TAPVD clinical information developed by Queensland Paediatric Cardiac Service."
+    },
+    "source": "https://www.childrens.health.qld.gov.au/health-a-to-z/cardiac/total-anomalous-pulmonary-venous-drainage"
+  },
+  {
+    "n": 78,
+    "domain": "Antenatal care & preventive medicine",
+    "skill": "Pertussis vaccination / closely spaced pregnancies",
+    "context": "Advanced final-year preventive counselling",
+    "stem": "A 28-year-old attends antenatal care at 25 weeks, eight months after her previous delivery. She received a pertussis-containing vaccine in the previous pregnancy and a tetanus booster four years ago. She has no vaccine contraindications and asks whether the short interval makes another pertussis dose unnecessary.",
+    "ask": "Which recommendation best protects her newborn against pertussis?",
+    "options": [
+      "Defer vaccination until after birth because maternal antibody transfer is insufficient before delivery.",
+      "Repeat vaccination only if serum pertussis antibody testing shows that her titre is below range.",
+      "Give a pertussis-containing vaccine now because a dose is recommended during every pregnancy.",
+      "Wait until 36 weeks because earlier vaccination increases the risk of neonatal infection.",
+      "Omit antenatal vaccination if all adult household contacts have already received pertussis boosters."
+    ],
+    "key": "C",
+    "explanations": [
+      "Postpartum vaccination cannot provide the same transplacental antibody protection during early infancy. Antenatal immunisation reduces severe infant pertussis risk.",
+      "Pertussis antibody titres are not routinely used to determine maternal vaccine eligibility. There is no validated titre threshold that replaces the recommendation for each pregnancy.",
+      "Correct: a single dTpa dose is recommended in every pregnancy, ideally at 20–32 weeks, even when pregnancies are closely spaced. Antibodies cross the placenta and protect infants before their own vaccine series.",
+      "Vaccination at 36 weeks is possible if missed earlier, but 20–32 weeks optimises antibody production and transfer. Deliberate delay may leave an infant born early less protected.",
+      "Cocooning household contacts helps reduce exposure but cannot replace direct transplacental maternal antibodies. Maternal vaccination remains recommended irrespective of household vaccine status."
+    ],
+    "pearl": "Maternal dTpa is recommended in every pregnancy, ideally at 20–32 weeks, irrespective of a recent prior dose.",
+    "pivot": "If the recommended window has passed, vaccinate as soon as practical up to delivery rather than withholding the dose.",
+    "management": {
+      "steps": [
+        [
+          "Check history",
+          "Confirm gestation, prior doses, severe allergy history and other pregnancy vaccine needs."
+        ],
+        [
+          "Vaccinate",
+          "Offer dTpa during this pregnancy now; use locally funded recommended formulation."
+        ],
+        [
+          "Counsel",
+          "Explain passive infant protection, common injection-site effects and why repeat pregnancy doses matter."
+        ],
+        [
+          "Document",
+          "Record vaccination, discuss influenza and RSV vaccination as indicated, and plan infant immunisation."
+        ]
+      ],
+      "safety": "Do not rely on a previous pregnancy's dTpa dose or household cocooning alone for newborn protection.",
+      "local": "Australian Immunisation Handbook pertussis vaccination in pregnancy, updated October 2026."
+    },
+    "source": "https://immunisationhandbook.health.gov.au/recommendations/pregnant-women-are-recommended-to-receive-a-single-dose-of-pertussis-containing-vaccine-in-each-pregnancy"
+  },
+  {
+    "n": 79,
+    "domain": "Paediatric toxicology & emergency medicine",
+    "skill": "Sulfonylurea poisoning / recurrent hypoglycaemia and octreotide",
+    "context": "Advanced final-year antidote reasoning",
+    "stem": "A 3-year-old is found drowsy beside an opened container of a grandparent's gliclazide. Bedside glucose is 1.9 mmol/L and consciousness improves after IV dextrose, but hypoglycaemia recurs twice despite a glucose infusion. The child has stable vital signs and no evidence of other ingestion.",
+    "ask": "What additional therapy most directly prevents further recurrent hypoglycaemia?",
+    "options": [
+      "Increase repeated dextrose boluses indefinitely without suppressing endogenous pancreatic insulin secretion.",
+      "Give activated charcoal several hours later as the only treatment for recurrent neuroglycopenia.",
+      "Start a glucagon infusion alone because it reliably blocks sulfonylurea-stimulated insulin release.",
+      "Administer octreotide with monitored glucose support and toxicology-guided observation in hospital.",
+      "Discharge once awake because initial neurological improvement excludes delayed sulfonylurea effects."
+    ],
+    "key": "D",
+    "explanations": [
+      "Dextrose rescues hypoglycaemia but can stimulate further insulin release in sulfonylurea poisoning. Repeated boluses without an insulin-suppressing strategy promote rebound episodes.",
+      "Activated charcoal may have a limited early role after selected ingestions, but it does not treat established recurrent hypoglycaemia. Toxicology advice is needed for decontamination decisions.",
+      "Glucagon may transiently increase glucose but does not suppress beta-cell insulin secretion and can worsen rebound hypoglycaemia. It is not the preferred antidote.",
+      "Correct: octreotide suppresses pancreatic insulin release and reduces recurrent hypoglycaemia after sulfonylurea exposure. Continue IV dextrose as needed, check bedside glucose frequently and observe after stopping treatment.",
+      "Sulfonylureas can cause prolonged or delayed hypoglycaemia after apparent recovery, particularly in children. Discharge after a single normal glucose reading is unsafe."
+    ],
+    "pearl": "Sulfonylurea toxicity causes insulin-driven recurrent hypoglycaemia; octreotide prevents the rebound that dextrose alone may perpetuate.",
+    "pivot": "A child exposed only to metformin has a different toxicity profile; sulfonylurea-specific octreotide is not routine.",
+    "management": {
+      "steps": [
+        [
+          "Resuscitate",
+          "Treat symptomatic hypoglycaemia immediately with IV glucose and monitor airway and consciousness."
+        ],
+        [
+          "Block insulin",
+          "Start octreotide under paediatric toxicology guidance while titrating dextrose support."
+        ],
+        [
+          "Investigate",
+          "Check serial bedside glucose, electrolytes and possible co-ingestants; involve a poisons service."
+        ],
+        [
+          "Observe",
+          "Continue inpatient monitoring after stopping dextrose and octreotide for delayed recurrence before discharge."
+        ]
+      ],
+      "safety": "One sulfonylurea tablet can cause life-threatening delayed hypoglycaemia in a toddler; do not discharge early.",
+      "local": "Royal Children's Hospital Melbourne oral hypoglycaemic poisoning guideline; use age-appropriate local octreotide dosing."
+    },
+    "source": "https://www.rch.org.au/clinicalguide/guideline_index/Oral_Hypoglycaemic_Poisoning/"
+  },
+  {
+    "n": 80,
+    "domain": "Sexual health & antimicrobial stewardship",
+    "skill": "Pharyngeal gonorrhoea / test of cure and partner management",
+    "context": "Advanced final-year STI follow-up",
+    "stem": "A 22-year-old has asymptomatic pharyngeal gonorrhoea detected by NAAT after an oral-sex exposure. She received the recommended Australian ceftriaxone-based regimen, and symptoms were absent throughout. She asks whether a negative urine NAAT in three months is sufficient follow-up for the throat infection.",
+    "ask": "What follow-up strategy is most appropriate for the pharyngeal infection?",
+    "options": [
+      "Avoid any follow-up because pharyngeal infection cannot persist after an intramuscular antibiotic.",
+      "Repeat only a urine NAAT at three months because throat sampling is technically unreliable.",
+      "Perform an immediate throat NAAT tomorrow because residual bacterial nucleic acid disappears overnight.",
+      "Give a second empirical antibiotic course now before assessing microbiological treatment response.",
+      "Arrange site-specific pharyngeal test of cure and later reinfection testing with partner management."
+    ],
+    "key": "E",
+    "explanations": [
+      "Pharyngeal gonorrhoea has greater potential for treatment failure and antimicrobial resistance. Clinical improvement or lack of symptoms does not establish eradication.",
+      "A urine sample does not assess the pharyngeal site and may miss persistent throat infection. Three-month retesting addresses reinfection but not early microbiological cure.",
+      "Testing immediately after treatment may detect nonviable gonococcal DNA and yield misleading NAAT positivity. Follow local timing guidance, commonly at least two weeks for NAAT.",
+      "Routine repeat antibiotics without evidence of failure increases antimicrobial pressure and adverse effects. Culture and susceptibility testing are important when persistence or resistance is suspected.",
+      "Correct: arrange throat-specific test of cure using locally recommended culture/NAAT timing, plus reinfection testing around three months and contact tracing. WA guidance recommends NAAT no earlier than two weeks after treatment."
+    ],
+    "pearl": "Test of cure must sample the originally infected anatomical site; NAAT too soon may detect residual nonviable organisms.",
+    "pivot": "If a follow-up throat test is positive, seek culture and susceptibility advice to distinguish persistent infection from reinfection.",
+    "management": {
+      "steps": [
+        [
+          "Confirm treatment",
+          "Review the actual antibiotic regimen, culture availability, allergies and antimicrobial susceptibility information."
+        ],
+        [
+          "Test throat",
+          "Arrange pharyngeal test of cure at the locally recommended interval; avoid premature NAAT."
+        ],
+        [
+          "Protect contacts",
+          "Offer partner notification, other STI screening and abstinence advice until treatment conditions are met."
+        ],
+        [
+          "Prevent reinfection",
+          "Arrange repeat STI testing around three months and consider HIV PrEP eligibility where appropriate."
+        ]
+      ],
+      "safety": "A negative urine test cannot exclude persistent pharyngeal gonorrhoea; follow current jurisdictional TOC guidance.",
+      "local": "WA Health gonorrhoea guidance and Australian STI Guidelines; local site-specific TOC policies may vary."
+    },
+    "source": "https://www.health.wa.gov.au/WA-STI-and-BBV-guidelines/Infections/Gonorrhoea"
   }
 ]
