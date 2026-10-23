@@ -2158,5 +2158,245 @@
       "local": "NSW South Eastern Sydney LHD Medical Management of Malignant Bowel Obstruction guideline."
     },
     "source": "https://www.seslhd.health.nsw.gov.au/sites/default/files/documents/SESLHDGL%20122%20-%20Bowel%20Obstruction%20-%20Medical%20Management%20of%20Malignant%20Bowel%20Obstruction.pdf"
+  },
+  {
+    "n": 46,
+    "domain": "Obstetrics & maternal fetal medicine",
+    "skill": "Early fetal growth restriction / absent umbilical end-diastolic flow",
+    "context": "Advanced final-year integrated management",
+    "stem": "A 30-year-old G2P1 at 30+2 weeks has a fetus with estimated weight at the third centile. Ultrasound shows absent end-diastolic flow in the umbilical artery, normal amniotic fluid and no structural anomaly. CTG is currently reassuring, BP is 122/78 mmHg and she reports normal fetal movements. Her local unit has no neonatal intensive care.",
+    "ask": "What is the safest immediate care pathway?",
+    "options": [
+      "Arrange urgent tertiary maternal fetal medicine assessment, surveillance and preterm birth preparation.",
+      "Reassure because a normal CTG today excludes placental insufficiency for the next several weeks.",
+      "Schedule routine growth ultrasound in four weeks without altering the place of antenatal care.",
+      "Induce labour immediately at the local hospital because Doppler abnormalities always require same-day birth.",
+      "Give oral aspirin as the sole treatment to restore umbilical end-diastolic blood flow."
+    ],
+    "key": "A",
+    "explanations": [
+      "Correct: absent umbilical end-diastolic flow at 30 weeks signals high-risk placental insufficiency. Urgent specialist review, repeated Dopplers/CTG and delivery planning at an appropriate neonatal centre are needed, with corticosteroids and magnesium considered if preterm birth is likely.",
+      "A single reassuring CTG reflects only current fetal status and does not negate elevated risk from abnormal Dopplers and marked growth restriction. Close surveillance is essential.",
+      "A four-week interval risks unrecognised fetal deterioration. Growth surveillance must be paired with much more frequent fetal wellbeing assessment when Dopplers are severely abnormal.",
+      "Delivery timing depends on serial fetal testing, gestation, maternal status and neonatal capacity. Automatic delivery at a unit without NICU can add avoidable prematurity risk.",
+      "Aspirin is used preventively in selected pregnancies at pre-eclampsia risk; it cannot reliably reverse established severe placental Doppler abnormalities."
+    ],
+    "pearl": "Absent umbilical end-diastolic flow in early FGR requires urgent tertiary review even with a currently reassuring CTG.",
+    "pivot": "An isolated constitutionally small fetus with normal Dopplers, growth velocity and wellbeing follows a lower-intensity surveillance pathway.",
+    "management": {
+      "steps": [
+        [
+          "Escalate",
+          "Contact maternal fetal medicine urgently and arrange transfer or shared care with a tertiary neonatal-capable centre."
+        ],
+        [
+          "Surveil",
+          "Repeat umbilical and other indicated Dopplers, CTG and maternal pre-eclampsia assessment."
+        ],
+        [
+          "Prepare",
+          "Discuss antenatal corticosteroids and magnesium sulfate if early delivery becomes likely."
+        ],
+        [
+          "Plan birth",
+          "Individualise timing and mode of delivery using fetal testing, gestation and maternal status."
+        ]
+      ],
+      "safety": "Do not use a single normal CTG to override severe abnormal Doppler findings or leave follow-up for weeks.",
+      "local": "Queensland Maternal Fetal Medicine clinical prioritisation: absent/reversed umbilical artery end-diastolic flow is an urgent referral trigger."
+    },
+    "source": "https://www.health.qld.gov.au/cpc/maternal-fetal-medicine/maternal-fetal-medicine"
+  },
+  {
+    "n": 47,
+    "domain": "Obstetrics & fetal therapy",
+    "skill": "Stage II twin-to-twin transfusion / fetal laser referral",
+    "context": "Advanced final-year integrated management",
+    "stem": "A 25-year-old with monochorionic diamniotic twins is reviewed at 21 weeks. Ultrasound shows a deepest vertical pocket of 1.2 cm in one sac and 10 cm in the other. The donor twin's bladder is not visible, while both fetuses have cardiac activity and no hydrops. The family asks if repeated fluid drainage is the preferred definitive treatment.",
+    "ask": "What management is most appropriate for this stage of disease?",
+    "options": [
+      "Observe until 28 weeks because both twins remain alive and the recipient has no hydrops.",
+      "Refer urgently to a fetal therapy centre to assess fetoscopic laser ablation of placental vessels.",
+      "Deliver both twins immediately because donor oligohydramnios is irreversible without birth.",
+      "Prescribe maternal diuretics to lower the recipient sac volume without invasive intervention.",
+      "Arrange serial amnioreduction only because it corrects the abnormal placental vascular connections."
+    ],
+    "key": "B",
+    "explanations": [
+      "The absent donor bladder with oligo-polyhydramnios is at least Quintero stage II TTTS. Expectant observation alone risks progression and fetal loss.",
+      "Correct: stage II TTTS at 21 weeks warrants urgent tertiary fetal therapy evaluation. Fetoscopic laser ablation targets communicating placental vessels and is usually preferred over repeated drainage for early severe TTTS.",
+      "Delivery at 21 weeks would confer extreme prematurity and is not first-line while fetal therapy is potentially available. Counselling must consider prognosis and maternal risks.",
+      "Maternal diuretics do not correct placental vascular imbalance and may compromise maternal or placental circulation. They are not standard TTTS treatment.",
+      "Amnioreduction can relieve polyhydramnios in selected circumstances but does not interrupt the underlying placental anastomoses, so recurrence and fetal injury risks remain."
+    ],
+    "pearl": "Absent donor bladder in monochorionic twins with oligohydramnios/polyhydramnios indicates at least stage II TTTS and prompts laser-centre referral.",
+    "pivot": "Stage I TTTS with a visible donor bladder and stable cervical findings may sometimes be monitored closely in a specialist centre.",
+    "management": {
+      "steps": [
+        [
+          "Confirm stage",
+          "Repeat detailed monochorionic ultrasound, fetal bladders, fluid pockets, Dopplers and cervical assessment."
+        ],
+        [
+          "Refer",
+          "Contact an experienced fetal therapy centre urgently for counselling and laser suitability assessment."
+        ],
+        [
+          "Treat cause",
+          "Discuss fetoscopic laser ablation versus alternatives based on stage, anatomy and family goals."
+        ],
+        [
+          "Surveil",
+          "Continue post-treatment monitoring for recurrent TTTS, TAPS, growth and neurological complications."
+        ]
+      ],
+      "safety": "Do not delay fetal therapy referral for repeated amnioreduction or wait until hydrops develops.",
+      "local": "NSW Health Management of Monochorionic Twin Pregnancy guideline and Australian fetal therapy centre practice."
+    },
+    "source": "https://www1.health.nsw.gov.au/pds/ActivePDSDocuments/GL2020_011.pdf"
+  },
+  {
+    "n": 48,
+    "domain": "General medicine & neurology",
+    "skill": "Vitamin B12 deficiency with neurological deficits / parenteral replacement",
+    "context": "Advanced final-year integrated management",
+    "stem": "A 64-year-old vegetarian taking long-term metformin reports months of numb feet, unsteady walking and memory difficulty. Examination reveals impaired vibration and proprioception, brisk knee reflexes and a positive Romberg sign. Hb is 108 g/L, MCV 111 fL and vitamin B12 is markedly low. He asks whether folic acid tablets alone would reverse the problem.",
+    "ask": "What is the most appropriate treatment priority?",
+    "options": [
+      "Start folic acid alone because it corrects macrocytosis and therefore prevents neurological progression.",
+      "Wait for nerve conduction studies before giving any vitamins because neuropathy is not specific.",
+      "Begin prompt intramuscular vitamin B12 replacement and investigate the underlying deficiency cause.",
+      "Give high-dose iron alone because macrocytosis reflects reticulocyte production after occult bleeding.",
+      "Stop all neurological assessment because B12 treatment always reverses established cord damage completely."
+    ],
+    "key": "C",
+    "explanations": [
+      "Folate may improve anaemia while allowing B12-related neurological damage to progress. It is not a substitute for cobalamin replacement in symptomatic deficiency.",
+      "Nerve studies may help evaluate persistent or atypical symptoms, but clear neurological deficits and markedly low B12 warrant treatment without delay.",
+      "Correct: neurological involvement warrants prompt parenteral hydroxocobalamin loading, monitoring of clinical response and evaluation for pernicious anaemia, malabsorption, diet and medicine contributions.",
+      "Iron deficiency typically causes microcytosis rather than marked macrocytosis with posterior-column signs. Iron is indicated only if coexisting deficiency is confirmed.",
+      "Neurological improvement may be incomplete if deficiency has been prolonged. Ongoing examination and rehabilitation are important even after biochemical correction."
+    ],
+    "pearl": "B12 deficiency with gait ataxia or proprioceptive loss needs urgent parenteral replacement; folate alone can mask anaemia while neuropathy progresses.",
+    "pivot": "Mild asymptomatic dietary B12 deficiency without malabsorption may be treated orally with appropriate adherence and response monitoring.",
+    "management": {
+      "steps": [
+        [
+          "Treat",
+          "Begin intramuscular hydroxocobalamin loading according to neurological-deficit protocol."
+        ],
+        [
+          "Investigate",
+          "Assess diet, metformin, pernicious anaemia, malabsorption and other causes of macrocytosis."
+        ],
+        [
+          "Monitor",
+          "Track neurological examination, FBC, B12 response and associated folate, iron or potassium issues."
+        ],
+        [
+          "Support recovery",
+          "Arrange gait safety, physiotherapy and appropriate long-term maintenance replacement."
+        ]
+      ],
+      "safety": "Do not give folate alone when B12 deficiency is suspected with neurological signs; irreversible deficits can result.",
+      "local": "Australian Prescriber 2026 Vitamin B12 deficiency: testing and treatment, severe neurological deficiency requires intramuscular therapy."
+    },
+    "source": "https://australianprescriber.tg.org.au/articles/vitamin-B12-deficiency-testing-and-treatment.html"
+  },
+  {
+    "n": 49,
+    "domain": "Endocrinology & endocrine surgery",
+    "skill": "Primary hyperparathyroidism with osteoporosis / surgical indication",
+    "context": "Advanced final-year integrated management",
+    "stem": "A 62-year-old with repeatedly elevated corrected calcium of 2.78 mmol/L has inappropriately elevated PTH, normal renal function and no malignancy symptoms. Vitamin D is sufficient and urinary calcium does not suggest familial hypocalciuric hypercalcaemia. DXA shows a lumbar T-score of −3.0 and she has sustained a low-trauma wrist fracture.",
+    "ask": "What is the most appropriate next management decision?",
+    "options": [
+      "Observe without further referral because calcium is below 3.0 mmol/L and she has no kidney stones.",
+      "Treat with vitamin D alone because the raised PTH is necessarily due to secondary hyperparathyroidism.",
+      "Order parathyroid scintigraphy as the diagnostic test before confirming the biochemical disorder.",
+      "Refer for endocrine surgical assessment because skeletal complications make parathyroidectomy appropriate.",
+      "Use lifelong high-dose loop diuretics because they cure the underlying excess parathyroid hormone secretion."
+    ],
+    "key": "D",
+    "explanations": [
+      "Primary hyperparathyroidism can cause important skeletal disease even when calcium is only mildly elevated. Osteoporosis and fragility fracture support intervention rather than indefinite observation.",
+      "Vitamin D deficiency has already been excluded, and calcium is high with inappropriately high PTH. Vitamin D alone will not cure autonomous parathyroid secretion.",
+      "Localisation imaging assists operative planning after biochemical diagnosis; it is not the primary diagnostic test for hyperparathyroidism.",
+      "Correct: confirmed primary hyperparathyroidism with osteoporosis and fragility fracture warrants endocrine/endocrine-surgery referral to discuss definitive parathyroidectomy and fracture-risk management.",
+      "Loop diuretics are not a curative long-term therapy and can cause dehydration and electrolyte abnormalities. Surgical treatment addresses the source of inappropriate PTH secretion."
+    ],
+    "pearl": "Osteoporosis or fragility fracture is a clinically important reason to consider parathyroidectomy even without marked hypercalcaemia.",
+    "pivot": "Mild asymptomatic disease without skeletal, renal or other surgical criteria may be monitored under an agreed endocrine surveillance plan.",
+    "management": {
+      "steps": [
+        [
+          "Confirm",
+          "Review repeated calcium, PTH, vitamin D, renal function and urinary calcium to exclude mimics."
+        ],
+        [
+          "Assess organs",
+          "Review DXA, fracture history and kidney stones or nephrocalcinosis."
+        ],
+        [
+          "Refer",
+          "Discuss endocrine surgical evaluation and shared decision-making about parathyroidectomy."
+        ],
+        [
+          "Protect bone",
+          "Optimise fracture prevention, falls risk and follow-up while definitive treatment is considered."
+        ]
+      ],
+      "safety": "Do not use parathyroid localisation imaging to establish the diagnosis before biochemical confirmation.",
+      "local": "Queensland Health endocrine surgery prioritisation: primary hyperparathyroidism with severe osteoporosis or stones warrants specialist assessment."
+    },
+    "source": "https://www.health.qld.gov.au/cpc/general-surgery/endocrine-surgery"
+  },
+  {
+    "n": 50,
+    "domain": "General practice & urology",
+    "skill": "Painless visible haematuria on anticoagulant / malignancy investigation",
+    "context": "Advanced final-year integrated management",
+    "stem": "A 68-year-old former smoker taking apixaban for atrial fibrillation reports two episodes of painless red urine. Urine culture is negative, renal function is stable and he has no flank pain or fever. Haematuria stopped spontaneously after one day. He asks whether anticoagulation explains it and makes investigation unnecessary.",
+    "ask": "What is the most appropriate next step?",
+    "options": [
+      "Attribute the bleeding to apixaban and reassure because spontaneous resolution excludes a tumour.",
+      "Repeat urine dipstick in six months and refer only if visible blood returns repeatedly.",
+      "Stop apixaban permanently without reviewing stroke risk because the urinary bleeding has ceased.",
+      "Prescribe antibiotics empirically because an occult infection is the commonest cause of painless haematuria.",
+      "Arrange prompt urological evaluation with cystoscopy and appropriate upper urinary tract imaging."
+    ],
+    "key": "E",
+    "explanations": [
+      "Anticoagulants may reveal bleeding from an underlying lesion; they do not exclude malignancy. Age, smoking and painless gross haematuria increase concern.",
+      "Intermittent visible haematuria is typical of some urothelial cancers. Waiting for recurrence can delay diagnosis and treatment.",
+      "Anticoagulant interruption requires balancing bleeding severity against embolic stroke risk. It does not replace investigation and should not be permanent by default.",
+      "Negative culture and absent infective symptoms make empirical antibiotics inappropriate. Even if infection coexists, persistent or high-risk visible haematuria still needs review.",
+      "Correct: organise timely urology referral for cystoscopy and upper-tract imaging, while assessing renal function, blood count and anticoagulation safety."
+    ],
+    "pearl": "Visible painless haematuria in an older smoker needs urological investigation even when the patient takes anticoagulants.",
+    "pivot": "Acute clot retention, heavy ongoing bleeding, anaemia or haemodynamic instability requires emergency stabilisation before outpatient cancer investigation.",
+    "management": {
+      "steps": [
+        [
+          "Assess stability",
+          "Review haemodynamic status, clot retention, haemoglobin, renal function and anticoagulant dose."
+        ],
+        [
+          "Exclude infection",
+          "Obtain urinalysis and culture and examine for stones or other relevant causes."
+        ],
+        [
+          "Investigate cancer",
+          "Refer promptly for cystoscopy and appropriate upper-tract imaging such as CT urography."
+        ],
+        [
+          "Coordinate",
+          "Manage anticoagulation based on bleeding severity and thromboembolic risk with treating clinicians."
+        ]
+      ],
+      "safety": "Do not dismiss visible haematuria as a harmless anticoagulant side effect or stop stroke-prevention treatment reflexively.",
+      "local": "RACGP macroscopic haematuria assessment: urology referral, cystoscopy and upper tract imaging for high-risk presentations."
+    },
+    "source": "https://www.racgp.org.au/afp/2013/march/macroscopic-haematuria"
   }
 ]
