@@ -478,5 +478,245 @@
     },
     "source": "https://informme.org.au/guidelines/living-clinical-guidelines-for-stroke-management",
     "context": "Advanced integrated clinical decisions"
+  },
+  {
+    "n": 11,
+    "domain": "Vascular surgery & emergency medicine",
+    "skill": "Acute limb ischaemia / limb-saving referral",
+    "stem": "A 71-year-old with atrial fibrillation stopped apixaban for a dental procedure three days ago. He suddenly develops severe left-foot pain and tingling. The leg is pale and cold below the knee, with absent pedal Doppler signals and reduced toe sensation. The right leg is warm with palpable pulses.",
+    "ask": "Which immediate plan best preserves limb viability?",
+    "options": [
+      "Give analgesia, initiate urgent vascular consultation and consider IV heparin after contraindication review.",
+      "Request a routine outpatient duplex scan before deciding whether anticoagulation is required.",
+      "Treat for deep venous thrombosis with compression stockings and review pulses after mobilisation.",
+      "Start oral antibiotics for possible cellulitis and obtain repeated inflammatory markers before referral.",
+      "Place the limb above heart level and arrange a repeat examination on the following morning."
+    ],
+    "key": "A",
+    "explanations": [
+      "Correct: six-P features suggest an acute embolic arterial occlusion with a threatened limb. Obtain urgent vascular input, document motor/sensory deficit and start anticoagulation when appropriate under protocol while preparing revascularisation.",
+      "Outpatient imaging is too slow in a limb whose nerve and muscle function may deteriorate over hours. Specialist-directed vascular imaging should not delay escalation.",
+      "DVT generally causes swelling and warmth, not a suddenly cold pulseless leg. Compression is not an adequate response to arterial occlusion.",
+      "Cellulitis does not explain loss of arterial signals and abrupt paraesthesia. Antibiotic treatment without restoring perfusion risks tissue necrosis.",
+      "Elevation can further reduce perfusion to an ischaemic limb. Reassessment the next day is unsafe when neurological changes and absent arterial flow are already present."
+    ],
+    "pearl": "A cold, painful, pulseless limb with altered sensation is time-critical arterial ischaemia until proven otherwise.",
+    "pivot": "A chronically diminished pulse without acute pain, coldness or new neurological findings may be managed through a chronic peripheral arterial disease pathway.",
+    "management": {
+      "steps": [
+        [
+          "Recognise",
+          "Compare limbs and document the six Ps, motor power, sensory changes and Doppler signals."
+        ],
+        [
+          "Escalate",
+          "Contact vascular surgery and emergency retrieval immediately; do not wait for routine imaging."
+        ],
+        [
+          "Treat",
+          "Provide analgesia, vascular access and specialist-directed IV heparin after bleeding contraindications are reviewed."
+        ],
+        [
+          "Definitive care",
+          "Arrange urgent imaging/revascularisation and monitor for reperfusion injury and compartment syndrome."
+        ]
+      ],
+      "safety": "Do not elevate a profoundly ischaemic limb or postpone vascular assessment while arranging outpatient tests.",
+      "local": "Queensland Health Primary Clinical Care Manual: acute lower-leg ischaemia."
+    },
+    "source": "https://www.health.qld.gov.au/__data/assets/pdf_file/0018/1215027/3.Emergency.pdf",
+    "context": "Advanced integrated clinical decisions"
+  },
+  {
+    "n": 12,
+    "domain": "Emergency medicine & electrolytes",
+    "skill": "Severe symptomatic hyponatraemia / seizures",
+    "stem": "A 60-year-old taking hydrochlorothiazide is brought in after a witnessed tonic-clonic seizure. She remains confused, sodium is 112 mmol/L and glucose is normal. Her partner reports progressive nausea and headache for two days. The emergency registrar worries that all sodium correction must be very slow.",
+    "ask": "What is the safest priority during this neurological emergency?",
+    "options": [
+      "Restrict water and defer any active correction until a repeat morning sodium level.",
+      "Administer protocol-based hypertonic saline for seizures with close neurological and sodium monitoring.",
+      "Give a large volume of hypotonic fluid to avoid overly rapid changes in serum osmolality.",
+      "Continue hydrochlorothiazide and treat the convulsion alone until the patient becomes fully alert.",
+      "Give oral salt tablets and observe because seizures can occur independently of hyponatraemia."
+    ],
+    "key": "B",
+    "explanations": [
+      "Water restriction can help selected stable forms of hyponatraemia, but convulsions require prompt controlled hypertonic treatment to reduce cerebral oedema.",
+      "Correct: emergency hypertonic saline is indicated in severe neurological symptoms, alongside airway/seizure management. Measure sodium frequently and use a tightly controlled correction plan to avoid overcorrection after initial stabilisation.",
+      "Hypotonic fluid may lower sodium further and worsen cerebral swelling. Fluid prescription must reflect neurologic severity and actual volume status.",
+      "Thiazides can precipitate hyponatraemia and should be withheld. Treating convulsions alone ignores the underlying metabolic trigger.",
+      "Oral tablets cannot reliably treat cerebral oedema quickly, and oral administration is unsafe during confusion or impaired airway protection."
+    ],
+    "pearl": "Seizures from hyponatraemia justify an urgent limited rise in sodium, followed by careful prevention of overcorrection.",
+    "pivot": "Chronic mild hyponatraemia without neurological symptoms may be addressed with cause correction and a slower sodium strategy.",
+    "management": {
+      "steps": [
+        [
+          "Stabilise",
+          "Manage airway and seizures, call critical-care support, and check repeat glucose and electrolytes."
+        ],
+        [
+          "Treat",
+          "Use monitored hypertonic saline per local severe-symptomatic-hyponatraemia protocol."
+        ],
+        [
+          "Control correction",
+          "Monitor sodium and urine output frequently and avoid excessive total daily correction."
+        ],
+        [
+          "Identify cause",
+          "Stop thiazides, assess volume status and other triggers, and involve endocrinology/nephrology if needed."
+        ]
+      ],
+      "safety": "A rapid initial emergency rise must not become uncontrolled prolonged correction; osmotic demyelination is a risk.",
+      "local": "Australian hospital severe symptomatic hyponatraemia protocols; Royal Children's Hospital hyponatraemia principles."
+    },
+    "source": "https://www.rch.org.au/clinicalguide/guideline_index/hyponatraemia/",
+    "context": "Advanced integrated clinical decisions"
+  },
+  {
+    "n": 13,
+    "domain": "Surgery & infectious diseases",
+    "skill": "Necrotising soft-tissue infection / operative source control",
+    "stem": "A 48-year-old with diabetes has rapidly progressive erythema of the thigh after a minor abrasion. Pain is extreme despite little surface change. She is febrile, tachycardic and develops purple patches and reduced skin sensation within hours. Lactate is 3.8 mmol/L and BP is 92/54 mmHg.",
+    "ask": "Which management pathway best addresses the threat?",
+    "options": [
+      "Book MRI first and wait for the report before involving surgeons in the case.",
+      "Start an oral antibiotic and review the area after twenty-four hours of elevation.",
+      "Activate sepsis resuscitation, urgent surgical exploration and broad empirical IV antibiotics.",
+      "Perform bedside superficial incision and drainage, then discharge once pain is controlled.",
+      "Wait for positive blood cultures before choosing whether operative debridement is justified."
+    ],
+    "key": "C",
+    "explanations": [
+      "Imaging may support diagnosis in uncertain stable cases, but rapidly progressive shock and disproportionate pain mandate urgent surgical assessment; imaging must not delay debridement.",
+      "Oral antibiotics and short-interval outpatient follow-up are inadequate for suspected necrotising infection, which may advance rapidly through deep tissues.",
+      "Correct: resuscitate sepsis, involve senior surgery and intensive care immediately, give broad IV antibiotics including toxin-suppressing cover as guided locally, and proceed to urgent exploration and debridement.",
+      "Superficial drainage cannot remove deep fascial necrosis. A reassuring surface appearance or transient analgesic response is not evidence of adequate source control.",
+      "Cultures are useful for later antibiotic targeting, but awaiting results postpones lifesaving source control. Necrotising infection remains a clinical and surgical diagnosis."
+    ],
+    "pearl": "Pain out of proportion, rapid progression and systemic toxicity suggest necrotising infection even before obvious crepitus.",
+    "pivot": "A stable, slowly developing superficial abscess without systemic toxicity can often be managed with local drainage and tailored outpatient follow-up.",
+    "management": {
+      "steps": [
+        [
+          "Resuscitate",
+          "Activate the sepsis pathway, repeat observations, secure access and restore perfusion."
+        ],
+        [
+          "Call surgeons",
+          "Request immediate surgical and ICU assessment; do not delay for radiology."
+        ],
+        [
+          "Treat infection",
+          "Obtain cultures if feasible and administer local-protocol broad-spectrum IV antibiotics."
+        ],
+        [
+          "Source control",
+          "Arrange urgent extensive surgical exploration/debridement with repeat review as needed."
+        ]
+      ],
+      "safety": "An unremarkable early scan or blood test cannot reliably exclude necrotising fasciitis.",
+      "local": "Australian emergency sepsis and necrotising soft-tissue infection pathways."
+    },
+    "source": "https://aci.health.nsw.gov.au/networks/eci",
+    "context": "Advanced integrated clinical decisions"
+  },
+  {
+    "n": 14,
+    "domain": "Emergency medicine & thrombosis",
+    "skill": "Massive pulmonary embolism / shock and reperfusion",
+    "stem": "A 49-year-old develops abrupt pleuritic chest pain, severe breathlessness and near-syncope two weeks after hip surgery. BP is 72/44 mmHg, SpO2 85% and bedside echocardiography shows an enlarged struggling right ventricle. CT pulmonary angiography cannot be obtained without substantial delay; bleeding risk is elevated because of the recent surgery.",
+    "ask": "What should be prioritised in this unstable presentation?",
+    "options": [
+      "Transfer immediately for outpatient imaging because the diagnosis is not yet definite.",
+      "Give a large litre bolus repeatedly until the systolic pressure stays over 120 mmHg.",
+      "Treat presumed pneumonia empirically and reassess the right ventricle after antibiotic response.",
+      "Activate critical care and PE specialists for urgent reperfusion decisions alongside stabilisation.",
+      "Withhold all anticoagulation until a CT scan has documented a filling defect."
+    ],
+    "key": "D",
+    "explanations": [
+      "Outpatient investigation is unsafe in profound circulatory collapse. Cardiogenic shock from pulmonary vascular obstruction can progress to cardiac arrest.",
+      "Indiscriminate large fluid loads may worsen right ventricular dilatation and reduce cardiac output. Small cautious resuscitation and vasoactive support may be preferable.",
+      "Infection can cause hypoxia, but sudden onset, recent surgery, severe hypotension and RV strain make high-risk PE a key emergency. Antibiotics alone will not relieve obstruction.",
+      "Correct: involve ICU, emergency medicine and a multidisciplinary PE/reperfusion team urgently, stabilise oxygenation and RV perfusion, and weigh systemic thrombolysis against catheter-based or surgical options given recent surgery.",
+      "CTPA is valuable but the patient may be too unstable for transport. Management can be guided by bedside echocardiography and specialist assessment when definitive imaging would dangerously delay care."
+    ],
+    "pearl": "Hypotensive suspected PE with acute RV dysfunction needs emergency reperfusion planning, not routine ward anticoagulation alone.",
+    "pivot": "A haemodynamically stable patient with low or moderate PE probability can follow a structured testing pathway with D-dimer or imaging.",
+    "management": {
+      "steps": [
+        [
+          "Support",
+          "Give oxygen, monitor ECG and haemodynamics, avoid excessive fluids and use vasoactive support when indicated."
+        ],
+        [
+          "Escalate",
+          "Activate senior critical care, cardiology/respiratory and reperfusion specialists immediately."
+        ],
+        [
+          "Decide treatment",
+          "Assess urgent anticoagulation and systemic or procedural reperfusion according to bleeding risks and local capabilities."
+        ],
+        [
+          "Monitor",
+          "Reassess RV function, oxygenation and recurrent shock; investigate DVT and longer-term anticoagulation needs."
+        ]
+      ],
+      "safety": "Recent surgery increases bleeding hazard and may change reperfusion modality; make this a specialist emergency decision.",
+      "local": "Australian and New Zealand acute pulmonary embolism and ICU management pathways."
+    },
+    "source": "https://www.thanz.org.au/",
+    "context": "Advanced integrated clinical decisions"
+  },
+  {
+    "n": 15,
+    "domain": "Haematology & oncology emergencies",
+    "skill": "Febrile neutropenia / prompt empirical antibiotics",
+    "stem": "A 59-year-old receiving chemotherapy for acute myeloid leukaemia presents with temperature 38.7°C and mild sore throat. Neutrophils are 0.2 × 10⁹/L. HR is 118/min, BP 110/66 mmHg and he has no focal examination findings. The ED is busy, and a blood culture courier will not arrive for an hour.",
+    "ask": "What is the most appropriate initial management?",
+    "options": [
+      "Discharge with oral antibiotics and review tomorrow because blood pressure remains preserved.",
+      "Wait for central and peripheral culture results before starting any antimicrobial therapy.",
+      "Give antipyretics and repeat the full blood count after the temperature has settled.",
+      "Administer growth factor alone because the low neutrophil count is the primary problem.",
+      "Start immediate broad-spectrum IV antibiotics and urgent sepsis/oncology assessment without culture delay."
+    ],
+    "key": "E",
+    "explanations": [
+      "Profound neutropenia plus fever after chemotherapy is a medical emergency with rapid invasive bacterial infection risk. Stable early BP is not enough for outpatient reassurance.",
+      "Collect cultures promptly when feasible, but their results take much longer than the safe treatment window. Empirical therapy must not wait for culture availability.",
+      "Antipyretics improve comfort but can obscure fever and do not treat infection risk. Monitoring without antimicrobials is inappropriate.",
+      "G-CSF may be indicated in selected oncology situations but does not replace empiric antimicrobial treatment for an acute febrile neutropenic episode.",
+      "Correct: initiate a neutropenic sepsis pathway, obtain appropriate cultures and give timely antipseudomonal IV antibiotics according to local resistance and allergy history, with senior oncology input and admission."
+    ],
+    "pearl": "Fever with profound chemotherapy-associated neutropenia is an antibiotic emergency even without a localising source.",
+    "pivot": "An immunocompetent adult with low-grade fever and normal neutrophils follows risk-based assessment rather than automatic high-risk neutropenic cover.",
+    "management": {
+      "steps": [
+        [
+          "Identify",
+          "Recognise chemotherapy-related neutropenic infection, assess sepsis and establish IV access."
+        ],
+        [
+          "Sample",
+          "Send blood cultures and required bloods rapidly; do not defer treatment if specimen collection is delayed."
+        ],
+        [
+          "Treat",
+          "Give prompt empiric broad-spectrum IV antibiotics with local antipseudomonal cover and fluid support as needed."
+        ],
+        [
+          "Escalate",
+          "Contact haematology/oncology and admit for monitoring, reassessment and culture-led antibiotic adjustment."
+        ]
+      ],
+      "safety": "Do not delay the first antibiotic dose to wait for imaging, blood culture transport or an obvious infection focus.",
+      "local": "Australian hospital febrile neutropenia guidance; RCH FN guideline illustrates urgent antibiotic timing."
+    },
+    "source": "https://www.rch.org.au/clinicalguide/guideline_index/febrile_neutropenia/",
+    "context": "Advanced integrated clinical decisions"
   }
 ]
