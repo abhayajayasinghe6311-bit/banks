@@ -2878,5 +2878,245 @@
       "local": "RACGP Australian Journal of General Practice screening for primary aldosteronism clinical guidance."
     },
     "source": "https://www1.racgp.org.au/getattachment/90975557-377a-4f7b-8c85-2935d6ec6a0b/Screening-for-primary-aldosteronism.aspx"
+  },
+  {
+    "n": 61,
+    "domain": "Oncology & gastroenterology",
+    "skill": "Immune checkpoint colitis / severe toxicity escalation",
+    "context": "Advanced final-year clinical prioritisation",
+    "stem": "A 64-year-old receiving nivolumab and ipilimumab for metastatic melanoma reports eight watery stools above baseline daily, nocturnal urgency and diffuse abdominal pain. BP is 104/65 mmHg, CRP is elevated, and stool infection tests have been sent. There is no perforation on CT. She is due for another immunotherapy infusion tomorrow.",
+    "ask": "What is the most appropriate management while the infectious assessment proceeds?",
+    "options": [
+      "Withhold immunotherapy and admit for specialist-directed systemic corticosteroids and supportive care.",
+      "Continue both checkpoint drugs and prescribe loperamide until stool cultures return.",
+      "Start empirical oral mesalazine and arrange routine oncology review in two weeks.",
+      "Give a prophylactic antibiotic course and administer the scheduled infusion as planned.",
+      "Arrange colonoscopy as an outpatient before taking action on the current immunotherapy."
+    ],
+    "key": "A",
+    "explanations": [
+      "Correct: ≥7 stools over baseline is severe checkpoint-inhibitor diarrhoea. Withhold treatment, assess dehydration and infection, involve oncology/gastroenterology, and initiate systemic steroids for suspected immune colitis under the toxicity protocol; consider biologic rescue if refractory.",
+      "Loperamide alone is inadequate for severe symptoms and may be unsafe with inflammatory complications. Continuing the offending immunotherapy risks worsening colitis and perforation.",
+      "Mesalazine is not the standard initial treatment of grade 3 immune-mediated colitis. Waiting weeks delays immunosuppression, rehydration and evaluation of complications.",
+      "Empirical antibiotics without evidence of infection do not address immune-mediated inflammation. A scheduled infusion should not proceed while severe treatment toxicity is suspected.",
+      "Endoscopy can help confirm colitis and guide rescue treatment, but should be coordinated during urgent assessment rather than delay withholding the drug and stabilising the patient."
+    ],
+    "pearl": "Checkpoint inhibitor diarrhoea graded ≥7 stools/day above baseline requires urgent severe-toxicity management, not routine antidiarrhoeals.",
+    "pivot": "Four to six stools above baseline without severe features may follow a grade 2 pathway with drug withholding and prompt specialist review.",
+    "management": {
+      "steps": [
+        [
+          "Triage",
+          "Assess haemodynamics, hydration, stool frequency, abdominal signs and potential perforation."
+        ],
+        [
+          "Investigate",
+          "Send stool pathogen testing, bloods and imaging/endoscopy if clinically indicated."
+        ],
+        [
+          "Treat",
+          "Withhold immunotherapy, provide IV fluids and initiate specialist-directed systemic corticosteroids for severe immune colitis."
+        ],
+        [
+          "Reassess",
+          "Monitor response and complications; discuss infliximab/vedolizumab for steroid-refractory disease with specialists."
+        ]
+      ],
+      "safety": "Exclude or concurrently evaluate infectious diarrhoea; urgent treatment of severe immune toxicity should be specialist coordinated.",
+      "local": "eviQ Management of immune-related adverse events, current colitis severity pathway."
+    },
+    "source": "https://www.eviq.org.au/clinical-resources/side-effect-and-toxicity-management/immunological/1993-management-of-immune-related-adverse-events"
+  },
+  {
+    "n": 62,
+    "domain": "Paediatrics & ENT",
+    "skill": "Acute mastoiditis / postauricular swelling and protruding ear",
+    "context": "Advanced final-year clinical prioritisation",
+    "stem": "A 3-year-old treated symptomatically for earache returns after four days with fever, irritability and a painful red swelling behind the right ear. The pinna protrudes laterally and the tympanic membrane is inflamed. He is tachycardic but alert, without focal neurological signs or meningism.",
+    "ask": "Which next action is most appropriate?",
+    "options": [
+      "Discharge with topical ear drops and review after the tympanic membrane has healed.",
+      "Admit, begin appropriate intravenous antibiotics and obtain urgent ENT assessment.",
+      "Treat as simple otitis externa with aural toilet and a wick in the external canal.",
+      "Arrange an elective hearing test before deciding whether additional antimicrobial treatment is needed.",
+      "Order a routine non-urgent CT scan and withhold antibiotics until imaging confirms bony destruction."
+    ],
+    "key": "B",
+    "explanations": [
+      "Ear drops do not reliably treat infection in the mastoid air cells. Postauricular inflammation and pinna displacement are red flags for a suppurative complication.",
+      "Correct: acute mastoiditis requires prompt systemic IV antibiotics, ENT consultation and assessment for drainage or mastoid surgery. Imaging is selected for suspected abscess, intracranial extension or uncertain diagnosis.",
+      "Otitis externa typically causes canal tenderness and pain on tragal or pinna manipulation; it does not adequately explain postauricular swelling with displacement of the auricle.",
+      "Hearing assessment can be arranged after acute infection management, but is not the priority when there is a possible deep temporal bone infection.",
+      "CT may be useful for complicated mastoiditis, but imaging should not postpone IV antibiotics or specialist assessment when clinical findings are characteristic."
+    ],
+    "pearl": "Fever, postauricular tenderness/swelling and a protruding pinna after otitis media suggest acute mastoiditis.",
+    "pivot": "An otherwise well child with uncomplicated acute otitis media and no mastoid signs may be managed with analgesia and selective antibiotics.",
+    "management": {
+      "steps": [
+        [
+          "Recognise",
+          "Examine the ear, mastoid and cranial nerves and check for meningism or intracranial signs."
+        ],
+        [
+          "Admit",
+          "Secure IV access, provide analgesia, assess hydration and take cultures when indicated."
+        ],
+        [
+          "Treat",
+          "Begin locally recommended IV antibiotics and contact ENT promptly for drainage assessment."
+        ],
+        [
+          "Review",
+          "Monitor fever, swelling and neurological state; obtain imaging if abscess or extension is suspected."
+        ]
+      ],
+      "safety": "New facial weakness, severe headache or reduced consciousness requires urgent evaluation for intracranial complications.",
+      "local": "Royal Children's Hospital Acute otitis media guideline, mastoiditis complication section."
+    },
+    "source": "https://www.rch.org.au/clinicalguide/guideline_index/Acute_otitis_media/"
+  },
+  {
+    "n": 63,
+    "domain": "Sexual health & gynaecology",
+    "skill": "Pelvic inflammatory disease with IUD / avoid automatic removal",
+    "context": "Advanced final-year clinical prioritisation",
+    "stem": "A 25-year-old with a copper intrauterine device presents with two days of pelvic pain, mucopurulent discharge and cervical motion tenderness. Pregnancy test is negative, she is afebrile and haemodynamically stable, and pelvic ultrasound shows no tubo-ovarian abscess. She wishes to keep her contraception and can return for review.",
+    "ask": "Which plan best balances infection treatment and contraception?",
+    "options": [
+      "Remove the IUD immediately and postpone antibiotic treatment until the device is cultured.",
+      "Prescribe antifungal treatment alone because discharge in an IUD user is usually candidiasis.",
+      "Treat empirically for PID, arrange STI/partner care and reassess the IUD if no improvement.",
+      "Perform endometrial biopsy before starting antibiotics because PID is only confirmed histologically.",
+      "Admit for urgent hysterectomy because retained IUDs cause persistent pelvic infection."
+    ],
+    "key": "C",
+    "explanations": [
+      "Immediate IUD removal is not routinely necessary for mild-to-moderate PID if the patient wishes to retain it; treatment must not be delayed. Consider removal if no improvement after around 72 hours or for severe disease.",
+      "Candida typically causes itch and vulvovaginal irritation, not cervical motion tenderness and pelvic inflammatory signs. Antifungals alone leave ascending bacterial infection untreated.",
+      "Correct: begin empiric antibiotics covering likely PID organisms without waiting for NAAT results, assess STI risks and partners, and reassess clinically within 48–72 hours. Consider IUD removal if symptoms fail to improve.",
+      "Endometrial biopsy is not a prerequisite for clinical PID treatment. Diagnostic delay increases risks of tubal damage, chronic pain and infertility.",
+      "Hysterectomy is not appropriate for uncomplicated PID. Severe complications require inpatient specialist management, but not automatic organ removal."
+    ],
+    "pearl": "An IUD can usually remain in place during initial mild–moderate PID treatment; reassess removal if not improving after 72 hours.",
+    "pivot": "Pregnancy, severe illness, peritonism, tubo-ovarian abscess or inability to tolerate oral therapy shifts management toward hospital care.",
+    "management": {
+      "steps": [
+        [
+          "Exclude emergencies",
+          "Check pregnancy status, vitals, peritonism and possible tubo-ovarian abscess."
+        ],
+        [
+          "Treat promptly",
+          "Give guideline-concordant empiric PID antibiotics and analgesia; collect STI specimens without delay."
+        ],
+        [
+          "Address transmission",
+          "Arrange partner testing/treatment, discuss abstinence until treatment complete and review other STI risks."
+        ],
+        [
+          "Reassess",
+          "Review at 48–72 hours and consider IUD removal or admission if inadequate response."
+        ]
+      ],
+      "safety": "Do not delay PID antibiotics for cervical swab results or routinely remove the IUD without assessing severity and patient preference.",
+      "local": "Melbourne Sexual Health Centre pelvic inflammatory disease treatment guideline."
+    },
+    "source": "https://www.mshc.org.au/health-professionals/treatment-guidelines/pelvic-inflammatory-disease-treatment-guidelines"
+  },
+  {
+    "n": 64,
+    "domain": "Paediatric endocrinology & emergency medicine",
+    "skill": "Paediatric DKA with hypokalaemia / potassium before insulin",
+    "context": "Advanced final-year clinical prioritisation",
+    "stem": "A 13-year-old with new type 1 diabetes has abdominal pain, Kussmaul breathing and dehydration. Glucose is 27 mmol/L, venous pH 7.12, ketones 5.8 mmol/L and potassium 2.7 mmol/L. After initial assessment she is alert, has passed urine and is receiving protocol rehydration fluids. A junior doctor prepares the insulin infusion.",
+    "ask": "What is the safest immediate change to the DKA treatment sequence?",
+    "options": [
+      "Give an intravenous insulin bolus to reduce the high glucose before replacing potassium.",
+      "Add sodium bicarbonate routinely because acidosis is the principal immediate electrolyte danger.",
+      "Stop fluid resuscitation because the low potassium indicates the patient is not dehydrated.",
+      "Replace potassium and delay insulin until serum potassium is corrected above the protocol threshold.",
+      "Use oral potassium alone and commence full-dose insulin because she remains conscious and cooperative."
+    ],
+    "key": "D",
+    "explanations": [
+      "An insulin bolus is not recommended in paediatric DKA and rapidly shifts potassium intracellularly, increasing arrhythmia risk in an already severely hypokalaemic child.",
+      "Bicarbonate is not routine DKA therapy and may worsen electrolyte shifts. It is reserved for exceptional critical circumstances with intensive-care advice.",
+      "Severe potassium deficit coexists with dehydration and ketosis; appropriate isotonic fluid resuscitation remains necessary while electrolytes are carefully monitored.",
+      "Correct: the RCH pathway directs potassium replacement before insulin when K <3.0 mmol/L. Continue monitored rehydration, ECG observation and frequent potassium measurement until safe to start insulin.",
+      "Oral replacement is unreliable and may be inappropriate with vomiting or evolving consciousness changes. Insulin at potassium 2.7 mmol/L can precipitate dangerous ventricular dysrhythmia."
+    ],
+    "pearl": "DKA patients have total-body potassium depletion; if K <3.0 mmol/L, correct potassium before starting insulin.",
+    "pivot": "With normal or elevated potassium and adequate urine output, start the protocol insulin infusion after initial rehydration with ongoing electrolyte checks.",
+    "management": {
+      "steps": [
+        [
+          "Stabilise",
+          "Assess airway, perfusion, conscious state and cardiac rhythm; involve paediatric endocrine/critical care."
+        ],
+        [
+          "Replace deficit",
+          "Continue isotonic fluids and supervised IV potassium replacement, confirming urine output and renal function."
+        ],
+        [
+          "Start insulin safely",
+          "Delay insulin until potassium is above the local threshold, then begin infusion without bolus."
+        ],
+        [
+          "Monitor",
+          "Repeat glucose, ketones, electrolytes, venous gas, fluid balance and neurological observations frequently."
+        ]
+      ],
+      "safety": "Insulin before correcting severe hypokalaemia may cause fatal arrhythmias; do not administer potassium to an anuric child without specialist review.",
+      "local": "RCH Diabetic ketoacidosis clinical practice guideline, updated July 2025."
+    },
+    "source": "https://www.rch.org.au/clinicalguide/guideline_index/Diabetic_ketoacidosis/"
+  },
+  {
+    "n": 65,
+    "domain": "Respiratory medicine & acute care",
+    "skill": "Acute COPD exacerbation / controlled oxygen with hypercapnia risk",
+    "context": "Advanced final-year clinical prioritisation",
+    "stem": "A 73-year-old with severe COPD arrives breathless with purulent sputum and diffuse wheeze. On room air SpO₂ is 82%; after a non-rebreather mask it is 99% but she becomes drowsier. An arterial gas shows pH 7.29, PaCO₂ 68 mmHg and PaO₂ 95 mmHg. No immediate pneumothorax is seen.",
+    "ask": "Which respiratory management approach is now most appropriate?",
+    "options": [
+      "Maintain the non-rebreather oxygen flow because saturation above 98% ensures adequate ventilation.",
+      "Remove all supplemental oxygen because hypercapnia means oxygen is causing the entire illness.",
+      "Give nebulised bronchodilators alone and delay repeat blood gases until the patient feels better.",
+      "Intubate immediately without considering non-invasive ventilation because any acidosis requires ventilation.",
+      "Titrate controlled oxygen toward 88–92% and urgently assess suitability for non-invasive ventilation."
+    ],
+    "key": "E",
+    "explanations": [
+      "Excessive oxygen may worsen hypercapnia in susceptible COPD patients. A normal or high SpO₂ does not exclude CO₂ retention or respiratory acidosis.",
+      "With SpO₂ 82% on air, withholding all oxygen risks hypoxic injury. The goal is controlled oxygen delivery with monitoring, not abandonment of oxygen therapy.",
+      "Bronchodilators, steroids and selected antibiotics are important, but worsening drowsiness and respiratory acidosis require immediate ventilatory assessment and repeat gases.",
+      "NIV is often first-line ventilatory support in appropriate alert and cooperative patients with acidotic COPD exacerbation. Intubation is needed for NIV contraindications, failure or airway compromise.",
+      "Correct: use controlled oxygen aiming for 88–92%, assess airway protection and initiate specialist-supervised NIV when appropriate for persistent hypercapnic acidosis. Treat exacerbation triggers concurrently."
+    ],
+    "pearl": "In a COPD patient at risk of hypercapnic respiratory failure, oxygen is essential but should be titrated rather than maximised.",
+    "pivot": "A patient with hypoxaemia from a different cause without CO₂-retention risk may require a different target saturation after assessment.",
+    "management": {
+      "steps": [
+        [
+          "Assess",
+          "Review conscious state, work of breathing, arterial gases and possible pneumonia or pneumothorax."
+        ],
+        [
+          "Control oxygen",
+          "Use titrated oxygen with a target SpO₂ 88–92% and repeat blood gas monitoring."
+        ],
+        [
+          "Ventilate",
+          "Seek senior respiratory/ICU review and commence NIV if indicated and safe."
+        ],
+        [
+          "Treat exacerbation",
+          "Give bronchodilators, corticosteroids and antibiotics when indicated; monitor response and plan prevention."
+        ]
+      ],
+      "safety": "Drowsiness may indicate CO₂ narcosis and impaired airway protection; do not delay escalation while merely adjusting oxygen.",
+      "local": "Lung Foundation Australia COPD-X based acute-care guidance and COPD Clinical Care Standard."
+    },
+    "source": "https://lungfoundation.com.au/support-resources/resource-hub/chronic-obstructive-pulmonary-disease-acute-care-quality-improvement-toolkit/"
   }
 ]
