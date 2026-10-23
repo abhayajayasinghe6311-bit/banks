@@ -1,6 +1,6 @@
 {
   "title": "SPA-W Study Garden",
-  "version": "2026-10-23-bank13",
+  "version": "2026-10-24-bank15",
   "banks": [
     {
       "id": 1,
@@ -98,6 +98,13 @@
       "name": "Emergency Reasoning Garden",
       "emoji": "🩺",
       "description": "100 advanced final-year cases with plausible competing decisions, five-option explanations, practical management and Australian clinical guidance",
+      "count": 100
+    },
+    {
+      "id": 15,
+      "name": "Final-Year Mastery Garden",
+      "emoji": "🌺",
+      "description": "100 advanced final-year integrated Australian-guideline cases with balanced choices, detailed reasoning, safety warnings and practical management",
       "count": 100
     }
   ]
