@@ -1918,5 +1918,245 @@
       "local": "Australian Asthma Handbook, treatment levels for adults and adolescents, ICS–formoterol recommendation."
     },
     "source": "https://www.asthmahandbook.org.au/management/adults-and-adolescents/medication-management/treatment-levels-for-adults-and-adolescents"
+  },
+  {
+    "n": 41,
+    "domain": "General practice & infectious diseases",
+    "skill": "Hepatitis C antibody positive / RNA negative interpretation",
+    "context": "Advanced final-year integrated management",
+    "stem": "A 46-year-old presents for routine screening. Hepatitis C antibody is positive but confirmatory HCV RNA is undetectable. He recalls a treated infection eight years ago, has normal liver enzymes and reports no new injecting or other blood exposure. He asks whether the positive antibody means he currently has transmissible hepatitis C.",
+    "ask": "Which explanation and follow-up plan is most appropriate?",
+    "options": [
+      "Explain that antibody may persist after clearance; assess reinfection risk and retest RNA if indicated.",
+      "Diagnose active chronic hepatitis C because any positive antibody confirms ongoing viraemia.",
+      "Start a direct-acting antiviral immediately despite undetectable HCV RNA and no recent exposure.",
+      "Repeat antibody titres monthly until they become negative to document a complete virological cure.",
+      "Advise that past infection confers lifelong immunity and no further testing is ever necessary."
+    ],
+    "key": "A",
+    "explanations": [
+      "Correct: anti-HCV reflects exposure and often remains positive after spontaneous or treatment-related clearance. An undetectable RNA usually means no current viraemia; review timing, ongoing risk and liver disease before deciding on repeat RNA testing.",
+      "Antibody positivity alone cannot distinguish resolved from active infection. Detectable RNA establishes current infection and guides antiviral treatment.",
+      "Direct-acting antivirals treat active HCV infection, not an antibody result without viraemia. Prescribing them now adds cost and potential harms without an indicated target.",
+      "Antibody titres are not used to monitor cure and may remain detectable indefinitely. Sustained virological response and reinfection assessment rely on RNA testing.",
+      "Prior HCV infection does not produce reliable protective immunity. Reinfection is possible, so prevention advice and RNA retesting remain relevant with new exposures."
+    ],
+    "pearl": "HCV antibody positive with RNA negative usually means past cleared infection, not current viraemia; antibodies can persist for life.",
+    "pivot": "A new recent high-risk exposure, unexplained elevated ALT or ongoing risk warrants repeat RNA despite an initially negative result.",
+    "management": {
+      "steps": [
+        [
+          "Interpret",
+          "Review antibody, confirmatory RNA, prior treatment and possible timing of new exposure."
+        ],
+        [
+          "Assess liver health",
+          "Evaluate other liver disease causes and fibrosis risk when relevant, especially after prior chronic infection."
+        ],
+        [
+          "Counsel",
+          "Explain antibody persistence, lack of reliable reinfection immunity and bloodborne virus prevention."
+        ],
+        [
+          "Retest selectively",
+          "Arrange HCV RNA follow-up if recent exposure, abnormal liver tests or ongoing reinfection risk emerges."
+        ]
+      ],
+      "safety": "Do not label a person currently infectious or prescribe antiviral therapy on antibody positivity alone.",
+      "local": "ASHM National Hepatitis C Testing Policy 2025: conveying antibody-positive, RNA-negative results."
+    },
+    "source": "https://testingportal.ashm.org.au/national-hcv-testing-policy/conveying-hcv-test-results/"
+  },
+  {
+    "n": 42,
+    "domain": "Child psychiatry & cardiology",
+    "skill": "ADHD stimulant assessment / exertional syncope as cardiac red flag",
+    "context": "Advanced final-year integrated management",
+    "stem": "A 12-year-old with a well-supported ADHD diagnosis has persistent school impairment despite behavioural strategies. His parents request methylphenidate. During baseline review, he describes fainting twice while sprinting at football training, and his uncle died suddenly aged 32. BP and resting heart rate are normal; no murmur is heard.",
+    "ask": "What should happen before stimulant medication is initiated?",
+    "options": [
+      "Begin methylphenidate immediately because normal resting observations exclude important inherited heart disease.",
+      "Seek specialist cardiac evaluation of exertional syncope and family history before medication initiation.",
+      "Order a routine ECG only and prescribe stimulants if the tracing has no obvious abnormality.",
+      "Avoid all ADHD treatment permanently because any family sudden death contraindicates psychological support.",
+      "Prescribe a sedating antipsychotic instead because it has no relevant cardiovascular adverse effects."
+    ],
+    "key": "B",
+    "explanations": [
+      "Normal resting BP, pulse and auscultation cannot exclude arrhythmogenic or structural disease. Exertional syncope and young sudden death in the family require targeted investigation.",
+      "Correct: refer for cardiology assessment and investigate possible inherited or exertional cardiac disease before starting a medicine that may increase heart rate and blood pressure. Continue nonpharmacological support.",
+      "An ECG is useful but a normal tracing does not exclude all causes of exertional syncope. A specialist assessment may require echocardiography, exercise testing or other studies.",
+      "A cardiac red flag delays prescribing pending assessment, not the entire ADHD care pathway. Educational and psychological supports should continue.",
+      "Antipsychotics are not an appropriate first-line substitute for ADHD and may themselves cause QT, metabolic or other adverse effects."
+    ],
+    "pearl": "Exertional syncope and a young relative's sudden death are indications for cardiac review before ADHD stimulant therapy.",
+    "pivot": "Without cardiac red flags, routine ECG is not universally required before starting stimulants; baseline pulse, BP and clinical history remain important.",
+    "management": {
+      "steps": [
+        [
+          "Characterise",
+          "Clarify exertional fainting, palpitations, family cardiac history and neurological mimics."
+        ],
+        [
+          "Refer",
+          "Arrange timely paediatric cardiology assessment and investigations directed by the specialist."
+        ],
+        [
+          "Support ADHD",
+          "Continue school accommodations and behavioural strategies while medication decisions are deferred."
+        ],
+        [
+          "Review plan",
+          "Revisit pharmacotherapy after cardiac risk assessment and monitor BP, pulse, growth and symptoms if prescribed."
+        ]
+      ],
+      "safety": "Do not use a normal resting ECG as a stand-alone clearance for exertional syncope with a concerning family history.",
+      "local": "Australian Evidence-Based Clinical Practice Guideline for ADHD, pre-medication cardiovascular risk assessment."
+    },
+    "source": "https://adhdguideline.aadpa.com.au/"
+  },
+  {
+    "n": 43,
+    "domain": "Rheumatology & renal medicine",
+    "skill": "Crystal-proven gout flare / CKD and anticoagulant constraints",
+    "context": "Advanced final-year integrated management",
+    "stem": "A 73-year-old with stage 4 chronic kidney disease (eGFR 24 mL/min/1.73 m²) and atrial fibrillation on apixaban presents with a painful swollen first metatarsophalangeal joint. Synovial aspirate shows monosodium urate crystals, Gram stain is negative and there are no systemic infection features. He requests his usual high-dose ibuprofen and colchicine.",
+    "ask": "Which acute anti-inflammatory strategy is safest to consider?",
+    "options": [
+      "Use full-dose ibuprofen because a single short course does not affect kidney function or bleeding.",
+      "Give repeated high-dose colchicine until diarrhoea develops because the renal clearance is unchanged.",
+      "Consider corticosteroid treatment after excluding joint infection, avoiding high-risk NSAID and colchicine dosing.",
+      "Increase apixaban temporarily because joint inflammation increases the risk of local thrombosis and embolism.",
+      "Withhold all analgesia until serum urate falls spontaneously, then begin urate-lowering medication."
+    ],
+    "key": "C",
+    "explanations": [
+      "NSAIDs can worsen renal function and increase bleeding when combined with anticoagulation. Severe CKD makes routine full-dose ibuprofen an unsafe first choice.",
+      "Colchicine accumulates in significant renal impairment and can cause severe toxicity, especially with interacting medicines. Repeated high doses are not justified.",
+      "Correct: after reasonable exclusion of septic arthritis, a short systemic or intra-articular corticosteroid regimen may control a crystal-proven flare while avoiding NSAID renal/bleeding risks and excessive colchicine exposure.",
+      "Apixaban treats thromboembolic risk from atrial fibrillation; increasing its dose does not reduce urate crystal inflammation and may cause bleeding.",
+      "Acute pain and inflammation should be treated promptly. Serum urate can be misleading during a flare, and urate-lowering plans are separate from immediate symptom control."
+    ],
+    "pearl": "Acute gout treatment must account for kidney function, anticoagulants and drug interactions; corticosteroids can be useful when NSAIDs and colchicine are risky.",
+    "pivot": "A febrile hot joint or suspicious synovial findings requires urgent septic arthritis assessment despite the presence of urate crystals.",
+    "management": {
+      "steps": [
+        [
+          "Exclude infection",
+          "Review fever, systemic signs, joint aspirate culture and risk factors for septic arthritis."
+        ],
+        [
+          "Choose therapy",
+          "Use a suitable corticosteroid approach with renal, diabetes and infection risks considered."
+        ],
+        [
+          "Avoid harm",
+          "Avoid routine NSAIDs and excessive colchicine in advanced CKD and with anticoagulant exposure."
+        ],
+        [
+          "Prevent recurrence",
+          "Review urate-lowering therapy, interacting drugs and future flare prophylaxis with renal-safe planning."
+        ]
+      ],
+      "safety": "Urate crystals do not absolutely exclude concurrent septic arthritis; reassess if symptoms or cultures suggest infection.",
+      "local": "RACGP gout management review: acute flare options and colchicine dose caution in renal impairment."
+    },
+    "source": "https://www.racgp.org.au/afp/2016/may/the-management-of-gout-much-has-changed"
+  },
+  {
+    "n": 44,
+    "domain": "Neurology & medicolegal safety",
+    "skill": "First unprovoked seizure / driving restrictions and evaluation",
+    "context": "Advanced final-year integrated management",
+    "stem": "A 26-year-old had a witnessed two-minute generalised tonic-clonic seizure while sitting at home. He is now fully recovered, has normal glucose and electrolytes and no intoxication, fever, trauma or focal deficit. CT head is unremarkable. He asks whether he may drive to work tomorrow because this was his first-ever seizure.",
+    "ask": "What is the most appropriate discharge counselling and follow-up?",
+    "options": [
+      "Permit immediate driving because a single seizure is not sufficient to diagnose epilepsy.",
+      "Prescribe lifelong antiseizure medication without further evaluation because recurrence is inevitable.",
+      "Arrange no follow-up because normal CT and electrolytes exclude a neurological cause of seizure.",
+      "Advise no driving pending fitness-to-drive assessment and arrange EEG, MRI and specialist review.",
+      "Recommend driving only on quiet roads because reduced traffic eliminates the risk of sudden recurrence."
+    ],
+    "key": "D",
+    "explanations": [
+      "A first unprovoked seizure carries recurrence risk and affects licensing fitness even before epilepsy is formally diagnosed. Immediate driving is unsafe.",
+      "Long-term antiseizure therapy depends on recurrence risk, EEG/MRI findings, patient preference and specialist assessment; it is not automatic after every first event.",
+      "A normal CT and routine blood tests do not exclude epilepsy or structural lesions better detected by MRI. Neurological follow-up remains necessary.",
+      "Correct: advise immediate cessation of driving, discuss Austroads and state licensing rules, provide seizure safety advice, and arrange outpatient EEG, MRI and neurology follow-up when medically stable.",
+      "Quiet roads do not prevent impaired awareness or loss of vehicle control during a recurrent seizure. Licensing standards apply regardless of route or driving frequency."
+    ],
+    "pearl": "After a first unprovoked seizure, do not clear driving solely because CT and blood tests are normal; licensing standards are diagnosis- and risk-specific.",
+    "pivot": "Persistent confusion, focal neurological deficit, status epilepticus or suspected CNS infection requires admission and urgent investigation rather than routine outpatient follow-up.",
+    "management": {
+      "steps": [
+        [
+          "Check safety",
+          "Exclude acute provoking causes, assess recovery and provide emergency return precautions."
+        ],
+        [
+          "Investigate",
+          "Arrange specialist-directed EEG and brain MRI, and clarify seizure semiology and witness account."
+        ],
+        [
+          "Counsel",
+          "Advise no driving, water/height safety, sleep regularity and avoidance of seizure triggers."
+        ],
+        [
+          "Follow up",
+          "Arrange neurology review to assess recurrence risk, treatment need and state licensing requirements."
+        ]
+      ],
+      "safety": "The duration of driving restriction varies by circumstances and licensing category; do not promise a fixed return date.",
+      "local": "Epilepsy Action Australia January 2026 driving and epilepsy factsheet and Austroads fitness-to-drive standards."
+    },
+    "source": "https://www.epilepsy.org.au/wp-content/uploads/2017/08/Factsheet_Driving_Jan2026.pdf"
+  },
+  {
+    "n": 45,
+    "domain": "Palliative care & general surgery",
+    "skill": "Malignant bowel obstruction / goals-concordant symptom and surgical assessment",
+    "context": "Advanced final-year integrated management",
+    "stem": "A 68-year-old with metastatic ovarian cancer and extensive peritoneal disease presents with repeated vomiting, abdominal distension and colicky pain. CT demonstrates multifocal small-bowel obstruction without free air or bowel ischaemia. She is stable and has previously expressed a strong preference for comfort-focused treatment over burdensome surgery. Her daughter requests an immediate laparotomy.",
+    "ask": "What is the best next management approach?",
+    "options": [
+      "Proceed to emergency laparotomy because all mechanical bowel obstructions require surgical correction.",
+      "Give only intravenous fluids and discharge once vomiting settles, without discussing future care goals.",
+      "Start high-volume oral laxatives because multifocal obstruction is best treated with rapid bowel emptying.",
+      "Ignore the patient's documented preferences because the next of kin has requested an operation.",
+      "Provide symptom control and urgent multidisciplinary review, aligning surgical options with patient goals."
+    ],
+    "key": "E",
+    "explanations": [
+      "Surgery may benefit selected patients, but multifocal malignant obstruction with extensive peritoneal disease often has limited operative benefit and substantial morbidity. Consent and goals matter.",
+      "Fluids alone do not adequately treat vomiting, pain, secretion burden or recurrent obstruction. Discharge without a coordinated plan risks distress and readmission.",
+      "High-volume laxatives can worsen distension and pain in complete mechanical obstruction. Bowel regimen choices depend on whether obstruction is partial, functional or complete.",
+      "A patient with decision-making capacity directs treatment decisions; family preferences do not automatically override informed wishes. Shared discussion can address concerns without ignoring autonomy.",
+      "Correct: assess reversible complications, relieve nausea, pain and secretions, consider decompression and palliative pharmacotherapy, and involve surgery and palliative care to evaluate interventions against prognosis and the patient's goals."
+    ],
+    "pearl": "Malignant bowel obstruction needs both clinical assessment and goals-of-care discussion; neither automatic surgery nor abandonment is appropriate.",
+    "pivot": "Peritonitis, perforation, ischaemia or uncontrolled shock would require immediate emergency surgical assessment even when care is otherwise palliative.",
+    "management": {
+      "steps": [
+        [
+          "Assess",
+          "Review CT, examination, hydration, electrolytes, pain, capacity and any signs of strangulation."
+        ],
+        [
+          "Relieve symptoms",
+          "Provide antiemetics, analgesia and appropriate decompression or antisecretory therapy guided by specialists."
+        ],
+        [
+          "Discuss options",
+          "Involve palliative care and surgery to explain realistic benefits and burdens of intervention."
+        ],
+        [
+          "Respect choices",
+          "Document informed patient goals, family communication and a coordinated symptom/crisis plan."
+        ]
+      ],
+      "safety": "Do not give aggressive laxatives for complete obstruction or automatically override a capable patient's informed treatment preferences.",
+      "local": "Queensland Gold Coast Health specialist palliative care referral criteria for bowel obstruction requiring assessment in line with goals of care."
+    },
+    "source": "https://www.goldcoast.health.qld.gov.au/referrals/services/specialty-palliative-care"
   }
 ]
