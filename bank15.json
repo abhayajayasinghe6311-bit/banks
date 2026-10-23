@@ -2638,5 +2638,245 @@
       "local": "STI Guidelines Australia: macrolide-resistant M. genitalium is treated with sequential doxycycline and moxifloxacin."
     },
     "source": "https://sti.guidelines.org.au/sexually-transmissible-infections/mycoplasma-genitalium/"
+  },
+  {
+    "n": 56,
+    "domain": "Sexual health & emergency prevention",
+    "skill": "Potential HIV exposure / timely non-occupational post-exposure prophylaxis",
+    "context": "Advanced final-year integrated management",
+    "stem": "A 24-year-old presents 38 hours after condomless receptive anal intercourse with a partner newly confirmed to have HIV. He does not take PrEP, has no known renal disease, and his rapid baseline HIV test is negative. The partner's viral load is not yet available.",
+    "ask": "What is the most appropriate management now?",
+    "options": [
+      "Assess exposure risk and start indicated HIV PEP immediately, arranging baseline tests and follow-up.",
+      "Defer antiretroviral prophylaxis until the source viral-load result confirms ongoing infectiousness.",
+      "Offer daily HIV PrEP alone because the exposure occurred more than twenty-four hours ago.",
+      "Repeat a rapid HIV test at seven days and initiate PEP only if seroconversion occurs.",
+      "Provide empirical antibiotics for common STIs and avoid HIV-specific prevention pending specialist review."
+    ],
+    "key": "A",
+    "explanations": [
+      "Correct: 38 hours is within the 72-hour PEP window. A significant exposure warrants urgent assessment and initiation of a recommended 28-day regimen when indicated; do not delay for source viral load or routine baseline results.",
+      "Waiting for a source viral load may lose the time-sensitive prophylaxis opportunity. A reliably undetectable source viral load could change risk assessment, but it is not established here.",
+      "PrEP prevents future acquisition when taken appropriately; it is not a substitute for PEP after a significant exposure in someone not already protected.",
+      "PEP works by preventing establishment of infection after exposure, not treating established seroconversion. A negative initial test is expected soon after exposure.",
+      "STI screening and prevention are important adjuncts, but antibiotics do not prevent HIV acquisition and should not replace urgent PEP assessment."
+    ],
+    "pearl": "HIV PEP is most effective when started promptly, ideally within 24 hours and no later than 72 hours after exposure.",
+    "pivot": "If the source has a reliably sustained undetectable viral load, exposure-risk assessment may change; verify rather than assume.",
+    "management": {
+      "steps": [
+        [
+          "Assess",
+          "Clarify timing, type of exposure, source HIV status, current PrEP use and pregnancy potential."
+        ],
+        [
+          "Start",
+          "Commence a recommended 28-day PEP regimen promptly when risk assessment indicates."
+        ],
+        [
+          "Screen",
+          "Arrange baseline HIV, hepatitis B/C, STI testing and renal function without delaying treatment."
+        ],
+        [
+          "Follow up",
+          "Support adherence, arrange repeat testing per local protocol and discuss transition to PrEP if ongoing risk."
+        ]
+      ],
+      "safety": "Do not wait for source viral-load testing when indicated PEP is time-critical and the result is unavailable.",
+      "local": "ASHM Australian PEP clinical tool: begin as soon as possible, ideally within 24 hours and no later than 72 hours."
+    },
+    "source": "https://ashm.org.au/initiatives/australian-first-clinical-tool-for-prescribing-hiv-pep-launched/"
+  },
+  {
+    "n": 57,
+    "domain": "Geriatrics & bone health",
+    "skill": "Denosumab cessation / rebound vertebral fracture prevention",
+    "context": "Advanced final-year integrated management",
+    "stem": "A 75-year-old with osteoporosis has received denosumab every six months for four years without fractures. Her last injection was six months ago. She wishes to stop because she feels well, and asks whether she can take a drug holiday as her friend did with alendronate.",
+    "ask": "What is the best response and treatment plan?",
+    "options": [
+      "Agree to a twelve-month drug holiday and reassess bone density only if back pain develops.",
+      "Explain rebound fracture risk and arrange uninterrupted therapy or planned bisphosphonate transition.",
+      "Replace denosumab with calcium alone because bone density has improved since treatment began.",
+      "Reduce denosumab to yearly injections so the antiresorptive effect wears off more gradually.",
+      "Stop treatment immediately and use a short prednisolone course to prevent rebound bone turnover."
+    ],
+    "key": "B",
+    "explanations": [
+      "Bisphosphonate holidays cannot be extrapolated to denosumab. Rapid reversal of its effect can cause multiple vertebral fractures even in previously stable patients.",
+      "Correct: denosumab should not be interrupted without a plan. If stopping, arrange a timely bisphosphonate transition, usually for at least twelve months, with specialist input when appropriate.",
+      "Calcium and vitamin D sufficiency support bone health but do not adequately prevent denosumab-withdrawal rebound bone loss and vertebral fractures.",
+      "Denosumab is intended at six-month intervals. Extending to annual dosing creates an unprotected period rather than a safe taper.",
+      "Glucocorticoids increase skeletal fragility and have no role in preventing denosumab rebound; they could worsen fracture risk."
+    ],
+    "pearl": "Denosumab is not a drug-holiday medication; plan antiresorptive cover before stopping.",
+    "pivot": "A bisphosphonate holiday may be considered in selected low-risk patients after prolonged bisphosphonate therapy, not after denosumab.",
+    "management": {
+      "steps": [
+        [
+          "Review",
+          "Assess fracture history, current BMD, renal function, calcium, vitamin D and treatment goals."
+        ],
+        [
+          "Continue",
+          "Arrange the next denosumab dose on schedule if ongoing treatment is chosen."
+        ],
+        [
+          "Transition",
+          "If stopping, plan bisphosphonate therapy for at least twelve months with an appropriate start date."
+        ],
+        [
+          "Monitor",
+          "Reassess fractures, symptoms, adherence and BMD; consider specialist advice for high-risk patients."
+        ]
+      ],
+      "safety": "Never simply omit the next denosumab injection without a documented follow-on antiresorptive strategy.",
+      "local": "2024 RACGP–Healthy Bones Australia osteoporosis guideline: avoid interruption; transition to bisphosphonate for at least twelve months if ceased."
+    },
+    "source": "https://doi.org/10.5694/mja2.52637"
+  },
+  {
+    "n": 58,
+    "domain": "Gynaecology & cervical cancer prevention",
+    "skill": "Post-treatment CIN3 surveillance / HPV16-positive test of cure",
+    "context": "Advanced final-year integrated management",
+    "stem": "A 36-year-old underwent excisional treatment for histologically confirmed CIN3 twelve months ago. Her planned test of cure now shows oncogenic HPV type 16 detected, while reflex liquid-based cytology reports no intraepithelial lesion. She has no abnormal bleeding.",
+    "ask": "Which next step is most appropriate?",
+    "options": [
+      "Return to routine five-yearly HPV screening because the cytology is currently negative.",
+      "Repeat HPV testing in twelve months without referral because treatment removes all residual risk.",
+      "Refer for colposcopy despite negative cytology because HPV16 is detected during test of cure.",
+      "Repeat the excisional procedure immediately without examining the cervix or reviewing histology.",
+      "Use topical vaginal oestrogen and repeat cytology after symptoms of atrophy have resolved."
+    ],
+    "key": "C",
+    "explanations": [
+      "A negative cytology result does not override detection of HPV16 after treatment for high-grade disease. Routine screening requires documented clearance through the test-of-cure pathway.",
+      "Annual surveillance without colposcopy is not the recommended response to HPV16 positivity during post-treatment test of cure.",
+      "Correct: oncogenic HPV16/18 positivity during test of cure triggers colposcopic assessment regardless of reflex cytology. Subsequent management depends on colposcopic and histological findings.",
+      "Repeat excision may be required for proven recurrent high-grade lesions, but proceeding without assessment risks unnecessary cervical morbidity.",
+      "Atrophic changes can affect cytology interpretation but do not explain away a positive HPV16 result after treatment for CIN3."
+    ],
+    "pearl": "HPV16 or HPV18 detected during post-treatment test of cure warrants colposcopy even when cytology is negative.",
+    "pivot": "Two consecutive negative annual co-tests after treatment permit return to routine screening under the Australian pathway.",
+    "management": {
+      "steps": [
+        [
+          "Verify",
+          "Review prior CIN3 pathology, excision margins and timing of post-treatment co-testing."
+        ],
+        [
+          "Refer",
+          "Arrange colposcopy for HPV16 positivity irrespective of negative liquid-based cytology."
+        ],
+        [
+          "Evaluate",
+          "Use directed examination and biopsy when indicated rather than empirical repeat excision."
+        ],
+        [
+          "Track",
+          "Document results and schedule surveillance according to the national test-of-cure algorithm."
+        ]
+      ],
+      "safety": "Do not falsely reassure based on negative cytology when high-risk HPV16 persists after high-grade cervical disease.",
+      "local": "Metro North Queensland Health: HPV16/18 positivity at any point during test of cure requires colposcopy."
+    },
+    "source": "https://metronorth.health.qld.gov.au/specialist_service/refer-your-patient/gynaecology/abnormal"
+  },
+  {
+    "n": 59,
+    "domain": "Neurology & liaison psychiatry",
+    "skill": "Functional neurological weakness / positive diagnosis and communication",
+    "context": "Advanced final-year integrated management",
+    "stem": "A 28-year-old develops intermittent left-leg weakness after a stressful hospital admission. MRI brain and spine show no structural explanation. Examination reveals reduced voluntary hip extension, but normal automatic extension when the opposite hip flexes against resistance (positive Hoover sign). Reflexes and plantar responses are normal.",
+    "ask": "What is the best diagnostic and management approach?",
+    "options": [
+      "Conclude malingering because weakness improves during distraction and offer no further follow-up.",
+      "Explain that normal imaging proves there is no illness and discharge without rehabilitation.",
+      "Order serial spinal MRI indefinitely because functional neurological disorder requires excluding every disease.",
+      "Make a positive FND diagnosis, explain the signs respectfully and arrange targeted rehabilitation.",
+      "Commence long-term antipsychotic treatment because functional symptoms represent a psychotic illness."
+    ],
+    "key": "D",
+    "explanations": [
+      "Inconsistency on examination is a positive sign of functional neurological disorder, not proof of conscious fabrication. Accusations damage therapeutic engagement.",
+      "Symptoms are genuine and can cause substantial disability despite normal structural imaging. Clear explanation and active treatment are more helpful than dismissal.",
+      "FND is diagnosed through positive clinical signs, while investigations are tailored to red flags. Endless exclusionary testing can reinforce uncertainty and delay recovery.",
+      "Correct: Hoover sign supports a positive functional weakness diagnosis. Explain the finding non-judgementally, screen for coexisting neurological disease, and refer for FND-informed physiotherapy and psychological support as appropriate.",
+      "FND is not synonymous with psychosis. Antipsychotics have no routine role unless a separate indication is present."
+    ],
+    "pearl": "Functional neurological disorder is a positive clinical diagnosis, not simply normal scans or an accusation of feigning.",
+    "pivot": "New objective focal signs, progressive deficits or atypical features warrant reconsideration for coexisting neurological pathology.",
+    "management": {
+      "steps": [
+        [
+          "Demonstrate",
+          "Document reproducible positive signs such as Hoover sign and assess for neurological red flags."
+        ],
+        [
+          "Explain",
+          "Describe altered nervous-system functioning as real and potentially reversible, using the positive findings."
+        ],
+        [
+          "Treat",
+          "Arrange FND-informed physiotherapy, graded activity and targeted psychological input when useful."
+        ],
+        [
+          "Review",
+          "Monitor function, mental health, diagnostic evolution and any new neurological symptoms."
+        ]
+      ],
+      "safety": "Never equate a positive Hoover sign with malingering or use normal imaging alone to dismiss symptoms.",
+      "local": "Australian Journal of General Practice 2025: FND should be diagnosed using positive signs and treated as genuine dysfunction."
+    },
+    "source": "https://ajgp.racgp.org.au/issues/july-2025/case-study-a-false-dichotomy-functional-gait-overlay-in-neurological-disorders"
+  },
+  {
+    "n": 60,
+    "domain": "Occupational health & blood-borne viruses",
+    "skill": "Hepatitis B needlestick / HBIG and vaccine in susceptible worker",
+    "context": "Advanced final-year integrated management",
+    "stem": "A junior doctor sustains a hollow-bore needlestick while taking blood from a patient known to be hepatitis B surface-antigen positive. The injury occurred one hour ago. The doctor never completed hepatitis B vaccination and has no documented protective anti-HBs response.",
+    "ask": "What is the most appropriate immediate prevention plan?",
+    "options": [
+      "Clean the wound and wait for the source patient's hepatitis B viral load before offering prophylaxis.",
+      "Give hepatitis B vaccine alone and omit immunoglobulin because the doctor is a healthcare worker.",
+      "Prescribe tenofovir for twenty-eight days as the standard sole hepatitis B post-exposure prophylaxis.",
+      "Arrange HCV prophylaxis instead because hepatitis B immunoglobulin has no role after needlestick injury.",
+      "Provide prompt hepatitis B immunoglobulin plus vaccination and occupational-exposure follow-up."
+    ],
+    "key": "E",
+    "explanations": [
+      "The source is known HBsAg positive and the worker is susceptible. Delaying prophylaxis for viral-load testing risks preventable infection.",
+      "Vaccination establishes longer-term immunity but does not provide the immediate passive protection required for this significant exposure.",
+      "Antiretroviral HIV PEP regimens are not the standard hepatitis B prevention pathway; HBIG and vaccination are indicated in susceptible contacts.",
+      "There is no established HCV post-exposure prophylaxis. The known hepatitis B risk must be addressed directly.",
+      "Correct: provide wound first aid, report the incident, administer HBIG promptly (preferably within 72 hours) plus hepatitis B vaccine at a separate site, and arrange completion of vaccination and serological follow-up."
+    ],
+    "pearl": "After a significant HBsAg-positive needlestick, susceptible staff need passive and active hepatitis B protection promptly.",
+    "pivot": "A worker with a documented protective post-vaccination anti-HBs response generally does not require HBIG for this exposure.",
+    "management": {
+      "steps": [
+        [
+          "First aid",
+          "Wash the puncture with soap and water; document and report the exposure immediately."
+        ],
+        [
+          "Risk assess",
+          "Confirm source HBsAg status and the worker's vaccine and anti-HBs history; obtain baseline tests."
+        ],
+        [
+          "Prevent",
+          "Give HBIG and initiate hepatitis B vaccination promptly according to the exposure protocol."
+        ],
+        [
+          "Follow up",
+          "Complete vaccine series, check post-vaccine response and arrange occupational health surveillance."
+        ]
+      ],
+      "safety": "Do not delay HBIG in a susceptible person after significant exposure to known HBsAg-positive blood.",
+      "local": "Queensland Health occupational-exposure guidance: assess urgently and start indicated hepatitis B PEP within 72 hours."
+    },
+    "source": "https://www.health.qld.gov.au/clinical-practice/guidelines-procedures/diseases-infection/infection-prevention/staff-health/management-of-occupational-exposures"
   }
 ]
