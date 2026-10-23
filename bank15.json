@@ -958,5 +958,245 @@
       "local": "Royal Children's Hospital Refeeding Syndrome Guideline and adolescent eating-disorder assessment guidance."
     },
     "source": "https://www.rch.org.au/uploadedFiles/Main/Content/gastro/Refeeding%20syndrome%20guideline.pdf"
+  },
+  {
+    "n": 21,
+    "domain": "Paediatric haematology & infectious diseases",
+    "skill": "Sickle cell disease / parvovirus-associated aplastic crisis",
+    "context": "Advanced integrated clinical decisions",
+    "stem": "A 9-year-old with HbSS sickle cell disease develops fever, marked fatigue and pallor after several classmates had a rash illness. His baseline haemoglobin is 8.2 g/dL; today it is 4.7 g/dL. Reticulocytes are 0.2%, bilirubin is not significantly elevated and the spleen is not enlarged. He is tachycardic but alert.",
+    "ask": "Which immediate management plan is most appropriate?",
+    "options": [
+      "Admit, assess for aplastic crisis, obtain infection tests and arrange cautious red-cell transfusion.",
+      "Give high-dose hydroxyurea immediately because it restores erythropoiesis within several hours.",
+      "Treat isolated haemolytic crisis with aggressive hydration because reticulocytopenia confirms haemolysis.",
+      "Arrange outpatient parvovirus serology and repeat the full blood count in three days.",
+      "Begin oral iron replacement alone because severe anaemia usually reflects nutritional deficiency."
+    ],
+    "key": "A",
+    "explanations": [
+      "Correct: profound anaemia with markedly suppressed reticulocytes indicates temporary marrow failure, often parvovirus B19, rather than the compensatory reticulocytosis of haemolysis. Provide inpatient assessment, group/crossmatch, specialist-directed packed-cell transfusion for symptomatic or very severe anaemia and empirical IV antibiotics if febrile.",
+      "Hydroxyurea reduces sickle complications over time but does not rapidly reverse an aplastic crisis. Escalating it acutely could worsen marrow suppression.",
+      "In haemolytic crisis reticulocytes are usually increased as the marrow compensates. A count of 0.2% strongly suggests reduced production, requiring a different approach.",
+      "Parvovirus testing helps confirm cause but must not postpone assessment of haemodynamic stress and severe anaemia. Outpatient review is unsafe at this haemoglobin.",
+      "Iron deficiency may coexist but is not the immediate explanation for sudden profound reticulocytopenia after viral exposure. Iron alone cannot safely manage acute severe anaemia."
+    ],
+    "pearl": "A falling haemoglobin with low reticulocytes in sickle cell disease suggests aplastic crisis; haemolysis usually raises reticulocytes.",
+    "pivot": "Acute splenic sequestration typically features rapid splenic enlargement and often a high reticulocyte count, requiring its own emergency management.",
+    "management": {
+      "steps": [
+        [
+          "Stabilise",
+          "Assess ABCs, perfusion, heart failure symptoms and baseline versus current haemoglobin."
+        ],
+        [
+          "Investigate",
+          "Send FBE, reticulocytes, blood group/crossmatch, haemolysis markers and parvovirus testing."
+        ],
+        [
+          "Treat",
+          "Discuss cautious red-cell transfusion with paediatric haematology; give IV antibiotics promptly if febrile."
+        ],
+        [
+          "Prevent spread",
+          "Apply infection-control precautions where indicated and monitor haemoglobin, reticulocytes and fluid status."
+        ]
+      ],
+      "safety": "Avoid excessive haemoglobin correction in sickle cell disease because hyperviscosity may worsen complications.",
+      "local": "Royal Children's Hospital Sickle Cell Disease Guideline, updated 2026."
+    },
+    "source": "https://www.rch.org.au/clinicalguide/guideline_index/Sickle_Cell_Disease_Guideline/"
+  },
+  {
+    "n": 22,
+    "domain": "Paediatrics & communicable disease",
+    "skill": "Pertussis in young infant / apnoea and infection control",
+    "context": "Advanced integrated clinical decisions",
+    "stem": "A 7-week-old infant has a week of rhinorrhoea and intermittent cough. During assessment he has a coughing episode followed by cyanosis and 15 seconds of apnoea, then recovers. He is afebrile, feeding less than usual and his father has had a prolonged cough. Routine childhood vaccinations have just begun.",
+    "ask": "What is the safest immediate approach?",
+    "options": [
+      "Discharge with reassurance because absence of fever makes invasive infection very unlikely.",
+      "Admit for cardiorespiratory monitoring, test for pertussis and commence appropriate macrolide treatment.",
+      "Wait for a positive PCR before starting antibiotics because the cough has lasted less than two weeks.",
+      "Give inhaled salbutamol alone because the cyanosis is most consistent with bronchospasm during coughing.",
+      "Offer an oral antitussive and arrange review in one week once the paroxysmal phase is established."
+    ],
+    "key": "B",
+    "explanations": [
+      "Afebrile pertussis is common in infants, and witnessed apnoea with cyanosis is a major risk factor for severe complications. Discharge is inappropriate.",
+      "Correct: very young infants can have pertussis without a classic whoop, and apnoea warrants admission and monitoring. Use droplet precautions, nasopharyngeal PCR, age-appropriate macrolide therapy and public-health contact management.",
+      "PCR confirms infection but antibiotics are most useful when started early and should not be delayed in a highly suspicious high-risk infant. A negative result must be interpreted with sampling and timing.",
+      "Bronchodilators do not treat Bordetella infection or prevent apnoea, and wheeze is not the defining problem. Respiratory support and targeted therapy are more appropriate.",
+      "Antitussives have no reliable benefit in infant pertussis and may be unsafe. Delaying review risks recurrent apnoea, bradycardia or respiratory failure."
+    ],
+    "pearl": "In infants, pertussis may present as apnoea or cyanosis without a whoop or fever; household cough is a useful clue.",
+    "pivot": "A healthy older child with mild uncomplicated cough and no high-risk contacts may have a different admission threshold.",
+    "management": {
+      "steps": [
+        [
+          "Protect",
+          "Admit, monitor for apnoea and bradycardia, and use droplet precautions."
+        ],
+        [
+          "Test",
+          "Obtain respiratory pertussis PCR and assess hydration, oxygenation and alternate causes of apnoea."
+        ],
+        [
+          "Treat",
+          "Start a recommended age-appropriate macrolide and supportive respiratory care."
+        ],
+        [
+          "Public health",
+          "Notify the relevant authority and arrange contact tracing and prophylaxis for eligible contacts."
+        ]
+      ],
+      "safety": "Do not wait for a whoop or fever before treating suspected severe pertussis in a young infant.",
+      "local": "Royal Children's Hospital Whooping Cough (Pertussis) Clinical Practice Guideline."
+    },
+    "source": "https://www.rch.org.au/clinicalguide/guideline_index/Whooping_Cough_Pertussis/"
+  },
+  {
+    "n": 23,
+    "domain": "Maternal–fetal medicine & haematology",
+    "skill": "Maternal anti-Kell antibodies / fetal anaemia surveillance",
+    "context": "Advanced integrated clinical decisions",
+    "stem": "A 30-year-old G2P1 at 22 weeks has anti-K antibodies detected on routine antenatal screening after a previous transfusion. The laboratory reports a low antibody titre. Ultrasound anatomy is normal, but the fetus may carry the corresponding antigen. She asks whether the low titre means no extra monitoring is needed.",
+    "ask": "Which plan best addresses the principal fetal risk?",
+    "options": [
+      "Give routine anti-D immunoglobulin because it neutralises maternal anti-K antibodies during pregnancy.",
+      "Repeat only maternal haemoglobin monthly because fetal anaemia is unlikely with low antibody titres.",
+      "Refer to maternal–fetal medicine for antigen assessment and serial MCA Doppler surveillance.",
+      "Perform amniocentesis immediately in every case to measure fetal bilirubin without further assessment.",
+      "Plan delivery at 40 weeks without surveillance because the ultrasound anatomy appears structurally normal."
+    ],
+    "key": "C",
+    "explanations": [
+      "Anti-D immunoglobulin prevents RhD sensitisation in eligible unsensitised women; it does not remove established anti-K antibodies or prevent Kell-related fetal anaemia.",
+      "Kell alloimmunisation may suppress fetal erythropoiesis, and severe anaemia can occur at relatively low titres. Maternal haemoglobin does not reflect fetal red-cell production.",
+      "Correct: involve a fetal-medicine specialist, determine fetal antigen risk using suitable genotyping where available, and perform serial middle cerebral artery peak systolic velocity assessment. Abnormal results may require specialist fetal blood sampling and intrauterine transfusion.",
+      "Invasive testing carries risks and is not automatic for every low titre. Noninvasive fetal antigen testing and Doppler surveillance help determine whether and when invasive assessment is warranted.",
+      "A normal structural scan does not exclude evolving anaemia or hydrops. Timing and location of delivery depend on fetal risk and surveillance findings."
+    ],
+    "pearl": "Anti-Kell titres correlate poorly with fetal anaemia severity because Kell antibodies can suppress fetal red-cell production.",
+    "pivot": "If fetal genotyping reliably confirms an antigen-negative fetus, Kell-mediated fetal haemolysis is not expected and surveillance can be individualised.",
+    "management": {
+      "steps": [
+        [
+          "Characterise",
+          "Confirm maternal antibody specificity, history of transfusion and prior affected pregnancies."
+        ],
+        [
+          "Assess fetus",
+          "Discuss paternal and noninvasive fetal antigen genotyping where appropriate."
+        ],
+        [
+          "Surveil",
+          "Refer for serial MCA peak systolic velocity Doppler and assess signs of hydrops."
+        ],
+        [
+          "Plan care",
+          "Coordinate specialist fetal transfusion options and delivery at a centre equipped for neonatal anaemia."
+        ]
+      ],
+      "safety": "Do not use a low anti-K titre alone to rule out clinically important fetal anaemia.",
+      "local": "Royal College of Pathologists of Australasia: Haemolytic Disease of the Fetus and Newborn, maternal alloimmunisation surveillance."
+    },
+    "source": "https://www.rcpa.edu.au/Manuals/RCPA-Manual/Clinical-Presentations-and-Diagnoses/H/Haemolytic-disease-of-the-fetus-and-newborn"
+  },
+  {
+    "n": 24,
+    "domain": "Obstetrics & maternal emergency medicine",
+    "skill": "HELLP syndrome / severe maternal organ dysfunction",
+    "context": "Advanced integrated clinical decisions",
+    "stem": "A 35-year-old at 32+4 weeks reports worsening right upper-quadrant pain, nausea and headache. BP is 152/98 mmHg and she has mild proteinuria. Platelets are 68 × 10⁹/L, AST 280 U/L, LDH is elevated and the blood film shows fragmented erythrocytes. Fetal CTG is currently reassuring.",
+    "ask": "What management priority is most appropriate?",
+    "options": [
+      "Treat as biliary colic and defer obstetric review until an ultrasound confirms gallstones.",
+      "Start outpatient oral antihypertensive therapy and repeat platelet count in forty-eight hours.",
+      "Administer platelets routinely then discharge because fetal surveillance is currently reassuring.",
+      "Stabilise maternal HELLP syndrome and plan timely delivery with senior obstetric and anaesthetic input.",
+      "Observe until 37 weeks because mild-range hypertension makes severe pre-eclampsia unlikely."
+    ],
+    "key": "D",
+    "explanations": [
+      "Gallbladder pathology can cause right upper-quadrant pain, but thrombocytopenia, haemolysis and transaminitis in pregnancy are classic HELLP features requiring emergency obstetric management.",
+      "Outpatient management is unsafe because HELLP can progress to DIC, liver injury, renal failure and maternal or fetal deterioration. Serial labs and inpatient assessment are required.",
+      "Platelet transfusion depends on bleeding, procedure plans and count; it is not definitive treatment. A reassuring CTG cannot justify discharge in maternal organ dysfunction.",
+      "Correct: HELLP is a severe pre-eclampsia spectrum emergency. Admit, monitor maternal/fetal status, control severe BP if it develops, consider magnesium sulfate and corticosteroids as indicated, correct coagulopathy and coordinate delivery after stabilisation.",
+      "Severe disease is defined by organ injury, not just the absolute blood-pressure level. Expectant care to term without specialist review risks catastrophic maternal deterioration."
+    ],
+    "pearl": "HELLP is haemolysis, elevated liver enzymes and low platelets; dangerous disease may occur without severe-range BP.",
+    "pivot": "Uncomplicated gestational hypertension with normal platelets, liver enzymes and no severe symptoms follows a different surveillance pathway.",
+    "management": {
+      "steps": [
+        [
+          "Recognise",
+          "Escalate to senior obstetrics/anaesthesia, assess ABCs, headache, pain and bleeding."
+        ],
+        [
+          "Investigate",
+          "Repeat FBE, film, LDH, liver/renal tests, coagulation and fetal wellbeing assessments."
+        ],
+        [
+          "Stabilise",
+          "Monitor closely, treat severe BP, assess magnesium sulfate and correct haemostatic issues as indicated."
+        ],
+        [
+          "Deliver safely",
+          "Agree timing and mode of birth with maternal–fetal medicine and neonatal teams after stabilisation."
+        ]
+      ],
+      "safety": "Avoid neuraxial anaesthesia decisions without current platelet and coagulation assessment; platelets may fall rapidly.",
+      "local": "Queensland Clinical Guideline Hypertension and pregnancy, September 2026."
+    },
+    "source": "https://www.health.qld.gov.au/qcg/publications"
+  },
+  {
+    "n": 25,
+    "domain": "Obstetrics & postnatal care",
+    "skill": "Postpartum urinary retention / bladder overdistension prevention",
+    "context": "Advanced integrated clinical decisions",
+    "stem": "A 26-year-old has a forceps-assisted vaginal birth under epidural anaesthesia. Seven hours later she has passed only 40 mL of urine, feels suprapubic pressure and has a palpable distended bladder. She is afebrile, with normal leg strength and perineal sensation, and asks whether she can wait until morning to void.",
+    "ask": "What is the safest next step?",
+    "options": [
+      "Encourage more oral fluids and defer assessment until the epidural has fully worn off.",
+      "Prescribe an antimuscarinic medication to relax the bladder and improve emptying overnight.",
+      "Assume a urinary tract infection and give antibiotics without measuring bladder volume.",
+      "Discharge with instructions to double-void because small volumes prove normal bladder function.",
+      "Assess residual bladder volume promptly and decompress with catheterisation when indicated."
+    ],
+    "key": "E",
+    "explanations": [
+      "Additional fluid intake may worsen overdistension when the bladder cannot empty. Retention should be assessed promptly after instrumental birth and neuraxial anaesthesia.",
+      "Antimuscarinics can impair detrusor contraction and worsen urinary retention. They are not first-line treatment for a distended postpartum bladder.",
+      "Infection may cause dysuria or frequency but does not explain this immediate postinstrumental failure to void. Treating presumptively without assessing retention risks harm.",
+      "Passing a small amount does not exclude a large residual volume. Discharge with ongoing distension can cause detrusor injury and prolonged dysfunction.",
+      "Correct: document voiding, use bladder scan or post-void residual measurement and arrange catheter drainage according to local protocol. Follow with a monitored trial of void and evaluation of contributory factors."
+    ],
+    "pearl": "A small postpartum void does not exclude retention; bladder overdistension can damage detrusor function.",
+    "pivot": "A patient voiding normal volumes with no discomfort and low measured residual may continue routine postnatal observation.",
+    "management": {
+      "steps": [
+        [
+          "Recognise",
+          "Assess timing since birth, instrumental delivery, epidural, voided volumes and suprapubic findings."
+        ],
+        [
+          "Measure",
+          "Perform bladder scan or post-void residual assessment without delaying relief of obvious retention."
+        ],
+        [
+          "Decompress",
+          "Use intermittent or indwelling catheterisation as directed by postpartum bladder protocol."
+        ],
+        [
+          "Reassess",
+          "Record drained volume, review analgesia and perineal injury, and arrange supervised trial of void."
+        ]
+      ],
+      "safety": "Do not wait overnight with a painful distended bladder or mistake overflow dribbling for adequate voiding.",
+      "local": "Queensland Clinical Guidelines Instrumental vaginal birth: monitor voiding and assess retention after six hours."
+    },
+    "source": "https://www.health.qld.gov.au/__data/assets/pdf_file/0033/736917/g-instrumental.PDF"
   }
 ]
