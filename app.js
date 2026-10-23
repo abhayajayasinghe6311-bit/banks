@@ -2,9 +2,23 @@
 const $=id=>document.getElementById(id);
 const safe=x=>String(x??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
 const STORE='spaw.study.garden.online.v1';let accountUID=null;const storageKey=()=>accountUID?STORE+'.account.'+accountUID:STORE;const ABC='ABCDE';
-const empty=()=>({format:'SPAW_ONLINE_PROGRESS_V1',version:1,banks:{},review:{},bookmarks:{},annotations:{},updated:Date.now()});
+const empty=()=>({format:'SPAW_ONLINE_PROGRESS_V1',version:1,banks:{},review:{},bookmarks:{},annotations:{},positions:{},updated:Date.now()});
 const load=()=>{try{const d=JSON.parse(localStorage.getItem(storageKey())||'null');return d&&d.version===1?d:empty();}catch(e){return empty();}};
 let state=load(),manifest=null,bankData={},route={},activeList=[],cursor=0,filter='all',domain='all',reviewFilter='pending',reviewBank='all',reviewOffset=0;
+// Late cloud snapshots may restore an unopened bank, but may not hijack a direct
+// question link or an active study session after the user has navigated.
+let allowCloudPositionResume=false,hasNavigatedBank=false;
+function restoreSavedBankPosition(){
+ const b=route.bank;if(!b||!allowCloudPositionResume||hasNavigatedBank||!bankData[b])return;
+ const n=Number(state.positions?.[b]?.n),index=bankData[b].findIndex(q=>q.n===n);
+ if(index>=0){filter='all';domain='all';cursor=index;}
+}
+function rememberVisitedBankQuestion(bank,n){
+ if(!Number.isInteger(n)||!bankData[bank]?.some(q=>q.n===n))return;
+ hasNavigatedBank=true;
+ state.positions||={};state.positions[bank]={n,at:Date.now()};
+ save();
+}
 let channel;try{channel=new BroadcastChannel('spaw-garden-online');channel.onmessage=e=>{if((e.data?.uid||null)===accountUID)syncUI()};}catch(e){}
 function save(){
  const previous=load();state.updated=Date.now();
@@ -13,7 +27,7 @@ function save(){
  if(accountUID)window.dispatchEvent(new CustomEvent('spaw:local-save',{detail:{uid:accountUID,before:previous,after:structuredClone(state)}}));
  updateBadge();
 }
-function syncUI(){state=load();updateBadge();if(route.review)renderReview();else if(route.bank)renderBank();else if(route.results)renderBankResults(route.results);else if(route.practice)renderPractice();else if(route.practiceResults)renderPracticeResults();else renderHome();}
+function syncUI(){state=load();updateBadge();if(route.review)renderReview();else if(route.bank){restoreSavedBankPosition();renderBank();}else if(route.results)renderBankResults(route.results);else if(route.practice)renderPractice();else if(route.practiceResults)renderPracticeResults();else renderHome();}
 window.addEventListener('storage',e=>{if(e.key===storageKey())syncUI();});window.addEventListener('focus',()=>{const n=load();if(n.updated>state.updated){state=n;syncUI();}});
 // The account module can swap local scopes without ever mixing guest and user data.
 window.SPAWCloudBridge={
@@ -22,7 +36,7 @@ window.SPAWCloudBridge={
  getGuestState:()=>{try{const v=JSON.parse(localStorage.getItem(STORE)||'null');return v?.version===1?v:empty();}catch(e){return empty();}},
  switchAccount(uid){accountUID=uid||null;state=load();if(manifest)syncUI();else updateBadge();},
  applyRemote(uid,next){if(uid!==accountUID||!next||next.version!==1)return;state=structuredClone(next);try{localStorage.setItem(storageKey(),JSON.stringify(state));}catch(e){showNotice('Could not cache cloud progress on this browser.');}if(manifest)syncUI();else updateBadge();},
- importGuest(){if(!accountUID)return false;const g=this.getGuestState();if(!Object.values(g.banks||{}).some(x=>Object.keys(x||{}).length)&&!Object.keys(g.review||{}).length&&!Object.keys(g.bookmarks||{}).length&&!Object.keys(g.annotations||{}).length)return false;const imported=new Set();for(const [b,items] of Object.entries(g.banks||{})){const dest=state.banks[b]||(state.banks[b]={});for(const [n,answer] of Object.entries(items||{})){if(!dest[n]){dest[n]=answer;imported.add(b+':'+n);}}}for(const [k,v] of Object.entries(g.review||{}))if(imported.has(k)&&!state.review[k])state.review[k]=v;for(const [k,v] of Object.entries(g.bookmarks||{}))if(!(k in state.bookmarks))state.bookmarks[k]=v;state.annotations||={};for(const [k,v] of Object.entries(g.annotations||{}))if(!(k in state.annotations))state.annotations[k]=v;save();if(manifest)syncUI();return true;}
+ importGuest(){if(!accountUID)return false;const g=this.getGuestState();if(!Object.values(g.banks||{}).some(x=>Object.keys(x||{}).length)&&!Object.keys(g.review||{}).length&&!Object.keys(g.bookmarks||{}).length&&!Object.keys(g.annotations||{}).length)return false;const imported=new Set();for(const [b,items] of Object.entries(g.banks||{})){const dest=state.banks[b]||(state.banks[b]={});for(const [n,answer] of Object.entries(items||{})){if(!dest[n]){dest[n]=answer;imported.add(b+':'+n);}}}for(const [k,v] of Object.entries(g.review||{}))if(imported.has(k)&&!state.review[k])state.review[k]=v;for(const [k,v] of Object.entries(g.bookmarks||{}))if(!(k in state.bookmarks))state.bookmarks[k]=v;state.annotations||={};for(const [k,v] of Object.entries(g.annotations||{}))if(!(k in state.annotations))state.annotations[k]=v;state.positions||={};for(const [k,v] of Object.entries(g.positions||{})){if(Number(v?.at)>Number(state.positions[k]?.at||0))state.positions[k]=v;}save();if(manifest)syncUI();return true;}
 };
 function idOf(b,n){return b+':'+n;}
 function recs(){return Object.values(state.review||{});}function pending(){return recs().filter(r=>!r.mastered).length;}
@@ -174,7 +188,8 @@ function applySelectedImport(){
  const names=ids.map(n=>'Bank '+n).join(', ');
  if(!confirm('Replace the saved answers, scores, review records and bookmarks in '+names+' using this backup?\\n\\nAll OTHER banks will stay unchanged. Export your current progress first if you want to keep the selected bank attempts.'))return;
  const incoming=pendingImport.data, chosen=new Set(ids);
- const next={...state,banks:{...state.banks},review:{...state.review},bookmarks:{...state.bookmarks},annotations:{...state.annotations}};
+ const next={...state,banks:{...state.banks},review:{...state.review},bookmarks:{...state.bookmarks},annotations:{...state.annotations},positions:{...state.positions}};
+ for(const b of ids){if(incoming.positions?.[b])next.positions[b]=incoming.positions[b];}
  for(const b of ids){
   const k=String(b);
   if(Object.prototype.hasOwnProperty.call(incoming.banks,k))next.banks[k]=incoming.banks[k];else delete next.banks[k];
@@ -666,6 +681,7 @@ function jumpToBankQuestion(bank,number){
  if(!Number.isInteger(n)||index<0)return false;
  // A direct jump always reveals the requested question, even if a filter hides it.
  filter='all';domain='all';cursor=index;
+ rememberVisitedBankQuestion(bank,n);
  renderBank();
  window.scrollTo({top:120,behavior:'instant'});
  return true;
@@ -827,7 +843,7 @@ function renderBank(){saveStudyNoteBeforeNavigation();const b=route.bank;const b
  </div>
  <div class="progress bank-progress"><span id="bankProgressBar" style="width:${pct}%"></span></div>
  </section>${finalSummary}<div id="bankSearchDrawer" class="bank-search-drawer" hidden>${searchPanel(b)}</div><div class="toolbar bank-toolbar"><div class="flex"><label class="small">Show <select id="filter"><option value="all">All questions</option><option value="unanswered">Unanswered</option><option value="wrong">Original mistakes</option><option value="bookmarks">Bookmarked</option></select></label><label class="small">Specialty <select id="domain"><option value="all">All specialties</option>${cats.map(x=>`<option value="${safe(x)}">${safe(x)}</option>`).join('')}</select></label></div><div class="bank-jumper"><label for="jumpNumber">Jump to Q</label><input id="jumpNumber" type="number" inputmode="numeric" min="1" max="${qset.length}" value="${q?.n||''}" aria-label="Question number in this bank"><span>/ ${qset.length}</span><button type="button" id="jumpGo" class="bank-jump-btn">Go →</button></div></div>${q?`<div class="learning-layout ${(state.banks[b]||{})[q.n]?'has-notes':''}"><div class="question-stack"><div class="quizbox quiz-question">${studyMarkToolbar()}<div class="meta"><b>Domain:</b> ${safe(q.domain)} &nbsp; · &nbsp; <b>Skillset:</b> ${safe(q.skill||'Clinical reasoning')} &nbsp; · &nbsp; <b>Context:</b> ${safe(q.context||'Clinical')}</div><div class="question-label">EMQ ${q.n}</div><div class="stem" data-highlight-part="stem">${highlightedStudyText(b,q,"stem")}</div><p class="ask" data-highlight-part="ask">${highlightedStudyText(b,q,"ask")}</p><div class="choices" id="choices">${optionHtml(q,(state.banks[b]||{})[q.n]?.choice)}</div>${(state.banks[b]||{})[q.n]?`<div class="feedback ${(state.banks[b][q.n].correct?'yes':'no')}">${state.banks[b][q.n].correct?'✓ Correct — nicely reasoned!':'✗ Not quite. Correct answer: '+visibleLetter(q,q.key)+'.'} Your first response is locked.</div>`:``}<div class="navbox"><button class="btn soft" id="prev" ${cursor===0?'disabled':''}>← Previous</button><button class="btn rose" id="bookmark">${state.bookmarks[idOf(b,q.n)]?'★ Bookmarked':'☆ Bookmark'}</button><button class="btn" id="next" ${cursor===activeList.length-1&&!canJumpToUnanswered?'disabled':''}>${canJumpToUnanswered?'Find unanswered →':'Next →'}</button></div>${studyNotepadMarkup(b,q)}${finished&&cursor===activeList.length-1?bankFinishActions(b):''}</div>${(state.banks[b]||{})[q.n]?managementMarkup(q):''}</div>${(state.banks[b]||{})[q.n]?learningNotes(q,'learningNotes',(state.banks[b]||{})[q.n].choice):`<aside class="learning-card learning-placeholder" aria-label="Learning notes preview"><div class="learning-placeholder-emoji" aria-hidden="true">🌷</div><h2>Learning notes will bloom here</h2><p>Choose your answer and explore the <b>clinical reasoning</b>, why the alternatives lose, and the principles worth remembering.</p></aside>`}</div>`:`<div class="empty">No questions here 🌷 Try another filter.</div>`}`;
- $('filter').value=filter;$('domain').value=domain;$('filter').onchange=e=>{filter=e.target.value;cursor=0;renderBank()};$('domain').onchange=e=>{domain=e.target.value;cursor=0;renderBank()};
+ $('filter').value=filter;$('domain').value=domain;$('filter').onchange=e=>{filter=e.target.value;cursor=0;renderBank();if(activeList[0])rememberVisitedBankQuestion(b,activeList[0].n)};$('domain').onchange=e=>{domain=e.target.value;cursor=0;renderBank();if(activeList[0])rememberVisitedBankQuestion(b,activeList[0].n)};
  wireStudySearch(b);
  const bankSearchButton=$('bankSearchToggle'),bankSearchDrawer=$('bankSearchDrawer');
  if(bankSearchButton&&bankSearchDrawer){
@@ -846,10 +862,10 @@ function renderBank(){saveStudyNoteBeforeNavigation();const b=route.bank;const b
 
  $('restartBank').onclick=()=>{
    if(!confirm('Restart Bank '+b+'? This will erase all '+tot.attempted+' saved first attempts and reset this bank score to 0. Your private annotations, bookmarks and Wrong Answers Garden will remain unchanged. Export a progress backup first if you want to keep this attempt.'))return;
-   delete state.banks[b];filter='all';domain='all';cursor=0;save();renderBank();
+   delete state.banks[b];filter='all';domain='all';cursor=0;state.positions||={};state.positions[b]={n:qset[0]?.n||1,at:Date.now()};hasNavigatedBank=true;save();renderBank();
    window.scrollTo({top:0,behavior:'smooth'});
  };
- if(!q)return;pendingStudyNoteSave=wireStudyTools(b,q);$('choices').onclick=e=>{const choice=e.target.closest('[data-choice]');if(choice)updateProgress(b,q.n,choice.dataset.choice)};$('prev').onclick=()=>{cursor--;renderBank();jumpToCurrentQuestion()};$('next').onclick=()=>{if(canJumpToUnanswered){filter='all';domain='all';cursor=qset.findIndex(x=>!(state.banks[b]||{})[x.n]);}else cursor++;renderBank();jumpToCurrentQuestion()};$('bookmark').onclick=()=>{let k=idOf(b,q.n);state.bookmarks[k]=!state.bookmarks[k];save();renderBank()};}
+ if(!q)return;pendingStudyNoteSave=wireStudyTools(b,q);$('choices').onclick=e=>{const choice=e.target.closest('[data-choice]');if(choice)updateProgress(b,q.n,choice.dataset.choice)};$('prev').onclick=()=>{cursor--;rememberVisitedBankQuestion(b,activeList[cursor]?.n);renderBank();jumpToCurrentQuestion()};$('next').onclick=()=>{if(canJumpToUnanswered){filter='all';domain='all';cursor=qset.findIndex(x=>!(state.banks[b]||{})[x.n]);rememberVisitedBankQuestion(b,qset[cursor]?.n);}else{cursor++;rememberVisitedBankQuestion(b,activeList[cursor]?.n);}renderBank();jumpToCurrentQuestion()};$('bookmark').onclick=()=>{let k=idOf(b,q.n);state.bookmarks[k]=!state.bookmarks[k];save();renderBank()};}
 async function ensureAllBanks(){await Promise.all(manifest.banks.map(x=>getBank(x.id)));}
 function reviewChoice(card,r,q){const answer=r.currentAnswer;return `<div class="choices">${displayOrder(q).map((i,pos)=>{const o=q.options[i],letter=ABC[i];let cls='choice';if(answer){if(letter===q.key)cls+=' true';if(letter===answer)cls+=answer===q.key?' selected correct':' selected incorrect';}return `<button class="${cls}" data-review-choice="${letter}" data-review-id="${idOf(r.bank,r.n)}" ${answer||r.mastered?'disabled':''}><span class="letter">${ABC[pos]}</span><span>${safe(o)}</span></button>`;}).join('')}</div>${answer?`<div class="feedback ${answer===q.key?'yes':'no'}">${answer===q.key?'✓ Correct! Added to Mastered.':'✗ Still learning — retry after reviewing the explanation.'}</div>${learningNotes(q,`review-notes-${r.bank}-${r.n}`,answer)}${managementMarkup(q)}`:''}`;}
 let transientReview={};
@@ -867,6 +883,7 @@ function exportProgress(){
  for(const [id,item] of Object.entries(state.review||{}))if(chosen.has(Number(id.split(':')[0])))subset.review[id]=item;
  for(const [id,item] of Object.entries(state.bookmarks||{}))if(chosen.has(Number(id.split(':')[0])))subset.bookmarks[id]=item;
  for(const [id,item] of Object.entries(state.annotations||{}))if(chosen.has(Number(id.split(':')[0])))subset.annotations[id]=item;
+ for(const [bank,position] of Object.entries(state.positions||{}))if(chosen.has(Number(bank)))subset.positions[bank]=position;
  if(ids.length===manifest.banks.length&&state.practice?.version===1)subset.practice=state.practice;
  const content=JSON.stringify({kind:'SPAW_ONLINE_PROGRESS_BACKUP',created:new Date().toISOString(),includedBanks:ids,state:subset},null,2);
  const blob=new Blob([content],{type:'application/json'}),uri=URL.createObjectURL(blob),a=document.createElement('a');
@@ -919,9 +936,11 @@ async function boot(){try{const resp=await fetch('manifest.json',{cache:'no-cach
  // Resume from the earliest unanswered EMQ when reopening a bank.
  // Keep the complete bank visible so Previous/Next and old answers remain reviewable.
  filter='all';domain='all';
+ allowCloudPositionResume=!params.has('question');hasNavigatedBank=false;
  const explicitNumber=Number(params.get('question'));
  const requested=Number.isInteger(explicitNumber)&&explicitNumber>0?bankData[b].findIndex(q=>q.n===explicitNumber):-1;
+ const lastVisited=Number(state.positions?.[b]?.n),savedIndex=bankData[b].findIndex(q=>q.n===lastVisited);
  const firstUnanswered=bankData[b].findIndex(q=>!(state.banks[b]||{})[q.n]);
- cursor=requested>=0?requested:firstUnanswered>=0?firstUnanswered:0;
+ cursor=requested>=0?requested:allowCloudPositionResume&&savedIndex>=0?savedIndex:firstUnanswered>=0?firstUnanswered:0;
  renderBank();}else renderHome();updateBadge();}catch(e){$('app').innerHTML='<div class="load-error"><h2>Could not load the Study Garden 😢</h2><p>'+safe(e.message)+'</p><p>If you are opening the site from a downloaded ZIP, this online-ready version needs a web server. Publish it using GitHub Pages or run a local preview server.</p></div>';}}
 boot();
