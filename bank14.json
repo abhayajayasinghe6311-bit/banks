@@ -238,5 +238,245 @@
       "local": "Queensland Clinical Guidelines Hypertension and pregnancy: Magnesium sulfate protocol (2025)."
     },
     "source": "https://www.health.qld.gov.au/__data/assets/pdf_file/0034/139948/ghdp.pdf"
+  },
+  {
+    "n": 6,
+    "domain": "Emergency medicine & immunology",
+    "skill": "Refractory anaphylaxis / escalation beyond intramuscular adrenaline",
+    "stem": "A 29-year-old develops throat tightness, widespread urticaria and collapse after eating cashews. Two appropriately administered intramuscular adrenaline doses five minutes apart and initial fluid resuscitation have not resolved wheezing or hypotension. BP is 75/40 mmHg, with a weak peripheral pulse. A senior emergency team is present.",
+    "ask": "What is the best immediate escalation while continuing resuscitation?",
+    "options": [
+      "Commence a monitored IV adrenaline infusion under experienced resuscitation supervision.",
+      "Administer IV chlorphenamine as the primary intervention for ongoing cardiovascular collapse.",
+      "Give an additional dose of systemic corticosteroid and await its onset of action.",
+      "Use nebulised salbutamol alone because persistent wheeze identifies isolated bronchospasm.",
+      "Arrange urgent imaging of the neck to quantify upper-airway oedema before further treatment."
+    ],
+    "key": "A",
+    "explanations": [
+      "Correct: persistent respiratory or cardiovascular compromise after two IM doses constitutes refractory anaphylaxis. Expert-guided IV adrenaline infusion, repeated fluid assessment and advanced airway readiness address the continuing life threat.",
+      "Antihistamines may relieve skin symptoms later, but do not reliably reverse distributive shock or critical airway swelling. IV antihistamine administration may itself worsen haemodynamics.",
+      "Corticosteroids act too slowly to treat shock and are not routine first-line anaphylaxis therapy. Their use as an adjunct in selected refractory cases must not interrupt adrenaline resuscitation.",
+      "Nebulised beta-agonists can supplement treatment of bronchospasm, but cannot restore vascular tone or reliably treat anaphylactic airway oedema and hypotension.",
+      "Imaging neither diagnoses nor treats anaphylactic shock. A rapidly evolving airway problem requires clinical reassessment and expert intervention rather than transport to radiology."
+    ],
+    "pearl": "Persistent hypotension or breathing difficulty after two IM adrenaline doses defines refractory anaphylaxis; escalate to expert-supervised IV adrenaline.",
+    "pivot": "If symptoms improve promptly after initial IM adrenaline and blood pressure normalises, continue observation and trigger-avoidance planning rather than an IV infusion.",
+    "management": {
+      "steps": [
+        [
+          "Call",
+          "Activate resuscitation, request airway and senior emergency expertise, and continuously monitor ECG, pressure and oxygenation."
+        ],
+        [
+          "Treat",
+          "Continue IM adrenaline per protocol while an experienced team establishes carefully titrated IV adrenaline infusion and assesses additional crystalloid."
+        ],
+        [
+          "Protect airway",
+          "Prepare for early advanced airway management if stridor, swelling or ventilatory failure advances."
+        ],
+        [
+          "Recover safely",
+          "Monitor for recurrent symptoms; document trigger and arrange adrenaline autoinjector education and allergy referral."
+        ]
+      ],
+      "safety": "Never give unsupervised IV adrenaline boluses for routine anaphylaxis; medication concentration and infusion titration require resuscitation-level checks.",
+      "local": "ANZCOR Guideline 11.10 (July 2026), refractory anaphylaxis."
+    },
+    "source": "https://www.anzcor.org/home/adult-advanced-life-support/guideline-11-10-resuscitation-in-special-circumstances",
+    "context": "Advanced integrated clinical decisions"
+  },
+  {
+    "n": 7,
+    "domain": "General medicine & gastroenterology",
+    "skill": "Decompensated cirrhosis / spontaneous bacterial peritonitis",
+    "stem": "A 58-year-old with known cirrhosis and tense ascites is admitted with increasing confusion and abdominal discomfort. He has no guarding and is afebrile, but diagnostic paracentesis shows an ascitic neutrophil count of 420 cells/µL. Cultures are pending. BP is 104/62 mmHg and creatinine is mildly elevated.",
+    "ask": "Which next treatment most directly addresses the likely diagnosis and prevents deterioration?",
+    "options": [
+      "Repeat paracentesis after three days to confirm the neutrophil threshold before giving antimicrobials.",
+      "Start empirical IV antibiotics for spontaneous bacterial peritonitis and assess albumin indications.",
+      "Treat only hepatic encephalopathy with lactulose because the patient has no fever or peritonism.",
+      "Begin routine prophylactic oral antibiotics rather than therapeutic dosing because cultures are pending.",
+      "Perform therapeutic paracentesis alone to remove infected fluid and reassess the renal function."
+    ],
+    "key": "B",
+    "explanations": [
+      "An ascitic polymorphonuclear count at or above 250 cells/µL is sufficient for presumptive SBP, even without positive culture. Delaying antibiotics risks sepsis and renal failure.",
+      "Correct: treat culture-negative neutrocytic ascites as SBP, obtain blood and ascitic cultures, provide empirical systemic antibiotics adapted to local resistance, and consider IV albumin in renal dysfunction or other high-risk features.",
+      "Hepatic encephalopathy may coexist or be precipitated by infection. Lactulose can be appropriate, but leaving SBP untreated risks worsening brain function, kidney injury and death.",
+      "Secondary prophylaxis is considered after completing active treatment; preventive-dose antibiotics do not adequately treat confirmed neutrocytic ascites.",
+      "Large-volume drainage may relieve tense ascites, but is not adequate infection treatment. Monitor haemodynamics and consider volume replacement when large volumes are removed."
+    ],
+    "pearl": "SBP is diagnosed by ascitic neutrophils of at least 250/µL; fever, peritoneal tenderness and culture positivity are not required.",
+    "pivot": "A neutrophil count below diagnostic threshold with a stable patient may lead to other infection investigation and culture-guided decisions, rather than automatic SBP therapy.",
+    "management": {
+      "steps": [
+        [
+          "Recognise",
+          "Treat the ascitic neutrophil result as an infection; repeat ABCDE and evaluate encephalopathy, sepsis and renal status."
+        ],
+        [
+          "Culture",
+          "Send ascitic fluid and blood cultures promptly without postponing antibiotic administration."
+        ],
+        [
+          "Treat",
+          "Start local-protocol empirical IV antibiotics; review IV albumin eligibility and nephrotoxic medicines."
+        ],
+        [
+          "Reassess",
+          "Monitor creatinine, urine output, symptoms and inflammatory response; plan secondary prophylaxis after recovery."
+        ]
+      ],
+      "safety": "A normal temperature or absent guarding does not safely exclude life-threatening SBP in a person with cirrhosis.",
+      "local": "Australian Gastroenterology Society guidance and local inpatient SBP protocol."
+    },
+    "source": "https://www.gesa.org.au/",
+    "context": "Advanced integrated clinical decisions"
+  },
+  {
+    "n": 8,
+    "domain": "Surgery & infectious diseases",
+    "skill": "Acute cholangitis / septic shock and biliary source control",
+    "stem": "A 72-year-old with known gallstones is febrile and jaundiced with right upper-quadrant pain. BP is 83/47 mmHg after initial crystalloid, lactate is 4.2 mmol/L, bilirubin is elevated and ultrasound shows a dilated common bile duct. The surgical registrar asks whether to wait for MRCP before arranging a procedure.",
+    "ask": "What is the best next management priority?",
+    "options": [
+      "Obtain an elective MRCP first because noninvasive duct imaging should always precede treatment.",
+      "Schedule laparoscopic cholecystectomy after several days of antibiotics to remove the underlying gallstones.",
+      "Resuscitate and give antibiotics while arranging urgent biliary decompression through the specialist team.",
+      "Offer analgesia and repeat liver tests because some stones pass spontaneously without intervention.",
+      "Transfer for outpatient ERCP once lactate normalises on IV fluids and oral antibiotics."
+    ],
+    "key": "C",
+    "explanations": [
+      "MRCP can define obstruction in stable diagnostic uncertainty but must not postpone source control for shock with likely ascending cholangitis. The ultrasound and clinical picture are sufficient for urgent escalation.",
+      "Cholecystectomy addresses gallbladder stones but does not relieve an infected obstructed common duct in the acute shock phase. Definitive gallbladder management can follow stabilisation.",
+      "Correct: activate sepsis management with timely IV antimicrobials, haemodynamic support and urgent gastroenterology/surgery referral for ERCP drainage or an alternative decompression approach. Organ support and source control proceed together.",
+      "Stone passage is possible but is an unsafe assumption in a patient with persistent hypotension and lactic acidosis. Symptomatic care alone leaves ongoing biliary sepsis untreated.",
+      "Outpatient care is inappropriate after shock physiology. IV fluids may transiently improve circulation without resolving the infected obstruction that sustains severe illness."
+    ],
+    "pearl": "Severe cholangitis is simultaneously a sepsis problem and an obstructed-duct problem: antibiotics without drainage may fail.",
+    "pivot": "An afebrile stable patient with biliary colic and no systemic inflammation or duct obstruction follows an elective gallstone assessment pathway.",
+    "management": {
+      "steps": [
+        [
+          "Resuscitate",
+          "Call senior ED/ICU assistance, monitor perfusion and give titrated IV fluids and vasopressors when necessary."
+        ],
+        [
+          "Treat infection",
+          "Draw cultures if promptly available and administer local guideline IV broad-spectrum antibiotics."
+        ],
+        [
+          "Control source",
+          "Discuss urgent ERCP decompression with gastroenterology; plan percutaneous or surgical drainage if ERCP fails."
+        ],
+        [
+          "Follow through",
+          "Monitor lactate, kidney function, bilirubin, coagulation and clinical response; address gallbladder management after recovery."
+        ]
+      ],
+      "safety": "Do not delay drainage in septic shock for additional elective imaging or a trial of oral medication.",
+      "local": "Use local Australian biliary sepsis and endoscopy emergency pathways."
+    },
+    "source": "https://www.sahealth.sa.gov.au/wps/wcm/connect/public+content/sa+health+internet/home",
+    "context": "Advanced integrated clinical decisions"
+  },
+  {
+    "n": 9,
+    "domain": "Trauma & orthopaedics",
+    "skill": "Open tibial fracture / antibiotic timing and surgical debridement",
+    "stem": "A 34-year-old motorcyclist arrives after a crash with a deformed lower leg. A 5-cm contaminated wound exposes the tibial shaft, distal pulses are palpable and the leg is sensate. Trauma imaging shows a displaced open fracture. The ED team can deliver IV antibiotics immediately; orthopaedic theatre is expected in several hours.",
+    "ask": "What is the safest immediate management combination?",
+    "options": [
+      "Irrigate deeply in the emergency bay, close the skin primarily and apply a walking cast.",
+      "Defer antibiotics until deep operative samples have identified the likely contaminating bacteria.",
+      "Wait for the orthopaedic consultant before applying any dressing or immobilising the limb.",
+      "Give prompt IV antibiotics, cover the wound, splint and arrange urgent operative debridement.",
+      "Discharge with oral antibiotics and protected weight bearing because distal circulation is preserved."
+    ],
+    "key": "D",
+    "explanations": [
+      "Definitive wound debridement and closure strategy require theatre assessment. Aggressive bedside exploration or closure can trap contamination and worsen soft tissue damage.",
+      "Antibiotic administration early after an open fracture reduces infection risk; delaying for culture is not justified. Operative specimens can be obtained later if infection is suspected.",
+      "Senior input is important but temporising sterile wound coverage and immobilisation should start at once. Delay adds pain, bleeding and soft-tissue injury without benefit.",
+      "Correct: follow trauma ABCs, document neurovascular status and compartment findings, start protocol-based IV antibiotics promptly, cover with a sterile dressing, splint and arrange specialist theatre washout/debridement and fixation. Update tetanus status.",
+      "A normal pulse does not make an exposed contaminated fracture safe for outpatient treatment. Infection, soft-tissue injury and compartment syndrome remain major threats."
+    ],
+    "pearl": "For an open fracture, early systemic antibiotics and safe immobilisation begin before theatre; debridement and closure are specialist procedures.",
+    "pivot": "A closed, stable fracture with intact neurovascular findings may follow immobilisation and outpatient fracture-clinic review if specialist criteria are satisfied.",
+    "management": {
+      "steps": [
+        [
+          "Trauma survey",
+          "Assess other injuries, analgesia, haemorrhage, distal motor/sensation/perfusion and emerging compartment syndrome."
+        ],
+        [
+          "Protect",
+          "Gently cover the wound with sterile dressing, maintain limb alignment and splint without forcing reduction."
+        ],
+        [
+          "Treat",
+          "Administer immediate IV antibiotics based on local open-fracture protocol and tetanus prophylaxis when appropriate."
+        ],
+        [
+          "Escalate",
+          "Arrange orthopaedic and plastic surgery review for debridement, fixation and wound coverage planning."
+        ]
+      ],
+      "safety": "Check and document neurovascular examination before and after splinting; deterioration suggests vascular compromise or compartment syndrome.",
+      "local": "Australian orthopaedic trauma and local open-fracture antibiotic pathways."
+    },
+    "source": "https://www.rch.org.au/clinicalguide/guideline_index/fractures/",
+    "context": "Advanced integrated clinical decisions"
+  },
+  {
+    "n": 10,
+    "domain": "Neurology & ophthalmology",
+    "skill": "Central retinal artery occlusion / stroke-equivalent",
+    "stem": "A 67-year-old with atrial fibrillation suddenly loses vision in the right eye while reading. He has no pain, conjunctival redness or flashes. Visual acuity is reduced to hand movements, and fundus examination suggests retinal arterial whitening and a cherry-red macular spot. Symptom onset was 55 minutes ago.",
+    "ask": "What is the most appropriate immediate pathway?",
+    "options": [
+      "Arrange a routine optometry review because painless monocular vision loss is rarely an emergency.",
+      "Treat presumed acute glaucoma empirically because sudden severe visual loss requires lowering pressure.",
+      "Order an outpatient carotid Doppler after initial antiplatelet treatment without emergency assessment.",
+      "Observe for spontaneous recovery and re-evaluate vision after the atrial fibrillation rate is controlled.",
+      "Activate an acute stroke and ophthalmology pathway for urgent time-sensitive vascular assessment."
+    ],
+    "key": "E",
+    "explanations": [
+      "CRAO threatens permanent vision and is associated with concurrent or subsequent cerebral ischaemia. Routine optometry is too slow for an onset measured in minutes.",
+      "Angle-closure glaucoma usually causes pain, red eye, headache and often a raised intraocular pressure. CRAO needs neurovascular evaluation rather than assuming a pressure-mediated process.",
+      "Carotid investigation is relevant but a future appointment misses a potentially time-sensitive intervention and immediate assessment of cardioembolic and cerebrovascular risk.",
+      "Some visual recovery occurs, but observation wastes the very narrow therapeutic opportunity. Rate control alone does not treat an acute retinal arterial occlusion.",
+      "Correct: treat retinal arterial occlusion as an acute ischaemic emergency with urgent stroke-team and ophthalmology involvement, vascular and cardiac assessment and discussion of reperfusion eligibility according to specialised local protocols."
+    ],
+    "pearl": "Sudden painless monocular visual loss from CRAO is an eye emergency and a stroke-equivalent requiring immediate coordinated assessment.",
+    "pivot": "Transient monocular visual obscuration with complete recovery suggests amaurosis fugax, which still requires urgent TIA/stroke investigation.",
+    "management": {
+      "steps": [
+        [
+          "Identify onset",
+          "Document last-known-well time, visual findings, vascular risk factors and medication including anticoagulants."
+        ],
+        [
+          "Activate pathway",
+          "Urgently involve stroke and ophthalmology teams and send for emergency brain and vascular investigation as directed."
+        ],
+        [
+          "Assess options",
+          "Discuss time-dependent reperfusion eligibility and exclusions with the responsible specialists."
+        ],
+        [
+          "Prevent recurrence",
+          "Investigate atrial fibrillation, carotid disease and vascular risks, then implement tailored secondary prevention."
+        ]
+      ],
+      "safety": "Do not delay urgent referral for non-evidence-based globe massage or routine outpatient tests.",
+      "local": "Stroke Foundation Australia and local acute retinal artery occlusion emergency pathway."
+    },
+    "source": "https://informme.org.au/guidelines/living-clinical-guidelines-for-stroke-management",
+    "context": "Advanced integrated clinical decisions"
   }
 ]
