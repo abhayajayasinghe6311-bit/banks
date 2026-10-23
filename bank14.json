@@ -718,5 +718,245 @@
     },
     "source": "https://www.eviq.org.au/clinical-resources/oncological-emergencies/123-neutropenic-fever-patient-evaluation-risk-as",
     "context": "Advanced integrated clinical decisions"
+  },
+  {
+    "n": 16,
+    "domain": "Paediatric haematology & trauma",
+    "skill": "Haemophilia A / head trauma before imaging",
+    "context": "Advanced integrated clinical decisions",
+    "stem": "A 9-year-old with severe haemophilia A strikes his head falling from a bicycle. He is alert, has vomited once and reports worsening headache. He has no focal deficit and last received prophylactic factor VIII four days ago. The CT scanner is available, but the haemophilia nurse has brought his emergency factor supply.",
+    "ask": "Which sequence is safest while investigating possible intracranial bleeding?",
+    "options": [
+      "Give indicated factor VIII promptly with specialist advice, then pursue urgent CT and observation.",
+      "Complete CT and coagulation studies first, giving factor VIII only if bleeding is demonstrated.",
+      "Provide analgesia and discharge if his neurological examination remains normal for one hour.",
+      "Administer vitamin K immediately, because haemophilia-related bleeding responds to clotting-factor synthesis.",
+      "Perform lumbar puncture to exclude subarachnoid bleeding before prescribing clotting-factor replacement."
+    ],
+    "key": "A",
+    "explanations": [
+      "Correct: suspected serious bleeding in haemophilia requires immediate appropriate factor replacement; imaging must not delay it. Worsening headache and vomiting also require urgent CT and haematology-led observation.",
+      "Intracranial bleeding can progress during imaging and laboratory delays. Factor levels can support subsequent dosing but must not hold up initial treatment.",
+      "An initially normal examination does not exclude intracranial haemorrhage. Brief observation without replacement and investigation is unsafe in severe haemophilia with progressive symptoms.",
+      "Vitamin K supports vitamin-K-dependent factors, whereas haemophilia A is factor VIII deficiency. It does not provide the replacement needed for this inherited condition.",
+      "Lumbar puncture risks further bleeding and is not the initial test for traumatic intracranial haemorrhage. Invasive procedures require a specialist haemostatic plan."
+    ],
+    "pearl": "In haemophilia with suspected major bleeding, replace factor first and investigate in parallel.",
+    "pivot": "A known factor VIII inhibitor or emicizumab prophylaxis changes specialist haemostatic product selection.",
+    "management": {
+      "steps": [
+        [
+          "Stabilise",
+          "Assess ABCDE, cervical injury risk and serial neurological observations."
+        ],
+        [
+          "Replace",
+          "Call the haemophilia centre and administer indicated factor replacement immediately."
+        ],
+        [
+          "Investigate",
+          "Arrange urgent head CT and appropriate blood tests without treatment delay."
+        ],
+        [
+          "Monitor",
+          "Arrange observation and neurosurgical review if intracranial bleeding is found."
+        ]
+      ],
+      "safety": "Ask about inhibitors and emicizumab because they alter product choice and some coagulation assays.",
+      "local": "Royal Children's Hospital Melbourne Haemophilia guideline."
+    },
+    "source": "https://www.rch.org.au/clinicalguide/guideline_index/Haemophilia/"
+  },
+  {
+    "n": 17,
+    "domain": "Oncology & cardiology",
+    "skill": "Immune checkpoint inhibitor myocarditis / early immunosuppression",
+    "context": "Advanced integrated clinical decisions",
+    "stem": "A 64-year-old receiving nivolumab for metastatic melanoma develops fatigue, chest pressure and palpitations five weeks after treatment began. Troponin is elevated and ECG shows new conduction delay. Coronary assessment does not support an acute plaque event, and echocardiography reports a preserved ejection fraction. The next nivolumab infusion is booked tomorrow.",
+    "ask": "What is the most appropriate response to this treatment-related concern?",
+    "options": [
+      "Proceed with the next infusion and review symptoms after the planned treatment cycle.",
+      "Withhold immunotherapy and admit for monitored cardio-oncology assessment and prompt corticosteroid treatment.",
+      "Discharge with a beta blocker because preserved ejection fraction excludes clinically important myocarditis.",
+      "Delay management until cardiac MRI proves myocarditis because troponin elevation alone is nonspecific.",
+      "Give an NSAID and resume exercise because treatment-related pericarditis is more likely than myocarditis."
+    ],
+    "key": "B",
+    "explanations": [
+      "Continuing a suspected immune trigger can worsen fatal cardiac toxicity. Even mild early symptoms warrant withholding treatment and urgent assessment.",
+      "Correct: immune checkpoint myocarditis may cause malignant arrhythmias despite normal LV function. Hold treatment, admit for telemetry, involve specialists and start early high-dose corticosteroids per protocol.",
+      "Normal ejection fraction does not exclude myocarditis or conduction-related sudden death. Troponin elevation with new ECG changes warrants hospital evaluation.",
+      "MRI can help confirm myocarditis, but should not postpone stabilisation or prompt treatment when suspicion is high. Investigate competing causes concurrently.",
+      "NSAIDs may help selected pericardial syndromes but are not adequate for suspected myocardial inflammation with conduction abnormalities."
+    ],
+    "pearl": "Checkpoint inhibitor myocarditis can be fatal even when ejection fraction is preserved.",
+    "pivot": "A convincingly established alternative cause of troponin elevation changes treatment, but must be demonstrated rather than assumed.",
+    "management": {
+      "steps": [
+        [
+          "Withhold",
+          "Stop further nivolumab and alert the oncology team."
+        ],
+        [
+          "Monitor",
+          "Admit with telemetry, serial ECG/troponin, BNP, CK and echocardiography."
+        ],
+        [
+          "Treat",
+          "Seek urgent cardiology advice and begin early high-dose IV corticosteroids per irAE protocol."
+        ],
+        [
+          "Investigate",
+          "Consider cardiac MRI, conduction complications and associated myositis."
+        ]
+      ],
+      "safety": "Normal EF is not reassuring; avoid infliximab in myocarditis or heart failure.",
+      "local": "eviQ Management of immune-related adverse events v6, cardiac toxicity."
+    },
+    "source": "https://www.eviq.org.au/clinical-resources/side-effect-and-toxicity-management/immunological/1993-management-of-immune-related-adverse-events"
+  },
+  {
+    "n": 18,
+    "domain": "Toxicology & resuscitation",
+    "skill": "Organophosphate exposure / atropine endpoints",
+    "context": "Advanced integrated clinical decisions",
+    "stem": "A 38-year-old agricultural worker is brought in after mixing insecticide in an enclosed shed. He is sweating heavily, salivating, wheezing and passing diarrhoea. HR is 54/min and SpO2 is 86% despite oxygen. Pinpoint pupils and diffuse bronchial secretions are noted. Contaminated clothing is still on his body.",
+    "ask": "Which intervention should be prioritised to reverse the immediately dangerous toxidrome?",
+    "options": [
+      "Give naloxone until pupil size normalises, then begin environmental decontamination.",
+      "Administer activated charcoal before airway support because the agent is a pesticide.",
+      "Use escalating IV atropine to clear bronchial secretions while providing protected decontamination.",
+      "Give flumazenil to improve respiratory effort while awaiting confirmation of the insecticide.",
+      "Provide pralidoxime alone because muscarinic symptoms should settle once enzyme activity recovers."
+    ],
+    "key": "C",
+    "explanations": [
+      "Naloxone treats opioid toxicity, not organophosphate-mediated bronchorrhoea or bradycardia. It cannot replace cholinergic antidote therapy.",
+      "Activated charcoal does not address inhaled or dermal exposure and is dangerous with respiratory compromise. Airway support and staff protection come first.",
+      "Correct: atropine is rapidly titrated to clear lung secretions and improve ventilation/perfusion, not pupil size. Use PPE, remove clothing and discuss pralidoxime with toxicology.",
+      "Flumazenil reverses selected benzodiazepine effects, not acetylcholinesterase inhibition, and may precipitate seizures in mixed poisonings.",
+      "Pralidoxime can assist in selected cases but does not replace immediate atropine for muscarinic respiratory failure. Airway support is also critical."
+    ],
+    "pearl": "Titrate atropine to clear the lungs, not to dilate pupils.",
+    "pivot": "Dry skin, mydriasis and urinary retention suggest anticholinergic toxicity, not cholinergic excess.",
+    "management": {
+      "steps": [
+        [
+          "Protect",
+          "Use PPE and remove contaminated clothing without exposing staff."
+        ],
+        [
+          "Resuscitate",
+          "Suction secretions, give oxygen and secure ventilation as required."
+        ],
+        [
+          "Antidote",
+          "Administer escalating IV atropine with repeated chest and perfusion assessment."
+        ],
+        [
+          "Consult",
+          "Call Poisons Information 13 11 26 about oximes and ongoing infusion."
+        ]
+      ],
+      "safety": "Secondary contamination can harm staff; heart rate and pupil size are not sole atropinisation endpoints.",
+      "local": "Queensland Poisons Information Centre atropine guidance."
+    },
+    "source": "https://www.poisonsinfo.health.qld.gov.au/for-health-professionals/antidote-stocking-recommendations/atropine"
+  },
+  {
+    "n": 19,
+    "domain": "Public health & infectious diseases",
+    "skill": "Meningococcal contact management / targeted prophylaxis",
+    "context": "Advanced integrated clinical decisions",
+    "stem": "A 19-year-old university student has confirmed invasive meningococcal disease. His asymptomatic housemate slept in the same shared bedroom for the preceding week. Several classmates attended the same lecture but had no close social contact. The housemate completed meningococcal vaccinations during school.",
+    "ask": "Which action is most appropriate for the asymptomatic housemate?",
+    "options": [
+      "Reassure because childhood vaccination removes the need for any further contact management.",
+      "Order a throat culture and prescribe antibiotics only if meningococcal carriage is confirmed.",
+      "Give prophylaxis only if fever develops because antibiotic treatment is unnecessary while asymptomatic.",
+      "Arrange prompt clearance antibiotics through public health, regardless of prior vaccination status.",
+      "Vaccinate the entire lecture group urgently instead of treating those with household-level exposure."
+    ],
+    "key": "D",
+    "explanations": [
+      "Vaccination reduces disease risk but does not remove the need for prophylaxis after defined high-risk exposure. Carriage and vaccine serogroup coverage are distinct issues.",
+      "Carriage testing is not needed to determine eligibility for chemoprophylaxis. Waiting for a throat culture can miss the prevention window.",
+      "Chemoprophylaxis prevents secondary disease in asymptomatic high-risk contacts. Waiting for fever converts prevention into urgent treatment.",
+      "Correct: household-like contact warrants prompt public-health-coordinated clearance antibiotics, plus serogroup-specific vaccine advice where appropriate.",
+      "Routine lecture attendance does not equal household-level exposure. Blanket antibiotics or vaccination for casual classmates can cause avoidable harm."
+    ],
+    "pearl": "Meningococcal prophylaxis is determined by exposure, not symptoms or previous vaccination.",
+    "pivot": "A classmate who only shared lectures without close contact generally needs information and safety advice, not automatic antibiotics.",
+    "management": {
+      "steps": [
+        [
+          "Notify",
+          "Confirm public health notification and contact tracing."
+        ],
+        [
+          "Classify",
+          "Identify household, intimate and other defined high-risk contacts."
+        ],
+        [
+          "Prevent",
+          "Give clearance antibiotics promptly using local drug and pregnancy guidance."
+        ],
+        [
+          "Educate",
+          "Explain symptoms requiring urgent care and vaccine indications."
+        ]
+      ],
+      "safety": "Do not await symptoms or throat cultures in high-risk contacts; casual contacts usually do not need prophylaxis.",
+      "local": "NSW Health meningococcal disease control guideline."
+    },
+    "source": "https://www.health.nsw.gov.au/Infectious/controlguideline/Pages/meningococcal-disease.aspx"
+  },
+  {
+    "n": 20,
+    "domain": "Oncology & nephrology",
+    "skill": "Tumour lysis syndrome / rasburicase contraindication",
+    "context": "Advanced integrated clinical decisions",
+    "stem": "A 25-year-old with bulky Burkitt lymphoma is scheduled for intensive chemotherapy. LDH is markedly elevated, urate is already high and eGFR is reduced. The oncology registrar proposes allopurinol alone with unrestricted oral fluids. The patient has a documented history of G6PD deficiency.",
+    "ask": "Which prevention plan best addresses the high risk while respecting the contraindication?",
+    "options": [
+      "Start rasburicase immediately because renal dysfunction outweighs the risk from G6PD deficiency.",
+      "Give allopurinol and rasburicase together because dual urate blockade is recommended in high-risk disease.",
+      "Defer all prophylaxis until chemotherapy produces laboratory evidence of tumour lysis syndrome.",
+      "Give oral sodium bicarbonate routinely because urinary alkalinisation prevents calcium-phosphate deposition.",
+      "Institute monitored IV hydration and specialist urate-lowering planning without rasburicase in G6PD deficiency."
+    ],
+    "key": "E",
+    "explanations": [
+      "Rasburicase can cause haemolysis and methaemoglobinaemia in G6PD deficiency. High TLS risk does not remove this contraindication.",
+      "eviQ does not recommend routine combined allopurinol and rasburicase. Rasburicase is contraindicated here regardless of concurrent allopurinol.",
+      "Prevention must begin before cytotoxic therapy for high-risk disease. Waiting for renal failure or arrhythmia loses the opportunity to prevent TLS.",
+      "Routine urinary alkalinisation can increase calcium-phosphate precipitation and is not recommended. Hydration and safe urate management are preferred.",
+      "Correct: initiate monitored hydration, frequent electrolyte/urate testing and urgent haematology-nephrology planning. Consider renal-adjusted allopurinol while avoiding rasburicase in G6PD deficiency."
+    ],
+    "pearl": "Rasburicase is effective for high-risk TLS but contraindicated in G6PD deficiency.",
+    "pivot": "In G6PD-normal high-risk patients, rasburicase may be appropriate with specialist oversight.",
+    "management": {
+      "steps": [
+        [
+          "Stratify",
+          "Review tumour burden, LDH, urate, renal function and treatment intensity."
+        ],
+        [
+          "Hydrate",
+          "Use carefully titrated IV fluids with strict balance and monitoring."
+        ],
+        [
+          "Prevent",
+          "Avoid rasburicase in G6PD deficiency; plan alternative urate management with specialists."
+        ],
+        [
+          "Rescue",
+          "Monitor potassium, phosphate, calcium and renal function; escalate for dialysis if needed."
+        ]
+      ],
+      "safety": "Do not administer rasburicase in G6PD deficiency or routinely alkalinise urine.",
+      "local": "eviQ Prevention of tumour lysis syndrome."
+    },
+    "source": "https://www.eviq.org.au/clinical-resources/side-effect-and-toxicity-management/prophylaxis-and-treatment/108-prevention-of-tumour-lysis-syndrome"
   }
 ]
