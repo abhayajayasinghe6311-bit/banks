@@ -958,5 +958,245 @@
       "local": "eviQ Prevention of tumour lysis syndrome."
     },
     "source": "https://www.eviq.org.au/clinical-resources/side-effect-and-toxicity-management/prophylaxis-and-treatment/108-prevention-of-tumour-lysis-syndrome"
+  },
+  {
+    "n": 21,
+    "domain": "Paediatric haematology & respiratory",
+    "skill": "Sickle cell disease / acute chest syndrome",
+    "context": "Advanced integrated clinical decisions",
+    "stem": "A 12-year-old with HbSS disease is admitted for a painful vaso-occlusive episode. The next morning he develops fever, cough and chest pain. SpO2 falls from 98% to 91% on room air, and radiography shows a new right lower-zone infiltrate. His haemoglobin is near baseline and he remains haemodynamically stable.",
+    "ask": "What is the safest immediate management bundle?",
+    "options": [
+      "Treat acute chest syndrome with oxygen, IV antibiotics, careful fluids and urgent haematology input.",
+      "Increase maintenance IV fluids to twice normal because hydration alone reverses pulmonary sickling.",
+      "Give opioids only and repeat the chest radiograph in two days if pain persists.",
+      "Arrange routine outpatient respiratory review because haemoglobin has not fallen below baseline.",
+      "Start anticoagulation for presumed pulmonary embolism without evaluating the new pulmonary infiltrate."
+    ],
+    "key": "A",
+    "explanations": [
+      "Correct: a new infiltrate with hypoxia and respiratory symptoms indicates acute chest syndrome. Provide oxygen, early antibiotics, analgesia and cautious hydration; involve haematology regarding transfusion and critical-care escalation.",
+      "Excessive IV fluids can worsen acute chest syndrome. Correct true dehydration but avoid reflexively doubling fluid rates in a patient with pulmonary compromise.",
+      "Analgesia is important but cannot replace treatment of hypoxia and possible infection. Waiting two days risks rapid respiratory deterioration.",
+      "A haemoglobin near baseline does not exclude acute chest syndrome. New oxygen requirement and infiltrate warrant inpatient care regardless of initial haemodynamic stability.",
+      "PE may be a differential but empiric anticoagulation without appropriate assessment misses the characteristic acute chest presentation and adds bleeding risk."
+    ],
+    "pearl": "Acute chest syndrome may develop during a pain crisis even without an early haemoglobin drop.",
+    "pivot": "Isolated limb pain without fever, hypoxia or new chest infiltrate supports uncomplicated vaso-occlusive pain management.",
+    "management": {
+      "steps": [
+        [
+          "Recognise",
+          "Repeat SpO2, examination, chest imaging, FBC/reticulocytes and cultures if febrile."
+        ],
+        [
+          "Support",
+          "Give oxygen, adequate analgesia and respiratory monitoring."
+        ],
+        [
+          "Treat",
+          "Start protocol-based IV antibiotics and carefully balanced fluids."
+        ],
+        [
+          "Escalate",
+          "Seek haematology and critical-care review; assess transfusion if deteriorating."
+        ]
+      ],
+      "safety": "Avoid fluid overload and excessive transfusion targets because of pulmonary deterioration and hyperviscosity risk.",
+      "local": "Perth Children's Hospital Sickle cell disease ED guideline."
+    },
+    "source": "https://pch.health.wa.gov.au/For-health-professionals/Emergency-Department-Guidelines/Sickle-cell-disease"
+  },
+  {
+    "n": 22,
+    "domain": "Trauma & spinal cord medicine",
+    "skill": "High cervical injury / neurogenic versus haemorrhagic shock",
+    "context": "Advanced integrated clinical decisions",
+    "stem": "A 28-year-old falls from a ladder and has weakness in all four limbs. BP is 78/45 mmHg, pulse is 48/min and skin is warm and dry. A cervical injury is suspected, but he also has pelvic tenderness and possible intra-abdominal injury. The team is considering neurogenic shock as the sole cause of hypotension.",
+    "ask": "Which immediate strategy best avoids a dangerous diagnostic assumption?",
+    "options": [
+      "Treat bradycardia as proof that blood loss is absent and begin vasopressors alone.",
+      "Resuscitate as trauma, exclude haemorrhage and support perfusion while protecting the spine.",
+      "Administer high-dose methylprednisolone immediately to reverse cord swelling before imaging.",
+      "Place the patient upright to improve venous return and reassess pressure after mobilisation.",
+      "Delay vascular access until a complete formal spinal injury classification has been documented."
+    ],
+    "key": "B",
+    "explanations": [
+      "Bradycardia and warm skin suggest sympathetic disruption but cannot rule out concurrent haemorrhage. Assuming neurogenic shock alone risks missing a treatable fatal bleed.",
+      "Correct: follow major-trauma ABCDE and haemorrhage control with spinal precautions. After assessing blood loss, neurogenic hypotension may require titrated fluids and vasopressors.",
+      "High-dose steroids are not routinely recommended in acute spinal cord injury; benefits are uncertain and adverse effects can be substantial.",
+      "Upright positioning may worsen hypotension and risks moving an unstable spine. Controlled positioning and spinal protection are necessary.",
+      "Formal neurological classification helps later planning but must not delay airway, circulation, bleeding assessment or urgent transfer."
+    ],
+    "pearl": "Bradycardia with hypotension suggests neurogenic shock, but traumatic haemorrhage must be excluded.",
+    "pivot": "After bleeding is excluded, a high spinal injury with bradycardia and vasodilation supports neurogenic shock.",
+    "management": {
+      "steps": [
+        [
+          "Survey",
+          "Protect cervical alignment and address airway, breathing and circulation."
+        ],
+        [
+          "Exclude bleeding",
+          "Assess pelvis, abdomen and chest using appropriate trauma imaging and examination."
+        ],
+        [
+          "Support",
+          "Give titrated fluids and vasoactive support if neurogenic shock is likely."
+        ],
+        [
+          "Transfer",
+          "Arrange urgent spinal specialist assessment while preventing hypoxia and hypotension."
+        ]
+      ],
+      "safety": "Do not attribute hypotension to neurogenic shock before assessing haemorrhage; avoid routine high-dose steroids.",
+      "local": "Queensland Spinal Cord Injuries Service neurogenic shock guidance."
+    },
+    "source": "https://qscis.health.qld.gov.au/resources/cardiovascular/spinal-and-neurogenic-shock/"
+  },
+  {
+    "n": 23,
+    "domain": "Respiratory emergencies & intensive care",
+    "skill": "Life-threatening haemoptysis / protecting unaffected lung",
+    "context": "Advanced integrated clinical decisions",
+    "stem": "A 56-year-old with bronchiectasis begins coughing large volumes of bright-red blood. He is hypoxic, confused and unable to clear his airway. A recent CT shows severe disease predominantly in the left lung, and current bleeding appears left-sided. BP is 105/65 mmHg after initial resuscitation.",
+    "ask": "What should take priority before definitive embolisation or bronchoscopy?",
+    "options": [
+      "Send the patient directly for CT angiography while keeping him flat to obtain clearer images.",
+      "Give a routine dose of tranexamic acid and defer airway planning until haemoglobin results return.",
+      "Protect oxygenation and position the suspected bleeding lung down with expert airway support.",
+      "Perform immediate diagnostic sputum culture because infection is the usual cause of haemoptysis.",
+      "Place the right lung dependent to drain blood away from the diseased left lower airways."
+    ],
+    "key": "C",
+    "explanations": [
+      "CT can guide embolisation once stable, but transporting a confused hypoxic patient with active airway flooding is unsafe without airway planning.",
+      "Antifibrinolytics may be adjuncts, but cannot replace suction, positioning and advanced airway care when asphyxiation is imminent.",
+      "Correct: preserve ventilation of the unaffected lung by placing the bleeding side down if known, suctioning and involving airway and respiratory specialists urgently.",
+      "Microbiology can be collected later and does not prevent immediate airway flooding. Life-threatening haemoptysis can kill by asphyxiation.",
+      "Placing the healthy right lung dependent encourages blood to spill into its airways. The suspected bleeding left lung should be down."
+    ],
+    "pearl": "Protecting the unaffected lung is often more urgent than quantifying blood loss in massive haemoptysis.",
+    "pivot": "Small-volume haemoptysis with preserved oxygenation can allow structured imaging and cause investigation.",
+    "management": {
+      "steps": [
+        [
+          "Airway",
+          "Call anaesthesia/ICU, give oxygen, suction and prepare definitive airway support."
+        ],
+        [
+          "Position",
+          "Place the bleeding lung dependent when laterality is established."
+        ],
+        [
+          "Resuscitate",
+          "Establish access, crossmatch blood and correct coagulopathy or shock."
+        ],
+        [
+          "Control",
+          "Arrange bronchoscopy and bronchial artery embolisation or surgery as appropriate."
+        ]
+      ],
+      "safety": "Do not transfer an unstable patient to CT without airway planning or position the healthy lung dependent.",
+      "local": "NSW Agency for Clinical Innovation massive haemoptysis management aims."
+    },
+    "source": "https://aci.health.nsw.gov.au/networks/eci/clinical/tools/respiratory/massive-haemoptysis/massive-haemoptysis-management-aims"
+  },
+  {
+    "n": 24,
+    "domain": "Burns & airway emergencies",
+    "skill": "Smoke inhalation / impending upper-airway obstruction",
+    "context": "Advanced integrated clinical decisions",
+    "stem": "A 10-year-old is rescued from a house fire in an enclosed room. She has facial burns, soot in the mouth, a hoarse voice and increasing stridor. SpO2 reads 97% on room air, but her neck is swelling. The burn surface area appears relatively small and transfer to a burns centre will take two hours.",
+    "ask": "Which decision is most important before transfer?",
+    "options": [
+      "Defer airway intervention because pulse oximetry confirms sufficient oxygen carriage and adequate ventilation.",
+      "Treat the facial burn with topical dressing and reassess stridor after the transfer journey.",
+      "Use inhaled bronchodilators alone because airway swelling usually remains below the vocal cords.",
+      "Request expert early airway control and high-flow oxygen while arranging burns retrieval.",
+      "Offer oral fluids and observe because the visible skin burn percentage is too small for critical injury."
+    ],
+    "key": "D",
+    "explanations": [
+      "Pulse oximetry can be falsely reassuring in carbon monoxide exposure and cannot measure progressive upper-airway obstruction. Stridor and intraoral soot are major warning signs.",
+      "Wound care is secondary to airway protection. Swelling can progress during transport and make later intubation difficult or impossible.",
+      "Bronchodilators may help lower-airway bronchospasm but cannot reliably reverse thermal upper-airway oedema or prevent obstruction.",
+      "Correct: early expert airway assessment and likely controlled intubation are needed with worsening stridor, hoarseness and swelling. Give high-flow oxygen and coordinate retrieval.",
+      "Visible skin burn extent does not reliably predict inhalation injury. Oral fluids also risk aspiration when airway compromise is developing."
+    ],
+    "pearl": "Soot, hoarseness and stridor after an enclosed-space fire require early airway planning despite normal SpO2.",
+    "pivot": "A stable isolated superficial limb burn without smoke exposure or airway symptoms follows a routine burn first-aid pathway.",
+    "management": {
+      "steps": [
+        [
+          "Assess",
+          "Perform ABCDE and check stridor, soot, hoarseness, oral oedema and associated trauma."
+        ],
+        [
+          "Oxygenate",
+          "Give high-flow oxygen and evaluate carbon monoxide or cyanide exposure."
+        ],
+        [
+          "Secure",
+          "Request experienced paediatric airway staff for early controlled intervention."
+        ],
+        [
+          "Transfer",
+          "Coordinate burns-centre retrieval, fluids, temperature control and wound care."
+        ]
+      ],
+      "safety": "Normal pulse oximetry cannot exclude carbon monoxide poisoning or impending inhalation-related airway obstruction.",
+      "local": "RCH Burns – acute management clinical practice guideline (2026)."
+    },
+    "source": "https://www.rch.org.au/clinicalguide/guideline_index/Burns/"
+  },
+  {
+    "n": 25,
+    "domain": "Ophthalmology & general practice",
+    "skill": "Contact lens-associated microbial keratitis / urgent referral",
+    "context": "Advanced integrated clinical decisions",
+    "stem": "A 24-year-old who sleeps in soft contact lenses presents with severe unilateral eye pain, photophobia and reduced vision. The eye is red and fluorescein examination shows a central corneal epithelial defect with an underlying white infiltrate. There is no recent blunt trauma and she is afebrile.",
+    "ask": "Which immediate plan best prevents permanent visual loss?",
+    "options": [
+      "Treat as uncomplicated conjunctivitis with routine chloramphenicol and review in five days.",
+      "Patch the eye tightly and continue contact lenses to protect the exposed corneal surface.",
+      "Start topical corticosteroids without antimicrobial cover to reduce stromal inflammation rapidly.",
+      "Prescribe lubricating drops only because a corneal defect should heal after lens removal.",
+      "Stop contact lenses and arrange same-day ophthalmology-led microbial keratitis treatment."
+    ],
+    "key": "E",
+    "explanations": [
+      "A central corneal ulcer with reduced vision is not simple conjunctivitis. Low-intensity therapy risks progression, particularly with contact-lens-associated Pseudomonas.",
+      "Patching may promote infection and delays inspection. Contact lenses should be stopped, not used as a dressing.",
+      "Steroids may worsen active infection without adequate antimicrobial cover. Any later role is an ophthalmologist-directed decision.",
+      "Lubrication alone cannot eradicate microbial keratitis. Central infiltration risks scarring, perforation and permanent visual loss.",
+      "Correct: remove lenses, document acuity, obtain same-day ophthalmology review and arrange corneal sampling and intensive topical antimicrobials as advised."
+    ],
+    "pearl": "A painful photophobic red eye with reduced vision and corneal infiltrate in a lens wearer is keratitis until proven otherwise.",
+    "pivot": "Bilateral itch and watery discharge with normal vision and no infiltrate suggests a different conjunctival pathway.",
+    "management": {
+      "steps": [
+        [
+          "Examine",
+          "Record visual acuity, pupil findings and fluorescein staining."
+        ],
+        [
+          "Stop lenses",
+          "Remove lenses and avoid patching or unsupervised steroid drops."
+        ],
+        [
+          "Refer",
+          "Arrange same-day emergency ophthalmology evaluation."
+        ],
+        [
+          "Treat",
+          "Follow specialist antimicrobial, sampling and close-review instructions."
+        ]
+      ],
+      "safety": "Do not prescribe topical steroids or patch a suspected infected cornea without specialist direction.",
+      "local": "Queensland Health ophthalmology emergency referral criteria for contact-lens keratitis."
+    },
+    "source": "https://www.goldcoast.health.qld.gov.au/referrals/services/ophthalmology"
   }
 ]
