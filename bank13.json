@@ -1198,5 +1198,245 @@
     },
     "source": "https://www.tga.gov.au/resources/health-professional-information-and-resources/australian-categorisation-system-prescribing-medicines-pregnancy/prescribing-medicines-pregnancy-database",
     "n": 25
+  },
+  {
+    "n": 26,
+    "domain": "Gastroenterology & resuscitation",
+    "skill": "Variceal haemorrhage / early combined treatment",
+    "context": "Advanced integrated clinical decisions",
+    "stem": "A 54-year-old with cirrhosis and previously banded oesophageal varices arrives after vomiting a large volume of fresh blood. BP is 88/52 mmHg, HR 124/min, and he is intermittently drowsy. The major haemorrhage team has been called, blood has been crossmatched and IV access obtained.",
+    "ask": "Which additional plan is MOST appropriate while preparing for definitive haemostasis?",
+    "options": [
+      "Arrange urgent endoscopy first, and commence vasoactive medication only if varices are confirmed at the procedure.",
+      "Give a proton-pump inhibitor infusion alone and defer portal-hypertension treatment until the bleeding source is visualised.",
+      "Begin IV antibiotic prophylaxis, but withhold vasoactive therapy until bleeding continues despite initial endoscopic intervention.",
+      "Begin vasoactive therapy and IV antibiotics immediately, then proceed to urgent endoscopy after initial stabilisation.",
+      "Start a nonselective beta blocker now and schedule endoscopic banding once the blood pressure has normalised."
+    ],
+    "key": "D",
+    "explanations": [
+      "Endoscopy is essential, but initial resuscitation should run alongside vasoactive medication and antibiotics for suspected variceal bleeding. Waiting for visual confirmation sacrifices time-sensitive treatment.",
+      "An IV PPI may be reasonable when the source is uncertain, but it cannot replace antibiotics and vasoactive treatment in probable variceal bleeding. Stop unnecessary PPI when appropriate.",
+      "Antibiotic prophylaxis is correct for cirrhotic upper GI bleeding, but vasoactive treatment must also start promptly. Delaying one component until haemostasis fails leaves portal flow untreated.",
+      "Correct: initiate terlipressin or another locally approved vasoactive agent and IV antibiotic prophylaxis, with airway and haemorrhage resuscitation. Organise urgent specialist endoscopy, usually within twelve hours after stabilisation.",
+      "Nonselective beta blockers reduce future portal bleeding risk but are not acute shock treatments. Starting one in marked hypotension can worsen circulation and does not achieve haemostasis."
+    ],
+    "pearl": "Suspected variceal bleeding requires resuscitation, early vasoactive therapy, IV antibiotics and urgent endoscopy together.",
+    "pivot": "If endoscopy instead identifies a bleeding peptic ulcer, adapt to the non-variceal bleeding pathway and review ongoing variceal-specific treatment.",
+    "management": {
+      "steps": [
+        [
+          "Stabilise",
+          "Manage airway and circulation, summon senior endoscopy, anaesthesia and ICU support, and use major-haemorrhage pathways when needed."
+        ],
+        [
+          "Treat early",
+          "Start an appropriate vasoactive agent and IV antibiotic prophylaxis without waiting for endoscopic confirmation."
+        ],
+        [
+          "Control bleeding",
+          "Arrange urgent endoscopy after initial resuscitation, with band ligation for bleeding oesophageal varices."
+        ],
+        [
+          "Prevent recurrence",
+          "After haemostasis, arrange secondary prevention and assess need for rescue TIPS when endoscopic control fails."
+        ]
+      ],
+      "safety": "Do not withhold vasoactive treatment or antibiotics until confirmation. Avoid beta blockade during haemorrhagic shock.",
+      "local": "Follow the linked Australian guidance and current local specialist protocols."
+    },
+    "source": "https://pmc.ncbi.nlm.nih.gov/articles/PMC13038256/"
+  },
+  {
+    "n": 27,
+    "domain": "Renal medicine & critical care",
+    "skill": "Severe hyperkalaemia / myocardial stabilisation",
+    "context": "Advanced integrated clinical decisions",
+    "stem": "A 71-year-old with CKD and heart failure takes spironolactone and an angiotensin-receptor blocker. Following vomiting and oliguria, potassium on blood gas is 7.1 mmol/L. ECG shows loss of P waves and broadening QRS complexes. BP is 105/64 mmHg and bedside glucose 6.2 mmol/L.",
+    "ask": "Which treatment should be prioritised first?",
+    "options": [
+      "Start insulin and glucose immediately, providing calcium later only if repeat potassium remains above 7 mmol/L.",
+      "Give IV calcium with cardiac monitoring now, while initiating potassium-lowering treatment and investigating the precipitant.",
+      "Administer an oral potassium binder first, repeating the ECG once it has begun to act in the gut.",
+      "Arrange emergency haemodialysis, deferring temporary drug treatment until the dialysis team can access the patient.",
+      "Administer IV sodium bicarbonate first because ECG changes require bicarbonate regardless of the underlying acid-base status."
+    ],
+    "key": "B",
+    "explanations": [
+      "Insulin and glucose move potassium into cells, but they do not protect the myocardium as quickly as calcium. Serious conduction changes mandate immediate membrane stabilisation.",
+      "Correct: give protocol-based IV calcium promptly under continuous cardiac monitoring, and start insulin/glucose with adjuncts to lower serum potassium. Stop potassium-raising drugs, monitor glucose and assess need for dialysis.",
+      "Binders have a much slower effect and do not rapidly prevent malignant arrhythmias. They cannot replace emergency IV calcium when the QRS is widening.",
+      "Dialysis may be definitive for refractory hyperkalaemia in advanced renal failure, but temporary membrane-stabilising and potassium-shifting therapies are crucial while it is being organised.",
+      "Bicarbonate may help when significant metabolic acidosis coexists, but not every high potassium result warrants it. It does not replace immediate calcium for threatening ECG abnormalities."
+    ],
+    "pearl": "IV calcium stabilises cardiac membranes without lowering potassium, so potassium shifting and removal must follow.",
+    "pivot": "If the specimen is haemolysed and the patient well with an unremarkable ECG, rapidly repeat potassium while assessing clinical risk.",
+    "management": {
+      "steps": [
+        [
+          "Recognise",
+          "Establish continuous monitoring and IV access, request senior help and confirm medication, kidney and acid-base risks."
+        ],
+        [
+          "Stabilise",
+          "Give locally protocolled IV calcium and repeat ECG promptly; reassess for persistent conduction abnormalities."
+        ],
+        [
+          "Lower potassium",
+          "Use insulin with glucose, adjunctive salbutamol and frequent glucose/potassium checks as appropriate."
+        ],
+        [
+          "Remove source",
+          "Stop contributing drugs and discuss dialysis if severe hyperkalaemia persists or kidney failure limits excretion."
+        ]
+      ],
+      "safety": "Calcium chloride and calcium gluconate 10% solutions are not dose-equivalent; follow the exact local preparation and dose.",
+      "local": "Follow the linked Australian guidance and current local specialist protocols."
+    },
+    "source": "https://www.rch.org.au/clinicalguide/guideline_index/Hyperkalaemia/"
+  },
+  {
+    "n": 28,
+    "domain": "Paediatric surgery & emergency medicine",
+    "skill": "Intussusception / contraindication to reduction",
+    "context": "Advanced integrated clinical decisions",
+    "stem": "An 11-month-old has 18 hours of episodic severe distress and vomiting. Ultrasound suggests ileocolic intussusception. He becomes lethargic, HR 178/min, BP 68/38 mmHg, with abdominal rigidity and guarding. An abdominal radiograph shows free intraperitoneal gas.",
+    "ask": "What is the safest next management step?",
+    "options": [
+      "Arrange urgent ultrasound-guided hydrostatic reduction and add antibiotics only if the reduction proves unsuccessful.",
+      "Attempt pneumatic enema reduction with surgical backup, because this treatment is usually successful in infants.",
+      "Repeat specialist ultrasound before proceeding, as bowel location must be confirmed despite the radiographic findings.",
+      "Give analgesia and fluid resuscitation, then observe for discharge if the child's vital signs become normal.",
+      "Resuscitate, administer appropriate IV antibiotics and involve paediatric surgery immediately for operative management."
+    ],
+    "key": "E",
+    "explanations": [
+      "Enema reduction is reasonable in uncomplicated intussusception but is contraindicated in suspected perforation or peritonitis. The free air makes radiological reduction unsafe.",
+      "Although pneumatic reduction is successful in many stable cases, this infant is shocked and has radiographic perforation. Proceeding risks worsening contamination and delaying surgery.",
+      "A repeat scan may add anatomical detail but is not the priority when shock, peritonitis and free gas demand treatment. Additional imaging should not postpone urgent care.",
+      "Resuscitation and analgesia are necessary but insufficient. Improvement after a fluid bolus cannot make a perforated bowel safe for discharge or observation alone.",
+      "Correct: begin ABC resuscitation, IV access, fluids, analgesia, nil by mouth and suitable IV antibiotics. Contact paediatric surgery and anaesthesia urgently for operative assessment and likely laparotomy."
+    ],
+    "pearl": "Air or contrast enema reduction is contraindicated by shock, peritonitis, bowel perforation or clinical instability.",
+    "pivot": "In a stable child without peritoneal signs or free air, specialist-guided air enema is commonly preferred with surgical backup.",
+    "management": {
+      "steps": [
+        [
+          "Resuscitate",
+          "Assess ABCs, provide monitoring and correct hypoperfusion using paediatric protocol-based isotonic boluses."
+        ],
+        [
+          "Protect",
+          "Keep nil by mouth, provide analgesia, consider nasogastric decompression and obtain relevant preoperative tests."
+        ],
+        [
+          "Escalate",
+          "Give appropriate IV antibiotics and summon paediatric surgery and anaesthesia urgently."
+        ],
+        [
+          "Operate",
+          "Proceed to specialist-directed surgical management rather than contrast or air enema reduction."
+        ]
+      ],
+      "safety": "Do not attempt reduction by enema if perforation, peritonitis or shock is present.",
+      "local": "Follow the linked Australian guidance and current local specialist protocols."
+    },
+    "source": "https://www.rch.org.au/clinicalguide/guideline_index/intussusception/"
+  },
+  {
+    "n": 29,
+    "domain": "Obstetrics & maternal emergency",
+    "skill": "Eclampsia / seizure and severe hypertension",
+    "context": "Advanced integrated clinical decisions",
+    "stem": "A 33-week G1P0 has a 70-second generalised tonic-clonic seizure on the antenatal ward. After the convulsion, she is drowsy with BP 172/116 mmHg and brisk reflexes. No known epilepsy or previous magnesium treatment is documented. The fetal heart rate transiently slows immediately after the seizure.",
+    "ask": "Which combined response is MOST appropriate after immediate ABC assessment?",
+    "options": [
+      "Give magnesium sulfate, control severe blood pressure and coordinate timely birth after maternal stabilisation.",
+      "Start phenytoin maintenance and delay blood-pressure treatment until brain imaging excludes intracranial pathology.",
+      "Perform an immediate caesarean before treating recurrent seizure risk or the severe blood-pressure elevation.",
+      "Lower blood pressure using appropriate medication and give magnesium only if another convulsion occurs.",
+      "Use diazepam as routine seizure prophylaxis and continue antenatal observation without a birth plan."
+    ],
+    "key": "A",
+    "explanations": [
+      "Correct: treat eclampsia with magnesium sulfate and an appropriate severe-hypertension protocol while supporting airway and circulation. Involve senior obstetric, anaesthetic and neonatal teams, monitor fetal recovery and plan delivery after maternal stabilisation.",
+      "Phenytoin is not first-line prophylaxis for eclampsia, and obtaining imaging must not delay treatment of severe hypertension. Brain imaging can follow if red flags suggest another neurological cause.",
+      "Delivery is necessary, but an uncontrolled airway, seizure risk and BP are immediate hazards. Stabilise the mother before deciding the safest timing and route of birth.",
+      "Blood-pressure control alone cannot prevent recurrent eclamptic seizures. Magnesium sulfate is indicated after a first eclamptic event rather than after waiting for another seizure.",
+      "Benzodiazepines may be needed for prolonged or ongoing convulsions, but magnesium sulfate is preferred for eclampsia-specific treatment. Ongoing pregnancy without senior review is unsafe."
+    ],
+    "pearl": "Eclampsia treatment prioritises maternal resuscitation, magnesium sulfate and BP control before planned delivery.",
+    "pivot": "Investigate other causes of seizure if atypical features emerge, without delaying initial eclampsia treatment.",
+    "management": {
+      "steps": [
+        [
+          "Call",
+          "Activate the emergency obstetric response, protect the airway and position the patient safely."
+        ],
+        [
+          "Treat seizures",
+          "Start protocol-based magnesium sulfate, monitor breathing, reflexes, urine output and signs of toxicity."
+        ],
+        [
+          "Control pressure",
+          "Treat persistent severe hypertension with an appropriate obstetric agent while avoiding sudden hypotension."
+        ],
+        [
+          "Deliver",
+          "After stabilisation, assess the fetus and make a timely birth plan with senior obstetric and anaesthetic staff."
+        ]
+      ],
+      "safety": "Adjust magnesium maintenance in renal impairment and monitor for toxicity; fetal bradycardia may improve after maternal resuscitation.",
+      "local": "Follow the linked Australian guidance and current local specialist protocols."
+    },
+    "source": "https://www.health.qld.gov.au/__data/assets/pdf_file/0029/146387/f-hdp-eclampsia.pdf"
+  },
+  {
+    "n": 30,
+    "domain": "Ophthalmology & emergency medicine",
+    "skill": "Acute angle closure / time-critical sight preservation",
+    "context": "Advanced integrated clinical decisions",
+    "stem": "A 69-year-old develops severe left eye pain, blurred vision with rainbow haloes and vomiting after a cinema visit. The eye is red with a cloudy cornea, shallow anterior chamber and mid-dilated poorly reactive pupil. Measured intraocular pressure is 54 mmHg on the left and 17 mmHg on the right.",
+    "ask": "Which treatment pathway is MOST appropriate?",
+    "options": [
+      "Start cycloplegic and steroid drops for presumed uveitis, with pressure review after inflammation improves.",
+      "Use pilocarpine drops alone now, reserving systemic agents until the very high pressure begins to fall.",
+      "Begin urgent pressure-lowering treatment and obtain immediate ophthalmology input for definitive angle-opening care.",
+      "Schedule routine visual-field testing, because a high-pressure episode commonly settles without lasting optic injury.",
+      "Start topical antibiotics for possible keratitis and postpone pressure-lowering treatment until cultures are available."
+    ],
+    "key": "C",
+    "explanations": [
+      "An anterior uveitis pathway does not treat the pupil-block and markedly elevated pressure described. Cycloplegia may worsen some acute angle-closure mechanisms, making it unsafe without specialist assessment.",
+      "Pilocarpine may be ineffective when the intraocular pressure is extremely high due to iris sphincter ischaemia. It should not be used as sole emergency therapy; specialist-directed pressure reduction is required.",
+      "Correct: urgent ophthalmology assessment and immediate aqueous suppressants, with systemic acetazolamide when appropriate, aim to lower the pressure and protect vision. Once feasible, laser peripheral iridotomy or another specialist-selected intervention treats the underlying closure.",
+      "Delay risks irreversible optic nerve damage. Visual fields are important in chronic glaucoma follow-up but have no priority over pressure-lowering treatment of this acute painful red eye.",
+      "Eye infection may cause pain and corneal haze, but the shallow chamber, mid-dilated pupil and severe IOP elevation identify an acute angle-closure emergency. Antibiotics alone will not lower IOP."
+    ],
+    "pearl": "Acute angle closure presents with a painful red eye, haloes, nausea, mid-dilated pupil and markedly elevated IOP.",
+    "pivot": "If a secondary mechanism such as topiramate-related uveal effusion is suspected, pilocarpine and definitive procedures may differ.",
+    "management": {
+      "steps": [
+        [
+          "Identify",
+          "Assess visual acuity, pupils and IOP if safe; avoid pharmacological pupil dilation and contact ophthalmology urgently."
+        ],
+        [
+          "Lower pressure",
+          "Begin local protocolled aqueous-suppressing drops and systemic acetazolamide if appropriate and not contraindicated."
+        ],
+        [
+          "Reassess",
+          "Treat nausea and pain, monitor IOP and visual acuity and escalate if pressure remains high."
+        ],
+        [
+          "Definitive care",
+          "Arrange peripheral iridotomy or the appropriate specialist procedure and assess fellow-eye risk."
+        ]
+      ],
+      "safety": "Pilocarpine may be ineffective at high IOP and inappropriate in secondary angle closure. Avoid delaying urgent specialist referral.",
+      "local": "Follow the linked Australian guidance and current local specialist protocols."
+    },
+    "source": "https://www.health.vic.gov.au/statewide-referral-criteria/glaucoma"
   }
 ]
