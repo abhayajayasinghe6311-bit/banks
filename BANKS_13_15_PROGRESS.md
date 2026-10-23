@@ -4,8 +4,8 @@ Status: IN PROGRESS, do not merge the branch or add incomplete banks to `manifes
 
 - Branch: `codex/banks-13-15-draft-20261023`
 - Bank 13: 100/100 authored in `bank13.json`
-- Bank 14: 10/100
-- Bank 15: 10/100
+- Bank 14: 15/100
+- Bank 15: 15/100
 - Bank 1–10 content must remain unchanged.
 
 ## Requirements
@@ -61,8 +61,8 @@ Never imply the remaining content has been written or published until it actuall
 
 ## 2026-10-23 additional checkpoint: Banks 14 and 15 started
 - Bank 13: 100/100 authored; 100/100 MERGED into main with manifest via PR #24, confirmed in main. Live GitHub Pages caching may briefly lag.
-- Bank 14: 10/100 original clinical cases committed to bank14.json (ruptured AAA, HIT, oesophageal button battery, rabies post-exposure prophylaxis, magnesium sulfate toxicity).
-- Bank 15: 10/100 original clinical cases committed to bank15.json (neonatal NEC, severe digoxin toxicity, metastatic cord compression, pregnancy syphilis/penicillin allergy, antidepressant-emergent mania).
+- Bank 14: 15/100 original clinical cases committed to bank14.json (ruptured AAA, HIT, oesophageal button battery, rabies post-exposure prophylaxis, magnesium sulfate toxicity).
+- Bank 15: 15/100 original clinical cases committed to bank15.json (neonatal NEC, severe digoxin toxicity, metastatic cord compression, pregnancy syphilis/penicillin allergy, antidepressant-emergent mania).
 - Both new banks contain exactly one each of answer letters A/B/C/D/E; five individually written option rationales, four management actions and Australian medical source links per question.
 - Only publish each bank after 100 questions and verification. No content changes Banks1–12.
 
@@ -74,3 +74,10 @@ Never imply the remaining content has been written or published until it actuall
 - Each new question has five plausible balanced-length answers, five distinct explanations, four management steps, safety warning, clinical pivot, pearl and an Australian source reference.
 - Current answer keys in each draft balanced A=2, B=2, C=2, D=2, E=2.
 - Next: continue Q11–100 for Banks 14/15 with separate commits. Publish each bank only after QA reaches 100; do not modify Banks 1–13 content.
+
+## 2026-10-23 next checkpoint — Banks 14 and 15 at 15/100 each
+- Bank 13: 100/100 completed, published in main (PR #24); retain current version.
+- Bank 14: 15/100 committed; Q11–15 cover threatened acute limb, symptomatic severe hyponatraemia, necrotising fasciitis, high-risk pulmonary embolism and febrile neutropenia.
+- Bank 15: 15/100 committed; Q11–15 cover paediatric status epilepticus, postpartum severe pre-eclampsia, postpartum GDM screening, bilious emesis/volvulus, and imminent suicidal intent.
+- QA: both banks numbered uniquely 1–15, all options 5 and option-specific explanations 5, management has 4 stages per question and safety/local caveat, correct key A=3/B=3/C=3/D=3/E=3 in each bank. Recent question option word-length spread <=4.
+- Remaining 85 in Bank 14 and 85 in Bank 15. Work on each bank independently; never merge the unfinished joint draft into main. Publish separate bank PRs only at 100/100 plus final medical review.
