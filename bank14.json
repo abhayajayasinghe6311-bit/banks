@@ -1438,5 +1438,725 @@
       "local": "Metro North Health IV iron therapy guideline, maternity appendix, April 2026."
     },
     "source": "https://metronorth.health.qld.gov.au/wp-content/uploads/2026/04/004809.pdf"
+  },
+  {
+    "n": 31,
+    "domain": "Neonatology & audiology",
+    "skill": "Congenital CMV / time-limited diagnostic sampling",
+    "stem": "A 13-day-old infant fails the repeat newborn hearing screen on the left. Pregnancy and delivery were uncomplicated, examination is normal and parents ask whether the hearing test can simply be repeated at three months. Congenital cytomegalovirus has not yet been assessed.",
+    "ask": "Which investigation should be organised promptly to establish whether congenital CMV is present?",
+    "options": [
+      "Collect saliva CMV PCR now and confirm a positive result with urine PCR within 21 days.",
+      "Request CMV IgG from the mother and defer infant sampling until the hearing review.",
+      "Arrange a routine infant CMV IgM assay at three months instead of early virology.",
+      "Use cranial ultrasound alone because a normal scan would exclude congenital CMV.",
+      "Repeat the hearing screen in three months before considering any virological testing."
+    ],
+    "key": "A",
+    "explanations": [
+      "Correct: virological sampling during the first 21 days distinguishes congenital from postnatal CMV. Saliva PCR is a practical screen, with urine PCR confirmation of positive saliva results, ideally collected promptly.",
+      "Maternal IgG commonly reflects past infection and cannot diagnose congenital infection in this infant. Waiting may forfeit the neonatal diagnostic window.",
+      "Infant antibody testing is less reliable than direct viral detection, and a sample at three months cannot confidently determine when infection was acquired.",
+      "Neuroimaging may assess complications after diagnosis, but normal imaging does not rule out congenital infection or its hearing effects.",
+      "Repeat audiology is needed, but it must run alongside early CMV testing rather than replace it. Later testing may be unable to attribute infection to birth."
+    ],
+    "pearl": "A failed neonatal hearing screen creates a narrow opportunity for congenital CMV PCR testing before day 21.",
+    "pivot": "If the infant is already older than 21 days, retrospective newborn dried blood spot testing may be discussed with specialists but is less sensitive.",
+    "management": {
+      "steps": [
+        [
+          "Recognise",
+          "Record hearing-screen findings and infant age; arrange expedited neonatal or audiology assessment."
+        ],
+        [
+          "Sample",
+          "Collect saliva PCR promptly, avoiding contamination from recent breastfeeds, and confirm positive findings using urine PCR."
+        ],
+        [
+          "Stage",
+          "If confirmed, arrange examination, audiology, eye assessment and targeted investigations with infectious diseases."
+        ],
+        [
+          "Follow",
+          "Discuss antiviral eligibility for selected symptomatic infants and longitudinal hearing surveillance."
+        ]
+      ],
+      "safety": "Do not delay virological testing until routine repeat audiology; the congenital diagnostic window may close.",
+      "local": "Royal Children's Hospital/Murdoch Children's Research Institute congenital CMV newborn hearing-screen resources."
+    },
+    "source": "https://blogs.rch.org.au/ccch/2021/09/20/new-screening-test-for-ccmv/",
+    "context": "Advanced integrated clinical decisions"
+  },
+  {
+    "n": 32,
+    "domain": "Endocrinology & diabetic foot care",
+    "skill": "Acute Charcot neuroarthropathy / immediate immobilisation",
+    "stem": "A 58-year-old with long-standing diabetes and marked peripheral neuropathy notices a swollen, red, warm left midfoot. There is minimal pain and no ulcer, fever or trauma history. Pedal pulses are present, inflammatory markers are normal, and plain radiographs show no obvious fracture.",
+    "ask": "What action most reduces the risk of progressive deformity while specialist assessment is arranged?",
+    "options": [
+      "Prescribe oral antibiotics alone because a red diabetic foot is necessarily infected.",
+      "Immediately immobilise and offload the foot and arrange urgent high-risk foot assessment.",
+      "Encourage weight-bearing exercise to preserve joint mobility until radiographic changes appear.",
+      "Start a compression stocking and review in six weeks if the swelling has not resolved.",
+      "Arrange elective podiatry only after a trial of anti-inflammatory medication has failed."
+    ],
+    "key": "B",
+    "explanations": [
+      "A hot swollen foot can be Charcot neuroarthropathy without infection. Antibiotics are not indicated in the absence of clinical infection and do not prevent mechanical collapse.",
+      "Correct: suspect active Charcot in a neuropathic warm swollen foot even with normal early radiographs. Immediate immobilisation and offloading with specialist review can prevent progressive joint destruction.",
+      "Continued weight bearing can accelerate fragmentation, subluxation and permanent rocker-bottom deformity. Preserved walking ability is not reassuring when protective sensation is absent.",
+      "Compression may help selected oedema disorders but does not immobilise unstable neuropathic joints. Delayed review risks irreversible deformity.",
+      "Analgesic response cannot establish the diagnosis or protect the foot. High-risk multidisciplinary review should occur urgently rather than after weeks of walking."
+    ],
+    "pearl": "A unilateral hot swollen neuropathic foot with little pain may be acute Charcot even when the first X-ray is normal.",
+    "pivot": "An ulcer with purulence, systemic illness or rapidly spreading erythema raises concurrent infection and may require admission and antimicrobial therapy.",
+    "management": {
+      "steps": [
+        [
+          "Suspect",
+          "Compare temperature, shape, skin, pulses and protective sensation; check for infection or vascular compromise."
+        ],
+        [
+          "Offload",
+          "Arrange immediate knee-high immobilisation and strict offloading as directed by the high-risk foot service."
+        ],
+        [
+          "Refer",
+          "Obtain urgent multidisciplinary foot/orthopaedic assessment and further imaging when indicated."
+        ],
+        [
+          "Prevent",
+          "Follow serial temperature and structural changes, plan footwear and reinforce daily foot inspection."
+        ]
+      ],
+      "safety": "Do not reassure on the basis of a normal early radiograph or lack of pain; avoid continued unprotected walking.",
+      "local": "Diabetes Australia foot-care advice and Australian high-risk diabetic foot pathways."
+    },
+    "source": "https://www.diabetesaustralia.com.au/living-with-diabetes/preventing-complications/foot-care/",
+    "context": "Advanced integrated clinical decisions"
+  },
+  {
+    "n": 33,
+    "domain": "Paediatrics & fluid therapy",
+    "skill": "Hypernatraemic dehydration / avoid rapid sodium fall",
+    "stem": "A 9-month-old with four days of gastroenteritis is lethargic and dehydrated. Serum sodium is 162 mmol/L, glucose is normal and there are no seizures. After careful treatment of initial circulatory compromise, perfusion has improved. The junior doctor proposes rapid replacement of the estimated water deficit over four hours.",
+    "ask": "What is the safest next fluid strategy?",
+    "options": [
+      "Give hypotonic water rapidly because the primary deficit is free water rather than sodium.",
+      "Withhold all fluids until serum sodium falls spontaneously as diarrhoea resolves.",
+      "Replace the deficit gradually with monitored IV fluids and frequent sodium reassessment.",
+      "Use an insulin infusion to move sodium into cells while continuing normal oral feeds.",
+      "Administer repeated hypertonic saline boluses to prevent cerebral oedema during rehydration."
+    ],
+    "key": "C",
+    "explanations": [
+      "Rapid free-water delivery can drop extracellular osmolality too quickly, causing cerebral oedema after neuronal adaptation to hypernatraemia.",
+      "Fluid withholding prolongs dehydration, renal hypoperfusion and electrolyte abnormalities. Circulation must be restored before controlled deficit replacement.",
+      "Correct: once shock is treated, calculate maintenance, deficit and ongoing losses and replace the deficit over approximately 48 hours under paediatric guidance, generally limiting sodium fall to 0.5 mmol/L/hour.",
+      "Insulin does not correct hypernatraemic dehydration and risks hypoglycaemia and potassium shifts. The mechanism is water deficit or excess sodium, not intracellular sodium accumulation.",
+      "Hypertonic saline is not routine therapy for a stable hypernatraemic child; it may worsen sodium excess and is reserved for exceptional expert-directed situations."
+    ],
+    "pearl": "After stabilising perfusion, avoid lowering paediatric sodium faster than about 0.5 mmol/L/hour.",
+    "pivot": "Severe hypernatraemia at or above 170 mmol/L, seizures or deterioration require immediate tertiary paediatric/ICU input.",
+    "management": {
+      "steps": [
+        [
+          "Stabilise",
+          "Assess ABCs and restore circulation using resuscitation guidance if shock is present."
+        ],
+        [
+          "Calculate",
+          "Measure weight, sodium, glucose, renal function and urine concentration; estimate deficit and ongoing losses."
+        ],
+        [
+          "Correct",
+          "Use paediatric protocol IV fluids with gradual deficit replacement and frequent adjustment to sodium trend."
+        ],
+        [
+          "Monitor",
+          "Repeat electrolytes early then serially, track neurological state, weight, fluid balance and urine output."
+        ]
+      ],
+      "safety": "Too-rapid sodium correction can cause cerebral oedema; shock resuscitation remains a separate immediate priority.",
+      "local": "Royal Children's Hospital Clinical Practice Guideline: Hypernatraemia, updated October 2020."
+    },
+    "source": "https://www.rch.org.au/clinicalguide/guideline_index/hypernatraemia/",
+    "context": "Advanced integrated clinical decisions"
+  },
+  {
+    "n": 34,
+    "domain": "Obstetrics & public health",
+    "skill": "Rubella exposure / pregnancy serology and follow-up",
+    "stem": "A 26-year-old at nine weeks' gestation works at a childcare centre where a colleague has confirmed rubella. Her antenatal bloods show rubella IgG below the immune threshold; she has no rash or fever. She asks for an MMR vaccination today so the fetus will be protected.",
+    "ask": "Which response best addresses this exposure?",
+    "options": [
+      "Give MMR now because vaccination prevents fetal infection after a known pregnancy exposure.",
+      "Provide immune globulin routinely because it reliably prevents congenital rubella after exposure.",
+      "Reassure because asymptomatic pregnant contacts cannot transmit infection to their fetus.",
+      "Arrange urgent expert serological assessment and repeat testing while deferring live MMR.",
+      "Prescribe empirical aciclovir because rubella infection is prevented by antiviral prophylaxis."
+    ],
+    "key": "D",
+    "explanations": [
+      "MMR is a live attenuated vaccine and is contraindicated during pregnancy. It is not an effective post-exposure treatment for an already exposed pregnant contact.",
+      "Immune globulin does not reliably prevent maternal or fetal rubella and is not a routine replacement for expert evaluation and counselling.",
+      "Rubella may be subclinical, and first-trimester maternal infection carries a substantial fetal risk. Absence of rash does not rule out infection.",
+      "Correct: involve obstetrics and public health, obtain rubella-specific serology with specialist interpretation, repeat an appropriately timed sample after exposure and discuss fetal risk. Plan postpartum MMR if still susceptible.",
+      "Aciclovir acts against herpesviruses, not rubella. Empirical antiviral treatment has no role in preventing congenital rubella."
+    ],
+    "pearl": "Rubella exposure in a non-immune pregnant patient requires prompt serological assessment; live MMR is deferred until after pregnancy.",
+    "pivot": "A documented immune rubella IgG result before exposure generally changes the risk assessment and avoids unnecessary repeated tests.",
+    "management": {
+      "steps": [
+        [
+          "Verify",
+          "Confirm exposure details, gestation, prior immunity records and contact with the public health unit."
+        ],
+        [
+          "Test",
+          "Arrange rubella IgG/IgM with expert interpretation and repeat paired serology when indicated."
+        ],
+        [
+          "Counsel",
+          "Refer to maternal-fetal medicine for risk discussion and appropriate fetal surveillance if infection is confirmed."
+        ],
+        [
+          "Prevent",
+          "Advise exposure precautions and offer MMR postpartum if non-immune."
+        ]
+      ],
+      "safety": "A single isolated rubella IgM result can be falsely positive in low-prevalence settings; do not make irreversible decisions without confirmation.",
+      "local": "Queensland Health Rubella public health guideline, pregnancy contact management."
+    },
+    "source": "https://www.health.qld.gov.au/cdcg/index/rubella",
+    "context": "Advanced integrated clinical decisions"
+  },
+  {
+    "n": 35,
+    "domain": "Endocrinology & postoperative care",
+    "skill": "Symptomatic hypocalcaemia after thyroidectomy / IV calcium",
+    "stem": "A 43-year-old is two days post-total thyroidectomy. She develops tingling around the mouth and carpopedal spasm. Ionised calcium is 0.70 mmol/L, magnesium is mildly reduced and ECG shows QT prolongation. She is alert, but symptoms persist despite oral calcium given earlier.",
+    "ask": "Which immediate treatment is most appropriate?",
+    "options": [
+      "Observe until the next morning because calcium usually normalises after thyroid surgery.",
+      "Prescribe only oral vitamin D because its effect is immediate in postoperative tetany.",
+      "Treat presumed panic symptoms with a benzodiazepine while avoiding further blood tests.",
+      "Give IV magnesium alone because postoperative hypocalcaemia is always due to magnesium loss.",
+      "Administer monitored intravenous calcium gluconate and address contributing electrolyte deficits."
+    ],
+    "key": "E",
+    "explanations": [
+      "Tetany, QT prolongation and ionised calcium 0.70 mmol/L indicate severe symptomatic hypocalcaemia, which can progress to seizures or arrhythmia.",
+      "Vitamin D and oral calcium support longer-term correction but do not provide reliable rapid rescue for active tetany and ECG changes.",
+      "Anxiety may coexist, but objective severe hypocalcaemia and QT prolongation explain the symptoms and demand immediate electrolyte treatment.",
+      "Magnesium deficiency may make hypocalcaemia refractory, but magnesium alone is not adequate initial treatment for severe symptomatic calcium depletion.",
+      "Correct: give carefully monitored IV calcium gluconate with ECG monitoring, recheck ionised calcium and replace magnesium if low, then transition to oral calcium and calcitriol as appropriate."
+    ],
+    "pearl": "Post-thyroidectomy tetany with low ionised calcium or ECG changes warrants urgent monitored IV calcium.",
+    "pivot": "Asymptomatic mild postoperative hypocalcaemia may be treated with oral calcium and vitamin D with close laboratory follow-up.",
+    "management": {
+      "steps": [
+        [
+          "Assess",
+          "Check airway, spasm severity, ECG, ionised calcium, magnesium and phosphate."
+        ],
+        [
+          "Replace",
+          "Give IV calcium gluconate under the local severe hypocalcaemia protocol with monitored access."
+        ],
+        [
+          "Correct",
+          "Address hypomagnesaemia and assess for transient or persistent hypoparathyroidism."
+        ],
+        [
+          "Follow",
+          "Repeat ionised calcium, plan oral calcium/calcitriol and organise endocrine/surgical follow-up."
+        ]
+      ],
+      "safety": "IV calcium extravasation may cause tissue injury; administer with appropriate monitoring and access checks.",
+      "local": "Queensland Health HYPO-electrolyte disturbances guideline, updated 6 May 2026."
+    },
+    "source": "https://www.health.qld.gov.au/clinical-practice/guidelines-procedures/medicines/safety/electrolyte-disturbances/hypo",
+    "context": "Advanced integrated clinical decisions"
+  },
+  {
+    "n": 36,
+    "domain": "Haematology & emergency neurology",
+    "skill": "Warfarin-associated intracerebral haemorrhage / rapid reversal",
+    "stem": "A 76-year-old taking warfarin for a mechanical mitral valve develops sudden weakness and reduced consciousness. CT shows an acute intracerebral haemorrhage; INR is 3.6 and BP is elevated. The junior clinician hesitates to reverse warfarin because the valve may thrombose.",
+    "ask": "Which initial haemostatic strategy is indicated?",
+    "options": [
+      "Stop warfarin and urgently reverse with IV vitamin K and four-factor PCC under specialist guidance.",
+      "Withhold only the next warfarin dose and repeat INR tomorrow before considering reversal.",
+      "Give oral vitamin K alone because its onset is sufficient for an active brain haemorrhage.",
+      "Continue anticoagulation until cardiology approves reversal after valve thrombosis risk calculation.",
+      "Give platelet transfusion alone because platelets are the primary cause of warfarin-associated bleeding."
+    ],
+    "key": "A",
+    "explanations": [
+      "Correct: critical-site haemorrhage requires immediate cessation and rapid factor replacement using PCC plus IV vitamin K according to the local reversal protocol. Mechanical valve thrombosis risk matters later but does not justify leaving active ICH uncorrected.",
+      "Omitting a dose may gradually lower INR but does not promptly restore coagulation in life-threatening intracranial bleeding.",
+      "Oral vitamin K acts too slowly alone for active ICH. IV vitamin K sustains reversal after rapid PCC replacement.",
+      "Waiting for prolonged consultation can allow haematoma expansion. Involve neurology, neurosurgery, haematology and cardiology in parallel with emergency reversal.",
+      "Warfarin suppresses vitamin K-dependent clotting factors; platelets do not correct the factor deficiency unless a separate platelet indication exists."
+    ],
+    "pearl": "Warfarin-related ICH is a critical-site bleed: rapid PCC plus IV vitamin K outweighs the immediate risk of withholding anticoagulation.",
+    "pivot": "An elevated INR without bleeding is managed differently and generally does not require emergency PCC.",
+    "management": {
+      "steps": [
+        [
+          "Stabilise",
+          "Activate stroke/critical-care response, protect airway and obtain urgent brain imaging and INR."
+        ],
+        [
+          "Reverse",
+          "Stop warfarin and administer local-protocol four-factor PCC and IV vitamin K immediately."
+        ],
+        [
+          "Limit expansion",
+          "Control BP according to ICH protocol, monitor neurological signs and repeat coagulation testing."
+        ],
+        [
+          "Plan ahead",
+          "Coordinate neurosurgery and cardiology regarding haematoma care and eventual anticoagulation restart."
+        ]
+      ],
+      "safety": "Do not defer reversal solely because a mechanical valve requires future anticoagulation; restart timing needs multidisciplinary risk assessment.",
+      "local": "Queensland Health Safe Use of Warfarin, critical organ bleeding guidance, updated February 2025."
+    },
+    "source": "https://www.ccm.health.qld.gov.au/appendices/safe-use-of-warfarin",
+    "context": "Advanced integrated clinical decisions"
+  },
+  {
+    "n": 37,
+    "domain": "Neurology & psychiatry",
+    "skill": "Functional neurological weakness / positive diagnostic signs",
+    "stem": "A 27-year-old develops right-leg weakness after a stressful week. CT and MRI show no acute structural lesion and stroke assessment is complete. During examination, voluntary hip extension is weak but strength returns when she flexes the opposite hip against resistance, demonstrating a positive Hoover sign. She is distressed by suggestions that she is pretending.",
+    "ask": "Which explanation and next step is most appropriate?",
+    "options": [
+      "Tell her the normal MRI proves there is no genuine disorder and she should resume work.",
+      "Explain the positive functional sign and offer a supportive rehabilitation-based treatment plan.",
+      "Diagnose malingering because weakness varies during different parts of the examination.",
+      "Start antipsychotic medication because functional weakness is a form of psychotic illness.",
+      "Repeat whole-body imaging until an anatomical lesion is found before discussing treatment."
+    ],
+    "key": "B",
+    "explanations": [
+      "Functional neurological disorder produces genuine symptoms and can cause substantial disability. A normal MRI alone is not a positive diagnosis or a reason to dismiss the patient.",
+      "Correct: explain that positive examination signs show a potentially reversible change in nervous-system functioning, validate symptoms and offer specialist physiotherapy, education and psychological support when appropriate.",
+      "Variability and Hoover sign indicate internal inconsistency typical of functional weakness, not conscious deception. Malingering requires evidence of intentional fabrication for external gain.",
+      "Functional symptoms are not synonymous with psychosis. Antipsychotics are not routine first-line treatment for isolated functional limb weakness.",
+      "Repeated investigations without a new clinical indication can reinforce uncertainty and delay effective rehabilitation. Red flags or evolving signs still require reassessment."
+    ],
+    "pearl": "FND is diagnosed by positive clinical features such as Hoover sign, not simply by normal imaging or assumed psychological stress.",
+    "pivot": "A new objective upper motor neuron sign, sphincter dysfunction or other evolving deficit warrants renewed evaluation for structural disease.",
+    "management": {
+      "steps": [
+        [
+          "Confirm",
+          "Use a positive neurological examination sign and review whether important acute mimics were appropriately excluded."
+        ],
+        [
+          "Explain",
+          "Validate the symptom and demonstrate the reversible positive sign using clear, non-stigmatising language."
+        ],
+        [
+          "Treat",
+          "Refer for FND-informed physiotherapy and relevant multidisciplinary psychological support."
+        ],
+        [
+          "Review",
+          "Set functional goals, assess coexisting conditions and provide return precautions for new neurological features."
+        ]
+      ],
+      "safety": "Do not equate FND with malingering or neglect new signs because a functional diagnosis is present.",
+      "local": "Queensland Health Functional Neurological Symptoms Clinical Prioritisation Criteria."
+    },
+    "source": "https://www.health.qld.gov.au/cpc/neurology/functional-neurological-symptoms",
+    "context": "Advanced integrated clinical decisions"
+  },
+  {
+    "n": 38,
+    "domain": "Emergency medicine & resuscitation",
+    "skill": "Drowning-associated cardiac arrest / ventilation emphasis",
+    "stem": "A 16-year-old is pulled from a swimming pool after a witnessed submersion. He is unresponsive and has abnormal gasping breaths. A bystander begins compression-only CPR while a trained lifeguard arrives with a pocket mask and oxygen. No trauma is apparent.",
+    "ask": "Which adjustment best addresses the likely mechanism of this arrest?",
+    "options": [
+      "Continue compression-only CPR because ventilation is unhelpful in water-related arrest.",
+      "Delay CPR until the defibrillator arrives because shockable rhythms are usually responsible.",
+      "Provide rescue ventilations as part of CPR, using oxygen if available without delaying action.",
+      "Turn the patient head-down to drain swallowed water before beginning further resuscitation.",
+      "Attempt abdominal thrusts to remove water from the lungs before giving rescue breaths."
+    ],
+    "key": "C",
+    "explanations": [
+      "Drowning commonly produces hypoxic arrest, so ventilation is a critical part of resuscitation. Compression-only CPR may be insufficient.",
+      "An AED should be obtained promptly, but resuscitation must not wait for it. The common immediate problem is lack of oxygen rather than a primary shockable rhythm.",
+      "Correct: a trained rescuer should promptly provide effective ventilations with oxygen if available and continue compressions/ventilations according to ANZCOR drowning guidance.",
+      "Head-down positioning can worsen aspiration and delays airway management. Standard supine assessment and resuscitation are recommended unless obstruction requires brief repositioning.",
+      "Abdominal thrusts do not remove aspirated water and may provoke regurgitation. Airway positioning and effective ventilation take precedence."
+    ],
+    "pearl": "Drowning arrest is usually hypoxic: effective rescue breaths are essential alongside compressions.",
+    "pivot": "A conscious rescued person with normal breathing still requires assessment for respiratory impairment but does not need CPR.",
+    "management": {
+      "steps": [
+        [
+          "Ensure safety",
+          "Complete a safe rescue and assess responsiveness and normal breathing on a firm surface."
+        ],
+        [
+          "Ventilate",
+          "Give prompt rescue breaths with oxygen if available, then effective CPR and AED use without delay."
+        ],
+        [
+          "Support",
+          "Prepare suction and advanced airway management for persistent hypoxaemia or vomiting."
+        ],
+        [
+          "Observe",
+          "Arrange emergency assessment and monitoring after return of spontaneous circulation or apparent recovery."
+        ]
+      ],
+      "safety": "Do not attempt to drain water with abdominal thrusts or delay CPR for oxygen equipment.",
+      "local": "ANZCOR Guideline 9.3.2 Resuscitation in Drowning and Guideline 11.10, updated July 2026."
+    },
+    "source": "https://www.anzcor.org/home/first-aid/guideline-9-3-2-resuscitation-in-drowning",
+    "context": "Advanced integrated clinical decisions"
+  },
+  {
+    "n": 39,
+    "domain": "Cardiology & obstetric medicine",
+    "skill": "Postpartum spontaneous coronary artery dissection / early angiography",
+    "stem": "A previously healthy 35-year-old, ten days postpartum, develops severe central chest pain radiating to her jaw. ECG shows anterior ST elevation and troponin is rising. She has no conventional atherosclerotic risk factors. A colleague suggests a panic attack because she recently delivered.",
+    "ask": "What is the most appropriate next clinical pathway?",
+    "options": [
+      "Provide anxiolysis and repeat the ECG tomorrow if the chest pain persists.",
+      "Request outpatient coronary calcium scoring to assess long-term atherosclerotic risk.",
+      "Treat for pericarditis alone because young postpartum patients rarely develop myocardial infarction.",
+      "Activate emergency ACS care and urgent coronary evaluation for possible spontaneous dissection.",
+      "Give fibrinolysis immediately without considering the possibility of coronary artery dissection."
+    ],
+    "key": "D",
+    "explanations": [
+      "Anxiety does not explain ST elevation with rising troponin. Dismissing postpartum chest pain risks irreversible myocardial injury.",
+      "Calcium scoring is not a test for acute coronary occlusion or dissection and cannot guide immediate reperfusion decisions.",
+      "Pericarditis may cause ST elevation but the clinical pattern and regional ECG changes require urgent ACS assessment. Treatment should not be delayed by age-based assumptions.",
+      "Correct: manage as an acute coronary syndrome with urgent cardiology involvement and coronary angiography when indicated, while considering pregnancy-associated SCAD as an important nonatherosclerotic cause.",
+      "Fibrinolysis can extend an intramural haematoma in SCAD and may be harmful; reperfusion decisions require specialist evaluation of mechanism and anatomy."
+    ],
+    "pearl": "Spontaneous coronary artery dissection is an important cause of postpartum MI; ST elevation still requires immediate ACS escalation.",
+    "pivot": "Stable non-ischaemic chest pain with normal serial ECGs and troponins follows a different risk-based chest pain pathway.",
+    "management": {
+      "steps": [
+        [
+          "Recognise",
+          "Repeat ECGs and troponins, monitor rhythm and activate an ACS/cardiology response."
+        ],
+        [
+          "Investigate",
+          "Arrange urgent specialist coronary assessment and angiography according to STEMI pathway."
+        ],
+        [
+          "Individualise",
+          "Consider SCAD, haemodynamic instability and the risks of thrombolysis or intervention."
+        ],
+        [
+          "Recover",
+          "Coordinate cardiology and obstetric follow-up, medication review and recurrence counselling."
+        ]
+      ],
+      "safety": "Do not attribute objective myocardial ischaemia to anxiety because the patient is young or postpartum.",
+      "local": "Heart Foundation Australian Clinical Guideline for Diagnosing and Managing ACS, 2025; SCAD section."
+    },
+    "source": "https://www.heartfoundation.org.au/for-professionals/acs-guideline",
+    "context": "Advanced integrated clinical decisions"
+  },
+  {
+    "n": 40,
+    "domain": "Paediatric endocrinology & emergency medicine",
+    "skill": "Paediatric hyperosmolar hyperglycaemic state / fluid-first treatment",
+    "stem": "An obese 14-year-old with previously undiagnosed diabetes presents with profound dehydration and confusion. Glucose is 48 mmol/L, measured sodium 150 mmol/L, calculated osmolality is markedly elevated, venous pH is 7.35 and ketones are minimal. Blood pressure improves with initial isotonic fluid.",
+    "ask": "Which treatment principle best distinguishes this condition from conventional DKA management?",
+    "options": [
+      "Start an immediate large insulin bolus to normalise glucose before replacing fluid losses.",
+      "Restrict IV fluids because high serum osmolality indicates excess circulating water.",
+      "Administer bicarbonate routinely because severe hyperglycaemia is equivalent to acidosis.",
+      "Treat with subcutaneous insulin alone and discharge once glucose is below 20 mmol/L.",
+      "Prioritise carefully monitored fluid replacement and delay or reduce insulin as appropriate."
+    ],
+    "key": "E",
+    "explanations": [
+      "Large insulin boluses can lower glucose and osmolality too quickly, risking circulatory and neurological complications. HHS often responds initially to rehydration.",
+      "HHS is associated with major water deficit and hyperosmolality. Fluid restriction worsens shock and kidney injury.",
+      "A near-normal pH and minimal ketosis do not indicate severe metabolic acidosis. Routine bicarbonate is not indicated and may be harmful.",
+      "Confusion and extreme hyperosmolality require inpatient critical monitoring; simple outpatient insulin correction is unsafe.",
+      "Correct: HHS needs substantial carefully titrated isotonic fluid resuscitation, close electrolyte and osmolality monitoring, and cautious insulin use once appropriate, ideally with paediatric intensive care and endocrine support."
+    ],
+    "pearl": "Paediatric HHS features extreme hyperglycaemia and hyperosmolality with minimal ketosis; fluid-first correction is crucial.",
+    "pivot": "Marked ketonaemia with acidosis indicates DKA or mixed DKA/HHS and changes insulin and monitoring protocols.",
+    "management": {
+      "steps": [
+        [
+          "Escalate",
+          "Contact paediatric ICU/endocrinology and monitor neurological status, ECG and perfusion."
+        ],
+        [
+          "Rehydrate",
+          "Restore circulating volume and replace the major fluid deficit under HHS-specific guidance."
+        ],
+        [
+          "Monitor",
+          "Trend corrected sodium, potassium, osmolality, glucose and urine output frequently."
+        ],
+        [
+          "Treat diabetes",
+          "Introduce cautious insulin when indicated and investigate infection or other precipitants."
+        ]
+      ],
+      "safety": "Rapid changes in glucose or effective osmolality can cause neurological injury; do not use an insulin bolus.",
+      "local": "Royal Children's Hospital Clinical Practice Guideline: Hyperosmolar Hyperglycaemic State."
+    },
+    "source": "https://www.rch.org.au/clinicalguide/guideline_index/Hyperosmolar_hyperglycaemic_state/",
+    "context": "Advanced integrated clinical decisions"
+  },
+  {
+    "n": 41,
+    "domain": "Infectious diseases & obstetrics",
+    "skill": "Influenza in pregnancy / early oseltamivir treatment",
+    "stem": "A 30-year-old at 28 weeks' gestation develops fever, cough, myalgia and headache during a community influenza outbreak. Symptoms began yesterday and a household contact tested positive. She is not hypoxic and can drink normally. A PCR swab has been collected but results may take 24 hours.",
+    "ask": "What is the best next treatment decision?",
+    "options": [
+      "Start oseltamivir promptly on clinical suspicion without waiting for PCR confirmation.",
+      "Avoid antivirals until delivery because treatment is contraindicated during pregnancy.",
+      "Give antibiotics empirically because influenza in pregnancy is usually a bacterial illness.",
+      "Wait for PCR confirmation before treating because the symptoms began less than 48 hours ago.",
+      "Use corticosteroids alone to prevent progression to severe viral pneumonia in pregnancy."
+    ],
+    "key": "A",
+    "explanations": [
+      "Correct: pregnancy increases influenza complication risk, and early neuraminidase inhibitor treatment is recommended for suspected influenza without awaiting laboratory confirmation. Assess severity and give safety-net advice.",
+      "Oseltamivir is commonly recommended in pregnancy when influenza is suspected or confirmed; withholding it solely due to pregnancy loses a time-sensitive benefit.",
+      "Antibiotics do not treat influenza virus and are reserved for suspected bacterial complications. They should not replace antiviral therapy.",
+      "PCR helps confirm diagnosis, but the first 48 hours are an important treatment opportunity. A pending result should not delay therapy in a high-risk pregnant patient.",
+      "Systemic steroids are not routine influenza treatment and may cause harm without another indication such as asthma exacerbation."
+    ],
+    "pearl": "Treat suspected influenza early in pregnancy; do not wait for PCR when clinical suspicion is high.",
+    "pivot": "Hypoxia, respiratory distress, dehydration or inability to tolerate oral medication warrants urgent hospital assessment and possible admission.",
+    "management": {
+      "steps": [
+        [
+          "Assess",
+          "Review gestation, vital signs, oxygen saturation, hydration and respiratory red flags."
+        ],
+        [
+          "Treat",
+          "Offer early oseltamivir under local pregnancy/influenza protocols without waiting for PCR."
+        ],
+        [
+          "Support",
+          "Provide hydration, fever management and assessment for bacterial complications if indicated."
+        ],
+        [
+          "Follow",
+          "Give clear return precautions and review vaccination and household prevention measures."
+        ]
+      ],
+      "safety": "A negative early rapid antigen test may not reliably exclude influenza in a high-risk pregnant patient.",
+      "local": "Australian Immunisation Handbook and state influenza management guidance for pregnancy."
+    },
+    "source": "https://immunisationhandbook.health.gov.au/contents/vaccine-preventable-diseases/influenza-flu",
+    "context": "Advanced integrated clinical decisions"
+  },
+  {
+    "n": 42,
+    "domain": "Sexual health & general practice",
+    "skill": "Chlamydia infection / partner management and retesting",
+    "stem": "A 21-year-old woman with mild dysuria has a positive first-pass urine nucleic acid amplification test for Chlamydia trachomatis. Pregnancy test is negative, she has no pelvic tenderness or fever, and she has a new partner. She asks for antibiotics but does not want to discuss the result with anyone else.",
+    "ask": "Which management package is most appropriate?",
+    "options": [
+      "Treat only the symptoms with urinary alkaliniser and repeat the test in six months.",
+      "Provide guideline antibiotic treatment plus partner notification, abstinence advice and retesting.",
+      "Give single-dose antifungal therapy and advise that partners need treatment only if symptomatic.",
+      "Arrange urgent laparoscopy because every positive chlamydia test implies pelvic inflammatory disease.",
+      "Prescribe antibiotics but omit partner management because confidentiality forbids any discussion."
+    ],
+    "key": "B",
+    "explanations": [
+      "Chlamydia requires targeted antibiotics and assessment for other STIs; symptomatic treatment alone allows infection and transmission to continue.",
+      "Correct: treat uncomplicated chlamydia with the recommended regimen, screen for other STIs, support confidential partner notification, avoid sex until treatment is completed and partners managed, and arrange retesting for reinfection.",
+      "Antifungals treat candidiasis, not chlamydia. Many partners are asymptomatic and still require testing and treatment under local guidance.",
+      "Without pelvic pain, tenderness or systemic findings, routine laparoscopy is not warranted. Assess for PID if symptoms or examination suggest ascending infection.",
+      "Confidentiality is essential but does not prevent counselling about partner notification and reinfection prevention. Clinicians can offer anonymous notification resources."
+    ],
+    "pearl": "Chlamydia management includes treatment of the person, partners and reinfection risk—not antibiotics alone.",
+    "pivot": "Lower abdominal pain with cervical motion or adnexal tenderness raises PID and requires broader empirical therapy and assessment.",
+    "management": {
+      "steps": [
+        [
+          "Assess",
+          "Review pregnancy risk, PID symptoms, sexual exposures and consent for additional STI testing."
+        ],
+        [
+          "Treat",
+          "Give guideline-directed chlamydia antibiotics, checking allergies and pregnancy status."
+        ],
+        [
+          "Notify",
+          "Explain confidential partner management and abstinence until treatment is complete and partners treated."
+        ],
+        [
+          "Retest",
+          "Arrange repeat screening for reinfection at about three months and discuss condoms and prevention."
+        ]
+      ],
+      "safety": "Avoid routine early NAAT test-of-cure in nonpregnant uncomplicated cases because residual nucleic acid can give false positives.",
+      "local": "Australian STI Management Guidelines for Use in Primary Care: Chlamydia."
+    },
+    "source": "https://sti.guidelines.org.au/sexually-transmissible-infections/chlamydia/",
+    "context": "Advanced integrated clinical decisions"
+  },
+  {
+    "n": 43,
+    "domain": "Ophthalmology & diabetes",
+    "skill": "Proliferative diabetic retinopathy / urgent specialist care",
+    "stem": "A 52-year-old with type 2 diabetes reports new floaters and intermittent blurred vision. Fundoscopy shows new abnormal vessels at the optic disc and a small preretinal haemorrhage. Visual acuity is only mildly reduced and the patient asks whether tighter glucose control alone can reverse the eye changes.",
+    "ask": "Which management plan best protects sight?",
+    "options": [
+      "Advise a routine retinal photograph in twelve months because central vision is preserved.",
+      "Increase metformin alone and reassess the neovascularisation after three months of treatment.",
+      "Arrange prompt ophthalmology referral for sight-threatening proliferative retinopathy treatment.",
+      "Prescribe topical antibiotic drops because abnormal vessels usually represent surface infection.",
+      "Perform immediate cataract surgery because floaters and disc vessels indicate lens opacity."
+    ],
+    "key": "C",
+    "explanations": [
+      "Proliferative changes can cause vitreous haemorrhage or tractional retinal detachment even when acuity is initially preserved. Annual routine screening is too slow.",
+      "Improved glycaemic and BP control reduce progression risk but do not replace eye-directed treatment of active neovascularisation.",
+      "Correct: proliferative diabetic retinopathy needs prompt retinal specialist evaluation for treatment such as panretinal photocoagulation or intravitreal anti-VEGF, alongside systemic risk-factor control.",
+      "Topical antibiotics do not treat retinal neovascularisation. Surface infection would have a different examination pattern and symptoms.",
+      "Cataract affects the lens and cannot explain retinal disc neovascularisation. Operating on the lens does not address the imminent bleeding and traction risk."
+    ],
+    "pearl": "Retinal neovascularisation is sight-threatening even when visual acuity is still good; refer promptly for retinal treatment.",
+    "pivot": "Mild nonproliferative changes without macular oedema may follow scheduled surveillance and systemic risk-factor management.",
+    "management": {
+      "steps": [
+        [
+          "Recognise",
+          "Document visual symptoms, acuity, fundus findings and urgent red flags such as sudden vision loss."
+        ],
+        [
+          "Refer",
+          "Arrange prompt ophthalmology/retina specialist assessment rather than routine screening."
+        ],
+        [
+          "Treat retina",
+          "Discuss laser or anti-VEGF options as directed by the retinal specialist."
+        ],
+        [
+          "Control risks",
+          "Optimise glucose, BP and lipids and coordinate follow-up with the diabetes team."
+        ]
+      ],
+      "safety": "Sudden shower of floaters, curtain-like loss or rapid acuity decline warrants emergency assessment for haemorrhage or retinal detachment.",
+      "local": "Diabetes Australia diabetic eye complications resources and Australian ophthalmology retinal pathways."
+    },
+    "source": "https://www.diabetesaustralia.com.au/living-with-diabetes/preventing-complications/eye-health/",
+    "context": "Advanced integrated clinical decisions"
+  },
+  {
+    "n": 44,
+    "domain": "Respiratory medicine & infectious diseases",
+    "skill": "Tuberculosis exposure / exclude active disease before preventive therapy",
+    "stem": "A 29-year-old healthcare worker has a newly positive interferon-gamma release assay after prolonged exposure to a patient with pulmonary tuberculosis. She has no cough, fever, night sweats or weight loss. A colleague suggests immediately starting isoniazid without any further assessment.",
+    "ask": "What is the essential next step before latent TB treatment?",
+    "options": [
+      "Repeat the interferon-gamma assay weekly until it returns to negative before acting.",
+      "Start empiric multidrug treatment for active TB solely because the IGRA result is positive.",
+      "Ignore the result because asymptomatic healthcare workers cannot develop active tuberculosis.",
+      "Evaluate symptoms and chest imaging to exclude active TB before preventive treatment.",
+      "Administer BCG vaccine now because it is the preferred treatment for latent infection."
+    ],
+    "key": "D",
+    "explanations": [
+      "IGRA usually remains positive after infection and is not a short-interval treatment-response marker. Weekly repeats do not distinguish active disease.",
+      "A positive IGRA indicates immune sensitisation, not proof of active TB. Full multidrug treatment requires assessment for active disease and microbiological testing where indicated.",
+      "Asymptomatic individuals may have latent TB and some active cases are minimally symptomatic. The result warrants structured evaluation.",
+      "Correct: perform clinical assessment and chest radiography, with sputum or further tests if symptoms or imaging suggest active disease, before considering preventive therapy.",
+      "BCG is preventive vaccination used in selected groups, not treatment for established latent TB infection in an adult contact."
+    ],
+    "pearl": "A positive IGRA does not distinguish latent from active tuberculosis; exclude active disease before preventive therapy.",
+    "pivot": "Cough, constitutional symptoms or abnormal chest radiograph triggers an active-TB diagnostic pathway and appropriate infection-control precautions.",
+    "management": {
+      "steps": [
+        [
+          "Assess",
+          "Review exposure intensity, previous TB treatment, symptoms, immune status and pregnancy risk."
+        ],
+        [
+          "Image",
+          "Arrange chest radiograph and additional microbiology if active TB cannot be excluded."
+        ],
+        [
+          "Plan",
+          "Discuss preventive treatment options, drug interactions and baseline liver risk with TB services."
+        ],
+        [
+          "Follow",
+          "Coordinate occupational health, public health contact tracing and treatment adherence monitoring."
+        ]
+      ],
+      "safety": "Single-drug preventive therapy in unrecognised active TB can promote resistance and delay effective treatment.",
+      "local": "Queensland Health tuberculosis contact management and TB control program resources."
+    },
+    "source": "https://www.health.qld.gov.au/clinical-practice/guidelines-procedures/diseases-infection/diseases/tuberculosis",
+    "context": "Advanced integrated clinical decisions"
+  },
+  {
+    "n": 45,
+    "domain": "Gynaecology & cancer diagnosis",
+    "skill": "Postcoital bleeding / symptomatic assessment despite negative HPV screening",
+    "stem": "A 38-year-old reports recurrent bleeding after intercourse for three months. Her last routine HPV cervical screening test two years ago was negative. Speculum examination shows a friable irregular area on the cervix that bleeds on contact. She asks whether the negative screening result means cancer is excluded.",
+    "ask": "What is the safest next investigation pathway?",
+    "options": [
+      "Repeat routine HPV screening in three years because the previous test was negative.",
+      "Treat empirically for thrush and avoid further examination unless discharge develops.",
+      "Reassure that contact bleeding is physiological in all premenopausal women.",
+      "Order a pelvic ultrasound alone because it is the definitive test for cervical lesions.",
+      "Arrange prompt specialist colposcopic assessment and biopsy of the suspicious lesion."
+    ],
+    "key": "E",
+    "explanations": [
+      "Screening tests are intended for asymptomatic people and do not exclude malignancy in someone with a visible suspicious lesion. Waiting risks delayed diagnosis.",
+      "Vaginal candidiasis may cause irritation but does not adequately explain a friable irregular cervical lesion. Empirical treatment alone misses serious pathology.",
+      "Postcoital bleeding has benign causes, but recurrent bleeding plus an abnormal-looking cervix is a red flag requiring diagnostic assessment.",
+      "Pelvic ultrasound can evaluate uterine or adnexal causes but cannot reliably characterise or biopsy a suspicious cervical surface lesion.",
+      "Correct: arrange timely gynaecology referral for colposcopy and directed biopsy, while assessing pregnancy, cervicitis and other causes of bleeding. Diagnostic evaluation is needed regardless of prior negative HPV screening."
+    ],
+    "pearl": "Symptoms and a suspicious cervix override routine screening intervals; cervical cancer diagnosis requires examination and biopsy.",
+    "pivot": "A single minor episode with a normal cervix may be assessed for benign causes and infection according to the symptomatic bleeding pathway.",
+    "management": {
+      "steps": [
+        [
+          "Assess",
+          "Review pregnancy possibility, bleeding pattern, STI risk, prior screening and red-flag symptoms."
+        ],
+        [
+          "Examine",
+          "Document speculum findings, cervical appearance and any suspicious or contact-bleeding lesion."
+        ],
+        [
+          "Refer",
+          "Arrange prompt colposcopy and biopsy for a visible suspicious lesion, not routine screening alone."
+        ],
+        [
+          "Follow",
+          "Track pathology, provide safety-netting and coordinate treatment if malignancy is found."
+        ]
+      ],
+      "safety": "A negative screening result must never be used to dismiss a clinically suspicious cervical lesion.",
+      "local": "Cancer Council Australia National Cervical Screening Program guidelines: investigation of abnormal vaginal bleeding."
+    },
+    "source": "https://www.cancer.org.au/clinical-guidelines/cervical-cancer-screening",
+    "context": "Advanced integrated clinical decisions"
   }
 ]
