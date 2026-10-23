@@ -1444,7 +1444,7 @@
     "domain": "General practice & hepatology",
     "skill": "MASLD / high-risk fibrosis score despite mild transaminitis",
     "context": "Advanced final-year integrated management",
-    "stem": "A 52-year-old with type 2 diabetes and central adiposity has ultrasound-confirmed hepatic steatosis. ALT is 58 U/L, AST 63 U/L and platelets 145 × 10⁹/L. Viral hepatitis and substantial alcohol exposure have been excluded. His calculated FIB-4 score is 3.1. He feels well and has no ascites or jaundice.",
+    "stem": "A 52-year-old with type 2 diabetes and central adiposity has ultrasound-confirmed hepatic steatosis. ALT is 58 U/L, AST 66 U/L and platelets 145 × 10⁹/L. Viral hepatitis and substantial alcohol exposure have been excluded. His calculated FIB-4 score is 3.1. He feels well and has no ascites or jaundice.",
     "ask": "Which next action most appropriately addresses his liver-related risk?",
     "options": [
       "Arrange fibrosis assessment and specialist referral while managing cardiometabolic risks in primary care.",
@@ -1531,9 +1531,9 @@
         ]
       ],
       "safety": "Do not delay antibiotics or source-control consultation for a repeat scan, culture results or an outpatient misoprostol trial.",
-      "local": "Queensland Health antenatal emergency referral criteria for first-trimester bleeding with fever and suspected sepsis."
+      "local": "RANZCOG Miscarriage, Recurrent Miscarriage and Ectopic Pregnancy Clinical Guideline (2025), alongside the Australian sepsis standard."
     },
-    "source": "https://www.health.qld.gov.au/cpc/antenatal/antenatal"
+    "source": "https://zenodo.org/records/18041308"
   },
   {
     "n": 33,
@@ -1579,9 +1579,9 @@
         ]
       ],
       "safety": "Preserved ejection fraction does not make symptomatic severe aortic stenosis safe for watchful waiting.",
-      "local": "Australian Heart Foundation valvular research and clinical care discussion of symptomatic severe aortic stenosis and valve replacement."
+      "local": "CSANZ Australian ARF/RHD Guideline 2025, aortic stenosis section: severe symptomatic disease merits AVR assessment."
     },
-    "source": "https://www.heartfoundation.org.au/research/q-and-a/dr-hashrul-rashid"
+    "source": "https://www.csanz.edu.au/Common/Uploaded%20files/Smart%20Suite/Smart%20Library/862f5626-c013-4299-bf8b-dae2d8c7f554/Australian-ARF-RHD-Guideline-2025.pdf"
   },
   {
     "n": 34,
@@ -1771,9 +1771,9 @@
         ]
       ],
       "safety": "Avoid both premature schizophrenia labelling and delaying care for indiscriminate testing; red flags mandate urgent medical escalation.",
-      "local": "RACGP practical guide to emerging psychosis in adolescents, medical review and antipsychotic metabolic monitoring."
+      "local": "Orygen Australian Medical Management in Early Psychosis manual: comprehensive assessment, treatment and physical-health monitoring."
     },
-    "source": "https://www.racgp.org.au/afp/2013/september/emerging-psychosis-in-adolescents"
+    "source": "https://orygen.org.au/Training/Resources/Psychosis/Manuals/Medical-Management-Manual"
   },
   {
     "n": 38,
@@ -2155,8 +2155,8 @@
         ]
       ],
       "safety": "Do not give aggressive laxatives for complete obstruction or automatically override a capable patient's informed treatment preferences.",
-      "local": "Queensland Gold Coast Health specialist palliative care referral criteria for bowel obstruction requiring assessment in line with goals of care."
+      "local": "NSW South Eastern Sydney LHD Medical Management of Malignant Bowel Obstruction guideline."
     },
-    "source": "https://www.goldcoast.health.qld.gov.au/referrals/services/specialty-palliative-care"
+    "source": "https://www.seslhd.health.nsw.gov.au/sites/default/files/documents/SESLHDGL%20122%20-%20Bowel%20Obstruction%20-%20Medical%20Management%20of%20Malignant%20Bowel%20Obstruction.pdf"
   }
 ]
