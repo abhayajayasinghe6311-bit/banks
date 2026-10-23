@@ -718,5 +718,245 @@
     },
     "source": "https://www.health.vic.gov.au/mental-health-services/suicide-prevention",
     "context": "Advanced integrated clinical decisions"
+  },
+  {
+    "n": 16,
+    "domain": "Neurology & critical care",
+    "skill": "Guillain–Barré syndrome / evolving bulbar and respiratory weakness",
+    "context": "Advanced integrated clinical decisions",
+    "stem": "A 42-year-old develops ascending symmetric weakness eight days after gastroenteritis. Reflexes are absent and he can no longer climb stairs. Over four hours his voice becomes nasal, cough weakens and his single-breath count falls from 24 to 14. Pulse oximetry remains 97% on room air; blood pressure fluctuates markedly.",
+    "ask": "Which next action best addresses the most immediate threat?",
+    "options": [
+      "Arrange monitored high-acuity admission with urgent airway assessment and serial respiratory muscle measurements.",
+      "Order outpatient nerve conduction studies before considering whether the symptoms require hospital treatment.",
+      "Start high-dose oral prednisolone and discharge once the oxygen saturation remains above 95%.",
+      "Perform lumbar puncture first because normal CSF protein would safely exclude Guillain–Barré syndrome.",
+      "Give sedating anxiolysis for the breathlessness and reassess swallowing after the patient has slept."
+    ],
+    "key": "A",
+    "explanations": [
+      "Correct: rapid weakness, bulbar dysfunction, impaired cough and declining single-breath count signal impending ventilatory failure despite normal saturation. Urgent neurology and ICU assessment, repeated forced vital capacity measurements, autonomic monitoring and planning for elective airway protection take priority; IVIg or plasma exchange is considered for disabling disease.",
+      "Electrophysiology supports diagnosis but can be normal early and must not delay monitoring or treatment in a deteriorating patient. Outpatient evaluation is unsafe with bulbar involvement.",
+      "Corticosteroids alone do not improve GBS outcomes and discharge risks unrecognised respiratory failure. Normal SpO2 may persist until ventilation deteriorates significantly.",
+      "CSF albuminocytologic dissociation can be absent early; lumbar puncture is not a prerequisite for airway protection. An early normal CSF result cannot exclude the clinical syndrome.",
+      "Sedation may suppress respiratory drive or airway protection and masks progression. Anxiety should not be assumed when cough, bulbar function and muscle power are worsening."
+    ],
+    "pearl": "In neuromuscular respiratory failure, oxygen saturation may remain normal until late; serial vital capacity and cough strength matter.",
+    "pivot": "A stable patient with a chronic length-dependent neuropathy and no bulbar or respiratory progression follows a different diagnostic urgency.",
+    "management": {
+      "steps": [
+        [
+          "Escalate",
+          "Admit to a monitored setting and involve neurology, anaesthesia and critical care urgently."
+        ],
+        [
+          "Track ventilation",
+          "Measure serial FVC, inspiratory strength and single-breath count, and examine cough and swallowing."
+        ],
+        [
+          "Treat disease",
+          "Assess eligibility for IV immunoglobulin or plasma exchange and monitor autonomic instability."
+        ],
+        [
+          "Prevent harm",
+          "Provide aspiration precautions, thromboprophylaxis when indicated, analgesia and rehabilitation planning."
+        ]
+      ],
+      "safety": "Do not rely on a normal pulse oximeter reading to exclude impending ventilatory failure in GBS.",
+      "local": "Queensland Health emergency referral criteria for rapidly progressive GBS; respiratory monitoring informed by international EAN/PNS GBS guidance."
+    },
+    "source": "https://www.goldcoast.health.qld.gov.au/referrals/services/neurology"
+  },
+  {
+    "n": 17,
+    "domain": "Ophthalmology & general practice",
+    "skill": "Macula-on retinal detachment / preserving central vision",
+    "context": "Advanced integrated clinical decisions",
+    "stem": "A 55-year-old highly myopic woman reports new flashes and a shower of floaters in her left eye followed by a dark curtain spreading from the temporal periphery. Central visual acuity is still 6/6. Bedside fundus examination suggests an elevated peripheral retina; there is no eye pain or redness.",
+    "ask": "What is the safest next step?",
+    "options": [
+      "Arrange a routine optometry appointment because preserved central acuity excludes major retinal injury.",
+      "Seek same-day ophthalmology assessment for suspected retinal detachment while central vision is preserved.",
+      "Treat presumed vitreous migraine with simple analgesia and reassess visual fields after two days.",
+      "Begin topical corticosteroids and request a nonurgent orbital MRI for inflammatory retinal disease.",
+      "Reassure that flashes and floaters are normal in myopia and review only if the eye becomes painful."
+    ],
+    "key": "B",
+    "explanations": [
+      "A macula-on detachment may preserve 6/6 vision initially, but delay can allow detachment to involve the macula and cause permanent central loss.",
+      "Correct: new photopsia, floaters and a progressive curtain are highly concerning for rhegmatogenous detachment. Arrange same-day dilated ophthalmological examination and specialist retinal management; urgent surgery may preserve macular function.",
+      "Migraine aura is typically transient and often bilateral or homonymous, not a persistent monocular curtain with a structural retinal finding. Analgesia cannot reattach retina.",
+      "Topical steroids are not treatment for a mechanical retinal tear, and MRI is not the initial investigation. Retinal examination and vitreoretinal consultation are needed.",
+      "Myopia increases detachment risk rather than explaining away a new field defect. Pain is usually absent in retinal detachment, so waiting for it is unsafe."
+    ],
+    "pearl": "A patient with retinal detachment can have normal central acuity while the macula remains attached; that is the moment to act.",
+    "pivot": "Isolated longstanding floaters without new field loss or flashes may allow nonemergency assessment after appropriate ocular evaluation.",
+    "management": {
+      "steps": [
+        [
+          "Characterise",
+          "Document onset, flashes, floaters, monocular field defect, visual acuity and prior eye surgery or trauma."
+        ],
+        [
+          "Escalate",
+          "Contact same-day ophthalmology/retina service for a dilated peripheral retinal examination."
+        ],
+        [
+          "Coordinate",
+          "Follow specialist instructions regarding positioning, transport and time-critical retinal repair."
+        ],
+        [
+          "Safety-net",
+          "Warn about worsening curtain or central vision loss and document urgent handover."
+        ]
+      ],
+      "safety": "Do not reassure based solely on 6/6 central vision or the absence of eye pain.",
+      "local": "RACGP clinical review: Flashes and floaters—same-day referral for acute symptoms with visual-field loss."
+    },
+    "source": "https://www.racgp.org.au/afp/2014/april/flashes-and-floaters"
+  },
+  {
+    "n": 18,
+    "domain": "Neonatology & congenital surgery",
+    "skill": "Congenital diaphragmatic hernia / safe delivery-room ventilation",
+    "context": "Advanced integrated clinical decisions",
+    "stem": "A term neonate with an antenatally diagnosed left congenital diaphragmatic hernia is born with poor respiratory effort. The abdomen is scaphoid, breath sounds are reduced on the left and the heart is displaced rightward. A junior clinician prepares routine bag-mask positive-pressure ventilation while awaiting the neonatal consultant.",
+    "ask": "What is the most appropriate immediate airway strategy?",
+    "options": [
+      "Begin vigorous bag-mask ventilation to recruit the hypoplastic lung before any gastric decompression.",
+      "Apply continuous positive airway pressure alone because intubation may worsen pulmonary hypertension.",
+      "Avoid bag-mask ventilation, secure an expert airway and decompress the stomach with an orogastric tube.",
+      "Give surfactant through a thin catheter before deciding whether mechanical ventilation is required.",
+      "Perform emergency needle thoracostomy for presumed tension pneumothorax before checking the diagnosis."
+    ],
+    "key": "C",
+    "explanations": [
+      "Mask ventilation can insufflate herniated stomach and bowel, further compressing the already small lungs. It should be avoided when respiratory support is required in known CDH.",
+      "CPAP also introduces positive pressure and may worsen gastrointestinal distension; it is not the preferred stabilisation approach for an apnoeic infant with CDH.",
+      "Correct: ANZCOR advises early endotracheal intubation or appropriate supraglottic airway by experienced staff when respiratory support is required, avoiding bag-mask ventilation, with wide-bore orogastric suction and gentle lung-protective ventilation.",
+      "Surfactant is not the first-line treatment for the anatomical pulmonary hypoplasia and gastrointestinal compression of CDH. Stabilisation and specialist ventilatory strategy come first.",
+      "The displaced heart and reduced breath sounds are expected in left CDH; reflex decompression risks injury without evidence of tension pneumothorax. Reassess if sudden deterioration suggests an additional pathology."
+    ],
+    "pearl": "For a newborn with CDH needing ventilation, avoid inflating intrathoracic bowel with a face mask; decompress the stomach.",
+    "pivot": "A newborn with uncomplicated transient tachypnoea and no diaphragmatic defect may be suitable for noninvasive respiratory support.",
+    "management": {
+      "steps": [
+        [
+          "Call experts",
+          "Activate senior neonatal resuscitation, neonatal ICU and paediatric surgical teams."
+        ],
+        [
+          "Airway",
+          "Use expert early intubation or appropriate alternative airway and avoid bag-mask positive-pressure ventilation."
+        ],
+        [
+          "Decompress",
+          "Insert a wide-bore orogastric tube to suction and use gentle monitored ventilation."
+        ],
+        [
+          "Stabilise",
+          "Monitor preductal oxygenation, perfusion and pulmonary hypertension before planning surgery after stabilisation."
+        ]
+      ],
+      "safety": "Do not rush to immediate surgical repair before cardiorespiratory stabilisation or use high-pressure ventilation indiscriminately.",
+      "local": "ANZCOR Guideline 13.8 neonatal resuscitation in special circumstances; 2026 WA neonatal CDH guidance."
+    },
+    "source": "https://www.anzcor.org/home/neonatal-resuscitation/guideline-13-8-the-resuscitation-of-the-newborn-in-special-circumstances"
+  },
+  {
+    "n": 19,
+    "domain": "Gynaecology & early pregnancy",
+    "skill": "Ectopic pregnancy / inadequate methotrexate response",
+    "context": "Advanced integrated clinical decisions",
+    "stem": "A 27-year-old received single-dose methotrexate for a small unruptured tubal ectopic pregnancy after specialist counselling. She remains well with no pain or bleeding. Serum beta-hCG was 2,300 IU/L on treatment day 4 and 2,160 IU/L on day 7. Her baseline full blood count, liver and renal tests were normal.",
+    "ask": "What is the most appropriate interpretation and next plan?",
+    "options": [
+      "Continue routine weekly beta-hCG only because any fall from day 4 to day 7 proves successful treatment.",
+      "Arrange immediate emergency laparotomy because an inadequate biochemical fall confirms tubal rupture.",
+      "Discharge from surveillance because the absolute beta-hCG is below the usual medical-treatment threshold.",
+      "Recognise inadequate response and urgently discuss repeat treatment or surgery with the early-pregnancy team.",
+      "Recheck beta-hCG in six weeks because it commonly rises for several days after methotrexate administration."
+    ],
+    "key": "D",
+    "explanations": [
+      "A decrease of only about 6% from day 4 to day 7 is below the usual 15% response threshold. Routine weekly monitoring alone may allow persistent ectopic tissue to progress.",
+      "Biochemical nonresponse does not itself demonstrate rupture, particularly in a stable asymptomatic patient. Emergency surgery is indicated if clinical rupture or haemodynamic compromise occurs.",
+      "The starting hCG range helps select medical treatment, not determine whether follow-up can stop. Monitoring continues until resolution is confirmed.",
+      "Correct: the day 4–7 decline is about 6.1%, suggesting inadequate response. Reassess symptoms, scan and laboratory suitability with senior gynaecology; consider a further methotrexate dose or surgical management under the local protocol.",
+      "A transient early rise can occur, but day 7 follow-up has a specific treatment-response role. Waiting six weeks without surveillance risks missed failure or rupture."
+    ],
+    "pearl": "After single-dose methotrexate, compare beta-hCG on day 4 versus day 7; a decline under 15% requires reassessment.",
+    "pivot": "If day 4–7 beta-hCG falls by at least 15% and the patient remains stable, continue weekly levels until resolution.",
+    "management": {
+      "steps": [
+        [
+          "Assess safety",
+          "Review pain, bleeding, syncope, vital signs and any signs of tubal rupture immediately."
+        ],
+        [
+          "Calculate",
+          "Compare day 4 and day 7 beta-hCG values and confirm the protocol and dates."
+        ],
+        [
+          "Escalate",
+          "Discuss inadequate decline with the early-pregnancy consultant and reassess imaging and methotrexate eligibility."
+        ],
+        [
+          "Follow to zero",
+          "Arrange repeat medication or surgery if indicated, strict rupture precautions and serial beta-hCG until resolved."
+        ]
+      ],
+      "safety": "Methotrexate does not eliminate rupture risk; new severe pain, syncope or haemodynamic changes require emergency review regardless of beta-hCG.",
+      "local": "Queensland Clinical Guideline Early pregnancy loss (2025), methotrexate appendix and follow-up protocols."
+    },
+    "source": "https://www.health.qld.gov.au/__data/assets/pdf_file/0033/139947/g-epl.pdf"
+  },
+  {
+    "n": 20,
+    "domain": "Adolescent medicine & psychiatry",
+    "skill": "Refeeding syndrome / severe phosphate depletion",
+    "context": "Advanced integrated clinical decisions",
+    "stem": "A 17-year-old admitted with restrictive eating disorder and severe malnutrition begins a supervised nutritional rehabilitation plan. On day 3 she develops weakness, peripheral oedema and palpitations. Phosphate has fallen from 1.1 to 0.35 mmol/L, magnesium is low and ECG shows new QT prolongation. She is alert and asks to continue the same feeding schedule.",
+    "ask": "Which response best manages this new complication?",
+    "options": [
+      "Continue the current feed escalation because biochemical changes are expected during nutritional recovery.",
+      "Stop all nutrition indefinitely until phosphate normalises and discharge once palpitations settle.",
+      "Treat with an anxiolytic because QT changes are usually caused by anxiety in eating disorders.",
+      "Increase carbohydrate delivery to stimulate intracellular phosphate recovery without giving replacement.",
+      "Urgently replace electrolytes and review the feeding plan under monitored specialist inpatient care."
+    ],
+    "key": "E",
+    "explanations": [
+      "Severe hypophosphataemia with cardiac symptoms is not a benign adaptation; continuing escalation unchanged risks arrhythmia, respiratory weakness and heart failure.",
+      "Nutrition must be managed carefully rather than stopped indefinitely. An unplanned prolonged interruption worsens malnutrition and can complicate recovery.",
+      "QT prolongation and phosphate depletion are objective metabolic abnormalities; anxiolysis does not correct the risk and could obscure deterioration.",
+      "Carbohydrate stimulates insulin and drives phosphate into cells, potentially worsening the deficit. Replacement and safe nutrition progression are needed.",
+      "Correct: treat suspected refeeding syndrome with urgent monitored phosphate, magnesium and potassium correction, ECG surveillance, thiamine consideration and dietitian/medical review of nutritional delivery; adjust rather than reflexively abandon rehabilitation."
+    ],
+    "pearl": "Refeeding syndrome is an insulin-driven electrolyte shift; severe hypophosphataemia can cause life-threatening cardiac and respiratory complications.",
+    "pivot": "A medically stable patient whose phosphate and magnesium remain normal during monitored nutritional rehabilitation can continue planned advancement.",
+    "management": {
+      "steps": [
+        [
+          "Recognise",
+          "Check ECG, symptoms, vital signs, fluid balance and repeat phosphate, magnesium and potassium."
+        ],
+        [
+          "Replace",
+          "Give severity-appropriate electrolyte replacement and thiamine under local inpatient protocols."
+        ],
+        [
+          "Adjust nutrition",
+          "Review carbohydrate delivery and feeding advancement with eating-disorder and dietetic teams."
+        ],
+        [
+          "Monitor",
+          "Use cardiac observation and frequent biochemical reassessment until the metabolic risk resolves."
+        ]
+      ],
+      "safety": "Do not treat new QT prolongation and phosphate 0.35 mmol/L as psychological symptoms or continue unreviewed feeding escalation.",
+      "local": "Royal Children's Hospital Refeeding Syndrome Guideline and adolescent eating-disorder assessment guidance."
+    },
+    "source": "https://www.rch.org.au/uploadedFiles/Main/Content/gastro/Refeeding%20syndrome%20guideline.pdf"
   }
 ]
