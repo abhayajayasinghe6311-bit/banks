@@ -2878,5 +2878,245 @@
       "local": "Queensland Health occupational-exposure guidance: assess urgently and start indicated hepatitis B PEP within 72 hours."
     },
     "source": "https://www.health.qld.gov.au/clinical-practice/guidelines-procedures/diseases-infection/infection-prevention/staff-health/management-of-occupational-exposures"
+  },
+  {
+    "n": 61,
+    "domain": "Preventive medicine & immunisation",
+    "skill": "Functional asplenia / meningococcal vaccination risk-group schedule",
+    "context": "Advanced final-year integrated management",
+    "stem": "A 19-year-old university student with sickle cell disease and functional asplenia attends a preventive health visit. She completed routine childhood vaccinations but has no documented meningococcal B vaccination and no risk-group meningococcal booster plan. She will be living in residential college.",
+    "ask": "What is the most appropriate vaccination advice?",
+    "options": [
+      "Arrange risk-group MenACWY and MenB vaccination with recommended booster planning and record review.",
+      "Rely on her routine childhood MenACWY dose because asplenia does not increase meningococcal risk.",
+      "Administer pneumococcal vaccine alone because it protects against all invasive encapsulated bacterial infections.",
+      "Offer a single meningococcal B dose without boosters because the risk ends after adolescence.",
+      "Defer meningococcal vaccination until splenectomy is performed because functional asplenia is not relevant."
+    ],
+    "key": "A",
+    "explanations": [
+      "Correct: functional asplenia increases invasive meningococcal disease risk. The Australian Immunisation Handbook recommends both MenACWY and MenB primary courses with risk-group boosters, tailored to prior doses and age.",
+      "Routine adolescent MenACWY vaccination does not replace special-risk recommendations; the patient's functional asplenia persists throughout life.",
+      "Pneumococcal protection is important in asplenia but does not protect against meningococcal serogroups. A broader encapsulated-organism vaccination review is needed.",
+      "MenB primary dosing and boosters vary by risk group. A single unplanned dose may leave a high-risk person incompletely protected.",
+      "Functional asplenia from sickle cell disease carries infection risk even without surgical splenectomy, so immunisation should not wait."
+    ],
+    "pearl": "Asplenia requires special-risk meningococcal schedules, including both MenACWY and MenB, not just routine adolescent doses.",
+    "pivot": "An otherwise healthy student in residential accommodation is also recommended meningococcal protection, but booster indications differ.",
+    "management": {
+      "steps": [
+        [
+          "Review",
+          "Confirm vaccination record, sickle cell complications, immune status and prior MenACWY/MenB doses."
+        ],
+        [
+          "Vaccinate",
+          "Arrange catch-up or primary MenACWY and MenB courses per current special-risk guidance."
+        ],
+        [
+          "Boost",
+          "Schedule indicated MenACWY and MenB booster doses for ongoing asplenia risk."
+        ],
+        [
+          "Prevent",
+          "Review pneumococcal, influenza and other vaccines and provide fever/sepsis emergency advice."
+        ]
+      ],
+      "safety": "Fever in a person with asplenia can represent rapidly progressive sepsis; vaccination does not eliminate the need for urgent assessment.",
+      "local": "Australian Immunisation Handbook: asplenia is a special-risk condition requiring MenACWY and MenB courses and boosters."
+    },
+    "source": "https://immunisationhandbook.health.gov.au/recommendations/people-with-medical-conditions-that-increase-their-risk-of-invasive-meningococcal-disease-are-recommended-to-receive-menacwy-and-menb-vaccines"
+  },
+  {
+    "n": 62,
+    "domain": "Gastroenterology & emergency surgery",
+    "skill": "Gallstone pancreatitis with cholangitis / urgent biliary drainage",
+    "context": "Advanced final-year integrated management",
+    "stem": "A 66-year-old presents with severe epigastric pain radiating to the back, fever and jaundice. Lipase is six times the upper limit of normal, bilirubin is 92 micromol/L and ultrasound shows gallstones with a dilated common bile duct. BP is 88/54 mmHg despite initial fluid resuscitation.",
+    "ask": "What is the most appropriate definitive management priority alongside sepsis treatment?",
+    "options": [
+      "Schedule outpatient laparoscopic cholecystectomy once bilirubin has normalised without further intervention.",
+      "Arrange urgent ERCP for biliary decompression while resuscitating and giving intravenous antibiotics.",
+      "Provide analgesia and observe for spontaneous passage because pancreatitis makes endoscopy contraindicated.",
+      "Commence oral ursodeoxycholic acid and repeat ultrasound after seven days of inpatient observation.",
+      "Perform immediate elective cholecystectomy before treating sepsis because the gallbladder is the source."
+    ],
+    "key": "B",
+    "explanations": [
+      "Definitive gallbladder removal is important after recovery, but outpatient surgery alone does not relieve infected obstructed ducts during cholangitis and shock.",
+      "Correct: pancreatitis with obstructive jaundice, fever and shock suggests concomitant acute cholangitis. Resuscitate, obtain cultures, give IV antibiotics and arrange urgent biliary drainage, usually ERCP, with specialist support.",
+      "Observation alone risks worsening septic shock and organ failure when infected biliary obstruction is suspected. Early ERCP is specifically indicated with cholangitis.",
+      "Ursodeoxycholic acid is not an acute source-control treatment for infected biliary obstruction and should not delay drainage.",
+      "Cholecystectomy may follow stabilisation, but immediate gallbladder surgery does not reliably decompress the common bile duct and is unsafe before shock management."
+    ],
+    "pearl": "Routine early ERCP is not indicated for uncomplicated gallstone pancreatitis; concomitant cholangitis changes the priority.",
+    "pivot": "If pancreatitis occurs without cholangitis or persistent obstruction, supportive care and appropriately timed cholecystectomy take precedence.",
+    "management": {
+      "steps": [
+        [
+          "Resuscitate",
+          "Manage sepsis, ABC, IV access, fluids, cultures, lactate and close haemodynamic monitoring."
+        ],
+        [
+          "Treat infection",
+          "Start broad-spectrum IV antibiotics according to local biliary-sepsis guidance and organ function."
+        ],
+        [
+          "Drain",
+          "Urgently discuss ERCP or alternative biliary drainage with gastroenterology and surgery."
+        ],
+        [
+          "Prevent recurrence",
+          "After stabilisation, plan definitive gallstone management and assess complications of pancreatitis."
+        ]
+      ],
+      "safety": "Do not defer biliary source control in a patient with shock, jaundice and suspected acute cholangitis.",
+      "local": "Queensland Health classifies gallstones with cholangitis as an emergency; 2025 International Association of Pancreatology guidance supports early ERCP when cholangitis complicates biliary pancreatitis."
+    },
+    "source": "https://www.health.qld.gov.au/cpc/general-surgery/hepatobiliary-surgery"
+  },
+  {
+    "n": 63,
+    "domain": "Obstetrics & maternal hepatology",
+    "skill": "Very severe intrahepatic cholestasis / risk stratification by peak bile acids",
+    "context": "Advanced final-year integrated management",
+    "stem": "A 34-year-old at 35+1 weeks has intense nocturnal itching of her palms and soles without rash. Her non-fasting total bile acids are 126 micromol/L and ALT is mildly elevated. BP and platelet count are normal, and fetal growth is appropriate. She asks whether improving itching means she can wait until 40 weeks.",
+    "ask": "Which plan best addresses maternal and fetal risk?",
+    "options": [
+      "Use antihistamines alone and await spontaneous labour because fetal risk tracks maternal itching severity.",
+      "Repeat bile acids at 39 weeks and arrange delivery only if transaminases rise above 500 U/L.",
+      "Arrange urgent specialist birth planning for very severe ICP, discussing delivery around 35–36 weeks.",
+      "Treat with topical corticosteroids and continue routine care because absent rash excludes cholestasis.",
+      "Schedule an elective caesarean at 40 weeks because the delivery mode, not timing, prevents stillbirth."
+    ],
+    "key": "C",
+    "explanations": [
+      "Maternal symptom relief does not reliably indicate reduced fetal risk. Antihistamines may help sleep but do not address the very high bile-acid-associated risk.",
+      "Waiting until 39 weeks is unsafe with peak bile acids above 100 micromol/L. ALT alone is not the main determinant of fetal risk.",
+      "Correct: bile acids at or above 100 micromol/L define very severe ICP with increased stillbirth risk from around 35 weeks. Urgent senior obstetric discussion should address timing of birth, neonatal implications and maternal treatment.",
+      "ICP typically presents with pruritus without primary rash; lack of rash supports rather than excludes the diagnosis. Topical steroids do not manage bile-acid-associated risk.",
+      "Caesarean is not automatically required for ICP. Timing and individual obstetric indications guide induction versus caesarean, with shared decision-making."
+    ],
+    "pearl": "In ICP, peak bile acids—not itch intensity or falling levels alone—are key to fetal risk stratification.",
+    "pivot": "Pruritus with normal bile acids warrants reassessment if symptoms persist, rather than diagnosing very severe ICP without biochemical evidence.",
+    "management": {
+      "steps": [
+        [
+          "Confirm",
+          "Review bile acids, liver tests, blood pressure, platelets and differential diagnoses of pruritus."
+        ],
+        [
+          "Risk stratify",
+          "Classify peak bile acids above 100 micromol/L as very severe and discuss fetal risk."
+        ],
+        [
+          "Plan birth",
+          "Urgently involve senior obstetrics for individualised delivery timing, often around 35–36 weeks."
+        ],
+        [
+          "Support",
+          "Offer ursodeoxycholic acid for symptoms, discuss fetal surveillance limits and arrange postpartum liver review."
+        ]
+      ],
+      "safety": "Do not reassure based solely on improved itching or a lower repeat bile-acid result after a peak above 100.",
+      "local": "SOMANZ 2023 consensus: peak bile acids ≥100 micromol/L indicate very severe ICP with higher stillbirth risk from 35 weeks."
+    },
+    "source": "https://doi.org/10.1111/ajo.13719"
+  },
+  {
+    "n": 64,
+    "domain": "Paediatric rheumatology & ophthalmology",
+    "skill": "Juvenile idiopathic arthritis / asymptomatic anterior uveitis screening",
+    "context": "Advanced final-year integrated management",
+    "stem": "A 5-year-old girl is diagnosed with oligoarticular juvenile idiopathic arthritis after three months of painless knee swelling and morning stiffness. ANA is positive. Her eyes look normal, she has no photophobia and visual acuity is age appropriate.",
+    "ask": "What is the best preventive management step?",
+    "options": [
+      "Wait for red eyes or visual complaints before arranging ophthalmology because asymptomatic disease is unlikely.",
+      "Order yearly retinal photography alone because uveitis is usually visible on a routine fundus image.",
+      "Prescribe prophylactic topical steroid drops without an eye examination to prevent silent inflammation.",
+      "Arrange regular slit-lamp ophthalmology screening even though she has no ocular symptoms.",
+      "Use a normal school vision screen to exclude anterior uveitis and avoid additional appointments."
+    ],
+    "key": "D",
+    "explanations": [
+      "Chronic anterior uveitis associated with JIA can be entirely asymptomatic until complications occur. Symptom-triggered review misses preventable visual damage.",
+      "Fundus photographs do not reliably detect anterior chamber inflammation. Slit-lamp examination is the appropriate screening method.",
+      "Empirical steroid drops without a diagnosis can cause ocular hypertension, cataract and infection risk; treatment is guided by ophthalmology.",
+      "Correct: children with JIA need regular slit-lamp assessments, with frequency based on age, JIA subtype, ANA status and duration. Early detection prevents cataract, glaucoma and vision loss.",
+      "Normal visual acuity and external appearance cannot rule out silent anterior uveitis; school screening is insufficient."
+    ],
+    "pearl": "JIA-associated anterior uveitis can be silent; slit-lamp screening is essential even with normal-looking eyes.",
+    "pivot": "Painful red photophobic eyes may suggest acute uveitis and require urgent ophthalmology review rather than routine screening.",
+    "management": {
+      "steps": [
+        [
+          "Risk assess",
+          "Document JIA subtype, age at onset, ANA status and any ocular symptoms."
+        ],
+        [
+          "Refer",
+          "Arrange baseline ophthalmology slit-lamp assessment and an individualised screening schedule."
+        ],
+        [
+          "Coordinate",
+          "Communicate with paediatric rheumatology about systemic disease and any uveitis therapy."
+        ],
+        [
+          "Educate",
+          "Explain silent visual risk and the importance of attendance despite no eye complaints."
+        ]
+      ],
+      "safety": "Do not wait for eye redness or reduced visual acuity before screening a child with JIA.",
+      "local": "Sydney Children's Hospitals Network: all children with JIA require regular slit-lamp ophthalmology checks for often silent uveitis."
+    },
+    "source": "https://www.schn.health.nsw.gov.au/factsheets/uveitis-juvenile-idiopathic-arthritis-jia"
+  },
+  {
+    "n": 65,
+    "domain": "Psychiatry & acute abdominal care",
+    "skill": "Clozapine gastrointestinal hypomotility / obstruction red flags",
+    "context": "Advanced final-year integrated management",
+    "stem": "A 39-year-old with treatment-resistant schizophrenia has taken clozapine for five months. He reports no bowel motion for six days, progressive abdominal distension, colicky pain and repeated vomiting. He is tachycardic and looks unwell. His carer says constipation has been dismissed as a minor side effect.",
+    "ask": "What is the safest immediate response?",
+    "options": [
+      "Add fibre supplements and encourage exercise at home while continuing clozapine unchanged for a week.",
+      "Prescribe an oral bulk-forming laxative and arrange review only after normal bowel movements resume.",
+      "Reassure that clozapine constipation is harmless unless the absolute neutrophil count becomes low.",
+      "Increase clozapine to control agitation and delay abdominal imaging until psychotic symptoms stabilise.",
+      "Arrange emergency medical and surgical assessment for possible ileus or obstruction and review clozapine."
+    ],
+    "key": "E",
+    "explanations": [
+      "Fibre and exercise may help uncomplicated constipation, but vomiting, distension and pain indicate possible life-threatening hypomotility or obstruction requiring urgent assessment.",
+      "Bulk-forming agents can worsen obstruction when gut transit is impaired. This patient needs immediate examination and escalation, not an outpatient laxative trial.",
+      "Clozapine gastrointestinal hypomotility is independent of agranulocytosis and can be fatal. Normal neutrophils do not make abdominal red flags safe.",
+      "Increasing an anticholinergic medication may worsen hypomotility. Psychiatric stability is important but cannot supersede emergency abdominal assessment.",
+      "Correct: severe clozapine-associated gastrointestinal hypomotility can cause ileus, obstruction, ischaemia or perforation. Arrange emergency evaluation, imaging, fluids and surgical input, with psychiatric consultation about clozapine management."
+    ],
+    "pearl": "Clozapine constipation is potentially fatal; vomiting, distension and persistent abdominal pain are emergency warning signs.",
+    "pivot": "Uncomplicated constipation without red flags needs proactive bowel monitoring and appropriate non-bulk laxative treatment.",
+    "management": {
+      "steps": [
+        [
+          "Recognise",
+          "Assess abdominal pain, distension, vomiting, bowel motions, vital signs and signs of sepsis."
+        ],
+        [
+          "Escalate",
+          "Arrange urgent emergency, medical and surgical review; obtain imaging and laboratory assessment."
+        ],
+        [
+          "Treat",
+          "Manage suspected obstruction with IV fluids, bowel rest and specialist-directed interventions."
+        ],
+        [
+          "Prevent",
+          "Coordinate clozapine review and a documented bowel monitoring and laxative prevention plan."
+        ]
+      ],
+      "safety": "Never manage clozapine-related vomiting and abdominal distension as routine constipation in the community.",
+      "local": "NSW Health clozapine guidance: abdominal distension, vomiting or sustained moderate-severe pain require immediate medical assessment."
+    },
+    "source": "https://resources.schn.health.nsw.gov.au/policies/policies/pdf/2024-108.pdf"
   }
 ]
