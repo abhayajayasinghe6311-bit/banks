@@ -428,7 +428,7 @@
       "safety": "Do not require all classic criteria or a positive echo to consider and treat clinically supported Kawasaki disease.",
       "local": "Royal Children's Hospital Kawasaki disease guideline and local paediatric cardiology protocols."
     },
-    "source": "https://www.rch.org.au/clinicalguide/guideline_index/kawasaki_disease_guideline/",
+    "source": "https://www.rch.org.au/clinicalguide/guideline_index/Kawasaki_disease/",
     "n": 9
   },
   {
@@ -2451,7 +2451,7 @@
     "n": 52,
     "domain": "Paediatric respiratory medicine",
     "skill": "Bronchiolitis / supportive care over bronchodilators",
-    "stem": "A 6-week-old infant has two days of coryza and cough, increased work of breathing, and poor feeding. RR is 65/min, SpO2 90% in room air and there are widespread fine crackles without focal consolidation. He has no prior wheeze or congenital disease. The parent asks whether a salbutamol nebuliser will help.",
+    "stem": "A 6-week-old infant has two days of coryza and cough, increased work of breathing, and poor feeding. RR is 65/min, SpO2 persistently 88% in room air and there are widespread fine crackles without focal consolidation. He has no prior wheeze or congenital disease. The parent asks whether a salbutamol nebuliser will help.",
     "ask": "Which initial inpatient approach is most appropriate?",
     "options": [
       "Start routine nebulised salbutamol and repeat doses every four hours regardless of response.",
@@ -3212,7 +3212,7 @@
       "safety": "Avoid routine antimotility therapy and platelet transfusion in otherwise stable HUS without specialist indications.",
       "local": "Australian paediatric nephrology HUS guidance and RCH renal acute care pathways."
     },
-    "source": "https://www.rch.org.au/clinicalguide/",
+    "source": "https://www.health.qld.gov.au/cdcg/index/hus",
     "context": "Advanced integrated clinical decisions"
   },
   {
@@ -3404,7 +3404,7 @@
       "safety": "Do not exceed safe repeated benzodiazepine dosing without airway support; prepare for respiratory compromise.",
       "local": "ANZCOR seizure and emergency resuscitation guidance."
     },
-    "source": "https://www.anzcor.org/home",
+    "source": "https://www.health.qld.gov.au/__data/assets/pdf_file/0022/1447051/PCCM_full.pdf",
     "context": "Advanced integrated clinical decisions"
   },
   {
@@ -4316,7 +4316,7 @@
       "safety": "Do not use antipsychotic alone for alcohol-withdrawal seizure prevention.",
       "local": "Australian alcohol treatment and withdrawal management guidelines."
     },
-    "source": "https://alcoholtreatmentguidelines.com.au/",
+    "source": "https://www.dacas.org.au/clinical-resources/gp-factsheets/management-alcohol-withdrawal",
     "context": "Advanced integrated clinical decisions"
   },
   {
@@ -4604,7 +4604,7 @@
       "safety": "Avoid vaccinating too early and falsely assuming a protective measles response.",
       "local": "Australian Immunisation Handbook blood products and live vaccine guidance."
     },
-    "source": "https://immunisationhandbook.health.gov.au/",
+    "source": "https://www.rch.org.au/bloodtrans/about_blood_products/Intravenous_Immunoglobulin_Guideline/",
     "context": "Advanced integrated clinical decisions"
   },
   {
@@ -4698,9 +4698,9 @@
         ]
       ],
       "safety": "Do not delay steroids for hormone assays when apoplexy causes shock.",
-      "local": "Australian endocrinology and neurosurgical pituitary emergency guidance."
+      "local": "Queensland Health emergency pituitary referrals and endocrine pituitary apoplexy guidance."
     },
-    "source": "https://www.anz.org.au/",
+    "source": "https://www.health.qld.gov.au/cpc/diabetes-and-endocrinology/pituitary-mass",
     "context": "Advanced integrated clinical decisions"
   },
   {
