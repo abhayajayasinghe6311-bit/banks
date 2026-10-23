@@ -1198,5 +1198,101 @@
       "local": "Queensland Health ophthalmology emergency referral criteria for contact-lens keratitis."
     },
     "source": "https://www.goldcoast.health.qld.gov.au/referrals/services/ophthalmology"
+  },
+  {
+    "n": 26,
+    "domain": "General practice & immunisation",
+    "skill": "Dirty puncture wound / tetanus prophylaxis",
+    "context": "Advanced integrated clinical decisions",
+    "stem": "A 42-year-old gardener steps on a nail contaminated with soil. He has a puncture wound on his foot, but no systemic symptoms. He cannot recall any tetanus vaccinations and records are unavailable. The wound is being cleaned.",
+    "ask": "Which prevention strategy is appropriate for this wound and vaccination history?",
+    "options": [
+      "Give tetanus-containing vaccine and tetanus immunoglobulin as indicated after wound cleaning.",
+      "Give tetanus vaccine alone because passive antibodies are never needed in healthy adults.",
+      "Prescribe oral antibiotics instead of immunisation because soil contamination makes vaccination ineffective.",
+      "Give tetanus immunoglobulin alone because active immunisation has no value after the wound occurs.",
+      "Delay prophylaxis until a tetanus antibody titre is returned to avoid unnecessary treatment."
+    ],
+    "key": "A",
+    "explanations": [
+      "Correct: a contaminated puncture is tetanus-prone. Unknown or incomplete vaccination history warrants cleaning, active tetanus vaccination and passive tetanus immunoglobulin under the Australian Immunisation Handbook.",
+      "Vaccine creates long-term protection but does not supply immediate antitoxin in a potentially unimmunised person. TIG is indicated for qualifying wounds.",
+      "Antibiotics may address separate wound infection concerns but do not replace tetanus vaccination or immunoglobulin in tetanus-prone wounds.",
+      "TIG provides short-term protection only. A primary vaccine course is still needed to establish durable immunity.",
+      "Immediate prophylaxis depends on wound risk and vaccination history. Waiting for a titre is not routine and can delay protection."
+    ],
+    "pearl": "Tetanus-prone wounds with unknown vaccination history may need both vaccine and TIG.",
+    "pivot": "A fully vaccinated patient with a recent appropriate booster may need cleaning alone or a booster depending on timing.",
+    "management": {
+      "steps": [
+        [
+          "Clean",
+          "Irrigate, remove debris and assess foreign-body or deeper injury."
+        ],
+        [
+          "Assess",
+          "Review vaccine history if readily available without delaying care."
+        ],
+        [
+          "Immunise",
+          "Give indicated vaccine and TIG at separate sites under handbook guidance."
+        ],
+        [
+          "Follow",
+          "Arrange completion of the vaccine course and wound review."
+        ]
+      ],
+      "safety": "TIG and vaccine are not interchangeable; both accompany adequate wound care when indicated.",
+      "local": "Victorian Department of Health tetanus guidance and Australian Immunisation Handbook."
+    },
+    "source": "https://www.health.vic.gov.au/infectious-diseases/tetanus"
+  },
+  {
+    "n": 27,
+    "domain": "Paediatric infectious diseases",
+    "skill": "Uncomplicated osteomyelitis / IV-to-oral transition",
+    "context": "Advanced integrated clinical decisions",
+    "stem": "A 6-year-old has MRI-confirmed uncomplicated acute haematogenous osteomyelitis of the tibia. Blood culture grows methicillin-sensitive Staphylococcus aureus. After three days of IV cefazolin he is afebrile, walking comfortably, tolerating food and his CRP is falling. There is no abscess or joint involvement.",
+    "ask": "Which next step best balances effective treatment and avoiding unnecessary IV exposure?",
+    "options": [
+      "Continue six weeks of IV antibiotics regardless of response because all bone infections need prolonged access.",
+      "Consider oral step-down using a susceptible agent with planned follow-up and total course duration.",
+      "Stop all antibiotics immediately because three days of improvement proves eradication of bone infection.",
+      "Arrange operative debridement solely because the original MRI demonstrated marrow oedema.",
+      "Switch to topical antibiotics because bacterial growth is confined to the tibial cortex."
+    ],
+    "key": "B",
+    "explanations": [
+      "Complicated infections may require longer IV therapy, but uncomplicated improving cases can switch early. Mandatory six-week IV treatment is not current standard.",
+      "Correct: after about two to three days of IV treatment, clinical improvement and falling markers may support suitable oral therapy with follow-up.",
+      "Clinical response does not prove eradication after three days. Premature discontinuation increases relapse risk.",
+      "Surgery is for abscess, treatment failure or complications, not uncomplicated marrow oedema responding to antibiotics.",
+      "Topical medicines do not achieve therapeutic concentrations in infected bone. Systemic antibiotics remain necessary."
+    ],
+    "pearl": "Uncomplicated paediatric osteomyelitis often permits early oral step-down after improvement.",
+    "pivot": "Persistent fever, rising CRP, abscess or septic joint calls for specialist reassessment and possible surgery.",
+    "management": {
+      "steps": [
+        [
+          "Confirm",
+          "Review organism, susceptibilities, imaging and absence of complications."
+        ],
+        [
+          "Assess",
+          "Document fever resolution, improving pain and falling CRP."
+        ],
+        [
+          "Step down",
+          "Choose oral therapy and total duration with paediatric advice."
+        ],
+        [
+          "Follow",
+          "Arrange clinical and laboratory review with return precautions."
+        ]
+      ],
+      "safety": "Do not switch to oral treatment with persistent sepsis, poor absorption or an uncontrolled focus.",
+      "local": "RCH Bone and joint infection clinical practice guideline."
+    },
+    "source": "https://www.rch.org.au/clinicalguide/guideline_index/Bone_and_joint_infection/"
   }
 ]
