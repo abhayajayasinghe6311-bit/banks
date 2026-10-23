@@ -4558,5 +4558,245 @@
       "local": "RACGP thyroid disease in the perinatal period."
     },
     "source": "https://www.racgp.org.au/afp/2012/august/thyroid-disease-in-the-perinatal-period"
+  },
+  {
+    "n": 96,
+    "domain": "Obstetrics & chronic disease prevention",
+    "skill": "Pre-existing diabetes / early aspirin to prevent pre-eclampsia",
+    "context": "Advanced final-year antenatal risk management",
+    "stem": "A 30-year-old with type 1 diabetes for 14 years attends antenatal booking at 11 weeks. HbA1c is 6.6%, BP is 118/72 mmHg and renal function is normal. She has no aspirin allergy or bleeding disorder. She asks whether good glycaemic control means pre-eclampsia prophylaxis is unnecessary.",
+    "ask": "Which preventive measure should be discussed and commenced at the appropriate gestation?",
+    "options": [
+      "Offer low-dose aspirin from twelve weeks because pre-existing diabetes increases pre-eclampsia risk.",
+      "Defer aspirin until proteinuria develops because normotensive diabetic pregnancies are not considered high risk.",
+      "Prescribe therapeutic heparin throughout pregnancy solely to prevent hypertension and placental endothelial injury.",
+      "Use routine ACE inhibitor treatment from the first trimester because it prevents pre-eclampsia safely.",
+      "Give aspirin only after thirty-six weeks because earlier exposure causes fetal malformations."
+    ],
+    "key": "A",
+    "explanations": [
+      "Correct: pre-existing diabetes is a high-risk factor for pre-eclampsia even with good glucose control. Australian guidance recommends aspirin 100–150 mg daily from about 12 weeks unless contraindicated.",
+      "Aspirin is preventive and works best before clinical pre-eclampsia develops. Waiting for proteinuria or hypertension misses the intended initiation window.",
+      "Therapeutic anticoagulation is not routine pre-eclampsia prophylaxis for diabetes alone. Heparin carries bleeding risk and requires a separate indication.",
+      "ACE inhibitors and ARBs are generally contraindicated in pregnancy because of fetal renal and other harms. Use pregnancy-appropriate blood pressure therapy if needed.",
+      "Beginning aspirin near term is too late for its main placental preventive benefit. Early low-dose use is standard for women at elevated risk."
+    ],
+    "pearl": "Pre-existing type 1 or type 2 diabetes warrants pre-eclampsia prevention even with normal BP and HbA1c.",
+    "pivot": "If aspirin allergy or significant bleeding risk exists, individualise prevention and enhanced surveillance with obstetrics.",
+    "management": {
+      "steps": [
+        [
+          "Risk assess",
+          "Review diabetic complications, BP, renal function, past obstetric history and contraindications."
+        ],
+        [
+          "Prevent",
+          "Offer guideline-dose low-dose aspirin from 12 weeks and consider calcium if dietary intake is low."
+        ],
+        [
+          "Surveil",
+          "Monitor BP, proteinuria, fetal growth and glycaemia with multidisciplinary antenatal care."
+        ],
+        [
+          "Plan",
+          "Coordinate diabetes, obstetric and neonatal management through delivery and postpartum."
+        ]
+      ],
+      "safety": "Do not continue ACE inhibitors or ARBs in pregnancy or postpone aspirin until hypertension appears.",
+      "local": "Australian Prescriber pre-existing diabetes in pregnancy review, pre-eclampsia prevention."
+    },
+    "source": "https://australianprescriber.tg.org.au/articles/managing-pre-existing-diabetes-prior-to-and-during-pregnancy.html"
+  },
+  {
+    "n": 97,
+    "domain": "Renal medicine & respiratory emergencies",
+    "skill": "Pulmonary–renal syndrome / rapidly progressive glomerulonephritis escalation",
+    "context": "Advanced final-year organ-threatening disease",
+    "stem": "A 39-year-old presents with haemoptysis, dyspnoea and dark urine. Creatinine has risen from 80 to 310 micromol/L in ten days, urinalysis shows dysmorphic red cells and protein, and chest imaging reveals bilateral alveolar infiltrates. SpO2 is 90% on air and haemoglobin has fallen to 88 g/L.",
+    "ask": "Which immediate clinical priority is most appropriate?",
+    "options": [
+      "Arrange outpatient repeat urinalysis in six weeks because haematuria often resolves after viral infection.",
+      "Admit urgently for respiratory support and nephrology-led evaluation of pulmonary–renal vasculitis.",
+      "Start empiric oral iron alone because anaemia explains breathlessness and pulmonary infiltrates.",
+      "Give full-dose anticoagulation before imaging because pulmonary embolism is the only explanation for haemoptysis.",
+      "Delay specialist referral until kidney biopsy proves a particular glomerulonephritis subtype."
+    ],
+    "key": "B",
+    "explanations": [
+      "Rapidly rising creatinine with dysmorphic red cells and pulmonary haemorrhage features is organ-threatening, not uncomplicated postinfectious haematuria. Outpatient delay risks respiratory and renal failure.",
+      "Correct: suspect rapidly progressive glomerulonephritis with alveolar haemorrhage, including anti-GBM or ANCA disease. Stabilise breathing, involve renal/respiratory/critical care urgently, and arrange serology and biopsy without delaying necessary treatment.",
+      "Iron alone cannot explain acute nephritic sediment and alveolar infiltrates. Anaemia may be caused by pulmonary bleeding and is secondary to the urgent pulmonary–renal process.",
+      "Anticoagulation can worsen alveolar haemorrhage and is not justified by haemoptysis alone. Pulmonary embolism remains a differential, but renal findings demand targeted assessment.",
+      "Renal biopsy can establish aetiology, but urgent specialist care should begin before pathology is available when rapidly progressive renal injury and respiratory compromise coexist."
+    ],
+    "pearl": "Haemoptysis plus rapidly rising creatinine and dysmorphic haematuria is pulmonary–renal syndrome until proven otherwise.",
+    "pivot": "If hypoxic with active bleeding, airway and critical-care support precede elective diagnostic procedures.",
+    "management": {
+      "steps": [
+        [
+          "Stabilise",
+          "Provide oxygen, assess airway, perfusion and haemoglobin; consider critical-care admission."
+        ],
+        [
+          "Investigate",
+          "Send urinalysis, renal panel, ANCA, anti-GBM, complements and infection testing."
+        ],
+        [
+          "Escalate",
+          "Seek urgent nephrology and respiratory input for biopsy and disease-specific immunosuppression or plasma exchange."
+        ],
+        [
+          "Monitor",
+          "Track oxygenation, bleeding, creatinine, urine output and treatment complications."
+        ]
+      ],
+      "safety": "Do not delay specialist care for biopsy or anticoagulate reflexively during suspected alveolar haemorrhage.",
+      "local": "Queensland Health glomerular disease emergency referral criteria, including pulmonary haemorrhage."
+    },
+    "source": "https://www.goldcoast.health.qld.gov.au/referrals/conditions/glomerular-disease"
+  },
+  {
+    "n": 98,
+    "domain": "General surgery & infection control",
+    "skill": "Perianal abscess / drainage rather than antibiotics alone",
+    "context": "Advanced final-year surgical prioritisation",
+    "stem": "A 41-year-old with diabetes has two days of severe perianal pain, fever and a tender fluctuant swelling lateral to the anus. He is haemodynamically stable, with no crepitus or extensive necrosis, but cannot sit comfortably. He requests antibiotics alone because he wants to avoid a procedure.",
+    "ask": "Which management approach is most appropriate?",
+    "options": [
+      "Provide topical steroid cream and wait for the swelling to settle before considering drainage.",
+      "Prescribe oral antibiotics alone because drainage is unnecessary when the patient is haemodynamically stable.",
+      "Seek prompt surgical assessment for drainage, with antibiotics guided by systemic and patient risk.",
+      "Arrange elective outpatient colonoscopy before treating the abscess to exclude inflammatory bowel disease.",
+      "Attempt repeated blind needle aspiration in clinic without analgesia or assessment of abscess extent."
+    ],
+    "key": "C",
+    "explanations": [
+      "Topical steroids do not drain an abscess and may worsen infection. Severe pain, fluctuance and fever suggest a purulent collection needing source control.",
+      "Antibiotics alone often fail to eradicate a walled-off collection. Diabetes and fever may justify adjunct antibiotics but cannot replace indicated drainage.",
+      "Correct: acute perianal abscess warrants prompt surgical evaluation and incision/drainage. Add antibiotics for systemic infection, surrounding cellulitis, immunosuppression or other risk factors under local protocol.",
+      "Colonoscopy may be relevant later if Crohn disease is suspected but must not delay treatment of acute perianal sepsis. Source control takes priority.",
+      "Blind repeated aspiration may miss deeper collections or injure sphincter structures. Surgical assessment determines anatomy and the safest drainage approach."
+    ],
+    "pearl": "A drainable perianal abscess requires source control; antibiotics are adjuncts in selected cases.",
+    "pivot": "Disproportionate pain, crepitus, rapidly spreading erythema or shock suggests necrotising perineal infection requiring immediate surgery.",
+    "management": {
+      "steps": [
+        [
+          "Assess",
+          "Check sepsis, glucose, cellulitis and Fournier gangrene warning signs."
+        ],
+        [
+          "Drain",
+          "Arrange urgent surgical assessment and safe drainage of the collection."
+        ],
+        [
+          "Support",
+          "Provide analgesia, fluids if needed, glycaemic management and indicated antibiotics."
+        ],
+        [
+          "Review",
+          "Plan wound follow-up and investigate fistula or inflammatory bowel disease if recurrent."
+        ]
+      ],
+      "safety": "Do not treat a febrile fluctuant abscess with antibiotics alone or miss necrotising infection.",
+      "local": "Queensland Health general surgery emergency referral guidance for acute perianal abscess."
+    },
+    "source": "https://www.goldcoast.health.qld.gov.au/referrals/services/general-surgery"
+  },
+  {
+    "n": 99,
+    "domain": "Paediatric allergy & emergency medicine",
+    "skill": "Food protein-induced enterocolitis syndrome / delayed non-IgE reaction",
+    "context": "Advanced final-year infant allergy differentiation",
+    "stem": "A 7-month-old has repeated profuse vomiting, pallor and lethargy two hours after rice cereal for the second time. There are no hives, wheeze or immediate symptoms. He has cool extremities and capillary refill four seconds; glucose is normal. His first rice exposure caused a similar delayed episode.",
+    "ask": "Which treatment best matches the likely mechanism and severity?",
+    "options": [
+      "Give intramuscular adrenaline as the sole treatment because all food-triggered reactions are IgE mediated.",
+      "Start oral antihistamines alone and observe because absence of rash excludes severe illness.",
+      "Administer antibiotics immediately because delayed vomiting after food is always bacterial sepsis.",
+      "Provide urgent fluid resuscitation and antiemetic support for suspected FPIES with allergy follow-up.",
+      "Offer oral fluids only and discharge because respiratory signs are absent in this food reaction."
+    ],
+    "key": "D",
+    "explanations": [
+      "FPIES is delayed and non-IgE mediated; routine adrenaline does not treat its main mechanism. Adrenaline is appropriate if a separate true anaphylactic reaction occurs.",
+      "Antihistamines do not treat FPIES-associated vomiting and hypovolaemia. Absence of a rash does not imply a mild reaction when perfusion is poor.",
+      "Infection remains a differential in an ill infant, but reproducible delayed episodes after the same food without fever strongly suggest FPIES. Resuscitate first and investigate mimics as needed.",
+      "Correct: acute FPIES causes delayed vomiting, dehydration and sometimes shock without IgE skin or respiratory signs. Give IV isotonic fluids for poor perfusion, consider ondansetron and arrange specialist trigger avoidance.",
+      "Oral fluids may suffice for mild reactions, but delayed refill and lethargy indicate clinically significant hypovolaemia. Discharge without resuscitation is unsafe."
+    ],
+    "pearl": "FPIES typically causes repetitive vomiting one to four hours after food without urticaria; severe cases need fluids.",
+    "pivot": "Immediate wheeze, urticaria or airway compromise suggests IgE-mediated anaphylaxis requiring adrenaline.",
+    "management": {
+      "steps": [
+        [
+          "Resuscitate",
+          "Assess ABC, hydration, perfusion and glucose; give IV isotonic fluid for shock."
+        ],
+        [
+          "Treat symptoms",
+          "Provide age-appropriate antiemetic support and observe until recovery."
+        ],
+        [
+          "Clarify",
+          "Document food timing, reproducibility, lack of IgE features and alternative causes."
+        ],
+        [
+          "Prevent",
+          "Provide an ASCIA FPIES action plan and paediatric allergy/dietitian follow-up."
+        ]
+      ],
+      "safety": "Do not dismiss FPIES because there is no rash or replace fluid resuscitation with antihistamines.",
+      "local": "ASCIA FPIES guidance updated 2026 and RCH non-IgE food allergy guidance."
+    },
+    "source": "https://www.allergy.org.au/patients/food-other-adverse-reactions/food-protein-induced-enterocolitis-syndrome-fpies"
+  },
+  {
+    "n": 100,
+    "domain": "Cardiology & emergency assessment",
+    "skill": "Acute idiopathic pericarditis / NSAID and colchicine after excluding red flags",
+    "context": "Advanced final-year chest pain decisions",
+    "stem": "A 27-year-old has sharp central chest pain worse lying flat and improved leaning forward after a viral illness. ECG shows diffuse concave ST elevation with PR depression, troponin is not elevated and echo shows no significant effusion. He is afebrile, stable and has normal renal function.",
+    "ask": "Which treatment plan is most appropriate after excluding ACS and high-risk features?",
+    "options": [
+      "Give thrombolysis immediately because diffuse ST elevation always represents acute coronary occlusion.",
+      "Use prolonged high-dose corticosteroids alone as first-line treatment for uncomplicated viral pericarditis.",
+      "Prescribe antibiotics and anticoagulation routinely because pericardial inflammation is usually bacterial.",
+      "Observe without analgesia or follow-up because uncomplicated pericarditis never recurs or progresses.",
+      "Use an NSAID with colchicine when appropriate, plus activity restriction and follow-up."
+    ],
+    "key": "E",
+    "explanations": [
+      "Diffuse ST elevation can occur in pericarditis; thrombolysis without coronary occlusion evidence exposes the patient to bleeding. Evaluate ACS when clinical features are atypical.",
+      "Systemic corticosteroids are not routine first-line therapy for uncomplicated idiopathic/viral pericarditis and may increase recurrence risk. Reserve for selected contraindications or underlying conditions.",
+      "Most uncomplicated acute pericarditis is idiopathic or viral. Antibiotics are not indicated without bacterial infection, and anticoagulation may worsen selected bleeding complications.",
+      "Pericarditis can recur and may cause effusion or tamponade. Symptom control, exercise advice and follow-up remain important even when initial observations are stable.",
+      "Correct: NSAIDs relieve inflammation and pain while colchicine reduces recurrence when appropriate. Counsel about renal and gastrointestinal contraindications, restrict strenuous activity and arrange clinical review."
+    ],
+    "pearl": "After excluding dangerous chest-pain mimics, uncomplicated pericarditis is commonly treated with NSAID plus colchicine.",
+    "pivot": "Hypotension, large effusion, myocardial involvement or persistent fever requires urgent specialist or inpatient assessment.",
+    "management": {
+      "steps": [
+        [
+          "Exclude emergencies",
+          "Review ECG, troponin when indicated, echo and high-risk pericarditis features."
+        ],
+        [
+          "Treat",
+          "Use appropriate NSAID and colchicine with gastric protection when indicated."
+        ],
+        [
+          "Advise",
+          "Restrict strenuous exercise and explain warning signs for syncope, dyspnoea or worsening pain."
+        ],
+        [
+          "Review",
+          "Follow symptoms and inflammatory markers; repeat imaging if concerning features arise."
+        ]
+      ],
+      "safety": "Do not give thrombolysis solely for diffuse ST elevation or ignore hypotension suggesting tamponade.",
+      "local": "RACGP acute pericarditis review, NSAID and colchicine first-line approach."
+    },
+    "source": "https://www.racgp.org.au/afp/2017/november/pericarditis"
   }
 ]
