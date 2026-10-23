@@ -570,9 +570,9 @@
         ]
       ],
       "safety": "A rapid initial emergency rise must not become uncontrolled prolonged correction; osmotic demyelination is a risk.",
-      "local": "Australian hospital severe symptomatic hyponatraemia protocols; Royal Children's Hospital hyponatraemia principles."
+      "local": "Queensland Health 2026 electrolyte disturbances prescribing guidelines for adults, severe symptomatic hyponatraemia."
     },
-    "source": "https://www.rch.org.au/clinicalguide/guideline_index/hyponatraemia/",
+    "source": "https://www.health.qld.gov.au/clinical-practice/guidelines-procedures/medicines/safety/electrolyte-disturbances/hypo",
     "context": "Advanced integrated clinical decisions"
   },
   {
@@ -714,9 +714,9 @@
         ]
       ],
       "safety": "Do not delay the first antibiotic dose to wait for imaging, blood culture transport or an obvious infection focus.",
-      "local": "Australian hospital febrile neutropenia guidance; RCH FN guideline illustrates urgent antibiotic timing."
+      "local": "eviQ endorsed Australasian neutropenic fever assessment and initial antimicrobial guidance, v7."
     },
-    "source": "https://www.rch.org.au/clinicalguide/guideline_index/febrile_neutropenia/",
+    "source": "https://www.eviq.org.au/clinical-resources/oncological-emergencies/123-neutropenic-fever-patient-evaluation-risk-as",
     "context": "Advanced integrated clinical decisions"
   }
 ]
