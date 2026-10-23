@@ -1,0 +1,242 @@
+[
+  {
+    "n": 1,
+    "domain": "Neonatology & paediatric surgery",
+    "skill": "Necrotising enterocolitis / portal venous gas and shock",
+    "context": "Advanced integrated clinical decisions",
+    "stem": "A 27-week preterm infant on day 14 of life develops increasing abdominal distension, bilious gastric aspirates and blood-streaked stool. Temperature falls to 35.5°C and capillary refill is 5 seconds. Abdominal radiography reveals pneumatosis intestinalis and portal venous gas; no free intraperitoneal air is seen.",
+    "ask": "Which initial management is most appropriate?",
+    "options": [
+      "Stop enteral feeds, decompress the stomach, resuscitate and begin IV antibiotics with surgical input.",
+      "Continue small-volume milk feeds because the radiograph lacks free air and no perforation is visible.",
+      "Treat presumed feeding intolerance with a different formula and observe for another bloody stool.",
+      "Perform urgent bedside contrast enema before antibiotics to exclude a colonic obstructive lesion.",
+      "Administer antidiarrhoeal therapy to prevent further fluid loss while waiting for repeat radiographs."
+    ],
+    "key": "A",
+    "explanations": [
+      "Correct: pneumatosis and portal venous gas with systemic illness strongly indicate NEC. Stop feeds, use gastric decompression, resuscitate, collect cultures and initiate broad-spectrum IV antimicrobial therapy; urgently discuss the infant with neonatal intensive care and paediatric surgery.",
+      "Free air indicates perforation, but serious NEC is present before perforation occurs. Continuing feeds may worsen gut injury and septic physiology.",
+      "Formula intolerance does not explain portal venous gas and haemodynamic compromise. Switching milk alone dangerously delays infection and bowel-ischaemia management.",
+      "Contrast enema is not the initial diagnostic or treatment step in a critically ill infant with radiographic NEC and may create unnecessary perforation risk.",
+      "Antidiarrhoeal treatment does not address bowel inflammation, necrosis or sepsis. The infant requires organ support and serial abdominal assessment."
+    ],
+    "pearl": "Pneumatosis intestinalis and portal venous gas in a sick preterm neonate are NEC red flags even without free air.",
+    "pivot": "A clinically stable premature baby with transient gastric residuals and normal abdominal findings may have feeding intolerance rather than NEC, but serial reassessment remains important.",
+    "management": {
+      "steps": [
+        [
+          "Stabilise",
+          "Assess ABCs, perfusion, glucose, blood gas and lactate; support circulation and breathing."
+        ],
+        [
+          "Rest bowel",
+          "Keep nil by mouth, decompress stomach and monitor abdominal examination and girth."
+        ],
+        [
+          "Treat infection",
+          "Obtain cultures and start broad-spectrum IV antibiotics under NICU protocol."
+        ],
+        [
+          "Monitor for surgery",
+          "Seek paediatric surgical review and repeat imaging for perforation or deterioration."
+        ]
+      ],
+      "safety": "Absence of pneumoperitoneum does not rule out severe bowel necrosis; do not continue feeds in likely NEC.",
+      "local": "Royal Children's Hospital neonatal intensive care NEC guidance."
+    },
+    "source": "https://www.rch.org.au/uploadedFiles/Main/Content/picu/PICU%20Guidelines%20final%20December%206%202017.pdf"
+  },
+  {
+    "n": 2,
+    "domain": "Toxicology & cardiology",
+    "skill": "Digoxin accumulation / serious bradyarrhythmia requiring antidote",
+    "context": "Advanced integrated clinical decisions",
+    "stem": "A 79-year-old with atrial fibrillation takes digoxin and has developed acute kidney injury during a gastroenteritis illness. She reports nausea and yellow-green visual halos and is now confused. ECG shows a heart rate of 32/min with high-grade atrioventricular block; BP is 76/40 mmHg, potassium is 5.9 mmol/L and digoxin concentration is elevated.",
+    "ask": "Which treatment best addresses life-threatening toxicity?",
+    "options": [
+      "Administer a further digoxin dose to restore atrioventricular nodal stability after dehydration.",
+      "Withhold digoxin and urgently administer digoxin-specific antibody fragments under toxicology guidance.",
+      "Start a calcium-channel blocker to restore conduction and manage the slow ventricular response.",
+      "Arrange routine outpatient repeat digoxin concentration after resolving diarrhoea with oral fluids.",
+      "Give potassium supplementation before treating the dysrhythmia because diuretics may have lowered stores."
+    ],
+    "key": "B",
+    "explanations": [
+      "Further digoxin would intensify nodal blockade and arrhythmia risk; reduced renal clearance is likely driving accumulation.",
+      "Correct: immediately stop digoxin, support ABCs and perfusion, obtain continuous ECG and call clinical toxicology for digoxin immune Fab. Fab is indicated for life-threatening dysrhythmias or bradycardia with hypotension; renal dysfunction and potassium abnormalities require close monitoring.",
+      "A calcium-channel blocker can worsen AV block and hypotension. Toxic conduction disturbances need antidote management, not further nodal blockade.",
+      "Outpatient management is unsafe with shock and high-grade AV block. The serum level must be interpreted alongside serious clinical toxicity and renal failure.",
+      "Potassium is elevated rather than deficient and supplementation would worsen arrhythmia risk. Potassium status should be monitored during Fab treatment rather than assumed."
+    ],
+    "pearl": "In digoxin toxicity, life-threatening bradyarrhythmia with hypotension is an indication for urgent digoxin immune Fab, not simply withholding the next dose.",
+    "pivot": "Mild digoxin accumulation without dysrhythmia or serious symptoms may respond to stopping the drug, checking renal function and observation under medical guidance.",
+    "management": {
+      "steps": [
+        [
+          "Stabilise",
+          "Manage airway, hypotension and ECG monitoring; assess electrolyte abnormalities."
+        ],
+        [
+          "Stop culprit",
+          "Withhold digoxin and review renal function, interacting medicines and dehydration."
+        ],
+        [
+          "Reverse",
+          "Contact Australian poisons/toxicology and administer digoxin immune Fab by specialist-directed protocol."
+        ],
+        [
+          "Monitor",
+          "Track cardiac rhythm, renal status and potassium closely; interpret subsequent total digoxin levels cautiously."
+        ]
+      ],
+      "safety": "Do not give additional AV-nodal blockers for digoxin-related bradycardia; serious toxicity needs urgent resuscitation.",
+      "local": "Queensland Poisons Information Centre digoxin immune Fab antidote guidance."
+    },
+    "source": "https://www.poisonsinfo.health.qld.gov.au/for-health-professionals/antidote-stocking-recommendations/digoxin-immune-fab"
+  },
+  {
+    "n": 3,
+    "domain": "Oncology & neurology",
+    "skill": "Malignant spinal cord compression / early dexamethasone and MRI",
+    "context": "Advanced integrated clinical decisions",
+    "stem": "A 65-year-old with metastatic prostate cancer reports progressive upper-back pain for two weeks, and over the past day has developed gait unsteadiness and difficulty initiating urination. Examination reveals bilateral leg weakness and a sensory level at the umbilicus. There is no fever or recent injury.",
+    "ask": "Which immediate pathway is most appropriate?",
+    "options": [
+      "Arrange outpatient physiotherapy and review pain control after the next oncology appointment.",
+      "Treat as uncomplicated radiculopathy with oral analgesia and no emergency spinal imaging.",
+      "Begin urgent dexamethasone with specialist advice, arrange spinal MRI and urgent oncology/spinal review.",
+      "Give prophylactic antibiotics before imaging because metastatic cancer makes spinal infection inevitable.",
+      "Order a routine bone scan first and delay steroids until the tissue diagnosis is reconfirmed."
+    ],
+    "key": "C",
+    "explanations": [
+      "New weakness, sensory level and bladder changes in known metastatic cancer strongly suggest cord compression; waiting for routine review risks irreversible neurological loss.",
+      "Simple radiculopathy cannot safely explain bilateral weakness, sensory level and urinary changes in a person with vertebral metastasis risk.",
+      "Correct: activate the malignant spinal cord compression pathway, administer prompt dexamethasone per local protocol when neurological signs are present, arrange urgent whole-spine MRI and coordinate oncology, radiation oncology and spinal surgery.",
+      "Spinal infection remains a differential but cancer alone is not a reason for antibiotic prophylaxis. Steroid treatment and imaging should address the likely compressive lesion.",
+      "Bone scan detects osseous disease but cannot adequately assess cord impingement or urgent decompression needs. Tissue confirmation must not delay treating neurologic compromise."
+    ],
+    "pearl": "New motor weakness or bladder changes in a patient with metastatic cancer are malignant spinal cord compression until urgently excluded.",
+    "pivot": "Stable bone pain without new neurological signs may follow planned imaging and analgesia optimization, but rapidly evolving deficits mandate emergency care.",
+    "management": {
+      "steps": [
+        [
+          "Recognise",
+          "Document motor, sensory, gait and bladder deficits with exact timing and pain history."
+        ],
+        [
+          "Protect cord",
+          "Start specialist-directed dexamethasone promptly when MSCC is suspected with neurological symptoms."
+        ],
+        [
+          "Investigate",
+          "Arrange urgent MRI of the whole spine and senior oncology/spinal referral."
+        ],
+        [
+          "Definitive care",
+          "Determine radiotherapy, decompressive surgery and stabilisation options through multidisciplinary review."
+        ]
+      ],
+      "safety": "Do not wait for a bone scan or routine outpatient review when weakness or urinary dysfunction develops.",
+      "local": "Cancer Australia metastatic spinal cord compression assessment guidance."
+    },
+    "source": "https://www.canceraustralia.gov.au/sites/default/files/2024-11/cns_metastases_in_women_with_secondary_breast_cancer.pdf"
+  },
+  {
+    "n": 4,
+    "domain": "Obstetrics & sexual health",
+    "skill": "Syphilis in pregnancy / severe penicillin allergy",
+    "context": "Advanced integrated clinical decisions",
+    "stem": "A 28-week pregnant patient has positive treponemal testing and a high RPR titre consistent with new syphilis. She describes immediate anaphylaxis following penicillin treatment in childhood, confirmed in previous records. Fetal ultrasound is currently normal. She asks for doxycycline because it would be easier than admission.",
+    "ask": "Which treatment planning approach is most appropriate?",
+    "options": [
+      "Treat with oral doxycycline alone because it prevents fetal infection equally well at this gestation.",
+      "Defer treatment until after birth because a normal ultrasound shows no congenital infection.",
+      "Give azithromycin monotherapy because it is reliably active against all resistant syphilis strains.",
+      "Arrange urgent specialist-supervised penicillin desensitisation followed by stage-appropriate penicillin.",
+      "Treat only her partner because maternal antibiotics after the second trimester cannot benefit the fetus."
+    ],
+    "key": "D",
+    "explanations": [
+      "Doxycycline is not an appropriate replacement for penicillin in pregnancy with fetal syphilis risk, and alternative agents have insufficient evidence for reliably preventing congenital disease.",
+      "Congenital syphilis may develop despite an initially normal fetal ultrasound. Prompt maternal treatment is essential and can prevent adverse fetal outcomes.",
+      "Macrolide resistance and unreliable placental treatment make azithromycin a poor substitute for appropriate penicillin-based treatment.",
+      "Correct: consult obstetrics and sexual health/infectious diseases urgently, confirm allergy details, and organise monitored desensitisation followed by benzathine penicillin according to clinical stage. Arrange partner treatment, fetal assessment and serological follow-up.",
+      "Treating partners prevents reinfection but does not clear the patient's infection or protect her fetus. Maternal treatment remains beneficial and time-sensitive."
+    ],
+    "pearl": "Penicillin is the treatment of choice for syphilis in pregnancy; genuine severe allergy requires specialist desensitisation rather than routine substitution.",
+    "pivot": "A low-risk undocumented allergy label may allow structured allergy assessment and delabelling rather than formal desensitisation, depending on specialist evaluation.",
+    "management": {
+      "steps": [
+        [
+          "Stage disease",
+          "Confirm testing, prior treatment, risk factors and gestational age; seek urgent specialist advice."
+        ],
+        [
+          "Address allergy",
+          "Verify anaphylaxis history and plan supervised penicillin desensitisation when indicated."
+        ],
+        [
+          "Treat fully",
+          "Give stage-appropriate penicillin regimen and discuss partner treatment and reinfection prevention."
+        ],
+        [
+          "Follow",
+          "Perform recommended maternal RPR monitoring, fetal assessment and neonatal follow-up."
+        ]
+      ],
+      "safety": "Do not rely on doxycycline or macrolides to prevent congenital syphilis in pregnancy.",
+      "local": "Australian STI Management Guidelines for syphilis and pregnancy, plus specialist penicillin-allergy services."
+    },
+    "source": "https://sti.guidelines.org.au/sexually-transmissible-infections/syphilis/"
+  },
+  {
+    "n": 5,
+    "domain": "Psychiatry & mood disorders",
+    "skill": "Antidepressant-emergent mania / medication-induced mood switch",
+    "context": "Advanced integrated clinical decisions",
+    "stem": "A 35-year-old diagnosed with bipolar I disorder has been taking lithium regularly. Sertraline was added three weeks ago for depressive symptoms. He now sleeps three hours nightly without fatigue, has impulsively spent his savings, speaks rapidly and insists he has extraordinary business abilities. There is no intoxication or delirium.",
+    "ask": "What is the best next medication and safety approach?",
+    "options": [
+      "Increase sertraline because mood elevation signifies partial response with residual agitation.",
+      "Continue antidepressant unchanged and book review in six weeks because lithium prevents all switching.",
+      "Give only a sedative for sleep and avoid examining whether treatment triggered mania.",
+      "Discontinue lithium because antidepressants are safer monotherapy for bipolar I depressive episodes.",
+      "Review and stop the antidepressant with specialist input, optimise antimanic care and assess safety."
+    ],
+    "key": "E",
+    "explanations": [
+      "Increasing a suspected switch-triggering antidepressant may worsen mania and risky behaviour. The new symptom cluster warrants immediate treatment review.",
+      "Lithium lowers mania risk but does not guarantee prevention of an antidepressant-emergent switch. Delayed follow-up allows financial, interpersonal and safety harms.",
+      "Short-term sedation may be an adjunct for agitation or insomnia but does not treat the manic episode or correct the triggering pharmacology.",
+      "Stopping lithium removes antimanic protection and antidepressant monotherapy is generally avoided in bipolar I disorder. Treatment should reinforce mood stabilisation instead.",
+      "Correct: assess severity, capacity, spending/impulsive risks and psychosis; discuss discontinuing sertraline while optimising therapeutic lithium and/or using an antipsychotic according to psychiatric review. Arrange close follow-up or inpatient care if significant risk."
+    ],
+    "pearl": "Emerging mania after an antidepressant in bipolar I calls for prompt drug review and antimanic treatment, not escalation of antidepressant monotherapy.",
+    "pivot": "Mild insomnia without mood elevation, pressured speech or risky behaviour may reflect anxiety or activation rather than full mania, but still requires careful monitoring.",
+    "management": {
+      "steps": [
+        [
+          "Recognise",
+          "Assess sleep, grandiosity, activity, pressured speech, risky acts, psychosis and suicidality."
+        ],
+        [
+          "Review medicines",
+          "Stop the antidepressant with psychiatric guidance and check lithium concentration, renal and thyroid status."
+        ],
+        [
+          "Treat mania",
+          "Optimise mood stabiliser and/or appropriate antipsychotic, with short-term agitation management when necessary."
+        ],
+        [
+          "Safety-plan",
+          "Assess need for admission, financial safeguards, collateral history and close follow-up."
+        ]
+      ],
+      "safety": "Antidepressant monotherapy is inappropriate for bipolar I, and a switch can progress despite ongoing lithium.",
+      "local": "RANZCP clinical practice guidelines for mood disorders, antidepressant-induced manic switch guidance."
+    },
+    "source": "https://www.ranzcp.org/getmedia/a8c79505-c0b5-46b4-9f27-67f79e047674/RANZCP-mood-disorders-clinical-practice-guideline-2020.pdf"
+  }
+]
