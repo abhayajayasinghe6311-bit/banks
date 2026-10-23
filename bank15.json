@@ -1198,5 +1198,245 @@
       "local": "Queensland Clinical Guidelines Instrumental vaginal birth: monitor voiding and assess retention after six hours."
     },
     "source": "https://www.health.qld.gov.au/__data/assets/pdf_file/0033/736917/g-instrumental.PDF"
+  },
+  {
+    "n": 26,
+    "domain": "Psychiatry & general medicine",
+    "skill": "Corticosteroid-induced psychosis / reversible medication trigger",
+    "context": "Advanced integrated clinical decisions",
+    "stem": "A 47-year-old with an inflammatory lung condition began prednisolone 60 mg daily eight days ago. She now sleeps two hours a night, has grandiose beliefs and hears a voice commenting on her actions. She has no psychiatric history. Temperature, glucose, oxygenation and initial infection screen are normal; she is taking no other new drugs.",
+    "ask": "Which management strategy is most appropriate?",
+    "options": [
+      "Assess safety and medical causes, then urgently review steroid dose with the treating team.",
+      "Diagnose lifelong schizophrenia immediately because hallucinations exclude medication-induced psychiatric syndromes.",
+      "Stop all corticosteroids abruptly without discussion because psychiatric symptoms always resolve after withdrawal.",
+      "Provide reassurance only because steroid-associated mood changes never require psychiatric treatment.",
+      "Increase the prednisolone dose because inflammation is the most likely cause of the hallucinations."
+    ],
+    "key": "A",
+    "explanations": [
+      "Correct: new manic and psychotic symptoms shortly after high-dose glucocorticoid exposure raise concern for a steroid-induced syndrome. Assess delirium, infection and substance causes, evaluate risk, urgently coordinate steroid reduction or substitution when medically safe, and consider short-term antipsychotic treatment and admission.",
+      "A first episode after a clear medication change requires evaluation for a substance/medication-induced syndrome before assigning a primary psychotic disorder. The diagnosis should be revisited longitudinally.",
+      "Abrupt cessation may precipitate adrenal insufficiency or relapse of the underlying inflammatory disease. The responsible specialist should guide tapering or steroid-sparing options.",
+      "Symptoms can include dangerous agitation, insomnia, impaired judgment or suicidality. Observation alone is insufficient when reality testing and function are compromised.",
+      "Higher steroid exposure can worsen psychiatric adverse effects and is not a treatment for them. Underlying inflammatory disease should be assessed separately."
+    ],
+    "pearl": "High-dose systemic corticosteroids can precipitate mania, psychosis or delirium within days to weeks; always review recent medicines.",
+    "pivot": "Persistent psychosis predating steroid exposure or continuing well beyond treatment requires reassessment for a primary psychiatric or neurological disorder.",
+    "management": {
+      "steps": [
+        [
+          "Secure safety",
+          "Assess suicidality, agitation, insight, capacity, sleep and need for inpatient observation."
+        ],
+        [
+          "Exclude mimics",
+          "Review glucose, infection, electrolytes, intoxication, delirium and other medication effects."
+        ],
+        [
+          "Modify trigger",
+          "Coordinate safe steroid reduction or substitution with the treating medical specialist."
+        ],
+        [
+          "Treat symptoms",
+          "Seek psychiatric input for short-term antipsychotic or other treatment and arrange follow-up."
+        ]
+      ],
+      "safety": "Never abruptly discontinue prolonged or essential glucocorticoid therapy without assessing adrenal and disease risks.",
+      "local": "Australian Commission on Safety and Quality in Health Care corticosteroid medicine information: psychiatric reactions and dose reduction."
+    },
+    "source": "https://www.safetyandquality.gov.au/medicine-finder/depo-medrol"
+  },
+  {
+    "n": 27,
+    "domain": "Rheumatology & preconception GP",
+    "skill": "Rheumatoid arthritis / methotrexate preconception counselling",
+    "context": "Advanced integrated clinical decisions",
+    "stem": "A 29-year-old with well-controlled rheumatoid arthritis takes methotrexate 15 mg weekly and folic acid. She wants to conceive in the next two months and has stopped contraception herself. She has no current joint swelling and is reluctant to change therapy because it has kept her symptom-free for years.",
+    "ask": "What is the best next step in shared management?",
+    "options": [
+      "Continue methotrexate during conception because weekly dosing is too low to cause fetal harm.",
+      "Reinstate reliable contraception and arrange specialist transition to pregnancy-compatible treatment.",
+      "Stop all disease-modifying drugs immediately and advise pregnancy regardless of arthritis control.",
+      "Replace folic acid with a prenatal multivitamin while continuing methotrexate through the first trimester.",
+      "Delay counselling until pregnancy is confirmed because preconception changes have little clinical benefit."
+    ],
+    "key": "B",
+    "explanations": [
+      "Methotrexate is an antifolate teratogen and is contraindicated in pregnancy, even at common rheumatology doses. Stable disease does not remove fetal risk.",
+      "Correct: advise contraception while a rheumatologist plans methotrexate cessation, the product-specific washout period and a suitable alternative. Optimise disease control before attempting conception and discuss folate and medication safety.",
+      "Stopping all disease-modifying treatment without a plan can trigger an inflammatory flare, which also creates pregnancy risk. Specialist-supported substitution is preferable.",
+      "Prenatal vitamins cannot neutralise methotrexate teratogenicity. Folic acid is used with methotrexate for toxicity reduction, not to make pregnancy exposure safe.",
+      "Preconception counselling allows safer timing, alternative therapy and risk reduction before exposure occurs. Waiting for a positive test misses this opportunity."
+    ],
+    "pearl": "Methotrexate is contraindicated in pregnancy; preconception planning must address washout and safe disease control together.",
+    "pivot": "A patient already taking a pregnancy-compatible disease-modifying agent may continue it under specialist review rather than stopping all treatment.",
+    "management": {
+      "steps": [
+        [
+          "Prevent exposure",
+          "Advise reliable contraception until a safe conception plan and washout interval are completed."
+        ],
+        [
+          "Coordinate",
+          "Refer to rheumatology for methotrexate cessation and selection of pregnancy-compatible therapy."
+        ],
+        [
+          "Optimise",
+          "Check disease activity, folate needs, vaccinations and other pregnancy-related medication risks."
+        ],
+        [
+          "Follow",
+          "Arrange preconception review and early antenatal liaison once conception is planned."
+        ]
+      ],
+      "safety": "Australian product information can specify different post-methotrexate contraception intervals; use the current formulation guidance and specialist advice.",
+      "local": "Arthritis Australia preconception advice and Australian Prescriber review of immunomodulatory drugs in pregnancy."
+    },
+    "source": "https://myra.org.au/article/your-arthritis-future-arthritis/pregnancy"
+  },
+  {
+    "n": 28,
+    "domain": "Paediatric cardiology & infectious diseases",
+    "skill": "PIMS-TS / shock and myocardial involvement",
+    "context": "Advanced integrated clinical decisions",
+    "stem": "An 8-year-old has six days of fever, diarrhoea, conjunctival injection and diffuse rash. His family reports SARS-CoV-2 infection four weeks earlier. BP is 77/39 mmHg, lactate is 4 mmol/L, CRP and D-dimer are high, troponin is elevated and echocardiography shows reduced left ventricular function.",
+    "ask": "Which next management pathway best fits this presentation?",
+    "options": [
+      "Treat as uncomplicated Kawasaki disease at home because the skin findings are typical.",
+      "Give repeated large crystalloid boluses until BP normalises without reassessing ventricular function.",
+      "Activate paediatric critical care, treat possible sepsis and assess PIMS-TS with cardiac specialists.",
+      "Discharge after a normal respiratory swab because active SARS-CoV-2 infection is absent.",
+      "Delay treatment until coronary artery aneurysms appear because they are required for diagnosis."
+    ],
+    "key": "C",
+    "explanations": [
+      "Mucocutaneous signs overlap with Kawasaki disease, but shock and myocardial dysfunction require hospital critical care and a broader inflammatory and sepsis evaluation.",
+      "Indiscriminate fluid loading may worsen pulmonary oedema when ventricular function is impaired. Carefully reassessed fluids and early vasoactive support may be required.",
+      "Correct: post-infectious PIMS-TS can cause shock, gastrointestinal symptoms and cardiac injury. Resuscitate with paediatric ICU/cardiology involvement, cover possible bacterial sepsis initially and consider IVIg and corticosteroids after specialist multidisciplinary assessment.",
+      "PIMS-TS usually follows rather than coincides with acute SARS-CoV-2 infection; PCR can be negative. A negative swab does not exclude the syndrome.",
+      "Coronary changes are not necessary for PIMS-TS diagnosis. Delaying organ support or anti-inflammatory treatment until aneurysms develop risks further shock and cardiac injury."
+    ],
+    "pearl": "PIMS-TS often appears weeks after COVID-19, with fever, gastrointestinal symptoms, shock and myocardial dysfunction.",
+    "pivot": "A stable child with isolated prolonged fever and mucocutaneous findings but no shock or myocardial injury may follow a Kawasaki-focused evaluation.",
+    "management": {
+      "steps": [
+        [
+          "Resuscitate",
+          "Call PICU, monitor perfusion and provide cautiously titrated fluids and vasoactive support when needed."
+        ],
+        [
+          "Investigate",
+          "Obtain cultures, inflammatory markers, troponin, BNP, coagulation, ECG and echocardiography."
+        ],
+        [
+          "Cover infection",
+          "Start empirical IV antibiotics while serious bacterial sepsis remains possible."
+        ],
+        [
+          "Treat inflammation",
+          "Discuss IVIg, corticosteroids and antithrombotic strategy with infectious diseases, rheumatology and cardiology."
+        ]
+      ],
+      "safety": "Do not give unlimited fluid boluses to a child with shock and depressed LV function; monitor for pulmonary oedema.",
+      "local": "Perth Children's Hospital Clinical Care of Paediatric Patients with COVID-19, PIMS-TS guidance and local multidisciplinary protocol."
+    },
+    "source": "https://pch.health.wa.gov.au/For-health-professionals/Clinical-Practice-Guidelines/Clinical-care-of-paediatric-patients-with-COVID-19"
+  },
+  {
+    "n": 29,
+    "domain": "Ophthalmology & primary care",
+    "skill": "Herpes zoster ophthalmicus / nasociliary involvement",
+    "context": "Advanced integrated clinical decisions",
+    "stem": "A 63-year-old presents with two days of painful unilateral forehead vesicles and a rash extending to the tip of the nose. The right eye is watery and photophobic, but visual acuity is only mildly reduced. She is immunocompetent and has no prior history of eye disease. A colleague suggests topical antibiotic ointment alone.",
+    "ask": "What is the safest management priority?",
+    "options": [
+      "Treat with topical antibiotics alone because nasal vesicles are not linked to ocular disease.",
+      "Delay treatment until vesicles crust because antiviral therapy is ineffective before healing begins.",
+      "Arrange routine optometry review after one week if visual acuity continues to deteriorate.",
+      "Start prompt systemic antiviral therapy and arrange urgent ophthalmological assessment.",
+      "Give topical corticosteroids immediately without slit-lamp review to prevent ocular scarring."
+    ],
+    "key": "D",
+    "explanations": [
+      "Topical antibiotics do not treat varicella-zoster virus or prevent keratitis and uveitis. Nasal-tip involvement raises concern for nasociliary nerve involvement.",
+      "Systemic antivirals are most useful when initiated early and can still be appropriate later with ocular disease. Waiting for crusting misses a therapeutic opportunity.",
+      "Photophobia and eye watering with a V1 rash indicate possible ocular inflammation requiring prompt evaluation; visual acuity can be preserved early.",
+      "Correct: suspect herpes zoster ophthalmicus with Hutchinson sign, initiate systemic antivirals promptly and contact ophthalmology urgently for slit-lamp examination and follow-up. Evaluate immunosuppression and complications.",
+      "Topical steroids can worsen some corneal infections and should be directed by an ophthalmologist after assessing ocular involvement. They are not a substitute for antiviral therapy."
+    ],
+    "pearl": "Vesicles on the tip of the nose signal nasociliary involvement and increase the risk of herpes zoster ophthalmicus.",
+    "pivot": "A localised thoracic shingles eruption without ocular or neurological involvement usually follows a less urgent outpatient antiviral pathway.",
+    "management": {
+      "steps": [
+        [
+          "Assess",
+          "Document V1 distribution, Hutchinson sign, vision, photophobia and ocular redness."
+        ],
+        [
+          "Treat",
+          "Start appropriate systemic antiviral treatment promptly after renal function and contraindication review."
+        ],
+        [
+          "Refer",
+          "Contact ophthalmology urgently for corneal, anterior chamber and intraocular assessment."
+        ],
+        [
+          "Follow",
+          "Provide pain management, infection-control advice and clear return precautions for visual changes."
+        ]
+      ],
+      "safety": "Do not prescribe unsupervised topical ocular steroids for suspected herpetic eye disease.",
+      "local": "Victorian Department of Health Protocol for Management of Herpes Zoster, February 2026."
+    },
+    "source": "https://www.health.vic.gov.au/sites/default/files/2026-02/protocol-for-management-of-herpes-zoster-shingles.pdf"
+  },
+  {
+    "n": 30,
+    "domain": "Neonatology & metabolic disorders",
+    "skill": "Classic galactosaemia / jaundice and E. coli sepsis after milk feeds",
+    "context": "Advanced integrated clinical decisions",
+    "stem": "A 10-day-old term infant develops poor feeding, vomiting, jaundice and lethargy after initially appearing well. Examination shows hepatomegaly and cataracts; blood cultures later grow E. coli. Liver enzymes are elevated and coagulation is prolonged. The infant has been exclusively breastfed and the newborn screening result is pending.",
+    "ask": "Which disease-specific action is most appropriate alongside sepsis treatment?",
+    "options": [
+      "Continue breastfeeding because breast milk is protective against all neonatal metabolic disorders.",
+      "Switch to a lactose-containing formula to maintain calorie intake during intravenous antibiotic treatment.",
+      "Wait for newborn screening confirmation before altering feeds because false-positive results are common.",
+      "Treat with phototherapy alone because jaundice is the major clinical manifestation of the illness.",
+      "Stop galactose exposure immediately and initiate lactose-free feeding with metabolic specialist input."
+    ],
+    "key": "E",
+    "explanations": [
+      "Breast milk contains lactose, which yields galactose and can worsen organ toxicity in classic galactosaemia. Feeding advice differs from most neonatal illnesses.",
+      "Standard cow-milk formulas contain lactose and can perpetuate galactose accumulation. A specialist-recommended lactose-free formula is needed.",
+      "The constellation of liver dysfunction, cataracts and E. coli sepsis strongly suggests classic galactosaemia; delaying dietary treatment while awaiting screening risks harm.",
+      "Phototherapy may be needed for elevated unconjugated bilirubin but does not address the enzyme defect, liver injury or infection. Sepsis and metabolic treatment are both urgent.",
+      "Correct: suspect GALT deficiency, stop breast milk and lactose-containing formula immediately, start a suitable galactose-free formula, confirm enzymatic/metabolite testing and treat E. coli sepsis and organ dysfunction."
+    ],
+    "pearl": "A newborn with jaundice, liver failure, cataracts and E. coli sepsis after milk feeding should prompt urgent suspicion of classic galactosaemia.",
+    "pivot": "A thriving jaundiced neonate with normal feeding, normal direct bilirubin and no systemic illness is more likely to have physiological jaundice.",
+    "management": {
+      "steps": [
+        [
+          "Stabilise",
+          "Admit for neonatal sepsis care, support circulation and check glucose, coagulation and liver function."
+        ],
+        [
+          "Remove trigger",
+          "Stop breast milk and lactose-containing formula and initiate appropriate lactose/galactose-free nutrition."
+        ],
+        [
+          "Confirm",
+          "Send newborn screen follow-up, RBC GALT activity and galactose-1-phosphate testing with metabolic advice."
+        ],
+        [
+          "Continue care",
+          "Treat proven infection, monitor organ function and arrange long-term metabolic and developmental follow-up."
+        ]
+      ],
+      "safety": "Do not wait for the newborn screening result before restricting galactose when classic disease is strongly suspected.",
+      "local": "WA Newborn Bloodspot Screening Program: Galactosaemia, clinical features and lactose-free treatment."
+    },
+    "source": "https://www.health.wa.gov.au/Articles/U_Z/WA-Newborn-Bloodspot-Screening-Program/Conditions-screened-for-in-WA/Galactosaemia"
   }
 ]
