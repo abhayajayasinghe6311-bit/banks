@@ -3,7 +3,7 @@
 Status: IN PROGRESS, do not merge the branch or add incomplete banks to `manifest.json`.
 
 - Branch: `codex/banks-13-15-draft-20261023`
-- Bank 13: 30/100 authored in `bank13.json`
+- Bank 13: 35/100 authored in `bank13.json`
 - Bank 14: 0/100
 - Bank 15: 0/100
 - Bank 1–10 content must remain unchanged.
@@ -16,12 +16,12 @@ Status: IN PROGRESS, do not merge the branch or add incomplete banks to `manifes
 - Avoid exact repeats of bank11/12; vary specialty, cognitive task and complexity.
 - Before release, run structural and editorial checks, verify high-stakes doses/thresholds, update manifest counts, test Bank open/navigation/answers, then merge and publish.
 
-## Current QA (Bank 13 questions 1–30)
-- 30 questions, unique numbered 1–30.
-- Answer keys exactly balanced A=6, B=6, C=6, D=6, E=6.
+## Current QA (Bank 13 questions 1–35)
+- 35 questions, unique numbered 1–35.
+- Answer keys exactly balanced A=7, B=7, C=7, D=7, E=7.
 - Every question has five options, five option-specific explanations, four management stages, pearl, pivot, safety and source.
 - Answer-option word-length spread typically 1–5 words.
-- Remaining: 70 questions in Bank 13, then 100 each in Banks 14 and 15.
+- Remaining: 65 questions in Bank 13, then 100 each in Banks 14 and 15.
 
 Never imply the remaining content has been written or published until it actually is.
 
@@ -30,3 +30,9 @@ Never imply the remaining content has been written or published until it actuall
 - Checked five options and five distinct rationales, each with four management steps and safety advice.
 - Key position balanced, six of each A–E across 30 questions; option lengths checked (new additions have ≤3-word range per stem).
 - Main website mobile-resume patch was merged separately to main (PR #22). This question-bank draft remains unpublished.
+
+## Additional checkpoint 2026-10-23 (35 questions)
+- Added questions 31–35: acute testicular torsion, paediatric septic arthritis, incomplete cauda equina syndrome, neonatal HSV, and chronic lithium toxicity.
+- Cross-checked their key clinical decisions against RCH, NSW ACI, and Australian lithium prescribing/toxicology guidance.
+- 35 unique numbered questions; 7 correct answers in each letter A–E. New answers have comparable lengths (within 3 words of each other per question).
+- Live website mobile resume patch #23 was merged separately. Bank 13 remains a private draft branch, not in the published manifest.
