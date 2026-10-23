@@ -3838,5 +3838,485 @@
       "local": "WA Health gonorrhoea guidance and Australian STI Guidelines; local site-specific TOC policies may vary."
     },
     "source": "https://www.health.wa.gov.au/WA-STI-and-BBV-guidelines/Infections/Gonorrhoea"
+  },
+  {
+    "n": 81,
+    "domain": "Endocrinology & general practice",
+    "skill": "Thyroid nodule with suppressed TSH / functional imaging before biopsy",
+    "context": "Advanced final-year diagnostic sequencing",
+    "stem": "A 53-year-old has a newly detected 2.5-cm thyroid nodule, palpitations and mild weight loss. TSH is 0.02 mIU/L and free T4 is mildly elevated. Ultrasound shows a solid nodule without suspicious cervical lymph nodes. She has never received thyroid medication and is not pregnant.",
+    "ask": "Which investigation most appropriately guides the next diagnostic step?",
+    "options": [
+      "Arrange thyroid radionuclide scintigraphy to determine whether the nodule is autonomously functioning.",
+      "Perform immediate fine-needle aspiration before clarifying whether the nodule produces thyroid hormone.",
+      "Measure thyroid peroxidase antibodies alone because a positive result rules out nodular malignancy.",
+      "Request CT neck with iodinated contrast before any functional assessment or endocrinology discussion.",
+      "Repeat ultrasound after twelve months because suppressed TSH makes the nodule clinically insignificant."
+    ],
+    "key": "A",
+    "explanations": [
+      "Correct: suppressed TSH suggests hyperfunction and warrants radionuclide imaging to identify an autonomous hot nodule. Hyperfunctioning nodules have low malignancy risk and are generally not biopsied solely for size; discordant suspicious findings still require assessment.",
+      "Fine-needle aspiration decisions should incorporate TSH and functional imaging. Sampling a clearly hyperfunctioning nodule without evaluating thyroid function may be unnecessary, although suspicious nonfunctioning nodules require risk-based biopsy.",
+      "Thyroid antibodies can indicate autoimmune thyroid disease but do not determine whether a discrete nodule is hot or cold. Antibody positivity cannot exclude a coexisting malignancy.",
+      "CT with iodine may interfere with subsequent radionuclide assessment and is not the routine first test for a straightforward nodule with low TSH. Reserve cross-sectional imaging for anatomical concerns.",
+      "A suppressed TSH is an active diagnostic clue, not reassurance. Unassessed thyrotoxicosis may cause atrial fibrillation, bone loss and other complications."
+    ],
+    "pearl": "Low TSH changes thyroid-nodule work-up: assess autonomous function with scintigraphy before deciding on cytology.",
+    "pivot": "Normal or elevated TSH shifts emphasis toward ultrasound risk stratification and size-based FNA thresholds.",
+    "management": {
+      "steps": [
+        [
+          "Confirm biochemistry",
+          "Review TSH, free T4/T3, medications, pregnancy status and thyrotoxic symptoms."
+        ],
+        [
+          "Characterise function",
+          "Arrange radionuclide thyroid scan and correlate uptake with the ultrasound-defined lesion."
+        ],
+        [
+          "Choose intervention",
+          "Refer for endocrine advice on toxic adenoma treatment versus FNA of nonfunctioning suspicious lesions."
+        ],
+        [
+          "Protect patient",
+          "Assess arrhythmia, bone health and symptom burden; plan thyroid-function follow-up."
+        ]
+      ],
+      "safety": "Do not automatically biopsy a hyperfunctioning nodule or give iodinated contrast before considering its effect on scintigraphy.",
+      "local": "RACGP goitre investigation guidance; apply current ultrasound and FNA criteria with endocrine review."
+    },
+    "source": "https://www.racgp.org.au/afp/2012/august/goitre"
+  },
+  {
+    "n": 82,
+    "domain": "Gynaecology & sexual health",
+    "skill": "Persistent pelvic inflammatory disease / failed outpatient treatment",
+    "context": "Advanced final-year escalation decisions",
+    "stem": "A 25-year-old was treated three days ago for clinically diagnosed pelvic inflammatory disease with appropriate outpatient antibiotics. She remains febrile at 38.6°C with worsening pelvic pain and vomiting, and now has right adnexal tenderness. Pregnancy testing was negative initially; she reports taking the prescribed doses.",
+    "ask": "Which action is most appropriate after this inadequate clinical response?",
+    "options": [
+      "Continue the same oral regimen for another week without reassessment because PID resolves slowly.",
+      "Arrange urgent hospital assessment, imaging for complications and parenteral treatment as indicated.",
+      "Stop antibiotics and await repeat chlamydia and gonorrhoea NAAT before any further intervention.",
+      "Insert an intrauterine device now to reduce pelvic inflammation and prevent further ascending infection.",
+      "Offer simple analgesia and schedule a routine outpatient review after the full antibiotic course."
+    ],
+    "key": "B",
+    "explanations": [
+      "PID should show clinical improvement within 48–72 hours. Ongoing fever, vomiting and increasing pain suggest treatment failure, abscess, alternative diagnosis or poor oral absorption.",
+      "Correct: failure to improve within 72 hours warrants urgent reassessment, consideration of admission, pelvic ultrasound for tubo-ovarian abscess or alternative pathology and IV antibiotics or drainage when indicated.",
+      "A negative or pending NAAT does not exclude PID, which is a clinical and often polymicrobial diagnosis. Stopping treatment while waiting for tests risks progression and infertility.",
+      "An IUD is not a treatment for PID. Existing IUDs are not routinely removed at diagnosis, but new insertion during active infection is inappropriate.",
+      "Analgesia is supportive but does not address deterioration despite antibiotics. Delayed review risks rupture of a tubo-ovarian abscess, peritonitis or sepsis."
+    ],
+    "pearl": "PID without improvement by 48–72 hours needs reassessment for abscess, alternative diagnosis and treatment failure.",
+    "pivot": "A stable patient with rapidly improving pain and fever can usually complete outpatient therapy with safety-netting.",
+    "management": {
+      "steps": [
+        [
+          "Reassess urgently",
+          "Check vitals, pregnancy status, peritonism, adherence, STI exposure and sepsis features."
+        ],
+        [
+          "Image and sample",
+          "Obtain pelvic ultrasound and relevant blood tests and cultures without delaying indicated treatment."
+        ],
+        [
+          "Escalate care",
+          "Arrange inpatient IV antibiotics, gynaecology review and drainage or surgery if abscess or instability."
+        ],
+        [
+          "Prevent recurrence",
+          "Address partner testing, contact tracing, abstinence guidance and post-treatment review."
+        ]
+      ],
+      "safety": "Do not rely on negative cervical STI testing or wait for shock before escalating persistent PID.",
+      "local": "Melbourne Sexual Health Centre PID guideline; review response at approximately 72 hours."
+    },
+    "source": "https://www.mshc.org.au/health-professionals/treatment-guidelines/pelvic-inflammatory-disease-treatment-guidelines"
+  },
+  {
+    "n": 83,
+    "domain": "Paediatrics & orthopaedics",
+    "skill": "Early osteomyelitis / normal radiograph does not exclude infection",
+    "context": "Advanced final-year paediatric investigation",
+    "stem": "A 7-year-old has four days of focal tibial pain, fever 38.4°C and refusal to bear weight. The tibia is locally tender without a swollen joint. CRP is 72 mg/L and neutrophils are elevated; plain radiographs are normal. He is haemodynamically stable and blood cultures have been collected.",
+    "ask": "Which investigation is most appropriate to define suspected bone infection?",
+    "options": [
+      "Repeat the plain radiograph in six weeks because early osteomyelitis is usually radiologically obvious.",
+      "Use hip ultrasound alone because it reliably identifies marrow infection anywhere in the lower limb.",
+      "Arrange prompt MRI of the symptomatic tibia with paediatric and orthopaedic involvement.",
+      "Request bone-density scanning because pain and fever are typical of childhood metabolic bone disease.",
+      "Avoid further imaging until inflammatory markers normalise after a trial of oral analgesia."
+    ],
+    "key": "C",
+    "explanations": [
+      "Plain radiographs may remain normal for 7–10 days in osteomyelitis and cannot reliably exclude early marrow infection. Waiting weeks risks abscess and growth-plate injury.",
+      "Ultrasound is helpful for joint effusion or superficial collections but is not preferred for deep tibial marrow. A hip study does not target the symptomatic site.",
+      "Correct: MRI is preferred for suspected localised osteomyelitis and can identify marrow changes and subperiosteal abscess. Discuss timely antimicrobial therapy and potential drainage with paediatrics and orthopaedics.",
+      "Bone-density scanning assesses mineral status rather than acute bacterial infection. Fever, raised CRP and focal tenderness demand infection-directed evaluation.",
+      "Analgesia may relieve discomfort but does not treat infection. Normalising markers without definitive evaluation could conceal a progressing abscess."
+    ],
+    "pearl": "A normal early X-ray does not exclude osteomyelitis; MRI is preferred for localised marrow infection.",
+    "pivot": "An acutely swollen painful joint with limited passive range of motion suggests septic arthritis and urgent aspiration/source control.",
+    "management": {
+      "steps": [
+        [
+          "Assess severity",
+          "Evaluate sepsis, perfusion, neurovascular status and whether an adjacent joint is involved."
+        ],
+        [
+          "Investigate",
+          "Review blood cultures, inflammatory markers and targeted MRI; discuss aspiration if a collection is found."
+        ],
+        [
+          "Treat",
+          "Start appropriate antibiotics promptly with specialist guidance; arrange drainage if indicated."
+        ],
+        [
+          "Monitor recovery",
+          "Track fever, pain, mobility, CRP and complications; coordinate antibiotic duration and follow-up."
+        ]
+      ],
+      "safety": "Do not delay antibiotics in an unwell child solely to obtain MRI or aspiration; early X-rays may be normal.",
+      "local": "Royal Children's Hospital Melbourne bone and joint infection guideline."
+    },
+    "source": "https://www.rch.org.au/clinicalguide/guideline_index/Bone_and_joint_infection/"
+  },
+  {
+    "n": 84,
+    "domain": "Public health & infectious diseases",
+    "skill": "Hepatitis A exposure / immunocompromised household contact prophylaxis",
+    "context": "Advanced final-year prevention and public health",
+    "stem": "A 36-year-old with inflammatory bowel disease taking biologic immunosuppression lives with a partner diagnosed with acute hepatitis A yesterday. He has no previous hepatitis A vaccination or infection, is asymptomatic and last shared meals with the partner two days ago. The public health unit is coordinating household contact management.",
+    "ask": "Which post-exposure strategy is most appropriate in this high-risk contact?",
+    "options": [
+      "Observe for jaundice for one month because post-exposure prophylaxis is ineffective after close contact.",
+      "Give oral antibiotics for seven days because hepatitis A is acquired through household food handling.",
+      "Administer a live attenuated hepatitis A vaccine alone and avoid passive immunoglobulin entirely.",
+      "Arrange monovalent hepatitis A vaccine plus normal human immunoglobulin within fourteen days.",
+      "Offer hepatitis B immunoglobulin alone because it provides cross-protection against all hepatitis viruses."
+    ],
+    "key": "D",
+    "explanations": [
+      "Post-exposure prophylaxis is effective when given promptly, usually within 14 days. Immunosuppressed household contacts have increased risk of severe infection and require tailored prophylaxis.",
+      "Hepatitis A is viral; antibiotics do not prevent infection after exposure. Hygiene measures and immunoprophylaxis are the relevant interventions.",
+      "The available hepatitis A vaccine used for prophylaxis is inactivated, not live. In immunosuppressed contacts, vaccine alone may provide inadequate early protection.",
+      "Correct: NSW public health guidance recommends both monovalent hepatitis A vaccine and normal human immunoglobulin for susceptible immunosuppressed contacts within 14 days. Coordinate doses and separate injection sites with public health.",
+      "Hepatitis B immunoglobulin targets hepatitis B exposure and does not protect against hepatitis A. Distinguish the viruses and their specific post-exposure products."
+    ],
+    "pearl": "Hepatitis A PEP is time-sensitive; immunosuppressed close contacts may require both vaccine and normal immunoglobulin.",
+    "pivot": "A healthy immunocompetent younger adult contact generally needs monovalent hepatitis A vaccine alone if eligible.",
+    "management": {
+      "steps": [
+        [
+          "Verify exposure",
+          "Confirm household contact timing, immunisation history, immune status and current symptoms."
+        ],
+        [
+          "Coordinate PEP",
+          "Contact public health promptly for monovalent hepatitis A vaccine and normal immunoglobulin."
+        ],
+        [
+          "Reduce spread",
+          "Advise meticulous hand hygiene, food-handling precautions and monitoring for symptoms."
+        ],
+        [
+          "Complete prevention",
+          "Arrange subsequent vaccine dose for durable immunity and public-health contact follow-up."
+        ]
+      ],
+      "safety": "Do not miss the 14-day PEP window or substitute hepatitis B immunoglobulin for hepatitis A products.",
+      "local": "NSW Health hepatitis A control guideline; public-health unit coordinates prophylaxis."
+    },
+    "source": "https://www.health.nsw.gov.au/Infectious/controlguideline/Pages/hepa.aspx"
+  },
+  {
+    "n": 85,
+    "domain": "Psychiatry & mood disorders",
+    "skill": "Bipolar depression / avoid antidepressant monotherapy",
+    "context": "Advanced final-year longitudinal prescribing",
+    "stem": "A 29-year-old with well-documented bipolar I disorder presents with six weeks of low mood, anhedonia and hypersomnia. There is no current psychosis or acute suicide plan. He previously experienced a manic episode requiring admission after antidepressant treatment and is currently taking no maintenance medication. He asks to restart the same antidepressant alone.",
+    "ask": "Which treatment principle is most appropriate for this depressive episode?",
+    "options": [
+      "Restart the previous antidepressant alone because absence of current mania removes switch risk.",
+      "Use stimulant monotherapy because hypersomnia suggests attention-deficit disorder rather than bipolar depression.",
+      "Prescribe long-term benzodiazepines alone to improve sleep and prevent future manic episodes.",
+      "Avoid all pharmacological treatment until depressive symptoms spontaneously resolve over several months.",
+      "Arrange specialist-guided bipolar depression treatment rather than antidepressant monotherapy."
+    ],
+    "key": "E",
+    "explanations": [
+      "Antidepressant monotherapy can precipitate mania or mixed symptoms in bipolar disorder, particularly after a previous antidepressant-induced switch. A prior manic admission heightens caution.",
+      "Hypersomnia occurs in bipolar depression and does not establish ADHD. Stimulants without a bipolar treatment plan may destabilise mood and do not treat the underlying episode.",
+      "Benzodiazepines do not provide sustained treatment of bipolar depression or relapse prevention and carry dependence risks. They are not substitutes for evidence-based mood therapy.",
+      "Untreated bipolar depression can cause substantial impairment and suicide risk. A planned psychiatric assessment and appropriate pharmacological and psychosocial care are indicated.",
+      "Correct: RANZCP guidance advises avoiding antidepressant monotherapy in bipolar disorder. Specialist-led options include mood-stabilising and selected atypical antipsychotic treatments tailored to episode, history and adverse effects."
+    ],
+    "pearl": "Bipolar depression is not unipolar depression: antidepressant monotherapy is discouraged, especially after a switch.",
+    "pivot": "If agitation, decreased need for sleep, pressured speech or mixed symptoms appear, reassess urgently for mania and safety.",
+    "management": {
+      "steps": [
+        [
+          "Assess episode",
+          "Confirm bipolar subtype, current depression, mixed features, substance use and suicide risk."
+        ],
+        [
+          "Choose therapy",
+          "Coordinate psychiatrist-led mood-stabilising treatment and appropriate psychological support."
+        ],
+        [
+          "Monitor response",
+          "Review sleep, activation, suicidality, adherence, metabolic and medication-specific adverse effects."
+        ],
+        [
+          "Prevent relapse",
+          "Develop an early-warning plan, psychoeducation, routine follow-up and family involvement when appropriate."
+        ]
+      ],
+      "safety": "Do not prescribe an antidepressant alone to a patient with bipolar I and prior treatment-emergent mania.",
+      "local": "RANZCP Clinical Practice Guidelines for Mood Disorders, recommendation against antidepressant monotherapy."
+    },
+    "source": "https://www.ranzcp.org/getmedia/a8c79505-c0b5-46b4-9f27-67f79e047674/RANZCP-mood-disorders-clinical-practice-guideline-2020.pdf"
+  },
+  {
+    "n": 86,
+    "domain": "Gastroenterology & preventive oncology",
+    "skill": "Chronic hepatitis B cirrhosis / hepatocellular carcinoma surveillance",
+    "context": "Advanced final-year long-term risk reduction",
+    "stem": "A 48-year-old man with chronic hepatitis B and compensated cirrhosis takes effective antiviral therapy. HBV DNA is undetectable, liver function is stable and ultrasound six months ago showed no focal lesion. He asks whether virological suppression means he can stop liver cancer surveillance.",
+    "ask": "Which ongoing surveillance strategy is most appropriate?",
+    "options": [
+      "Continue liver ultrasound approximately every six months despite undetectable HBV DNA.",
+      "Stop surveillance because successful antiviral therapy eliminates hepatocellular carcinoma risk entirely.",
+      "Use annual alpha-fetoprotein alone because it is more sensitive than ultrasound for early cancer.",
+      "Order CT abdomen every month to ensure no microscopic malignant lesion can be missed.",
+      "Schedule surveillance only when jaundice, ascites or abdominal pain indicates advanced tumour burden."
+    ],
+    "key": "A",
+    "explanations": [
+      "Correct: cirrhosis confers ongoing HCC risk even with effective HBV suppression. Continue six-monthly ultrasound, with AFP according to local practice, and hepatology follow-up for antiviral and cirrhosis care.",
+      "Antiviral treatment lowers but does not abolish HCC risk in established cirrhosis. Stopping surveillance can miss an early treatable cancer.",
+      "AFP alone has insufficient sensitivity and specificity to replace imaging. It may be an adjunct but not the sole surveillance modality.",
+      "Monthly CT creates radiation and contrast exposure without evidence of benefit over established surveillance intervals. Cross-sectional imaging is reserved for suspicious or poorly visualised lesions.",
+      "HCC can be asymptomatic at an early curable stage. Waiting for decompensation or pain defeats the purpose of surveillance."
+    ],
+    "pearl": "HBV suppression reduces but does not eliminate HCC risk in cirrhosis; maintain six-monthly ultrasound surveillance.",
+    "pivot": "If a suspicious lesion is seen or ultrasound quality is inadequate, arrange diagnostic multiphasic imaging.",
+    "management": {
+      "steps": [
+        [
+          "Risk stratify",
+          "Confirm cirrhosis stage, HBV control, family history and prior liver lesions."
+        ],
+        [
+          "Surveil",
+          "Schedule liver ultrasound every six months and AFP if recommended by the treating service."
+        ],
+        [
+          "Escalate findings",
+          "Arrange multiphasic CT/MRI and specialist review for suspicious lesions or rising AFP."
+        ],
+        [
+          "Optimise care",
+          "Continue antiviral adherence, cirrhosis monitoring, vaccination and hepatology follow-up."
+        ]
+      ],
+      "safety": "A normal HBV viral load does not justify discontinuing HCC surveillance in a patient with cirrhosis.",
+      "local": "RACGP chronic hepatitis B guidance and current hepatology six-monthly HCC surveillance practice."
+    },
+    "source": "https://www.racgp.org.au/afp/2013/july/chronic-hepatitis-b"
+  },
+  {
+    "n": 87,
+    "domain": "General practice & gastroenterology",
+    "skill": "Unexplained iron deficiency anaemia in adult man / gastrointestinal cancer exclusion",
+    "context": "Advanced final-year investigation strategy",
+    "stem": "A 59-year-old man reports fatigue and reduced exercise tolerance. Haemoglobin is 96 g/L, MCV 69 fL, ferritin 7 micrograms/L and transferrin saturation 6%. He denies visible rectal bleeding, has no haemorrhoids on examination and takes no anticoagulants. He asks whether an oral iron trial alone is sufficient.",
+    "ask": "Which investigation plan most appropriately addresses the underlying risk?",
+    "options": [
+      "Give oral iron for six months and investigate only if his haemoglobin fails to improve.",
+      "Arrange gastroscopy and colonoscopy with coeliac assessment while replacing iron stores.",
+      "Repeat faecal immunochemical testing until a positive result justifies specialist endoscopy.",
+      "Request bone marrow biopsy before endoscopy because low ferritin does not confirm iron deficiency.",
+      "Use abdominal ultrasound alone to exclude gastrointestinal malignancy without mucosal evaluation."
+    ],
+    "key": "B",
+    "explanations": [
+      "Iron replacement is needed but does not identify the cause. In an adult man, unexplained iron deficiency anaemia raises concern for occult gastrointestinal bleeding or malignancy.",
+      "Correct: confirmed iron deficiency anaemia in an adult man warrants evaluation for gastrointestinal causes, typically upper and lower endoscopy, plus coeliac testing. Start iron replacement concurrently rather than using response as a reason to defer investigation.",
+      "FIT is a screening/triage tool and a negative result does not safely exclude causes of established iron deficiency anaemia. Repeated tests must not replace indicated diagnostic endoscopy.",
+      "Very low ferritin with microcytosis supports iron deficiency; marrow biopsy is not first-line. Investigate blood loss and malabsorption before invasive haematological testing.",
+      "Ultrasound cannot reliably visualise colorectal or gastric mucosal lesions. It is not an adequate substitute for colonoscopy and gastroscopy in this setting."
+    ],
+    "pearl": "Iron deficiency is a finding, not a final diagnosis; investigate the cause while replenishing iron.",
+    "pivot": "Haemodynamic instability, active bleeding or severe symptoms may require urgent resuscitation and expedited endoscopy.",
+    "management": {
+      "steps": [
+        [
+          "Confirm deficit",
+          "Review blood count, ferritin, iron studies, symptoms and medication or dietary contributors."
+        ],
+        [
+          "Find source",
+          "Arrange bidirectional endoscopy, coeliac serology and urinalysis as clinically indicated."
+        ],
+        [
+          "Replace iron",
+          "Start tolerated oral iron or consider IV iron if appropriate while investigations proceed."
+        ],
+        [
+          "Track response",
+          "Recheck haemoglobin, iron stores and pathology results; investigate persistent deficiency after negative studies."
+        ]
+      ],
+      "safety": "Do not use a negative FIT or transient haemoglobin improvement to dismiss possible GI malignancy in an adult man.",
+      "local": "RACGP patient blood management guidance on investigating iron deficiency anaemia."
+    },
+    "source": "https://www.racgp.org.au/afp/2013/may/patient-blood-management"
+  },
+  {
+    "n": 88,
+    "domain": "Paediatric neurology",
+    "skill": "Infantile spasms / urgent EEG and treatment to protect development",
+    "context": "Advanced final-year paediatric recognition",
+    "stem": "A 6-month-old has clusters of brief symmetric flexion movements on waking, each lasting one to two seconds. His parents show a video of repeated head drops and arm flexion; he has lost previously acquired social smiling. Examination between events is unremarkable. He is afebrile and the episodes are increasing daily.",
+    "ask": "Which response is most appropriate given the developmental implications?",
+    "options": [
+      "Reassure that the movements are a benign startle reflex and review at the next vaccination.",
+      "Start an antiepileptic drug empirically without specialist review or electroencephalography assessment.",
+      "Arrange urgent paediatric neurology review and awake–sleep EEG with prompt targeted treatment.",
+      "Request routine outpatient physiotherapy because regression implies a musculoskeletal cause rather than epilepsy.",
+      "Wait until a prolonged generalised seizure occurs before arranging diagnostic investigation or admission."
+    ],
+    "key": "C",
+    "explanations": [
+      "Clusters of stereotyped flexion spasms with developmental regression are classic red flags for infantile spasms, not a normal startle reflex. Delayed diagnosis may worsen developmental outcomes.",
+      "Treatment selection depends on the syndrome and cause; specialist-guided high-dose prednisolone or vigabatrin for tuberous sclerosis are typical options. Empirical unstructured therapy risks delay.",
+      "Correct: suspected infantile spasms require urgent awake and sleep EEG, paediatric neurology input, assessment for underlying causes and prompt syndrome-specific therapy. Early recognition matters for neurodevelopment.",
+      "Developmental regression is neurological until proven otherwise and should not be attributed to musculoskeletal delay. Physiotherapy may later support function but does not stop epileptic spasms.",
+      "Waiting for a prolonged convulsion is unsafe because infantile spasms may never resemble a tonic-clonic seizure. The repetitive subtle events are sufficient to trigger urgent assessment."
+    ],
+    "pearl": "Clusters of brief flexion spasms plus developmental plateau or regression demand urgent EEG and paediatric neurology review.",
+    "pivot": "If episodes are isolated benign movements with normal development and a reassuring video, specialist evaluation may clarify mimics.",
+    "management": {
+      "steps": [
+        [
+          "Recognise",
+          "Review caregiver video, spasm clusters, developmental history and signs of tuberous sclerosis."
+        ],
+        [
+          "Confirm",
+          "Arrange urgent awake and sleep EEG plus paediatric neurology consultation and appropriate MRI."
+        ],
+        [
+          "Treat early",
+          "Start specialist-selected high-dose prednisolone or vigabatrin when indicated; counsel about adverse effects."
+        ],
+        [
+          "Follow up",
+          "Repeat EEG, assess spasm cessation, development and steroid sick-day precautions."
+        ]
+      ],
+      "safety": "Do not defer infantile spasm assessment to a routine clinic appointment; developmental regression raises urgency.",
+      "local": "Royal Children's Hospital Melbourne infantile spasms clinical practice guideline."
+    },
+    "source": "https://www.rch.org.au/clinicalguide/guideline_index/Infantile_Spasms/"
+  },
+  {
+    "n": 89,
+    "domain": "Sexual health & preventive medicine",
+    "skill": "HIV pre-exposure prophylaxis / renal safety at initiation",
+    "context": "Advanced final-year shared decision-making",
+    "stem": "A 42-year-old HIV-negative man requests oral tenofovir disoproxil/emtricitabine PrEP because of ongoing condomless sex with partners of unknown HIV status. He has controlled hypertension and an initial eGFR of 58 mL/min/1.73 m², without proteinuria. He is asymptomatic and reports recent heavy exercise and creatine use.",
+    "ask": "Which next step best balances HIV prevention and renal safety?",
+    "options": [
+      "Prescribe standard daily tenofovir disoproxil/emtricitabine immediately without further renal assessment.",
+      "Decline all HIV prevention because an eGFR below sixty permanently excludes any PrEP option.",
+      "Start post-exposure prophylaxis indefinitely because it is safer than routine pre-exposure treatment.",
+      "Repeat renal assessment promptly and consult a PrEP specialist about an appropriate prevention plan.",
+      "Use a single antiretroviral drug alone because dual therapy increases renal toxicity without benefit."
+    ],
+    "key": "D",
+    "explanations": [
+      "Tenofovir disoproxil/emtricitabine is generally not initiated with confirmed eGFR below 60 without specialist assessment. Kidney risk factors and potential creatinine confounders should be reviewed.",
+      "A borderline first result does not permanently exclude prevention; eGFR may be affected by diet, muscle mass or creatine. Specialist review can assess suitable regimens and close monitoring.",
+      "PEP is a short, time-limited regimen after a specific recent exposure, not an indefinite substitute for ongoing prevention. Choice of PrEP requires HIV testing and renal assessment.",
+      "Correct: repeat eGFR within about a week, review medications and confounders, assess urine protein and seek specialist PrEP advice if values remain around 60. Maintain HIV prevention counselling while deciding the safest regimen.",
+      "Single-agent antiretroviral prophylaxis is not an established effective oral PrEP regimen and risks inadequate protection. Use evidence-based combinations or specialist-directed alternatives."
+    ],
+    "pearl": "For tenofovir disoproxil-based PrEP, eGFR around 60 requires repeat testing and individualised specialist advice.",
+    "pivot": "If there was a specific high-risk exposure within 72 hours, urgent HIV PEP assessment takes priority over routine PrEP initiation.",
+    "management": {
+      "steps": [
+        [
+          "Assess risk",
+          "Clarify exposure pattern, last potential HIV exposure, symptoms, baseline HIV test and STI screening."
+        ],
+        [
+          "Check kidneys",
+          "Repeat creatinine/eGFR, assess urine protein and BP, and review confounding supplements or drugs."
+        ],
+        [
+          "Select prevention",
+          "Discuss safer sex, vaccinations and specialist-guided PrEP choices for borderline renal function."
+        ],
+        [
+          "Monitor",
+          "Plan repeat HIV and renal testing at guideline intervals with adherence and side-effect review."
+        ]
+      ],
+      "safety": "Do not start tenofovir disoproxil-based PrEP reflexively with persistently reduced eGFR or miss acute HIV infection.",
+      "local": "ASHM National PrEP Guidelines 2025, baseline renal assessment and specialist consultation near eGFR 60."
+    },
+    "source": "https://ashm.org.au/wp-content/uploads/2025/08/ASHM-PrEP-guidelines-2025_FINAL.pdf"
+  },
+  {
+    "n": 90,
+    "domain": "Gastroenterology & hepatology",
+    "skill": "Primary biliary cholangitis / first-line disease-modifying therapy",
+    "context": "Advanced final-year cholestatic disease",
+    "stem": "A 54-year-old woman reports months of fatigue and itching. Alkaline phosphatase is persistently 3.1 times the upper limit of normal, GGT is elevated and antimitochondrial antibodies are strongly positive. Ultrasound shows no biliary obstruction, bilirubin is normal and there is no ascites or encephalopathy. She asks which treatment slows progression.",
+    "ask": "Which long-term treatment is most appropriate to initiate with hepatology follow-up?",
+    "options": [
+      "Start high-dose oral prednisolone as sole therapy because all autoimmune liver disease requires steroids.",
+      "Prescribe routine broad-spectrum antibiotics because cholestasis usually represents occult ascending cholangitis.",
+      "Arrange immediate ERCP with biliary stenting despite normal ducts and no obstructive lesion.",
+      "Begin elafibranor alone as universal first-line therapy without a trial of bile-acid treatment.",
+      "Commence ursodeoxycholic acid as first-line disease-modifying therapy and monitor biochemical response."
+    ],
+    "key": "E",
+    "explanations": [
+      "Primary biliary cholangitis is autoimmune but corticosteroids are not routine first-line disease-modifying therapy. Their harms may outweigh benefit without autoimmune hepatitis overlap.",
+      "Bacterial cholangitis usually presents with acute systemic illness and biliary infection features. Persistent ALP elevation with AMA positivity and normal ducts suggests autoimmune small-duct disease.",
+      "ERCP is indicated for selected obstructive biliary problems, not uncomplicated intrahepatic cholestasis with normal ultrasound. An unnecessary invasive procedure adds pancreatitis and infection risks.",
+      "Elafibranor is an Australian second-line/add-on option for inadequate UDCA response or intolerance, not a universal replacement at diagnosis. Specialist evaluation determines eligibility.",
+      "Correct: ursodeoxycholic acid is standard first-line treatment for primary biliary cholangitis and improves cholestatic biochemistry and progression outcomes. Monitor ALP and bilirubin response and manage pruritus and bone health."
+    ],
+    "pearl": "AMA positivity plus cholestatic enzymes and no extrahepatic obstruction supports PBC; UDCA is first-line.",
+    "pivot": "Failure to respond adequately to UDCA may prompt specialist consideration of second-line agents such as elafibranor.",
+    "management": {
+      "steps": [
+        [
+          "Establish diagnosis",
+          "Review cholestatic liver tests, AMA, immunoglobulins, ultrasound and fibrosis assessment."
+        ],
+        [
+          "Start therapy",
+          "Initiate weight-appropriate UDCA with hepatology guidance and adherence counselling."
+        ],
+        [
+          "Address complications",
+          "Assess pruritus, osteoporosis, fat-soluble vitamin status and cirrhosis risk."
+        ],
+        [
+          "Measure response",
+          "Monitor ALP, bilirubin and symptoms; consider second-line treatment if UDCA response is inadequate."
+        ]
+      ],
+      "safety": "Do not perform ERCP without obstruction or treat uncomplicated PBC as acute bacterial cholangitis.",
+      "local": "Australian Prescriber August 2026 review of PBC therapy and second-line elafibranor."
+    },
+    "source": "https://test.australianprescriber.tg.org.au/articles/elafibranor-for-primary-biliary-cholangitis.html"
   }
 ]
