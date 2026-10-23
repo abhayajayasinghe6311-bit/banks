@@ -3598,5 +3598,485 @@
       "local": "RACGP Management of type 2 diabetes: reproductive health and pregnancy recommendations, 2024."
     },
     "source": "https://www.racgp.org.au/clinical-resources/clinical-guidelines/key-racgp-guidelines/view-all-racgp-guidelines/management-of-type-2-diabetes/summary-of-recommendations"
+  },
+  {
+    "n": 76,
+    "domain": "Infectious diseases & occupational health",
+    "skill": "Occupational HIV exposure / initiate PEP without awaiting source viral load",
+    "context": "Advanced final-year clinical prioritisation",
+    "stem": "A junior doctor sustains a deep hollow-bore needlestick while taking blood from a patient with known HIV. The patient's most recent viral load is unknown and the incident occurred 40 minutes ago. The doctor has no contraindications to standard antiretroviral prophylaxis. Occupational health cannot obtain updated source blood results until tomorrow.",
+    "ask": "Which immediate action is most appropriate?",
+    "options": [
+      "Provide wound first aid and commence risk-indicated HIV PEP promptly while arranging baseline testing.",
+      "Wait for the source viral load before deciding whether the clinician needs antiretroviral prophylaxis.",
+      "Obtain a baseline HIV antibody result first and start PEP only if the result is positive.",
+      "Prescribe prophylactic antibiotics and review HIV transmission risk after seven days have passed.",
+      "Order a source CD4 count because it reliably predicts infectiousness better than HIV viral load."
+    ],
+    "key": "A",
+    "explanations": [
+      "Correct: a significant percutaneous exposure with unknown source viraemia warrants urgent occupational assessment and usually prompt PEP, ideally within hours and within 72 hours. Baseline testing, hepatitis B/C assessment and documentation occur without delaying treatment.",
+      "A previously undetectable result may alter risk, but here current viraemia is unknown. Waiting until tomorrow loses valuable prevention time; reassess and stop PEP if reliable subsequent information shows it was unnecessary.",
+      "A negative baseline HIV test helps document pre-exposure status but should not delay indicated prophylaxis. A positive result would require HIV specialist evaluation for established infection rather than routine PEP.",
+      "Antibiotics do not prevent HIV transmission and a week is outside the recommended HIV PEP initiation window. First aid, risk assessment and timely antiretrovirals are the priorities.",
+      "CD4 count reflects immune status rather than the immediate transmissibility of blood. Source viral load and the injury mechanism are more relevant to risk stratification."
+    ],
+    "pearl": "Risk-indicated HIV PEP should begin as soon as possible, ideally within 24 hours and no later than 72 hours after exposure.",
+    "pivot": "If a reliably documented sustained undetectable source viral load changes the exposure classification, expert review may recommend withholding or ceasing PEP.",
+    "management": {
+      "steps": [
+        [
+          "First aid",
+          "Wash puncture with water, avoid squeezing or scrubbing, and notify the occupational exposure service."
+        ],
+        [
+          "Risk stratify",
+          "Document depth, device, source HIV treatment/viral load, exposed person's medication and pregnancy status."
+        ],
+        [
+          "Protect",
+          "Arrange prompt PEP prescription and baseline HIV, HBV, HCV and renal investigations without waiting for source results."
+        ],
+        [
+          "Follow up",
+          "Organise occupational health review, adherence support, repeat serology and HBV prophylaxis if indicated."
+        ]
+      ],
+      "safety": "Do not delay risk-indicated PEP for the source's next viral-load result; review interactions and kidney function with the prescriber.",
+      "local": "ASHM Australian National PEP Guidelines, fourth edition (2025), occupational exposure section."
+    },
+    "source": "https://hiv.guidelines.org.au/pep-guidelines/introduction/"
+  },
+  {
+    "n": 77,
+    "domain": "Toxicology & metabolic emergencies",
+    "skill": "Methanol poisoning / antidote before confirmatory assay",
+    "context": "Advanced final-year clinical prioritisation",
+    "stem": "A 43-year-old is brought in with vomiting, severe headache and blurred vision after drinking an unlabelled home-distilled spirit. Blood gas shows pH 7.12, bicarbonate 9 mmol/L and a raised anion gap. Serum ethanol is low, and the hospital cannot measure methanol concentration until the next morning. He is conscious but deteriorating.",
+    "ask": "Which intervention most appropriately prevents further toxic injury?",
+    "options": [
+      "Give IV sodium bicarbonate alone and await the methanol concentration before considering any antidote.",
+      "Contact toxicology and commence fomepizole promptly while assessing the need for haemodialysis.",
+      "Administer activated charcoal repeatedly because it binds methanol and prevents further systemic absorption.",
+      "Provide IV thiamine as sole antidotal therapy because visual changes indicate vitamin deficiency.",
+      "Observe serial osmolal gaps without treatment because methanol poisoning cannot be diagnosed clinically."
+    ],
+    "key": "B",
+    "explanations": [
+      "Bicarbonate may be needed for severe acidaemia but does not inhibit conversion of methanol into toxic formate. It is an adjunct, not a substitute for alcohol dehydrogenase blockade.",
+      "Correct: the clinical history, visual toxicity and anion-gap acidosis strongly support methanol poisoning. Involve a poisons centre and start fomepizole without waiting for a delayed assay; severe acidosis or visual symptoms may warrant urgent extracorporeal removal.",
+      "Activated charcoal does not effectively adsorb small alcohols such as methanol. Repeated charcoal adds aspiration risk in a vomiting, deteriorating patient without meaningful benefit.",
+      "Thiamine is relevant to some alcohol-related nutritional problems, not methanol's formate-mediated retinal and CNS injury. Antidotal inhibition and correction of severe poisoning are required.",
+      "The osmolal gap can fall as methanol is metabolised into formate while the anion gap rises. A normal or falling gap therefore cannot safely exclude serious late toxicity."
+    ],
+    "pearl": "Visual disturbance plus unexplained high-anion-gap acidosis after suspicious alcohol ingestion is methanol toxicity until excluded.",
+    "pivot": "If ingestion were ethylene glycol instead, fomepizole remains useful, but renal injury and oxalate-related findings may predominate.",
+    "management": {
+      "steps": [
+        [
+          "Resuscitate",
+          "Assess airway, breathing, haemodynamics, glucose, ECG and acid-base status; involve ICU for deterioration."
+        ],
+        [
+          "Call toxicology",
+          "Contact the Poisons Information Centre (13 11 26) and request urgent toxicology input."
+        ],
+        [
+          "Block metabolism",
+          "Administer protocol-based IV fomepizole promptly; manage severe acidaemia and discuss dialysis criteria."
+        ],
+        [
+          "Monitor",
+          "Repeat blood gases, electrolytes, renal tests, vision and measured toxic alcohol levels when available."
+        ]
+      ],
+      "safety": "Do not postpone fomepizole because a methanol assay is unavailable; dialysis may be required despite antidote use.",
+      "local": "Queensland Poisons Information Centre fomepizole guidance (2026); toxicologist-led dosing and dialysis decisions."
+    },
+    "source": "https://www.poisonsinfo.health.qld.gov.au/for-health-professionals/antidote-stocking-recommendations/fomepizole-4-methylpyrazole"
+  },
+  {
+    "n": 78,
+    "domain": "Endocrinology & vascular surgery",
+    "skill": "Infected diabetic foot with ischaemia / combined urgent vascular and surgical input",
+    "context": "Advanced final-year clinical prioritisation",
+    "stem": "A 64-year-old with longstanding diabetes and neuropathy has a plantar ulcer, malodorous drainage, fever and rapidly increasing black discoloration of two toes. Pedal pulses are absent, the foot is cool and inflammatory markers are elevated. Plain films show possible deep soft-tissue gas. A clinic proposes oral antibiotics and routine podiatry next week.",
+    "ask": "Which approach best addresses the immediate limb threat?",
+    "options": [
+      "Treat with outpatient oral antibiotics and off-loading because diabetic neuropathy reduces pain perception.",
+      "Debride the black toes in clinic without evaluating the arterial circulation or systemic illness.",
+      "Admit urgently for IV antibiotics and combined surgical and vascular source-control assessment.",
+      "Request a routine MRI before referral because a plain film cannot confirm every deep foot infection.",
+      "Apply compression bandaging to improve local oedema while awaiting an elective wound-clinic review."
+    ],
+    "key": "C",
+    "explanations": [
+      "Oral therapy alone is unsafe with systemic infection, gangrene and absent pulses. Neuropathy can mask severe tissue damage and does not imply a low-risk infection.",
+      "Unplanned debridement without specialist assessment of ischaemia and anatomy may worsen tissue loss. Urgent drainage or debridement and revascularisation require coordinated decisions.",
+      "Correct: this is limb-threatening infection with severe peripheral arterial disease. Start sepsis care and empirical antibiotics, seek urgent surgical and vascular assessment for drainage/debridement and revascularisation planning.",
+      "MRI can help delineate osteomyelitis in stable cases, but gas, gangrene and sepsis are sufficient to trigger urgent intervention. Imaging should be tailored without delaying emergency source control.",
+      "Compression may compromise a critically ischaemic limb and cannot treat necrotic infection. A routine appointment risks progression to sepsis and major amputation."
+    ],
+    "pearl": "Infected gangrene with absent foot pulses requires urgent joint surgical and vascular planning, not a single-specialty outpatient pathway.",
+    "pivot": "A warm neuropathic foot with intact pulses and no ulcer or infection may instead represent acute Charcot arthropathy needing immediate immobilisation.",
+    "management": {
+      "steps": [
+        [
+          "Recognise",
+          "Assess sepsis, tissue loss, perfusion, sensation and possible necrotising infection; document vascular findings."
+        ],
+        [
+          "Stabilise",
+          "Admit, obtain cultures when feasible, commence IV antibiotics and provide haemodynamic and glycaemic support."
+        ],
+        [
+          "Coordinate",
+          "Request immediate high-risk foot, surgical and vascular review to plan drainage, debridement and revascularisation."
+        ],
+        [
+          "Rehabilitate",
+          "After source control, institute off-loading, wound care, secondary vascular prevention and multidisciplinary follow-up."
+        ]
+      ],
+      "safety": "Do not delay surgical referral for MRI or attempt routine compression on a critically ischaemic foot.",
+      "local": "Australian diabetes-related foot infection guideline (2021 evidence-based adaptation); Victorian urgent referral criteria updated 2025."
+    },
+    "source": "https://onlinelibrary.wiley.com/doi/full/10.1186/s13047-022-00545-4"
+  },
+  {
+    "n": 79,
+    "domain": "Paediatrics & ENT emergencies",
+    "skill": "Bacterial tracheitis / toxic child with persistent stridor",
+    "context": "Advanced final-year clinical prioritisation",
+    "stem": "A 4-year-old with two days of a barking cough becomes febrile to 40.2°C and markedly distressed. She has stridor at rest, thick secretions and appears toxic. A dose of nebulised adrenaline gives little sustained improvement. She is sitting forward and becomes agitated when staff try to examine her throat.",
+    "ask": "Which next step best prevents catastrophic deterioration?",
+    "options": [
+      "Perform a vigorous oropharyngeal examination to visualise secretions before calling senior clinicians.",
+      "Repeat nebulised adrenaline indefinitely because bacterial airway infection resolves with vasoconstriction.",
+      "Transfer to radiology for lateral neck films before considering any advanced airway preparation.",
+      "Minimise distress and urgently involve airway experts while starting appropriate IV antibiotics.",
+      "Send home with oral steroids once oxygen saturation improves because croup is usually self-limiting."
+    ],
+    "key": "D",
+    "explanations": [
+      "Provoking a child with severe upper-airway obstruction can precipitate complete obstruction. Examination and procedures should be deferred until an experienced airway team is ready.",
+      "Nebulised adrenaline may temporarily reduce swelling but does not eradicate bacterial infection or remove obstructive secretions. Persistent toxicity and poor response require a different pathway.",
+      "Imaging may have a role after stabilisation, but transport and positioning can destabilise an obstructed airway. Clinical escalation should precede radiographs.",
+      "Correct: suspect bacterial tracheitis or another dangerous supraglottic infection; minimise agitation, involve paediatric anaesthesia/ENT/ICU early and administer suitable IV antibiotics with a controlled airway plan.",
+      "Improving pulse oximetry does not demonstrate airway safety. Severe stridor, toxic appearance and thick secretions require hospital management, not outpatient croup advice."
+    ],
+    "pearl": "Toxicity, high fever and persistent stridor despite usual croup therapy suggest bacterial tracheitis or another airway emergency.",
+    "pivot": "A well child with typical barking cough and mild stridor that responds to treatment may follow a standard croup observation pathway.",
+    "management": {
+      "steps": [
+        [
+          "Protect airway",
+          "Keep child with caregiver, avoid upsetting examinations and monitor respiratory effort without unnecessary handling."
+        ],
+        [
+          "Mobilise experts",
+          "Call senior paediatric, anaesthetic, ENT and ICU clinicians; prepare for controlled airway intervention."
+        ],
+        [
+          "Treat infection",
+          "Give local-protocol IV antibiotics and supportive oxygen as tolerated without delaying airway control."
+        ],
+        [
+          "Reassess",
+          "Monitor work of breathing, secretions, exhaustion and haemodynamics in a high-acuity setting."
+        ]
+      ],
+      "safety": "Never insist on throat examination, supine positioning or radiology in an unstable child with severe upper-airway obstruction.",
+      "local": "Royal Children's Hospital Sore throat and Acute upper airway obstruction clinical practice guidelines."
+    },
+    "source": "https://www.rch.org.au/clinicalguide/guideline_index/Sore_throat/"
+  },
+  {
+    "n": 80,
+    "domain": "Gastroenterology & infectious diseases",
+    "skill": "Fulminant C difficile infection / ileus and shock",
+    "context": "Advanced final-year clinical prioritisation",
+    "stem": "A 76-year-old recently treated with ceftriaxone develops profuse diarrhoea, then progressive abdominal distension and minimal stool output. He is hypotensive, lactate is 5 mmol/L and CT suggests toxic megacolon without perforation. Stool testing is positive for toxigenic Clostridioides difficile. A junior clinician assumes that absent diarrhoea means the infection is resolving.",
+    "ask": "What is the most appropriate treatment strategy?",
+    "options": [
+      "Give oral loperamide to slow intestinal losses and observe for return of bowel movements.",
+      "Use IV vancomycin alone because it reliably reaches therapeutic concentrations within the colon.",
+      "Start oral metronidazole monotherapy and discharge once the blood pressure responds to fluids.",
+      "Perform colonoscopy urgently to confirm pseudomembranes before escalating antimicrobial therapy.",
+      "Initiate fulminant CDI therapy and critical-care plus urgent surgical review for possible colectomy."
+    ],
+    "key": "E",
+    "explanations": [
+      "Antimotility drugs can worsen ileus and colonic distension in severe CDI. Reduced stool output here reflects obstruction/ileus rather than microbiological recovery.",
+      "Intravenous vancomycin does not reliably treat the colonic lumen. Enteral vancomycin is central; rectal administration may be considered when ileus limits drug delivery.",
+      "Metronidazole alone is inadequate for fulminant infection with shock and megacolon. Intravenous metronidazole is commonly added to enteral vancomycin in this situation.",
+      "Colonoscopy adds perforation risk in toxic megacolon and is unnecessary when clinical and microbiological evidence already supports CDI. Treatment and surgical input cannot wait.",
+      "Correct: institute isolation, resuscitation and guideline-based enteral vancomycin with adjunct IV metronidazole for fulminant disease, consider rectal vancomycin with ileus, and involve ICU and colorectal surgery immediately."
+    ],
+    "pearl": "Fulminant CDI can present with ileus and less diarrhoea; shock or megacolon demands aggressive therapy and early surgical input.",
+    "pivot": "A stable first CDI episode without ileus or organ dysfunction may be treated with standard oral therapy without ICU or surgical consultation.",
+    "management": {
+      "steps": [
+        [
+          "Stabilise",
+          "Isolate with contact precautions, assess ABCs, fluids, lactate, renal function and electrolytes."
+        ],
+        [
+          "Treat",
+          "Stop unnecessary inciting antibiotics and begin local fulminant-CDI enteral vancomycin plus IV metronidazole regimen."
+        ],
+        [
+          "Escalate",
+          "Discuss rectal vancomycin for ileus and obtain immediate ICU/colorectal surgical review."
+        ],
+        [
+          "Track",
+          "Serially assess abdominal signs, organ failure, leukocytosis and need for operative source control."
+        ]
+      ],
+      "safety": "Do not interpret cessation of diarrhoea in an increasingly distended shocked patient as recovery.",
+      "local": "Australasian Society for Infectious Diseases CDI guideline update, March 2025; follow local fulminant dosing protocol."
+    },
+    "source": "https://doi.org/10.1111/imj.16638"
+  },
+  {
+    "n": 81,
+    "domain": "Neonatology & paediatric hepatology",
+    "skill": "Biliary atresia / pale stools and conjugated jaundice",
+    "context": "Advanced final-year clinical prioritisation",
+    "stem": "A 5-week-old term infant has remained visibly jaundiced since the second week of life. Parents describe very pale grey stools and dark urine. He is feeding reasonably well and gaining weight, but laboratory tests reveal elevated conjugated bilirubin. The GP wonders whether to repeat bilirubin in another month.",
+    "ask": "What is the best next management step?",
+    "options": [
+      "Arrange urgent paediatric hepatology assessment for cholestasis and possible biliary atresia.",
+      "Continue routine observation because prolonged breastmilk jaundice commonly causes pale stools.",
+      "Begin high-intensity phototherapy because all prolonged jaundice requires immediate light treatment.",
+      "Prescribe an oral antibiotic for presumed urinary infection without further liver investigations.",
+      "Reassure that normal weight gain makes obstructive cholestatic disease very unlikely."
+    ],
+    "key": "A",
+    "explanations": [
+      "Correct: pale acholic stools, dark urine and conjugated hyperbilirubinaemia strongly suggest obstructive cholestasis, including biliary atresia. Urgent hepatology/surgical assessment is needed because timing of intervention affects outcome.",
+      "Breastmilk jaundice is predominantly unconjugated and should not produce clay-coloured stools or dark urine from bilirubinuria. Delaying review can reduce the success of time-sensitive surgery.",
+      "Phototherapy is used for significant unconjugated bilirubin in specific neonatal contexts. It does not relieve bile duct obstruction and may distract from urgent cholestasis investigation.",
+      "Urinary infection is a differential for prolonged jaundice, but the stool colour and conjugated fraction mandate hepatobiliary investigation. Antibiotics alone would not address biliary atresia.",
+      "Adequate feeding and growth do not exclude early biliary atresia. Infants may appear otherwise well while irreversible liver damage progresses."
+    ],
+    "pearl": "Acholic stools and conjugated jaundice are pathological; biliary atresia referral must not wait for failure to thrive.",
+    "pivot": "Prolonged unconjugated jaundice with normal pigmented stools and no other red flags has a different evaluation pathway.",
+    "management": {
+      "steps": [
+        [
+          "Confirm cholestasis",
+          "Check fractionated bilirubin, LFTs, coagulation, stool colour and growth history."
+        ],
+        [
+          "Refer now",
+          "Telephone paediatric hepatology/gastroenterology urgently and discuss same-day assessment."
+        ],
+        [
+          "Investigate",
+          "Coordinate hepatobiliary ultrasound and additional specialist-directed testing without delaying referral."
+        ],
+        [
+          "Support",
+          "Assess fat-soluble vitamin deficiency, nutrition and coagulation while the surgical pathway is arranged."
+        ]
+      ],
+      "safety": "Do not wait weeks for spontaneous improvement when stools are pale and direct bilirubin is elevated.",
+      "local": "Royal Children's Hospital Primary Care Liaison: Physiological jaundice and urgent pale-stool referral advice."
+    },
+    "source": "https://www.rch.org.au/primary-care-liaison/prereferral_guidelines/Physiological_jaundice/"
+  },
+  {
+    "n": 82,
+    "domain": "Haematology & thrombosis",
+    "skill": "Triple-positive antiphospholipid syndrome / avoid DOAC substitution",
+    "context": "Advanced final-year clinical prioritisation",
+    "stem": "A 39-year-old with a prior unprovoked DVT and repeatedly positive lupus anticoagulant, anticardiolipin and anti-beta-2-glycoprotein I antibodies is stable on warfarin. She asks to change to rivaroxaban to avoid INR appointments. Renal function is normal and she has not had bleeding complications.",
+    "ask": "Which counselling is most appropriate?",
+    "options": [
+      "Switch to rivaroxaban routinely because direct anticoagulants prevent recurrent APS thrombosis more effectively.",
+      "Explain that warfarin is preferred in high-risk thrombotic APS and discuss INR support options.",
+      "Stop anticoagulation because the first clot occurred more than twelve months ago.",
+      "Replace warfarin with aspirin monotherapy because triple antibody positivity implies only arterial risk.",
+      "Use prophylactic-dose LMWH intermittently whenever prolonged travel or immobility is expected."
+    ],
+    "key": "B",
+    "explanations": [
+      "High-risk triple-positive APS is associated with more recurrent thrombotic events on DOACs than on vitamin K antagonists. Convenience alone is not a sufficient reason for substitution.",
+      "Correct: secondary prevention in thrombotic APS generally uses long-term warfarin with appropriate INR monitoring. Explore home INR testing, anticoagulation clinic support and shared decision-making about adherence.",
+      "A prior thrombosis with persistent high-risk antibodies usually warrants long-term secondary prevention. Stopping because of elapsed time exposes the patient to recurrence.",
+      "Aspirin alone is insufficient for secondary prevention after venous thrombosis in confirmed APS. Antibody positivity does not mean the condition is limited to arteries.",
+      "Intermittent prophylactic LMWH does not provide continuous protection from spontaneous recurrent APS thrombosis. Full therapeutic anticoagulation is needed unless contraindicated."
+    ],
+    "pearl": "Triple-positive APS is a high-risk setting where warfarin is generally preferred over DOACs for secondary prevention.",
+    "pivot": "Isolated transient low-titre antiphospholipid antibody positivity without thrombosis is not the same diagnosis or anticoagulation indication.",
+    "management": {
+      "steps": [
+        [
+          "Confirm",
+          "Review documented thrombosis, persistence of antibody profile, INR history and any arterial events."
+        ],
+        [
+          "Counsel",
+          "Explain comparative recurrence risk with DOACs and why lifelong warfarin is usually recommended."
+        ],
+        [
+          "Support",
+          "Offer anticoagulation-clinic input, INR access solutions and bleeding-risk education."
+        ],
+        [
+          "Plan",
+          "Discuss pregnancy intentions, drug interactions and urgent assessment for new thrombotic symptoms."
+        ]
+      ],
+      "safety": "Warfarin is teratogenic in pregnancy; preconception APS management requires specialist planning, often with heparin-based treatment.",
+      "local": "Australian Prescriber: Diagnosis and management of antiphospholipid syndrome (2024)."
+    },
+    "source": "https://australianprescriber.tg.org.au/articles/diagnosis-and-management-of-antiphospholipid-syndrome.html"
+  },
+  {
+    "n": 83,
+    "domain": "Gastroenterology & interventional care",
+    "skill": "Infected pancreatic necrosis / step-up strategy and drainage timing",
+    "context": "Advanced final-year clinical prioritisation",
+    "stem": "A 55-year-old is hospitalised with severe gallstone pancreatitis. Three weeks later he develops fever and new organ dysfunction; CT shows gas in a partially encapsulated peripancreatic necrotic collection. He receives appropriate IV antibiotics but remains septic after 48 hours. There is no free perforation or uncontrollable bleeding.",
+    "ask": "Which procedural plan best reflects modern management?",
+    "options": [
+      "Perform immediate open necrosectomy in every case before a drainage procedure is attempted.",
+      "Continue antibiotics alone indefinitely because all interventions before four weeks are prohibited.",
+      "Arrange specialist-guided percutaneous or endoscopic drainage as the next step in treatment.",
+      "Perform routine ERCP even without evidence of persistent biliary obstruction or cholangitis.",
+      "Avoid all procedures until imaging proves the pancreas has completely returned to normal."
+    ],
+    "key": "C",
+    "explanations": [
+      "Early open debridement carries substantial morbidity and is generally reserved for specific complications or failure of less invasive approaches. A step-up strategy is preferred.",
+      "Delaying intervention until walled-off necrosis forms is desirable when stable, but persistent sepsis and organ dysfunction despite antibiotics may justify earlier drainage, particularly with partial encapsulation.",
+      "Correct: the step-up approach starts with antimicrobials and then minimally invasive drainage when infection persists, escalating to necrosectomy only if drainage fails. Multidisciplinary expertise determines route and timing.",
+      "ERCP addresses biliary obstruction or cholangitis, not a gas-containing necrotic collection without duct obstruction. It would not provide adequate source control for infected necrosis.",
+      "Persistent organ failure requires reassessment and source control planning; waiting for radiological resolution without intervention can allow sepsis to progress."
+    ],
+    "pearl": "In infected pancreatic necrosis, antibiotics → minimally invasive drainage → selective necrosectomy is preferred over reflex open surgery.",
+    "pivot": "A clinically improving patient with infected necrosis may be managed initially with antibiotics while waiting for better encapsulation.",
+    "management": {
+      "steps": [
+        [
+          "Resuscitate",
+          "Reassess sepsis, haemodynamics, organ support, nutrition and the possibility of alternative infection sources."
+        ],
+        [
+          "Discuss anatomy",
+          "Review contrast imaging with pancreatic surgery, endoscopy and interventional radiology teams."
+        ],
+        [
+          "Drain",
+          "Arrange suitable percutaneous or endoscopic drainage when persistent infection warrants intervention."
+        ],
+        [
+          "Escalate if needed",
+          "Culture drainage, tailor antibiotics and consider minimally invasive necrosectomy only if step-up treatment fails."
+        ]
+      ],
+      "safety": "Do not make four weeks an absolute prohibition when ongoing sepsis requires earlier source control.",
+      "local": "International Association of Pancreatology revised acute pancreatitis guideline (2025), Australian specialty-relevant consensus."
+    },
+    "source": "https://doi.org/10.1016/j.pan.2025.04.020"
+  },
+  {
+    "n": 84,
+    "domain": "Obstetrics & postpartum infections",
+    "skill": "Postpartum endometritis / early IV antimicrobial treatment",
+    "context": "Advanced final-year clinical prioritisation",
+    "stem": "A 27-year-old is four days postpartum after an emergency caesarean delivery following prolonged rupture of membranes. She has fever 39.1°C, increasing lower abdominal pain, malodorous lochia and marked uterine fundal tenderness. BP is 106/66 mmHg and she is breastfeeding. The wound itself looks clean.",
+    "ask": "What is the best immediate management?",
+    "options": [
+      "Treat presumed superficial wound cellulitis with oral flucloxacillin and routine review in three days.",
+      "Arrange an elective pelvic ultrasound before prescribing antimicrobials because retained products must be excluded.",
+      "Reassure that foul-smelling lochia is expected after caesarean delivery if the wound is not infected.",
+      "Admit and start broad-spectrum IV antibiotics for suspected endometritis with sepsis assessment.",
+      "Stop breastfeeding and discharge with antipyretics because uterine tenderness usually resolves spontaneously."
+    ],
+    "key": "D",
+    "explanations": [
+      "The clean wound and uterine tenderness point to intrauterine infection, often polymicrobial, rather than isolated skin cellulitis. Oral narrow-spectrum treatment may be inadequate.",
+      "Ultrasound may be helpful if retained products or an abscess is suspected, particularly with poor response, but should not delay IV treatment of a clinically evident postpartum infection.",
+      "Malodorous lochia with high fever and fundal tenderness is not normal postpartum physiology. Untreated endometritis can progress to pelvic sepsis and shock.",
+      "Correct: start a maternal sepsis assessment and appropriate broad-spectrum IV antibiotics, with obstetric review, fluids as indicated and investigation of retained products or complications if the course is atypical.",
+      "Breastfeeding usually can continue with compatible therapy and support. Antipyretics alone mask symptoms without treating the infection."
+    ],
+    "pearl": "Post-caesarean fever with uterine tenderness and malodorous lochia is postpartum endometritis until adequately assessed.",
+    "pivot": "If fever occurs with a focal painful erythematous incision and no uterine tenderness, a surgical-site infection becomes more likely.",
+    "management": {
+      "steps": [
+        [
+          "Recognise",
+          "Repeat maternal observations, assess sepsis, uterine tenderness, lochia, wound, breasts and urinary symptoms."
+        ],
+        [
+          "Treat",
+          "Start local-protocol broad-spectrum IV antibiotics promptly and support perfusion as indicated."
+        ],
+        [
+          "Investigate",
+          "Check bloods and relevant cultures; use ultrasound if retained tissue, abscess or non-response is suspected."
+        ],
+        [
+          "Review",
+          "Monitor temperature and pain, reassess antibiotic spectrum, and support feeding and discharge follow-up."
+        ]
+      ],
+      "safety": "Do not delay antibiotics for routine ultrasound or assume a clean caesarean wound excludes uterine infection.",
+      "local": "Safer Care Victoria postpartum infection/secondary PPH antibiotic guidance; local obstetric antimicrobial protocol."
+    },
+    "source": "https://www.safercare.vic.gov.au/best-practice-improvement/clinical-guidance/maternity/postpartum-haemorrhage-pph-prevention-assessment-and-management"
+  },
+  {
+    "n": 85,
+    "domain": "Psychiatry & medication safety",
+    "skill": "Clozapine-associated severe neutropenia / urgent cessation and infection assessment",
+    "context": "Advanced final-year clinical prioritisation",
+    "stem": "A 32-year-old taking clozapine for treatment-resistant schizophrenia reports a new sore throat and temperature of 38.4°C. An urgent full blood count shows absolute neutrophils 0.4 × 10⁹/L. He is frightened that stopping clozapine will cause relapse and asks for a repeat test next week before any change.",
+    "ask": "Which action is safest now?",
+    "options": [
+      "Continue clozapine and add an oral antibiotic because psychiatric stability takes priority over blood results.",
+      "Reduce clozapine by half and review counts next week because abrupt cessation risks rebound psychosis.",
+      "Change the antipsychotic only after a bone marrow biopsy confirms drug-related agranulocytosis.",
+      "Use prophylactic granulocyte colony-stimulating factor while maintaining the current clozapine dose.",
+      "Withhold clozapine immediately and arrange urgent febrile-neutropenia care and specialist review."
+    ],
+    "key": "E",
+    "explanations": [
+      "Continuing clozapine with severe neutropenia risks life-threatening infection. Antibiotics do not remove the suspected marrow-suppressive exposure.",
+      "Dose reduction alone is insufficient at an ANC of 0.4 × 10⁹/L. The immediate haematological emergency overrides the usual preference for gradual psychiatric dose changes.",
+      "A marrow biopsy is not required before acting on a critically low ANC with fever. Delaying withdrawal and antibiotics for a diagnostic procedure is unsafe.",
+      "G-CSF may be considered by haematology in selected severe cases, but it is not a justification for routine continuation of clozapine during severe neutropenia.",
+      "Correct: immediately withhold clozapine under monitoring requirements, urgently assess and treat as febrile neutropenia, and involve haematology and psychiatry for infection and relapse management."
+    ],
+    "pearl": "Fever or sore throat on clozapine demands an urgent blood count; severe neutropenia is an emergency requiring drug cessation.",
+    "pivot": "A patient with stable counts and no infection may continue clozapine with scheduled blood monitoring; thresholds are product and protocol specific.",
+    "management": {
+      "steps": [
+        [
+          "Stabilise",
+          "Assess sepsis physiology, establish IV access, and collect blood cultures and other appropriate investigations."
+        ],
+        [
+          "Stop exposure",
+          "Withhold clozapine immediately and notify the clozapine monitoring program and treating psychiatrist."
+        ],
+        [
+          "Treat infection",
+          "Commence febrile-neutropenia IV antibiotics promptly and seek haematology guidance about supportive therapy."
+        ],
+        [
+          "Plan psychiatric care",
+          "Monitor for rebound psychosis or cholinergic symptoms and devise an alternative treatment and follow-up plan."
+        ]
+      ],
+      "safety": "Do not postpone action for repeat routine monitoring; clozapine re-exposure after severe drug-related neutropenia needs specialist policy review.",
+      "local": "Australian Clozaril/Clopine product information, Australian Commission on Safety and Quality in Health Care (2026)."
+    },
+    "source": "https://www.safetyandquality.gov.au/medicine-finder/clopine"
   }
 ]
