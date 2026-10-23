@@ -2158,5 +2158,485 @@
     },
     "source": "https://www.health.qld.gov.au/__data/assets/pdf_file/0022/1447051/PCCM_full.pdf",
     "context": "Advanced integrated clinical decisions"
+  },
+  {
+    "n": 46,
+    "domain": "Paediatrics & respiratory disease",
+    "skill": "Complicated pneumonia / empyema drainage consultation",
+    "stem": "A 6-year-old has received 48 hours of appropriate IV antibiotics for lobar pneumonia but remains febrile and breathless. She requires 2 L/min oxygen, has dullness and reduced air entry over the right lower chest, and ultrasound shows a large septated pleural collection. Blood pressure remains normal.",
+    "ask": "Which step most appropriately changes her treatment plan?",
+    "options": [
+      "Request urgent respiratory/surgical review for complicated effusion and possible drainage alongside antibiotics.",
+      "Continue the same antibiotics without re-imaging because fever commonly persists for a week.",
+      "Arrange routine outpatient chest CT before considering any pleural intervention or admission.",
+      "Stop antibacterial treatment because septations usually indicate a noninfective inflammatory pleural effusion.",
+      "Give oral steroids alone to accelerate resolution before attempting specialist pleural assessment."
+    ],
+    "key": "A",
+    "explanations": [
+      "Correct: persistent fever, oxygen requirement and a large loculated effusion strongly suggest complicated parapneumonic effusion or empyema. Continue appropriate IV antibiotics and supportive care while promptly involving respiratory and surgical teams for image-guided drainage decisions.",
+      "Uncomplicated pneumonia may have fever initially, but continuing unmodified treatment despite hypoxaemia and a septated effusion misses a potential source-control problem.",
+      "CT is not routinely required when ultrasound demonstrates a complicated collection, and outpatient imaging would delay assessment of an unwell child with respiratory compromise.",
+      "Pleural septations in this setting usually indicate an organised complicated infectious effusion rather than a harmless inflammatory finding. Withdrawing antibiotics risks deterioration.",
+      "Steroids do not replace antimicrobial treatment and possible pleural drainage. They are not a stand-alone remedy for probable empyema."
+    ],
+    "pearl": "Persistent fever after 48 hours of appropriate pneumonia treatment should prompt reassessment for parapneumonic effusion; loculation increases drainage likelihood.",
+    "pivot": "A small simple free-flowing effusion in a clinically well child may improve with antibiotics alone and close follow-up.",
+    "management": {
+      "steps": [
+        [
+          "Reassess severity",
+          "Check oxygenation, work of breathing, sepsis signs, analgesia needs and hydration."
+        ],
+        [
+          "Characterise collection",
+          "Review chest radiography and ultrasound for size, septation and pleural organisation."
+        ],
+        [
+          "Treat and consult",
+          "Continue IV antimicrobial treatment and obtain paediatric respiratory/surgical input for drainage planning."
+        ],
+        [
+          "Follow response",
+          "Trend fever, oxygen requirement, fluid findings and clinical course, tailoring therapy to microbiology."
+        ]
+      ],
+      "safety": "Do not delay escalation for CT or leave an oxygen-dependent child with a complicated effusion on routine outpatient follow-up.",
+      "local": "Royal Children's Hospital parapneumonic effusion guideline."
+    },
+    "source": "https://www.rch.org.au/clinicalguide/guideline_index/Parapneumonic_effusion/",
+    "context": "Advanced integrated clinical decisions"
+  },
+  {
+    "n": 47,
+    "domain": "Emergency medicine & vascular surgery",
+    "skill": "Acute mesenteric ischaemia / early CT angiography",
+    "stem": "A 78-year-old with untreated atrial fibrillation develops sudden severe diffuse abdominal pain lasting four hours. He is distressed, but the abdomen is soft with only mild tenderness. Lactate is 2.0 mmol/L, blood pressure is 116/68 mmHg and plain abdominal radiography is unremarkable. He had a similar but shorter episode yesterday.",
+    "ask": "Which next investigation and escalation is most appropriate?",
+    "options": [
+      "Wait for a substantially elevated lactate before pursuing vascular investigation of the abdomen.",
+      "Arrange urgent CT mesenteric angiography and early vascular/general surgical assessment.",
+      "Start oral proton-pump therapy and organise outpatient endoscopy for possible peptic ulcer disease.",
+      "Obtain serial abdominal radiographs and operate only after definite bowel obstruction develops.",
+      "Perform diagnostic colonoscopy immediately because the abdominal examination is relatively benign."
+    ],
+    "key": "B",
+    "explanations": [
+      "A normal or mildly elevated lactate does not exclude early mesenteric ischaemia. Waiting for laboratory deterioration can allow irreversible bowel necrosis.",
+      "Correct: sudden pain out of proportion to examination in atrial fibrillation is a high-risk embolic presentation. Arrange urgent contrast CT angiography with immediate surgical/vascular involvement, resuscitation, and protocol-led antibiotics and anticoagulation decisions.",
+      "Peptic disease remains possible but does not explain the disproportionate severe pain and embolic risk. Empiric acid suppression must not displace emergency vascular imaging.",
+      "Plain films may remain normal until late complications. Waiting for obstruction or peritonitis before intervention forfeits the opportunity for bowel salvage.",
+      "Colonoscopy is neither the quickest way to assess mesenteric arterial flow nor a safe substitute for vascular imaging in suspected acute ischaemia."
+    ],
+    "pearl": "Pain out of proportion to abdominal tenderness plus an embolic risk factor should trigger urgent mesenteric ischaemia assessment even with normal lactate.",
+    "pivot": "A patient with chronic postprandial abdominal pain and weight loss but no acute ischaemic features may require a planned chronic mesenteric vascular investigation pathway.",
+    "management": {
+      "steps": [
+        [
+          "Recognise",
+          "Reassess perfusion, peritoneal signs, pain onset, AF and vascular history; call senior surgeons."
+        ],
+        [
+          "Investigate immediately",
+          "Request urgent CT mesenteric angiography; draw bloods including lactate, renal function and coagulation."
+        ],
+        [
+          "Resuscitate",
+          "Provide IV access, fluids and analgesia, and commence specialist-directed antibiotics/anticoagulation when appropriate."
+        ],
+        [
+          "Definitive management",
+          "Coordinate revascularisation and bowel viability assessment; do not delay surgery if peritonitis develops."
+        ]
+      ],
+      "safety": "A normal lactate and initially soft abdomen cannot safely rule out acute mesenteric ischaemia.",
+      "local": "Australian emergency surgical and vascular pathways; local radiology and specialist protocols."
+    },
+    "source": "https://aci.health.nsw.gov.au/networks/eci",
+    "context": "Advanced integrated clinical decisions"
+  },
+  {
+    "n": 48,
+    "domain": "Neonatology & haematology",
+    "skill": "Jaundice before 24 hours / haemolysis evaluation",
+    "stem": "A 14-hour-old term infant is visibly jaundiced. The mother is blood group O positive and the infant A positive. Breastfeeding has begun and vital signs are normal. A transcutaneous device gives an elevated bilirubin close to the treatment threshold, while the parents have been told newborn jaundice is usually physiological.",
+    "ask": "Which approach best addresses this early finding?",
+    "options": [
+      "Reassure because the bilirubin will usually peak on day four and resolve spontaneously.",
+      "Prescribe extra feeds alone and obtain a routine bilirubin reading at the six-week review.",
+      "Obtain urgent serum bilirubin and haemolysis tests, with treatment based on age-specific thresholds.",
+      "Apply sunlight exposure during the day while repeating transcutaneous measurements after twenty-four hours.",
+      "Begin prophylactic antibiotics because jaundice within one day necessarily means neonatal sepsis."
+    ],
+    "key": "C",
+    "explanations": [
+      "Jaundice in the first 24 hours is pathological until investigated. ABO incompatibility can produce significant haemolysis even if the infant appears clinically well.",
+      "Feeding support is valuable, but by itself cannot determine severity or treat rapidly rising unconjugated bilirubin from haemolysis.",
+      "Correct: obtain total and fractionated serum bilirubin, full blood count, direct antiglobulin test, infant/maternal blood groups and reticulocyte count as indicated. Plot bilirubin against gestational age and hours of life; arrange phototherapy or escalation according to the relevant nomogram.",
+      "Sunlight is not recommended as bilirubin treatment, and transcutaneous screening should be confirmed with serum measurement near a treatment threshold. Delaying risks neurotoxicity.",
+      "Sepsis is an important differential if the infant is unwell, but early bilirubin alone does not establish infection. Evaluate haemolysis and assess infectious signs rather than starting antibiotics indiscriminately."
+    ],
+    "pearl": "Jaundice appearing before 24 hours is a red flag for haemolysis or another pathological process, not routine physiological jaundice.",
+    "pivot": "Physiological jaundice usually begins after 24 hours in a well baby, but still requires assessment against age-specific treatment thresholds when clinically significant.",
+    "management": {
+      "steps": [
+        [
+          "Confirm level",
+          "Arrange serum bilirubin now rather than relying on visual assessment or transcutaneous readings alone."
+        ],
+        [
+          "Find cause",
+          "Assess gestation, feeding, weight and bruising; investigate haemolysis with FBC, DAT and relevant blood groups."
+        ],
+        [
+          "Treat by threshold",
+          "Use an age-in-hours gestation-specific nomogram to plan phototherapy or intensive escalation."
+        ],
+        [
+          "Follow closely",
+          "Repeat bilirubin at clinically indicated intervals and arrange feeding support and safe discharge follow-up."
+        ]
+      ],
+      "safety": "Do not delay measurement until the typical physiological peak or recommend sunlight as therapy.",
+      "local": "Royal Children's Hospital Jaundice in early infancy guideline (2026 update)."
+    },
+    "source": "https://www.rch.org.au/clinicalguide/guideline_index/Jaundice_in_Early_Infancy/",
+    "context": "Advanced integrated clinical decisions"
+  },
+  {
+    "n": 49,
+    "domain": "Obstetric emergencies",
+    "skill": "Umbilical cord prolapse / relieve compression immediately",
+    "stem": "During labour at 39 weeks, membranes rupture spontaneously. The fetal heart rate drops to 75/min and stays low. Vaginal examination reveals a loop of pulsating cord below the presenting fetal head, which is not fully engaged. Theatre can be ready for urgent caesarean delivery.",
+    "ask": "What action should occur immediately while organising birth?",
+    "options": [
+      "Ask the patient to push forcefully because the fetal head should descend past the cord.",
+      "Clamp and divide the visible cord to eliminate external compression before birth.",
+      "Administer oxytocin to shorten labour while awaiting spontaneous recovery of heart rate.",
+      "Manually elevate the presenting part off the cord and position the mother appropriately.",
+      "Replace the cord into the uterus and continue routine continuous fetal heart monitoring."
+    ],
+    "key": "D",
+    "explanations": [
+      "Pushing may increase compression while the presenting part obstructs blood flow, especially when urgent vaginal birth is not imminent. The priority is decompressing the cord.",
+      "Cutting the cord before birth would interrupt placental oxygenation and is not a treatment for cord prolapse. Immediate specialist obstetric response is required.",
+      "Oxytocin increases contractions and may worsen cord compression. Delivery planning must be expedited rather than augmenting labour in an unstable situation.",
+      "Correct: summon the obstetric emergency team, maintain manual elevation of the fetal presenting part, and place the patient knee-chest or left lateral exaggerated Sims while preparing emergency delivery. Bladder filling may support elevation if transport or theatre delay is expected.",
+      "Replacing the cord above the presenting part is generally discouraged because it can cause further compromise; routine monitoring without decompression fails to address persistent bradycardia."
+    ],
+    "pearl": "In cord prolapse, relieve pressure on the cord immediately while the team prepares rapid delivery.",
+    "pivot": "If the cervix is fully dilated and safe instrumental vaginal birth is truly imminent, an experienced obstetrician may choose immediate vaginal delivery instead of caesarean.",
+    "management": {
+      "steps": [
+        [
+          "Declare",
+          "Call obstetric emergency assistance, confirm fetal heart rate and prepare for urgent birth."
+        ],
+        [
+          "Relieve compression",
+          "Keep a gloved hand elevating the presenting part off the cord; avoid excessive cord handling."
+        ],
+        [
+          "Position and transfer",
+          "Use knee-chest or exaggerated Sims position; consider bladder filling if specialist-directed during delay."
+        ],
+        [
+          "Deliver",
+          "Proceed to the safest rapid route of delivery with neonatal resuscitation readiness."
+        ]
+      ],
+      "safety": "Do not release presenting-part elevation before the definitive obstetric team takes over.",
+      "local": "Queensland Health Primary Clinical Care Manual cord prolapse emergency algorithm."
+    },
+    "source": "https://www.health.qld.gov.au/__data/assets/pdf_file/0022/1447051/PCCM_full.pdf",
+    "context": "Advanced integrated clinical decisions"
+  },
+  {
+    "n": 50,
+    "domain": "Paediatric emergency & respiratory",
+    "skill": "Foreign body aspiration / normal radiograph limitation",
+    "stem": "A 2-year-old suddenly coughed and choked while eating peanuts, then appeared to recover. Three hours later he has persistent one-sided wheeze and reduced air entry over the right chest, although SpO2 is 97% on room air. A standard chest radiograph is reported as normal.",
+    "ask": "What management is most appropriate?",
+    "options": [
+      "Give a short course of salbutamol and discharge if the wheeze temporarily improves.",
+      "Begin oral antibiotics for aspiration pneumonia and await a repeat film after one week.",
+      "Request a routine allergy assessment because peanuts commonly provoke transient lower-airway wheeze.",
+      "Perform blind finger sweeps to remove the presumed object before seeking airway assessment.",
+      "Arrange urgent paediatric airway specialist review for likely bronchial foreign body despite normal imaging."
+    ],
+    "key": "E",
+    "explanations": [
+      "A bronchodilator may transiently alter wheeze but cannot remove a retained foreign body. Discharging after a convincing choking event risks migration or post-obstructive complications.",
+      "Antibiotics do not remove an aspirated peanut, and a radiograph may stay normal because organic material is radiolucent. Waiting a week is unsafe.",
+      "Food allergy may cause diffuse bronchospasm but does not neatly explain sudden choking followed by persistent focal reduced air entry; foreign body aspiration is more likely.",
+      "Blind sweeps can push material deeper and injure the airway; they are not indicated in a breathing child with a suspected intrabronchial object.",
+      "Correct: maintain close observation, minimise agitation, seek ENT/respiratory and anaesthetic expertise and consider timely bronchoscopy. A normal chest radiograph and normal oxygen saturation cannot exclude a radiolucent bronchial foreign body."
+    ],
+    "pearl": "A convincing aspiration history plus focal signs overrides a normal radiograph; a peanut is usually invisible on plain X-ray.",
+    "pivot": "Diffuse bilateral wheeze without choking or focal asymmetry may suggest viral wheeze or asthma, but an aspiration history still requires targeted assessment.",
+    "management": {
+      "steps": [
+        [
+          "Recognise",
+          "Clarify the choking event, breathing pattern, voice and focal examination findings."
+        ],
+        [
+          "Keep safe",
+          "Observe in an appropriate setting, minimise distress and maintain readiness for sudden airway compromise."
+        ],
+        [
+          "Consult",
+          "Call paediatric ENT/respiratory and anaesthesia; decide on bronchoscopy versus selected further imaging."
+        ],
+        [
+          "After removal",
+          "Review pulmonary injury, assess for residual complications and counsel about age-appropriate choking prevention."
+        ]
+      ],
+      "safety": "Normal SpO2, chest X-ray or transient symptom improvement cannot exclude a retained airway foreign body.",
+      "local": "Royal Children's Hospital Foreign body inhalation guideline, September 2026."
+    },
+    "source": "https://www.rch.org.au/clinicalguide/guideline_index/Foreign_body_inhalation/",
+    "context": "Advanced integrated clinical decisions"
+  },
+  {
+    "n": 51,
+    "domain": "Paediatric oncology & infectious diseases",
+    "skill": "Febrile neutropenia / avoid delays for ANC result",
+    "stem": "An 8-year-old receiving intensive therapy for acute lymphoblastic leukaemia develops a temperature of 38.7°C at home. On arrival she looks tired but is alert, BP 108/64 mmHg and oxygenation normal. Her most recent chemotherapy was nine days ago; a current neutrophil count is still pending and the central line site looks clean.",
+    "ask": "Which first-hour approach is best?",
+    "options": [
+      "Treat as suspected febrile neutropenia and give prompt empiric IV antibiotics without waiting for ANC.",
+      "Wait for absolute neutrophil count confirmation because normal observations indicate minimal infection risk.",
+      "Take blood cultures, then discharge on oral antibiotics provided the central line looks uninfected.",
+      "Give paracetamol and request repeat temperature readings before notifying the oncology team.",
+      "Order chest CT to locate the infection source before administering any empirical antibacterial treatment."
+    ],
+    "key": "A",
+    "explanations": [
+      "Correct: fever after recent chemotherapy is suspected febrile neutropenia until proven otherwise. Obtain prompt cultures from the line as feasible, start protocol-recommended broad-spectrum IV antibiotics within the specified emergency window and involve the oncology team.",
+      "A stable-looking child may rapidly deteriorate during profound neutropenia. Laboratory confirmation should not delay the first dose when the history is high risk.",
+      "Cultures are important, including appropriately collected line samples, but home treatment decisions require formal risk stratification after initial emergency care, not appearance of the catheter entry site alone.",
+      "Antipyretics can improve comfort but cannot prevent bacteraemia or sepsis. Delaying antimicrobial treatment to see if fever persists is unsafe.",
+      "Routine CT before antibiotics delays effective treatment and adds radiation. Imaging is tailored to symptoms once infection management has started."
+    ],
+    "pearl": "Oncology patients with recent chemotherapy and fever require time-critical empirical antibiotics, even when the neutrophil result is pending.",
+    "pivot": "A child without chemotherapy exposure, immunosuppression or another high-risk condition follows a different fever algorithm based on appearance and source.",
+    "management": {
+      "steps": [
+        [
+          "Triage",
+          "Treat as high-risk fever, assess for sepsis and notify paediatric oncology immediately."
+        ],
+        [
+          "Sample",
+          "Collect blood cultures from the central line and peripheral site when feasible without delaying treatment."
+        ],
+        [
+          "Treat",
+          "Give appropriate IV antipseudomonal empirical antibiotics rapidly, within local febrile neutropenia targets."
+        ],
+        [
+          "Reassess",
+          "Monitor perfusion, ANC, microbiology, line infection and need for admission or escalation."
+        ]
+      ],
+      "safety": "Do not wait for the ANC or imaging before giving antibiotics to a child at risk after chemotherapy.",
+      "local": "Royal Children's Hospital Fever and suspected or confirmed neutropenia guideline."
+    },
+    "source": "https://www.rch.org.au/clinicalguide/guideline_index/Fever_and_suspected_or_confirmed_neutropenia/",
+    "context": "Advanced integrated clinical decisions"
+  },
+  {
+    "n": 52,
+    "domain": "Paediatric respiratory medicine",
+    "skill": "Bronchiolitis / supportive care over bronchodilators",
+    "stem": "A 6-week-old infant has two days of coryza and cough, increased work of breathing, and poor feeding. RR is 65/min, SpO2 90% in room air and there are widespread fine crackles without focal consolidation. He has no prior wheeze or congenital disease. The parent asks whether a salbutamol nebuliser will help.",
+    "ask": "Which initial inpatient approach is most appropriate?",
+    "options": [
+      "Start routine nebulised salbutamol and repeat doses every four hours regardless of response.",
+      "Provide supportive oxygen and feeding/hydration assessment with close respiratory monitoring.",
+      "Administer corticosteroids because bronchiolitis represents inflammation that requires early anti-inflammatory treatment.",
+      "Prescribe empirical antibiotics to prevent bacterial pneumonia during the peak viral illness.",
+      "Use chest physiotherapy to clear secretions before deciding whether oxygen support is required."
+    ],
+    "key": "B",
+    "explanations": [
+      "Routine salbutamol is not recommended in typical infant bronchiolitis and has not shown consistent clinical benefit. This infant needs oxygen and feeding support rather than reflex asthma management.",
+      "Correct: assess ABCs, give supplemental oxygen according to paediatric saturation targets, optimise nasal clearance and hydration/NG feeds where appropriate, and monitor for apnoea or exhaustion because of young age.",
+      "Systemic or inhaled steroids do not routinely improve bronchiolitis outcomes. They introduce treatment without addressing inadequate oxygenation or poor feeding.",
+      "Bronchiolitis is usually viral, and antibiotics are not indicated without bacterial coinfection features. Hypoxaemia alone is not proof of bacterial pneumonia.",
+      "Chest physiotherapy is not routinely beneficial and may increase distress. It cannot replace oxygenation and hydration assessment in a six-week-old."
+    ],
+    "pearl": "In bronchiolitis, effective treatment is primarily supportive: oxygen if needed, feeding support and vigilance for apnoea.",
+    "pivot": "Focal fever, asymmetric crackles, pleural signs or severe deterioration should prompt evaluation for bacterial infection or an alternative diagnosis.",
+    "management": {
+      "steps": [
+        [
+          "Assess",
+          "Review apnoea history, respiratory effort, oxygenation, hydration and feeding percentage."
+        ],
+        [
+          "Support breathing",
+          "Give oxygen or appropriate respiratory support under local bronchiolitis guidelines; suction only when clinically helpful."
+        ],
+        [
+          "Support intake",
+          "Use small feeds, nasogastric or IV fluids when unsafe to feed adequately."
+        ],
+        [
+          "Escalate",
+          "Monitor for apnoea, fatigue or rising oxygen need; involve senior paediatrics or PICU if deteriorating."
+        ]
+      ],
+      "safety": "Young infants can have apnoea and deterioration despite deceptively mild initial signs.",
+      "local": "Royal Children's Hospital Bronchiolitis clinical guideline."
+    },
+    "source": "https://www.rch.org.au/clinicalguide/guideline_index/Bronchiolitis/",
+    "context": "Advanced integrated clinical decisions"
+  },
+  {
+    "n": 53,
+    "domain": "Paediatric endocrinology",
+    "skill": "Adrenal crisis / hydrocortisone before cortisol result",
+    "stem": "A 9-year-old with known primary adrenal insufficiency has vomited repeatedly and cannot retain oral hydrocortisone. She is now lethargic with BP 82/48 mmHg, glucose 2.7 mmol/L and sodium 127 mmol/L. Her parent has a written emergency steroid plan, but the emergency department has not yet obtained a serum cortisol sample.",
+    "ask": "What should be prioritised immediately?",
+    "options": [
+      "Draw repeated cortisol levels before treating because exogenous steroids make results uninterpretable.",
+      "Continue oral hydrocortisone after an antiemetic and await further signs of circulatory collapse.",
+      "Give emergency parenteral hydrocortisone with glucose correction and fluid resuscitation now.",
+      "Start fludrocortisone tablets alone and arrange endocrine review after urine output improves.",
+      "Give a routine maintenance steroid dose and observe before deciding on additional treatment."
+    ],
+    "key": "C",
+    "explanations": [
+      "Diagnostic samples may be collected quickly if they do not delay care, but known adrenal insufficiency plus shock, hypoglycaemia and vomiting establishes a time-critical crisis. Do not postpone steroids.",
+      "Ongoing vomiting makes oral absorption unreliable. Antiemetics are adjuncts, not substitutes for parenteral stress steroid treatment.",
+      "Correct: follow the family's emergency plan, administer IV or IM stress-dose hydrocortisone immediately and manage hypoglycaemia and circulatory depletion with protocol-led dextrose and fluids. Call paediatric/endocrine critical care support.",
+      "Fludrocortisone is maintenance mineralocorticoid therapy in primary disease, but cannot rapidly provide the glucocorticoid stress response required in shock. Oral absorption is doubtful.",
+      "A maintenance dose is inadequate for severe intercurrent illness and shock. Stress dosing must start immediately alongside resuscitation rather than after observation."
+    ],
+    "pearl": "Vomiting plus adrenal insufficiency can rapidly cause crisis; give parenteral hydrocortisone before waiting for diagnostic results.",
+    "pivot": "A well child with mild infection who reliably tolerates oral medicine may use an individualised oral sick-day steroid plan rather than IV therapy.",
+    "management": {
+      "steps": [
+        [
+          "Recognise",
+          "Treat hypotension, vomiting and hypoglycaemia as adrenal crisis; request senior resuscitation help."
+        ],
+        [
+          "Replace cortisol",
+          "Give age-appropriate IV/IM hydrocortisone per emergency plan, followed by scheduled stress doses."
+        ],
+        [
+          "Resuscitate",
+          "Correct low glucose and circulatory depletion with monitored dextrose and isotonic fluid therapy."
+        ],
+        [
+          "Treat trigger",
+          "Investigate infection or illness, monitor electrolytes and consult paediatric endocrinology."
+        ]
+      ],
+      "safety": "Do not delay rescue hydrocortisone for a cortisol sample or rely on oral replacement during repeated vomiting.",
+      "local": "Royal Children's Hospital Adrenal crisis and acute adrenal insufficiency guideline."
+    },
+    "source": "https://www.rch.org.au/clinicalguide/guideline_index/Adrenal_crisis_and_acute_adrenal_insufficiency/",
+    "context": "Advanced integrated clinical decisions"
+  },
+  {
+    "n": 54,
+    "domain": "Ophthalmology & neurology",
+    "skill": "Central retinal artery occlusion / emergency stroke evaluation",
+    "stem": "A 72-year-old with atrial fibrillation notices sudden painless complete loss of vision in the left eye 40 minutes ago. Pupillary examination shows a left relative afferent defect and fundoscopy reveals a pale retina with a red foveal spot. There is no headache, jaw claudication or limb weakness.",
+    "ask": "Which response is most appropriate?",
+    "options": [
+      "Arrange outpatient retinal photography and review visual acuity in a week for spontaneous improvement.",
+      "Prescribe topical corticosteroid drops for presumed inflammatory optic neuropathy before imaging.",
+      "Treat as retinal detachment and arrange elective vitreoretinal repair after several days.",
+      "Activate an emergency stroke-equivalent pathway with urgent ophthalmology and neurovascular evaluation.",
+      "Begin oral antibiotics for suspected endophthalmitis because painless visual loss may precede inflammation."
+    ],
+    "key": "D",
+    "explanations": [
+      "Sudden profound monocular visual loss may represent retinal arterial ischaemia, with time-sensitive opportunities and high associated stroke risk. Routine review delays emergency assessment.",
+      "Topical steroids do not restore central retinal arterial perfusion. Inflammatory optic neuropathy has a different clinical examination, often subacute and associated with pain on movement.",
+      "Retinal detachment commonly produces flashes, floaters and a curtain-like visual defect rather than a pale retina with cherry-red fovea. It still warrants emergency care, but this is an arterial event.",
+      "Correct: recognise presumed central retinal artery occlusion as an acute retinal stroke. Activate emergency neurovascular evaluation, involve ophthalmology/stroke specialists, establish onset time and evaluate embolic causes including AF and carotid disease.",
+      "Endophthalmitis often causes pain and ocular inflammation, particularly after intraocular surgery or injection. There is no infective syndrome here, and antibiotics do not target arterial occlusion."
+    ],
+    "pearl": "Central retinal artery occlusion is an ocular stroke; sudden painless monocular blindness demands emergency neurovascular assessment.",
+    "pivot": "Transient monocular visual loss that resolves completely still requires urgent TIA-equivalent vascular evaluation rather than routine reassurance.",
+    "management": {
+      "steps": [
+        [
+          "Declare emergency",
+          "Record exact vision-loss onset and engage an emergency stroke and ophthalmology service."
+        ],
+        [
+          "Assess",
+          "Confirm acuity, pupils, fundus findings, glucose, ECG, neurological signs and giant-cell arteritis symptoms."
+        ],
+        [
+          "Image and refer",
+          "Follow rapid brain/vascular imaging and retinal evaluation protocols; discuss time-dependent reperfusion options with specialists."
+        ],
+        [
+          "Prevent recurrence",
+          "Investigate AF, carotid and vascular sources and initiate mechanism-specific secondary prevention."
+        ]
+      ],
+      "safety": "Do not wait for return of vision or postpone stroke work-up because the problem appears limited to one eye.",
+      "local": "Australian emergency eye and stroke referral pathways."
+    },
+    "source": "https://strokefoundation.org.au/",
+    "context": "Advanced integrated clinical decisions"
+  },
+  {
+    "n": 55,
+    "domain": "Respiratory & critical care",
+    "skill": "COPD exacerbation / acute hypercapnic acidosis and NIV",
+    "stem": "A 66-year-old with known severe COPD presents with increased dyspnoea, purulent sputum and wheeze. After controlled oxygen and bronchodilators, blood gas shows pH 7.27, PaCO2 72 mmHg and PaO2 64 mmHg. He is alert, cooperative and protecting his airway but remains tachypnoeic at 30/min.",
+    "ask": "Which additional management intervention is most appropriate?",
+    "options": [
+      "Increase oxygen to achieve saturations above 98% as the primary means of correcting acidosis.",
+      "Delay ventilatory support until the patient becomes obtunded or unable to speak in phrases.",
+      "Correct respiratory acidosis with intravenous bicarbonate before further ventilatory assessment.",
+      "Use routine chest physiotherapy alone because hypercapnia is expected in chronic obstructive lung disease.",
+      "Initiate monitored non-invasive ventilation and continue controlled oxygen plus exacerbation treatment."
+    ],
+    "key": "E",
+    "explanations": [
+      "Uncontrolled high oxygen can worsen CO2 retention in susceptible COPD patients. Oxygen should be titrated to the individual's target while addressing the ventilatory failure.",
+      "Waiting for reduced consciousness permits deterioration and makes non-invasive ventilation less safe. Persistent respiratory acidosis despite initial therapy is an appropriate early NIV indication.",
+      "Bicarbonate does not correct alveolar hypoventilation and adds CO2 load. Effective ventilatory support treats the primary pathophysiology.",
+      "Chronic CO2 retention may occur, but new respiratory acidosis and ongoing distress indicate acute-on-chronic failure. Physiotherapy cannot correct insufficient alveolar ventilation.",
+      "Correct: arrange senior respiratory/critical care review and monitored NIV for persistent hypercapnic respiratory acidosis if no contraindications exist. Continue targeted controlled oxygen, short-acting bronchodilators, steroids and antibiotics when clinically indicated, reassessing gases promptly."
+    ],
+    "pearl": "For an alert COPD patient with persistent acidotic hypercapnic failure, early NIV can avert invasive ventilation.",
+    "pivot": "A patient unable to protect the airway, with severe haemodynamic instability or rapidly deteriorating consciousness may require invasive ventilation instead of NIV.",
+    "management": {
+      "steps": [
+        [
+          "Evaluate",
+          "Review gas trend, mental state, airway protection, oxygen saturation and chest imaging for triggers."
+        ],
+        [
+          "Treat exacerbation",
+          "Titrate oxygen to appropriate range; provide bronchodilators, systemic corticosteroid and indicated antimicrobials."
+        ],
+        [
+          "Support ventilation",
+          "Initiate NIV in a monitored setting with trained staff, mask fit and close tolerance checks."
+        ],
+        [
+          "Reassess",
+          "Repeat blood gases and work-of-breathing review promptly; escalate to ICU/intubation if NIV fails."
+        ]
+      ],
+      "safety": "Do not chase high oxygen saturation while neglecting worsening CO2 and acidemia.",
+      "local": "Australian COPD-X Plan guideline for acute exacerbation and ventilatory failure."
+    },
+    "source": "https://copdx.org.au/",
+    "context": "Advanced integrated clinical decisions"
   }
 ]
