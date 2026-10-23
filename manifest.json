@@ -92,6 +92,13 @@
       "emoji": "🌿",
       "description": "100 higher-challenge integrated cases with detailed clinical judgement, alternative reasoning and practical management",
       "count": 100
+    },
+    {
+      "id": 14,
+      "name": "Emergency Reasoning Garden",
+      "emoji": "🩺",
+      "description": "100 advanced final-year cases with plausible competing decisions, five-option explanations, practical management and Australian clinical guidance",
+      "count": 100
     }
   ]
 }
