@@ -238,5 +238,245 @@
       "local": "RANZCP clinical practice guidelines for mood disorders, antidepressant-induced manic switch guidance."
     },
     "source": "https://www.ranzcp.org/getmedia/a8c79505-c0b5-46b4-9f27-67f79e047674/RANZCP-mood-disorders-clinical-practice-guideline-2020.pdf"
+  },
+  {
+    "n": 6,
+    "domain": "Neonatology & infectious diseases",
+    "skill": "Febrile neonate / full septic assessment",
+    "stem": "A 12-day-old born at term has a rectal temperature of 38.2°C at home but is alert and feeding reasonably well on arrival. Examination shows no localised source, observations are stable, and parents ask to return for a review tomorrow because their older child currently has a cold. Bedside urine dipstick is unremarkable.",
+    "ask": "What is the safest immediate course of action?",
+    "options": [
+      "Admit for neonatal septic evaluation and empiric intravenous antibiotics regardless of the reassuring examination.",
+      "Arrange repeat observations in 24 hours if inflammatory markers and the urine dipstick are normal.",
+      "Treat as a viral upper respiratory infection because a household contact has similar symptoms.",
+      "Collect a nasopharyngeal viral PCR and discharge if it is positive for a respiratory virus.",
+      "Prescribe oral amoxicillin and provide return instructions while awaiting initial culture results."
+    ],
+    "key": "A",
+    "explanations": [
+      "Correct: fever in an infant this young requires a full sepsis assessment, including blood and urine investigations, consideration of CSF studies, admission and prompt empirical IV antibiotics. A well appearance does not reliably exclude serious infection at 12 days of age.",
+      "Risk pathways for older infants differ, but the neonatal age itself makes next-day outpatient review inappropriate. Normal early markers or negative dipstick cannot establish safety.",
+      "Respiratory viruses commonly circulate in households, but their presence does not exclude invasive bacterial infection in neonates. The infant still needs an age-based hospital assessment.",
+      "A positive viral swab may help with infection-control and diagnosis but does not negate bacterial meningitis or bacteraemia risk. It is not a stand-alone discharge criterion.",
+      "Oral antibiotics provide inadequate coverage for an unexcluded invasive neonatal infection and can interfere with subsequent cultures. Hospital IV treatment and monitoring are indicated."
+    ],
+    "pearl": "A febrile infant aged 21 days or younger needs a full sepsis pathway regardless of how well they initially look.",
+    "pivot": "In a well infant aged 22–28 days, inflammatory markers and risk assessment may modify LP or antimicrobial decisions, but admission is still generally indicated.",
+    "management": {
+      "steps": [
+        [
+          "Escalate and admit",
+          "Notify senior paediatrics, repeat ABCDE/vitals and arrange a monitored admission."
+        ],
+        [
+          "Investigate",
+          "Obtain FBC, CRP, blood and appropriate urine cultures, CSF testing when safe and other targeted studies."
+        ],
+        [
+          "Treat",
+          "Give local-protocol neonatal IV antibiotics promptly; do not postpone treatment if sampling is difficult."
+        ],
+        [
+          "Review",
+          "Reassess frequently, evaluate results and respiratory viruses, and tailor treatment under senior guidance."
+        ]
+      ],
+      "safety": "Absence of lethargy or a normal urine dipstick cannot rule out serious bacterial infection in a febrile neonate.",
+      "local": "Royal Children's Hospital Febrile Child guideline, current neonatal age bands."
+    },
+    "source": "https://www.rch.org.au/clinicalguide/guideline_index/Febrile_child/",
+    "context": "Advanced integrated clinical decisions"
+  },
+  {
+    "n": 7,
+    "domain": "Paediatrics & emergency medicine",
+    "skill": "Paediatric septic shock / early escalation",
+    "stem": "A 3-year-old presents with six hours of fever, lethargy and a non-blanching rash. Heart rate is 176/min, capillary refill takes five seconds, extremities are cold and urine output has fallen. BP is 99/61 mmHg, and peripheral IV access has been obtained. The junior doctor is reassured by the normal systolic pressure.",
+    "ask": "What treatment principle best guides the next minutes?",
+    "options": [
+      "Wait for hypotension to emerge before diagnosing septic shock and beginning fluid therapy.",
+      "Start a paediatric sepsis bundle with rapid antibiotics, carefully titrated fluids and critical-care support.",
+      "Administer large unmonitored fluid volumes because all children with sepsis benefit from maximum preload.",
+      "Obtain a lumbar puncture first because the rash suggests meningococcal meningitis as the primary cause.",
+      "Use oral rehydration and repeat observations after antipyretics because the child is still normotensive."
+    ],
+    "key": "B",
+    "explanations": [
+      "Hypotension is often a late finding in paediatric shock. Prolonged capillary refill, tachycardia, altered activity and low urine output are already evidence of poor perfusion.",
+      "Correct: recognise septic shock clinically, call for paediatric resuscitation support, obtain cultures if they do not delay treatment and deliver early IV antibiotics with small reassessed fluid boluses. Prepare vasoactive support if shock persists.",
+      "Fluid is important, but indiscriminate large boluses may cause harm, especially if myocardial dysfunction or fluid overload develops. Reassessment after each bolus is essential.",
+      "A lumbar puncture may be required later to investigate meningitis, but should never delay resuscitation and antimicrobials in an unstable child. Consider contraindications during shock.",
+      "Oral fluids and antipyretics are inadequate for an ill child with organ hypoperfusion. A reassuring BP cannot override the combined red flags."
+    ],
+    "pearl": "A child can be in septic shock with a normal blood pressure; observe perfusion, conscious state and urine output.",
+    "pivot": "A well-appearing child with isolated fever, normal perfusion and no concerning rash is evaluated on a different risk pathway.",
+    "management": {
+      "steps": [
+        [
+          "Declare",
+          "Activate the paediatric sepsis pathway and involve intensive care or retrieval teams early."
+        ],
+        [
+          "Immediate treatment",
+          "Give oxygen as indicated, rapidly collect blood cultures and deliver empirical IV antimicrobials."
+        ],
+        [
+          "Resuscitate",
+          "Give protocol-based isotonic crystalloid boluses with repeat assessment of breathing, perfusion and hepatomegaly."
+        ],
+        [
+          "Escalate",
+          "Start suitable vasoactive support for refractory shock and pursue source management with continuous monitoring."
+        ]
+      ],
+      "safety": "Delay in antibiotics or resuscitation because BP is normal can be dangerous; avoid unrestricted fluid boluses.",
+      "local": "Royal Children's Hospital Sepsis – assessment and management clinical guideline."
+    },
+    "source": "https://www.rch.org.au/clinicalguide/guideline_index/SEPSIS_assessment_and_management/",
+    "context": "Advanced integrated clinical decisions"
+  },
+  {
+    "n": 8,
+    "domain": "Neonatology & endocrine emergencies",
+    "skill": "Neonatal hypoglycaemia with convulsion / immediate glucose",
+    "stem": "A 3-day-old term infant of a mother with diabetes suddenly becomes floppy and develops repetitive jerking movements. Point-of-care glucose is 1.5 mmol/L. The infant is unable to feed safely, and IV access has just been secured. A nurse asks if blood tests should be sent before any treatment is given.",
+    "ask": "What should occur without delay?",
+    "options": [
+      "Administer oral glucose gel despite the reduced consciousness to avoid intravenous treatment.",
+      "Wait for a laboratory glucose result because bedside measurements can be inaccurate at low levels.",
+      "Give prompt intravenous dextrose, then maintain glucose delivery while investigating the cause.",
+      "Start anticonvulsant treatment alone because the measured glucose may normalise after the seizure.",
+      "Repeat capillary glucose in thirty minutes before intervening because transitional lows are common."
+    ],
+    "key": "C",
+    "explanations": [
+      "Buccal glucose gel is useful for selected well newborns who can safely feed, but a floppy seizing infant needs immediate reliable parenteral glucose correction.",
+      "A confirmatory true glucose and a hypoglycaemia screen are valuable when obtained rapidly; however, sampling must not postpone treatment of convulsive hypoglycaemia.",
+      "Correct: treat severe symptomatic hypoglycaemia immediately with neonatal protocol IV dextrose followed by glucose-containing infusion, frequent rechecks and specialist neonatal review. Seek a critical sample if feasible without treatment delay.",
+      "Convulsions may stop after glucose correction. Anticonvulsants alone leave a reversible metabolic cause untreated and risk persistent neuronal injury.",
+      "Physiological neonatal glucose dips do occur, but seizures and a value of 1.5 mmol/L are an emergency, not a monitoring-only scenario."
+    ],
+    "pearl": "Seizures with documented neonatal hypoglycaemia demand immediate dextrose; a diagnostic critical sample must never delay correction.",
+    "pivot": "A well, asymptomatic at-risk newborn with a modest low glucose may undergo a feed/gel pathway with timely rechecking according to neonatal protocols.",
+    "management": {
+      "steps": [
+        [
+          "Stabilise",
+          "Assess airway, breathing, temperature and convulsions; request neonatal resuscitation assistance."
+        ],
+        [
+          "Correct glucose",
+          "Administer age-appropriate IV dextrose promptly and commence a controlled glucose infusion."
+        ],
+        [
+          "Investigate",
+          "Confirm true blood glucose and obtain critical metabolic tests when possible without delaying therapy."
+        ],
+        [
+          "Prevent recurrence",
+          "Recheck glucose frequently, adjust infusion/feeding and investigate persistent hyperinsulinism or other illness."
+        ]
+      ],
+      "safety": "Do not give oral fluids to a seizing or poorly conscious neonate, and do not delay dextrose for laboratory confirmation.",
+      "local": "Royal Children's Hospital Hypoglycaemia guideline."
+    },
+    "source": "https://www.rch.org.au/clinicalguide/guideline_index/Hypoglycaemia/",
+    "context": "Advanced integrated clinical decisions"
+  },
+  {
+    "n": 9,
+    "domain": "Obstetrics & fetal surveillance",
+    "skill": "Reduced fetal movements / same-day assessment",
+    "stem": "A 31-year-old G2P1 at 34+5 weeks phones maternity triage reporting that her baby has moved much less than usual since yesterday evening. She has no bleeding, contractions or abdominal pain and has an anterior placenta. A home handheld Doppler detected what she believes was a fetal heartbeat.",
+    "ask": "What is the most appropriate advice now?",
+    "options": [
+      "Ask her to drink a cold sweet drink and count movements for a further twenty-four hours.",
+      "Reassure because an anterior placenta can explain reduced awareness of normal movement patterns.",
+      "Accept the home Doppler heartbeat as adequate evidence that urgent obstetric review is unnecessary.",
+      "Arrange prompt in-person maternity assessment with fetal wellbeing testing under local guidance.",
+      "Book a routine growth ultrasound next week if she still feels that movements remain reduced."
+    ],
+    "key": "D",
+    "explanations": [
+      "Home strategies such as drinks and prolonged counting should not defer assessment after a sustained change from a fetus's usual movement pattern. Time-sensitive compromise can be missed.",
+      "Placental position can alter how movements feel, especially earlier in pregnancy, but it does not safely explain a new significant reduction at this gestation.",
+      "A detectable heartbeat does not assess fetal oxygenation or wellbeing. Home Dopplers can be inaccurate and provide false reassurance.",
+      "Correct: advise attendance promptly for an experienced clinical assessment, maternal history and fetal testing such as CTG and further ultrasound when indicated by the clinical findings or protocol.",
+      "Routine imaging next week delays initial risk assessment. Ultrasound is a useful follow-up component, but assessment of reduced movements should begin promptly."
+    ],
+    "pearl": "Reduced movements mean a change from that individual baby's usual pattern; a home Doppler heartbeat does not establish wellbeing.",
+    "pivot": "If symptoms include vaginal bleeding, severe pain or maternal collapse, activate an emergency obstetric pathway alongside fetal assessment.",
+    "management": {
+      "steps": [
+        [
+          "Respond",
+          "Advise immediate maternity contact and prompt attendance rather than waiting for a fixed count."
+        ],
+        [
+          "Assess",
+          "Review gestation, movement pattern, obstetric risk factors, maternal observations and abdominal examination."
+        ],
+        [
+          "Investigate",
+          "Arrange CTG and additional ultrasound or growth assessment based on gestation, clinical findings and local guidance."
+        ],
+        [
+          "Safety-net",
+          "Explain future recurrence, when to return urgently and the agreed follow-up plan."
+        ]
+      ],
+      "safety": "Never dismiss persistent reduced fetal movements because a home Doppler finds a heartbeat.",
+      "local": "Queensland Clinical Guideline Fetal movements, April 2025 update."
+    },
+    "source": "https://www.health.qld.gov.au/__data/assets/pdf_file/0025/728701/s-fetalmovement.pdf",
+    "context": "Advanced integrated clinical decisions"
+  },
+  {
+    "n": 10,
+    "domain": "Obstetrics & maternal emergency medicine",
+    "skill": "Peripartum cardiomyopathy / differentiating dyspnoea",
+    "stem": "A 33-year-old woman is five days postpartum after an uncomplicated delivery. She reports rapidly worsening exertional dyspnoea, orthopnoea and leg swelling. HR is 122/min, SpO2 90% on room air, BP 128/85 mmHg; there are bibasal crackles and an S3. Echocardiography reveals global LV systolic dysfunction with ejection fraction 27%.",
+    "ask": "What should take priority in management?",
+    "options": [
+      "Reassure and arrange routine review because oedema and dyspnoea are expected postpartum changes.",
+      "Treat empirically for simple asthma without evaluating cardiac failure because wheeze may be absent.",
+      "Start a high-dose diuretic at home and avoid admission because blood pressure is preserved.",
+      "Request elective cardiology review after six weeks to confirm whether LV function remains low.",
+      "Admit for acute heart failure treatment with cardiology and obstetric multidisciplinary care."
+    ],
+    "key": "E",
+    "explanations": [
+      "Mild postpartum swelling can be physiological, but hypoxia, orthopnoea, crackles, an S3 and markedly reduced ejection fraction indicate serious cardiac disease.",
+      "Cardiac pulmonary oedema may mimic obstructive airway disease, but bronchodilators alone will not treat impaired cardiac pump function and fluid overload.",
+      "Diuretics may be appropriate for congestion, but hypoxic new severe systolic failure needs monitored inpatient treatment and full assessment; outpatient management risks rapid decompensation.",
+      "A six-week follow-up is useful for recovery assessment, not an appropriate response to current respiratory failure. Urgent treatment and investigation are needed now.",
+      "Correct: stabilise airway and oxygenation, admit and assess haemodynamic status, involve cardiology and obstetrics, provide guideline-directed acute heart failure care, evaluate thromboembolic risk and review medications for lactation suitability."
+    ],
+    "pearl": "New postpartum breathlessness with orthopnoea and global LV dysfunction is cardiomyopathy until properly assessed, not simply expected fluid changes.",
+    "pivot": "Postpartum breathlessness with pleuritic pain and hypoxia but preserved ventricular function may instead require urgent pulmonary embolism investigation.",
+    "management": {
+      "steps": [
+        [
+          "Stabilise",
+          "Provide oxygen or ventilatory support when needed, monitor ECG, oxygen saturation, renal function and fluid balance."
+        ],
+        [
+          "Treat failure",
+          "Use clinician-guided IV diuresis for congestion and consider intensive care for instability."
+        ],
+        [
+          "Define cause",
+          "Involve cardiology/obstetrics, assess echocardiography, ECG, troponin and other causes of myocardial dysfunction."
+        ],
+        [
+          "Long-term plan",
+          "Start pregnancy/lactation-appropriate heart failure therapies and organise thrombosis risk review and repeat cardiac imaging."
+        ]
+      ],
+      "safety": "Postpartum heart failure can progress quickly; lactation and possible subsequent pregnancy materially affect medicine choices.",
+      "local": "Heart Foundation Australia cardiomyopathy and heart failure resources; local obstetric/cardiology protocols."
+    },
+    "source": "https://www.heartfoundation.org.au/for-professionals/clinical-information/heart-failure",
+    "context": "Advanced integrated clinical decisions"
   }
 ]
