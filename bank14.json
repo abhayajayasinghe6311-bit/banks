@@ -4078,5 +4078,485 @@
       "local": "Australian Clozaril/Clopine product information, Australian Commission on Safety and Quality in Health Care (2026)."
     },
     "source": "https://www.safetyandquality.gov.au/medicine-finder/clopine"
+  },
+  {
+    "n": 86,
+    "domain": "Cardiology & maternal medicine",
+    "skill": "Pulmonary arterial hypertension in pregnancy / decompensated right heart failure",
+    "context": "Advanced final-year clinical prioritisation",
+    "stem": "A 30-year-old at 24 weeks' gestation has established pulmonary arterial hypertension. She presents with worsening dyspnoea at rest, near-syncope and ankle oedema. HR is 126/min, oxygen saturation 89% and echocardiography shows severe right ventricular dilation with impaired function. Her blood pressure is 94/60 mmHg. The local hospital has no pulmonary hypertension service.",
+    "ask": "What is the safest immediate disposition?",
+    "options": [
+      "Stabilise and urgently transfer under a specialist maternal-cardiac and critical-care team.",
+      "Start an outpatient oral diuretic and review symptoms at the next antenatal visit.",
+      "Give large rapid crystalloid boluses until blood pressure reaches the usual pregnancy range.",
+      "Discontinue all pulmonary vasodilators immediately because they are unsafe during every pregnancy.",
+      "Perform urgent elective induction locally before discussing the right ventricular failure with specialists."
+    ],
+    "key": "A",
+    "explanations": [
+      "Correct: pregnancy with decompensated PAH and right-heart dysfunction is a high-risk maternal emergency. Provide oxygen and cautious haemodynamic support, involve specialist cardiology, obstetrics, anaesthesia and ICU, and arrange appropriate transfer and delivery planning.",
+      "Near-syncope, hypoxia and RV dysfunction signal impending circulatory collapse. Outpatient diuresis without monitored evaluation cannot safely manage this presentation.",
+      "Excessive fluids can worsen RV dilatation and impair cardiac output. Volume management should be carefully guided by expert haemodynamic assessment rather than automatic large boluses.",
+      "Some PAH medicines are contraindicated in pregnancy, but abrupt withdrawal of effective therapies can precipitate deterioration. A specialist must review each agent and substitute pregnancy-compatible treatment.",
+      "Emergency delivery may eventually be required, but maternal stabilisation and multidisciplinary planning are essential. Uncoordinated induction at a facility without cardiopulmonary expertise may increase mortality."
+    ],
+    "pearl": "Decompensated pulmonary arterial hypertension in pregnancy is a maternal-cardiac emergency requiring specialist multidisciplinary care.",
+    "pivot": "A stable pregnant patient with a benign flow murmur and normal right ventricular function follows a different cardiology pathway.",
+    "management": {
+      "steps": [
+        [
+          "Stabilise",
+          "Provide monitored oxygenation, ECG, blood pressure and cautious haemodynamic support; call critical care."
+        ],
+        [
+          "Coordinate",
+          "Contact tertiary maternal medicine, pulmonary hypertension cardiology, obstetrics and anaesthesia teams."
+        ],
+        [
+          "Treat right heart",
+          "Review pulmonary vasodilators, fluid balance and precipitating causes under specialist guidance."
+        ],
+        [
+          "Plan birth",
+          "Arrange transfer, fetal surveillance and a multidisciplinary delivery and postpartum monitoring strategy."
+        ]
+      ],
+      "safety": "Do not give reflex large-volume fluids or stop all pulmonary hypertension medicines without specialist review.",
+      "local": "Australian and New Zealand Journal of Obstetrics and Gynaecology: multidisciplinary PAH in pregnancy case series (2023)."
+    },
+    "source": "https://doi.org/10.1111/ajo.13557"
+  },
+  {
+    "n": 87,
+    "domain": "Neurology & postpartum emergencies",
+    "skill": "Recurrent postpartum thunderclap headache / investigate RCVS and haemorrhage",
+    "context": "Advanced final-year clinical prioritisation",
+    "stem": "A 35-year-old presents ten days postpartum after three episodes of sudden maximal-intensity headache triggered by showering and exertion. Each lasted 30 minutes, with a milder headache between episodes. BP is 132/82 mmHg and examination is normal. Non-contrast CT performed after the first episode was reported normal.",
+    "ask": "What is the most appropriate next approach?",
+    "options": [
+      "Reassure and discharge because a previous normal CT excludes vascular causes of recurrent headaches.",
+      "Urgently reassess for dangerous secondary headache causes and obtain specialist vascular imaging.",
+      "Prescribe a triptan because recurrent brief headaches after delivery are typical migraine attacks.",
+      "Diagnose post-dural puncture headache without checking whether the pain is positional.",
+      "Order outpatient cervical spine radiographs to exclude a musculoskeletal source of pain."
+    ],
+    "key": "B",
+    "explanations": [
+      "An initial normal CT does not exclude reversible cerebral vasoconstriction syndrome, vascular dissection, cerebral venous thrombosis or every subarachnoid haemorrhage. Repeated thunderclap events demand further assessment.",
+      "Correct: urgent neurovascular assessment should exclude haemorrhage and other secondary causes, with CTA/MRA or additional testing guided by onset timing and neurology. RCVS is a key postpartum consideration, and early vascular imaging can be initially normal.",
+      "Triptans are vasoactive and may aggravate RCVS. Migraine usually has a different time course; a thunderclap presentation requires secondary causes to be investigated before migraine treatment.",
+      "Post-dural puncture headache is characteristically positional and associated with neuraxial puncture. It should not be assumed from postpartum status alone, especially with abrupt maximal pain.",
+      "Cervical radiographs do not evaluate intracranial vascular pathology. Musculoskeletal causes cannot be prioritised over life-threatening thunderclap differentials."
+    ],
+    "pearl": "Recurrent thunderclap headaches postpartum suggest RCVS but still require urgent exclusion of haemorrhage, thrombosis and dissection.",
+    "pivot": "A gradual recurrent headache matching a longstanding migraine pattern without red flags may follow a primary headache pathway.",
+    "management": {
+      "steps": [
+        [
+          "Triage",
+          "Repeat neurological examination, BP, pregnancy/postpartum history, medication and trigger review."
+        ],
+        [
+          "Investigate",
+          "Arrange urgent appropriate CT/vascular imaging and further testing based on haemorrhage risk and timing."
+        ],
+        [
+          "Consult",
+          "Involve neurology/stroke and obstetric medicine for possible RCVS and related complications."
+        ],
+        [
+          "Prevent harm",
+          "Avoid unnecessary vasoactive triggers and monitor for new deficits, seizures or recurrent severe pain."
+        ]
+      ],
+      "safety": "Do not treat a postpartum thunderclap headache as routine migraine solely because the first CT was normal.",
+      "local": "NSW Agency for Clinical Innovation Emergency Care Institute headache red flags and RCVS differential."
+    },
+    "source": "https://aci.health.nsw.gov.au/networks/eci/clinical/tools/neurology/headache"
+  },
+  {
+    "n": 88,
+    "domain": "General practice & osteoporosis",
+    "skill": "Denosumab discontinuation / rebound vertebral fracture prevention",
+    "context": "Advanced final-year clinical prioritisation",
+    "stem": "A 74-year-old with a prior vertebral fragility fracture has received denosumab every six months for four years. She has moved interstate and plans to stop injections because her recent bone-density scan improved. Her next dose is due in two weeks. Kidney function is adequate for several treatment options.",
+    "ask": "Which plan best prevents a treatment-related fracture risk?",
+    "options": [
+      "Stop denosumab now and recheck bone density in two years without further bone protection.",
+      "Delay the next dose for six months because improved bone density indicates durable residual activity.",
+      "Continue on schedule or arrange timely sequential antiresorptive therapy if stopping is necessary.",
+      "Replace denosumab with calcium tablets alone because her bone density is now above baseline.",
+      "Give one month of oral glucocorticoids to prevent the inflammatory rebound after denosumab."
+    ],
+    "key": "C",
+    "explanations": [
+      "Abrupt cessation can trigger rapid rebound bone turnover and multiple vertebral fractures, particularly after previous vertebral fractures. A long drug holiday without protection is unsafe.",
+      "Denosumab has no prolonged skeletal retention like bisphosphonates. Delaying beyond the scheduled interval can permit rebound resorption and fracture risk despite a better DXA score.",
+      "Correct: arrange reliable six-monthly injections or specialist-planned transition to a potent antiresorptive such as an appropriate bisphosphonate, with timing, renal function and follow-up considered.",
+      "Calcium and vitamin D are important when deficient, but they do not replace antiresorptive therapy for high fracture risk or prevent denosumab withdrawal rebound.",
+      "Glucocorticoids increase bone loss and fracture risk. They have no role in preventing denosumab rebound and could worsen osteoporosis."
+    ],
+    "pearl": "Never stop denosumab without a plan for another antiresorptive; the rebound risk differs from a bisphosphonate drug holiday.",
+    "pivot": "A patient stopping an oral bisphosphonate after appropriate risk reassessment may sometimes be eligible for a monitored drug holiday.",
+    "management": {
+      "steps": [
+        [
+          "Assess risk",
+          "Review fracture history, DXA, falls, renal function and calcium/vitamin D status."
+        ],
+        [
+          "Prevent lapse",
+          "Arrange the due denosumab dose or specialist-directed sequential bisphosphonate at the correct interval."
+        ],
+        [
+          "Communicate",
+          "Transfer records and establish a reliable recall system with the new treating GP."
+        ],
+        [
+          "Follow up",
+          "Reassess adherence, symptoms of vertebral fracture and future fracture risk."
+        ]
+      ],
+      "safety": "Do not reassure on the basis of improved DXA alone; prior vertebral fracture raises rebound fracture risk.",
+      "local": "RACGP and Healthy Bones Australia 2024 osteoporosis guideline, published MJA 2025."
+    },
+    "source": "https://doi.org/10.5694/mja2.52637"
+  },
+  {
+    "n": 89,
+    "domain": "Adolescent gynaecology & surgery",
+    "skill": "Adnexal torsion / preserved Doppler flow does not exclude",
+    "context": "Advanced final-year clinical prioritisation",
+    "stem": "A 16-year-old presents with sudden severe right iliac fossa pain and vomiting. Pregnancy test is negative. Ultrasound shows a markedly enlarged oedematous right ovary with peripheral follicles, but colour Doppler detects arterial flow. The radiology report says torsion is unlikely because flow is present. She remains in severe pain.",
+    "ask": "Which management is most appropriate?",
+    "options": [
+      "Discharge because documented ovarian arterial flow reliably excludes torsion and tissue is safe.",
+      "Treat as uncomplicated dysmenorrhoea and reassess at the next menstrual cycle.",
+      "Order an elective repeat ultrasound in one week to check whether ovarian swelling settles.",
+      "Seek urgent gynaecological assessment for possible diagnostic laparoscopy and ovarian preservation.",
+      "Start empirical PID antibiotics alone because ovarian oedema with flow is diagnostic of infection."
+    ],
+    "key": "D",
+    "explanations": [
+      "Ovarian dual blood supply and intermittent torsion can preserve Doppler arterial signals despite clinically significant twisting. Discharge risks ovarian ischaemia and loss.",
+      "Severe sudden unilateral pain with vomiting and enlarged ovary is atypical of uncomplicated dysmenorrhoea. A benign label must not override torsion red flags.",
+      "Repeat outpatient imaging can delay surgery and ovarian salvage. Clinical suspicion warrants urgent specialist assessment despite equivocal Doppler findings.",
+      "Correct: arrange urgent gynaecological review and likely diagnostic laparoscopy when torsion remains strongly suspected. Detorsion with ovarian preservation is preferred where feasible.",
+      "PID may cause pelvic pain but the abrupt onset, vomiting and ovarian enlargement are highly concerning for torsion. Antibiotics alone do not untwist an adnexa."
+    ],
+    "pearl": "Normal ovarian Doppler arterial flow does not rule out torsion; laparoscopy is the definitive diagnostic and treatment pathway.",
+    "pivot": "If pain is gradual, bilateral and accompanied by cervicitis and cervical motion tenderness, PID becomes a more likely competing diagnosis.",
+    "management": {
+      "steps": [
+        [
+          "Stabilise",
+          "Provide analgesia, antiemetics, IV access, fasting status and pregnancy testing."
+        ],
+        [
+          "Review images",
+          "Assess ovarian size, oedema, pedicle and free fluid without overrelying on Doppler."
+        ],
+        [
+          "Escalate",
+          "Contact gynaecology urgently and prepare for possible diagnostic laparoscopy."
+        ],
+        [
+          "Preserve",
+          "Prioritise detorsion and ovarian conservation with appropriate postoperative review."
+        ]
+      ],
+      "safety": "Do not let a Doppler-flow statement override a strongly suspicious clinical presentation.",
+      "local": "ACOG Committee Opinion 783 on adolescent adnexal torsion; consistent with Australasian emergency gynaecology practice."
+    },
+    "source": "https://www.acog.org/clinical/clinical-guidance/committee-opinion/articles/2019/08/adnexal-torsion-in-adolescents"
+  },
+  {
+    "n": 90,
+    "domain": "Addiction medicine & acute care",
+    "skill": "Alcohol withdrawal despite measurable ethanol / treat clinical syndrome",
+    "context": "Advanced final-year clinical prioritisation",
+    "stem": "A 51-year-old who drinks two bottles of spirits daily is admitted after a fall. Twelve hours after his last substantial drink he is sweaty, tremulous, agitated and tachycardic to 125/min, with BP 168/100 mmHg. Blood alcohol remains detectable at 0.04%. He previously had withdrawal seizures and now reports seeing insects on the wall.",
+    "ask": "What is the best immediate approach?",
+    "options": [
+      "Wait until blood alcohol becomes zero before considering withdrawal treatment with sedatives.",
+      "Give haloperidol alone because visual hallucinations establish a primary psychotic disorder.",
+      "Use oral propranolol alone because the principal danger is sympathetic tachycardia.",
+      "Encourage a small dose of alcohol to stabilise symptoms until detoxification services open.",
+      "Treat high-risk alcohol withdrawal promptly with monitored benzodiazepine-based care and thiamine."
+    ],
+    "key": "E",
+    "explanations": [
+      "Withdrawal can begin while ethanol remains measurable if levels have fallen sharply from a dependent patient's baseline. Delaying therapy risks seizures and delirium.",
+      "Hallucinations can be part of severe withdrawal. Antipsychotics may be adjuncts for selected agitation but do not prevent withdrawal seizures or treat the underlying GABAergic deficit.",
+      "Beta-blockers may mask tachycardia and do not prevent seizures or delirium tremens. They cannot substitute for withdrawal-specific pharmacotherapy.",
+      "Prescribing alcohol is not a standard safe hospital withdrawal treatment. A structured monitored medical pathway provides predictable dosing and organ support.",
+      "Correct: assess severity and medical comorbidity, start symptom- or protocol-guided benzodiazepines with close observations, give thiamine and correct fluid/electrolyte deficits. His seizure history warrants high-acuity monitoring."
+    ],
+    "pearl": "Alcohol withdrawal is a clinical diagnosis and can occur before blood ethanol is undetectable.",
+    "pivot": "If agitation instead follows a new head injury with reduced consciousness, urgently investigate intracranial pathology while treating possible withdrawal.",
+    "management": {
+      "steps": [
+        [
+          "Assess",
+          "Evaluate airway, mental state, withdrawal severity, seizure history, head injury and other delirium causes."
+        ],
+        [
+          "Treat withdrawal",
+          "Administer protocol-guided benzodiazepines with repeated sedation and respiratory assessment."
+        ],
+        [
+          "Supplement",
+          "Provide thiamine, nutrition, fluids and magnesium/electrolyte correction when indicated."
+        ],
+        [
+          "Plan recovery",
+          "Involve addiction services, discuss relapse prevention and arrange supported follow-up after stabilisation."
+        ]
+      ],
+      "safety": "Do not withhold benzodiazepines solely because ethanol is detectable; monitor for oversedation and co-ingestants.",
+      "local": "RACGP alcohol withdrawal management and Australian state hospital alcohol and drug clinical protocols."
+    },
+    "source": "https://www.racgp.org.au/afp/2016/december/management-of-alcohol-withdrawal-syndromes-in-general-practice"
+  },
+  {
+    "n": 91,
+    "domain": "Infectious diseases & obstetrics",
+    "skill": "HIV in pregnancy / suppressed viral load and delivery planning",
+    "context": "Advanced final-year clinical prioritisation",
+    "stem": "A 29-year-old at 36 weeks' gestation has HIV diagnosed several years ago and excellent antiretroviral adherence. Her latest HIV RNA is undetectable and all previous third-trimester measurements have remained suppressed. There are no obstetric contraindications to vaginal birth. She is concerned that caesarean delivery is mandatory for every person living with HIV.",
+    "ask": "What advice best reflects individualised prevention of vertical transmission?",
+    "options": [
+      "Continue ART and support planned vaginal birth with specialist obstetric and neonatal prevention planning.",
+      "Stop antiretrovirals before labour because placental drug exposure is more dangerous than viral transmission.",
+      "Arrange routine caesarean solely because the maternal HIV antibody test will remain positive for life.",
+      "Recommend avoiding all antenatal monitoring because an undetectable viral load removes every neonatal risk.",
+      "Defer birth planning until labour because the viral load cannot influence route-of-delivery decisions."
+    ],
+    "key": "A",
+    "explanations": [
+      "Correct: sustained viral suppression on ART permits planned vaginal birth in the absence of other obstetric indications, with specialist maternal HIV care, neonatal prophylaxis and appropriate feeding counselling.",
+      "Stopping ART can cause viral rebound and increase transmission risk. Effective ongoing maternal therapy is central to prevention and should continue through birth.",
+      "Positive HIV antibody alone does not mandate caesarean. Route-of-delivery decisions depend substantially on current viral load and standard obstetric considerations.",
+      "Transmission risk becomes very low with suppression but not literally zero; maternal monitoring and neonatal prophylaxis/testing still matter.",
+      "Third-trimester viral load is a key factor in planned mode of delivery and neonatal care. Deferring decisions loses an opportunity for safe coordinated birth planning."
+    ],
+    "pearl": "With sustained undetectable HIV RNA, vaginal birth is generally appropriate when no obstetric contraindication exists.",
+    "pivot": "A high or unknown viral load near delivery may change the recommended intrapartum antiretroviral and delivery plan.",
+    "management": {
+      "steps": [
+        [
+          "Confirm suppression",
+          "Review recent viral loads, adherence, resistance history and obstetric factors."
+        ],
+        [
+          "Plan delivery",
+          "Coordinate HIV specialist, obstetric and paediatric teams to document delivery and intrapartum management."
+        ],
+        [
+          "Prevent transmission",
+          "Continue ART and arrange neonatal prophylaxis and testing appropriate to risk."
+        ],
+        [
+          "Counsel",
+          "Discuss infant feeding using current Australian guidance and individual circumstances without stigma."
+        ]
+      ],
+      "safety": "Do not apply a universal caesarean rule or stop maternal ART; use the most recent viral load and specialist advice.",
+      "local": "Mater Mothers' Hospital Australia: HIV and pregnancy, delivery guidance."
+    },
+    "source": "https://www.mater.org.au/health-services/our-services/hiv-and-pregnancy"
+  },
+  {
+    "n": 92,
+    "domain": "Perinatal psychiatry & safeguarding",
+    "skill": "Postpartum intrusive harm obsessions / differentiate OCD from psychosis",
+    "context": "Advanced final-year clinical prioritisation",
+    "stem": "A 28-year-old two months postpartum reports recurrent intrusive images of accidentally stabbing her baby. She finds the images horrifying, hides knives and repeatedly seeks reassurance. She says she would never act on them, has intact insight, no hallucinations and no delusional beliefs. She is sleeping poorly but is coherent and engaged in care.",
+    "ask": "What is the most appropriate clinical formulation and response?",
+    "options": [
+      "Diagnose postpartum psychosis immediately because any infant-related harm image is a delusion.",
+      "Assess risk carefully and offer perinatal OCD treatment with psychoeducation and CBT with ERP.",
+      "Arrange automatic child removal because ego-dystonic obsessions reliably predict intentional harm.",
+      "Reassure without assessment because preserved insight completely excludes all safety concerns.",
+      "Prescribe antipsychotic monotherapy without discussing the distress or repetitive avoidance rituals."
+    ],
+    "key": "B",
+    "explanations": [
+      "Postpartum psychosis typically involves loss of reality testing, delusions, severe mood disturbance or disorganisation. Unwanted ego-dystonic thoughts with preserved insight and compulsions fit OCD more closely.",
+      "Correct: assess actual intent, psychosis, depression and support; explain intrusive thoughts are not equivalent to wishes or actions; offer evidence-based CBT with exposure and response prevention, and consider medication if needed.",
+      "Intrusive thoughts alone are not evidence of an intention to harm the baby. Unnecessary punitive action may worsen avoidance and prevent disclosure; safeguarding is guided by actual assessed risk.",
+      "Insight lowers concern for psychosis but does not remove the need to assess suicidality, functional impairment, comorbidity and caregiving support. A structured assessment is still essential.",
+      "Antipsychotics are not routine first-line monotherapy for uncomplicated OCD. Psychotherapeutic treatment and, when appropriate, SSRI-based care are better supported."
+    ],
+    "pearl": "Ego-dystonic infant-harm intrusions with preserved insight and compulsions suggest perinatal OCD rather than psychotic intent.",
+    "pivot": "If the parent has command hallucinations, fixed beliefs that the infant must be harmed, or disorganisation, emergency psychosis assessment and infant safety become paramount.",
+    "management": {
+      "steps": [
+        [
+          "Assess safely",
+          "Ask about thoughts, intent, avoidance, insight, psychosis, mood, self-harm and infant care."
+        ],
+        [
+          "Explain",
+          "Normalise the existence of intrusive thoughts without trivialising their distress or assuming intent."
+        ],
+        [
+          "Treat OCD",
+          "Refer for perinatal CBT with exposure and response prevention; consider suitable SSRI when indicated."
+        ],
+        [
+          "Support family",
+          "Plan follow-up, sleep support and collaborative safeguarding only if risk assessment identifies concerns."
+        ]
+      ],
+      "safety": "Do not equate intrusive images with intent; equally, do not skip a careful infant and parent safety assessment.",
+      "local": "COPE Australia: Recommended assessment and treatment of perinatal OCD."
+    },
+    "source": "https://www.cope.org.au/health-professionals/perinatal-mental-health-disorders/recommended-assessment-and-treatment-of-perinatal-ocd"
+  },
+  {
+    "n": 93,
+    "domain": "Early pregnancy & emergency gynaecology",
+    "skill": "Pregnancy of unknown location / low hCG does not exclude rupture",
+    "context": "Advanced final-year clinical prioritisation",
+    "stem": "A 26-year-old at approximately six weeks by dates has left iliac fossa pain and light bleeding. Urine pregnancy test is positive, serum hCG is 480 IU/L and transvaginal ultrasound shows no intrauterine sac. She is initially stable, but while awaiting discharge becomes dizzy with worsening shoulder-tip pain and a BP of 88/54 mmHg.",
+    "ask": "What is the safest next action?",
+    "options": [
+      "Reassure because hCG below the ultrasound discriminatory level excludes ectopic pregnancy rupture.",
+      "Repeat serum hCG in forty-eight hours and discharge with simple analgesia if pain improves.",
+      "Resuscitate and urgently involve gynaecology for suspected ruptured ectopic pregnancy.",
+      "Administer methotrexate in the waiting room because a low hCG confirms medical-treatment eligibility.",
+      "Treat a presumed completed miscarriage without further review because the uterus appears empty."
+    ],
+    "key": "C",
+    "explanations": [
+      "A low hCG explains why an intrauterine sac may not be visible, but it does not exclude ectopic implantation or rupture. Shock and referred shoulder pain are major danger signs.",
+      "Serial hCG and repeat imaging are appropriate for selected stable pregnancy-of-unknown-location cases. Haemodynamic deterioration requires emergency care rather than an outpatient algorithm.",
+      "Correct: treat as possible intra-abdominal bleeding from ruptured ectopic pregnancy, establish IV access, crossmatch and resuscitate, and urgently involve gynaecology/anaesthesia for operative management.",
+      "Methotrexate is for carefully selected stable unruptured ectopic pregnancies after exclusion criteria are checked. It is inappropriate in shock and cannot control active haemorrhage.",
+      "An empty uterus is not proof of completed miscarriage. Pregnancy location remains unknown, and hypotension plus shoulder-tip pain strongly suggests intraperitoneal blood."
+    ],
+    "pearl": "Ruptured ectopic pregnancy can occur at low or falling hCG; clinical instability overrides the discriminatory zone.",
+    "pivot": "A stable asymptomatic PUL with reliable follow-up may undergo serial hCG and repeat ultrasound instead of immediate surgery.",
+    "management": {
+      "steps": [
+        [
+          "Resuscitate",
+          "Activate emergency care, assess ABCs, obtain large-bore access, blood group/crossmatch and haemorrhage monitoring."
+        ],
+        [
+          "Escalate",
+          "Contact senior gynaecology, anaesthesia and theatre teams immediately."
+        ],
+        [
+          "Treat",
+          "Prepare blood products and urgent surgical exploration when indicated by haemodynamic instability."
+        ],
+        [
+          "Follow",
+          "After treatment, address RhD prophylaxis as indicated, serial hCG, recovery and future pregnancy counselling."
+        ]
+      ],
+      "safety": "Never use a low hCG value to reassure an unstable patient with pregnancy of unknown location.",
+      "local": "Australian early pregnancy clinical pathways; MSI Australia PUL safety advice on severe pain, shoulder pain and faintness."
+    },
+    "source": "https://www.msiaustralia.org.au/unconfirmed-intrauterine-pregnancy-telehealth/"
+  },
+  {
+    "n": 94,
+    "domain": "Neurology & obstetric medicine",
+    "skill": "Postpartum cerebral venous thrombosis / venographic investigation",
+    "context": "Advanced final-year clinical prioritisation",
+    "stem": "A 32-year-old two weeks after delivery has progressively worsening headache for five days, vomiting and a brief focal seizure. Examination shows mild right arm weakness and papilloedema. Non-contrast head CT is reported without a definite haemorrhage or mass. She has no fever or history of migraine.",
+    "ask": "What diagnostic step is most appropriate now?",
+    "options": [
+      "Discharge with migraine medication because a normal plain CT excludes intracranial thrombosis.",
+      "Arrange routine outpatient lumbar puncture before obtaining any further cerebral vascular imaging.",
+      "Treat as post-dural puncture headache because all postpartum headaches arise from neuraxial anaesthesia.",
+      "Urgently obtain cerebral venous imaging and specialist stroke/neurology assessment.",
+      "Wait for a repeat CT in several weeks because postpartum venous clots resolve spontaneously."
+    ],
+    "key": "D",
+    "explanations": [
+      "Plain CT can miss cerebral venous sinus thrombosis, particularly early. New focal signs, seizure and papilloedema make discharge unsafe.",
+      "Lumbar puncture does not establish cerebral venous thrombosis and may be hazardous with raised intracranial pressure. Vascular imaging is the next investigation.",
+      "Post-dural puncture headache is usually positional and does not explain focal weakness, seizures and papilloedema. Assuming this diagnosis delays a treatable vascular emergency.",
+      "Correct: postpartum hypercoagulability plus progressive headache, seizure and focal deficit strongly suggest cerebral venous sinus thrombosis. Arrange CT or MR venography urgently and involve stroke specialists for anticoagulation and complications management.",
+      "Untreated venous thrombosis may extend and cause venous infarction or haemorrhage. Observation for weeks without diagnosis is inappropriate."
+    ],
+    "pearl": "Postpartum headache with seizure, papilloedema or focal deficit needs venous imaging even if the non-contrast CT is unrevealing.",
+    "pivot": "A typical positional headache after spinal anaesthesia without neurologic red flags follows a different evaluation pathway.",
+    "management": {
+      "steps": [
+        [
+          "Stabilise",
+          "Assess ABCs, seizures, neurological deficit, blood pressure and features of raised intracranial pressure."
+        ],
+        [
+          "Image veins",
+          "Arrange urgent CT venography or MR venography with stroke/neurology input."
+        ],
+        [
+          "Treat cause",
+          "Discuss therapeutic anticoagulation and seizure control after confirming diagnosis and bleeding considerations."
+        ],
+        [
+          "Monitor",
+          "Observe for intracranial pressure, new deficits and obstetric/postpartum thrombosis risk factors."
+        ]
+      ],
+      "safety": "Do not rule out cerebral venous thrombosis with a normal non-contrast CT alone.",
+      "local": "NSW Agency for Clinical Innovation emergency headache tool lists cerebral venous sinus thrombosis as a red flag differential."
+    },
+    "source": "https://aci.health.nsw.gov.au/networks/eci/clinical/tools/neurology/headache"
+  },
+  {
+    "n": 95,
+    "domain": "Trauma & emergency surgery",
+    "skill": "Delayed splenic haemorrhage / urgent reassessment after nonoperative injury",
+    "context": "Advanced final-year clinical prioritisation",
+    "stem": "A 19-year-old was discharged five days after a conservatively managed blunt splenic injury from a cycling collision. A week after the original accident he develops sudden left upper-quadrant pain radiating to his shoulder, faintness and increasing pallor. BP is 82/46 mmHg, HR 138/min and the abdomen is tender. He has had no new trauma.",
+    "ask": "What is the safest immediate action?",
+    "options": [
+      "Prescribe analgesia and discharge because splenic rupture cannot occur after the first seventy-two hours.",
+      "Arrange routine outpatient ultrasound in one week to document complete splenic healing.",
+      "Treat as musculoskeletal shoulder pain because the original injury had been managed without surgery.",
+      "Give oral iron and reassess haemoglobin at the next GP visit because pallor suggests slow anaemia.",
+      "Activate major haemorrhage resuscitation and urgent trauma-surgical assessment for delayed splenic bleeding."
+    ],
+    "key": "E",
+    "explanations": [
+      "Delayed haemorrhage is a recognised complication of splenic injury, even after initial clinical improvement. Shock and referred shoulder pain are high-risk features.",
+      "Routine outpatient imaging is inappropriate in an unstable patient. Bedside imaging may assist during resuscitation but cannot delay operative or interventional assessment.",
+      "Kehr's sign can produce referred shoulder pain from intraperitoneal blood. The combination with hypotension and abdominal pain makes musculoskeletal strain unlikely.",
+      "Oral iron does not restore circulating volume or stop acute intra-abdominal haemorrhage. Immediate haemostatic management is required.",
+      "Correct: treat as potential delayed splenic rupture, activate trauma and blood-product pathways, secure IV access and urgently involve surgeons/interventional radiology based on stability and imaging."
+    ],
+    "pearl": "Delayed splenic bleeding can present after discharge with left shoulder pain and shock despite previously successful nonoperative management.",
+    "pivot": "A stable recovering patient without new pain, collapse or abnormal observations may follow the agreed splenic injury activity and follow-up plan.",
+    "management": {
+      "steps": [
+        [
+          "Resuscitate",
+          "Activate trauma response, control ABCs, establish large-bore IV access and initiate blood products as needed."
+        ],
+        [
+          "Assess bleeding",
+          "Repeat haemoglobin, coagulation and bedside FAST if feasible without delaying definitive treatment."
+        ],
+        [
+          "Control haemorrhage",
+          "Seek immediate trauma-surgical and interventional radiology input for operative or embolisation options."
+        ],
+        [
+          "Aftercare",
+          "Monitor haemodynamics, counsel on delayed rupture and consider splenic function/immunisation if tissue loss occurs."
+        ]
+      ],
+      "safety": "Do not let the absence of new trauma or a prior successful discharge exclude delayed splenic haemorrhage.",
+      "local": "Royal Children's Hospital Melbourne Trauma Service: Abdominal injury, delayed splenic rupture section."
+    },
+    "source": "https://www.rch.org.au/trauma-service/manual/abdominal-injury/"
   }
 ]
