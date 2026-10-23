@@ -1438,5 +1438,245 @@
       "local": "Follow the linked Australian guidance and current local specialist protocols."
     },
     "source": "https://www.health.vic.gov.au/statewide-referral-criteria/glaucoma"
+  },
+  {
+    "n": 31,
+    "domain": "Surgery & adolescent medicine",
+    "skill": "Testicular torsion / no-delay surgical escalation",
+    "context": "Advanced integrated clinical decisions",
+    "stem": "A 15-year-old presents 3 hours after sudden severe left testicular pain and vomiting during school. The left testis is high-riding with a horizontal lie and no obvious cremasteric reflex. He is afebrile and has no urinary symptoms. The closest ultrasound appointment is 90 minutes away; an on-call surgeon can assess him immediately.",
+    "ask": "Which course most appropriately protects testicular viability?",
+    "options": [
+      "Request immediate surgical review and prepare for exploration without delaying for Doppler imaging.",
+      "Request expedited Doppler ultrasound before seeking theatre because examination alone cannot confirm torsion.",
+      "Attempt bedside manual detorsion and discharge if pain resolves before imaging becomes available.",
+      "Start empirical antimicrobial therapy while arranging review once the urinalysis result is available.",
+      "Observe briefly with repeated examination because torsion can spontaneously detorse without intervention."
+    ],
+    "key": "A",
+    "explanations": [
+      "Correct: the acute history and high-riding transverse testis make torsion sufficiently likely to warrant urgent operative assessment. Keep him fasting, provide analgesia, involve the surgeon now and prepare for exploration; Doppler is not a prerequisite when it would delay treatment.",
+      "Doppler ultrasound is useful in selected uncertain cases after surgical assessment, but a normal or equivocal result may miss intermittent or partial torsion. A 90-minute wait risks preventable ischaemic injury in this high-probability presentation.",
+      "Manual detorsion may be considered by an experienced clinician if there is unavoidable operative delay, but it does not replace exploration and bilateral fixation. Relief of pain does not confirm full or durable detorsion.",
+      "Epididymo-orchitis is a consideration with gradual onset or urinary features, but sudden severe pain with vomiting and abnormal lie is more consistent with torsion. Neither urine testing nor an antibiotic trial should delay referral.",
+      "Spontaneous detorsion can occur, yet recurrent torsion and persistent vascular compromise remain concerns. Watchful waiting is unsafe when the possibility of salvage declines rapidly with delay."
+    ],
+    "pearl": "Suspected torsion is a clinical surgical emergency: investigations must not postpone the decision to explore.",
+    "pivot": "If examination instead suggests an isolated appendage torsion but spermatic-cord torsion cannot confidently be excluded, surgical review remains necessary; ultrasound may help only after that assessment.",
+    "management": {
+      "steps": [
+        [
+          "Protect viability",
+          "Call the on-call surgeon or urologist immediately; record exact onset of pain and keep the patient nil by mouth."
+        ],
+        [
+          "Stabilise",
+          "Give prompt analgesia and antiemetic treatment, assess vitals and prepare appropriate IV access and theatre readiness."
+        ],
+        [
+          "Definitive treatment",
+          "Expedite scrotal exploration and surgical detorsion with fixation as indicated; do not wait for routine ultrasound."
+        ],
+        [
+          "Aftercare",
+          "Explain urgency to the patient and caregiver; document examination, referral times and post-operative follow-up."
+        ]
+      ],
+      "safety": "A temporary improvement after manual detorsion does not justify discharge or cancellation of surgical review.",
+      "local": "Royal Children's Hospital acute scrotal pain guideline and RACS torsion guidance."
+    },
+    "source": "https://www.rch.org.au/clinicalguide/guideline_index/Acute_Scrotal_Pain_or_Swelling/"
+  },
+  {
+    "n": 32,
+    "domain": "Paediatrics & orthopaedics",
+    "skill": "Septic arthritis / source control and antibiotics",
+    "context": "Advanced integrated clinical decisions",
+    "stem": "A 4-year-old has 24 hours of fever 39.1°C, severe right hip pain and refusal to bear weight. Passive rotation of the hip is markedly painful. CRP is 124 mg/L and ultrasonography demonstrates a joint effusion; a recent viral illness initially led staff to suspect transient synovitis. She is tachycardic but currently perfusing normally.",
+    "ask": "Which initial treatment plan is MOST appropriate?",
+    "options": [
+      "Arrange MRI before treatment to distinguish acute osteomyelitis from a primary joint infection.",
+      "Obtain urgent orthopaedic review for aspiration or washout and start empirical IV antibiotics promptly.",
+      "Trial scheduled ibuprofen and supervised walking because viral synovitis remains an alternative.",
+      "Perform an outpatient-guided aspiration and defer antibiotics until final fluid cultures return.",
+      "Observe overnight with serial CRP measurements before choosing between antibiotics and surgery."
+    ],
+    "key": "B",
+    "explanations": [
+      "MRI may help establish associated osteomyelitis or alternative pathology, but is not a reason to defer treatment in probable septic arthritis. The effusion, fever and inability to bear weight require immediate orthopaedic and antimicrobial action.",
+      "Correct: this is a high-risk septic joint. Obtain blood cultures if rapidly possible, arrange urgent specialist aspiration and source control, and commence empirical IV antibiotics without delaying for aspiration or final cultures; reassess for sepsis throughout.",
+      "Transient synovitis can follow a viral illness, but high fever, marked CRP elevation, painful restricted passive movement and refusal to weight bear increase concern for septic arthritis. Mobilisation and analgesia alone risk destructive joint infection.",
+      "Joint fluid microscopy and culture are valuable and should be coordinated with orthopaedics, ideally before antibiotics when this causes no delay. Waiting for final cultures before treating is inappropriate because cartilage injury and bacteraemia may progress.",
+      "Serial inflammatory markers are useful to monitor response, not as a substitute for urgent initial treatment. A child who is currently perfusing normally may still deteriorate or suffer joint damage before the next morning."
+    ],
+    "pearl": "Fever, a very painful restricted joint and non-weight-bearing are septic arthritis until urgently assessed; blood cultures and drainage should not hold up antibiotics.",
+    "pivot": "An afebrile, well child who can bear weight and has a near-normal inflammatory evaluation may fit transient synovitis after exclusion of serious causes.",
+    "management": {
+      "steps": [
+        [
+          "Assess and escalate",
+          "Repeat ABCDE and sepsis observations; make urgent paediatric and orthopaedic referrals."
+        ],
+        [
+          "Investigate",
+          "Obtain blood cultures, FBC/CRP and renal function, and coordinate joint aspiration or surgical samples with the orthopaedic team."
+        ],
+        [
+          "Treat and drain",
+          "Start protocol-based empirical IV antibiotics promptly and arrange aspiration, arthroscopy or washout as indicated."
+        ],
+        [
+          "Monitor recovery",
+          "Review fever, pain, range of motion, CRP and culture results; adjust antimicrobials and rehabilitation with specialists."
+        ]
+      ],
+      "safety": "If the child becomes shocked, resuscitate and give antibiotics immediately; never wait for an operating room slot.",
+      "local": "Royal Children's Hospital bone and joint infection guideline; antimicrobial choice depends on local resistance."
+    },
+    "source": "https://www.rch.org.au/clinicalguide/guideline_index/Bone_and_joint_infection/"
+  },
+  {
+    "n": 33,
+    "domain": "Emergency medicine & neurosurgery",
+    "skill": "Incomplete cauda equina syndrome / early urinary changes",
+    "context": "Advanced integrated clinical decisions",
+    "stem": "A 42-year-old with an acute lumbar disc flare reports bilateral sciatica and new reduced sensation when wiping after toileting. She says the urge to pass urine has become faint and starting the stream is difficult, but she has not developed frank retention or incontinence. Leg power is 4+/5 bilaterally and a bladder scan after voiding shows 85 mL. The emergency department has MRI access tonight.",
+    "ask": "What is the most appropriate next step?",
+    "options": [
+      "Arrange outpatient MRI within a week because there is no established urinary retention.",
+      "Treat with analgesia and reassess bladder function only if post-void residual exceeds 200 mL.",
+      "Request urgent lumbar MRI and immediate spinal surgical assessment for suspected cauda equina syndrome.",
+      "Prescribe corticosteroids and monitor neurologic findings before considering surgical referral tomorrow.",
+      "Obtain routine lumbar radiographs first, then use MRI only if vertebral alignment is abnormal."
+    ],
+    "key": "C",
+    "explanations": [
+      "Incomplete cauda equina syndrome can present with altered urinary sensation or stream rather than painless retention. Waiting a week permits avoidable progression of neural compression.",
+      "Post-void residual can assist assessment but a modest measured volume does not rule out early or incomplete cauda equina syndrome. The saddle sensory change and altered micturition are concerning regardless of one threshold.",
+      "Correct: new saddle sensory disturbance, bilateral radicular symptoms and altered urinary function are red flags. Seek immediate senior/spinal surgery advice and urgent MRI, document focused lower-limb and perineal neurology, and prepare for potential decompression.",
+      "Analgesia is appropriate alongside urgent investigation, but a trial of medication or overnight observation is not a substitute for imaging and spinal specialist review when cauda equina features are present.",
+      "Plain radiographs may help in selected fracture or alignment questions but do not visualise compressive disc material or neural structures adequately. They cannot exclude the suspected surgical emergency."
+    ],
+    "pearl": "Cauda equina syndrome can be incomplete: loss of urinary sensation and saddle symptoms matter before retention appears.",
+    "pivot": "Isolated unilateral radicular pain with unchanged bladder/bowel function, normal saddle sensation and no progressive deficit may follow a non-emergency radiculopathy pathway.",
+    "management": {
+      "steps": [
+        [
+          "Recognise",
+          "Document exact timing of saddle, bladder, bowel and bilateral leg symptoms; perform focused motor, sensory and perineal examination."
+        ],
+        [
+          "Escalate early",
+          "Discuss urgently with spinal surgery and the senior ED clinician while arranging MRI; do not wait for imaging to initiate the referral."
+        ],
+        [
+          "Image",
+          "Request urgent lumbar MRI; coordinate an alternative imaging/transfer pathway if MRI is unavailable or contraindicated."
+        ],
+        [
+          "Prepare",
+          "Manage analgesia, fasting status, bladder concerns and pre-operative work-up while the specialist assesses decompression urgency."
+        ]
+      ],
+      "safety": "Neither a reassuring post-void residual nor normal anal tone definitively excludes incomplete cauda equina syndrome.",
+      "local": "NSW Agency for Clinical Innovation Emergency Care Institute acute low-back-pain guidance."
+    },
+    "source": "https://aci.health.nsw.gov.au/networks/eci/clinical/tools/orthopaedic-and-musculoskeletal/acute-low-back-pain"
+  },
+  {
+    "n": 34,
+    "domain": "Neonatology & infectious diseases",
+    "skill": "Neonatal HSV infection / empiric aciclovir",
+    "context": "Advanced integrated clinical decisions",
+    "stem": "A 12-day-old term newborn is brought to the emergency department for poor feeding and irritability. Temperature is 38.4°C. There are several small grouped vesicles along the scalp and serum ALT is elevated. The mother reports no known genital herpes history. Blood pressure and oxygen saturation are currently normal.",
+    "ask": "Which management approach is best at this stage?",
+    "options": [
+      "Give empirical neonatal antibiotics alone because the mother has no history of herpes lesions.",
+      "Collect vesicle swabs and await HSV PCR before deciding whether antiviral therapy is indicated.",
+      "Treat the scalp vesicles topically while observing for neurologic abnormalities or a positive culture.",
+      "Begin a neonatal sepsis work-up and start IV aciclovir alongside empirical antibiotics without delay.",
+      "Arrange outpatient repeat liver tests while encouraging feeding because the infant is haemodynamically stable."
+    ],
+    "key": "D",
+    "explanations": [
+      "Bacterial sepsis must be covered, but vesicles and transaminitis in a neonate also raise major concern for HSV. Most mothers of affected infants may have no recognised HSV history, so that history cannot safely rule it out.",
+      "Blood, CSF and skin lesion HSV PCRs are indicated as part of evaluation, but waiting for laboratory confirmation before treatment can delay care for disseminated or CNS disease. Collect specimens quickly without delaying therapy.",
+      "Topical therapy does not address systemic neonatal HSV or possible CNS spread. Absence of seizures or encephalopathy on initial assessment does not establish that disease is only cutaneous.",
+      "Correct: admit urgently, perform neonatal sepsis investigations including targeted HSV PCRs, and start IV aciclovir promptly with empiric age-appropriate antibacterial treatment. Involve senior neonatal, paediatric infectious disease and intensive-care clinicians according to severity.",
+      "Normal oxygenation and blood pressure do not reassure in early neonatal infection. Poor feeding and fever at 12 days old already require hospital assessment; abnormal ALT and vesicles increase urgency."
+    ],
+    "pearl": "Consider HSV in any unwell neonate with vesicles, seizures or liver dysfunction, even when the maternal HSV history is negative.",
+    "pivot": "If bacterial sepsis is suspected without specific HSV risk features, empirical antibacterial treatment remains urgent; antiviral decisions still follow the neonatal risk evaluation and local protocol.",
+    "management": {
+      "steps": [
+        [
+          "Stabilise",
+          "Assess airway, breathing, perfusion, glucose and hydration; admit under a neonatal/paediatric service."
+        ],
+        [
+          "Investigate",
+          "Obtain cultures and appropriate bloods, and request HSV PCR from blood, lesions and CSF when safe and timely."
+        ],
+        [
+          "Treat now",
+          "Start IV aciclovir and protocol-based empirical antibiotics promptly; do not wait for HSV PCR confirmation."
+        ],
+        [
+          "Monitor and tailor",
+          "Trend liver function, renal function and clinical status; seek infectious disease advice for treatment duration and follow-up."
+        ]
+      ],
+      "safety": "A negative maternal history and absence of rash in other neonates cannot exclude neonatal HSV; do not delay aciclovir when clinical concern is high.",
+      "local": "Royal Children's Hospital febrile child and neonatal antimicrobial guidelines."
+    },
+    "source": "https://www.rch.org.au/clinicalguide/guideline_index/Febrile_child/"
+  },
+  {
+    "n": 35,
+    "domain": "Psychiatry & toxicology",
+    "skill": "Chronic lithium toxicity / renal accumulation",
+    "context": "Advanced integrated clinical decisions",
+    "stem": "A 67-year-old with bipolar I disorder has been stable on lithium for eight years. Five days after gastroenteritis and commencement of ramipril, she develops a coarse tremor, ataxia and mild confusion. Her lithium level is 1.8 mmol/L, creatinine has risen from 92 to 161 µmol/L, and she has taken no extra lithium tablets.",
+    "ask": "Which is the safest initial management plan?",
+    "options": [
+      "Reduce lithium to half-dose and repeat a trough concentration after the gastroenteritis resolves.",
+      "Administer activated charcoal promptly to reduce gastrointestinal absorption of the prescribed lithium.",
+      "Continue lithium with IV crystalloid because the level is below the usual severe-poisoning range.",
+      "Treat presumed new-onset mania with an antipsychotic before reassessing the abnormal lithium result.",
+      "Withhold lithium and interacting drugs, correct dehydration and obtain urgent toxicology-led assessment."
+    ],
+    "key": "E",
+    "explanations": [
+      "Dose reduction without stopping exposure risks continued accumulation during acute kidney injury. Neurological toxicity is already present; an outpatient repeat level is not a safe first response.",
+      "Activated charcoal does not bind lithium effectively and is not a standard treatment for chronic lithium poisoning. The key problem is impaired renal clearance over several days, not a new tablet bolus.",
+      "IV fluid resuscitation is often appropriate, but continuing lithium sustains the toxin load. Chronic neurotoxicity can be clinically significant even at moderately elevated concentrations, especially in older patients with renal impairment.",
+      "Disorientation and ataxia in this setting are neurological red flags for toxicity, not evidence of mania. Starting a new psychotropic before evaluating the toxicology and kidney injury risks missing a medical emergency.",
+      "Correct: stop lithium and review ramipril and other interacting or nephrotoxic drugs, admit for fluid and electrolyte management, obtain serial lithium levels and renal tests, and consult a clinical toxicologist. Dialysis is considered for severe neurological features or impaired elimination according to specialist criteria."
+    ],
+    "pearl": "Lithium neurotoxicity can emerge during dehydration or ACE-inhibitor-associated renal impairment without any deliberate overdose.",
+    "pivot": "An asymptomatic patient with an isolated mildly elevated trough level and preserved renal function may have a supervised dose-adjustment plan rather than acute toxicology admission.",
+    "management": {
+      "steps": [
+        [
+          "Stop accumulation",
+          "Withhold lithium and contributing ACE inhibitors, NSAIDs or diuretics when clinically appropriate; review all medications."
+        ],
+        [
+          "Assess urgency",
+          "Admit for serial neurological examination, ECG, lithium concentrations, renal function, sodium and fluid balance."
+        ],
+        [
+          "Support elimination",
+          "Correct volume depletion with monitored IV crystalloid and consult the poisons/toxicology service."
+        ],
+        [
+          "Escalate if severe",
+          "Discuss dialysis for severe neurological toxicity, dysrhythmia or impaired clearance, and coordinate future mood-stabiliser planning."
+        ]
+      ],
+      "safety": "Serum concentration alone may not reflect chronic tissue toxicity; do not reassure a confused or ataxic patient solely because the number is below a dramatic threshold.",
+      "local": "WA Country Health lithium guideline and Austin clinical toxicology chronic poisoning guidance."
+    },
+    "source": "https://www.wacountry.health.wa.gov.au/~/media/WACHS/Documents/About-us/Policies/Specialised-Medication---Lithium-Guideline.pdf?thn=0"
   }
 ]
