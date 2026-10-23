@@ -2158,5 +2158,245 @@
     },
     "source": "https://www.cancer.org.au/cancer-information/screening-tests-and-treatments/early-detection-and-screening/cervical-cancer-screening/guide-to-cervical-screening-tests/understanding-cervical-cancer-hpv/cervical-cancer-signs-and-symptoms",
     "context": "Advanced integrated clinical decisions"
+  },
+  {
+    "n": 46,
+    "domain": "Infectious diseases & airway emergencies",
+    "skill": "Respiratory diphtheria / antitoxin before toxin confirmation",
+    "context": "Advanced integrated clinical decisions",
+    "stem": "A 19-year-old recently returned from overseas with fever, sore throat, cervical swelling and increasing dysphagia. Immunisation records are incomplete. A firmly adherent grey pharyngeal membrane bleeds when touched; mild stridor is developing. Diphtheria PCR and toxin testing have been requested but results will not be available today.",
+    "ask": "What is the safest next action?",
+    "options": [
+      "Isolate, secure specialist airway input and urgently arrange diphtheria antitoxin with antibiotics.",
+      "Remove the membrane at bedside to restore airway patency before starting antimicrobial therapy.",
+      "Await toxin confirmation before administering antitoxin because it has substantial adverse effects.",
+      "Give oral antibiotics alone and arrange review after the membrane has detached naturally.",
+      "Administer a diphtheria vaccine booster as definitive treatment for the current airway illness."
+    ],
+    "key": "A",
+    "explanations": [
+      "Correct. Respiratory diphtheria is a clinical and public-health emergency. Arrange appropriate isolation, urgent airway expertise, infectious diseases/public health involvement, antitoxin via the specialist pathway and antibiotics. Antitoxin neutralises circulating toxin and is less effective once toxin binds tissues.",
+      "Forceful manipulation can provoke bleeding and worsen airway obstruction. An unstable airway requires expert-controlled management; routine scraping or removal is not a safe first step.",
+      "Antitoxin can cause hypersensitivity and requires supervised administration, but waiting for laboratory confirmation when suspicion is strong sacrifices its time-dependent benefit. Specialist consultation determines access and administration.",
+      "Antibiotics eradicate the organism and limit further toxin production but cannot neutralise toxin already circulating. Outpatient follow-up is unsafe with progressive dysphagia and stridor.",
+      "Vaccination prevents future disease but does not neutralise toxin or treat established respiratory diphtheria. Immunisation status and later catch-up still require attention after stabilisation."
+    ],
+    "pearl": "Strongly suspected respiratory diphtheria warrants prompt specialist antitoxin decisions without waiting for toxin confirmation.",
+    "pivot": "An uncomplicated sore throat without membrane, neck swelling or airway signs follows a different infectious differential and testing pathway.",
+    "management": {
+      "steps": [
+        [
+          "Isolate and notify",
+          "Use appropriate transmission precautions and contact infectious diseases and the public health unit immediately."
+        ],
+        [
+          "Protect airway",
+          "Keep the patient calm and involve anaesthesia/ENT early for any stridor or progressive obstruction."
+        ],
+        [
+          "Treat toxin and organism",
+          "Collect suitable swabs if feasible without delaying treatment, then arrange specialist-supervised antitoxin and antibiotics."
+        ],
+        [
+          "Prevent spread",
+          "Identify close contacts, organise public health prophylaxis and check vaccination and microbiological clearance."
+        ]
+      ],
+      "safety": "Do not scrape an adherent membrane or delay antitoxin discussions while awaiting confirmatory toxin testing.",
+      "local": "NSW Health Diphtheria control guideline and August 2026 CDNA national guidance."
+    },
+    "source": "https://www.health.nsw.gov.au/Infectious/controlguideline/Pages/diphtheria.aspx"
+  },
+  {
+    "n": 47,
+    "domain": "Toxicology & maternal medicine",
+    "skill": "Carbon monoxide poisoning in pregnancy / pulse oximetry pitfall",
+    "context": "Advanced integrated clinical decisions",
+    "stem": "A 27-year-old at 23 weeks' gestation is brought from a house with a malfunctioning gas heater. She has headache, nausea and brief confusion; her partner is also unwell. SpO2 reads 99% on room air, but venous co-oximetry shows carboxyhaemoglobin 19%. Fetal movements were normal earlier.",
+    "ask": "Which immediate management best addresses maternal and fetal risk?",
+    "options": [
+      "Observe on room air because the oxygen saturation is normal despite elevated carboxyhaemoglobin.",
+      "Give high-concentration oxygen and obtain urgent toxicology and obstetric assessment.",
+      "Discharge after a repeat finger pulse oximetry reading confirms saturation above ninety-eight percent.",
+      "Use inhaled salbutamol to displace carbon monoxide from haemoglobin before reassessing symptoms.",
+      "Wait for fetal cardiotocography before starting oxygen because maternal symptoms are relatively mild."
+    ],
+    "key": "B",
+    "explanations": [
+      "Standard two-wavelength pulse oximetry cannot reliably distinguish oxyhaemoglobin from carboxyhaemoglobin, so a normal display does not exclude substantial poisoning. Observation without oxygen prolongs exposure.",
+      "Correct. Remove the patient from exposure, deliver high-concentration oxygen immediately and involve poisons/toxicology and obstetrics. Pregnancy raises concern for fetal hypoxia; specialists should assess whether hyperbaric oxygen is appropriate based on severity and access.",
+      "Pulse oximetry may remain falsely reassuring despite impaired oxygen delivery. Maternal symptoms, shared household illness and measured carboxyhaemoglobin demand active management and monitored assessment.",
+      "Bronchodilators are not a treatment for carboxyhaemoglobin binding. They are reserved for concomitant bronchospasm, which is not the main mechanism of injury here.",
+      "Fetal assessment is important after maternal stabilisation, but it must not delay oxygen therapy. Improving maternal oxygen delivery is an immediate component of fetal resuscitation."
+    ],
+    "pearl": "Normal conventional pulse oximetry does not exclude carbon monoxide poisoning; pregnancy lowers the threshold for expert escalation.",
+    "pivot": "A patient with isolated wheeze after irritant exposure but normal co-oximetry needs a different respiratory evaluation.",
+    "management": {
+      "steps": [
+        [
+          "Remove exposure",
+          "Move to fresh air, begin high-concentration oxygen and assess airway, neurological status and circulation."
+        ],
+        [
+          "Measure injury",
+          "Obtain co-oximetry, ECG and indicated blood gases, lactate and cardiac markers."
+        ],
+        [
+          "Escalate",
+          "Contact a poisons information service and obstetric team; discuss hyperbaric oxygen with an expert."
+        ],
+        [
+          "Follow up",
+          "Assess fetal wellbeing at an appropriate gestation, monitor maternal recovery and address heater safety before discharge."
+        ]
+      ],
+      "safety": "A high SpO2 on an ordinary pulse oximeter is not proof of adequate oxygen transport in carbon monoxide exposure.",
+      "local": "Victorian Department of Health carbon monoxide advisory updated June 2026; Australian chemical-exposure clinical guidance."
+    },
+    "source": "https://www.health.vic.gov.au/health-advisories/carbon-monoxide-poisoning-1"
+  },
+  {
+    "n": 48,
+    "domain": "General medicine & metabolic disorders",
+    "skill": "Acute intermittent porphyria / targeted urine porphobilinogen",
+    "context": "Advanced integrated clinical decisions",
+    "stem": "A 26-year-old has recurrent episodes of severe diffuse abdominal pain, constipation, tachycardia and anxiety. CT abdomen and lipase are normal. This attack began after crash dieting and a new antiseizure medicine; sodium is 127 mmol/L. Her aunt experienced similar episodes with transient limb weakness.",
+    "ask": "Which investigation most directly evaluates the unifying diagnosis during this attack?",
+    "options": [
+      "Request a routine faecal occult blood test to screen for intermittent gastrointestinal bleeding.",
+      "Order repeat abdominal CT with contrast before pursuing any biochemical or metabolic testing.",
+      "Send a protected spot urine sample for porphobilinogen during the symptomatic episode.",
+      "Measure serum amylase repeatedly until the acute abdominal pain and tachycardia settle.",
+      "Perform elective colonoscopy because constipation and abdominal pain imply colonic obstruction."
+    ],
+    "key": "C",
+    "explanations": [
+      "Occult bleeding screening is not a test for neurovisceral metabolic attacks and does not account for autonomic symptoms, hyponatraemia and possible family history.",
+      "Normal imaging does not exclude acute hepatic porphyria. Repeat CT may be indicated for new surgical signs but should not replace a targeted biochemical test in this pattern.",
+      "Correct. Acute intermittent porphyria can produce severe abdominal pain with autonomic, psychiatric and neurological features, sometimes precipitated by fasting or medications. Urine porphobilinogen collected during symptoms is the key initial test; protect samples from light and consult a porphyria reference laboratory.",
+      "Amylase may assist when pancreatitis is suspected but repeated measurements cannot identify porphyrin precursor excess. Normal lipase also reduces the likelihood of acute pancreatitis here.",
+      "Colonoscopy may be indicated for separate alarm symptoms but is not the immediate diagnostic test for a possible acute hepatic porphyria attack. Unnecessary procedures may delay effective management."
+    ],
+    "pearl": "Unexplained neurovisceral abdominal pain plus autonomic changes and hyponatraemia should prompt urine porphobilinogen testing during symptoms.",
+    "pivot": "Peritonism, haemodynamic collapse or free intraperitoneal air demands immediate surgical evaluation rather than attributing symptoms to porphyria.",
+    "management": {
+      "steps": [
+        [
+          "Stabilise",
+          "Assess abdominal red flags, neurological strength, breathing, sodium and autonomic instability."
+        ],
+        [
+          "Sample",
+          "Send a spot urine porphobilinogen and creatinine with light protection to a specialist laboratory."
+        ],
+        [
+          "Avoid triggers",
+          "Review new medicines against porphyria safety lists and address fasting, dehydration and pain."
+        ],
+        [
+          "Consult experts",
+          "Contact a porphyria/metabolic service urgently; severe confirmed attacks may need specialist-directed haem therapy."
+        ]
+      ],
+      "safety": "Do not assume functional pain solely because CT is normal; progressive neuropathy and respiratory weakness can be life-threatening.",
+      "local": "Royal College of Pathologists of Australasia Porphyria testing guidance; Royal Melbourne Hospital porphyria service."
+    },
+    "source": "https://www.rcpa.edu.au/Manuals/RCPA-Manual/Clinical-Presentations-and-Diagnoses/P/Porphyria"
+  },
+  {
+    "n": 49,
+    "domain": "Endocrinology & obstetric medicine",
+    "skill": "Graves disease in early pregnancy / antithyroid drug selection",
+    "context": "Advanced integrated clinical decisions",
+    "stem": "A 29-year-old at nine weeks' gestation has weight loss, tremor and persistent palpitations. TSH is suppressed, free T4 is clearly elevated and thyrotropin receptor antibodies are positive. She has a diffuse goitre and was previously treated with carbimazole but stopped it when pregnancy was confirmed.",
+    "ask": "What is the most appropriate treatment direction at this gestation?",
+    "options": [
+      "Withhold all antithyroid therapy until the second trimester because treatment risks fetal harm.",
+      "Restart high-dose carbimazole immediately without thyroid monitoring to suppress fetal thyrotoxicosis.",
+      "Offer radioiodine now because it avoids fetal exposure to prolonged maternal medication.",
+      "Arrange specialist-guided propylthiouracil using the lowest effective dose in the first trimester.",
+      "Treat only with propranolol until delivery because thyroid hormone elevation is normal in pregnancy."
+    ],
+    "key": "D",
+    "explanations": [
+      "Untreated overt Graves hyperthyroidism can cause serious maternal and fetal complications. Risk-benefit decisions favour treating clinically significant disease rather than waiting through the first trimester.",
+      "Carbimazole has a recognised embryopathy risk during organogenesis. When antithyroid therapy is required early in pregnancy, propylthiouracil is generally preferred, with later reassessment because of hepatic toxicity concerns.",
+      "Radioiodine is contraindicated in pregnancy because it crosses the placenta and can injure the fetal thyroid. It is not a substitute for safe specialist-managed medication.",
+      "Correct. Confirm severity, involve endocrinology and obstetrics, use propylthiouracil in the first trimester at the minimum dose needed, and monitor thyroid function. Reconsider a change to carbimazole after the first trimester and assess fetal risk with maternal TRAb.",
+      "Short-term beta blockade can relieve troublesome adrenergic symptoms, but it does not reliably treat sustained excess thyroid hormone production. Prolonged unnecessary beta blockade also carries fetal considerations."
+    ],
+    "pearl": "Overt Graves hyperthyroidism in the first trimester generally favours propylthiouracil; reassess antithyroid choice later in pregnancy.",
+    "pivot": "Gestational transient thyrotoxicosis driven by hCG, without Graves antibodies or goitre, may require supportive care rather than antithyroid medication.",
+    "management": {
+      "steps": [
+        [
+          "Confirm",
+          "Review free T4/T3, TSH, TRAb, clinical severity and alternative causes of gestational thyrotoxicosis."
+        ],
+        [
+          "Treat",
+          "Involve endocrinology and initiate appropriately monitored first-trimester propylthiouracil."
+        ],
+        [
+          "Monitor",
+          "Recheck maternal thyroid tests after dose changes and use the lowest effective dose."
+        ],
+        [
+          "Protect fetus",
+          "Plan obstetric surveillance when TRAb is elevated and review medication choice after the first trimester."
+        ]
+      ],
+      "safety": "Radioiodine is contraindicated in pregnancy; both antithyroid drug excess and untreated disease can harm the fetus.",
+      "local": "Australian Prescriber thyroid disorders in pregnancy and postpartum; coordinate with local endocrinology/obstetric guidance."
+    },
+    "source": "https://australianprescriber.tg.org.au/articles/thyroid-disorders-in-pregnancy-and-postpartum.html"
+  },
+  {
+    "n": 50,
+    "domain": "Nephrology & general practice",
+    "skill": "Proteinuric CKD with mild hyperkalaemia / preserve renoprotective therapy",
+    "context": "Advanced integrated clinical decisions",
+    "stem": "A 62-year-old with type 2 diabetes, albuminuric CKD and hypertension takes perindopril. After a recent dose increase, potassium is 5.4 mmol/L, creatinine has risen 8% and eGFR is 46 mL/min/1.73 m². ECG is normal and he feels well. He also takes an over-the-counter potassium-containing salt substitute.",
+    "ask": "What is the best initial longer-term management strategy?",
+    "options": [
+      "Stop all RAAS blockade permanently because any potassium value above five is an absolute contraindication.",
+      "Give emergency IV calcium despite the normal ECG and mild potassium elevation in a stable patient.",
+      "Arrange immediate dialysis because an eGFR below sixty indicates irreversible uraemic toxicity.",
+      "Continue the potassium salt substitute and repeat blood tests only at the next annual review.",
+      "Address reversible potassium sources and monitor closely while preserving ACE-inhibitor benefit if safe."
+    ],
+    "key": "E",
+    "explanations": [
+      "Permanent cessation of renoprotective RAAS blockade for a mild potassium rise can forfeit kidney and cardiovascular benefit. Severity, ECG, trend and reversible contributors should guide the decision.",
+      "IV calcium is used to stabilise cardiac membranes in severe hyperkalaemia or relevant ECG changes. It does not lower potassium and is not routine for this stable value.",
+      "An eGFR of 46 alone is not an indication for dialysis. Dialysis decisions depend on severe refractory electrolyte abnormalities, fluid overload, acidosis or uraemic complications.",
+      "Potassium-containing salt substitutes may substantially increase potassium load in CKD. Annual review is inadequate after an ACE-inhibitor titration and abnormal laboratory result.",
+      "Correct. Review potassium supplements, salt substitutes, NSAIDs, dehydration and kidney function, repeat potassium promptly, and consider dietetic advice or potassium-lowering strategies if persistent. Continue or adjust ACE inhibition based on serial results and clinical safety."
+    ],
+    "pearl": "Mild hyperkalaemia in albuminuric CKD calls for reversible-cause management and monitoring, not reflex permanent loss of RAAS protection.",
+    "pivot": "Marked hyperkalaemia with ECG changes, weakness or rapid renal deterioration requires an immediate emergency hyperkalaemia pathway.",
+    "management": {
+      "steps": [
+        [
+          "Verify",
+          "Repeat a non-haemolysed potassium and assess ECG, renal function, trends and symptoms."
+        ],
+        [
+          "Remove triggers",
+          "Stop potassium salt substitutes and review supplements, NSAIDs, dehydration and other potassium-raising drugs."
+        ],
+        [
+          "Preserve benefit",
+          "Individualise ACE-inhibitor dose and consider renal dietitian or potassium binder strategies if required."
+        ],
+        [
+          "Monitor",
+          "Repeat electrolytes and creatinine after intervention and dose changes; give sick-day and escalation advice."
+        ]
+      ],
+      "safety": "Do not treat severe symptomatic hyperkalaemia as a routine clinic issue; conversely, IV calcium is not indicated merely by mild laboratory elevation.",
+      "local": "Australian Prescriber October 2026 review of acute hyperkalaemia and recurrence prevention."
+    },
+    "source": "https://australianprescriber.tg.org.au/articles/management-of-acute-hyperkalaemia-evidence-practice-and-pitfalls.html"
   }
 ]
