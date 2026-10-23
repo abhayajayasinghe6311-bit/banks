@@ -478,5 +478,245 @@
     },
     "source": "https://www.heartfoundation.org.au/for-professionals/clinical-information/heart-failure",
     "context": "Advanced integrated clinical decisions"
+  },
+  {
+    "n": 11,
+    "domain": "Paediatric neurology & emergency medicine",
+    "skill": "Convulsive status epilepticus / second-line escalation",
+    "stem": "A 7-year-old with epilepsy continues having a generalised convulsion after an adequate intranasal midazolam dose from his parent and an appropriate IV benzodiazepine dose in the ambulance. The seizure has lasted 12 minutes in total. Glucose is normal and oxygen and suction are available. No additional home medicines were given.",
+    "ask": "Which management direction is now most appropriate?",
+    "options": [
+      "Move promptly to protocol-based second-line antiseizure therapy while preparing airway and critical-care support.",
+      "Repeat IV benzodiazepines indefinitely because each additional dose is safer than second-line treatment.",
+      "Wait for urgent EEG confirmation before administering any further medication for the convulsion.",
+      "Arrange head CT before escalating medication to exclude an intracranial lesion causing the seizure.",
+      "Observe a further ten minutes because most febrile seizures eventually resolve without intervention."
+    ],
+    "key": "A",
+    "explanations": [
+      "Correct: a seizure continuing after two adequate benzodiazepine doses requires prompt second-line therapy such as a locally recommended loading antiseizure medicine. Continue ABC support and prepare for refractory status and airway needs.",
+      "Repeated benzodiazepines beyond protocol limits increase respiratory depression without reliably stopping prolonged status. Escalation should account for doses given before arrival.",
+      "EEG is useful when subtle or nonconvulsive seizures are suspected, but clear ongoing convulsive activity is treated clinically without EEG delay.",
+      "Imaging may identify an underlying cause after stabilisation, yet moving a seizing child for CT first delays treatment and complicates airway safety.",
+      "The usual self-limiting period has passed and ongoing convulsion threatens oxygenation and neurologic injury. Further observation alone is unsafe."
+    ],
+    "pearl": "Include prehospital benzodiazepines in the maximum two-dose count; persistent convulsion then needs second-line treatment.",
+    "pivot": "A brief convulsion that has stopped spontaneously with complete recovery may require observation and evaluation rather than second-line medication.",
+    "management": {
+      "steps": [
+        [
+          "Stabilise",
+          "Use lateral positioning, oxygen as needed, suction, cardiorespiratory monitoring and check glucose."
+        ],
+        [
+          "Review prior doses",
+          "Confirm timing, formulation and adequacy of both benzodiazepine administrations."
+        ],
+        [
+          "Escalate therapy",
+          "Administer a local-protocol second-line antiseizure loading agent and request senior paediatric/ICU assistance."
+        ],
+        [
+          "Reassess",
+          "Prepare airway management for refractory seizures and investigate triggers after stabilisation."
+        ]
+      ],
+      "safety": "Do not restart the benzodiazepine count on ED arrival or postpone treatment for imaging.",
+      "local": "Royal Children's Hospital Seizures – acute management clinical guideline."
+    },
+    "source": "https://www.rch.org.au/afebrile_seizures/",
+    "context": "Advanced integrated clinical decisions"
+  },
+  {
+    "n": 12,
+    "domain": "Obstetrics & postpartum emergency care",
+    "skill": "Delayed postpartum pre-eclampsia / severe hypertension",
+    "stem": "A 30-year-old is nine days postpartum after an uncomplicated delivery. She develops a severe headache, photophobia and blurred vision. BP is 178/116 mmHg on repeat measurement and urine protein is positive. She has no past history of hypertension and initially assumes symptoms are from sleep deprivation.",
+    "ask": "What is the most appropriate immediate response?",
+    "options": [
+      "Prescribe oral simple analgesia and repeat BP in one week after sleep patterns improve.",
+      "Arrange urgent hospital management of severe postpartum pre-eclampsia with seizure prophylaxis assessment.",
+      "Reassure that pregnancy-related hypertension cannot first appear after the baby is delivered.",
+      "Treat presumed migraine alone because headache and visual symptoms are the primary complaints.",
+      "Order outpatient renal ultrasound before deciding whether antihypertensive treatment is necessary."
+    ],
+    "key": "B",
+    "explanations": [
+      "Severe-range blood pressure and neurologic symptoms are an immediate maternal risk. Analgesia may help pain but cannot prevent stroke, seizures or other complications.",
+      "Correct: treat severe postpartum hypertension as an obstetric emergency, arrange rapid BP control using appropriate protocols and assess need for magnesium sulfate, organ dysfunction tests and inpatient monitoring.",
+      "Pre-eclampsia can develop or worsen after birth, often in the first weeks postpartum. The absence of antenatal hypertension does not exclude dangerous new disease.",
+      "Migraine is a possible differential but is not sufficient to explain severe hypertension and proteinuria without an emergency pre-eclampsia work-up.",
+      "Renal investigations may contribute later; imaging should not delay urgent antihypertensive care and seizure-risk assessment in a symptomatic patient."
+    ],
+    "pearl": "New postpartum severe headache with BP at least 160 systolic or 110 diastolic is a maternal emergency even after an uncomplicated pregnancy.",
+    "pivot": "An afebrile postpartum patient with normal BP, no neurologic red flags and a typical benign headache may follow a less urgent assessment pathway.",
+    "management": {
+      "steps": [
+        [
+          "Recognise",
+          "Repeat BP with correct cuff, assess headache/vision, reflexes, respiratory status and symptoms of stroke."
+        ],
+        [
+          "Treat rapidly",
+          "Escalate to obstetrics/anaesthesia, control severe BP with protocol medication and assess magnesium sulfate need."
+        ],
+        [
+          "Investigate",
+          "Check FBC/platelets, renal and liver function, urine protein and features of end-organ damage."
+        ],
+        [
+          "Follow",
+          "Monitor BP and neurological status closely, adjust postpartum-compatible medications and organise safe follow-up."
+        ]
+      ],
+      "safety": "Do not dismiss severe postpartum hypertension as fatigue or assume delivery cures pre-eclampsia.",
+      "local": "Queensland Clinical Guidelines hypertensive disorders of pregnancy and postpartum care."
+    },
+    "source": "https://www.health.qld.gov.au/qcg/publications",
+    "context": "Advanced integrated clinical decisions"
+  },
+  {
+    "n": 13,
+    "domain": "Obstetrics & diabetes follow-up",
+    "skill": "Gestational diabetes / postpartum diabetes screening",
+    "stem": "A 31-year-old previously required insulin for gestational diabetes. She delivered a healthy infant and has been off insulin since birth. At her six-week postnatal visit she feels well, and fasting capillary readings at home are normal. She asks whether she needs any further glucose testing.",
+    "ask": "Which follow-up plan best addresses her longer-term health risks?",
+    "options": [
+      "Stop screening permanently because normal fasting readings indicate full restoration of glucose tolerance.",
+      "Repeat HbA1c only if she becomes symptomatic because insulin treatment has already been discontinued.",
+      "Arrange a postpartum 75-g OGTT and continued periodic diabetes screening after pregnancy.",
+      "Continue antenatal insulin indefinitely to reduce the lifetime risk of developing type 2 diabetes.",
+      "Book a random glucose in five years because gestational diabetes does not affect near-term risk."
+    ],
+    "key": "C",
+    "explanations": [
+      "Normal capillary fasting readings cannot reliably exclude impaired glucose tolerance after GDM. The personal history confers substantial future diabetes risk.",
+      "HbA1c can have limitations in the early postpartum period and alone may miss impaired glucose tolerance; formal postpartum testing is recommended.",
+      "Correct: arrange a 75-g oral glucose tolerance test according to the postpartum interval in the current Australian guideline, review metabolic risk, and provide long-term periodic screening and prevention counselling.",
+      "Insulin is commonly ceased after delivery unless persistent diabetes is diagnosed. Continuing it without hyperglycaemia risks hypoglycaemia and is not primary prevention.",
+      "Delaying years misses diabetes or prediabetes present shortly after pregnancy. A proactive early assessment allows lifestyle and treatment planning."
+    ],
+    "pearl": "GDM does not end with delivery: a postpartum OGTT and long-term metabolic follow-up are essential even when home fasting readings look normal.",
+    "pivot": "If overt diabetes is confirmed postpartum, manage as diabetes with appropriate treatment rather than following surveillance alone.",
+    "management": {
+      "steps": [
+        [
+          "Screen",
+          "Offer 75-g OGTT at the recommended postpartum interval, usually around 6–12 weeks, per local protocol."
+        ],
+        [
+          "Interpret",
+          "Review fasting and 2-hour glucose values against nonpregnant diagnostic thresholds."
+        ],
+        [
+          "Prevent",
+          "Discuss activity, nutrition, weight-related risks and planning before a subsequent pregnancy without stigmatising."
+        ],
+        [
+          "Recall",
+          "Set a structured periodic diabetes screening interval and communicate results to the GP."
+        ]
+      ],
+      "safety": "Do not rely on fasting fingerpricks alone or a normal early HbA1c to exclude persistent dysglycaemia.",
+      "local": "Queensland Clinical Guideline Gestational diabetes mellitus, July 2025 update."
+    },
+    "source": "https://www.health.qld.gov.au/qcg/news?a=140076",
+    "context": "Advanced integrated clinical decisions"
+  },
+  {
+    "n": 14,
+    "domain": "Paediatric surgery & gastroenterology",
+    "skill": "Bilious vomiting infant / malrotation with volvulus",
+    "stem": "An otherwise healthy 5-week-old infant develops repeated bright-green vomiting, progressive abdominal distension and sudden inconsolable crying. She becomes lethargic and her extremities are cool. The previous visit two days earlier was labelled reflux because she was still gaining weight. There is no diarrhoea.",
+    "ask": "What is the safest immediate management approach?",
+    "options": [
+      "Prescribe anti-reflux therapy and reassure because the infant had previously gained weight well.",
+      "Attempt oral rehydration and observe whether the green colour disappears after several feeds.",
+      "Request outpatient abdominal ultrasound once the infant is settled and feeding more comfortably.",
+      "Resuscitate, stop oral feeds and seek urgent paediatric surgical review for possible midgut volvulus.",
+      "Treat empirically for viral gastroenteritis because vomiting in an infant is usually self-limiting."
+    ],
+    "key": "D",
+    "explanations": [
+      "Physiological reflux is usually non-bilious and does not explain shock or abdominal distension. Prior weight gain cannot rule out an acute intestinal catastrophe.",
+      "An infant with green bilious vomiting may have bowel obstruction; feeding can worsen aspiration and compromise while emergency evaluation is delayed.",
+      "Imaging is urgent but must occur within an emergency surgical pathway, not a routine outpatient appointment. Malrotation with volvulus can rapidly compromise bowel blood flow.",
+      "Correct: recognise green vomiting and shock as a potential strangulating obstruction, begin ABC resuscitation, keep nil by mouth, establish IV access and decompression, and arrange urgent paediatric surgery and appropriate imaging.",
+      "Absence of diarrhoea, bilious colour and evolving shock argue against uncomplicated gastroenteritis. Routine outpatient or oral management may delay bowel salvage."
+    ],
+    "pearl": "Green bilious vomiting in a young infant is bowel obstruction until proven otherwise; volvulus threatens bowel viability within hours.",
+    "pivot": "A thriving infant with uncomplicated non-bilious regurgitation, normal examination and no red flags can follow a reflux advice pathway.",
+    "management": {
+      "steps": [
+        [
+          "Stabilise",
+          "Assess ABCs, perfusion and glucose; correct shock with carefully monitored IV fluids."
+        ],
+        [
+          "Protect",
+          "Keep nil by mouth, use nasogastric decompression as indicated and give adequate analgesia."
+        ],
+        [
+          "Refer",
+          "Contact paediatric surgery immediately and organise urgent appropriate radiology without delaying referral."
+        ],
+        [
+          "Operate",
+          "Prepare for emergency surgery if volvulus or compromised bowel is identified."
+        ]
+      ],
+      "safety": "Do not dismiss truly green vomit as ordinary reflux or delay surgery to establish a prolonged feeding trial.",
+      "local": "Royal Children's Hospital Vomiting guideline and surgical emergency pathways."
+    },
+    "source": "https://www.rch.org.au/clinicalguide/guideline_index/Vomiting/",
+    "context": "Advanced integrated clinical decisions"
+  },
+  {
+    "n": 15,
+    "domain": "Psychiatry & patient safety",
+    "skill": "Imminent suicide risk / inability to ensure home safety",
+    "stem": "A 22-year-old student presents after telling a friend she plans to overdose tonight using tablets already stored in her room. She has written a goodbye message, feels hopeless and says she may act if discharged. There is no intoxication, but she refuses to involve family because she wants privacy. She agrees to speak with a clinician.",
+    "ask": "Which immediate management best protects the patient?",
+    "options": [
+      "Provide a counselling leaflet and discharge because the patient has voluntarily sought help.",
+      "Ask for a promise not to attempt suicide and make a routine appointment next month.",
+      "Prescribe an antidepressant and discharge because medication is the definitive treatment.",
+      "Allow immediate departure after documenting the risk because confidentiality outweighs safety.",
+      "Arrange continuous safety supervision and urgent mental-health assessment with admission planning."
+    ],
+    "key": "E",
+    "explanations": [
+      "Seeking help is protective but does not remove an active plan, available means or stated intent. Leaflets cannot substitute for immediate risk mitigation.",
+      "No-suicide contracts do not reliably prevent suicide and must not replace a structured clinical risk assessment or safe disposition.",
+      "Antidepressants may be part of longer-term treatment, but they do not provide immediate protection from an intended overdose that evening.",
+      "Respect for autonomy and privacy matters, but a person in imminent danger may require appropriately authorised protective assessment, with confidentiality disclosures limited to what is necessary.",
+      "Correct: ensure a safe supervised environment, remove access to immediate hazards, seek senior psychiatric/crisis-team review, assess capacity and legal criteria, involve supportive contacts appropriately and organise hospital-level care when home is unsafe."
+    ],
+    "pearl": "Specific intent, available means and preparatory acts can signify imminent danger; a safety plan is not an adequate substitute for necessary supervision.",
+    "pivot": "Passive thoughts without intent, preparation or access to means may allow supported outpatient management after full assessment and reliable follow-up.",
+    "management": {
+      "steps": [
+        [
+          "Keep safe",
+          "Provide close observation, reduce access to medications or other hazards, and assess immediate medical needs."
+        ],
+        [
+          "Assess",
+          "Complete a structured suicide, self-harm, psychosis and substance-use evaluation, including protective factors."
+        ],
+        [
+          "Escalate",
+          "Involve senior psychiatry/crisis clinicians promptly and consider urgent hospitalisation or relevant mental-health law processes."
+        ],
+        [
+          "Plan next care",
+          "Arrange collaborative safety planning, means restriction, contacts and definitive treatment once immediate risk is contained."
+        ]
+      ],
+      "safety": "A verbal promise not to self-harm is not a substitute for a safe environment and appropriate observation.",
+      "local": "Australian national suicide prevention and state emergency mental-health assessment protocols."
+    },
+    "source": "https://www.health.vic.gov.au/mental-health-services/suicide-prevention",
+    "context": "Advanced integrated clinical decisions"
   }
 ]
