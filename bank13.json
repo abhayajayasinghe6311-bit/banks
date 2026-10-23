@@ -4078,5 +4078,725 @@
     },
     "source": "https://www.health.qld.gov.au/qcg",
     "context": "Advanced integrated clinical decisions"
+  },
+  {
+    "n": 86,
+    "domain": "Paediatric emergencies & diabetes",
+    "skill": "Severe hypoglycaemia / unconscious child",
+    "stem": "A 10-year-old with type 1 diabetes is found unconscious at home after an afternoon football match. She is breathing spontaneously and has no seizure activity. Capillary glucose is 1.8 mmol/L and there is no intravenous access. Her father wants to put sugary cordial in her mouth.",
+    "ask": "What should be done immediately?",
+    "options": [
+      "Protect her airway and give parenteral glucagon while urgent medical care and IV access are arranged.",
+      "Give oral juice slowly despite reduced consciousness to correct glucose as quickly as possible.",
+      "Wait for a laboratory plasma glucose result before treating a possible hypoglycaemic episode.",
+      "Administer rapid-acting insulin to stop ketone production while preparing a dextrose infusion.",
+      "Begin empirical antibiotics before addressing glucose because altered consciousness indicates infection."
+    ],
+    "key": "A",
+    "explanations": [
+      "Correct: severe hypoglycaemia with impaired consciousness needs immediate treatment, not an oral carbohydrate trial. Give glucagon by an appropriate route if IV/IO glucose is not immediately available, call emergency services and protect the airway.",
+      "Oral fluids or gel risk aspiration when the child cannot swallow safely. Oral carbohydrate becomes appropriate only after she is fully alert and able to swallow.",
+      "Bedside glucose is sufficiently low for immediate treatment. Delaying correction for a laboratory sample risks prolonged neuroglycopenia.",
+      "Additional insulin worsens hypoglycaemia and can lead to seizures, coma or permanent injury. Ketones are not the priority with glucose 1.8 mmol/L.",
+      "Infection may be a precipitating illness in some patients, but this scenario requires immediate glucose rescue first, with causes assessed after stabilisation."
+    ],
+    "pearl": "Unconscious hypoglycaemic patients must not be given food or drinks by mouth; use IV glucose or parenteral glucagon.",
+    "pivot": "If the patient is alert, cooperative and able to swallow, rapid oral carbohydrate and glucose rechecking are usually first-line.",
+    "management": {
+      "steps": [
+        [
+          "Protect",
+          "Place in recovery position if appropriate and monitor breathing and airway."
+        ],
+        [
+          "Correct",
+          "Give age/weight-appropriate glucagon or IV glucose when access is available."
+        ],
+        [
+          "Reassess",
+          "Recheck glucose within minutes and repeat treatment if needed; provide longer-acting carbohydrate when awake."
+        ],
+        [
+          "Prevent",
+          "Review exertion, insulin dosing and access to an emergency glucagon kit with the diabetes team."
+        ]
+      ],
+      "safety": "Do not place liquids, tablets or food in the mouth of an unconscious child.",
+      "local": "RCH Hypoglycaemia and diabetes emergency guidelines."
+    },
+    "source": "https://www.rch.org.au/clinicalguide/guideline_index/Hypoglycaemia/",
+    "context": "Advanced integrated clinical decisions"
+  },
+  {
+    "n": 87,
+    "domain": "Rheumatology & ophthalmology",
+    "skill": "Giant cell arteritis / visual protection before biopsy",
+    "stem": "A 73-year-old presents with a new temporal headache, scalp tenderness and jaw fatigue while chewing. Today she experienced a ten-minute episode of painless loss of vision in the right eye. ESR is 96 mm/hr and CRP is markedly raised. Examination shows a tender temporal artery and currently preserved vision.",
+    "ask": "Which action best reduces her immediate risk?",
+    "options": [
+      "Arrange an elective temporal artery biopsy and wait for histology before starting any medication.",
+      "Start urgent high-dose glucocorticoid therapy and obtain same-day specialist assessment and investigations.",
+      "Offer non-steroidal anti-inflammatory drugs alone because the visual episode has fully resolved.",
+      "Give prophylactic antibiotics because tender arteries and high ESR most likely indicate local infection.",
+      "Refer for routine ophthalmic review after two weeks if the headache persists despite analgesia."
+    ],
+    "key": "B",
+    "explanations": [
+      "Biopsy or ultrasound supports diagnosis but must not delay treatment when visual ischaemia suggests giant cell arteritis. Permanent blindness can develop rapidly.",
+      "Correct: suspect cranial giant cell arteritis with transient visual loss and initiate urgent high-dose corticosteroids following local pathway while obtaining ophthalmology/rheumatology assessment and diagnostic ultrasound or biopsy.",
+      "Analgesia does not prevent arterial occlusion and permanent visual loss. Resolution of temporary blindness may be a warning event.",
+      "Bacterial infection rarely produces this classic combination of new temporal headache, jaw claudication and transient monocular ischaemia. Antibiotics do not treat the autoimmune arteritis.",
+      "Two weeks is too long after a visual symptom. The episode demands same-day action to protect the other eye and investigate systemic vessel inflammation."
+    ],
+    "pearl": "Suspected giant cell arteritis with any visual symptoms requires immediate steroids—do not wait for biopsy confirmation.",
+    "pivot": "Young age and headache without jaw claudication, systemic inflammation or visual symptoms require a different differential and treatment threshold.",
+    "management": {
+      "steps": [
+        [
+          "Recognise",
+          "Check visual symptoms, temporal tenderness, jaw claudication and polymyalgia history."
+        ],
+        [
+          "Treat",
+          "Start appropriate high-dose corticosteroid regimen urgently under specialist guidance."
+        ],
+        [
+          "Confirm",
+          "Arrange rapid temporal artery ultrasound or biopsy and inflammatory blood tests without delaying therapy."
+        ],
+        [
+          "Protect",
+          "Coordinate urgent ophthalmology and rheumatology review, treatment monitoring and osteoporosis prevention."
+        ]
+      ],
+      "safety": "Do not withhold steroid treatment while waiting for a temporal artery biopsy in a patient with threatened vision.",
+      "local": "Australian rheumatology and emergency ophthalmology clinical guidance."
+    },
+    "source": "https://www.health.qld.gov.au/clinical-practice/guidelines-procedures",
+    "context": "Advanced integrated clinical decisions"
+  },
+  {
+    "n": 88,
+    "domain": "Obstetric emergencies",
+    "skill": "Shoulder dystocia / immediate manoeuvres",
+    "stem": "During spontaneous vaginal birth the baby's head delivers, then retracts tightly against the perineum with the next contraction. Gentle normal axial traction does not deliver the shoulders. The obstetric registrar recognises shoulder dystocia, the fetal heart rate had been normal, and the mother is trying to push harder.",
+    "ask": "What is the most appropriate immediate intervention?",
+    "options": [
+      "Apply firm fundal pressure while increasing downward traction on the infant's head.",
+      "Cut a routine mediolateral episiotomy as the sole first-line means of freeing the shoulder.",
+      "Call for help, ask her to stop pushing briefly and perform McRoberts with suprapubic pressure.",
+      "Pull the posterior arm immediately using sustained head traction before any maternal repositioning.",
+      "Wait for three further contractions because shoulder impaction usually resolves spontaneously."
+    ],
+    "key": "C",
+    "explanations": [
+      "Fundal pressure increases shoulder impaction and may cause uterine injury. Excess traction raises the risk of brachial plexus injury.",
+      "Episiotomy enlarges soft tissue but does not relieve bony obstruction. It may assist access for internal manoeuvres if those are later required.",
+      "Correct: announce the emergency, call the team, record the time and perform McRoberts positioning with appropriate suprapubic pressure, proceeding through a coordinated algorithm if the shoulder remains impacted.",
+      "Posterior arm delivery is an important later manoeuvre by trained clinicians, but forceful pulling on the head is unsafe. Standard first steps should occur promptly.",
+      "Delay increases fetal hypoxic risk. More pushing can worsen impaction; a systematic emergency response is indicated as soon as dystocia is recognised."
+    ],
+    "pearl": "Shoulder dystocia: call for help, McRoberts and suprapubic pressure; avoid fundal pressure and excessive head traction.",
+    "pivot": "If the shoulders release with gentle normal axial traction, manage normal birth without unnecessary dystocia manoeuvres.",
+    "management": {
+      "steps": [
+        [
+          "Declare",
+          "Call the obstetric/neonatal team and document head-delivery time."
+        ],
+        [
+          "First manoeuvres",
+          "Ask the mother to stop pushing briefly and perform McRoberts with suprapubic pressure."
+        ],
+        [
+          "Escalate sequence",
+          "Use specialist internal rotations, posterior arm or all-fours position as indicated."
+        ],
+        [
+          "After birth",
+          "Assess newborn for injury/hypoxia, examine maternal trauma and document manoeuvre sequence."
+        ]
+      ],
+      "safety": "Never apply fundal pressure or forceful downward traction in shoulder dystocia.",
+      "local": "Queensland Health Primary Clinical Care Manual shoulder dystocia algorithm."
+    },
+    "source": "https://www.health.qld.gov.au/__data/assets/pdf_file/0022/1447051/PCCM_full.pdf",
+    "context": "Advanced integrated clinical decisions"
+  },
+  {
+    "n": 89,
+    "domain": "General surgery & acute abdomen",
+    "skill": "Strangulated femoral hernia / urgent surgery",
+    "stem": "A 71-year-old woman develops severe groin pain and vomiting. Examination shows a tense, irreducible lump below the right inguinal ligament, with overlying erythema and abdominal distension. HR is 118/min, lactate 3.6 mmol/L, and she has passed no flatus for twelve hours.",
+    "ask": "Which management approach is best?",
+    "options": [
+      "Attempt repeated forceful bedside reductions until the hernia disappears under the skin.",
+      "Start laxatives and observe for passage of flatus before involving the surgical registrar.",
+      "Arrange a routine elective hernia repair after the vomiting and groin pain settle.",
+      "Resuscitate and arrange urgent surgery for suspected strangulated femoral hernia and bowel ischaemia.",
+      "Give oral antibiotics only because erythema indicates isolated soft tissue infection without obstruction."
+    ],
+    "key": "D",
+    "explanations": [
+      "Forceful reduction of an ischaemic hernia can conceal gangrenous bowel or cause perforation. Pain, erythema and systemic findings require surgery.",
+      "Laxatives do not relieve a mechanically incarcerated bowel loop and may worsen distension or delay source control.",
+      "An irreducible painful femoral hernia with obstruction and possible ischaemia is not an elective operation. Delays risk bowel necrosis.",
+      "Correct: keep nil by mouth, provide IV fluids, analgesia, blood tests and senior surgical review, prepare for emergency hernia exploration and bowel assessment. Antibiotics are guided by concern for ischaemia or perforation.",
+      "Cellulitis may coexist, but a lump below the inguinal ligament with vomiting and obstruction is characteristic of incarcerated femoral hernia. Antibiotics alone cannot release it."
+    ],
+    "pearl": "Femoral hernias have high strangulation risk; an acutely painful irreducible lump with obstruction mandates emergency surgery.",
+    "pivot": "An uncomplicated reducible hernia without pain, obstruction or systemic signs may be considered for planned elective repair.",
+    "management": {
+      "steps": [
+        [
+          "Assess",
+          "Examine groin anatomy, obstruction symptoms, peritonism and shock."
+        ],
+        [
+          "Resuscitate",
+          "Keep NPO, provide fluids, analgesia, blood work and nasogastric decompression if needed."
+        ],
+        [
+          "Operate",
+          "Call general surgery urgently; prepare emergency exploration and possible bowel resection."
+        ],
+        [
+          "Recover",
+          "Monitor sepsis, bowel function, wound and future hernia management."
+        ]
+      ],
+      "safety": "Avoid forceful reduction when strangulation or ischaemia is suspected.",
+      "local": "Australian acute general surgery and incarcerated hernia pathways."
+    },
+    "source": "https://www.surgeons.org/",
+    "context": "Advanced integrated clinical decisions"
+  },
+  {
+    "n": 90,
+    "domain": "Psychiatry & acute medicine",
+    "skill": "Severe alcohol withdrawal / seizures and thiamine",
+    "stem": "A 48-year-old stops heavy daily alcohol use abruptly. Two days later he arrives tremulous, hypertensive, sweating and agitated, and has a generalised tonic-clonic seizure lasting 90 seconds. He is now awake but disoriented; glucose is normal and he has not received withdrawal medication.",
+    "ask": "Which treatment strategy most appropriately addresses the syndrome?",
+    "options": [
+      "Begin a scheduled antipsychotic alone because hallucinations and agitation are the main dangers.",
+      "Give a beta blocker alone to control sweating and tremor while avoiding sedative medicines.",
+      "Use physical restraints without medicines until all blood alcohol testing has returned.",
+      "Give oral naltrexone as the emergency agent to prevent additional seizures during withdrawal.",
+      "Treat with monitored benzodiazepine-based withdrawal care and thiamine, assessing complications."
+    ],
+    "key": "E",
+    "explanations": [
+      "Antipsychotics may occasionally be adjuncts for severe agitation, but they do not prevent withdrawal seizures and can lower seizure threshold. Benzodiazepines are central.",
+      "Autonomic signs respond to beta blockers, but these agents do not treat the underlying GABAergic withdrawal physiology or protect from seizures.",
+      "Restraints without therapeutic treatment increase risk of injury, rhabdomyolysis and worsening delirium; blood alcohol is not needed to begin emergency care.",
+      "Naltrexone helps long-term relapse prevention in selected patients after stabilisation, not acute seizure-prone withdrawal.",
+      "Correct: stabilise ABCs, give benzodiazepines titrated according to withdrawal severity under close monitoring and administer thiamine, correcting fluids and electrolytes while considering Wernicke encephalopathy and ICU-level escalation."
+    ],
+    "pearl": "Withdrawal seizures mark severe alcohol withdrawal; benzodiazepine treatment and thiamine are priorities over antipsychotic monotherapy.",
+    "pivot": "An intoxicated patient without withdrawal syndrome requires a different approach; intoxication and withdrawal can sometimes coexist.",
+    "management": {
+      "steps": [
+        [
+          "Stabilise",
+          "Check airway, seizures, vitals, glucose, electrolytes and trauma."
+        ],
+        [
+          "Treat withdrawal",
+          "Give protocol-driven benzodiazepines with close respiratory and neurological monitoring."
+        ],
+        [
+          "Prevent deficiency",
+          "Administer thiamine and replace magnesium, potassium and fluids as indicated."
+        ],
+        [
+          "Plan recovery",
+          "Assess delirium risk, inpatient requirements and later alcohol-use-disorder treatment."
+        ]
+      ],
+      "safety": "Do not use antipsychotic alone for alcohol-withdrawal seizure prevention.",
+      "local": "Australian alcohol treatment and withdrawal management guidelines."
+    },
+    "source": "https://alcoholtreatmentguidelines.com.au/",
+    "context": "Advanced integrated clinical decisions"
+  },
+  {
+    "n": 91,
+    "domain": "General practice & cancer genetics",
+    "skill": "Lynch syndrome suspicion / familial cancer surveillance",
+    "stem": "A 38-year-old presents because her mother developed endometrial cancer at 44 and maternal uncle had colorectal cancer at 41. She has never undergone genetic counselling and is asymptomatic. She asks whether she should simply join the routine Australian bowel screening program at the usual invitation age.",
+    "ask": "What is the most appropriate action?",
+    "options": [
+      "Arrange a hereditary cancer risk assessment and discuss genetics referral plus early tailored surveillance.",
+      "Reassure because the different tumour sites exclude a shared inherited cancer predisposition.",
+      "Order a single FIT test now and repeat only at routine population screening intervals thereafter.",
+      "Book diagnostic colonoscopy only after rectal bleeding or iron deficiency first becomes apparent.",
+      "Recommend prophylactic hysterectomy immediately without formal familial risk assessment or counselling."
+    ],
+    "key": "A",
+    "explanations": [
+      "Correct: clustering of early colorectal and endometrial cancers raises suspicion of Lynch syndrome. Review a three-generation pedigree, refer to a familial cancer/genetics service and coordinate risk-adapted colon and gynaecological surveillance.",
+      "Lynch syndrome predisposes to both colorectal and endometrial cancers. Different organ sites support, rather than exclude, the possibility of shared inherited mismatch-repair risk.",
+      "FIT-based population screening is not an adequate substitute for a high-risk hereditary surveillance protocol. Screening methods and timing may differ substantially.",
+      "Waiting for symptoms misses the opportunity for preventive surveillance and detection of early treatable disease. Family history is itself a referral trigger.",
+      "Risk-reducing surgery may eventually be considered for confirmed carriers following informed counselling, but is inappropriate as an immediate unsupported recommendation."
+    ],
+    "pearl": "Early endometrial and colorectal cancers in the same family suggest Lynch syndrome; use a familial cancer referral pathway rather than average-risk FIT screening.",
+    "pivot": "One late-onset sporadic cancer in a distant relative may not alter standard risk categories, but careful pedigree review is still important.",
+    "management": {
+      "steps": [
+        [
+          "Take pedigree",
+          "Document ages, tumour types and maternal/paternal lineage across three generations."
+        ],
+        [
+          "Refer",
+          "Arrange familial cancer genetics assessment and review testing of affected relatives when possible."
+        ],
+        [
+          "Surveil",
+          "Coordinate risk-based colonoscopy and relevant gynaecological surveillance after specialist stratification."
+        ],
+        [
+          "Counsel",
+          "Discuss implications for family members, consent, privacy and prevention choices."
+        ]
+      ],
+      "safety": "Do not treat possible Lynch syndrome as average-risk screening while awaiting symptoms.",
+      "local": "Cancer Council Australia familial colorectal cancer and Lynch syndrome guidance."
+    },
+    "source": "https://www.cancer.org.au/",
+    "context": "Advanced integrated clinical decisions"
+  },
+  {
+    "n": 92,
+    "domain": "Paediatric nephrology",
+    "skill": "IgA vasculitis / renal follow-up after rash resolves",
+    "stem": "A 7-year-old develops palpable purpura over both legs, ankle arthralgia and mild abdominal pain after a viral infection. Platelets are normal and the diagnosis is IgA vasculitis. At follow-up ten days later the rash has almost resolved, BP is normal and urine dipstick is negative for blood or protein.",
+    "ask": "Which follow-up advice is most appropriate?",
+    "options": [
+      "Discharge permanently because normal urine testing after one week excludes future nephritis.",
+      "Arrange scheduled BP and urinalysis surveillance for delayed renal involvement over twelve months.",
+      "Prescribe routine corticosteroids to prevent all future glomerulonephritis despite absent renal findings.",
+      "Arrange kidney biopsy now because every child with IgA vasculitis requires histological confirmation.",
+      "Limit monitoring to skin symptoms because renal involvement always occurs before rash resolution."
+    ],
+    "key": "B",
+    "explanations": [
+      "Renal manifestations can appear weeks or months after the rash and may be asymptomatic. A single reassuring urine test is not sufficient.",
+      "Correct: plan repeated blood pressure and urine testing using the paediatric IgA vasculitis schedule, often weekly initially, then spaced over months until a year. Escalate proteinuria, haematuria or hypertension.",
+      "Steroids may relieve severe abdominal or joint symptoms in selected children but have not been shown to reliably prevent long-term nephritis. Do not expose mild cases without an indication.",
+      "Biopsy is not routine with normal kidney measures. It is reserved for selected persistent or severe renal findings under nephrology guidance.",
+      "Kidney abnormalities may be delayed and clinically silent. Skin improvement is a poor surrogate for renal recovery or absence of nephritis."
+    ],
+    "pearl": "IgA vasculitis requires prolonged urine and BP follow-up even after the rash has resolved and early urine tests are normal.",
+    "pivot": "Macroscopic haematuria, hypertension, significant proteinuria or falling GFR requires prompt renal specialist assessment rather than routine monitoring.",
+    "management": {
+      "steps": [
+        [
+          "Baseline",
+          "Document BP, urinalysis, abdominal/joint symptoms and hydration."
+        ],
+        [
+          "Plan schedule",
+          "Arrange regular BP and urine checks through 12 months according to RCH guidance."
+        ],
+        [
+          "Escalate",
+          "Investigate persistent proteinuria, haematuria, hypertension or renal impairment and refer nephrology."
+        ],
+        [
+          "Counsel",
+          "Explain recurrence, gastrointestinal complications and when parents should seek urgent review."
+        ]
+      ],
+      "safety": "Do not discharge from renal surveillance solely because purpura clears.",
+      "local": "Royal Children's Hospital IgA vasculitis guideline updated 2026."
+    },
+    "source": "https://www.rch.org.au/clinicalguide/guideline_index/henochSchonlein_Purpura/",
+    "context": "Advanced integrated clinical decisions"
+  },
+  {
+    "n": 93,
+    "domain": "Obstetrics & haematology",
+    "skill": "Pregnancy-associated DVT / therapeutic anticoagulation",
+    "stem": "A 30-year-old at 24 weeks presents with sudden painful swelling of her entire left leg. Compression ultrasound confirms proximal femoral deep vein thrombosis. She is stable, with normal renal function and no active bleeding. She asks whether warfarin or a direct oral anticoagulant can be started immediately.",
+    "ask": "Which anticoagulation strategy is generally appropriate?",
+    "options": [
+      "Start standard-dose warfarin without bridging because fetal exposure is minimal in the second trimester.",
+      "Give prophylactic aspirin alone because most pregnancy-related DVTs resolve after birth.",
+      "Begin therapeutic low-molecular-weight heparin after assessing bleeding and dosing factors.",
+      "Choose a direct oral anticoagulant because it avoids injections and is well established in pregnancy.",
+      "Delay anticoagulation until delivery because fetal bleeding risk outweighs treatment of proximal DVT."
+    ],
+    "key": "C",
+    "explanations": [
+      "Warfarin crosses the placenta and has important fetal risks; it is not the usual first-line choice for DVT during pregnancy.",
+      "Aspirin does not provide adequate treatment for established proximal venous thrombosis. Inadequate anticoagulation exposes the patient to pulmonary embolism.",
+      "Correct: initiate therapeutic LMWH using maternal weight, renal function and local protocol while arranging obstetric/haematology follow-up and peripartum anticoagulation planning.",
+      "DOACs are generally avoided in pregnancy because adequate fetal safety data are lacking. Convenience does not override pregnancy-specific risks.",
+      "Untreated proximal DVT can propagate or embolise; prompt treatment reduces maternal morbidity and mortality. Delivery timing is not a reason to postpone care for months."
+    ],
+    "pearl": "Confirmed DVT in pregnancy is usually treated with therapeutic LMWH, not aspirin, warfarin or routine DOACs.",
+    "pivot": "Massive pulmonary embolism or heparin contraindication may require a different specialist-led approach and urgent multidisciplinary decisions.",
+    "management": {
+      "steps": [
+        [
+          "Evaluate",
+          "Assess extent, embolic symptoms, bleeding history and renal function."
+        ],
+        [
+          "Treat",
+          "Start therapeutic LMWH using appropriate weight-based regimen and obstetric/haematology advice."
+        ],
+        [
+          "Counsel",
+          "Explain injection technique, symptoms of PE, bleeding precautions and medication adherence."
+        ],
+        [
+          "Plan",
+          "Coordinate duration, labour/neuraxial anaesthetic timing and postpartum continuation."
+        ]
+      ],
+      "safety": "Do not use routine DOACs during pregnancy without specialist justification.",
+      "local": "Australian pregnancy venous thromboembolism and antithrombotic clinical guidance."
+    },
+    "source": "https://www.health.qld.gov.au/qcg",
+    "context": "Advanced integrated clinical decisions"
+  },
+  {
+    "n": 94,
+    "domain": "Obstetrics & endocrinology",
+    "skill": "Gestational diabetes / persistent fasting hyperglycaemia",
+    "stem": "A 29-year-old at 30 weeks has gestational diabetes confirmed at 26 weeks. She has attended dietitian review, walks after meals and checks capillary glucose four times daily. Most post-meal values meet targets, but fasting readings remain above the agreed pregnancy threshold on six of the last seven mornings. Fetal growth is currently appropriate.",
+    "ask": "What is the most appropriate next management step?",
+    "options": [
+      "Reassure because normal fetal growth proves that fasting hyperglycaemia cannot cause harm.",
+      "Stop home monitoring because post-meal values are normal and fasting readings are less relevant.",
+      "Begin an unrestricted diet to correct suspected over-treatment before adjusting diabetes care.",
+      "Discuss pharmacological therapy, often bedtime insulin, alongside continued lifestyle and monitoring.",
+      "Delay medication decisions until fetal macrosomia appears on the next ultrasound at 36 weeks."
+    ],
+    "key": "D",
+    "explanations": [
+      "Fetal growth can be normal before hyperglycaemia-related complications develop. Persistent fasting values above pregnancy targets still warrant action.",
+      "Fasting hyperglycaemia reflects overnight glycaemic control and contributes to maternal and fetal risk. Normal post-meal values do not remove that problem.",
+      "Dietary adequacy should be assessed, but unrestricted carbohydrate intake is not the remedy for persistent high fasting glucose. Individualised treatment is needed.",
+      "Correct: review the glucose log, food intake and measurement technique, then discuss medication such as basal insulin with the diabetes-in-pregnancy team while maintaining lifestyle measures and antenatal surveillance.",
+      "Waiting for macrosomia means responding to a consequence rather than preventing it. Pregnancy glycaemic targets guide intervention before fetal complications develop."
+    ],
+    "pearl": "Persistent fasting glucose above pregnancy targets may require pharmacological treatment even when post-meal results and fetal growth are reassuring.",
+    "pivot": "If all measurements are consistently within locally agreed targets, continue diet, activity, monitoring and routine pregnancy diabetes review.",
+    "management": {
+      "steps": [
+        [
+          "Verify",
+          "Review meter technique, timing, targets, fasting log and nutrition adequacy."
+        ],
+        [
+          "Escalate care",
+          "Refer to diabetes-in-pregnancy clinicians for medication planning and education."
+        ],
+        [
+          "Treat",
+          "Introduce specialist-directed basal insulin or another locally recommended option as appropriate."
+        ],
+        [
+          "Monitor",
+          "Continue glucose logs, hypoglycaemia education and fetal/maternal surveillance."
+        ]
+      ],
+      "safety": "Do not wait for fetal macrosomia before treating persistent pregnancy hyperglycaemia.",
+      "local": "Queensland Clinical Guidelines gestational diabetes management."
+    },
+    "source": "https://www.health.qld.gov.au/qcg",
+    "context": "Advanced integrated clinical decisions"
+  },
+  {
+    "n": 95,
+    "domain": "Vascular emergencies",
+    "skill": "Acute limb ischaemia / systemic anticoagulation and revascularisation",
+    "stem": "A 76-year-old with atrial fibrillation develops sudden severe pain and numbness in the right foot. The foot is pale, cold, pulseless below the groin and has weak dorsiflexion. Symptoms started two hours ago. There is no active bleeding or known major anticoagulation contraindication.",
+    "ask": "Which immediate management is most appropriate?",
+    "options": [
+      "Arrange routine arterial duplex in one week because collaterals may recover the pulse.",
+      "Start a course of oral antibiotics because the cold foot suggests cellulitis with vascular spasm.",
+      "Encourage walking and elevation to improve collateral circulation before seeking vascular assessment.",
+      "Give oral aspirin alone and reassess sensation after overnight observation on the ward.",
+      "Activate vascular surgery urgently, give appropriate IV anticoagulation and prepare for revascularisation."
+    ],
+    "key": "E",
+    "explanations": [
+      "Motor and sensory deficits with absent pulses indicate a threatened limb. Delayed imaging may cost viability and must not supersede urgent vascular review.",
+      "Cellulitis typically causes a hot erythematous limb, not sudden cold pulseless ischaemia. Antibiotics alone cannot restore perfusion.",
+      "Exercise and limb elevation may worsen tissue ischaemia. This is an embolic vascular emergency requiring prompt reperfusion.",
+      "Aspirin alone does not prevent thrombus propagation effectively in acute limb ischaemia. Waiting overnight allows irreversible nerve and muscle injury.",
+      "Correct: arrange immediate vascular specialist assessment, initiate unfractionated heparin when not contraindicated and pursue urgent imaging/intervention or theatre depending on limb viability, while treating pain and perfusion issues."
+    ],
+    "pearl": "The six Ps of acute limb ischaemia, especially weakness or sensory loss, signal time-critical limb salvage.",
+    "pivot": "Chronic stable claudication without rest pain or neurological deficit usually follows vascular risk management and planned imaging.",
+    "management": {
+      "steps": [
+        [
+          "Recognise",
+          "Document onset, six Ps, Doppler signals, motor/sensory deficits and limb temperature."
+        ],
+        [
+          "Treat",
+          "Give analgesia and protocol-guided IV unfractionated heparin if no contraindication."
+        ],
+        [
+          "Escalate",
+          "Contact vascular surgery immediately and coordinate urgent imaging or operative revascularisation."
+        ],
+        [
+          "Monitor",
+          "Reassess perfusion, compartment syndrome, renal injury and anticoagulation complications."
+        ]
+      ],
+      "safety": "A neurologically impaired ischaemic limb must not wait for routine outpatient imaging.",
+      "local": "Australian vascular surgery acute limb ischaemia emergency practice."
+    },
+    "source": "https://www.surgeons.org/",
+    "context": "Advanced integrated clinical decisions"
+  },
+  {
+    "n": 96,
+    "domain": "Paediatric immunisation & cardiology",
+    "skill": "Kawasaki IVIG / live vaccine timing",
+    "stem": "A 3-year-old recently received intravenous immunoglobulin for Kawasaki disease and is clinically recovering well. Her routine MMR booster is due next month. The parent requests the vaccine early to avoid missing childcare requirements and assumes IVIG has no effect on vaccine response.",
+    "ask": "What is the best vaccination advice?",
+    "options": [
+      "Review IVIG-related live vaccine deferral intervals and plan MMR at an immunogenic time.",
+      "Give MMR immediately because Kawasaki disease itself permanently increases immunity to measles.",
+      "Replace MMR with an inactivated measles vaccine that has identical national schedule indications.",
+      "Avoid all future live vaccines because any IVIG exposure creates lifelong contraindication.",
+      "Skip every subsequent dose of MMR once childhood intravenous immunoglobulin has been administered."
+    ],
+    "key": "A",
+    "explanations": [
+      "Correct: passively transferred antibodies from IVIG can interfere with MMR/varicella vaccine response. Consult the Australian Immunisation Handbook for the appropriate product/dose-related interval and organise catch-up when effective.",
+      "Kawasaki disease does not immunise against measles. Vaccinating too soon after IVIG can yield inadequate antibody response despite receiving the injection.",
+      "A routine interchangeable inactivated measles vaccine is not available as an equivalent substitute under the Australian schedule. Correct timing is more useful.",
+      "IVIG creates a temporary interference issue, not a permanent live-vaccine prohibition in an otherwise immunocompetent child.",
+      "Skipping vaccination would leave susceptibility to measles and other infections. Schedule resumption once the recommended interval is met."
+    ],
+    "pearl": "IVIG can blunt the response to live MMR and varicella vaccines; follow interval guidance rather than giving or omitting them automatically.",
+    "pivot": "Inactivated vaccines generally do not require the same delay, though timing and individual contraindications should still be checked.",
+    "management": {
+      "steps": [
+        [
+          "Confirm exposure",
+          "Record IVIG date, indication and dose from hospital summary."
+        ],
+        [
+          "Check interval",
+          "Use Australian Immunisation Handbook guidance for live vaccine delay after IVIG."
+        ],
+        [
+          "Plan catch-up",
+          "Book MMR or other affected vaccines for an appropriate effective time."
+        ],
+        [
+          "Educate",
+          "Explain transient antibody interference and maintain routine inactivated vaccine schedule when eligible."
+        ]
+      ],
+      "safety": "Avoid vaccinating too early and falsely assuming a protective measles response.",
+      "local": "Australian Immunisation Handbook blood products and live vaccine guidance."
+    },
+    "source": "https://immunisationhandbook.health.gov.au/",
+    "context": "Advanced integrated clinical decisions"
+  },
+  {
+    "n": 97,
+    "domain": "Psychiatry & medical ethics",
+    "skill": "Delirium refusal / impaired capacity and urgent treatment",
+    "stem": "A 79-year-old admitted with pneumonia becomes acutely inattentive and disoriented overnight. He repeatedly removes oxygen, says staff are impostors and refuses IV antibiotics. His oxygen saturation falls to 83% when oxygen is removed. There is no advance care directive in the records, and family members report he was fully independent last week.",
+    "ask": "Which approach best balances autonomy and urgent safety?",
+    "options": [
+      "Accept every refusal as competent because he can say the word no and move his hands.",
+      "Assess decision-making capacity for this decision and use lawful emergency safeguards if impaired.",
+      "Ask family to sign a blanket consent form authorising every intervention regardless of law.",
+      "Use sedating antipsychotics immediately without assessing delirium or alternatives to coercion.",
+      "Defer pneumonia treatment until orientation returns because temporary confusion prevents consent."
+    ],
+    "key": "B",
+    "explanations": [
+      "An expressed refusal is important but does not automatically establish capacity to understand, retain, weigh and communicate this specific decision. Delirium can impair that process.",
+      "Correct: assess and document decision-specific capacity, seek reversible delirium causes and use the least restrictive appropriate lawful emergency treatment pathway if immediate serious harm is likely. Communicate with family/surrogate and senior team.",
+      "Substitute decision-making and emergency provisions are governed by jurisdiction; family cannot simply provide limitless authority without assessment and legal basis.",
+      "Sedation is not routine delirium treatment and carries significant risks. Treat hypoxia, infection, environment and reversible contributors first, reserving medication for severe danger under protocol.",
+      "Withholding urgently needed oxygen and antibiotics because the patient is confused risks severe harm. Capacity and legal safeguards allow ethically proportionate care."
+    ],
+    "pearl": "Capacity is decision-specific and can fluctuate during delirium; neither refusal nor family wishes alone settle the emergency treatment question.",
+    "pivot": "A person with intact capacity who understands consequences may refuse treatment, even when clinicians disagree with the choice.",
+    "management": {
+      "steps": [
+        [
+          "Assess",
+          "Evaluate immediate hypoxia and ability to understand, weigh and communicate the treatment decision."
+        ],
+        [
+          "Treat delirium",
+          "Address infection, hypoxia, pain, retention, sleep and medication precipitants."
+        ],
+        [
+          "Use safeguards",
+          "Seek senior advice and follow local consent/urgent care law with least restrictive measures."
+        ],
+        [
+          "Document",
+          "Record capacity rationale, discussions, alternatives and ongoing reassessment."
+        ]
+      ],
+      "safety": "Do not confuse disagreement with incapacity or use convenience restraints without legal and clinical justification.",
+      "local": "Australian Commission for Safety and Quality Delirium Clinical Care Standard and local consent laws."
+    },
+    "source": "https://www.safetyandquality.gov.au/standards/clinical-care-standards/delirium-clinical-care-standard",
+    "context": "Advanced integrated clinical decisions"
+  },
+  {
+    "n": 98,
+    "domain": "Endocrinology & neurosurgery",
+    "skill": "Pituitary apoplexy / acute adrenal insufficiency",
+    "stem": "A 49-year-old with a known pituitary macroadenoma develops sudden severe retro-orbital headache, vomiting and diplopia. Examination reveals a new third nerve palsy and reduced visual fields. BP is 86/52 mmHg, sodium is 129 mmol/L and CT suggests haemorrhage into the sellar mass.",
+    "ask": "Which management approach should take priority?",
+    "options": [
+      "Administer migraine medication and review visual symptoms after the headache improves.",
+      "Arrange outpatient endocrine hormone testing because macroadenomas rarely cause acute emergencies.",
+      "Give urgent stress-dose hydrocortisone and seek neurosurgical, endocrine and ophthalmic assessment.",
+      "Treat with antibiotics for presumed cavernous sinus infection without assessing pituitary function.",
+      "Wait for complete MRI before providing circulatory resuscitation or hormonal replacement."
+    ],
+    "key": "C",
+    "explanations": [
+      "Migraine does not adequately explain a new cranial nerve palsy, shock and imaging evidence of pituitary haemorrhage. Delayed specialist care risks blindness and endocrine collapse.",
+      "Hypopituitarism can cause life-threatening acute cortisol deficiency during apoplexy. Outpatient testing is inappropriate with hypotension and visual deficits.",
+      "Correct: resuscitate and give emergency IV hydrocortisone for suspected ACTH deficiency without delaying for cortisol sampling, then urgent MRI, endocrine and neurosurgical review for decompression decisions.",
+      "Cavernous sinus infection is a differential but not the most coherent explanation for haemorrhage in a known macroadenoma with acute hormone failure. Antibiotics alone miss the emergency.",
+      "MRI will define anatomy, but treatment of shock and potential adrenal insufficiency must begin immediately. Waiting for imaging can cause deterioration."
+    ],
+    "pearl": "Pituitary apoplexy combines acute headache, visual/ocular palsy signs and possible adrenal crisis—treat cortisol deficiency immediately.",
+    "pivot": "An incidental stable pituitary macroadenoma without acute symptoms or deficits follows planned endocrine assessment and imaging surveillance.",
+    "management": {
+      "steps": [
+        [
+          "Resuscitate",
+          "Assess ABCs, hypotension, sodium, glucose and visual/cranial nerve deficits."
+        ],
+        [
+          "Replace cortisol",
+          "Give stress-dose IV hydrocortisone immediately with urgent endocrine advice."
+        ],
+        [
+          "Image and refer",
+          "Arrange pituitary MRI and neurosurgical/ophthalmic consultation urgently."
+        ],
+        [
+          "Plan care",
+          "Determine decompression need and ongoing pituitary hormone replacement and visual follow-up."
+        ]
+      ],
+      "safety": "Do not delay steroids for hormone assays when apoplexy causes shock.",
+      "local": "Australian endocrinology and neurosurgical pituitary emergency guidance."
+    },
+    "source": "https://www.anz.org.au/",
+    "context": "Advanced integrated clinical decisions"
+  },
+  {
+    "n": 99,
+    "domain": "Neonatology & congenital heart disease",
+    "skill": "Critical coarctation / duct-dependent shock",
+    "stem": "A 9-day-old infant presents with poor feeding, tachypnoea and mottled legs. Femoral pulses are difficult to feel while brachial pulses remain strong. Right-arm BP is 88/56 mmHg, leg BP is 56/32 mmHg and lactate is 6.4 mmol/L. The baby is afebrile and a prior newborn pulse-ox screen was normal.",
+    "ask": "Which immediate intervention best addresses the suspected physiology?",
+    "options": [
+      "Start high-dose diuretics to reduce pulmonary congestion and reassess pulses tomorrow.",
+      "Delay therapy until a cardiologist performs a detailed outpatient anatomical echocardiogram.",
+      "Give empiric antibiotics alone because neonatal sepsis is the only likely cause of shock.",
+      "Arrange urgent neonatal cardiac support and start prostaglandin E1 to maintain ductal flow.",
+      "Provide only a fluid bolus and discharge if lactate decreases on repeat testing."
+    ],
+    "key": "D",
+    "explanations": [
+      "Diuretics may aggravate systemic hypoperfusion when a constricted ductus and aortic obstruction limit distal flow. This does not address the duct-dependent circulation.",
+      "Clinical examination suggests critical coarctation and threatened systemic perfusion. Echocardiography is urgent, but it should occur alongside—not before—physiological rescue.",
+      "Sepsis remains a differential in any sick neonate and should be evaluated, but differential limb pressures and weak femoral pulses point toward obstructed systemic circulation.",
+      "Correct: call neonatal intensive care/cardiology, commence prostaglandin E1 infusion per local dosing to reopen or maintain the ductus, support breathing/perfusion and obtain urgent echocardiography and transfer for definitive care.",
+      "A transient lactate response to fluids does not correct major aortic obstruction. Excess volume can worsen respiratory distress and delay definitive treatment."
+    ],
+    "pearl": "A sick neonate with weak femoral pulses and arm-leg BP difference may have duct-dependent systemic circulation; give prostaglandin promptly.",
+    "pivot": "A mild asymptomatic coarctation diagnosed later without shock may follow planned cardiology intervention after full assessment.",
+    "management": {
+      "steps": [
+        [
+          "Recognise",
+          "Compare upper and lower limb pulses/BP, perfusion, lactate and pre/postductal oxygenation."
+        ],
+        [
+          "Support",
+          "Provide NICU resuscitation, access, careful perfusion support and respiratory monitoring."
+        ],
+        [
+          "Maintain ductus",
+          "Start specialist-directed prostaglandin E1 infusion promptly; prepare for apnoea and transfer."
+        ],
+        [
+          "Confirm and repair",
+          "Obtain urgent cardiac echo and surgical/catheter intervention plan."
+        ]
+      ],
+      "safety": "PGE1 can cause apnoea; airway-capable critical-care staff must monitor infusion.",
+      "local": "Royal Children's Hospital congenital heart disease and neonatal deterioration pathways."
+    },
+    "source": "https://www.rch.org.au/clinicalguide/",
+    "context": "Advanced integrated clinical decisions"
+  },
+  {
+    "n": 100,
+    "domain": "Paediatric ENT & resuscitation",
+    "skill": "Epiglottitis / avoid agitation and instrumenting airway",
+    "stem": "A 4-year-old with incomplete immunisation develops rapidly progressive fever, severe sore throat and drooling. He sits leaning forward, refuses to lie flat, has a muffled voice and mild inspiratory stridor but little cough. He becomes anxious when a junior clinician approaches with a tongue depressor.",
+    "ask": "Which immediate response is best?",
+    "options": [
+      "Perform an aggressive oral examination to document the epiglottis before requesting help.",
+      "Send him for neck radiography immediately without monitoring or airway specialist support.",
+      "Use a trial of salbutamol while encouraging him to lie supine for examination.",
+      "Give oral fluids to assess swallowing and discharge if oxygen saturation remains normal.",
+      "Keep him calm in his preferred position and summon expert airway and anaesthetic support."
+    ],
+    "key": "E",
+    "explanations": [
+      "Forceful throat inspection can provoke complete airway obstruction in suspected epiglottitis. Airway planning by experienced clinicians is essential before instrumentation.",
+      "Imaging can delay management and distress a child with impending supraglottic obstruction. Diagnosis is clinical and airway safety takes priority.",
+      "Salbutamol does not treat supraglottic oedema and supine positioning may worsen obstruction. Respect the child's preferred posture while mobilising experts.",
+      "Swallow testing risks aspiration or further distress. Normal saturation is not reassuring in upper-airway obstruction; hypoxaemia may be late.",
+      "Correct: minimise handling, keep the child with caregiver in a comfortable position, call senior paediatric, anaesthetic and ENT airway teams, and prepare controlled airway management and IV antibiotics after airway safety is established."
+    ],
+    "pearl": "Drooling, tripod posture, muffled voice and toxicity without barking cough suggest epiglottitis; do not examine the throat forcefully.",
+    "pivot": "Typical barky cough with no drooling and good ability to swallow points more toward croup, where dexamethasone and adrenaline depend on severity.",
+    "management": {
+      "steps": [
+        [
+          "Keep calm",
+          "Avoid distress, supine positioning, tongue depressors and unnecessary invasive procedures."
+        ],
+        [
+          "Call experts",
+          "Summon senior anaesthesia, ENT and paediatric airway support urgently."
+        ],
+        [
+          "Prepare airway",
+          "Plan controlled securing of the airway with skilled clinicians and resuscitation readiness."
+        ],
+        [
+          "Treat infection",
+          "Administer appropriate IV antibiotics and intensive monitoring once airway safety is addressed."
+        ]
+      ],
+      "safety": "Never undertake forceful pharyngeal examination in a child with possible epiglottitis.",
+      "local": "Royal Children's Hospital acute upper airway obstruction guideline."
+    },
+    "source": "https://www.rch.org.au/clinicalguide/guideline_index/acute_upper_airway_obstruction/",
+    "context": "Advanced integrated clinical decisions"
   }
 ]
