@@ -3358,5 +3358,725 @@
     },
     "source": "https://www.safetyandquality.gov.au/standards/clinical-care-standards/delirium-clinical-care-standard",
     "context": "Advanced integrated clinical decisions"
+  },
+  {
+    "n": 71,
+    "domain": "Neurology & emergency medicine",
+    "skill": "Convulsive status epilepticus / timely benzodiazepine",
+    "stem": "A 27-year-old has been continuously convulsing for six minutes when the ambulance reaches the emergency department. He has no IV line, oxygen saturation is 90%, and fingerstick glucose is 6.3 mmol/L. A family member says he missed several doses of levetiracetam.",
+    "ask": "Which immediate treatment strategy is best?",
+    "options": [
+      "Support the airway and give an appropriate non-IV benzodiazepine while obtaining access.",
+      "Wait for spontaneous termination before administering any antiseizure treatment at ten minutes.",
+      "Attempt IV phenytoin first because benzodiazepines can briefly suppress respiratory drive.",
+      "Order an urgent head CT before giving medication to exclude intracranial haemorrhage.",
+      "Administer oral levetiracetam tablets between convulsions and observe neurological recovery."
+    ],
+    "key": "A",
+    "explanations": [
+      "Correct: ongoing generalised convulsions for five minutes meet the treatment threshold for convulsive status epilepticus. Manage ABCs and give protocol-dose IM/buccal/intranasal midazolam while obtaining IV access and preparing second-line medication.",
+      "Delay increases risk of prolonged seizure, brain injury and reduced benzodiazepine response. Treatment is indicated now, not only after ten minutes.",
+      "Phenytoin or levetiracetam loading can follow first-line benzodiazepine treatment if seizures continue. It is slower as an initial response in a patient without access.",
+      "Neuroimaging may clarify cause after stabilisation, but continued seizures require immediate treatment and airway protection. CT before drug treatment is unsafe.",
+      "Oral tablets cannot be safely administered during tonic-clonic convulsions and do not provide adequate immediate termination. Missed maintenance therapy is addressed after stabilisation."
+    ],
+    "pearl": "Convulsive activity lasting five minutes is status epilepticus for emergency treatment purposes; act before the seizure becomes refractory.",
+    "pivot": "A brief self-terminating seizure with full recovery may warrant assessment and medication review rather than immediate escalation through a status protocol.",
+    "management": {
+      "steps": [
+        [
+          "Stabilise",
+          "Position and oxygenate, protect from injury, check glucose and call resuscitation support."
+        ],
+        [
+          "Abort seizure",
+          "Give protocol-based IV or non-IV benzodiazepine promptly, tracking the cumulative doses."
+        ],
+        [
+          "Escalate",
+          "If ongoing, give second-line IV antiseizure therapy and involve neurology/critical care."
+        ],
+        [
+          "Find cause",
+          "Check adherence, electrolytes, toxins and neurological causes once convulsions are controlled."
+        ]
+      ],
+      "safety": "Do not exceed safe repeated benzodiazepine dosing without airway support; prepare for respiratory compromise.",
+      "local": "ANZCOR seizure and emergency resuscitation guidance."
+    },
+    "source": "https://www.anzcor.org/home",
+    "context": "Advanced integrated clinical decisions"
+  },
+  {
+    "n": 72,
+    "domain": "Neonatology & paediatric surgery",
+    "skill": "Bilious vomiting / malrotation with volvulus concern",
+    "stem": "A 4-day-old term newborn has a single episode of unmistakably dark-green vomiting. The infant is initially alert and the abdomen is only mildly distended; vital signs and glucose are currently normal. A relative says babies often bring up bile and suggests observing until another episode occurs.",
+    "ask": "Which response is safest?",
+    "options": [
+      "Offer smaller feeds and arrange a routine paediatric review after twenty-four hours.",
+      "Stop feeds, resuscitate as needed and arrange emergency paediatric surgical evaluation now.",
+      "Treat as uncomplicated gastro-oesophageal reflux because there is no fever or dehydration.",
+      "Arrange an outpatient ultrasound only if abdominal distension becomes severe or painful.",
+      "Give an antiemetic and restart feeds once the vomiting stops to prevent weight loss."
+    ],
+    "key": "B",
+    "explanations": [
+      "Green bilious vomiting in a neonate may signal bowel obstruction with time-critical ischaemia. Observation for a second episode risks progression to necrosis.",
+      "Correct: keep nil by mouth, obtain IV access, consider nasogastric decompression and urgently involve paediatric surgery to assess malrotation/volvulus and direct definitive imaging or operation.",
+      "Simple infant reflux generally produces non-bilious regurgitation. The green colour changes the differential to mechanical obstruction until proven otherwise.",
+      "Initial examination may be deceptively benign in malrotation with intermittent volvulus. Delayed outpatient imaging is not an adequate emergency pathway.",
+      "Antiemetics may obscure symptoms without treating obstruction. Feeding through a possible volvulus risks aspiration and clinical deterioration."
+    ],
+    "pearl": "In a newborn, even one truly green vomit requires emergency surgical referral; do not wait for a second episode.",
+    "pivot": "Small non-bilious possets in a thriving baby with normal feeding and examination can often be managed conservatively after assessment.",
+    "management": {
+      "steps": [
+        [
+          "Recognise",
+          "Confirm the vomit colour and examine perfusion, abdominal distension and hydration."
+        ],
+        [
+          "Resuscitate",
+          "Keep nil by mouth, obtain IV access and decompress the stomach when appropriate."
+        ],
+        [
+          "Consult",
+          "Contact senior neonatal and paediatric surgical teams immediately; arrange definitive imaging under their direction."
+        ],
+        [
+          "Prepare",
+          "Monitor for shock or peritonitis and expedite theatre if volvulus is likely."
+        ]
+      ],
+      "safety": "Normal vitals at first assessment do not exclude impending bowel ischaemia.",
+      "local": "Royal Children's Hospital Vomiting and Bilious vomiting pre-referral guidelines."
+    },
+    "source": "https://www.rch.org.au/clinicalguide/guideline_index/Vomiting/",
+    "context": "Advanced integrated clinical decisions"
+  },
+  {
+    "n": 73,
+    "domain": "Women's health & emergency medicine",
+    "skill": "Pregnancy of unknown location / ectopic safety-net",
+    "stem": "A 26-year-old at approximately six weeks from her last menstrual period has left pelvic pain and light spotting. She is haemodynamically stable. Transvaginal ultrasonography shows neither intrauterine nor ectopic pregnancy, and serum beta-hCG is 720 IU/L. She asks whether the scan proves there is no dangerous pregnancy.",
+    "ask": "Which follow-up plan is most appropriate?",
+    "options": [
+      "Reassure that a negative early ultrasound excludes ectopic pregnancy once beta-hCG is below one thousand.",
+      "Administer methotrexate immediately in every pregnancy of unknown location without repeat evaluation.",
+      "Treat as pregnancy of unknown location with serial hCG, repeat imaging and explicit ectopic precautions.",
+      "Diagnose completed miscarriage without follow-up because spotting commonly precedes pregnancy loss.",
+      "Book the first routine antenatal scan at twelve weeks without monitoring earlier symptoms."
+    ],
+    "key": "C",
+    "explanations": [
+      "A low hCG may be below the level where an intrauterine pregnancy is visible. Ectopic pregnancy remains possible until location or resolution is established.",
+      "Empirical methotrexate risks harming an early viable intrauterine pregnancy. It requires a carefully established indication and specialist assessment.",
+      "Correct: classify pregnancy of unknown location, arrange timely serial quantitative hCG and repeat TV ultrasound with early pregnancy specialists, and explain immediate return criteria for worsening pain, syncope or heavy bleeding.",
+      "Spotting and a non-visualised pregnancy do not confirm complete miscarriage; an ectopic pregnancy could still be present and rupture.",
+      "Deferring until routine antenatal timing can miss ectopic complications and fails to resolve the diagnostic uncertainty safely."
+    ],
+    "pearl": "A non-diagnostic ultrasound with positive hCG is a pregnancy of unknown location—not an exclusion of ectopic pregnancy.",
+    "pivot": "If an intrauterine pregnancy with yolk sac is confirmed, ordinary ectopic risk is usually reduced, but assisted reproduction raises concern for heterotopic pregnancy.",
+    "management": {
+      "steps": [
+        [
+          "Assess stability",
+          "Check vitals, pain, bleeding, peritoneal signs and pregnancy risk factors."
+        ],
+        [
+          "Classify",
+          "Review transvaginal scan and quantitative hCG without relying on a single discriminatory threshold."
+        ],
+        [
+          "Follow actively",
+          "Arrange serial hCG and repeat ultrasound through early pregnancy assessment."
+        ],
+        [
+          "Safety-net",
+          "Give clear instructions for urgent assessment if pain, dizziness, fainting or heavy bleeding develops."
+        ]
+      ],
+      "safety": "An ectopic pregnancy can rupture at low hCG values; do not use one reassuring number to discharge without follow-up.",
+      "local": "Australian early-pregnancy assessment and ectopic pregnancy pathways."
+    },
+    "source": "https://www.health.qld.gov.au/qcg",
+    "context": "Advanced integrated clinical decisions"
+  },
+  {
+    "n": 74,
+    "domain": "Gastroenterology & emergency surgery",
+    "skill": "Acute cholangitis / obstructed biliary drainage",
+    "stem": "A 70-year-old with gallstones presents with fever 39°C, jaundice and right upper-quadrant pain. BP is 85/50 mmHg, she is confused, bilirubin and ALP are elevated, and ultrasound shows a dilated common bile duct containing a stone. Blood cultures have been sent and fluid resuscitation started.",
+    "ask": "Which additional intervention is most important?",
+    "options": [
+      "Begin oral ursodeoxycholic acid and review liver chemistry in a fortnight.",
+      "Perform elective cholecystectomy after six weeks without dealing with the duct obstruction.",
+      "Order MRCP as the sole urgent treatment because imaging can relieve biliary pressure.",
+      "Give prompt IV antibiotics and arrange urgent biliary decompression, usually by ERCP.",
+      "Provide antipyretics alone because hypotension may be secondary to fever and poor intake."
+    ],
+    "key": "D",
+    "explanations": [
+      "Ursodeoxycholic acid cannot reverse septic obstruction of the common bile duct. The immediate risk is organ failure from infected bile.",
+      "Cholecystectomy may prevent recurrence later, but cannot replace rapid source control of an obstructed infected duct in shock.",
+      "MRCP can clarify anatomy in selected stable cases, but it does not drain an infected duct. This patient has sufficient evidence for emergency decompression planning.",
+      "Correct: treat severe acute cholangitis with sepsis resuscitation, appropriate IV antibiotics and early multidisciplinary ERCP or alternative biliary drainage. Monitor for vasopressors and ICU needs.",
+      "Antipyretics are supportive; they do not address Gram-negative bacteraemia or obstruction. Normalising temperature would not mean resolution of sepsis."
+    ],
+    "pearl": "Charcot features plus hypotension/confusion indicate severe cholangitis; drainage provides source control that antibiotics alone may not achieve.",
+    "pivot": "Uncomplicated biliary colic without fever, jaundice or duct obstruction follows elective gallbladder management, not emergency ERCP.",
+    "management": {
+      "steps": [
+        [
+          "Resuscitate",
+          "Assess airway, perfusion and lactate; give fluids and ICU support as needed."
+        ],
+        [
+          "Treat infection",
+          "Start broad-spectrum IV antibiotics and collect cultures without delays."
+        ],
+        [
+          "Drain source",
+          "Engage gastroenterology for urgent ERCP or alternative decompression when necessary."
+        ],
+        [
+          "Definitive care",
+          "Tailor antibiotics and plan cholecystectomy or stone management after recovery."
+        ]
+      ],
+      "safety": "Do not postpone drainage for exhaustive diagnostic testing in septic obstructed cholangitis.",
+      "local": "Australian acute cholangitis and sepsis emergency pathways."
+    },
+    "source": "https://www.safetyandquality.gov.au/standards/clinical-care-standards/sepsis-clinical-care-standard",
+    "context": "Advanced integrated clinical decisions"
+  },
+  {
+    "n": 75,
+    "domain": "Perinatal psychiatry",
+    "skill": "Postpartum OCD intrusions / distinguish from psychosis",
+    "stem": "Three weeks after childbirth, a 30-year-old reports repeated unwanted images of accidentally stabbing her baby. She finds them horrifying, hides sharp objects and repeatedly checks that the infant is safe. She has no hallucinations or fixed beliefs, says she would never act on the images, and is distressed that disclosure might mean losing custody.",
+    "ask": "Which is the most appropriate initial response?",
+    "options": [
+      "Diagnose postpartum psychosis from any infant-harm thought and arrange mandatory separation without assessment.",
+      "Provide reassurance without assessment because ego-dystonic thoughts never carry any associated risk.",
+      "Prescribe a dopamine antagonist as sole therapy because intrusive thoughts are equivalent to delusions.",
+      "Avoid discussing the content further in case detailed questioning reinforces or normalises the thoughts.",
+      "Assess risk and insight sensitively, then offer evidence-based OCD care such as ERP and SSRIs."
+    ],
+    "key": "E",
+    "explanations": [
+      "Ego-dystonic intrusive thoughts with intact reality testing differ from psychotic commands or delusional intent. Labelling all such thoughts as psychosis can prevent disclosure and appropriate treatment.",
+      "These thoughts often indicate OCD and are not evidence of intent, but a structured assessment must still cover distress, functioning, self-harm and actual risk factors.",
+      "Antipsychotics are not routinely first-line therapy for uncomplicated perinatal OCD; they may have a role only in selected refractory cases with specialist input.",
+      "Calm, non-judgemental direct questioning helps distinguish obsessions from intent and psychosis. Avoidance can increase shame and obstruct a safety plan.",
+      "Correct: assess the ego-dystonic nature, insight, avoidance, mood and infant safety without accusation. Explain intrusive thoughts, provide specialist-informed cognitive behavioural therapy with exposure/response prevention and discuss SSRIs when appropriate during breastfeeding."
+    ],
+    "pearl": "In postpartum OCD, unwanted intrusive infant-harm images are usually distressing and resisted; psychotic beliefs or genuine intent change the risk pathway.",
+    "pivot": "Fixed conviction that the infant is dangerous, command hallucinations, mania or intent warrants an emergency psychosis and safety response rather than routine OCD care.",
+    "management": {
+      "steps": [
+        [
+          "Explore",
+          "Ask directly and nonjudgmentally about intrusive thoughts, insight, urges, avoidance, psychosis and depression."
+        ],
+        [
+          "Assess safety",
+          "Clarify actual intent, capacity to care, suicidality, supports and any urgent safeguarding concerns."
+        ],
+        [
+          "Treat",
+          "Refer for perinatal-focused CBT with ERP and discuss medication options with maternal/infant considerations."
+        ],
+        [
+          "Follow closely",
+          "Monitor symptom burden, feeding/sleep and treatment response; explain urgent red flags to family."
+        ]
+      ],
+      "safety": "Avoid equating ego-dystonic obsessions with intent; never ignore true psychotic features or credible plans.",
+      "local": "RANZCP perinatal mental health care and Australian OCD guidance."
+    },
+    "source": "https://www.ranzcp.org/clinical-guidelines-publications",
+    "context": "Advanced integrated clinical decisions"
+  },
+  {
+    "n": 76,
+    "domain": "Obstetrics & postpartum emergencies",
+    "skill": "Secondary postpartum haemorrhage / retained products and infection",
+    "stem": "Eleven days after vaginal birth, a 34-year-old presents with recurrent heavy vaginal bleeding and clots, lower abdominal pain and temperature 38.2°C. Pulse is 116/min and BP is 102/66 mmHg. Ultrasound suggests heterogeneous vascular tissue within the uterine cavity; the placenta had appeared complete at birth.",
+    "ask": "Which approach is most appropriate?",
+    "options": [
+      "Activate acute assessment, resuscitate and seek obstetric review for infection and retained tissue.",
+      "Reassure this is normal lochia because postpartum bleeding may continue for six weeks.",
+      "Give an oral contraceptive pill alone to suppress further bleeding and review after one week.",
+      "Treat presumed urinary infection without assessing the uterine cavity or haemodynamic status.",
+      "Arrange elective outpatient ultrasound after fever resolves, with no change to immediate management."
+    ],
+    "key": "A",
+    "explanations": [
+      "Correct: secondary PPH with tachycardia, fever and possible retained products requires urgent obstetric assessment, IV access and haemorrhage monitoring, cultures and antibiotics when endometritis is suspected, and planned removal of retained tissue when indicated.",
+      "Normal lochia usually diminishes; new heavy bleeding, clots and tachycardia are not reassurance findings. Fever adds concern for infection.",
+      "Contraceptive hormones cannot address retained products, active haemorrhage or uterine infection. Delayed review risks sepsis and blood loss.",
+      "Urinary infection can produce fever, but it does not explain a vascular intrauterine mass plus heavy vaginal bleeding. The uterine source must be investigated.",
+      "Imaging may help guide treatment but should not delay resuscitation or specialist review. This patient has clinically important bleeding and possible infection now."
+    ],
+    "pearl": "New heavy bleeding after day one of the puerperium with fever or uterine tenderness suggests secondary PPH and infection or retained products.",
+    "pivot": "Mild steadily decreasing lochia without systemic symptoms may be physiologic and follow routine postpartum review.",
+    "management": {
+      "steps": [
+        [
+          "Stabilise",
+          "Assess ABCs, quantify bleeding, obtain IV access, FBC, coagulation and crossmatch."
+        ],
+        [
+          "Investigate",
+          "Perform obstetric examination, pelvic ultrasound and infection sampling where appropriate."
+        ],
+        [
+          "Treat",
+          "Give broad-spectrum antibiotics if infection suspected and arrange uterine evacuation or other haemostasis with obstetrics."
+        ],
+        [
+          "Follow",
+          "Monitor haemodynamics and haemoglobin, culture response and future reproductive counselling."
+        ]
+      ],
+      "safety": "Avoid blind repeated uterine instrumentation without senior assessment, particularly in highly vascular retained tissue.",
+      "local": "Australian postpartum haemorrhage and puerperal sepsis clinical pathways."
+    },
+    "source": "https://www.health.qld.gov.au/qcg",
+    "context": "Advanced integrated clinical decisions"
+  },
+  {
+    "n": 77,
+    "domain": "Infectious diseases & cardiology",
+    "skill": "Staphylococcus aureus bacteraemia / endocarditis investigation",
+    "stem": "A 55-year-old who injects drugs is admitted with fever and pleuritic pain. Two separate blood culture sets grow methicillin-sensitive Staphylococcus aureus. A new systolic murmur is heard, CT chest shows multiple peripheral cavitary nodules, and fever persists after 24 hours of empiric antibiotics.",
+    "ask": "Which action best addresses the likely complication?",
+    "options": [
+      "Discharge on seven days of oral flucloxacillin once the temperature first normalises.",
+      "Arrange echocardiography, repeated blood cultures and specialist-directed prolonged IV treatment.",
+      "Assume the cavitary nodules are isolated community pneumonia without evaluating cardiac valves.",
+      "Stop antimicrobials after one negative repeat blood culture regardless of the cardiac findings.",
+      "Give prophylactic anticoagulation alone to prevent septic emboli from the right-sided valve."
+    ],
+    "key": "B",
+    "explanations": [
+      "Possible right-sided infective endocarditis with septic pulmonary emboli requires detailed assessment and prolonged targeted therapy; a brief oral course is inadequate.",
+      "Correct: involve infectious diseases/cardiology, obtain transthoracic echocardiography with transoesophageal imaging when indicated, repeat cultures until clearance and tailor prolonged IV anti-staphylococcal antibiotics. Evaluate complications and any indication for intervention.",
+      "Multiple peripheral septic-appearing emboli plus S. aureus bacteraemia and murmur are strongly suggestive of valvular infection. Treating only pneumonia misses the source.",
+      "One negative follow-up culture does not establish eradication, especially with persistent fever and embolic signs. Duration depends on valve involvement and clearance.",
+      "Anticoagulation is not a substitute for antimicrobial therapy and can pose bleeding risks; septic emboli are infected material rather than ordinary venous thromboembolism."
+    ],
+    "pearl": "S. aureus in blood cultures is not a contaminant; persistent bacteraemia or septic emboli demand endocarditis evaluation.",
+    "pivot": "A single positive culture with a likely skin contaminant organism and no systemic signs may follow a different interpretation after microbiology consultation.",
+    "management": {
+      "steps": [
+        [
+          "Evaluate",
+          "Review sources, injection exposure, cardiac signs and septic embolic features."
+        ],
+        [
+          "Investigate",
+          "Repeat blood cultures to clearance; obtain echocardiography and assess metastatic infection."
+        ],
+        [
+          "Treat",
+          "Start organism-directed prolonged IV antibiotics with infectious-disease guidance."
+        ],
+        [
+          "Review complications",
+          "Coordinate valve surgery/critical care if heart failure, uncontrolled infection or major embolic events develop."
+        ]
+      ],
+      "safety": "Do not treat confirmed S. aureus bacteraemia as uncomplicated without documenting an adequate source assessment.",
+      "local": "Australian infectious diseases and endocarditis antimicrobial stewardship pathways."
+    },
+    "source": "https://www.safetyandquality.gov.au/",
+    "context": "Advanced integrated clinical decisions"
+  },
+  {
+    "n": 78,
+    "domain": "Paediatric respiratory emergencies",
+    "skill": "Severe croup / stridor at rest with exhaustion",
+    "stem": "A 2-year-old with a barking cough and hoarseness has severe persistent stridor at rest, marked sternal recession and increasing agitation. SpO2 is 95% and temperature is 37.9°C. The child becomes more distressed when staff try to place an IV cannula, and the parent asks why oxygen is not being prioritised over medication.",
+    "ask": "Which immediate treatment approach is most appropriate?",
+    "options": [
+      "Use nebulised salbutamol and a chest radiograph before giving airway medication.",
+      "Begin oral antibiotics because severe stridor implies bacterial infection of the trachea.",
+      "Minimise distress, give nebulised adrenaline and dexamethasone, and seek senior airway support.",
+      "Perform routine throat examination with a tongue depressor to exclude epiglottitis before treatment.",
+      "Discharge if oxygen saturation remains above ninety-four percent after a short observation."
+    ],
+    "key": "C",
+    "explanations": [
+      "Salbutamol targets lower-airway bronchospasm rather than laryngeal/subglottic narrowing. X-ray is not routinely needed and could delay effective upper-airway treatment.",
+      "Viral croup is usually not bacterial; antibiotics are reserved for alternative diagnoses. The primary threat is dynamic upper-airway obstruction.",
+      "Correct: keep the child calm in the caregiver's arms, give nebulised adrenaline and appropriate dexamethasone for severe croup and arrange high-acuity monitoring with senior airway assistance. Oxygenation can deteriorate late.",
+      "Agitating a child with serious upper-airway narrowing can precipitate further obstruction. Invasive examinations should be deferred until safe and led by experienced clinicians.",
+      "Normal or near-normal SpO2 does not exclude severe airway obstruction, and a child with stridor at rest and major recession needs treatment and post-adrenaline observation."
+    ],
+    "pearl": "In croup, respiratory effort and behaviour may be more important than SpO2; hypoxia is a late ominous sign.",
+    "pivot": "Mild barking cough without stridor or distress usually needs reassurance/support rather than emergency nebulised adrenaline.",
+    "management": {
+      "steps": [
+        [
+          "Calm",
+          "Minimise handling and let the child remain with a caregiver."
+        ],
+        [
+          "Treat",
+          "Administer protocol-based nebulised adrenaline and dexamethasone promptly."
+        ],
+        [
+          "Prepare",
+          "Engage senior paediatric/anaesthetic airway team, monitor respiratory effort and oxygenation."
+        ],
+        [
+          "Observe",
+          "Ensure prolonged observation after adrenaline and assess for recurrent stridor before discharge."
+        ]
+      ],
+      "safety": "Do not upset a severely obstructed child for non-urgent IV access or radiographs.",
+      "local": "Royal Children's Hospital Croup guideline."
+    },
+    "source": "https://www.rch.org.au/clinicalguide/guideline_index/Croup_Laryngotracheobronchitis/",
+    "context": "Advanced integrated clinical decisions"
+  },
+  {
+    "n": 79,
+    "domain": "Diabetes & vascular surgery",
+    "skill": "Diabetic foot gangrene / limb-threatening ischaemia",
+    "stem": "A 62-year-old with longstanding diabetes has a painful black second toe and a plantar ulcer. Foot pulses are not palpable, the skin is cool and capillary refill is delayed. He has no fever, but the wound has an unpleasant odour. A community nurse suggests oral antibiotics and dressing reviews alone.",
+    "ask": "Which management approach is most appropriate?",
+    "options": [
+      "Provide routine dressings and reassess the toe after four weeks because no fever is present.",
+      "Treat with oral antibiotics only because the wound odour establishes uncomplicated cellulitis.",
+      "Schedule podiatry review in several months once glucose control has stabilised.",
+      "Arrange urgent multidisciplinary vascular/diabetic foot assessment for threatened perfusion and infection.",
+      "Advise walking exercise to improve collateral flow before ordering any vascular investigations."
+    ],
+    "key": "D",
+    "explanations": [
+      "Gangrene and absent pulses imply limb-threatening arterial insufficiency that will not reverse with dressings alone. Delays can lead to spreading necrosis and amputation.",
+      "Antibiotics may be needed for infection, but do not restore perfusion. Wound healing and limb salvage require vascular assessment, offloading and coordinated care.",
+      "Podiatry is important but this is an urgent limb-salvage problem. Routine delayed review is inadequate with necrosis and compromised blood supply.",
+      "Correct: expedite vascular surgery and high-risk foot service review, assess for severe ischaemia and infection, obtain appropriate perfusion imaging and plan revascularisation, debridement and antimicrobials according to severity.",
+      "Walking can worsen tissue damage in a limb with gangrene and open ulceration. Offloading and vascular evaluation take priority over an exercise programme."
+    ],
+    "pearl": "Gangrene plus absent pulses is an ischaemic limb emergency, even if systemic sepsis signs are absent.",
+    "pivot": "A superficial neuropathic ulcer with intact perfusion and no deep infection may be managed by structured community foot care and offloading.",
+    "management": {
+      "steps": [
+        [
+          "Triage",
+          "Evaluate sepsis, spreading infection, limb viability, pulses and sensation."
+        ],
+        [
+          "Protect",
+          "Offload the ulcer, provide analgesia and appropriate wound care."
+        ],
+        [
+          "Escalate",
+          "Refer urgently to vascular/high-risk foot team for imaging and potential revascularisation."
+        ],
+        [
+          "Coordinate",
+          "Plan antibiotics, debridement and diabetes control with multidisciplinary limb salvage team."
+        ]
+      ],
+      "safety": "Do not debride extensive dry ischaemic gangrene without a vascular plan; avoid delays for dressings alone.",
+      "local": "RACGP and Australian diabetes-related foot disease management pathways."
+    },
+    "source": "https://www.racgp.org.au/",
+    "context": "Advanced integrated clinical decisions"
+  },
+  {
+    "n": 80,
+    "domain": "Psychiatry & emergency risk assessment",
+    "skill": "Suicidal intent with accessible means / immediate safe disposition",
+    "stem": "A 22-year-old presents after telling a friend she intends to take a large quantity of medication tonight. She describes a specific time and says she has already collected the tablets at home. She appears calm, denies recent substance use, and asks to leave because she has an appointment in the morning.",
+    "ask": "What is the safest immediate disposition?",
+    "options": [
+      "Discharge with a routine GP appointment because calm presentation indicates low acute risk.",
+      "Ask a friend to check on her next week without documenting access to medications.",
+      "Begin an antidepressant and discharge without a collaborative or supervised safety plan.",
+      "Use a numerical suicide risk score alone to decide whether she may leave the department.",
+      "Arrange urgent mental health assessment and protective observation while restricting access to means."
+    ],
+    "key": "E",
+    "explanations": [
+      "Calm affect does not exclude imminent suicidal intent. A detailed plan and accessible means require prompt safeguarding rather than routine discharge.",
+      "Social support is useful but a delayed informal check is not sufficient for someone describing a plan to act tonight. The patient needs structured immediate assessment.",
+      "Antidepressants are not an immediate substitute for safety planning and monitoring; treatment and disposition must address current risk and intent first.",
+      "Scores can help prompt questions but cannot replace individual clinical judgement, collateral history and evaluation of time, means and protective factors.",
+      "Correct: maintain a safe supervised setting, urgently involve senior mental health clinicians, assess capacity and risk, engage supports appropriately and restrict access to medication. Determine admission or another robust crisis pathway through specialist assessment."
+    ],
+    "pearl": "Specific intent, timing and accessible means outweigh reassuring appearance or a low score on a screening tool.",
+    "pivot": "Passive death wishes without plan or intent still require assessment, but disposition can differ when reliable support and safety measures are established.",
+    "management": {
+      "steps": [
+        [
+          "Protect",
+          "Provide appropriate observation, remove immediate hazards and avoid unsupervised departure while high-risk assessment occurs."
+        ],
+        [
+          "Assess",
+          "Explore intent, plan, means, recent attempts, mental illness, intoxication and protective factors."
+        ],
+        [
+          "Coordinate",
+          "Seek urgent senior mental health review, collateral information and lawful care planning."
+        ],
+        [
+          "Document",
+          "Record a specific safety/disposition plan and handover with follow-up and means restriction."
+        ]
+      ],
+      "safety": "Never treat a risk scale as a definitive prediction or substitute for an individual urgent assessment.",
+      "local": "Australian mental health emergency and suicide prevention clinical guidance."
+    },
+    "source": "https://www.safetyandquality.gov.au/",
+    "context": "Advanced integrated clinical decisions"
+  },
+  {
+    "n": 81,
+    "domain": "General surgery & infection",
+    "skill": "Diverticular abscess / drainage and antibiotics",
+    "stem": "A 58-year-old with left lower-quadrant abdominal pain and fever is haemodynamically stable. CT confirms sigmoid diverticulitis with a 5.5-cm pelvic abscess, no free perforation and no diffuse peritonitis. The abscess is accessible to interventional radiology, and he has no major immunosuppression.",
+    "ask": "Which treatment approach is most appropriate?",
+    "options": [
+      "Admit for IV antibiotics and seek image-guided abscess drainage with surgical oversight.",
+      "Discharge with oral antibiotics alone because absence of generalised peritonitis indicates low risk.",
+      "Perform urgent total colectomy in every patient with a diverticular abscess larger than five centimetres.",
+      "Give a high-fibre diet immediately and defer further treatment until inflammatory markers normalise.",
+      "Arrange colonoscopy during acute inflammation to drain the abscess through the colonic wall."
+    ],
+    "key": "A",
+    "explanations": [
+      "Correct: an accessible sizeable diverticular abscess generally needs admission, IV antimicrobial treatment and discussion of percutaneous drainage with surgical/interventional teams. Monitor for failure requiring operative source control.",
+      "Outpatient antibiotics alone may be suitable for selected small uncomplicated collections, not an accessible 5.5-cm abscess with active fever.",
+      "Emergency resection is reserved for deterioration, free perforation, peritonitis or failure of less invasive management. A stable accessible abscess can often be treated by drainage.",
+      "High-fibre prevention advice is for recovery, not treatment of an established infected abscess. Oral intake may need individual restrictions in the acute phase.",
+      "Colonoscopy in acute diverticulitis carries perforation risk and is not the standard means of draining a pelvic abscess. Follow-up luminal evaluation may be indicated after recovery."
+    ],
+    "pearl": "Complicated diverticulitis with a drainable large abscess calls for antibiotics plus source-control planning, not just a prescription.",
+    "pivot": "Uncomplicated diverticulitis without abscess or peritonitis can often be managed less invasively after clinical risk assessment.",
+    "management": {
+      "steps": [
+        [
+          "Assess",
+          "Review sepsis, peritonism, CT anatomy, comorbidities and pain."
+        ],
+        [
+          "Treat",
+          "Admit for IV antibiotics, hydration, analgesia and bowel rest as indicated."
+        ],
+        [
+          "Drain",
+          "Engage surgical and interventional radiology services for percutaneous abscess drainage."
+        ],
+        [
+          "Follow",
+          "Review cultures, clinical response and follow-up colon evaluation after recovery when indicated."
+        ]
+      ],
+      "safety": "Worsening peritonitis or shock warrants urgent surgery even if initial drainage appeared feasible.",
+      "local": "Australian colorectal surgical and intra-abdominal sepsis pathways."
+    },
+    "source": "https://www.safetyandquality.gov.au/standards/clinical-care-standards/sepsis-clinical-care-standard",
+    "context": "Advanced integrated clinical decisions"
+  },
+  {
+    "n": 82,
+    "domain": "Paediatrics & gastroenterology",
+    "skill": "Coeliac screening / gluten exposure before serology",
+    "stem": "A 10-year-old with poor growth, iron-deficiency anaemia and intermittent diarrhoea is referred for possible coeliac disease. Her parent has removed nearly all gluten from the diet over the last three weeks because symptoms seem better. Initial tissue transglutaminase IgA is negative and no total IgA was measured.",
+    "ask": "What is the best interpretation and next step?",
+    "options": [
+      "Exclude coeliac disease because tissue transglutaminase remains specific after any dietary change.",
+      "Explain the limitations of testing off gluten and arrange specialist-led appropriate repeat assessment.",
+      "Diagnose coeliac disease from symptomatic improvement alone without further testing or follow-up.",
+      "Start corticosteroids because an autoimmune gastrointestinal disorder is presumed despite negative serology.",
+      "Perform a lactose breath test alone because growth faltering and iron deficiency rule out coeliac disease."
+    ],
+    "key": "B",
+    "explanations": [
+      "Serology may fall after gluten reduction and IgA deficiency can produce false-negative IgA-based tests. This result does not definitively exclude disease.",
+      "Correct: take a careful dietary and growth history, measure total IgA with appropriate coeliac serology and involve paediatric gastroenterology to plan evaluation, including gluten exposure/challenge if clinically suitable before repeat tests or biopsy.",
+      "Symptom improvement on dietary restriction is nonspecific and may reflect other changes. A correct diagnosis affects lifelong monitoring, nutrition and family screening.",
+      "Systemic steroids are not standard therapy for uncomplicated coeliac disease and are inappropriate without diagnosis. Dietary management and nutritional correction come after appropriate assessment.",
+      "Lactose intolerance may coexist but does not explain why coeliac serology was performed under unreliable dietary conditions. Growth and iron findings support completing the coeliac work-up."
+    ],
+    "pearl": "Coeliac serology is best interpreted while the child is consuming adequate gluten, with total IgA checked to detect deficiency.",
+    "pivot": "If a child on a gluten-containing diet has positive appropriate serology, proceed through paediatric diagnostic pathways, sometimes including specialist-defined no-biopsy criteria.",
+    "management": {
+      "steps": [
+        [
+          "Review",
+          "Assess duration of gluten restriction, growth trajectory, anaemia and family history."
+        ],
+        [
+          "Test correctly",
+          "Order total IgA and suitable coeliac serology, discussing necessary gluten exposure."
+        ],
+        [
+          "Refer",
+          "Involve paediatric gastroenterology before a prolonged restrictive diet or unsupervised challenge."
+        ],
+        [
+          "Support",
+          "Address iron and nutritional deficiencies and plan diagnosis-specific long-term follow-up."
+        ]
+      ],
+      "safety": "Avoid declaring coeliac disease absent from a negative test taken after gluten reduction.",
+      "local": "Royal Children's Hospital and Australian paediatric coeliac diagnosis pathways."
+    },
+    "source": "https://www.rch.org.au/",
+    "context": "Advanced integrated clinical decisions"
+  },
+  {
+    "n": 83,
+    "domain": "General practice & immunisation",
+    "skill": "Immunosuppression / live-vaccine eligibility",
+    "stem": "A 39-year-old with inflammatory bowel disease takes high-dose oral prednisolone and azathioprine and is planning overseas travel in two months. She requests MMR and yellow-fever vaccines today because her childhood records are missing. She is otherwise well and has no active infection.",
+    "ask": "Which vaccination plan is safest?",
+    "options": [
+      "Administer all requested live vaccines today because she has no current symptoms.",
+      "Give yellow-fever vaccine now but delay MMR only because yellow fever is travel-related.",
+      "Assess the degree of immunosuppression and seek specialist advice before any live vaccine.",
+      "Withhold every inactivated vaccine until all immunosuppressive treatment has been stopped.",
+      "Assume childhood immunisations are complete and ignore travel vaccine requirements entirely."
+    ],
+    "key": "C",
+    "explanations": [
+      "Significant immunosuppression can permit replication of live-attenuated vaccine strains with serious consequences. Being well on the day does not eliminate the contraindication.",
+      "Yellow fever is also a live-attenuated vaccine and may be contraindicated. Travel need does not automatically override safety.",
+      "Correct: review drugs, doses and treatment timing, determine vaccine eligibility via Australian Immunisation Handbook, discuss live-vaccine contraindications and specialist travel options or waiver where appropriate; inactivated vaccines may still be indicated.",
+      "Most inactivated vaccines can be administered during immunosuppression, although response can be reduced. A blanket prohibition would miss protection.",
+      "Absent records and travel risk deserve active review. Assumed immunity and no counselling leave preventable infectious disease risks unaddressed."
+    ],
+    "pearl": "Live vaccines, including MMR and yellow fever, need a special risk assessment in patients with significant immunosuppression.",
+    "pivot": "A patient no longer immunosuppressed after an appropriate treatment-free interval may be eligible for selected live vaccines under specialist and handbook guidance.",
+    "management": {
+      "steps": [
+        [
+          "Clarify",
+          "Verify drug doses, timing, underlying disease and vaccination history."
+        ],
+        [
+          "Check guidance",
+          "Consult Australian Immunisation Handbook live-vaccine contraindication tables and travel requirements."
+        ],
+        [
+          "Plan",
+          "Provide indicated inactivated vaccines and specialist-directed live-vaccine timing or alternatives."
+        ],
+        [
+          "Counsel",
+          "Discuss exposure prevention, travel destinations, waivers and follow-up immunisation records."
+        ]
+      ],
+      "safety": "Do not administer live yellow-fever vaccine to a significantly immunosuppressed patient without specialist approval.",
+      "local": "Australian Immunisation Handbook immunisation for people receiving immunosuppressive therapy."
+    },
+    "source": "https://immunisationhandbook.health.gov.au/",
+    "context": "Advanced integrated clinical decisions"
+  },
+  {
+    "n": 84,
+    "domain": "Neurology & infectious diseases",
+    "skill": "Spinal epidural abscess / urgent MRI and decompression",
+    "stem": "A 57-year-old with diabetes presents with three days of worsening mid-back pain and fever. This morning he developed urinary hesitancy and bilateral leg weakness. Temperature is 38.5°C, CRP is 210 mg/L, and examination confirms new hip-flexion weakness and brisk reflexes.",
+    "ask": "Which next intervention is most appropriate?",
+    "options": [
+      "Prescribe oral analgesia and reassess motor function in five days if the fever resolves.",
+      "Arrange outpatient physiotherapy because muscular pain commonly accompanies viral illness.",
+      "Give a corticosteroid injection into the painful area before investigating the neurological changes.",
+      "Arrange emergency spine MRI, IV antibiotics and urgent spinal surgical consultation.",
+      "Request plain spine radiographs and discharge if there is no visible vertebral fracture."
+    ],
+    "key": "D",
+    "explanations": [
+      "New neurological deficits and bladder dysfunction with fever are red flags for compressive spinal infection, not a routine pain complaint.",
+      "Physiotherapy does not treat an epidural abscess and could delay timely decompression, risking permanent paralysis.",
+      "Local steroid injection may worsen an untreated infection and is inappropriate without diagnosing the cause of acute neurological deterioration.",
+      "Correct: perform urgent MRI, obtain blood cultures if this does not delay care, start empirical IV antibiotics and consult spinal surgery and infectious diseases for emergency source control and decompression assessment.",
+      "Plain films are insensitive for epidural collections and cord compression. A normal radiograph does not permit discharge in this presentation."
+    ],
+    "pearl": "Back pain with fever and new neurological or bladder deficits is spinal epidural abscess until urgently excluded.",
+    "pivot": "Mechanical back pain without systemic features or progressive neurological signs can follow a less urgent musculoskeletal pathway.",
+    "management": {
+      "steps": [
+        [
+          "Recognise",
+          "Document neurological level, motor function, sensation and bladder changes; assess sepsis."
+        ],
+        [
+          "Escalate",
+          "Urgently involve spinal surgery, infectious diseases and senior ED care."
+        ],
+        [
+          "Diagnose",
+          "Obtain urgent whole-region spinal MRI with blood cultures and inflammatory tests."
+        ],
+        [
+          "Treat",
+          "Start IV antibiotics promptly and plan surgical drainage/decompression according to neurological compromise."
+        ]
+      ],
+      "safety": "Do not wait for the classic full triad or reassure after a normal spine X-ray.",
+      "local": "Australian spinal infection and emergency cord compression clinical pathways."
+    },
+    "source": "https://aci.health.nsw.gov.au/networks/eci",
+    "context": "Advanced integrated clinical decisions"
+  },
+  {
+    "n": 85,
+    "domain": "Obstetrics & perinatal medicine",
+    "skill": "PPROM at 30 weeks / expectant inpatient care",
+    "stem": "A 30-week pregnant patient reports a sudden gush of clear vaginal fluid. Speculum examination shows pooling and testing confirms membrane rupture. She has no contractions, fever, uterine tenderness or vaginal bleeding, CTG is reassuring and ultrasound shows a cephalic fetus with reduced fluid.",
+    "ask": "Which management approach is best now?",
+    "options": [
+      "Induce labour immediately in every patient with ruptured membranes before thirty-two weeks.",
+      "Discharge home without antibiotics because she has no fever or signs of infection.",
+      "Perform repeated digital vaginal examinations to track the cervix despite no contractions.",
+      "Give a routine term-labour oxytocin augmentation protocol before neonatal counselling occurs.",
+      "Admit for PPROM care with steroids, indicated antibiotics, monitoring and neonatal planning."
+    ],
+    "key": "E",
+    "explanations": [
+      "At 30 weeks, routine immediate delivery may increase prematurity harms without infection, fetal compromise or labour; obstetric plans balance maternal and neonatal risks.",
+      "PPROM raises infection and prematurity risks even when initially afebrile. Appropriate monitoring and latency antibiotics can improve outcomes.",
+      "Digital examinations increase ascending infection risk in ruptured membranes and should be minimised unless delivery is being actively assessed.",
+      "Oxytocin augmentation is not indicated without a decision to deliver. Neonatal counselling and senior obstetric review are central at this gestation.",
+      "Correct: admit or manage within a specialist PPROM pathway, give antenatal corticosteroids, appropriate latency antibiotics and monitor maternal infection, labour and fetal wellbeing. Discuss magnesium sulfate if imminent early preterm birth and plan delivery timing with neonatal services."
+    ],
+    "pearl": "At 30 weeks, stable PPROM without labour or infection usually requires surveillance and prematurity-prevention measures, not automatic immediate delivery.",
+    "pivot": "Clinical chorioamnionitis, placental abruption, cord prolapse or persistent fetal compromise warrants delivery rather than continued expectant management.",
+    "management": {
+      "steps": [
+        [
+          "Confirm",
+          "Use sterile speculum, appropriate membrane testing and fetal/maternal assessment while avoiding digital exams."
+        ],
+        [
+          "Protect neonate",
+          "Give antenatal corticosteroids and protocol-based latency antibiotics."
+        ],
+        [
+          "Monitor",
+          "Review temperature, uterine tenderness, discharge, CTG and signs of labour; involve neonatology."
+        ],
+        [
+          "Plan delivery",
+          "Balance gestation, infection and fetal status; give neuroprotective magnesium if indicated near planned preterm birth."
+        ]
+      ],
+      "safety": "Do not continue expectant care if chorioamnionitis or fetal compromise develops; avoid unnecessary vaginal examinations.",
+      "local": "Queensland Clinical Guidelines preterm prelabour rupture of membranes."
+    },
+    "source": "https://www.health.qld.gov.au/qcg",
+    "context": "Advanced integrated clinical decisions"
   }
 ]
