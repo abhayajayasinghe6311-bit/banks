@@ -1530,9 +1530,9 @@
         ]
       ],
       "safety": "Do not reassure on the basis of a normal early radiograph or lack of pain; avoid continued unprotected walking.",
-      "local": "Diabetes Australia foot-care advice and Australian high-risk diabetic foot pathways."
+      "local": "IWGDF 2023 Charcot guideline hosted by North Western Melbourne Primary Health Network; immediate knee-high offloading."
     },
-    "source": "https://www.diabetesaustralia.com.au/living-with-diabetes/preventing-complications/foot-care/",
+    "source": "https://nwmphn.org.au/wp-content/uploads/2025/10/IWGDF-Guidelines-2023.pdf",
     "context": "Advanced integrated clinical decisions"
   },
   {
@@ -1962,9 +1962,9 @@
         ]
       ],
       "safety": "A negative early rapid antigen test may not reliably exclude influenza in a high-risk pregnant patient.",
-      "local": "Australian Immunisation Handbook and state influenza management guidance for pregnancy."
+      "local": "NSW Health influenza antiviral guidance and Australian Therapeutic Guidelines high-risk pregnancy recommendation (current as of October 2024)."
     },
-    "source": "https://immunisationhandbook.health.gov.au/contents/vaccine-preventable-diseases/influenza-flu",
+    "source": "https://www.health.nsw.gov.au/Infectious/factsheets/Pages/racf-antiviral-treatments-and-prophylaxis.aspx",
     "context": "Advanced integrated clinical decisions"
   },
   {
@@ -2058,9 +2058,9 @@
         ]
       ],
       "safety": "Sudden shower of floaters, curtain-like loss or rapid acuity decline warrants emergency assessment for haemorrhage or retinal detachment.",
-      "local": "Diabetes Australia diabetic eye complications resources and Australian ophthalmology retinal pathways."
+      "local": "NSW Health diabetic retinopathy referral criteria, 2026; PDR requires urgent ophthalmology discussion."
     },
-    "source": "https://www.diabetesaustralia.com.au/living-with-diabetes/preventing-complications/eye-health/",
+    "source": "https://www.health.nsw.gov.au/outpatients/referrals/Pages/diabetic-retinopathy.aspx",
     "context": "Advanced integrated clinical decisions"
   },
   {
@@ -2106,9 +2106,9 @@
         ]
       ],
       "safety": "Single-drug preventive therapy in unrecognised active TB can promote resistance and delay effective treatment.",
-      "local": "Queensland Health tuberculosis contact management and TB control program resources."
+      "local": "NSW Health Tuberculosis Control Guideline: contact screening and exclusion of active disease before preventive treatment."
     },
-    "source": "https://www.health.qld.gov.au/clinical-practice/guidelines-procedures/diseases-infection/diseases/tuberculosis",
+    "source": "https://www.health.nsw.gov.au/Infectious/controlguideline/Pages/tuberculosis.aspx",
     "context": "Advanced integrated clinical decisions"
   },
   {
@@ -2156,7 +2156,7 @@
       "safety": "A negative screening result must never be used to dismiss a clinically suspicious cervical lesion.",
       "local": "Cancer Council Australia National Cervical Screening Program guidelines: investigation of abnormal vaginal bleeding."
     },
-    "source": "https://www.cancer.org.au/clinical-guidelines/cervical-cancer-screening",
+    "source": "https://www.cancer.org.au/cancer-information/screening-tests-and-treatments/early-detection-and-screening/cervical-cancer-screening/guide-to-cervical-screening-tests/understanding-cervical-cancer-hpv/cervical-cancer-signs-and-symptoms",
     "context": "Advanced integrated clinical decisions"
   }
 ]
