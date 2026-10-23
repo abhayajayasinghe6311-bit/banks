@@ -3118,5 +3118,245 @@
       "local": "Lung Foundation Australia COPD-X based acute-care guidance and COPD Clinical Care Standard."
     },
     "source": "https://lungfoundation.com.au/support-resources/resource-hub/chronic-obstructive-pulmonary-disease-acute-care-quality-improvement-toolkit/"
+  },
+  {
+    "n": 66,
+    "domain": "Paediatric nephrology & infectious diseases",
+    "skill": "Atypical paediatric UTI / acute renal tract imaging",
+    "context": "Advanced final-year clinical prioritisation",
+    "stem": "A 2-year-old is being treated for a first febrile urinary tract infection. Urine culture grows Proteus mirabilis susceptible to the prescribed antibiotic, but fever persists after 48 hours. The child remains hydrated and stable with mild left flank tenderness. Parents ask whether renal ultrasound is only needed after several more infections.",
+    "ask": "What is the best investigation and follow-up approach?",
+    "options": [
+      "Arrange renal tract ultrasound now and reassess antibiotic response because this meets atypical UTI criteria.",
+      "Avoid imaging because ultrasound is indicated only after three proven lower urinary infections.",
+      "Order routine micturating cystourethrogram immediately for every child with a first febrile UTI.",
+      "Discontinue antibiotics because persistence of fever proves the initial diagnosis was contamination.",
+      "Delay reassessment until the oral course is finished because Proteus infection is usually self-limiting."
+    ],
+    "key": "A",
+    "explanations": [
+      "Correct: a non-E. coli pathogen and failure to improve within 48 hours both meet RCH atypical UTI criteria, warranting renal tract ultrasound during acute illness and review for obstruction or complications.",
+      "The recurrent-UTI pathway differs from atypical UTI. An ultrasound may be needed after a first episode if organism, response, renal function or clinical state is concerning.",
+      "MCUG is not routinely required for every first febrile UTI. Its indications are selected after specialist assessment and renal imaging findings.",
+      "Persistent fever calls for reassessment of treatment adherence, obstruction, abscess or alternative diagnosis, not automatic antibiotic cessation despite a susceptible culture.",
+      "Atypical organisms and poor response increase the risk of underlying urinary tract abnormality; deferring evaluation may miss an obstructed infected system."
+    ],
+    "pearl": "Non-E. coli UTI or poor response after 48 hours makes a paediatric UTI atypical and prompts acute renal ultrasound.",
+    "pivot": "An older, otherwise well child with a first E. coli UTI who improves promptly usually does not need routine acute ultrasound.",
+    "management": {
+      "steps": [
+        [
+          "Reassess",
+          "Check fever trajectory, hydration, examination, urine culture sensitivities and adherence."
+        ],
+        [
+          "Image",
+          "Request renal tract ultrasound during acute illness for atypical UTI criteria."
+        ],
+        [
+          "Treat",
+          "Continue or adjust antibiotics based on susceptibility and clinical response; escalate if septic or obstructed."
+        ],
+        [
+          "Follow",
+          "Arrange appropriate paediatric review, consider structural anomalies and counsel on recurrence warning signs."
+        ]
+      ],
+      "safety": "A nonresponding febrile UTI can signal obstruction or renal complications even when the organism appears antibiotic susceptible.",
+      "local": "RCH Urinary tract infection guideline, atypical infection imaging criteria."
+    },
+    "source": "https://www.rch.org.au/clinicalguide/guideline_index/Urinary_tract_infection/"
+  },
+  {
+    "n": 67,
+    "domain": "Women's health & lactation",
+    "skill": "Inflammatory mastitis / avoid oversupply and unnecessary antibiotics",
+    "context": "Advanced final-year clinical prioritisation",
+    "stem": "A breastfeeding parent three weeks postpartum has a wedge-shaped tender red area on one breast for eight hours after a missed feed. She has no persistent fever, tachycardia or fluctuance and feels otherwise well. She has been aggressively massaging the breast and pumping every hour to 'empty' it. She wants antibiotics immediately.",
+    "ask": "Which initial management advice is most appropriate?",
+    "options": [
+      "Advise complete cessation of breastfeeding for 48 hours to rest the inflamed breast tissue.",
+      "Continue usual cue-based feeding, use cold packs and anti-inflammatory relief, and stop vigorous massage.",
+      "Prescribe a broad-spectrum antibiotic immediately because all red breast tissue represents bacterial infection.",
+      "Recommend additional pumping after every feed to ensure complete removal of residual milk.",
+      "Arrange urgent incision and drainage because any tender breast lump postpartum is an abscess."
+    ],
+    "key": "B",
+    "explanations": [
+      "Abruptly stopping feeding may worsen engorgement and distress; breast milk is usually safe during mastitis. Feeding on demand can continue.",
+      "Correct: early inflammatory mastitis often responds to reducing inflammation, gentle care, normal feeding, cold compresses and appropriate analgesia. Oversupply from excessive pumping and tissue injury from firm massage may perpetuate symptoms.",
+      "Bacterial mastitis is possible if symptoms persist or worsen, especially with sustained systemic signs. Routine immediate antibiotics are not necessary for a short mild inflammatory episode.",
+      "Repeated extra pumping stimulates milk production and can aggravate oedema and oversupply. The goal is physiological feeding, not forced emptying.",
+      "A breast abscess usually has a persistent localised collection, sometimes with fluctuance, and needs imaging and drainage planning. Neither is established here."
+    ],
+    "pearl": "Early inflammatory mastitis is not automatically bacterial; avoid forceful massage and pumping to empty the breast.",
+    "pivot": "Persistent fever, tachycardia, progressive erythema or a focal fluctuant mass should prompt reassessment for bacterial mastitis or abscess.",
+    "management": {
+      "steps": [
+        [
+          "Assess",
+          "Check duration, systemic observations, focal collection and breastfeeding/latch difficulties."
+        ],
+        [
+          "Reduce inflammation",
+          "Offer cold packs, rest, hydration and appropriate analgesia/anti-inflammatory treatment."
+        ],
+        [
+          "Support feeding",
+          "Continue cue-based feeding or usual expressing; avoid deep massage and extra pumping."
+        ],
+        [
+          "Safety-net",
+          "Reassess if not improving within 24 hours or if fever, systemic illness or a lump develops."
+        ]
+      ],
+      "safety": "Do not overlook evolving sepsis or abscess; early conservative care requires explicit timely review instructions.",
+      "local": "Children's Health Queensland Blocked milk ducts and mastitis guidance, reviewed March 2023."
+    },
+    "source": "https://www.childrens.health.qld.gov.au/health-a-to-z/breastfeeding/blocked-milk-ducts-and-mastitis"
+  },
+  {
+    "n": 68,
+    "domain": "Paediatric safeguarding & clinical ethics",
+    "skill": "Recent child sexual assault disclosure / specialist forensic pathway",
+    "context": "Advanced final-year clinical prioritisation",
+    "stem": "A 10-year-old tells an emergency clinician that an adult touched her genitals yesterday and asks the clinician not to tell anyone. She is medically stable and accompanied by a caregiver who was not implicated. The junior doctor plans to ask detailed leading questions and perform a genital examination immediately to establish whether the account is true.",
+    "ask": "What is the most appropriate immediate professional response?",
+    "options": [
+      "Promise absolute secrecy and avoid involving senior staff unless a visible genital injury is found.",
+      "Conduct a full repeated interview to test consistency before involving any external service.",
+      "Respond supportively, ensure safety and urgently involve senior child-protection and forensic specialists.",
+      "Perform an invasive genital examination before discussing consent because evidence may disappear soon.",
+      "Discharge after a normal external examination because physical signs are usually required for reporting."
+    ],
+    "key": "C",
+    "explanations": [
+      "Absolute confidentiality cannot be promised when child safety and mandatory reporting obligations apply. Explain information-sharing limits sensitively and involve appropriate safeguarding services.",
+      "Repeated detailed or leading questioning can contaminate testimony and distress the child. Obtain only the minimum necessary history and leave forensic interviewing to trained professionals.",
+      "Correct: listen without leading, document the child's words, assess immediate safety and medical needs, and contact senior paediatric and specialist forensic/child protection services urgently for time-sensitive care.",
+      "Forensic examination requires trained personnel and appropriate consent/assent and legal processes. Unnecessary examination by untrained staff can cause harm and compromise evidence.",
+      "Most child sexual abuse cases lack specific physical findings. A normal examination does not rule out abuse or remove the duty to safeguard and report according to local law."
+    ],
+    "pearl": "A recent disclosure needs a supportive non-leading response, safety assessment and time-critical specialist forensic input.",
+    "pivot": "An immediate injury, poisoning or threat of further assault requires emergency medical stabilisation and protective action alongside forensic referral.",
+    "management": {
+      "steps": [
+        [
+          "Ensure safety",
+          "Check immediate medical needs and whether the child can safely remain with accompanying adults."
+        ],
+        [
+          "Respond sensitively",
+          "Use open non-leading questions, avoid promises of secrecy and record spontaneous words accurately."
+        ],
+        [
+          "Escalate",
+          "Contact senior paediatrics, child protection and trained forensic sexual assault services promptly."
+        ],
+        [
+          "Document and follow",
+          "Follow state reporting/consent requirements and coordinate psychological and medical follow-up."
+        ]
+      ],
+      "safety": "Do not attempt repeated forensic interviews or unnecessary genital examination; normal findings never exclude abuse.",
+      "local": "RCH Child abuse clinical practice guideline; mandatory reporting requirements vary by Australian jurisdiction."
+    },
+    "source": "https://www.rch.org.au/clinicalguide/guideline_index/Child_Abuse/"
+  },
+  {
+    "n": 69,
+    "domain": "Paediatric surgery & emergency medicine",
+    "skill": "Suspected appendicitis / equivocal ultrasound with peritonism",
+    "context": "Advanced final-year clinical prioritisation",
+    "stem": "A 12-year-old with 24 hours of migratory abdominal pain, vomiting and fever has focal right iliac fossa guarding and pain on percussion. White count and CRP are raised. Ultrasound does not visualise the appendix and shows a small amount of free fluid. A colleague suggests discharge because the scan did not demonstrate appendicitis.",
+    "ask": "What is the safest next step?",
+    "options": [
+      "Discharge with oral analgesia because non-visualisation on ultrasound excludes appendicitis reliably.",
+      "Order an immediate CT scan without surgical discussion because ultrasound is always definitive in children.",
+      "Begin oral laxatives and reassess the abdominal examination after constipation has resolved.",
+      "Keep nil by mouth, give supportive treatment and obtain urgent paediatric surgical reassessment.",
+      "Book an elective outpatient MRI in one week to avoid radiation from immediate further investigation."
+    ],
+    "key": "D",
+    "explanations": [
+      "Non-visualisation is not a negative test when the clinical picture suggests peritonitis. Discharge risks missed perforation and intra-abdominal sepsis.",
+      "CT may be useful in selected equivocal cases, but paediatric surgical consultation should precede CT when suspicion is high, balancing radiation and diagnostic needs.",
+      "Guarding, focal peritoneal signs and inflammatory markers are not explained safely by presumed constipation. Laxatives could delay treatment.",
+      "Correct: persistent peritoneal signs override an indeterminate ultrasound. Keep nil by mouth, provide analgesia and fluids, involve paediatric surgery urgently and decide on observation, further imaging or exploration.",
+      "Elective imaging is inappropriate for a child with progressive pain and guarding. MRI may be useful in some centres, but must be arranged on an acute pathway if chosen."
+    ],
+    "pearl": "A non-visualised appendix on ultrasound does not exclude appendicitis when the examination indicates peritonitis.",
+    "pivot": "A well child with low clinical suspicion, benign repeat examinations and reliable follow-up may be observed or discharged with strict safety-netting.",
+    "management": {
+      "steps": [
+        [
+          "Reassess",
+          "Repeat abdominal and vital-sign examination, hydration and signs of diffuse peritonitis."
+        ],
+        [
+          "Stabilise",
+          "Keep nil by mouth, give analgesia, IV fluids and antibiotics if complicated infection is suspected."
+        ],
+        [
+          "Escalate",
+          "Request urgent paediatric surgical consultation before deciding on additional CT or MRI."
+        ],
+        [
+          "Definitive plan",
+          "Arrange serial examinations, targeted imaging or operative care based on the evolving assessment."
+        ]
+      ],
+      "safety": "Never use an indeterminate ultrasound as the sole basis for discharge in a child with guarding or sepsis.",
+      "local": "Children's Health Queensland Reducing Low Benefit Care in Paediatrics; paediatric appendicitis imaging guidance."
+    },
+    "source": "https://www.childrens.health.qld.gov.au/__data/assets/pdf_file/0015/225420/reducing-low-benefit-care-in-paediatrics.pdf"
+  },
+  {
+    "n": 70,
+    "domain": "Medical oncology & medication safety",
+    "skill": "Anthracycline extravasation / stop leave aspirate plan",
+    "context": "Advanced final-year clinical prioritisation",
+    "stem": "A 52-year-old receiving doxorubicin through a peripheral cannula suddenly reports burning pain and swelling at the cannula site. The infusion pump is still running, and the nurse asks whether the cannula should be removed immediately before flushing the remaining drug through the line. Skin is intact.",
+    "ask": "What is the safest immediate extravasation response?",
+    "options": [
+      "Flush the cannula with normal saline to dilute the irritant and then restart the infusion.",
+      "Remove the cannula immediately and apply firm massage to disperse the drug into tissue.",
+      "Continue the infusion at a slower rate while watching for a change in skin colour.",
+      "Apply warm compresses first and wait for pharmacy to arrive before stopping the pump.",
+      "Stop the infusion, leave the cannula in place, aspirate residual drug and activate the protocol."
+    ],
+    "key": "E",
+    "explanations": [
+      "Flushing may push more vesicant into tissues and worsen necrosis. The suspected extravasation requires immediate interruption and assessment.",
+      "Immediate removal forfeits the opportunity to aspirate residual drug through the existing access. Vigorous massage can increase tissue distribution and injury.",
+      "Doxorubicin is a vesicant; continuing at any rate risks progressive tissue damage. A visible skin change is not required before acting.",
+      "Temperature measures and antidotes are drug-specific secondary actions; they should not delay the first step of stopping the infusion and preserving access for aspiration.",
+      "Correct: follow eviQ SLAP: Stop infusion, Leave access device in situ, Aspirate residual drug and Plan drug-specific measures with oncology/pharmacy; document and monitor the affected area."
+    ],
+    "pearl": "For suspected vesicant extravasation, use SLAP: Stop, Leave, Aspirate, Plan; do not flush.",
+    "pivot": "A benign transient flare without swelling may be assessed separately, but suspected extravasation must be excluded before infusion resumes.",
+    "management": {
+      "steps": [
+        [
+          "Stop",
+          "Stop infusion immediately, call senior chemotherapy staff and keep the patient informed."
+        ],
+        [
+          "Preserve and aspirate",
+          "Leave the access device in situ and aspirate residual drug without flushing."
+        ],
+        [
+          "Treat specifically",
+          "Mark and photograph the site; follow the doxorubicin extravasation antidote and compress protocol."
+        ],
+        [
+          "Follow",
+          "Document event, monitor tissue damage and arrange specialist/plastics review if injury progresses."
+        ]
+      ],
+      "safety": "Doxorubicin can cause delayed tissue necrosis; flushing or removing access before aspiration can worsen injury.",
+      "local": "eviQ Extravasation management protocol 157, SLAP immediate actions."
+    },
+    "source": "https://www.eviq.org.au/clinical-resources/extravasation/157-extravasation-management"
   }
 ]
