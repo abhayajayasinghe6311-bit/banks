@@ -3118,5 +3118,245 @@
       "local": "NSW Health clozapine guidance: abdominal distension, vomiting or sustained moderate-severe pain require immediate medical assessment."
     },
     "source": "https://resources.schn.health.nsw.gov.au/policies/policies/pdf/2024-108.pdf"
+  },
+  {
+    "n": 66,
+    "domain": "Paediatric endocrinology & emergency medicine",
+    "skill": "Adrenal crisis / immediate parenteral stress-dose hydrocortisone",
+    "context": "Advanced final-year integrated management",
+    "stem": "An 8-year-old with known primary adrenal insufficiency develops gastroenteritis and has vomited three times, including her usual oral hydrocortisone. She is lethargic, hypotensive and hypoglycaemic at 2.7 mmol/L. Her parents have brought the emergency hydrocortisone kit but have not administered it.",
+    "ask": "What should be prioritised immediately?",
+    "options": [
+      "Give IM or IV stress-dose hydrocortisone without delay alongside glucose and fluid resuscitation.",
+      "Repeat the usual oral hydrocortisone dose and reassess only if vomiting stops completely.",
+      "Await a morning serum cortisol result before administering steroids to preserve diagnostic accuracy.",
+      "Treat dehydration with oral rehydration alone because hypotension is expected with gastroenteritis.",
+      "Start a mineralocorticoid tablet first and defer glucocorticoid treatment until potassium is measured."
+    ],
+    "key": "A",
+    "explanations": [
+      "Correct: this is suspected adrenal crisis with vomiting, hypotension and hypoglycaemia. Give emergency parenteral hydrocortisone immediately (RCH age 3–12 initial 50 mg), treat hypoglycaemia and resuscitate with appropriate IV fluids.",
+      "Vomiting makes oral absorption unreliable. A routine replacement dose is insufficient during serious physiological stress and risks progression to shock.",
+      "Adrenal crisis is a clinical emergency. Blood can be collected if it does not delay treatment, but cortisol testing is not required before lifesaving steroids.",
+      "Oral rehydration is inadequate for a shocked, hypoglycaemic child unable to tolerate oral medication. Parenteral resuscitation is necessary.",
+      "Hydrocortisone supplies essential glucocorticoid activity and has mineralocorticoid effects at stress doses. Mineralocorticoid tablets are not the first rescue treatment."
+    ],
+    "pearl": "Vomiting in a child with adrenal insufficiency can rapidly make oral replacement ineffective; use emergency parenteral hydrocortisone.",
+    "pivot": "A well child with mild intercurrent illness who retains oral medication may use an agreed oral sick-day dosing plan.",
+    "management": {
+      "steps": [
+        [
+          "Recognise",
+          "Assess ABC, shock, hydration, blood glucose, electrolytes and known adrenal insufficiency."
+        ],
+        [
+          "Replace",
+          "Give age-appropriate IM or IV emergency hydrocortisone immediately; do not await laboratory results."
+        ],
+        [
+          "Resuscitate",
+          "Correct hypoglycaemia and give IV isotonic fluids with close haemodynamic reassessment."
+        ],
+        [
+          "Continue",
+          "Admit for ongoing stress dosing, trigger treatment and education on emergency injection use."
+        ]
+      ],
+      "safety": "Never delay hydrocortisone in suspected adrenal crisis to obtain confirmatory cortisol testing.",
+      "local": "RCH Melbourne adrenal crisis guideline: children aged 3–12 require initial 50 mg IM/IV hydrocortisone and ongoing stress dosing."
+    },
+    "source": "https://www.rch.org.au/clinicalguide/guideline_index/Adrenal_crisis_and_acute_adrenal_insufficiency/"
+  },
+  {
+    "n": 67,
+    "domain": "Paediatric cardiology & infectious disease",
+    "skill": "Acute rheumatic fever / long-term secondary prophylaxis",
+    "context": "Advanced final-year integrated management",
+    "stem": "A 13-year-old from a remote community is diagnosed with acute rheumatic fever after migratory large-joint arthritis, fever, elevated inflammatory markers and evidence of recent group A streptococcal infection. Echocardiography identifies mild mitral regurgitation. Symptoms improve with treatment and the family asks whether antibiotics can now stop.",
+    "ask": "What is the most appropriate longer-term prevention strategy?",
+    "options": [
+      "Give one oral antibiotic course and stop when arthritis resolves because recurrence is uncommon.",
+      "Arrange regular intramuscular benzathine benzylpenicillin secondary prophylaxis with register-supported follow-up.",
+      "Prescribe antibiotics only during future sore throats and repeat echocardiography if symptoms recur.",
+      "Use daily anti-inflammatory medication indefinitely instead of antibiotics to prevent further valve injury.",
+      "Recommend early valve surgery despite mild regurgitation because prophylaxis cannot prevent recurrence."
+    ],
+    "key": "B",
+    "explanations": [
+      "A single course treats active streptococcal infection but does not prevent subsequent group A streptococcal exposures and recurrent rheumatic fever.",
+      "Correct: long-term secondary prophylaxis, commonly intramuscular benzathine benzylpenicillin every 21–28 days, reduces recurrence and further valvular damage. Duration depends on age, severity of carditis, risk and specialist review.",
+      "Symptom-triggered antibiotics miss asymptomatic streptococcal infections and do not reliably prevent recurrence. Scheduled secondary prevention is required.",
+      "Anti-inflammatory therapy treats acute symptoms but does not prevent immune responses to subsequent streptococcal infection or progressive rheumatic heart disease.",
+      "Valve surgery is reserved for selected severe structural complications. Mild regurgitation calls for surveillance and secondary prevention rather than immediate operation."
+    ],
+    "pearl": "Acute rheumatic fever requires long-term secondary penicillin prophylaxis even after fever and arthritis settle.",
+    "pivot": "Duration of prophylaxis varies by carditis and residual valve disease; specialist echocardiographic review precedes cessation.",
+    "management": {
+      "steps": [
+        [
+          "Treat acute",
+          "Complete eradication therapy and manage arthritis or carditis with specialist input."
+        ],
+        [
+          "Prevent",
+          "Begin scheduled intramuscular benzathine benzylpenicillin secondary prophylaxis."
+        ],
+        [
+          "Coordinate",
+          "Enrol in an RHD register or equivalent system for recall and adherence support."
+        ],
+        [
+          "Monitor",
+          "Arrange periodic echocardiography, dental care, education and review of prophylaxis duration."
+        ]
+      ],
+      "safety": "Stopping prophylaxis because acute symptoms resolve exposes the patient to recurrent rheumatic fever and cumulative valve injury.",
+      "local": "RHD Australia/Menzies: regular IM benzathine benzylpenicillin every 21–28 days is preferred secondary prevention."
+    },
+    "source": "https://rhdaustralia.org.au/about-arf-and-rhd/"
+  },
+  {
+    "n": 68,
+    "domain": "Obstetrics & neonatal infection prevention",
+    "skill": "GBS urinary tract infection / antenatal treatment and intrapartum prophylaxis",
+    "context": "Advanced final-year integrated management",
+    "stem": "A 29-year-old at 26 weeks' gestation reports dysuria and frequency. Urine culture grows group B Streptococcus at 10^5 CFU/mL, susceptible to penicillin. She is afebrile with no flank pain and has no penicillin allergy. She asks whether treatment now means she will not need antibiotics in labour.",
+    "ask": "What is the most appropriate management plan?",
+    "options": [
+      "Observe without antibiotics because GBS urinary infection in pregnancy is not associated with neonatal risk.",
+      "Give intrapartum antibiotics only if a repeat vaginal swab at 36 weeks remains GBS positive.",
+      "Treat the current urinary infection and document an indication for intrapartum antibiotic prophylaxis.",
+      "Give one oral penicillin dose now and avoid further treatment if urinary symptoms improve.",
+      "Plan elective caesarean delivery solely because GBS bacteriuria was detected during this pregnancy."
+    ],
+    "key": "C",
+    "explanations": [
+      "Symptomatic GBS bacteriuria warrants antenatal UTI treatment. It also identifies maternal colonisation and neonatal early-onset disease risk.",
+      "A repeat vaginal swab is not required after documented GBS bacteriuria in the current pregnancy. Intrapartum prophylaxis is indicated when labour or membrane rupture occurs, with elective prelabour caesarean an exception.",
+      "Correct: treat the symptomatic high-count GBS UTI with an appropriate antibiotic course and document GBS bacteriuria as an indication for intrapartum IV antibiotic prophylaxis, regardless of subsequent swab results.",
+      "One antibiotic dose is inadequate for a symptomatic UTI. Treatment should follow culture sensitivities and pregnancy-safe dosing guidance.",
+      "GBS colonisation alone is not an indication for caesarean birth. Prevention relies on appropriately timed intrapartum antibiotics when indicated."
+    ],
+    "pearl": "GBS bacteriuria in the current pregnancy predicts colonisation and usually removes the need for a repeat screening swab.",
+    "pivot": "Elective caesarean before labour with intact membranes does not require GBS-specific intrapartum prophylaxis, though surgical prophylaxis remains standard.",
+    "management": {
+      "steps": [
+        [
+          "Assess",
+          "Exclude pyelonephritis or sepsis and review urine culture susceptibility and pregnancy status."
+        ],
+        [
+          "Treat",
+          "Give a pregnancy-appropriate antibiotic course for symptomatic GBS UTI and assess response."
+        ],
+        [
+          "Flag labour",
+          "Document GBS bacteriuria clearly in antenatal records for intrapartum prophylaxis."
+        ],
+        [
+          "Coordinate",
+          "Counsel about labour presentation, rupture of membranes and neonatal risk assessment."
+        ]
+      ],
+      "safety": "Do not mistake antenatal UTI treatment for adequate intrapartum neonatal GBS prevention.",
+      "local": "Queensland Clinical Guideline amended March 2025: GBS UTI warrants treatment at diagnosis and intrapartum prophylaxis."
+    },
+    "source": "https://www.health.qld.gov.au/__data/assets/pdf_file/0026/626732/g-gbs.pdf"
+  },
+  {
+    "n": 69,
+    "domain": "Gynaecologic oncology & clinical genetics",
+    "skill": "Epithelial ovarian cancer / germline risk assessment without family history",
+    "context": "Advanced final-year integrated management",
+    "stem": "A 54-year-old is newly diagnosed with high-grade serous epithelial ovarian carcinoma and is beginning multidisciplinary oncology care. She has no known relatives with breast or ovarian cancer and assumes genetic testing cannot help because her family history is negative.",
+    "ask": "What is the best response?",
+    "options": [
+      "Avoid genetic risk assessment because the absence of affected relatives excludes inherited cancer syndromes.",
+      "Screen only her adult daughters with CA-125 because germline testing cannot influence patient treatment.",
+      "Arrange immediate prophylactic oophorectomy for every female relative without establishing mutation status.",
+      "Offer genetic risk assessment and discuss germline testing through an appropriately supported pathway.",
+      "Delay all genetics discussion until five years after cancer treatment because results have no current value."
+    ],
+    "key": "D",
+    "explanations": [
+      "Many patients with pathogenic germline variants have no recognised family history. Lack of affected relatives does not exclude inherited predisposition.",
+      "CA-125 screening is not a reliable substitute for genetics assessment in asymptomatic relatives and does not identify a familial pathogenic variant.",
+      "Risk-reducing surgery in relatives requires individual genetic risk assessment and informed counselling; indiscriminate surgery causes avoidable harm.",
+      "Correct: all women newly diagnosed with invasive epithelial ovarian cancer should be offered genetic risk assessment. Germline testing may guide treatment options and enable cascade counselling and testing for relatives.",
+      "Genetic results can be relevant during current oncology treatment and family risk management, so a five-year delay is inappropriate."
+    ],
+    "pearl": "High-grade serous ovarian cancer merits germline risk assessment even when family history appears negative.",
+    "pivot": "A variant of uncertain significance should not automatically trigger irreversible preventive surgery in relatives.",
+    "management": {
+      "steps": [
+        [
+          "Counsel",
+          "Explain inherited susceptibility and why negative family history does not rule it out."
+        ],
+        [
+          "Refer",
+          "Arrange genetic risk assessment and consented germline testing through oncology/genetics services."
+        ],
+        [
+          "Integrate",
+          "Discuss results in the multidisciplinary team for treatment and surveillance implications."
+        ],
+        [
+          "Support family",
+          "Offer cascade counselling or testing to relatives if a pathogenic germline variant is found."
+        ]
+      ],
+      "safety": "Do not interpret absent family history or a variant of uncertain significance as definitive genetic risk information.",
+      "local": "Cancer Australia: newly diagnosed invasive epithelial ovarian cancer warrants genetic risk assessment regardless of family history."
+    },
+    "source": "https://www.canceraustralia.gov.au/cancer-types/ovarian-cancer/how-ovarian-cancer-diagnosed"
+  },
+  {
+    "n": 70,
+    "domain": "General practice & renal medicine",
+    "skill": "Diabetic CKD with albuminuria / kidney-protective SGLT2 initiation",
+    "context": "Advanced final-year integrated management",
+    "stem": "A 61-year-old with type 2 diabetes has persistent albuminuria (urine ACR 48 mg/mmol), eGFR 32 mL/min/1.73 m² and BP 128/76 mmHg on maximally tolerated losartan. HbA1c is 6.8% and she has no recurrent ketoacidosis, active foot ulcer or current volume depletion. She asks whether any further kidney-protective medication is useful despite reasonable glycaemia.",
+    "ask": "Which plan is most appropriate?",
+    "options": [
+      "Intensify insulin solely to lower HbA1c below 5% before considering renal-protective therapy.",
+      "Stop losartan because a reduced eGFR automatically contraindicates renin–angiotensin system blockade.",
+      "Start routine NSAID therapy because suppression of renal inflammation slows diabetic CKD progression.",
+      "Delay additional therapy until eGFR falls below 15 because current kidney function is too preserved.",
+      "Consider an SGLT2 inhibitor for renal protection with counselling, monitoring and sick-day precautions."
+    ],
+    "key": "E",
+    "explanations": [
+      "An HbA1c target below 5% is unsafe for many older patients and not the recommended route to kidney protection. SGLT2 benefits extend beyond glucose lowering.",
+      "ACE inhibitors and ARBs reduce albuminuria and progression when tolerated; a stable eGFR of 32 is not itself a reason to stop losartan.",
+      "NSAIDs can precipitate AKI, especially in CKD or volume depletion, and are not kidney-protective disease-modifying therapy.",
+      "Waiting until kidney failure forfeits opportunities to slow progression. Evidence supports SGLT2 initiation at eGFR at least 20 in eligible diabetic CKD.",
+      "Correct: SGLT2 inhibitors reduce CKD progression and cardiovascular events in type 2 diabetes with albuminuria at this eGFR, even when HbA1c is near target. Review contraindications and counsel about euglycaemic DKA and sick-day withholding."
+    ],
+    "pearl": "Renal and cardiovascular benefits of SGLT2 inhibitors in diabetic CKD are not dependent on a markedly elevated HbA1c.",
+    "pivot": "Acute illness, dehydration, fasting and planned surgery require temporary SGLT2 withholding to reduce ketoacidosis risk.",
+    "management": {
+      "steps": [
+        [
+          "Verify",
+          "Confirm persistent albuminuria, stable eGFR, potassium, BP and current medication tolerance."
+        ],
+        [
+          "Initiate",
+          "Discuss an SGLT2 inhibitor for renal protection alongside ongoing ARB and risk-factor care."
+        ],
+        [
+          "Counsel",
+          "Explain genital infection risk, hydration, sick-day rules and symptoms of ketoacidosis."
+        ],
+        [
+          "Review",
+          "Monitor renal function, volume status, adverse effects and albuminuria over follow-up."
+        ]
+      ],
+      "safety": "Do not continue SGLT2 inhibitors through significant fasting or acute illness without a sick-day plan.",
+      "local": "RACGP type 2 diabetes recommendations updated November 2024: SGLT2 therapy reduces CKD progression at eGFR ≥20 with albuminuria."
+    },
+    "source": "https://www.racgp.org.au/clinical-resources/clinical-guidelines/key-racgp-guidelines/view-all-racgp-guidelines/management-of-type-2-diabetes/summary-of-recommendations"
   }
 ]
