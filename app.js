@@ -45,6 +45,8 @@ function updateProgress(bank,n,choice){
  const id=idOf(bank,n),q=bankData[bank]?.find(q=>q.n===n);if(!q)return;
  const b=state.banks[bank]||(state.banks[bank]={});if(b[n])return;
  b[n]={choice,correct:choice===q.key,at:Date.now()};
+ // Answering without pressing Next still counts as visiting this question.
+ state.positions||={};state.positions[bank]={n,at:Date.now()};hasNavigatedBank=true;
  if(choice!==q.key){
   const r=state.review[id]||{bank:Number(bank),n,firstChoice:choice,tries:0,lastChoice:null,mastered:false,firstWrongAt:Date.now()};
   r.mastered=false;state.review[id]=r;
