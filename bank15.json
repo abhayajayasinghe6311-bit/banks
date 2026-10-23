@@ -1438,5 +1438,245 @@
       "local": "WA Newborn Bloodspot Screening Program: Galactosaemia, clinical features and lactose-free treatment."
     },
     "source": "https://www.health.wa.gov.au/Articles/U_Z/WA-Newborn-Bloodspot-Screening-Program/Conditions-screened-for-in-WA/Galactosaemia"
+  },
+  {
+    "n": 31,
+    "domain": "General practice & hepatology",
+    "skill": "MASLD / high-risk fibrosis score despite mild transaminitis",
+    "context": "Advanced final-year integrated management",
+    "stem": "A 52-year-old with type 2 diabetes and central adiposity has ultrasound-confirmed hepatic steatosis. ALT is 58 U/L, AST 63 U/L and platelets 145 × 10⁹/L. Viral hepatitis and substantial alcohol exposure have been excluded. His calculated FIB-4 score is 3.1. He feels well and has no ascites or jaundice.",
+    "ask": "Which next action most appropriately addresses his liver-related risk?",
+    "options": [
+      "Arrange fibrosis assessment and specialist referral while managing cardiometabolic risks in primary care.",
+      "Repeat the liver ultrasound annually because mild transaminitis excludes clinically important advanced fibrosis.",
+      "Start empirical corticosteroids because a high FIB-4 score is diagnostic of autoimmune hepatitis.",
+      "Reassure that normal bilirubin rules out cirrhosis and stop further liver investigations.",
+      "Prescribe a liver detoxification supplement and defer referral until portal hypertension appears."
+    ],
+    "key": "A",
+    "explanations": [
+      "Correct: FIB-4 above approximately 2.67 in an at-risk adult suggests possible advanced fibrosis, requiring further assessment with elastography and/or hepatology referral. Evaluate other causes and address diabetes, alcohol, lipids and cardiovascular risk.",
+      "Ultrasound detects fat but cannot reliably stage fibrosis. Mild aminotransferase elevation is compatible with advanced disease; annual imaging alone misses risk stratification and timely treatment.",
+      "FIB-4 is a noninvasive fibrosis risk tool, not an autoimmune hepatitis diagnostic test. Steroids could worsen diabetes and cause harm without autoimmune serology, immunoglobulins and specialist assessment.",
+      "Normal bilirubin and preserved synthetic function do not exclude significant fibrosis or compensated cirrhosis. The high score is the decisive clue despite few symptoms.",
+      "Unregulated supplements have no established role in treating advanced fibrosis and may cause hepatotoxicity. Waiting for decompensation forfeits an opportunity for preventive care."
+    ],
+    "pearl": "In adults with metabolic fatty liver, FIB-4 >2.67 is a referral-level fibrosis signal even when ALT and bilirubin seem reassuring.",
+    "pivot": "A low FIB-4 in an appropriate age group can support primary-care metabolic management with planned reassessment, rather than immediate specialist staging.",
+    "management": {
+      "steps": [
+        [
+          "Verify risk",
+          "Review alcohol, medicines, viral serology, platelet trends and other chronic liver disease causes."
+        ],
+        [
+          "Stage fibrosis",
+          "Arrange transient elastography or another validated second-line fibrosis test and hepatology assessment."
+        ],
+        [
+          "Reduce risk",
+          "Optimise diabetes, blood pressure, lipids, physical activity and nutrition using shared decisions."
+        ],
+        [
+          "Follow through",
+          "Assess cirrhosis-related surveillance needs if advanced fibrosis is confirmed and arrange coordinated follow-up."
+        ]
+      ],
+      "safety": "FIB-4 performance is age dependent; do not use the same threshold uncritically in patients younger than 35 or older than 65.",
+      "local": "RACGP-endorsed Australian MAFLD primary-care consensus statement, FIB-4 referral thresholds."
+    },
+    "source": "https://www.racgp.org.au/getmedia/85611838-c30e-41ba-9840-749834be058b/MAFLD.pdf.aspx"
+  },
+  {
+    "n": 32,
+    "domain": "Obstetrics & gynaecological emergencies",
+    "skill": "Septic miscarriage / antibiotics and uterine source control",
+    "context": "Advanced final-year integrated management",
+    "stem": "A 28-year-old at approximately 10 weeks' gestation presents with two days of heavy bleeding, fever and lower abdominal pain. She is tachycardic at 126/min, BP 93/57 mmHg, with uterine tenderness and offensive vaginal discharge. Ultrasound shows heterogeneous material within the uterine cavity and no viable pregnancy. Lactate is 3.1 mmol/L.",
+    "ask": "What is the best coordinated initial management?",
+    "options": [
+      "Give oral antibiotics and arrange an elective ultrasound in one week after the bleeding settles.",
+      "Resuscitate, start broad IV antibiotics and arrange urgent gynaecological evacuation after stabilisation.",
+      "Administer misoprostol alone and discharge because ultrasound confirms that the pregnancy is nonviable.",
+      "Delay antibiotics until endometrial cultures return so the treatment can be precisely targeted.",
+      "Provide anti-D alone and monitor for spontaneous passage of products without surgical review."
+    ],
+    "key": "B",
+    "explanations": [
+      "Oral outpatient treatment cannot safely address haemodynamic compromise, sepsis and retained infected tissue. A week of delay risks septic shock and disseminated infection.",
+      "Correct: activate sepsis care, take appropriate cultures without delaying IV broad-spectrum antibiotics, restore perfusion and involve senior gynaecology urgently for uterine source control. Evaluate anti-D need separately.",
+      "Misoprostol can be appropriate for selected stable noninfected pregnancy loss, but shock physiology and suspected uterine infection require inpatient resuscitation and definitive source-control planning.",
+      "Waiting for cultures postpones life-saving empiric treatment. Samples may be collected promptly, with therapy subsequently refined using results and clinical response.",
+      "Anti-D may be relevant for an RhD-negative patient under local protocols, but it does not treat infection or remove retained infected products. Observation alone is unsafe here."
+    ],
+    "pearl": "Fever, uterine tenderness, malodorous discharge and retained products after pregnancy loss indicate a septic miscarriage until proven otherwise.",
+    "pivot": "An afebrile haemodynamically stable patient with early pregnancy loss may choose expectant, medical or surgical management after counselling.",
+    "management": {
+      "steps": [
+        [
+          "Resuscitate",
+          "Assess ABCDE, monitor haemodynamics, give IV fluids as indicated and obtain urgent senior/anaesthetic help."
+        ],
+        [
+          "Treat sepsis",
+          "Send blood and relevant genital tract cultures promptly and give local-protocol broad IV antimicrobial cover."
+        ],
+        [
+          "Control source",
+          "Arrange urgent gynaecology assessment and evacuation of infected retained products once appropriately stabilised."
+        ],
+        [
+          "Review",
+          "Monitor lactate, urine output, bleeding and organ function; provide RhD and reproductive follow-up where indicated."
+        ]
+      ],
+      "safety": "Do not delay antibiotics or source-control consultation for a repeat scan, culture results or an outpatient misoprostol trial.",
+      "local": "Queensland Health antenatal emergency referral criteria for first-trimester bleeding with fever and suspected sepsis."
+    },
+    "source": "https://www.health.qld.gov.au/cpc/antenatal/antenatal"
+  },
+  {
+    "n": 33,
+    "domain": "Cardiology & general medicine",
+    "skill": "Symptomatic severe aortic stenosis / valve intervention referral",
+    "context": "Advanced final-year integrated management",
+    "stem": "A 78-year-old with a harsh ejection systolic murmur has developed exertional chest tightness and two episodes of near-syncope. Echocardiography shows a heavily calcified aortic valve, peak velocity 4.4 m/s, mean gradient 48 mmHg and left ventricular ejection fraction 57%. She is currently pain-free and normotensive.",
+    "ask": "Which management decision most improves her prognosis?",
+    "options": [
+      "Arrange annual echocardiography only because preserved ejection fraction indicates a compensated valve lesion.",
+      "Commence a long-acting nitrate as definitive therapy for the fixed outflow obstruction.",
+      "Refer promptly to a multidisciplinary valve team for definitive aortic valve replacement assessment.",
+      "Advise unrestricted exercise because symptoms occur only during physical exertion and not at rest.",
+      "Start high-dose diuretics empirically and defer specialist assessment until heart failure develops."
+    ],
+    "key": "C",
+    "explanations": [
+      "Observation may be appropriate for selected asymptomatic disease, but exertional angina and presyncope with severe gradients mark symptomatic high-risk aortic stenosis requiring definitive assessment.",
+      "Nitrates can reduce preload and worsen hypotension in significant fixed outflow obstruction; they do not correct the narrowed valve or improve long-term survival.",
+      "Correct: symptomatic severe aortic stenosis warrants prompt cardiology and heart-team evaluation for transcatheter or surgical aortic valve replacement, incorporating anatomy, frailty, preferences and procedural risk.",
+      "Exertional presyncope and angina are warning symptoms, not reassurance. Strenuous activity before evaluation may provoke haemodynamic collapse.",
+      "Diuretics may relieve selected congestion but excessive preload reduction can worsen output, and medication does not replace valve intervention in symptomatic severe stenosis."
+    ],
+    "pearl": "Symptoms plus severe aortic stenosis mean urgent valve-team assessment even when the ejection fraction is normal.",
+    "pivot": "A truly asymptomatic patient with moderate stenosis and preserved ventricular function may be followed with scheduled echocardiography.",
+    "management": {
+      "steps": [
+        [
+          "Assess severity",
+          "Confirm symptom chronology, echocardiographic gradients, valve area and ventricular function."
+        ],
+        [
+          "Escalate",
+          "Arrange prompt specialist cardiology and multidisciplinary valve assessment for SAVR versus TAVI."
+        ],
+        [
+          "Reduce harm",
+          "Review exertional safety and avoid indiscriminate preload-reducing medication or hypotension."
+        ],
+        [
+          "Plan care",
+          "Evaluate coronary disease, comorbidities, procedural risk and patient goals before intervention."
+        ]
+      ],
+      "safety": "Preserved ejection fraction does not make symptomatic severe aortic stenosis safe for watchful waiting.",
+      "local": "Australian Heart Foundation valvular research and clinical care discussion of symptomatic severe aortic stenosis and valve replacement."
+    },
+    "source": "https://www.heartfoundation.org.au/research/q-and-a/dr-hashrul-rashid"
+  },
+  {
+    "n": 34,
+    "domain": "Adolescent health & haematology",
+    "skill": "Heavy menstrual bleeding from menarche / screen for bleeding disorder",
+    "context": "Advanced final-year integrated management",
+    "stem": "A 15-year-old reports flooding through pads since her first period, with bleeding lasting eight to ten days. She also has frequent epistaxis and bruises easily; her mother needed treatment for bleeding after dental extraction. Hb is 93 g/L, ferritin is low and pregnancy testing is negative. She is haemodynamically stable.",
+    "ask": "What is the most appropriate next management approach?",
+    "options": [
+      "Arrange pelvic ultrasound first because structural uterine lesions explain most adolescent heavy periods.",
+      "Reassure that anovulatory cycles explain the symptoms and exclude a haemostatic disorder.",
+      "Start anticoagulation to prevent menstrual blood clotting while awaiting a haematology appointment.",
+      "Treat bleeding and iron deficiency while arranging targeted assessment for von Willebrand disease.",
+      "Schedule endometrial biopsy as the initial investigation because the menstrual bleeding began at menarche."
+    ],
+    "key": "D",
+    "explanations": [
+      "Structural causes are relatively uncommon in adolescents, and ultrasound is not routinely first-line without atypical findings. The mucocutaneous and family history point toward a haemostatic problem.",
+      "Anovulatory bleeding is common after menarche, but lifelong heavy flow with epistaxis, bruising and familial bleeding merits evaluation for an inherited disorder.",
+      "Anticoagulation can aggravate uterine bleeding and has no indication here. Acute management aims to stabilise haemostasis and correct iron depletion.",
+      "Correct: assess severity and consent, give appropriate hormonal or tranexamic therapy and iron, and arrange coagulation and von Willebrand evaluation with haematology. Timing of specialised assays matters during acute bleeding.",
+      "Endometrial malignancy is exceptionally uncommon in this setting. Invasive sampling does not address the strong bleeding-disorder history and is not the first investigation."
+    ],
+    "pearl": "Heavy periods from menarche plus epistaxis or family bleeding history should trigger a von Willebrand disease assessment.",
+    "pivot": "Isolated mild heavy flow without anaemia or a bleeding history may be managed with symptom-focused care and reassessment.",
+    "management": {
+      "steps": [
+        [
+          "Assess",
+          "Review haemodynamic stability, bleeding quantity, pregnancy possibility and confidentiality."
+        ],
+        [
+          "Treat",
+          "Provide iron replacement and suitable tranexamic or hormonal bleeding control with contraindication checks."
+        ],
+        [
+          "Investigate",
+          "Check FBC/ferritin and targeted haemostatic tests; plan von Willebrand studies outside confounding acute circumstances."
+        ],
+        [
+          "Coordinate",
+          "Refer to adolescent gynaecology/haematology and establish a menstrual symptom and haemoglobin follow-up plan."
+        ]
+      ],
+      "safety": "A normal routine PT or APTT does not exclude von Willebrand disease; specialised testing needs correct timing and interpretation.",
+      "local": "Royal Children's Hospital adolescent heavy menstrual bleeding clinical practice guideline."
+    },
+    "source": "https://www.rch.org.au/clinicalguide/guideline_index/Adolescent_Gynaecology_Menorrhagia/"
+  },
+  {
+    "n": 35,
+    "domain": "Paediatrics & public health",
+    "skill": "Measles exposure in immunocompromised child / post-exposure immunoglobulin",
+    "context": "Advanced final-year integrated management",
+    "stem": "A 9-year-old undergoing chemotherapy for leukaemia spent several hours in the same room as a child subsequently confirmed to have measles. Exposure was four days ago. Measles IgG is negative and the child has no fever or rash. The parents ask whether an MMR vaccine today would provide adequate protection.",
+    "ask": "What is the most appropriate preventive response?",
+    "options": [
+      "Give MMR immediately because the live vaccine works even during intensive chemotherapy.",
+      "Wait for fever or rash before contacting public health because prophylaxis is ineffective after 72 hours.",
+      "Offer oral antiviral medication as routine measles prophylaxis and avoid further contact tracing.",
+      "Repeat measles IgG in three weeks before deciding whether post-exposure prophylaxis is warranted.",
+      "Arrange normal human immunoglobulin urgently with public-health and oncology specialist advice."
+    ],
+    "key": "E",
+    "explanations": [
+      "MMR is a live vaccine and is generally contraindicated in severe chemotherapy-associated immunosuppression. It is not a substitute for indicated passive prophylaxis in this child.",
+      "The child is susceptible and within the six-day window for immunoglobulin. Waiting for symptoms sacrifices the opportunity to reduce disease severity and spread.",
+      "No routinely recommended oral antiviral prevents measles after exposure. Contact management instead uses immunity assessment, immunoglobulin or vaccination according to risk.",
+      "Repeat serology weeks later cannot protect during the current exposure window. Negative IgG now and severe immunosuppression warrant immediate action.",
+      "Correct: notify the public-health unit and oncology team, administer recommended normal human immunoglobulin within six days of exposure, and provide exposure and symptom monitoring advice."
+    ],
+    "pearl": "Susceptible immunocompromised measles contacts need urgent NHIG within six days; live MMR is not an appropriate substitute.",
+    "pivot": "An immunocompetent susceptible person seen within 72 hours may instead qualify for post-exposure MMR under Australian guidance.",
+    "management": {
+      "steps": [
+        [
+          "Notify",
+          "Contact the local public-health unit and treating oncology team immediately."
+        ],
+        [
+          "Protect",
+          "Arrange indicated NHIG according to age, weight, immunocompromise and exposure timing."
+        ],
+        [
+          "Limit spread",
+          "Follow public-health exclusion and infection-control instructions; advise calling ahead if symptoms develop."
+        ],
+        [
+          "Follow up",
+          "Document immune status and prophylaxis, monitor symptoms and revisit future immunisation when safe."
+        ]
+      ],
+      "safety": "Do not administer a live MMR vaccine to a severely immunocompromised chemotherapy patient without specialist immunisation clearance.",
+      "local": "Australian Immunisation Handbook: measles post-exposure prophylaxis table, six-day NHIG window."
+    },
+    "source": "https://immunisationhandbook.health.gov.au/resources/tables/table-post-exposure-prophylaxis-needed-within-6-days-144-hours-of-1st-exposure-for-people-exposed-to-measles"
   }
 ]
