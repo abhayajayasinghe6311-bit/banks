@@ -1294,5 +1294,53 @@
       "local": "RCH Bone and joint infection clinical practice guideline."
     },
     "source": "https://www.rch.org.au/clinicalguide/guideline_index/Bone_and_joint_infection/"
+  },
+  {
+    "n": 28,
+    "domain": "Emergency resuscitation & trauma",
+    "skill": "Tension pneumothorax / immediate decompression",
+    "context": "Advanced integrated clinical decisions",
+    "stem": "A 36-year-old trauma patient is intubated after a motorbike collision. Immediately after positive-pressure ventilation starts, oxygen saturation falls to 76%, BP to 65/35 mmHg and right-sided breath sounds are absent. The trachea is difficult to assess, and the portable chest radiograph machine is several minutes away.",
+    "ask": "Which immediate action best addresses the likely reversible cause?",
+    "options": [
+      "Wait for a portable radiograph because unilateral breath sounds alone are insufficient for intervention.",
+      "Increase positive end-expiratory pressure to recruit the affected lung before further investigation.",
+      "Decompress the suspected tension pneumothorax immediately and arrange definitive chest drainage.",
+      "Give IV furosemide because pulmonary oedema is the most likely cause of shock in this setting.",
+      "Disconnect all monitoring and transfer directly to CT to confirm the cause of hypoxaemia."
+    ],
+    "key": "C",
+    "explanations": [
+      "Radiography may help stable diagnostic uncertainty, but shock with abrupt unilateral absent breath sounds after ventilation demands immediate action.",
+      "Higher airway pressure can worsen tension physiology and obstruct venous return. Ventilator checks should occur alongside urgent decompression.",
+      "Correct: suspected tension pneumothorax with shock warrants immediate trained needle or open thoracostomy, followed by definitive chest drainage and reassessment.",
+      "Diuresis does not relieve pleural pressure and may worsen hypotension. Pulmonary oedema is less consistent with abrupt unilateral findings.",
+      "CT transfer is dangerous in an unstable patient with a rapidly reversible obstructive cause. Stabilisation and decompression take priority."
+    ],
+    "pearl": "Tension pneumothorax is a clinical diagnosis in shock; decompress without waiting for radiography.",
+    "pivot": "A stable small pneumothorax without compromise may follow observation or planned drainage according to context.",
+    "management": {
+      "steps": [
+        [
+          "Recognise",
+          "Check tube position, circuit, unilateral breath sounds and obstructive shock signs."
+        ],
+        [
+          "Decompress",
+          "Perform immediate trained pleural decompression on the affected side."
+        ],
+        [
+          "Drain",
+          "Insert definitive chest drainage and reassess ventilation and blood pressure."
+        ],
+        [
+          "Review",
+          "Repeat trauma survey and imaging once stable; assess other shock causes."
+        ]
+      ],
+      "safety": "Do not increase positive pressure or delay decompression for imaging when tension physiology is suspected.",
+      "local": "ANZCOR Guideline 11.10 Resuscitation in Special Circumstances (2026)."
+    },
+    "source": "https://www.anzcor.org/home/adult-advanced-life-support/guideline-11-10-resuscitation-in-special-circumstances"
   }
 ]
