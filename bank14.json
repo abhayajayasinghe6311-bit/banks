@@ -2398,5 +2398,245 @@
       "local": "Australian Prescriber October 2026 review of acute hyperkalaemia and recurrence prevention."
     },
     "source": "https://australianprescriber.tg.org.au/articles/management-of-acute-hyperkalaemia-evidence-practice-and-pitfalls.html"
+  },
+  {
+    "n": 51,
+    "domain": "Neonatology & congenital cardiology",
+    "skill": "Transposition with restrictive atrial septum / emergency balloon septostomy",
+    "context": "Advanced integrated clinical decisions",
+    "stem": "A term neonate is cyanosed immediately after birth despite clear lungs and adequate ventilation. Echocardiography confirms d-transposition of the great arteries with intact ventricular septum and a tiny restrictive atrial communication. Saturation remains 58% despite prostaglandin E1 infusion and appropriate respiratory support; lactate is rising.",
+    "ask": "What additional intervention most directly improves systemic oxygenation?",
+    "options": [
+      "Arrange emergency balloon atrial septostomy with paediatric cardiology while maintaining stabilisation.",
+      "Increase supplemental oxygen indefinitely because alveolar hypoxia is the main cause of cyanosis.",
+      "Stop prostaglandin immediately because ductal patency prevents oxygenated blood entering systemic circulation.",
+      "Wait for an elective arterial switch operation without intervening in the current hypoxaemia.",
+      "Give routine diuretics to reduce pulmonary blood flow before repeating oxygen saturation measurements."
+    ],
+    "key": "A",
+    "explanations": [
+      "Correct. Parallel systemic and pulmonary circulations in d-TGA require mixing. When the atrial communication is restrictive, prostaglandin alone may not provide adequate mixing; urgent balloon atrial septostomy can improve oxygenated blood reaching systemic circulation while definitive arterial switch is planned.",
+      "Supplemental oxygen may help some concurrent pulmonary pathology but cannot correct the fundamental separation of circulations. Persistently severe hypoxaemia despite adequate ventilation requires an anatomical mixing intervention.",
+      "Prostaglandin supports ductal patency and is usually maintained during initial stabilisation. Stopping it before specialist assessment may remove an important site of mixing and worsen oxygenation.",
+      "An arterial switch is definitive but cannot be awaited when systemic oxygen delivery is critically inadequate. Balloon septostomy is a time-critical bridging intervention.",
+      "Diuresis does not enlarge the restrictive atrial communication. It may worsen circulatory status if preload falls in an unstable neonate."
+    ],
+    "pearl": "In d-TGA, severe cyanosis despite PGE1 suggests inadequate mixing, often from a restrictive atrial septum: urgent septostomy may be lifesaving.",
+    "pivot": "A d-TGA infant with adequate atrial mixing and stable saturations may proceed to planned early arterial switch after specialist stabilisation.",
+    "management": {
+      "steps": [
+        [
+          "Stabilise",
+          "Support airway and ventilation, obtain vascular access and monitor saturations, perfusion, blood gas and lactate."
+        ],
+        [
+          "Maintain mixing",
+          "Continue prostaglandin infusion under neonatal/cardiology direction and anticipate apnoea monitoring."
+        ],
+        [
+          "Escalate",
+          "Arrange immediate transfer and paediatric cardiology for balloon atrial septostomy."
+        ],
+        [
+          "Definitive repair",
+          "Prepare for arterial switch surgery after stabilisation and monitor organ injury from preceding hypoxaemia."
+        ]
+      ],
+      "safety": "A normal chest radiograph or adequate ventilation does not exclude critical cyanotic congenital heart disease; avoid delaying cardiac transfer.",
+      "local": "Royal Children's Hospital TGA information and Child and Adolescent Health Service WA neonatal TGA guideline."
+    },
+    "source": "https://www.rch.org.au/cardiology/heart_defects/Transposition_of_the_Great_Arteries/"
+  },
+  {
+    "n": 52,
+    "domain": "Paediatrics & preventive cardiology",
+    "skill": "Acute rheumatic fever / secondary penicillin prophylaxis after recovery",
+    "context": "Advanced integrated clinical decisions",
+    "stem": "A 13-year-old from a remote community has recovered from a confirmed first episode of acute rheumatic fever with mild carditis. She completed treatment for group A streptococcal infection and is now asymptomatic. Her family asks whether antibiotics can stop because her throat no longer hurts and inflammatory markers have normalised.",
+    "ask": "Which plan best prevents recurrent cardiac damage?",
+    "options": [
+      "Offer oral antibiotics only when future sore throats develop, without scheduled prophylaxis.",
+      "Establish regular intramuscular benzathine benzylpenicillin secondary prophylaxis and long-term review.",
+      "Discontinue antibiotics after a normal repeat CRP because inflammation has fully resolved.",
+      "Arrange valve surgery immediately as the routine preventive treatment after a first episode.",
+      "Use one additional oral penicillin course now and discharge permanently from cardiac follow-up."
+    ],
+    "key": "B",
+    "explanations": [
+      "Treating future symptomatic pharyngitis alone may miss asymptomatic streptococcal infections and does not provide reliable secondary prevention. Recurrent ARF can progressively damage valves.",
+      "Correct. Long-term benzathine benzylpenicillin prophylaxis at a guideline-appropriate interval, commonly every 21–28 days, is central to preventing recurrent ARF. Duration depends on age, cardiac findings, recurrence risk and specialist review; culturally safe delivery and recall systems matter.",
+      "Normal inflammatory markers reflect recovery from the acute episode but do not eliminate future risk of streptococcal-triggered autoimmune recurrence. Secondary prophylaxis is not guided by CRP alone.",
+      "Surgery is considered for clinically significant valve disease, not as routine primary management for mild carditis after one episode. Prevention and echocardiographic monitoring come first.",
+      "A short extra oral course does not replace sustained prophylaxis, which may continue for many years. Discharging without a follow-up plan risks silent progression or recurrence."
+    ],
+    "pearl": "After confirmed ARF, secondary prophylaxis continues long after symptoms resolve; cessation requires specialist assessment and updated echocardiography.",
+    "pivot": "An isolated uncomplicated streptococcal sore throat without evidence of ARF requires acute infection management, not automatic years of secondary prophylaxis.",
+    "management": {
+      "steps": [
+        [
+          "Plan prevention",
+          "Explain recurrence risk and start scheduled benzathine benzylpenicillin using current Australian ARF/RHD guidance."
+        ],
+        [
+          "Support adherence",
+          "Co-design an accessible injection and recall plan with family, community clinicians and Aboriginal health workers where relevant."
+        ],
+        [
+          "Monitor heart",
+          "Arrange follow-up echocardiography and specialist review for carditis or evolving valve disease."
+        ],
+        [
+          "Review duration",
+          "Document risk-based duration and ensure specialist assessment before any decision to cease prophylaxis."
+        ]
+      ],
+      "safety": "Do not stop secondary prophylaxis solely because the patient is asymptomatic or CRP has normalised.",
+      "local": "RHD Australia Australian ARF/RHD guideline, October 2026 update."
+    },
+    "source": "https://rhdaustralia.org.au/arf-rhd-guidelines/"
+  },
+  {
+    "n": 53,
+    "domain": "Infectious diseases & tropical medicine",
+    "skill": "Dengue defervescence / warning signs of plasma leakage",
+    "context": "Advanced integrated clinical decisions",
+    "stem": "A 24-year-old traveller returned from Indonesia with five days of fever, myalgia and positive dengue NS1 antigen. His temperature has fallen today, but he now has persistent vomiting and increasing abdominal pain. Haematocrit rose from 42% to 49% while platelets fell from 115 to 63 × 10⁹/L. BP is 112/72 mmHg.",
+    "ask": "What is the most appropriate next management decision?",
+    "options": [
+      "Discharge because the fever has resolved and the blood pressure remains within the normal range.",
+      "Transfuse prophylactic platelets immediately because the count has fallen below one hundred.",
+      "Admit for dengue warning signs with close monitoring and carefully titrated fluid therapy.",
+      "Give ibuprofen for abdominal pain and encourage unrestricted oral intake before outpatient review.",
+      "Begin empirical corticosteroids because the rising haematocrit confirms immune-mediated thrombocytopenia."
+    ],
+    "key": "C",
+    "explanations": [
+      "Defervescence often marks the start of the critical phase rather than recovery. Vomiting, abdominal pain, rising haematocrit and falling platelets indicate possible plasma leakage even with preserved BP.",
+      "Platelet count alone does not justify prophylactic transfusion in dengue without clinically important bleeding or a separate indication. Transfusion can add risk without preventing vascular leakage.",
+      "Correct. These are dengue warning signs requiring hospital assessment, repeated perfusion and haematocrit monitoring, fluid balance and carefully adjusted isotonic fluid therapy as clinically indicated. Early recognition aims to prevent dengue shock and fluid overload.",
+      "NSAIDs such as ibuprofen increase bleeding risk in dengue. Persistent vomiting also makes oral intake unreliable; observation and reassessment are needed.",
+      "Corticosteroids are not routine therapy for dengue plasma leakage or thrombocytopenia. The rising haematocrit reflects haemoconcentration, not proof of a steroid-responsive immune process."
+    ],
+    "pearl": "In dengue, a falling fever with rising haematocrit and new abdominal symptoms may signal entry into the dangerous plasma-leakage phase.",
+    "pivot": "An otherwise well dengue patient without warning signs, able to drink and with reliable follow-up, may be managed as an outpatient under local guidance.",
+    "management": {
+      "steps": [
+        [
+          "Recognise",
+          "Classify warning signs and assess capillary refill, pulse pressure, urine output, mental state and bleeding."
+        ],
+        [
+          "Monitor",
+          "Admit and trend haematocrit, platelets, vitals and strict fluid input/output during the critical phase."
+        ],
+        [
+          "Give fluids judiciously",
+          "Use isotonic crystalloid based on perfusion and clinical response; reassess frequently to avoid overload."
+        ],
+        [
+          "Prevent harm",
+          "Avoid NSAIDs and routine platelet transfusion; escalate immediately for shock or significant haemorrhage."
+        ]
+      ],
+      "safety": "A normal systolic pressure or resolved fever does not exclude impending dengue shock.",
+      "local": "Queensland Health dengue communicable disease control guidance and local infectious diseases management."
+    },
+    "source": "https://www.health.qld.gov.au/cdcg/index/dengue"
+  },
+  {
+    "n": 54,
+    "domain": "Obstetrics & hepatology",
+    "skill": "Chronic hepatitis B with high viral load / preventing vertical transmission",
+    "context": "Advanced integrated clinical decisions",
+    "stem": "A 32-year-old at 28 weeks' gestation is HBsAg positive with HBV DNA 1.2 million IU/mL and normal liver enzymes. She has no cirrhosis and is not taking antivirals. The fetus is growing normally. She asks whether routine newborn vaccination alone will adequately prevent transmission.",
+    "ask": "What additional prevention strategy is most appropriate?",
+    "options": [
+      "Delay all management until after birth because normal maternal ALT means no transmission risk.",
+      "Recommend elective caesarean section as the sole reliable method of preventing neonatal infection.",
+      "Give maternal hepatitis B immunoglobulin immediately and omit the infant birth-dose vaccine.",
+      "Discuss third-trimester tenofovir with a specialist and plan neonatal vaccine plus HBIG at birth.",
+      "Discourage breastfeeding permanently and give the infant vaccine only at six weeks of age."
+    ],
+    "key": "D",
+    "explanations": [
+      "Maternal viral load, not merely ALT, predicts perinatal transmission risk. Very high HBV DNA can overwhelm vaccine-only protection, so antenatal planning is necessary.",
+      "Caesarean delivery is not routinely recommended solely to prevent hepatitis B transmission when effective antiviral and neonatal immunoprophylaxis pathways are available.",
+      "Maternal HBIG is not the standard intervention for reducing transmission from established chronic infection. The newborn needs prompt active and passive immunisation.",
+      "Correct. A high viral load above 200,000 IU/mL warrants specialist consideration of tenofovir from approximately 28–32 weeks. The infant should receive monovalent hepatitis B vaccine and HBIG within 12 hours of birth, then complete vaccination and undergo follow-up serology.",
+      "Breastfeeding is generally compatible with appropriate maternal HBV management and infant immunoprophylaxis. Delaying the birth dose leaves the newborn exposed during the highest-risk period."
+    ],
+    "pearl": "High maternal HBV DNA prompts antenatal antiviral consideration in addition to neonatal HBIG and vaccination within 12 hours of birth.",
+    "pivot": "HBsAg-positive pregnancy with low viral load still requires infant HBIG and vaccine, but third-trimester antiviral prophylaxis may not be indicated solely for transmission prevention.",
+    "management": {
+      "steps": [
+        [
+          "Stage infection",
+          "Check HBV DNA, liver function, HBeAg and relevant fibrosis or co-infection risks."
+        ],
+        [
+          "Treat maternal risk",
+          "Refer to hepatology/infectious diseases for tenofovir consideration when HBV DNA exceeds 200,000 IU/mL."
+        ],
+        [
+          "Protect infant",
+          "Document vaccine and HBIG within 12 hours of birth, then completion of the routine vaccine schedule."
+        ],
+        [
+          "Confirm success",
+          "Arrange infant HBsAg and anti-HBs at 9–12 months and maternal postpartum monitoring for flares."
+        ]
+      ],
+      "safety": "Normal maternal ALT does not negate transmission risk; never omit neonatal HBIG in an infant of an HBsAg-positive mother.",
+      "local": "ASHM Australian HBV testing policy and hepatitis B pregnancy management guidance."
+    },
+    "source": "https://testingportal.ashm.org.au/managing-hepatitis-b-virus-in-pregnancy-and-children/"
+  },
+  {
+    "n": 55,
+    "domain": "Obstetrics & immunisation",
+    "skill": "Varicella exposure in seronegative pregnancy / immunoglobulin prophylaxis",
+    "context": "Advanced integrated clinical decisions",
+    "stem": "A 30-year-old at 18 weeks' gestation shared a household with her niece during an infectious chickenpox illness 48 hours ago. She has no history of varicella vaccination or infection and urgent testing confirms absent varicella-zoster IgG. She is asymptomatic and asks for the chickenpox vaccine today.",
+    "ask": "Which intervention is recommended for this susceptible pregnant contact?",
+    "options": [
+      "Give live varicella vaccine immediately because the exposure occurred less than five days ago.",
+      "Provide oral aciclovir alone and omit any discussion of post-exposure immunoglobulin.",
+      "Wait until a vesicular rash appears before considering any preventive treatment.",
+      "Reassure because second-trimester exposure cannot affect maternal or fetal health.",
+      "Arrange prompt zoster immunoglobulin after specialist advice and defer live vaccination until postpartum."
+    ],
+    "key": "E",
+    "explanations": [
+      "Live varicella vaccine is contraindicated during pregnancy. Although post-exposure vaccination is used for eligible nonpregnant contacts, this patient requires a different strategy.",
+      "Antiviral prophylaxis may be considered in some circumstances under specialist guidance, but it does not replace the Australian recommendation to assess eligible susceptible pregnant contacts for immunoglobulin.",
+      "Zoster immunoglobulin is intended for prevention or attenuation after exposure and is most effective when given promptly. Waiting for established disease misses the prophylactic opportunity.",
+      "Primary varicella can be severe in pregnancy and may cause fetal or neonatal complications depending on timing. The second trimester is not risk-free.",
+      "Correct. Arrange high-titre zoster immunoglobulin as soon as possible, ideally within 96 hours and potentially up to ten days after exposure, with obstetric and public health input. Offer live varicella vaccination after pregnancy when appropriate."
+    ],
+    "pearl": "Pregnant susceptible varicella contacts should receive timely passive prophylaxis, not a live varicella vaccine.",
+    "pivot": "A nonpregnant immunocompetent susceptible adult exposed to varicella may instead benefit from prompt post-exposure vaccination.",
+    "management": {
+      "steps": [
+        [
+          "Verify",
+          "Confirm significant exposure, timing, immune history and available IgG results without delaying needed prophylaxis."
+        ],
+        [
+          "Prevent",
+          "Arrange zoster immunoglobulin through the local specialist pathway as early as possible."
+        ],
+        [
+          "Counsel",
+          "Explain incubation, symptom monitoring and when to seek urgent assessment for rash or respiratory symptoms."
+        ],
+        [
+          "Follow",
+          "Coordinate obstetric review and postpartum varicella vaccination when clinically appropriate."
+        ]
+      ],
+      "safety": "Do not administer live varicella vaccine during pregnancy or delay eligible immunoglobulin while waiting for avoidable repeat tests.",
+      "local": "Australian Immunisation Handbook varicella high-risk post-exposure prophylaxis recommendations."
+    },
+    "source": "https://immunisationhandbook.health.gov.au/contents/vaccine-preventable-diseases/varicella-chickenpox"
   }
 ]
