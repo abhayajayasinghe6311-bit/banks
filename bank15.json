@@ -2398,5 +2398,245 @@
       "local": "RACGP macroscopic haematuria assessment: urology referral, cystoscopy and upper tract imaging for high-risk presentations."
     },
     "source": "https://www.racgp.org.au/afp/2013/march/macroscopic-haematuria"
+  },
+  {
+    "n": 51,
+    "domain": "Neonatology & hepatology",
+    "skill": "Prolonged conjugated jaundice / urgent biliary atresia exclusion",
+    "context": "Advanced final-year integrated management",
+    "stem": "A thriving 24-day-old term infant remains jaundiced. Parents describe very pale putty-coloured stools and dark urine. Total bilirubin is 126 micromol/L, with conjugated bilirubin 58 micromol/L. An abdominal ultrasound requested by another clinician was reported as normal.",
+    "ask": "What is the most appropriate next action?",
+    "options": [
+      "Contact paediatric gastroenterology urgently for cholestasis assessment despite the reassuring abdominal ultrasound.",
+      "Repeat total bilirubin in four weeks and review only if the infant stops gaining weight.",
+      "Commence intensive phototherapy and defer specialist investigation until the total bilirubin concentration falls.",
+      "Label the condition breast-milk jaundice and advise a temporary switch to formula feeding.",
+      "Order a routine stool culture and wait for results before considering hepatobiliary referral."
+    ],
+    "key": "A",
+    "explanations": [
+      "Correct: acholic stools, dark urine and a markedly raised conjugated fraction suggest obstructive cholestasis, including biliary atresia. Urgent specialist evaluation is time-sensitive because early surgery improves outcomes; a normal ultrasound cannot exclude biliary atresia.",
+      "Weight gain does not exclude serious cholestasis. Waiting weeks risks missing the window for timely biliary atresia assessment and intervention.",
+      "Phototherapy treats significant unconjugated hyperbilirubinaemia, not conjugated cholestasis. It would distract from evaluating biliary obstruction and associated liver dysfunction.",
+      "Breast-milk jaundice is predominantly unconjugated and a diagnosis of exclusion. Pale stools and dark urine are not typical reassuring features.",
+      "Routine stool culture does not investigate bile flow. Infectious causes may be evaluated alongside the urgent cholestasis work-up, not before referral."
+    ],
+    "pearl": "Any acholic stool in a jaundiced infant warrants urgent biliary-atresia exclusion even when ultrasound appears normal.",
+    "pivot": "An otherwise thriving infant with isolated unconjugated jaundice, normal stool colour and normal direct bilirubin follows a different pathway.",
+    "management": {
+      "steps": [
+        [
+          "Recognise",
+          "Confirm pale stools and dark urine; assess hydration, feeding, weight and hepatosplenomegaly."
+        ],
+        [
+          "Investigate",
+          "Check fractionated bilirubin, liver tests, INR and other tests guided by specialist advice."
+        ],
+        [
+          "Escalate",
+          "Call paediatric gastroenterology urgently; arrange expedited hepatobiliary evaluation and imaging."
+        ],
+        [
+          "Support",
+          "Address vitamin K/coagulopathy and nutritional needs under specialist guidance while awaiting diagnosis."
+        ]
+      ],
+      "safety": "Do not let a normal ultrasound or good weight gain delay assessment of possible biliary atresia.",
+      "local": "RCH Melbourne: prolonged jaundice with conjugated hyperbilirubinaemia or pale stools needs urgent gastroenterology discussion."
+    },
+    "source": "https://www.rch.org.au/clinicalguide/guideline_index/Jaundice_in_Early_Infancy/"
+  },
+  {
+    "n": 52,
+    "domain": "Paediatric rheumatology & nephrology",
+    "skill": "IgA vasculitis / delayed renal involvement surveillance",
+    "context": "Advanced final-year integrated management",
+    "stem": "A 6-year-old has palpable purpura over the buttocks and legs, transient ankle pain and a recent upper respiratory illness. She is well hydrated, normotensive and has a normal initial urine dipstick. Her abdominal examination is benign and she can walk comfortably.",
+    "ask": "Which follow-up plan is most appropriate?",
+    "options": [
+      "Discharge without urine surveillance because a normal initial dipstick excludes subsequent nephritis.",
+      "Arrange scheduled blood-pressure and urine checks over months, escalating if renal abnormalities develop.",
+      "Prescribe high-dose prednisolone routinely because it reliably prevents later IgA vasculitis nephritis.",
+      "Perform renal biopsy immediately despite normal urine testing and preserved kidney function today.",
+      "Start prophylactic antibiotics until the purpuric rash disappears to reduce renal complication risk."
+    ],
+    "key": "B",
+    "explanations": [
+      "Renal involvement can appear after the skin rash and may initially be silent. A single normal urinalysis cannot provide reliable long-term reassurance.",
+      "Correct: IgA vasculitis requires serial BP and urine monitoring even when initially uncomplicated. RCH suggests weekly checks for four weeks, fortnightly for the next eight weeks, then checks at six and twelve months if normal.",
+      "Corticosteroids may help selected severe abdominal or joint symptoms but do not reliably prevent nephritis. They are not indicated simply because purpura is present.",
+      "Biopsy is reserved for selected children with significant or persistent renal involvement, not normal BP and urine at first presentation.",
+      "IgA vasculitis is a small-vessel inflammatory condition; prophylactic antibiotics do not prevent its renal complications and add avoidable harms."
+    ],
+    "pearl": "Kidney involvement in IgA vasculitis may be delayed and asymptomatic; BP plus urinalysis are central follow-up tests.",
+    "pivot": "Macroscopic haematuria, hypertension, impaired renal function or substantial proteinuria warrants earlier specialist involvement.",
+    "management": {
+      "steps": [
+        [
+          "Confirm",
+          "Review distribution of palpable purpura, joints, abdomen, testicles and vital signs."
+        ],
+        [
+          "Baseline",
+          "Document blood pressure and urinalysis; quantify protein and assess renal function if abnormal."
+        ],
+        [
+          "Monitor",
+          "Schedule weekly then fortnightly urine and BP reviews, with later six- and twelve-month checks."
+        ],
+        [
+          "Escalate",
+          "Seek paediatric or nephrology advice for hypertension, proteinuria, macroscopic haematuria or systemic complications."
+        ]
+      ],
+      "safety": "Never discharge IgA vasculitis without a reliable renal monitoring plan and clear red-flag advice.",
+      "local": "Royal Children's Hospital Melbourne IgA vasculitis guideline provides follow-up frequency and renal referral criteria."
+    },
+    "source": "https://www.rch.org.au/clinicalguide/guideline_index/henochSchonlein_Purpura/"
+  },
+  {
+    "n": 53,
+    "domain": "Diabetes & perioperative medicine",
+    "skill": "SGLT2-associated euglycaemic ketoacidosis / perioperative recognition",
+    "context": "Advanced final-year integrated management",
+    "stem": "A 59-year-old with type 2 diabetes takes empagliflozin and underwent elective bowel surgery yesterday after taking the drug until admission. She is tachypnoeic, nauseated and dehydrated. Venous pH is 7.18, bicarbonate 11 mmol/L, blood ketones 5.2 mmol/L and glucose 10.4 mmol/L.",
+    "ask": "What is the safest immediate treatment approach?",
+    "options": [
+      "Administer subcutaneous correction insulin alone because glucose is below the usual DKA diagnostic threshold.",
+      "Give intravenous bicarbonate first and continue empagliflozin to prevent postoperative hyperglycaemia.",
+      "Stop the SGLT2 inhibitor and initiate monitored DKA treatment with insulin, fluids and glucose as needed.",
+      "Treat postoperative nausea symptomatically and repeat ketones only if glucose rises above 20 mmol/L.",
+      "Restrict intravenous fluids and delay insulin until serum glucose becomes markedly elevated overnight."
+    ],
+    "key": "C",
+    "explanations": [
+      "Glucose can be normal or only modestly elevated in SGLT2-associated DKA. Correction-only subcutaneous insulin will not adequately suppress ketogenesis in significant acidosis.",
+      "Routine bicarbonate is not first-line DKA treatment at this pH. Continuing the SGLT2 inhibitor prolongs the pharmacological driver of ketosis.",
+      "Correct: this is euglycaemic DKA. Stop empagliflozin, begin a monitored DKA protocol with IV insulin, isotonic fluids, potassium surveillance and dextrose to permit ongoing insulin despite near-normal glucose.",
+      "Treating nausea without correcting ketoacidosis delays resuscitation. Waiting for hyperglycaemia misses the defining danger of SGLT2-related euglycaemic DKA.",
+      "Fluid restriction is inappropriate in a dehydrated patient unless a specific contraindication exists. Insulin is required to stop ketone generation even with modest glycaemia."
+    ],
+    "pearl": "Always check ketones and acid-base status in an unwell SGLT2 user; a glucose of 10 mmol/L does not exclude DKA.",
+    "pivot": "Isolated starvation ketosis typically causes less severe acidosis; assess the entire biochemical and clinical context.",
+    "management": {
+      "steps": [
+        [
+          "Stabilise",
+          "Assess ABC, volume status, venous blood gas, glucose, ketones, electrolytes and ECG."
+        ],
+        [
+          "Stop trigger",
+          "Withhold empagliflozin and identify fasting, surgery, infection or insulin deficiency."
+        ],
+        [
+          "Treat DKA",
+          "Give protocolised IV fluids and insulin with dextrose and potassium management as indicated."
+        ],
+        [
+          "Monitor",
+          "Track ketone clearance, anion gap, glucose, potassium and fluid balance until resolution."
+        ]
+      ],
+      "safety": "Never wait for marked hyperglycaemia before treating severe ketonaemic acidosis in an SGLT2 user.",
+      "local": "RACGP Australian guidance: SGLT2-related DKA may have only modest hyperglycaemia; withhold during illness, fasting and before surgery."
+    },
+    "source": "https://www1.racgp.org.au/getattachment/3e2b9a1c-6ed5-45e2-b4e3-7f07d08efae6/Use-of-sodium-glucose-co-transporter-2-inhibitors.aspx"
+  },
+  {
+    "n": 54,
+    "domain": "Neonatology & infectious diseases",
+    "skill": "Congenital CMV / diagnostic PCR window after failed hearing screen",
+    "context": "Advanced final-year integrated management",
+    "stem": "A 12-day-old term baby fails a repeat newborn hearing screen on the left. Pregnancy and birth were uncomplicated, and the infant has no rash, jaundice or microcephaly. The parents ask whether a viral cause can be confirmed now and what happens if testing is delayed.",
+    "ask": "Which investigation plan is most appropriate?",
+    "options": [
+      "Arrange maternal CMV IgG testing at six weeks and diagnose congenital infection if it is positive.",
+      "Request neonatal CMV IgM alone because positive serology definitively distinguishes congenital from acquired infection.",
+      "Wait until the routine three-month audiology appointment before collecting a CMV specimen for diagnosis.",
+      "Collect neonatal saliva or urine CMV PCR promptly within 21 days, confirming positive saliva in urine.",
+      "Order brain MRI as the initial diagnostic test and perform viral PCR only if imaging is abnormal."
+    ],
+    "key": "D",
+    "explanations": [
+      "Maternal IgG commonly indicates past exposure and cannot confirm congenital infection in the infant. Timing and neonatal virological testing are essential.",
+      "Neonatal CMV serology lacks sufficient sensitivity and specificity to establish congenital infection. A negative IgM does not rule it out.",
+      "After day 21, a positive viral test cannot reliably distinguish congenital infection from postnatally acquired CMV without stored early samples.",
+      "Correct: collect saliva or urine PCR before 21 days of life; confirm a positive saliva test with urine PCR to avoid contamination from breast milk. Prompt audiology and specialist assessment should follow.",
+      "MRI helps assess CNS involvement after suspected or confirmed disease but does not replace timely PCR confirmation of congenital CMV."
+    ],
+    "pearl": "Congenital CMV is best confirmed by neonatal saliva or urine PCR collected during the first 21 days.",
+    "pivot": "Positive PCR obtained after 21 days needs careful interpretation or retrospective dried-blood-spot evaluation if available.",
+    "management": {
+      "steps": [
+        [
+          "Test now",
+          "Collect saliva or urine CMV PCR immediately while still within the congenital diagnostic window."
+        ],
+        [
+          "Confirm",
+          "Confirm positive saliva PCR on urine and assess other congenital infection findings."
+        ],
+        [
+          "Stage disease",
+          "Arrange audiology, examination, blood counts, liver tests, ophthalmology and imaging when indicated."
+        ],
+        [
+          "Refer",
+          "Discuss hearing loss and treatment eligibility promptly with paediatric infectious diseases and audiology."
+        ]
+      ],
+      "safety": "Do not defer virological sampling until the diagnostic window closes, even in a well-appearing infant.",
+      "local": "Children's Health Queensland congenital CMV treatment guideline: diagnosis requires samples within the first 21 days."
+    },
+    "source": "https://www.childrens.health.qld.gov.au/__data/assets/pdf_file/0039/176889/gdl-01005.pdf"
+  },
+  {
+    "n": 55,
+    "domain": "Sexual health & antimicrobial stewardship",
+    "skill": "Macrolide-resistant Mycoplasma genitalium / resistance-guided sequential therapy",
+    "context": "Advanced final-year integrated management",
+    "stem": "A 25-year-old man has persistent urethral discomfort after negative gonorrhoea and chlamydia NAATs. Mycoplasma genitalium NAAT is positive, with a detected macrolide-resistance mutation. He is haemodynamically well, has no testicular pain, and has not received treatment for this episode.",
+    "ask": "Which regimen best follows Australian resistance-guided guidance?",
+    "options": [
+      "Give azithromycin 1 g once, without follow-up, because it remains effective against resistant strains.",
+      "Treat with ceftriaxone alone and repeat the gonorrhoea test if urethral symptoms persist.",
+      "Use doxycycline for seven days and then high-dose azithromycin despite proven macrolide resistance.",
+      "Prescribe metronidazole for seven days and defer any partner management until symptoms recur.",
+      "Give doxycycline for seven days followed by moxifloxacin for seven days after safety assessment."
+    ],
+    "key": "E",
+    "explanations": [
+      "Macrolide resistance predicts poor azithromycin response. A single-dose regimen also risks further selection of resistance and is not the recommended approach.",
+      "Ceftriaxone targets gonorrhoea, which has tested negative, and does not reliably eradicate Mycoplasma genitalium.",
+      "Sequential doxycycline followed by extended azithromycin is used for susceptible infections; a resistance mutation changes the second agent.",
+      "Metronidazole does not treat Mycoplasma genitalium. Partner assessment and transmission counselling should not be deferred.",
+      "Correct: Australian STI guidance recommends doxycycline 100 mg twice daily for seven days, then moxifloxacin 400 mg daily for seven days for macrolide-resistant infection, subject to contraindications and interactions."
+    ],
+    "pearl": "Use resistance testing where available: doxycycline lowers bacterial load before the targeted second antibiotic.",
+    "pivot": "Pregnancy, fluoroquinolone contraindications, treatment failure or complicated PID require specialist-tailored alternatives.",
+    "management": {
+      "steps": [
+        [
+          "Confirm",
+          "Review NAAT and macrolide-resistance result; assess symptoms, sexual exposures and co-infections."
+        ],
+        [
+          "Treat",
+          "Use sequential doxycycline then moxifloxacin per current Australian STI guidance and contraindications."
+        ],
+        [
+          "Prevent",
+          "Advise abstinence until treatment completion and appropriate partner testing or treatment advice."
+        ],
+        [
+          "Review",
+          "Arrange recommended test-of-cure timing and specialist input for persistence or treatment intolerance."
+        ]
+      ],
+      "safety": "Check pregnancy status when relevant and assess QT prolongation, tendon risk and drug interactions before moxifloxacin.",
+      "local": "STI Guidelines Australia: macrolide-resistant M. genitalium is treated with sequential doxycycline and moxifloxacin."
+    },
+    "source": "https://sti.guidelines.org.au/sexually-transmissible-infections/mycoplasma-genitalium/"
   }
 ]
