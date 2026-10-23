@@ -2638,5 +2638,725 @@
     },
     "source": "https://copdx.org.au/",
     "context": "Advanced integrated clinical decisions"
+  },
+  {
+    "n": 56,
+    "domain": "Cardiology & emergency medicine",
+    "skill": "Inferior STEMI / right ventricular infarction and nitrates",
+    "stem": "A 59-year-old with chest pain has inferior ST elevation and clear lungs. BP is 88/54 mmHg, jugular venous pressure is raised and right-sided leads show ST elevation in V4R. Aspirin has been given and the cath lab alerted. A clinician suggests glyceryl trinitrate for ongoing pain.",
+    "ask": "Which next treatment principle is most appropriate?",
+    "options": [
+      "Avoid nitrates, support preload cautiously and expedite reperfusion with senior cardiology input.",
+      "Give intravenous glyceryl trinitrate promptly because hypotension is typical of inferior myocardial infarction.",
+      "Start aggressive diuresis to reduce raised jugular venous pressure before coronary intervention.",
+      "Defer coronary reperfusion until a formal echocardiogram confirms right ventricular dysfunction.",
+      "Use a large beta-blocker dose to lower myocardial oxygen demand despite low blood pressure."
+    ],
+    "key": "A",
+    "explanations": [
+      "Correct: right ventricular infarction makes cardiac output preload-dependent. Nitrates can cause marked hypotension; address low perfusion with carefully reassessed small fluid challenges where appropriate, and prioritise urgent reperfusion.",
+      "Glyceryl trinitrate reduces venous return and may precipitate collapse in a preload-dependent right ventricle. Ongoing ischaemic pain does not override hypotension or right-sided infarction.",
+      "Raised JVP in this setting reflects right ventricular pump impairment rather than necessarily volume excess. Diuresis can decrease preload and worsen shock.",
+      "Echo can support assessment but must not postpone time-critical reperfusion in a diagnostic STEMI. The ECG and haemodynamics are already strongly suggestive.",
+      "Beta blockade is unsafe in acute hypotension or shock physiology and could further compromise cardiac output. Stable patients have a different treatment pathway."
+    ],
+    "pearl": "Hypotension, clear lungs, raised JVP and V4R ST elevation suggest right ventricular infarction—avoid nitrates.",
+    "pivot": "Hypertensive ACS without right ventricular involvement or phosphodiesterase-5 inhibitor use may benefit from nitrates for symptom relief, not survival.",
+    "management": {
+      "steps": [
+        [
+          "Recognise",
+          "Obtain right-sided ECG leads and assess shock, cardiac rhythm and oxygenation."
+        ],
+        [
+          "Protect preload",
+          "Avoid nitrates and unnecessary diuresis; use carefully titrated circulatory support with senior advice."
+        ],
+        [
+          "Reperfuse",
+          "Activate urgent coronary angiography and PCI pathway with antithrombotic therapy per protocol."
+        ],
+        [
+          "Monitor",
+          "Repeat ECG, haemodynamics and bedside cardiac assessment; escalate for cardiogenic shock if needed."
+        ]
+      ],
+      "safety": "Do not give nitrates in hypotension or right ventricular infarction.",
+      "local": "2025 Australian ACS guideline, Heart Foundation."
+    },
+    "source": "https://www.heartfoundation.org.au/for-professionals/acs-guideline",
+    "context": "Advanced integrated clinical decisions"
+  },
+  {
+    "n": 57,
+    "domain": "Paediatrics & haematology",
+    "skill": "ITP after head injury / urgent haemorrhage assessment",
+    "stem": "A 5-year-old with recent immune thrombocytopenia and platelets 12 × 10^9/L hits his head on a cupboard. He was initially well but develops a worsening headache and vomits twice an hour later. There is no obvious external bleeding and GCS is 15.",
+    "ask": "What should happen next?",
+    "options": [
+      "Reassure because intracranial bleeding is rare in childhood ITP and GCS remains normal.",
+      "Arrange urgent emergency assessment and neuroimaging with haematology involvement for possible bleeding.",
+      "Give an oral steroid dose at home and attend routine haematology review in seven days.",
+      "Avoid imaging because radiation exposure outweighs all risks after minor accidental head trauma.",
+      "Use paracetamol and observe overnight at home unless the child has a witnessed seizure."
+    ],
+    "key": "B",
+    "explanations": [
+      "Intraparenchymal bleeding is uncommon in ITP, but new headache and vomiting after head trauma are concerning red flags. Low baseline incidence does not justify reassurance now.",
+      "Correct: urgently assess potential intracranial injury, obtain senior paediatric/haematology input and neuroimaging as clinically indicated. If bleeding is suspected or confirmed, coordinate rapid platelet-raising and haemostatic therapy with specialists.",
+      "Steroid treatment may feature in significant ITP bleeding, but a home dose cannot exclude intracranial haemorrhage or provide adequate observation. Emergency assessment is required.",
+      "Radiation should be considered thoughtfully, yet major bleeding risk and neurological symptoms make CT potentially lifesaving. Do not use blanket imaging avoidance in a bleeding disorder.",
+      "Seizures and reduced GCS are late or inconsistent signs of intracranial bleeding. Waiting for them could delay neurosurgical intervention."
+    ],
+    "pearl": "Head injury in a child with ITP warrants a lower threshold for urgent assessment, particularly with headache, vomiting or behaviour change.",
+    "pivot": "A well child with isolated bruising and no head trauma or mucosal bleeding is often managed conservatively under ITP follow-up pathways.",
+    "management": {
+      "steps": [
+        [
+          "Examine",
+          "Assess ABCs, GCS, pupils, focal neurology, signs of skull trauma and bleeding history."
+        ],
+        [
+          "Escalate",
+          "Seek senior paediatric and haematology advice immediately; involve neurosurgery if indicated."
+        ],
+        [
+          "Investigate",
+          "Arrange urgent neuroimaging when concerning symptoms or mechanism justify it; repeat FBC/coagulation review."
+        ],
+        [
+          "Treat",
+          "Provide haemostatic treatment with specialist guidance if bleeding is likely; monitor neurological state closely."
+        ]
+      ],
+      "safety": "A normal initial GCS does not exclude intracranial haemorrhage in a bleeding-prone child.",
+      "local": "RCH Immune thrombocytopenia and Head injury guidelines."
+    },
+    "source": "https://www.rch.org.au/clinicalguide/guideline_index/Immune_thrombocytopenic_purpura/",
+    "context": "Advanced integrated clinical decisions"
+  },
+  {
+    "n": 58,
+    "domain": "Obstetrics & maternal medicine",
+    "skill": "Severe pre-eclampsia at 31 weeks / stabilise before delivery",
+    "stem": "At 31 weeks a woman with newly diagnosed pre-eclampsia has BP 178/115 mmHg on repeat measurement, headache, visual flashes and epigastric pain. Platelets are 88 × 10^9/L and AST is elevated. CTG is currently reassuring; no uterine contractions have begun.",
+    "ask": "Which immediate approach is best?",
+    "options": [
+      "Observe until 37 weeks because a reassuring CTG indicates that maternal deterioration is unlikely.",
+      "Use routine outpatient oral antihypertensives and repeat liver tests after forty-eight hours.",
+      "Admit urgently, control severe BP, give magnesium sulfate and plan specialist-led delivery after stabilisation.",
+      "Proceed immediately to vaginal induction without controlling maternal pressure or seizure risk first.",
+      "Administer aspirin now as the primary treatment for established severe pre-eclampsia symptoms."
+    ],
+    "key": "C",
+    "explanations": [
+      "Severe-range BP, neurological symptoms and thrombocytopenia indicate dangerous maternal disease regardless of current fetal monitoring. Expectant routine care is inappropriate.",
+      "Outpatient care cannot safely manage imminent eclampsia, stroke, HELLP features or placental compromise. Urgent admission and close observations are necessary.",
+      "Correct: involve senior obstetrics and anaesthesia, treat severe hypertension rapidly, give magnesium for seizure prevention and assess maternal/fetal status. Delivery is definitive treatment, with route and timing chosen after stabilisation and specialist planning.",
+      "Delivery may be indicated urgently, but uncontrolled severe BP and seizure risk require simultaneous stabilisation. An automatic induction without assessing maternal condition, cervix and urgency may be unsafe.",
+      "Low-dose aspirin helps prevent pre-eclampsia in selected high-risk pregnancies; it does not treat an established severe presentation at 31 weeks."
+    ],
+    "pearl": "Severe pre-eclampsia is first a maternal stabilisation emergency; a reassuring CTG does not eliminate maternal risk.",
+    "pivot": "Mild disease without severe features may permit close outpatient or inpatient surveillance depending on gestation and local criteria.",
+    "management": {
+      "steps": [
+        [
+          "Call for help",
+          "Urgent obstetric, anaesthetic and critical-care evaluation; monitor BP and neurological signs."
+        ],
+        [
+          "Stabilise",
+          "Give protocol-based IV or rapid-acting antihypertensive treatment and magnesium sulfate."
+        ],
+        [
+          "Investigate",
+          "Trend FBC/platelets, renal/liver tests and proteinuria; assess CTG and fetal growth as appropriate."
+        ],
+        [
+          "Plan birth",
+          "Discuss timing and route of delivery after stabilisation, considering maternal and fetal urgency."
+        ]
+      ],
+      "safety": "Do not delay treatment of severe hypertension while awaiting imaging, a repeat protein ratio or spontaneous labour.",
+      "local": "Queensland Clinical Guidelines hypertensive disorders in pregnancy."
+    },
+    "source": "https://www.health.qld.gov.au/qcg",
+    "context": "Advanced integrated clinical decisions"
+  },
+  {
+    "n": 59,
+    "domain": "Acute medicine & infectious diseases",
+    "skill": "Bacterial meningitis / treatment before unsafe lumbar puncture",
+    "stem": "A 42-year-old presents with fever, intense headache and neck stiffness. On assessment GCS is 10 and there is a new left-sided focal weakness. BP is 106/70 mmHg. Blood cultures can be collected immediately, but CT and specialist lumbar puncture assessment would take more than an hour.",
+    "ask": "Which immediate management strategy is most appropriate?",
+    "options": [
+      "Perform bedside lumbar puncture now despite reduced consciousness to obtain untreated cerebrospinal fluid.",
+      "Wait for CT and lumbar puncture before antimicrobial therapy to preserve diagnostic culture yield.",
+      "Treat with oral antibiotics because blood pressure is maintained and bacterial confirmation is absent.",
+      "Collect blood cultures promptly and start empirical IV treatment immediately, deferring lumbar puncture.",
+      "Discharge with safety-netting because the examination may reflect a severe viral syndrome rather than meningitis."
+    ],
+    "key": "D",
+    "explanations": [
+      "Reduced consciousness and focal neurology are contraindications or major precautions to immediate LP, as intracranial pathology and clinical instability must be assessed. Procedure-first management delays treatment.",
+      "Diagnostic yield matters, but early effective therapy is vital for suspected bacterial meningitis. Do not wait an hour or longer for CT/LP to begin antibiotics.",
+      "Oral treatment is insufficient for a potentially invasive CNS infection, and haemodynamic stability does not exclude rapid neurological deterioration.",
+      "Correct: secure ABCs, obtain blood cultures without treatment delay, start age-/risk-appropriate IV antibiotics plus dexamethasone when locally indicated, and investigate safely after senior/neurological assessment.",
+      "Severe headache, fever, meningism and reduced GCS indicate a medical emergency. Reassurance or community follow-up is inappropriate regardless of the eventual microbiological result."
+    ],
+    "pearl": "Focal neurological deficit or reduced consciousness changes LP safety, but must never delay empirical meningitis therapy.",
+    "pivot": "A stable, fully alert patient without focal deficits or other contraindications may undergo prompt LP before antibiotics if it can be done without delaying therapy.",
+    "management": {
+      "steps": [
+        [
+          "Stabilise",
+          "Provide airway and circulatory monitoring and senior acute-care review."
+        ],
+        [
+          "Treat immediately",
+          "Draw cultures quickly, then give prompt IV antibiotics and locally indicated adjunctive dexamethasone."
+        ],
+        [
+          "Assess CNS safety",
+          "Arrange neuroimaging and neurological assessment for focal signs before considering LP."
+        ],
+        [
+          "Tailor and notify",
+          "Follow cultures/PCR, infection control advice and contact prophylaxis decisions when indicated."
+        ]
+      ],
+      "safety": "Do not force LP in an obtunded patient or postpone antibiotics solely for a sample.",
+      "local": "Australian Therapeutic Guidelines bacterial meningitis pathways; local emergency infection protocol."
+    },
+    "source": "https://www.health.qld.gov.au/clinical-practice/guidelines-procedures",
+    "context": "Advanced integrated clinical decisions"
+  },
+  {
+    "n": 60,
+    "domain": "Psychiatry & medical emergencies",
+    "skill": "Neuroleptic malignant syndrome / rigidity and autonomic instability",
+    "stem": "A 36-year-old with schizophrenia received a depot antipsychotic five days ago. He is now febrile to 40°C, mute, diaphoretic and tachycardic, with generalised lead-pipe rigidity. CK is 12,000 U/L. Reflexes are not brisk, and clonus is absent. No recent serotonergic medicine was started.",
+    "ask": "Which course best addresses the likely diagnosis?",
+    "options": [
+      "Increase the antipsychotic dose because rigidity and mutism indicate poorly controlled catatonia.",
+      "Start an SSRI to treat an occult mood disorder while monitoring fever and muscle tone.",
+      "Give antibiotics alone because elevated CK and fever are most consistent with an infection.",
+      "Arrange routine outpatient review after a trial of oral antipyretics and fluid intake.",
+      "Stop dopamine antagonists, initiate intensive supportive care and urgently involve specialist teams."
+    ],
+    "key": "E",
+    "explanations": [
+      "Further dopamine blockade can worsen suspected neuroleptic malignant syndrome. While catatonia is a differential, the severe autonomic and biochemical findings demand medical stabilisation first.",
+      "An SSRI does not treat NMS and introduces additional pharmacological complexity. The trigger is recent antipsychotic exposure and the syndrome requires urgent cessation.",
+      "Infection can coexist and should be investigated, but severe rigidity, marked CK elevation and recent depot exposure strongly suggest NMS. Antibiotics alone do not address hyperthermia or rhabdomyolysis.",
+      "Severe hyperthermia, mutism and rhabdomyolysis pose renal and cardiovascular threats. Outpatient care would expose the patient to potentially fatal complications.",
+      "Correct: withhold the antipsychotic, activate acute medical/critical care, provide cooling, IV fluids and monitoring for rhabdomyolysis and renal injury. Liaise with psychiatry and toxicology about syndrome-specific treatments where severe."
+    ],
+    "pearl": "Lead-pipe rigidity, autonomic disturbance and high CK after dopamine antagonists point toward NMS rather than serotonin toxicity.",
+    "pivot": "Recent serotonergic exposure with clonus, hyperreflexia and rapid onset would favour serotonin toxicity; the culprit medicines and pharmacological plan differ.",
+    "management": {
+      "steps": [
+        [
+          "Recognise",
+          "Check medication timeline, temperature, tone, CK, renal function and ECG."
+        ],
+        [
+          "Stop exposure",
+          "Withhold antipsychotic and other dopamine-blocking medicines; notify treating psychiatry team."
+        ],
+        [
+          "Stabilise",
+          "Manage hyperthermia, fluids, electrolytes and rhabdomyolysis in monitored or critical care."
+        ],
+        [
+          "Coordinate",
+          "Consult toxicology/neurology/psychiatry for refractory disease and future antipsychotic planning."
+        ]
+      ],
+      "safety": "Do not dismiss severe NMS as uncomplicated medication stiffness or restart antipsychotics during the acute episode.",
+      "local": "Australian psychiatry emergency and acute toxicology guidance."
+    },
+    "source": "https://www.ranzcp.org/clinical-guidelines-publications",
+    "context": "Advanced integrated clinical decisions"
+  },
+  {
+    "n": 61,
+    "domain": "Paediatric cardiology",
+    "skill": "Tetralogy of Fallot / hypercyanotic spell",
+    "stem": "A 5-month-old with unrepaired tetralogy of Fallot becomes profoundly cyanotic and tachypnoeic while crying during cannulation. Oxygen saturation falls to 62%, the usual systolic murmur becomes much quieter, and the infant remains conscious but distressed.",
+    "ask": "What should be done first while the senior paediatric team arrives?",
+    "options": [
+      "Minimise handling, comfort the infant and use knee-to-chest positioning with oxygen support.",
+      "Lay the infant flat with legs extended and encourage vigorous crying to improve ventilation.",
+      "Administer furosemide immediately to reduce venous congestion before any positional manoeuvre.",
+      "Apply continuous positive airway pressure without assessing haemodynamics or distress tolerance.",
+      "Give an intravenous nitrate to reduce right ventricular afterload and increase pulmonary perfusion."
+    ],
+    "key": "A",
+    "explanations": [
+      "Correct: hypercyanotic spells arise when pulmonary blood flow suddenly falls and right-to-left shunting increases. Calm the infant and use knee-to-chest positioning to increase systemic vascular resistance; provide oxygen and urgently escalate if it persists.",
+      "Crying increases catecholamines and dynamic outflow obstruction. Forcing supine positioning and distress can worsen the spell.",
+      "Diuresis can decrease venous return and aggravate a preload-sensitive child. It is not the immediate therapy for a tet spell.",
+      "Respiratory support is sometimes required in severe spells, but sudden indiscriminate pressure and upsetting procedures may worsen cyanosis. Begin low-stress positioning and expert-directed resuscitation.",
+      "Nitrates lower systemic vascular resistance, potentially increasing right-to-left shunting. They do not treat the obstructive physiology of a hypercyanotic episode."
+    ],
+    "pearl": "A quieter murmur during a tet spell may signal less flow through the pulmonary outflow tract, not improvement.",
+    "pivot": "If cyanosis is accompanied by an irregular rhythm or circulatory collapse, evaluate arrhythmia and other emergencies while following paediatric resuscitation priorities.",
+    "management": {
+      "steps": [
+        [
+          "Comfort and position",
+          "Reduce stimulation, keep parent involved and use knee-to-chest positioning."
+        ],
+        [
+          "Support",
+          "Give oxygen and monitor saturations, breathing and perfusion."
+        ],
+        [
+          "Escalate",
+          "Call senior paediatrics/cardiology; consider expert-directed fluids, analgesia and further therapy."
+        ],
+        [
+          "Afterwards",
+          "Assess triggers and plan cardiology monitoring and definitive surgical care."
+        ]
+      ],
+      "safety": "Avoid unnecessary invasive procedures during a spell that increase distress and right-to-left shunting.",
+      "local": "Royal Children's Hospital Cyanotic episodes in congenital heart disease guideline."
+    },
+    "source": "https://www.rch.org.au/clinicalguide/guideline_index/Cyanotic_Episodes_in_Congenital_Heart_Disease/",
+    "context": "Advanced integrated clinical decisions"
+  },
+  {
+    "n": 62,
+    "domain": "General surgery & emergency medicine",
+    "skill": "Perforated peptic ulcer / free gas and peritonitis",
+    "stem": "A 54-year-old who uses high-dose ibuprofen develops sudden knife-like epigastric pain, then diffuse severe abdominal tenderness. The abdomen is rigid with guarding. Erect chest radiography shows free gas under the diaphragm, and lactate is mildly elevated; she is tachycardic but still normotensive.",
+    "ask": "What is the best immediate management pathway?",
+    "options": [
+      "Begin outpatient eradication therapy for H. pylori and review if symptoms persist.",
+      "Resuscitate, give IV antibiotics and obtain urgent general surgical assessment for perforation.",
+      "Arrange routine gastroscopy before seeking surgery to confirm the ulcer and obtain biopsies.",
+      "Treat with oral antacids and observe whether the free intraperitoneal gas resolves spontaneously.",
+      "Perform colonoscopy because pneumoperitoneum more commonly follows a colonic source than an ulcer."
+    ],
+    "key": "B",
+    "explanations": [
+      "H. pylori eradication is important after ulcer confirmation, but cannot close a perforation with generalized peritonitis. Emergency source control takes priority.",
+      "Correct: recognise a surgical abdomen with pneumoperitoneum, start IV resuscitation, analgesia, antibiotics and fasting, and urgently involve general surgery for operative source control and peritoneal management.",
+      "Endoscopy may worsen leakage and delay definitive management in peritonitis. Radiographic free gas plus rigidity already supports perforation strongly enough for emergency surgical assessment.",
+      "Antacids do not seal a perforated viscus and observation risks widespread intra-abdominal sepsis. Normal blood pressure early does not make this safe.",
+      "Colonoscopy is not the immediate assessment for generalised peritonitis with free gas and can worsen perforation. The surgical team directs imaging and treatment."
+    ],
+    "pearl": "Peritonism plus pneumoperitoneum is a surgical emergency even before hypotension develops.",
+    "pivot": "A stable patient with uncomplicated dyspepsia and no guarding or free gas may undergo outpatient H. pylori testing and empiric acid suppression.",
+    "management": {
+      "steps": [
+        [
+          "Stabilise",
+          "Keep nil by mouth, start IV fluids, analgesia and repeated sepsis observations."
+        ],
+        [
+          "Treat infection",
+          "Give IV broad-spectrum antibiotics and acid suppression per local guidance."
+        ],
+        [
+          "Consult surgery",
+          "Activate urgent general surgical review for source control and operative planning."
+        ],
+        [
+          "Follow",
+          "Monitor fluid balance and complications; address ulcer causes and prevention after the emergency."
+        ]
+      ],
+      "safety": "Do not delay surgical review to obtain endoscopy in an acute rigid abdomen with free air.",
+      "local": "Australian acute surgical abdomen and sepsis care pathways."
+    },
+    "source": "https://www.safetyandquality.gov.au/standards/clinical-care-standards/sepsis-clinical-care-standard",
+    "context": "Advanced integrated clinical decisions"
+  },
+  {
+    "n": 63,
+    "domain": "General practice & ENT",
+    "skill": "Sudden sensorineural hearing loss / same-day action",
+    "stem": "A 47-year-old wakes with sudden marked hearing loss in the right ear and new tinnitus. Otoscopy is normal and Weber lateralises to the left, with air conduction still greater than bone conduction bilaterally. She has no fever, ear pain or focal neurological symptoms. She asks to wait for a routine audiology appointment in six weeks.",
+    "ask": "What is the best GP response?",
+    "options": [
+      "Give earwax softening drops and book a repeat otoscopic examination after a fortnight.",
+      "Treat as otitis media with oral antibiotics despite normal tympanic membrane appearance.",
+      "Arrange urgent ENT discussion and audiology, considering prompt steroid therapy under local guidance.",
+      "Offer only reassurance because unilateral hearing loss with tinnitus frequently resolves without intervention.",
+      "Refer for routine MRI before any specialist communication to exclude a vestibular schwannoma."
+    ],
+    "key": "C",
+    "explanations": [
+      "There is no obstructive wax, and the tuning-fork pattern favours sensorineural rather than conductive loss. Earwax treatment delays time-sensitive care.",
+      "Acute middle-ear infection usually has inflammatory otoscopic findings and a conductive pattern. Antibiotics would not address sudden inner-ear dysfunction.",
+      "Correct: suspected sudden sensorineural hearing loss warrants urgent same-day emergency/ENT advice, audiometry without treatment delay, and consideration of early steroid treatment once contraindications are assessed. Check for stroke signs.",
+      "Spontaneous recovery can occur, but the possibility of benefit from early treatment argues against wait-and-see management.",
+      "MRI may later investigate retrocochlear causes, but organising it before urgent ENT advice forfeits early treatment opportunity."
+    ],
+    "pearl": "Sudden painless hearing loss with normal otoscopy is an otological emergency, not a routine six-week hearing-aid referral.",
+    "pivot": "Conductive loss from obvious wax or otitis externa can follow targeted local treatment, provided neurological and sensorineural red flags are absent.",
+    "management": {
+      "steps": [
+        [
+          "Assess",
+          "Determine exact onset, associated vertigo or neurological symptoms, otoscopy and tuning-fork findings."
+        ],
+        [
+          "Escalate",
+          "Phone emergency ENT service the same day; arrange audiology as promptly as feasible."
+        ],
+        [
+          "Treat timely",
+          "Discuss corticosteroids and contraindications with the specialist rather than delaying for imaging."
+        ],
+        [
+          "Follow",
+          "Arrange audiometric monitoring and further imaging or rehabilitation if hearing loss persists."
+        ]
+      ],
+      "safety": "If sudden loss is accompanied by focal neurology or severe vertigo, activate a stroke pathway.",
+      "local": "Queensland Health Sudden/Rapid onset hearing loss Clinical Prioritisation Criteria."
+    },
+    "source": "https://www.health.qld.gov.au/cpc/ent/hearing-loss-suddenrapid-onset",
+    "context": "Advanced integrated clinical decisions"
+  },
+  {
+    "n": 64,
+    "domain": "Emergency medicine & vascular",
+    "skill": "High-risk pulmonary embolism / circulatory collapse",
+    "stem": "A 63-year-old develops sudden dyspnoea and syncope ten days after hip surgery. BP is 76/44 mmHg, HR 142/min and SpO2 86% despite oxygen. Bedside echo shows severe right ventricular dilatation, and CT pulmonary angiography demonstrates bilateral central pulmonary emboli. There is no active bleeding, but surgery was recent.",
+    "ask": "What is the most appropriate immediate plan?",
+    "options": [
+      "Begin oral anticoagulant treatment and discharge when oxygen saturation improves above ninety percent.",
+      "Give diuretics to reduce right ventricular strain before assessing need for reperfusion therapy.",
+      "Wait for serial troponins to demonstrate myocardial injury before activating specialist intervention.",
+      "Activate critical care and urgent reperfusion assessment while supporting perfusion and anticoagulating appropriately.",
+      "Arrange outpatient repeat CT in one week because postoperative pulmonary emboli often regress spontaneously."
+    ],
+    "key": "D",
+    "explanations": [
+      "Oral anticoagulation alone and discharge are unsafe in obstructive shock. The patient needs resuscitation and time-critical specialist therapy.",
+      "Diuresis may reduce the preload of a failing right ventricle and worsen circulatory collapse. Treatment must address pulmonary vascular obstruction and shock.",
+      "Troponin can contribute to risk assessment but shock and confirmed central PE already establish a high-risk emergency. Waiting delays potentially lifesaving reperfusion.",
+      "Correct: support airway/oxygenation and haemodynamics, involve critical care and PE-response specialists urgently, begin appropriate anticoagulation and weigh systemic thrombolysis versus catheter/surgical intervention given recent operative bleeding risk.",
+      "Confirmed massive PE with hypotension is not an outpatient problem. Reassessment imaging cannot replace acute circulatory treatment."
+    ],
+    "pearl": "PE with sustained hypotension is high-risk obstructive shock; anticoagulation is necessary, but reperfusion options need urgent specialist evaluation.",
+    "pivot": "A haemodynamically stable PE without right-heart compromise generally follows risk-stratified anticoagulation rather than immediate reperfusion.",
+    "management": {
+      "steps": [
+        [
+          "Resuscitate",
+          "Support oxygenation and circulation, monitor for arrest and engage ICU early."
+        ],
+        [
+          "Define risk",
+          "Confirm PE imaging, assess RV failure and identify recent surgery and bleeding contraindications."
+        ],
+        [
+          "Treat thrombosis",
+          "Start protocol-based parenteral anticoagulation when appropriate and discuss immediate reperfusion strategy."
+        ],
+        [
+          "Escalate",
+          "Consider systemic thrombolysis, catheter treatment or embolectomy through senior multidisciplinary decision-making."
+        ]
+      ],
+      "safety": "Recent surgery increases bleeding risk from thrombolysis; it requires urgent expert trade-off, not inaction.",
+      "local": "ANZCOR Special Circumstances guidance and Australian high-risk PE pathways."
+    },
+    "source": "https://www.anzcor.org/home/adult-advanced-life-support/guideline-11-10-resuscitation-in-special-circumstances",
+    "context": "Advanced integrated clinical decisions"
+  },
+  {
+    "n": 65,
+    "domain": "Obstetrics & hepatology",
+    "skill": "Pregnancy pruritus / bile acid assessment",
+    "stem": "At 34 weeks of pregnancy, a 28-year-old reports intense itching of her palms and soles at night without a primary skin rash. Blood pressure is normal and she has no jaundice. Initial ALT is mildly elevated but serum bile acids obtained yesterday were within the laboratory reference interval.",
+    "ask": "Which is the safest next management direction?",
+    "options": [
+      "Diagnose eczema and prescribe topical steroids only because there is no visible jaundice.",
+      "Arrange elective delivery at thirty-four weeks based on itching alone without further assessment.",
+      "Reassure that one normal bile acid test permanently excludes cholestasis of pregnancy.",
+      "Start empirical antibiotics because pruritus with raised ALT usually indicates ascending cholangitis.",
+      "Reassess symptoms and repeat bile acids/LFTs with obstetric review if itching persists."
+    ],
+    "key": "E",
+    "explanations": [
+      "Palmar/plantar nocturnal itch without a primary rash suggests possible obstetric cholestasis rather than a primary eczema rash. Symptomatic skin care alone misses hepatobiliary evaluation.",
+      "Early delivery decisions depend on confirmed bile acid elevation, fetal and maternal risks and gestation. It is not justified by isolated itch with a single reassuring test.",
+      "Symptoms may precede biochemical changes. Persisting typical itch warrants repeat bile acids and LFTs rather than permanent dismissal.",
+      "Ascending cholangitis generally features fever, abdominal pain and systemic illness. Isolated itch and mild ALT elevation without infection features do not justify antibiotics.",
+      "Correct: discuss possible intrahepatic cholestasis with obstetrics, repeat bile acids and liver enzymes if symptoms continue, exclude other hepatic causes and tailor surveillance and delivery timing to evolving results."
+    ],
+    "pearl": "Typical pregnancy pruritus can precede raised bile acids; a single normal result may need repetition if symptoms persist.",
+    "pivot": "A primary inflammatory rash with normal hepatobiliary tests and an alternative clinical diagnosis follows dermatological management instead.",
+    "management": {
+      "steps": [
+        [
+          "Characterise",
+          "Ask location, timing, rash, dark urine, pale stools and hepatobiliary history."
+        ],
+        [
+          "Test",
+          "Measure bile acids and LFTs, repeating when typical itch persists after a normal first test."
+        ],
+        [
+          "Refer",
+          "Discuss obstetric cholestasis risk and exclusion of other liver disorders with maternity clinicians."
+        ],
+        [
+          "Plan",
+          "Use bile acid severity and local guidance for surveillance, symptom control and delivery decisions."
+        ]
+      ],
+      "safety": "Do not reassure solely on a normal initial bile acid result when classic itch continues.",
+      "local": "RANZCOG and Queensland maternity cholestasis guidance."
+    },
+    "source": "https://www.health.qld.gov.au/qcg",
+    "context": "Advanced integrated clinical decisions"
+  },
+  {
+    "n": 66,
+    "domain": "General practice & nephrology",
+    "skill": "Diabetes CKD / organ-protective SGLT2 treatment",
+    "stem": "A 64-year-old with type 2 diabetes has HbA1c 7.0% on metformin, eGFR 42 mL/min/1.73 m² and urine ACR 40 mg/mmol on repeated tests. BP is 128/76 mmHg on an angiotensin-receptor blocker. She has no current urinary infection or ketoacidosis risk factors.",
+    "ask": "Which longer-term medication discussion is most appropriate?",
+    "options": [
+      "Discuss an SGLT2 inhibitor for kidney and cardiovascular protection despite near-target glycaemia.",
+      "Increase metformin above the recommended renal dosing limit to reduce albuminuria directly.",
+      "Stop the ARB because combination kidney protection is unnecessary when systolic BP is controlled.",
+      "Use insulin as first-line renal protection because a mildly elevated HbA1c predicts kidney progression.",
+      "Replace the ARB with an ACE inhibitor plus ARB together to maximise antiproteinuric effects."
+    ],
+    "key": "A",
+    "explanations": [
+      "Correct: SGLT2 inhibitors provide kidney and cardiovascular benefits beyond glucose lowering in eligible diabetic CKD. Confirm eGFR, albuminuria, medication safety, sick-day instructions and appropriate monitoring.",
+      "Metformin is used for glycaemic control, with dose and continuation limited by renal function; escalating beyond safe renal dosing is not the preferred renoprotective strategy.",
+      "RAS blockade remains useful for albuminuric CKD where tolerated. Controlled BP does not eliminate albuminuria-related progression risk.",
+      "Insulin may become necessary for glycaemic management, but is not prescribed primarily for the established cardiorenal protection associated with SGLT2 inhibitors.",
+      "Dual ACEI/ARB treatment increases hyperkalaemia and AKI risk without sufficient benefit and is not recommended for routine kidney protection."
+    ],
+    "pearl": "SGLT2 inhibitors can protect kidneys and the heart in eligible diabetic CKD even when HbA1c is close to target.",
+    "pivot": "SGLT2 treatment needs extra caution in recurrent ketoacidosis, serious dehydration or clinical contraindications; use shared decision-making and monitoring.",
+    "management": {
+      "steps": [
+        [
+          "Verify CKD",
+          "Review eGFR trend, albuminuria, BP, potassium and reversible contributors."
+        ],
+        [
+          "Optimise protection",
+          "Maintain appropriate BP/RAS therapy and discuss eligible SGLT2 initiation."
+        ],
+        [
+          "Counsel",
+          "Explain volume, genital infection and ketoacidosis precautions, sick-day and perioperative withholding advice."
+        ],
+        [
+          "Monitor",
+          "Review renal function, tolerance, glycaemic regimen and cardiovascular risk reduction measures."
+        ]
+      ],
+      "safety": "Avoid ACE inhibitor plus ARB combination and counsel on euglycaemic ketoacidosis precautions.",
+      "local": "RACGP Management of type 2 diabetes summary of recommendations (2024–2025)."
+    },
+    "source": "https://www.racgp.org.au/clinical-resources/clinical-guidelines/key-racgp-guidelines/view-all-racgp-guidelines/management-of-type-2-diabetes/summary-of-recommendations",
+    "context": "Advanced integrated clinical decisions"
+  },
+  {
+    "n": 67,
+    "domain": "Paediatric nephrology & infection",
+    "skill": "Shiga toxin-associated haemolytic uraemic syndrome",
+    "stem": "A 3-year-old develops pallor, reduced urine output and bruising five days after bloody diarrhoea. Haemoglobin is 79 g/L, platelets 48 × 10^9/L and creatinine 188 µmol/L. Blood film reveals schistocytes and coagulation studies are not suggestive of disseminated intravascular coagulation.",
+    "ask": "What is the most appropriate early management?",
+    "options": [
+      "Give empirical oral antibiotics for the earlier diarrhoea and review kidney function in a week.",
+      "Admit urgently for paediatric renal supportive care, fluid balance and complication monitoring.",
+      "Start high-dose corticosteroids for presumptive immune thrombocytopenia without further renal evaluation.",
+      "Give platelet transfusions routinely until the count normalises despite no significant bleeding.",
+      "Begin loperamide to suppress diarrhoea and prevent further volume losses during admission."
+    ],
+    "key": "B",
+    "explanations": [
+      "STEC-associated HUS is suggested by microangiopathic haemolysis, thrombocytopenia and acute kidney injury after bloody diarrhoea. Antibiotic use is organism- and stage-dependent and should not replace renal emergency care.",
+      "Correct: involve paediatric nephrology urgently, monitor urine output, BP, potassium and fluid balance, assess transfusion needs and provide dialysis or other organ support if indicated.",
+      "Immune thrombocytopenia does not usually cause schistocytic haemolysis and AKI. Steroids in the wrong diagnosis can introduce harm and delay support.",
+      "Prophylactic platelets are not routine without serious bleeding or procedures because the syndrome is a thrombotic microangiopathy. Specialist guidance is required.",
+      "Antimotility medication is inappropriate in bloody infectious diarrhoea and does not manage the renal/haematological consequences of HUS."
+    ],
+    "pearl": "Bloody diarrhoea followed by anaemia, thrombocytopenia and AKI is classic for STEC-HUS; supportive renal care is central.",
+    "pivot": "If severe ADAMTS13 deficiency suggests TTP or atypical complement-mediated HUS is suspected, specialist therapy and diagnostic pathways differ.",
+    "management": {
+      "steps": [
+        [
+          "Recognise",
+          "Identify microangiopathic anaemia, thrombocytopenia and renal injury after enteritis."
+        ],
+        [
+          "Escalate",
+          "Admit and discuss urgently with paediatric nephrology/critical care."
+        ],
+        [
+          "Support organs",
+          "Measure strict fluid balance, renal function, electrolytes, BP and neurological status; plan dialysis if needed."
+        ],
+        [
+          "Investigate cause",
+          "Send stool pathogen/Shiga-toxin testing and evaluate alternatives with haematology/nephrology."
+        ]
+      ],
+      "safety": "Avoid routine antimotility therapy and platelet transfusion in otherwise stable HUS without specialist indications.",
+      "local": "Australian paediatric nephrology HUS guidance and RCH renal acute care pathways."
+    },
+    "source": "https://www.rch.org.au/clinicalguide/",
+    "context": "Advanced integrated clinical decisions"
+  },
+  {
+    "n": 68,
+    "domain": "Gynaecology & emergency surgery",
+    "skill": "Ovarian torsion / Doppler flow not exclusion",
+    "stem": "A 20-year-old presents with six hours of sudden severe right pelvic pain and repeated vomiting. Pregnancy test is negative. Ultrasound shows a 6-cm ovarian cyst and an enlarged right ovary with peripheral follicles, but colour Doppler still demonstrates arterial flow. Analgesia only partially relieves pain.",
+    "ask": "Which management decision best protects ovarian function?",
+    "options": [
+      "Discharge after analgesia because preserved arterial flow reliably excludes torsion.",
+      "Treat for pelvic inflammatory disease with oral antibiotics and reassess after two days.",
+      "Obtain urgent gynaecology review for possible surgical detorsion despite Doppler flow.",
+      "Defer surgery until the cyst grows beyond eight centimetres or blood flow disappears.",
+      "Arrange a routine six-week ultrasound because ovarian enlargement commonly resolves spontaneously."
+    ],
+    "key": "C",
+    "explanations": [
+      "Dual ovarian blood supply and intermittent or incomplete torsion can preserve Doppler flow. Discharging on the basis of one Doppler finding risks ovarian infarction.",
+      "PID generally has a different constellation of cervical or bilateral tenderness, discharge and infection risk. It does not adequately explain sudden severe pain with vomiting and a torsion-suggestive ovary.",
+      "Correct: consult gynaecology urgently, keep nil by mouth and prepare for laparoscopy if clinical suspicion is high. Ultrasound supports but cannot definitively rule out torsion.",
+      "Waiting for total loss of flow forfeits tissue viability; cyst size alone does not define torsion. Detorsion is time-sensitive even when Doppler is present.",
+      "Routine repeat imaging is unsuitable in a patient with acute severe persistent symptoms. Ovarian enlargement and peripheral follicles raise torsion concern now."
+    ],
+    "pearl": "Preserved ovarian Doppler arterial flow does not exclude torsion because venous obstruction may occur first and arterial inflow may persist.",
+    "pivot": "A stable haemorrhagic cyst with improving pain and no suspicious torsion signs can sometimes follow observation, analgesia and interval imaging.",
+    "management": {
+      "steps": [
+        [
+          "Assess",
+          "Check haemodynamic status, pregnancy test, analgesia needs and pelvic examination when appropriate."
+        ],
+        [
+          "Image sensitively",
+          "Review pelvic ultrasound morphology and Doppler without treating flow as a rule-out test."
+        ],
+        [
+          "Escalate",
+          "Seek urgent gynaecology/surgical opinion, fasting status and theatre preparation."
+        ],
+        [
+          "Preserve",
+          "Perform specialist-directed laparoscopy/detorsion when indicated; assess cyst management and follow-up."
+        ]
+      ],
+      "safety": "Do not delay a strong torsion clinical diagnosis awaiting absent arterial Doppler flow.",
+      "local": "Australian gynaecological emergency and pelvic pain pathways."
+    },
+    "source": "https://www.health.qld.gov.au/clinical-practice/guidelines-procedures",
+    "context": "Advanced integrated clinical decisions"
+  },
+  {
+    "n": 69,
+    "domain": "Emergency toxicology & cardiology",
+    "skill": "Tricyclic overdose / sodium channel blockade",
+    "stem": "A 24-year-old is brought in unconscious after taking an unknown quantity of amitriptyline. HR is 146/min, BP 84/48 mmHg and GCS 9. ECG shows QRS duration 164 ms with prominent terminal R wave in aVR. Seizures occur briefly during transfer.",
+    "ask": "Which treatment best targets the cardiotoxic mechanism?",
+    "options": [
+      "Administer IV amiodarone as first-line antidote for the wide QRS associated with poisoning.",
+      "Give activated charcoal without airway protection because elimination is the sole immediate priority.",
+      "Give IV calcium alone because tricyclics cause hyperkalaemia-mediated sodium channel blockade.",
+      "Administer IV sodium bicarbonate with resuscitation and specialist toxicology management.",
+      "Induce emesis promptly to remove residual tablets before providing circulatory support."
+    ],
+    "key": "D",
+    "explanations": [
+      "Amiodarone does not reverse tricyclic sodium-channel blockade and may worsen conduction or hypotension in poisoning. Treat the toxic mechanism and manage arrhythmias with toxicology guidance.",
+      "Charcoal is selective and requires airway protection, especially with reduced GCS. It is not a substitute for circulation and QRS-directed therapy.",
+      "Hyperkalaemia is not the principal reason for tricyclic QRS widening. Calcium alone will not reverse the sodium channel blockade.",
+      "Correct: provide ABC resuscitation and IV sodium bicarbonate for widened QRS, hypotension and malignant dysrhythmia risk, titrating to protocol response under poisons/toxicology supervision.",
+      "Induced vomiting is hazardous and inappropriate in altered consciousness. It risks aspiration and delays airway and cardiovascular stabilisation."
+    ],
+    "pearl": "Amitriptyline overdose with QRS widening or terminal R in aVR is sodium-channel-blocking cardiotoxicity: bicarbonate matters.",
+    "pivot": "Narrow-QRS uncomplicated ingestion may require close ECG monitoring and supportive care without immediate alkalinisation, guided by toxicology.",
+    "management": {
+      "steps": [
+        [
+          "Resuscitate",
+          "Manage airway, seizures, perfusion and continuous ECG monitoring."
+        ],
+        [
+          "Treat blockade",
+          "Administer IV sodium bicarbonate boluses according to local toxicology algorithm and ECG response."
+        ],
+        [
+          "Monitor",
+          "Recheck QRS, pH, electrolytes, blood pressure and recurrent seizures."
+        ],
+        [
+          "Escalate",
+          "Consult Australian Poisons Information Centre and critical care for refractory toxicity."
+        ]
+      ],
+      "safety": "Avoid routine antiarrhythmics that can worsen conduction and never induce vomiting in poisoned patients.",
+      "local": "ANZCOR Resuscitation in Special Circumstances, tricyclic depressant toxicity section."
+    },
+    "source": "https://www.anzcor.org/home/adult-advanced-life-support/guideline-11-10-resuscitation-in-special-circumstances",
+    "context": "Advanced integrated clinical decisions"
+  },
+  {
+    "n": 70,
+    "domain": "General practice & geriatrics",
+    "skill": "Acute delirium / reversible illness not new dementia",
+    "stem": "An 82-year-old with mild memory impairment becomes acutely disoriented and inattentive over two days after starting oxybutynin for incontinence. Family members report fluctuating alertness, visual misperceptions and poor fluid intake. Temperature is normal, observations are mildly tachycardic, and no focal neurological deficit is found.",
+    "ask": "Which initial approach is most appropriate?",
+    "options": [
+      "Label the episode as progression of dementia and defer investigation to the memory clinic.",
+      "Start a long-term antipsychotic immediately to suppress visual misperceptions in every setting.",
+      "Reassure that fluctuating confusion is normal ageing and can be observed without assessment.",
+      "Arrange a cognitive screening test only after six weeks with no change in current medicines.",
+      "Assess urgently for delirium, review offending drugs and treat reversible physiological precipitants."
+    ],
+    "key": "E",
+    "explanations": [
+      "Dementia evolves more slowly; abrupt onset, fluctuation and inattention are hallmarks of delirium. Mistaking it for progression delays treatment of reversible causes.",
+      "Antipsychotics are not universal first-line delirium treatment and carry falls, stroke and sedation risks in older adults. They are reserved for selected severe risk situations under protocol.",
+      "Fluctuating confusion is not normal ageing. Dehydration, anticholinergic burden and acute illness can produce dangerous yet potentially treatable delirium.",
+      "Cognitive screening later may be useful once delirium resolves, but does not address today's abrupt cognitive change or the newly introduced anticholinergic medication.",
+      "Correct: evaluate for delirium using a structured attention assessment, check hydration, glucose, infection, retention, constipation and medication changes; reduce anticholinergic exposure and provide supportive reorientation and safety measures."
+    ],
+    "pearl": "Acute fluctuating inattention indicates delirium until proven otherwise, even when background dementia exists.",
+    "pivot": "Gradual years-long decline without abrupt fluctuation is more consistent with a neurocognitive disorder and warrants a planned cognitive evaluation.",
+    "management": {
+      "steps": [
+        [
+          "Detect",
+          "Establish acute timing and attention deficits; use a delirium assessment tool and collateral history."
+        ],
+        [
+          "Identify triggers",
+          "Check medications, hydration, glucose, renal function, urinary retention, constipation and infection clues."
+        ],
+        [
+          "Treat and protect",
+          "Stop inappropriate anticholinergics, correct dehydration and prevent falls while maintaining sleep and sensory aids."
+        ],
+        [
+          "Review",
+          "Reassess mental state and functional baseline; plan cognitive follow-up only after acute resolution."
+        ]
+      ],
+      "safety": "Do not use routine restraints or sedating antipsychotics as a substitute for identifying delirium triggers.",
+      "local": "Australian Commission on Safety and Quality in Health Care Delirium Clinical Care Standard."
+    },
+    "source": "https://www.safetyandquality.gov.au/standards/clinical-care-standards/delirium-clinical-care-standard",
+    "context": "Advanced integrated clinical decisions"
   }
 ]
