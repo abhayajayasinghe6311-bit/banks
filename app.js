@@ -8,15 +8,38 @@ let state=load(),manifest=null,bankData={},route={},activeList=[],cursor=0,filte
 // Late cloud snapshots may restore an unopened bank, but may not hijack a direct
 // question link or an active study session after the user has navigated.
 let allowCloudPositionResume=false,hasNavigatedBank=false;
+function mostRecentBankIndex(bank){
+ const questions=bankData[bank]||[];
+ const saved=Number(state.positions?.[bank]?.n);
+ const savedIndex=questions.findIndex(q=>q.n===saved);
+ if(savedIndex>=0)return savedIndex;
+ // Older accounts without stored cursors can still resume at their most recent
+ // answered question rather than their first unanswered question.
+ const answers=state.banks?.[bank]||{};
+ let index=-1,latest=-1;
+ questions.forEach((q,i)=>{
+  const attempt=answers[q.n],when=Number(attempt?.at);
+  if(attempt&&Number.isFinite(when)&&when>latest){index=i;latest=when;}
+ });
+ return index;
+}
 function restoreSavedBankPosition(){
  const b=route.bank;if(!b||!allowCloudPositionResume||hasNavigatedBank||!bankData[b])return;
- const n=Number(state.positions?.[b]?.n),index=bankData[b].findIndex(q=>q.n===n);
+ const index=mostRecentBankIndex(b);
  if(index>=0){filter='all';domain='all';cursor=index;}
+}
+function persistBankQuestionURL(bank,n){
+ if(new URLSearchParams(location.search).get('bank')!==String(bank))return;
+ const target=new URL(location.href);
+ if(target.searchParams.get('question')===String(n))return;
+ target.searchParams.set('question',String(n));
+ history.replaceState(history.state,'',target.pathname+target.search+target.hash);
 }
 function rememberVisitedBankQuestion(bank,n){
  if(!Number.isInteger(n)||!bankData[bank]?.some(q=>q.n===n))return;
  hasNavigatedBank=true;
  state.positions||={};state.positions[bank]={n,at:Date.now()};
+ persistBankQuestionURL(bank,n);
  save();
 }
 let channel;try{channel=new BroadcastChannel('spaw-garden-online');channel.onmessage=e=>{if((e.data?.uid||null)===accountUID)syncUI()};}catch(e){}
@@ -47,6 +70,7 @@ function updateProgress(bank,n,choice){
  b[n]={choice,correct:choice===q.key,at:Date.now()};
  // Answering without pressing Next still counts as visiting this question.
  state.positions||={};state.positions[bank]={n,at:Date.now()};hasNavigatedBank=true;
+ persistBankQuestionURL(bank,n);
  if(choice!==q.key){
   const r=state.review[id]||{bank:Number(bank),n,firstChoice:choice,tries:0,lastChoice:null,mastered:false,firstWrongAt:Date.now()};
   r.mastered=false;state.review[id]=r;
@@ -814,7 +838,7 @@ function saveStudyNoteBeforeNavigation(){if(pendingStudyNoteSave){pendingStudyNo
 
 function renderBank(){saveStudyNoteBeforeNavigation();const b=route.bank;const bm=manifest.banks.find(x=>x.id===b);if(!bm)return;const qset=bankData[b];if(!qset){$('app').innerHTML='<div class="loading">Opening your questions… 🌷</div>';return;}activeList=filteredQuestions(b);cursor=Math.max(0,Math.min(cursor,activeList.length-1));const q=activeList[cursor],tot=answeredStatus(b);const pct=qset.length?Math.round(tot.attempted*100/qset.length):0;const cats=[...new Set(qset.map(q=>q.domain))].sort();const summary=`${tot.attempted}/${qset.length} answered · ${tot.correct} correct · ${tot.attempted-tot.correct} incorrect`;
  // Keep the question number in the address so a refresh resumes the exact EMQ.
- if(q&&new URLSearchParams(location.search).get('bank')===String(b)){
+ if(q&&(hasNavigatedBank||!allowCloudPositionResume)&&new URLSearchParams(location.search).get('bank')===String(b)){
   const current=new URL(location.href);
   if(current.searchParams.get('question')!==String(q.n)){
    current.searchParams.set('question',String(q.n));
@@ -941,8 +965,9 @@ async function boot(){try{const resp=await fetch('manifest.json',{cache:'no-cach
  allowCloudPositionResume=!params.has('question');hasNavigatedBank=false;
  const explicitNumber=Number(params.get('question'));
  const requested=Number.isInteger(explicitNumber)&&explicitNumber>0?bankData[b].findIndex(q=>q.n===explicitNumber):-1;
- const lastVisited=Number(state.positions?.[b]?.n),savedIndex=bankData[b].findIndex(q=>q.n===lastVisited);
- const firstUnanswered=bankData[b].findIndex(q=>!(state.banks[b]||{})[q.n]);
- cursor=requested>=0?requested:allowCloudPositionResume&&savedIndex>=0?savedIndex:firstUnanswered>=0?firstUnanswered:0;
+ const savedIndex=mostRecentBankIndex(b);
+ // Until a signed-in user's latest cloud progress arrives, don't invent
+ // a question=1 deep link that blocks subsequent position restoration.
+ cursor=requested>=0?requested:allowCloudPositionResume&&savedIndex>=0?savedIndex:0;
  renderBank();}else renderHome();updateBadge();}catch(e){$('app').innerHTML='<div class="load-error"><h2>Could not load the Study Garden 😢</h2><p>'+safe(e.message)+'</p><p>If you are opening the site from a downloaded ZIP, this online-ready version needs a web server. Publish it using GitHub Pages or run a local preview server.</p></div>';}}
 boot();
