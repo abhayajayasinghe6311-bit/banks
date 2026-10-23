@@ -93,3 +93,8 @@ Never imply the remaining content has been written or published until it actuall
 - New topics: congenital CMV, Charcot foot, hypernatraemia, rubella exposure, postoperative hypocalcaemia, warfarin reversal, FND, drowning, SCAD, HHS, influenza, chlamydia, diabetic retinopathy, TB contacts and symptomatic cervical lesion.
 - QA: 45 unique sequential questions, five detailed explanations and four management stages each; answer keys A-E nine each; maximum option word-length spread five. Structural and source checks do not replace final clinical review.
 - Next: Q46-100; do not publish Bank14 until complete and reviewed. Preserve other banks and their checkpoints.
+
+## Bank 14 checkpoint 2026-10-23: 60/100
+- Saved questions 46–60, fifteen new cases. Remaining: 40. Next: question 61.
+- All 60 pass structural QA: sequential numbering, unique skills, five answer explanations, four management steps and safety notes. Correct keys A–E exactly 12 each; largest option word spread five.
+- Bank 14 remains a draft; do not publish until 100 and clinical review. Banks 1–13 and 15 unchanged.
