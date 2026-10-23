@@ -6,7 +6,7 @@ const config = window.SPAW_FIREBASE_CONFIG;
 const configured = Boolean(config && config.apiKey && config.authDomain && config.projectId && config.appId);
 const COLLECTIONS = ['banks','review','bookmarks','annotations'];
 const clone = value => JSON.parse(JSON.stringify(value));
-const blank = () => ({format:'SPAW_ONLINE_PROGRESS_V1',version:1,banks:{},review:{},bookmarks:{},annotations:{},updated:0});
+const blank = () => ({format:'SPAW_ONLINE_PROGRESS_V1',version:1,banks:{},review:{},bookmarks:{},annotations:{},positions:{},updated:0});
 const keyFor = uid => 'spaw.study.garden.cloud.queue.v1.'+uid;
 let auth, firestore, fAuth, fStore, user=null, unsubscribe=null, queue=[], busy=false, connected=false, retryTimer=null, flushTimer=null;
 const status = msg => {if($('cloudStatus'))$('cloudStatus').textContent=msg;};
@@ -38,9 +38,9 @@ $('accountDialog')?.addEventListener('click',event=>{if(event.target===$('accoun
 function different(a,b){return JSON.stringify(a)!==JSON.stringify(b);}
 // Firestore server timestamps change on every write. Ignore timestamp-only snapshots:
 // redrawing a whole question while someone is reading makes the UI feel laggy.
-function sameProgress(a,b){return ['banks','review','bookmarks','annotations','practice'].every(k=>!different(a?.[k]||{},b?.[k]||{}));}
+function sameProgress(a,b){return ['banks','review','bookmarks','annotations','positions','practice'].every(k=>!different(a?.[k]||{},b?.[k]||{}));}
 function makePatch(before,after){
- const patch={banks:{},review:{},bookmarks:{},annotations:{}};
+ const patch={banks:{},review:{},bookmarks:{},annotations:{},positions:{}};
  for(const b of new Set([...Object.keys(before?.banks||{}),...Object.keys(after?.banks||{})])){
   const oldBank=before?.banks?.[b]||{},newBank=after?.banks?.[b]||{};
   for(const n of new Set([...Object.keys(oldBank),...Object.keys(newBank)])){
@@ -53,10 +53,15 @@ function makePatch(before,after){
    if(different(oldMap[id],newMap[id]))patch[collection][id]=newMap[id]===undefined?null:clone(newMap[id]);
   }
  }
+ // Only a user-initiated question change writes positions, not every render.
+ for(const bank of new Set([...Object.keys(before?.positions||{}),...Object.keys(after?.positions||{})])){
+  const oldPos=before?.positions?.[bank],newPos=after?.positions?.[bank];
+  if(different(oldPos,newPos))patch.positions[bank]=newPos===undefined?null:clone(newPos);
+ }
  if(different(before?.practice,after?.practice))patch.practice=after?.practice===undefined?null:clone(after.practice);
  return patch;
 }
-function isEmpty(p){return !Object.keys(p.banks).length&&!Object.keys(p.review).length&&!Object.keys(p.bookmarks).length&&!Object.keys(p.annotations).length&&!('practice' in p);}
+function isEmpty(p){return !Object.keys(p.banks).length&&!Object.keys(p.review).length&&!Object.keys(p.bookmarks).length&&!Object.keys(p.annotations).length&&!Object.keys(p.positions||{}).length&&!('practice' in p);}
 function applyPatch(source,p){
  const v=clone(source?.version===1?source:blank());
  for(const [b,entries] of Object.entries(p.banks||{})){
@@ -70,6 +75,14 @@ function applyPatch(source,p){
  for(const collection of ['review','bookmarks','annotations']){
   const map=v[collection]||(v[collection]={});
   for(const [id,rec] of Object.entries(p[collection]||{})){if(rec===null)delete map[id];else map[id]=clone(rec);}
+ }
+ // Last-write-wins per bank, never allow a late queued position to roll a
+ // newer position backward; answers and annotations are handled separately.
+ v.positions||={};
+ for(const [bank,rec] of Object.entries(p.positions||{})){
+  if(rec===null)continue;
+  if(!Number.isInteger(rec?.n)||!Number.isFinite(rec?.at))continue;
+  if(Number(rec.at)>Number(v.positions[bank]?.at||0))v.positions[bank]=clone(rec);
  }
  if('practice' in p){if(p.practice===null)delete v.practice;else if(v.practice?.created&&v.practice.created===p.practice.created){const oldAnswers=v.practice.answers||{};v.practice={...clone(v.practice),...clone(p.practice),answers:{...(p.practice.answers||{}),...oldAnswers}};}else v.practice=clone(p.practice);}
  v.updated=Date.now();return v;
