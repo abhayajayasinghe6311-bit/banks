@@ -98,3 +98,11 @@ Never imply the remaining content has been written or published until it actuall
 - Saved questions 46–60, fifteen new cases. Remaining: 40. Next: question 61.
 - All 60 pass structural QA: sequential numbering, unique skills, five answer explanations, four management steps and safety notes. Correct keys A–E exactly 12 each; largest option word spread five.
 - Bank 14 remains a draft; do not publish until 100 and clinical review. Banks 1–13 and 15 unchanged.
+
+## Bank 14 checkpoint 2026-10-23 15:30–15:45 Malaysia: 75/100
+- **15 new Q61–75** saved in three sequential commits to `bank14.json` on the shared draft branch; no changes to Bank 13, Bank 15 or Banks 1–12.
+- Q61–65: severe checkpoint-inhibitor colitis, mastoiditis, PID with an IUD, paediatric DKA with K <3.0, acute hypercapnic COPD.
+- Q66–70: atypical childhood UTI and ultrasound, inflammatory mastitis, recent child sexual assault disclosure, appendicitis with indeterminate ultrasound, doxorubicin extravasation.
+- Q71–75: OCD exposure/response prevention, malignant hyperthermia, dysthyroid optic neuropathy, hereditary angioedema airway treatment, type 2 diabetes preconception medication review.
+- Current Bank 14 QA: exactly **75** sequential uniquely numbered questions, five plausible options, five individual explanations, four practical management steps, clinical pearl, diagnostic pivot, safety warning, and Australian guideline source each; answer keys **A=15 B=15 C=15 D=15 E=15**. Maximum answer-option word-count spread **5**; no exact skill duplicates across Banks 11–13. All 15 newly authored sources were checked against reputable Australian clinical resources; final clinical editorial review is still required before publication.
+- **Next: Bank 14 Q76–100, 25 remaining**. Do not publish until 100/100 plus final medical and site QA. Preserve all other bank work and latest shared progress notes.
