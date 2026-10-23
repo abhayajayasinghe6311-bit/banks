@@ -1678,5 +1678,245 @@
       "local": "Australian Immunisation Handbook: measles post-exposure prophylaxis table, six-day NHIG window."
     },
     "source": "https://immunisationhandbook.health.gov.au/resources/tables/table-post-exposure-prophylaxis-needed-within-6-days-144-hours-of-1st-exposure-for-people-exposed-to-measles"
+  },
+  {
+    "n": 36,
+    "domain": "Neurology & vascular surgery",
+    "skill": "Recent carotid TIA / time-sensitive endarterectomy for severe stenosis",
+    "context": "Advanced final-year integrated management",
+    "stem": "A 69-year-old had 20 minutes of right arm weakness and expressive dysphasia two days ago. Symptoms resolved, and brain MRI shows no acute infarct. Carotid imaging demonstrates 82% stenosis of the left internal carotid artery by NASCET criteria, with no contralateral significant disease. He is neurologically intact and medically fit for surgery.",
+    "ask": "What is the most appropriate stroke-prevention strategy now?",
+    "options": [
+      "Arrange urgent vascular assessment for carotid endarterectomy, ideally within two weeks of symptoms.",
+      "Schedule routine surveillance imaging because a resolved deficit means the carotid lesion is asymptomatic.",
+      "Choose carotid stenting automatically because it carries lower perioperative stroke risk than surgery.",
+      "Defer any carotid intervention until three months have passed to minimise the risk of recurrence.",
+      "Treat only with anticoagulation because symptomatic carotid plaques respond best to direct oral anticoagulants."
+    ],
+    "key": "A",
+    "explanations": [
+      "Correct: severe ipsilateral symptomatic stenosis after a nondisabling carotid-territory TIA has a strong evidence-based indication for timely carotid endarterectomy by an experienced low-complication team, alongside intensive medical prevention.",
+      "Symptom resolution does not make the lesion asymptomatic. Early recurrent stroke risk is greatest soon after a TIA, so routine interval surveillance misses a window of benefit.",
+      "Stenting may be reasonable in selected anatomical or procedural circumstances, but endarterectomy is generally preferred because of lower periprocedural stroke risk in many patients.",
+      "Delaying surgery beyond the early symptomatic period reduces the opportunity to prevent recurrent events. Operative timing should be coordinated urgently after specialist assessment.",
+      "Anticoagulation is indicated for specific cardioembolic causes such as atrial fibrillation, not as a routine substitute for treating symptomatic high-grade atherosclerotic carotid stenosis."
+    ],
+    "pearl": "Symptomatic 70–99% carotid stenosis after a nondisabling TIA is an early endarterectomy indication, ideally within 14 days.",
+    "pivot": "A patient with complete carotid occlusion or a disabling large infarct needs a different specialist risk-benefit discussion, not automatic early endarterectomy.",
+    "management": {
+      "steps": [
+        [
+          "Identify territory",
+          "Confirm the TIA symptoms match the ipsilateral carotid lesion and exclude haemorrhage or major infarction."
+        ],
+        [
+          "Refer urgently",
+          "Contact the stroke and vascular teams for early endarterectomy assessment by an audited specialist service."
+        ],
+        [
+          "Prevent recurrence",
+          "Start or optimise antiplatelet, lipid-lowering and vascular risk-factor therapy according to stroke guidance."
+        ],
+        [
+          "Plan procedure",
+          "Review cardiac fitness, anatomy, patient preferences and perioperative stroke/bleeding risk."
+        ]
+      ],
+      "safety": "Do not equate resolved symptoms with a low-risk asymptomatic stenosis; early recurrent stroke remains possible.",
+      "local": "Stroke Foundation Australian 2025 emergency clinical guideline summary: carotid surgery, 70–99% stenosis and ideally within two weeks."
+    },
+    "source": "https://informme.org.au/media/rvroeucq/emergency-department-clinical-guidelines-summary_jun25.pdf"
+  },
+  {
+    "n": 37,
+    "domain": "Psychiatry & general practice",
+    "skill": "First-episode psychosis / exclude reversible causes and initiate coordinated care",
+    "context": "Advanced final-year integrated management",
+    "stem": "A 19-year-old university student has withdrawn socially and developed persecutory beliefs and auditory hallucinations over six weeks. He sleeps poorly and occasionally uses cannabis. He is frightened but cooperative, denies immediate self-harm intent and has no fever, focal neurological signs or fluctuating consciousness. His family requests antipsychotics without any medical assessment.",
+    "ask": "Which initial approach best balances diagnostic safety and timely treatment?",
+    "options": [
+      "Diagnose schizophrenia immediately because six weeks of hallucinations excludes other causes of psychosis.",
+      "Arrange comprehensive risk and medical/substance assessment with early psychosis referral and shared treatment planning.",
+      "Provide only cannabis abstinence advice and defer psychiatric assessment until all symptoms have resolved.",
+      "Start high-dose antipsychotic medication without baseline physical observations or a medication-risk discussion.",
+      "Order extensive autoimmune panels for every patient and withhold any supportive care until results return."
+    ],
+    "key": "B",
+    "explanations": [
+      "Schizophrenia requires a longer overall disturbance and exclusion of substance or medical causes; six weeks of psychosis is not enough to assume the final diagnosis.",
+      "Correct: assess safety, substances, physical and neurological red flags, basic medical causes and functioning; engage an early psychosis service, offer family-inclusive care with consent and consider appropriate antipsychotic treatment with baseline metabolic monitoring.",
+      "Cannabis may contribute to symptoms but does not justify abandoning assessment or treatment. Persistent psychosis requires clinical review and coordinated support even when substance use is present.",
+      "Antipsychotics can help, but avoid unnecessary high initial doses and check weight, BP, metabolic risk, adverse-effect vulnerability and informed preferences before a treatment plan.",
+      "Autoimmune encephalitis investigations are indicated when red flags such as seizures, dyskinesia, autonomic instability or altered consciousness arise; indiscriminate panels can delay care and mislead."
+    ],
+    "pearl": "First-episode psychosis is a syndrome requiring safety, medical and substance assessment; do not label schizophrenia prematurely.",
+    "pivot": "Rapid fluctuating confusion, fever, seizures or new neurological deficits would shift priority toward urgent delirium or encephalitis evaluation.",
+    "management": {
+      "steps": [
+        [
+          "Assess safety",
+          "Evaluate suicidality, aggression risk, command hallucinations, capacity, self-care and available supports."
+        ],
+        [
+          "Screen causes",
+          "Take medication/substance history, examine physical and neurological status, and order targeted initial tests."
+        ],
+        [
+          "Engage services",
+          "Refer promptly to early intervention psychiatry and collaboratively discuss psychosocial and pharmacological options."
+        ],
+        [
+          "Monitor",
+          "Record baseline weight/BMI, BP and relevant metabolic parameters before ongoing antipsychotic treatment."
+        ]
+      ],
+      "safety": "Avoid both premature schizophrenia labelling and delaying care for indiscriminate testing; red flags mandate urgent medical escalation.",
+      "local": "RACGP practical guide to emerging psychosis in adolescents, medical review and antipsychotic metabolic monitoring."
+    },
+    "source": "https://www.racgp.org.au/afp/2013/september/emerging-psychosis-in-adolescents"
+  },
+  {
+    "n": 38,
+    "domain": "Neonatology & haematology",
+    "skill": "Late vitamin K deficiency bleeding / urgent haemostatic correction",
+    "context": "Advanced final-year integrated management",
+    "stem": "A 6-week-old exclusively breastfed infant develops increasing sleepiness, vomiting and a new bulging fontanelle. The parents declined neonatal vitamin K prophylaxis. Examination shows scattered bruises; head imaging reveals intracranial haemorrhage. PT/INR is markedly prolonged, platelets and fibrinogen are normal and there is no family bleeding history.",
+    "ask": "Which immediate targeted treatment is most appropriate alongside neurocritical resuscitation?",
+    "options": [
+      "Begin oral iron supplementation because breastfed infants commonly develop iron-related bleeding.",
+      "Administer prophylactic intramuscular vitamin K only and discharge once the fontanelle softens.",
+      "Give urgent parenteral vitamin K with specialist-guided coagulation factor replacement as required.",
+      "Wait for a full inherited bleeding-disorder panel before reversing the prolonged clotting time.",
+      "Treat with platelet transfusion alone because neonatal bruising indicates platelet failure."
+    ],
+    "key": "C",
+    "explanations": [
+      "Iron deficiency does not explain the extreme PT prolongation or intracranial haemorrhage. Nutritional supplementation cannot treat this life-threatening coagulation failure.",
+      "A routine prophylactic dose is insufficient as a stand-alone response to established intracranial bleeding; treatment needs monitored hospital-level haemostatic correction and neurosurgical assessment.",
+      "Correct: suspect late vitamin K deficiency bleeding, give urgent IV/parenteral phytomenadione under neonatal guidance and provide rapid factor replacement with FFP or other specialist-directed products when bleeding is critical.",
+      "Investigating alternative coagulopathies is appropriate, but waiting for a full panel delays potentially lifesaving vitamin K and haemostatic treatment in a strongly suggestive presentation.",
+      "Platelet count is normal, so isolated platelet transfusion does not correct vitamin K-dependent factor deficiency. Coagulation tests and imaging require urgent serial reassessment."
+    ],
+    "pearl": "An unprotected breastfed infant with bleeding at 2–12 weeks and very prolonged PT/INR may have late vitamin K deficiency bleeding.",
+    "pivot": "Persistent abnormal coagulation after appropriate vitamin K replacement should prompt investigation of liver disease or an inherited coagulation disorder.",
+    "management": {
+      "steps": [
+        [
+          "Stabilise",
+          "Activate neonatal intensive care, assess airway and perfusion, and involve neurosurgery for intracranial bleeding."
+        ],
+        [
+          "Correct",
+          "Give specialist-guided parenteral vitamin K and rapid haemostatic factor replacement when severe bleeding requires it."
+        ],
+        [
+          "Investigate",
+          "Repeat PT/INR, APTT, fibrinogen, platelets and liver tests while assessing intracranial injury."
+        ],
+        [
+          "Prevent recurrence",
+          "Document prophylaxis history, counsel caregivers and investigate malabsorption or cholestasis if indicated."
+        ]
+      ],
+      "safety": "Life-threatening bleeding needs immediate haemostatic support; oral prophylaxis alone is not adequate treatment.",
+      "local": "RCPA Manual: haemorrhagic disease of the newborn; NHMRC vitamin K prophylaxis recommendation."
+    },
+    "source": "https://www.rcpa.edu.au/Manuals/RCPA-Manual/Clinical-Presentations-and-Diagnoses/H/Haemorrhagic-disease-of-the-newborn"
+  },
+  {
+    "n": 39,
+    "domain": "Maternal fetal medicine & infectious diseases",
+    "skill": "Maternal parvovirus B19 / fetal anaemia surveillance",
+    "context": "Advanced final-year integrated management",
+    "stem": "A 27-year-old childcare worker at 18 weeks' gestation develops mild arthralgia and a rash after a workplace parvovirus B19 outbreak. Maternal serology confirms recent infection. Ultrasound shows a normally grown fetus with no hydrops, and she feels well. She asks whether a single reassuring scan excludes any fetal complication.",
+    "ask": "What is the most appropriate next antenatal plan?",
+    "options": [
+      "Reassure that absence of hydrops today rules out later fetal anaemia and needs no further surveillance.",
+      "Recommend immediate delivery because parvovirus infection at 18 weeks always leads to fetal deterioration.",
+      "Give routine maternal antiviral treatment and repeat ultrasound only if maternal fever returns.",
+      "Refer for serial specialist ultrasound surveillance, including fetal anaemia assessment using MCA Doppler.",
+      "Offer maternal MMR vaccination because it provides cross-protection against fetal parvovirus infection."
+    ],
+    "key": "D",
+    "explanations": [
+      "Fetal anaemia or hydrops can develop after maternal infection even when the initial scan is normal. A single normal ultrasound cannot end surveillance.",
+      "Most maternal parvovirus infections do not cause serious fetal complications. At 18 weeks, delivery would cause extreme prematurity and is not indicated without severe fetal disease.",
+      "There is no established routine maternal antiviral treatment that prevents fetal anaemia from parvovirus B19. Management focuses on fetal monitoring and specialist intervention when needed.",
+      "Correct: refer to maternal fetal medicine for serial ultrasound and middle cerebral artery peak systolic velocity Doppler to detect evolving anaemia or hydrops over the subsequent weeks.",
+      "MMR targets measles, mumps and rubella, not parvovirus B19, and is contraindicated during pregnancy as a live vaccine."
+    ],
+    "pearl": "Maternal parvovirus B19 can suppress fetal erythropoiesis; fetal anaemia may appear weeks after a reassuring initial scan.",
+    "pivot": "Maternal IgG positive with IgM negative and no recent exposure evidence usually indicates past immunity rather than an acute fetal-risk episode.",
+    "management": {
+      "steps": [
+        [
+          "Confirm",
+          "Review maternal exposure history and interpret IgM/IgG with obstetric infectious-disease advice."
+        ],
+        [
+          "Refer",
+          "Arrange maternal fetal medicine review and serial ultrasound with MCA Doppler and hydrops assessment."
+        ],
+        [
+          "Escalate findings",
+          "Discuss suspected fetal anaemia with a fetal therapy centre for confirmatory assessment and possible transfusion."
+        ],
+        [
+          "Counsel",
+          "Explain that most pregnancies do well, provide warning advice and document follow-up intervals."
+        ]
+      ],
+      "safety": "Do not terminate surveillance after one normal scan; hydrops and fetal anaemia may be delayed.",
+      "local": "Queensland Metro South GP Maternity Shared Care Education 2024, parvovirus B19 pregnancy risks and surveillance."
+    },
+    "source": "https://www.metrosouth.health.qld.gov.au/__data/assets/pdf_file/0016/308302/gp-maternity-share-care-am2-sep24.pdf"
+  },
+  {
+    "n": 40,
+    "domain": "General practice & respiratory medicine",
+    "skill": "Mild asthma / avoid SABA-only treatment",
+    "context": "Advanced final-year integrated management",
+    "stem": "A 23-year-old with confirmed asthma uses salbutamol for wheeze twice weekly. He has no night waking and normal spirometry between symptoms, but had an ED-treated exacerbation last year. He asks for another salbutamol prescription and declines daily inhaled treatment because he feels well most days.",
+    "ask": "Which treatment discussion best follows current Australian asthma recommendations?",
+    "options": [
+      "Continue salbutamol alone because intermittent symptoms make inhaled anti-inflammatory treatment unnecessary.",
+      "Replace salbutamol with a long-acting beta agonist alone to improve exercise tolerance safely.",
+      "Prescribe oral prednisolone whenever he exercises because it prevents all future exacerbations.",
+      "Use antibiotics as the regular reliever because most mild asthma exacerbations are infection-related.",
+      "Offer an inhaled corticosteroid-containing regimen, such as as-needed low-dose ICS–formoterol."
+    ],
+    "key": "E",
+    "explanations": [
+      "SABA-only treatment increases severe exacerbation risk even in people with infrequent symptoms. His previous ED visit reinforces the need for anti-inflammatory treatment.",
+      "LABA monotherapy is unsafe in asthma and increases severe exacerbation risk; it must be paired with inhaled corticosteroid in an appropriate regimen.",
+      "Systemic corticosteroids have significant cumulative harms and are not a preventive substitute for regular or symptom-driven inhaled corticosteroid treatment.",
+      "Antibiotics do not treat underlying airway inflammation and are not routine reliever therapy. They are reserved for specific bacterial infections when clinically indicated.",
+      "Correct: explain exacerbation prevention and offer guideline-supported ICS-containing therapy, commonly low-dose budesonide–formoterol as needed, with inhaler technique training and a written action plan."
+    ],
+    "pearl": "Adults and adolescents with asthma should not be managed with SABA alone, even when symptoms are infrequent.",
+    "pivot": "More frequent symptoms or exacerbations may warrant maintenance-and-reliever therapy or step-up treatment after assessing adherence and technique.",
+    "management": {
+      "steps": [
+        [
+          "Assess control",
+          "Review symptoms, exacerbations, reliever use, triggers and risk factors for severe attacks."
+        ],
+        [
+          "Prescribe prevention",
+          "Discuss ICS-containing options and agree on a suitable regimen instead of SABA monotherapy."
+        ],
+        [
+          "Teach",
+          "Demonstrate inhaler technique and create a personalised written asthma action plan."
+        ],
+        [
+          "Review",
+          "Arrange follow-up to assess response, adherence, side effects and need for treatment adjustment."
+        ]
+      ],
+      "safety": "Never prescribe a long-acting beta agonist as monotherapy for asthma; ICS is required.",
+      "local": "Australian Asthma Handbook, treatment levels for adults and adolescents, ICS–formoterol recommendation."
+    },
+    "source": "https://www.asthmahandbook.org.au/management/adults-and-adolescents/medication-management/treatment-levels-for-adults-and-adolescents"
   }
 ]
