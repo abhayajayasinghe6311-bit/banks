@@ -3358,5 +3358,245 @@
       "local": "eviQ Extravasation management protocol 157, SLAP immediate actions."
     },
     "source": "https://www.eviq.org.au/clinical-resources/extravasation/157-extravasation-management"
+  },
+  {
+    "n": 71,
+    "domain": "Psychiatry & general practice",
+    "skill": "Obsessive-compulsive disorder / exposure with response prevention",
+    "context": "Advanced final-year clinical prioritisation",
+    "stem": "A 26-year-old checks the front door lock for 90 minutes nightly because she fears her family will be harmed if she leaves it unchecked. She knows the belief is excessive, avoids leaving home and has no psychotic symptoms. She requests a therapy that will help her tolerate uncertainty without reinforcing checking rituals.",
+    "ask": "Which psychological treatment best targets the maintaining mechanism?",
+    "options": [
+      "Use graded exposure to feared situations while deliberately preventing the usual checking response.",
+      "Offer supportive reassurance that the door is locked whenever anxiety becomes uncomfortable.",
+      "Teach thought suppression and distraction whenever the feared image enters her mind.",
+      "Encourage family members to perform the checking ritual so she can leave on time.",
+      "Use hypnosis to recover a forgotten trauma assumed to explain the compulsive behaviour."
+    ],
+    "key": "A",
+    "explanations": [
+      "Correct: exposure and response prevention, a form of CBT, deliberately confronts feared uncertainty while reducing compulsions. It breaks the cycle of temporary anxiety relief that reinforces repeated checking.",
+      "Repeated reassurance functions like a compulsion and often maintains OCD by preventing tolerance of uncertainty. Family accommodation should be addressed rather than strengthened.",
+      "Attempted thought suppression often increases intrusive-thought salience. ERP changes behavioural responses and distress tolerance rather than requiring intrusive thoughts to disappear.",
+      "Delegating rituals to family preserves avoidance and can increase family burden. Treatment often includes reducing accommodation gradually with collaborative support.",
+      "There is no requirement to identify a hidden trauma before treating OCD. Hypnosis lacks the evidence base of ERP for reducing compulsive rituals."
+    ],
+    "pearl": "ERP works by confronting obsessional triggers while resisting the ritual; reassurance and family accommodation can perpetuate OCD.",
+    "pivot": "Fixed bizarre beliefs without insight, hallucinations or disorganisation may require additional psychosis assessment rather than assuming uncomplicated OCD.",
+    "management": {
+      "steps": [
+        [
+          "Assess",
+          "Evaluate obsessions, compulsions, insight, functional impairment, depression and suicide risk."
+        ],
+        [
+          "Offer ERP",
+          "Refer for structured CBT with graded exposure hierarchy and response prevention practice."
+        ],
+        [
+          "Consider medication",
+          "Discuss an SSRI for significant symptoms or patient preference, including expected latency and monitoring."
+        ],
+        [
+          "Support recovery",
+          "Reduce family accommodation, track time spent on rituals and plan relapse prevention."
+        ]
+      ],
+      "safety": "Avoid framing intrusive thoughts as intent; assess risk carefully but do not use repeated reassurance as the primary intervention.",
+      "local": "RACGP Obsessive-compulsive disorder – The role of the GP; ERP evidence and referral principles."
+    },
+    "source": "https://www.racgp.org.au/afp/2013/september/ocd"
+  },
+  {
+    "n": 72,
+    "domain": "Anaesthetics & perioperative emergencies",
+    "skill": "Malignant hyperthermia / early dantrolene and stop triggers",
+    "context": "Advanced final-year clinical prioritisation",
+    "stem": "During an elective operation under sevoflurane after suxamethonium, a 28-year-old develops rapidly rising end-tidal CO₂ despite increased ventilation, generalised rigidity and tachycardia. Core temperature begins rising and an arterial gas shows severe respiratory and metabolic acidosis with potassium 6.1 mmol/L. The anaesthetist suspects malignant hyperthermia.",
+    "ask": "What is the most appropriate immediate treatment bundle?",
+    "options": [
+      "Continue the volatile agent while increasing fresh gas flow and treating the fever alone.",
+      "Stop triggering agents, deliver 100% oxygen and promptly administer IV dantrolene.",
+      "Give additional suxamethonium to relieve rigidity before attempting definitive treatment.",
+      "Delay dantrolene until creatine kinase returns because hyperthermia is not diagnostic alone.",
+      "Start broad-spectrum antibiotics and cooling while waiting for a blood culture result."
+    ],
+    "key": "B",
+    "explanations": [
+      "Increasing ventilation and cooling are supportive but continuing volatile anaesthesia sustains the trigger. Immediate cessation and specific antidote are essential.",
+      "Correct: declare an MH crisis, stop volatile agents and suxamethonium, ventilate with 100% oxygen, administer dantrolene promptly according to actual body weight and treat hyperkalaemia/acidosis while arranging ICU monitoring.",
+      "Suxamethonium is itself a malignant hyperthermia trigger. Repeating it may worsen the crisis and life-threatening metabolic complications.",
+      "MH is a clinical emergency; CK may rise later and cannot safely gate treatment. Early hypercapnia and rigidity are key clues even before marked temperature elevation.",
+      "Sepsis is a differential, but abrupt intraoperative hypercapnia and rigidity after triggering anaesthetics point strongly to MH. Antibiotics cannot replace dantrolene."
+    ],
+    "pearl": "Unexplained rising end-tidal CO₂ and rigidity after volatile agents or suxamethonium should trigger immediate malignant hyperthermia treatment.",
+    "pivot": "Isolated fever without rising CO₂, rigidity or anaesthetic exposure requires assessment for alternative perioperative causes.",
+    "management": {
+      "steps": [
+        [
+          "Declare and stop",
+          "Call for MH assistance, stop triggering anaesthetics and switch to non-triggering techniques."
+        ],
+        [
+          "Ventilate",
+          "Use 100% oxygen at high fresh gas flow and support ventilation and haemodynamics."
+        ],
+        [
+          "Give antidote",
+          "Administer IV dantrolene immediately per MH protocol and repeat as clinically required."
+        ],
+        [
+          "Manage complications",
+          "Treat hyperkalaemia/acidosis, cool appropriately, monitor urine output and transfer to ICU."
+        ]
+      ],
+      "safety": "Do not wait for fever or CK confirmation; severe hyperkalaemia and arrhythmias may develop rapidly.",
+      "local": "ANZCA PS55 malignant hyperthermia Appendix 2, April 2026 update; MHANZ guidance."
+    },
+    "source": "https://www.anzca.edu.au/news-and-safety-alerts/ps55-mh-update-increased-minimum-recommended-dantrolene-stocks"
+  },
+  {
+    "n": 73,
+    "domain": "Ophthalmology & endocrinology",
+    "skill": "Thyroid eye disease / dysthyroid optic neuropathy emergency",
+    "context": "Advanced final-year clinical prioritisation",
+    "stem": "A 44-year-old with Graves disease has months of gritty eyes and proptosis but now reports rapidly worsening colour vision in the left eye. Visual acuity has fallen to 6/24, there is a relative afferent pupillary defect and optic disc swelling. She is already taking lubricating drops and her thyroid function is improving.",
+    "ask": "What is the best next action?",
+    "options": [
+      "Increase artificial tears and review routinely because thyroid eye disease is usually self-limiting.",
+      "Wait for normal thyroid hormone results before referring because ocular signs always track biochemistry.",
+      "Arrange emergency ophthalmology assessment for possible compressive optic neuropathy and vision-saving treatment.",
+      "Start topical antibiotics for presumed bacterial conjunctivitis and repeat colour vision next week.",
+      "Recommend cosmetic orbital surgery after disease inactivity without investigating the new visual deficit."
+    ],
+    "key": "C",
+    "explanations": [
+      "Lubrication helps exposure symptoms but cannot reverse optic nerve compression. New acuity and colour loss with an afferent defect indicate threatened vision.",
+      "Thyroid function control is important but eye disease can progress independently of serum hormone levels. Delaying referral risks permanent optic nerve injury.",
+      "Correct: rapidly worsening visual function, colour desaturation and pupillary changes suggest dysthyroid optic neuropathy. Urgent ophthalmology/orbital specialist assessment and treatment such as high-dose IV glucocorticoids or decompression may be required.",
+      "Conjunctivitis causes redness and discharge, not a relative afferent pupillary defect and progressive colour loss. Antibiotic drops are not the appropriate primary response.",
+      "Elective rehabilitative surgery is considered in stable disease; acute optic neuropathy requires immediate medical or surgical vision-preserving therapy."
+    ],
+    "pearl": "In thyroid eye disease, reduced colour vision, acuity or a new RAPD is an emergency for possible optic neuropathy.",
+    "pivot": "Stable mild gritty symptoms without vision loss may be managed with ocular surface care and scheduled specialist follow-up.",
+    "management": {
+      "steps": [
+        [
+          "Recognise",
+          "Check acuity, colour vision, pupils, ocular motility and corneal exposure."
+        ],
+        [
+          "Refer urgently",
+          "Contact emergency ophthalmology/orbital specialists for suspected compressive optic neuropathy."
+        ],
+        [
+          "Treat vision threat",
+          "Coordinate urgent imaging and specialist-directed IV glucocorticoids or decompression as indicated."
+        ],
+        [
+          "Coordinate",
+          "Optimise thyroid disease and smoking cessation, and follow visual function closely."
+        ]
+      ],
+      "safety": "Normalising thyroid tests do not exclude progression to sight-threatening orbital disease.",
+      "local": "Metro North Health Thyroid Eye Disease ophthalmology referral criteria, optic nerve involvement."
+    },
+    "source": "https://metronorth.health.qld.gov.au/specialist_service/refer-your-patient/ophthalmology/thyroid-eye-disease"
+  },
+  {
+    "n": 74,
+    "domain": "Immunology & airway emergencies",
+    "skill": "Hereditary angioedema / bradykinin-directed acute treatment",
+    "context": "Advanced final-year clinical prioritisation",
+    "stem": "A 24-year-old with documented C1-inhibitor deficiency develops progressive tongue swelling and a muffled voice after dental work. She has no urticaria, itch, wheeze or hypotension. Her previous episodes responded poorly to antihistamines and steroids. Oxygenation is preserved, and her partner brings her prescribed icatibant supply.",
+    "ask": "What is the most appropriate urgent treatment approach?",
+    "options": [
+      "Give antihistamine alone and observe because preserved oxygenation excludes airway obstruction.",
+      "Administer intramuscular adrenaline as the sole definitive treatment for C1-inhibitor deficiency.",
+      "Provide systemic corticosteroids and await their delayed anti-inflammatory effect before escalation.",
+      "Give specific HAE attack therapy promptly and arrange expert airway observation and preparation.",
+      "Encourage oral fluids and discharge once tongue swelling stops increasing for ten minutes."
+    ],
+    "key": "D",
+    "explanations": [
+      "Antihistamines do not block bradykinin-mediated HAE attacks. Laryngeal swelling may progress despite initially normal saturation and requires emergency management.",
+      "Adrenaline remains essential when anaphylaxis is suspected, but established hereditary bradykinin-mediated angioedema typically does not respond to it; specific therapy is needed.",
+      "Corticosteroids are not effective for the mechanism of C1-inhibitor deficiency. Waiting for their effect may lose the opportunity to protect the airway.",
+      "Correct: give prescribed icatibant or C1-inhibitor concentrate according to the HAE plan, involve airway/anaesthetic specialists, and monitor in hospital for progression. The site and voice change make this high risk.",
+      "Brief stability cannot establish safety in oropharyngeal HAE. Swelling can recur or progress and may require airway intervention by an experienced team."
+    ],
+    "pearl": "HAE is bradykinin-mediated: antihistamines, corticosteroids and adrenaline are ineffective for established HAE attacks.",
+    "pivot": "Urticaria, bronchospasm and hypotension after an allergen instead suggest anaphylaxis, where IM adrenaline is first-line.",
+    "management": {
+      "steps": [
+        [
+          "Assess airway",
+          "Call anaesthesia/ENT and evaluate voice, swallowing, stridor and ability to protect airway."
+        ],
+        [
+          "Give targeted drug",
+          "Administer icatibant or C1-inhibitor concentrate promptly per the individual emergency plan."
+        ],
+        [
+          "Observe safely",
+          "Monitor in hospital with equipment and expert staff prepared for controlled airway intervention."
+        ],
+        [
+          "Prevent recurrence",
+          "Arrange immunology follow-up and review short-term prophylaxis before future dental procedures."
+        ]
+      ],
+      "safety": "Normal initial SpO₂ is not reassuring in upper-airway HAE; airway obstruction may develop suddenly.",
+      "local": "ASCIA Hereditary Angioedema position paper and HAE management plan."
+    },
+    "source": "https://www.allergy.org.au/images/stories/pospapers/ASCIA_HP_Position_Paper_HAE_2020_Aug_Update.pdf"
+  },
+  {
+    "n": 75,
+    "domain": "General practice & preconception medicine",
+    "skill": "Type 2 diabetes preconception / medication teratogenicity review",
+    "context": "Advanced final-year clinical prioritisation",
+    "stem": "A 33-year-old with type 2 diabetes and hypertension wishes to conceive within six months. Her HbA1c is 8.1%, BP 132/80 mmHg, and current medicines include metformin, an ACE inhibitor and a statin. She has not started folate and says she plans to stop all her tablets only after a positive home pregnancy test.",
+    "ask": "Which preconception plan most appropriately reduces maternal and fetal risks?",
+    "options": [
+      "Continue every current medicine until pregnancy is confirmed because organ development begins after the missed period.",
+      "Stop metformin immediately without alternative glycaemic treatment and delay all other medication changes.",
+      "Replace the ACE inhibitor with another renin–angiotensin blocker because ARBs are safer during conception.",
+      "Focus only on weight loss because medicine changes are unnecessary while blood pressure is controlled.",
+      "Optimise glycaemia and review ACE inhibitor, statin and folate before attempting conception."
+    ],
+    "key": "E",
+    "explanations": [
+      "Organogenesis occurs early and medication exposure may precede pregnancy recognition. ACE inhibitors and statins need proactive preconception review, not delayed consideration.",
+      "Unplanned cessation of glucose-lowering therapy can worsen hyperglycaemia, itself teratogenic. Metformin may be continued in selected circumstances while the specialist team optimises treatment.",
+      "ARBs also carry fetal risk and are not suitable substitutions for ACE inhibitors in pregnancy planning. Choose pregnancy-compatible blood pressure management with clinicians.",
+      "Nutrition and weight-related care are helpful but cannot replace addressing hyperglycaemia, teratogenic medication exposure and recommended folate.",
+      "Correct: arrange multidisciplinary preconception care, aim for HbA1c close to normal safely (ideally <6.5%), change ACE inhibitor and statin before conception, start recommended higher-dose folate and plan pregnancy-safe glucose/BP therapy."
+    ],
+    "pearl": "Preconception diabetes care must address hyperglycaemia and teratogenic medications before pregnancy is detected.",
+    "pivot": "If pregnancy is already confirmed, urgently review medicines and glucose control without abruptly stopping all diabetes treatment.",
+    "management": {
+      "steps": [
+        [
+          "Review risk",
+          "Assess HbA1c, BP, renal function, albuminuria, eye screening and pregnancy goals."
+        ],
+        [
+          "Optimise therapy",
+          "Plan safe glycaemic control with diabetes-obstetric clinicians and replace contraindicated BP/lipid medicines."
+        ],
+        [
+          "Supplement",
+          "Begin recommended preconception folic acid and review other pregnancy supplements."
+        ],
+        [
+          "Coordinate",
+          "Offer contraception until ready, arrange multidisciplinary preconception follow-up and early antenatal booking."
+        ]
+      ],
+      "safety": "Do not abruptly cease insulin or all glucose-lowering therapy; untreated hyperglycaemia increases fetal anomaly risk.",
+      "local": "RACGP Management of type 2 diabetes: reproductive health and pregnancy recommendations, 2024."
+    },
+    "source": "https://www.racgp.org.au/clinical-resources/clinical-guidelines/key-racgp-guidelines/view-all-racgp-guidelines/management-of-type-2-diabetes/summary-of-recommendations"
   }
 ]
