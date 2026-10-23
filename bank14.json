@@ -2638,5 +2638,245 @@
       "local": "Australian Immunisation Handbook varicella high-risk post-exposure prophylaxis recommendations."
     },
     "source": "https://immunisationhandbook.health.gov.au/contents/vaccine-preventable-diseases/varicella-chickenpox"
+  },
+  {
+    "n": 56,
+    "domain": "Women's health & breast surgery",
+    "skill": "Lactational breast abscess / drainage without routine cessation of breastfeeding",
+    "context": "Advanced integrated clinical decisions",
+    "stem": "A 28-year-old is three weeks postpartum and breastfeeding. After five days of painful focal breast swelling and fever despite appropriate antibiotics for mastitis, ultrasound reveals a 3.5-cm fluid collection. She is haemodynamically stable and wants to continue breastfeeding if possible. The overlying skin is intact.",
+    "ask": "What is the most appropriate next management plan?",
+    "options": [
+      "Arrange image-guided aspiration or drainage with antibiotics and support continued milk removal.",
+      "Stop breastfeeding permanently because any breast abscess makes expressed milk unsafe for the infant.",
+      "Extend the same antibiotics alone for another week without addressing the confirmed collection.",
+      "Perform immediate mastectomy because drainage is unlikely to resolve a lactational infection.",
+      "Use vigorous deep breast massage to rupture the abscess into the surrounding milk ducts."
+    ],
+    "key": "A",
+    "explanations": [
+      "Correct. A confirmed breast abscess usually requires source control by ultrasound-guided aspiration or another appropriate drainage procedure, often with culture and targeted antibiotics. Breastfeeding or gentle expression can generally continue with specialist lactation support, depending on wound position and comfort.",
+      "Breastfeeding usually need not cease because of mastitis or a drained abscess. Unnecessary cessation can worsen engorgement and undermine feeding; discuss temporary adjustments if drainage placement interferes with attachment.",
+      "Antibiotics alone may not penetrate or empty a well-formed purulent collection. Persistent symptoms despite therapy and ultrasound confirmation warrant drainage assessment.",
+      "Mastectomy is not standard management for an uncomplicated lactational abscess. Less invasive drainage is generally appropriate, with surgery reserved for selected complex or refractory cases.",
+      "Forceful massage can worsen inflammation and tissue injury. A fluctuant abscess needs controlled drainage rather than attempting to mechanically rupture it."
+    ],
+    "pearl": "A lactational abscess is a source-control problem: drain the collection and preserve breastfeeding where feasible.",
+    "pivot": "Inflammatory mastitis without a discrete collection may respond to supportive care and, when bacterial infection is likely, antibiotics without drainage.",
+    "management": {
+      "steps": [
+        [
+          "Assess",
+          "Check sepsis signs, feeding history, examination and ultrasound extent of the collection."
+        ],
+        [
+          "Drain",
+          "Arrange ultrasound-guided aspiration or surgical drainage as appropriate, and send pus for culture."
+        ],
+        [
+          "Treat",
+          "Review antibiotic choice against likely pathogens, culture, allergies and breastfeeding compatibility."
+        ],
+        [
+          "Support feeding",
+          "Offer lactation review, gentle milk removal, analgesia and reassessment for recurrence or unresolved swelling."
+        ]
+      ],
+      "safety": "Do not rely on repeated antibiotic courses alone for a persistent ultrasound-confirmed abscess or recommend aggressive massage.",
+      "local": "Queensland Health obstetric/neonatal mastitis and breast abscess clinical pathway."
+    },
+    "source": "https://www.health.qld.gov.au/__data/assets/pdf_file/0013/1215031/6.Obstetrics-and-neonatal.pdf"
+  },
+  {
+    "n": 57,
+    "domain": "Paediatric oncology & haematology",
+    "skill": "Hyperleukocytosis in new leukaemia / avoid reflex red cell transfusion",
+    "context": "Advanced integrated clinical decisions",
+    "stem": "A 9-year-old with pallor, bruising and bone pain has WCC 225 × 10⁹/L with circulating blasts, haemoglobin 74 g/L and platelets 35 × 10⁹/L. He is alert but mildly tachypnoeic with normal blood pressure. A junior clinician proposes an immediate full-volume red-cell transfusion before contacting oncology.",
+    "ask": "What is the safest initial management principle?",
+    "options": [
+      "Transfuse packed red cells rapidly because the haemoglobin is below the usual paediatric threshold.",
+      "Urgently involve paediatric oncology and avoid routine red-cell transfusion until specialist review.",
+      "Start iron supplementation and arrange outpatient haematology review once tachypnoea has resolved.",
+      "Perform a lumbar puncture immediately to confirm CNS involvement before beginning any supportive care.",
+      "Give high-dose diuretics first to prevent pulmonary oedema caused by the circulating blasts."
+    ],
+    "key": "B",
+    "explanations": [
+      "Red cells increase blood viscosity and can worsen leukostasis when the blast count is extremely high. Even with anaemia, transfusion should be directed by oncology and may require limited volumes in selected circumstances.",
+      "Correct. Hyperleukocytosis can cause cerebral or pulmonary leukostasis, bleeding and tumour lysis. Urgently involve oncology/PICU, institute monitored hydration and metabolic surveillance, support platelets/coagulation and defer routine red cells unless specialists judge them necessary.",
+      "Iron deficiency does not explain a very high blast count with thrombocytopenia and systemic symptoms. This is an oncological emergency requiring inpatient care.",
+      "Lumbar puncture may be part of leukaemia staging later but is not the first priority in a child with extreme leukocytosis and thrombocytopenia. Initial stabilisation and specialist planning are essential.",
+      "Routine diuresis without assessing volume status does not reduce leukostasis and may worsen dehydration and hyperviscosity. Fluids require careful monitored prescription."
+    ],
+    "pearl": "In hyperleukocytosis, transfusing red cells can worsen viscosity and leukostasis; discuss with paediatric oncology first.",
+    "pivot": "Symptomatic severe anaemia without hyperleukocytosis may justify transfusion according to ordinary paediatric thresholds and clinical status.",
+    "management": {
+      "steps": [
+        [
+          "Recognise",
+          "Identify possible acute leukaemia with hyperleukocytosis and assess respiratory, neurological and bleeding signs."
+        ],
+        [
+          "Escalate",
+          "Call paediatric oncology and critical care/retrieval urgently; avoid unsupervised red-cell transfusion."
+        ],
+        [
+          "Support",
+          "Begin specialist-guided hydration and monitor tumour lysis electrolytes, renal function and coagulation."
+        ],
+        [
+          "Prepare treatment",
+          "Support platelet/coagulation targets and arrange definitive cytoreduction or leukaemia therapy under oncology."
+        ]
+      ],
+      "safety": "A seemingly routine red-cell transfusion may precipitate leukostasis complications in extreme hyperleukocytosis.",
+      "local": "Royal Children's Hospital Oncological emergencies: Hyperleukocytosis guideline, updated October 2025."
+    },
+    "source": "https://www.rch.org.au/clinicalguide/guideline_index/Oncological_emergencies__Hyperleukocytosis/"
+  },
+  {
+    "n": 58,
+    "domain": "Geriatric medicine & antimicrobial stewardship",
+    "skill": "Asymptomatic bacteriuria / delirium with an alternative trigger",
+    "context": "Advanced integrated clinical decisions",
+    "stem": "An 84-year-old nursing-home resident becomes acutely inattentive two days after starting oxybutynin and has not opened her bowels for four days. She is afebrile, haemodynamically stable and has no dysuria, urgency, flank pain or suprapubic tenderness. A routine urine culture grows E. coli. Her daughter requests antibiotics to treat the confusion.",
+    "ask": "What is the most appropriate initial clinical response?",
+    "options": [
+      "Treat the urine culture with IV antibiotics because confusion alone confirms urinary sepsis.",
+      "Start oral trimethoprim immediately and defer medication review until the confusion resolves.",
+      "Assess delirium causes and avoid antibiotics for bacteriuria without convincing UTI evidence.",
+      "Repeat urine cultures daily until sterile because bacterial eradication will prevent recurrent delirium.",
+      "Prescribe prophylactic antibiotics indefinitely because residential-care residents have frequent positive cultures."
+    ],
+    "key": "C",
+    "explanations": [
+      "A positive culture is common in older residents and does not prove symptomatic UTI. In a stable patient with plausible anticholinergic and constipation triggers, antibiotics may cause harm without improving cognition.",
+      "Empirical antibiotics should be reserved for a convincing infection syndrome or clinical deterioration. Oxybutynin and constipation deserve immediate attention in this scenario.",
+      "Correct. Confirm delirium with an attention-based assessment, evaluate medicines, pain, constipation, hydration and other causes, and withhold treatment of asymptomatic bacteriuria when there are no convincing urinary or systemic signs. Reassess if fever, instability or localising symptoms develop.",
+      "Repeated surveillance cultures can drive overtreatment and do not establish that bacteria are causing delirium. Clinical change, not culture clearance, guides reassessment.",
+      "Chronic antibiotics for colonisation increase resistance, adverse reactions and Clostridioides difficile risk. They are not routine delirium prevention."
+    ],
+    "pearl": "Bacteriuria is common in aged care; treat a clinical UTI syndrome, not an isolated positive culture.",
+    "pivot": "Fever, haemodynamic instability, new urinary symptoms or otherwise unexplained deterioration should trigger reassessment for symptomatic UTI and sepsis.",
+    "management": {
+      "steps": [
+        [
+          "Recognise delirium",
+          "Document acute onset, fluctuating attention, baseline cognition and physiological observations."
+        ],
+        [
+          "Search for triggers",
+          "Review anticholinergics, constipation, pain, hydration, hypoxia and other metabolic or infectious causes."
+        ],
+        [
+          "Steward antibiotics",
+          "Avoid treating isolated bacteriuria; prescribe antimicrobials if clinical evidence supports infection."
+        ],
+        [
+          "Support and reassess",
+          "Optimise orientation, mobility, sleep, bowel care and hydration; monitor for new infection signs."
+        ]
+      ],
+      "safety": "Do not attribute all confusion to a urine culture or ignore serious infection if systemic signs later emerge.",
+      "local": "Queensland Health residential aged-care UTI and new confusion clinical pathways."
+    },
+    "source": "https://www.health.qld.gov.au/clinical-practice/guidelines-procedures/clinical-pathways/residential-aged-care-clinical-pathways/all-pathways/urinary-tract-infection-uti"
+  },
+  {
+    "n": 59,
+    "domain": "Neurology & emergency stroke medicine",
+    "skill": "Acute vestibular syndrome / posterior circulation stroke red flags",
+    "context": "Advanced integrated clinical decisions",
+    "stem": "A 66-year-old with hypertension develops sudden continuous vertigo, vomiting and inability to stand unaided. Examination shows direction-changing gaze-evoked nystagmus and severe truncal ataxia, but no facial droop or arm weakness. An early non-contrast CT head is reported as normal. Symptoms began 90 minutes ago.",
+    "ask": "What is the most appropriate immediate pathway?",
+    "options": [
+      "Diagnose benign positional vertigo because the FAST screen is negative and the CT is normal.",
+      "Discharge with prochlorperazine after symptom relief because posterior strokes always cause limb weakness.",
+      "Perform an Epley manoeuvre and observe because continuous vertigo is usually canalithiasis.",
+      "Activate acute stroke assessment and urgent specialist neurovascular imaging for posterior stroke.",
+      "Arrange outpatient audiology because direction-changing nystagmus is typical of peripheral labyrinthitis."
+    ],
+    "key": "D",
+    "explanations": [
+      "FAST does not capture every posterior circulation stroke. Severe gait inability and central nystagmus are concerning, and early CT is relatively insensitive for posterior fossa ischaemia.",
+      "Antiemetics can relieve symptoms but do not treat cerebellar or brainstem ischaemia. The absence of limb weakness is not reassuring when central vestibular signs are present.",
+      "BPPV causes brief triggered episodes rather than continuous spontaneous vertigo with inability to stand and direction-changing gaze-evoked nystagmus. Repositioning alone would miss a stroke.",
+      "Correct. Treat as a time-critical possible posterior circulation stroke: activate the stroke team, document onset and neurological findings, and obtain specialist-directed vascular imaging and reperfusion assessment. A normal early CT does not exclude ischaemic stroke.",
+      "Peripheral vestibular disorders can cause prolonged vertigo, but severe truncal ataxia and direction-changing nystagmus are central red flags requiring emergency exclusion of stroke."
+    ],
+    "pearl": "Acute continuous vertigo plus central eye signs or inability to stand may be posterior stroke despite a negative FAST screen and normal early CT.",
+    "pivot": "Seconds-long positional vertigo with characteristic positional nystagmus and a normal neurological examination favours BPPV.",
+    "management": {
+      "steps": [
+        [
+          "Activate",
+          "Record last-known-well time and call the acute stroke team without delay."
+        ],
+        [
+          "Examine",
+          "Assess full neurological signs, eye movements, gait/truncal stability, swallowing and vascular risk."
+        ],
+        [
+          "Image and treat",
+          "Arrange urgent specialist-directed CT/CTA or MRI and determine reperfusion eligibility."
+        ],
+        [
+          "Protect",
+          "Manage airway, aspiration risk and monitoring while avoiding premature discharge after antiemetics."
+        ]
+      ],
+      "safety": "A normal early CT or negative FAST test cannot safely exclude posterior circulation ischaemia.",
+      "local": "Australian Commission on Safety and Quality in Health Care Stroke Clinical Care Standard, updated June 2026."
+    },
+    "source": "https://www.safetyandquality.gov.au/clinical-care-standards/stroke"
+  },
+  {
+    "n": 60,
+    "domain": "Endocrinology & general practice",
+    "skill": "Resistant hypertension / primary aldosteronism screening",
+    "context": "Advanced integrated clinical decisions",
+    "stem": "A 45-year-old has BP 162/98 mmHg despite three antihypertensives including a diuretic. Potassium is repeatedly 3.1 mmol/L, renal function is normal and there are no symptoms of phaeochromocytoma. She asks whether a CT scan of the adrenal glands is the best first investigation.",
+    "ask": "Which next step best establishes the suspected endocrine mechanism?",
+    "options": [
+      "Order adrenal CT first because any incidental nodule proves aldosterone-producing disease.",
+      "Measure random cortisol and ACTH because resistant hypertension is usually caused by Cushing syndrome.",
+      "Start spironolactone and postpone biochemical investigation indefinitely without assessing medication effects.",
+      "Measure 24-hour urinary metanephrines because low potassium is typical of catecholamine excess.",
+      "Arrange aldosterone-renin ratio screening after potassium correction and medication review."
+    ],
+    "key": "E",
+    "explanations": [
+      "Adrenal imaging alone cannot establish aldosterone excess or determine whether a lesion is functioning. Biochemical screening should generally precede anatomical subtyping.",
+      "Cushing syndrome is an alternative cause of hypertension, but resistant hypertension with persistent hypokalaemia strongly suggests mineralocorticoid excess. Random cortisol and ACTH are not the preferred screen here.",
+      "Mineralocorticoid antagonists are useful treatment but can markedly alter aldosterone-renin interpretation. Starting them before a planned diagnostic work-up may complicate testing; specialist exceptions exist.",
+      "Metanephrines evaluate catecholamine-secreting tumours, classically with episodic headache, palpitations and sweating. Persistent hypokalaemia more directly suggests primary aldosteronism.",
+      "Correct. Screen with a plasma aldosterone-renin ratio, first correcting hypokalaemia and reviewing interfering antihypertensives with a safe supervised plan. If abnormal, arrange specialist confirmation and subtype assessment before considering targeted surgery or medical therapy."
+    ],
+    "pearl": "Resistant hypertension with hypokalaemia should trigger aldosterone-renin screening, not adrenal imaging as the first diagnostic test.",
+    "pivot": "Paroxysmal headache, diaphoresis and palpitations with hypertension shift suspicion toward phaeochromocytoma and metanephrine testing.",
+    "management": {
+      "steps": [
+        [
+          "Identify",
+          "Confirm true resistant hypertension with home or ambulatory readings and adherence assessment."
+        ],
+        [
+          "Prepare testing",
+          "Correct potassium and review drugs affecting renin or aldosterone without unsafe abrupt withdrawal."
+        ],
+        [
+          "Screen",
+          "Order aldosterone-renin ratio under appropriate collection conditions and interpret with medication context."
+        ],
+        [
+          "Confirm and subtype",
+          "Refer for confirmatory testing and imaging or adrenal venous sampling when indicated; tailor treatment."
+        ]
+      ],
+      "safety": "Do not abruptly stop essential antihypertensives merely to obtain an ideal screening ratio; seek specialist advice.",
+      "local": "RACGP Australian Journal of General Practice screening for primary aldosteronism clinical guidance."
+    },
+    "source": "https://www1.racgp.org.au/getattachment/90975557-377a-4f7b-8c85-2935d6ec6a0b/Screening-for-primary-aldosteronism.aspx"
   }
 ]
