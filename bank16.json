@@ -3361,722 +3361,1442 @@
   },
   {
     "n": 71,
-    "domain": "Paediatrics & gastrointestinal surgery",
-    "skill": "Intussusception / stable child and air-enema reduction",
-    "context": "Revision Blossom Garden · original Australian-guideline Monash-style scenario",
-    "stem": "A 14-month-old has five episodes of sudden crying with knees drawn to the abdomen, each followed by a period of relative calm. She vomited twice but is alert and well perfused. Ultrasound shows an ileocolic intussusception without free fluid or perforation. Her abdomen is soft between episodes and there is no guarding. The emergency registrar has arranged intravenous access and analgesia.",
-    "ask": "What is the best next definitive treatment approach?",
+    "domain": "Paediatrics",
+    "skill": "Bronchiolitis / supportive care",
+    "context": "Original Monash-style clinical reasoning scenario · Australian guideline informed",
+    "stem": "A 5-month-old with two days of coryza has wheeze and recession. Oxygen saturation is 94% in air, feeds are two-thirds normal and hydration is preserved. No apnoea or focal crackles are present.",
+    "ask": "What is the most appropriate initial plan?",
     "options": [
-      "Discuss radiologically guided air-enema reduction with paediatric surgery available.",
-      "Proceed directly to emergency laparotomy despite stable perfusion and no peritonitis.",
-      "Administer broad-spectrum intravenous antibiotics and repeat ultrasound the next morning.",
-      "Discharge after oral fluids because intermittent pain suggests a transient benign illness.",
-      "Perform diagnostic colonoscopy before involving the surgical and radiology services."
+      "Provide nasal clearance, feeding support and observation with reassessment.",
+      "Prescribe oral salbutamol regularly and discharge without feeding assessment.",
+      "Start oral prednisolone routinely and arrange review after one week.",
+      "Order a chest radiograph and commence antibiotics for presumed pneumonia.",
+      "Begin high-flow oxygen immediately despite satisfactory room-air saturation."
     ],
     "key": "A",
     "explanations": [
-      "Correct. In a stable child without shock, peritonitis or perforation, pneumatic or hydrostatic enema reduction is first-line after surgical discussion and with surgical backup because perforation is a recognised complication.",
-      "Immediate surgery is appropriate when reduction is contraindicated or unsuccessful, or when perforation, peritonitis or instability exists. None of those features is currently present.",
-      "Routine prophylactic antibiotics are not recommended for uncomplicated radiological reduction; antibiotics and surgery may be needed if bowel compromise or perforation is suspected.",
-      "Symptoms can fluctuate even while bowel is trapped, and untreated intussusception risks ischaemia. Tolerating fluids briefly cannot justify discharge without reduction.",
-      "Colonoscopy is not the standard method for reducing paediatric ileocolic intussusception. Ultrasound has already supported the diagnosis and enema therapy is more appropriate."
+      "Correct. Typical bronchiolitis is clinically diagnosed; reassess breathing, oxygenation, intake and risk factors while supporting hydration.",
+      "Beta-agonists are not routinely effective in infant bronchiolitis; using them can delay supportive reassessment.",
+      "Systemic corticosteroids are not routine therapy for bronchiolitis without another indication.",
+      "Imaging and antibiotics are reserved for concern about another diagnosis or bacterial complication, not typical mild disease.",
+      "Escalated respiratory support is for hypoxaemia or increased work of breathing needing assistance, not saturation alone at this level."
     ],
-    "pearl": "Intussusception is intermittent, not necessarily continuously painful; a well-looking interval does not exclude bowel ischaemia.",
-    "pivot": "If there is peritonitis, shock or free intraperitoneal air, do NOT attempt air-enema reduction; resuscitate, give indicated antibiotics and arrange urgent paediatric surgery instead.",
+    "pearl": "Decision principle: Bronchiolitis / supportive care.",
+    "pivot": "If intake falls below half, apnoea occurs or respiratory distress worsens, arrange hospital assessment for monitored hydration and respiratory support.",
     "management": {
       "steps": [
         [
           "Recognise",
-          "Confirm stability, analgesia, venous access and ultrasound findings."
+          "Record work of breathing, saturation, hydration and apnoea history."
         ],
         [
           "Assess",
-          "Contact paediatric surgery and radiology, explaining the absence of perforation."
+          "Clear nasal secretions and encourage small frequent feeds."
         ],
         [
           "Act",
-          "Arrange monitored pneumatic or hydrostatic reduction where theatre backup is available."
+          "Observe and reassess feeding and respiratory effort."
         ],
         [
-          "Reassess",
-          "Observe for recurrence, re-examine abdomen and plan feeding/disposition with the surgical team."
+          "Follow up",
+          "Explain red flags and arrange review or admission if deterioration occurs."
         ]
       ],
-      "safety": "Air enema is contraindicated in shock, peritonitis, perforation or an unstable child.",
-      "local": "Apply current Australian guidance with senior review and local hospital pathways."
+      "safety": "If intake falls below half, apnoea occurs or respiratory distress worsens, arrange hospital assessment for monitored hydration and respiratory support.",
+      "local": "Use current local Victorian/Australian protocol and senior escalation for deterioration."
     },
-    "source": "https://www.rch.org.au/clinicalguide/guideline_index/intussusception_guideline/"
+    "source": "https://www.rch.org.au/clinicalguide/guideline_index/Bronchiolitis/"
   },
   {
     "n": 72,
-    "domain": "Paediatrics & safeguarding",
-    "skill": "Unexplained bruise in a non-mobile infant / safety assessment",
-    "context": "Revision Blossom Garden · original Australian-guideline Monash-style scenario",
-    "stem": "A 10-week-old infant is brought for a routine feeding concern. During examination you notice a 2-cm bruise on the lateral upper arm. The infant cannot roll or crawl. The caregiver says it may have occurred while lifting the baby but is unsure when. The infant is feeding well, with normal observations, and there are no known bleeding disorders in the family.",
-    "ask": "What is the most appropriate clinical response?",
+    "domain": "Obstetrics",
+    "skill": "Reduced fetal movements / assessment",
+    "context": "Original Monash-style clinical reasoning scenario · Australian guideline informed",
+    "stem": "A woman at 33 weeks reports a marked reduction in her baby’s usual movements since this morning. She is not contracting, has no vaginal bleeding and had an uncomplicated morphology scan.",
+    "ask": "Which response best protects fetal wellbeing?",
     "options": [
-      "Reassure the caregiver that a single small bruise is expected at this age.",
-      "Seek senior paediatric and safeguarding assessment with careful injury documentation.",
-      "Order a full blood count only, then discharge if the platelet count is normal.",
-      "Photograph the bruise privately and report the caregiver directly to police without assessment.",
-      "Defer investigation until another bruise appears to establish a pattern of injury."
+      "Suggest counting movements for another 24 hours before contacting maternity services.",
+      "Arrange prompt maternity assessment with fetal heart monitoring and clinical review.",
+      "Perform a home Doppler check and reassure if a heartbeat can be heard.",
+      "Book an ultrasound in two weeks without undertaking immediate assessment.",
+      "Advise eating a sugary snack and returning only if movements cease entirely."
     ],
     "key": "B",
     "explanations": [
-      "Accidental bruises are unusual in a pre-mobile infant. A small isolated bruise warrants evaluation rather than reassurance based on normal vital signs.",
-      "Correct. The RCH/Victorian forensic guidance treats any unexplained bruise in a non-mobile infant as concerning. Conduct a sensitive, non-accusatory assessment, document findings and obtain senior child-protection advice, including investigation for occult injury or bleeding disorder as appropriate.",
-      "A normal platelet count does not exclude inflicted injury or all coagulation disorders. The broader clinical and safeguarding assessment is still required.",
-      "Photographs may be part of approved documentation, but bypassing clinical evaluation, confidentiality processes and statutory procedures is inappropriate. Escalation should follow hospital safeguarding policy and legal reporting duties.",
-      "Waiting for further injury exposes the infant to potential harm. An unexplained sentinel bruise can precede more serious injury and requires assessment now."
+      "Delaying evaluation may miss placental insufficiency or fetal compromise.",
+      "Correct. A persistent change from the individual fetal movement pattern needs timely maternity review, generally including CTG at this gestation.",
+      "A heard heartbeat does not establish reassuring fetal wellbeing and is not a substitute for evaluation.",
+      "Growth ultrasound can be indicated after assessment, especially recurrent episodes, but is not the sole immediate response.",
+      "Food or drinks should not be used to postpone review; total absence of movement is not required."
     ],
-    "pearl": "Any unexplained bruise in a non-mobile infant is a safeguarding red flag, even without other symptoms.",
-    "pivot": "If an independently mobile toddler has a single bruise over the anterior shin with a consistent witnessed fall, document and manage the minor injury; safeguarding referral is guided by the full history and examination.",
+    "pearl": "Decision principle: Reduced fetal movements / assessment.",
+    "pivot": "If CTG is abnormal, initiate urgent obstetric escalation and further fetal assessment; recurrent presentations despite normal CTG merit consideration of ultrasound for growth and fluid.",
     "management": {
       "steps": [
         [
           "Recognise",
-          "Record developmental abilities, the caregiver's explanation and a full head-to-toe examination."
+          "Take history of movement change and maternal risk factors."
         ],
         [
           "Assess",
-          "Discuss urgently with senior paediatrics and the child protection/forensic team."
+          "Arrange same-day maternity triage and maternal observations."
         ],
         [
           "Act",
-          "Investigate occult injury and bleeding disorders as advised, documenting objectively."
+          "Perform and interpret CTG with obstetric oversight."
         ],
         [
-          "Reassess",
-          "Agree a safe disposition and follow mandatory reporting and family communication processes."
+          "Follow up",
+          "Plan ultrasound or expedited delivery assessment if findings warrant."
         ]
       ],
-      "safety": "Do not accuse a caregiver or discharge a pre-mobile infant with unexplained bruising without an appropriate safety assessment.",
-      "local": "Apply current Australian guidance with senior review and local hospital pathways."
+      "safety": "If CTG is abnormal, initiate urgent obstetric escalation and further fetal assessment; recurrent presentations despite normal CTG merit consideration of ultrasound for growth and fluid.",
+      "local": "Use current local Victorian/Australian protocol and senior escalation for deterioration."
     },
-    "source": "https://www.rch.org.au/vfpms/guidelines/Bruising/"
+    "source": "https://www.safercare.vic.gov.au/best-practice-improvement/clinical-guidance/maternity/decreased-fetal-movements"
   },
   {
     "n": 73,
-    "domain": "Paediatrics & endocrinology",
-    "skill": "Known adrenal insufficiency / vomiting and impending adrenal crisis",
-    "context": "Revision Blossom Garden · original Australian-guideline Monash-style scenario",
-    "stem": "An 8-year-old with congenital adrenal hyperplasia usually takes oral hydrocortisone and fludrocortisone. After repeated vomiting, he cannot keep his morning tablets down. He is lethargic, tachycardic and hypotensive, with capillary glucose 2.9 mmol/L. Sodium is 127 mmol/L and potassium 5.7 mmol/L. A parent has brought his emergency steroid plan but is uncertain whether to wait for cortisol testing.",
-    "ask": "What intervention must be given without waiting for endocrine test results?",
+    "domain": "Medicine",
+    "skill": "New atrial fibrillation / instability",
+    "context": "Original Monash-style clinical reasoning scenario · Australian guideline informed",
+    "stem": "An older adult presents with palpitations and an irregular narrow-complex tachycardia at 170/min. Blood pressure is 75/45 mmHg and the patient is diaphoretic and confused. ECG confirms atrial fibrillation.",
+    "ask": "What is the immediate definitive rhythm intervention?",
     "options": [
-      "Continue his usual oral maintenance hydrocortisone after giving an antiemetic.",
-      "Administer fludrocortisone alone and reassess his blood pressure in an hour.",
-      "Give emergency parenteral hydrocortisone with resuscitation and glucose correction.",
-      "Delay all steroid replacement until serum cortisol and ACTH samples return.",
-      "Start insulin for potassium reduction before addressing suspected cortisol deficiency."
+      "Give oral metoprolol and await a repeat blood pressure reading.",
+      "Start an oral anticoagulant and organise an outpatient cardiology visit.",
+      "Deliver synchronised electrical cardioversion with resuscitation-team support.",
+      "Administer adenosine in repeated boluses to terminate atrial fibrillation.",
+      "Observe for spontaneous conversion while investigating thyroid function."
     ],
     "key": "C",
     "explanations": [
-      "Ongoing vomiting makes oral steroid absorption unreliable, and maintenance doses are insufficient for shock. Waiting for antiemetic effect is unsafe.",
-      "Fludrocortisone treats mineralocorticoid deficiency but does not replace the urgent stress glucocorticoid dose needed in adrenal crisis.",
-      "Correct. Administer the child's emergency IM/IV hydrocortisone promptly (RCH age 3–12 initial dose 50 mg if no individual plan), while treating shock and hypoglycaemia and arranging senior paediatric/endocrine input.",
-      "Baseline bloods may be collected immediately if this causes no delay, but adrenal crisis is a clinical emergency and treatment must not wait for results.",
-      "Potassium is moderately raised and may improve with hydrocortisone and fluids. Obtain an ECG and treat severe ECG-positive hyperkalaemia when indicated, but glucocorticoid resuscitation is the immediate priority."
+      "Rate-limiting drugs can worsen hypotension and are inappropriate as the primary action in shock.",
+      "Stroke prevention matters later but does not correct current shock.",
+      "Correct. Haemodynamic compromise attributable to tachyarrhythmia requires urgent synchronised cardioversion, with sedation when feasible without delaying lifesaving care.",
+      "Adenosine may transiently reveal atrial activity but does not terminate atrial fibrillation and risks distraction.",
+      "Investigations should occur alongside resuscitation rather than delay it."
     ],
-    "pearl": "Repeated vomiting in a steroid-dependent child is a red flag: oral sick-day dosing may fail and IM/IV hydrocortisone is needed.",
-    "pivot": "If the child has only a mild intercurrent illness, is well perfused and tolerates oral medicines, use the individual sick-day oral hydrocortisone plan with extra fluids and clear escalation advice.",
+    "pearl": "Decision principle: New atrial fibrillation / instability.",
+    "pivot": "If stable, use a rate- or rhythm-control strategy according to onset, comorbidity and stroke risk; assess anticoagulation using an Australian AF pathway.",
     "management": {
       "steps": [
         [
           "Recognise",
-          "Assess airway, circulation, bedside glucose and the individual emergency steroid plan."
+          "Call resuscitation support and attach continuous monitoring."
         ],
         [
           "Assess",
-          "Obtain glucose, electrolytes and ECG while establishing IV access without delaying steroids."
+          "Assess ABCDE, IV access and reversible precipitants."
         ],
         [
           "Act",
-          "Give IM/IV stress-dose hydrocortisone, isotonic resuscitation and dextrose as indicated."
+          "Prepare synchronised cardioversion with appropriate analgesia or sedation."
         ],
         [
-          "Reassess",
-          "Monitor glucose, electrolytes and haemodynamics; involve paediatric endocrinology for ongoing doses."
+          "Follow up",
+          "Recheck ECG, perfusion and thromboembolic risk after conversion."
         ]
       ],
-      "safety": "Never delay parenteral hydrocortisone for confirmatory tests in suspected adrenal crisis.",
-      "local": "Apply current Australian guidance with senior review and local hospital pathways."
+      "safety": "If stable, use a rate- or rhythm-control strategy according to onset, comorbidity and stroke risk; assess anticoagulation using an Australian AF pathway.",
+      "local": "Use current local Victorian/Australian protocol and senior escalation for deterioration."
     },
-    "source": "https://www.rch.org.au/clinicalguide/guideline_index/Adrenal_crisis_and_acute_adrenal_insufficiency/"
+    "source": "https://www.anzcor.org/home/adult-advanced-life-support/guideline-11-9-managing-acute-dysrhythmias"
   },
   {
     "n": 74,
-    "domain": "Paediatrics & diabetes",
-    "skill": "Resolving DKA / safe transition from IV to subcutaneous insulin",
-    "context": "Revision Blossom Garden · original Australian-guideline Monash-style scenario",
-    "stem": "A 15-year-old with type 1 diabetes has been treated with intravenous fluids and insulin for diabetic ketoacidosis. He is now alert, eating a sandwich, and haemodynamically stable. Blood glucose is 8.4 mmol/L, venous pH 7.35 and bicarbonate 20 mmol/L; ketones have fallen substantially. A nurse asks whether the insulin infusion should be stopped at the moment the first subcutaneous rapid-acting dose is administered.",
-    "ask": "Which transition plan best prevents recurrent ketoacidosis?",
+    "domain": "Surgery",
+    "skill": "Acute limb ischaemia / threatened extremity",
+    "context": "Original Monash-style clinical reasoning scenario · Australian guideline informed",
+    "stem": "A 72-year-old develops sudden severe left leg pain. The foot is pale, cold, pulseless and weak on ankle dorsiflexion. Symptoms began three hours ago and there is no major trauma.",
+    "ask": "Which pathway is required immediately?",
     "options": [
-      "Stop IV insulin immediately and wait until the next scheduled subcutaneous meal dose.",
-      "Continue IV insulin overnight despite resolved acidosis and normal oral intake.",
-      "Replace IV insulin with oral metformin because glucose is now within target.",
-      "Give subcutaneous insulin and overlap the infusion for 30–60 minutes before stopping.",
-      "Cease all insulin until blood glucose rises above 15 mmol/L again."
+      "Discharge with aspirin and arrange outpatient arterial duplex next week.",
+      "Apply graduated compression and elevate the limb to relieve discomfort.",
+      "Wait for ankle-brachial index measurements before contacting vascular surgery.",
+      "Urgent vascular referral, analgesia and anticoagulation unless contraindicated.",
+      "Treat as uncomplicated neuropathy and review response to gabapentin."
     ],
     "key": "D",
     "explanations": [
-      "Abrupt cessation risks an insulin-free interval before subcutaneous insulin is absorbed, permitting renewed ketogenesis.",
-      "An unnecessary prolonged infusion can cause hypoglycaemia and electrolyte shifts; transition is appropriate when alert, eating and metabolically stable.",
-      "Metformin does not replace insulin in type 1 diabetes and cannot prevent ketone production. This option would expose the patient to recurrent DKA.",
-      "Correct. The RCH guideline advises continuing IV insulin for 30–60 minutes after the first rapid-acting subcutaneous injection when the child is eating and acidosis has resolved; coordinate the basal regimen with endocrinology.",
-      "Insulin must continue even when glucose normalises during DKA treatment. Holding all insulin until severe hyperglycaemia recurs invites rebound ketones."
+      "Outpatient testing risks irreversible ischaemic damage.",
+      "Compression and elevation can impair already compromised arterial perfusion.",
+      "Bedside assessment and imaging can assist planning, but referral must not wait for ABI testing.",
+      "Correct. Motor deficit with acute loss of perfusion is a limb-threatening emergency; immediate vascular decision-making is essential.",
+      "A suddenly cold pulseless foot with weakness cannot be attributed to neuropathic pain alone."
     ],
-    "pearl": "Resolution of acidosis, oral intake and overlap—not glucose alone—determine a safe IV-to-SC insulin transition.",
-    "pivot": "If the patient remains vomiting, acidotic or unable to eat, continue IV insulin with appropriate dextrose-containing fluids and repeat biochemical monitoring instead of transitioning.",
+    "pearl": "Decision principle: Acute limb ischaemia / threatened extremity.",
+    "pivot": "If compartment syndrome develops after reperfusion, seek immediate surgical reassessment for possible fasciotomy, rather than simply increasing analgesia.",
     "management": {
       "steps": [
         [
           "Recognise",
-          "Verify alertness, oral intake, corrected acidosis and falling ketones."
+          "Document time of onset and six ischaemic features."
         ],
         [
           "Assess",
-          "Confirm the planned basal and meal-time regimen with paediatric endocrinology."
+          "Call vascular surgery urgently and keep the patient fasting."
         ],
         [
           "Act",
-          "Give the first SC insulin dose and maintain IV infusion for a 30–60 minute overlap."
+          "Provide analgesia, IV access and heparin if appropriate."
         ],
         [
-          "Reassess",
-          "Recheck bedside glucose/ketones and teach pump or sick-day failure prevention."
+          "Follow up",
+          "Coordinate urgent imaging and revascularisation without delaying care."
         ]
       ],
-      "safety": "Do not leave a gap between IV insulin cessation and effective subcutaneous insulin action.",
-      "local": "Apply current Australian guidance with senior review and local hospital pathways."
+      "safety": "If compartment syndrome develops after reperfusion, seek immediate surgical reassessment for possible fasciotomy, rather than simply increasing analgesia.",
+      "local": "Use current local Victorian/Australian protocol and senior escalation for deterioration."
     },
-    "source": "https://www.rch.org.au/clinicalguide/guideline_index/Diabetic_ketoacidosis/"
+    "source": "https://aci.health.nsw.gov.au/networks/eci/clinical/clinical-tools/vascular-emergencies"
   },
   {
     "n": 75,
-    "domain": "Vascular surgery & emergency medicine",
-    "skill": "Acute limb ischaemia / sensory loss requires immediate vascular treatment",
-    "context": "Revision Blossom Garden · original Australian-guideline Monash-style scenario",
-    "stem": "A 74-year-old with atrial fibrillation not taking anticoagulation develops sudden severe pain in the right calf while watching television. Three hours later the foot is cold and pale, with no palpable pedal pulses. Doppler signals are absent distally, and he now reports reduced sensation across the forefoot with mild ankle weakness. Blood pressure is stable and there is no active bleeding.",
-    "ask": "Which immediate plan best protects limb viability?",
+    "domain": "Paediatrics",
+    "skill": "Croup / stridor at rest",
+    "context": "Original Monash-style clinical reasoning scenario · Australian guideline informed",
+    "stem": "A 2-year-old has barking cough and inspiratory stridor at rest with moderate recession. The child is alert, has good air entry and normal colour, but becomes distressed when examined.",
+    "ask": "What treatment is most appropriate now?",
     "options": [
-      "Arrange routine outpatient arterial duplex and begin antiplatelet monotherapy.",
-      "Apply compression bandaging and elevate the leg while monitoring calf circumference.",
-      "Start a direct oral anticoagulant and book a vascular clinic review next week.",
-      "Request CT angiography first and withhold treatment until its formal report is available.",
-      "Contact vascular surgery immediately and commence IV unfractionated heparin if safe."
+      "Prescribe antibiotics and discharge once the temperature settles completely.",
+      "Obtain a neck radiograph before attempting any airway-directed treatment.",
+      "Use salbutamol nebulisers repeatedly as the primary therapy for stridor.",
+      "Force a throat examination to exclude infection before treating croup.",
+      "Give corticosteroid and nebulised adrenaline, then observe for recurrence."
     ],
     "key": "E",
     "explanations": [
-      "A cold pulseless limb with new sensory and motor changes is threatened, not a chronic outpatient vascular complaint. Delay risks irreversible injury.",
-      "Compression and elevation do not restore arterial inflow and may worsen distal perfusion. This is not a routine venous thrombosis presentation.",
-      "Oral anticoagulants are not the immediate treatment for a threatened limb requiring emergency vascular intervention and possible surgery.",
-      "CTA can guide intervention but should be coordinated with the vascular surgeon; delaying consultation and anticoagulation solely for imaging risks lost time.",
-      "Correct. NSW ACI recommends early vascular consultation, resuscitation, analgesia, nil by mouth, IV heparin bolus/infusion when not contraindicated and urgent viability-directed revascularisation planning."
+      "Typical viral croup is not treated with routine antibiotics.",
+      "Imaging delays care and agitation can exacerbate obstruction.",
+      "Salbutamol targets lower-airway bronchospasm, not subglottic oedema.",
+      "Distressing throat instrumentation risks worsening airway compromise; reserve invasive examination for expert teams when indicated.",
+      "Correct. Stridor at rest with increased effort needs dexamethasone and often nebulised adrenaline, followed by observation for rebound symptoms."
     ],
-    "pearl": "Pain plus pulselessness plus new sensory or motor deficit is an immediately threatened limb, not simply peripheral arterial disease.",
-    "pivot": "If pulses and Doppler signals are preserved with longstanding exertional claudication but no rest pain or neurological deficit, arrange ABI assessment, cardiovascular risk treatment and vascular follow-up rather than emergency revascularisation.",
+    "pearl": "Decision principle: Croup / stridor at rest.",
+    "pivot": "If exhaustion, cyanosis, reduced air entry or altered consciousness develops, call senior airway/anaesthetic help immediately and prepare controlled airway support.",
     "management": {
       "steps": [
         [
           "Recognise",
-          "Document six Ps, distal Doppler signals, sensation, movement and onset time."
+          "Keep the child calm with caregiver present."
         ],
         [
           "Assess",
-          "Resuscitate if needed, provide analgesia, ECG, coagulation and renal blood tests."
+          "Grade stridor, recession, oxygenation and fatigue."
         ],
         [
           "Act",
-          "Call vascular surgery urgently and initiate protocolised IV heparin if safe."
+          "Administer dexamethasone and nebulised adrenaline as indicated."
         ],
         [
-          "Reassess",
-          "Keep nil by mouth, monitor neurovascular changes and expedite definitive intervention."
+          "Follow up",
+          "Observe after adrenaline and escalate if resting stridor persists."
         ]
       ],
-      "safety": "New weakness or sensory loss can precede irreversible tissue damage; imaging must not postpone vascular escalation.",
-      "local": "Apply current Australian guidance with senior review and local hospital pathways."
+      "safety": "If exhaustion, cyanosis, reduced air entry or altered consciousness develops, call senior airway/anaesthetic help immediately and prepare controlled airway support.",
+      "local": "Use current local Victorian/Australian protocol and senior escalation for deterioration."
     },
-    "source": "https://aci.health.nsw.gov.au/networks/eci/clinical/tools/acute-limb-ischaemia"
+    "source": "https://www.rch.org.au/clinicalguide/guideline_index/Croup_Laryngotracheobronchitis/"
   },
   {
     "n": 76,
-    "domain": "Emergency medicine & electrolytes",
-    "skill": "Severe symptomatic hyponatraemia / seizure-directed hypertonic saline",
-    "context": "Revision Blossom Garden · original Australian-guideline Monash-style scenario",
-    "stem": "A 69-year-old taking hydrochlorothiazide is brought to hospital after a witnessed generalised seizure. She remains confused after the convulsion. Point-of-care glucose is 6.2 mmol/L; laboratory sodium is 113 mmol/L and serum osmolality is low. Her family says she has been drinking large amounts of water during a febrile illness. Airway and circulation are being supported.",
-    "ask": "Which treatment should be initiated for the sodium-related neurological emergency?",
+    "domain": "Gynaecology",
+    "skill": "Ectopic pregnancy / pregnancy of unknown location",
+    "context": "Original Monash-style clinical reasoning scenario · Australian guideline informed",
+    "stem": "A haemodynamically stable 28-year-old with mild unilateral pelvic pain has a positive pregnancy test. Transvaginal ultrasound shows no intrauterine gestation and no definite adnexal pregnancy. Serum hCG is 650 IU/L.",
+    "ask": "What is the safest interpretation and next step?",
     "options": [
-      "Give monitored hypertonic 3% saline with urgent senior/critical-care involvement.",
-      "Restrict oral fluid only and repeat sodium the following morning without intervention.",
-      "Infuse a large volume of 5% dextrose to minimise cerebral osmotic changes.",
-      "Give oral sodium tablets and discharge once the seizure has clinically ceased.",
-      "Use isotonic maintenance fluids alone regardless of ongoing severe neurological features."
+      "Classify as pregnancy of unknown location and arrange serial hCG with safety-netting.",
+      "Declare a complete miscarriage because an intrauterine sac is not visible.",
+      "Administer methotrexate immediately without confirming clinical eligibility.",
+      "Exclude ectopic pregnancy because serum hCG is below the discriminatory level.",
+      "Reassure that this is an early viable intrauterine pregnancy without follow-up."
     ],
     "key": "A",
     "explanations": [
-      "Correct. Seizure and profound hypotonic hyponatraemia warrant emergency monitored hypertonic saline, with frequent sodium and neurological checks and strict prevention of overcorrection, especially when chronicity is uncertain.",
-      "Fluid restriction may be used for some stable euvolaemic cases, but does not adequately treat an acute seizure from severe hyponatraemia.",
-      "Hypotonic dextrose can lower sodium further and worsen cerebral oedema. Dextrose is for hypoglycaemia, which is absent here.",
-      "Oral tablets cannot rapidly and predictably reverse life-threatening cerebral symptoms and are unsafe as sole treatment in a confused patient.",
-      "Isotonic fluid is useful in hypovolaemic hyponatraemia and shock, but severe seizures require hypertonic therapy and careful cause-specific management."
+      "Correct. A single early scan and hCG level cannot determine location or viability; serial results and symptoms guide reassessment.",
+      "An empty uterus alone cannot confirm completed miscarriage.",
+      "Methotrexate requires a sufficiently secure diagnosis, eligibility checks and reliable follow-up.",
+      "Ectopic pregnancy can occur at any hCG level, including very low values.",
+      "An early intrauterine pregnancy is possible but cannot yet be established."
     ],
-    "pearl": "Seizures change hyponatraemia from a laboratory problem to a hypertonic-saline emergency; correction must be closely controlled.",
-    "pivot": "If sodium is 128 mmol/L and the patient is asymptomatic, investigate volume status and medicines, stop the offending diuretic, consider fluid restriction or isotonic saline as indicated, and monitor rather than give 3% saline.",
+    "pearl": "Decision principle: Ectopic pregnancy / pregnancy of unknown location.",
+    "pivot": "If the patient develops syncope, peritonism or haemodynamic instability, commence resuscitation and urgent gynaecological surgical assessment for rupture rather than routine serial testing.",
     "management": {
       "steps": [
         [
           "Recognise",
-          "Protect airway, treat ongoing seizures and verify hypotonic hyponatraemia."
+          "Confirm stability and assess abdominal tenderness and bleeding."
         ],
         [
           "Assess",
-          "Seek senior/ICU input, review medications and establish frequent sodium monitoring."
+          "Review transvaginal imaging and baseline hCG."
         ],
         [
           "Act",
-          "Administer protocolised 3% saline for severe neurological symptoms."
+          "Arrange repeat hCG and ultrasound according to early-pregnancy pathway."
         ],
         [
-          "Reassess",
-          "Track sodium correction and urine output closely; prevent rapid overcorrection."
+          "Follow up",
+          "Provide explicit rupture return precautions and confirmed follow-up."
         ]
       ],
-      "safety": "Overly rapid correction can cause osmotic demyelination, especially if the low sodium has been present for more than 48 hours.",
-      "local": "Apply current Australian guidance with senior review and local hospital pathways."
+      "safety": "If the patient develops syncope, peritonism or haemodynamic instability, commence resuscitation and urgent gynaecological surgical assessment for rupture rather than routine serial testing.",
+      "local": "Use current local Victorian/Australian protocol and senior escalation for deterioration."
     },
-    "source": "https://www.health.qld.gov.au/clinical-practice/guidelines-procedures/medicines/safety/electrolyte-disturbances/hypo"
+    "source": "https://ranzcog.edu.au/wp-content/uploads/Miscarriage-Ectopic-Pregnancy.pdf"
   },
   {
     "n": 77,
-    "domain": "Obstetrics & medication safety",
-    "skill": "Magnesium sulphate toxicity / absent reflexes and respiratory depression",
-    "context": "Revision Blossom Garden · original Australian-guideline Monash-style scenario",
-    "stem": "A 29-year-old with severe pre-eclampsia is receiving a magnesium sulphate infusion after a loading dose. Over the next hour, urine output falls to 15 mL/hour. She becomes drowsy, respiratory rate falls to 8/min, and patellar reflexes are no longer elicitable. The infusion pump is still running. Blood pressure is 146/92 mmHg and the fetal heart rate is present.",
-    "ask": "What is the most appropriate immediate response?",
+    "domain": "Medicine",
+    "skill": "Hyponatraemia / seizure emergency",
+    "context": "Original Monash-style clinical reasoning scenario · Australian guideline informed",
+    "stem": "A 64-year-old admitted with pneumonia develops a generalised seizure. Sodium is 113 mmol/L, glucose is normal and there is no known seizure disorder. Oxygenation and airway support are underway.",
+    "ask": "What sodium-directed therapy is indicated urgently?",
     "options": [
-      "Increase the magnesium infusion because the patient remains hypertensive and seizure-prone.",
-      "Stop magnesium, support ventilation and give IV calcium gluconate for toxicity.",
-      "Give another magnesium bolus while checking the serum magnesium concentration.",
-      "Treat with intravenous furosemide alone and continue the current infusion unchanged.",
-      "Observe reflexes for another hour because absent reflexes are expected with therapy."
+      "Infuse large volumes of hypotonic fluid to correct presumed dehydration.",
+      "Give controlled hypertonic saline with frequent sodium monitoring.",
+      "Start oral fluid restriction alone and recheck sodium tomorrow morning.",
+      "Administer intravenous furosemide without evaluating volume status first.",
+      "Give a rapid full correction to normal sodium within the first hour."
     ],
     "key": "B",
     "explanations": [
-      "Persistent hypertension does not justify increasing magnesium when there are signs of toxicity. Antihypertensive management is a separate decision.",
-      "Correct. Stop the infusion immediately, call for obstetric/anaesthetic help, support airway and breathing, and administer IV calcium gluconate as an antidote for significant magnesium toxicity. Check magnesium and renal function.",
-      "Additional magnesium worsens neuromuscular blockade and respiratory suppression. Obtain levels but do not delay immediate supportive care and antidote.",
-      "Diuresis may help elimination in selected patients after stabilisation, but furosemide alone is not an antidote and does not protect breathing.",
-      "Loss of tendon reflexes and respiratory depression are red flags for dangerous accumulation, particularly with oliguria. Waiting risks respiratory arrest."
+      "Hypotonic fluid further lowers sodium in most such scenarios.",
+      "Correct. Seizure from severe symptomatic hyponatraemia warrants monitored 3% hypertonic saline boluses under local protocol to achieve initial modest rise.",
+      "Fluid restriction is insufficient during active severe neurological symptoms.",
+      "Diuretics can have selected roles but do not replace emergency hypertonic treatment.",
+      "Overcorrection risks osmotic demyelination, particularly with chronic hyponatraemia."
     ],
-    "pearl": "Magnesium toxicity: absent reflexes, respiratory depression and low urine output mean stop the infusion and prepare calcium gluconate.",
-    "pivot": "If reflexes, respiration and urine output remain normal but BP is still severely elevated, continue indicated seizure prophylaxis with monitoring and separately treat severe BP according to obstetric guidance.",
+    "pearl": "Decision principle: Hyponatraemia / seizure emergency.",
+    "pivot": "Once seizures resolve and initial limited correction is achieved, slow correction and investigate cause; if sodium rises excessively, obtain specialist advice on preventing overcorrection.",
     "management": {
       "steps": [
         [
           "Recognise",
-          "Stop magnesium and activate obstetric/anaesthetic emergency assistance."
+          "Stabilise airway, breathing and seizure activity."
         ],
         [
           "Assess",
-          "Assess airway, breathing, oxygenation, reflexes and urine output."
+          "Confirm sodium and review duration and volume status."
         ],
         [
           "Act",
-          "Give IV calcium gluconate as prescribed while supporting ventilation."
+          "Give protocol-based 3% saline with close biochemical monitoring."
         ],
         [
-          "Reassess",
-          "Monitor magnesium, renal function and recurrence risk; review subsequent seizure prophylaxis."
+          "Follow up",
+          "Identify underlying cause and limit subsequent correction rate."
         ]
       ],
-      "safety": "Calcium antagonises toxicity transiently; respiratory support and ongoing monitoring remain essential.",
-      "local": "Apply current Australian guidance with senior review and local hospital pathways."
+      "safety": "Once seizures resolve and initial limited correction is achieved, slow correction and investigate cause; if sodium rises excessively, obtain specialist advice on preventing overcorrection.",
+      "local": "Use current local Victorian/Australian protocol and senior escalation for deterioration."
     },
-    "source": "https://www.health.qld.gov.au/clinical-practice/guidelines-procedures/medicines/safety/electrolyte-disturbances/hyper"
+    "source": "https://aci.health.nsw.gov.au/networks/eci/clinical/clinical-tools/electrolyte-abnormalities"
   },
   {
     "n": 78,
-    "domain": "Obstetrics & blood group prevention",
-    "skill": "RhD-negative pregnancy / sensitising abdominal trauma",
-    "context": "Revision Blossom Garden · original Australian-guideline Monash-style scenario",
-    "stem": "A 27-year-old at 23 weeks' gestation attends after a low-speed vehicle collision with a seatbelt bruise across her abdomen. She has no vaginal bleeding, and ultrasound shows a viable fetus with a normal heartbeat. Her blood group is O RhD-negative, antibody screen at booking was negative, and no fetal RhD prediction result is available. She received no anti-D since booking.",
-    "ask": "Which preventive step is most appropriate after maternal and fetal assessment?",
+    "domain": "Paediatrics",
+    "skill": "Intussusception / episodic pain",
+    "context": "Original Monash-style clinical reasoning scenario · Australian guideline informed",
+    "stem": "A 10-month-old has repeated episodes of severe crying with knees drawn up and pallor, followed by periods of seeming well. There is one episode of vomiting and no visible rectal blood.",
+    "ask": "What is the appropriate diagnostic test?",
     "options": [
-      "Withhold anti-D because the ultrasound shows no placental separation or visible bleeding.",
-      "Wait until routine 28-week prophylaxis because minor trauma cannot cause fetomaternal bleeding.",
-      "Obtain maternal blood group/antibody and fetomaternal haemorrhage testing, and give indicated anti-D.",
-      "Give anti-D only if the fetal ultrasound subsequently confirms structural injury or distress.",
-      "Start daily oral iron and repeat haemoglobin because anti-D is reserved for postpartum care."
+      "Plain abdominal radiograph alone to exclude the diagnosis definitively.",
+      "Routine stool culture before considering any abdominal imaging.",
+      "Urgent abdominal ultrasound and paediatric surgical discussion.",
+      "Elective upper endoscopy for suspected oesophageal inflammation.",
+      "Discharge with a functional abdominal pain diagnosis and review."
     ],
     "key": "C",
     "explanations": [
-      "Occult fetomaternal haemorrhage may occur after abdominal trauma even without vaginal bleeding or sonographic abruption.",
-      "Routine prophylaxis does not replace an additional dose after a sensitising event. Waiting can allow alloimmunisation.",
-      "Correct. In an unsensitised RhD-negative patient with abdominal trauma after 20 weeks, obtain group/antibody and fetomaternal haemorrhage assessment, give anti-D promptly when indicated, and adjust dose if a large haemorrhage is found.",
-      "Ultrasound is not sufficiently sensitive to exclude fetal blood entering maternal circulation. Anti-D decisions depend on RhD risk and the sensitising event, not fetal structural damage.",
-      "Iron treats iron deficiency and does not prevent maternal anti-D antibody formation. Antenatal sensitising events require separate immunoprophylaxis consideration."
+      "Radiographs may assess perforation or obstruction but a normal film does not exclude intussusception.",
+      "Microbiology does not address possible bowel obstruction or ischaemia.",
+      "Correct. Intermittent colicky pain in this age group warrants urgent ultrasound; bloody stool is a late and insensitive clue.",
+      "Endoscopy is not the diagnostic first step for this presentation.",
+      "Delaying diagnosis risks bowel compromise even when the infant appears well between episodes."
     ],
-    "pearl": "Anti-D after a sensitising event is additional to routine antenatal prophylaxis; a normal ultrasound does not rule out fetomaternal haemorrhage.",
-    "pivot": "If the patient is already immune anti-D positive (genuine alloimmunisation), prophylactic anti-D will not reverse sensitisation; refer to specialist obstetric fetal anaemia surveillance instead.",
+    "pearl": "Decision principle: Intussusception / episodic pain.",
+    "pivot": "If shock, peritonitis or perforation is present, resuscitate and obtain immediate surgery rather than attempting routine radiological enema reduction.",
     "management": {
       "steps": [
         [
           "Recognise",
-          "Assess maternal trauma, gestation, fetal heart and any obstetric warning signs."
+          "Assess hydration, perfusion and abdominal findings."
         ],
         [
           "Assess",
-          "Confirm RhD status, antibody screen and perform fetomaternal haemorrhage testing when indicated."
+          "Keep fasting and obtain analgesia and IV access."
         ],
         [
           "Act",
-          "Give appropriate RhD immunoglobulin promptly per the local obstetric protocol."
+          "Arrange urgent ultrasound and early surgical involvement."
         ],
         [
-          "Reassess",
-          "Review laboratory quantification for extra doses and arrange ongoing fetal/maternal follow-up."
+          "Follow up",
+          "Prepare for image-guided reduction if stable and no contraindication."
         ]
       ],
-      "safety": "Do not delay indicated anti-D beyond the preferred early post-event window while waiting for quantification results.",
-      "local": "Apply current Australian guidance with senior review and local hospital pathways."
+      "safety": "If shock, peritonitis or perforation is present, resuscitate and obtain immediate surgery rather than attempting routine radiological enema reduction.",
+      "local": "Use current local Victorian/Australian protocol and senior escalation for deterioration."
     },
-    "source": "https://www.health.qld.gov.au/__data/assets/pdf_file/0013/1215031/6.Obstetrics-and-neonatal.pdf"
+    "source": "https://www.rch.org.au/clinicalguide/guideline_index/Intussusception/"
   },
   {
     "n": 79,
-    "domain": "Obstetrics & intrapartum emergencies",
-    "skill": "Cord prolapse after amniotomy / immediate decompression",
-    "context": "Revision Blossom Garden · original Australian-guideline Monash-style scenario",
-    "stem": "A 34-year-old at 39 weeks is undergoing induction with oxytocin. Immediately after artificial rupture of membranes, the fetal heart rate falls to 70/min. Vaginal examination reveals a pulsating loop of cord below the fetal head, which is still high. The cervix is 5 cm dilated, and birth is not imminent. A midwife has already summoned the obstetric emergency team.",
-    "ask": "Which immediate action best protects the fetus while definitive delivery is arranged?",
+    "domain": "GP",
+    "skill": "Iron deficiency anaemia / evaluation",
+    "context": "Original Monash-style clinical reasoning scenario · Australian guideline informed",
+    "stem": "A 68-year-old man reports fatigue. Bloods show haemoglobin 96 g/L, MCV 69 fL and low ferritin. He has no overt bleeding, eats meat and takes no anticoagulant.",
+    "ask": "What follow-up is essential beyond iron replacement?",
     "options": [
-      "Attempt to replace the visible cord above the head and resume oxytocin.",
-      "Wait for repeat CTG tracing before deciding whether operative birth is necessary.",
-      "Encourage active maternal pushing to shorten the remaining first stage of labour.",
-      "Manually elevate the presenting part off the cord and prepare emergency birth.",
-      "Clamp the exposed cord immediately to reduce blood flow and fetal bradycardia."
+      "Attribute the anaemia to ageing and repeat blood tests in one year.",
+      "Treat with iron alone and stop evaluation when haemoglobin improves.",
+      "Order a haemoglobin electrophoresis as the only subsequent investigation.",
+      "Investigate gastrointestinal blood loss with appropriate endoscopic assessment.",
+      "Recommend a dietary change without looking for an underlying cause."
     ],
     "key": "D",
     "explanations": [
-      "Replacing or repeatedly handling the cord risks vasospasm and does not reliably remove compression; leave it minimally handled.",
-      "Persistent fetal bradycardia with a cord palpated below the head is a clinical emergency, not a tracing to watch before acting.",
-      "The cervix is only 5 cm dilated and birth is not imminent; pushing cannot provide timely safe delivery.",
-      "Correct. Elevate the fetal head manually to relieve compression, position the woman knee-chest or left lateral with hips raised, stop oxytocin and expedite emergency caesarean unless vaginal birth is truly imminent.",
-      "Clamping the cord stops fetal blood flow and would worsen hypoxia. The priority is preventing compression until delivery."
+      "Anaemia is not a normal consequence of age.",
+      "Response to iron confirms replacement efficacy but does not identify bleeding source.",
+      "Thalassaemia may cause microcytosis but does not explain unequivocal low ferritin here.",
+      "Correct. Iron deficiency in an older man warrants investigation for gastrointestinal pathology, including malignancy, alongside replacement.",
+      "Diet may contribute but does not safely exclude gastrointestinal pathology."
     ],
-    "pearl": "Cord prolapse requires simultaneous relief of compression and expedited birth; the examining hand may need to remain in place.",
-    "pivot": "If full dilatation is present and the head is on the perineum with birth immediately achievable, senior obstetric staff may expedite operative vaginal delivery rather than transfer for caesarean.",
+    "pearl": "Decision principle: Iron deficiency anaemia / evaluation.",
+    "pivot": "If haemodynamically unstable or actively bleeding, prioritise resuscitation and urgent inpatient endoscopic/surgical evaluation rather than routine outpatient investigation.",
     "management": {
       "steps": [
         [
           "Recognise",
-          "Declare cord prolapse, call the obstetric emergency response and stop oxytocin."
+          "Confirm iron deficiency and assess symptoms and stability."
         ],
         [
           "Assess",
-          "Elevate the presenting part manually and place mother knee-chest or hips-raised lateral."
+          "Review bleeding, NSAIDs and gastrointestinal warning features."
         ],
         [
           "Act",
-          "Prepare emergency caesarean, continuous fetal assessment and neonatal resuscitation."
+          "Arrange appropriate bidirectional endoscopy and referrals."
         ],
         [
-          "Reassess",
-          "Maintain decompression until delivery; document times, interventions and newborn outcome."
+          "Follow up",
+          "Replace iron and repeat blood count to document response."
         ]
       ],
-      "safety": "Do not push the cord back, clamp it, or abandon manual elevation during transfer unless another safe decompression method is established.",
-      "local": "Apply current Australian guidance with senior review and local hospital pathways."
+      "safety": "If haemodynamically unstable or actively bleeding, prioritise resuscitation and urgent inpatient endoscopic/surgical evaluation rather than routine outpatient investigation.",
+      "local": "Use current local Victorian/Australian protocol and senior escalation for deterioration."
     },
-    "source": "https://www.kemh.health.wa.gov.au/~/media/HSPs/NMHS/Hospitals/WNHS/Documents/Clinical-guidelines/Obs-Gyn-Guidelines/Cord-Prolapse.pdf"
+    "source": "https://www.racgp.org.au/afp/2013/may/patient-blood-management"
   },
   {
     "n": 80,
-    "domain": "Gastroenterology & emergency medicine",
-    "skill": "Suspected variceal haemorrhage / treatment before endoscopy",
-    "context": "Revision Blossom Garden · original Australian-guideline Monash-style scenario",
-    "stem": "A 57-year-old with known alcohol-related cirrhosis presents after vomiting a large amount of fresh blood. He has ascites and spider naevi, BP 101/65 mmHg, HR 116/min and haemoglobin 86 g/L. IV access and resuscitation are underway. The gastroenterology registrar can perform urgent endoscopy after stabilisation but asks whether specific variceal treatment should wait until varices are seen.",
-    "ask": "What is the best immediate additional treatment strategy?",
+    "domain": "Psychiatry",
+    "skill": "Delirium / reversible causes",
+    "context": "Original Monash-style clinical reasoning scenario · Australian guideline informed",
+    "stem": "An 81-year-old becomes acutely disoriented and inattentive after hip surgery, with fluctuation through the day. He intermittently sees unfamiliar people in the room and has no psychiatric history.",
+    "ask": "Which approach is most appropriate first?",
     "options": [
-      "Give IV proton-pump inhibitor alone and wait for the first endoscopic image.",
-      "Start high-dose corticosteroids for presumed portal hypertensive gastropathy.",
-      "Give prophylactic platelets regardless of platelet count and defer other medicines.",
-      "Arrange elective beta-blocker therapy before considering endoscopic intervention.",
-      "Start vasoactive therapy and IV antibiotic prophylaxis now while arranging endoscopy."
+      "Diagnose schizophrenia and begin long-term antipsychotic maintenance.",
+      "Use physical restraints as routine prevention of ward wandering.",
+      "Prescribe a benzodiazepine regularly to ensure uninterrupted sleep.",
+      "Treat visual hallucinations alone while deferring physical assessment.",
+      "Assess delirium precipitants and implement supportive non-drug measures."
     ],
     "key": "E",
     "explanations": [
-      "A PPI can be appropriate when non-variceal bleeding is possible, but it does not replace vasoactive drugs and antibiotic prophylaxis for likely variceal bleeding.",
-      "Corticosteroids do not control acute portal-hypertensive haemorrhage and add infection risk without a separate indication.",
-      "Transfusion decisions should be guided by haemodynamics and laboratory results; blanket platelets do not treat the underlying portal hypertension.",
-      "Nonselective beta-blockers have a role in prevention after stabilisation, not as first-line control of active haematemesis.",
-      "Correct. Australian NSW ACI guidance supports prompt terlipressin or octreotide and antibiotic prophylaxis for suspected variceal bleeding before confirmation, with resuscitation and early endoscopic therapy."
+      "Primary schizophrenia seldom presents as abrupt fluctuating inattention in this context.",
+      "Routine restraint can worsen delirium and cause injury.",
+      "Benzodiazepines commonly worsen delirium outside specific indications such as withdrawal.",
+      "Hallucinations are one manifestation; addressing reversible medical drivers is critical.",
+      "Correct. Acute fluctuating attention is characteristic of delirium; evaluate infection, pain, retention, drugs, hypoxia and metabolic disturbance."
     ],
-    "pearl": "Suspected variceal bleed: resuscitation, early vasoactive medication and antibiotics, then timely endoscopy—do not wait for proof of varices.",
-    "pivot": "If endoscopy identifies a non-variceal peptic ulcer source, stop variceal-specific therapy when appropriate and use endoscopic haemostasis plus guideline-directed PPI treatment.",
+    "pearl": "Decision principle: Delirium / reversible causes.",
+    "pivot": "If immediate danger persists despite de-escalation, obtain senior review for the least restrictive short-term medication or observation strategy while treating the cause.",
     "management": {
       "steps": [
         [
           "Recognise",
-          "Assess airway protection, shock and transfusion needs with large-bore access."
+          "Screen attention, cognition, observations and glucose."
         ],
         [
           "Assess",
-          "Take FBC, coagulation, group/crossmatch and evaluate portal-hypertension features."
+          "Review medication, infection, pain, bladder and bowel status."
         ],
         [
           "Act",
-          "Begin vasoactive therapy and antibiotics; coordinate urgent endoscopy after stabilisation."
+          "Support orientation, sleep, mobility and sensory aids."
         ],
         [
-          "Reassess",
-          "Monitor rebleeding, encephalopathy and complications; plan secondary prophylaxis if varices confirmed."
+          "Follow up",
+          "Escalate persistent danger and communicate the delirium plan."
         ]
       ],
-      "safety": "Active massive haematemesis may require airway protection and urgent resuscitation before endoscopy; avoid uncritical overtransfusion.",
-      "local": "Apply current Australian guidance with senior review and local hospital pathways."
+      "safety": "If immediate danger persists despite de-escalation, obtain senior review for the least restrictive short-term medication or observation strategy while treating the cause.",
+      "local": "Use current local Victorian/Australian protocol and senior escalation for deterioration."
     },
-    "source": "https://aci.health.nsw.gov.au/networks/eci/clinical/tools/upper-gastrointestinal-bleeding"
+    "source": "https://www.safetyandquality.gov.au/standards/clinical-care-standards/delirium-clinical-care-standard"
   },
   {
     "n": 81,
-    "domain": "General practice & medication safety",
-    "skill": "Weekly methotrexate taken daily / urgent toxicity response",
-    "context": "Revision Blossom Garden · original Australian-guideline Monash-style scenario",
-    "stem": "A 62-year-old with rheumatoid arthritis is newly prescribed oral methotrexate 15 mg weekly. A medication reconciliation reveals she has instead taken 15 mg every morning for five consecutive days. She now has painful mouth ulcers and nausea. Her last blood count was normal three weeks ago; she has stage 3 chronic kidney disease. She asks whether she can simply skip tomorrow's tablet and see her GP next week.",
-    "ask": "What is the safest next step?",
+    "domain": "Medicine",
+    "skill": "Upper gastrointestinal bleeding / resuscitation",
+    "context": "Original Monash-style clinical reasoning scenario · Australian guideline informed",
+    "stem": "A 59-year-old taking ibuprofen presents with haematemesis. Pulse is 124/min, BP 86/52 mmHg, and he looks pale and clammy. Haemoglobin is pending.",
+    "ask": "What is the immediate priority?",
     "options": [
-      "Stop methotrexate and arrange urgent toxicology/ED assessment for folinic-acid rescue.",
-      "Reduce the methotrexate to half the daily dose and add oral folic acid.",
-      "Continue the daily tablets because mucositis is a common harmless adverse effect.",
-      "Wait for pancytopenia on routine blood tests before discussing any antidote.",
-      "Switch methotrexate to a daily injection to bypass the gastrointestinal side effects."
+      "Resuscitate with large-bore IV access, blood preparation and urgent endoscopy planning.",
+      "Commence oral proton pump inhibitor and discharge if vomiting stops.",
+      "Wait for a haemoglobin result before determining whether shock is present.",
+      "Arrange routine outpatient gastroscopy because bleeding has temporarily ceased.",
+      "Give an oral iron supplement and reassess haemoglobin in one week."
     ],
     "key": "A",
     "explanations": [
-      "Correct. Daily administration of a weekly methotrexate dose can be life-threatening, with mucositis and delayed marrow suppression. Withhold it immediately, seek urgent poisons/toxicology advice and assess renal function, blood counts and need for folinic acid.",
-      "Lowering a mistakenly daily regimen does not correct the prescribing-frequency error. Ordinary folic acid supplementation is not an adequate substitute for specialist rescue of overdose.",
-      "Mucositis can be an early sign of toxicity, and severe cytopenias may develop later. Continuing would compound cumulative exposure.",
-      "Delaying until cytopenias appear sacrifices the opportunity for earlier rescue and monitoring; toxicity is clinically significant already.",
-      "Injectable methotrexate would continue systemic exposure and worsen toxicity. The issue is excess frequency, not poor oral absorption."
+      "Correct. Treat clinical haemorrhagic shock before laboratory confirmation; arrange blood products and urgent definitive evaluation.",
+      "Oral therapy cannot stabilise active haemodynamic compromise.",
+      "Early haemoglobin may lag behind acute blood loss and must not delay resuscitation.",
+      "Transient cessation does not remove high rebleeding and death risk.",
+      "Iron treats later deficiency, not the current circulation emergency."
     ],
-    "pearl": "Low-dose methotrexate for inflammatory disease is generally ONCE WEEKLY; daily dosing errors can cause fatal marrow suppression.",
-    "pivot": "If a patient is correctly taking a weekly dose with mild uncomplicated nausea and normal counts, review administration technique, folic acid supplementation and rheumatology follow-up rather than initiate overdose rescue.",
+    "pearl": "Decision principle: Upper gastrointestinal bleeding / resuscitation.",
+    "pivot": "If suspected variceal bleeding or cirrhosis is identified, add vasoactive therapy and prophylactic antibiotics with urgent specialist endoscopy.",
     "management": {
       "steps": [
         [
           "Recognise",
-          "Confirm exact tablets, doses, dates, renal disease and co-medications."
+          "Assess airway aspiration risk and haemorrhagic shock."
         ],
         [
           "Assess",
-          "Withhold methotrexate and check FBC, renal function, liver tests and clinical toxicity."
+          "Insert two large-bore IVs and send crossmatch and bloods."
         ],
         [
           "Act",
-          "Contact poisons/toxicology urgently about folinic-acid rescue and hospital observation."
+          "Resuscitate and arrange urgent gastroenterology involvement."
         ],
         [
-          "Reassess",
-          "Repeat blood counts and renal assessment as advised; correct the medication schedule before discharge."
+          "Follow up",
+          "Monitor for rebleeding and address the bleeding source."
         ]
       ],
-      "safety": "Normal early FBC does not exclude delayed marrow suppression after repeated methotrexate overdoses.",
-      "local": "Apply current Australian guidance with senior review and local hospital pathways."
+      "safety": "If suspected variceal bleeding or cirrhosis is identified, add vasoactive therapy and prophylactic antibiotics with urgent specialist endoscopy.",
+      "local": "Use current local Victorian/Australian protocol and senior escalation for deterioration."
     },
-    "source": "https://cec.health.nsw.gov.au/therapeutics-safety/high-risk/methotrexate"
+    "source": "https://aci.health.nsw.gov.au/networks/eci/clinical/clinical-tools/gastrointestinal-bleeding"
   },
   {
     "n": 82,
-    "domain": "Psychiatry & toxicology",
-    "skill": "Chronic lithium toxicity precipitated by NSAID and dehydration",
-    "context": "Revision Blossom Garden · original Australian-guideline Monash-style scenario",
-    "stem": "A 48-year-old with bipolar I disorder has taken stable-dose lithium for three years. After developing knee pain he started ibuprofen most days, then had two days of vomiting and reduced fluid intake. His partner reports new coarse tremor, unsteady walking and slowed responses. Pulse is 98/min and BP 112/70 mmHg. His next lithium dose is due in one hour.",
-    "ask": "What is the most appropriate immediate management plan?",
+    "domain": "Surgery",
+    "skill": "Necrotising soft tissue infection / early surgery",
+    "context": "Original Monash-style clinical reasoning scenario · Australian guideline informed",
+    "stem": "A person with diabetes has rapidly worsening calf pain after a minor abrasion. Examination shows severe tenderness beyond the erythema, tachycardia, fever and subtle dusky skin changes.",
+    "ask": "Which management choice is most appropriate?",
     "options": [
-      "Continue lithium because toxicity is unlikely after several years on a stable dose.",
-      "Withhold lithium and obtain urgent lithium level, renal function and toxicology review.",
-      "Treat the tremor with propranolol and schedule a routine lithium level next month.",
-      "Increase the lithium dose because vomiting may reduce its intestinal absorption.",
-      "Give activated charcoal to bind the remaining circulating lithium in the bloodstream."
+      "Treat as simple cellulitis using oral antibiotics and review in 48 hours.",
+      "Call surgery immediately for exploration, with sepsis treatment and broad antibiotics.",
+      "Await CT imaging before contacting the on-call surgical team.",
+      "Use topical antimicrobial dressing as sole treatment and monitor daily.",
+      "Mark the erythema and defer intervention until obvious crepitus appears."
     ],
     "key": "B",
     "explanations": [
-      "Chronic toxicity can occur when renal clearance falls despite a previously stable dose; NSAIDs and dehydration are classic precipitants.",
-      "Correct. Hold lithium immediately, assess neurological/cardiac status, measure serum lithium and renal/electrolyte function, correct dehydration appropriately and seek urgent toxicology advice. Severe cases may require extracorporeal removal.",
-      "Propranolol may treat benign lithium tremor, but new ataxia and cognitive slowing after NSAID exposure indicate possible toxicity requiring urgent evaluation.",
-      "Vomiting and volume depletion reduce lithium clearance; increasing the dose would worsen accumulation.",
-      "Activated charcoal does not bind lithium effectively. Management centres on stopping exposure, supportive care, serial levels and specialist dialysis decisions when indicated."
+      "Outpatient oral treatment is inadequate for a potentially fulminant invasive infection.",
+      "Correct. Pain out of proportion and systemic toxicity can signal necrotising infection; early surgical source control saves life.",
+      "Imaging may aid assessment but cannot delay urgent surgical review.",
+      "Dressings do not treat deep fascial necrosis.",
+      "Crepitus and skin necrosis may appear late; waiting is dangerous."
     ],
-    "pearl": "Coarse tremor, ataxia and confusion are lithium toxicity warning signs even if the usual dose has not changed.",
-    "pivot": "If a well patient has a fine stable tremor, normal renal function and a therapeutic trough level, review caffeine, interactions and dose timing with the treating psychiatrist rather than treating as acute poisoning.",
+    "pearl": "Decision principle: Necrotising soft tissue infection / early surgery.",
+    "pivot": "If the patient deteriorates into shock, provide immediate ICU-level resuscitation and vasopressors while proceeding urgently to theatre.",
     "management": {
       "steps": [
         [
           "Recognise",
-          "Withhold lithium and assess gait, consciousness, hydration and ECG."
+          "Identify disproportionate pain and systemic toxicity."
         ],
         [
           "Assess",
-          "Order lithium concentration, UEC/creatinine and repeat levels as advised."
+          "Call senior surgery, anaesthesia and sepsis response."
         ],
         [
           "Act",
-          "Consult toxicology, correct fluid depletion safely and review NSAID exposure."
+          "Obtain cultures and give immediate broad-spectrum IV antibiotics."
         ],
         [
-          "Reassess",
-          "Monitor neurological course and renal clearance; arrange medication safety follow-up."
+          "Follow up",
+          "Proceed to urgent debridement and planned re-examination."
         ]
       ],
-      "safety": "Clinical toxicity severity does not always track a single serum level, especially in chronic exposure; assess the patient, not just the number.",
-      "local": "Apply current Australian guidance with senior review and local hospital pathways."
+      "safety": "If the patient deteriorates into shock, provide immediate ICU-level resuscitation and vasopressors while proceeding urgently to theatre.",
+      "local": "Use current local Victorian/Australian protocol and senior escalation for deterioration."
     },
-    "source": "https://australianprescriber.tg.org.au/articles/lithium-therapy-and-its-interactions.html"
+    "source": "https://www.safetyandquality.gov.au/standards/clinical-care-standards/sepsis-clinical-care-standard"
   },
   {
     "n": 83,
-    "domain": "Surgery & inpatient ward care",
-    "skill": "Postoperative low urine output / bladder retention before fluid loading",
-    "context": "Revision Blossom Garden · original Australian-guideline Monash-style scenario",
-    "stem": "Six hours after an uncomplicated elective inguinal hernia repair, a 68-year-old man has passed no urine. He is alert, BP 128/74 mmHg, HR 84/min, with no fever or bleeding. He reports increasing suprapubic pressure and has a palpable fullness above the pubic symphysis. A colleague suggests giving another litre of crystalloid because the urine output chart is blank.",
-    "ask": "Which investigation should be done before prescribing more fluid?",
+    "domain": "Paediatrics",
+    "skill": "Febrile infant / serious bacterial infection",
+    "context": "Original Monash-style clinical reasoning scenario · Australian guideline informed",
+    "stem": "A 19-day-old term infant has a rectal temperature of 38.2°C, poor feeding and no focal signs. He is currently perfused, awake and breathing comfortably.",
+    "ask": "Which disposition and investigation plan is safest?",
     "options": [
-      "Order CT abdomen and pelvis to exclude a postoperative intra-abdominal abscess.",
-      "Measure serum sodium alone to distinguish renal from postrenal oliguria.",
-      "Perform a bedside bladder scan to assess for acute urinary retention.",
-      "Request urgent cystoscopy before any non-invasive assessment of the bladder.",
-      "Administer IV furosemide and monitor the first response before examining further."
+      "Give antipyretic and discharge if the infant drinks one feed.",
+      "Obtain urine dipstick only and defer all further testing.",
+      "Admit for a full neonatal sepsis evaluation and empiric IV antibiotics.",
+      "Treat as an uncomplicated viral illness without cultures or observation.",
+      "Arrange outpatient blood tests next week if fever continues."
     ],
     "key": "C",
     "explanations": [
-      "Abscess is unlikely within hours of an uncomplicated operation without systemic findings; the bladder findings suggest retention.",
-      "Electrolytes may be needed if renal dysfunction is suspected, but sodium alone does not distinguish a distended bladder from true low urine production.",
-      "Correct. Bedside bladder ultrasound rapidly distinguishes postoperative urinary retention from true oliguria. If significant retention is confirmed, decompress using an appropriate catheter plan and document drained volume.",
-      "Cystoscopy is not the initial test for uncomplicated retention. It may be needed if catheterisation is difficult or injury is suspected.",
-      "Diuretics can worsen a distended bladder and are not appropriate without evaluating a mechanical outflow problem."
+      "A transiently reassuring appearance does not exclude invasive bacterial infection.",
+      "Urine testing alone misses bacteraemia and meningitis.",
+      "Correct. Fever in a neonate warrants urgent evaluation, cultures including urine and often CSF, and prompt parenteral antibiotics.",
+      "Viral symptoms or a well appearance do not safely exclude serious infection at this age.",
+      "Delayed outpatient investigation risks rapid deterioration."
     ],
-    "pearl": "No urine in the bag or chart is not automatically low kidney output; a distended bladder points to retention.",
-    "pivot": "If the bladder scan shows an empty bladder and the patient is hypotensive after surgery, investigate true oliguria from hypovolaemia, bleeding or renal injury and resuscitate according to findings instead of inserting a catheter reflexively.",
+    "pearl": "Decision principle: Febrile infant / serious bacterial infection.",
+    "pivot": "If shock, apnoea or altered consciousness develops, stabilise ABCDE, initiate sepsis resuscitation and antibiotics immediately; do not delay therapy for lumbar puncture.",
     "management": {
       "steps": [
         [
           "Recognise",
-          "Assess vitals, volume status, suprapubic findings and recent medications."
+          "Assess temperature, feeding, perfusion and vital signs."
         ],
         [
           "Assess",
-          "Perform bladder scan and review voiding history and operation type."
+          "Obtain blood and urine cultures and assess LP safety."
         ],
         [
           "Act",
-          "If retention is confirmed, catheterise per protocol and seek advice if difficult."
+          "Start neonatal empiric IV antibiotics under local protocol."
         ],
         [
-          "Reassess",
-          "Record residual/drained volume and plan trial of void and recurrence prevention."
+          "Follow up",
+          "Admit for monitoring and tailor treatment to results."
         ]
       ],
-      "safety": "After recent urological, gynaecological or spinal surgery, do not attempt catheterisation without relevant surgical-team advice.",
-      "local": "Apply current Australian guidance with senior review and local hospital pathways."
+      "safety": "If shock, apnoea or altered consciousness develops, stabilise ABCDE, initiate sepsis resuscitation and antibiotics immediately; do not delay therapy for lumbar puncture.",
+      "local": "Use current local Victorian/Australian protocol and senior escalation for deterioration."
     },
-    "source": "https://aci.health.nsw.gov.au/ecat/adult/urinary-retention"
+    "source": "https://www.rch.org.au/clinicalguide/guideline_index/Febrile_child/"
   },
   {
     "n": 84,
-    "domain": "Neonatology & paediatric surgery",
-    "skill": "Single green vomit in neonate / volvulus exclusion",
-    "context": "Revision Blossom Garden · original Australian-guideline Monash-style scenario",
-    "stem": "A 12-day-old term neonate is brought to an urgent-care clinic after one episode of distinctly dark-green vomiting. She had been feeding normally and is now awake with normal temperature, heart rate and capillary refill. Her abdomen is soft, and she has passed stool today. A clinician suggests observing her for another green vomit because she currently appears comfortable.",
-    "ask": "What is the safest next step?",
+    "domain": "Obstetrics",
+    "skill": "Severe pre-eclampsia / magnesium and delivery planning",
+    "context": "Original Monash-style clinical reasoning scenario · Australian guideline informed",
+    "stem": "At 35 weeks a pregnant patient has BP 174/114 mmHg, severe persistent headache and brisk reflexes. Urine protein is elevated and platelets are 130 × 10⁹/L.",
+    "ask": "What is the immediate management priority?",
     "options": [
-      "Trial smaller feeds with oral rehydration and arrange routine review in 48 hours.",
-      "Prescribe an antiemetic and discharge if no further vomiting occurs within one hour.",
-      "Order outpatient ultrasound in several days because bowel movements remain present.",
-      "Keep nil by mouth and arrange immediate emergency paediatric surgical assessment.",
-      "Reassure the parents because volvulus always causes marked distension before vomiting."
+      "Provide reassurance and repeat blood pressure at a routine antenatal appointment.",
+      "Recommend bed rest at home and increase dietary fluid intake.",
+      "Arrange outpatient 24-hour urine protein before deciding on treatment.",
+      "Admit, treat severe hypertension and provide seizure prophylaxis with obstetric escalation.",
+      "Give diuretics routinely and delay maternal monitoring until the next day."
     ],
     "key": "D",
     "explanations": [
-      "Feeding trials are unsafe until obstruction is excluded; malrotation with volvulus can cause rapid bowel ischaemia.",
-      "Stopping vomiting after medication does not exclude a dangerous mechanical obstruction and cannot justify discharge.",
-      "Outpatient imaging would dangerously delay exclusion of midgut volvulus; urgent surgical evaluation and appropriate imaging are required.",
-      "Correct. Green bilious vomiting in a neonate is obstruction until proven otherwise. Keep the infant fasting, arrange urgent ED/paediatric surgical review, IV support and imaging directed by specialists.",
-      "A neonate with volvulus can look deceptively well early, and normal stool passage does not exclude a proximal or evolving obstruction."
+      "Severe features can progress to eclampsia or stroke.",
+      "Home management cannot provide acute monitoring or treatment.",
+      "Quantifying protein does not change the need to treat severe features now.",
+      "Correct. Severe hypertension with neurological symptoms needs urgent blood-pressure control, magnesium assessment and obstetric delivery planning.",
+      "Routine diuresis can impair intravascular volume and does not address underlying disease."
     ],
-    "pearl": "One truly GREEN vomit in a newborn is enough to trigger urgent surgical assessment; do not wait for the second episode.",
-    "pivot": "If the vomit is clearly milk-coloured, the baby is thriving and has no red flags, assess feeding technique and reflux, offer feeding advice and review rather than activate the bilious-obstruction pathway.",
+    "pearl": "Decision principle: Severe pre-eclampsia / magnesium and delivery planning.",
+    "pivot": "If eclamptic seizure occurs, protect airway and prevent injury, administer magnesium sulfate and organise stabilisation followed by urgent delivery planning.",
     "management": {
       "steps": [
         [
           "Recognise",
-          "Confirm colour of vomit, vital signs, hydration and abdominal findings."
+          "Confirm severe BP and evaluate neurological symptoms."
         ],
         [
           "Assess",
-          "Keep nil by mouth and organise urgent emergency transfer and surgical consultation."
+          "Check maternal bloods, renal function and fetal status."
         ],
         [
           "Act",
-          "Provide IV access, glucose/fluid support and appropriate imaging after specialist discussion."
+          "Give urgent antihypertensive treatment and magnesium as indicated."
         ],
         [
-          "Reassess",
-          "Monitor for shock, peritonitis or further bilious emesis while awaiting definitive care."
+          "Follow up",
+          "Plan timing of birth with senior obstetrics after stabilisation."
         ]
       ],
-      "safety": "Malrotation with volvulus can progress to intestinal necrosis before abdominal signs become obvious.",
-      "local": "Apply current Australian guidance with senior review and local hospital pathways."
+      "safety": "If eclamptic seizure occurs, protect airway and prevent injury, administer magnesium sulfate and organise stabilisation followed by urgent delivery planning.",
+      "local": "Use current local Victorian/Australian protocol and senior escalation for deterioration."
     },
-    "source": "https://www.rch.org.au/clinicalguide/guideline_index/Vomiting/"
+    "source": "https://www.safercare.vic.gov.au/best-practice-improvement/clinical-guidance/maternity/hypertension-in-pregnancy"
   },
   {
     "n": 85,
-    "domain": "Obstetrics & antenatal fetal assessment",
-    "skill": "Decreased fetal movements / normal home Doppler is not reassurance",
-    "context": "Revision Blossom Garden · original Australian-guideline Monash-style scenario",
-    "stem": "A 31-year-old at 34 weeks' gestation calls her Victorian maternity unit because her baby has moved much less than usual since morning. She has no pain or vaginal bleeding. A relative used a home Doppler and believes they heard a heartbeat. The patient asks whether she can eat something sweet and wait until the next antenatal appointment. Her pregnancy has otherwise been uncomplicated.",
-    "ask": "What is the most appropriate advice and initial clinical assessment?",
+    "domain": "Medicine",
+    "skill": "Hyperglycaemic hyperosmolar state / fluid-first management",
+    "context": "Original Monash-style clinical reasoning scenario · Australian guideline informed",
+    "stem": "A 76-year-old with type 2 diabetes is drowsy after a week of poor intake. Glucose is 38 mmol/L, measured osmolality is markedly elevated, ketones are minimal and pH is 7.37. BP is 92/60 mmHg.",
+    "ask": "What initial treatment principle is most appropriate?",
     "options": [
-      "Ask her to count movements overnight and call only if none occur by morning.",
-      "Advise a cold drink and left-lateral rest before considering hospital attendance.",
-      "Arrange an ultrasound appointment in one week because the home Doppler detected a heartbeat.",
-      "Reassure her that fetal sleep cycles explain any reduction after 28 weeks' gestation.",
-      "Request immediate maternity assessment with fetal heart confirmation and timely CTG."
+      "Give a large intravenous insulin bolus as the sole first treatment.",
+      "Administer bicarbonate routinely because of the high serum glucose.",
+      "Treat as uncomplicated outpatient hyperglycaemia with additional oral tablets.",
+      "Restrict fluids aggressively to avoid any decrease in serum sodium.",
+      "Begin carefully monitored isotonic fluid resuscitation and electrolyte surveillance before insulin."
     ],
     "key": "E",
     "explanations": [
-      "Delaying assessment until morning is specifically discouraged; maternal perception of reduced movements warrants prompt review.",
-      "Food, cold drinks and resting do not reliably exclude fetal compromise and should not be used to delay attendance.",
-      "An ultrasound may be needed after assessment, but a week's delay is inappropriate for a current change in movements.",
-      "Normal sleep cycles do not justify dismissing a persistent reduction. Home Doppler use cannot establish fetal wellbeing.",
-      "Correct. Safer Care Victoria advises immediate contact/attendance, prompt confirmation of fetal heart distinct from maternal pulse and CTG within two hours; persistent concern or risk factors may require ultrasound within 24 hours and senior review."
+      "Early aggressive insulin without volume correction can rapidly shift osmolality and worsen collapse.",
+      "There is no metabolic acidosis needing bicarbonate.",
+      "Altered consciousness and hypotension require inpatient monitored care.",
+      "Careful fluids are essential; the rate depends on physiology and comorbidity.",
+      "Correct. HHS causes severe water deficit; restoring perfusion and monitoring sodium/potassium precede cautious insulin treatment."
     ],
-    "pearl": "Reduced fetal movements require assessment now, not home reassurance from a Doppler or a sugary drink.",
-    "pivot": "If movements have returned to normal and a reassuring CTG is documented with normal growth and no risk factors, provide return precautions and routine antenatal follow-up; persistent concern despite normal CTG needs senior review and ultrasound.",
+    "pearl": "Decision principle: Hyperglycaemic hyperosmolar state / fluid-first management.",
+    "pivot": "If significant ketonaemia and acidosis are also present, use a mixed DKA/HHS protocol with appropriate insulin and potassium replacement rather than HHS fluid-only initiation.",
     "management": {
       "steps": [
         [
           "Recognise",
-          "Advise immediate presentation to maternity triage without home waiting strategies."
+          "Assess consciousness, shock and possible triggers."
         ],
         [
           "Assess",
-          "Confirm fetal heart distinct from maternal pulse and assess maternal observations."
+          "Start cautious isotonic crystalloid with frequent electrolytes."
         ],
         [
           "Act",
-          "Perform CTG promptly and arrange senior review or ultrasound when indicated."
+          "Monitor osmolality and commence insulin at protocol-defined point."
         ],
         [
-          "Reassess",
-          "Document fetal movement history, findings, safety-net advice and follow-up."
+          "Follow up",
+          "Treat infection or infarction and transition safely to maintenance therapy."
         ]
       ],
-      "safety": "Do not reassure based on a home Doppler; hearing a heartbeat does not assess oxygenation or fetal wellbeing.",
-      "local": "Apply current Australian guidance with senior review and local hospital pathways."
+      "safety": "If significant ketonaemia and acidosis are also present, use a mixed DKA/HHS protocol with appropriate insulin and potassium replacement rather than HHS fluid-only initiation.",
+      "local": "Use current local Victorian/Australian protocol and senior escalation for deterioration."
     },
-    "source": "https://www.safercare.vic.gov.au/best-practice-improvement/clinical-guidance/maternity/decreased-fetal-movements"
+    "source": "https://www.diabetessociety.com.au/guideline/emergency-management-of-hyperglycaemia-in-primary-care/"
+  },
+  {
+    "n": 86,
+    "domain": "Surgery",
+    "skill": "Testicular torsion / urgent exploration",
+    "context": "Original Monash-style clinical reasoning scenario · Australian guideline informed",
+    "stem": "A 15-year-old wakes with sudden unilateral testicular pain and vomiting. The affected testis is high-riding and exquisitely tender; symptoms began two hours ago.",
+    "ask": "Which action offers the best chance of testicular salvage?",
+    "options": [
+      "Call urology urgently for exploration without delaying for routine ultrasound.",
+      "Begin oral antibiotics and arrange a repeat examination after 48 hours.",
+      "Obtain a urine culture and wait for the result before referral.",
+      "Reassure the patient because adolescent testicular pain is usually benign.",
+      "Schedule an elective outpatient Doppler ultrasound for the following week."
+    ],
+    "key": "A",
+    "explanations": [
+      "Correct. The clinical pattern is highly suspicious for torsion; urgent exploration is time critical.",
+      "Epididymitis treatment must not delay torsion exclusion.",
+      "Urinalysis does not establish or exclude torsion.",
+      "A high-riding painful testis with abrupt onset is a surgical emergency.",
+      "Delayed imaging risks irreversible loss of blood supply."
+    ],
+    "pearl": "Decision principle: Testicular torsion / urgent exploration.",
+    "pivot": "If a clear alternative diagnosis is established after expert review and perfusion is reassuring, investigate and treat that cause; uncertainty still warrants urgent surgical consultation.",
+    "management": {
+      "steps": [
+        [
+          "Recognise",
+          "Record exact onset and examine both testes."
+        ],
+        [
+          "Assess",
+          "Provide analgesia, fasting and IV access."
+        ],
+        [
+          "Act",
+          "Call urology or paediatric surgery immediately."
+        ],
+        [
+          "Follow up",
+          "Support urgent exploration and bilateral fixation as indicated."
+        ]
+      ],
+      "safety": "If a clear alternative diagnosis is established after expert review and perfusion is reassuring, investigate and treat that cause; uncertainty still warrants urgent surgical consultation.",
+      "local": "Use current local Victorian/Australian protocol and senior escalation for deterioration."
+    },
+    "source": "https://www.rch.org.au/clinicalguide/guideline_index/Acute_scrotal_pain_or_swelling/"
+  },
+  {
+    "n": 87,
+    "domain": "GP",
+    "skill": "Transient ischaemic attack / urgent stroke prevention",
+    "context": "Original Monash-style clinical reasoning scenario · Australian guideline informed",
+    "stem": "A 67-year-old has a 12-minute episode of unilateral arm weakness and speech difficulty that has fully resolved. Examination is now normal, but the event occurred this morning.",
+    "ask": "What is the safest next step?",
+    "options": [
+      "Reassure because neurological signs are no longer present on examination.",
+      "Arrange urgent same-day stroke-pathway evaluation including brain and vascular assessment.",
+      "Book a routine review in six months without additional investigation.",
+      "Prescribe vestibular suppressants for presumed benign dizziness symptoms.",
+      "Order only a fasting cholesterol level and defer all other assessment."
+    ],
+    "key": "B",
+    "explanations": [
+      "Resolution of deficits does not eliminate imminent stroke risk.",
+      "Correct. TIA is a warning of early stroke; urgent imaging, cardiac assessment and secondary prevention are required.",
+      "Delayed evaluation misses time-sensitive risk identification and treatment.",
+      "Focal weakness and dysphasia are not explained by benign vestibular disease.",
+      "Lipids aid risk management but are insufficient as the sole assessment."
+    ],
+    "pearl": "Decision principle: Transient ischaemic attack / urgent stroke prevention.",
+    "pivot": "If focal symptoms are ongoing or recur, activate the acute stroke pathway immediately, including reperfusion eligibility assessment rather than a resolved-TIA pathway.",
+    "management": {
+      "steps": [
+        [
+          "Recognise",
+          "Establish exact onset, duration and vascular risk factors."
+        ],
+        [
+          "Assess",
+          "Arrange urgent specialist stroke assessment and neuroimaging."
+        ],
+        [
+          "Act",
+          "Assess ECG rhythm and cervical/intracranial vessels."
+        ],
+        [
+          "Follow up",
+          "Initiate suitable antithrombotic and risk-factor treatment after assessment."
+        ]
+      ],
+      "safety": "If focal symptoms are ongoing or recur, activate the acute stroke pathway immediately, including reperfusion eligibility assessment rather than a resolved-TIA pathway.",
+      "local": "Use current local Victorian/Australian protocol and senior escalation for deterioration."
+    },
+    "source": "https://informme.org.au/guidelines/clinical-guidelines-for-stroke-management"
+  },
+  {
+    "n": 88,
+    "domain": "Psychiatry",
+    "skill": "Alcohol withdrawal / severe symptoms",
+    "context": "Original Monash-style clinical reasoning scenario · Australian guideline informed",
+    "stem": "A 46-year-old dependent drinker stopped alcohol 20 hours ago and develops tremor, diaphoresis, anxiety and pulse 118/min. He is oriented, has no hallucinations and is medically stable.",
+    "ask": "What is the appropriate treatment approach?",
+    "options": [
+      "Prescribe antipsychotic monotherapy as the first-line withdrawal treatment.",
+      "Withhold all medication until a generalised seizure occurs.",
+      "Assess withdrawal severity and give monitored symptom-guided benzodiazepines plus thiamine.",
+      "Offer a home detox without assessing prior complicated withdrawal.",
+      "Administer disulfiram immediately to stop the current autonomic symptoms."
+    ],
+    "key": "C",
+    "explanations": [
+      "Antipsychotics do not prevent withdrawal seizures and may lower seizure threshold.",
+      "Waiting for seizures is unsafe when clinically significant withdrawal is evident.",
+      "Correct. Benzodiazepines reduce withdrawal complications; thiamine, fluids and risk assessment are important.",
+      "Prior seizures, delirium or comorbidity may require supervised inpatient care.",
+      "Disulfiram is relapse-prevention therapy, not treatment of acute withdrawal."
+    ],
+    "pearl": "Decision principle: Alcohol withdrawal / severe symptoms.",
+    "pivot": "If hallucinations with disorientation, seizures or severe autonomic instability develop, escalate to inpatient high-acuity withdrawal management and assess for delirium tremens.",
+    "management": {
+      "steps": [
+        [
+          "Recognise",
+          "Document last drink, intake and prior withdrawal complications."
+        ],
+        [
+          "Assess",
+          "Score symptoms and check glucose, electrolytes and vital signs."
+        ],
+        [
+          "Act",
+          "Give thiamine and symptom-guided benzodiazepine treatment."
+        ],
+        [
+          "Follow up",
+          "Monitor for seizures, delirium and plan addiction follow-up."
+        ]
+      ],
+      "safety": "If hallucinations with disorientation, seizures or severe autonomic instability develop, escalate to inpatient high-acuity withdrawal management and assess for delirium tremens.",
+      "local": "Use current local Victorian/Australian protocol and senior escalation for deterioration."
+    },
+    "source": "https://www.health.nsw.gov.au/aod/professionals/Publications/clinical-guidelines.pdf"
+  },
+  {
+    "n": 89,
+    "domain": "Paediatrics",
+    "skill": "Meningococcal sepsis / antibiotics without delay",
+    "context": "Original Monash-style clinical reasoning scenario · Australian guideline informed",
+    "stem": "A previously well 3-year-old develops fever, lethargy and a new non-blanching purpuric rash. Capillary refill is five seconds and extremities are cool.",
+    "ask": "What is the immediate management principle?",
+    "options": [
+      "Observe for several hours because the rash may be a benign viral finding.",
+      "Wait for lumbar puncture before administering any antimicrobial treatment.",
+      "Arrange outpatient dermatology evaluation before checking blood pressure.",
+      "Treat suspected invasive bacterial sepsis with prompt IV antibiotics and resuscitation.",
+      "Give an oral antihistamine and discharge if the rash partially fades."
+    ],
+    "key": "D",
+    "explanations": [
+      "Delayed treatment can be fatal with rapidly progressive meningococcaemia.",
+      "LP may be contraindicated during shock and should never delay antibiotics.",
+      "Immediate perfusion and sepsis assessment outrank dermatological referral.",
+      "Correct. Purpura with shock indicators mandates urgent sepsis management; antibiotics must not await LP.",
+      "Antihistamines do not treat invasive infection or circulatory collapse."
+    ],
+    "pearl": "Decision principle: Meningococcal sepsis / antibiotics without delay.",
+    "pivot": "If seizures or altered conscious state occur, manage airway and circulation with critical-care help and defer lumbar puncture until stabilised.",
+    "management": {
+      "steps": [
+        [
+          "Recognise",
+          "Call paediatric resuscitation and assess ABCDE."
+        ],
+        [
+          "Assess",
+          "Obtain blood cultures if immediately feasible."
+        ],
+        [
+          "Act",
+          "Administer empiric IV antibiotics and fluid resuscitation per protocol."
+        ],
+        [
+          "Follow up",
+          "Escalate to PICU and initiate public health notification if confirmed."
+        ]
+      ],
+      "safety": "If seizures or altered conscious state occur, manage airway and circulation with critical-care help and defer lumbar puncture until stabilised.",
+      "local": "Use current local Victorian/Australian protocol and senior escalation for deterioration."
+    },
+    "source": "https://www.rch.org.au/clinicalguide/guideline_index/Meningococcal_disease/"
+  },
+  {
+    "n": 90,
+    "domain": "Gynaecology",
+    "skill": "Pelvic inflammatory disease / empiric therapy",
+    "context": "Original Monash-style clinical reasoning scenario · Australian guideline informed",
+    "stem": "A sexually active 24-year-old has lower abdominal pain and cervical motion tenderness. Pregnancy test is negative, observations are stable and there is no guarding or adnexal mass.",
+    "ask": "What is the safest initial therapeutic approach?",
+    "options": [
+      "Await all chlamydia and gonorrhoea results before starting any treatment.",
+      "Prescribe antifungal monotherapy for presumed vaginal candidiasis.",
+      "Proceed directly to laparotomy despite absent peritonism or instability.",
+      "Offer analgesia alone because pelvic tenderness is nonspecific.",
+      "Start empiric PID antibiotics and arrange STI testing and close review."
+    ],
+    "key": "E",
+    "explanations": [
+      "Negative or pending cervical swabs do not exclude upper-genital-tract infection.",
+      "Candidiasis does not explain cervical motion tenderness with pelvic pain.",
+      "Stable uncomplicated PID is generally treated medically, not via emergency laparotomy.",
+      "Symptom relief without infection treatment risks tubal damage.",
+      "Correct. PID is often a clinical diagnosis and early empiric broad coverage reduces reproductive complications."
+    ],
+    "pearl": "Decision principle: Pelvic inflammatory disease / empiric therapy.",
+    "pivot": "If pregnancy, tubo-ovarian abscess, peritonitis, severe illness or failure of outpatient therapy is identified, seek urgent gynaecological assessment for admission and IV treatment.",
+    "management": {
+      "steps": [
+        [
+          "Recognise",
+          "Assess pregnancy, stability and differential diagnoses."
+        ],
+        [
+          "Assess",
+          "Collect STI tests without delaying antibiotics."
+        ],
+        [
+          "Act",
+          "Give guideline-directed combination therapy and analgesia."
+        ],
+        [
+          "Follow up",
+          "Arrange early review, partner management and sexual health counselling."
+        ]
+      ],
+      "safety": "If pregnancy, tubo-ovarian abscess, peritonitis, severe illness or failure of outpatient therapy is identified, seek urgent gynaecological assessment for admission and IV treatment.",
+      "local": "Use current local Victorian/Australian protocol and senior escalation for deterioration."
+    },
+    "source": "https://sti.guidelines.org.au/syndromes/pelvic-inflammatory-disease/"
+  },
+  {
+    "n": 91,
+    "domain": "Paediatrics",
+    "skill": "Severe asthma / reassessment",
+    "context": "Original Monash-style clinical reasoning scenario · Australian guideline informed",
+    "stem": "An 8-year-old with known asthma has marked recession and can speak only in phrases after initial inhaled salbutamol. Oxygen saturation is 91% and air entry is reduced bilaterally.",
+    "ask": "What is the most appropriate escalation?",
+    "options": [
+      "Give oxygen, repeated inhaled bronchodilator and systemic steroid with senior review.",
+      "Discharge on routine preventer therapy because wheeze has become quieter.",
+      "Stop all bronchodilators and obtain a routine outpatient spirometry test.",
+      "Offer only oral antibiotics for presumed bacterial lower respiratory infection.",
+      "Wait for the child to become exhausted before calling emergency support."
+    ],
+    "key": "A",
+    "explanations": [
+      "Correct. Persistent hypoxaemia and increased work demand emergency asthma therapy, repeated assessment and escalation.",
+      "Quietening wheeze with reduced air entry may indicate worsening airflow, not improvement.",
+      "Spirometry cannot delay acute stabilisation.",
+      "Antibiotics are not a replacement for acute bronchospasm treatment.",
+      "Exhaustion is a late life-threatening sign; escalation must precede it."
+    ],
+    "pearl": "Decision principle: Severe asthma / reassessment.",
+    "pivot": "If the child becomes drowsy, silent-chested or develops rising carbon dioxide, call intensive-care/airway expertise immediately for impending respiratory failure.",
+    "management": {
+      "steps": [
+        [
+          "Recognise",
+          "Assess air entry, work, speech and oxygenation repeatedly."
+        ],
+        [
+          "Assess",
+          "Give oxygen and intensive inhaled bronchodilators."
+        ],
+        [
+          "Act",
+          "Administer systemic corticosteroid and add adjuncts per severity."
+        ],
+        [
+          "Follow up",
+          "Involve senior/ICU services for poor response or exhaustion."
+        ]
+      ],
+      "safety": "If the child becomes drowsy, silent-chested or develops rising carbon dioxide, call intensive-care/airway expertise immediately for impending respiratory failure.",
+      "local": "Use current local Victorian/Australian protocol and senior escalation for deterioration."
+    },
+    "source": "https://www.rch.org.au/clinicalguide/guideline_index/Asthma_acute/"
+  },
+  {
+    "n": 92,
+    "domain": "Surgery",
+    "skill": "Postoperative venous thromboembolism / anticoagulation choice",
+    "context": "Original Monash-style clinical reasoning scenario · Australian guideline informed",
+    "stem": "A patient six days after hip surgery develops unilateral calf swelling. Ultrasound confirms a proximal DVT. There is no active bleeding, renal function is adequate and observations are stable.",
+    "ask": "Which treatment principle is most appropriate?",
+    "options": [
+      "Provide compression stockings alone without prescribing any anticoagulant therapy.",
+      "Begin therapeutic anticoagulation after evaluating bleeding risk and contraindications.",
+      "Start prophylactic-dose heparin only despite documented proximal thrombosis.",
+      "Wait for a repeat ultrasound in one month before beginning treatment.",
+      "Give a thrombolytic routinely to every stable proximal DVT patient."
+    ],
+    "key": "B",
+    "explanations": [
+      "Compression may relieve symptoms but does not replace anticoagulation.",
+      "Correct. Confirmed proximal DVT generally requires therapeutic anticoagulation and a defined duration, accounting for recent surgery.",
+      "Prophylactic dosing is inadequate to treat established proximal clot.",
+      "Deferring treatment increases pulmonary embolism risk.",
+      "Systemic thrombolysis has substantial bleeding risk and is not routine for stable DVT."
+    ],
+    "pearl": "Decision principle: Postoperative venous thromboembolism / anticoagulation choice.",
+    "pivot": "If anticoagulation is absolutely contraindicated by active major bleeding, urgently discuss mechanical protection options and reassess when anticoagulation can safely start.",
+    "management": {
+      "steps": [
+        [
+          "Recognise",
+          "Assess extent, PE symptoms, bleeding and renal function."
+        ],
+        [
+          "Assess",
+          "Review surgery details and haemostasis with senior team."
+        ],
+        [
+          "Act",
+          "Start weight-appropriate therapeutic anticoagulation."
+        ],
+        [
+          "Follow up",
+          "Plan duration, mobilisation, warning signs and follow-up."
+        ]
+      ],
+      "safety": "If anticoagulation is absolutely contraindicated by active major bleeding, urgently discuss mechanical protection options and reassess when anticoagulation can safely start.",
+      "local": "Use current local Victorian/Australian protocol and senior escalation for deterioration."
+    },
+    "source": "https://www.health.qld.gov.au/clinical-practice/guidelines-procedures/clinical-pathways/residential-aged-care-clinical-pathways/all-pathways/deep-venous-thrombosis-dvt"
+  },
+  {
+    "n": 93,
+    "domain": "Medicine",
+    "skill": "Community acquired pneumonia / severity",
+    "context": "Original Monash-style clinical reasoning scenario · Australian guideline informed",
+    "stem": "A 74-year-old with cough and lobar consolidation has respiratory rate 32/min, BP 88/54 mmHg and new confusion. Oxygen saturation is 89% in air.",
+    "ask": "Where and how should initial treatment occur?",
+    "options": [
+      "Discharge with oral antibiotics because the radiograph shows only one lobe.",
+      "Repeat a chest radiograph in six weeks before treating the infection.",
+      "Admit urgently for oxygen, sepsis assessment and prompt IV antimicrobials.",
+      "Use cough suppression alone until sputum culture identifies the organism.",
+      "Arrange routine outpatient respiratory review after the weekend."
+    ],
+    "key": "C",
+    "explanations": [
+      "Radiographic extent alone does not determine physiological severity.",
+      "Follow-up imaging has a later role and must not delay antimicrobials.",
+      "Correct. Hypotension, confusion and tachypnoea indicate severe pneumonia or sepsis requiring immediate hospital care.",
+      "Sputum culture may refine treatment but initial therapy is empiric.",
+      "Routine delayed review is unsafe in acute organ dysfunction."
+    ],
+    "pearl": "Decision principle: Community acquired pneumonia / severity.",
+    "pivot": "If respiratory failure progresses despite oxygen, escalate to high-dependency/ICU for advanced respiratory support and reassess for complications.",
+    "management": {
+      "steps": [
+        [
+          "Recognise",
+          "Assess ABCDE and severity indicators."
+        ],
+        [
+          "Assess",
+          "Provide oxygen, cultures and lactate where appropriate."
+        ],
+        [
+          "Act",
+          "Begin prompt guideline-directed antibiotics and resuscitation."
+        ],
+        [
+          "Follow up",
+          "Reassess response and escalate respiratory or circulatory support."
+        ]
+      ],
+      "safety": "If respiratory failure progresses despite oxygen, escalate to high-dependency/ICU for advanced respiratory support and reassess for complications.",
+      "local": "Use current local Victorian/Australian protocol and senior escalation for deterioration."
+    },
+    "source": "https://www.safetyandquality.gov.au/standards/clinical-care-standards/sepsis-clinical-care-standard"
+  },
+  {
+    "n": 94,
+    "domain": "Obstetrics",
+    "skill": "Postpartum endometritis / antibiotics",
+    "context": "Original Monash-style clinical reasoning scenario · Australian guideline informed",
+    "stem": "Three days after an emergency caesarean, a patient develops temperature 39°C, uterine tenderness and foul-smelling lochia. BP is normal and the wound is clean.",
+    "ask": "What management is most appropriate?",
+    "options": [
+      "Treat with topical antifungal cream without evaluating the uterus.",
+      "Reassure that high fever is a normal postpartum physiological response.",
+      "Discharge on simple analgesia and arrange review in two weeks.",
+      "Admit for empiric broad-spectrum IV antibiotics and assess for sepsis.",
+      "Perform immediate hysterectomy before starting any antimicrobial treatment."
+    ],
+    "key": "D",
+    "explanations": [
+      "Vaginal fungal therapy does not treat uterine infection.",
+      "Fever and uterine tenderness are not normal puerperal findings.",
+      "Delay risks bacteraemia and pelvic complications.",
+      "Correct. Postpartum endometritis is a clinical diagnosis after delivery, especially caesarean birth, and needs broad polymicrobial coverage.",
+      "Surgery is reserved for complications or failure of appropriate treatment."
+    ],
+    "pearl": "Decision principle: Postpartum endometritis / antibiotics.",
+    "pivot": "If haemodynamic instability, rising lactate or peritonitis appears, activate the maternal sepsis pathway and obtain urgent source-control assessment.",
+    "management": {
+      "steps": [
+        [
+          "Recognise",
+          "Assess vital signs, uterine tenderness and other fever sources."
+        ],
+        [
+          "Assess",
+          "Obtain cultures and relevant blood tests without delaying therapy."
+        ],
+        [
+          "Act",
+          "Start broad-spectrum IV antibiotics and supportive fluids."
+        ],
+        [
+          "Follow up",
+          "Monitor clinical response and image for retained products or abscess if needed."
+        ]
+      ],
+      "safety": "If haemodynamic instability, rising lactate or peritonitis appears, activate the maternal sepsis pathway and obtain urgent source-control assessment.",
+      "local": "Use current local Victorian/Australian protocol and senior escalation for deterioration."
+    },
+    "source": "https://www.safercare.vic.gov.au/best-practice-improvement/clinical-guidance/maternity/maternal-sepsis-pathway"
+  },
+  {
+    "n": 95,
+    "domain": "GP",
+    "skill": "New headache / giant cell arteritis",
+    "context": "Original Monash-style clinical reasoning scenario · Australian guideline informed",
+    "stem": "A 73-year-old presents with new unilateral temporal headache, scalp tenderness and jaw pain when chewing. Vision is currently intact and examination finds a tender temporal artery.",
+    "ask": "What is the safest action now?",
+    "options": [
+      "Wait for temporal artery biopsy before offering any anti-inflammatory treatment.",
+      "Prescribe a triptan for presumed migraine and review in six months.",
+      "Use topical steroid cream as sole therapy over the tender artery.",
+      "Order an elective brain MRI without addressing the risk of visual loss.",
+      "Start high-dose glucocorticoid urgently and arrange specialist diagnostic assessment."
+    ],
+    "key": "E",
+    "explanations": [
+      "Biopsy or ultrasound should be arranged but treatment must start immediately.",
+      "New headache with jaw claudication at this age is a vascular red flag.",
+      "Topical therapy cannot prevent arterial ischaemia.",
+      "Imaging may be considered for alternatives, but delay of urgent treatment is unsafe.",
+      "Correct. Suspected giant cell arteritis risks irreversible blindness; do not postpone glucocorticoids for confirmatory testing."
+    ],
+    "pearl": "Decision principle: New headache / giant cell arteritis.",
+    "pivot": "If transient or established visual loss develops, arrange emergency ophthalmology/medical assessment and consider IV steroid treatment under the specialist pathway.",
+    "management": {
+      "steps": [
+        [
+          "Recognise",
+          "Ask about visual symptoms, jaw claudication and polymyalgia."
+        ],
+        [
+          "Assess",
+          "Send ESR, CRP and blood count promptly."
+        ],
+        [
+          "Act",
+          "Commence appropriate systemic glucocorticoid without delay."
+        ],
+        [
+          "Follow up",
+          "Arrange urgent specialist confirmation and bone-protection planning."
+        ]
+      ],
+      "safety": "If transient or established visual loss develops, arrange emergency ophthalmology/medical assessment and consider IV steroid treatment under the specialist pathway.",
+      "local": "Use current local Victorian/Australian protocol and senior escalation for deterioration."
+    },
+    "source": "https://www.nps.org.au/australian-prescriber/articles/diagnosis-and-treatment-of-giant-cell-arteritis"
+  },
+  {
+    "n": 96,
+    "domain": "Psychiatry",
+    "skill": "Lithium toxicity / dehydration",
+    "context": "Original Monash-style clinical reasoning scenario · Australian guideline informed",
+    "stem": "A 50-year-old treated with lithium develops diarrhoea, coarse tremor, ataxia and new confusion after starting an NSAID. Renal function has deteriorated since last review.",
+    "ask": "What is the immediate management priority?",
+    "options": [
+      "Withhold lithium, check level and renal/electrolyte status, and urgently assess toxicity.",
+      "Give the next lithium dose early to prevent relapse during the illness.",
+      "Prescribe another NSAID because the patient reports diffuse muscle pain.",
+      "Treat the tremor as anxiety without checking medicines or laboratory tests.",
+      "Increase fluid restriction to minimise the risk of peripheral oedema."
+    ],
+    "key": "A",
+    "explanations": [
+      "Correct. Dehydration and NSAIDs can reduce lithium clearance; neurological signs warrant urgent hospital toxicology assessment.",
+      "Further dosing can compound potentially life-threatening toxicity.",
+      "NSAIDs may increase serum lithium concentrations by reducing renal clearance.",
+      "New ataxia and confusion are red flags for toxicity, not uncomplicated anxiety.",
+      "Dehydration commonly exacerbates lithium accumulation and needs correction."
+    ],
+    "pearl": "Decision principle: Lithium toxicity / dehydration.",
+    "pivot": "If severe neurotoxicity, seizures or markedly elevated lithium with renal failure is present, discuss urgent haemodialysis with toxicology/nephrology.",
+    "management": {
+      "steps": [
+        [
+          "Recognise",
+          "Stop lithium and interacting medicines immediately."
+        ],
+        [
+          "Assess",
+          "Assess ABCDE, hydration and neurological function."
+        ],
+        [
+          "Act",
+          "Obtain serial lithium, renal function and electrolytes."
+        ],
+        [
+          "Follow up",
+          "Give appropriate IV fluids and seek toxicology advice."
+        ]
+      ],
+      "safety": "If severe neurotoxicity, seizures or markedly elevated lithium with renal failure is present, discuss urgent haemodialysis with toxicology/nephrology.",
+      "local": "Use current local Victorian/Australian protocol and senior escalation for deterioration."
+    },
+    "source": "https://www.health.qld.gov.au/__data/assets/pdf_file/0016/1067011/emergency.pdf"
+  },
+  {
+    "n": 97,
+    "domain": "Paediatrics",
+    "skill": "Foreign body aspiration / unilateral wheeze",
+    "context": "Original Monash-style clinical reasoning scenario · Australian guideline informed",
+    "stem": "A previously well 2-year-old suddenly coughed while eating peanuts and now has persistent unilateral wheeze despite bronchodilator. There is no fever and oxygenation is currently adequate.",
+    "ask": "Which next step is most appropriate?",
+    "options": [
+      "Treat as asthma and discharge after the first bronchodilator dose.",
+      "Arrange urgent specialist airway assessment for possible bronchoscopy.",
+      "Exclude aspiration because the chest radiograph is not yet abnormal.",
+      "Begin prolonged oral antibiotics for presumed lobar bacterial pneumonia.",
+      "Offer oral feeding immediately to assess whether swallowing is normal."
+    ],
+    "key": "B",
+    "explanations": [
+      "Unilateral post-choking wheeze should not be labelled asthma without exclusion.",
+      "Correct. Witnessed choking with unilateral findings suggests bronchial foreign body; bronchoscopy may be needed despite normal imaging.",
+      "Many aspirated organic objects are radiolucent; a normal film does not rule out aspiration.",
+      "Antibiotics do not remove a lodged object and are not definitive therapy.",
+      "Feeding can complicate sedation or airway management."
+    ],
+    "pearl": "Decision principle: Foreign body aspiration / unilateral wheeze.",
+    "pivot": "If complete obstruction develops, immediately follow age-appropriate choking first-aid and resuscitation protocols while summoning emergency airway help.",
+    "management": {
+      "steps": [
+        [
+          "Recognise",
+          "Assess breathing, stridor and unilateral air entry."
+        ],
+        [
+          "Assess",
+          "Keep fasting and avoid distressing examination."
+        ],
+        [
+          "Act",
+          "Seek urgent ENT/respiratory or surgical bronchoscopy team advice."
+        ],
+        [
+          "Follow up",
+          "Monitor airway and treat associated complications after removal."
+        ]
+      ],
+      "safety": "If complete obstruction develops, immediately follow age-appropriate choking first-aid and resuscitation protocols while summoning emergency airway help.",
+      "local": "Use current local Victorian/Australian protocol and senior escalation for deterioration."
+    },
+    "source": "https://www.rch.org.au/clinicalguide/guideline_index/Foreign_bodies_inhaled/"
+  },
+  {
+    "n": 98,
+    "domain": "Medicine",
+    "skill": "Acute pericarditis / ECG diagnosis",
+    "context": "Original Monash-style clinical reasoning scenario · Australian guideline informed",
+    "stem": "A 34-year-old has sharp chest pain improved by leaning forward after a viral illness. ECG shows widespread concave ST elevation with PR depression; troponin is minimally elevated and BP is normal.",
+    "ask": "What is the most likely working diagnosis and next assessment?",
+    "options": [
+      "ST-elevation myocardial infarction; discharge without further assessment.",
+      "Pulmonary embolism; exclude it solely because the patient is afebrile.",
+      "Acute pericarditis; assess for effusion and myocardial involvement.",
+      "Musculoskeletal pain; ignore the widespread ECG abnormalities entirely.",
+      "Aortic dissection; defer vascular assessment despite severe chest symptoms."
+    ],
+    "key": "C",
+    "explanations": [
+      "STEMI must be considered when appropriate, but diffuse PR changes point elsewhere and discharge is unsafe.",
+      "Fever does not determine PE likelihood; evaluate if clinical risk supports it.",
+      "Correct. Positional pleuritic pain and diffuse ECG changes support pericarditis; echo and troponin help evaluate complications.",
+      "The ECG and characteristic pain warrant cardiac evaluation.",
+      "Dissection usually requires a distinct high-risk history and imaging if suspected."
+    ],
+    "pearl": "Decision principle: Acute pericarditis / ECG diagnosis.",
+    "pivot": "If hypotension, raised JVP and echocardiographic tamponade physiology develop, seek emergency pericardial drainage rather than routine anti-inflammatory treatment alone.",
+    "management": {
+      "steps": [
+        [
+          "Recognise",
+          "Obtain history, ECG, troponin and inflammatory markers."
+        ],
+        [
+          "Assess",
+          "Assess haemodynamics and perform echocardiography."
+        ],
+        [
+          "Act",
+          "Treat uncomplicated disease with specialist-directed anti-inflammatories."
+        ],
+        [
+          "Follow up",
+          "Arrange follow-up and restrict strenuous exercise until recovery."
+        ]
+      ],
+      "safety": "If hypotension, raised JVP and echocardiographic tamponade physiology develop, seek emergency pericardial drainage rather than routine anti-inflammatory treatment alone.",
+      "local": "Use current local Victorian/Australian protocol and senior escalation for deterioration."
+    },
+    "source": "https://www.heartfoundation.org.au/your-heart/heart-inflammation"
+  },
+  {
+    "n": 99,
+    "domain": "Surgery",
+    "skill": "Acute cholecystitis / admission and source control",
+    "context": "Original Monash-style clinical reasoning scenario · Australian guideline informed",
+    "stem": "A 49-year-old has 18 hours of right upper-quadrant pain, fever and a positive Murphy sign. Ultrasound shows gallstones, wall thickening and pericholecystic fluid; bilirubin is normal.",
+    "ask": "What is the appropriate management?",
+    "options": [
+      "Arrange elective outpatient surgery without treating the acute inflammation.",
+      "Discharge with antacid alone because bilirubin has not increased.",
+      "Perform endoscopic bile duct clearance routinely despite no obstruction signs.",
+      "Admit for analgesia, fluids, antibiotics and early surgical assessment.",
+      "Treat solely with dietary restriction and a review in two weeks."
+    ],
+    "key": "D",
+    "explanations": [
+      "Leaving acute infection untreated risks perforation or sepsis.",
+      "Normal bilirubin does not exclude gallbladder inflammation.",
+      "ERCP addresses ductal obstruction/cholangitis, not uncomplicated cystic-duct obstruction.",
+      "Correct. Imaging and symptoms fit acute cholecystitis; admission and early laparoscopic cholecystectomy assessment are appropriate.",
+      "Diet alone cannot resolve a potentially progressive infection safely."
+    ],
+    "pearl": "Decision principle: Acute cholecystitis / admission and source control.",
+    "pivot": "If jaundice, cholangitis or ductal obstruction is suspected, obtain urgent biliary imaging and discuss ERCP or drainage alongside sepsis treatment.",
+    "management": {
+      "steps": [
+        [
+          "Recognise",
+          "Assess pain, sepsis and alternative abdominal emergencies."
+        ],
+        [
+          "Assess",
+          "Give IV hydration, analgesia and antibiotics where indicated."
+        ],
+        [
+          "Act",
+          "Discuss early cholecystectomy with general surgery."
+        ],
+        [
+          "Follow up",
+          "Monitor response and investigate bile duct obstruction if signs arise."
+        ]
+      ],
+      "safety": "If jaundice, cholangitis or ductal obstruction is suspected, obtain urgent biliary imaging and discuss ERCP or drainage alongside sepsis treatment.",
+      "local": "Use current local Victorian/Australian protocol and senior escalation for deterioration."
+    },
+    "source": "https://aci.health.nsw.gov.au/networks/eci/clinical/clinical-tools/abdominal-pain"
+  },
+  {
+    "n": 100,
+    "domain": "Ethics & EBM",
+    "skill": "Diagnostic sensitivity / negative test interpretation",
+    "context": "Original Monash-style clinical reasoning scenario · Australian guideline informed",
+    "stem": "A screening assay for a rare disorder has sensitivity 99% and specificity 70%. A patient with a substantial clinical suspicion receives a negative result, but has a classic high-risk phenotype.",
+    "ask": "Which interpretation is safest?",
+    "options": [
+      "The negative result proves no disease regardless of the prior probability.",
+      "High sensitivity makes every positive result virtually diagnostic of disease.",
+      "Specificity alone determines whether a negative result is trustworthy.",
+      "The predictive values remain unchanged in every population prevalence.",
+      "The negative result lowers probability but may still require definitive testing."
+    ],
+    "key": "E",
+    "explanations": [
+      "No imperfect test excludes disease with certainty in high-risk contexts.",
+      "Positive predictive value depends strongly on prevalence and specificity.",
+      "Negative interpretation depends on sensitivity and pretest probability, not specificity alone.",
+      "Predictive values change as prevalence and tested population change.",
+      "Correct. A highly sensitive negative test often reduces probability, but residual risk depends on pretest likelihood and consequences of missing disease."
+    ],
+    "pearl": "Decision principle: Diagnostic sensitivity / negative test interpretation.",
+    "pivot": "If clinical deterioration or an immediately treatable high-risk condition exists, act on the syndrome and seek definitive investigation despite a reassuring screening result.",
+    "management": {
+      "steps": [
+        [
+          "Recognise",
+          "Estimate pretest probability from history and examination."
+        ],
+        [
+          "Assess",
+          "Interpret likelihood ratios rather than isolated percentages."
+        ],
+        [
+          "Act",
+          "Discuss residual uncertainty and confirmatory testing."
+        ],
+        [
+          "Follow up",
+          "Document safety-netting and review when symptoms change."
+        ]
+      ],
+      "safety": "If clinical deterioration or an immediately treatable high-risk condition exists, act on the syndrome and seek definitive investigation despite a reassuring screening result.",
+      "local": "Use current local Victorian/Australian protocol and senior escalation for deterioration."
+    },
+    "source": "https://www.racgp.org.au/afp/2017/november/pulmonary-embolism"
   }
 ]
