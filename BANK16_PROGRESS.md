@@ -10,7 +10,7 @@ Source materials uploaded by user:
 
 **Creative brief**: 100 NEW original five-option final-year clinical reasoning MCQs inspired by the supplied practice review (NOT a copy or republication of past-paper stems). Mimic Monash exam cognitive level: prioritise the *next* step, identify the most important discriminatory sign, appropriate initial test, safe management escalation, interpretation of ECG/ABG/imaging, ward-intern decisions, and plausible distractors. Australian guidance preferred. Include clinically specific rationales for all five options, management.steps exactly four stages, safety, diagnostic pivot, pearl, and trustworthy guideline source URL.
 
-**Progress (latest authored checkpoint): 25/100**. A=5 B=5 C=5 D=5 E=5. No published Bank 16 yet. Keep Banks 1–15 unchanged, and retain all user account answer state. The homepage manifest currently ends with Bank 15.
+**Progress (latest authored checkpoint): 40/100**. A=8 B=8 C=8 D=8 E=8. No published Bank 16 yet. Keep Banks 1–15 unchanged, and retain all user account answer state. The homepage manifest currently ends with Bank 15.
 
 User's actual missed 2025 questions and concepts (extracted from the review):
 - 10: ocular chemical exposure — start irrigation before pH/referral;
@@ -54,3 +54,9 @@ When the bank reaches 100 after medical QA, publish via fresh branch from main: 
 - 25 original questions, 25 unique sequential numbers, correct keys A=5/B=5/C=5/D=5/E=5.
 - Important: the *uploaded* PDFs reproduce faculty/past-paper wording. Do NOT copy that wording into a public bank. Continue producing novel cases based on tested reasoning skills.
 - Remaining 75 questions. Build balanced 5–15-question batches, verify Australian guideline claims including current doses and thresholds. Do not publish until 100 and full QA.
+
+## 2026-10-24 16:25 MYT automation checkpoint: 40/100 drafted
+- Successfully authored, validated and committed questions 26–40 (15 additional original cases): tension pneumothorax, febrile neutropenia, metastatic cord compression, paediatric septic hip, obstructed infected ureter, anaphylaxis without rash, controlled oxygen in COPD, late paracetamol overdose, postoperative delirium, postpartum haemorrhage, early ACS aspirin, aortic dissection, deteriorating paediatric head injury, inflammatory mastitis and imminent suicidal intent.
+- Schema verified: 40 sequential unique question numbers, five options and five substantive explanations each, four practical management steps each, question options within eight words of each other, key balance A=8/B=8/C=8/D=8/E=8.
+- Australian authoritative sources consulted this run: eviQ febrile neutropenia and malignant cord compression; NSW ACI trauma, paracetamol, ACS, delirium and aortic dissection; RCH bone/joint and head injury; ANZCOR anaphylaxis; Australian Commission COPD care standard; Queensland postpartum haemorrhage and breastfeeding guidance; Victorian infected obstructed kidney emergency criteria. These sources are stored as URLs in each question.
+- Remaining 60 questions, unpublished draft only. Avoid duplicating cases 1–40. Next: further integrated surgery/medicine, paediatric, O&G, ethics and GP scenarios based on original paper review themes. Check overlap with existing Banks 1–15 before final release.
