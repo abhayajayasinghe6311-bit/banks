@@ -10,7 +10,7 @@ Source materials uploaded by user:
 
 **Creative brief**: 100 NEW original five-option final-year clinical reasoning MCQs inspired by the supplied practice review (NOT a copy or republication of past-paper stems). Mimic Monash exam cognitive level: prioritise the *next* step, identify the most important discriminatory sign, appropriate initial test, safe management escalation, interpretation of ECG/ABG/imaging, ward-intern decisions, and plausible distractors. Australian guidance preferred. Include clinically specific rationales for all five options, management.steps exactly four stages, safety, diagnostic pivot, pearl, and trustworthy guideline source URL.
 
-**Progress (latest authored checkpoint): 60/100**. A=8 B=8 C=8 D=8 E=8. No published Bank 16 yet. Keep Banks 1–15 unchanged, and retain all user account answer state. The homepage manifest currently ends with Bank 15.
+**Progress (latest authored checkpoint): 70/100**. A=8 B=8 C=8 D=8 E=8. No published Bank 16 yet. Keep Banks 1–15 unchanged, and retain all user account answer state. The homepage manifest currently ends with Bank 15.
 
 User's actual missed 2025 questions and concepts (extracted from the review):
 - 10: ocular chemical exposure — start irrigation before pH/referral;
@@ -78,3 +78,8 @@ When the bank reaches 100 after medical QA, publish via fresh branch from main: 
 - Added 10 original cases Q51–60: uncomplicated radiculopathy (conservative first), regional nodes supporting cellulitis vs DVT, Holter for frequent palpitations, non-emergency hypertension follow-up, anastomotic leak, digoxin renal accumulation, ovarian torsion despite preserved Doppler, biochemical analysis of postoperative urine leak, tetanus-prone wound vaccination, and topical treatment of otitis externa.
 - All 60 sequential original scenarios saved in bank16.json with unique n; all five answer positions remain equally represented **12 each A–E**, distinct option rationales, four management stages, and no >8 word length spread in options.
 - **40 remain**. Publication name **Revision Blossom Garden 🌸**. Do not add any question from the original papers verbatim. Website manifest must stay untouched until 100 and clinical QA.
+
+## 2026-10-24 further user-session checkpoint: 70/100
+- Added Q61–70 in a committed draft: quinsy/uvular deviation, stroke vs Bell palsy, vomiting without diarrhoea in toddler, Ottawa ankle rules, cat bite to hand antibiotic prophylaxis, urinary retention PSA vs early decompression, steroid hyperglycaemia with morning intermediate insulin, fluid-refractory septic shock requiring noradrenaline, ankle fracture backslab and transfer, postoperative raised-JVP obstructive shock/large PE.
+- Current committed question file contains **70 sequential unique questions**, each with five options, five individually authored explanations, four management steps, pearl/pivot/safety and source link. Correct keys exactly **A=14, B=14, C=14, D=14, E=14**.
+- Remaining **30 original questions** before final clinical editorial review and publication. Publish the title **Revision Blossom Garden 🌸**, not the older title. Draft branch contains the latest work; keep existing Banks 1–15 unaffected.
