@@ -718,5 +718,677 @@
       "local": "Follow current relevant Victorian/Australian guidance and senior escalation."
     },
     "source": "https://www.safercare.vic.gov.au/best-practice-improvement/clinical-guidance/maternity/hypertension-in-pregnancy"
+  },
+  {
+    "n": 16,
+    "domain": "Paediatrics",
+    "skill": "IgA vasculitis / renal follow-up",
+    "context": "Moonflower Garden · advanced original clinical reasoning",
+    "stem": "A 7-year-old has palpable purpura over both legs, ankle swelling and crampy abdominal pain after an upper respiratory illness. Platelets are normal, observations stable and urinalysis shows trace blood.",
+    "ask": "What monitoring is essential even if symptoms settle?",
+    "options": [
+      "Measure blood pressure and repeat urinalysis over the following months.",
+      "Discharge permanently once the purpuric rash becomes less prominent.",
+      "Repeat platelet counts alone to exclude all important later complications.",
+      "Begin prolonged antibiotics despite the absence of bacterial infection.",
+      "Order immediate renal biopsy in every clinically stable child."
+    ],
+    "key": "A",
+    "explanations": [
+      "Correct. IgA vasculitis may cause delayed nephritis; monitor urine and BP during the specified follow-up period.",
+      "Rash resolution does not guarantee absence of subsequent renal injury.",
+      "Normal platelets support diagnosis but are not adequate nephritis surveillance.",
+      "Antibiotics do not prevent immune-mediated renal disease.",
+      "Biopsy is reserved for significant renal involvement rather than all cases."
+    ],
+    "pearl": "renal follow-up",
+    "pivot": "If hypertension, significant proteinuria or impaired renal function develops, arrange urgent paediatric nephrology review and quantify proteinuria.",
+    "management": {
+      "steps": [
+        [
+          "Recognise",
+          "Check BP, urine, renal function and abdominal symptoms."
+        ],
+        [
+          "Assess",
+          "Assess severity and exclude alternative purpuric illness."
+        ],
+        [
+          "Act",
+          "Provide analgesia/hydration and specialist advice when needed."
+        ],
+        [
+          "Follow up",
+          "Schedule repeated urine and BP monitoring for delayed nephritis."
+        ]
+      ],
+      "safety": "If hypertension, significant proteinuria or impaired renal function develops, arrange urgent paediatric nephrology review and quantify proteinuria.",
+      "local": "Use current Australian/Victorian guidance and senior escalation."
+    },
+    "source": "https://www.rch.org.au/clinicalguide/guideline_index/henochSchonlein_Purpura/"
+  },
+  {
+    "n": 17,
+    "domain": "Gynaecology",
+    "skill": "Migraine aura / contraceptive eligibility",
+    "context": "Moonflower Garden · advanced original clinical reasoning",
+    "stem": "A 29-year-old requests an oestrogen-containing contraceptive pill. She describes recurrent migraine preceded by zigzag visual phenomena lasting 20 minutes, followed by unilateral throbbing headache. She does not smoke.",
+    "ask": "Which counselling is most appropriate?",
+    "options": [
+      "Start combined hormonal contraception because smoking is absent.",
+      "Avoid combined hormonal contraception and discuss progestogen-only or non-hormonal options.",
+      "Prescribe a higher oestrogen dose to prevent migraine aura episodes.",
+      "Offer no contraception because every hormonal method is contraindicated.",
+      "Use combined pills only during months without any aura symptoms."
+    ],
+    "key": "B",
+    "explanations": [
+      "Smoking status does not remove aura-related stroke risk with oestrogen.",
+      "Correct. Migraine with aura is an unacceptable vascular risk for combined hormonal contraception; safer alternatives are available.",
+      "Higher oestrogen exposure does not make the method safer.",
+      "Progestogen-only and non-hormonal choices can generally be considered after individual assessment.",
+      "Intermittent use does not remove contraindication when aura has occurred."
+    ],
+    "pearl": "contraceptive eligibility",
+    "pivot": "If neurological symptoms are new, persistent or atypical, arrange urgent assessment for TIA or stroke before attributing them to migraine.",
+    "management": {
+      "steps": [
+        [
+          "Recognise",
+          "Clarify aura, vascular risks and pregnancy intentions."
+        ],
+        [
+          "Assess",
+          "Explain oestrogen-related stroke-risk concern."
+        ],
+        [
+          "Act",
+          "Offer suitable progestogen-only or non-hormonal methods."
+        ],
+        [
+          "Follow up",
+          "Discuss adverse effects and arrange follow-up."
+        ]
+      ],
+      "safety": "If neurological symptoms are new, persistent or atypical, arrange urgent assessment for TIA or stroke before attributing them to migraine.",
+      "local": "Use current Australian/Victorian guidance and senior escalation."
+    },
+    "source": "https://www.racgp.org.au/afp/2017/october/oral-hormonal-contraception-in-special-circumstances/"
+  },
+  {
+    "n": 18,
+    "domain": "Medicine",
+    "skill": "Cholangitis / urgent biliary drainage",
+    "context": "Moonflower Garden · advanced original clinical reasoning",
+    "stem": "A 67-year-old with known gallstones presents with fever, right-upper-quadrant pain and jaundice. Blood pressure is 91/55 mmHg, bilirubin is elevated and ultrasound shows dilated common bile duct.",
+    "ask": "What treatment pathway is most appropriate?",
+    "options": [
+      "Use oral analgesics alone because gallstones commonly settle spontaneously.",
+      "Schedule elective cholecystectomy without addressing the obstructed duct.",
+      "Resuscitate, give IV antibiotics and arrange urgent biliary drainage assessment.",
+      "Discharge once temperature falls after an antipyretic dose.",
+      "Wait for blood culture identification before starting any antibiotics."
+    ],
+    "key": "C",
+    "explanations": [
+      "Analgesia cannot resolve infected ductal obstruction.",
+      "Gallbladder surgery alone does not provide immediate decompression of the infected bile duct.",
+      "Correct. Ascending cholangitis with systemic compromise requires sepsis management and early source control, often ERCP.",
+      "Temporary temperature improvement does not resolve sepsis or obstruction.",
+      "Cultures guide therapy but must not delay empiric broad treatment."
+    ],
+    "pearl": "urgent biliary drainage",
+    "pivot": "If shock or organ dysfunction worsens, activate critical care and arrange emergent decompression; antibiotics alone are insufficient.",
+    "management": {
+      "steps": [
+        [
+          "Recognise",
+          "Recognise cholangitis and assess organ dysfunction."
+        ],
+        [
+          "Assess",
+          "Take cultures, lactate and initiate resuscitation."
+        ],
+        [
+          "Act",
+          "Give prompt broad-spectrum IV antibiotics."
+        ],
+        [
+          "Follow up",
+          "Discuss urgent ERCP or alternative drainage with specialists."
+        ]
+      ],
+      "safety": "If shock or organ dysfunction worsens, activate critical care and arrange emergent decompression; antibiotics alone are insufficient.",
+      "local": "Use current Australian/Victorian guidance and senior escalation."
+    },
+    "source": "https://www.safetyandquality.gov.au/standards/clinical-care-standards/sepsis-clinical-care-standard"
+  },
+  {
+    "n": 19,
+    "domain": "Psychiatry",
+    "skill": "Postpartum psychosis / emergency disposition",
+    "context": "Moonflower Garden · advanced original clinical reasoning",
+    "stem": "A 30-year-old eight days postpartum has slept two hours nightly, is increasingly elated and believes her infant has a divine mission. She hears commanding voices and resists family attempts to supervise feeds.",
+    "ask": "What is the immediate priority?",
+    "options": [
+      "Reassure the family this is normal baby blues lasting several weeks.",
+      "Prescribe a mild sleep aid and discharge without arranging any supervision.",
+      "Advise stopping breastfeeding alone and reviewing mood in one month.",
+      "Arrange emergency perinatal psychiatric assessment and supervised safety for mother and infant.",
+      "Offer routine outpatient psychotherapy without assessing psychosis risks."
+    ],
+    "key": "D",
+    "explanations": [
+      "Baby blues do not include delusions, hallucinations or marked mania.",
+      "Sedation alone does not treat psychosis or ensure infant safety.",
+      "Feeding decisions do not replace emergency psychiatric management.",
+      "Correct. Acute postpartum mania and psychosis are psychiatric emergencies requiring urgent risk assessment and usually inpatient specialist care.",
+      "Unsupervised delay risks harm to mother or baby."
+    ],
+    "pearl": "emergency disposition",
+    "pivot": "If suicidal or infanticidal intent emerges, provide constant supervised safety and urgent emergency services involvement with a suitable admission pathway.",
+    "management": {
+      "steps": [
+        [
+          "Recognise",
+          "Assess psychosis, mood, sleep, capacity and immediate risks."
+        ],
+        [
+          "Assess",
+          "Keep mother and baby safe with appropriate supervision."
+        ],
+        [
+          "Act",
+          "Arrange urgent perinatal psychiatric admission assessment."
+        ],
+        [
+          "Follow up",
+          "Plan medication, family support and mother-baby unit care where available."
+        ]
+      ],
+      "safety": "If suicidal or infanticidal intent emerges, provide constant supervised safety and urgent emergency services involvement with a suitable admission pathway.",
+      "local": "Use current Australian/Victorian guidance and senior escalation."
+    },
+    "source": "https://www.cope.org.au/health-professionals/perinatal-mental-health-disorders/postpartum-psychosis/"
+  },
+  {
+    "n": 20,
+    "domain": "Surgery",
+    "skill": "Cauda equina / urinary retention",
+    "context": "Moonflower Garden · advanced original clinical reasoning",
+    "stem": "A 45-year-old with three days of severe lumbar pain and bilateral sciatica reports new difficulty initiating urination and numbness around the perineum. Leg power is mildly reduced and there is no fever.",
+    "ask": "What is the most appropriate immediate investigation?",
+    "options": [
+      "Prescribe stronger oral analgesia and discharge for physiotherapy next week.",
+      "Request a routine lumbar radiograph as the sole imaging study.",
+      "Wait for complete loss of leg movement before organising specialist review.",
+      "Begin empirical antibiotics for presumed uncomplicated urinary infection.",
+      "Arrange emergency MRI and spinal surgical assessment for suspected cauda equina syndrome."
+    ],
+    "key": "E",
+    "explanations": [
+      "Outpatient management risks permanent bladder and neurological dysfunction.",
+      "Plain radiography cannot assess cauda equina nerve compression.",
+      "Complete paralysis is a late and unacceptable threshold for action.",
+      "UTI does not explain bilateral radicular pain with saddle symptoms.",
+      "Correct. Bladder dysfunction and saddle sensory change are spinal compression red flags requiring immediate MRI and surgical referral."
+    ],
+    "pearl": "urinary retention",
+    "pivot": "If MRI confirms compression, proceed urgently with neurosurgical/orthopaedic decompression planning rather than additional outpatient conservative therapy.",
+    "management": {
+      "steps": [
+        [
+          "Recognise",
+          "Establish onset of bladder and saddle sensory symptoms."
+        ],
+        [
+          "Assess",
+          "Check focused neurology and post-void residual."
+        ],
+        [
+          "Act",
+          "Call spinal service and obtain emergency MRI."
+        ],
+        [
+          "Follow up",
+          "Provide analgesia and manage bladder safely pending definitive care."
+        ]
+      ],
+      "safety": "If MRI confirms compression, proceed urgently with neurosurgical/orthopaedic decompression planning rather than additional outpatient conservative therapy.",
+      "local": "Use current Australian/Victorian guidance and senior escalation."
+    },
+    "source": "https://aci.health.nsw.gov.au/networks/eci/clinical/clinical-tools/back-pain"
+  },
+  {
+    "n": 21,
+    "domain": "Paediatrics",
+    "skill": "Bronchiolitis / escalation based on feeding",
+    "context": "Moonflower Garden · advanced original clinical reasoning",
+    "stem": "A 7-week-old with bronchiolitis has increasing work of breathing and takes less than one-third of usual feeds. Saturation remains 95% on air. The infant has fewer wet nappies and brief pauses in breathing reported by a parent.",
+    "ask": "Which decision is safest?",
+    "options": [
+      "Admit for monitoring and hydration assessment despite adequate oxygen saturation.",
+      "Discharge because oxygen saturation alone is normal.",
+      "Give routine antibiotics without assessing feeding or breathing patterns.",
+      "Trial oral steroids and schedule a review in one week.",
+      "Use repeated salbutamol as the only response to reported apnoea."
+    ],
+    "key": "A",
+    "explanations": [
+      "Correct. Young age, poor feeding, possible apnoea and dehydration warrant inpatient assessment even without hypoxaemia.",
+      "Normal pulse oximetry does not address apnoea or fluid deficit.",
+      "Routine antibiotics are not indicated for uncomplicated viral bronchiolitis.",
+      "Steroids are not a standard bronchiolitis treatment.",
+      "Salbutamol is not reliable therapy for infant apnoea or bronchiolitis."
+    ],
+    "pearl": "escalation based on feeding",
+    "pivot": "If sustained apnoea or exhaustion develops, obtain immediate resuscitation/PICU help for respiratory support rather than awaiting oxygen desaturation.",
+    "management": {
+      "steps": [
+        [
+          "Recognise",
+          "Assess age-related risk, apnoea and work of breathing."
+        ],
+        [
+          "Assess",
+          "Measure hydration, intake and urine output."
+        ],
+        [
+          "Act",
+          "Admit for observation and enteral or IV fluids if needed."
+        ],
+        [
+          "Follow up",
+          "Escalate respiratory support if deterioration occurs."
+        ]
+      ],
+      "safety": "If sustained apnoea or exhaustion develops, obtain immediate resuscitation/PICU help for respiratory support rather than awaiting oxygen desaturation.",
+      "local": "Use current Australian/Victorian guidance and senior escalation."
+    },
+    "source": "https://www.rch.org.au/clinicalguide/guideline_index/Bronchiolitis/"
+  },
+  {
+    "n": 22,
+    "domain": "Medicine",
+    "skill": "Acute stroke / anticoagulant history",
+    "context": "Moonflower Garden · advanced original clinical reasoning",
+    "stem": "A 72-year-old with atrial fibrillation presents 90 minutes after sudden aphasia and right weakness. CT excludes intracranial haemorrhage. Family reports he took apixaban this morning.",
+    "ask": "What is the safest next decision?",
+    "options": [
+      "Give routine intravenous thrombolysis immediately without considering apixaban.",
+      "Urgently involve stroke specialists to assess reperfusion eligibility and thrombectomy pathway.",
+      "Discharge because an initial CT scan excludes all acute stroke.",
+      "Give high-dose heparin infusion immediately to reverse the neurological deficit.",
+      "Wait until the next day before performing any vascular imaging."
+    ],
+    "key": "B",
+    "explanations": [
+      "Recent apixaban can make standard thrombolysis unsafe without specific eligibility assessment.",
+      "Correct. Recent DOAC exposure affects thrombolysis eligibility, but urgent vessel imaging may identify a thrombectomy candidate.",
+      "Early non-contrast CT often cannot show infarction and is used primarily to exclude bleeding.",
+      "Heparin does not acutely restore an occluded artery and may increase bleeding.",
+      "Time-sensitive reperfusion decisions require immediate stroke activation."
+    ],
+    "pearl": "anticoagulant history",
+    "pivot": "If large-vessel occlusion is detected, urgently refer for mechanical thrombectomy assessment even if IV thrombolysis is contraindicated.",
+    "management": {
+      "steps": [
+        [
+          "Recognise",
+          "Establish last-known-well and anticoagulant timing."
+        ],
+        [
+          "Assess",
+          "Perform glucose, NIHSS and acute brain/vascular imaging."
+        ],
+        [
+          "Act",
+          "Call stroke team for reperfusion and contraindication assessment."
+        ],
+        [
+          "Follow up",
+          "Initiate appropriate stroke unit care and secondary prevention."
+        ]
+      ],
+      "safety": "If large-vessel occlusion is detected, urgently refer for mechanical thrombectomy assessment even if IV thrombolysis is contraindicated.",
+      "local": "Use current Australian/Victorian guidance and senior escalation."
+    },
+    "source": "https://informme.org.au/guidelines/clinical-guidelines-for-stroke-management"
+  },
+  {
+    "n": 23,
+    "domain": "O&G",
+    "skill": "Ovarian hyperstimulation / intravascular depletion",
+    "context": "Moonflower Garden · advanced original clinical reasoning",
+    "stem": "A 31-year-old undergoing fertility treatment reports increasing abdominal distension, breathlessness and low urine output. Ultrasound shows enlarged ovaries and ascites; haematocrit is rising despite weight gain.",
+    "ask": "What is the most appropriate disposition?",
+    "options": [
+      "Reassure because weight gain indicates adequate intravascular hydration.",
+      "Prescribe routine loop diuretics at home without evaluating volume status.",
+      "Urgent specialist assessment for severe ovarian hyperstimulation with fluid and thrombosis monitoring.",
+      "Arrange delayed pelvic ultrasound in two weeks without checking observations.",
+      "Start hormonal stimulation again to accelerate follicular resolution."
+    ],
+    "key": "C",
+    "explanations": [
+      "Weight gain from ascites does not imply adequate circulating volume.",
+      "Diuretics can worsen haemoconcentration if given indiscriminately.",
+      "Correct. Third-spacing may cause intravascular depletion, renal injury and thrombosis; severe symptoms need monitored specialist care.",
+      "Dyspnoea and oliguria require immediate reassessment.",
+      "Further stimulation can worsen the syndrome."
+    ],
+    "pearl": "intravascular depletion",
+    "pivot": "If haemodynamic compromise, thromboembolism or respiratory deterioration occurs, escalate to high-acuity care with targeted imaging and anticoagulation decisions.",
+    "management": {
+      "steps": [
+        [
+          "Recognise",
+          "Assess respiratory status, urine output and intravascular volume."
+        ],
+        [
+          "Assess",
+          "Check full blood count, renal/electrolyte profile and ultrasound."
+        ],
+        [
+          "Act",
+          "Discuss admission and tailored fluid/thrombosis management."
+        ],
+        [
+          "Follow up",
+          "Monitor weight, balance and complications during recovery."
+        ]
+      ],
+      "safety": "If haemodynamic compromise, thromboembolism or respiratory deterioration occurs, escalate to high-acuity care with targeted imaging and anticoagulation decisions.",
+      "local": "Use current Australian/Victorian guidance and senior escalation."
+    },
+    "source": "https://ranzcog.edu.au/"
+  },
+  {
+    "n": 24,
+    "domain": "GP",
+    "skill": "Thyroid nodule / suppressed TSH",
+    "context": "Moonflower Garden · advanced original clinical reasoning",
+    "stem": "A 46-year-old has a palpable thyroid nodule and no compressive symptoms. Ultrasound describes a 2-cm solid nodule. TSH is below the laboratory range with mildly raised free T4.",
+    "ask": "Which investigation best informs the next diagnostic step?",
+    "options": [
+      "Proceed straight to FNA without considering the suppressed TSH.",
+      "Assume all thyroid nodules with low TSH represent malignancy.",
+      "Reassure without further testing because the nodule is asymptomatic.",
+      "Arrange thyroid radionuclide functional assessment before routine FNA decisions.",
+      "Order a repeat neck radiograph instead of functional assessment."
+    ],
+    "key": "D",
+    "explanations": [
+      "Biopsy decisions differ for hyperfunctioning nodules and should follow functional assessment.",
+      "Most thyroid nodules are benign; low TSH does not establish cancer.",
+      "Ultrasound and thyroid dysfunction warrant structured evaluation.",
+      "Correct. Suppressed TSH suggests autonomy; functional imaging can identify a hot nodule, which often does not require routine FNA.",
+      "Plain radiography does not determine thyroid functional status."
+    ],
+    "pearl": "suppressed TSH",
+    "pivot": "If significant compressive symptoms, suspicious lymph nodes or rapid growth occur, escalate structural and specialist assessment regardless of functional findings.",
+    "management": {
+      "steps": [
+        [
+          "Recognise",
+          "Confirm TSH, free hormones and relevant medication history."
+        ],
+        [
+          "Assess",
+          "Review ultrasound risk pattern and cervical nodes."
+        ],
+        [
+          "Act",
+          "Arrange functional imaging and endocrinology advice."
+        ],
+        [
+          "Follow up",
+          "Manage thyrotoxicosis and plan follow-up based on combined risk."
+        ]
+      ],
+      "safety": "If significant compressive symptoms, suspicious lymph nodes or rapid growth occur, escalate structural and specialist assessment regardless of functional findings.",
+      "local": "Use current Australian/Victorian guidance and senior escalation."
+    },
+    "source": "https://www.racgp.org.au/afp/2012/august/thyroid-nodules"
+  },
+  {
+    "n": 25,
+    "domain": "Paediatrics",
+    "skill": "HUS / avoid empiric antibiotic in STEC diarrhoea",
+    "context": "Moonflower Garden · advanced original clinical reasoning",
+    "stem": "A 4-year-old had bloody diarrhoea five days ago and is now pale with reduced urine output. Haemoglobin is 82 g/L, platelets 60 × 10⁹/L, creatinine increased and blood film shows schistocytes.",
+    "ask": "Which management approach is most appropriate?",
+    "options": [
+      "Give antidiarrhoeal therapy and discharge once stool frequency declines.",
+      "Start routine empirical antibiotics as the only therapy for presumed STEC infection.",
+      "Transfuse platelets prophylactically in every child without bleeding.",
+      "Encourage unrestricted oral fluid loading despite oliguria and AKI.",
+      "Arrange urgent paediatric nephrology care with careful fluid and renal monitoring."
+    ],
+    "key": "E",
+    "explanations": [
+      "Reduced stool frequency does not mean the renal complication has resolved.",
+      "Antibiotic use in suspected STEC requires careful specialist judgement and is not the sole response.",
+      "Platelets are usually reserved for significant bleeding/procedures because of microthrombotic concerns.",
+      "Fluid balance must be individualised in renal failure to avoid pulmonary oedema.",
+      "Correct. The microangiopathic triad suggests HUS; supportive renal management and electrolyte surveillance are essential."
+    ],
+    "pearl": "avoid empiric antibiotic in STEC diarrhoea",
+    "pivot": "If hyperkalaemia, pulmonary oedema or uraemic complications develop, urgently arrange dialysis-capable paediatric intensive/nephrology management.",
+    "management": {
+      "steps": [
+        [
+          "Recognise",
+          "Recognise haemolysis, thrombocytopenia and AKI pattern."
+        ],
+        [
+          "Assess",
+          "Monitor BP, urine output, electrolytes and haemolysis tests."
+        ],
+        [
+          "Act",
+          "Consult paediatric nephrology and optimise fluid balance."
+        ],
+        [
+          "Follow up",
+          "Treat complications and arrange renal follow-up."
+        ]
+      ],
+      "safety": "If hyperkalaemia, pulmonary oedema or uraemic complications develop, urgently arrange dialysis-capable paediatric intensive/nephrology management.",
+      "local": "Use current Australian/Victorian guidance and senior escalation."
+    },
+    "source": "https://www.rch.org.au/clinicalguide/guideline_index/Haematuria/"
+  },
+  {
+    "n": 26,
+    "domain": "Ethics",
+    "skill": "Capacity / refusal of treatment",
+    "context": "Moonflower Garden · advanced original clinical reasoning",
+    "stem": "A 58-year-old with severe pneumonia refuses an offered antibiotic. He explains risks, repeats the treatment options and gives a stable value-based reason. He is alert, oriented and not delirious.",
+    "ask": "What is the appropriate response?",
+    "options": [
+      "Respect the capable refusal after confirming understanding and documenting discussion.",
+      "Administer treatment covertly because the clinician believes it beneficial.",
+      "Assume the refusal proves lack of decision-making capacity.",
+      "Ask the family to override the patient without further conversation.",
+      "Detain the patient solely because untreated pneumonia may worsen."
+    ],
+    "key": "A",
+    "explanations": [
+      "Correct. An adult with decision-specific capacity can refuse recommended treatment; document informed discussion and offer alternatives.",
+      "Covert therapy without lawful authority violates consent and autonomy.",
+      "Disagreeing with clinicians is not evidence of incapacity.",
+      "Family cannot ordinarily override a capable adult's decision.",
+      "Medical risk alone does not permit involuntary treatment."
+    ],
+    "pearl": "refusal of treatment",
+    "pivot": "If acute delirium removes capacity, reassess and follow the jurisdiction's substitute decision-making and emergency treatment law rather than relying on this refusal assessment.",
+    "management": {
+      "steps": [
+        [
+          "Recognise",
+          "Assess decision-specific understanding, appreciation and reasoning."
+        ],
+        [
+          "Assess",
+          "Explain risks, benefits and alternatives in accessible language."
+        ],
+        [
+          "Act",
+          "Explore reversible barriers and support voluntary choice."
+        ],
+        [
+          "Follow up",
+          "Document capacity, refusal, safety advice and follow-up."
+        ]
+      ],
+      "safety": "If acute delirium removes capacity, reassess and follow the jurisdiction's substitute decision-making and emergency treatment law rather than relying on this refusal assessment.",
+      "local": "Use current Australian/Victorian guidance and senior escalation."
+    },
+    "source": "https://www.medicalboard.gov.au/codes-guidelines-policies/code-of-conduct.aspx"
+  },
+  {
+    "n": 27,
+    "domain": "Medicine",
+    "skill": "Anticoagulant-associated GI bleeding / reversal",
+    "context": "Moonflower Garden · advanced original clinical reasoning",
+    "stem": "A 76-year-old on warfarin for mechanical mitral valve presents with melaena, hypotension and INR 5.4. Haemoglobin is 69 g/L and active bleeding is suspected.",
+    "ask": "Which action should accompany initial resuscitation?",
+    "options": [
+      "Continue usual warfarin because mechanical valves require uninterrupted therapy.",
+      "Stop warfarin and urgently discuss reversal and blood products with specialists.",
+      "Give only oral iron tablets and arrange a clinic visit next month.",
+      "Wait for INR normalisation spontaneously before arranging endoscopy.",
+      "Administer fibrinolytic medication to protect the prosthetic valve."
+    ],
+    "key": "B",
+    "explanations": [
+      "Continuing anticoagulation during major haemorrhage can be fatal.",
+      "Correct. Life-threatening warfarin bleeding warrants urgent reversal with vitamin K and prothrombin complex according to protocol, balanced against valve thrombosis risk.",
+      "Oral iron cannot stabilise severe active bleeding.",
+      "Delay prolongs haemorrhagic shock and prevents timely source control.",
+      "Fibrinolysis worsens bleeding and is inappropriate."
+    ],
+    "pearl": "reversal",
+    "pivot": "After haemostasis, urgently plan individualised anticoagulation resumption/bridging with cardiology because mechanical mitral valves have high thrombotic risk.",
+    "management": {
+      "steps": [
+        [
+          "Recognise",
+          "Resuscitate, obtain IV access and crossmatch blood."
+        ],
+        [
+          "Assess",
+          "Hold warfarin and assess INR/bleeding severity."
+        ],
+        [
+          "Act",
+          "Give protocol-directed reversal and urgent endoscopic evaluation."
+        ],
+        [
+          "Follow up",
+          "Coordinate safe re-anticoagulation after haemostasis."
+        ]
+      ],
+      "safety": "After haemostasis, urgently plan individualised anticoagulation resumption/bridging with cardiology because mechanical mitral valves have high thrombotic risk.",
+      "local": "Use current Australian/Victorian guidance and senior escalation."
+    },
+    "source": "https://www.lifeblood.com.au/health-professionals/clinical-practice/warfarin-reversal"
+  },
+  {
+    "n": 28,
+    "domain": "Surgery",
+    "skill": "Acute appendicitis in pregnancy / imaging selection",
+    "context": "Moonflower Garden · advanced original clinical reasoning",
+    "stem": "A 25-year-old at 19 weeks gestation has migratory abdominal pain, anorexia and persistent right-sided tenderness. Ultrasound is nondiagnostic and she remains stable but symptomatic.",
+    "ask": "Which investigation is generally appropriate next?",
+    "options": [
+      "Exclude appendicitis because ultrasound did not show the appendix.",
+      "Delay all imaging until after delivery regardless of progression.",
+      "Arrange MRI abdomen without ionising radiation after surgical-obstetric discussion.",
+      "Perform routine diagnostic barium enema before further assessment.",
+      "Send home with antacids and no planned reassessment."
+    ],
+    "key": "C",
+    "explanations": [
+      "Nonvisualisation on ultrasound cannot exclude appendicitis.",
+      "Delay may permit perforation and maternal-fetal harm.",
+      "Correct. MRI is useful after nondiagnostic ultrasound in pregnant patients with suspected appendicitis; surgical review should continue.",
+      "Barium enema is neither standard nor appropriate emergency imaging.",
+      "Persistent focal pain warrants further investigation and safety-netting."
+    ],
+    "pearl": "imaging selection",
+    "pivot": "If peritonitis or sepsis develops, escalate to urgent surgical source control rather than waiting for additional elective imaging.",
+    "management": {
+      "steps": [
+        [
+          "Recognise",
+          "Assess maternal stability and pregnancy-related differentials."
+        ],
+        [
+          "Assess",
+          "Review labs, ultrasound and clinical trajectory."
+        ],
+        [
+          "Act",
+          "Discuss MRI and urgent general surgical assessment."
+        ],
+        [
+          "Follow up",
+          "Coordinate treatment and fetal considerations with obstetrics."
+        ]
+      ],
+      "safety": "If peritonitis or sepsis develops, escalate to urgent surgical source control rather than waiting for additional elective imaging.",
+      "local": "Use current Australian/Victorian guidance and senior escalation."
+    },
+    "source": "https://www.health.qld.gov.au/qcg/publications"
+  },
+  {
+    "n": 29,
+    "domain": "Psychiatry",
+    "skill": "Clozapine / myocarditis warning",
+    "context": "Moonflower Garden · advanced original clinical reasoning",
+    "stem": "A 27-year-old started clozapine 17 days ago and reports fever, chest discomfort and marked resting tachycardia. CRP is elevated and troponin is rising; ECG shows nonspecific changes.",
+    "ask": "What is the most appropriate response?",
+    "options": [
+      "Reassure that persistent tachycardia is always benign during titration.",
+      "Increase clozapine rapidly to control distress before further tests.",
+      "Treat with propranolol alone and ignore the elevated troponin.",
+      "Hold clozapine and seek urgent medical/cardiology assessment for myocarditis.",
+      "Wait for a routine psychiatric visit in four weeks."
+    ],
+    "key": "D",
+    "explanations": [
+      "Some tachycardia occurs with titration, but inflammatory and myocardial markers are red flags.",
+      "Further exposure may worsen cardiac injury.",
+      "Beta blockade does not treat or exclude myocarditis.",
+      "Correct. Early clozapine myocarditis can present with fever/tachycardia and abnormal biomarkers; stop and investigate urgently.",
+      "Delay risks serious heart failure and arrhythmia."
+    ],
+    "pearl": "myocarditis warning",
+    "pivot": "If haemodynamic instability or arrhythmia develops, activate emergency cardiology/critical-care management and assess ventricular function.",
+    "management": {
+      "steps": [
+        [
+          "Recognise",
+          "Review clozapine initiation and symptom chronology."
+        ],
+        [
+          "Assess",
+          "Obtain ECG, serial troponin/CRP and echo as advised."
+        ],
+        [
+          "Act",
+          "Withhold clozapine and inform treating psychiatry/cardiology."
+        ],
+        [
+          "Follow up",
+          "Document reaction and plan safe alternative treatment."
+        ]
+      ],
+      "safety": "If haemodynamic instability or arrhythmia develops, activate emergency cardiology/critical-care management and assess ventricular function.",
+      "local": "Use current Australian/Victorian guidance and senior escalation."
+    },
+    "source": "https://www.health.nsw.gov.au/mentalhealth/resources/Publications/clozapine-prescribing.pdf"
   }
 ]
