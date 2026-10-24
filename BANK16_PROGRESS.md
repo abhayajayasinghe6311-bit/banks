@@ -10,7 +10,7 @@ Source materials uploaded by user:
 
 **Creative brief**: 100 NEW original five-option final-year clinical reasoning MCQs inspired by the supplied practice review (NOT a copy or republication of past-paper stems). Mimic Monash exam cognitive level: prioritise the *next* step, identify the most important discriminatory sign, appropriate initial test, safe management escalation, interpretation of ECG/ABG/imaging, ward-intern decisions, and plausible distractors. Australian guidance preferred. Include clinically specific rationales for all five options, management.steps exactly four stages, safety, diagnostic pivot, pearl, and trustworthy guideline source URL.
 
-**Progress (latest authored checkpoint): 70/100**. A=8 B=8 C=8 D=8 E=8. No published Bank 16 yet. Keep Banks 1–15 unchanged, and retain all user account answer state. The homepage manifest currently ends with Bank 15.
+**Progress (latest authored checkpoint): 100/100 DRAFT, NOT CLINICALLY APPROVED. A=20 B=20 C=20 D=20 E=20.** No published Bank 16 yet. Keep Banks 1–15 unchanged, and retain all user account answer state. The homepage manifest currently ends with Bank 15.
 
 User's actual missed 2025 questions and concepts (extracted from the review):
 - 10: ocular chemical exposure — start irrigation before pH/referral;
@@ -90,3 +90,10 @@ When the bank reaches 100 after medical QA, publish via fresh branch from main: 
 - Q10, Q28, Q29, Q48, Q54, Q59 and Q67 rewritten in saved bank16.json to include actionable alternative plans. The rest remain original questions; continue editing any other pivots that fail this requirement before publication.
 - On the live site, PR#27 updated 18 contrast explanations in Banks 11/14/15 (particularly closed vs open fractures, sourced to Victorian State Trauma System). Answer keys and scores unaffected.
 - Current Bank16 draft count: 70/100, A=14/B=14/C=14/D=14/E=14. Still not published; next authoring begins at 71.
+
+## 2026-10-24 17:xx MYT concurrent-authoring reconciliation: 100/100 DRAFT ONLY
+- During this run, a separate concurrent writer advanced the actual bank16.json from 70 to 100 and overwrote another in-flight Q71–85 draft. The current branch's actual bank16.json was re-fetched; preserve its 100 questions rather than overwrite newer committed work.
+- Current question count is 100, unique sequential n, correct keys A/B/C/D/E exactly 20 each. **Do not publish yet.** Q71–100 were not all adequately quality-reviewed; 13 (Q86–99) still had at least one underdeveloped option rationale after this checkpoint, and several sources need further verification.
+- In this run, strengthened all five option explanations for Q74–85 (12 questions) with specific clinical reasoning and practical management, and corrected guideline links for Q74 (NSW ACI acute limb ischaemia), Q77 (Queensland symptomatic hyponatraemia), Q81 (NSW ACI upper GI bleed), and Q99 (NSW ACI abdominal emergencies). These improvements are committed to the actual 100-question draft.
+- FINAL QA GATES BEFORE PUBLICATION: (1) inspect and expand short option rationales Q86–100; (2) verify guideline URLs, especially other Q71–100 sources; (3) improve vague or brief pivots in Q1–70, ensuring actual changed management; (4) compare all 100 with Banks 1–15 for near duplicates and revise decision tasks; (5) confirm website parser/integration. Do not claim published until merged and independently verified.
+- User's publication name remains **Revision Blossom Garden 🌸**. Keep Banks 1–15 and main manifest unchanged while medical QA is pending.
