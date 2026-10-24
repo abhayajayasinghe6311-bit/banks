@@ -1,6 +1,6 @@
 {
   "title": "SPA-W Study Garden",
-  "version": "2026-10-24-bank16",
+  "version": "2026-10-24-bank17",
   "banks": [
     {
       "id": 1,
@@ -112,6 +112,13 @@
       "name": "Revision Blossom Garden",
       "emoji": "🌸",
       "description": "100 original 2024–2025 Monash-inspired practice scenarios with balanced options, clinical reasoning and practical Australian-guideline management",
+      "count": 100
+    },
+    {
+      "id": 17,
+      "name": "Moonflower Garden",
+      "emoji": "🌙",
+      "description": "100 original advanced final-year cases with close-call options, practical management and Australian clinical guidance",
       "count": 100
     }
   ]
