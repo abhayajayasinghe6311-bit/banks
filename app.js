@@ -562,7 +562,11 @@ function managementMarkup(q){
  const generic=m.steps.length===3 && /^(best next decision|preferred clinical decision|best decision in this scenario|clinical reasoning|preferred clinical action)/i.test(String(m.steps[0][0]));
  const steps=generic?[m.steps[0],m.steps[2]]:m.steps;
  const safety=m.safety && String(m.safety).trim()!==String(q.pearl||'').trim() ? `<div class="management-safety"><b>⚠ Safety / escalation</b><p>${safe(m.safety)}</p></div>` : '';
- return `<section class="management-guide management-under-question" aria-label="Practical management"><div class="management-heading"><span aria-hidden="true">🩺</span><div><h3>Practical management</h3><p>What to do clinically</p></div></div><ol>${steps.map(step=>`<li><strong>${safe(step[0])}</strong><span>${safe(step[1])}</span></li>`).join('')}</ol>${safety}<p class="management-local">Study guide · Follow current local clinical protocols.</p></section>`;
+ // Sources are stored per question. Display an appropriately escaped,
+ // HTTPS-only reference, without claiming that older links are current.
+ const source=String(q.source||'').trim();
+ const reference=/^https:\/\/[a-z0-9.-]+(?:\/|$)/i.test(source)?` <a href="${safe(source)}" target="_blank" rel="noopener noreferrer">↗ Clinical reference / further reading</a>`:'';
+ return `<section class="management-guide management-under-question" aria-label="Practical management"><div class="management-heading"><span aria-hidden="true">🩺</span><div><h3>Practical management</h3><p>What to do clinically</p></div></div><ol>${steps.map(step=>`<li><strong>${safe(step[0])}</strong><span>${safe(step[1])}</span></li>`).join('')}</ol>${safety}<p class="management-local">Study guide · Follow current local clinical protocols.${reference}</p></section>`;
 }
 function conciseOptionReason(q,index){
  const raw=String(q.explanations?.[index]||'Compare this option with the defining clinical findings.');
