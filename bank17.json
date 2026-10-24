@@ -2446,5 +2446,1301 @@
       "local": "Use current Australian/Victorian guidance and senior escalation."
     },
     "source": "https://www.safetyandquality.gov.au/standards/clinical-care-standards/sepsis-clinical-care-standard"
+  },
+  {
+    "n": 52,
+    "domain": "Paediatrics",
+    "skill": "Nephrotic syndrome / intravascular depletion",
+    "context": "Moonflower Garden · advanced original clinical reasoning",
+    "stem": "A 4-year-old with new nephrotic syndrome has generalised oedema and albumin 14 g/L. Despite puffy eyelids, the child is tachycardic with cool extremities and scant urine.",
+    "ask": "Which fluid principle is safest?",
+    "options": [
+      "Give repeated high-dose diuretics because visible oedema proves volume excess.",
+      "Assess effective circulating volume before giving diuretics; seek specialist input.",
+      "Restrict all fluid and withhold perfusion assessment until albumin improves.",
+      "Administer unrestricted saline without monitoring breathing or weight.",
+      "Reassure that peripheral oedema excludes hypovolaemia."
+    ],
+    "key": "B",
+    "explanations": [
+      "Diuresis without volume assessment may precipitate shock or thrombosis.",
+      "Correct. Nephrotic oedema may coexist with intravascular depletion; diuretics can worsen perfusion and AKI.",
+      "Effective circulating volume, renal function and urine output require assessment.",
+      "Fluid boluses need individualisation because pulmonary oedema may develop.",
+      "Third spacing does not prove adequate intravascular volume."
+    ],
+    "pearl": "intravascular depletion",
+    "pivot": "If severe hypovolaemia is confirmed, consider monitored albumin/fluid treatment under paediatric nephrology guidance, with cautious diuretic use when appropriate.",
+    "management": {
+      "steps": [
+        [
+          "Recognise",
+          "Assess perfusion, BP, urine and respiratory status."
+        ],
+        [
+          "Assess",
+          "Check renal function, proteinuria and albumin."
+        ],
+        [
+          "Act",
+          "Seek specialist-directed volume and steroid management."
+        ],
+        [
+          "Follow up",
+          "Monitor urine protein, weight and complications."
+        ]
+      ],
+      "safety": "If severe hypovolaemia is confirmed, consider monitored albumin/fluid treatment under paediatric nephrology guidance, with cautious diuretic use when appropriate.",
+      "local": "Use current Australian/Victorian guidance and senior escalation."
+    },
+    "source": "https://www.rch.org.au/clinicalguide/guideline_index/nephrotic_syndrome/"
+  },
+  {
+    "n": 53,
+    "domain": "Paediatrics",
+    "skill": "Epiglottitis / minimise distress",
+    "context": "Moonflower Garden · advanced original clinical reasoning",
+    "stem": "An under-immunised 4-year-old sits forward drooling, with muffled voice, high fever and inspiratory stridor. The child becomes distressed when asked to lie flat.",
+    "ask": "What is the immediate approach?",
+    "options": [
+      "Force a tongue-depressor examination to visualise the epiglottis.",
+      "Send unaccompanied for neck radiography before airway review.",
+      "Keep the child calm and summon expert airway and anaesthetic support.",
+      "Lay the child flat and perform repeated throat swabs immediately.",
+      "Give oral medication and discharge if fever improves."
+    ],
+    "key": "C",
+    "explanations": [
+      "Throat instrumentation risks complete obstruction.",
+      "Imaging must not delay or destabilise airway management.",
+      "Correct. Suspected supraglottic obstruction can deteriorate abruptly; avoid agitation and coordinate expert-controlled airway care.",
+      "Positioning and swabs can provoke decompensation.",
+      "Oral treatment alone cannot secure a threatened airway."
+    ],
+    "pearl": "minimise distress",
+    "pivot": "If exhaustion, cyanosis or diminished air entry appears, prepare urgent controlled intubation with anaesthesia/ENT rather than attempting repeated bedside examination.",
+    "management": {
+      "steps": [
+        [
+          "Recognise",
+          "Allow preferred position with caregiver."
+        ],
+        [
+          "Assess",
+          "Call senior paediatric airway and anaesthetic team."
+        ],
+        [
+          "Act",
+          "Monitor gently, provide oxygen as tolerated."
+        ],
+        [
+          "Follow up",
+          "Start IV antibiotics after safe airway and appropriate access."
+        ]
+      ],
+      "safety": "If exhaustion, cyanosis or diminished air entry appears, prepare urgent controlled intubation with anaesthesia/ENT rather than attempting repeated bedside examination.",
+      "local": "Use current Australian/Victorian guidance and senior escalation."
+    },
+    "source": "https://www.rch.org.au/clinicalguide/guideline_index/acute_upper_airway_obstruction/"
+  },
+  {
+    "n": 54,
+    "domain": "Medicine",
+    "skill": "Toxic alcohol / anion gap and osmolal gap",
+    "context": "Moonflower Garden · advanced original clinical reasoning",
+    "stem": "A 43-year-old has abdominal pain and visual blurring after drinking unlabelled spirits. ABG shows pH 7.12, high anion gap and increased osmolal gap; ethanol level is low.",
+    "ask": "What action is most appropriate?",
+    "options": [
+      "Treat as simple ethanol intoxication and observe without repeat gases.",
+      "Give bicarbonate alone and discharge when pain improves.",
+      "Administer activated charcoal hours later as definitive antidote.",
+      "Urgent toxicology consultation for fomepizole and possible haemodialysis.",
+      "Wait for confirmatory methanol level before initiating any treatment."
+    ],
+    "key": "D",
+    "explanations": [
+      "Ethanol intoxication does not explain this severe acid-base pattern reliably.",
+      "Bicarbonate can temporise acidosis but does not prevent toxic metabolite production.",
+      "Charcoal poorly addresses alcohol absorption and cannot substitute for antidote.",
+      "Correct. Visual symptoms and metabolic gaps suggest methanol toxicity; early antidote and dialysis assessment are time critical.",
+      "Definitive assays may be delayed and clinical suspicion warrants urgent therapy."
+    ],
+    "pearl": "anion gap and osmolal gap",
+    "pivot": "If profound acidosis, visual injury or organ dysfunction is present, discuss emergency haemodialysis while continuing antidote and supportive care.",
+    "management": {
+      "steps": [
+        [
+          "Recognise",
+          "Assess airway, exposures and neurological signs."
+        ],
+        [
+          "Assess",
+          "Measure serial gases, electrolytes and gaps."
+        ],
+        [
+          "Act",
+          "Contact poisons/toxicology immediately for antidote."
+        ],
+        [
+          "Follow up",
+          "Arrange dialysis and metabolic monitoring as indicated."
+        ]
+      ],
+      "safety": "If profound acidosis, visual injury or organ dysfunction is present, discuss emergency haemodialysis while continuing antidote and supportive care.",
+      "local": "Use current Australian/Victorian guidance and senior escalation."
+    },
+    "source": "https://www.health.qld.gov.au/__data/assets/pdf_file/0016/1067011/emergency.pdf"
+  },
+  {
+    "n": 55,
+    "domain": "Surgery",
+    "skill": "AAA rupture / avoid diagnostic delay",
+    "context": "Moonflower Garden · advanced original clinical reasoning",
+    "stem": "A 74-year-old smoker has sudden back and abdominal pain, syncope and BP 76/40 mmHg. Bedside ultrasound shows a 7-cm abdominal aortic aneurysm.",
+    "ask": "What is the next priority?",
+    "options": [
+      "Send for routine outpatient CT angiography next week.",
+      "Treat solely as musculoskeletal back pain with analgesia.",
+      "Wait for a normal haemoglobin result before calling surgeons.",
+      "Give large unrestricted crystalloid boluses aiming for severe hypertension.",
+      "Activate vascular surgery and major haemorrhage pathway for presumed rupture."
+    ],
+    "key": "E",
+    "explanations": [
+      "Outpatient evaluation risks death from continuing rupture.",
+      "Back pain and collapse require vascular diagnosis consideration.",
+      "Acute Hb may not initially reflect haemorrhage severity.",
+      "Excessive crystalloid and pressure targets can worsen bleeding.",
+      "Correct. Shock with large AAA demands immediate vascular control planning and blood resuscitation."
+    ],
+    "pearl": "avoid diagnostic delay",
+    "pivot": "If stable enough for rapid CT, obtain operative-planning imaging without delaying definitive vascular treatment in ongoing shock.",
+    "management": {
+      "steps": [
+        [
+          "Recognise",
+          "Call vascular/anaesthesia and activate blood support."
+        ],
+        [
+          "Assess",
+          "Establish IV access and crossmatch."
+        ],
+        [
+          "Act",
+          "Resuscitate with blood products using local major-haemorrhage targets."
+        ],
+        [
+          "Follow up",
+          "Transfer for urgent endovascular or open repair assessment."
+        ]
+      ],
+      "safety": "If stable enough for rapid CT, obtain operative-planning imaging without delaying definitive vascular treatment in ongoing shock.",
+      "local": "Use current Australian/Victorian guidance and senior escalation."
+    },
+    "source": "https://aci.health.nsw.gov.au/networks/eci/clinical/clinical-tools/vascular-emergencies"
+  },
+  {
+    "n": 56,
+    "domain": "Obstetrics",
+    "skill": "FGR / abnormal umbilical Doppler",
+    "context": "Moonflower Garden · advanced original clinical reasoning",
+    "stem": "At 31 weeks, a fetus measures below the 3rd centile with reduced fluid. Umbilical artery Doppler shows absent end-diastolic flow; the mother has mild hypertension.",
+    "ask": "What is the most appropriate care pathway?",
+    "options": [
+      "Urgent specialist fetal medicine surveillance and preterm delivery planning.",
+      "Reassure that small fetal size alone never warrants escalation.",
+      "Wait until 40 weeks before repeating any fetal monitoring.",
+      "Prescribe maternal high-calorie supplements as sole treatment.",
+      "Use a single normal maternal blood pressure to exclude placental disease."
+    ],
+    "key": "A",
+    "explanations": [
+      "Correct. Severe FGR with abnormal Doppler suggests placental insufficiency and increased fetal risk; monitor and plan birth timing with specialists.",
+      "Doppler flow distinguishes higher-risk restriction from constitutionally small fetuses.",
+      "No follow-up risks hypoxia or stillbirth.",
+      "Nutrition alone cannot reverse severe placental resistance.",
+      "Maternal and fetal assessments must be combined."
+    ],
+    "pearl": "abnormal umbilical Doppler",
+    "pivot": "If ductus venosus or CTG deteriorates, escalate immediate delivery consideration after multidisciplinary assessment and antenatal corticosteroid planning.",
+    "management": {
+      "steps": [
+        [
+          "Recognise",
+          "Confirm growth trajectory and dating."
+        ],
+        [
+          "Assess",
+          "Assess BP, preeclampsia labs and Doppler."
+        ],
+        [
+          "Act",
+          "Arrange high-risk obstetric/fetal surveillance."
+        ],
+        [
+          "Follow up",
+          "Plan steroids, neonatal support and delivery timing."
+        ]
+      ],
+      "safety": "If ductus venosus or CTG deteriorates, escalate immediate delivery consideration after multidisciplinary assessment and antenatal corticosteroid planning.",
+      "local": "Use current Australian/Victorian guidance and senior escalation."
+    },
+    "source": "https://www.safercare.vic.gov.au/maternity"
+  },
+  {
+    "n": 57,
+    "domain": "GP",
+    "skill": "Lung cancer / haemoptysis and persistent opacity",
+    "context": "Moonflower Garden · advanced original clinical reasoning",
+    "stem": "A 65-year-old smoker has six weeks of cough, weight loss and intermittent haemoptysis. Chest X-ray shows a persistent right hilar opacity after an antibiotic course.",
+    "ask": "What is the safest next step?",
+    "options": [
+      "Prescribe another antibiotic course without reviewing malignancy risk.",
+      "Arrange urgent CT chest and lung-cancer specialist referral.",
+      "Repeat plain radiograph in one year with no interim review.",
+      "Reassure that haemoptysis is common in healthy older smokers.",
+      "Treat as asthma solely because intermittent wheeze is present."
+    ],
+    "key": "B",
+    "explanations": [
+      "Repeated antibiotics risk delaying cancer detection.",
+      "Correct. Haemoptysis, weight loss and persistent opacity are cancer red flags requiring urgent diagnostic assessment.",
+      "Annual review is inappropriate for unresolved radiographic abnormality.",
+      "Smoking raises, not lowers, the seriousness of haemoptysis.",
+      "Wheeze can occur with endobronchial obstruction."
+    ],
+    "pearl": "haemoptysis and persistent opacity",
+    "pivot": "If large-volume haemoptysis or airway compromise develops, send to ED for airway and bleeding control rather than outpatient imaging.",
+    "management": {
+      "steps": [
+        [
+          "Recognise",
+          "Assess bleeding quantity, smoking and systemic features."
+        ],
+        [
+          "Assess",
+          "Order urgent contrast CT and appropriate referral."
+        ],
+        [
+          "Act",
+          "Check baseline performance status and comorbidities."
+        ],
+        [
+          "Follow up",
+          "Safety-net worsening breathlessness or bleeding."
+        ]
+      ],
+      "safety": "If large-volume haemoptysis or airway compromise develops, send to ED for airway and bleeding control rather than outpatient imaging.",
+      "local": "Use current Australian/Victorian guidance and senior escalation."
+    },
+    "source": "https://www.canceraustralia.gov.au/"
+  },
+  {
+    "n": 58,
+    "domain": "Psychiatry",
+    "skill": "Severe depression / urgent ECT consideration",
+    "context": "Moonflower Garden · advanced original clinical reasoning",
+    "stem": "A 56-year-old with major depression is mute, barely drinking, immobile for hours and expresses nihilistic delusions. Weight and renal function are deteriorating.",
+    "ask": "Which treatment escalation is most appropriate?",
+    "options": [
+      "Start outpatient counselling alone with review after six weeks.",
+      "Discharge because depression is not generally a medical emergency.",
+      "Urgent inpatient psychiatric review with ECT consideration and medical support.",
+      "Increase hypnotic medication and ignore hydration or nutrition.",
+      "Delay psychiatric referral until all delusions spontaneously remit."
+    ],
+    "key": "C",
+    "explanations": [
+      "Outpatient psychotherapy is inadequate for profound functional and physiological compromise.",
+      "Severe depression can be life-threatening through suicide, starvation or dehydration.",
+      "Correct. Psychotic depression/catatonia with inability to eat or drink is high risk; ECT can be rapidly effective while treating medical complications.",
+      "Sedation alone does not treat underlying syndrome.",
+      "Delaying care risks worsening morbidity."
+    ],
+    "pearl": "urgent ECT consideration",
+    "pivot": "If catatonic malignant features or autonomic instability emerge, escalate ICU and urgent benzodiazepine/ECT specialist pathway.",
+    "management": {
+      "steps": [
+        [
+          "Recognise",
+          "Assess suicide risk, catatonia and medical compromise."
+        ],
+        [
+          "Assess",
+          "Admit with hydration, nutrition and complication prevention."
+        ],
+        [
+          "Act",
+          "Consult psychiatry for ECT and medication strategy."
+        ],
+        [
+          "Follow up",
+          "Monitor response and relapse-prevention plan."
+        ]
+      ],
+      "safety": "If catatonic malignant features or autonomic instability emerge, escalate ICU and urgent benzodiazepine/ECT specialist pathway.",
+      "local": "Use current Australian/Victorian guidance and senior escalation."
+    },
+    "source": "https://www.ranzcp.org/clinical-guidelines-publications/clinical-guidelines-publications-library/ect-professional-practice-guideline"
+  },
+  {
+    "n": 59,
+    "domain": "Medicine",
+    "skill": "Infective endocarditis / blood cultures",
+    "context": "Moonflower Garden · advanced original clinical reasoning",
+    "stem": "A 35-year-old with a prosthetic valve has fever, a new murmur and splinter haemorrhages. They are haemodynamically stable and have not received antibiotics.",
+    "ask": "What should be obtained promptly before therapy when feasible?",
+    "options": [
+      "A single superficial skin swab as the only microbiological specimen.",
+      "Urine dipstick alone because fever is nonspecific.",
+      "Wait for echocardiographic vegetation before taking any cultures.",
+      "Multiple appropriately timed blood-culture sets from separate venepunctures.",
+      "Begin prolonged oral antibiotics without obtaining cultures."
+    ],
+    "key": "D",
+    "explanations": [
+      "Skin swabs do not diagnose bloodstream infection.",
+      "Urine testing cannot establish valve infection.",
+      "Echo complements cultures but is not a prerequisite to sampling.",
+      "Correct. Blood cultures before antibiotics identify organisms and susceptibility; obtain promptly without delaying treatment in instability.",
+      "Uncultured antibiotic treatment can sterilise blood and hinder targeted therapy."
+    ],
+    "pearl": "blood cultures",
+    "pivot": "If shock or acute valvular failure develops, treat immediately with resuscitation, antibiotics and urgent cardiothoracic assessment; cultures should not delay life-saving therapy.",
+    "management": {
+      "steps": [
+        [
+          "Recognise",
+          "Assess embolic and heart failure complications."
+        ],
+        [
+          "Assess",
+          "Collect multiple blood cultures rapidly."
+        ],
+        [
+          "Act",
+          "Arrange urgent echo and IV antimicrobial plan."
+        ],
+        [
+          "Follow up",
+          "Discuss prosthetic-valve management with infection/cardiac teams."
+        ]
+      ],
+      "safety": "If shock or acute valvular failure develops, treat immediately with resuscitation, antibiotics and urgent cardiothoracic assessment; cultures should not delay life-saving therapy.",
+      "local": "Use current Australian/Victorian guidance and senior escalation."
+    },
+    "source": "https://www.safetyandquality.gov.au/standards/clinical-care-standards/antimicrobial-stewardship-clinical-care-standard"
+  },
+  {
+    "n": 60,
+    "domain": "Surgery",
+    "skill": "Compartment syndrome / pain with passive stretch",
+    "context": "Moonflower Garden · advanced original clinical reasoning",
+    "stem": "A 27-year-old has a tibial fracture in a splint. Six hours later pain is escalating despite opioids, with tense calf compartments and marked pain when toes are passively extended. Foot pulses remain palpable.",
+    "ask": "What is the next action?",
+    "options": [
+      "Exclude compartment syndrome because the dorsalis pedis pulse is present.",
+      "Increase opioids indefinitely without repeating limb examination.",
+      "Tighten the cast to reduce swelling and avoid movement.",
+      "Discharge once analgesia briefly lowers the pain score.",
+      "Remove constriction and arrange immediate surgical compartment pressure assessment or fasciotomy."
+    ],
+    "key": "E",
+    "explanations": [
+      "Pulses are often preserved until late and do not rule out syndrome.",
+      "Analgesia can mask progression and does not relieve ischaemic pressure.",
+      "Constriction may worsen compartment pressure.",
+      "Delay risks necrosis and nerve injury.",
+      "Correct. Pain out of proportion and passive stretch pain are early signs; urgent decompression can prevent permanent injury."
+    ],
+    "pearl": "pain with passive stretch",
+    "pivot": "If neurological deficit or worsening pain persists, proceed with emergency surgical decompression; do not wait for absent pulses.",
+    "management": {
+      "steps": [
+        [
+          "Recognise",
+          "Repeat neurovascular and compartment assessment."
+        ],
+        [
+          "Assess",
+          "Remove tight dressing and keep limb at heart level."
+        ],
+        [
+          "Act",
+          "Call orthopaedic surgery immediately."
+        ],
+        [
+          "Follow up",
+          "Prepare for fasciotomy and postoperative monitoring."
+        ]
+      ],
+      "safety": "If neurological deficit or worsening pain persists, proceed with emergency surgical decompression; do not wait for absent pulses.",
+      "local": "Use current Australian/Victorian guidance and senior escalation."
+    },
+    "source": "https://www.health.vic.gov.au/victorian-state-trauma-system/clinical-trauma-advice-and-retrieval-of-trauma-patients"
+  },
+  {
+    "n": 61,
+    "domain": "Paediatrics",
+    "skill": "Neonatal jaundice / haemolysis concern",
+    "context": "Moonflower Garden · advanced original clinical reasoning",
+    "stem": "A 36-hour-old term newborn has marked jaundice. Bilirubin is rising quickly; the mother is group O and infant group A. Baby is sleepy but feeding with encouragement.",
+    "ask": "What must guide immediate management?",
+    "options": [
+      "Plot age-specific bilirubin and assess haemolysis to determine phototherapy or escalation.",
+      "Reassure that all jaundice in the first two days is physiological.",
+      "Wait until a routine two-week baby check before repeating bilirubin.",
+      "Give water supplements alone to clear bilirubin.",
+      "Rely on visual skin colour as the only severity measure."
+    ],
+    "key": "A",
+    "explanations": [
+      "Correct. Early rapidly rising bilirubin suggests haemolysis; measure serial bilirubin against gestation/hour thresholds and assess blood groups/DAT.",
+      "Early jaundice can be pathological and dangerous.",
+      "Delay risks bilirubin encephalopathy.",
+      "Water supplementation does not treat haemolytic hyperbilirubinaemia.",
+      "Visual estimation is unreliable for treatment thresholds."
+    ],
+    "pearl": "haemolysis concern",
+    "pivot": "If bilirubin reaches exchange-transfusion threshold or encephalopathy signs appear, activate urgent neonatal intensive-care escalation.",
+    "management": {
+      "steps": [
+        [
+          "Recognise",
+          "Assess gestation, age in hours and clinical state."
+        ],
+        [
+          "Assess",
+          "Measure bilirubin, blood count, blood group and DAT."
+        ],
+        [
+          "Act",
+          "Commence phototherapy per nomogram if indicated."
+        ],
+        [
+          "Follow up",
+          "Repeat levels and plan feeding and follow-up."
+        ]
+      ],
+      "safety": "If bilirubin reaches exchange-transfusion threshold or encephalopathy signs appear, activate urgent neonatal intensive-care escalation.",
+      "local": "Use current Australian/Victorian guidance and senior escalation."
+    },
+    "source": "https://www.rch.org.au/clinicalguide/guideline_index/Jaundice_in_early_infancy/"
+  },
+  {
+    "n": 62,
+    "domain": "Gynaecology",
+    "skill": "Ectopic pregnancy / methotrexate contraindication",
+    "context": "Moonflower Garden · advanced original clinical reasoning",
+    "stem": "A stable 30-year-old has a confirmed unruptured tubal ectopic pregnancy. Serum hCG is 1900 IU/L, but she has significant chronic liver disease and cannot reliably attend follow-up.",
+    "ask": "What is the best treatment planning decision?",
+    "options": [
+      "Administer methotrexate regardless of liver disease and missed follow-up.",
+      "Seek surgical management assessment rather than defaulting to methotrexate.",
+      "Offer expectant treatment without checking symptoms or serial hCG.",
+      "Prescribe oral antibiotics as definitive therapy for the tubal gestation.",
+      "Reassure that a low hCG excludes subsequent rupture."
+    ],
+    "key": "B",
+    "explanations": [
+      "Methotrexate can cause toxicity and failed treatment may rupture.",
+      "Correct. Methotrexate requires appropriate organ function and reliable serial monitoring; significant liver disease and poor follow-up are contraindications.",
+      "Expectant care also requires strict monitoring and suitable declining hCG.",
+      "Antibiotics do not resolve an ectopic implantation.",
+      "Rupture risk cannot be dismissed by hCG alone."
+    ],
+    "pearl": "methotrexate contraindication",
+    "pivot": "If new peritonism, syncope or hypotension occurs, resuscitate and proceed to emergency surgery for suspected rupture.",
+    "management": {
+      "steps": [
+        [
+          "Recognise",
+          "Review stability, fertility preferences and hCG trend."
+        ],
+        [
+          "Assess",
+          "Check blood count, liver/renal function and ultrasound."
+        ],
+        [
+          "Act",
+          "Counsel surgical versus suitable non-surgical pathways."
+        ],
+        [
+          "Follow up",
+          "Give rupture precautions and ensured follow-up."
+        ]
+      ],
+      "safety": "If new peritonism, syncope or hypotension occurs, resuscitate and proceed to emergency surgery for suspected rupture.",
+      "local": "Use current Australian/Victorian guidance and senior escalation."
+    },
+    "source": "https://ranzcog.edu.au/wp-content/uploads/Miscarriage-Ectopic-Pregnancy.pdf"
+  },
+  {
+    "n": 63,
+    "domain": "Medicine",
+    "skill": "Acute pancreatitis / severity and fluids",
+    "context": "Moonflower Garden · advanced original clinical reasoning",
+    "stem": "A 47-year-old has severe epigastric pain radiating to back, lipase six times normal and gallstones on ultrasound. Haematocrit is rising and urine output decreasing.",
+    "ask": "What is the best early management approach?",
+    "options": [
+      "Administer prophylactic antibiotics routinely in every sterile pancreatitis case.",
+      "Commence immediate ERCP regardless of duct obstruction or cholangitis.",
+      "Give goal-directed IV fluids, analgesia and monitor organ dysfunction closely.",
+      "Allow unrestricted alcohol intake because the cause is gallstones.",
+      "Delay supportive therapy until a contrast CT confirms pancreatic necrosis."
+    ],
+    "key": "C",
+    "explanations": [
+      "Antibiotics are not routine for sterile inflammatory pancreatitis.",
+      "ERCP is reserved for specific cholangitis or persistent obstruction indications.",
+      "Correct. Early organ hypoperfusion needs monitored resuscitation, analgesia and cause-directed assessment.",
+      "Alcohol is harmful and irrelevant to acute stabilisation.",
+      "Diagnosis is often clinical/biochemical and early CT does not replace support."
+    ],
+    "pearl": "severity and fluids",
+    "pivot": "If cholangitis or ongoing biliary obstruction appears, discuss urgent ERCP rather than conservative treatment alone.",
+    "management": {
+      "steps": [
+        [
+          "Recognise",
+          "Assess severity, urine output and fluid status."
+        ],
+        [
+          "Assess",
+          "Give analgesia and tailored crystalloid resuscitation."
+        ],
+        [
+          "Act",
+          "Monitor electrolytes, renal function and complications."
+        ],
+        [
+          "Follow up",
+          "Plan gallbladder management after clinical recovery."
+        ]
+      ],
+      "safety": "If cholangitis or ongoing biliary obstruction appears, discuss urgent ERCP rather than conservative treatment alone.",
+      "local": "Use current Australian/Victorian guidance and senior escalation."
+    },
+    "source": "https://aci.health.nsw.gov.au/networks/eci/clinical/clinical-tools/abdominal-pain"
+  },
+  {
+    "n": 64,
+    "domain": "Paediatrics",
+    "skill": "Tetralogy of Fallot / hypercyanotic spell",
+    "context": "Moonflower Garden · advanced original clinical reasoning",
+    "stem": "A 10-month-old with known tetralogy of Fallot becomes deeply cyanosed while crying, with rapid breathing and reduced murmur intensity. The infant is conscious but distressed.",
+    "ask": "What is the immediate stabilisation manoeuvre?",
+    "options": [
+      "Lay flat and encourage vigorous crying to increase pulmonary blood flow.",
+      "Give diuretics as sole therapy for the acute cyanotic spell.",
+      "Wait for a routine echocardiogram before providing any assistance.",
+      "Use knee-chest positioning, calming and oxygen while calling senior paediatric help.",
+      "Offer a large feed immediately to distract the infant."
+    ],
+    "key": "D",
+    "explanations": [
+      "Agitation worsens infundibular obstruction and shunting.",
+      "Diuretics can reduce preload and worsen a spell.",
+      "Clinical recognition warrants immediate action.",
+      "Correct. Knee-chest increases systemic vascular resistance, reducing right-to-left shunting; urgent medical therapy may follow.",
+      "Feeding risks aspiration and delays resuscitation."
+    ],
+    "pearl": "hypercyanotic spell",
+    "pivot": "If cyanosis persists, seek PICU/cardiology help for IV fluids, morphine/beta blockade or vasoconstrictor treatment per protocol.",
+    "management": {
+      "steps": [
+        [
+          "Recognise",
+          "Minimise agitation and place knee-chest."
+        ],
+        [
+          "Assess",
+          "Give oxygen and assess saturation/perfusion."
+        ],
+        [
+          "Act",
+          "Call paediatric resuscitation/cardiology."
+        ],
+        [
+          "Follow up",
+          "Administer directed medical therapy and plan definitive repair."
+        ]
+      ],
+      "safety": "If cyanosis persists, seek PICU/cardiology help for IV fluids, morphine/beta blockade or vasoconstrictor treatment per protocol.",
+      "local": "Use current Australian/Victorian guidance and senior escalation."
+    },
+    "source": "https://www.rch.org.au/clinicalguide/guideline_index/Cyanotic_Episodes_in_Congenital_Heart_Disease/"
+  },
+  {
+    "n": 65,
+    "domain": "GP",
+    "skill": "Family violence / private assessment",
+    "context": "Moonflower Garden · advanced original clinical reasoning",
+    "stem": "A 34-year-old attends with recurrent bruises and anxiety. Her partner insists on remaining during consultation and answers questions for her. She appears fearful when asked how injuries occurred.",
+    "ask": "What is the most appropriate next step?",
+    "options": [
+      "Confront the partner with accusations before speaking to the patient alone.",
+      "Document accidental injury because no disclosure was made in front of partner.",
+      "Contact the partner later for permission to ask about safety.",
+      "Provide only analgesia and avoid exploring coercive behaviour.",
+      "Arrange a safe private conversation and ask sensitively about violence and immediate safety."
+    ],
+    "key": "E",
+    "explanations": [
+      "Confrontation can increase retaliation risk.",
+      "Lack of disclosure under surveillance does not exclude abuse.",
+      "Patient permission from an alleged perpetrator is inappropriate.",
+      "Treating injuries alone misses significant safety concerns.",
+      "Correct. Private trauma-informed assessment and safety planning are essential; avoid actions that increase immediate danger."
+    ],
+    "pearl": "private assessment",
+    "pivot": "If imminent danger or threats to children are identified, implement urgent safeguarding and lawful reporting/support pathways with patient-centred safety planning.",
+    "management": {
+      "steps": [
+        [
+          "Recognise",
+          "Create privacy without increasing suspicion."
+        ],
+        [
+          "Assess",
+          "Ask about controlling behaviour, injury and safety."
+        ],
+        [
+          "Act",
+          "Document objectively and offer specialist support."
+        ],
+        [
+          "Follow up",
+          "Make a safe follow-up/contact plan."
+        ]
+      ],
+      "safety": "If imminent danger or threats to children are identified, implement urgent safeguarding and lawful reporting/support pathways with patient-centred safety planning.",
+      "local": "Use current Australian/Victorian guidance and senior escalation."
+    },
+    "source": "https://www.racgp.org.au/the-racgp/faculties/specific-interests/abuse-and-violence-in-families"
+  },
+  {
+    "n": 66,
+    "domain": "Surgery",
+    "skill": "Septic arthritis / aspiration before antibiotics if stable",
+    "context": "Moonflower Garden · advanced original clinical reasoning",
+    "stem": "A 58-year-old has a hot swollen knee, fever and inability to weight-bear. No trauma occurred. He is haemodynamically stable, and ultrasound demonstrates a large effusion.",
+    "ask": "What is the most appropriate diagnostic action?",
+    "options": [
+      "Arrange urgent joint aspiration for microscopy, culture and crystals with surgical review.",
+      "Treat as gout solely because the joint became painful overnight.",
+      "Book elective MRI before any aspiration or antibiotic planning.",
+      "Give oral steroids without investigating possible joint infection.",
+      "Discharge once pain improves after NSAIDs."
+    ],
+    "key": "A",
+    "explanations": [
+      "Correct. Septic arthritis is a joint-threatening emergency; aspirate promptly before antibiotics if safe and without delaying in sepsis.",
+      "Gout and infection can coexist, and symptoms overlap.",
+      "MRI does not replace synovial sampling in acute suspected septic arthritis.",
+      "Steroids can worsen occult infection.",
+      "Symptomatic relief does not eliminate cartilage destruction risk."
+    ],
+    "pearl": "aspiration before antibiotics if stable",
+    "pivot": "If sepsis or haemodynamic compromise develops, give empiric IV antibiotics immediately after feasible cultures and arrange urgent joint washout.",
+    "management": {
+      "steps": [
+        [
+          "Recognise",
+          "Assess sepsis, joint range and risk factors."
+        ],
+        [
+          "Assess",
+          "Obtain blood cultures and urgent sterile aspirate."
+        ],
+        [
+          "Act",
+          "Start empiric IV antimicrobials when indicated."
+        ],
+        [
+          "Follow up",
+          "Arrange orthopaedic drainage and tailored therapy."
+        ]
+      ],
+      "safety": "If sepsis or haemodynamic compromise develops, give empiric IV antibiotics immediately after feasible cultures and arrange urgent joint washout.",
+      "local": "Use current Australian/Victorian guidance and senior escalation."
+    },
+    "source": "https://www.rch.org.au/clinicalguide/guideline_index/Bone_and_joint_infection/"
+  },
+  {
+    "n": 67,
+    "domain": "Psychiatry",
+    "skill": "Dementia versus delirium / fluctuation",
+    "context": "Moonflower Garden · advanced original clinical reasoning",
+    "stem": "An 83-year-old with mild Alzheimer disease becomes acutely inattentive and intermittently agitated after starting oxycodone for a fracture. Family describes marked changes over hours.",
+    "ask": "What is the most appropriate interpretation?",
+    "options": [
+      "Attribute all cognitive change to inevitable dementia progression.",
+      "Suspect superimposed delirium and evaluate medication and medical triggers.",
+      "Commence long-term antipsychotic without searching for reversible causes.",
+      "Ignore pain, retention and constipation because dementia is known.",
+      "Discharge without review once the patient is calmer at night."
+    ],
+    "key": "B",
+    "explanations": [
+      "Dementia typically progresses over months/years, not hours.",
+      "Correct. Acute fluctuating inattention is delirium until proven otherwise, even in established dementia.",
+      "Antipsychotics are restricted to dangerous distress after non-drug measures.",
+      "Opioids and bodily triggers are common contributors.",
+      "Temporary settling does not resolve underlying illness."
+    ],
+    "pearl": "fluctuation",
+    "pivot": "If dangerous agitation persists, use least-restrictive supervised treatment while actively managing the precipitant and checking capacity.",
+    "management": {
+      "steps": [
+        [
+          "Recognise",
+          "Assess attention, baseline function and vital signs."
+        ],
+        [
+          "Assess",
+          "Review opioids, infection, pain, urine and bowel."
+        ],
+        [
+          "Act",
+          "Use orientation, sensory aids and mobilising support."
+        ],
+        [
+          "Follow up",
+          "Reassess daily and communicate the reversible plan."
+        ]
+      ],
+      "safety": "If dangerous agitation persists, use least-restrictive supervised treatment while actively managing the precipitant and checking capacity.",
+      "local": "Use current Australian/Victorian guidance and senior escalation."
+    },
+    "source": "https://www.safetyandquality.gov.au/standards/clinical-care-standards/delirium-clinical-care-standard"
+  },
+  {
+    "n": 68,
+    "domain": "Medicine",
+    "skill": "Adverse drug reaction / ACE inhibitor angioedema",
+    "context": "Moonflower Garden · advanced original clinical reasoning",
+    "stem": "A 63-year-old on perindopril presents with progressive lip and tongue swelling without urticaria or wheeze. BP is normal but voice is becoming muffled.",
+    "ask": "What is the most important immediate action?",
+    "options": [
+      "Reassure because absence of rash excludes dangerous allergic reactions.",
+      "Give oral antihistamine alone then discharge without airway assessment.",
+      "Call expert airway help and stop ACE inhibitor while monitoring for obstruction.",
+      "Continue perindopril because blood pressure is well controlled.",
+      "Delay evaluation until the swelling reaches the larynx."
+    ],
+    "key": "C",
+    "explanations": [
+      "Angioedema often occurs without urticaria or hypotension.",
+      "Medical treatment cannot replace early airway planning.",
+      "Correct. Bradykinin-mediated ACE-inhibitor angioedema threatens the airway, and standard antihistamines may be insufficient.",
+      "Re-exposure risks recurrence and must be avoided.",
+      "Airway loss can be sudden and difficult to rescue."
+    ],
+    "pearl": "ACE inhibitor angioedema",
+    "pivot": "If stridor, drooling or respiratory fatigue develops, prepare controlled emergency airway intervention with anaesthesia/ENT.",
+    "management": {
+      "steps": [
+        [
+          "Recognise",
+          "Assess voice, tongue, airway and progression."
+        ],
+        [
+          "Assess",
+          "Call airway specialists early and stop ACE inhibitor."
+        ],
+        [
+          "Act",
+          "Provide monitored supportive/targeted therapy per protocol."
+        ],
+        [
+          "Follow up",
+          "Document permanent drug avoidance and alternatives."
+        ]
+      ],
+      "safety": "If stridor, drooling or respiratory fatigue develops, prepare controlled emergency airway intervention with anaesthesia/ENT.",
+      "local": "Use current Australian/Victorian guidance and senior escalation."
+    },
+    "source": "https://www.allergy.org.au/hp/papers/acute-management-of-anaphylaxis-guidelines"
+  },
+  {
+    "n": 69,
+    "domain": "O&G",
+    "skill": "Gestational diabetes / fasting elevations",
+    "context": "Moonflower Garden · advanced original clinical reasoning",
+    "stem": "A pregnant woman at 29 weeks has GDM diagnosed by OGTT. After two weeks of nutrition and activity changes, fasting glucose remains repeatedly above target while most postprandial values are within range.",
+    "ask": "What treatment escalation is most appropriate?",
+    "options": [
+      "Increase dietary carbohydrates at bedtime without reviewing fasting patterns.",
+      "Stop glucose checks because postprandial readings are mostly acceptable.",
+      "Wait until delivery before treating fasting hyperglycaemia.",
+      "Discuss bedtime basal insulin with diabetes-in-pregnancy team while continuing monitoring.",
+      "Use a large rapid-acting insulin dose at every meal regardless of values."
+    ],
+    "key": "D",
+    "explanations": [
+      "Unstructured additional carbohydrate may worsen fasting glucose.",
+      "Fasting dysglycaemia still affects fetal risk.",
+      "Delaying treatment forfeits glycaemic control during pregnancy.",
+      "Correct. Persistent fasting elevation often needs basal therapy, individualised to pregnancy targets and titrated carefully.",
+      "Meal insulin is not the primary answer to isolated fasting elevation."
+    ],
+    "pearl": "fasting elevations",
+    "pivot": "If postprandial excursions also become elevated, add appropriately timed meal treatment or titrate regimen with specialist guidance.",
+    "management": {
+      "steps": [
+        [
+          "Recognise",
+          "Review logs, technique and nutritional intake."
+        ],
+        [
+          "Assess",
+          "Confirm agreed fasting/postprandial targets."
+        ],
+        [
+          "Act",
+          "Initiate specialist-directed basal medication and teach hypoglycaemia precautions."
+        ],
+        [
+          "Follow up",
+          "Arrange frequent titration and fetal growth surveillance."
+        ]
+      ],
+      "safety": "If postprandial excursions also become elevated, add appropriately timed meal treatment or titrate regimen with specialist guidance.",
+      "local": "Use current Australian/Victorian guidance and senior escalation."
+    },
+    "source": "https://www.safercare.vic.gov.au/maternity"
+  },
+  {
+    "n": 70,
+    "domain": "EBM",
+    "skill": "Intention to treat / attrition",
+    "context": "Moonflower Garden · advanced original clinical reasoning",
+    "stem": "A randomised trial allocated 500 patients per arm. Fifty in treatment arm stopped medication due to adverse effects, but outcome data are available for everyone.",
+    "ask": "Which analysis best preserves randomisation for effectiveness?",
+    "options": [
+      "Exclude all participants who stopped therapy from the main comparison.",
+      "Reassign cross-over patients to the medication actually received.",
+      "Analyse only those with the largest symptomatic response.",
+      "Restrict analysis to patients who tolerated full treatment.",
+      "Analyse all participants in their assigned groups regardless of adherence."
+    ],
+    "key": "E",
+    "explanations": [
+      "Per-protocol exclusion may introduce adherence-related selection bias.",
+      "Reassignment breaks allocation balance and creates confounding.",
+      "Selecting responders inflates apparent efficacy.",
+      "Tolerability selection can distort benefits and harms.",
+      "Correct. Intention-to-treat estimates effect of assignment and preserves baseline randomisation."
+    ],
+    "pearl": "attrition",
+    "pivot": "If missing outcomes are substantial, examine imputation and sensitivity analyses rather than assuming ITT wording alone removes attrition bias.",
+    "management": {
+      "steps": [
+        [
+          "Recognise",
+          "Identify randomisation and prespecified primary outcome."
+        ],
+        [
+          "Assess",
+          "Check allocation-based analysis and loss to follow-up."
+        ],
+        [
+          "Act",
+          "Compare ITT with supportive per-protocol results."
+        ],
+        [
+          "Follow up",
+          "Interpret harms, effect sizes and missing-data sensitivity."
+        ]
+      ],
+      "safety": "If missing outcomes are substantial, examine imputation and sensitivity analyses rather than assuming ITT wording alone removes attrition bias.",
+      "local": "Use current Australian/Victorian guidance and senior escalation."
+    },
+    "source": "https://www.nhmrc.gov.au/guidelines"
+  },
+  {
+    "n": 71,
+    "domain": "Surgery",
+    "skill": "Perianal abscess / drainage",
+    "context": "Moonflower Garden · advanced original clinical reasoning",
+    "stem": "A 37-year-old with fever and severe localised anal pain has a fluctuant tender perianal swelling. He has poorly controlled diabetes but remains stable.",
+    "ask": "What is the definitive initial management?",
+    "options": [
+      "Arrange urgent surgical drainage with antibiotic decisions based on risk.",
+      "Treat solely with topical haemorrhoid cream and reassurance.",
+      "Wait for spontaneous rupture without examining severity.",
+      "Give oral antibiotics alone as definitive treatment for fluctuance.",
+      "Perform routine colonoscopy before addressing the collection."
+    ],
+    "key": "A",
+    "explanations": [
+      "Correct. An abscess requires drainage; diabetes/systemic features strengthen need for antibiotic and sepsis assessment.",
+      "Haemorrhoid products cannot evacuate infected pus.",
+      "Delay risks spread, including deep sepsis.",
+      "Antibiotics alone penetrate abscess cavities poorly.",
+      "Colonoscopy may later investigate underlying disease but does not replace drainage."
+    ],
+    "pearl": "drainage",
+    "pivot": "If spreading cellulitis, crepitus or shock develops, urgently exclude necrotising infection and escalate to broad antibiotics and emergency debridement.",
+    "management": {
+      "steps": [
+        [
+          "Recognise",
+          "Assess depth, fever and perineal spread."
+        ],
+        [
+          "Assess",
+          "Check glucose and sepsis markers."
+        ],
+        [
+          "Act",
+          "Arrange incision and drainage by surgical team."
+        ],
+        [
+          "Follow up",
+          "Plan wound care and fistula/recurrence follow-up."
+        ]
+      ],
+      "safety": "If spreading cellulitis, crepitus or shock develops, urgently exclude necrotising infection and escalate to broad antibiotics and emergency debridement.",
+      "local": "Use current Australian/Victorian guidance and senior escalation."
+    },
+    "source": "https://aci.health.nsw.gov.au/networks/eci/clinical/clinical-tools/abdominal-pain"
+  },
+  {
+    "n": 72,
+    "domain": "Paediatrics",
+    "skill": "Developmental regression / urgent work-up",
+    "context": "Moonflower Garden · advanced original clinical reasoning",
+    "stem": "Parents report their previously verbal 2-year-old has lost several words and social engagement over three months. They also describe episodes of staring with unresponsiveness.",
+    "ask": "What is the appropriate assessment direction?",
+    "options": [
+      "Reassure that losing established language is a normal toddler phase.",
+      "Arrange developmental and neurological evaluation including possible seizure assessment.",
+      "Diagnose isolated speech delay without asking about lost skills.",
+      "Advise waiting until primary school before any formal evaluation.",
+      "Treat with stimulant medication before assessing development."
+    ],
+    "key": "B",
+    "explanations": [
+      "Regression is a red flag distinct from delayed acquisition.",
+      "Correct. Regression and spells suggest neurological/developmental pathology requiring timely assessment.",
+      "Seizure phenomena and hearing need consideration.",
+      "Early assessment permits intervention and investigation.",
+      "Stimulants have no indication before comprehensive evaluation."
+    ],
+    "pearl": "urgent work-up",
+    "pivot": "If prolonged seizure or acute encephalopathy occurs, send for emergency paediatric assessment rather than routine developmental clinic.",
+    "management": {
+      "steps": [
+        [
+          "Recognise",
+          "Verify milestones gained and lost, onset and associated symptoms."
+        ],
+        [
+          "Assess",
+          "Screen hearing, neurological exam and seizure history."
+        ],
+        [
+          "Act",
+          "Refer to developmental paediatrics/neurology."
+        ],
+        [
+          "Follow up",
+          "Coordinate therapies and family support while investigating."
+        ]
+      ],
+      "safety": "If prolonged seizure or acute encephalopathy occurs, send for emergency paediatric assessment rather than routine developmental clinic.",
+      "local": "Use current Australian/Victorian guidance and senior escalation."
+    },
+    "source": "https://www.rch.org.au/clinicalguide/"
+  },
+  {
+    "n": 73,
+    "domain": "Medicine",
+    "skill": "Blood transfusion / TACO differentiation",
+    "context": "Moonflower Garden · advanced original clinical reasoning",
+    "stem": "A 79-year-old with heart failure becomes hypoxic and hypertensive halfway through a red-cell transfusion. New crackles and raised JVP develop; chest film shows bilateral pulmonary oedema.",
+    "ask": "Which reaction and action are most likely?",
+    "options": [
+      "Continue transfusion faster because breathlessness represents untreated anaemia.",
+      "Diagnose anaphylaxis solely because symptoms occurred during transfusion.",
+      "Suspect transfusion-associated circulatory overload and stop transfusion with supportive care.",
+      "Give another unit to increase oxygen carrying capacity immediately.",
+      "Discharge without notifying transfusion laboratory after oxygen."
+    ],
+    "key": "C",
+    "explanations": [
+      "Further volume can worsen respiratory failure.",
+      "Anaphylaxis usually has a different hypotensive/airway pattern.",
+      "Correct. TACO features volume overload, raised filling pressures and hypertension; stop transfusion, oxygen and consider diuresis.",
+      "Additional blood heightens overload.",
+      "All suspected reactions need clinical assessment and reporting."
+    ],
+    "pearl": "TACO differentiation",
+    "pivot": "If hypotension with noncardiogenic oedema develops, evaluate TRALI and other reactions rather than automatically diuresing.",
+    "management": {
+      "steps": [
+        [
+          "Recognise",
+          "Stop transfusion and assess ABCDE."
+        ],
+        [
+          "Assess",
+          "Maintain IV access and contact transfusion service."
+        ],
+        [
+          "Act",
+          "Give oxygen, monitor and diurese when appropriate."
+        ],
+        [
+          "Follow up",
+          "Document reaction and prevention plan for future blood."
+        ]
+      ],
+      "safety": "If hypotension with noncardiogenic oedema develops, evaluate TRALI and other reactions rather than automatically diuresing.",
+      "local": "Use current Australian/Victorian guidance and senior escalation."
+    },
+    "source": "https://www.lifeblood.com.au/health-professionals/clinical-practice/transfusion-reactions"
+  },
+  {
+    "n": 74,
+    "domain": "GP",
+    "skill": "Melanoma / changing pigmented lesion",
+    "context": "Moonflower Garden · advanced original clinical reasoning",
+    "stem": "A 42-year-old has a mole that has enlarged, developed asymmetrical borders and intermittent bleeding. Dermoscopy shows atypical pigment network.",
+    "ask": "What is the appropriate next step?",
+    "options": [
+      "Freeze the lesion without histology because it may be benign.",
+      "Reassure and review in two years without photographic documentation.",
+      "Treat it with topical antifungal medication and monitor colour.",
+      "Arrange complete excisional biopsy with appropriate margins or urgent specialist referral.",
+      "Shave the superficial pigment only without considering lesion depth."
+    ],
+    "key": "D",
+    "explanations": [
+      "Destruction removes the ability to stage malignancy.",
+      "Evolution and bleeding are warning signs.",
+      "Antifungals do not address melanocytic malignancy.",
+      "Correct. Suspicious changing lesion requires histological assessment, ideally full-thickness excision for Breslow depth.",
+      "Superficial sampling may underestimate invasive thickness."
+    ],
+    "pearl": "changing pigmented lesion",
+    "pivot": "If high-risk melanoma pathology is confirmed, refer for wider excision, staging and multidisciplinary management according to Breslow thickness.",
+    "management": {
+      "steps": [
+        [
+          "Recognise",
+          "Document ABCDE and dermoscopic features."
+        ],
+        [
+          "Assess",
+          "Arrange timely excision or specialist biopsy."
+        ],
+        [
+          "Act",
+          "Review histology and margins promptly."
+        ],
+        [
+          "Follow up",
+          "Provide sun protection and surveillance advice."
+        ]
+      ],
+      "safety": "If high-risk melanoma pathology is confirmed, refer for wider excision, staging and multidisciplinary management according to Breslow thickness.",
+      "local": "Use current Australian/Victorian guidance and senior escalation."
+    },
+    "source": "https://www.cancer.org.au/clinical-guidelines/skin-cancer"
+  },
+  {
+    "n": 75,
+    "domain": "Psychiatry",
+    "skill": "Panic disorder / medical mimic",
+    "context": "Moonflower Garden · advanced original clinical reasoning",
+    "stem": "A 37-year-old with new episodes of palpitations, tremor and anxiety also reports weight loss, heat intolerance and resting tachycardia between attacks.",
+    "ask": "What is the most appropriate initial approach?",
+    "options": [
+      "Diagnose panic disorder solely because attacks include fear and palpitations.",
+      "Prescribe long-term benzodiazepines without examining physical signs.",
+      "Dismiss weight loss as unrelated and defer blood tests indefinitely.",
+      "Start exposure therapy while ignoring persistent resting tachycardia.",
+      "Assess thyroid dysfunction and other medical causes before assigning primary panic disorder."
+    ],
+    "key": "E",
+    "explanations": [
+      "The panic symptom pattern is not specific when physical signs persist.",
+      "Long-term benzodiazepine use has dependence risks and misses an endocrine cause.",
+      "Weight loss and heat intolerance are discriminating medical features.",
+      "Psychological therapy may help later but requires correct initial diagnosis.",
+      "Correct. Hyperthyroidism can mimic panic and produces persistent systemic clues; thyroid examination and function tests are warranted."
+    ],
+    "pearl": "medical mimic",
+    "pivot": "If arrhythmia, severe hyperthermia or confusion develops, urgently assess thyroid storm or another medical emergency.",
+    "management": {
+      "steps": [
+        [
+          "Recognise",
+          "Check observations, ECG and thyroid signs."
+        ],
+        [
+          "Assess",
+          "Order TSH and free thyroid hormones."
+        ],
+        [
+          "Act",
+          "Evaluate substance/medication triggers."
+        ],
+        [
+          "Follow up",
+          "Treat identified cause and reassess anxiety symptoms."
+        ]
+      ],
+      "safety": "If arrhythmia, severe hyperthermia or confusion develops, urgently assess thyroid storm or another medical emergency.",
+      "local": "Use current Australian/Victorian guidance and senior escalation."
+    },
+    "source": "https://www.racgp.org.au/afp/2012/august/thyroid-nodules"
+  },
+  {
+    "n": 76,
+    "domain": "O&G",
+    "skill": "Hyperemesis / thiamine before dextrose",
+    "context": "Moonflower Garden · advanced original clinical reasoning",
+    "stem": "A 10-week pregnant woman has prolonged vomiting, weight loss and ketonuria. She has been unable to eat for several days and needs IV fluids.",
+    "ask": "Which deficiency prevention is important before carbohydrate infusion?",
+    "options": [
+      "Administer thiamine before dextrose in prolonged severe nutritional depletion.",
+      "Give dextrose immediately without considering thiamine status.",
+      "Use antiemetics alone and avoid assessing electrolytes or nutrition.",
+      "Start parenteral iron as the sole deficiency treatment.",
+      "Delay all IV treatment until urine ketones become negative."
+    ],
+    "key": "A",
+    "explanations": [
+      "Correct. Prolonged vomiting depletes thiamine; administering carbohydrate first may precipitate Wernicke encephalopathy.",
+      "Dextrose increases thiamine demand and can unmask deficiency.",
+      "Electrolytes, hydration and nutrition need concurrent management.",
+      "Iron does not prevent neurological thiamine deficiency.",
+      "Treatment should begin before laboratory normalisation."
+    ],
+    "pearl": "thiamine before dextrose",
+    "pivot": "If confusion, ataxia or eye movement abnormalities appear, treat presumptive Wernicke encephalopathy urgently with parenteral thiamine and specialist care.",
+    "management": {
+      "steps": [
+        [
+          "Recognise",
+          "Assess dehydration, weight and electrolyte deficits."
+        ],
+        [
+          "Assess",
+          "Administer thiamine before carbohydrate-containing fluids."
+        ],
+        [
+          "Act",
+          "Give appropriate IV hydration and antiemetics."
+        ],
+        [
+          "Follow up",
+          "Plan nutrition support and follow-up."
+        ]
+      ],
+      "safety": "If confusion, ataxia or eye movement abnormalities appear, treat presumptive Wernicke encephalopathy urgently with parenteral thiamine and specialist care.",
+      "local": "Use current Australian/Victorian guidance and senior escalation."
+    },
+    "source": "https://www.health.qld.gov.au/qcg/publications"
+  },
+  {
+    "n": 77,
+    "domain": "Surgery",
+    "skill": "Obstructed infected kidney / urgent decompression",
+    "context": "Moonflower Garden · advanced original clinical reasoning",
+    "stem": "A 62-year-old has fever, flank pain, pyuria and CT showing a 9-mm obstructing proximal ureteric stone with hydronephrosis. BP is 94/60 mmHg.",
+    "ask": "What management should be prioritised?",
+    "options": [
+      "Provide oral analgesia alone and arrange lithotripsy in six weeks.",
+      "Give sepsis treatment and obtain urgent urological decompression of the infected system.",
+      "Wait for stone passage without antibiotics because urine is draining.",
+      "Give a diuretic to force urine past the obstruction.",
+      "Schedule routine outpatient culture review before contacting urology."
+    ],
+    "key": "B",
+    "explanations": [
+      "Analgesia does not relieve infected pressure or sepsis.",
+      "Correct. Infected obstruction is a urological emergency; drainage by stent/nephrostomy with antibiotics is source control.",
+      "Hydronephrosis implies compromised drainage and risk of deterioration.",
+      "Diuresis can increase pressure without resolving blockage.",
+      "Delay risks septic shock and renal loss."
+    ],
+    "pearl": "urgent decompression",
+    "pivot": "If haemodynamic instability persists, add critical-care vasopressors while expediting immediate drainage and antibiotics.",
+    "management": {
+      "steps": [
+        [
+          "Recognise",
+          "Recognise septic obstructive uropathy."
+        ],
+        [
+          "Assess",
+          "Obtain cultures and give urgent IV antibiotics."
+        ],
+        [
+          "Act",
+          "Contact urology for stent or nephrostomy."
+        ],
+        [
+          "Follow up",
+          "Monitor renal function and later definitive stone treatment."
+        ]
+      ],
+      "safety": "If haemodynamic instability persists, add critical-care vasopressors while expediting immediate drainage and antibiotics.",
+      "local": "Use current Australian/Victorian guidance and senior escalation."
+    },
+    "source": "https://www.health.vic.gov.au/health-services/information-for-emergency-departments"
+  },
+  {
+    "n": 78,
+    "domain": "EBM",
+    "skill": "Absolute risk reduction / NNT",
+    "context": "Moonflower Garden · advanced original clinical reasoning",
+    "stem": "In a trial, stroke occurs in 8% of controls and 5% of treated patients over five years. Harms are otherwise balanced. A trainee reports a 37.5% relative risk reduction.",
+    "ask": "What number best communicates absolute treatment benefit?",
+    "options": [
+      "An absolute reduction of 37.5 points, with NNT about three.",
+      "An absolute reduction of 13 points, with NNT about eight.",
+      "An absolute reduction of 3 percentage points, with NNT about 34.",
+      "An absolute reduction of 5 points, with NNT exactly twenty.",
+      "An absolute reduction of 8 points, with NNT exactly twelve."
+    ],
+    "key": "C",
+    "explanations": [
+      "Relative change is not the absolute percentage-point reduction.",
+      "Adding rather than subtracting event risks is incorrect.",
+      "Correct. ARR=0.08−0.05=0.03 and NNT=1/0.03=33.3, rounded up to 34 over five years.",
+      "Treatment-arm event risk is not the risk difference.",
+      "Control event risk alone is not treatment benefit."
+    ],
+    "pearl": "NNT",
+    "pivot": "If baseline risk differs greatly for an individual, the expected absolute benefit and NNT will change even if relative effect is similar.",
+    "management": {
+      "steps": [
+        [
+          "Recognise",
+          "Identify comparable follow-up durations."
+        ],
+        [
+          "Assess",
+          "Calculate treatment and control event proportions."
+        ],
+        [
+          "Act",
+          "Subtract for ARR and invert for NNT."
+        ],
+        [
+          "Follow up",
+          "Discuss absolute benefit alongside adverse effects."
+        ]
+      ],
+      "safety": "If baseline risk differs greatly for an individual, the expected absolute benefit and NNT will change even if relative effect is similar.",
+      "local": "Use current Australian/Victorian guidance and senior escalation."
+    },
+    "source": "https://www.nhmrc.gov.au/guidelines"
   }
 ]
