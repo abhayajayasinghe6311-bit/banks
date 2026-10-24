@@ -1,4 +1,4 @@
-# Bank 16: Monash Past-Paper Remix Garden
+# Bank 16: Revision Blossom Garden
 Status: IN PROGRESS, draft only. **Do not add to manifest or publish until there are 100 clinically reviewed original questions.**
 
 Repository: abhayajayasinghe6311-bit/banks
@@ -10,7 +10,7 @@ Source materials uploaded by user:
 
 **Creative brief**: 100 NEW original five-option final-year clinical reasoning MCQs inspired by the supplied practice review (NOT a copy or republication of past-paper stems). Mimic Monash exam cognitive level: prioritise the *next* step, identify the most important discriminatory sign, appropriate initial test, safe management escalation, interpretation of ECG/ABG/imaging, ward-intern decisions, and plausible distractors. Australian guidance preferred. Include clinically specific rationales for all five options, management.steps exactly four stages, safety, diagnostic pivot, pearl, and trustworthy guideline source URL.
 
-**Progress (latest authored checkpoint): 40/100**. A=8 B=8 C=8 D=8 E=8. No published Bank 16 yet. Keep Banks 1–15 unchanged, and retain all user account answer state. The homepage manifest currently ends with Bank 15.
+**Progress (latest authored checkpoint): 50/100**. A=8 B=8 C=8 D=8 E=8. No published Bank 16 yet. Keep Banks 1–15 unchanged, and retain all user account answer state. The homepage manifest currently ends with Bank 15.
 
 User's actual missed 2025 questions and concepts (extracted from the review):
 - 10: ocular chemical exposure — start irrigation before pH/referral;
@@ -47,7 +47,7 @@ Plan for cases 16–100: continue missing themes first (denosumab, PE, DKA, aspl
 Technical JSON schema = bank15.json: {n,domain,skill,context,stem,ask,options:[5],key:'A'...'E',explanations:[5],pearl,pivot,management:{steps:[[label,detail] x4],safety,local},source:url}.
 QA after every batch: sequential n starting 1; 5 nonempty plausible options with similar word length (difference typically <=5, maximum <=8); 5 distinct detailed option explanations; 4 actionable stages with useful management details; no duplicated skill/stem/near-duplicates from Banks 1–15; no dangerous wrong treatment; guideline URL checked where feasible; balance answer letters exactly 20 each at final 100; preserve GitHub content through SHA-checked writes.
 
-When the bank reaches 100 after medical QA, publish via fresh branch from main: copy **only** final bank16.json and add Bank 16 in manifest.json. Suggested name: "Monash Past-Paper Remix Garden", emoji "📚", description "100 original cases calibrated to 2024–2025 Monash review papers, with high-yield safe decisions and five detailed option explanations". Make PR/merge, check main manifest and published JSON and test Pages HTTP if possible. Do not claim HTTP live verification without actually checking.
+When the bank reaches 100 after medical QA, publish via fresh branch from main: copy **only** final bank16.json and add Bank 16 in manifest.json. Final title requested by user: "Revision Blossom Garden", emoji "🌸", description "100 original 2024–2025 Monash-inspired practice scenarios with balanced options, clinical reasoning and practical management". Make PR/merge, check main manifest and published JSON and test Pages HTTP if possible. Do not claim HTTP live verification without actually checking.
 
 ## 2026-10-24 additional checkpoint: 25/100 drafted
 - Q16–25 added to bank16.json: pump DKA testing, post-splenectomy fever, PEA pharmacology, post-MI cardiorenal pulmonary oedema, severe asthma CO2, PE vs pulmonary infection, denosumab-associated hypocalcaemia, postoperative haemorrhage and re-exploration, specificity 100% ruling in disease, and perioperative SGLT2 withholding.
@@ -66,3 +66,10 @@ When the bank reaches 100 after medical QA, publish via fresh branch from main: 
 - Re-ran cross-bank stem similarity after revision: maximum token Jaccard 0.3125; zero exact matching stems. The original 15 new questions and all earlier saved questions remain in place, with these seven strengthened rather than deleted.
 - Final checkpoint: **40/100**, unique sequential n 1–40, answer keys A/B/C/D/E eight each, 5 options and explanations each, 4 management steps each, option word-count spread at most 4 words. **Not published.**
 - Do not blindly repeat earlier emergency presentations when extending; compare each new question against published Banks 1–15 and vary clinical decisions (test selection, reassessment, treatment adjustment, contraindications, escalation, disposition).
+
+## 2026-10-24 user renaming and substantive revision checkpoint: 50/100
+- User wants website-themed name **Revision Blossom Garden 🌸**. Do not use old "Monash Past-Paper Remix Garden" at publication.
+- Added original Q41–50: injury-related coronial deaths (Victoria), early stoma ischaemia escalation, TRALI vs TACO, acute hypercapnic respiratory acidosis, small-area hand burn referral, suspected placenta previa, catheter-associated febrile delirium testing, flashes/floaters retinal tear precautions, aldosterone-renin investigation and post-epistaxis anticoagulation/haemoglobin assessment.
+- 50 sequential unique questions committed; **A=10/B=10/C=10/D=10/E=10**, five explanations per question, four concrete management stages, max option-length spread five words.
+- Live website remains Banks 1–15. Do not publish Bank 16 until Q1–100 complete and medically reviewed.
+- Remaining 50 original questions; continue from Q51 and review Australian source freshness. Avoid copying user PDFs and avoid near-duplicate question themes.
