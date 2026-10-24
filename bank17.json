@@ -290,47 +290,47 @@
   {
     "n": 7,
     "domain": "Surgery",
-    "skill": "Mesenteric ischaemia / pain out of proportion",
+    "skill": "Mesenteric ischaemia / decision after successful embolectomy",
     "context": "Moonflower Garden · advanced original clinical reasoning",
-    "stem": "A 79-year-old with atrial fibrillation and no anticoagulation develops sudden severe diffuse abdominal pain. The abdomen is soft with only mild tenderness; lactate is initially 2.1 mmol/L and no peritonism is present.",
-    "ask": "What investigation and escalation are most appropriate?",
+    "stem": "A 76-year-old underwent emergency mesenteric embolectomy six hours ago. The surgeon left a borderline dusky segment of small bowel in situ and the patient is now on ICU with improving lactate but persistent abdominal tenderness.",
+    "ask": "What follow-up plan best addresses bowel viability risk?",
     "options": [
-      "Reassure because the abdominal examination is relatively benign.",
-      "Arrange urgent CT angiography and immediate vascular or general surgical review.",
-      "Wait for lactate to rise above five before ordering any imaging.",
-      "Order plain abdominal radiography alone and discharge if normal.",
-      "Treat constipation empirically and assess response the next morning."
+      "Assume normalising lactate confirms every intestinal segment is viable.",
+      "Arrange planned second-look surgical assessment within an appropriate interval.",
+      "Start unrestricted feeding immediately to test bowel tolerance.",
+      "Discharge from surgical follow-up once haemodynamics stabilise.",
+      "Give routine laxatives to improve perfusion of marginal bowel."
     ],
     "key": "B",
     "explanations": [
-      "A benign early examination does not exclude threatened intestine.",
-      "Correct. Early acute mesenteric ischaemia can produce severe pain with few signs; urgent CTA and surgical discussion are time critical.",
-      "Lactate may be normal early and cannot safely rule out ischaemia.",
-      "Plain films are nonspecific and do not show mesenteric arterial occlusion.",
-      "A delay for laxatives risks irreversible infarction and sepsis."
+      "Lactate can improve despite focal ongoing ischaemia.",
+      "Correct. Uncertain intestinal viability after reperfusion may require planned second look to identify evolving necrosis.",
+      "Early feeding may be unsafe before bowel viability and function are established.",
+      "ICU stability does not remove postoperative viability uncertainty.",
+      "Laxatives do not restore mesenteric microvascular flow."
     ],
-    "pearl": "pain out of proportion",
-    "pivot": "If peritonitis or haemodynamic collapse develops, initiate immediate resuscitation and emergency operative source-control planning, without delay for repeat routine investigations.",
+    "pearl": "decision after successful embolectomy",
+    "pivot": "If peritonitis, rising lactate or shock develops before planned reassessment, return urgently to operative exploration instead of awaiting scheduled review.",
     "management": {
       "steps": [
         [
           "Recognise",
-          "Recognise embolic risk and disproportionate pain."
+          "Review operative findings and remaining bowel."
         ],
         [
           "Assess",
-          "Resuscitate, take bloods and provide analgesia."
+          "Monitor perfusion, lactate and abdominal examination."
         ],
         [
           "Act",
-          "Obtain urgent arterial-phase CT and contact surgical services."
+          "Coordinate timed second-look with surgical team."
         ],
         [
           "Follow up",
-          "Prepare anticoagulation or reperfusion strategy with specialists."
+          "Plan nutrition and anticoagulation after viability assessment."
         ]
       ],
-      "safety": "If peritonitis or haemodynamic collapse develops, initiate immediate resuscitation and emergency operative source-control planning, without delay for repeat routine investigations.",
+      "safety": "If peritonitis, rising lactate or shock develops before planned reassessment, return urgently to operative exploration instead of awaiting scheduled review.",
       "local": "Follow current relevant Victorian/Australian guidance and senior escalation."
     },
     "source": "https://aci.health.nsw.gov.au/networks/eci/clinical/clinical-tools/abdominal-pain"
@@ -434,47 +434,47 @@
   {
     "n": 10,
     "domain": "GP",
-    "skill": "Suspected colorectal cancer / negative FIT limits",
+    "skill": "Colorectal cancer / iron deficiency after normal colonoscopy",
     "context": "Moonflower Garden · advanced original clinical reasoning",
-    "stem": "A 62-year-old reports six weeks of altered bowel habit, unexplained weight loss and iron deficiency anaemia. A recent home faecal immunochemical screening test was negative.",
-    "ask": "What is the most appropriate next step?",
+    "stem": "A 67-year-old man has persistent iron deficiency anaemia despite replacement. A high-quality colonoscopy performed recently was normal; he takes NSAIDs and has intermittent epigastric discomfort.",
+    "ask": "What further investigation is important?",
     "options": [
-      "Reassure that a negative screening result excludes colorectal cancer.",
-      "Repeat the screening test annually without addressing symptoms now.",
-      "Treat iron deficiency alone and abandon cancer evaluation after improvement.",
-      "Prescribe laxatives for a month before considering specialist referral.",
-      "Arrange diagnostic colorectal assessment despite the negative screening test."
+      "Conclude the normal colonoscopy excludes all gastrointestinal pathology.",
+      "Repeat faecal screening annually as the only assessment.",
+      "Stop monitoring haemoglobin now that colorectal cancer seems less likely.",
+      "Attribute low ferritin solely to ageing without reviewing medicines.",
+      "Arrange upper gastrointestinal evaluation rather than assuming no bleeding source."
     ],
     "key": "E",
     "explanations": [
-      "Screening performance differs from diagnostic certainty in a high-risk symptomatic individual.",
-      "Annual population screening is not the correct pathway for concerning current symptoms.",
-      "Treating anaemia does not reveal its cause or exclude malignancy.",
-      "Empiric symptom management must not delay cancer investigation.",
-      "Correct. Symptomatic red flags require diagnostic evaluation; a screening FIT is not a definitive rule-out test in this scenario."
+      "Colonoscopy visualises colon, not oesophagus/stomach or small bowel.",
+      "FIT screening cannot investigate symptomatic established anaemia adequately.",
+      "Anaemia needs cause assessment and response monitoring.",
+      "Age alone is not a physiological cause of iron deficiency.",
+      "Correct. Bidirectional evaluation is appropriate for unexplained iron deficiency in older men; upper sources remain possible."
     ],
-    "pearl": "negative FIT limits",
-    "pivot": "If obstruction, significant bleeding or perforation signs develop, send the patient for emergency hospital evaluation rather than routine outpatient endoscopy.",
+    "pearl": "iron deficiency after normal colonoscopy",
+    "pivot": "If active haematemesis, melaena with shock or symptomatic severe anaemia occurs, use urgent inpatient bleeding pathway instead of routine outpatient gastroscopy.",
     "management": {
       "steps": [
         [
           "Recognise",
-          "Assess anaemia severity, bowel symptoms and family history."
+          "Review colonoscopy quality and iron trend."
         ],
         [
           "Assess",
-          "Arrange urgent diagnostic referral and appropriate endoscopy."
+          "Assess NSAIDs and upper GI features."
         ],
         [
           "Act",
-          "Correct iron deficiency while investigating its source."
+          "Arrange gastroscopy and further testing as indicated."
         ],
         [
           "Follow up",
-          "Safety-net obstructive and bleeding red flags and follow results."
+          "Treat iron deficiency and follow haemoglobin/ferritin."
         ]
       ],
-      "safety": "If obstruction, significant bleeding or perforation signs develop, send the patient for emergency hospital evaluation rather than routine outpatient endoscopy.",
+      "safety": "If active haematemesis, melaena with shock or symptomatic severe anaemia occurs, use urgent inpatient bleeding pathway instead of routine outpatient gastroscopy.",
       "local": "Follow current relevant Victorian/Australian guidance and senior escalation."
     },
     "source": "https://www.cancer.org.au/clinical-guidelines/colorectal-cancer/colorectal-cancer-screening"
@@ -722,47 +722,47 @@
   {
     "n": 16,
     "domain": "Paediatrics",
-    "skill": "IgA vasculitis / renal follow-up",
+    "skill": "IgA vasculitis / significant renal involvement",
     "context": "Moonflower Garden · advanced original clinical reasoning",
-    "stem": "A 7-year-old has palpable purpura over both legs, ankle swelling and crampy abdominal pain after an upper respiratory illness. Platelets are normal, observations stable and urinalysis shows trace blood.",
-    "ask": "What monitoring is essential even if symptoms settle?",
+    "stem": "An 8-year-old recovering from IgA vasculitis has persistent proteinuria on repeated checks. Today BP is above the 95th centile, urine protein-creatinine ratio is markedly raised and creatinine is increasing.",
+    "ask": "What is the next priority?",
     "options": [
-      "Measure blood pressure and repeat urinalysis over the following months.",
-      "Discharge permanently once the purpuric rash becomes less prominent.",
-      "Repeat platelet counts alone to exclude all important later complications.",
-      "Begin prolonged antibiotics despite the absence of bacterial infection.",
-      "Order immediate renal biopsy in every clinically stable child."
+      "Arrange urgent paediatric nephrology assessment for nephritis severity.",
+      "Continue routine rash follow-up alone because purpura is fading.",
+      "Treat proteinuria with repeated antihistamines without renal tests.",
+      "Discharge permanently if ankle swelling has disappeared.",
+      "Repeat only full blood count because platelets were initially normal."
     ],
     "key": "A",
     "explanations": [
-      "Correct. IgA vasculitis may cause delayed nephritis; monitor urine and BP during the specified follow-up period.",
-      "Rash resolution does not guarantee absence of subsequent renal injury.",
-      "Normal platelets support diagnosis but are not adequate nephritis surveillance.",
-      "Antibiotics do not prevent immune-mediated renal disease.",
-      "Biopsy is reserved for significant renal involvement rather than all cases."
+      "Correct. Hypertension, proteinuria and renal dysfunction indicate potentially significant IgA vasculitis nephritis.",
+      "Cutaneous improvement does not predict renal prognosis.",
+      "Antihistamines do not address glomerular inflammation.",
+      "Resolution of arthritis cannot exclude progressive nephritis.",
+      "Platelet count is not a sufficient measure of kidney involvement."
     ],
-    "pearl": "renal follow-up",
-    "pivot": "If hypertension, significant proteinuria or impaired renal function develops, arrange urgent paediatric nephrology review and quantify proteinuria.",
+    "pearl": "significant renal involvement",
+    "pivot": "If severe hypertension, nephritic fluid overload or reduced urine develops, admit for urgent BP/renal management and potential biopsy planning.",
     "management": {
       "steps": [
         [
           "Recognise",
-          "Check BP, urine, renal function and abdominal symptoms."
+          "Measure BP, renal function and protein-creatinine ratio."
         ],
         [
           "Assess",
-          "Assess severity and exclude alternative purpuric illness."
+          "Assess oedema, urine output and nephritic features."
         ],
         [
           "Act",
-          "Provide analgesia/hydration and specialist advice when needed."
+          "Contact paediatric nephrology for therapy and biopsy decision."
         ],
         [
           "Follow up",
-          "Schedule repeated urine and BP monitoring for delayed nephritis."
+          "Arrange long-term renal monitoring after acute care."
         ]
       ],
-      "safety": "If hypertension, significant proteinuria or impaired renal function develops, arrange urgent paediatric nephrology review and quantify proteinuria.",
+      "safety": "If severe hypertension, nephritic fluid overload or reduced urine develops, admit for urgent BP/renal management and potential biopsy planning.",
       "local": "Use current Australian/Victorian guidance and senior escalation."
     },
     "source": "https://www.rch.org.au/clinicalguide/guideline_index/henochSchonlein_Purpura/"
@@ -818,47 +818,47 @@
   {
     "n": 18,
     "domain": "Medicine",
-    "skill": "Cholangitis / urgent biliary drainage",
+    "skill": "Cholangitis / failure after attempted ERCP",
     "context": "Moonflower Garden · advanced original clinical reasoning",
-    "stem": "A 67-year-old with known gallstones presents with fever, right-upper-quadrant pain and jaundice. Blood pressure is 91/55 mmHg, bilirubin is elevated and ultrasound shows dilated common bile duct.",
-    "ask": "What treatment pathway is most appropriate?",
+    "stem": "A 71-year-old with cholangitis has received fluids and IV antibiotics. ERCP is attempted, but a tight biliary stricture prevents duct cannulation; fever and bilirubin continue to rise.",
+    "ask": "What is the next source-control discussion?",
     "options": [
-      "Use oral analgesics alone because gallstones commonly settle spontaneously.",
-      "Schedule elective cholecystectomy without addressing the obstructed duct.",
-      "Resuscitate, give IV antibiotics and arrange urgent biliary drainage assessment.",
-      "Discharge once temperature falls after an antipyretic dose.",
-      "Wait for blood culture identification before starting any antibiotics."
+      "Continue antibiotics indefinitely without reconsidering obstructed bile flow.",
+      "Discharge because ERCP has already been attempted once.",
+      "Arrange urgent alternative biliary drainage with interventional radiology or surgery.",
+      "Stop monitoring liver chemistry as infection is the only concern.",
+      "Give oral bile acid treatment as definitive sepsis source control."
     ],
     "key": "C",
     "explanations": [
-      "Analgesia cannot resolve infected ductal obstruction.",
-      "Gallbladder surgery alone does not provide immediate decompression of the infected bile duct.",
-      "Correct. Ascending cholangitis with systemic compromise requires sepsis management and early source control, often ERCP.",
-      "Temporary temperature improvement does not resolve sepsis or obstruction.",
-      "Cultures guide therapy but must not delay empiric broad treatment."
+      "Antibiotics cannot reliably sterilise a persistently obstructed biliary tree.",
+      "An attempted procedure does not equal effective drainage.",
+      "Correct. Failed ERCP with ongoing infected obstruction requires alternative decompression, often percutaneous drainage.",
+      "Rising bilirubin helps signal unresolved obstruction.",
+      "Bile acid medication does not decompress septic ducts."
     ],
-    "pearl": "urgent biliary drainage",
-    "pivot": "If shock or organ dysfunction worsens, activate critical care and arrange emergent decompression; antibiotics alone are insufficient.",
+    "pearl": "failure after attempted ERCP",
+    "pivot": "If shock develops while arranging drainage, activate ICU support and expedite the fastest feasible source-control route.",
     "management": {
       "steps": [
         [
           "Recognise",
-          "Recognise cholangitis and assess organ dysfunction."
+          "Confirm failure of duct decompression."
         ],
         [
           "Assess",
-          "Take cultures, lactate and initiate resuscitation."
+          "Review imaging, cultures and organ dysfunction."
         ],
         [
           "Act",
-          "Give prompt broad-spectrum IV antibiotics."
+          "Contact advanced endoscopy, IR and surgery."
         ],
         [
           "Follow up",
-          "Discuss urgent ERCP or alternative drainage with specialists."
+          "Perform urgent alternative drainage and monitor response."
         ]
       ],
-      "safety": "If shock or organ dysfunction worsens, activate critical care and arrange emergent decompression; antibiotics alone are insufficient.",
+      "safety": "If shock develops while arranging drainage, activate ICU support and expedite the fastest feasible source-control route.",
       "local": "Use current Australian/Victorian guidance and senior escalation."
     },
     "source": "https://www.safetyandquality.gov.au/standards/clinical-care-standards/sepsis-clinical-care-standard"
@@ -1101,7 +1101,7 @@
       "safety": "If haemodynamic compromise, thromboembolism or respiratory deterioration occurs, escalate to high-acuity care with targeted imaging and anticoagulation decisions.",
       "local": "Use current Australian/Victorian guidance and senior escalation."
     },
-    "source": "https://ranzcog.edu.au/"
+    "source": "https://obgyn.onlinelibrary.wiley.com/doi/10.1111/ajo.12389"
   },
   {
     "n": 24,
@@ -1154,47 +1154,47 @@
   {
     "n": 25,
     "domain": "Paediatrics",
-    "skill": "HUS / avoid empiric antibiotic in STEC diarrhoea",
+    "skill": "Haemolytic uraemic syndrome / fluid overload complication",
     "context": "Moonflower Garden · advanced original clinical reasoning",
-    "stem": "A 4-year-old had bloody diarrhoea five days ago and is now pale with reduced urine output. Haemoglobin is 82 g/L, platelets 60 × 10⁹/L, creatinine increased and blood film shows schistocytes.",
-    "ask": "Which management approach is most appropriate?",
+    "stem": "A 5-year-old hospitalised for STEC-associated haemolytic uraemic syndrome develops worsening hypertension, puffiness and increased respiratory effort. Urine output has fallen to 0.2 mL/kg/hour despite careful fluid management.",
+    "ask": "What escalation is now most appropriate?",
     "options": [
-      "Give antidiarrhoeal therapy and discharge once stool frequency declines.",
-      "Start routine empirical antibiotics as the only therapy for presumed STEC infection.",
-      "Transfuse platelets prophylactically in every child without bleeding.",
-      "Encourage unrestricted oral fluid loading despite oliguria and AKI.",
-      "Arrange urgent paediatric nephrology care with careful fluid and renal monitoring."
+      "Increase IV fluid maintenance to replace every apparent missing urine millilitre.",
+      "Start unrestricted oral fluids because the child looks thirsty.",
+      "Discharge after rash and diarrhoea have resolved.",
+      "Repeat stool culture as the sole test of renal recovery.",
+      "Urgent nephrology review for renal replacement therapy and fluid management."
     ],
     "key": "E",
     "explanations": [
-      "Reduced stool frequency does not mean the renal complication has resolved.",
-      "Antibiotic use in suspected STEC requires careful specialist judgement and is not the sole response.",
-      "Platelets are usually reserved for significant bleeding/procedures because of microthrombotic concerns.",
-      "Fluid balance must be individualised in renal failure to avoid pulmonary oedema.",
-      "Correct. The microangiopathic triad suggests HUS; supportive renal management and electrolyte surveillance are essential."
+      "Additional fluid can worsen pulmonary oedema.",
+      "Thirst does not establish ability to excrete ingested water.",
+      "Gastrointestinal recovery does not mean kidney recovery.",
+      "Stool testing cannot address immediate renal and lung dysfunction.",
+      "Correct. Fluid overload with severe AKI may require dialysis and specialist BP/respiratory management."
     ],
-    "pearl": "avoid empiric antibiotic in STEC diarrhoea",
-    "pivot": "If hyperkalaemia, pulmonary oedema or uraemic complications develop, urgently arrange dialysis-capable paediatric intensive/nephrology management.",
+    "pearl": "fluid overload complication",
+    "pivot": "If hyperkalaemic ECG changes appear, give emergency calcium and potassium-shifting therapy while organising dialysis.",
     "management": {
       "steps": [
         [
           "Recognise",
-          "Recognise haemolysis, thrombocytopenia and AKI pattern."
+          "Review respiratory status and fluid balance."
         ],
         [
           "Assess",
-          "Monitor BP, urine output, electrolytes and haemolysis tests."
+          "Check weight, BP, blood gases and electrolytes."
         ],
         [
           "Act",
-          "Consult paediatric nephrology and optimise fluid balance."
+          "Discuss dialysis and antihypertensives with nephrology."
         ],
         [
           "Follow up",
-          "Treat complications and arrange renal follow-up."
+          "Monitor recovery of renal function longitudinally."
         ]
       ],
-      "safety": "If hyperkalaemia, pulmonary oedema or uraemic complications develop, urgently arrange dialysis-capable paediatric intensive/nephrology management.",
+      "safety": "If hyperkalaemic ECG changes appear, give emergency calcium and potassium-shifting therapy while organising dialysis.",
       "local": "Use current Australian/Victorian guidance and senior escalation."
     },
     "source": "https://www.rch.org.au/clinicalguide/guideline_index/Haematuria/"
@@ -1341,7 +1341,7 @@
       "safety": "If peritonitis or sepsis develops, escalate to urgent surgical source control rather than waiting for additional elective imaging.",
       "local": "Use current Australian/Victorian guidance and senior escalation."
     },
-    "source": "https://www.health.qld.gov.au/qcg/publications"
+    "source": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11666636/"
   },
   {
     "n": 29,
@@ -1394,47 +1394,47 @@
   {
     "n": 30,
     "domain": "Paediatrics",
-    "skill": "Pyloric stenosis / resuscitation before surgery",
+    "skill": "Pyloric stenosis / inconclusive early ultrasound",
     "context": "Moonflower Garden · advanced original clinical reasoning",
-    "stem": "A 5-week-old has progressively forceful non-bilious vomiting, weight loss and a palpable epigastric olive. Ultrasound confirms pyloric stenosis; chloride is 86 mmol/L and bicarbonate 35 mmol/L.",
-    "ask": "What must precede pyloromyotomy?",
+    "stem": "A 3-week-old infant has progressive non-bilious post-feed vomiting and remains hungry. Initial ultrasound measurements are borderline and reported as equivocal; vomiting continues and weight gain is poor.",
+    "ask": "What is the next diagnostic plan?",
     "options": [
-      "Proceed to theatre immediately without correcting fluid and electrolyte deficits.",
-      "Start oral feeds frequently to reverse alkalosis before anaesthesia.",
-      "Administer bicarbonate to compensate for vomiting-induced losses.",
-      "Discharge for elective surgery once the child stops crying.",
-      "Correct dehydration and hypochloraemic alkalosis with monitored IV therapy."
+      "Exclude pyloric stenosis permanently because one early scan is equivocal.",
+      "Perform immediate pyloromyotomy without diagnostic reassessment.",
+      "Treat with antibiotics because vomiting is usually infectious.",
+      "Discharge without follow-up since the infant still wants to feed.",
+      "Reassess hydration and repeat targeted ultrasound after an appropriate interval."
     ],
     "key": "E",
     "explanations": [
-      "Urgent surgery is not a substitute for physiological correction.",
-      "Feeds generally worsen vomiting and cannot reliably restore deficits.",
-      "Bicarbonate is already elevated; adding it worsens alkalosis.",
-      "Dehydration and ongoing obstruction require inpatient care.",
-      "Correct. Pyloric stenosis is a medical resuscitation before surgical correction; electrolyte abnormalities increase anaesthetic risk."
+      "A single borderline scan does not rule out evolving hypertrophy.",
+      "Surgery should follow clinical/imaging confirmation and resuscitation.",
+      "Antibiotics are not indicated without infection.",
+      "Poor growth and ongoing emesis require active follow-up.",
+      "Correct. Early pyloric stenosis may be sonographically equivocal; persistent classic symptoms warrant repeat skilled ultrasound and electrolyte assessment."
     ],
-    "pearl": "resuscitation before surgery",
-    "pivot": "If bilious vomiting occurs, urgently reassess for distal obstruction or malrotation rather than assuming isolated pyloric stenosis.",
+    "pearl": "inconclusive early ultrasound",
+    "pivot": "If green bilious emesis occurs, urgently assess for malrotation/volvulus rather than waiting for repeat pyloric imaging.",
     "management": {
       "steps": [
         [
           "Recognise",
-          "Assess weight, hydration and blood gases."
+          "Assess hydration, weight and electrolyte status."
         ],
         [
           "Assess",
-          "Stop feeds and commence monitored IV saline/electrolyte correction."
+          "Review ultrasound quality and measurements."
         ],
         [
           "Act",
-          "Repeat chloride and bicarbonate until safe for anaesthesia."
+          "Arrange repeat ultrasound with paediatric surgical advice."
         ],
         [
           "Follow up",
-          "Arrange surgery and postoperative feeding plan."
+          "Correct fluid deficits and plan definitive care when diagnosed."
         ]
       ],
-      "safety": "If bilious vomiting occurs, urgently reassess for distal obstruction or malrotation rather than assuming isolated pyloric stenosis.",
+      "safety": "If green bilious emesis occurs, urgently assess for malrotation/volvulus rather than waiting for repeat pyloric imaging.",
       "local": "Use current Australian/Victorian guidance and senior escalation."
     },
     "source": "https://www.rch.org.au/clinicalguide/guideline_index/Pyloric_Stenosis/"
@@ -1490,47 +1490,47 @@
   {
     "n": 32,
     "domain": "Medicine",
-    "skill": "COPD exacerbation / worsening acidosis",
+    "skill": "COPD exacerbation / NIV contraindication after vomiting",
     "context": "Moonflower Garden · advanced original clinical reasoning",
-    "stem": "A patient with COPD on controlled oxygen has pH 7.25, PaCO₂ 73 mmHg and increasing work of breathing despite bronchodilators. They are alert, protecting the airway and haemodynamically stable.",
-    "ask": "What respiratory escalation is appropriate?",
+    "stem": "A 72-year-old being treated for acute hypercapnic COPD exacerbation is on NIV. They have begun vomiting repeatedly, become drowsy and cannot clear secretions; blood gas remains acidotic.",
+    "ask": "What is the safest next escalation?",
     "options": [
-      "Increase oxygen indiscriminately to maximum flow without gas reassessment.",
-      "Consider monitored non-invasive ventilation with urgent senior respiratory review.",
-      "Discharge after a nebuliser because oxygen saturation is now 94%.",
-      "Give sedatives to reduce the sensation of breathlessness alone.",
-      "Begin bicarbonate infusion as sole treatment for respiratory acidosis."
+      "Tighten the NIV mask to stop all air leakage despite active vomiting.",
+      "Stop unsafe NIV and obtain urgent expert assessment for invasive airway support.",
+      "Give oral antiemetic alone and leave the patient unsupervised.",
+      "Increase sedative medication to improve mask compliance.",
+      "Discharge because NIV was initially tolerated for one hour."
     ],
     "key": "B",
     "explanations": [
-      "Uncontrolled oxygen can worsen hypercapnia; target oxygenation needs monitoring.",
-      "Correct. Persistent hypercapnic respiratory acidosis in an appropriate candidate supports NIV with close review for failure.",
-      "An acceptable saturation does not correct respiratory acidosis.",
-      "Sedatives may depress respiratory drive and precipitate failure.",
-      "Bicarbonate does not remove retained carbon dioxide."
+      "Tight mask increases aspiration risk during emesis.",
+      "Correct. Inability to protect the airway and vomiting contraindicate continued mask NIV; anaesthetic/ICU escalation is urgent.",
+      "Antiemetics cannot restore airway protection in drowsiness.",
+      "Sedation may worsen hypoventilation and aspiration.",
+      "Initial tolerance does not mean treatment remains safe."
     ],
-    "pearl": "worsening acidosis",
-    "pivot": "If reduced consciousness, vomiting or inability to protect the airway develops, urgently assess invasive ventilation rather than persisting with unsuitable NIV.",
+    "pearl": "NIV contraindication after vomiting",
+    "pivot": "If respiratory arrest or worsening consciousness occurs, begin resuscitation and definitive airway support immediately.",
     "management": {
       "steps": [
         [
           "Recognise",
-          "Review gas, respiratory effort and reversible triggers."
+          "Remove mask safely and provide monitored oxygenation."
         ],
         [
           "Assess",
-          "Use controlled oxygen, bronchodilators and indicated therapies."
+          "Call ICU/anaesthesia for airway assessment."
         ],
         [
           "Act",
-          "Initiate NIV with appropriate team and monitored setting."
+          "Manage aspiration risk and reversible cause."
         ],
         [
           "Follow up",
-          "Repeat gases early and reassess ventilation failure criteria."
+          "Reassess gases and invasive ventilation need."
         ]
       ],
-      "safety": "If reduced consciousness, vomiting or inability to protect the airway develops, urgently assess invasive ventilation rather than persisting with unsuitable NIV.",
+      "safety": "If respiratory arrest or worsening consciousness occurs, begin resuscitation and definitive airway support immediately.",
       "local": "Use current Australian/Victorian guidance and senior escalation."
     },
     "source": "https://www.safetyandquality.gov.au/standards/clinical-care-standards/chronic-obstructive-pulmonary-disease-clinical-care-standard"
@@ -1581,7 +1581,7 @@
       "safety": "If initial measures fail, proceed promptly to internal rotational or posterior-arm manoeuvres by trained clinicians, recording times and neonatal assessment.",
       "local": "Use current Australian/Victorian guidance and senior escalation."
     },
-    "source": "https://www.safercare.vic.gov.au/maternity"
+    "source": "https://www.thewomens.org.au/health-professionals/clinical-resources/clinical-guidelines-gps"
   },
   {
     "n": 34,
@@ -1634,47 +1634,47 @@
   {
     "n": 35,
     "domain": "Surgery",
-    "skill": "Upper GI perforation / source control",
+    "skill": "Postoperative upper GI perforation / leak after repair",
     "context": "Moonflower Garden · advanced original clinical reasoning",
-    "stem": "A 60-year-old taking NSAIDs develops sudden severe epigastric pain and a rigid abdomen. Upright radiograph shows free subdiaphragmatic air; pulse is 120/min.",
-    "ask": "What is the immediate management pathway?",
+    "stem": "A 62-year-old is day four after laparoscopic repair of a perforated duodenal ulcer. He develops new tachycardia, fever and increasing upper abdominal pain, with bilious output from a surgical drain.",
+    "ask": "What is the safest next step?",
     "options": [
-      "Administer oral antacids and repeat examination after discharge.",
-      "Perform routine outpatient gastroscopy before surgical referral.",
-      "Give laxatives to relieve presumed constipation and observe.",
-      "Allow a full meal to assess whether pain is ulcer-related.",
-      "Resuscitate, give broad IV antimicrobials and obtain urgent surgical assessment."
+      "Remove the drain immediately because bile is an expected postoperative secretion.",
+      "Give oral antacid alone and review routinely next week.",
+      "Resume full diet to assess whether the repair remains patent.",
+      "Dismiss fever as expected postoperative inflammation without investigations.",
+      "Obtain urgent surgical reassessment for suspected repair leak and source control."
     ],
     "key": "E",
     "explanations": [
-      "Antacids do not treat perforation or contamination.",
-      "Endoscopy may worsen leakage and cannot replace urgent surgery.",
-      "Laxatives increase risk and delay treatment.",
-      "Oral intake is unsafe before emergency operative assessment.",
-      "Correct. Perforated viscus with peritonitis requires fasting, IV treatment and urgent operative source-control evaluation."
+      "Removing evidence of leak can worsen intraperitoneal contamination.",
+      "Antacid alone will not drain or repair the defect.",
+      "Feeding may worsen leakage before surgical evaluation.",
+      "Postoperative fever with tachycardia and pain needs investigation.",
+      "Correct. Bilious drainage plus sepsis signs suggests leak, requiring imaging and timely source-control decision."
     ],
-    "pearl": "source control",
-    "pivot": "If septic shock develops, activate major sepsis response with cautious fluids/vasopressors while expediting source control.",
+    "pearl": "leak after repair",
+    "pivot": "If haemodynamic shock or diffuse peritonitis occurs, initiate sepsis resuscitation and emergency re-operation planning.",
     "management": {
       "steps": [
         [
           "Recognise",
-          "Assess shock and peritonitis."
+          "Assess vitals, drain output and abdomen."
         ],
         [
           "Assess",
-          "Keep fasting, obtain large-bore IVs and bloods."
+          "Keep fasting and obtain cultures, bloods and imaging."
         ],
         [
           "Act",
-          "Provide analgesia, antibiotics and resuscitation."
+          "Give IV antibiotics and involve senior surgeon."
         ],
         [
           "Follow up",
-          "Coordinate urgent surgical repair and postoperative care."
+          "Arrange drainage or reoperation and nutritional support."
         ]
       ],
-      "safety": "If septic shock develops, activate major sepsis response with cautious fluids/vasopressors while expediting source control.",
+      "safety": "If haemodynamic shock or diffuse peritonitis occurs, initiate sepsis resuscitation and emergency re-operation planning.",
       "local": "Use current Australian/Victorian guidance and senior escalation."
     },
     "source": "https://www.safetyandquality.gov.au/standards/clinical-care-standards/sepsis-clinical-care-standard"
@@ -1869,7 +1869,7 @@
       "safety": "If major bleeding or non-reassuring fetal status occurs, initiate major obstetric haemorrhage response and urgent delivery planning.",
       "local": "Use current Australian/Victorian guidance and senior escalation."
     },
-    "source": "https://www.safercare.vic.gov.au/maternity"
+    "source": "https://www.safercare.vic.gov.au/best-practice-improvement/clinical-guidance/maternity/antepartum-haemorrhage-assessment-and-management"
   },
   {
     "n": 40,
@@ -2018,47 +2018,47 @@
   {
     "n": 43,
     "domain": "Medicine",
-    "skill": "Pulmonary embolism / normal D-dimer in high probability",
+    "skill": "Pulmonary embolism / renal impairment changes imaging",
     "context": "Moonflower Garden · advanced original clinical reasoning",
-    "stem": "A 58-year-old after prolonged immobilisation has pleuritic chest pain, tachycardia and unexplained hypoxia. Clinical assessment indicates high pretest probability for pulmonary embolism.",
-    "ask": "What is the most appropriate diagnostic approach?",
+    "stem": "A 60-year-old has moderate clinical probability of PE, pleuritic pain and unilateral calf swelling. eGFR is 18 mL/min/1.73m² from severe AKI and iodinated contrast is considered high risk.",
+    "ask": "Which diagnostic adjustment is reasonable?",
     "options": [
-      "Rule out embolism solely with a negative D-dimer result.",
-      "Treat only with antibiotics despite absence of infective features.",
-      "Proceed to definitive chest imaging rather than relying on D-dimer exclusion.",
-      "Discharge if initial ECG does not show right-heart strain.",
-      "Order routine echocardiography alone as the first definitive test."
+      "Exclude PE solely because CT pulmonary angiography is unsuitable.",
+      "Give repeat D-dimer tests indefinitely instead of definitive imaging.",
+      "Discuss V/Q scanning or lower-limb ultrasound with imaging specialists.",
+      "Treat as pneumonia with no imaging despite strong thrombosis clues.",
+      "Proceed automatically with contrast CT without assessing renal risk and urgency."
     ],
     "key": "C",
     "explanations": [
-      "D-dimer cannot reliably exclude PE when pretest probability is high.",
-      "Antibiotics do not address thromboembolic obstruction.",
-      "Correct. High pretest probability requires imaging and consideration of anticoagulation if safe; D-dimer is a low-risk rule-out tool.",
-      "ECG lacks sufficient sensitivity to exclude PE.",
-      "Echo can aid unstable patient assessment but does not routinely replace CTPA."
+      "Contraindication to one test does not exclude disease.",
+      "D-dimer repetition is not definitive in a moderate/high risk patient.",
+      "Correct. Imaging selection can change with severe contrast risk; V/Q and compression ultrasound may establish diagnosis.",
+      "Alternative diagnoses must not bypass thromboembolic evaluation.",
+      "CTPA may still be justified in select emergencies but needs risk-benefit assessment."
     ],
-    "pearl": "normal D-dimer in high probability",
-    "pivot": "If haemodynamic instability develops, activate emergency PE/critical-care pathway for bedside assessment and reperfusion decisions.",
+    "pearl": "renal impairment changes imaging",
+    "pivot": "If shock develops, obtain urgent bedside echo and PE-team reperfusion evaluation while choosing the fastest safe definitive testing.",
     "management": {
       "steps": [
         [
           "Recognise",
-          "Assess probability, stability and bleeding risk."
+          "Review PE probability and haemodynamic stability."
         ],
         [
           "Assess",
-          "Obtain CTPA or appropriate alternative imaging urgently."
+          "Assess renal risk and chest X-ray."
         ],
         [
           "Act",
-          "Consider interim anticoagulation as clinically indicated."
+          "Discuss V/Q, duplex and anticoagulation plan."
         ],
         [
           "Follow up",
-          "Risk stratify and decide treatment/disposition."
+          "Confirm diagnosis and risk-stratify treatment."
         ]
       ],
-      "safety": "If haemodynamic instability develops, activate emergency PE/critical-care pathway for bedside assessment and reperfusion decisions.",
+      "safety": "If shock develops, obtain urgent bedside echo and PE-team reperfusion evaluation while choosing the fastest safe definitive testing.",
       "local": "Use current Australian/Victorian guidance and senior escalation."
     },
     "source": "https://www.racgp.org.au/afp/2017/november/pulmonary-embolism"
@@ -2066,50 +2066,50 @@
   {
     "n": 44,
     "domain": "Gynaecology",
-    "skill": "Ovarian torsion / preserved Doppler flow",
+    "skill": "Ovarian torsion / intermittent pain after spontaneous detorsion",
     "context": "Moonflower Garden · advanced original clinical reasoning",
-    "stem": "A 20-year-old has sudden right pelvic pain, vomiting and a 7-cm ovarian cyst. Ultrasound shows an enlarged ovary with some preserved arterial Doppler flow.",
-    "ask": "What is the safest next step?",
+    "stem": "A 23-year-old had three severe episodes of unilateral pelvic pain with vomiting over two days, each resolving spontaneously. An ovarian cyst measures 8 cm, Doppler flow is present and she is currently pain-free.",
+    "ask": "What is the appropriate disposition?",
     "options": [
-      "Exclude torsion because arterial Doppler signals remain detectable.",
-      "Treat with oral antibiotics for presumed pelvic inflammatory disease alone.",
-      "Discharge after analgesia without arranging gynaecology assessment.",
-      "Obtain urgent gynaecological surgical review despite preserved Doppler flow.",
-      "Schedule cyst surveillance in six months before acting."
+      "Discharge without advice because no pain is present now.",
+      "Exclude torsion permanently because Doppler signals are observed.",
+      "Prescribe antibiotics empirically without inflammatory or STI features.",
+      "Urgent gynaecological assessment for possible intermittent torsion and surgical planning.",
+      "Wait six months for cyst surveillance before consulting gynaecology."
     ],
     "key": "D",
     "explanations": [
-      "Doppler flow is not sensitive enough to rule out torsion.",
-      "PID lacks support from this sudden mechanical pattern.",
-      "Temporary analgesic response does not restore ovarian perfusion.",
-      "Correct. Dual ovarian blood supply permits flow despite torsion; acute pain and enlarged ovary require urgent assessment.",
-      "Delay may lead to ovarian necrosis."
+      "Pain resolution may indicate detorsion rather than a harmless process.",
+      "Doppler does not exclude torsion in intermittent events.",
+      "Infection therapy does not address mechanical ovarian twisting.",
+      "Correct. Torsion can twist and untwist, causing intermittent symptoms and preserved flow; urgent review protects the ovary.",
+      "Large cyst and repeated classic episodes justify timely assessment."
     ],
-    "pearl": "preserved Doppler flow",
-    "pivot": "If peritonitis or haemodynamic compromise occurs, escalate immediate operative and resuscitation planning.",
+    "pearl": "intermittent pain after spontaneous detorsion",
+    "pivot": "If severe pain recurs with peritonism or instability, move to urgent operative evaluation without delaying for repeat Doppler.",
     "management": {
       "steps": [
         [
           "Recognise",
-          "Assess pregnancy, haemodynamics and pelvic differential."
+          "Assess pregnancy and differential causes."
         ],
         [
           "Assess",
-          "Give analgesia, antiemetics and keep fasting."
+          "Review cyst characteristics and episodes."
         ],
         [
           "Act",
-          "Consult gynaecology for urgent laparoscopy decision."
+          "Keep fasting and involve gynaecology urgently."
         ],
         [
           "Follow up",
-          "Document ovarian-sparing plan and postoperative follow-up."
+          "Discuss laparoscopy and ovarian conservation."
         ]
       ],
-      "safety": "If peritonitis or haemodynamic compromise occurs, escalate immediate operative and resuscitation planning.",
+      "safety": "If severe pain recurs with peritonism or instability, move to urgent operative evaluation without delaying for repeat Doppler.",
       "local": "Use current Australian/Victorian guidance and senior escalation."
     },
-    "source": "https://ranzcog.edu.au/"
+    "source": "https://www.kemh.health.wa.gov.au/~/media/HSPs/NMHS/Hospitals/WNHS/Documents/Clinical-guidelines/Obs-Gyn-Guidelines/Ovarian-Cyst-Accident.pdf"
   },
   {
     "n": 45,
@@ -2162,47 +2162,47 @@
   {
     "n": 46,
     "domain": "Medicine",
-    "skill": "Hyperkalaemia / unstable ECG",
+    "skill": "Hyperkalaemia / potassium rebound after initial therapy",
     "context": "Moonflower Garden · advanced original clinical reasoning",
-    "stem": "A CKD patient has potassium 7.0 mmol/L with broad QRS complexes and peaked T waves. BP is 105/70 mmHg and the patient reports weakness.",
-    "ask": "Which intervention takes priority?",
+    "stem": "A dialysis-dependent patient had potassium 7.1 mmol/L with ECG changes. IV calcium and insulin/glucose were given; ECG normalised and potassium is 5.6 mmol/L at one hour, but the next dialysis session is tomorrow.",
+    "ask": "What is the essential next step?",
     "options": [
-      "Administer IV calcium promptly to stabilise myocardium while lowering potassium.",
-      "Give oral potassium-binding resin alone and reassess tomorrow.",
-      "Wait for repeat laboratory confirmation before treating the ECG abnormalities.",
-      "Give potassium-containing IV fluids to correct possible volume depletion.",
-      "Start oral diuretic as sole treatment despite significant ECG changes."
+      "Arrange definitive potassium removal and close monitoring for rebound.",
+      "Assume insulin permanently removed potassium and discharge immediately.",
+      "Repeat IV calcium continuously despite normal ECG and no reassessment.",
+      "Provide potassium-rich dietary supplements to prevent hypoglycaemia.",
+      "Stop all monitoring because the potassium is below six now."
     ],
     "key": "A",
     "explanations": [
-      "Correct. ECG instability demands immediate membrane stabilisation with calcium plus potassium-shifting and elimination treatment.",
-      "Binders act too slowly for imminent arrhythmia risk.",
-      "Repeat testing can occur concurrently but must not delay lifesaving treatment.",
-      "Added potassium can worsen cardiotoxicity.",
-      "Diuretics may have a later role but are insufficient acutely."
+      "Correct. Insulin shifts potassium temporarily; dialysis or elimination is required when excretion is inadequate.",
+      "Rebound hyperkalaemia is common without removal.",
+      "Calcium stabilises myocardium but does not lower potassium.",
+      "Dietary potassium can worsen recurrent toxicity.",
+      "Serial ECG and potassium checks remain necessary."
     ],
-    "pearl": "unstable ECG",
-    "pivot": "If cardiac arrest occurs, follow ANZCOR resuscitation algorithm while treating reversible hyperkalaemia causes.",
+    "pearl": "potassium rebound after initial therapy",
+    "pivot": "If ECG changes or severe potassium rebound recurs, repeat emergency stabilisation while expediting dialysis.",
     "management": {
       "steps": [
         [
           "Recognise",
-          "Attach continuous ECG and establish IV access."
+          "Check serial potassium, glucose and ECG."
         ],
         [
           "Assess",
-          "Give IV calcium per emergency protocol."
+          "Review access to urgent dialysis and causes."
         ],
         [
           "Act",
-          "Shift potassium with insulin/glucose and other indicated therapies."
+          "Coordinate definitive potassium removal."
         ],
         [
           "Follow up",
-          "Arrange elimination and serial potassium/ECG monitoring."
+          "Counsel medication/diet and dialysis adherence."
         ]
       ],
-      "safety": "If cardiac arrest occurs, follow ANZCOR resuscitation algorithm while treating reversible hyperkalaemia causes.",
+      "safety": "If ECG changes or severe potassium rebound recurs, repeat emergency stabilisation while expediting dialysis.",
       "local": "Use current Australian/Victorian guidance and senior escalation."
     },
     "source": "https://www.health.qld.gov.au/clinical-practice/guidelines-procedures/medicines/safety/electrolyte-disturbances/hyper"
@@ -2397,7 +2397,7 @@
       "safety": "If hypotension or cardiogenic shock emerges, avoid nitrates and seek inotrope/critical-care assessment while evaluating causes.",
       "local": "Use current Australian/Victorian guidance and senior escalation."
     },
-    "source": "https://www.heartfoundation.org.au/"
+    "source": "https://www.heartfoundation.org.au/for-professionals/acs-guideline"
   },
   {
     "n": 51,
@@ -2498,47 +2498,47 @@
   {
     "n": 53,
     "domain": "Paediatrics",
-    "skill": "Epiglottitis / minimise distress",
+    "skill": "Upper-airway obstruction / after controlled intubation",
     "context": "Moonflower Garden · advanced original clinical reasoning",
-    "stem": "An under-immunised 4-year-old sits forward drooling, with muffled voice, high fever and inspiratory stridor. The child becomes distressed when asked to lie flat.",
-    "ask": "What is the immediate approach?",
+    "stem": "A 5-year-old with suspected bacterial epiglottitis has been intubated safely in theatre by a specialist airway team. Blood cultures are pending and the child is admitted to intensive care.",
+    "ask": "Which ongoing therapy is most appropriate?",
     "options": [
-      "Force a tongue-depressor examination to visualise the epiglottis.",
-      "Send unaccompanied for neck radiography before airway review.",
-      "Keep the child calm and summon expert airway and anaesthetic support.",
-      "Lay the child flat and perform repeated throat swabs immediately.",
-      "Give oral medication and discharge if fever improves."
+      "Extubate immediately because the airway has been secured once.",
+      "Give bronchodilator monotherapy instead of antimicrobial treatment.",
+      "Begin IV antibiotics targeting likely organisms and monitor airway oedema resolution.",
+      "Discharge after one stable blood pressure measurement.",
+      "Avoid any microbiological assessment because antibiotics are unnecessary."
     ],
     "key": "C",
     "explanations": [
-      "Throat instrumentation risks complete obstruction.",
-      "Imaging must not delay or destabilise airway management.",
-      "Correct. Suspected supraglottic obstruction can deteriorate abruptly; avoid agitation and coordinate expert-controlled airway care.",
-      "Positioning and swabs can provoke decompensation.",
-      "Oral treatment alone cannot secure a threatened airway."
+      "Early extubation risks recurrent obstruction from persistent oedema.",
+      "Bronchodilators do not treat supraglottic infection.",
+      "Correct. After airway security, bacterial supraglottitis needs appropriate IV antimicrobials and monitored extubation planning.",
+      "ICU airway monitoring remains necessary.",
+      "Cultures can help tailor therapy without delaying antibiotics."
     ],
-    "pearl": "minimise distress",
-    "pivot": "If exhaustion, cyanosis or diminished air entry appears, prepare urgent controlled intubation with anaesthesia/ENT rather than attempting repeated bedside examination.",
+    "pearl": "after controlled intubation",
+    "pivot": "If airway leak remains absent or oedema persists, continue airway support and defer extubation until expert reassessment.",
     "management": {
       "steps": [
         [
           "Recognise",
-          "Allow preferred position with caregiver."
+          "Review culture data and likely pathogens."
         ],
         [
           "Assess",
-          "Call senior paediatric airway and anaesthetic team."
+          "Start guideline-directed IV antibiotics."
         ],
         [
           "Act",
-          "Monitor gently, provide oxygen as tolerated."
+          "Monitor airway swelling and systemic infection."
         ],
         [
           "Follow up",
-          "Start IV antibiotics after safe airway and appropriate access."
+          "Plan specialist-supervised extubation."
         ]
       ],
-      "safety": "If exhaustion, cyanosis or diminished air entry appears, prepare urgent controlled intubation with anaesthesia/ENT rather than attempting repeated bedside examination.",
+      "safety": "If airway leak remains absent or oedema persists, continue airway support and defer extubation until expert reassessment.",
       "local": "Use current Australian/Victorian guidance and senior escalation."
     },
     "source": "https://www.rch.org.au/clinicalguide/guideline_index/acute_upper_airway_obstruction/"
@@ -2594,47 +2594,47 @@
   {
     "n": 55,
     "domain": "Surgery",
-    "skill": "AAA rupture / avoid diagnostic delay",
+    "skill": "Abdominal aortic aneurysm / incidental large asymptomatic lesion",
     "context": "Moonflower Garden · advanced original clinical reasoning",
-    "stem": "A 74-year-old smoker has sudden back and abdominal pain, syncope and BP 76/40 mmHg. Bedside ultrasound shows a 7-cm abdominal aortic aneurysm.",
-    "ask": "What is the next priority?",
+    "stem": "An active 72-year-old has an incidental 6.3-cm infrarenal abdominal aortic aneurysm on ultrasound. He has no abdominal or back pain and BP is well controlled; CT shows anatomy potentially suitable for repair.",
+    "ask": "Which plan best reduces rupture risk?",
     "options": [
-      "Send for routine outpatient CT angiography next week.",
-      "Treat solely as musculoskeletal back pain with analgesia.",
-      "Wait for a normal haemoglobin result before calling surgeons.",
-      "Give large unrestricted crystalloid boluses aiming for severe hypertension.",
-      "Activate vascular surgery and major haemorrhage pathway for presumed rupture."
+      "Offer only annual screening ultrasound despite a diameter above repair consideration.",
+      "Begin full-dose thrombolysis to dissolve the aneurysm sac.",
+      "Reassure that absence of pain means rupture cannot occur.",
+      "Prescribe antibiotics until the aneurysm decreases in size.",
+      "Refer promptly to vascular surgery for elective repair assessment."
     ],
     "key": "E",
     "explanations": [
-      "Outpatient evaluation risks death from continuing rupture.",
-      "Back pain and collapse require vascular diagnosis consideration.",
-      "Acute Hb may not initially reflect haemorrhage severity.",
-      "Excessive crystalloid and pressure targets can worsen bleeding.",
-      "Correct. Shock with large AAA demands immediate vascular control planning and blood resuscitation."
+      "Routine surveillance alone risks rupture when repair threshold is exceeded.",
+      "Thrombolysis is not aneurysm treatment and risks bleeding.",
+      "Many aneurysms are asymptomatic before rupture.",
+      "Antibiotics do not shrink degenerative aneurysm diameter.",
+      "Correct. An aneurysm of this size warrants vascular assessment for planned EVAR/open repair based on anatomy and fitness."
     ],
-    "pearl": "avoid diagnostic delay",
-    "pivot": "If stable enough for rapid CT, obtain operative-planning imaging without delaying definitive vascular treatment in ongoing shock.",
+    "pearl": "incidental large asymptomatic lesion",
+    "pivot": "If sudden abdominal/back pain or hypotension occurs, activate emergency vascular rupture management rather than awaiting elective review.",
     "management": {
       "steps": [
         [
           "Recognise",
-          "Call vascular/anaesthesia and activate blood support."
+          "Confirm size, growth and clinical symptoms."
         ],
         [
           "Assess",
-          "Establish IV access and crossmatch."
+          "Assess fitness, anatomy and competing risks."
         ],
         [
           "Act",
-          "Resuscitate with blood products using local major-haemorrhage targets."
+          "Refer vascular team for shared repair decision."
         ],
         [
           "Follow up",
-          "Transfer for urgent endovascular or open repair assessment."
+          "Optimise smoking, blood pressure and cardiovascular prevention."
         ]
       ],
-      "safety": "If stable enough for rapid CT, obtain operative-planning imaging without delaying definitive vascular treatment in ongoing shock.",
+      "safety": "If sudden abdominal/back pain or hypotension occurs, activate emergency vascular rupture management rather than awaiting elective review.",
       "local": "Use current Australian/Victorian guidance and senior escalation."
     },
     "source": "https://aci.health.nsw.gov.au/networks/eci/clinical/clinical-tools/vascular-emergencies"
@@ -2685,7 +2685,7 @@
       "safety": "If ductus venosus or CTG deteriorates, escalate immediate delivery consideration after multidisciplinary assessment and antenatal corticosteroid planning.",
       "local": "Use current Australian/Victorian guidance and senior escalation."
     },
-    "source": "https://www.safercare.vic.gov.au/maternity"
+    "source": "https://www.safercare.vic.gov.au/publications/charting-and-monitoring-trajectory-of-fundal-height-good-practice-point"
   },
   {
     "n": 57,
@@ -2733,7 +2733,7 @@
       "safety": "If large-volume haemoptysis or airway compromise develops, send to ED for airway and bleeding control rather than outpatient imaging.",
       "local": "Use current Australian/Victorian guidance and senior escalation."
     },
-    "source": "https://www.canceraustralia.gov.au/"
+    "source": "https://www.canceraustralia.gov.au/cancer-types/lung-cancer/investigating-symptoms-lung-cancer"
   },
   {
     "n": 58,
@@ -2834,47 +2834,47 @@
   {
     "n": 60,
     "domain": "Surgery",
-    "skill": "Compartment syndrome / pain with passive stretch",
+    "skill": "Post-fasciotomy / reperfusion rhabdomyolysis",
     "context": "Moonflower Garden · advanced original clinical reasoning",
-    "stem": "A 27-year-old has a tibial fracture in a splint. Six hours later pain is escalating despite opioids, with tense calf compartments and marked pain when toes are passively extended. Foot pulses remain palpable.",
-    "ask": "What is the next action?",
+    "stem": "A 25-year-old underwent leg fasciotomy for compartment syndrome. Twelve hours later urine is dark, CK is 45,000 U/L and potassium rises to 6.2 mmol/L, although the limb is warm and perfused.",
+    "ask": "What complication requires immediate attention?",
     "options": [
-      "Exclude compartment syndrome because the dorsalis pedis pulse is present.",
-      "Increase opioids indefinitely without repeating limb examination.",
-      "Tighten the cast to reduce swelling and avoid movement.",
-      "Discharge once analgesia briefly lowers the pain score.",
-      "Remove constriction and arrange immediate surgical compartment pressure assessment or fasciotomy."
+      "Assume restored limb perfusion excludes further systemic danger.",
+      "Give potassium-containing fluids to replace muscle leakage.",
+      "Discharge once surgical wound pain improves.",
+      "Remove all monitoring because distal pulses are palpable.",
+      "Treat rhabdomyolysis-associated hyperkalaemia and AKI risk with monitored resuscitation."
     ],
     "key": "E",
     "explanations": [
-      "Pulses are often preserved until late and do not rule out syndrome.",
-      "Analgesia can mask progression and does not relieve ischaemic pressure.",
-      "Constriction may worsen compartment pressure.",
-      "Delay risks necrosis and nerve injury.",
-      "Correct. Pain out of proportion and passive stretch pain are early signs; urgent decompression can prevent permanent injury."
+      "Local circulation can recover while systemic injury continues.",
+      "Extra potassium worsens arrhythmia risk.",
+      "Wound status does not determine biochemical stability.",
+      "Pulses cannot assess renal or metabolic complications.",
+      "Correct. Reperfusion and muscle necrosis can cause hyperkalaemia, myoglobinuria and renal failure after fasciotomy."
     ],
-    "pearl": "pain with passive stretch",
-    "pivot": "If neurological deficit or worsening pain persists, proceed with emergency surgical decompression; do not wait for absent pulses.",
+    "pearl": "reperfusion rhabdomyolysis",
+    "pivot": "If ECG changes develop, give emergency calcium and potassium-shifting therapy and discuss dialysis if refractory.",
     "management": {
       "steps": [
         [
           "Recognise",
-          "Repeat neurovascular and compartment assessment."
+          "Check ECG, potassium, CK, renal function and urine output."
         ],
         [
           "Assess",
-          "Remove tight dressing and keep limb at heart level."
+          "Resuscitate and monitor fluid balance."
         ],
         [
           "Act",
-          "Call orthopaedic surgery immediately."
+          "Treat potassium urgently and seek critical-care/renal advice."
         ],
         [
           "Follow up",
-          "Prepare for fasciotomy and postoperative monitoring."
+          "Continue serial labs and wound surveillance."
         ]
       ],
-      "safety": "If neurological deficit or worsening pain persists, proceed with emergency surgical decompression; do not wait for absent pulses.",
+      "safety": "If ECG changes develop, give emergency calcium and potassium-shifting therapy and discuss dialysis if refractory.",
       "local": "Use current Australian/Victorian guidance and senior escalation."
     },
     "source": "https://www.health.vic.gov.au/victorian-state-trauma-system/clinical-trauma-advice-and-retrieval-of-trauma-patients"
@@ -2978,50 +2978,50 @@
   {
     "n": 63,
     "domain": "Medicine",
-    "skill": "Acute pancreatitis / severity and fluids",
+    "skill": "Gallstone pancreatitis / indication for urgent ERCP",
     "context": "Moonflower Garden · advanced original clinical reasoning",
-    "stem": "A 47-year-old has severe epigastric pain radiating to back, lipase six times normal and gallstones on ultrasound. Haematocrit is rising and urine output decreasing.",
-    "ask": "What is the best early management approach?",
+    "stem": "A patient recovering from gallstone pancreatitis becomes febrile and jaundiced on day two. Bilirubin rises sharply, BP falls and repeat ultrasound shows a dilated common bile duct with a suspected stone.",
+    "ask": "What escalation is now indicated?",
     "options": [
-      "Administer prophylactic antibiotics routinely in every sterile pancreatitis case.",
-      "Commence immediate ERCP regardless of duct obstruction or cholangitis.",
-      "Give goal-directed IV fluids, analgesia and monitor organ dysfunction closely.",
-      "Allow unrestricted alcohol intake because the cause is gallstones.",
-      "Delay supportive therapy until a contrast CT confirms pancreatic necrosis."
+      "Continue routine pancreatitis observation without considering the biliary obstruction.",
+      "Perform elective outpatient cholecystectomy before treating current sepsis.",
+      "Urgent antibiotics, sepsis care and biliary decompression by ERCP assessment.",
+      "Give oral analgesics alone because lipase is declining.",
+      "Wait until pancreatic enzymes normalise before drainage discussion."
     ],
     "key": "C",
     "explanations": [
-      "Antibiotics are not routine for sterile inflammatory pancreatitis.",
-      "ERCP is reserved for specific cholangitis or persistent obstruction indications.",
-      "Correct. Early organ hypoperfusion needs monitored resuscitation, analgesia and cause-directed assessment.",
-      "Alcohol is harmful and irrelevant to acute stabilisation.",
-      "Diagnosis is often clinical/biochemical and early CT does not replace support."
+      "Improving lipase does not exclude infected biliary obstruction.",
+      "Elective gallbladder surgery cannot decompress the septic duct immediately.",
+      "Correct. New obstructive jaundice and systemic infection indicate cholangitis; urgent ERCP may provide essential source control.",
+      "Pain control does not address biliary sepsis.",
+      "Lipase trend is not a reason to delay drainage."
     ],
-    "pearl": "severity and fluids",
-    "pivot": "If cholangitis or ongoing biliary obstruction appears, discuss urgent ERCP rather than conservative treatment alone.",
+    "pearl": "indication for urgent ERCP",
+    "pivot": "If shock persists after initial resuscitation, activate ICU and expedited drainage, including alternative decompression if ERCP fails.",
     "management": {
       "steps": [
         [
           "Recognise",
-          "Assess severity, urine output and fluid status."
+          "Reassess sepsis and biliary obstruction signs."
         ],
         [
           "Assess",
-          "Give analgesia and tailored crystalloid resuscitation."
+          "Start cultures, IV antibiotics and resuscitation."
         ],
         [
           "Act",
-          "Monitor electrolytes, renal function and complications."
+          "Contact advanced endoscopy and biliary surgical services urgently."
         ],
         [
           "Follow up",
-          "Plan gallbladder management after clinical recovery."
+          "Perform decompression and plan interval cholecystectomy."
         ]
       ],
-      "safety": "If cholangitis or ongoing biliary obstruction appears, discuss urgent ERCP rather than conservative treatment alone.",
+      "safety": "If shock persists after initial resuscitation, activate ICU and expedited drainage, including alternative decompression if ERCP fails.",
       "local": "Use current Australian/Victorian guidance and senior escalation."
     },
-    "source": "https://aci.health.nsw.gov.au/networks/eci/clinical/clinical-tools/abdominal-pain"
+    "source": "https://www.safetyandquality.gov.au/standards/clinical-care-standards/sepsis-clinical-care-standard"
   },
   {
     "n": 64,
@@ -3309,7 +3309,7 @@
       "safety": "If postprandial excursions also become elevated, add appropriately timed meal treatment or titrate regimen with specialist guidance.",
       "local": "Use current Australian/Victorian guidance and senior escalation."
     },
-    "source": "https://www.safercare.vic.gov.au/maternity"
+    "source": "https://www.health.qld.gov.au/__data/assets/pdf_file/0022/950503/g-gdm.pdf"
   },
   {
     "n": 70,
@@ -3357,7 +3357,7 @@
       "safety": "If missing outcomes are substantial, examine imputation and sensitivity analyses rather than assuming ITT wording alone removes attrition bias.",
       "local": "Use current Australian/Victorian guidance and senior escalation."
     },
-    "source": "https://www.nhmrc.gov.au/guidelines"
+    "source": "https://www1.racgp.org.au/getattachment/43b636b5-4a69-4b59-9735-8b1cdefe23e4/A-practical-guide-to-statistics-for-general-practi.aspx"
   },
   {
     "n": 71,
@@ -3453,7 +3453,7 @@
       "safety": "If prolonged seizure or acute encephalopathy occurs, send for emergency paediatric assessment rather than routine developmental clinic.",
       "local": "Use current Australian/Victorian guidance and senior escalation."
     },
-    "source": "https://www.rch.org.au/clinicalguide/"
+    "source": "https://www.rch.org.au/specialist-clinics/referring-guidelines/Seizures/"
   },
   {
     "n": 73,
@@ -3645,52 +3645,52 @@
       "safety": "If confusion, ataxia or eye movement abnormalities appear, treat presumptive Wernicke encephalopathy urgently with parenteral thiamine and specialist care.",
       "local": "Use current Australian/Victorian guidance and senior escalation."
     },
-    "source": "https://www.health.qld.gov.au/qcg/publications"
+    "source": "https://www.somanz.org/content/uploads/2020/07/NVP-GUIDELINE-1.2.20-1.pdf"
   },
   {
     "n": 77,
     "domain": "Surgery",
-    "skill": "Obstructed infected kidney / urgent decompression",
+    "skill": "Obstructed kidney / post-stent deterioration",
     "context": "Moonflower Garden · advanced original clinical reasoning",
-    "stem": "A 62-year-old has fever, flank pain, pyuria and CT showing a 9-mm obstructing proximal ureteric stone with hydronephrosis. BP is 94/60 mmHg.",
-    "ask": "What management should be prioritised?",
+    "stem": "A 66-year-old with infected ureteric obstruction underwent urgent ureteric stenting eight hours ago. Despite antibiotics, she remains hypotensive with lactate 5 mmol/L and increasing oxygen requirement.",
+    "ask": "What is the most appropriate next management?",
     "options": [
-      "Provide oral analgesia alone and arrange lithotripsy in six weeks.",
-      "Give sepsis treatment and obtain urgent urological decompression of the infected system.",
-      "Wait for stone passage without antibiotics because urine is draining.",
-      "Give a diuretic to force urine past the obstruction.",
-      "Schedule routine outpatient culture review before contacting urology."
+      "Assume source control guarantees immediate haemodynamic recovery.",
+      "Escalate refractory septic shock to intensive care and reassess drainage adequacy.",
+      "Stop antibiotics because a stent has been inserted.",
+      "Discharge after confirming the stent on a plain film.",
+      "Give only oral antipyretics for persistent fever and hypotension."
     ],
     "key": "B",
     "explanations": [
-      "Analgesia does not relieve infected pressure or sepsis.",
-      "Correct. Infected obstruction is a urological emergency; drainage by stent/nephrostomy with antibiotics is source control.",
-      "Hydronephrosis implies compromised drainage and risk of deterioration.",
-      "Diuresis can increase pressure without resolving blockage.",
-      "Delay risks septic shock and renal loss."
+      "Source control helps but does not instantly reverse systemic inflammation.",
+      "Correct. Septic shock may persist after decompression, requiring vasopressors, reassessment and critical care.",
+      "Antimicrobials remain essential after drainage.",
+      "A correctly positioned device does not ensure physiological stability.",
+      "Antipyretics do not restore organ perfusion."
     ],
-    "pearl": "urgent decompression",
-    "pivot": "If haemodynamic instability persists, add critical-care vasopressors while expediting immediate drainage and antibiotics.",
+    "pearl": "post-stent deterioration",
+    "pivot": "If imaging shows persistent obstruction or infected collection, arrange urgent repeat source control in addition to ICU therapy.",
     "management": {
       "steps": [
         [
           "Recognise",
-          "Recognise septic obstructive uropathy."
+          "Reassess ABCDE, perfusion and urine output."
         ],
         [
           "Assess",
-          "Obtain cultures and give urgent IV antibiotics."
+          "Repeat lactate, cultures and imaging if indicated."
         ],
         [
           "Act",
-          "Contact urology for stent or nephrostomy."
+          "Give vasopressors and ICU-level organ support."
         ],
         [
           "Follow up",
-          "Monitor renal function and later definitive stone treatment."
+          "Verify drainage and tailor antimicrobials."
         ]
       ],
-      "safety": "If haemodynamic instability persists, add critical-care vasopressors while expediting immediate drainage and antibiotics.",
+      "safety": "If imaging shows persistent obstruction or infected collection, arrange urgent repeat source control in addition to ICU therapy.",
       "local": "Use current Australian/Victorian guidance and senior escalation."
     },
     "source": "https://www.health.vic.gov.au/health-services/information-for-emergency-departments"
@@ -3741,52 +3741,52 @@
       "safety": "If baseline risk differs greatly for an individual, the expected absolute benefit and NNT will change even if relative effect is similar.",
       "local": "Use current Australian/Victorian guidance and senior escalation."
     },
-    "source": "https://www.nhmrc.gov.au/guidelines"
+    "source": "https://www1.racgp.org.au/getattachment/43b636b5-4a69-4b59-9735-8b1cdefe23e4/A-practical-guide-to-statistics-for-general-practi.aspx"
   },
   {
     "n": 79,
     "domain": "Ophthalmology",
-    "skill": "Acute angle closure / high intraocular pressure",
+    "skill": "Angle closure / definitive prevention after pressure control",
     "context": "Moonflower Garden · advanced original clinical reasoning",
-    "stem": "A 61-year-old has sudden severe unilateral eye pain, headache, halos and vomiting. Examination shows a mid-dilated poorly reactive pupil and hazy cornea; intraocular pressure is markedly raised.",
-    "ask": "What is the most appropriate immediate pathway?",
+    "stem": "A woman has recovered from an acute angle-closure attack after emergency pressure-lowering medication. Intraocular pressure has normalised and pain has resolved, but the anterior chamber remains anatomically narrow.",
+    "ask": "What follow-up treatment is most important?",
     "options": [
-      "Discharge with lubricating drops for presumed dry eye.",
-      "Prescribe migraine treatment alone without examining the eye.",
-      "Patch the eye and arrange routine optometry next month.",
-      "Urgent ophthalmology consultation and pressure-lowering therapy.",
-      "Treat bacterial conjunctivitis with topical antibiotic alone."
+      "Discharge permanently because temporary medication normalised pressure.",
+      "Use antibiotic drops indefinitely to keep the chamber open.",
+      "Prescribe chronic oral antihistamines to prevent angle closure.",
+      "Arrange specialist laser peripheral iridotomy to prevent recurrence.",
+      "Schedule routine spectacle testing as the only follow-up."
     ],
     "key": "D",
     "explanations": [
-      "Dry eye does not cause a fixed pupil and severe pressure rise.",
-      "Eye findings point to glaucoma, not isolated migraine.",
-      "Delay permits optic nerve injury.",
-      "Correct. Acute angle closure threatens permanent vision; pressure reduction and definitive laser planning are urgent.",
-      "Conjunctivitis does not explain high pressure or corneal oedema."
+      "Temporary pressure reduction does not remove anatomical obstruction.",
+      "Antibiotics do not treat narrow drainage angles.",
+      "Antihistamines may aggravate angle closure in susceptible eyes.",
+      "Correct. Laser iridotomy addresses pupillary block and helps prevent repeat angle closure, including assessment of fellow eye.",
+      "Refraction does not prevent a sight-threatening recurrence."
     ],
-    "pearl": "high intraocular pressure",
-    "pivot": "If vision deteriorates or systemic instability occurs, escalate immediate emergency ophthalmic treatment rather than outpatient referral.",
+    "pearl": "definitive prevention after pressure control",
+    "pivot": "If acute pain, blurred vision or raised pressure recurs before definitive procedure, return for emergency ophthalmic pressure-lowering treatment.",
     "management": {
       "steps": [
         [
           "Recognise",
-          "Measure acuity, pupil and pressure without delay."
+          "Confirm attack resolution and assess both anterior chamber angles."
         ],
         [
           "Assess",
-          "Call ophthalmology immediately."
+          "Continue directed pressure control and monitor vision."
         ],
         [
           "Act",
-          "Give pressure-lowering agents as directed and control symptoms."
+          "Arrange timely laser treatment with ophthalmology."
         ],
         [
           "Follow up",
-          "Arrange definitive laser or surgical treatment."
+          "Explain recurrence symptoms and follow-up pressure checks."
         ]
       ],
-      "safety": "If vision deteriorates or systemic instability occurs, escalate immediate emergency ophthalmic treatment rather than outpatient referral.",
+      "safety": "If acute pain, blurred vision or raised pressure recurs before definitive procedure, return for emergency ophthalmic pressure-lowering treatment.",
       "local": "Use current Australian/Victorian guidance and senior escalation."
     },
     "source": "https://www.racgp.org.au/afp/2016/april/acute-red-eye"
@@ -3794,47 +3794,47 @@
   {
     "n": 80,
     "domain": "Medicine",
-    "skill": "Pleural infection / complicated effusion",
+    "skill": "Pleural infection / failure after chest tube",
     "context": "Moonflower Garden · advanced original clinical reasoning",
-    "stem": "A 65-year-old with pneumonia remains febrile despite antibiotics. Ultrasound shows a large loculated pleural collection; aspiration reveals frank pus.",
-    "ask": "Which addition to antimicrobials is essential?",
+    "stem": "A 54-year-old with empyema has received IV antibiotics and ultrasound-guided tube drainage for three days. Fever persists; CT shows multiple undrained loculations despite a patent tube.",
+    "ask": "What is the next escalation?",
     "options": [
-      "Continue the same oral antibiotics alone for several months.",
-      "Discharge because pus confirms a benign sterile effusion.",
-      "Use inhaled bronchodilator as definitive treatment for the collection.",
-      "Wait for spontaneous absorption without repeat imaging.",
-      "Arrange urgent pleural drainage and respiratory or thoracic specialist review."
+      "Remove the functioning drain and discharge because initial pus was evacuated.",
+      "Stop antibiotics despite ongoing fever and radiographic collections.",
+      "Treat with inhaled steroid alone to resolve pleural septations.",
+      "Wait several months for loculations to disappear spontaneously.",
+      "Discuss intrapleural fibrinolytics or surgical drainage with pleural specialists."
     ],
     "key": "E",
     "explanations": [
-      "Antibiotics alone often fail to clear organised infected collections.",
-      "Pus confirms pleural space infection, not reassurance.",
-      "Bronchodilators cannot evacuate pleural pus.",
-      "Delay promotes sepsis and pleural organisation.",
-      "Correct. Empyema requires drainage/source control and appropriate antibiotics."
+      "Residual infection requires reassessment rather than early discharge.",
+      "Antibiotics remain important alongside drainage.",
+      "Inhaled steroid cannot break infected pleural septations.",
+      "Prolonged uncontrolled infection promotes fibrothorax and sepsis.",
+      "Correct. Persistent loculated pleural sepsis after tube drainage may need intrapleural therapy or VATS source control."
     ],
-    "pearl": "complicated effusion",
-    "pivot": "If persistent loculations or sepsis remain after drainage, discuss fibrinolytic or operative management with thoracic specialists.",
+    "pearl": "failure after chest tube",
+    "pivot": "If shock or respiratory failure develops, escalate ICU and urgent operative source control.",
     "management": {
       "steps": [
         [
           "Recognise",
-          "Assess sepsis and respiratory compromise."
+          "Reassess drain function, CT and microbiology."
         ],
         [
           "Assess",
-          "Send pleural fluid for chemistry and microbiology."
+          "Consult respiratory and thoracic surgery."
         ],
         [
           "Act",
-          "Drain collection under specialist guidance."
+          "Consider intrapleural regimen or VATS drainage."
         ],
         [
           "Follow up",
-          "Tailor antibiotics and monitor imaging response."
+          "Monitor radiologic and inflammatory response."
         ]
       ],
-      "safety": "If persistent loculations or sepsis remain after drainage, discuss fibrinolytic or operative management with thoracic specialists.",
+      "safety": "If shock or respiratory failure develops, escalate ICU and urgent operative source control.",
       "local": "Use current Australian/Victorian guidance and senior escalation."
     },
     "source": "https://aci.health.nsw.gov.au/networks/eci/clinical/clinical-tools/pleural-effusion"
@@ -3842,95 +3842,95 @@
   {
     "n": 81,
     "domain": "Cardiology",
-    "skill": "Inferior STEMI / right ventricular involvement",
+    "skill": "Inferior STEMI / complete heart block after reperfusion",
     "context": "Moonflower Garden · advanced original clinical reasoning",
-    "stem": "A 58-year-old has inferior ST elevation, hypotension and clear lungs. Right-sided ECG leads show V4R elevation; heart rate is 52/min.",
-    "ask": "What haemodynamic caution is most important?",
+    "stem": "A 66-year-old undergoes PCI for an inferior STEMI. Two hours later he becomes pale with dizziness; telemetry shows complete AV block and ventricular escape at 28/min, BP 68/40 mmHg.",
+    "ask": "What immediate intervention is indicated?",
     "options": [
-      "Avoid routine nitrates and assess preload dependence with senior cardiac support.",
-      "Give repeated nitrates despite hypotension to relieve every infarction.",
-      "Administer large-dose diuretic because all infarctions cause pulmonary oedema.",
-      "Discharge when chest pain decreases after simple analgesia.",
-      "Delay reperfusion until the bradycardia resolves spontaneously."
+      "Activate resuscitation and prepare temporary pacing for unstable bradycardia.",
+      "Give high-dose beta blocker to suppress the ventricular escape rhythm.",
+      "Reassure that post-infarction AV block is always benign.",
+      "Start routine oral nitrates and review rhythm tomorrow.",
+      "Discharge when chest pain remains absent despite hypotension."
     ],
     "key": "A",
     "explanations": [
-      "Correct. RV infarction may be preload dependent; nitrates can precipitate severe collapse while urgent reperfusion proceeds.",
-      "Venodilation further decreases filling and BP.",
-      "Clear lungs and RV signs do not support routine diuresis.",
-      "Pain relief does not resolve coronary occlusion.",
-      "Reperfusion should not be delayed by monitoring the rhythm alone."
+      "Correct. Symptomatic complete heart block with shock requires immediate bradycardia algorithm and pacing readiness.",
+      "Rate-slowing drugs can worsen cardiac output.",
+      "Severe hypotension makes observation alone unsafe.",
+      "Nitrates may further lower BP and do not treat block.",
+      "Absence of pain does not mean adequate perfusion."
     ],
-    "pearl": "right ventricular involvement",
-    "pivot": "If severe bradycardia causes shock, follow ACS/bradyarrhythmia pathway with pacing or atropine consideration alongside urgent cath lab.",
+    "pearl": "complete heart block after reperfusion",
+    "pivot": "If cardiac arrest occurs, follow ANZCOR ALS with immediate CPR and reversible cause treatment.",
     "management": {
       "steps": [
         [
           "Recognise",
-          "Activate STEMI/reperfusion response."
+          "Confirm ECG rhythm and perfusion."
         ],
         [
           "Assess",
-          "Obtain right-sided ECG and assess shock."
+          "Call cardiac/resuscitation team and give oxygen/IV access."
         ],
         [
           "Act",
-          "Avoid preload-reducing agents in hypotensive RV infarction."
+          "Follow unstable bradycardia pathway including atropine/pacing."
         ],
         [
           "Follow up",
-          "Arrange urgent PCI and monitored haemodynamic support."
+          "Investigate ischaemia and monitor recovery after PCI."
         ]
       ],
-      "safety": "If severe bradycardia causes shock, follow ACS/bradyarrhythmia pathway with pacing or atropine consideration alongside urgent cath lab.",
+      "safety": "If cardiac arrest occurs, follow ANZCOR ALS with immediate CPR and reversible cause treatment.",
       "local": "Use current Australian/Victorian guidance and senior escalation."
     },
-    "source": "https://www.heartfoundation.org.au/"
+    "source": "https://www.heartfoundation.org.au/for-professionals/acs-guideline"
   },
   {
     "n": 82,
     "domain": "Medicine",
-    "skill": "Aortic dissection / heart rate control",
+    "skill": "Type B aortic dissection / malperfusion changes treatment",
     "context": "Moonflower Garden · advanced original clinical reasoning",
-    "stem": "A 61-year-old presents with abrupt tearing chest pain radiating to the back and a pulse deficit. CT confirms an acute descending aortic dissection; BP 198/112 mmHg, heart rate 115/min.",
-    "ask": "Which initial haemodynamic strategy is appropriate?",
+    "stem": "A 64-year-old admitted with medically managed descending aortic dissection develops sudden abdominal pain and oliguria. BP is now controlled, but creatinine has doubled and CT suggests compromised renal and mesenteric branch flow.",
+    "ask": "What is the next decision?",
     "options": [
-      "Start a powerful vasodilator alone without controlling reflex tachycardia.",
-      "Give IV beta blockade for heart-rate/impulse control before additional vasodilation.",
-      "Administer therapeutic thrombolysis for the chest pain.",
-      "Discharge on oral analgesia because the dissection is distal.",
-      "Aim for hypertension to maintain flow through the false lumen."
+      "Continue routine blood pressure treatment alone despite new organ malperfusion.",
+      "Urgent vascular/endovascular assessment for complicated type B dissection.",
+      "Discharge because systolic pressure is within target now.",
+      "Treat with thrombolysis to restore branch vessel flow.",
+      "Delay reassessment until scheduled imaging in three months."
     ],
     "key": "B",
     "explanations": [
-      "Reflex tachycardia can increase shear stress.",
-      "Correct. Anti-impulse therapy reduces dP/dt and wall stress; add vasodilator if needed after rate control.",
-      "Thrombolysis risks catastrophic haemorrhage.",
-      "Type B dissection still requires monitored specialist management.",
-      "Uncontrolled pressure increases extension and rupture risk."
+      "Anti-impulse treatment alone may not reverse branch compromise.",
+      "Correct. Organ malperfusion makes type B dissection complicated and may require urgent endovascular intervention.",
+      "BP control does not ensure adequate end-organ circulation.",
+      "Thrombolysis can worsen dissection-related bleeding.",
+      "Delayed imaging risks bowel and kidney infarction."
     ],
-    "pearl": "heart rate control",
-    "pivot": "If rupture, malperfusion or refractory pain occurs, seek urgent endovascular/vascular intervention rather than medical therapy alone.",
+    "pearl": "malperfusion changes treatment",
+    "pivot": "If rupture or haemodynamic collapse develops, activate emergency vascular repair and major-haemorrhage management.",
     "management": {
       "steps": [
         [
           "Recognise",
-          "Stabilise, monitor and obtain vascular/cardiothoracic review."
+          "Assess abdominal pain, urine and limb perfusion."
         ],
         [
           "Assess",
-          "Provide analgesia and IV beta blocker."
+          "Repeat urgent vascular imaging and renal/lactate tests."
         ],
         [
           "Act",
-          "Titrate BP using monitored protocol."
+          "Call aortic/endovascular team immediately."
         ],
         [
           "Follow up",
-          "Monitor end-organ perfusion and intervention triggers."
+          "Prepare intervention while continuing monitored BP control."
         ]
       ],
-      "safety": "If rupture, malperfusion or refractory pain occurs, seek urgent endovascular/vascular intervention rather than medical therapy alone.",
+      "safety": "If rupture or haemodynamic collapse develops, activate emergency vascular repair and major-haemorrhage management.",
       "local": "Use current Australian/Victorian guidance and senior escalation."
     },
     "source": "https://aci.health.nsw.gov.au/networks/eci/clinical/clinical-tools/aortic-dissection"
@@ -3938,50 +3938,50 @@
   {
     "n": 83,
     "domain": "Medicine",
-    "skill": "Sickle cell / acute chest syndrome",
+    "skill": "Acute chest syndrome / escalation to exchange transfusion",
     "context": "Moonflower Garden · advanced original clinical reasoning",
-    "stem": "A 22-year-old with sickle cell disease has fever, chest pain, new hypoxia and a fresh infiltrate on chest X-ray. Haemoglobin has fallen below baseline.",
-    "ask": "What is the most appropriate initial disposition?",
+    "stem": "A 19-year-old with sickle cell disease is receiving antibiotics and oxygen for acute chest syndrome. Over six hours oxygen requirement increases to high-flow support, respiratory rate is 38/min and bilateral infiltrates have expanded.",
+    "ask": "What new treatment should be discussed urgently?",
     "options": [
-      "Treat as uncomplicated pain crisis and discharge after opioids.",
-      "Give excessive IV fluids without monitoring respiratory status.",
-      "Admit for oxygen, antibiotics and urgent haematology assessment.",
-      "Withhold antibiotics because acute chest syndrome is never infectious.",
-      "Delay blood-group testing until after a week of observation."
+      "Continue current therapy unchanged despite progressive respiratory failure.",
+      "Give additional unrestricted IV saline as sole treatment.",
+      "Exchange transfusion with haematology and intensive-care teams.",
+      "Stop antibiotics because the infiltrates may be inflammatory.",
+      "Discharge after a single analgesic dose improves chest pain."
     ],
     "key": "C",
     "explanations": [
-      "New lung infiltrate and hypoxia define a dangerous complication.",
-      "Fluid overload may worsen pulmonary injury.",
-      "Correct. Acute chest syndrome can rapidly progress; supportive respiratory care, antimicrobials and transfusion planning are essential.",
-      "Infection frequently contributes and empiric coverage is indicated.",
-      "Early crossmatch enables urgent simple or exchange transfusion when needed."
+      "Deteriorating hypoxaemia signals failure of the initial plan.",
+      "Fluid overload may worsen lung injury.",
+      "Correct. Severe or rapidly progressive acute chest syndrome can require red-cell exchange and ICU respiratory support.",
+      "Infection remains a potential trigger and antibiotics are commonly indicated.",
+      "Pain relief does not mean oxygenation has recovered."
     ],
-    "pearl": "acute chest syndrome",
-    "pivot": "If hypoxia worsens or respiratory distress increases, seek ICU and exchange-transfusion evaluation urgently.",
+    "pearl": "escalation to exchange transfusion",
+    "pivot": "If severe hypoxia or respiratory fatigue persists, institute advanced ventilation support while organising exchange transfusion.",
     "management": {
       "steps": [
         [
           "Recognise",
-          "Assess oxygenation, pain and respiratory effort."
+          "Document baseline Hb and oxygen trajectory."
         ],
         [
           "Assess",
-          "Obtain bloods/cultures and crossmatch."
+          "Call haematology and PICU/ICU."
         ],
         [
           "Act",
-          "Give oxygen, analgesia and empiric antibiotics."
+          "Prepare crossmatched exchange transfusion and respiratory support."
         ],
         [
           "Follow up",
-          "Discuss transfusion and monitor closely."
+          "Continue antimicrobials, analgesia and complication monitoring."
         ]
       ],
-      "safety": "If hypoxia worsens or respiratory distress increases, seek ICU and exchange-transfusion evaluation urgently.",
+      "safety": "If severe hypoxia or respiratory fatigue persists, institute advanced ventilation support while organising exchange transfusion.",
       "local": "Use current Australian/Victorian guidance and senior escalation."
     },
-    "source": "https://www.health.qld.gov.au/"
+    "source": "https://www.childrens.health.qld.gov.au/__data/assets/pdf_file/0032/176909/gdl-70044.pdf"
   },
   {
     "n": 84,
@@ -4034,47 +4034,47 @@
   {
     "n": 85,
     "domain": "Medicine",
-    "skill": "SGLT2 / euglycaemic DKA",
+    "skill": "SGLT2 inhibitor / preoperative risk prevention",
     "context": "Moonflower Garden · advanced original clinical reasoning",
-    "stem": "A 51-year-old taking empagliflozin has vomiting after abdominal surgery. Glucose is 10 mmol/L, beta-hydroxybutyrate 5.2 mmol/L, pH 7.19 and bicarbonate 12 mmol/L.",
-    "ask": "What is the correct interpretation?",
+    "stem": "A 59-year-old taking dapagliflozin is booked for major elective bowel surgery requiring fasting. The preadmission team notes the drug remains on the medication list the day before operation.",
+    "ask": "What medicine safety action is most appropriate?",
     "options": [
-      "Exclude DKA because glucose is below the usual hyperglycaemic range.",
-      "Give oral antacid alone because abdominal discomfort dominates symptoms.",
-      "Continue SGLT2 inhibitor to accelerate clearance of ketones.",
-      "Give subcutaneous correction insulin only and discharge immediately.",
-      "Treat euglycaemic DKA with insulin, dextrose and appropriate fluids/electrolytes."
+      "Continue dapagliflozin through prolonged fasting without any ketone plan.",
+      "Give extra SGLT2 doses after surgery to prevent stress hyperglycaemia.",
+      "Stop all insulin therapy automatically because the SGLT2 drug is withheld.",
+      "Use urinary glucose alone to exclude perioperative ketoacidosis.",
+      "Withhold SGLT2 inhibitor according to perioperative guidance and assess ketone risk."
     ],
     "key": "E",
     "explanations": [
-      "Glucose alone is not diagnostic; ketonaemia plus acidosis confirms the syndrome.",
-      "Antacid will not reverse metabolic acidosis.",
-      "The implicated drug should be withheld during acute illness.",
-      "Monitored inpatient therapy is required for significant acidosis.",
-      "Correct. SGLT2 drugs permit ketoacidosis without marked hyperglycaemia; treat ketones/acidosis with IV insulin and dextrose."
+      "Continuing increases risk of ketoacidosis during acute stress.",
+      "Extra doses worsen ketone risk rather than treat hyperglycaemia.",
+      "Insulin requirements need individual plans; wholesale cessation can precipitate DKA.",
+      "Urinary glucose does not establish absence of ketonaemia.",
+      "Correct. SGLT2 medicines raise euglycaemic DKA risk during surgical fasting; withholding and ketone monitoring are needed."
     ],
-    "pearl": "euglycaemic DKA",
-    "pivot": "If hypokalaemia develops during treatment, replace potassium and adjust insulin safely rather than continuing unchecked infusion.",
+    "pearl": "preoperative risk prevention",
+    "pivot": "If perioperative acidosis with elevated blood ketones occurs despite modest glucose, treat as euglycaemic DKA and involve diabetes/critical-care teams.",
     "management": {
       "steps": [
         [
           "Recognise",
-          "Recognise ketoacidosis despite modest glucose."
+          "Reconcile diabetes medicines and fasting timeline."
         ],
         [
           "Assess",
-          "Stop SGLT2 inhibitor, obtain gases and electrolytes."
+          "Withhold SGLT2 for recommended preoperative interval."
         ],
         [
           "Act",
-          "Use DKA protocol with insulin/dextrose and monitored fluids."
+          "Plan glucose/ketone monitoring and alternative therapy."
         ],
         [
           "Follow up",
-          "Track ketone clearance and plan medication review."
+          "Restart only when eating, stable and ketones resolved."
         ]
       ],
-      "safety": "If hypokalaemia develops during treatment, replace potassium and adjust insulin safely rather than continuing unchecked infusion.",
+      "safety": "If perioperative acidosis with elevated blood ketones occurs despite modest glucose, treat as euglycaemic DKA and involve diabetes/critical-care teams.",
       "local": "Use current Australian/Victorian guidance and senior escalation."
     },
     "source": "https://www.diabetessociety.com.au/guideline/emergency-management-of-hyperglycaemia-in-primary-care/"
@@ -4173,7 +4173,7 @@
       "safety": "If fever, flank pain or systemic illness appears, assess urgently for pyelonephritis and consider inpatient IV treatment.",
       "local": "Use current Australian/Victorian guidance and senior escalation."
     },
-    "source": "https://www.health.qld.gov.au/qcg/publications"
+    "source": "https://www.kemh.health.wa.gov.au/~/media/HSPs/NMHS/Hospitals/WNHS/Documents/Clinical-guidelines/Obs-Gyn-Guidelines/Infections-OG-Antibiotic-Treatment-Urinary-Tract-Infection-UTI.pdf"
   },
   {
     "n": 88,
@@ -4221,7 +4221,7 @@
       "safety": "If antepartum haemorrhage or labour begins unexpectedly, activate urgent tertiary obstetric haemorrhage response and expedite safe delivery.",
       "local": "Use current Australian/Victorian guidance and senior escalation."
     },
-    "source": "https://www.safercare.vic.gov.au/maternity"
+    "source": "https://www.safercare.vic.gov.au/best-practice-improvement/clinical-guidance/maternity/antepartum-haemorrhage-assessment-and-management"
   },
   {
     "n": 89,
@@ -4269,7 +4269,7 @@
       "safety": "If vaginal birth is truly imminent, senior obstetric team may expedite it; otherwise emergency caesarean is generally needed.",
       "local": "Use current Australian/Victorian guidance and senior escalation."
     },
-    "source": "https://www.safercare.vic.gov.au/maternity"
+    "source": "https://www.health.qld.gov.au/__data/assets/pdf_file/0013/1215031/6.Obstetrics-and-neonatal.pdf"
   },
   {
     "n": 90,
@@ -4466,47 +4466,47 @@
   {
     "n": 94,
     "domain": "Medicine",
-    "skill": "SIADH / euvolaemic hyponatraemia",
+    "skill": "Hyponatraemia / rule out adrenal insufficiency",
     "context": "Moonflower Garden · advanced original clinical reasoning",
-    "stem": "A patient with small-cell lung cancer has sodium 121 mmol/L, low serum osmolality, inappropriately concentrated urine and high urine sodium. Exam shows no oedema or dehydration; there are no seizures.",
-    "ask": "What is the most likely initial management principle?",
+    "stem": "A 55-year-old with persistent hyponatraemia has low serum osmolality, high urine sodium and concentrated urine. She seems euvolaemic but also reports postural dizziness, weight loss and long-term glucocorticoid cessation.",
+    "ask": "What important diagnosis must be excluded before labelling SIADH?",
     "options": [
-      "Give large repeated saline boluses without evaluating fluid balance.",
-      "Administer hypertonic saline rapidly to normal sodium despite no severe symptoms.",
-      "Diagnose pseudohyponatraemia without checking serum osmolality.",
-      "Assess SIADH and consider fluid restriction with careful monitoring.",
-      "Give loop diuretic alone without reassessing sodium or cause."
+      "Primary polydipsia despite the inappropriately concentrated urine.",
+      "Pseudohyponatraemia despite measured low serum osmolality.",
+      "Isolated dietary salt deficiency without any hormonal evaluation.",
+      "Adrenal insufficiency with cortisol testing and urgent treatment if unstable.",
+      "Diabetes insipidus as the explanation for concentrated urine."
     ],
     "key": "D",
     "explanations": [
-      "Unselected isotonic fluids can fail or worsen SIADH.",
-      "Rapid correction risks osmotic demyelination and is reserved for severe symptoms under monitoring.",
-      "Measured hypotonicity argues against pseudohyponatraemia.",
-      "Correct. Euvolaemic hypotonic hyponatraemia with concentrated urine suggests SIADH; restrict fluid if appropriate and treat cause.",
-      "Medication requires tailored specialist assessment, not blind diuresis."
+      "Primary polydipsia generally produces dilute urine.",
+      "True hypotonicity makes laboratory pseudohyponatraemia unlikely.",
+      "Dietary intake alone does not explain the endocrine red flags.",
+      "Correct. Cortisol deficiency can mimic SIADH and has immediate treatment implications, particularly with steroid withdrawal.",
+      "Diabetes insipidus causes dilute urine and hypernatraemia tendency."
     ],
-    "pearl": "euvolaemic hyponatraemia",
-    "pivot": "If seizure or severe encephalopathy develops, treat as severe symptomatic hyponatraemia with controlled 3% saline boluses and critical monitoring.",
+    "pearl": "rule out adrenal insufficiency",
+    "pivot": "If hypotension or hypoglycaemia indicates crisis, give IV hydrocortisone and isotonic resuscitation immediately rather than await confirmatory assays.",
     "management": {
       "steps": [
         [
           "Recognise",
-          "Confirm hypotonicity and exclude adrenal/thyroid deficiency."
+          "Review steroid exposure and orthostatic symptoms."
         ],
         [
           "Assess",
-          "Assess urine osmolality and volume status."
+          "Obtain cortisol/ACTH if possible without delaying emergency care."
         ],
         [
           "Act",
-          "Use tailored fluid restriction and monitor sodium trend."
+          "Assess glucose, potassium and volume status."
         ],
         [
           "Follow up",
-          "Treat tumour/medication contributors and follow correction limits."
+          "Treat adrenal deficiency and monitor sodium correction."
         ]
       ],
-      "safety": "If seizure or severe encephalopathy develops, treat as severe symptomatic hyponatraemia with controlled 3% saline boluses and critical monitoring.",
+      "safety": "If hypotension or hypoglycaemia indicates crisis, give IV hydrocortisone and isotonic resuscitation immediately rather than await confirmatory assays.",
       "local": "Use current Australian/Victorian guidance and senior escalation."
     },
     "source": "https://aci.health.nsw.gov.au/networks/eci/clinical/clinical-tools/electrolyte-abnormalities"
@@ -4653,7 +4653,7 @@
       "safety": "If ultrasound confirms suspicious solid lesion, refer for tumour markers and radical inguinal orchiectomy planning, not trans-scrotal biopsy.",
       "local": "Use current Australian/Victorian guidance and senior escalation."
     },
-    "source": "https://www.cancer.org.au/"
+    "source": "https://www.cancer.org.au/assets/pdf/testicular-cancer/understanding-testicular-cancer-booklet"
   },
   {
     "n": 98,
