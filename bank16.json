@@ -2398,5 +2398,485 @@
       "local": "Current Australian practice; assess with senior clinicians and local pathways."
     },
     "source": "https://aci.health.nsw.gov.au/networks/eci/clinical/tools/ent/epistaxis"
+  },
+  {
+    "n": 51,
+    "domain": "General practice & musculoskeletal medicine",
+    "skill": "Uncomplicated lumbar radiculopathy / conservative initial care",
+    "context": "Revision Blossom Garden · original case inspired by 2024–2025 Monash paper themes",
+    "stem": "A 36-year-old develops severe low back pain radiating into his right calf after lifting furniture yesterday. Tingling is confined to the dorsum of his right foot. He has a positive straight-leg raise but normal ankle dorsiflexion strength, reflexes and walking balance. He reports no saddle sensory change, bladder problems, fever or cancer history. Analgesia improves his ability to mobilise.",
+    "ask": "Beyond initial analgesia and advice, what is the best next plan?",
+    "options": [
+      "Encourage graded activity and physiotherapy with review if symptoms persist or red flags develop.",
+      "Obtain an urgent lumbar MRI because any isolated sensory symptom proves dangerous compression.",
+      "Refer for emergency spinal decompression despite preserved motor function and continence.",
+      "Request inflammatory blood tests and vertebral imaging before allowing any mobilisation.",
+      "Arrange immediate nerve-root injection because severe pain proves conservative care will fail."
+    ],
+    "key": "A",
+    "explanations": [
+      "Correct. Acute radicular pain with no progressive weakness or cauda equina features usually starts with education, tolerable activity, physiotherapy and reassessment; routine emergency imaging is not indicated.",
+      "Sensory radiculopathy is common and alone does not mandate urgent MRI. Image urgently with saddle symptoms, bladder or bowel dysfunction, progressive weakness or other concerning features.",
+      "Emergency surgery targets serious compression or progressing deficits, neither established by this examination. Referral may be appropriate if symptoms fail to improve.",
+      "No constitutional or infection signs suggest a need for routine inflammatory markers. Unnecessary bed rest and delaying movement can impair recovery.",
+      "Epidural injection is sometimes considered for persistent disabling symptoms after clinical review; it is not automatically the first intervention on day one."
+    ],
+    "pearl": "Severe pain alone does not mandate urgent MRI when neurologic power, reflexes and sphincter function are preserved.",
+    "pivot": "New retention, saddle anaesthesia, progressive weakness or bilateral neurological change requires urgent MRI/spinal assessment.",
+    "management": {
+      "steps": [
+        [
+          "Initial assessment",
+          "Check motor power, sensation, reflexes and all serious spinal red flags."
+        ],
+        [
+          "Investigations",
+          "Avoid routine early imaging if findings remain reassuring."
+        ],
+        [
+          "Management",
+          "Provide multimodal analgesia, activity advice and physiotherapy."
+        ],
+        [
+          "Follow up",
+          "Safety-net for new deficits and reassess persistent or worsening pain."
+        ]
+      ],
+      "safety": "Do not confuse high pain severity with cauda equina syndrome; ask urinary and saddle-sensation questions explicitly.",
+      "local": "Apply current Australian guidelines and local health-service pathways."
+    },
+    "source": "https://aci.health.nsw.gov.au/networks/eci/clinical/tools/orthopaedic-and-musculoskeletal/acute-low-back-pain"
+  },
+  {
+    "n": 52,
+    "domain": "General practice & infectious diseases",
+    "skill": "Cellulitis versus DVT / discriminatory ipsilateral lymphadenopathy",
+    "context": "Revision Blossom Garden · original case inspired by 2024–2025 Monash paper themes",
+    "stem": "A 51-year-old with diabetes reports two days of worsening tenderness and redness over one calf. There is a warm irregular 8-cm erythematous patch after a small scratch, a small amount of unilateral swelling and a temperature of 37.8°C. He has palpable varicose veins but no recent operation, immobilisation or known thrombophilia. Several tender enlarged nodes are felt in the groin on the same side.",
+    "ask": "Which finding most directly favours a local skin infection over venous thrombosis?",
+    "options": [
+      "The slight rise in temperature without a recorded temperature above 38°C.",
+      "The tender regional lymph nodes draining the inflamed skin on the same leg.",
+      "The visible superficial varicose veins present before the painful episode started.",
+      "The minor difference in calf circumference measured at the bedside.",
+      "The absence of dyspnoea and chest pain despite unilateral calf swelling."
+    ],
+    "key": "B",
+    "explanations": [
+      "Mild temperature elevation may accompany either inflammation or infection and is not highly discriminating on its own.",
+      "Correct. Regional tender lymphadenopathy reflects a local inflammatory or infectious drainage response, supporting cellulitis. It does not definitively exclude DVT if thromboembolic risk remains.",
+      "Varicose veins can contribute to venous symptoms or superficial thrombophlebitis, but are common and do not identify the current cause.",
+      "Mild calf swelling is nonspecific and can occur in cellulitis, DVT or venous disease. Consider objective DVT assessment if probability remains significant.",
+      "DVT can exist without pulmonary symptoms. Their absence cannot exclude venous thrombosis and does not identify the origin of a red skin patch."
+    ],
+    "pearl": "Tender draining lymph nodes favour cellulitis; assess DVT probability separately when it remains clinically plausible.",
+    "pivot": "Diffuse swelling with little skin inflammation and substantial thrombotic risk may prompt compression ultrasonography.",
+    "management": {
+      "steps": [
+        [
+          "Initial assessment",
+          "Examine skin breaks, spreading erythema, nodes and distal perfusion."
+        ],
+        [
+          "Investigations",
+          "Assess fever, systemic illness and clinical pretest probability of DVT."
+        ],
+        [
+          "Management",
+          "Use indicated cellulitis antibiotics and supportive measures or DVT testing if warranted."
+        ],
+        [
+          "Follow up",
+          "Mark skin margins and arrange review if redness spreads or systemic symptoms develop."
+        ]
+      ],
+      "safety": "Never use lymphadenopathy as a stand-alone test to rule out DVT; serious skin infection signs also demand escalation.",
+      "local": "Apply current Australian guidelines and local health-service pathways."
+    },
+    "source": "https://www.health.qld.gov.au/clinical-practice/guidelines-procedures"
+  },
+  {
+    "n": 53,
+    "domain": "Cardiology & general practice",
+    "skill": "Intermittent palpitations / ambulatory ECG selection",
+    "context": "Revision Blossom Garden · original case inspired by 2024–2025 Monash paper themes",
+    "stem": "A 32-year-old teacher describes sudden episodes of very rapid regular heartbeat lasting three to eight minutes. They have occurred every afternoon for the past five days and terminate abruptly, occasionally while resting. There has been no syncope, chest pain or exertional trigger. Examination, FBC, thyroid function and a resting 12-lead ECG are normal when she is asymptomatic.",
+    "ask": "Which test is most likely to establish the rhythm responsible?",
+    "options": [
+      "Serial troponin measurements while the patient remains pain free in the GP waiting room.",
+      "Repeated spot ECGs at arbitrary times when she reports no ongoing palpitations.",
+      "A 24–48-hour ambulatory ECG monitor given the near-daily frequency of events.",
+      "A plain chest radiograph to detect the electrical origin of the palpitation episodes.",
+      "A formal sleep study before recording any symptom-associated electrocardiographic signal."
+    ],
+    "key": "C",
+    "explanations": [
+      "Troponin assesses possible myocardial injury and does not usually determine the nature of recurrent brief arrhythmias without ischaemic symptoms.",
+      "An ECG between spells may remain entirely normal despite SVT or intermittent atrial arrhythmia; repeated unscheduled recordings can miss events.",
+      "Correct. Frequent near-daily symptoms are suitable for Holter or ambulatory ECG monitoring to correlate symptoms with rhythm; less frequent events need a longer recorder.",
+      "Chest imaging may be useful for structural or pulmonary indications but will not capture transient electrical arrhythmia episodes.",
+      "Sleep investigations are not the primary test for abrupt daytime palpitations with a normal examination and absent sleep symptoms."
+    ],
+    "pearl": "A normal resting ECG does not exclude SVT; select ambulatory-monitor duration based on how often symptoms occur.",
+    "pivot": "Infrequent monthly episodes are better suited to longer event or patch monitoring than a brief 24-hour Holter.",
+    "management": {
+      "steps": [
+        [
+          "Initial assessment",
+          "Assess syncope, exertional symptoms, family history and medications."
+        ],
+        [
+          "Investigations",
+          "Obtain ECG and arrange an appropriate duration of ambulatory monitoring."
+        ],
+        [
+          "Management",
+          "Treat documented rhythm and contributing triggers based on findings."
+        ],
+        [
+          "Follow up",
+          "Review results and provide urgent return advice for syncope, chest pain or severe breathlessness."
+        ]
+      ],
+      "safety": "Do not label intermittent arrhythmia as anxiety solely because symptoms began during a stressful period.",
+      "local": "Apply current Australian guidelines and local health-service pathways."
+    },
+    "source": "https://www.heartfoundation.org.au/for-professionals"
+  },
+  {
+    "n": 54,
+    "domain": "General practice & cardiovascular risk",
+    "skill": "Asymptomatic inpatient BP elevation / confirm persistent hypertension",
+    "context": "Revision Blossom Garden · original case inspired by 2024–2025 Monash paper themes",
+    "stem": "A 39-year-old previously normotensive man is observed overnight for ureteric colic. His pain is now well controlled and kidney function is normal, but blood pressure is 165/101 mmHg on two correctly taken ward readings. He has no headache, focal deficit, chest discomfort, pulmonary oedema or ECG abnormalities. He has taken ibuprofen for several days and has no primary care follow-up arranged.",
+    "ask": "What is the most appropriate plan for his blood pressure?",
+    "options": [
+      "Give an urgent IV antihypertensive infusion until systolic pressure falls below 120 mmHg.",
+      "Apply a glyceryl trinitrate patch to prevent silent end-organ damage overnight.",
+      "Commence two long-term antihypertensive medications before confirming out-of-hospital readings.",
+      "Arrange timely GP review with repeated or ambulatory BP measurements and risk assessment.",
+      "Order urgent adrenal CT imaging because a single inpatient BP elevation proves secondary hypertension."
+    ],
+    "key": "D",
+    "explanations": [
+      "There is no evidence of hypertensive emergency requiring rapid IV reduction. Overtreatment may cause organ hypoperfusion.",
+      "GTN is not indicated for uncomplicated asymptomatic elevated blood pressure and can cause adverse hypotension or headache.",
+      "Sustained hypertension should be established with suitable repeat/out-of-office assessment and clinical context before committing to long-term therapy, unless severity/indications demand earlier action.",
+      "Correct. Confirm persistence with appropriate home or ambulatory BP measurements, review NSAIDs and cardiovascular risk and ensure follow-up rather than treating one episode aggressively.",
+      "Secondary investigations are directed by confirmed hypertension and clues such as hypokalaemia, severe resistance or other suggestive findings, not automatically by isolated ward pressure."
+    ],
+    "pearl": "Raised ward blood pressure without acute organ injury is not synonymous with hypertensive emergency.",
+    "pivot": "New chest pain, stroke signs, acute pulmonary oedema or other organ injury changes the pathway to urgent hypertensive-emergency assessment.",
+    "management": {
+      "steps": [
+        [
+          "Initial assessment",
+          "Repeat BP after rest with an appropriate cuff and check symptoms."
+        ],
+        [
+          "Investigations",
+          "Review medications, renal function, ECG and acute triggers."
+        ],
+        [
+          "Management",
+          "Avoid reflex rapid BP lowering without end-organ injury."
+        ],
+        [
+          "Follow up",
+          "Organise timely primary-care BP confirmation and cardiovascular prevention."
+        ]
+      ],
+      "safety": "Do not cause precipitous hypotension by treating an isolated asymptomatic ward reading too aggressively.",
+      "local": "Apply current Australian guidelines and local health-service pathways."
+    },
+    "source": "https://www.heartfoundation.org.au/for-professionals/clinical-information/hypertension"
+  },
+  {
+    "n": 55,
+    "domain": "Surgery & postoperative complications",
+    "skill": "Anastomotic leak / fever tachycardia and postoperative ileus",
+    "context": "Revision Blossom Garden · original case inspired by 2024–2025 Monash paper themes",
+    "stem": "A 58-year-old underwent a colorectal resection with primary anastomosis four days ago. He remains distended, has not passed flatus and complains of worsening abdominal discomfort. His pulse is 124/min, temperature 38.6°C and BP 98/64 mmHg. The abdomen is diffusely tender; the surgical wound is clean and there is no respiratory source of infection. The ward team suggests simple postoperative constipation.",
+    "ask": "Which complication must be excluded most urgently?",
+    "options": [
+      "Uncomplicated postoperative constipation without systemic infection or anastomotic complication.",
+      "Transient postoperative ileus that is expected to improve without further surgical assessment.",
+      "A purely medication-related motility disturbance from intermittent opioid analgesia alone.",
+      "Functional abdominal bloating related to recent low oral intake and reduced mobility.",
+      "Colorectal anastomotic leak causing intra-abdominal sepsis and impaired bowel function."
+    ],
+    "key": "E",
+    "explanations": [
+      "Constipation can occur after surgery, but cannot safely explain fever, marked tachycardia and worsening diffuse abdominal tenderness.",
+      "Ileus can coexist with an anastomotic leak. It should not be assumed benign when fever and haemodynamic compromise develop.",
+      "Opioids may slow bowel motility, but the systemic inflammatory and haemodynamic findings require investigation beyond medication-related constipation.",
+      "Reduced mobility and oral intake are common, yet are unlikely to cause this combination of systemic toxicity and worsening pain.",
+      "Correct. Anastomotic leak can present with persistent ileus, abdominal pain, fever and tachycardia. Escalate immediately for sepsis resuscitation and senior surgical evaluation, with CT and source control as indicated."
+    ],
+    "pearl": "New tachycardia, fever and prolonged ileus after bowel anastomosis are red flags for anastomotic leakage.",
+    "pivot": "A well patient with gradually improving symptoms and no systemic signs may have uncomplicated postoperative ileus, but this requires reassessment.",
+    "management": {
+      "steps": [
+        [
+          "Initial assessment",
+          "Recognise postoperative sepsis physiology and alert surgery."
+        ],
+        [
+          "Investigations",
+          "Obtain blood tests, cultures and contrast imaging when clinically appropriate."
+        ],
+        [
+          "Management",
+          "Give resuscitation and antibiotics while planning drainage or operative source control."
+        ],
+        [
+          "Follow up",
+          "Monitor perfusion and organ function under a senior surgical plan."
+        ]
+      ],
+      "safety": "A clean external incision cannot exclude a dangerous intra-abdominal anastomotic complication.",
+      "local": "Apply current Australian guidelines and local health-service pathways."
+    },
+    "source": "https://aci.health.nsw.gov.au/networks/eci"
+  },
+  {
+    "n": 56,
+    "domain": "Clinical pharmacology & cardiology",
+    "skill": "Digoxin accumulation with AKI / narrow therapeutic index",
+    "context": "Revision Blossom Garden · original case inspired by 2024–2025 Monash paper themes",
+    "stem": "A 77-year-old taking digoxin for atrial fibrillation presents with nausea, vivid yellow-green visual halos and weakness after several days of poor oral intake. He has also taken ibuprofen for arthritis. His pulse is 43/min, creatinine has risen significantly from baseline and potassium is mildly high. Serum digoxin concentration is above the laboratory reference interval.",
+    "ask": "Which pharmacological principle best explains why a modest change in elimination causes toxicity?",
+    "options": [
+      "Digoxin has a narrow therapeutic index and reduced renal clearance can cause accumulation.",
+      "Digoxin has an extremely wide therapeutic index that usually protects against toxicity.",
+      "Ibuprofen irreversibly activates digoxin receptors and causes a permanent pharmacodynamic effect.",
+      "Digoxin undergoes complete presystemic hepatic metabolism independent of renal function.",
+      "The primary phenomenon is tachyphylaxis, meaning progressively reduced effect during regular dosing."
+    ],
+    "key": "A",
+    "explanations": [
+      "Correct. A small margin between therapeutic and toxic exposure, together with kidney dysfunction, increases risk of dysrhythmia and neurological or gastrointestinal toxicity. Stop exposure and assess severity promptly.",
+      "Digoxin has a comparatively narrow safety margin; a modest increase in blood concentration can be clinically important.",
+      "NSAIDs can contribute to acute renal impairment and digoxin accumulation, but are not known to work by irreversible direct activation of digoxin receptors.",
+      "Renal elimination is clinically important, particularly in older patients and when renal function declines.",
+      "Tachyphylaxis describes diminishing response with repeated drug exposure, not heightened toxic effects from accumulation."
+    ],
+    "pearl": "Digoxin toxicity may cause nausea, visual disturbance and bradyarrhythmias, especially with acute kidney injury.",
+    "pivot": "Life-threatening dysrhythmia, shock or other severe toxicity may require urgent digoxin immune Fab rather than observation alone.",
+    "management": {
+      "steps": [
+        [
+          "Initial assessment",
+          "Assess ABCDE, continuous ECG, renal function, electrolytes and digoxin exposure."
+        ],
+        [
+          "Investigations",
+          "Withhold digoxin and review interacting medicines and potassium."
+        ],
+        [
+          "Management",
+          "Seek toxicology advice; provide antidote/supportive care according to clinical severity."
+        ],
+        [
+          "Follow up",
+          "Reassess kidney recovery and long-term rate or rhythm management."
+        ]
+      ],
+      "safety": "Serum digoxin level must be interpreted with timing and clinical findings; serious toxicity can occur without an extreme number.",
+      "local": "Apply current Australian guidelines and local health-service pathways."
+    },
+    "source": "https://www.poisonsinfo.health.qld.gov.au/for-health-professionals/antidote-stocking-recommendations/digoxin-immune-fab"
+  },
+  {
+    "n": 57,
+    "domain": "Gynaecology & emergency surgery",
+    "skill": "Ovarian torsion / normal Doppler does not exclude",
+    "context": "Revision Blossom Garden · original case inspired by 2024–2025 Monash paper themes",
+    "stem": "A 23-year-old presents with sudden severe left iliac fossa pain and repeated vomiting. Pregnancy test is negative, and a prior scan showed a 7-cm simple left ovarian cyst. Current pelvic ultrasound shows an enlarged ovary with a small amount of free pelvic fluid; Doppler demonstrates some arterial and venous flow. Pain continues despite analgesia, and examination shows marked unilateral tenderness.",
+    "ask": "Which management is most appropriate despite the Doppler finding?",
+    "options": [
+      "Discharge with simple analgesia because arterial Doppler signals rule out ovarian torsion.",
+      "Request immediate gynaecology assessment for possible operative evaluation of torsion.",
+      "Give empirical antibiotics for pelvic inflammatory disease before any specialist discussion.",
+      "Repeat Doppler imaging in a week once the ovarian swelling has had time to resolve.",
+      "Arrange an outpatient MRI as the definitive test before deciding whether torsion is possible."
+    ],
+    "key": "B",
+    "explanations": [
+      "Preserved blood flow does not exclude torsion, particularly with intermittent twisting or dual ovarian blood supply. Discharge risks ovarian ischaemia.",
+      "Correct. Sudden unilateral pain, vomiting and an enlarged cystic ovary carry significant suspicion. Early gynaecological assessment and possible laparoscopy take precedence over reassurance from partial Doppler flow.",
+      "PID is a differential in pelvic pain, but sudden severe onset and vomiting with an adnexal mass is more concerning for torsion. Antibiotics do not reverse twisting.",
+      "A week of delay can result in ovarian necrosis and loss of fertility. A normal or equivocal Doppler trace is not a safe reason for observation in this high-probability case.",
+      "MRI may help in uncertain non-emergency pelvic pathology but should not delay specialist surgical decision-making for suspected acute torsion."
+    ],
+    "pearl": "Ovarian torsion is a clinical-surgical diagnosis; Doppler blood flow does not reliably exclude it.",
+    "pivot": "An ectopic pregnancy remains important with a positive pregnancy test, regardless of known ovarian cysts.",
+    "management": {
+      "steps": [
+        [
+          "Initial assessment",
+          "Assess haemodynamics, pain and pregnancy status urgently."
+        ],
+        [
+          "Investigations",
+          "Review targeted pelvic ultrasound while keeping torsion on the differential."
+        ],
+        [
+          "Management",
+          "Call gynaecology promptly and prepare for surgery if indicated."
+        ],
+        [
+          "Follow up",
+          "Provide postoperative and fertility follow-up based on findings."
+        ]
+      ],
+      "safety": "Do not equate detectable arterial flow with a viable untwisted ovary.",
+      "local": "Apply current Australian guidelines and local health-service pathways."
+    },
+    "source": "https://www.ranzcog.edu.au/"
+  },
+  {
+    "n": 58,
+    "domain": "Surgery & diagnostic biochemistry",
+    "skill": "Postoperative drain / biochemical identification of leak",
+    "context": "Revision Blossom Garden · original case inspired by 2024–2025 Monash paper themes",
+    "stem": "A 61-year-old has an abdominal drain left after complicated pelvic surgery. On day three, its output abruptly increases to 600 mL of straw-coloured fluid in 24 hours. The creatinine concentration in the drain fluid is 570 µmol/L, while her simultaneous serum creatinine is 72 µmol/L. She is mildly tachycardic but afebrile and has no jaundice.",
+    "ask": "Which explanation most directly fits the laboratory relationship?",
+    "options": [
+      "A bile leak demonstrated by a disproportionately raised fluid bilirubin concentration.",
+      "A pancreatic fistula indicated by markedly increased fluid amylase concentration.",
+      "A urinary tract leak reflected by drain creatinine much higher than serum creatinine.",
+      "A chylous leak demonstrated by elevated triglycerides and typically milky drainage.",
+      "An uncomplicated inflammatory serous collection with drain chemistry equal to blood plasma."
+    ],
+    "key": "C",
+    "explanations": [
+      "Bile leak would be supported by fluid bilirubin elevation compared with serum, not a distinctive high drain creatinine-to-serum ratio.",
+      "Pancreatic leakage is assessed using drain amylase and surgical context; creatinine excess does not specifically suggest it.",
+      "Correct. Drain fluid creatinine far exceeding the paired serum level suggests urine, prompting urgent assessment of possible urinary tract injury or leak and urology/surgical consultation.",
+      "Chylous drainage is usually characterised by triglyceride-rich fluid after lymphatic injury, not marked creatinine elevation.",
+      "Ordinary serous fluid generally does not have a creatinine concentration many times higher than serum; that disparity suggests an additional source."
+    ],
+    "pearl": "Fluid bilirubin suggests bile, amylase pancreatic, triglycerides chyle and creatinine urine.",
+    "pivot": "A clear or straw-coloured drain does not rule out urinary leakage; compare drain and serum concentrations.",
+    "management": {
+      "steps": [
+        [
+          "Initial assessment",
+          "Review procedure, abdominal and urinary symptoms, fluid balance and vitals."
+        ],
+        [
+          "Investigations",
+          "Compare drain creatinine with serum and request targeted imaging as advised."
+        ],
+        [
+          "Management",
+          "Contact the operating surgeon and relevant urology specialists promptly."
+        ],
+        [
+          "Follow up",
+          "Manage catheter drainage, repair or diversion as clinically indicated."
+        ]
+      ],
+      "safety": "Do not dismiss a rising postoperative drain volume without examining its biochemical composition and source.",
+      "local": "Apply current Australian guidelines and local health-service pathways."
+    },
+    "source": "https://aci.health.nsw.gov.au/networks/eci"
+  },
+  {
+    "n": 59,
+    "domain": "Emergency & preventive care",
+    "skill": "Tetanus-prone puncture / booster after complete primary series",
+    "context": "Revision Blossom Garden · original case inspired by 2024–2025 Monash paper themes",
+    "stem": "A healthy 33-year-old gardener steps on a nail embedded in soil. The puncture goes through her shoe into the sole of her foot. She completed her primary tetanus vaccinations and received her most recent booster eight years ago. The wound is irrigated and examined; there is no evidence of immunodeficiency or gross devitalised tissue.",
+    "ask": "Which tetanus prophylaxis is most appropriate?",
+    "options": [
+      "Provide neither a vaccine nor immunoglobulin because primary immunisation was completed.",
+      "Administer tetanus immunoglobulin alone because every puncture requires passive protection.",
+      "Provide tetanus toxoid vaccine and immunoglobulin regardless of previous vaccination history.",
+      "Give an indicated tetanus-containing booster without routine tetanus immunoglobulin.",
+      "Give two separate booster doses immediately rather than following standard wound prevention."
+    ],
+    "key": "D",
+    "explanations": [
+      "The wound is tetanus-prone and the last booster was more than five years ago, so a booster is generally indicated.",
+      "A fully vaccinated immunocompetent adult does not routinely need immunoglobulin for this presentation; passive protection is primarily for incomplete or uncertain protection in tetanus-prone wounds.",
+      "Giving both is unnecessary for someone with a completed primary course and an appropriate vaccination history, unless special indications exist.",
+      "Correct. A contaminated deep puncture warrants a booster when the last tetanus dose was five or more years earlier. TIG is not routinely indicated after a full primary series in an immunocompetent person.",
+      "Two boosters at once do not improve immediate prevention and increase unnecessary vaccine exposure; follow the recommended interval and documentation."
+    ],
+    "pearl": "A dirty puncture wound generally needs a booster after five years, compared with longer intervals for clean minor wounds.",
+    "pivot": "Incomplete primary vaccination, unknown history or significant immunodeficiency changes immunoglobulin assessment.",
+    "management": {
+      "steps": [
+        [
+          "Initial assessment",
+          "Irrigate, assess depth and remove contamination safely."
+        ],
+        [
+          "Investigations",
+          "Confirm immunisation history and wound classification."
+        ],
+        [
+          "Management",
+          "Administer an indicated tetanus-containing booster."
+        ],
+        [
+          "Follow up",
+          "Provide infection, retained-foreign-body and wound-review advice."
+        ]
+      ],
+      "safety": "Tetanus management complements wound cleaning; do not automatically prescribe TIG to fully vaccinated adults.",
+      "local": "Apply current Australian guidelines and local health-service pathways."
+    },
+    "source": "https://immunisationhandbook.health.gov.au/contents/vaccine-preventable-diseases/tetanus"
+  },
+  {
+    "n": 60,
+    "domain": "General practice & ENT",
+    "skill": "Acute otitis externa / canal localisation and non-ototoxic drops",
+    "context": "Revision Blossom Garden · original case inspired by 2024–2025 Monash paper themes",
+    "stem": "A 17-year-old swimmer has increasing left ear pain for four days with watery discharge and pain on chewing. Pulling the pinna or pressing the tragus is very painful. Otoscopy reveals an inflamed oedematous external canal with debris; the drum cannot be clearly visualised. She has no mastoid tenderness, fever or recent upper respiratory symptoms.",
+    "ask": "Which initial management approach best fits the likely condition?",
+    "options": [
+      "Prescribe oral amoxicillin for presumed acute bacterial otitis media with perforation.",
+      "Arrange immediate mastoid surgery because tragal tenderness indicates deep mastoid infection.",
+      "Treat with oral antihistamines alone because blocked Eustachian tube is the likely mechanism.",
+      "Instil alcohol-based drying drops despite uncertainty about tympanic membrane integrity.",
+      "Treat acute otitis externa with appropriate non-ototoxic topical drops and canal care."
+    ],
+    "key": "E",
+    "explanations": [
+      "Otitis media can produce discharge after perforation, but tragal/pinna manipulation pain and swollen canal localise the infection externally. Routine oral amoxicillin is not first line.",
+      "Mastoiditis is associated with systemic illness, postauricular signs or mastoid tenderness, none described. It still merits reassessment if red flags develop.",
+      "Eustachian tube dysfunction causes pressure and conductive hearing change but would not usually produce marked tragal tenderness and canal swelling.",
+      "Alcohol or potentially ototoxic drops should be avoided when the tympanic membrane may be perforated; their use could worsen pain or cause injury.",
+      "Correct. Acute otitis externa is likely. Use analgesia, topical quinolone or other non-ototoxic therapy safe if drum status is uncertain, and consider a wick for severe canal oedema."
+    ],
+    "pearl": "Tragal and pinna tenderness with canal swelling strongly suggest otitis externa rather than middle-ear infection.",
+    "pivot": "Diabetes, immunocompromise, cranial nerve symptoms or severe unremitting pain warrant assessment for necrotising otitis externa.",
+    "management": {
+      "steps": [
+        [
+          "Initial assessment",
+          "Assess pain, ear canal, pinna, mastoid and red flags."
+        ],
+        [
+          "Investigations",
+          "Avoid forceful irrigation when tympanic membrane status is uncertain."
+        ],
+        [
+          "Management",
+          "Treat with adequate analgesia and safe topical therapy; consider a wick."
+        ],
+        [
+          "Follow up",
+          "Keep ear dry and review if worsening or not improving."
+        ]
+      ],
+      "safety": "Use non-ototoxic drops if perforation cannot be excluded and refer severe or complicated infection.",
+      "local": "Apply current Australian guidelines and local health-service pathways."
+    },
+    "source": "https://www.health.qld.gov.au/clinical-practice/guidelines-procedures"
   }
 ]
