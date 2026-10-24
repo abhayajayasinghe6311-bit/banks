@@ -10,7 +10,7 @@ Source materials uploaded by user:
 
 **Creative brief**: 100 NEW original five-option final-year clinical reasoning MCQs inspired by the supplied practice review (NOT a copy or republication of past-paper stems). Mimic Monash exam cognitive level: prioritise the *next* step, identify the most important discriminatory sign, appropriate initial test, safe management escalation, interpretation of ECG/ABG/imaging, ward-intern decisions, and plausible distractors. Australian guidance preferred. Include clinically specific rationales for all five options, management.steps exactly four stages, safety, diagnostic pivot, pearl, and trustworthy guideline source URL.
 
-**Progress (latest authored checkpoint): 15/100**. A=3 B=3 C=3 D=3 E=3. No published Bank 16 yet. Keep Banks 1–15 unchanged, and retain all user account answer state. The homepage manifest currently ends with Bank 15.
+**Progress (latest authored checkpoint): 25/100**. A=5 B=5 C=5 D=5 E=5. No published Bank 16 yet. Keep Banks 1–15 unchanged, and retain all user account answer state. The homepage manifest currently ends with Bank 15.
 
 User's actual missed 2025 questions and concepts (extracted from the review):
 - 10: ocular chemical exposure — start irrigation before pH/referral;
@@ -48,3 +48,9 @@ Technical JSON schema = bank15.json: {n,domain,skill,context,stem,ask,options:[5
 QA after every batch: sequential n starting 1; 5 nonempty plausible options with similar word length (difference typically <=5, maximum <=8); 5 distinct detailed option explanations; 4 actionable stages with useful management details; no duplicated skill/stem/near-duplicates from Banks 1–15; no dangerous wrong treatment; guideline URL checked where feasible; balance answer letters exactly 20 each at final 100; preserve GitHub content through SHA-checked writes.
 
 When the bank reaches 100 after medical QA, publish via fresh branch from main: copy **only** final bank16.json and add Bank 16 in manifest.json. Suggested name: "Monash Past-Paper Remix Garden", emoji "📚", description "100 original cases calibrated to 2024–2025 Monash review papers, with high-yield safe decisions and five detailed option explanations". Make PR/merge, check main manifest and published JSON and test Pages HTTP if possible. Do not claim HTTP live verification without actually checking.
+
+## 2026-10-24 additional checkpoint: 25/100 drafted
+- Q16–25 added to bank16.json: pump DKA testing, post-splenectomy fever, PEA pharmacology, post-MI cardiorenal pulmonary oedema, severe asthma CO2, PE vs pulmonary infection, denosumab-associated hypocalcaemia, postoperative haemorrhage and re-exploration, specificity 100% ruling in disease, and perioperative SGLT2 withholding.
+- 25 original questions, 25 unique sequential numbers, correct keys A=5/B=5/C=5/D=5/E=5.
+- Important: the *uploaded* PDFs reproduce faculty/past-paper wording. Do NOT copy that wording into a public bank. Continue producing novel cases based on tested reasoning skills.
+- Remaining 75 questions. Build balanced 5–15-question batches, verify Australian guideline claims including current doses and thresholds. Do not publish until 100 and full QA.
