@@ -646,7 +646,7 @@
       "Endoscopy may stop the bleeding but resuscitation cannot wait until diagnostic or therapeutic procedures begin."
     ],
     "pearl": "Short, wide peripheral IV access can outperform ordinary multilumen central access for rapid transfusion.",
-    "pivot": "When large peripheral veins cannot be accessed, seek IO or specialist rapid-infusion access.",
+    "pivot": "If two large-bore peripheral IVs cannot be obtained during life-threatening haemorrhage, activate senior anaesthetic/critical-care assistance and use intraosseous access or a suitable large-bore rapid-infusion central device while continuing blood-product resuscitation; do not rely on a narrow triple-lumen line for rapid transfusion.",
     "management": {
       "steps": [
         [
@@ -694,7 +694,7 @@
       "Correct. Jaw thrust can relieve soft-tissue obstruction rapidly, followed by appropriate suction, oxygen, bag-mask ventilation and experienced airway assistance."
     ],
     "pearl": "Call for help, open the obstructed airway and ventilate; investigation comes after oxygenation.",
-    "pivot": "Persistent stridor despite positioning may be laryngospasm or swelling requiring anaesthetic expertise.",
+    "pivot": "If jaw thrust and repositioning fail and stridor or hypoxia persists, call anaesthesia immediately, provide oxygen and positive-pressure ventilation as appropriate, assess for laryngospasm or airway swelling, and prepare advanced airway management rather than delaying for radiology.",
     "management": {
       "steps": [
         [
@@ -742,7 +742,7 @@
       "Insulin concentration does not substitute for blood ketones; osmolality is relevant to dehydration and HHS but insufficient to identify DKA."
     ],
     "pearl": "Pump users have no long-acting insulin depot; line interruption can cause DKA rapidly.",
-    "pivot": "A patient receiving SGLT2 inhibitors can develop ketoacidosis even without marked hyperglycaemia.",
+    "pivot": "If the patient takes an SGLT2 inhibitor, ketoacidosis can occur with glucose below the usual DKA threshold: check capillary blood ketones and venous pH/bicarbonate regardless of glucose, stop the SGLT2 inhibitor and use an appropriate DKA protocol when confirmed.",
     "management": {
       "steps": [
         [
@@ -790,7 +790,7 @@
       "Home observation risks delayed presentation after deterioration. Emergency evaluation and antibiotic treatment are time-sensitive."
     ],
     "pearl": "Fever in a person without a spleen deserves urgent evaluation and antibiotics, even before severe signs appear.",
-    "pivot": "When recovered, review vaccinations, prophylactic antibiotics and the family's written emergency fever plan.",
+    "pivot": "After recovery from suspected overwhelming post-splenectomy infection, review pneumococcal, meningococcal and Hib immunisations, confirm any prophylactic or standby antibiotic plan and provide written instructions to seek emergency care for future fever; these preventive steps never replace urgent treatment of an acute febrile episode.",
     "management": {
       "steps": [
         [
@@ -838,7 +838,7 @@
       "Beta-blockade may further reduce cardiac output and has no role in the initial non-shockable ALS pathway."
     ],
     "pearl": "Distinguish a slow rhythm with a pulse from PEA: the latter is cardiac arrest.",
-    "pivot": "VF or pulseless VT calls for unsynchronised defibrillation; PEA does not.",
+    "pivot": "If the arrest rhythm becomes ventricular fibrillation or pulseless ventricular tachycardia, deliver prompt unsynchronised defibrillation with ongoing CPR and ALS medications; for persistent PEA, continue high-quality CPR, adrenaline according to protocol and investigation of reversible causes without shocking a non-shockable rhythm.",
     "management": {
       "steps": [
         [
@@ -1030,7 +1030,7 @@
       "Paracetamol is not a usual cause of acute symptomatic hypocalcaemia; looking for a time-related medication effect is more informative."
     ],
     "pearl": "Denosumab can cause dangerous hypocalcaemia, especially in CKD; monitor calcium and vitamin D status.",
-    "pivot": "Symptomatic tetany or arrhythmia from hypocalcaemia may require monitored IV calcium and senior input.",
+    "pivot": "If denosumab-associated hypocalcaemia produces tetany, seizures, prolonged QT or arrhythmia, institute monitored IV calcium gluconate with ECG and repeated ionised calcium checks, correct magnesium/vitamin D deficits and seek renal/endocrine input; mild asymptomatic deficiency may be treated orally with close follow-up.",
     "management": {
       "steps": [
         [
@@ -1462,7 +1462,7 @@
       "Glucagon may be considered in selected refractory beta-blocker-associated reactions, not as routine initial therapy."
     ],
     "pearl": "Anaphylaxis can occur without skin signs; IM adrenaline must not be delayed by antihistamines.",
-    "pivot": "Persistent shock after appropriate IM adrenaline and fluids requires specialist-led refractory anaphylaxis management.",
+    "pivot": "If anaphylactic hypotension persists despite appropriate repeated IM adrenaline and IV crystalloid, activate critical-care/anaesthetic support, reassess airway and circulation, and start a monitored IV adrenaline infusion only under experienced supervision according to the refractory anaphylaxis protocol.",
     "management": {
       "steps": [
         [
@@ -1654,7 +1654,7 @@
       "Correct. In severe asthma, carboprost is generally avoided because of bronchospasm risk; consider alternatives such as misoprostol and balloon tamponade under the PPH protocol."
     ],
     "pearl": "The next uterotonic in PPH depends on comorbidities: carboprost can cause bronchospasm, while ergometrine is problematic in hypertension.",
-    "pivot": "With hypertension or pre-eclampsia, ergometrine is also unsuitable; consider drug-specific contraindications and mechanical escalation.",
+    "pivot": "If postpartum haemorrhage persists after oxytocin in a patient with asthma, avoid carboprost where bronchospasm risk is significant; if hypertension or pre-eclampsia is also present, avoid ergometrine and move to appropriate alternative uterotonics, tranexamic acid, bimanual compression, balloon tamponade and theatre escalation.",
     "management": {
       "steps": [
         [
@@ -2134,7 +2134,7 @@
       "Correct. Even small burns of hands warrant early specialist discussion because healing, movement and scarring can impair grip and fine motor function. Cooling, analgesia, dressings and hand therapy remain relevant."
     ],
     "pearl": "Burn referral depends on the site and function as well as area and depth.",
-    "pivot": "Extensive burns or suspected inhalation injury require a separate major-burn resuscitation pathway.",
+    "pivot": "If a burn involves extensive body surface area, airway soot, hoarseness or suspected inhalation injury, move beyond routine hand-burn dressings to ABCDE resuscitation, early airway/major-burn team discussion, indicated fluid resuscitation and urgent specialist transfer.",
     "management": {
       "steps": [
         [
@@ -2326,7 +2326,7 @@
       "Catecholamine testing can evaluate suspected phaeochromocytoma but is not most targeted when spontaneous hypokalaemia accompanies sustained severe hypertension."
     ],
     "pearl": "Severe or resistant hypertension with unexplained hypokalaemia should prompt primary aldosteronism screening.",
-    "pivot": "Hypokalaemia can suppress aldosterone and mislead testing; sample conditions and medication interference matter.",
+    "pivot": "If the patient is hypokalaemic or taking interfering antihypertensives, correct potassium and coordinate safe medication adjustment before aldosterone-renin testing with specialist advice; if an adrenal incidentaloma is found, biochemical confirmation and appropriate subtype testing still precede treatment decisions.",
     "management": {
       "steps": [
         [
@@ -2422,7 +2422,7 @@
       "Epidural injection is sometimes considered for persistent disabling symptoms after clinical review; it is not automatically the first intervention on day one."
     ],
     "pearl": "Severe pain alone does not mandate urgent MRI when neurologic power, reflexes and sphincter function are preserved.",
-    "pivot": "New retention, saddle anaesthesia, progressive weakness or bilateral neurological change requires urgent MRI/spinal assessment.",
+    "pivot": "If new urinary retention, saddle anaesthesia, bilateral sciatica or progressive weakness occurs, treat as suspected cauda equina syndrome: perform urgent focused neurological/bladder assessment, obtain emergency MRI and contact spinal surgery rather than continuing routine physiotherapy.",
     "management": {
       "steps": [
         [
@@ -2470,7 +2470,7 @@
       "DVT can exist without pulmonary symptoms. Their absence cannot exclude venous thrombosis and does not identify the origin of a red skin patch."
     ],
     "pearl": "Tender draining lymph nodes favour cellulitis; assess DVT probability separately when it remains clinically plausible.",
-    "pivot": "Diffuse swelling with little skin inflammation and substantial thrombotic risk may prompt compression ultrasonography.",
+    "pivot": "If unilateral swelling occurs without clear warmth or skin infection but with recent surgery, immobility or cancer, assess DVT pretest probability and obtain compression venous ultrasound when indicated; do not use lymph-node findings alone to exclude a clot.",
     "management": {
       "steps": [
         [
@@ -2998,7 +2998,7 @@
       "Reduced activity is concerning if substantial, but is nonspecific without its pattern and severity. The missing diarrhoea warns against prematurely assuming gastroenteritis."
     ],
     "pearl": "Vomiting is not synonymous with gastroenteritis; bilious emesis, episodic pain or drowsiness are important alternate-diagnosis clues.",
-    "pivot": "If green bilious vomiting develops, urgently assess for bowel obstruction and surgical emergencies.",
+    "pivot": "If vomiting becomes clearly dark green (bilious), keep the child nil by mouth, assess hydration and haemodynamics and obtain urgent paediatric surgical review for obstruction/volvulus rather than treating as simple viral gastroenteritis.",
     "management": {
       "steps": [
         [
@@ -3142,7 +3142,7 @@
       "Renal imaging and evaluation of obstructive aetiology may guide further treatment, particularly with new renal impairment or suspected upper tract obstruction."
     ],
     "pearl": "Acute retention requires relief of obstruction and monitoring; PSA interpretation can wait.",
-    "pivot": "A suspected urethral injury after trauma contraindicates blind urethral catheterisation and needs specialist assessment.",
+    "pivot": "If urethral injury is suspected after pelvic trauma (blood at meatus, pelvic fracture or perineal haematoma), do not attempt blind urethral catheterisation; call urology/trauma and arrange appropriate urethral imaging or specialist urinary diversion.",
     "management": {
       "steps": [
         [
