@@ -958,5 +958,245 @@
       "local": "Use current Australian and local hospital clinical practice."
     },
     "source": "https://www.rch.org.au/clinicalguide/guideline_index/Asthma_acute/"
+  },
+  {
+    "n": 21,
+    "domain": "Respiratory & vascular medicine",
+    "skill": "PE after admission / high pretest probability",
+    "context": "New original clinical cases inspired by 2024–2025 Monash SPA-W reviews",
+    "stem": "A 67-year-old with COPD is brought in after sudden pleuritic chest pain and unexplained hypoxia. He was discharged from hospital last week after an infective admission. Temperature is normal, WCC and CRP are not elevated, and lung auscultation is comparatively clear. A bedside radiograph reveals no sizeable infiltrate or effusion.",
+    "ask": "Which diagnosis is most important to investigate promptly?",
+    "options": [
+      "Acute pulmonary embolism related to recent hospitalisation and immobility.",
+      "Uncomplicated right-sided pneumonia despite no inflammatory or radiographic changes.",
+      "Large pleural effusion despite normal percussion and no visible fluid collection.",
+      "Simple COPD exacerbation despite absent wheeze and sudden pleuritic pain.",
+      "Uncomplicated costochondritis despite objective hypoxaemia and recent admission."
+    ],
+    "key": "A",
+    "explanations": [
+      "Correct. Recent immobility and abrupt pleuritic pain with hypoxia and relatively clear lungs raise PE probability; assess haemodynamic risk and obtain appropriate definitive imaging.",
+      "Pneumonia can sometimes have atypical findings, but the sudden onset and lack of infection markers make it less compelling here.",
+      "A significant pleural effusion commonly gives dullness and fluid on imaging; the stated findings make it less likely.",
+      "COPD can cause hypoxia but does not fully explain sudden focal pleuritic pain, recent admission and absence of an obvious exacerbation pattern.",
+      "Costochondritis can cause reproducible pain, but should not explain hypoxaemia; serious cardiopulmonary causes need exclusion."
+    ],
+    "pearl": "Think PE when disproportionate hypoxia or pleuritic pain occurs with relatively clear lung examination.",
+    "pivot": "High clinical probability leads to imaging; D-dimer alone cannot rule out PE in high-risk patients.",
+    "management": {
+      "steps": [
+        [
+          "Recognise",
+          "Assess vitals, oxygen requirement, clinical PE probability and shock."
+        ],
+        [
+          "Assess",
+          "Investigate with CTPA or appropriate alternative; assess renal and contrast risks."
+        ],
+        [
+          "Treat",
+          "Start anticoagulation when indicated after bleeding risk review and diagnostic pathway."
+        ],
+        [
+          "Reassess",
+          "Check RV strain and plan admission, treatment duration and provoking risks."
+        ]
+      ],
+      "safety": "Normal oxygen saturation or a benign chest examination does not safely rule out PE.",
+      "local": "Use current Australian guidelines and local hospital policy."
+    },
+    "source": "https://www.thanz.org.au/"
+  },
+  {
+    "n": 22,
+    "domain": "Geriatrics & prescribing",
+    "skill": "Denosumab hypocalcaemia / CKD and bone turnover",
+    "context": "New original clinical cases inspired by 2024–2025 Monash SPA-W reviews",
+    "stem": "A 79-year-old treated for osteoporosis presents with circumoral tingling and painful hand spasms ten days after an injection. She has stage 4 CKD. Calcium is 1.78 mmol/L and magnesium is mildly reduced; potassium is normal. Her medicines include perindopril, an SGLT2 inhibitor, metformin and six-monthly denosumab.",
+    "ask": "Which medicine is the most likely contributor?",
+    "options": [
+      "Perindopril through angiotensin-converting-enzyme inhibition and altered renal potassium excretion.",
+      "Denosumab through reduced osteoclastic calcium release, particularly in chronic kidney disease.",
+      "Metformin through impaired vitamin absorption causing isolated acute severe hypocalcaemia.",
+      "Empagliflozin through urinary glucose excretion and acute direct loss of serum calcium.",
+      "A standard low-dose paracetamol regimen through reduced intestinal calcium absorption."
+    ],
+    "key": "B",
+    "explanations": [
+      "Perindopril can raise potassium or creatinine but is not the main recognised cause of profound hypocalcaemia after an injection.",
+      "Correct. RANKL inhibition suppresses osteoclast-mediated bone resorption; advanced CKD increases susceptibility to serious denosumab-associated hypocalcaemia.",
+      "Long-term metformin is associated with vitamin B12 issues, not a characteristic acute calcium drop with tetany.",
+      "SGLT2 inhibitors influence volume and metabolic outcomes, but the timing and calcium physiology most strongly implicate denosumab.",
+      "Paracetamol is not a usual cause of acute symptomatic hypocalcaemia; looking for a time-related medication effect is more informative."
+    ],
+    "pearl": "Denosumab can cause dangerous hypocalcaemia, especially in CKD; monitor calcium and vitamin D status.",
+    "pivot": "Symptomatic tetany or arrhythmia from hypocalcaemia may require monitored IV calcium and senior input.",
+    "management": {
+      "steps": [
+        [
+          "Recognise",
+          "Recognise symptomatic low calcium and assess ECG/QT changes."
+        ],
+        [
+          "Assess",
+          "Check corrected or ionised calcium, magnesium, phosphate, vitamin D and kidney function."
+        ],
+        [
+          "Treat",
+          "Provide calcium replacement appropriate to severity, with ECG monitoring if needed."
+        ],
+        [
+          "Reassess",
+          "Review denosumab suitability and preventive supplementation before future doses."
+        ]
+      ],
+      "safety": "Correct magnesium deficiency where present and avoid assuming paresthesia is benign anxiety.",
+      "local": "Use current Australian guidelines and local hospital policy."
+    },
+    "source": "https://www.tga.gov.au/"
+  },
+  {
+    "n": 23,
+    "domain": "Surgery & postoperative care",
+    "skill": "Early postoperative haemorrhage / re-exploration",
+    "context": "New original clinical cases inspired by 2024–2025 Monash SPA-W reviews",
+    "stem": "A 41-year-old underwent laparoscopic upper abdominal surgery yesterday. She now has worsening diffuse pain and a progressively firm, tender swelling near the operative site. She is pale, pulse is 114/min and haemoglobin has fallen from 138 g/L before surgery to 101 g/L. Oxygenation remains normal and she has no fever.",
+    "ask": "Which response most safely addresses the likely complication?",
+    "options": [
+      "Order routine bowel aperients to relieve discomfort from postoperative constipation.",
+      "Treat pain with extra opioids and schedule routine surgical review tomorrow.",
+      "Escalate immediately for suspected operative bleeding and possible urgent re-exploration.",
+      "Arrange an erect chest radiograph first to quantify expected postoperative free gas.",
+      "Provide a diet trial and observe because postoperative pain is expected after laparoscopy."
+    ],
+    "key": "C",
+    "explanations": [
+      "Aperients would not treat a substantial fall in haemoglobin or enlarging tender mass and may distract from haemorrhage.",
+      "Pain relief is appropriate concurrently, but worsening pain plus pallor and falling haemoglobin demand immediate surgical assessment.",
+      "Correct. A large haemoglobin drop with worsening pain and focal swelling raises concern for internal bleeding or haematoma; resuscitate and obtain urgent senior surgical decisions on imaging versus theatre.",
+      "Some free gas may persist after laparoscopy but cannot explain the full haemodynamic and haematological picture; radiography should not postpone escalation.",
+      "Postoperative soreness is common, but escalating pain with blood loss is not reassuring. Oral intake may be unsafe if urgent theatre is required."
+    ],
+    "pearl": "An otherwise normal SpO₂ does not exclude postoperative blood loss.",
+    "pivot": "Operative re-exploration timing is a senior surgical decision; instability may require immediate theatre without further scans.",
+    "management": {
+      "steps": [
+        [
+          "Recognise",
+          "Review shock signs, abdominal examination and operative documentation."
+        ],
+        [
+          "Assess",
+          "Repeat FBC, crossmatch, coagulation and bedside imaging if appropriate."
+        ],
+        [
+          "Treat",
+          "Resuscitate and contact the responsible surgeon urgently about source control."
+        ],
+        [
+          "Reassess",
+          "Monitor observations and haemoglobin and prepare for definitive treatment."
+        ]
+      ],
+      "safety": "Do not label progressive postoperative pain with significant haemoglobin fall as routine ileus.",
+      "local": "Use current Australian guidelines and local hospital policy."
+    },
+    "source": "https://aci.health.nsw.gov.au/networks/eci"
+  },
+  {
+    "n": 24,
+    "domain": "Evidence-based medicine & statistics",
+    "skill": "Specificity 100% / positive result interpretation",
+    "context": "New original clinical cases inspired by 2024–2025 Monash SPA-W reviews",
+    "stem": "A validated diagnostic test used in a study has 80% sensitivity and 100% specificity, with a clearly defined population and no observed false positives. A clinician argues that the negative results are therefore more reliable than positive results for excluding disease. Assume these performance characteristics are exact in the question.",
+    "ask": "Which inference is correct under those idealised assumptions?",
+    "options": [
+      "Twenty per cent of unaffected people receive false-positive results from this assay.",
+      "The assay can rule out the condition reliably because sensitivity approaches perfection.",
+      "A negative test completely excludes the condition because specificity reaches one hundred per cent.",
+      "A positive result rules in the condition because the test produces no false positives.",
+      "The predictive value of a positive test must equal the disease prevalence exactly."
+    ],
+    "key": "D",
+    "explanations": [
+      "An 80% sensitivity is the true-positive rate; specificity of 100% means the false-positive rate is zero, not 20%.",
+      "Sensitivity of 80% leaves false negatives, so a negative cannot reliably exclude disease.",
+      "Specificity addresses people without disease, not the false negatives among affected patients.",
+      "Correct. If specificity truly equals 100%, no unaffected patient tests positive; a positive result must be a true positive in the idealised model.",
+      "Positive predictive value depends on prevalence as well as test characteristics; with zero false positives, PPV is ideally 100% wherever true positives occur."
+    ],
+    "pearl": "SpPin: high SPecificity, positive rules IN; SnNout: high SeNsitivity, negative rules OUT.",
+    "pivot": "Real studies report estimates with confidence intervals; observed 100% specificity does not guarantee zero false positives in all future settings.",
+    "management": {
+      "steps": [
+        [
+          "Recognise",
+          "Identify sensitivity, specificity and population prevalence."
+        ],
+        [
+          "Assess",
+          "Draw a two-by-two table for affected and unaffected groups."
+        ],
+        [
+          "Treat",
+          "Calculate test positives and negatives, including false-negative results."
+        ],
+        [
+          "Reassess",
+          "Explain the interpretation and limitations of measured performance."
+        ]
+      ],
+      "safety": "Do not treat an estimated 100% specificity from a small sample as infallible in practice.",
+      "local": "Use current Australian guidelines and local hospital policy."
+    },
+    "source": "https://www.aihw.gov.au/reports/australias-health/screening"
+  },
+  {
+    "n": 25,
+    "domain": "Perioperative diabetes & prescribing",
+    "skill": "SGLT2 inhibitor / preoperative fasting risk",
+    "context": "New original clinical cases inspired by 2024–2025 Monash SPA-W reviews",
+    "stem": "A 56-year-old with type 2 diabetes takes metformin, empagliflozin, amlodipine and a proton pump inhibitor. She is scheduled for elective abdominal surgery in four days and asks which regular medicine needs a planned interruption to reduce metabolic complications from fasting and surgical stress.",
+    "ask": "Which action is most appropriate?",
+    "options": [
+      "Continue every medicine until the operating-table assessment to avoid perioperative hyperglycaemia.",
+      "Stop the proton pump inhibitor several days before surgery to reduce aspiration risk.",
+      "Stop amlodipine alone for three days because it increases ketone production during fasting.",
+      "Stop metformin permanently because all diabetes drugs create the same euglycaemic ketosis risk.",
+      "Withhold empagliflozin for the recommended preoperative interval and monitor ketones if unwell."
+    ],
+    "key": "E",
+    "explanations": [
+      "SGLT2 inhibitors are associated with perioperative ketoacidosis even when glucose is not markedly high, so universal continuation is unsafe.",
+      "A proton pump inhibitor does not confer the specific euglycaemic DKA risk described.",
+      "Amlodipine is not an SGLT2 inhibitor and is not the culprit medicine for perioperative euglycaemic ketosis.",
+      "Metformin may have separate perioperative considerations, but this question asks about the specific SGLT2-related ketoacidosis risk.",
+      "Correct. Australian guidance commonly withholds empagliflozin at least three days inclusive of surgery day (two prior days plus day of surgery); assess ketones and local restart guidance."
+    ],
+    "pearl": "Perioperative SGLT2 inhibitors risk euglycaemic DKA; normal glucose cannot exclude it.",
+    "pivot": "A symptomatic post-operative patient with nausea, vomiting and acidosis needs ketone/VBG assessment even if bedside glucose is near normal.",
+    "management": {
+      "steps": [
+        [
+          "Recognise",
+          "Review diabetes medicines and planned fasting and operation."
+        ],
+        [
+          "Assess",
+          "Plan SGLT2 interruption with the anaesthetic/diabetes team."
+        ],
+        [
+          "Treat",
+          "Monitor glycaemia, ketones and clinical status if unwell."
+        ],
+        [
+          "Reassess",
+          "Restart when eating, drinking and metabolically stable per local plan."
+        ]
+      ],
+      "safety": "Do not restart an SGLT2 inhibitor while fasting or during unresolved ketoacidosis risk.",
+      "local": "Use current Australian guidelines and local hospital policy."
+    },
+    "source": "https://www.safetyandquality.gov.au/"
   }
 ]
