@@ -56,18 +56,18 @@
     "ask": "Which action is most appropriate now?",
     "options": [
       "Give an additional antiemetic and keep the nasogastric tube clamped for the planned interval.",
-      "Restore nasogastric drainage and re-examine for persistent or worsening bowel obstruction.",
       "Remove the nasogastric tube now to prevent additional discomfort and throat irritation.",
       "Obtain an abdominal radiograph before changing the current nasogastric management plan.",
-      "Offer small sips of oral clear fluids to assess whether intestinal transit has returned."
+      "Offer small sips of oral clear fluids to assess whether intestinal transit has returned.",
+      "Restore nasogastric drainage and re-examine for persistent or worsening bowel obstruction."
     ],
-    "key": "B",
+    "key": "E",
     "explanations": [
       "Adding drugs treats the symptom but ignores likely accumulation above a persistent obstruction. A clamp trial should be stopped when intolerance develops.",
-      "Correct. Unclamping provides decompression and relief. Reassess abdominal pain, distension, output and systemic signs, then update the surgical team.",
       "Removing the tube sacrifices decompression just when the patient demonstrates ongoing need for it; this may increase vomiting and aspiration risk.",
       "Imaging may be needed if obstruction worsens or is uncertain, but reopening an existing drain is the immediate low-risk bedside step.",
-      "Oral fluids after recurrent retching risk vomiting and aspiration. Return to nil by mouth until the treating team reassesses obstruction resolution."
+      "Oral fluids after recurrent retching risk vomiting and aspiration. Return to nil by mouth until the treating team reassesses obstruction resolution.",
+      "Correct. Unclamping provides decompression and relief. Reassess abdominal pain, distension, output and systemic signs, then update the surgical team."
     ],
     "pearl": "Recurrent nausea after NG clamping is evidence of an unsuccessful clamp trial, not automatically a need for more antiemetics.",
     "pivot": "A patient tolerating a clamp without nausea or distension may proceed toward removal under the surgical plan.",
@@ -151,17 +151,17 @@
     "stem": "An eight-year-old falls against a fence and sustains a clean 3.5-cm curved forearm skin flap immediately adjacent to the elbow. After anaesthesia and irrigation, there is no foreign body or exposed tendon; the flap remains well perfused and the margins can be approximated without undue tension. The area repeatedly flexes with normal movement.",
     "ask": "Which closure method is most suitable?",
     "options": [
+      "Close with appropriate sutures after careful neurovascular and tendon examination.",
       "Leave the wound entirely open despite healthy edges and no contamination or tissue loss.",
       "Apply a thin tissue-adhesive layer alone across the actively flexing elbow crease.",
-      "Close with appropriate sutures after careful neurovascular and tendon examination.",
       "Apply adhesive strips only because the laceration is close to a major joint.",
       "Refer for split-thickness skin grafting despite the availability of tension-free closure."
     ],
-    "key": "C",
+    "key": "A",
     "explanations": [
+      "Correct. Sutures secure viable tissue across a mobile area when edges can be approximated; assess function, circulation and injury depth before closure.",
       "Secondary intention may be appropriate for contaminated or non-closable wounds, but adds unnecessary healing time here.",
       "Tissue glue works best on dry low-tension cuts. Repeated elbow movement raises the risk of dehiscence in this deeper flap wound.",
-      "Correct. Sutures secure viable tissue across a mobile area when edges can be approximated; assess function, circulation and injury depth before closure.",
       "Strips are less secure when the area moves, becomes moist or has a flap with significant tension. They are useful for simpler low-tension wounds.",
       "A graft is unnecessary when healthy tissue allows primary approximation; grafts add a donor-site wound and may contract across a joint."
     ],
@@ -346,16 +346,16 @@
       "Acute pulmonary embolism producing obstructive shock despite preserved oxygen saturation.",
       "Drug-triggered anaphylaxis causing vasodilatation without any allergic features.",
       "Simple dehydration that should resolve entirely after one more large fluid bolus.",
-      "Sepsis-related vasoplegia with altered vascular resistance despite fluid replacement.",
-      "Chronic autonomic neuropathy presenting as an isolated new febrile illness."
+      "Chronic autonomic neuropathy presenting as an isolated new febrile illness.",
+      "Sepsis-related vasoplegia with altered vascular resistance despite fluid replacement."
     ],
-    "key": "D",
+    "key": "E",
     "explanations": [
       "PE is an important shock differential but does not explain the infectious syndrome as directly as persistent sepsis-related circulatory failure.",
       "Anaphylaxis is plausible after a new drug, but no temporal association, wheeze, rash or angioedema is described.",
       "Fluid deficit may coexist, yet persistent low pressure after resuscitation with warm peripheries should prompt reassessment for vasodilatory shock.",
-      "Correct. Infection can trigger vasodilatation, capillary leakage and maldistributed perfusion. Reassess fluid responsiveness and consider vasopressors while treating the infection source.",
-      "Autonomic dysfunction can blunt pressure regulation but is not the most supported acute diagnosis without relevant history."
+      "Autonomic dysfunction can blunt pressure regulation but is not the most supported acute diagnosis without relevant history.",
+      "Correct. Infection can trigger vasodilatation, capillary leakage and maldistributed perfusion. Reassess fluid responsiveness and consider vasopressors while treating the infection source."
     ],
     "pearl": "Warm shock with infection can remain hypotensive even when hydration appears adequate; classify the shock physiology.",
     "pivot": "If perfusion deteriorates despite appropriate fluid assessment, initiate critical-care vasopressor support, not endless blind boluses.",
