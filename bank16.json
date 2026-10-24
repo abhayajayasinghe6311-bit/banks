@@ -718,5 +718,245 @@
       "local": "Australian clinical practice: apply local policy and senior advice."
     },
     "source": "https://www.anzcor.org/home/basic-life-support/"
+  },
+  {
+    "n": 16,
+    "domain": "Medicine & endocrinology",
+    "skill": "Insulin pump failure / DKA investigation",
+    "context": "Original Monash 2024–2025 review-inspired final-year question",
+    "stem": "A 20-year-old with type 1 diabetes reports that her insulin-pump tubing came loose overnight. This morning she has abdominal pain, vomiting and deep breathing; her glucose is 24 mmol/L and she is dehydrated. A trainee requests HbA1c and fasting glucose but has not yet checked blood ketones.",
+    "ask": "Which combination most directly confirms the time-critical diagnosis?",
+    "options": [
+      "Venous gas to assess acidosis and bedside blood beta-hydroxybutyrate to assess ketosis.",
+      "A glycated haemoglobin result and a fasting glucose reading taken once nausea resolves.",
+      "Urine glucose dipstick and a nonurgent serum C-peptide concentration.",
+      "Microalbuminuria screen and fasting lipid profile after intravenous hydration.",
+      "Serum insulin assay and plasma osmolality alone before ketone assessment."
+    ],
+    "key": "A",
+    "explanations": [
+      "Correct. DKA is a triad of hyperglycaemia, ketonaemia and acidosis; blood ketones plus venous gas rapidly establish the mechanism.",
+      "HbA1c assesses chronic glycaemic exposure, not acute acid-base severity. Waiting for fasting glucose delays resuscitation.",
+      "Glycosuria is nonspecific; C-peptide is unnecessary to diagnose DKA in someone known to have type 1 diabetes.",
+      "Albuminuria and lipids assess chronic risk, not the acute metabolic emergency.",
+      "Insulin concentration does not substitute for blood ketones; osmolality is relevant to dehydration and HHS but insufficient to identify DKA."
+    ],
+    "pearl": "Pump users have no long-acting insulin depot; line interruption can cause DKA rapidly.",
+    "pivot": "A patient receiving SGLT2 inhibitors can develop ketoacidosis even without marked hyperglycaemia.",
+    "management": {
+      "steps": [
+        [
+          "Recognise",
+          "Assess airway, breathing, circulation and volume depletion."
+        ],
+        [
+          "Investigate",
+          "Check blood ketones, VBG, electrolytes and renal function."
+        ],
+        [
+          "Treat",
+          "Begin local DKA IV fluid/insulin protocol after checking potassium."
+        ],
+        [
+          "Follow up",
+          "Identify pump fault and arrange diabetes-team review before safe discharge."
+        ]
+      ],
+      "safety": "Never delay suspected DKA treatment while waiting for HbA1c or urine ketones.",
+      "local": "Use current Australian and local hospital clinical practice."
+    },
+    "source": "https://www.diabetesaustralia.com.au/"
+  },
+  {
+    "n": 17,
+    "domain": "Paediatrics & infectious disease",
+    "skill": "Fever after splenectomy / overwhelming sepsis risk",
+    "context": "Original Monash 2024–2025 review-inspired final-year question",
+    "stem": "An 11-year-old who had a splenectomy after trauma presents with temperature 38.9°C and mild sore throat. He has not completed his pneumococcal boosters. He is currently talking normally and has normal capillary refill. His parent wonders whether he could take paracetamol and return if the fever lasts three days.",
+    "ask": "What is the safest response?",
+    "options": [
+      "Treat presumed viral illness symptomatically because the child's perfusion is currently normal.",
+      "Arrange urgent medical assessment and early empirical antibiotics for possible overwhelming infection.",
+      "Wait for a positive throat or blood culture before considering treatment with antibiotics.",
+      "Offer catch-up vaccination without additional assessment because this prevents acute bacterial sepsis.",
+      "Observe overnight at home so that fever patterns can help distinguish viral from bacterial illness."
+    ],
+    "key": "B",
+    "explanations": [
+      "Well appearance early in an illness does not exclude rapidly progressive postsplenectomy bacterial sepsis.",
+      "Correct. Asplenia increases susceptibility to life-threatening encapsulated bacterial infection; fever is an emergency even if focal signs are few.",
+      "Cultures should be taken promptly where possible, but waiting for positivity could allow fulminant infection to progress.",
+      "Vaccination is essential prevention but cannot protect the child from a current invasive infection once symptoms begin.",
+      "Home observation risks delayed presentation after deterioration. Emergency evaluation and antibiotic treatment are time-sensitive."
+    ],
+    "pearl": "Fever in a person without a spleen deserves urgent evaluation and antibiotics, even before severe signs appear.",
+    "pivot": "When recovered, review vaccinations, prophylactic antibiotics and the family's written emergency fever plan.",
+    "management": {
+      "steps": [
+        [
+          "Recognise",
+          "Identify postsplenectomy risk and assess sepsis observations."
+        ],
+        [
+          "Investigate",
+          "Obtain cultures and basic bloods without delaying treatment."
+        ],
+        [
+          "Treat",
+          "Administer empirical antibiotics according to local paediatric sepsis protocol."
+        ],
+        [
+          "Follow up",
+          "Reassess immunisation records and provide ongoing fever-action advice."
+        ]
+      ],
+      "safety": "Do not wait for meningism, rash or shock in a febrile asplenic child.",
+      "local": "Use current Australian and local hospital clinical practice."
+    },
+    "source": "https://www.rch.org.au/clinicalguide/guideline_index/SEPSIS_assessment_and_management/"
+  },
+  {
+    "n": 18,
+    "domain": "Emergency medicine & cardiology",
+    "skill": "Pulseless electrical activity / appropriate ALS medication",
+    "context": "Original Monash 2024–2025 review-inspired final-year question",
+    "stem": "Staff find a 70-year-old unresponsive and apnoeic. The monitor shows an organised narrow-complex rhythm at 32 beats/min, but a prompt central pulse check detects no pulse. CPR begins. One clinician suggests atropine because the displayed ventricular rate is very slow.",
+    "ask": "Which drug belongs in the immediate arrest pathway?",
+    "options": [
+      "Atropine 600 micrograms IV because the electrical rhythm is bradycardic.",
+      "Amiodarone 300 mg IV because all pulseless rhythms are shockable.",
+      "Adrenaline 1 mg IV or IO during CPR, while investigating reversible causes.",
+      "Adenosine 6 mg IV because the visible QRS complexes are narrow.",
+      "Metoprolol 5 mg IV because the conduction pattern remains organised."
+    ],
+    "key": "C",
+    "explanations": [
+      "Atropine may be used for symptomatic bradycardia with a pulse; it is not a routine treatment for PEA arrest.",
+      "Amiodarone is used for selected refractory shockable arrest rhythms, not for PEA.",
+      "Correct. No mechanical output despite electrical activity defines PEA; CPR, adrenaline and reversible-cause treatment are indicated, not defibrillation.",
+      "Adenosine targets particular tachycardias with a pulse. It cannot restore output in a pulseless slow rhythm.",
+      "Beta-blockade may further reduce cardiac output and has no role in the initial non-shockable ALS pathway."
+    ],
+    "pearl": "Distinguish a slow rhythm with a pulse from PEA: the latter is cardiac arrest.",
+    "pivot": "VF or pulseless VT calls for unsynchronised defibrillation; PEA does not.",
+    "management": {
+      "steps": [
+        [
+          "Recognise",
+          "Confirm unresponsiveness, abnormal breathing and absent pulse."
+        ],
+        [
+          "Investigate",
+          "Initiate CPR, monitor rhythm and assess reversible Hs and Ts."
+        ],
+        [
+          "Treat",
+          "Give IV/IO adrenaline on the current ANZCOR non-shockable pathway."
+        ],
+        [
+          "Follow up",
+          "Continue cycles and document reversible cause and response."
+        ]
+      ],
+      "safety": "Do not shock an organised pulseless rhythm simply because the patient is in arrest.",
+      "local": "Use current Australian and local hospital clinical practice."
+    },
+    "source": "https://www.anzcor.org/home/adult-advanced-life-support/guideline-11-2-protocols-for-adult-advanced-life-support/"
+  },
+  {
+    "n": 19,
+    "domain": "Medicine & cardiology",
+    "skill": "Left ventricular failure after MI / cardiorenal deterioration",
+    "context": "Original Monash 2024–2025 review-inspired final-year question",
+    "stem": "A 63-year-old develops orthopnoea and oliguria one day after a large anterior STEMI. Examination reveals an elevated JVP, bilateral crackles and cool extremities. Radiography shows symmetrical perihilar pulmonary oedema, and creatinine has risen despite no substantial fluid administration.",
+    "ask": "Which explanation best connects the clinical abnormalities?",
+    "options": [
+      "New aspiration pneumonia is responsible for both the wet lungs and kidney failure.",
+      "Simple dehydration is reducing renal flow and causing diffuse pulmonary opacification.",
+      "Primary glomerulonephritis is causing pulmonary oedema independently of the infarction.",
+      "Acute left ventricular pump dysfunction causes congestion and impaired renal perfusion.",
+      "An isolated right-sided pleural effusion has precipitated all systemic findings."
+    ],
+    "key": "D",
+    "explanations": [
+      "Aspiration may complicate admission but the heart-failure findings and MI chronology provide a more cohesive explanation.",
+      "Dehydration does not easily explain raised JVP and pulmonary congestion; large fluids risk worsening respiratory failure.",
+      "Glomerulonephritis is not suggested by the chronology or other findings and is a less direct cause.",
+      "Correct. Poor LV function raises pulmonary venous pressures and lowers forward flow, causing pulmonary oedema and cardiorenal dysfunction.",
+      "An isolated pleural effusion does not produce this widespread pulmonary congestion and post-MI low-output pattern."
+    ],
+    "pearl": "Acute cardiac decompensation can reduce kidney filtration while total body fluid is elevated.",
+    "pivot": "An increase in creatinine with raised JVP is not automatically an indication for additional IV crystalloid.",
+    "management": {
+      "steps": [
+        [
+          "Recognise",
+          "Assess ABC, oxygenation, BP and shock signs."
+        ],
+        [
+          "Investigate",
+          "Use ECG, bedside echo, fluid balance and serial kidney tests."
+        ],
+        [
+          "Treat",
+          "Give cardiology-directed treatment of pulmonary congestion and poor perfusion."
+        ],
+        [
+          "Follow up",
+          "Monitor urine output, electrolytes and need for intensive care."
+        ]
+      ],
+      "safety": "Indiscriminate crystalloid resuscitation can worsen cardiogenic pulmonary oedema.",
+      "local": "Use current Australian and local hospital clinical practice."
+    },
+    "source": "https://www.heartfoundation.org.au/for-professionals/clinical-information/heart-failure"
+  },
+  {
+    "n": 20,
+    "domain": "Respiratory medicine & critical care",
+    "skill": "Severe asthma / normalising CO2 and ventilatory failure",
+    "context": "Original Monash 2024–2025 review-inspired final-year question",
+    "stem": "A 27-year-old with acute asthma has received repeated salbutamol, ipratropium, systemic steroids and magnesium. She now speaks only in words, has a near-silent chest, and is progressively tired. Saturation is 96% with oxygen via mask. Arterial gas shows pH 7.27 and PaCO2 49 mmHg.",
+    "ask": "What does the blood gas indicate in context?",
+    "options": [
+      "The normal oxygen saturation excludes an impending respiratory arrest.",
+      "Bronchodilators have improved ventilation because PaCO2 has risen towards normal.",
+      "The measured acidaemia is purely metabolic and unrelated to asthma severity.",
+      "Stable carbon dioxide during severe bronchospasm is an expected reassuring finding.",
+      "The patient is developing ventilatory failure and needs immediate senior airway assistance."
+    ],
+    "key": "E",
+    "explanations": [
+      "Supplemental oxygen can maintain saturation even while ventilation is failing and carbon dioxide is accumulating.",
+      "In early asthma the patient often hyperventilates and CO2 falls; a rise despite persistent distress is concerning for exhaustion.",
+      "The increased PaCO2 with reduced pH signifies respiratory acidosis, not isolated metabolic pathology.",
+      "A normal or raised PaCO2 in an exhausted asthmatic is ominous, particularly with reduced air movement.",
+      "Correct. Rising CO2, acidemia, exhaustion and a silent chest are signs of impending respiratory arrest; call ICU/anaesthesia immediately while continuing treatment."
+    ],
+    "pearl": "Beware a ‘normal’ CO2 in life-threatening asthma: fatigue may be replacing earlier hyperventilation.",
+    "pivot": "A truly improving patient has reduced work of breathing and better air entry, not exhaustion.",
+    "management": {
+      "steps": [
+        [
+          "Recognise",
+          "Activate rapid resuscitation and expert airway help."
+        ],
+        [
+          "Investigate",
+          "Continue monitored oxygen, bronchodilators and systemic therapies."
+        ],
+        [
+          "Treat",
+          "Prepare controlled ventilation only with experienced airway support."
+        ],
+        [
+          "Follow up",
+          "Track clinical effort, gases and complications after stabilisation."
+        ]
+      ],
+      "safety": "Intubation in severe asthma can cause dynamic hyperinflation and must be performed by skilled teams.",
+      "local": "Use current Australian and local hospital clinical practice."
+    },
+    "source": "https://www.rch.org.au/clinicalguide/guideline_index/Asthma_acute/"
   }
 ]
