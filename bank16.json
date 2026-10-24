@@ -3742,5 +3742,341 @@
       "local": "Apply current Australian guidance with senior review and local hospital pathways."
     },
     "source": "https://www.health.qld.gov.au/__data/assets/pdf_file/0013/1215031/6.Obstetrics-and-neonatal.pdf"
+  },
+  {
+    "n": 79,
+    "domain": "Obstetrics & intrapartum emergencies",
+    "skill": "Cord prolapse after amniotomy / immediate decompression",
+    "context": "Revision Blossom Garden · original Australian-guideline Monash-style scenario",
+    "stem": "A 34-year-old at 39 weeks is undergoing induction with oxytocin. Immediately after artificial rupture of membranes, the fetal heart rate falls to 70/min. Vaginal examination reveals a pulsating loop of cord below the fetal head, which is still high. The cervix is 5 cm dilated, and birth is not imminent. A midwife has already summoned the obstetric emergency team.",
+    "ask": "Which immediate action best protects the fetus while definitive delivery is arranged?",
+    "options": [
+      "Attempt to replace the visible cord above the head and resume oxytocin.",
+      "Wait for repeat CTG tracing before deciding whether operative birth is necessary.",
+      "Encourage active maternal pushing to shorten the remaining first stage of labour.",
+      "Manually elevate the presenting part off the cord and prepare emergency birth.",
+      "Clamp the exposed cord immediately to reduce blood flow and fetal bradycardia."
+    ],
+    "key": "D",
+    "explanations": [
+      "Replacing or repeatedly handling the cord risks vasospasm and does not reliably remove compression; leave it minimally handled.",
+      "Persistent fetal bradycardia with a cord palpated below the head is a clinical emergency, not a tracing to watch before acting.",
+      "The cervix is only 5 cm dilated and birth is not imminent; pushing cannot provide timely safe delivery.",
+      "Correct. Elevate the fetal head manually to relieve compression, position the woman knee-chest or left lateral with hips raised, stop oxytocin and expedite emergency caesarean unless vaginal birth is truly imminent.",
+      "Clamping the cord stops fetal blood flow and would worsen hypoxia. The priority is preventing compression until delivery."
+    ],
+    "pearl": "Cord prolapse requires simultaneous relief of compression and expedited birth; the examining hand may need to remain in place.",
+    "pivot": "If full dilatation is present and the head is on the perineum with birth immediately achievable, senior obstetric staff may expedite operative vaginal delivery rather than transfer for caesarean.",
+    "management": {
+      "steps": [
+        [
+          "Recognise",
+          "Declare cord prolapse, call the obstetric emergency response and stop oxytocin."
+        ],
+        [
+          "Assess",
+          "Elevate the presenting part manually and place mother knee-chest or hips-raised lateral."
+        ],
+        [
+          "Act",
+          "Prepare emergency caesarean, continuous fetal assessment and neonatal resuscitation."
+        ],
+        [
+          "Reassess",
+          "Maintain decompression until delivery; document times, interventions and newborn outcome."
+        ]
+      ],
+      "safety": "Do not push the cord back, clamp it, or abandon manual elevation during transfer unless another safe decompression method is established.",
+      "local": "Apply current Australian guidance with senior review and local hospital pathways."
+    },
+    "source": "https://www.kemh.health.wa.gov.au/~/media/HSPs/NMHS/Hospitals/WNHS/Documents/Clinical-guidelines/Obs-Gyn-Guidelines/Cord-Prolapse.pdf"
+  },
+  {
+    "n": 80,
+    "domain": "Gastroenterology & emergency medicine",
+    "skill": "Suspected variceal haemorrhage / treatment before endoscopy",
+    "context": "Revision Blossom Garden · original Australian-guideline Monash-style scenario",
+    "stem": "A 57-year-old with known alcohol-related cirrhosis presents after vomiting a large amount of fresh blood. He has ascites and spider naevi, BP 101/65 mmHg, HR 116/min and haemoglobin 86 g/L. IV access and resuscitation are underway. The gastroenterology registrar can perform urgent endoscopy after stabilisation but asks whether specific variceal treatment should wait until varices are seen.",
+    "ask": "What is the best immediate additional treatment strategy?",
+    "options": [
+      "Give IV proton-pump inhibitor alone and wait for the first endoscopic image.",
+      "Start high-dose corticosteroids for presumed portal hypertensive gastropathy.",
+      "Give prophylactic platelets regardless of platelet count and defer other medicines.",
+      "Arrange elective beta-blocker therapy before considering endoscopic intervention.",
+      "Start vasoactive therapy and IV antibiotic prophylaxis now while arranging endoscopy."
+    ],
+    "key": "E",
+    "explanations": [
+      "A PPI can be appropriate when non-variceal bleeding is possible, but it does not replace vasoactive drugs and antibiotic prophylaxis for likely variceal bleeding.",
+      "Corticosteroids do not control acute portal-hypertensive haemorrhage and add infection risk without a separate indication.",
+      "Transfusion decisions should be guided by haemodynamics and laboratory results; blanket platelets do not treat the underlying portal hypertension.",
+      "Nonselective beta-blockers have a role in prevention after stabilisation, not as first-line control of active haematemesis.",
+      "Correct. Australian NSW ACI guidance supports prompt terlipressin or octreotide and antibiotic prophylaxis for suspected variceal bleeding before confirmation, with resuscitation and early endoscopic therapy."
+    ],
+    "pearl": "Suspected variceal bleed: resuscitation, early vasoactive medication and antibiotics, then timely endoscopy—do not wait for proof of varices.",
+    "pivot": "If endoscopy identifies a non-variceal peptic ulcer source, stop variceal-specific therapy when appropriate and use endoscopic haemostasis plus guideline-directed PPI treatment.",
+    "management": {
+      "steps": [
+        [
+          "Recognise",
+          "Assess airway protection, shock and transfusion needs with large-bore access."
+        ],
+        [
+          "Assess",
+          "Take FBC, coagulation, group/crossmatch and evaluate portal-hypertension features."
+        ],
+        [
+          "Act",
+          "Begin vasoactive therapy and antibiotics; coordinate urgent endoscopy after stabilisation."
+        ],
+        [
+          "Reassess",
+          "Monitor rebleeding, encephalopathy and complications; plan secondary prophylaxis if varices confirmed."
+        ]
+      ],
+      "safety": "Active massive haematemesis may require airway protection and urgent resuscitation before endoscopy; avoid uncritical overtransfusion.",
+      "local": "Apply current Australian guidance with senior review and local hospital pathways."
+    },
+    "source": "https://aci.health.nsw.gov.au/networks/eci/clinical/tools/upper-gastrointestinal-bleeding"
+  },
+  {
+    "n": 81,
+    "domain": "General practice & medication safety",
+    "skill": "Weekly methotrexate taken daily / urgent toxicity response",
+    "context": "Revision Blossom Garden · original Australian-guideline Monash-style scenario",
+    "stem": "A 62-year-old with rheumatoid arthritis is newly prescribed oral methotrexate 15 mg weekly. A medication reconciliation reveals she has instead taken 15 mg every morning for five consecutive days. She now has painful mouth ulcers and nausea. Her last blood count was normal three weeks ago; she has stage 3 chronic kidney disease. She asks whether she can simply skip tomorrow's tablet and see her GP next week.",
+    "ask": "What is the safest next step?",
+    "options": [
+      "Stop methotrexate and arrange urgent toxicology/ED assessment for folinic-acid rescue.",
+      "Reduce the methotrexate to half the daily dose and add oral folic acid.",
+      "Continue the daily tablets because mucositis is a common harmless adverse effect.",
+      "Wait for pancytopenia on routine blood tests before discussing any antidote.",
+      "Switch methotrexate to a daily injection to bypass the gastrointestinal side effects."
+    ],
+    "key": "A",
+    "explanations": [
+      "Correct. Daily administration of a weekly methotrexate dose can be life-threatening, with mucositis and delayed marrow suppression. Withhold it immediately, seek urgent poisons/toxicology advice and assess renal function, blood counts and need for folinic acid.",
+      "Lowering a mistakenly daily regimen does not correct the prescribing-frequency error. Ordinary folic acid supplementation is not an adequate substitute for specialist rescue of overdose.",
+      "Mucositis can be an early sign of toxicity, and severe cytopenias may develop later. Continuing would compound cumulative exposure.",
+      "Delaying until cytopenias appear sacrifices the opportunity for earlier rescue and monitoring; toxicity is clinically significant already.",
+      "Injectable methotrexate would continue systemic exposure and worsen toxicity. The issue is excess frequency, not poor oral absorption."
+    ],
+    "pearl": "Low-dose methotrexate for inflammatory disease is generally ONCE WEEKLY; daily dosing errors can cause fatal marrow suppression.",
+    "pivot": "If a patient is correctly taking a weekly dose with mild uncomplicated nausea and normal counts, review administration technique, folic acid supplementation and rheumatology follow-up rather than initiate overdose rescue.",
+    "management": {
+      "steps": [
+        [
+          "Recognise",
+          "Confirm exact tablets, doses, dates, renal disease and co-medications."
+        ],
+        [
+          "Assess",
+          "Withhold methotrexate and check FBC, renal function, liver tests and clinical toxicity."
+        ],
+        [
+          "Act",
+          "Contact poisons/toxicology urgently about folinic-acid rescue and hospital observation."
+        ],
+        [
+          "Reassess",
+          "Repeat blood counts and renal assessment as advised; correct the medication schedule before discharge."
+        ]
+      ],
+      "safety": "Normal early FBC does not exclude delayed marrow suppression after repeated methotrexate overdoses.",
+      "local": "Apply current Australian guidance with senior review and local hospital pathways."
+    },
+    "source": "https://cec.health.nsw.gov.au/therapeutics-safety/high-risk/methotrexate"
+  },
+  {
+    "n": 82,
+    "domain": "Psychiatry & toxicology",
+    "skill": "Chronic lithium toxicity precipitated by NSAID and dehydration",
+    "context": "Revision Blossom Garden · original Australian-guideline Monash-style scenario",
+    "stem": "A 48-year-old with bipolar I disorder has taken stable-dose lithium for three years. After developing knee pain he started ibuprofen most days, then had two days of vomiting and reduced fluid intake. His partner reports new coarse tremor, unsteady walking and slowed responses. Pulse is 98/min and BP 112/70 mmHg. His next lithium dose is due in one hour.",
+    "ask": "What is the most appropriate immediate management plan?",
+    "options": [
+      "Continue lithium because toxicity is unlikely after several years on a stable dose.",
+      "Withhold lithium and obtain urgent lithium level, renal function and toxicology review.",
+      "Treat the tremor with propranolol and schedule a routine lithium level next month.",
+      "Increase the lithium dose because vomiting may reduce its intestinal absorption.",
+      "Give activated charcoal to bind the remaining circulating lithium in the bloodstream."
+    ],
+    "key": "B",
+    "explanations": [
+      "Chronic toxicity can occur when renal clearance falls despite a previously stable dose; NSAIDs and dehydration are classic precipitants.",
+      "Correct. Hold lithium immediately, assess neurological/cardiac status, measure serum lithium and renal/electrolyte function, correct dehydration appropriately and seek urgent toxicology advice. Severe cases may require extracorporeal removal.",
+      "Propranolol may treat benign lithium tremor, but new ataxia and cognitive slowing after NSAID exposure indicate possible toxicity requiring urgent evaluation.",
+      "Vomiting and volume depletion reduce lithium clearance; increasing the dose would worsen accumulation.",
+      "Activated charcoal does not bind lithium effectively. Management centres on stopping exposure, supportive care, serial levels and specialist dialysis decisions when indicated."
+    ],
+    "pearl": "Coarse tremor, ataxia and confusion are lithium toxicity warning signs even if the usual dose has not changed.",
+    "pivot": "If a well patient has a fine stable tremor, normal renal function and a therapeutic trough level, review caffeine, interactions and dose timing with the treating psychiatrist rather than treating as acute poisoning.",
+    "management": {
+      "steps": [
+        [
+          "Recognise",
+          "Withhold lithium and assess gait, consciousness, hydration and ECG."
+        ],
+        [
+          "Assess",
+          "Order lithium concentration, UEC/creatinine and repeat levels as advised."
+        ],
+        [
+          "Act",
+          "Consult toxicology, correct fluid depletion safely and review NSAID exposure."
+        ],
+        [
+          "Reassess",
+          "Monitor neurological course and renal clearance; arrange medication safety follow-up."
+        ]
+      ],
+      "safety": "Clinical toxicity severity does not always track a single serum level, especially in chronic exposure; assess the patient, not just the number.",
+      "local": "Apply current Australian guidance with senior review and local hospital pathways."
+    },
+    "source": "https://australianprescriber.tg.org.au/articles/lithium-therapy-and-its-interactions.html"
+  },
+  {
+    "n": 83,
+    "domain": "Surgery & inpatient ward care",
+    "skill": "Postoperative low urine output / bladder retention before fluid loading",
+    "context": "Revision Blossom Garden · original Australian-guideline Monash-style scenario",
+    "stem": "Six hours after an uncomplicated elective inguinal hernia repair, a 68-year-old man has passed no urine. He is alert, BP 128/74 mmHg, HR 84/min, with no fever or bleeding. He reports increasing suprapubic pressure and has a palpable fullness above the pubic symphysis. A colleague suggests giving another litre of crystalloid because the urine output chart is blank.",
+    "ask": "Which investigation should be done before prescribing more fluid?",
+    "options": [
+      "Order CT abdomen and pelvis to exclude a postoperative intra-abdominal abscess.",
+      "Measure serum sodium alone to distinguish renal from postrenal oliguria.",
+      "Perform a bedside bladder scan to assess for acute urinary retention.",
+      "Request urgent cystoscopy before any non-invasive assessment of the bladder.",
+      "Administer IV furosemide and monitor the first response before examining further."
+    ],
+    "key": "C",
+    "explanations": [
+      "Abscess is unlikely within hours of an uncomplicated operation without systemic findings; the bladder findings suggest retention.",
+      "Electrolytes may be needed if renal dysfunction is suspected, but sodium alone does not distinguish a distended bladder from true low urine production.",
+      "Correct. Bedside bladder ultrasound rapidly distinguishes postoperative urinary retention from true oliguria. If significant retention is confirmed, decompress using an appropriate catheter plan and document drained volume.",
+      "Cystoscopy is not the initial test for uncomplicated retention. It may be needed if catheterisation is difficult or injury is suspected.",
+      "Diuretics can worsen a distended bladder and are not appropriate without evaluating a mechanical outflow problem."
+    ],
+    "pearl": "No urine in the bag or chart is not automatically low kidney output; a distended bladder points to retention.",
+    "pivot": "If the bladder scan shows an empty bladder and the patient is hypotensive after surgery, investigate true oliguria from hypovolaemia, bleeding or renal injury and resuscitate according to findings instead of inserting a catheter reflexively.",
+    "management": {
+      "steps": [
+        [
+          "Recognise",
+          "Assess vitals, volume status, suprapubic findings and recent medications."
+        ],
+        [
+          "Assess",
+          "Perform bladder scan and review voiding history and operation type."
+        ],
+        [
+          "Act",
+          "If retention is confirmed, catheterise per protocol and seek advice if difficult."
+        ],
+        [
+          "Reassess",
+          "Record residual/drained volume and plan trial of void and recurrence prevention."
+        ]
+      ],
+      "safety": "After recent urological, gynaecological or spinal surgery, do not attempt catheterisation without relevant surgical-team advice.",
+      "local": "Apply current Australian guidance with senior review and local hospital pathways."
+    },
+    "source": "https://aci.health.nsw.gov.au/ecat/adult/urinary-retention"
+  },
+  {
+    "n": 84,
+    "domain": "Neonatology & paediatric surgery",
+    "skill": "Single green vomit in neonate / volvulus exclusion",
+    "context": "Revision Blossom Garden · original Australian-guideline Monash-style scenario",
+    "stem": "A 12-day-old term neonate is brought to an urgent-care clinic after one episode of distinctly dark-green vomiting. She had been feeding normally and is now awake with normal temperature, heart rate and capillary refill. Her abdomen is soft, and she has passed stool today. A clinician suggests observing her for another green vomit because she currently appears comfortable.",
+    "ask": "What is the safest next step?",
+    "options": [
+      "Trial smaller feeds with oral rehydration and arrange routine review in 48 hours.",
+      "Prescribe an antiemetic and discharge if no further vomiting occurs within one hour.",
+      "Order outpatient ultrasound in several days because bowel movements remain present.",
+      "Keep nil by mouth and arrange immediate emergency paediatric surgical assessment.",
+      "Reassure the parents because volvulus always causes marked distension before vomiting."
+    ],
+    "key": "D",
+    "explanations": [
+      "Feeding trials are unsafe until obstruction is excluded; malrotation with volvulus can cause rapid bowel ischaemia.",
+      "Stopping vomiting after medication does not exclude a dangerous mechanical obstruction and cannot justify discharge.",
+      "Outpatient imaging would dangerously delay exclusion of midgut volvulus; urgent surgical evaluation and appropriate imaging are required.",
+      "Correct. Green bilious vomiting in a neonate is obstruction until proven otherwise. Keep the infant fasting, arrange urgent ED/paediatric surgical review, IV support and imaging directed by specialists.",
+      "A neonate with volvulus can look deceptively well early, and normal stool passage does not exclude a proximal or evolving obstruction."
+    ],
+    "pearl": "One truly GREEN vomit in a newborn is enough to trigger urgent surgical assessment; do not wait for the second episode.",
+    "pivot": "If the vomit is clearly milk-coloured, the baby is thriving and has no red flags, assess feeding technique and reflux, offer feeding advice and review rather than activate the bilious-obstruction pathway.",
+    "management": {
+      "steps": [
+        [
+          "Recognise",
+          "Confirm colour of vomit, vital signs, hydration and abdominal findings."
+        ],
+        [
+          "Assess",
+          "Keep nil by mouth and organise urgent emergency transfer and surgical consultation."
+        ],
+        [
+          "Act",
+          "Provide IV access, glucose/fluid support and appropriate imaging after specialist discussion."
+        ],
+        [
+          "Reassess",
+          "Monitor for shock, peritonitis or further bilious emesis while awaiting definitive care."
+        ]
+      ],
+      "safety": "Malrotation with volvulus can progress to intestinal necrosis before abdominal signs become obvious.",
+      "local": "Apply current Australian guidance with senior review and local hospital pathways."
+    },
+    "source": "https://www.rch.org.au/clinicalguide/guideline_index/Vomiting/"
+  },
+  {
+    "n": 85,
+    "domain": "Obstetrics & antenatal fetal assessment",
+    "skill": "Decreased fetal movements / normal home Doppler is not reassurance",
+    "context": "Revision Blossom Garden · original Australian-guideline Monash-style scenario",
+    "stem": "A 31-year-old at 34 weeks' gestation calls her Victorian maternity unit because her baby has moved much less than usual since morning. She has no pain or vaginal bleeding. A relative used a home Doppler and believes they heard a heartbeat. The patient asks whether she can eat something sweet and wait until the next antenatal appointment. Her pregnancy has otherwise been uncomplicated.",
+    "ask": "What is the most appropriate advice and initial clinical assessment?",
+    "options": [
+      "Ask her to count movements overnight and call only if none occur by morning.",
+      "Advise a cold drink and left-lateral rest before considering hospital attendance.",
+      "Arrange an ultrasound appointment in one week because the home Doppler detected a heartbeat.",
+      "Reassure her that fetal sleep cycles explain any reduction after 28 weeks' gestation.",
+      "Request immediate maternity assessment with fetal heart confirmation and timely CTG."
+    ],
+    "key": "E",
+    "explanations": [
+      "Delaying assessment until morning is specifically discouraged; maternal perception of reduced movements warrants prompt review.",
+      "Food, cold drinks and resting do not reliably exclude fetal compromise and should not be used to delay attendance.",
+      "An ultrasound may be needed after assessment, but a week's delay is inappropriate for a current change in movements.",
+      "Normal sleep cycles do not justify dismissing a persistent reduction. Home Doppler use cannot establish fetal wellbeing.",
+      "Correct. Safer Care Victoria advises immediate contact/attendance, prompt confirmation of fetal heart distinct from maternal pulse and CTG within two hours; persistent concern or risk factors may require ultrasound within 24 hours and senior review."
+    ],
+    "pearl": "Reduced fetal movements require assessment now, not home reassurance from a Doppler or a sugary drink.",
+    "pivot": "If movements have returned to normal and a reassuring CTG is documented with normal growth and no risk factors, provide return precautions and routine antenatal follow-up; persistent concern despite normal CTG needs senior review and ultrasound.",
+    "management": {
+      "steps": [
+        [
+          "Recognise",
+          "Advise immediate presentation to maternity triage without home waiting strategies."
+        ],
+        [
+          "Assess",
+          "Confirm fetal heart distinct from maternal pulse and assess maternal observations."
+        ],
+        [
+          "Act",
+          "Perform CTG promptly and arrange senior review or ultrasound when indicated."
+        ],
+        [
+          "Reassess",
+          "Document fetal movement history, findings, safety-net advice and follow-up."
+        ]
+      ],
+      "safety": "Do not reassure based on a home Doppler; hearing a heartbeat does not assess oxygenation or fetal wellbeing.",
+      "local": "Apply current Australian guidance with senior review and local hospital pathways."
+    },
+    "source": "https://www.safercare.vic.gov.au/best-practice-improvement/clinical-guidance/maternity/decreased-fetal-movements"
   }
 ]
