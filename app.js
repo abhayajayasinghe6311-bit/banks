@@ -555,7 +555,7 @@ function displayOrder(q){
 function visibleLetter(q,canonical){const pos=displayOrder(q).indexOf(ABC.indexOf(canonical));return pos<0?'?':ABC[pos];}
 function displayIndexLetter(q,index){return visibleLetter(q,ABC[index]);}
 function optionHtml(q,selected,review=false){return displayOrder(q).map((i,pos)=>{const option=q.options[i],letter=ABC[i],label=ABC[pos],correct=letter===q.key,isSelected=letter===selected;let cls='choice';if(selected){if(correct)cls+=' true';if(isSelected)cls+=correct?' selected correct':' selected incorrect';}return `<button type="button" class="${cls}" data-choice="${letter}" ${selected?'disabled':''}><span class="letter">${label}</span><span>${safe(option)}</span></button>`;}).join('');}
-function explHtml(q){return `<details class="answer"><summary>📖 Reveal teaching explanation and exam pearls</summary><div class="answer-body"><p><b>Correct answer: ${safe(visibleLetter(q,q.key))} — ${safe(q.options[ABC.indexOf(q.key)])}</b></p>${displayOrder(q).map((i,pos)=>`<div class="explainline ${ABC[i]===q.key?'is-correct':''}"><b>${ABC[pos]}. ${ABC[i]===q.key?'✓ Correct':'Why not'}:</b> ${safe(q.explanations?.[i]||'Review this option against the key features.')}</div>`).join('')}${q.pearl?`<div class="pearl">💡 <b>Exam pearl:</b> ${safe(q.pearl)}</div>`:''}${q.pivot?`<div class="pivot">🔄 <b>What would change the answer?</b> ${safe(q.pivot)}</div>`:''}</div></details>`;}
+function explHtml(q){return `<details class="answer"><summary>📖 Reveal teaching explanation and exam pearls</summary><div class="answer-body"><p><b>Correct answer: ${safe(visibleLetter(q,q.key))} — ${safe(q.options[ABC.indexOf(q.key)])}</b></p>${displayOrder(q).map((i,pos)=>`<div class="explainline ${ABC[i]===q.key?'is-correct':''}"><b>${ABC[pos]}. ${ABC[i]===q.key?'✓ Correct':'Why not'}:</b> ${safe(q.explanations?.[i]||'Review this option against the key features.')}</div>`).join('')}${q.pearl?`<div class="pearl">💡 <b>Exam pearl:</b> ${safe(q.pearl)}</div>`:''}${q.pivot?`<div class="pivot">🔄 <b>If the scenario changes — what should you do?</b> ${safe(q.pivot)}</div>`:''}</div></details>`;}
 function managementMarkup(q){
  const m=q.management;
  if(!m?.steps?.length)return '';
@@ -600,7 +600,7 @@ function learningNotes(q,anchorId='learningNotes',selected=null){
   <div class="learning-section learning-correct"><div class="learning-tag">✓ The best answer</div><h3>${safe(visibleLetter(q,q.key))}. ${safe(good)}</h3><p>${safe(rationale)}</p></div>
   ${otherOptions?`<div class="learning-section"><h3 class="learning-section-title">🔎 Why the other options are less suitable</h3><div class="learning-alternatives">${otherOptions}</div></div>`:''}
   ${q.pearl&&!wrong?`<div class="learning-section learning-pearl"><h3>💡 Remember this principle</h3><p>${safe(q.pearl)}</p></div>`:''}
-  ${q.pivot?`<div class="learning-section learning-pivot"><h3>🔄 When would the answer change?</h3><p>${safe(q.pivot)}</p></div>`:''}
+  ${q.pivot?`<div class="learning-section learning-pivot"><h3>🔄 What changes — and what to do instead</h3><p>${safe(q.pivot)}</p></div>`:''}
   <p class="learning-footer">${wrong?'Review the distinction, then try explaining it in your own words. ♡':'Understand the principle, then move on when you are ready. ♡'}</p>
  </aside>
 `;
