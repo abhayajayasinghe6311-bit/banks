@@ -454,7 +454,7 @@
       "At 60%, there would need to be around 67 false positives; this is inconsistent with the prevalence and stated false-positive rate."
     ],
     "pearl": "PPV depends on prevalence, not just sensitivity and specificity: draw a 2×2 table before choosing.",
-    "pivot": "The same test has different PPV in populations with different disease prevalence, even if sensitivity and specificity remain unchanged.",
+    "pivot": "If disease prevalence is LOWER, construct the new 2×2 table using that prevalence and the same sensitivity/specificity, then recalculate PPV; expect more false positives relative to true positives. Explain results using the revised PPV rather than quoting the original population's value.",
     "management": {
       "steps": [
         [
@@ -1318,7 +1318,7 @@
       "Bone density assesses osteoporosis rather than acute epidural tumour extent or cord compression."
     ],
     "pearl": "In suspected malignant spinal cord compression, image the whole spine—not only the painful or already abnormal level.",
-    "pivot": "MRI contraindication may necessitate alternative imaging with urgent specialist input, rather than no imaging.",
+    "pivot": "If urgent MRI is contraindicated or truly unavailable, contact the spinal/neurosurgical and radiology teams immediately to arrange an alternative such as CT myelography or appropriate CT-based assessment and safe transfer; continue the suspected cord-compression steroid and specialist pathway while imaging is organised.",
     "management": {
       "steps": [
         [
@@ -1366,7 +1366,7 @@
       "Waiting for a marker to rise may delay joint drainage and permit cartilage damage."
     ],
     "pearl": "Early normal CRP and plain radiographs do not rule out septic arthritis in a febrile child refusing to bear weight.",
-    "pivot": "A well child walking comfortably with no fever or effusion has a different pretest probability and may follow an observation pathway.",
+    "pivot": "If the child is afebrile, comfortably weight-bearing and has no painful passive movement, effusion or systemic signs, assess for transient synovitis or minor injury, provide appropriate analgesia and arrange reassessment or return precautions. New fever, non-weight-bearing or deterioration still requires urgent septic-joint evaluation.",
     "management": {
       "steps": [
         [
@@ -2278,7 +2278,7 @@
       "Optic neuritis usually presents with reduced central vision and pain on eye movement; these symptoms more strongly suggest vitreoretinal traction."
     ],
     "pearl": "Flashes, new floaters and a curtain-like shadow are retinal-detachment warning signs, even if central vision remains good.",
-    "pivot": "Longstanding unchanged floaters without flashes, shadow or reduction in vision may be less urgent but still deserve appropriate history.",
+    "pivot": "If floaters have been longstanding and unchanged, with NO new flashes, curtain/shadow or visual loss, document baseline acuity and examine the eye, then organise non-emergency optometry/ophthalmology review as appropriate; give explicit instructions to seek same-day care if flashes, new floaters or a field shadow develop.",
     "management": {
       "steps": [
         [
@@ -2566,7 +2566,7 @@
       "Secondary investigations are directed by confirmed hypertension and clues such as hypokalaemia, severe resistance or other suggestive findings, not automatically by isolated ward pressure."
     ],
     "pearl": "Raised ward blood pressure without acute organ injury is not synonymous with hypertensive emergency.",
-    "pivot": "New chest pain, stroke signs, acute pulmonary oedema or other organ injury changes the pathway to urgent hypertensive-emergency assessment.",
+    "pivot": "If chest pain, focal neurological change, pulmonary oedema or acute kidney injury suggests a HYPERTENSIVE EMERGENCY, transfer for urgent monitored assessment, ECG and relevant organ investigations, and start carefully titrated IV BP treatment under senior guidance rather than outpatient ambulatory BP monitoring.",
     "management": {
       "steps": [
         [
@@ -2806,7 +2806,7 @@
       "Two boosters at once do not improve immediate prevention and increase unnecessary vaccine exposure; follow the recommended interval and documentation."
     ],
     "pearl": "A dirty puncture wound generally needs a booster after five years, compared with longer intervals for clean minor wounds.",
-    "pivot": "Incomplete primary vaccination, unknown history or significant immunodeficiency changes immunoglobulin assessment.",
+    "pivot": "If primary tetanus vaccination is incomplete or unknown after a tetanus-prone wound, clean/debride the wound, give a tetanus-containing vaccine and assess the need for tetanus immunoglobulin under the Australian Immunisation Handbook; severe immunodeficiency may warrant TIG even with prior vaccination.",
     "management": {
       "steps": [
         [
@@ -3190,7 +3190,7 @@
       "A single rapid-acting dose may wear off before the afternoon and evening rise, making it inadequate as the sole regimen without tailored correction."
     ],
     "pearl": "Match insulin pharmacokinetics to once-daily prednisolone's daytime glycaemic effect rather than merely increasing overnight basal insulin.",
-    "pivot": "More frequent or evening steroid dosing may require a different insulin strategy than morning NPH alone.",
+    "pivot": "If steroids are given in divided doses or in the evening, monitor the full 24-hour glucose profile and use an individualised basal–bolus or appropriately timed intermediate-acting insulin regimen rather than morning NPH alone; reduce insulin as the steroid dose falls to avoid night-time hypoglycaemia.",
     "management": {
       "steps": [
         [
