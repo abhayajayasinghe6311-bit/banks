@@ -10,7 +10,7 @@ Source materials uploaded by user:
 
 **Creative brief**: 100 NEW original five-option final-year clinical reasoning MCQs inspired by the supplied practice review (NOT a copy or republication of past-paper stems). Mimic Monash exam cognitive level: prioritise the *next* step, identify the most important discriminatory sign, appropriate initial test, safe management escalation, interpretation of ECG/ABG/imaging, ward-intern decisions, and plausible distractors. Australian guidance preferred. Include clinically specific rationales for all five options, management.steps exactly four stages, safety, diagnostic pivot, pearl, and trustworthy guideline source URL.
 
-**Progress (latest authored checkpoint): 50/100**. A=8 B=8 C=8 D=8 E=8. No published Bank 16 yet. Keep Banks 1–15 unchanged, and retain all user account answer state. The homepage manifest currently ends with Bank 15.
+**Progress (latest authored checkpoint): 60/100**. A=8 B=8 C=8 D=8 E=8. No published Bank 16 yet. Keep Banks 1–15 unchanged, and retain all user account answer state. The homepage manifest currently ends with Bank 15.
 
 User's actual missed 2025 questions and concepts (extracted from the review):
 - 10: ocular chemical exposure — start irrigation before pH/referral;
@@ -73,3 +73,8 @@ When the bank reaches 100 after medical QA, publish via fresh branch from main: 
 - 50 sequential unique questions committed; **A=10/B=10/C=10/D=10/E=10**, five explanations per question, four concrete management stages, max option-length spread five words.
 - Live website remains Banks 1–15. Do not publish Bank 16 until Q1–100 complete and medically reviewed.
 - Remaining 50 original questions; continue from Q51 and review Australian source freshness. Avoid copying user PDFs and avoid near-duplicate question themes.
+
+## 2026-10-24 further user-session checkpoint: 60/100
+- Added 10 original cases Q51–60: uncomplicated radiculopathy (conservative first), regional nodes supporting cellulitis vs DVT, Holter for frequent palpitations, non-emergency hypertension follow-up, anastomotic leak, digoxin renal accumulation, ovarian torsion despite preserved Doppler, biochemical analysis of postoperative urine leak, tetanus-prone wound vaccination, and topical treatment of otitis externa.
+- All 60 sequential original scenarios saved in bank16.json with unique n; all five answer positions remain equally represented **12 each A–E**, distinct option rationales, four management stages, and no >8 word length spread in options.
+- **40 remain**. Publication name **Revision Blossom Garden 🌸**. Do not add any question from the original papers verbatim. Website manifest must stay untouched until 100 and clinical QA.
