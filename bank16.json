@@ -1202,48 +1202,48 @@
   {
     "n": 26,
     "domain": "Emergency medicine & trauma",
-    "skill": "Tension pneumothorax / decompression before radiology",
+    "skill": "Iatrogenic tension pneumothorax / deterioration on ventilation",
     "context": "Original final-year Monash-style decision; inspired by 2024–2025 SPA-W review themes",
-    "stem": "A 31-year-old arrives after a high-speed motorcycle collision. He is agitated, severely hypoxic and hypotensive at 72/42 mmHg. The left hemithorax barely moves, breath sounds are absent on that side and his neck veins are prominent. A portable radiograph has been ordered but has not arrived.",
-    "ask": "What should the resuscitation team prioritise immediately?",
+    "stem": "During emergency intubation for a severe asthma attack, a 37-year-old suddenly becomes profoundly hypotensive. The ventilator alarm reports high peak airway pressure, oxygen saturation drops, and the right side of the chest no longer expands. Bedside ultrasound shows absent right-sided lung sliding, while the left lung continues sliding. The endotracheal tube is confirmed above the carina.",
+    "ask": "What is the most appropriate time-critical intervention?",
     "options": [
-      "Perform emergency left chest decompression by a trained clinician without waiting for imaging.",
-      "Obtain a portable chest radiograph to confirm the suspected unilateral pleural air.",
-      "Send urgent arterial blood gases before undertaking a potentially invasive chest procedure.",
-      "Start non-invasive positive-pressure ventilation while waiting for formal thoracic ultrasound.",
-      "Transport for contrast-enhanced chest CT to identify associated vascular and lung injuries."
+      "Immediately decompress the right pleural space while the airway team continues resuscitation.",
+      "Increase ventilator tidal volume to overcome the resistance in the right hemithorax.",
+      "Perform bronchoscopy first because mucus plugging is the only possible explanation.",
+      "Give a rapid intravenous beta-blocker to reduce the sudden cardiovascular instability.",
+      "Transfer for CT chest before intervening because bedside ultrasound cannot guide action."
     ],
     "key": "A",
     "explanations": [
-      "Correct. Clinical tension pneumothorax with shock requires immediate decompression; finger thoracostomy or needle decompression according to expertise and trauma protocol, followed by definitive drainage.",
-      "A radiograph can diagnose a stable pneumothorax, but waiting in obstructive shock may cause cardiac arrest.",
-      "ABG can quantify respiratory failure but adds no information needed before lifesaving decompression.",
-      "Positive-pressure ventilation without relieving pleural tension can worsen haemodynamic collapse and should not delay decompression.",
-      "CT is appropriate only after stabilisation and would be unsafe during untreated tension physiology."
+      "Correct. New unilateral absent sliding with severe shock after positive-pressure ventilation suggests tension pneumothorax; decompress immediately with a trained clinician and then establish definitive drainage.",
+      "Higher positive pressure can worsen pleural tension and reduce venous return, especially in a ventilated patient.",
+      "Mucus plugging or endobronchial intubation may mimic unilateral air entry, but shock plus absent sliding warrants urgent treatment for tension physiology.",
+      "Beta-blockade cannot relieve intrapleural pressure and may worsen haemodynamic collapse.",
+      "CT adds dangerous delay in a ventilated patient with presumed tension physiology and circulatory failure."
     ],
-    "pearl": "Tension pneumothorax is a clinical diagnosis in an unstable trauma patient; treat before imaging.",
-    "pivot": "A stable patient with unilateral chest pain and preserved circulation can undergo bedside ultrasound or radiography first.",
+    "pearl": "Ventilated patients can develop rapid tension physiology; abrupt high pressures, unilateral loss of sliding and shock demand action.",
+    "pivot": "A mainstem endotracheal tube can also cause unilateral breath sounds, so confirm tube depth while managing immediately life-threatening causes.",
     "management": {
       "steps": [
         [
           "Recognise",
-          "Identify unilateral absent air entry, severe hypoxia and obstructive shock."
+          "Identify sudden ventilator-pressure rise, shock and unilateral chest findings."
         ],
         [
           "Assess",
-          "Call trauma support and assess for concurrent haemorrhage or airway compromise."
+          "Confirm airway placement quickly and use bedside ultrasound if immediately available."
         ],
         [
           "Act",
-          "Decompress the affected chest immediately using a trained clinician and local technique."
+          "Decompress the suspected tension pneumothorax without delaying for imaging."
         ],
         [
           "Reassess",
-          "Arrange definitive pleural drainage, monitor response and reassess for other injuries."
+          "Insert definitive pleural drainage and monitor airway pressures, oxygenation and perfusion."
         ]
       ],
-      "safety": "Do not delay decompression for X-ray or CT when clinical tension pneumothorax causes shock.",
-      "local": "Use current Australian clinical guidance, local protocols and senior support."
+      "safety": "Avoid increasing positive-pressure ventilation into an undrained tension pneumothorax.",
+      "local": "Australian trauma resuscitation and local thoracostomy protocol."
     },
     "source": "https://aci.health.nsw.gov.au/ecat/adult/traumatic-injury"
   },
@@ -1298,144 +1298,144 @@
   {
     "n": 28,
     "domain": "Oncology & neurology",
-    "skill": "Metastatic spinal cord compression / urgent MRI and steroids",
+    "skill": "Malignant spinal cord compression / whole-spine extent assessment",
     "context": "Original final-year Monash-style decision; inspired by 2024–2025 SPA-W review themes",
-    "stem": "A 66-year-old with metastatic prostate cancer reports new thoracic back pain, progressive bilateral leg weakness and difficulty starting urination. Examination shows brisk knee reflexes and reduced sensation below the umbilicus. His observations are stable, and plain spinal radiographs show degenerative changes without an acute fracture.",
-    "ask": "What management best preserves neurological function?",
+    "stem": "A 58-year-old with known metastatic breast cancer has worsening back pain and mild new leg weakness. Urgent MRI of the thoracic spine demonstrates epidural tumour compressing the cord at T7. The registrar proposes using the limited scan to plan local treatment, but the oncologist notes the patient also has intermittent lower lumbar pain and multiple skeletal metastases.",
+    "ask": "Which additional imaging decision is most appropriate before definitive treatment planning?",
     "options": [
-      "Arrange routine outpatient physiotherapy and review weakness after two weeks of rehabilitation.",
-      "Request an isolated lumbar X-ray and provide analgesia while awaiting the radiology report.",
-      "Start dexamethasone promptly and organise urgent whole-spine MRI with specialist assessment.",
-      "Order an elective nerve-conduction study to distinguish neuropathy from spinal root irritation.",
-      "Prescribe oral opioids alone because stable vital signs make neurological compression unlikely."
+      "Rely on the thoracic MRI because epidural disease occurs at only one spinal level.",
+      "Order a plain lumbar radiograph to exclude any additional epidural compression.",
+      "Complete urgent whole-spine MRI to identify other potentially symptomatic compression levels.",
+      "Delay further imaging until neurological symptoms worsen despite initial steroid treatment.",
+      "Arrange a routine bone density scan to quantify the severity of spinal metastases."
     ],
     "key": "C",
     "explanations": [
-      "New weakness and bladder dysfunction in cancer are red flags for cord compression, not a routine rehabilitation referral.",
-      "Plain radiographs cannot exclude epidural tumour or compression and delay definitive MRI.",
-      "Correct. Suspected malignant spinal cord compression warrants prompt dexamethasone, urgent whole-spine MRI and coordinated oncology/spinal surgical assessment.",
-      "Electrophysiology is not the first investigation for acute upper motor neurone signs and sphincter dysfunction.",
-      "Analgesia is appropriate but does not address the risk of irreversible cord injury despite stable vital signs."
+      "Malignant epidural disease may occur at multiple levels, and a limited MRI can miss additional compression relevant to surgery or radiotherapy.",
+      "Plain films show bone but cannot reliably assess the epidural space or spinal cord at another level.",
+      "Correct. Current eviQ guidance recommends urgent whole-spine MRI in suspected malignant cord compression because multilevel disease changes the treatment field and surgical plan.",
+      "Neurological deficits can become permanent while waiting; complete staging of the spinal canal should not be deferred.",
+      "Bone density assesses osteoporosis rather than acute epidural tumour extent or cord compression."
     ],
-    "pearl": "Back pain plus new motor or sphincter symptoms in metastatic cancer is spinal cord compression until excluded.",
-    "pivot": "Even if pain is mild, objective upper motor neurone signs and urinary symptoms justify emergency MRI.",
+    "pearl": "In suspected malignant spinal cord compression, image the whole spine—not only the painful or already abnormal level.",
+    "pivot": "MRI contraindication may necessitate alternative imaging with urgent specialist input, rather than no imaging.",
     "management": {
       "steps": [
         [
           "Recognise",
-          "Document motor power, sensory level, gait and bladder function."
+          "Identify neurological deficit and known epidural disease as an oncological emergency."
         ],
         [
           "Assess",
-          "Request urgent whole-spine MRI and involve oncology and spinal surgery."
+          "Obtain urgent whole-spine MRI and document serial motor and bladder function."
         ],
         [
           "Act",
-          "Give prompt dexamethasone according to protocol while arranging decompression or radiotherapy."
+          "Continue prompt steroid treatment and coordinate spinal surgery or radiotherapy."
         ],
         [
           "Reassess",
-          "Protect spinal stability, monitor neurological changes and manage steroid complications."
+          "Monitor function, instability and steroid toxicity during definitive treatment."
         ]
       ],
-      "safety": "Do not delay treatment because a plain X-ray is normal; permanent paraplegia may follow delay.",
-      "local": "Use current Australian clinical guidance, local protocols and senior support."
+      "safety": "Do not assume one detected lesion excludes a second compressive level.",
+      "local": "eviQ malignant spinal cord compression guidance."
     },
     "source": "https://www.eviq.org.au/radiation-oncology/palliative/296-spinal-cord-compression-palliative-ebrt"
   },
   {
     "n": 29,
     "domain": "Paediatrics & orthopaedics",
-    "skill": "Septic hip / urgent orthopaedic drainage",
+    "skill": "Septic arthritis / early normal CRP does not exclude infection",
     "context": "Original final-year Monash-style decision; inspired by 2024–2025 SPA-W review themes",
-    "stem": "A previously healthy five-year-old has refused to bear weight since waking, with fever 39°C and severe right groin pain. The hip rests flexed and externally rotated, and passive rotation causes marked distress. CRP is elevated and ultrasound shows a substantial hip effusion; there is no history of injury.",
-    "ask": "What is the safest next step?",
+    "stem": "A 20-month-old toddler develops fever and cries whenever his right knee is moved. Symptoms began only six hours ago. The joint is warm with a small effusion, and he refuses to stand. A junior doctor notes that the CRP is still within the laboratory reference range and the plain knee X-ray is normal, so suggests ruling out bacterial joint infection.",
+    "ask": "How should the normal early investigations affect management?",
     "options": [
-      "Arrange discharge with oral analgesia and a review appointment after the weekend.",
-      "Start physiotherapy immediately to prevent reduced hip range from immobility.",
-      "Treat presumed transient synovitis with ibuprofen and reassess in one week.",
-      "Seek urgent orthopaedic review for aspiration or washout and commence IV antibiotics.",
-      "Obtain an elective MRI before contacting orthopaedics or administering any antimicrobial therapy."
+      "They exclude septic arthritis because inflammatory markers rise before clinical joint symptoms.",
+      "They support discharge without review because plain radiography is highly sensitive early on.",
+      "They establish a viral arthritis diagnosis and remove the need for orthopaedic consultation.",
+      "They do not exclude early septic arthritis; urgent assessment and treatment planning remain necessary.",
+      "They justify delaying blood cultures and all treatment until CRP rises above normal limits."
     ],
     "key": "D",
     "explanations": [
-      "A febrile child unable to bear weight with a painful effusion may have septic arthritis requiring urgent intervention.",
-      "Physiotherapy is not the priority during suspected infection and may increase pain.",
-      "Transient synovitis is a differential but severe fever, inflammatory markers and inability to bear weight warrant infection exclusion.",
-      "Correct. Septic arthritis threatens cartilage; urgent orthopaedic aspiration or washout and IV antibiotics are indicated, without delaying treatment in an unwell child.",
-      "MRI can assess adjacent osteomyelitis but should not delay urgent surgical discussion or antibiotic treatment."
+      "CRP may be normal early in bacterial bone or joint infection, especially soon after symptom onset.",
+      "Plain radiography is often normal early and cannot visualise intra-articular infection reliably.",
+      "Viral or reactive arthritis remains a differential, but severe pain, fever and refusal to bear weight require urgent evaluation.",
+      "Correct. Clinical red flags outweigh normal early markers; consult orthopaedics, obtain cultures and arrange aspiration/antibiotics as appropriate.",
+      "Waiting for a marker to rise may delay joint drainage and permit cartilage damage."
     ],
-    "pearl": "Hot, painful immobile hip with fever in a child is septic arthritis until proven otherwise.",
-    "pivot": "A well child walking comfortably with a small effusion and no systemic features may be assessed for transient synovitis.",
+    "pearl": "Early normal CRP and plain radiographs do not rule out septic arthritis in a febrile child refusing to bear weight.",
+    "pivot": "A well child walking comfortably with no fever or effusion has a different pretest probability and may follow an observation pathway.",
     "management": {
       "steps": [
         [
           "Recognise",
-          "Assess for sepsis, pain, limb perfusion and weight-bearing ability."
+          "Treat acute painful non-weight-bearing joint with fever as possible septic arthritis."
         ],
         [
           "Assess",
-          "Obtain blood cultures, inflammatory markers and urgent orthopaedic assessment."
+          "Arrange orthopaedic review, blood cultures and targeted imaging or aspiration."
         ],
         [
           "Act",
-          "Give IV antibiotics per local protocol and arrange joint aspiration or washout."
+          "Start IV antibiotics promptly if unwell and organise drainage if infection is likely."
         ],
         [
           "Reassess",
-          "Monitor fever, inflammatory markers and return of joint movement with the team."
+          "Follow pain, range of motion, fever and inflammatory markers over time."
         ]
       ],
-      "safety": "Never delay antibiotics in a systemically unwell child while waiting for MRI or joint aspiration.",
-      "local": "Use current Australian clinical guidance, local protocols and senior support."
+      "safety": "Do not use one normal CRP result to override convincing clinical infection signs.",
+      "local": "RCH bone and joint infection guideline."
     },
     "source": "https://www.rch.org.au/clinicalguide/guideline_index/Bone_and_joint_infection/"
   },
   {
     "n": 30,
     "domain": "Urology & emergency medicine",
-    "skill": "Infected obstructed ureter / urgent source control",
+    "skill": "Urosepsis after drainage / timing definitive stone clearance",
     "context": "Original final-year Monash-style decision; inspired by 2024–2025 SPA-W review themes",
-    "stem": "A 44-year-old presents with severe left loin pain, shaking chills and vomiting. Temperature is 39.4°C, BP 90/58 mmHg and creatinine is rising. CT reveals an 8-mm proximal ureteric calculus with upstream hydronephrosis and inflammatory stranding. The urine dipstick is positive for nitrites and leukocytes.",
-    "ask": "Which intervention is essential alongside resuscitation and IV antibiotics?",
+    "stem": "A 52-year-old with a 9-mm ureteric calculus and septic shock underwent emergency ureteric stenting yesterday, alongside IV antibiotics and haemodynamic resuscitation. Her blood pressure is now stable, but she remains febrile and blood cultures have grown Escherichia coli. The family asks whether the urologist can fragment the stone today to complete all treatment at once.",
+    "ask": "What is the best plan for definitive stone treatment?",
     "options": [
-      "Arrange routine outpatient ureteroscopy after several days of oral antibiotic therapy.",
-      "Begin medical expulsive therapy and discharge once the pain improves with analgesia.",
-      "Give aggressive intravenous fluids alone because relieving obstruction can be deferred.",
-      "Perform immediate definitive stone fragmentation without first treating the septic physiology.",
-      "Obtain urgent urological drainage by ureteric stent or percutaneous nephrostomy."
+      "Remove the ureteric stent immediately to prevent bacteria adhering to the drainage device.",
+      "Stop antimicrobial treatment once blood pressure normalises, then proceed with lithotripsy.",
+      "Perform definitive stone fragmentation during ongoing bacteraemia to shorten hospital stay.",
+      "Leave the stone permanently because emergency stenting always provides definitive cure.",
+      "Maintain drainage and antibiotics, deferring definitive stone removal until infection is controlled."
     ],
     "key": "E",
     "explanations": [
-      "Infected obstruction with shock needs urgent decompression; outpatient waiting risks uncontrolled sepsis.",
-      "Medical expulsive therapy is not definitive source control for an obstructed infected collecting system.",
-      "Fluids are necessary for shock but cannot drain infected urine trapped above the stone.",
-      "Definitive lithotripsy is generally delayed until infection is controlled; emergency drainage is the first procedural goal.",
-      "Correct. An infected obstructed kidney is a urological emergency requiring prompt decompression plus sepsis management, with definitive stone removal later."
+      "The stent is currently draining an infected obstructed system; premature removal risks recurrent obstruction and sepsis.",
+      "Clinical improvement does not eliminate bacteraemia or the need for a tailored antimicrobial course.",
+      "Manipulating an infected obstructed system during active infection may provoke further bacteraemia or septic deterioration.",
+      "Stenting is temporary source control and does not eliminate the underlying stone, which usually requires later treatment.",
+      "Correct. Emergency drainage and infection control come first; definitive ureteroscopy or lithotripsy is generally delayed until the patient has recovered."
     ],
-    "pearl": "Obstructed infected urinary tract = antibiotics plus drainage; antibiotics alone may fail without source control.",
-    "pivot": "A noninfected uncomplicated small stone in a stable patient can sometimes be managed expectantly.",
+    "pearl": "Drain first, control infection, then clear the stone; emergency decompression is not the same as definitive lithotripsy.",
+    "pivot": "An uncomplicated noninfected ureteric calculus may proceed directly to definitive ureteroscopy depending on size and symptoms.",
     "management": {
       "steps": [
         [
           "Recognise",
-          "Identify obstructive urosepsis and activate sepsis resuscitation."
+          "Identify active infection despite improved blood pressure after drainage."
         ],
         [
           "Assess",
-          "Obtain cultures, renal tests and urgent imaging or review existing CT."
+          "Review cultures, antibiotic sensitivities, stent function and renal trends."
         ],
         [
           "Act",
-          "Give prompt IV antibiotics and coordinate emergency ureteric stent or nephrostomy."
+          "Continue targeted antibiotics and ensure the collecting system remains decompressed."
         ],
         [
           "Reassess",
-          "Monitor urine output, renal function and haemodynamics; plan later stone clearance."
+          "Schedule definitive stone clearance after sepsis resolves with urology."
         ]
       ],
-      "safety": "Do not wait for blood culture results or successful pain control before requesting urological decompression.",
-      "local": "Use current Australian clinical guidance, local protocols and senior support."
+      "safety": "Avoid routine definitive stone manipulation during uncontrolled infection.",
+      "local": "Australian emergency referral criteria for infected obstruction; specialist urology protocol."
     },
     "source": "https://www.health.vic.gov.au/statewide-referral-criteria/renal-tract-stones-or-renal-colic"
   },
@@ -1634,48 +1634,48 @@
   {
     "n": 35,
     "domain": "Obstetrics & emergency",
-    "skill": "Postpartum haemorrhage / uterine atony",
+    "skill": "Postpartum atony refractory to oxytocin / asthma influences uterotonics",
     "context": "Original final-year Monash-style decision; inspired by 2024–2025 SPA-W review themes",
-    "stem": "Immediately after a vaginal birth, a 30-year-old begins bleeding heavily. The placenta appears complete, her pulse rises to 120/min and the uterine fundus is enlarged and boggy. The birth team has called for emergency assistance and commenced haemorrhage resuscitation. There is no obvious genital tract tear.",
-    "ask": "Which action most directly addresses the likely source of bleeding?",
+    "stem": "A 33-year-old with severe asthma has persistent heavy bleeding after delivery despite uterine massage, oxytocin and appropriate resuscitation. The uterus remains soft, the placenta is complete and no major laceration is visible. The obstetric team is considering a second-line uterotonic and mechanical measures; a junior suggests carboprost without reviewing the respiratory history.",
+    "ask": "Which management principle is most important in choosing further treatment?",
     "options": [
-      "Observe for ten minutes because uterine bleeding usually settles after placental delivery.",
-      "Start a routine oral iron prescription before assessing uterine tone or blood loss.",
-      "Transfer to ultrasound first to exclude retained tissue before uterine massage.",
-      "Give prophylactic oral antibiotics alone because infection is the likely acute mechanism.",
-      "Perform uterine massage and give oxytocin promptly as part of the haemorrhage response."
+      "Repeat oxytocin indefinitely without considering other treatments or mechanical haemostasis.",
+      "Give carboprost routinely because it cannot affect bronchial smooth muscle function.",
+      "Stop resuscitation temporarily while waiting for the uterus to contract spontaneously.",
+      "Choose any uterotonic solely by cost because respiratory comorbidity is irrelevant.",
+      "Avoid carboprost in severe asthma and escalate to suitable alternatives or mechanical control."
     ],
     "key": "E",
     "explanations": [
-      "Heavy ongoing bleeding with shock signs is not normal lochia and requires immediate intervention.",
-      "Iron replaces losses later but cannot control acute haemorrhage or restore uterine contraction.",
-      "Retained tissue remains a consideration, but a boggy uterus needs immediate atony management while evaluation proceeds.",
-      "Acute atony is mechanical failure of contraction rather than primary infection; antibiotics do not restore tone.",
-      "Correct. Uterine atony is the most common cause of primary postpartum haemorrhage; massage and uterotonics including oxytocin are early treatment alongside resuscitation."
+      "Ongoing severe bleeding requires escalating pharmacological and mechanical treatment, not indefinite repetition of one agent.",
+      "Carboprost can precipitate bronchospasm; asthma is an important precaution or contraindication depending on severity and local guidance.",
+      "Resuscitation must continue alongside uterine management, as hypovolaemia may become life-threatening.",
+      "The safety profile matters: uterotonics have distinct cardiovascular and respiratory contraindications.",
+      "Correct. In severe asthma, carboprost is generally avoided because of bronchospasm risk; consider alternatives such as misoprostol and balloon tamponade under the PPH protocol."
     ],
-    "pearl": "A boggy enlarged uterus with postpartum bleeding strongly suggests atony; act on uterine tone immediately.",
-    "pivot": "If the uterus is firm yet bleeding continues, examine for genital tract trauma, retained tissue or coagulopathy.",
+    "pearl": "The next uterotonic in PPH depends on comorbidities: carboprost can cause bronchospasm, while ergometrine is problematic in hypertension.",
+    "pivot": "With hypertension or pre-eclampsia, ergometrine is also unsuitable; consider drug-specific contraindications and mechanical escalation.",
     "management": {
       "steps": [
         [
           "Recognise",
-          "Activate PPH protocol, quantify bleeding and assess ABCs."
+          "Identify persistent atonic PPH despite first-line measures and assess shock."
         ],
         [
           "Assess",
-          "Palpate tone, inspect placenta and examine for trauma or retained tissue."
+          "Review asthma severity, blood pressure, contraindications and bleeding volume."
         ],
         [
           "Act",
-          "Massage uterus, give oxytocin and support circulation with blood products as indicated."
+          "Continue blood-product support and use safe second-line uterotonics or balloon measures."
         ],
         [
           "Reassess",
-          "Escalate to compression, additional uterotonics, TXA and procedural control if bleeding persists."
+          "Escalate rapidly to theatre and definitive surgical haemostasis if bleeding continues."
         ]
       ],
-      "safety": "Do not delay blood-product resuscitation or escalation while repeating ineffective uterine massage.",
-      "local": "Use current Australian clinical guidance, local protocols and senior support."
+      "safety": "Do not administer carboprost reflexively to a patient with severe asthma.",
+      "local": "Queensland Clinical Guideline: Primary postpartum haemorrhage."
     },
     "source": "https://www.health.qld.gov.au/__data/assets/pdf_file/0015/140136/g-pph.pdf"
   },
@@ -1826,97 +1826,97 @@
   {
     "n": 39,
     "domain": "Women's health & general practice",
-    "skill": "Inflammatory mastitis / avoid aggressive pumping",
+    "skill": "Lactational breast abscess / imaging and drainage",
     "context": "Original final-year Monash-style decision; inspired by 2024–2025 SPA-W review themes",
-    "stem": "A woman breastfeeding a four-week-old infant develops a painful red wedge on one breast after several days of oversupply. She has mild malaise, temperature 37.7°C and no palpable fluctuance. She has been aggressively massaging the area and pumping after every feed to 'empty' the breast, which seems to increase swelling.",
-    "ask": "Which advice is most appropriate now?",
+    "stem": "A breastfeeding woman at six weeks postpartum returns after four days of worsening unilateral breast pain and fever despite prescribed flucloxacillin. She has a localised tender fluctuant mass near the areola and persistent temperature 38.6°C. Her infant continues to feed well, and she asks whether antibiotics alone are enough to cure the new lump.",
+    "ask": "What additional management is now most appropriate?",
     "options": [
-      "Stop all breastfeeding on the affected side until the redness has completely disappeared.",
-      "Use deep massage and extra pumping after each feed to forcibly clear the obstructed duct.",
-      "Start antibiotics in every case immediately and avoid all non-drug measures.",
-      "Continue feeding to the baby's cues, use cold packs and avoid vigorous massage or over-pumping.",
-      "Arrange emergency surgical drainage because any red breast segment indicates an abscess."
+      "Stop breastfeeding permanently and prescribe oral cabergoline before investigating the breast mass.",
+      "Increase pumping frequency every hour and apply vigorous deep massage to disperse the lump.",
+      "Change to a different oral antibiotic without examining the fluctuant collection further.",
+      "Arrange breast ultrasound and drainage of a suspected abscess while continuing appropriate therapy.",
+      "Provide reassurance because focal fluctuance is expected during uncomplicated inflammatory mastitis."
     ],
     "key": "D",
     "explanations": [
-      "Continuing breastfeeding is usually safe and abrupt cessation may worsen engorgement and inflammation.",
-      "Aggressive massage and unnecessary extra milk removal can aggravate oedema and perpetuate oversupply.",
-      "Early inflammatory mastitis may improve with anti-inflammatory care; antibiotics are for suspected bacterial disease or persistent/worsening symptoms.",
-      "Correct. Current Australian advice supports on-demand feeds, anti-inflammatory measures and avoidance of deep massage and excessive pumping.",
-      "A breast abscess generally presents with a focal collection or fluctuance and requires assessment; redness alone is not an indication for drainage."
+      "Lactation suppression is not routinely necessary and can worsen engorgement; management should focus on diagnosing and draining a collection.",
+      "Over-pumping and aggressive massage may worsen tissue inflammation and cannot reliably empty an abscess cavity.",
+      "Changing antibiotics without source control may fail when a pus collection has developed.",
+      "Correct. Persistent fever with focal fluctuance despite antibiotics suggests breast abscess; ultrasound and aspiration or drainage are indicated, with compatible antibiotics and breastfeeding support.",
+      "A fluctuant mass with persistent systemic symptoms is not ordinary inflammatory mastitis and warrants prompt imaging."
     ],
-    "pearl": "Treat inflammatory mastitis by reducing inflammation, not by aggressively 'emptying' the breast.",
-    "pivot": "Persistent fever, worsening erythema or failure to improve within about a day should prompt bacterial mastitis assessment.",
+    "pearl": "Focal fluctuance and persistent fever despite treatment suggest an abscess requiring drainage, not simply stronger antibiotics.",
+    "pivot": "Early mastitis without fluctuance or prolonged fever often responds to anti-inflammatory care and cue-based feeding.",
     "management": {
       "steps": [
         [
           "Recognise",
-          "Assess systemic symptoms, breast findings and infant feeding."
+          "Identify persistent fever and focal fluctuance after antibiotic treatment."
         ],
         [
           "Assess",
-          "Check for abscess signs, oversupply and ineffective latch."
+          "Arrange breast ultrasound and assess for sepsis and feeding difficulties."
         ],
         [
           "Act",
-          "Recommend cue-based feeding, cold packs, rest and appropriate analgesia."
+          "Obtain aspiration or drainage with culture and appropriate antibiotic cover."
         ],
         [
           "Reassess",
-          "Reassess within 12–24 hours and prescribe antibiotics if bacterial mastitis is suspected."
+          "Support continued breastfeeding when feasible and confirm clinical resolution."
         ]
       ],
-      "safety": "Sepsis or suspected abscess requires urgent assessment; avoid vigorous breast massage.",
-      "local": "Use current Australian clinical guidance, local protocols and senior support."
+      "safety": "Do not repeatedly prescribe antibiotics without evaluating a possible drainable collection.",
+      "local": "Queensland maternity and lactation guidance."
     },
-    "source": "https://www.childrens.health.qld.gov.au/health-a-to-z/breastfeeding/blocked-milk-ducts-and-mastitis"
+    "source": "https://www.health.qld.gov.au/__data/assets/pdf_file/0022/1447051/PCCM_full.pdf"
   },
   {
     "n": 40,
     "domain": "Psychiatry & emergency medicine",
-    "skill": "Active suicidal plan / safe immediate disposition",
+    "skill": "Post-attempt discharge planning / rapid aftercare and warm handover",
     "context": "Original final-year Monash-style decision; inspired by 2024–2025 SPA-W review themes",
-    "stem": "A 27-year-old attends the emergency department after telling a friend she intends to overdose on tablets at home tonight. She has already collected several packs of medication and describes the timing and dose she plans to use. She appears calm, denies intoxication and asks to leave because she has work in the morning.",
-    "ask": "What is the safest immediate response?",
+    "stem": "A 35-year-old is medically stable following treatment for a self-poisoning episode. A senior mental health clinician has completed a comprehensive assessment, and a collaborative discharge plan with family supervision and means restriction is considered safe. The patient has no current suicidal intent, but has missed several previous outpatient appointments. The ward asks how to reduce risk during the transition home.",
+    "ask": "Which discharge arrangement best strengthens continuity of care?",
     "options": [
-      "Accept discharge because a calm presentation makes an imminent attempt less likely.",
-      "Arrange routine outpatient counselling without assessing access to medications.",
-      "Ask a friend to check by text tomorrow while allowing the patient to leave alone.",
-      "Provide a generic crisis leaflet and discharge once the patient promises to stay safe.",
-      "Ensure immediate safety and urgent mental health assessment, with supervised care as indicated."
+      "Provide a generic brochure and advise the patient to book their own appointment in a month.",
+      "Send the discharge summary without confirming that any service has accepted the referral.",
+      "Rely on the family alone because the absence of current intent eliminates post-discharge risk.",
+      "Wait until the patient requests counselling again before arranging mental health contact.",
+      "Arrange rapid suicide aftercare contact with a warm handover and documented safety plan."
     ],
     "key": "E",
     "explanations": [
-      "Calm behaviour does not negate a specific plan, access to means or near-term intent; discharge without assessment is unsafe.",
-      "Outpatient care may follow stabilisation, but imminent intent requires immediate structured assessment and safety measures.",
-      "A next-day text is insufficient protection when the patient has both a concrete plan and means available.",
-      "A verbal promise or leaflet is not a reliable substitute for assessing risk, supervision and restricting lethal means.",
-      "Correct. Specific imminent intent and access to tablets require a safe environment, assessment of capacity and legal options, urgent specialist review and collaborative means restriction."
+      "Generic information and delayed self-booking leave a high-risk post-crisis gap, especially after prior missed appointments.",
+      "Sending paperwork alone does not establish engagement; a named receiving team and contact plan improve continuity.",
+      "Family support helps but cannot replace coordinated follow-up after a recent attempt.",
+      "A passive approach is risky because the period after discharge remains vulnerable even without current intent.",
+      "Correct. Rapid aftercare, ideally contact within one or two business days, plus an agreed safety plan and warm handover can reduce loss to follow-up."
     ],
-    "pearl": "Risk assessment prioritises intent, plan, means, previous behaviour and protective factors—not outward calmness.",
-    "pivot": "A patient without current intent or means may still require a collaborative safety plan and rapid follow-up after assessment.",
+    "pearl": "The post-attempt transition is a vulnerable period; warm handover and rapid aftercare are active safety interventions.",
+    "pivot": "If imminent intent or inability to remain safe returns, discharge planning should stop and emergency reassessment is required.",
     "management": {
       "steps": [
         [
           "Recognise",
-          "Ensure immediate physical safety, observation and removal of accessible means."
+          "Confirm completed acute assessment and a clinically safe disposition."
         ],
         [
           "Assess",
-          "Assess intent, plan, means, psychiatric symptoms, supports and capacity."
+          "Review supports, access to means, prior disengagement and transport barriers."
         ],
         [
           "Act",
-          "Involve the emergency mental health team and arrange appropriate safe disposition."
+          "Arrange warm handover to rapid aftercare and document a collaborative safety plan."
         ],
         [
           "Reassess",
-          "Create a collaborative safety plan, follow-up and supported handover after stabilisation."
+          "Confirm early contact, crisis pathways and escalation if follow-up fails."
         ]
       ],
-      "safety": "Do not rely on a 'no-suicide contract' or apparent calm to discharge a patient with imminent intent.",
-      "local": "Use current Australian clinical guidance, local protocols and senior support."
+      "safety": "Aftercare cannot substitute for inpatient safety when acute risk remains high.",
+      "local": "NSW ACI Universal Aftercare guidance."
     },
-    "source": "https://www.health.nsw.gov.au/towardszerosuicides/Pages/help-for-suicide-and-depression.aspx"
+    "source": "https://aci.health.nsw.gov.au/projects/universal-aftercare/entry/initiating-care"
   }
 ]
