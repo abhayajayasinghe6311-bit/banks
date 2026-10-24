@@ -118,7 +118,7 @@
       "Blind retrieval can injure the airway or displace the battery. Removal belongs to an experienced airway/endoscopy team in a controlled environment."
     ],
     "pearl": "A button battery in the oesophagus is a time-critical emergency—even if the child looks well—with removal ideally within two hours.",
-    "pivot": "A battery already past the oesophagus and a completely asymptomatic child may follow a different specialist-directed observation or removal schedule depending on size and age.",
+    "pivot": "If the button battery has passed beyond the oesophagus and the child is WELL, involve the poisons/paediatric endoscopy team, confirm its location on imaging and follow the age/size-dependent protocol for observation, repeat imaging or retrieval. Symptoms, a large battery or lack of progression trigger urgent re-assessment rather than routine discharge.",
     "management": {
       "steps": [
         [
@@ -405,7 +405,7 @@
       "A normal pulse does not make an exposed contaminated fracture safe for outpatient treatment. Infection, soft-tissue injury and compartment syndrome remain major threats."
     ],
     "pearl": "For an open fracture, early systemic antibiotics and safe immobilisation begin before theatre; debridement and closure are specialist procedures.",
-    "pivot": "A closed, stable fracture with intact neurovascular findings may follow immobilisation and outpatient fracture-clinic review if specialist criteria are satisfied.",
+    "pivot": "If the tibial fracture is CLOSED, stable, and neurovascularly intact: provide analgesia, obtain imaging, immobilise in an appropriate splint, check and document distal perfusion and sensation before and after splinting, and arrange orthopaedic/fracture-clinic follow-up. No routine IV open-fracture antibiotics or wound debridement are required; urgent referral remains necessary for instability or neurovascular compromise.",
     "management": {
       "steps": [
         [
@@ -428,7 +428,7 @@
       "safety": "Check and document neurovascular examination before and after splinting; deterioration suggests vascular compromise or compartment syndrome.",
       "local": "Australian orthopaedic trauma and local open-fracture antibiotic pathways."
     },
-    "source": "https://www.rch.org.au/clinicalguide/guideline_index/fractures/",
+    "source": "https://trauma.reach.vic.gov.au/specialist/early-trauma-care/early-management/",
     "context": "Advanced integrated clinical decisions"
   },
   {
@@ -1174,7 +1174,7 @@
       "Correct: remove lenses, document acuity, obtain same-day ophthalmology review and arrange corneal sampling and intensive topical antimicrobials as advised."
     ],
     "pearl": "A painful photophobic red eye with reduced vision and corneal infiltrate in a lens wearer is keratitis until proven otherwise.",
-    "pivot": "Bilateral itch and watery discharge with normal vision and no infiltrate suggests a different conjunctival pathway.",
+    "pivot": "If symptoms are BILATERAL itch and watery discharge with normal vision and NO corneal infiltrate, manage probable allergic conjunctivitis with avoidance of triggers, lubricants or topical antihistamine drops and routine review. Contact-lens-related pain, photophobia or reduced acuity still demands same-day slit-lamp examination.",
     "management": {
       "steps": [
         [
@@ -1845,7 +1845,7 @@
       "Fibrinolysis can extend an intramural haematoma in SCAD and may be harmful; reperfusion decisions require specialist evaluation of mechanism and anatomy."
     ],
     "pearl": "Spontaneous coronary artery dissection is an important cause of postpartum MI; ST elevation still requires immediate ACS escalation.",
-    "pivot": "Stable non-ischaemic chest pain with normal serial ECGs and troponins follows a different risk-based chest pain pathway.",
+    "pivot": "If chest pain is stable, ECG is non-ischaemic and serial troponins are negative, use a validated Australian chest-pain risk pathway, consider alternative diagnoses, and discharge only when low-risk criteria plus safety-netting and follow-up are satisfied; do not send every low-risk patient to emergent coronary angiography.",
     "management": {
       "steps": [
         [
@@ -2182,7 +2182,7 @@
       "Vaccination prevents future disease but does not neutralise toxin or treat established respiratory diphtheria. Immunisation status and later catch-up still require attention after stabilisation."
     ],
     "pearl": "Strongly suspected respiratory diphtheria warrants prompt specialist antitoxin decisions without waiting for toxin confirmation.",
-    "pivot": "An uncomplicated sore throat without membrane, neck swelling or airway signs follows a different infectious differential and testing pathway.",
+    "pivot": "If the sore throat has NO membrane, neck swelling or airway threat, assess for viral pharyngitis versus group A streptococcal infection; give analgesia/hydration and use testing or antibiotics only when the clinical context and local guidance justify them. Do not administer diphtheria antitoxin for uncomplicated pharyngitis.",
     "management": {
       "steps": [
         [
@@ -2230,7 +2230,7 @@
       "Fetal assessment is important after maternal stabilisation, but it must not delay oxygen therapy. Improving maternal oxygen delivery is an immediate component of fetal resuscitation."
     ],
     "pearl": "Normal conventional pulse oximetry does not exclude carbon monoxide poisoning; pregnancy lowers the threshold for expert escalation.",
-    "pivot": "A patient with isolated wheeze after irritant exposure but normal co-oximetry needs a different respiratory evaluation.",
+    "pivot": "If wheeze follows irritant exposure but measured co-oximetry is normal, remove exposure, assess peak flow/airway severity and treat bronchospasm with inhaled bronchodilators as indicated; monitor and investigate alternative toxic or respiratory causes. Do not diagnose CO poisoning solely from pulse oximetry.",
     "management": {
       "steps": [
         [
