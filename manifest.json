@@ -1,6 +1,6 @@
 {
   "title": "SPA-W Study Garden",
-  "version": "2026-10-24-bank15",
+  "version": "2026-10-24-bank16",
   "banks": [
     {
       "id": 1,
@@ -105,6 +105,13 @@
       "name": "Final-Year Mastery Garden",
       "emoji": "🌺",
       "description": "100 advanced final-year integrated Australian-guideline cases with balanced choices, detailed reasoning, safety warnings and practical management",
+      "count": 100
+    },
+    {
+      "id": 16,
+      "name": "Revision Blossom Garden",
+      "emoji": "🌸",
+      "description": "100 original 2024–2025 Monash-inspired practice scenarios with balanced options, clinical reasoning and practical Australian-guideline management",
       "count": 100
     }
   ]
