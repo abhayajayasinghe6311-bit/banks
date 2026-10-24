@@ -646,7 +646,7 @@
       "Endoscopy may stop the bleeding but resuscitation cannot wait until diagnostic or therapeutic procedures begin."
     ],
     "pearl": "Short, wide peripheral IV access can outperform ordinary multilumen central access for rapid transfusion.",
-    "pivot": "When large peripheral veins cannot be accessed, seek IO or specialist rapid-infusion access.",
+    "pivot": "If two large-bore peripheral IVs cannot be obtained during life-threatening haemorrhage, activate senior anaesthetic/critical-care assistance and use intraosseous access or a suitable large-bore rapid-infusion central device while continuing blood-product resuscitation; do not rely on a narrow triple-lumen line for rapid transfusion.",
     "management": {
       "steps": [
         [
@@ -694,7 +694,7 @@
       "Correct. Jaw thrust can relieve soft-tissue obstruction rapidly, followed by appropriate suction, oxygen, bag-mask ventilation and experienced airway assistance."
     ],
     "pearl": "Call for help, open the obstructed airway and ventilate; investigation comes after oxygenation.",
-    "pivot": "Persistent stridor despite positioning may be laryngospasm or swelling requiring anaesthetic expertise.",
+    "pivot": "If jaw thrust and repositioning fail and stridor or hypoxia persists, call anaesthesia immediately, provide oxygen and positive-pressure ventilation as appropriate, assess for laryngospasm or airway swelling, and prepare advanced airway management rather than delaying for radiology.",
     "management": {
       "steps": [
         [
@@ -742,7 +742,7 @@
       "Insulin concentration does not substitute for blood ketones; osmolality is relevant to dehydration and HHS but insufficient to identify DKA."
     ],
     "pearl": "Pump users have no long-acting insulin depot; line interruption can cause DKA rapidly.",
-    "pivot": "A patient receiving SGLT2 inhibitors can develop ketoacidosis even without marked hyperglycaemia.",
+    "pivot": "If the patient takes an SGLT2 inhibitor, ketoacidosis can occur with glucose below the usual DKA threshold: check capillary blood ketones and venous pH/bicarbonate regardless of glucose, stop the SGLT2 inhibitor and use an appropriate DKA protocol when confirmed.",
     "management": {
       "steps": [
         [
@@ -790,7 +790,7 @@
       "Home observation risks delayed presentation after deterioration. Emergency evaluation and antibiotic treatment are time-sensitive."
     ],
     "pearl": "Fever in a person without a spleen deserves urgent evaluation and antibiotics, even before severe signs appear.",
-    "pivot": "When recovered, review vaccinations, prophylactic antibiotics and the family's written emergency fever plan.",
+    "pivot": "After recovery from suspected overwhelming post-splenectomy infection, review pneumococcal, meningococcal and Hib immunisations, confirm any prophylactic or standby antibiotic plan and provide written instructions to seek emergency care for future fever; these preventive steps never replace urgent treatment of an acute febrile episode.",
     "management": {
       "steps": [
         [
@@ -838,7 +838,7 @@
       "Beta-blockade may further reduce cardiac output and has no role in the initial non-shockable ALS pathway."
     ],
     "pearl": "Distinguish a slow rhythm with a pulse from PEA: the latter is cardiac arrest.",
-    "pivot": "VF or pulseless VT calls for unsynchronised defibrillation; PEA does not.",
+    "pivot": "If the arrest rhythm becomes ventricular fibrillation or pulseless ventricular tachycardia, deliver prompt unsynchronised defibrillation with ongoing CPR and ALS medications; for persistent PEA, continue high-quality CPR, adrenaline according to protocol and investigation of reversible causes without shocking a non-shockable rhythm.",
     "management": {
       "steps": [
         [
@@ -1030,7 +1030,7 @@
       "Paracetamol is not a usual cause of acute symptomatic hypocalcaemia; looking for a time-related medication effect is more informative."
     ],
     "pearl": "Denosumab can cause dangerous hypocalcaemia, especially in CKD; monitor calcium and vitamin D status.",
-    "pivot": "Symptomatic tetany or arrhythmia from hypocalcaemia may require monitored IV calcium and senior input.",
+    "pivot": "If denosumab-associated hypocalcaemia produces tetany, seizures, prolonged QT or arrhythmia, institute monitored IV calcium gluconate with ECG and repeated ionised calcium checks, correct magnesium/vitamin D deficits and seek renal/endocrine input; mild asymptomatic deficiency may be treated orally with close follow-up.",
     "management": {
       "steps": [
         [
@@ -1462,7 +1462,7 @@
       "Glucagon may be considered in selected refractory beta-blocker-associated reactions, not as routine initial therapy."
     ],
     "pearl": "Anaphylaxis can occur without skin signs; IM adrenaline must not be delayed by antihistamines.",
-    "pivot": "Persistent shock after appropriate IM adrenaline and fluids requires specialist-led refractory anaphylaxis management.",
+    "pivot": "If anaphylactic hypotension persists despite appropriate repeated IM adrenaline and IV crystalloid, activate critical-care/anaesthetic support, reassess airway and circulation, and start a monitored IV adrenaline infusion only under experienced supervision according to the refractory anaphylaxis protocol.",
     "management": {
       "steps": [
         [
@@ -1654,7 +1654,7 @@
       "Correct. In severe asthma, carboprost is generally avoided because of bronchospasm risk; consider alternatives such as misoprostol and balloon tamponade under the PPH protocol."
     ],
     "pearl": "The next uterotonic in PPH depends on comorbidities: carboprost can cause bronchospasm, while ergometrine is problematic in hypertension.",
-    "pivot": "With hypertension or pre-eclampsia, ergometrine is also unsuitable; consider drug-specific contraindications and mechanical escalation.",
+    "pivot": "If postpartum haemorrhage persists after oxytocin in a patient with asthma, avoid carboprost where bronchospasm risk is significant; if hypertension or pre-eclampsia is also present, avoid ergometrine and move to appropriate alternative uterotonics, tranexamic acid, bimanual compression, balloon tamponade and theatre escalation.",
     "management": {
       "steps": [
         [
@@ -2134,7 +2134,7 @@
       "Correct. Even small burns of hands warrant early specialist discussion because healing, movement and scarring can impair grip and fine motor function. Cooling, analgesia, dressings and hand therapy remain relevant."
     ],
     "pearl": "Burn referral depends on the site and function as well as area and depth.",
-    "pivot": "Extensive burns or suspected inhalation injury require a separate major-burn resuscitation pathway.",
+    "pivot": "If a burn involves extensive body surface area, airway soot, hoarseness or suspected inhalation injury, move beyond routine hand-burn dressings to ABCDE resuscitation, early airway/major-burn team discussion, indicated fluid resuscitation and urgent specialist transfer.",
     "management": {
       "steps": [
         [
@@ -2326,7 +2326,7 @@
       "Catecholamine testing can evaluate suspected phaeochromocytoma but is not most targeted when spontaneous hypokalaemia accompanies sustained severe hypertension."
     ],
     "pearl": "Severe or resistant hypertension with unexplained hypokalaemia should prompt primary aldosteronism screening.",
-    "pivot": "Hypokalaemia can suppress aldosterone and mislead testing; sample conditions and medication interference matter.",
+    "pivot": "If the patient is hypokalaemic or taking interfering antihypertensives, correct potassium and coordinate safe medication adjustment before aldosterone-renin testing with specialist advice; if an adrenal incidentaloma is found, biochemical confirmation and appropriate subtype testing still precede treatment decisions.",
     "management": {
       "steps": [
         [
@@ -2422,7 +2422,7 @@
       "Epidural injection is sometimes considered for persistent disabling symptoms after clinical review; it is not automatically the first intervention on day one."
     ],
     "pearl": "Severe pain alone does not mandate urgent MRI when neurologic power, reflexes and sphincter function are preserved.",
-    "pivot": "New retention, saddle anaesthesia, progressive weakness or bilateral neurological change requires urgent MRI/spinal assessment.",
+    "pivot": "If new urinary retention, saddle anaesthesia, bilateral sciatica or progressive weakness occurs, treat as suspected cauda equina syndrome: perform urgent focused neurological/bladder assessment, obtain emergency MRI and contact spinal surgery rather than continuing routine physiotherapy.",
     "management": {
       "steps": [
         [
@@ -2470,7 +2470,7 @@
       "DVT can exist without pulmonary symptoms. Their absence cannot exclude venous thrombosis and does not identify the origin of a red skin patch."
     ],
     "pearl": "Tender draining lymph nodes favour cellulitis; assess DVT probability separately when it remains clinically plausible.",
-    "pivot": "Diffuse swelling with little skin inflammation and substantial thrombotic risk may prompt compression ultrasonography.",
+    "pivot": "If unilateral swelling occurs without clear warmth or skin infection but with recent surgery, immobility or cancer, assess DVT pretest probability and obtain compression venous ultrasound when indicated; do not use lymph-node findings alone to exclude a clot.",
     "management": {
       "steps": [
         [
@@ -2998,7 +2998,7 @@
       "Reduced activity is concerning if substantial, but is nonspecific without its pattern and severity. The missing diarrhoea warns against prematurely assuming gastroenteritis."
     ],
     "pearl": "Vomiting is not synonymous with gastroenteritis; bilious emesis, episodic pain or drowsiness are important alternate-diagnosis clues.",
-    "pivot": "If green bilious vomiting develops, urgently assess for bowel obstruction and surgical emergencies.",
+    "pivot": "If vomiting becomes clearly dark green (bilious), keep the child nil by mouth, assess hydration and haemodynamics and obtain urgent paediatric surgical review for obstruction/volvulus rather than treating as simple viral gastroenteritis.",
     "management": {
       "steps": [
         [
@@ -3142,7 +3142,7 @@
       "Renal imaging and evaluation of obstructive aetiology may guide further treatment, particularly with new renal impairment or suspected upper tract obstruction."
     ],
     "pearl": "Acute retention requires relief of obstruction and monitoring; PSA interpretation can wait.",
-    "pivot": "A suspected urethral injury after trauma contraindicates blind urethral catheterisation and needs specialist assessment.",
+    "pivot": "If urethral injury is suspected after pelvic trauma (blood at meatus, pelvic fracture or perineal haematoma), do not attempt blind urethral catheterisation; call urology/trauma and arrange appropriate urethral imaging or specialist urinary diversion.",
     "management": {
       "steps": [
         [
@@ -3519,11 +3519,11 @@
     ],
     "key": "D",
     "explanations": [
-      "Outpatient testing risks irreversible ischaemic damage.",
-      "Compression and elevation can impair already compromised arterial perfusion.",
-      "Bedside assessment and imaging can assist planning, but referral must not wait for ABI testing.",
-      "Correct. Motor deficit with acute loss of perfusion is a limb-threatening emergency; immediate vascular decision-making is essential.",
-      "A suddenly cold pulseless foot with weakness cannot be attributed to neuropathic pain alone."
+      "Outpatient testing risks irreversible ischaemic damage. Sudden motor weakness and absent perfusion signal mean tissue can become nonviable within hours; discharge would miss the window for revascularisation.",
+      "Compression and elevation can impair already compromised arterial perfusion. These measures are for venous oedema, whereas this patient has acute arterial inflow failure and needs restoration of blood supply.",
+      "Bedside assessment and imaging can assist planning, but referral must not wait for ABI testing. ABI may help with chronic peripheral arterial disease, but it cannot safely delay an emergency vascular referral when neurological deficit is present.",
+      "Correct. Motor deficit with acute loss of perfusion is a limb-threatening emergency; immediate vascular decision-making is essential. Keep the patient fasting, give analgesia, assess contraindications to IV unfractionated heparin and involve vascular surgery for urgent imaging or revascularisation.",
+      "A suddenly cold pulseless foot with weakness cannot be attributed to neuropathic pain alone. Neuropathy does not explain sudden pallor, coldness and pulselessness; attributing the whole presentation to nerve pain is a dangerous anchoring error."
     ],
     "pearl": "Decision principle: Acute limb ischaemia / threatened extremity.",
     "pivot": "If compartment syndrome develops after reperfusion, seek immediate surgical reassessment for possible fasciotomy, rather than simply increasing analgesia.",
@@ -3549,7 +3549,7 @@
       "safety": "If compartment syndrome develops after reperfusion, seek immediate surgical reassessment for possible fasciotomy, rather than simply increasing analgesia.",
       "local": "Use current local Victorian/Australian protocol and senior escalation for deterioration."
     },
-    "source": "https://aci.health.nsw.gov.au/networks/eci/clinical/clinical-tools/vascular-emergencies"
+    "source": "https://aci.health.nsw.gov.au/networks/eci/clinical/tools/acute-limb-ischaemia"
   },
   {
     "n": 75,
@@ -3567,11 +3567,11 @@
     ],
     "key": "E",
     "explanations": [
-      "Typical viral croup is not treated with routine antibiotics.",
-      "Imaging delays care and agitation can exacerbate obstruction.",
-      "Salbutamol targets lower-airway bronchospasm, not subglottic oedema.",
-      "Distressing throat instrumentation risks worsening airway compromise; reserve invasive examination for expert teams when indicated.",
-      "Correct. Stridor at rest with increased effort needs dexamethasone and often nebulised adrenaline, followed by observation for rebound symptoms."
+      "Typical viral croup is not treated with routine antibiotics. Antibiotics are considered when bacterial tracheitis or another bacterial cause is suspected, not for typical viral croup with a barking cough.",
+      "Imaging delays care and agitation can exacerbate obstruction. Routine radiographs are unnecessary in typical croup and transporting an agitated child can worsen upper-airway obstruction.",
+      "Salbutamol targets lower-airway bronchospasm, not subglottic oedema. Stridor is caused by narrowed upper airway calibre; bronchodilators used for wheeze do not relieve the subglottic swelling.",
+      "Distressing throat instrumentation risks worsening airway compromise; reserve invasive examination for expert teams when indicated. An unneeded examination can provoke distress and airway deterioration; keep the child with their caregiver and minimise handling.",
+      "Correct. Stridor at rest with increased effort needs dexamethasone and often nebulised adrenaline, followed by observation for rebound symptoms. Nebulised adrenaline improves obstruction quickly but its effect is transient, so observation after treatment and reassessment of stridor are important."
     ],
     "pearl": "Decision principle: Croup / stridor at rest.",
     "pivot": "If exhaustion, cyanosis, reduced air entry or altered consciousness develops, call senior airway/anaesthetic help immediately and prepare controlled airway support.",
@@ -3615,11 +3615,11 @@
     ],
     "key": "A",
     "explanations": [
-      "Correct. A single early scan and hCG level cannot determine location or viability; serial results and symptoms guide reassessment.",
-      "An empty uterus alone cannot confirm completed miscarriage.",
-      "Methotrexate requires a sufficiently secure diagnosis, eligibility checks and reliable follow-up.",
-      "Ectopic pregnancy can occur at any hCG level, including very low values.",
-      "An early intrauterine pregnancy is possible but cannot yet be established."
+      "Correct. A single early scan and hCG level cannot determine location or viability; serial results and symptoms guide reassessment. Document symptoms and ectopic precautions, arrange repeat quantitative hCG and ultrasound as indicated, and ensure reliable review until location is established.",
+      "An empty uterus alone cannot confirm completed miscarriage. Completed miscarriage requires supporting clinical or imaging evidence; an early intrauterine pregnancy and an ectopic remain possible.",
+      "Methotrexate requires a sufficiently secure diagnosis, eligibility checks and reliable follow-up. Unnecessary methotrexate can harm an early viable intrauterine pregnancy, so eligibility and diagnostic certainty matter.",
+      "Ectopic pregnancy can occur at any hCG level, including very low values. Low hCG does not protect against rupture; new pain, syncope or haemodynamic compromise requires emergency surgical assessment.",
+      "An early intrauterine pregnancy is possible but cannot yet be established. Normal early development cannot be inferred from one low hCG and empty scan; explain uncertainty rather than falsely reassure."
     ],
     "pearl": "Decision principle: Ectopic pregnancy / pregnancy of unknown location.",
     "pivot": "If the patient develops syncope, peritonism or haemodynamic instability, commence resuscitation and urgent gynaecological surgical assessment for rupture rather than routine serial testing.",
@@ -3663,11 +3663,11 @@
     ],
     "key": "B",
     "explanations": [
-      "Hypotonic fluid further lowers sodium in most such scenarios.",
-      "Correct. Seizure from severe symptomatic hyponatraemia warrants monitored 3% hypertonic saline boluses under local protocol to achieve initial modest rise.",
-      "Fluid restriction is insufficient during active severe neurological symptoms.",
-      "Diuretics can have selected roles but do not replace emergency hypertonic treatment.",
-      "Overcorrection risks osmotic demyelination, particularly with chronic hyponatraemia."
+      "Hypotonic fluid further lowers sodium in most such scenarios. Giving free water when sodium is already 113 mmol/L risks increasing cerebral oedema and worsening seizures.",
+      "Correct. Seizure from severe symptomatic hyponatraemia warrants monitored 3% hypertonic saline boluses under local protocol to achieve initial modest rise. The immediate goal is a small, controlled sodium rise sufficient to improve neurological symptoms, not normalisation in one sitting.",
+      "Fluid restriction is insufficient during active severe neurological symptoms. Fluid restriction may become appropriate after stabilisation for SIADH, but it cannot reverse active hyponatraemic encephalopathy.",
+      "Diuretics can have selected roles but do not replace emergency hypertonic treatment. Volume status and underlying cause determine later fluid strategy; furosemide alone is neither a seizure treatment nor universally safe.",
+      "Overcorrection risks osmotic demyelination, particularly with chronic hyponatraemia. Unknown duration requires conservative subsequent correction limits, frequent serum checks and specialist advice if sodium rises too rapidly."
     ],
     "pearl": "Decision principle: Hyponatraemia / seizure emergency.",
     "pivot": "Once seizures resolve and initial limited correction is achieved, slow correction and investigate cause; if sodium rises excessively, obtain specialist advice on preventing overcorrection.",
@@ -3693,7 +3693,7 @@
       "safety": "Once seizures resolve and initial limited correction is achieved, slow correction and investigate cause; if sodium rises excessively, obtain specialist advice on preventing overcorrection.",
       "local": "Use current local Victorian/Australian protocol and senior escalation for deterioration."
     },
-    "source": "https://aci.health.nsw.gov.au/networks/eci/clinical/clinical-tools/electrolyte-abnormalities"
+    "source": "https://www.health.qld.gov.au/clinical-practice/guidelines-procedures/medicines/safety/electrolyte-disturbances/hypo"
   },
   {
     "n": 78,
@@ -3711,11 +3711,11 @@
     ],
     "key": "C",
     "explanations": [
-      "Radiographs may assess perforation or obstruction but a normal film does not exclude intussusception.",
-      "Microbiology does not address possible bowel obstruction or ischaemia.",
-      "Correct. Intermittent colicky pain in this age group warrants urgent ultrasound; bloody stool is a late and insensitive clue.",
-      "Endoscopy is not the diagnostic first step for this presentation.",
-      "Delaying diagnosis risks bowel compromise even when the infant appears well between episodes."
+      "Radiographs may assess perforation or obstruction but a normal film does not exclude intussusception. Ultrasound is the preferred test to identify the target or doughnut sign; plain films may be used selectively to assess obstruction or perforation.",
+      "Microbiology does not address possible bowel obstruction or ischaemia. Intussusception can cause venous congestion and bowel ischaemia, neither of which a stool culture evaluates.",
+      "Correct. Intermittent colicky pain in this age group warrants urgent ultrasound; bloody stool is a late and insensitive clue. Obtain surgical advice and resuscitate as needed; if confirmed without peritonitis or shock, radiological enema reduction is usually the next treatment.",
+      "Endoscopy is not the diagnostic first step for this presentation. The symptom pattern and age favour a lower gastrointestinal telescoping process, not primary oesophageal disease.",
+      "Delaying diagnosis risks bowel compromise even when the infant appears well between episodes. Children can appear comfortable between painful episodes, so a normal-looking interval does not make discharge safe."
     ],
     "pearl": "Decision principle: Intussusception / episodic pain.",
     "pivot": "If shock, peritonitis or perforation is present, resuscitate and obtain immediate surgery rather than attempting routine radiological enema reduction.",
@@ -3759,11 +3759,11 @@
     ],
     "key": "D",
     "explanations": [
-      "Anaemia is not a normal consequence of age.",
-      "Response to iron confirms replacement efficacy but does not identify bleeding source.",
-      "Thalassaemia may cause microcytosis but does not explain unequivocal low ferritin here.",
-      "Correct. Iron deficiency in an older man warrants investigation for gastrointestinal pathology, including malignancy, alongside replacement.",
-      "Diet may contribute but does not safely exclude gastrointestinal pathology."
+      "Anaemia is not a normal consequence of age. An older adult with iron deficiency needs an explanation; chronic occult bleeding and colorectal malignancy must be considered.",
+      "Response to iron confirms replacement efficacy but does not identify bleeding source. Haemoglobin improvement does not identify why iron was depleted; investigation must proceed even when symptoms improve.",
+      "Thalassaemia may cause microcytosis but does not explain unequivocal low ferritin here. Thalassaemia trait generally does not deplete iron stores; a very low ferritin supports true iron deficiency requiring cause evaluation.",
+      "Correct. Iron deficiency in an older man warrants investigation for gastrointestinal pathology, including malignancy, alongside replacement. Discuss bidirectional endoscopy or an appropriate gastrointestinal pathway based on symptoms and local guidelines, while giving iron replacement.",
+      "Diet may contribute but does not safely exclude gastrointestinal pathology. Dietary insufficiency is less reassuring in an older man, where unexplained gastrointestinal blood loss warrants evaluation."
     ],
     "pearl": "Decision principle: Iron deficiency anaemia / evaluation.",
     "pivot": "If haemodynamically unstable or actively bleeding, prioritise resuscitation and urgent inpatient endoscopic/surgical evaluation rather than routine outpatient investigation.",
@@ -3807,11 +3807,11 @@
     ],
     "key": "E",
     "explanations": [
-      "Primary schizophrenia seldom presents as abrupt fluctuating inattention in this context.",
-      "Routine restraint can worsen delirium and cause injury.",
-      "Benzodiazepines commonly worsen delirium outside specific indications such as withdrawal.",
-      "Hallucinations are one manifestation; addressing reversible medical drivers is critical.",
-      "Correct. Acute fluctuating attention is characteristic of delirium; evaluate infection, pain, retention, drugs, hypoxia and metabolic disturbance."
+      "Primary schizophrenia seldom presents as abrupt fluctuating inattention in this context. Delirium has an acute fluctuating course and impaired attention; treating it as a chronic primary psychosis delays identification of medical causes.",
+      "Routine restraint can worsen delirium and cause injury. Restraints can increase agitation, falls and distress; use environmental modification and close supervision where possible.",
+      "Benzodiazepines commonly worsen delirium outside specific indications such as withdrawal. Except for alcohol or sedative withdrawal and specific indications, benzodiazepines may worsen confusion, sedation and fall risk.",
+      "Hallucinations are one manifestation; addressing reversible medical drivers is critical. Assess for urinary retention, constipation, medication effects, infection, pain and hypoxia before focusing only on perceptual symptoms.",
+      "Correct. Acute fluctuating attention is characteristic of delirium; evaluate infection, pain, retention, drugs, hypoxia and metabolic disturbance. Use reorientation, sensory aids, sleep support, hydration, mobilisation and family involvement while correcting precipitating illness."
     ],
     "pearl": "Decision principle: Delirium / reversible causes.",
     "pivot": "If immediate danger persists despite de-escalation, obtain senior review for the least restrictive short-term medication or observation strategy while treating the cause.",
@@ -3855,11 +3855,11 @@
     ],
     "key": "A",
     "explanations": [
-      "Correct. Treat clinical haemorrhagic shock before laboratory confirmation; arrange blood products and urgent definitive evaluation.",
-      "Oral therapy cannot stabilise active haemodynamic compromise.",
-      "Early haemoglobin may lag behind acute blood loss and must not delay resuscitation.",
-      "Transient cessation does not remove high rebleeding and death risk.",
-      "Iron treats later deficiency, not the current circulation emergency."
+      "Correct. Treat clinical haemorrhagic shock before laboratory confirmation; arrange blood products and urgent definitive evaluation. Secure airway if needed, restore circulation and obtain blood bank support before relying on a delayed haemoglobin result or definitive endoscopy.",
+      "Oral therapy cannot stabilise active haemodynamic compromise. Oral PPI has no immediate effect on shock and discharge is unsafe with hypotension and tachycardia.",
+      "Early haemoglobin may lag behind acute blood loss and must not delay resuscitation. Haemoglobin can initially be misleading because blood loss may precede haemodilution; physiological shock signs take priority.",
+      "Transient cessation does not remove high rebleeding and death risk. Early endoscopy follows initial resuscitation and stabilisation, not outpatient review in a haemodynamically unstable patient.",
+      "Iron treats later deficiency, not the current circulation emergency. Iron therapy is a later supportive measure for deficiency and cannot replace blood-loss control or transfusion decisions."
     ],
     "pearl": "Decision principle: Upper gastrointestinal bleeding / resuscitation.",
     "pivot": "If suspected variceal bleeding or cirrhosis is identified, add vasoactive therapy and prophylactic antibiotics with urgent specialist endoscopy.",
@@ -3885,7 +3885,7 @@
       "safety": "If suspected variceal bleeding or cirrhosis is identified, add vasoactive therapy and prophylactic antibiotics with urgent specialist endoscopy.",
       "local": "Use current local Victorian/Australian protocol and senior escalation for deterioration."
     },
-    "source": "https://aci.health.nsw.gov.au/networks/eci/clinical/clinical-tools/gastrointestinal-bleeding"
+    "source": "https://aci.health.nsw.gov.au/networks/eci/clinical/tools/upper-gastrointestinal-bleeding"
   },
   {
     "n": 82,
@@ -3903,11 +3903,11 @@
     ],
     "key": "B",
     "explanations": [
-      "Outpatient oral treatment is inadequate for a potentially fulminant invasive infection.",
-      "Correct. Pain out of proportion and systemic toxicity can signal necrotising infection; early surgical source control saves life.",
-      "Imaging may aid assessment but cannot delay urgent surgical review.",
-      "Dressings do not treat deep fascial necrosis.",
-      "Crepitus and skin necrosis may appear late; waiting is dangerous."
+      "Outpatient oral treatment is inadequate for a potentially fulminant invasive infection. Early necrotising infection may have little skin change despite deep fascial damage; oral antibiotics alone miss source control.",
+      "Correct. Pain out of proportion and systemic toxicity can signal necrotising infection; early surgical source control saves life. Resuscitate, send cultures if feasible without delay, start broad-spectrum IV antibiotics and expedite operative debridement.",
+      "Imaging may aid assessment but cannot delay urgent surgical review. CT can help if diagnosis is uncertain and the patient is stable, but imaging must not hold up surgical exploration.",
+      "Dressings do not treat deep fascial necrosis. Surface dressings do not penetrate necrotic fascia and cannot stop toxin production or systemic deterioration.",
+      "Crepitus and skin necrosis may appear late; waiting is dangerous. Crepitus is neither sensitive nor an early mandatory feature; disproportionate pain and rapid progression justify escalation."
     ],
     "pearl": "Decision principle: Necrotising soft tissue infection / early surgery.",
     "pivot": "If the patient deteriorates into shock, provide immediate ICU-level resuscitation and vasopressors while proceeding urgently to theatre.",
@@ -3951,11 +3951,11 @@
     ],
     "key": "C",
     "explanations": [
-      "A transiently reassuring appearance does not exclude invasive bacterial infection.",
-      "Urine testing alone misses bacteraemia and meningitis.",
-      "Correct. Fever in a neonate warrants urgent evaluation, cultures including urine and often CSF, and prompt parenteral antibiotics.",
-      "Viral symptoms or a well appearance do not safely exclude serious infection at this age.",
-      "Delayed outpatient investigation risks rapid deterioration."
+      "A transiently reassuring appearance does not exclude invasive bacterial infection. Neonatal bacterial sepsis may initially have subtle findings, and discharge after one feed can miss rapid deterioration.",
+      "Urine testing alone misses bacteraemia and meningitis. UTI is only one potential source; blood cultures and lumbar puncture when safe are considered in the neonatal sepsis work-up.",
+      "Correct. Fever in a neonate warrants urgent evaluation, cultures including urine and often CSF, and prompt parenteral antibiotics. Obtain blood and urine cultures, consider CSF testing and start age-appropriate IV antibiotics promptly under senior paediatric care.",
+      "Viral symptoms or a well appearance do not safely exclude serious infection at this age. Viral infection does not reliably exclude concomitant bacterial disease in a neonate younger than 28 days.",
+      "Delayed outpatient investigation risks rapid deterioration. An infant can deteriorate within hours; investigations and antibiotics should occur during the current presentation, not next week."
     ],
     "pearl": "Decision principle: Febrile infant / serious bacterial infection.",
     "pivot": "If shock, apnoea or altered consciousness develops, stabilise ABCDE, initiate sepsis resuscitation and antibiotics immediately; do not delay therapy for lumbar puncture.",
@@ -3999,11 +3999,11 @@
     ],
     "key": "D",
     "explanations": [
-      "Severe features can progress to eclampsia or stroke.",
-      "Home management cannot provide acute monitoring or treatment.",
-      "Quantifying protein does not change the need to treat severe features now.",
-      "Correct. Severe hypertension with neurological symptoms needs urgent blood-pressure control, magnesium assessment and obstetric delivery planning.",
-      "Routine diuresis can impair intravascular volume and does not address underlying disease."
+      "Severe features can progress to eclampsia or stroke. Neurological symptoms with BP 174/114 mmHg indicate immediate maternal stroke and seizure risk, not routine surveillance.",
+      "Home management cannot provide acute monitoring or treatment. Bed rest and fluid loading do not treat severe pre-eclampsia; inpatient maternal and fetal monitoring is needed.",
+      "Quantifying protein does not change the need to treat severe features now. Protein quantification is not required to begin treatment when severe hypertension and neurological features are already evident.",
+      "Correct. Severe hypertension with neurological symptoms needs urgent blood-pressure control, magnesium assessment and obstetric delivery planning. Use protocolised acute antihypertensives, magnesium sulphate for seizure prevention when indicated, blood tests and senior-led delivery planning after stabilisation.",
+      "Routine diuresis can impair intravascular volume and does not address underlying disease. Diuretics are not routine pre-eclampsia therapy and can worsen intravascular depletion unless there is a specific indication such as pulmonary oedema."
     ],
     "pearl": "Decision principle: Severe pre-eclampsia / magnesium and delivery planning.",
     "pivot": "If eclamptic seizure occurs, protect airway and prevent injury, administer magnesium sulfate and organise stabilisation followed by urgent delivery planning.",
@@ -4047,11 +4047,11 @@
     ],
     "key": "E",
     "explanations": [
-      "Early aggressive insulin without volume correction can rapidly shift osmolality and worsen collapse.",
-      "There is no metabolic acidosis needing bicarbonate.",
-      "Altered consciousness and hypotension require inpatient monitored care.",
-      "Careful fluids are essential; the rate depends on physiology and comorbidity.",
-      "Correct. HHS causes severe water deficit; restoring perfusion and monitoring sodium/potassium precede cautious insulin treatment."
+      "Early aggressive insulin without volume correction can rapidly shift osmolality and worsen collapse. Volume depletion is profound in HHS, so insulin without restoring circulation can cause rapid osmotic changes and hypotension.",
+      "There is no metabolic acidosis needing bicarbonate. Bicarbonate is not indicated in the absence of significant acidosis and may cause electrolyte complications.",
+      "Altered consciousness and hypotension require inpatient monitored care. Hypotension, marked hyperosmolality and altered consciousness require monitored hospital management and treatment of triggers.",
+      "Careful fluids are essential; the rate depends on physiology and comorbidity. Fluid replacement is essential but must be individualised to sodium, cardiac/renal status and rate of osmolality correction.",
+      "Correct. HHS causes severe water deficit; restoring perfusion and monitoring sodium/potassium precede cautious insulin treatment. Check potassium and sodium repeatedly, restore perfusion with appropriate crystalloid and initiate cautious insulin when indicated under a HHS protocol."
     ],
     "pearl": "Decision principle: Hyperglycaemic hyperosmolar state / fluid-first management.",
     "pivot": "If significant ketonaemia and acidosis are also present, use a mixed DKA/HHS protocol with appropriate insulin and potassium replacement rather than HHS fluid-only initiation.",
@@ -4095,11 +4095,11 @@
     ],
     "key": "A",
     "explanations": [
-      "Correct. The clinical pattern is highly suspicious for torsion; urgent exploration is time critical.",
-      "Epididymitis treatment must not delay torsion exclusion.",
-      "Urinalysis does not establish or exclude torsion.",
-      "A high-riding painful testis with abrupt onset is a surgical emergency.",
-      "Delayed imaging risks irreversible loss of blood supply."
+      "Correct. The clinical pattern is highly suspicious for torsion; urgent exploration is time critical. When torsion is strongly suspected, the salvage window is measured in hours and operative exploration should not wait for ultrasound.",
+      "Epididymitis treatment must not delay torsion exclusion. Epididymitis is more often gradual with urinary or infectious findings; antibiotics do not restore flow through a twisted spermatic cord.",
+      "Urinalysis does not establish or exclude torsion. Urine results may support infection but cannot evaluate testicular blood supply and should not postpone surgical contact.",
+      "A high-riding painful testis with abrupt onset is a surgical emergency. Testicular torsion is a surgical emergency in adolescents and delay can lead to infarction and loss of fertility potential.",
+      "Delayed imaging risks irreversible loss of blood supply. Doppler may be used if diagnostic uncertainty remains and imaging is immediately available without delaying surgical review."
     ],
     "pearl": "Decision principle: Testicular torsion / urgent exploration.",
     "pivot": "If a clear alternative diagnosis is established after expert review and perfusion is reassuring, investigate and treat that cause; uncertainty still warrants urgent surgical consultation.",
@@ -4143,11 +4143,11 @@
     ],
     "key": "B",
     "explanations": [
-      "Resolution of deficits does not eliminate imminent stroke risk.",
-      "Correct. TIA is a warning of early stroke; urgent imaging, cardiac assessment and secondary prevention are required.",
-      "Delayed evaluation misses time-sensitive risk identification and treatment.",
-      "Focal weakness and dysphasia are not explained by benign vestibular disease.",
-      "Lipids aid risk management but are insufficient as the sole assessment."
+      "Resolution of deficits does not eliminate imminent stroke risk. A TIA can leave no examination abnormality while still indicating a high short-term stroke risk.",
+      "Correct. TIA is a warning of early stroke; urgent imaging, cardiac assessment and secondary prevention are required. Obtain urgent brain/vascular imaging, ECG for atrial fibrillation and specialist secondary-prevention planning; consider carotid intervention when indicated.",
+      "Delayed evaluation misses time-sensitive risk identification and treatment. Some patients have treatable carotid stenosis or cardioembolic disease requiring prompt intervention rather than delayed review.",
+      "Focal weakness and dysphasia are not explained by benign vestibular disease. Unilateral weakness and language disturbance localise to cerebral circulation rather than an isolated vestibular disorder.",
+      "Lipids aid risk management but are insufficient as the sole assessment. Risk-factor blood tests supplement but do not replace urgent vascular imaging, ECG and antithrombotic planning."
     ],
     "pearl": "Decision principle: Transient ischaemic attack / urgent stroke prevention.",
     "pivot": "If focal symptoms are ongoing or recur, activate the acute stroke pathway immediately, including reperfusion eligibility assessment rather than a resolved-TIA pathway.",
@@ -4191,11 +4191,11 @@
     ],
     "key": "C",
     "explanations": [
-      "Antipsychotics do not prevent withdrawal seizures and may lower seizure threshold.",
-      "Waiting for seizures is unsafe when clinically significant withdrawal is evident.",
-      "Correct. Benzodiazepines reduce withdrawal complications; thiamine, fluids and risk assessment are important.",
-      "Prior seizures, delirium or comorbidity may require supervised inpatient care.",
-      "Disulfiram is relapse-prevention therapy, not treatment of acute withdrawal."
+      "Antipsychotics do not prevent withdrawal seizures and may lower seizure threshold. Antipsychotics may have an adjunctive role for severe agitation or hallucinations but do not replace benzodiazepine-based withdrawal treatment.",
+      "Waiting for seizures is unsafe when clinically significant withdrawal is evident. Symptoms may escalate to seizures or delirium tremens; early risk-stratified therapy is safer than waiting for a complication.",
+      "Correct. Benzodiazepines reduce withdrawal complications; thiamine, fluids and risk assessment are important. Monitor sedation and respiratory status, assess prior seizures or delirium, replace thiamine and electrolytes and tailor benzodiazepines to clinical severity.",
+      "Prior seizures, delirium or comorbidity may require supervised inpatient care. Outpatient withdrawal requires a reliable support network and absence of major medical or prior complicated withdrawal risk.",
+      "Disulfiram is relapse-prevention therapy, not treatment of acute withdrawal. Disulfiram requires abstinence and informed follow-up, and giving it during acute withdrawal would not treat autonomic hyperactivity."
     ],
     "pearl": "Decision principle: Alcohol withdrawal / severe symptoms.",
     "pivot": "If hallucinations with disorientation, seizures or severe autonomic instability develop, escalate to inpatient high-acuity withdrawal management and assess for delirium tremens.",
@@ -4239,11 +4239,11 @@
     ],
     "key": "D",
     "explanations": [
-      "Delayed treatment can be fatal with rapidly progressive meningococcaemia.",
-      "LP may be contraindicated during shock and should never delay antibiotics.",
-      "Immediate perfusion and sepsis assessment outrank dermatological referral.",
-      "Correct. Purpura with shock indicators mandates urgent sepsis management; antibiotics must not await LP.",
-      "Antihistamines do not treat invasive infection or circulatory collapse."
+      "Delayed treatment can be fatal with rapidly progressive meningococcaemia. Non-blanching purpura with poor perfusion is a high-risk sepsis pattern and can progress to shock within minutes.",
+      "LP may be contraindicated during shock and should never delay antibiotics. Lumbar puncture is deferred in an unstable child and antibiotics should not wait for microbiological confirmation.",
+      "Immediate perfusion and sepsis assessment outrank dermatological referral. Cold extremities and prolonged capillary refill demand immediate circulation assessment and senior paediatric resuscitation.",
+      "Correct. Purpura with shock indicators mandates urgent sepsis management; antibiotics must not await LP. Obtain blood cultures if feasible without delaying antimicrobials, give appropriate IV antibiotics and carefully reassess fluids and perfusion.",
+      "Antihistamines do not treat invasive infection or circulatory collapse. A transient change in rash appearance after antihistamine would not reverse bacterial endotoxaemia or circulatory failure."
     ],
     "pearl": "Decision principle: Meningococcal sepsis / antibiotics without delay.",
     "pivot": "If seizures or altered conscious state occur, manage airway and circulation with critical-care help and defer lumbar puncture until stabilised.",
@@ -4287,11 +4287,11 @@
     ],
     "key": "E",
     "explanations": [
-      "Negative or pending cervical swabs do not exclude upper-genital-tract infection.",
-      "Candidiasis does not explain cervical motion tenderness with pelvic pain.",
-      "Stable uncomplicated PID is generally treated medically, not via emergency laparotomy.",
-      "Symptom relief without infection treatment risks tubal damage.",
-      "Correct. PID is often a clinical diagnosis and early empiric broad coverage reduces reproductive complications."
+      "Negative or pending cervical swabs do not exclude upper-genital-tract infection. Cervical swabs can be negative in upper-genital-tract infection; early treatment limits risk of infertility and ectopic pregnancy.",
+      "Candidiasis does not explain cervical motion tenderness with pelvic pain. Thrush more typically causes itch and discharge rather than cervical motion tenderness with lower abdominal pain.",
+      "Stable uncomplicated PID is generally treated medically, not via emergency laparotomy. Surgical exploration is reserved for complications such as peritonitis, suspected alternative surgical emergencies or unstable tubo-ovarian abscess.",
+      "Symptom relief without infection treatment risks tubal damage. Untreated PID can cause tubal scarring and chronic pelvic pain, even when the patient is currently stable.",
+      "Correct. PID is often a clinical diagnosis and early empiric broad coverage reduces reproductive complications. Cover gonorrhoea, chlamydia and anaerobes according to Australian STI guidance, counsel partner testing and review response within 48–72 hours."
     ],
     "pearl": "Decision principle: Pelvic inflammatory disease / empiric therapy.",
     "pivot": "If pregnancy, tubo-ovarian abscess, peritonitis, severe illness or failure of outpatient therapy is identified, seek urgent gynaecological assessment for admission and IV treatment.",
@@ -4335,11 +4335,11 @@
     ],
     "key": "A",
     "explanations": [
-      "Correct. Persistent hypoxaemia and increased work demand emergency asthma therapy, repeated assessment and escalation.",
-      "Quietening wheeze with reduced air entry may indicate worsening airflow, not improvement.",
-      "Spirometry cannot delay acute stabilisation.",
-      "Antibiotics are not a replacement for acute bronchospasm treatment.",
-      "Exhaustion is a late life-threatening sign; escalation must precede it."
+      "Correct. Persistent hypoxaemia and increased work demand emergency asthma therapy, repeated assessment and escalation. Assess response after each bronchodilator cycle and add escalation therapies or critical care support if work of breathing remains high.",
+      "Quietening wheeze with reduced air entry may indicate worsening airflow, not improvement. A silent or quieter chest can signal minimal airflow, especially with fatigue and low oxygen saturation.",
+      "Spirometry cannot delay acute stabilisation. Lung function testing is a later follow-up tool; acute treatment must not be delayed in a hypoxaemic child.",
+      "Antibiotics are not a replacement for acute bronchospasm treatment. Inhaled bronchodilators and systemic corticosteroids address the acute inflammatory airflow obstruction; antibiotics only if bacterial infection is independently suspected.",
+      "Exhaustion is a late life-threatening sign; escalation must precede it. Impending respiratory failure may manifest as exhaustion, altered consciousness, rising CO2 or poor air entry and requires early airway expertise."
     ],
     "pearl": "Decision principle: Severe asthma / reassessment.",
     "pivot": "If the child becomes drowsy, silent-chested or develops rising carbon dioxide, call intensive-care/airway expertise immediately for impending respiratory failure.",
@@ -4383,11 +4383,11 @@
     ],
     "key": "B",
     "explanations": [
-      "Compression may relieve symptoms but does not replace anticoagulation.",
-      "Correct. Confirmed proximal DVT generally requires therapeutic anticoagulation and a defined duration, accounting for recent surgery.",
-      "Prophylactic dosing is inadequate to treat established proximal clot.",
-      "Deferring treatment increases pulmonary embolism risk.",
-      "Systemic thrombolysis has substantial bleeding risk and is not routine for stable DVT."
+      "Compression may relieve symptoms but does not replace anticoagulation. Stockings may be used selectively for symptoms, but cannot stop propagation or embolisation of an established proximal clot.",
+      "Correct. Confirmed proximal DVT generally requires therapeutic anticoagulation and a defined duration, accounting for recent surgery. Assess bleeding risk, surgical haemostasis and drug interactions, then select therapeutic anticoagulation and usually a finite course for a surgery-provoked DVT.",
+      "Prophylactic dosing is inadequate to treat established proximal clot. A prophylactic regimen is designed to prevent clots, not adequately treat a confirmed proximal venous thrombus.",
+      "Deferring treatment increases pulmonary embolism risk. Untreated proximal thrombosis may embolise to the lungs, so treatment should not wait for repeat imaging.",
+      "Systemic thrombolysis has substantial bleeding risk and is not routine for stable DVT. Thrombolysis is reserved for highly selected limb-threatening or severe presentations and carries a major bleeding hazard soon after surgery."
     ],
     "pearl": "Decision principle: Postoperative venous thromboembolism / anticoagulation choice.",
     "pivot": "If anticoagulation is absolutely contraindicated by active major bleeding, urgently discuss mechanical protection options and reassess when anticoagulation can safely start.",
@@ -4413,7 +4413,7 @@
       "safety": "If anticoagulation is absolutely contraindicated by active major bleeding, urgently discuss mechanical protection options and reassess when anticoagulation can safely start.",
       "local": "Use current local Victorian/Australian protocol and senior escalation for deterioration."
     },
-    "source": "https://www.health.qld.gov.au/clinical-practice/guidelines-procedures/clinical-pathways/residential-aged-care-clinical-pathways/all-pathways/deep-venous-thrombosis-dvt"
+    "source": "https://www.health.qld.gov.au/__data/assets/pdf_file/0015/1152213/statewide-anticoagulant-guideline.pdf"
   },
   {
     "n": 93,
@@ -4431,11 +4431,11 @@
     ],
     "key": "C",
     "explanations": [
-      "Radiographic extent alone does not determine physiological severity.",
-      "Follow-up imaging has a later role and must not delay antimicrobials.",
-      "Correct. Hypotension, confusion and tachypnoea indicate severe pneumonia or sepsis requiring immediate hospital care.",
-      "Sputum culture may refine treatment but initial therapy is empiric.",
-      "Routine delayed review is unsafe in acute organ dysfunction."
+      "Radiographic extent alone does not determine physiological severity. Hypotension, confusion, hypoxaemia and tachypnoea are severity markers regardless of whether consolidation is confined to one lobe.",
+      "Follow-up imaging has a later role and must not delay antimicrobials. Antibiotics should be started promptly for suspected severe bacterial pneumonia; follow-up radiography is a later consideration.",
+      "Correct. Hypotension, confusion and tachypnoea indicate severe pneumonia or sepsis requiring immediate hospital care. Provide oxygen, sepsis resuscitation and early antibiotics, with critical-care assessment for organ dysfunction and respiratory failure.",
+      "Sputum culture may refine treatment but initial therapy is empiric. Microbiological tests can refine therapy, but waiting for sputum results in a hypotensive patient is unsafe.",
+      "Routine delayed review is unsafe in acute organ dysfunction. This patient may deteriorate rapidly and needs monitoring, not routine outpatient review."
     ],
     "pearl": "Decision principle: Community acquired pneumonia / severity.",
     "pivot": "If respiratory failure progresses despite oxygen, escalate to high-dependency/ICU for advanced respiratory support and reassess for complications.",
@@ -4479,11 +4479,11 @@
     ],
     "key": "D",
     "explanations": [
-      "Vaginal fungal therapy does not treat uterine infection.",
-      "Fever and uterine tenderness are not normal puerperal findings.",
-      "Delay risks bacteraemia and pelvic complications.",
-      "Correct. Postpartum endometritis is a clinical diagnosis after delivery, especially caesarean birth, and needs broad polymicrobial coverage.",
-      "Surgery is reserved for complications or failure of appropriate treatment."
+      "Vaginal fungal therapy does not treat uterine infection. Foul lochia, uterine tenderness and fever indicate infection within the uterus rather than isolated superficial vulvovaginal candidiasis.",
+      "Fever and uterine tenderness are not normal puerperal findings. High fever after caesarean is a warning sign, particularly with local uterine tenderness and systemic symptoms.",
+      "Delay risks bacteraemia and pelvic complications. Untreated endometritis can progress to pelvic abscess, bacteraemia and maternal sepsis.",
+      "Correct. Postpartum endometritis is a clinical diagnosis after delivery, especially caesarean birth, and needs broad polymicrobial coverage. Give IV broad-spectrum polymicrobial coverage, monitor response and assess for retained products or abscess if fever persists.",
+      "Surgery is reserved for complications or failure of appropriate treatment. Hysterectomy is not first-line in a stable patient; surgery is considered for severe source-control problems or refractory infection."
     ],
     "pearl": "Decision principle: Postpartum endometritis / antibiotics.",
     "pivot": "If haemodynamic instability, rising lactate or peritonitis appears, activate the maternal sepsis pathway and obtain urgent source-control assessment.",
@@ -4527,11 +4527,11 @@
     ],
     "key": "E",
     "explanations": [
-      "Biopsy or ultrasound should be arranged but treatment must start immediately.",
-      "New headache with jaw claudication at this age is a vascular red flag.",
-      "Topical therapy cannot prevent arterial ischaemia.",
-      "Imaging may be considered for alternatives, but delay of urgent treatment is unsafe.",
-      "Correct. Suspected giant cell arteritis risks irreversible blindness; do not postpone glucocorticoids for confirmatory testing."
+      "Biopsy or ultrasound should be arranged but treatment must start immediately. Treating suspected giant cell arteritis immediately protects vision; confirmatory ultrasound or biopsy can be organised after steroids are started.",
+      "New headache with jaw claudication at this age is a vascular red flag. Jaw claudication and scalp tenderness in an older patient make giant cell arteritis much more likely than a typical migraine.",
+      "Topical therapy cannot prevent arterial ischaemia. Inflammation of medium and large arteries cannot be controlled with local skin cream; systemic therapy is needed.",
+      "Imaging may be considered for alternatives, but delay of urgent treatment is unsafe. Alternative neuroimaging may be useful for atypical features but does not replace immediate treatment of suspected arteritis.",
+      "Correct. Suspected giant cell arteritis risks irreversible blindness; do not postpone glucocorticoids for confirmatory testing. Arrange ESR/CRP, urgent rheumatology/ophthalmology input and temporal artery imaging or biopsy as indicated without delaying steroids."
     ],
     "pearl": "Decision principle: New headache / giant cell arteritis.",
     "pivot": "If transient or established visual loss develops, arrange emergency ophthalmology/medical assessment and consider IV steroid treatment under the specialist pathway.",
@@ -4575,11 +4575,11 @@
     ],
     "key": "A",
     "explanations": [
-      "Correct. Dehydration and NSAIDs can reduce lithium clearance; neurological signs warrant urgent hospital toxicology assessment.",
-      "Further dosing can compound potentially life-threatening toxicity.",
-      "NSAIDs may increase serum lithium concentrations by reducing renal clearance.",
-      "New ataxia and confusion are red flags for toxicity, not uncomplicated anxiety.",
-      "Dehydration commonly exacerbates lithium accumulation and needs correction."
+      "Correct. Dehydration and NSAIDs can reduce lithium clearance; neurological signs warrant urgent hospital toxicology assessment. Check ECG, serial lithium and kidney function, review interacting drugs and provide appropriate fluid correction with toxicology advice.",
+      "Further dosing can compound potentially life-threatening toxicity. Acute illness and reduced renal clearance can cause accumulation even when a maintenance dose was previously safe.",
+      "NSAIDs may increase serum lithium concentrations by reducing renal clearance. Ibuprofen and related NSAIDs can reduce lithium excretion and further worsen toxicity in dehydrated patients.",
+      "New ataxia and confusion are red flags for toxicity, not uncomplicated anxiety. Coarse tremor, ataxia and confusion are neurological toxicity clues that require medical evaluation rather than reassurance.",
+      "Dehydration commonly exacerbates lithium accumulation and needs correction. Correcting volume depletion generally helps renal elimination; deliberate restriction can worsen renal injury and lithium accumulation."
     ],
     "pearl": "Decision principle: Lithium toxicity / dehydration.",
     "pivot": "If severe neurotoxicity, seizures or markedly elevated lithium with renal failure is present, discuss urgent haemodialysis with toxicology/nephrology.",
@@ -4623,11 +4623,11 @@
     ],
     "key": "B",
     "explanations": [
-      "Unilateral post-choking wheeze should not be labelled asthma without exclusion.",
-      "Correct. Witnessed choking with unilateral findings suggests bronchial foreign body; bronchoscopy may be needed despite normal imaging.",
-      "Many aspirated organic objects are radiolucent; a normal film does not rule out aspiration.",
-      "Antibiotics do not remove a lodged object and are not definitive therapy.",
-      "Feeding can complicate sedation or airway management."
+      "Unilateral post-choking wheeze should not be labelled asthma without exclusion. A sudden choking episode and persistent focal wheeze are not typical of a first asthma exacerbation; bronchodilator response is not diagnostic.",
+      "Correct. Witnessed choking with unilateral findings suggests bronchial foreign body; bronchoscopy may be needed despite normal imaging. Early ENT or respiratory consultation allows safe rigid bronchoscopy planning when the object may be lodged in a bronchus.",
+      "Many aspirated organic objects are radiolucent; a normal film does not rule out aspiration. Radiolucent peanuts can be invisible on plain radiographs, and indirect signs may also be absent initially.",
+      "Antibiotics do not remove a lodged object and are not definitive therapy. Antibiotics may be needed for secondary infection later but do not remove an obstructing foreign body.",
+      "Feeding can complicate sedation or airway management. Keep nil by mouth pending possible anaesthesia and monitor for evolving obstruction or respiratory compromise."
     ],
     "pearl": "Decision principle: Foreign body aspiration / unilateral wheeze.",
     "pivot": "If complete obstruction develops, immediately follow age-appropriate choking first-aid and resuscitation protocols while summoning emergency airway help.",
@@ -4671,11 +4671,11 @@
     ],
     "key": "C",
     "explanations": [
-      "STEMI must be considered when appropriate, but diffuse PR changes point elsewhere and discharge is unsafe.",
-      "Fever does not determine PE likelihood; evaluate if clinical risk supports it.",
-      "Correct. Positional pleuritic pain and diffuse ECG changes support pericarditis; echo and troponin help evaluate complications.",
-      "The ECG and characteristic pain warrant cardiac evaluation.",
-      "Dissection usually requires a distinct high-risk history and imaging if suspected."
+      "STEMI must be considered when appropriate, but diffuse PR changes point elsewhere and discharge is unsafe. Acute coronary occlusion still requires careful exclusion, especially with focal ischaemic changes or high-risk symptoms; discharge is never justified by a single label.",
+      "Fever does not determine PE likelihood; evaluate if clinical risk supports it. PE probability depends on symptoms, risk factors and validated pathways rather than presence or absence of fever.",
+      "Correct. Positional pleuritic pain and diffuse ECG changes support pericarditis; echo and troponin help evaluate complications. Check inflammatory markers and troponin, obtain echocardiography for effusion or ventricular dysfunction, and assess for myopericarditis.",
+      "The ECG and characteristic pain warrant cardiac evaluation. Characteristic widespread ECG abnormalities require evaluation and follow-up; ignoring them could miss a cardiac cause.",
+      "Dissection usually requires a distinct high-risk history and imaging if suspected. Aortic dissection typically has abrupt severe tearing pain or pulse/BP differences; investigate promptly if those red flags exist."
     ],
     "pearl": "Decision principle: Acute pericarditis / ECG diagnosis.",
     "pivot": "If hypotension, raised JVP and echocardiographic tamponade physiology develop, seek emergency pericardial drainage rather than routine anti-inflammatory treatment alone.",
@@ -4719,11 +4719,11 @@
     ],
     "key": "D",
     "explanations": [
-      "Leaving acute infection untreated risks perforation or sepsis.",
-      "Normal bilirubin does not exclude gallbladder inflammation.",
-      "ERCP addresses ductal obstruction/cholangitis, not uncomplicated cystic-duct obstruction.",
-      "Correct. Imaging and symptoms fit acute cholecystitis; admission and early laparoscopic cholecystectomy assessment are appropriate.",
-      "Diet alone cannot resolve a potentially progressive infection safely."
+      "Leaving acute infection untreated risks perforation or sepsis. Persistent fever and gallbladder inflammation need acute treatment and surgical assessment rather than waiting for elective care.",
+      "Normal bilirubin does not exclude gallbladder inflammation. Normal bilirubin is common in isolated cystic duct obstruction; biliary infection may exist without common bile duct obstruction.",
+      "ERCP addresses ductal obstruction/cholangitis, not uncomplicated cystic-duct obstruction. ERCP is generally indicated for choledocholithiasis or cholangitis, not routine uncomplicated acute cholecystitis.",
+      "Correct. Imaging and symptoms fit acute cholecystitis; admission and early laparoscopic cholecystectomy assessment are appropriate. Treat pain and dehydration, consider empiric antibiotics according to severity, and plan early cholecystectomy or drainage if unfit for surgery.",
+      "Diet alone cannot resolve a potentially progressive infection safely. Dietary modification can reduce symptoms of biliary colic but does not reliably treat an inflamed infected gallbladder."
     ],
     "pearl": "Decision principle: Acute cholecystitis / admission and source control.",
     "pivot": "If jaundice, cholangitis or ductal obstruction is suspected, obtain urgent biliary imaging and discuss ERCP or drainage alongside sepsis treatment.",
@@ -4749,7 +4749,7 @@
       "safety": "If jaundice, cholangitis or ductal obstruction is suspected, obtain urgent biliary imaging and discuss ERCP or drainage alongside sepsis treatment.",
       "local": "Use current local Victorian/Australian protocol and senior escalation for deterioration."
     },
-    "source": "https://aci.health.nsw.gov.au/networks/eci/clinical/clinical-tools/abdominal-pain"
+    "source": "https://aci.health.nsw.gov.au/networks/eci/clinical/tools/abdominal-emergencies"
   },
   {
     "n": 100,
@@ -4767,11 +4767,11 @@
     ],
     "key": "E",
     "explanations": [
-      "No imperfect test excludes disease with certainty in high-risk contexts.",
-      "Positive predictive value depends strongly on prevalence and specificity.",
-      "Negative interpretation depends on sensitivity and pretest probability, not specificity alone.",
-      "Predictive values change as prevalence and tested population change.",
-      "Correct. A highly sensitive negative test often reduces probability, but residual risk depends on pretest likelihood and consequences of missing disease."
+      "No imperfect test excludes disease with certainty in high-risk contexts. A negative test reduces but rarely makes probability exactly zero; pretest risk and consequences of missed disease remain important.",
+      "Positive predictive value depends strongly on prevalence and specificity. Specificity of 70% means false positives can occur, especially when disease is rare, so positive predictive value may be low.",
+      "Negative interpretation depends on sensitivity and pretest probability, not specificity alone. Sensitivity and the negative likelihood ratio chiefly influence the effect of a negative result, alongside pretest probability.",
+      "Predictive values change as prevalence and tested population change. PPV and NPV depend on disease prevalence, so results cannot be transferred uncritically between low- and high-risk populations.",
+      "Correct. A highly sensitive negative test often reduces probability, but residual risk depends on pretest likelihood and consequences of missing disease. Use Bayes reasoning or a validated clinical pathway to decide whether residual risk still warrants definitive testing or specialist assessment."
     ],
     "pearl": "Decision principle: Diagnostic sensitivity / negative test interpretation.",
     "pivot": "If clinical deterioration or an immediately treatable high-risk condition exists, act on the syndrome and seek definitive investigation despite a reassuring screening result.",
@@ -4797,6 +4797,6 @@
       "safety": "If clinical deterioration or an immediately treatable high-risk condition exists, act on the syndrome and seek definitive investigation despite a reassuring screening result.",
       "local": "Use current local Victorian/Australian protocol and senior escalation for deterioration."
     },
-    "source": "https://www.racgp.org.au/afp/2017/november/pulmonary-embolism"
+    "source": "https://www1.racgp.org.au/getattachment/43b636b5-4a69-4b59-9735-8b1cdefe23e4/A-practical-guide-to-statistics-for-general-practi.aspx"
   }
 ]
