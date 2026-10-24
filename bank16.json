@@ -2878,5 +2878,485 @@
       "local": "Apply current Australian guidelines and local health-service pathways."
     },
     "source": "https://www.health.qld.gov.au/clinical-practice/guidelines-procedures"
+  },
+  {
+    "n": 61,
+    "domain": "ENT & acute infection",
+    "skill": "Quinsy / asymmetric peritonsillar swelling and airway risk",
+    "context": "Revision Blossom Garden · original case inspired by 2024–2025 Monash paper themes",
+    "stem": "A 25-year-old develops worsening unilateral throat pain and difficulty swallowing after four days of fever. His voice sounds muffled and he can only open his mouth a small amount. On examination, the left peritonsillar area is swollen and pushes the uvula to the right; he has tender ipsilateral cervical nodes. He is breathing comfortably but struggles to swallow water.",
+    "ask": "What is the most likely diagnosis and immediate pathway?",
+    "options": [
+      "Peritonsillar abscess needing prompt ENT assessment, hydration, antibiotics and drainage evaluation.",
+      "Uncomplicated viral pharyngitis managed with oral fluids and no further same-day clinical review.",
+      "Isolated epiglottitis confirmed by the lateralised peritonsillar swelling and displaced uvula.",
+      "Primary dental abscess with no need to examine the upper airway or swallowing function.",
+      "Bilateral acute tonsillitis requiring reassurance because uvular displacement is a routine feature."
+    ],
+    "key": "A",
+    "explanations": [
+      "Correct. Quinsy commonly causes unilateral peritonsillar fullness, uvular displacement, trismus, muffled voice and severe odynophagia; assess airway and hydration, treat infection and consider drainage.",
+      "Simple viral pharyngitis does not usually produce significant trismus or one-sided bulging that displaces the uvula. Reassurance alone risks progression.",
+      "Epiglottitis can produce severe sore throat and drooling, but the described localised peritonsillar asymmetry with uvular deviation points elsewhere.",
+      "Dental infection can spread to deep neck spaces but would require corresponding oral or floor-of-mouth findings; do not ignore the apparent peritonsillar collection.",
+      "Tonsillitis can produce exudative swollen tonsils, yet marked unilateral peritonsillar bulge and uvular deviation are characteristic complications, not ordinary symmetry."
+    ],
+    "pearl": "Trismus, muffled voice and displaced uvula are classic clues to a peritonsillar abscess.",
+    "pivot": "Drooling, stridor or worsening work of breathing require urgent airway team support before an invasive throat examination.",
+    "management": {
+      "steps": [
+        [
+          "Initial assessment",
+          "Assess airway, ability to swallow, hydration and sepsis signs."
+        ],
+        [
+          "Investigations",
+          "Examine carefully and obtain ENT review; imaging only if needed for deep-neck spread."
+        ],
+        [
+          "Treatment",
+          "Give analgesia, hydration and appropriate antibiotics with drainage planning."
+        ],
+        [
+          "Reassessment",
+          "Observe response and provide return instructions if managed without admission."
+        ]
+      ],
+      "safety": "Never attempt blind bedside drainage when airway compromise or unexpected deep-neck anatomy is suspected.",
+      "local": "Use current Australian guidelines and local senior-led management."
+    },
+    "source": "https://www.health.qld.gov.au/clinical-practice/guidelines-procedures"
+  },
+  {
+    "n": 62,
+    "domain": "Neurology & emergency medicine",
+    "skill": "New central facial palsy / stroke pathway despite anticoagulation",
+    "context": "Revision Blossom Garden · original case inspired by 2024–2025 Monash paper themes",
+    "stem": "A 76-year-old woman taking apixaban for atrial fibrillation notices sudden left lower facial drooping and slurred speech on waking. She is able to raise both eyebrows symmetrically and close both eyes tightly, but the left corner of her mouth does not move normally. She has no ear pain, rash or recent facial injury; the last-known-well time is uncertain.",
+    "ask": "What action best addresses the likely process?",
+    "options": [
+      "Treat presumed Bell palsy with oral prednisolone and review in the community next week.",
+      "Activate urgent stroke assessment for possible right cerebral hemispheric ischaemia.",
+      "Discontinue anticoagulation and arrange routine cranial nerve physiotherapy alone.",
+      "Prescribe oral antibiotics for facial cellulitis without performing neurovascular examination.",
+      "Book outpatient dental evaluation because facial asymmetry can follow dental infection."
+    ],
+    "key": "B",
+    "explanations": [
+      "A peripheral Bell palsy usually involves forehead, eye closure and mouth on the same side. Forehead sparing plus sudden dysarthria is concerning for a central lesion.",
+      "Correct. Abrupt contralateral lower facial weakness with relative forehead sparing suggests an upper motor neuron lesion; anticoagulation reduces but does not eliminate stroke risk. Urgent imaging and stroke-team assessment are required.",
+      "Unsupervised cessation of anticoagulation may increase stroke risk and does not diagnose the new focal deficit. Acute treatment decisions depend on neuroimaging, timing and the responsible stroke team.",
+      "Facial cellulitis causes local redness, swelling or tenderness rather than isolated sudden lower facial motor weakness with dysarthria.",
+      "Dental infection may cause pain and swelling, but should not distract from acute focal neurological deficits and vascular risk factors."
+    ],
+    "pearl": "Forehead sparing suggests a central facial weakness pattern; stroke remains possible despite a DOAC.",
+    "pivot": "A complete ipsilateral upper- and lower-face weakness without additional central features may suggest peripheral CN VII palsy, but needs clinical assessment.",
+    "management": {
+      "steps": [
+        [
+          "Initial assessment",
+          "Document last-known-well and perform a focused stroke screen and glucose check."
+        ],
+        [
+          "Investigations",
+          "Activate stroke team and urgent brain/vascular imaging as indicated."
+        ],
+        [
+          "Treatment",
+          "Manage airway, BP, anticoagulation implications and reperfusion decisions with specialists."
+        ],
+        [
+          "Reassessment",
+          "Arrange swallow screening, rehabilitation and secondary prevention."
+        ]
+      ],
+      "safety": "Do not administer thrombolysis without specialised assessment of anticoagulant timing and eligibility.",
+      "local": "Use current Australian guidelines and local senior-led management."
+    },
+    "source": "https://informme.org.au/guidelines/living-clinical-guidelines-for-stroke-management"
+  },
+  {
+    "n": 63,
+    "domain": "Paediatrics & acute assessment",
+    "skill": "Isolated vomiting / reconsider gastroenteritis",
+    "context": "Revision Blossom Garden · original case inspired by 2024–2025 Monash paper themes",
+    "stem": "A 21-month-old child has vomited repeatedly for six hours and has refused his usual feeds. He has not passed stool today and there has been no diarrhoea. There is no known household illness. He looks tired but is rousable, has a slightly prolonged capillary refill and a soft abdomen between brief episodes of crying. The initial triage label is 'viral gastroenteritis'.",
+    "ask": "Which feature should particularly prompt reconsideration of that working diagnosis?",
+    "options": [
+      "The lack of a recognised contact with another vomiting person.",
+      "The mild tachycardia that can accompany reduced oral intake.",
+      "The absence of diarrhoea alongside frequent vomiting in a toddler.",
+      "The presence of nausea after attempted feeding following several vomits.",
+      "The parent reporting that he seems quieter than during his last cold."
+    ],
+    "key": "C",
+    "explanations": [
+      "Many gastrointestinal infections have no identified contact, so exposure history alone is a weak discriminator.",
+      "Mild tachycardia may reflect distress or dehydration and does not uniquely indicate a surgical problem.",
+      "Correct. Isolated vomiting without diarrhoea warrants assessment for other causes including intussusception, obstruction, urinary infection or intracranial pathology, especially with episodic pain or altered behaviour.",
+      "Feeding can trigger nausea in common viral illness as well as obstruction; this finding alone is not especially distinctive.",
+      "Reduced activity is concerning if substantial, but is nonspecific without its pattern and severity. The missing diarrhoea warns against prematurely assuming gastroenteritis."
+    ],
+    "pearl": "Vomiting is not synonymous with gastroenteritis; bilious emesis, episodic pain or drowsiness are important alternate-diagnosis clues.",
+    "pivot": "If green bilious vomiting develops, urgently assess for bowel obstruction and surgical emergencies.",
+    "management": {
+      "steps": [
+        [
+          "Initial assessment",
+          "Assess hydration, perfusion, activity and glucose."
+        ],
+        [
+          "Investigations",
+          "Check abdominal examination, urine and focused imaging if intussusception/obstruction suspected."
+        ],
+        [
+          "Treatment",
+          "Treat dehydration and address the established cause."
+        ],
+        [
+          "Reassessment",
+          "Safety-net for bilious emesis, worsening pain, lethargy or reduced urine output."
+        ]
+      ],
+      "safety": "Do not ignore intermittent severe pain or altered consciousness merely because the abdomen is soft between episodes.",
+      "local": "Use current Australian guidelines and local senior-led management."
+    },
+    "source": "https://www.rch.org.au/clinicalguide/guideline_index/Vomiting/"
+  },
+  {
+    "n": 64,
+    "domain": "Emergency & musculoskeletal medicine",
+    "skill": "Ottawa ankle rules / no x-ray for isolated ligament tenderness",
+    "context": "Revision Blossom Garden · original case inspired by 2024–2025 Monash paper themes",
+    "stem": "A 27-year-old netball player twists her left ankle while landing. She walks four steps in the clinic, and tenderness is located just anterior and inferior to the lateral malleolus along the ligament. There is no tenderness over the posterior edge or tip of either malleolus, the navicular or the base of the fifth metatarsal. Neurovascular examination is normal.",
+    "ask": "Which imaging strategy is most appropriate for this presentation?",
+    "options": [
+      "Obtain an ankle radiograph because ligament-region pain meets the malleolar bone tenderness criterion.",
+      "Obtain both ankle and foot radiographs because any twisting injury risks an occult midfoot fracture.",
+      "Order an ankle ultrasound as a mandatory test before diagnosing an uncomplicated ligament sprain.",
+      "Use Ottawa criteria to avoid routine radiography and provide a supportive ankle injury plan.",
+      "Obtain ankle CT before functional rehabilitation despite negative clinical radiograph criteria."
+    ],
+    "key": "D",
+    "explanations": [
+      "Ottawa malleolar criteria refer to bony tenderness along the posterior edge or tip of the malleoli or inability to bear weight, not merely anterior ligament tenderness.",
+      "The absence of base-of-fifth and navicular bony pain plus weight-bearing ability makes routine midfoot imaging unnecessary by the specified rules.",
+      "Ultrasound is not mandatory in a straightforward low-risk ankle sprain and usually does not change early conservative treatment.",
+      "Correct. Ability to walk four steps and lack of designated malleolar or midfoot bone tenderness support no immediate radiograph, while providing early mobilisation advice and safety-netting.",
+      "CT is generally reserved for selected suspected complex fractures or cases where initial assessment indicates it; it is not a standard first step here."
+    ],
+    "pearl": "Ottawa ankle rules use specific bony landmarks and the ability to take four steps, not simply pain after inversion.",
+    "pivot": "Rules are less reliable in certain contexts, including some neuropathic or unreliable examination settings; reassess clinical judgement.",
+    "management": {
+      "steps": [
+        [
+          "Initial assessment",
+          "Inspect swelling, deformity, tenderness points and neurovascular status."
+        ],
+        [
+          "Investigations",
+          "Apply Ottawa ankle and foot criteria carefully."
+        ],
+        [
+          "Treatment",
+          "Provide analgesia, support, ice as appropriate and graded weight bearing."
+        ],
+        [
+          "Reassessment",
+          "Review persistent pain, instability or inability to mobilise as expected."
+        ]
+      ],
+      "safety": "Do not document 'no bony tenderness' without checking the posterior malleolar margins and foot landmarks.",
+      "local": "Use current Australian guidelines and local senior-led management."
+    },
+    "source": "https://aci.health.nsw.gov.au/networks/eci/clinical/tools/orthopaedic-and-musculoskeletal"
+  },
+  {
+    "n": 65,
+    "domain": "General practice & microbiology",
+    "skill": "Cat bite to hand / prophylaxis for deep puncture",
+    "context": "Revision Blossom Garden · original case inspired by 2024–2025 Monash paper themes",
+    "stem": "A 43-year-old attempts to pick up a frightened cat and sustains two small punctures over the dorsal hand near the index metacarpophalangeal joint. The wound looks clean after washing, and she has normal movement without fever or spreading erythema. Her tetanus history is recorded as up to date. She has no penicillin allergy.",
+    "ask": "Which approach is most appropriate to reduce infection risk?",
+    "options": [
+      "Avoid antibiotics because puncture wounds under 5 mm almost never cause deep infection.",
+      "Offer a topical antiseptic alone and close each puncture tightly using tissue adhesive.",
+      "Give prophylactic oral flucloxacillin as sole cover without regard to animal oral flora.",
+      "Delay prophylaxis until wound culture is positive or local cellulitis has developed.",
+      "Thoroughly irrigate and assess the hand, with prophylactic amoxicillin-clavulanate as indicated."
+    ],
+    "key": "E",
+    "explanations": [
+      "Cat teeth create narrow punctures that can inoculate bacteria into hand compartments even when the surface looks benign; small size is not reassuring.",
+      "Topical cleansing matters but does not reliably prevent deep hand infection, and sealing punctures can trap contamination.",
+      "Flucloxacillin alone may not adequately cover key cat oral organisms including Pasteurella; choose prophylaxis based on animal-bite guidance.",
+      "Cultures are generally not needed for uninfected initial bites, and waiting for established deep infection can risk joint or tendon complications.",
+      "Correct. Examine tendons/joints, irrigate well, avoid routine primary closure of punctures and give recommended prophylactic antibiotics for a high-risk hand bite."
+    ],
+    "pearl": "Cat bites to the hand have high infection risk despite small puncture marks; Pasteurella cover matters.",
+    "pivot": "Any reduced finger motion, increasing swelling or pain with passive movement warrants urgent hand surgery assessment.",
+    "management": {
+      "steps": [
+        [
+          "Initial assessment",
+          "Check hand tendon, joint and neurovascular involvement."
+        ],
+        [
+          "Investigations",
+          "Irrigate thoroughly; assess for retained teeth and tetanus status."
+        ],
+        [
+          "Treatment",
+          "Provide appropriate oral prophylaxis with allergy considerations."
+        ],
+        [
+          "Reassessment",
+          "Arrange early wound review and return advice for pain, redness or swelling."
+        ]
+      ],
+      "safety": "Deep-space infection after a cat bite can progress quickly; a normal early wound does not guarantee safety.",
+      "local": "Use current Australian guidelines and local senior-led management."
+    },
+    "source": "https://www.rch.org.au/clinicalguide/guideline_index/Animal_and_human_bites/"
+  },
+  {
+    "n": 66,
+    "domain": "Urology & inpatient medicine",
+    "skill": "Acute urinary retention / PSA is not an early test",
+    "context": "Revision Blossom Garden · original case inspired by 2024–2025 Monash paper themes",
+    "stem": "A 74-year-old presents with a painful distended bladder and has passed only drops of urine since yesterday. Creatinine is now 210 µmol/L from a baseline of 95 µmol/L. A bladder scan confirms severe retention, and a junior doctor prepares urethral catheterisation. The team also considers checking prostate-specific antigen immediately to explain the obstruction.",
+    "ask": "Which task is least useful during initial stabilisation?",
+    "options": [
+      "Ordering a PSA level now to determine the immediate cause of urinary retention.",
+      "Decompressing the distended bladder with appropriate catheterisation and monitoring.",
+      "Checking renal function and electrolyte changes during the early admission.",
+      "Watching for a brisk post-obstructive diuresis after relief of obstruction.",
+      "Evaluating hydronephrosis and reversible causes of obstruction as indicated."
+    ],
+    "key": "A",
+    "explanations": [
+      "Correct. PSA is not a priority in acute retention and may be misleadingly elevated; bladder decompression and AKI assessment are time-critical. Later prostate assessment can be planned appropriately.",
+      "Catheterisation relieves painful obstruction and protects renal function where safe and technically feasible; alternative access may be needed if urethral passage fails.",
+      "Acute postrenal injury can cause serious renal and electrolyte abnormalities, and these warrant assessment and serial monitoring.",
+      "High urine output after relief can cause volume and electrolyte losses, so observing output and fluid balance is important.",
+      "Renal imaging and evaluation of obstructive aetiology may guide further treatment, particularly with new renal impairment or suspected upper tract obstruction."
+    ],
+    "pearl": "Acute retention requires relief of obstruction and monitoring; PSA interpretation can wait.",
+    "pivot": "A suspected urethral injury after trauma contraindicates blind urethral catheterisation and needs specialist assessment.",
+    "management": {
+      "steps": [
+        [
+          "Initial assessment",
+          "Assess urinary symptoms, bladder distension, renal status and vital signs."
+        ],
+        [
+          "Investigations",
+          "Confirm retention and check creatinine, potassium and other relevant tests."
+        ],
+        [
+          "Treatment",
+          "Catheterise safely or request urgent urological support when required."
+        ],
+        [
+          "Reassessment",
+          "Monitor output for post-obstructive diuresis and arrange later cause evaluation."
+        ]
+      ],
+      "safety": "Severe urinary retention with AKI requires monitoring after drainage, not simply immediate discharge.",
+      "local": "Use current Australian guidelines and local senior-led management."
+    },
+    "source": "https://www.health.qld.gov.au/clinical-practice/guidelines-procedures"
+  },
+  {
+    "n": 67,
+    "domain": "Inpatient medicine & endocrinology",
+    "skill": "Morning steroid hyperglycaemia / insulin matching",
+    "context": "Revision Blossom Garden · original case inspired by 2024–2025 Monash paper themes",
+    "stem": "A 65-year-old with type 2 diabetes receives prednisolone 50 mg each morning for a COPD exacerbation. Afternoon and evening glucose values are 17–20 mmol/L, while early morning glucose is near normal. He was started on a large bedtime long-acting insulin dose and developed symptomatic hypoglycaemia at 3 am. He continues to eat normally.",
+    "ask": "Which insulin adjustment best matches the glycaemic pattern while steroids continue?",
+    "options": [
+      "Increase the bedtime long-acting dose further to lower the next afternoon's blood glucose.",
+      "Switch to a morning intermediate-acting insulin strategy with frequent glucose-guided review.",
+      "Stop all insulin during high-dose steroid therapy and ignore daytime glucose levels.",
+      "Administer a continuous overnight dextrose infusion to offset insulin-induced hypoglycaemia.",
+      "Use one morning rapid-acting insulin dose alone without monitoring or later supplementation."
+    ],
+    "key": "B",
+    "explanations": [
+      "More overnight basal insulin can worsen nocturnal hypoglycaemia while still not ideally matching the steroid-driven afternoon peak.",
+      "Correct. Morning NPH or another protocol-based steroid-matched insulin regimen can better target the daytime hyperglycaemia from once-daily prednisolone, with doses adjusted as steroid exposure changes.",
+      "Severe daytime hyperglycaemia still needs management; stopping treatment can worsen dehydration, infection recovery and metabolic control.",
+      "Continuous dextrose treats a medication mismatch symptomatically rather than correcting the insulin profile; unnecessary infusion can complicate glycaemia.",
+      "A single rapid-acting dose may wear off before the afternoon and evening rise, making it inadequate as the sole regimen without tailored correction."
+    ],
+    "pearl": "Match insulin pharmacokinetics to once-daily prednisolone's daytime glycaemic effect rather than merely increasing overnight basal insulin.",
+    "pivot": "More frequent or evening steroid dosing may require a different insulin strategy than morning NPH alone.",
+    "management": {
+      "steps": [
+        [
+          "Initial assessment",
+          "Chart glucose by time of day and document steroid dosing."
+        ],
+        [
+          "Investigations",
+          "Review insulin, nutrition and nocturnal hypoglycaemic events."
+        ],
+        [
+          "Treatment",
+          "Use local steroid-hyperglycaemia NPH or basal-bolus protocol with dose adjustment."
+        ],
+        [
+          "Reassessment",
+          "Reduce insulin promptly when steroids taper and follow trends."
+        ]
+      ],
+      "safety": "Insulin requirements may fall rapidly during steroid reduction; prevent late hypoglycaemia.",
+      "local": "Use current Australian guidelines and local senior-led management."
+    },
+    "source": "https://www.diabetesaustralia.com.au/"
+  },
+  {
+    "n": 68,
+    "domain": "Critical care & septic shock",
+    "skill": "Fluid-refractory sepsis / first-line vasopressor",
+    "context": "Revision Blossom Garden · original case inspired by 2024–2025 Monash paper themes",
+    "stem": "A 70-year-old with pyelonephritis is febrile and confused, with lactate 4.1 mmol/L and BP 83/46 mmHg. She has already received appropriately assessed initial crystalloid resuscitation, blood cultures and IV antibiotics. Ultrasound and examination suggest no major fluid-responsive deficit; lungs now have mild new basal crepitations. MAP remains below target and urine output is falling.",
+    "ask": "What is the appropriate next haemodynamic escalation?",
+    "options": [
+      "Give repeated large saline boluses irrespective of fluid responsiveness until BP normalises.",
+      "Start hydrocortisone as the sole first-line treatment for all ongoing septic hypotension.",
+      "Commence a monitored noradrenaline infusion with critical-care support while reassessing perfusion.",
+      "Delay vasopressors until final blood culture sensitivities and renal imaging are available.",
+      "Intubate solely to increase blood pressure despite preserved consciousness and ventilation."
+    ],
+    "key": "C",
+    "explanations": [
+      "Unrestricted repeated crystalloid despite poor responsiveness risks pulmonary oedema and may not reverse vasodilatory shock.",
+      "Steroids can be adjuncts in selected refractory cases, but do not replace first-line vasopressor restoration of vascular tone.",
+      "Correct. Persistent septic shock after appropriate fluid assessment calls for norepinephrine to target perfusion, with continued infection source control and organ monitoring.",
+      "Culture results guide later antibiotic changes but should not delay haemodynamic support. Kidney source evaluation can occur concurrently.",
+      "Ventilation is indicated for respiratory/airway failure, not routinely as the first vasopressor substitute in an adequately breathing hypotensive patient."
+    ],
+    "pearl": "Noradrenaline is generally first-line for persistent septic vasodilatory shock after assessment of fluid responsiveness.",
+    "pivot": "Vasopressors and fluid management may be initiated concurrently when profound shock persists; never wait for arbitrary fluid volumes in an overloaded patient.",
+    "management": {
+      "steps": [
+        [
+          "Initial assessment",
+          "Reassess perfusion, lactate, urine output and fluid responsiveness."
+        ],
+        [
+          "Investigations",
+          "Review infection source, cultures, volume state and cardiovascular function."
+        ],
+        [
+          "Treatment",
+          "Begin monitored noradrenaline with ICU oversight and antibiotic/source-control continuation."
+        ],
+        [
+          "Reassessment",
+          "Trend MAP, organ function and response while reducing unnecessary fluids."
+        ]
+      ],
+      "safety": "Do not endlessly repeat fluid boluses when signs of overload or poor responsiveness appear.",
+      "local": "Use current Australian guidelines and local senior-led management."
+    },
+    "source": "https://www.safetyandquality.gov.au/our-work/clinical-care-standards/sepsis-clinical-care-standard"
+  },
+  {
+    "n": 69,
+    "domain": "Orthopaedics & transfer medicine",
+    "skill": "Acute ankle fracture / avoid circumferential full cast early",
+    "context": "Revision Blossom Garden · original case inspired by 2024–2025 Monash paper themes",
+    "stem": "A 77-year-old falls on a farm and sustains a displaced ankle fracture confirmed radiographically at a small rural facility. An orthopaedic hospital is four hours away. The ankle is swollen but currently perfused with intact toe movement and sensation. Analgesia and careful reduction have been arranged, and transport staff ask for the safest immobilisation while swelling evolves.",
+    "ask": "Which action is least advisable immediately before the transfer?",
+    "options": [
+      "Provide appropriate pain relief and ensure comfort during prolonged ambulance transport.",
+      "Elevate the limb when safe and monitor distal perfusion while awaiting transfer.",
+      "Use a padded temporary backslab or splint that allows room for evolving swelling.",
+      "Apply a tight circumferential full plaster cast around the newly swollen ankle.",
+      "Repeat distal circulation and sensory checks after reduction and splint application."
+    ],
+    "key": "D",
+    "explanations": [
+      "Analgesia is part of humane and safe transfer and does not increase compartment pressure when appropriately monitored.",
+      "Elevation and monitoring can limit oedema and help detect deterioration as swelling progresses.",
+      "A backslab or splint usually accommodates early post-injury swelling better than a full circumferential cast and supports the reduction.",
+      "Correct. A tight circular cast can become constrictive as acute swelling progresses, risking vascular compromise or compartment syndrome. Use an appropriately padded temporary splint.",
+      "Neurovascular reassessment is essential after reduction and immobilisation and during transport, especially if pain increases."
+    ],
+    "pearl": "Early fracture swelling can turn a circumferential cast into a dangerous tourniquet.",
+    "pivot": "Severe disproportionate pain, reduced capillary refill or pain on passive stretch needs urgent reassessment for compartment compromise.",
+    "management": {
+      "steps": [
+        [
+          "Initial assessment",
+          "Assess and document distal nerves, motor function and perfusion."
+        ],
+        [
+          "Investigations",
+          "Review imaging and discuss fracture reduction and transfer with orthopaedics."
+        ],
+        [
+          "Treatment",
+          "Immobilise using a suitable well-padded non-constricting splint."
+        ],
+        [
+          "Reassessment",
+          "Reassess circulation and pain regularly before and during transfer."
+        ]
+      ],
+      "safety": "Check the limb again after splinting; new neurovascular deficits or increasing pain are emergencies.",
+      "local": "Use current Australian guidelines and local senior-led management."
+    },
+    "source": "https://www.rch.org.au/clinicalguide/guideline_index/fractures/"
+  },
+  {
+    "n": 70,
+    "domain": "Gynaecologic postoperative emergencies",
+    "skill": "Raised JVP in postoperative hypotension / obstructive shock",
+    "context": "Revision Blossom Garden · original case inspired by 2024–2025 Monash paper themes",
+    "stem": "A 72-year-old woman suddenly becomes breathless and hypotensive two days after pelvic cancer surgery. She is tachycardic, conscious but distressed, and has markedly distended neck veins while sitting at 45°. Her lungs are relatively clear on brief examination and there is no obvious ongoing wound bleeding. Supplemental oxygen and emergency help are already being provided.",
+    "ask": "Which shock mechanism should be prioritised as the leading concern?",
+    "options": [
+      "Hypovolaemic shock from ongoing uncomplicated incisional bleeding with low central venous pressure.",
+      "Neurogenic shock from an unreported cervical spinal lesion causing isolated tachycardia.",
+      "Simple medication-induced distributive hypotension without mechanical cardiovascular obstruction.",
+      "Local anaesthetic systemic toxicity presenting two days after uncomplicated surgery.",
+      "Obstructive shock from a large pulmonary embolus impairing right-ventricular forward flow."
+    ],
+    "key": "E",
+    "explanations": [
+      "Significant haemorrhagic hypovolaemia usually lowers rather than distends the neck veins, although mixed physiology may occur and bleeding still needs assessment.",
+      "Neurogenic shock follows spinal cord disruption and often causes relative bradycardia and peripheral vasodilatation, not this typical postoperative thrombotic picture.",
+      "Drug-related vasodilatation can reduce pressure, but raised JVP after cancer surgery and abrupt respiratory symptoms supports a mechanical cardiopulmonary cause.",
+      "Local anaesthetic toxicity is usually temporally linked to anaesthetic exposure and more likely causes neurological symptoms or dysrhythmias around administration.",
+      "Correct. Pelvic malignancy and recent surgery increase VTE risk. Acute dyspnoea, hypotension and raised JVP with relatively clear lungs are highly concerning for massive PE with RV pressure overload; bedside echo and urgent senior reperfusion assessment are indicated."
+    ],
+    "pearl": "Hypotension plus raised JVP points toward obstructive or cardiogenic shock; clinical context may favour massive PE.",
+    "pivot": "Tamponade or tension pneumothorax can also raise JVP with hypotension, and must be considered promptly on examination.",
+    "management": {
+      "steps": [
+        [
+          "Initial assessment",
+          "Activate MET/resuscitation and assess ABCDE, ECG and perfusion."
+        ],
+        [
+          "Investigations",
+          "Use bedside echocardiography and targeted imaging if stable enough; assess other obstructive causes."
+        ],
+        [
+          "Treatment",
+          "Involve critical care and PE specialists for haemodynamic and reperfusion decisions."
+        ],
+        [
+          "Reassessment",
+          "Monitor right ventricular function, oxygenation, bleeding risk and anticoagulation planning."
+        ]
+      ],
+      "safety": "Recent surgery raises both PE risk and thrombolysis bleeding risk; treatment modality requires specialist discussion.",
+      "local": "Use current Australian guidelines and local senior-led management."
+    },
+    "source": "https://www.thanz.org.au/"
   }
 ]
