@@ -1198,5 +1198,725 @@
       "local": "Use current Australian guidelines and local hospital policy."
     },
     "source": "https://www.safetyandquality.gov.au/"
+  },
+  {
+    "n": 26,
+    "domain": "Emergency medicine & trauma",
+    "skill": "Tension pneumothorax / decompression before radiology",
+    "context": "Original final-year Monash-style decision; inspired by 2024–2025 SPA-W review themes",
+    "stem": "A 31-year-old arrives after a high-speed motorcycle collision. He is agitated, severely hypoxic and hypotensive at 72/42 mmHg. The left hemithorax barely moves, breath sounds are absent on that side and his neck veins are prominent. A portable radiograph has been ordered but has not arrived.",
+    "ask": "What should the resuscitation team prioritise immediately?",
+    "options": [
+      "Perform emergency left chest decompression by a trained clinician without waiting for imaging.",
+      "Obtain a portable chest radiograph to confirm the suspected unilateral pleural air.",
+      "Send urgent arterial blood gases before undertaking a potentially invasive chest procedure.",
+      "Start non-invasive positive-pressure ventilation while waiting for formal thoracic ultrasound.",
+      "Transport for contrast-enhanced chest CT to identify associated vascular and lung injuries."
+    ],
+    "key": "A",
+    "explanations": [
+      "Correct. Clinical tension pneumothorax with shock requires immediate decompression; finger thoracostomy or needle decompression according to expertise and trauma protocol, followed by definitive drainage.",
+      "A radiograph can diagnose a stable pneumothorax, but waiting in obstructive shock may cause cardiac arrest.",
+      "ABG can quantify respiratory failure but adds no information needed before lifesaving decompression.",
+      "Positive-pressure ventilation without relieving pleural tension can worsen haemodynamic collapse and should not delay decompression.",
+      "CT is appropriate only after stabilisation and would be unsafe during untreated tension physiology."
+    ],
+    "pearl": "Tension pneumothorax is a clinical diagnosis in an unstable trauma patient; treat before imaging.",
+    "pivot": "A stable patient with unilateral chest pain and preserved circulation can undergo bedside ultrasound or radiography first.",
+    "management": {
+      "steps": [
+        [
+          "Recognise",
+          "Identify unilateral absent air entry, severe hypoxia and obstructive shock."
+        ],
+        [
+          "Assess",
+          "Call trauma support and assess for concurrent haemorrhage or airway compromise."
+        ],
+        [
+          "Act",
+          "Decompress the affected chest immediately using a trained clinician and local technique."
+        ],
+        [
+          "Reassess",
+          "Arrange definitive pleural drainage, monitor response and reassess for other injuries."
+        ]
+      ],
+      "safety": "Do not delay decompression for X-ray or CT when clinical tension pneumothorax causes shock.",
+      "local": "Use current Australian clinical guidance, local protocols and senior support."
+    },
+    "source": "https://aci.health.nsw.gov.au/ecat/adult/traumatic-injury"
+  },
+  {
+    "n": 27,
+    "domain": "Oncology & infectious diseases",
+    "skill": "Febrile neutropenia / immediate antibiotics",
+    "context": "Original final-year Monash-style decision; inspired by 2024–2025 SPA-W review themes",
+    "stem": "A 59-year-old receiving cytotoxic chemotherapy for lymphoma presents with rigors, temperature 39.1°C, pulse 126/min and BP 89/55 mmHg. Her last blood count showed severe neutropenia. Blood cultures have been drawn; the new full blood count and chest radiograph are pending. A junior wants to await the neutrophil result before prescribing treatment.",
+    "ask": "What is the most appropriate next action?",
+    "options": [
+      "Wait for the absolute neutrophil count to confirm the precise severity of neutropenia.",
+      "Begin empirical broad-spectrum IV antibiotics immediately while resuscitating suspected sepsis.",
+      "Obtain a chest CT to locate an infectious focus before choosing antibiotic therapy.",
+      "Give oral antibiotics and arrange outpatient review if the fever decreases after paracetamol.",
+      "Administer granulocyte colony-stimulating factor alone while monitoring for spontaneous improvement."
+    ],
+    "key": "B",
+    "explanations": [
+      "The clinical context already indicates a high-risk immunocompromised patient; a repeat count should not postpone treatment.",
+      "Correct. Febrile neutropenia with hypotension is a time-critical sepsis emergency. Obtain cultures without delaying antibiotics and start appropriate IV antipseudomonal therapy promptly.",
+      "Imaging can identify a source later but must not postpone first-dose antibiotics in shock.",
+      "Hypotension makes outpatient oral management inappropriate regardless of transient temperature reduction.",
+      "G-CSF has selected indications but cannot replace immediate infection treatment or shock resuscitation."
+    ],
+    "pearl": "Treat fever after cytotoxic chemotherapy as neutropenic sepsis until assessed; never wait for the repeat ANC.",
+    "pivot": "Stable low-risk febrile neutropenia can follow a risk-stratified pathway, but systemic compromise mandates urgent IV therapy.",
+    "management": {
+      "steps": [
+        [
+          "Recognise",
+          "Recognise immunocompromise, fever and haemodynamic compromise."
+        ],
+        [
+          "Assess",
+          "Obtain cultures and lactate promptly without delaying treatment."
+        ],
+        [
+          "Act",
+          "Give immediate broad-spectrum IV antibiotics and guided sepsis resuscitation."
+        ],
+        [
+          "Reassess",
+          "Reassess perfusion, culture results, source control and escalation to critical care."
+        ]
+      ],
+      "safety": "Time to antibiotics matters: current eviQ recommends within one hour for neutropenic sepsis or septic shock.",
+      "local": "Use current Australian clinical guidance, local protocols and senior support."
+    },
+    "source": "https://www.eviq.org.au/clinical-resources/oncological-emergencies/123-neutropenic-fever-patient-evaluation-risk-as"
+  },
+  {
+    "n": 28,
+    "domain": "Oncology & neurology",
+    "skill": "Metastatic spinal cord compression / urgent MRI and steroids",
+    "context": "Original final-year Monash-style decision; inspired by 2024–2025 SPA-W review themes",
+    "stem": "A 66-year-old with metastatic prostate cancer reports new thoracic back pain, progressive bilateral leg weakness and difficulty starting urination. Examination shows brisk knee reflexes and reduced sensation below the umbilicus. His observations are stable, and plain spinal radiographs show degenerative changes without an acute fracture.",
+    "ask": "What management best preserves neurological function?",
+    "options": [
+      "Arrange routine outpatient physiotherapy and review weakness after two weeks of rehabilitation.",
+      "Request an isolated lumbar X-ray and provide analgesia while awaiting the radiology report.",
+      "Start dexamethasone promptly and organise urgent whole-spine MRI with specialist assessment.",
+      "Order an elective nerve-conduction study to distinguish neuropathy from spinal root irritation.",
+      "Prescribe oral opioids alone because stable vital signs make neurological compression unlikely."
+    ],
+    "key": "C",
+    "explanations": [
+      "New weakness and bladder dysfunction in cancer are red flags for cord compression, not a routine rehabilitation referral.",
+      "Plain radiographs cannot exclude epidural tumour or compression and delay definitive MRI.",
+      "Correct. Suspected malignant spinal cord compression warrants prompt dexamethasone, urgent whole-spine MRI and coordinated oncology/spinal surgical assessment.",
+      "Electrophysiology is not the first investigation for acute upper motor neurone signs and sphincter dysfunction.",
+      "Analgesia is appropriate but does not address the risk of irreversible cord injury despite stable vital signs."
+    ],
+    "pearl": "Back pain plus new motor or sphincter symptoms in metastatic cancer is spinal cord compression until excluded.",
+    "pivot": "Even if pain is mild, objective upper motor neurone signs and urinary symptoms justify emergency MRI.",
+    "management": {
+      "steps": [
+        [
+          "Recognise",
+          "Document motor power, sensory level, gait and bladder function."
+        ],
+        [
+          "Assess",
+          "Request urgent whole-spine MRI and involve oncology and spinal surgery."
+        ],
+        [
+          "Act",
+          "Give prompt dexamethasone according to protocol while arranging decompression or radiotherapy."
+        ],
+        [
+          "Reassess",
+          "Protect spinal stability, monitor neurological changes and manage steroid complications."
+        ]
+      ],
+      "safety": "Do not delay treatment because a plain X-ray is normal; permanent paraplegia may follow delay.",
+      "local": "Use current Australian clinical guidance, local protocols and senior support."
+    },
+    "source": "https://www.eviq.org.au/radiation-oncology/palliative/296-spinal-cord-compression-palliative-ebrt"
+  },
+  {
+    "n": 29,
+    "domain": "Paediatrics & orthopaedics",
+    "skill": "Septic hip / urgent orthopaedic drainage",
+    "context": "Original final-year Monash-style decision; inspired by 2024–2025 SPA-W review themes",
+    "stem": "A previously healthy five-year-old has refused to bear weight since waking, with fever 39°C and severe right groin pain. The hip rests flexed and externally rotated, and passive rotation causes marked distress. CRP is elevated and ultrasound shows a substantial hip effusion; there is no history of injury.",
+    "ask": "What is the safest next step?",
+    "options": [
+      "Arrange discharge with oral analgesia and a review appointment after the weekend.",
+      "Start physiotherapy immediately to prevent reduced hip range from immobility.",
+      "Treat presumed transient synovitis with ibuprofen and reassess in one week.",
+      "Seek urgent orthopaedic review for aspiration or washout and commence IV antibiotics.",
+      "Obtain an elective MRI before contacting orthopaedics or administering any antimicrobial therapy."
+    ],
+    "key": "D",
+    "explanations": [
+      "A febrile child unable to bear weight with a painful effusion may have septic arthritis requiring urgent intervention.",
+      "Physiotherapy is not the priority during suspected infection and may increase pain.",
+      "Transient synovitis is a differential but severe fever, inflammatory markers and inability to bear weight warrant infection exclusion.",
+      "Correct. Septic arthritis threatens cartilage; urgent orthopaedic aspiration or washout and IV antibiotics are indicated, without delaying treatment in an unwell child.",
+      "MRI can assess adjacent osteomyelitis but should not delay urgent surgical discussion or antibiotic treatment."
+    ],
+    "pearl": "Hot, painful immobile hip with fever in a child is septic arthritis until proven otherwise.",
+    "pivot": "A well child walking comfortably with a small effusion and no systemic features may be assessed for transient synovitis.",
+    "management": {
+      "steps": [
+        [
+          "Recognise",
+          "Assess for sepsis, pain, limb perfusion and weight-bearing ability."
+        ],
+        [
+          "Assess",
+          "Obtain blood cultures, inflammatory markers and urgent orthopaedic assessment."
+        ],
+        [
+          "Act",
+          "Give IV antibiotics per local protocol and arrange joint aspiration or washout."
+        ],
+        [
+          "Reassess",
+          "Monitor fever, inflammatory markers and return of joint movement with the team."
+        ]
+      ],
+      "safety": "Never delay antibiotics in a systemically unwell child while waiting for MRI or joint aspiration.",
+      "local": "Use current Australian clinical guidance, local protocols and senior support."
+    },
+    "source": "https://www.rch.org.au/clinicalguide/guideline_index/Bone_and_joint_infection/"
+  },
+  {
+    "n": 30,
+    "domain": "Urology & emergency medicine",
+    "skill": "Infected obstructed ureter / urgent source control",
+    "context": "Original final-year Monash-style decision; inspired by 2024–2025 SPA-W review themes",
+    "stem": "A 44-year-old presents with severe left loin pain, shaking chills and vomiting. Temperature is 39.4°C, BP 90/58 mmHg and creatinine is rising. CT reveals an 8-mm proximal ureteric calculus with upstream hydronephrosis and inflammatory stranding. The urine dipstick is positive for nitrites and leukocytes.",
+    "ask": "Which intervention is essential alongside resuscitation and IV antibiotics?",
+    "options": [
+      "Arrange routine outpatient ureteroscopy after several days of oral antibiotic therapy.",
+      "Begin medical expulsive therapy and discharge once the pain improves with analgesia.",
+      "Give aggressive intravenous fluids alone because relieving obstruction can be deferred.",
+      "Perform immediate definitive stone fragmentation without first treating the septic physiology.",
+      "Obtain urgent urological drainage by ureteric stent or percutaneous nephrostomy."
+    ],
+    "key": "E",
+    "explanations": [
+      "Infected obstruction with shock needs urgent decompression; outpatient waiting risks uncontrolled sepsis.",
+      "Medical expulsive therapy is not definitive source control for an obstructed infected collecting system.",
+      "Fluids are necessary for shock but cannot drain infected urine trapped above the stone.",
+      "Definitive lithotripsy is generally delayed until infection is controlled; emergency drainage is the first procedural goal.",
+      "Correct. An infected obstructed kidney is a urological emergency requiring prompt decompression plus sepsis management, with definitive stone removal later."
+    ],
+    "pearl": "Obstructed infected urinary tract = antibiotics plus drainage; antibiotics alone may fail without source control.",
+    "pivot": "A noninfected uncomplicated small stone in a stable patient can sometimes be managed expectantly.",
+    "management": {
+      "steps": [
+        [
+          "Recognise",
+          "Identify obstructive urosepsis and activate sepsis resuscitation."
+        ],
+        [
+          "Assess",
+          "Obtain cultures, renal tests and urgent imaging or review existing CT."
+        ],
+        [
+          "Act",
+          "Give prompt IV antibiotics and coordinate emergency ureteric stent or nephrostomy."
+        ],
+        [
+          "Reassess",
+          "Monitor urine output, renal function and haemodynamics; plan later stone clearance."
+        ]
+      ],
+      "safety": "Do not wait for blood culture results or successful pain control before requesting urological decompression.",
+      "local": "Use current Australian clinical guidance, local protocols and senior support."
+    },
+    "source": "https://www.health.vic.gov.au/statewide-referral-criteria/renal-tract-stones-or-renal-colic"
+  },
+  {
+    "n": 31,
+    "domain": "Allergy & emergency medicine",
+    "skill": "Anaphylaxis without rash / first-line adrenaline",
+    "context": "Original final-year Monash-style decision; inspired by 2024–2025 SPA-W review themes",
+    "stem": "Minutes after receiving IV cefazolin, a 42-year-old develops sudden wheeze, hoarse voice and dizziness. BP falls to 75/40 mmHg and the lips appear swollen. There is no visible urticaria. A colleague suggests giving an antihistamine first because the skin is clear and anaphylaxis has not been confirmed.",
+    "ask": "What is the correct immediate medication?",
+    "options": [
+      "Give intramuscular adrenaline into the lateral thigh immediately, with resuscitation support.",
+      "Give intravenous chlorphenamine first and observe whether the wheeze settles.",
+      "Give oral prednisolone first to prevent rapid progression of airway swelling.",
+      "Give nebulised salbutamol alone because the most prominent symptom is wheeze.",
+      "Give intramuscular glucagon routinely as the first-line drug for all suspected reactions."
+    ],
+    "key": "A",
+    "explanations": [
+      "Correct. Airway, breathing and circulatory compromise after exposure is anaphylaxis even without rash; IM adrenaline is first line, with positioning, oxygen and fluids as required.",
+      "Antihistamines treat itch and hives but do not reverse shock or critical airway compromise.",
+      "Steroids have delayed effects and do not substitute for adrenaline in an acute reaction.",
+      "Bronchodilators may supplement adrenaline for persistent wheeze, but cannot reverse systemic vasodilation and airway oedema.",
+      "Glucagon may be considered in selected refractory beta-blocker-associated reactions, not as routine initial therapy."
+    ],
+    "pearl": "Anaphylaxis can occur without skin signs; IM adrenaline must not be delayed by antihistamines.",
+    "pivot": "Persistent shock after appropriate IM adrenaline and fluids requires specialist-led refractory anaphylaxis management.",
+    "management": {
+      "steps": [
+        [
+          "Recognise",
+          "Stop the suspected trigger, call resuscitation and position safely."
+        ],
+        [
+          "Assess",
+          "Assess airway swelling, breathing, perfusion and monitoring."
+        ],
+        [
+          "Act",
+          "Give IM adrenaline promptly and repeat according to protocol if needed."
+        ],
+        [
+          "Reassess",
+          "Provide oxygen, IV fluid for shock, observation and allergy follow-up."
+        ]
+      ],
+      "safety": "Do not allow a hypotensive patient with anaphylaxis to stand or walk; collapse can worsen abruptly.",
+      "local": "Use current Australian clinical guidance, local protocols and senior support."
+    },
+    "source": "https://www.anzcor.org/home/algorithms-and-flowcharts/anaphylaxis"
+  },
+  {
+    "n": 32,
+    "domain": "Respiratory medicine",
+    "skill": "COPD exacerbation / oxygen saturation target",
+    "context": "Original final-year Monash-style decision; inspired by 2024–2025 SPA-W review themes",
+    "stem": "A 73-year-old with severe COPD presents with increased sputum and breathlessness. On room air, SpO₂ is 84%; he is alert and not in shock. After controlled oxygen begins, SpO₂ rises to 97% and he becomes increasingly drowsy. A VBG shows hypercapnia with acidosis. Staff ask what target should be prescribed.",
+    "ask": "Which oxygen target is generally appropriate during this exacerbation?",
+    "options": [
+      "Aim for 80–84% to avoid any risk of carbon dioxide retention.",
+      "Titrate oxygen to 88–92% while assessing ventilation and need for NIV.",
+      "Maintain 94–98% because all patients require near-normal oxygen saturation.",
+      "Keep saturation above 99% while delivering bronchodilators via oxygen nebuliser.",
+      "Stop supplemental oxygen completely until a repeat arterial gas is available."
+    ],
+    "key": "B",
+    "explanations": [
+      "This target permits significant hypoxaemia and risks organ injury; controlled oxygen should not mean untreated hypoxia.",
+      "Correct. Australian COPD guidance targets 88–92% in most exacerbations, with blood gas assessment and NIV for appropriate hypercapnic acidosis.",
+      "Routine high saturation targets can aggravate CO₂ retention in susceptible COPD patients and are not the usual prescribed range.",
+      "Maximal oxygen is not routine and oxygen-driven nebulisation may increase CO₂; use air-driven bronchodilator delivery if needed.",
+      "Oxygen must not be withheld from hypoxaemic patients; reduce and titrate to the target rather than stopping abruptly."
+    ],
+    "pearl": "Oxygen is a prescribed drug: in acute COPD, target 88–92% unless individualised otherwise.",
+    "pivot": "A critically hypoxic patient still requires immediate oxygen and resuscitation, not rigid adherence to a target at the expense of survival.",
+    "management": {
+      "steps": [
+        [
+          "Recognise",
+          "Recognise COPD exacerbation, hypoxaemia and altered mental state."
+        ],
+        [
+          "Assess",
+          "Check blood gases and assess for hypercapnic respiratory acidosis."
+        ],
+        [
+          "Act",
+          "Titrate controlled oxygen to 88–92% and treat exacerbation; consider NIV."
+        ],
+        [
+          "Reassess",
+          "Repeat gas and observations and escalate if acidosis or consciousness worsens."
+        ]
+      ],
+      "safety": "Do not withhold oxygen in severe hypoxaemia; excessive oxygen and insufficient oxygen are both dangerous.",
+      "local": "Use current Australian clinical guidance, local protocols and senior support."
+    },
+    "source": "https://www.safetyandquality.gov.au/standards/clinical-care-standards/chronic-obstructive-pulmonary-disease-clinical-care-standard"
+  },
+  {
+    "n": 33,
+    "domain": "Toxicology & emergency medicine",
+    "skill": "Paracetamol overdose / late result start antidote",
+    "context": "Original final-year Monash-style decision; inspired by 2024–2025 SPA-W review themes",
+    "stem": "A 22-year-old arrives nine hours after intentionally swallowing approximately 18 g of immediate-release paracetamol. She has nausea but no jaundice. Blood has been drawn for paracetamol concentration and liver tests, yet the regional laboratory cannot provide a result for another three hours. Her weight is 68 kg.",
+    "ask": "What is the safest next treatment decision?",
+    "options": [
+      "Wait for the serum level because treatment only helps after liver enzymes rise.",
+      "Give activated charcoal as the only treatment because absorption is still ongoing.",
+      "Start IV acetylcysteine now and revise the plan when results become available.",
+      "Give oral vitamin K immediately because it reverses paracetamol-related liver injury.",
+      "Arrange discharge if the first liver panel is normal and she remains asymptomatic."
+    ],
+    "key": "C",
+    "explanations": [
+      "At nine hours with a clearly toxic reported dose and delayed results, postponing antidote risks reduced benefit; early ALT can be normal.",
+      "Charcoal is not an antidote and is unlikely to be adequate as sole therapy this late after a standard immediate-release ingestion.",
+      "Correct. Start acetylcysteine when a potentially toxic ingestion is beyond eight hours and the level is not promptly available; reassess using concentration, timing and ALT.",
+      "Vitamin K may address selected coagulation problems but cannot prevent paracetamol hepatotoxicity.",
+      "Early normal liver tests do not exclude later hepatic injury; intentional overdose also needs psychosocial assessment."
+    ],
+    "pearl": "For a potentially toxic late paracetamol presentation, do not wait for delayed concentrations before starting acetylcysteine.",
+    "pivot": "A reliably timed early ingestion with a level available before eight hours can follow nomogram-directed treatment.",
+    "management": {
+      "steps": [
+        [
+          "Recognise",
+          "Assess timing, preparation, co-ingestants, weight and mental health safety."
+        ],
+        [
+          "Assess",
+          "Take paracetamol level, ALT, INR, glucose and renal tests."
+        ],
+        [
+          "Act",
+          "Begin IV acetylcysteine and consult toxicology if indicated."
+        ],
+        [
+          "Reassess",
+          "Review levels and enzymes before stopping antidote and arrange psychosocial care."
+        ]
+      ],
+      "safety": "Use the correct ingestion time and formulation; modified-release and staggered ingestions need different pathways.",
+      "local": "Use current Australian clinical guidance, local protocols and senior support."
+    },
+    "source": "https://aci.health.nsw.gov.au/networks/eci/clinical/tools/paracetamol"
+  },
+  {
+    "n": 34,
+    "domain": "Geriatrics & perioperative medicine",
+    "skill": "Postoperative delirium / reversible triggers",
+    "context": "Original final-year Monash-style decision; inspired by 2024–2025 SPA-W review themes",
+    "stem": "An 81-year-old who was cognitively independent before hip-fracture surgery becomes intermittently disorientated on postoperative day two. At night she tries to remove her cannula, but by morning she is calm. She has new urinary retention, mild hypoxaemia and has received several opioid doses. Her family asks for a sedative every night.",
+    "ask": "What is the best initial management approach?",
+    "options": [
+      "Prescribe regular benzodiazepines to prevent further nighttime confusion in all circumstances.",
+      "Diagnose irreversible dementia because she is elderly and has new memory difficulties.",
+      "Restrain her routinely overnight to protect cannulas without reviewing precipitating factors.",
+      "Assess and treat delirium precipitants while providing reorientation and supportive care.",
+      "Discharge immediately because fluctuating behaviour is expected after anaesthesia in older adults."
+    ],
+    "key": "D",
+    "explanations": [
+      "Benzodiazepines may worsen delirium and are not routine treatment unless specific indications such as withdrawal exist.",
+      "The abrupt fluctuating course with inattention suggests delirium, not necessarily a chronic neurodegenerative condition.",
+      "Restraint can increase distress and injury; use the least restrictive safe approach and address underlying causes.",
+      "Correct. Evaluate hypoxia, retention, infection, pain, constipation, medication effects and dehydration; involve family, sensory aids and nonpharmacological strategies.",
+      "Delirium predicts complications and warrants assessment and observation, not automatic discharge."
+    ],
+    "pearl": "Delirium is acute and fluctuating; look for reversible medical, medication and environmental contributors.",
+    "pivot": "Persistent dangerous agitation despite non-drug measures may justify carefully supervised short-term medication after risk assessment.",
+    "management": {
+      "steps": [
+        [
+          "Recognise",
+          "Screen attention and cognition and ask family about baseline."
+        ],
+        [
+          "Assess",
+          "Check oxygenation, bladder, bowel, infection, analgesics and metabolic status."
+        ],
+        [
+          "Act",
+          "Treat precipitants and use reorientation, sleep, mobility and sensory supports."
+        ],
+        [
+          "Reassess",
+          "Monitor falls risk and cognition, communicating recovery plan to carers."
+        ]
+      ],
+      "safety": "Do not use antipsychotics or sedatives routinely solely to make a delirious patient quiet.",
+      "local": "Use current Australian clinical guidance, local protocols and senior support."
+    },
+    "source": "https://aci.health.nsw.gov.au/chops/chops-key-principles/assessment-of-older-people-with-confusion/undertaking-assessment"
+  },
+  {
+    "n": 35,
+    "domain": "Obstetrics & emergency",
+    "skill": "Postpartum haemorrhage / uterine atony",
+    "context": "Original final-year Monash-style decision; inspired by 2024–2025 SPA-W review themes",
+    "stem": "Immediately after a vaginal birth, a 30-year-old begins bleeding heavily. The placenta appears complete, her pulse rises to 120/min and the uterine fundus is enlarged and boggy. The birth team has called for emergency assistance and commenced haemorrhage resuscitation. There is no obvious genital tract tear.",
+    "ask": "Which action most directly addresses the likely source of bleeding?",
+    "options": [
+      "Observe for ten minutes because uterine bleeding usually settles after placental delivery.",
+      "Start a routine oral iron prescription before assessing uterine tone or blood loss.",
+      "Transfer to ultrasound first to exclude retained tissue before uterine massage.",
+      "Give prophylactic oral antibiotics alone because infection is the likely acute mechanism.",
+      "Perform uterine massage and give oxytocin promptly as part of the haemorrhage response."
+    ],
+    "key": "E",
+    "explanations": [
+      "Heavy ongoing bleeding with shock signs is not normal lochia and requires immediate intervention.",
+      "Iron replaces losses later but cannot control acute haemorrhage or restore uterine contraction.",
+      "Retained tissue remains a consideration, but a boggy uterus needs immediate atony management while evaluation proceeds.",
+      "Acute atony is mechanical failure of contraction rather than primary infection; antibiotics do not restore tone.",
+      "Correct. Uterine atony is the most common cause of primary postpartum haemorrhage; massage and uterotonics including oxytocin are early treatment alongside resuscitation."
+    ],
+    "pearl": "A boggy enlarged uterus with postpartum bleeding strongly suggests atony; act on uterine tone immediately.",
+    "pivot": "If the uterus is firm yet bleeding continues, examine for genital tract trauma, retained tissue or coagulopathy.",
+    "management": {
+      "steps": [
+        [
+          "Recognise",
+          "Activate PPH protocol, quantify bleeding and assess ABCs."
+        ],
+        [
+          "Assess",
+          "Palpate tone, inspect placenta and examine for trauma or retained tissue."
+        ],
+        [
+          "Act",
+          "Massage uterus, give oxytocin and support circulation with blood products as indicated."
+        ],
+        [
+          "Reassess",
+          "Escalate to compression, additional uterotonics, TXA and procedural control if bleeding persists."
+        ]
+      ],
+      "safety": "Do not delay blood-product resuscitation or escalation while repeating ineffective uterine massage.",
+      "local": "Use current Australian clinical guidance, local protocols and senior support."
+    },
+    "source": "https://www.health.qld.gov.au/__data/assets/pdf_file/0015/140136/g-pph.pdf"
+  },
+  {
+    "n": 36,
+    "domain": "Cardiology & emergency",
+    "skill": "Acute coronary syndrome / early antiplatelet",
+    "context": "Original final-year Monash-style decision; inspired by 2024–2025 SPA-W review themes",
+    "stem": "A 62-year-old with hypertension reports 45 minutes of crushing central chest pain radiating to the jaw. ECG shows new anterior ST depression; she is alert with BP 138/82 mmHg and no active bleeding. She has never had an aspirin allergy and has not received any medications for this episode.",
+    "ask": "Which treatment should be administered promptly while definitive ACS assessment proceeds?",
+    "options": [
+      "Give a chewable loading dose of aspirin unless contraindicated, alongside the ACS pathway.",
+      "Delay all antiplatelet therapy until the second troponin has confirmed myocardial necrosis.",
+      "Give thrombolysis immediately because any ischaemic ST-segment change indicates STEMI.",
+      "Give high-dose intravenous heparin alone without aspirin or diagnostic reassessment.",
+      "Start a prophylactic oral antibiotic because myocardial injury may reflect an infection."
+    ],
+    "key": "A",
+    "explanations": [
+      "Correct. Early aspirin reduces platelet aggregation and is standard initial treatment for suspected ACS when there is no contraindication; continue ECG/troponin and risk assessment.",
+      "A high clinical suspicion of ACS warrants aspirin before repeat troponin confirmation, barring bleeding or allergy.",
+      "ST depression suggests ischaemia but is not a standard STEMI fibrinolysis indication; evaluate the full ECG and clinical context.",
+      "Anticoagulation may be indicated after assessment, but it does not replace aspirin and should follow an appropriate pathway.",
+      "Antibiotics do not treat plaque rupture or coronary thrombosis; there is no evidence of infection."
+    ],
+    "pearl": "Early chewable aspirin is appropriate for suspected ACS unless allergy or major bleeding risk prohibits it.",
+    "pivot": "If aortic dissection is strongly suspected, reassess before antithrombotics because bleeding consequences may be catastrophic.",
+    "management": {
+      "steps": [
+        [
+          "Recognise",
+          "Assess ABCs, obtain 12-lead ECG promptly and review haemodynamics."
+        ],
+        [
+          "Assess",
+          "Give aspirin loading dose when not contraindicated and obtain serial troponin."
+        ],
+        [
+          "Act",
+          "Apply risk-based ACS therapy and seek cardiology input for invasive evaluation."
+        ],
+        [
+          "Reassess",
+          "Monitor pain, rhythm and bleeding while updating the diagnosis."
+        ]
+      ],
+      "safety": "Do not give nitrates to hypotensive patients or those with relevant phosphodiesterase inhibitor exposure.",
+      "local": "Use current Australian clinical guidance, local protocols and senior support."
+    },
+    "source": "https://aci.health.nsw.gov.au/ecat/adult/chest-pain"
+  },
+  {
+    "n": 37,
+    "domain": "Cardiology & vascular emergency",
+    "skill": "Aortic dissection / avoid premature anticoagulation",
+    "context": "Original final-year Monash-style decision; inspired by 2024–2025 SPA-W review themes",
+    "stem": "A 60-year-old develops sudden maximal-intensity chest pain tearing through to the back while lifting a heavy box. He has a new pulse deficit in the left arm and systolic BP differs by 35 mmHg between arms. ECG shows no ST elevation, and a colleague proposes treating presumed ACS with full-dose anticoagulation.",
+    "ask": "What is the best immediate diagnostic strategy in this stable patient?",
+    "options": [
+      "Administer therapeutic heparin first and request CT only if serial troponins become positive.",
+      "Arrange urgent CT angiography of the aorta with vascular or cardiothoracic escalation.",
+      "Use a D-dimer alone to exclude dissection because the ECG lacks diagnostic changes.",
+      "Perform exercise stress testing to reproduce the chest pain before specialist referral.",
+      "Discharge after analgesia if the first troponin and portable chest X-ray are normal."
+    ],
+    "key": "B",
+    "explanations": [
+      "Heparin may worsen bleeding in dissection and should not be started blindly when classic dissection red flags are present.",
+      "Correct. Abrupt tearing pain with pulse/BP asymmetry raises acute aortic syndrome; urgent CTA defines anatomy in a stable patient and prompts surgical planning.",
+      "D-dimer can contribute only in selected low-probability pathways and cannot replace imaging in a high-suspicion case.",
+      "Stress testing is unsafe in possible acute aortic pathology and is not a diagnostic test for dissection.",
+      "Normal early troponin or chest radiograph cannot exclude aortic dissection and do not justify discharge."
+    ],
+    "pearl": "Pulse deficit plus abrupt tearing pain is aortic dissection until urgently excluded; antithrombotics may be harmful.",
+    "pivot": "Unstable patients may need immediate bedside echocardiography and operative consultation rather than transport to CT.",
+    "management": {
+      "steps": [
+        [
+          "Recognise",
+          "Assess haemodynamics, limb pulses and neurological signs."
+        ],
+        [
+          "Assess",
+          "Obtain urgent CTA when stable and seek immediate specialist advice."
+        ],
+        [
+          "Act",
+          "Provide controlled analgesia and specialist-directed heart-rate/BP management."
+        ],
+        [
+          "Reassess",
+          "Monitor for tamponade, malperfusion and need for emergency surgery."
+        ]
+      ],
+      "safety": "Do not allow a normal ECG or chest X-ray to reassure you against a high-risk dissection.",
+      "local": "Use current Australian clinical guidance, local protocols and senior support."
+    },
+    "source": "https://aci.health.nsw.gov.au/networks/eci/clinical/tools/d-dimer"
+  },
+  {
+    "n": 38,
+    "domain": "Paediatrics & trauma",
+    "skill": "Child head injury / deterioration during observation",
+    "context": "Original final-year Monash-style decision; inspired by 2024–2025 SPA-W review themes",
+    "stem": "A seven-year-old falls from a scooter and initially has GCS 15 without focal deficits. After two hours of emergency-department observation he becomes progressively sleepy, repeatedly vomits and now has GCS 13. His pupils are equal, but he is slower to follow commands than at triage.",
+    "ask": "What is the safest immediate management?",
+    "options": [
+      "Continue the existing observation schedule because equal pupils exclude intracranial bleeding.",
+      "Provide an antiemetic and discharge if vomiting settles before the next assessment.",
+      "Arrange urgent senior review and neuroimaging with resuscitation readiness.",
+      "Reassure the parents that drowsiness is a normal consequence of mild concussion.",
+      "Defer reassessment until the next day because the initial GCS was fully normal."
+    ],
+    "key": "C",
+    "explanations": [
+      "A fall in GCS is a high-risk sign even with equal pupils; routine observation without escalation is unsafe.",
+      "Symptom treatment cannot substitute for investigating deterioration in conscious state.",
+      "Correct. GCS decline of two points with repeated vomiting demands immediate senior review, consideration of CT and preparedness for neurological resuscitation.",
+      "Concussion is possible but cannot be assumed when consciousness worsens after a head injury.",
+      "An initially normal examination does not rule out evolving intracranial injury; delays risk irreversible deterioration."
+    ],
+    "pearl": "A drop of at least two GCS points during observation is an emergency red flag after paediatric head injury.",
+    "pivot": "A well child with isolated vomiting and otherwise normal examination may be observed rather than immediately scanned.",
+    "management": {
+      "steps": [
+        [
+          "Recognise",
+          "Repeat ABCDE and document serial GCS, pupils and limb power."
+        ],
+        [
+          "Assess",
+          "Call senior emergency/neurosurgical help and arrange urgent CT as indicated."
+        ],
+        [
+          "Act",
+          "Support airway and circulation and treat raised intracranial pressure if suspected."
+        ],
+        [
+          "Reassess",
+          "Reassess frequently and communicate deterioration to caregivers."
+        ]
+      ],
+      "safety": "Do not discharge a child whose consciousness or neurological examination has worsened.",
+      "local": "Use current Australian clinical guidance, local protocols and senior support."
+    },
+    "source": "https://www.rch.org.au/clinicalguide/guideline_index/Head_injury/"
+  },
+  {
+    "n": 39,
+    "domain": "Women's health & general practice",
+    "skill": "Inflammatory mastitis / avoid aggressive pumping",
+    "context": "Original final-year Monash-style decision; inspired by 2024–2025 SPA-W review themes",
+    "stem": "A woman breastfeeding a four-week-old infant develops a painful red wedge on one breast after several days of oversupply. She has mild malaise, temperature 37.7°C and no palpable fluctuance. She has been aggressively massaging the area and pumping after every feed to 'empty' the breast, which seems to increase swelling.",
+    "ask": "Which advice is most appropriate now?",
+    "options": [
+      "Stop all breastfeeding on the affected side until the redness has completely disappeared.",
+      "Use deep massage and extra pumping after each feed to forcibly clear the obstructed duct.",
+      "Start antibiotics in every case immediately and avoid all non-drug measures.",
+      "Continue feeding to the baby's cues, use cold packs and avoid vigorous massage or over-pumping.",
+      "Arrange emergency surgical drainage because any red breast segment indicates an abscess."
+    ],
+    "key": "D",
+    "explanations": [
+      "Continuing breastfeeding is usually safe and abrupt cessation may worsen engorgement and inflammation.",
+      "Aggressive massage and unnecessary extra milk removal can aggravate oedema and perpetuate oversupply.",
+      "Early inflammatory mastitis may improve with anti-inflammatory care; antibiotics are for suspected bacterial disease or persistent/worsening symptoms.",
+      "Correct. Current Australian advice supports on-demand feeds, anti-inflammatory measures and avoidance of deep massage and excessive pumping.",
+      "A breast abscess generally presents with a focal collection or fluctuance and requires assessment; redness alone is not an indication for drainage."
+    ],
+    "pearl": "Treat inflammatory mastitis by reducing inflammation, not by aggressively 'emptying' the breast.",
+    "pivot": "Persistent fever, worsening erythema or failure to improve within about a day should prompt bacterial mastitis assessment.",
+    "management": {
+      "steps": [
+        [
+          "Recognise",
+          "Assess systemic symptoms, breast findings and infant feeding."
+        ],
+        [
+          "Assess",
+          "Check for abscess signs, oversupply and ineffective latch."
+        ],
+        [
+          "Act",
+          "Recommend cue-based feeding, cold packs, rest and appropriate analgesia."
+        ],
+        [
+          "Reassess",
+          "Reassess within 12–24 hours and prescribe antibiotics if bacterial mastitis is suspected."
+        ]
+      ],
+      "safety": "Sepsis or suspected abscess requires urgent assessment; avoid vigorous breast massage.",
+      "local": "Use current Australian clinical guidance, local protocols and senior support."
+    },
+    "source": "https://www.childrens.health.qld.gov.au/health-a-to-z/breastfeeding/blocked-milk-ducts-and-mastitis"
+  },
+  {
+    "n": 40,
+    "domain": "Psychiatry & emergency medicine",
+    "skill": "Active suicidal plan / safe immediate disposition",
+    "context": "Original final-year Monash-style decision; inspired by 2024–2025 SPA-W review themes",
+    "stem": "A 27-year-old attends the emergency department after telling a friend she intends to overdose on tablets at home tonight. She has already collected several packs of medication and describes the timing and dose she plans to use. She appears calm, denies intoxication and asks to leave because she has work in the morning.",
+    "ask": "What is the safest immediate response?",
+    "options": [
+      "Accept discharge because a calm presentation makes an imminent attempt less likely.",
+      "Arrange routine outpatient counselling without assessing access to medications.",
+      "Ask a friend to check by text tomorrow while allowing the patient to leave alone.",
+      "Provide a generic crisis leaflet and discharge once the patient promises to stay safe.",
+      "Ensure immediate safety and urgent mental health assessment, with supervised care as indicated."
+    ],
+    "key": "E",
+    "explanations": [
+      "Calm behaviour does not negate a specific plan, access to means or near-term intent; discharge without assessment is unsafe.",
+      "Outpatient care may follow stabilisation, but imminent intent requires immediate structured assessment and safety measures.",
+      "A next-day text is insufficient protection when the patient has both a concrete plan and means available.",
+      "A verbal promise or leaflet is not a reliable substitute for assessing risk, supervision and restricting lethal means.",
+      "Correct. Specific imminent intent and access to tablets require a safe environment, assessment of capacity and legal options, urgent specialist review and collaborative means restriction."
+    ],
+    "pearl": "Risk assessment prioritises intent, plan, means, previous behaviour and protective factors—not outward calmness.",
+    "pivot": "A patient without current intent or means may still require a collaborative safety plan and rapid follow-up after assessment.",
+    "management": {
+      "steps": [
+        [
+          "Recognise",
+          "Ensure immediate physical safety, observation and removal of accessible means."
+        ],
+        [
+          "Assess",
+          "Assess intent, plan, means, psychiatric symptoms, supports and capacity."
+        ],
+        [
+          "Act",
+          "Involve the emergency mental health team and arrange appropriate safe disposition."
+        ],
+        [
+          "Reassess",
+          "Create a collaborative safety plan, follow-up and supported handover after stabilisation."
+        ]
+      ],
+      "safety": "Do not rely on a 'no-suicide contract' or apparent calm to discharge a patient with imminent intent.",
+      "local": "Use current Australian clinical guidance, local protocols and senior support."
+    },
+    "source": "https://www.health.nsw.gov.au/towardszerosuicides/Pages/help-for-suicide-and-depression.aspx"
   }
 ]
