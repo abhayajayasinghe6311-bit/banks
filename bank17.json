@@ -3742,5 +3742,1061 @@
       "local": "Use current Australian/Victorian guidance and senior escalation."
     },
     "source": "https://www.nhmrc.gov.au/guidelines"
+  },
+  {
+    "n": 79,
+    "domain": "Ophthalmology",
+    "skill": "Acute angle closure / high intraocular pressure",
+    "context": "Moonflower Garden · advanced original clinical reasoning",
+    "stem": "A 61-year-old has sudden severe unilateral eye pain, headache, halos and vomiting. Examination shows a mid-dilated poorly reactive pupil and hazy cornea; intraocular pressure is markedly raised.",
+    "ask": "What is the most appropriate immediate pathway?",
+    "options": [
+      "Discharge with lubricating drops for presumed dry eye.",
+      "Prescribe migraine treatment alone without examining the eye.",
+      "Patch the eye and arrange routine optometry next month.",
+      "Urgent ophthalmology consultation and pressure-lowering therapy.",
+      "Treat bacterial conjunctivitis with topical antibiotic alone."
+    ],
+    "key": "D",
+    "explanations": [
+      "Dry eye does not cause a fixed pupil and severe pressure rise.",
+      "Eye findings point to glaucoma, not isolated migraine.",
+      "Delay permits optic nerve injury.",
+      "Correct. Acute angle closure threatens permanent vision; pressure reduction and definitive laser planning are urgent.",
+      "Conjunctivitis does not explain high pressure or corneal oedema."
+    ],
+    "pearl": "high intraocular pressure",
+    "pivot": "If vision deteriorates or systemic instability occurs, escalate immediate emergency ophthalmic treatment rather than outpatient referral.",
+    "management": {
+      "steps": [
+        [
+          "Recognise",
+          "Measure acuity, pupil and pressure without delay."
+        ],
+        [
+          "Assess",
+          "Call ophthalmology immediately."
+        ],
+        [
+          "Act",
+          "Give pressure-lowering agents as directed and control symptoms."
+        ],
+        [
+          "Follow up",
+          "Arrange definitive laser or surgical treatment."
+        ]
+      ],
+      "safety": "If vision deteriorates or systemic instability occurs, escalate immediate emergency ophthalmic treatment rather than outpatient referral.",
+      "local": "Use current Australian/Victorian guidance and senior escalation."
+    },
+    "source": "https://www.racgp.org.au/afp/2016/april/acute-red-eye"
+  },
+  {
+    "n": 80,
+    "domain": "Medicine",
+    "skill": "Pleural infection / complicated effusion",
+    "context": "Moonflower Garden · advanced original clinical reasoning",
+    "stem": "A 65-year-old with pneumonia remains febrile despite antibiotics. Ultrasound shows a large loculated pleural collection; aspiration reveals frank pus.",
+    "ask": "Which addition to antimicrobials is essential?",
+    "options": [
+      "Continue the same oral antibiotics alone for several months.",
+      "Discharge because pus confirms a benign sterile effusion.",
+      "Use inhaled bronchodilator as definitive treatment for the collection.",
+      "Wait for spontaneous absorption without repeat imaging.",
+      "Arrange urgent pleural drainage and respiratory or thoracic specialist review."
+    ],
+    "key": "E",
+    "explanations": [
+      "Antibiotics alone often fail to clear organised infected collections.",
+      "Pus confirms pleural space infection, not reassurance.",
+      "Bronchodilators cannot evacuate pleural pus.",
+      "Delay promotes sepsis and pleural organisation.",
+      "Correct. Empyema requires drainage/source control and appropriate antibiotics."
+    ],
+    "pearl": "complicated effusion",
+    "pivot": "If persistent loculations or sepsis remain after drainage, discuss fibrinolytic or operative management with thoracic specialists.",
+    "management": {
+      "steps": [
+        [
+          "Recognise",
+          "Assess sepsis and respiratory compromise."
+        ],
+        [
+          "Assess",
+          "Send pleural fluid for chemistry and microbiology."
+        ],
+        [
+          "Act",
+          "Drain collection under specialist guidance."
+        ],
+        [
+          "Follow up",
+          "Tailor antibiotics and monitor imaging response."
+        ]
+      ],
+      "safety": "If persistent loculations or sepsis remain after drainage, discuss fibrinolytic or operative management with thoracic specialists.",
+      "local": "Use current Australian/Victorian guidance and senior escalation."
+    },
+    "source": "https://aci.health.nsw.gov.au/networks/eci/clinical/clinical-tools/pleural-effusion"
+  },
+  {
+    "n": 81,
+    "domain": "Cardiology",
+    "skill": "Inferior STEMI / right ventricular involvement",
+    "context": "Moonflower Garden · advanced original clinical reasoning",
+    "stem": "A 58-year-old has inferior ST elevation, hypotension and clear lungs. Right-sided ECG leads show V4R elevation; heart rate is 52/min.",
+    "ask": "What haemodynamic caution is most important?",
+    "options": [
+      "Avoid routine nitrates and assess preload dependence with senior cardiac support.",
+      "Give repeated nitrates despite hypotension to relieve every infarction.",
+      "Administer large-dose diuretic because all infarctions cause pulmonary oedema.",
+      "Discharge when chest pain decreases after simple analgesia.",
+      "Delay reperfusion until the bradycardia resolves spontaneously."
+    ],
+    "key": "A",
+    "explanations": [
+      "Correct. RV infarction may be preload dependent; nitrates can precipitate severe collapse while urgent reperfusion proceeds.",
+      "Venodilation further decreases filling and BP.",
+      "Clear lungs and RV signs do not support routine diuresis.",
+      "Pain relief does not resolve coronary occlusion.",
+      "Reperfusion should not be delayed by monitoring the rhythm alone."
+    ],
+    "pearl": "right ventricular involvement",
+    "pivot": "If severe bradycardia causes shock, follow ACS/bradyarrhythmia pathway with pacing or atropine consideration alongside urgent cath lab.",
+    "management": {
+      "steps": [
+        [
+          "Recognise",
+          "Activate STEMI/reperfusion response."
+        ],
+        [
+          "Assess",
+          "Obtain right-sided ECG and assess shock."
+        ],
+        [
+          "Act",
+          "Avoid preload-reducing agents in hypotensive RV infarction."
+        ],
+        [
+          "Follow up",
+          "Arrange urgent PCI and monitored haemodynamic support."
+        ]
+      ],
+      "safety": "If severe bradycardia causes shock, follow ACS/bradyarrhythmia pathway with pacing or atropine consideration alongside urgent cath lab.",
+      "local": "Use current Australian/Victorian guidance and senior escalation."
+    },
+    "source": "https://www.heartfoundation.org.au/"
+  },
+  {
+    "n": 82,
+    "domain": "Medicine",
+    "skill": "Aortic dissection / heart rate control",
+    "context": "Moonflower Garden · advanced original clinical reasoning",
+    "stem": "A 61-year-old presents with abrupt tearing chest pain radiating to the back and a pulse deficit. CT confirms an acute descending aortic dissection; BP 198/112 mmHg, heart rate 115/min.",
+    "ask": "Which initial haemodynamic strategy is appropriate?",
+    "options": [
+      "Start a powerful vasodilator alone without controlling reflex tachycardia.",
+      "Give IV beta blockade for heart-rate/impulse control before additional vasodilation.",
+      "Administer therapeutic thrombolysis for the chest pain.",
+      "Discharge on oral analgesia because the dissection is distal.",
+      "Aim for hypertension to maintain flow through the false lumen."
+    ],
+    "key": "B",
+    "explanations": [
+      "Reflex tachycardia can increase shear stress.",
+      "Correct. Anti-impulse therapy reduces dP/dt and wall stress; add vasodilator if needed after rate control.",
+      "Thrombolysis risks catastrophic haemorrhage.",
+      "Type B dissection still requires monitored specialist management.",
+      "Uncontrolled pressure increases extension and rupture risk."
+    ],
+    "pearl": "heart rate control",
+    "pivot": "If rupture, malperfusion or refractory pain occurs, seek urgent endovascular/vascular intervention rather than medical therapy alone.",
+    "management": {
+      "steps": [
+        [
+          "Recognise",
+          "Stabilise, monitor and obtain vascular/cardiothoracic review."
+        ],
+        [
+          "Assess",
+          "Provide analgesia and IV beta blocker."
+        ],
+        [
+          "Act",
+          "Titrate BP using monitored protocol."
+        ],
+        [
+          "Follow up",
+          "Monitor end-organ perfusion and intervention triggers."
+        ]
+      ],
+      "safety": "If rupture, malperfusion or refractory pain occurs, seek urgent endovascular/vascular intervention rather than medical therapy alone.",
+      "local": "Use current Australian/Victorian guidance and senior escalation."
+    },
+    "source": "https://aci.health.nsw.gov.au/networks/eci/clinical/clinical-tools/aortic-dissection"
+  },
+  {
+    "n": 83,
+    "domain": "Medicine",
+    "skill": "Sickle cell / acute chest syndrome",
+    "context": "Moonflower Garden · advanced original clinical reasoning",
+    "stem": "A 22-year-old with sickle cell disease has fever, chest pain, new hypoxia and a fresh infiltrate on chest X-ray. Haemoglobin has fallen below baseline.",
+    "ask": "What is the most appropriate initial disposition?",
+    "options": [
+      "Treat as uncomplicated pain crisis and discharge after opioids.",
+      "Give excessive IV fluids without monitoring respiratory status.",
+      "Admit for oxygen, antibiotics and urgent haematology assessment.",
+      "Withhold antibiotics because acute chest syndrome is never infectious.",
+      "Delay blood-group testing until after a week of observation."
+    ],
+    "key": "C",
+    "explanations": [
+      "New lung infiltrate and hypoxia define a dangerous complication.",
+      "Fluid overload may worsen pulmonary injury.",
+      "Correct. Acute chest syndrome can rapidly progress; supportive respiratory care, antimicrobials and transfusion planning are essential.",
+      "Infection frequently contributes and empiric coverage is indicated.",
+      "Early crossmatch enables urgent simple or exchange transfusion when needed."
+    ],
+    "pearl": "acute chest syndrome",
+    "pivot": "If hypoxia worsens or respiratory distress increases, seek ICU and exchange-transfusion evaluation urgently.",
+    "management": {
+      "steps": [
+        [
+          "Recognise",
+          "Assess oxygenation, pain and respiratory effort."
+        ],
+        [
+          "Assess",
+          "Obtain bloods/cultures and crossmatch."
+        ],
+        [
+          "Act",
+          "Give oxygen, analgesia and empiric antibiotics."
+        ],
+        [
+          "Follow up",
+          "Discuss transfusion and monitor closely."
+        ]
+      ],
+      "safety": "If hypoxia worsens or respiratory distress increases, seek ICU and exchange-transfusion evaluation urgently.",
+      "local": "Use current Australian/Victorian guidance and senior escalation."
+    },
+    "source": "https://www.health.qld.gov.au/"
+  },
+  {
+    "n": 84,
+    "domain": "Paediatrics",
+    "skill": "Suspected meningitis / LP contraindication",
+    "context": "Moonflower Garden · advanced original clinical reasoning",
+    "stem": "A 7-month-old is febrile, lethargic and has a bulging fontanelle. Perfusion is poor and a new focal seizure occurred shortly before arrival.",
+    "ask": "What sequence is safest?",
+    "options": [
+      "Perform lumbar puncture immediately before stabilising circulation or airway.",
+      "Delay antibiotics until brain imaging and CSF results are complete.",
+      "Reassure because a seizure can accompany a simple viral fever.",
+      "Resuscitate and give empiric IV antimicrobials without waiting for lumbar puncture.",
+      "Treat with antipyretic alone and discharge after a short observation."
+    ],
+    "key": "D",
+    "explanations": [
+      "LP during instability raises risk and delays resuscitation.",
+      "Time-critical antimicrobials must not await investigations.",
+      "Bulging fontanelle and compromised perfusion are significant red flags.",
+      "Correct. Unstable physiology and focal neurology make immediate LP unsafe; begin treatment promptly.",
+      "Antipyretics cannot treat bacterial CNS infection."
+    ],
+    "pearl": "LP contraindication",
+    "pivot": "If focal deficits or raised intracranial pressure signs persist, obtain urgent senior neurological imaging advice and defer LP until safe.",
+    "management": {
+      "steps": [
+        [
+          "Recognise",
+          "Stabilise ABCDE and glucose."
+        ],
+        [
+          "Assess",
+          "Collect blood cultures if immediately feasible."
+        ],
+        [
+          "Act",
+          "Give guideline-directed IV antibiotics promptly."
+        ],
+        [
+          "Follow up",
+          "Plan imaging and deferred LP after senior reassessment."
+        ]
+      ],
+      "safety": "If focal deficits or raised intracranial pressure signs persist, obtain urgent senior neurological imaging advice and defer LP until safe.",
+      "local": "Use current Australian/Victorian guidance and senior escalation."
+    },
+    "source": "https://www.rch.org.au/clinicalguide/guideline_index/Meningitis_encephalitis/"
+  },
+  {
+    "n": 85,
+    "domain": "Medicine",
+    "skill": "SGLT2 / euglycaemic DKA",
+    "context": "Moonflower Garden · advanced original clinical reasoning",
+    "stem": "A 51-year-old taking empagliflozin has vomiting after abdominal surgery. Glucose is 10 mmol/L, beta-hydroxybutyrate 5.2 mmol/L, pH 7.19 and bicarbonate 12 mmol/L.",
+    "ask": "What is the correct interpretation?",
+    "options": [
+      "Exclude DKA because glucose is below the usual hyperglycaemic range.",
+      "Give oral antacid alone because abdominal discomfort dominates symptoms.",
+      "Continue SGLT2 inhibitor to accelerate clearance of ketones.",
+      "Give subcutaneous correction insulin only and discharge immediately.",
+      "Treat euglycaemic DKA with insulin, dextrose and appropriate fluids/electrolytes."
+    ],
+    "key": "E",
+    "explanations": [
+      "Glucose alone is not diagnostic; ketonaemia plus acidosis confirms the syndrome.",
+      "Antacid will not reverse metabolic acidosis.",
+      "The implicated drug should be withheld during acute illness.",
+      "Monitored inpatient therapy is required for significant acidosis.",
+      "Correct. SGLT2 drugs permit ketoacidosis without marked hyperglycaemia; treat ketones/acidosis with IV insulin and dextrose."
+    ],
+    "pearl": "euglycaemic DKA",
+    "pivot": "If hypokalaemia develops during treatment, replace potassium and adjust insulin safely rather than continuing unchecked infusion.",
+    "management": {
+      "steps": [
+        [
+          "Recognise",
+          "Recognise ketoacidosis despite modest glucose."
+        ],
+        [
+          "Assess",
+          "Stop SGLT2 inhibitor, obtain gases and electrolytes."
+        ],
+        [
+          "Act",
+          "Use DKA protocol with insulin/dextrose and monitored fluids."
+        ],
+        [
+          "Follow up",
+          "Track ketone clearance and plan medication review."
+        ]
+      ],
+      "safety": "If hypokalaemia develops during treatment, replace potassium and adjust insulin safely rather than continuing unchecked infusion.",
+      "local": "Use current Australian/Victorian guidance and senior escalation."
+    },
+    "source": "https://www.diabetessociety.com.au/guideline/emergency-management-of-hyperglycaemia-in-primary-care/"
+  },
+  {
+    "n": 86,
+    "domain": "Paediatrics",
+    "skill": "Bilious neonatal vomiting / malrotation",
+    "context": "Moonflower Garden · advanced original clinical reasoning",
+    "stem": "A healthy 4-day-old newborn develops dark-green vomiting and intermittent abdominal distension. Vitals are currently stable and abdomen is soft between episodes.",
+    "ask": "What is the safest action?",
+    "options": [
+      "Urgent paediatric surgical assessment for intestinal obstruction or volvulus.",
+      "Reassure because normal abdomen excludes malrotation.",
+      "Give an antiemetic and review routinely after several days.",
+      "Offer large frequent feeds to determine gastrointestinal tolerance.",
+      "Wait for bloody stools before arranging abdominal imaging."
+    ],
+    "key": "A",
+    "explanations": [
+      "Correct. Bilious vomiting in a neonate is obstruction until proven otherwise; volvulus can rapidly infarct bowel.",
+      "Examination may be initially benign despite dangerous pathology.",
+      "Symptom suppression without diagnosis risks necrosis.",
+      "Feeding can worsen obstruction and aspiration.",
+      "Blood in stool may indicate late ischaemia."
+    ],
+    "pearl": "malrotation",
+    "pivot": "If shock, peritonitis or bloody stools appear, resuscitate and proceed to emergency surgical intervention without delays.",
+    "management": {
+      "steps": [
+        [
+          "Recognise",
+          "Stop feeds and insert decompression as advised."
+        ],
+        [
+          "Assess",
+          "Provide IV fluids and assess perfusion."
+        ],
+        [
+          "Act",
+          "Arrange urgent imaging and paediatric surgery."
+        ],
+        [
+          "Follow up",
+          "Monitor for ischaemia and prepare theatre."
+        ]
+      ],
+      "safety": "If shock, peritonitis or bloody stools appear, resuscitate and proceed to emergency surgical intervention without delays.",
+      "local": "Use current Australian/Victorian guidance and senior escalation."
+    },
+    "source": "https://www.rch.org.au/clinicalguide/guideline_index/Vomiting/"
+  },
+  {
+    "n": 87,
+    "domain": "Obstetrics",
+    "skill": "Asymptomatic bacteriuria / pregnancy treatment",
+    "context": "Moonflower Garden · advanced original clinical reasoning",
+    "stem": "A 21-week pregnant woman feels well but a properly collected urine culture grows a single uropathogen at significant colony count. She has no dysuria, fever or flank tenderness.",
+    "ask": "What is the safest management?",
+    "options": [
+      "Ignore the culture because urinary symptoms are absent.",
+      "Treat culture-confirmed asymptomatic bacteriuria with pregnancy-safe antibiotics.",
+      "Prescribe quinolone therapy routinely without considering fetal safety.",
+      "Treat only after pyelonephritis develops with fever and flank pain.",
+      "Repeat urine dipsticks alone instead of reviewing susceptibility."
+    ],
+    "key": "B",
+    "explanations": [
+      "Unlike non-pregnant adults, pregnancy is a treatment indication.",
+      "Correct. ASB in pregnancy is treated to reduce pyelonephritis and adverse pregnancy outcomes; select antibiotics by susceptibility and safety.",
+      "Some drug classes have pregnancy-specific cautions and should not be assumed first-line.",
+      "Delaying can permit ascending infection.",
+      "Dipstick cannot replace culture-guided treatment."
+    ],
+    "pearl": "pregnancy treatment",
+    "pivot": "If fever, flank pain or systemic illness appears, assess urgently for pyelonephritis and consider inpatient IV treatment.",
+    "management": {
+      "steps": [
+        [
+          "Recognise",
+          "Confirm specimen and culture significance."
+        ],
+        [
+          "Assess",
+          "Choose pregnancy-safe antibiotic per sensitivities."
+        ],
+        [
+          "Act",
+          "Counsel adherence and warning symptoms."
+        ],
+        [
+          "Follow up",
+          "Arrange follow-up culture as locally recommended."
+        ]
+      ],
+      "safety": "If fever, flank pain or systemic illness appears, assess urgently for pyelonephritis and consider inpatient IV treatment.",
+      "local": "Use current Australian/Victorian guidance and senior escalation."
+    },
+    "source": "https://www.health.qld.gov.au/qcg/publications"
+  },
+  {
+    "n": 88,
+    "domain": "Obstetrics",
+    "skill": "Placenta accreta / avoid attempted placental removal",
+    "context": "Moonflower Garden · advanced original clinical reasoning",
+    "stem": "A woman with two prior caesareans has an anterior placenta praevia and ultrasound features suggesting placenta accreta spectrum. She is stable at 32 weeks.",
+    "ask": "What delivery planning is safest?",
+    "options": [
+      "Plan routine low-risk vaginal birth without blood product preparation.",
+      "Attempt manual placental removal as soon as the baby delivers.",
+      "Arrange multidisciplinary planned birth at an experienced tertiary centre.",
+      "Ignore placental invasion suspicion unless haemorrhage has begun.",
+      "Schedule delivery at a facility without access to surgical blood support."
+    ],
+    "key": "C",
+    "explanations": [
+      "Vaginal birth can precipitate uncontrollable haemorrhage.",
+      "Forced placental separation can cause catastrophic blood loss.",
+      "Correct. Suspected PAS requires experienced obstetrics, anaesthesia, blood bank and possible hysterectomy planning.",
+      "Antenatal diagnosis enables preparation before major bleeding.",
+      "Limited resources increase preventable mortality."
+    ],
+    "pearl": "avoid attempted placental removal",
+    "pivot": "If antepartum haemorrhage or labour begins unexpectedly, activate urgent tertiary obstetric haemorrhage response and expedite safe delivery.",
+    "management": {
+      "steps": [
+        [
+          "Recognise",
+          "Confirm imaging and invasion extent."
+        ],
+        [
+          "Assess",
+          "Refer to multidisciplinary tertiary PAS team."
+        ],
+        [
+          "Act",
+          "Plan timing, blood availability and surgical consent."
+        ],
+        [
+          "Follow up",
+          "Coordinate neonatal and maternal postoperative support."
+        ]
+      ],
+      "safety": "If antepartum haemorrhage or labour begins unexpectedly, activate urgent tertiary obstetric haemorrhage response and expedite safe delivery.",
+      "local": "Use current Australian/Victorian guidance and senior escalation."
+    },
+    "source": "https://www.safercare.vic.gov.au/maternity"
+  },
+  {
+    "n": 89,
+    "domain": "Obstetrics",
+    "skill": "Cord prolapse / immediate relief of compression",
+    "context": "Moonflower Garden · advanced original clinical reasoning",
+    "stem": "Immediately after spontaneous rupture of membranes, fetal heart rate drops to 70/min. Examination finds a pulsating cord below the presenting part; the cervix is 5 cm dilated.",
+    "ask": "Which immediate response is correct?",
+    "options": [
+      "Continue routine labour observation because cord pulsations indicate sufficient flow.",
+      "Apply traction to the cord to speed delivery.",
+      "Encourage maternal pushing despite incomplete dilation.",
+      "Call for emergency delivery and manually elevate the presenting part to relieve cord compression.",
+      "Wait for spontaneous fetal heart recovery before notifying obstetrics."
+    ],
+    "key": "D",
+    "explanations": [
+      "Pulsation does not mean oxygenation is adequate under compression.",
+      "Traction can damage the cord and worsen compromise.",
+      "Incomplete dilatation makes pushing ineffective and dangerous.",
+      "Correct. Cord prolapse causes acute cord compression; relieve pressure immediately while arranging urgent operative birth.",
+      "Delay increases fetal hypoxic injury."
+    ],
+    "pearl": "immediate relief of compression",
+    "pivot": "If vaginal birth is truly imminent, senior obstetric team may expedite it; otherwise emergency caesarean is generally needed.",
+    "management": {
+      "steps": [
+        [
+          "Recognise",
+          "Summon obstetrics, anaesthesia and neonatal teams."
+        ],
+        [
+          "Assess",
+          "Elevate presenting part and position mother to reduce compression."
+        ],
+        [
+          "Act",
+          "Avoid handling the cord excessively; consider bladder fill as directed."
+        ],
+        [
+          "Follow up",
+          "Proceed to fastest safe definitive birth."
+        ]
+      ],
+      "safety": "If vaginal birth is truly imminent, senior obstetric team may expedite it; otherwise emergency caesarean is generally needed.",
+      "local": "Use current Australian/Victorian guidance and senior escalation."
+    },
+    "source": "https://www.safercare.vic.gov.au/maternity"
+  },
+  {
+    "n": 90,
+    "domain": "Obstetrics",
+    "skill": "Maternal sepsis / GAS postpartum",
+    "context": "Moonflower Garden · advanced original clinical reasoning",
+    "stem": "Two days after vaginal delivery, a woman has fever, profound myalgia and severe lower abdominal pain. Pulse is 145/min, BP 84/48 mmHg; lochia is scant despite significant tenderness.",
+    "ask": "What is the priority?",
+    "options": [
+      "Reassure that fever and pelvic discomfort are normal on day two.",
+      "Wait for positive genital swab before initiating resuscitation.",
+      "Treat with oral analgesic alone because bleeding is minimal.",
+      "Avoid involving surgery unless a large uterine mass is palpable.",
+      "Activate maternal sepsis response with immediate broad antibiotics and source evaluation."
+    ],
+    "key": "E",
+    "explanations": [
+      "Systemic toxicity and hypotension are not physiologic postpartum symptoms.",
+      "Microbiology should be collected but not delay therapy.",
+      "Analgesia alone cannot manage septic shock.",
+      "Necrotising or uterine infection may require surgical intervention without a palpable mass.",
+      "Correct. Invasive postpartum infection, including GAS, can progress rapidly to shock; antibiotics and source-control assessment cannot wait."
+    ],
+    "pearl": "GAS postpartum",
+    "pivot": "If rapidly worsening pain, lactate or organ dysfunction occurs, involve ICU and surgical teams for possible necrotising infection or source control.",
+    "management": {
+      "steps": [
+        [
+          "Recognise",
+          "Initiate ABCDE maternal sepsis response."
+        ],
+        [
+          "Assess",
+          "Take cultures, lactate and begin urgent IV antibiotics."
+        ],
+        [
+          "Act",
+          "Give appropriate resuscitation and haemodynamic monitoring."
+        ],
+        [
+          "Follow up",
+          "Investigate uterine, wound or other sources and escalate."
+        ]
+      ],
+      "safety": "If rapidly worsening pain, lactate or organ dysfunction occurs, involve ICU and surgical teams for possible necrotising infection or source control.",
+      "local": "Use current Australian/Victorian guidance and senior escalation."
+    },
+    "source": "https://www.safercare.vic.gov.au/best-practice-improvement/clinical-guidance/maternity/maternal-sepsis-pathway"
+  },
+  {
+    "n": 91,
+    "domain": "Psychiatry",
+    "skill": "Suicide risk / concrete plan and means",
+    "context": "Moonflower Garden · advanced original clinical reasoning",
+    "stem": "A 23-year-old with depression states she intends to overdose tonight and has collected medication at home. She feels unable to promise safety and wants to leave immediately.",
+    "ask": "What is the safest next step?",
+    "options": [
+      "Arrange urgent psychiatric risk assessment and maintain supervised safety.",
+      "Offer routine outpatient counselling next month without immediate intervention.",
+      "Accept a verbal safety promise as sufficient despite stated intent.",
+      "Provide a large medication supply to improve adherence.",
+      "Avoid contacting emergency services because she is articulate."
+    ],
+    "key": "A",
+    "explanations": [
+      "Correct. Specific intent, plan and accessible means imply acute risk; safe observation and urgent assessment are essential.",
+      "Delayed routine follow-up is inadequate with imminent intent.",
+      "No-suicide contracts do not replace comprehensive safety management.",
+      "Additional medicine access can increase lethality.",
+      "Articulation does not indicate low suicide risk."
+    ],
+    "pearl": "concrete plan and means",
+    "pivot": "If the patient attempts to abscond or becomes unable to consent, follow local lawful emergency mental health assessment and least restrictive safety pathway.",
+    "management": {
+      "steps": [
+        [
+          "Recognise",
+          "Assess intent, timing, past attempts and protective factors."
+        ],
+        [
+          "Assess",
+          "Remove immediate hazards and arrange continuous observation."
+        ],
+        [
+          "Act",
+          "Contact psychiatric emergency/senior team."
+        ],
+        [
+          "Follow up",
+          "Coordinate safe disposition, means restriction and follow-up."
+        ]
+      ],
+      "safety": "If the patient attempts to abscond or becomes unable to consent, follow local lawful emergency mental health assessment and least restrictive safety pathway.",
+      "local": "Use current Australian/Victorian guidance and senior escalation."
+    },
+    "source": "https://www.ranzcp.org/clinical-guidelines-publications/clinical-guidelines-publications-library/suicide-prevention-and-response"
+  },
+  {
+    "n": 92,
+    "domain": "Psychiatry",
+    "skill": "PTSD / trauma-focused treatment",
+    "context": "Moonflower Garden · advanced original clinical reasoning",
+    "stem": "A woman has recurrent intrusive memories, nightmares, avoidance and hypervigilance for four months after an assault. She is safe, not suicidal and wants active treatment.",
+    "ask": "What evidence-based psychological intervention is most appropriate?",
+    "options": [
+      "Recommend prolonged benzodiazepines as the primary long-term therapy.",
+      "Offer trauma-focused CBT or EMDR with a qualified clinician.",
+      "Insist on recounting trauma in detail before building therapeutic safety.",
+      "Treat with antipsychotic monotherapy without assessing PTSD symptoms.",
+      "Reassure symptoms always resolve without support after three months."
+    ],
+    "key": "B",
+    "explanations": [
+      "Benzodiazepines have dependence risks and poor evidence for core PTSD treatment.",
+      "Correct. Trauma-focused therapies have strong evidence for PTSD and should be collaborative and paced.",
+      "Premature forced disclosure can harm engagement.",
+      "Antipsychotics are not routine first-line PTSD therapy.",
+      "Persistent impairment beyond a month warrants assessment and care."
+    ],
+    "pearl": "trauma-focused treatment",
+    "pivot": "If severe suicidality, psychosis or unsafe home situation emerges, stabilise safety first and adapt therapy timing with specialist support.",
+    "management": {
+      "steps": [
+        [
+          "Recognise",
+          "Confirm diagnostic symptoms, duration and impact."
+        ],
+        [
+          "Assess",
+          "Assess safety, comorbidity and preferences."
+        ],
+        [
+          "Act",
+          "Refer for trauma-focused psychotherapy."
+        ],
+        [
+          "Follow up",
+          "Monitor functioning and consider medication for selected comorbidity."
+        ]
+      ],
+      "safety": "If severe suicidality, psychosis or unsafe home situation emerges, stabilise safety first and adapt therapy timing with specialist support.",
+      "local": "Use current Australian/Victorian guidance and senior escalation."
+    },
+    "source": "https://www.phoenixaustralia.org/australian-guidelines-for-ptsd/"
+  },
+  {
+    "n": 93,
+    "domain": "Paediatrics",
+    "skill": "Child protection / unexplained injuries",
+    "context": "Moonflower Garden · advanced original clinical reasoning",
+    "stem": "A non-mobile 5-month-old has bruising over torso and upper arms. The caregiver offers changing explanations and reports no witnessed injury. The infant appears alert.",
+    "ask": "What is the safest clinical approach?",
+    "options": [
+      "Reassure that bruising is common in non-mobile infants.",
+      "Confront the caregiver aggressively before arranging child safety.",
+      "Initiate safeguarding assessment with senior paediatric consultation and careful documentation.",
+      "Discharge because vital signs are normal and no fracture is obvious.",
+      "Record accidental injury despite inconsistent history without further evaluation."
+    ],
+    "key": "C",
+    "explanations": [
+      "Non-mobile infants rarely acquire such bruising accidentally.",
+      "Aggressive confrontation may jeopardise safety and investigation.",
+      "Correct. Bruising in a non-mobile infant is a sentinel injury and requires evaluation for non-accidental trauma and occult injury.",
+      "Normal observations do not exclude occult fractures or intracranial injury.",
+      "Accurate neutral documentation and referral are essential."
+    ],
+    "pearl": "unexplained injuries",
+    "pivot": "If acute neurological signs or instability appears, resuscitate and urgently investigate head injury while ensuring safe safeguarding referral.",
+    "management": {
+      "steps": [
+        [
+          "Recognise",
+          "Document injuries objectively with body map and history."
+        ],
+        [
+          "Assess",
+          "Consult senior child protection/paediatrics."
+        ],
+        [
+          "Act",
+          "Arrange indicated skeletal, neurological and bleeding evaluation."
+        ],
+        [
+          "Follow up",
+          "Implement safe disposition and statutory reporting as required."
+        ]
+      ],
+      "safety": "If acute neurological signs or instability appears, resuscitate and urgently investigate head injury while ensuring safe safeguarding referral.",
+      "local": "Use current Australian/Victorian guidance and senior escalation."
+    },
+    "source": "https://www.rch.org.au/clinicalguide/guideline_index/Child_abuse/"
+  },
+  {
+    "n": 94,
+    "domain": "Medicine",
+    "skill": "SIADH / euvolaemic hyponatraemia",
+    "context": "Moonflower Garden · advanced original clinical reasoning",
+    "stem": "A patient with small-cell lung cancer has sodium 121 mmol/L, low serum osmolality, inappropriately concentrated urine and high urine sodium. Exam shows no oedema or dehydration; there are no seizures.",
+    "ask": "What is the most likely initial management principle?",
+    "options": [
+      "Give large repeated saline boluses without evaluating fluid balance.",
+      "Administer hypertonic saline rapidly to normal sodium despite no severe symptoms.",
+      "Diagnose pseudohyponatraemia without checking serum osmolality.",
+      "Assess SIADH and consider fluid restriction with careful monitoring.",
+      "Give loop diuretic alone without reassessing sodium or cause."
+    ],
+    "key": "D",
+    "explanations": [
+      "Unselected isotonic fluids can fail or worsen SIADH.",
+      "Rapid correction risks osmotic demyelination and is reserved for severe symptoms under monitoring.",
+      "Measured hypotonicity argues against pseudohyponatraemia.",
+      "Correct. Euvolaemic hypotonic hyponatraemia with concentrated urine suggests SIADH; restrict fluid if appropriate and treat cause.",
+      "Medication requires tailored specialist assessment, not blind diuresis."
+    ],
+    "pearl": "euvolaemic hyponatraemia",
+    "pivot": "If seizure or severe encephalopathy develops, treat as severe symptomatic hyponatraemia with controlled 3% saline boluses and critical monitoring.",
+    "management": {
+      "steps": [
+        [
+          "Recognise",
+          "Confirm hypotonicity and exclude adrenal/thyroid deficiency."
+        ],
+        [
+          "Assess",
+          "Assess urine osmolality and volume status."
+        ],
+        [
+          "Act",
+          "Use tailored fluid restriction and monitor sodium trend."
+        ],
+        [
+          "Follow up",
+          "Treat tumour/medication contributors and follow correction limits."
+        ]
+      ],
+      "safety": "If seizure or severe encephalopathy develops, treat as severe symptomatic hyponatraemia with controlled 3% saline boluses and critical monitoring.",
+      "local": "Use current Australian/Victorian guidance and senior escalation."
+    },
+    "source": "https://aci.health.nsw.gov.au/networks/eci/clinical/clinical-tools/electrolyte-abnormalities"
+  },
+  {
+    "n": 95,
+    "domain": "Surgery",
+    "skill": "Diverticular abscess / drainage threshold",
+    "context": "Moonflower Garden · advanced original clinical reasoning",
+    "stem": "A 68-year-old with CT-proven sigmoid diverticulitis has a 5.5-cm pericolic abscess. Fever persists on IV antibiotics, but BP remains normal and no diffuse peritonitis is present.",
+    "ask": "What escalation is most appropriate?",
+    "options": [
+      "Discharge on oral fibre supplements despite persistent fever.",
+      "Proceed to immediate colectomy in every stable contained abscess.",
+      "Stop antibiotics because an abscess has been seen on CT.",
+      "Delay source-control discussion until diffuse peritonitis develops.",
+      "Discuss image-guided abscess drainage with colorectal surgery and radiology."
+    ],
+    "key": "E",
+    "explanations": [
+      "Persistent infection is not safe for simple outpatient diet changes.",
+      "Stable contained abscess often permits nonoperative drainage rather than automatic resection.",
+      "Antibiotics remain part of treatment.",
+      "Waiting for rupture unnecessarily increases risk.",
+      "Correct. Larger collections or antibiotic failure may need percutaneous drainage; involve colorectal specialists."
+    ],
+    "pearl": "drainage threshold",
+    "pivot": "If diffuse peritonitis or shock occurs, shift to emergency operative source control and sepsis resuscitation.",
+    "management": {
+      "steps": [
+        [
+          "Recognise",
+          "Assess sepsis and CT collection characteristics."
+        ],
+        [
+          "Assess",
+          "Continue IV antibiotics and fluid support."
+        ],
+        [
+          "Act",
+          "Discuss percutaneous drainage feasibility."
+        ],
+        [
+          "Follow up",
+          "Monitor response and plan interval colonic evaluation."
+        ]
+      ],
+      "safety": "If diffuse peritonitis or shock occurs, shift to emergency operative source control and sepsis resuscitation.",
+      "local": "Use current Australian/Victorian guidance and senior escalation."
+    },
+    "source": "https://aci.health.nsw.gov.au/networks/eci/clinical/clinical-tools/abdominal-pain"
+  },
+  {
+    "n": 96,
+    "domain": "Surgery",
+    "skill": "Achilles rupture / Thompson test",
+    "context": "Moonflower Garden · advanced original clinical reasoning",
+    "stem": "A 39-year-old sprinter feels as though someone kicked his heel. He cannot perform a single-leg heel raise and calf squeeze does not produce plantarflexion.",
+    "ask": "What is the most appropriate initial management?",
+    "options": [
+      "Immobilise in plantarflexion and arrange prompt orthopaedic review.",
+      "Reassure that a negative Thompson response excludes rupture.",
+      "Encourage immediate running to restore tendon strength.",
+      "Inject corticosteroid into the injured tendon at the bedside.",
+      "Apply a rigid neutral-angle splint without specialist assessment."
+    ],
+    "key": "A",
+    "explanations": [
+      "Correct. Findings indicate Achilles rupture; equinus immobilisation and orthopaedic follow-up facilitate repair pathway.",
+      "Absent plantarflexion is a positive rupture sign.",
+      "Loading the torn tendon may worsen injury.",
+      "Steroid injection impairs tendon healing.",
+      "Initial positioning should reduce tendon gap and follow local protocol."
+    ],
+    "pearl": "Thompson test",
+    "pivot": "If neurovascular injury, open wound or major associated trauma is present, seek emergency surgical assessment rather than routine clinic care.",
+    "management": {
+      "steps": [
+        [
+          "Recognise",
+          "Examine gap, squeeze test and neurovascular status."
+        ],
+        [
+          "Assess",
+          "Provide analgesia and plantarflexed immobilisation."
+        ],
+        [
+          "Act",
+          "Use crutches and assess VTE risk."
+        ],
+        [
+          "Follow up",
+          "Arrange prompt tendon management review."
+        ]
+      ],
+      "safety": "If neurovascular injury, open wound or major associated trauma is present, seek emergency surgical assessment rather than routine clinic care.",
+      "local": "Use current Australian/Victorian guidance and senior escalation."
+    },
+    "source": "https://www.health.qld.gov.au/clinical-practice/guidelines-procedures"
+  },
+  {
+    "n": 97,
+    "domain": "Urology",
+    "skill": "Testicular mass / urgent ultrasound",
+    "context": "Moonflower Garden · advanced original clinical reasoning",
+    "stem": "A 26-year-old notices a painless firm intratesticular lump for five weeks. It does not transilluminate and there is no dysuria or fever.",
+    "ask": "What investigation is most appropriate?",
+    "options": [
+      "Give empiric antibiotics without imaging because age suggests infection.",
+      "Arrange urgent scrotal ultrasound and urological cancer assessment.",
+      "Perform trans-scrotal needle biopsy before ultrasound.",
+      "Reassure that absence of pain excludes testicular malignancy.",
+      "Schedule routine annual examination without documenting the lesion."
+    ],
+    "key": "B",
+    "explanations": [
+      "Painless masses are typical of many testicular cancers.",
+      "Correct. A solid intratesticular mass is malignant until assessed; ultrasound and specialist tumour-marker planning are urgent.",
+      "Scrotal biopsy risks tumour seeding and is not standard.",
+      "Pain absence offers no reassurance.",
+      "Delay may permit progression of a highly treatable cancer."
+    ],
+    "pearl": "urgent ultrasound",
+    "pivot": "If ultrasound confirms suspicious solid lesion, refer for tumour markers and radical inguinal orchiectomy planning, not trans-scrotal biopsy.",
+    "management": {
+      "steps": [
+        [
+          "Recognise",
+          "Examine both testes and nodes."
+        ],
+        [
+          "Assess",
+          "Arrange urgent scrotal ultrasound."
+        ],
+        [
+          "Act",
+          "Refer urology and obtain AFP, hCG and LDH as directed."
+        ],
+        [
+          "Follow up",
+          "Discuss fertility preservation before definitive therapy."
+        ]
+      ],
+      "safety": "If ultrasound confirms suspicious solid lesion, refer for tumour markers and radical inguinal orchiectomy planning, not trans-scrotal biopsy.",
+      "local": "Use current Australian/Victorian guidance and senior escalation."
+    },
+    "source": "https://www.cancer.org.au/"
+  },
+  {
+    "n": 98,
+    "domain": "Surgery",
+    "skill": "Closed-loop bowel obstruction / CT warning",
+    "context": "Moonflower Garden · advanced original clinical reasoning",
+    "stem": "A 70-year-old with prior laparotomy has severe colicky pain and vomiting. CT demonstrates two transition points, a C-shaped loop and mesenteric oedema; lactate is increasing.",
+    "ask": "What management is safest?",
+    "options": [
+      "Continue prolonged conservative management regardless of CT signs.",
+      "Give oral laxatives to push stool across the obstructed loop.",
+      "Urgent surgical assessment for strangulating closed-loop obstruction and possible operation.",
+      "Remove nasogastric decompression and start unrestricted meals.",
+      "Wait until pneumoperitoneum appears before contacting theatre."
+    ],
+    "key": "C",
+    "explanations": [
+      "Conservative delay risks necrosis and perforation.",
+      "Laxatives can worsen distension or perforation.",
+      "Correct. Closed-loop configuration and rising lactate suggest threatened bowel viability; prompt surgery is essential.",
+      "Feeding/NG removal increases aspiration and obstruction.",
+      "Free air is a late complication, not prerequisite for operation."
+    ],
+    "pearl": "CT warning",
+    "pivot": "If peritonism or shock emerges, begin emergency resuscitation and operative source control without further waiting.",
+    "management": {
+      "steps": [
+        [
+          "Recognise",
+          "Keep fasting and decompress with NG."
+        ],
+        [
+          "Assess",
+          "Resuscitate, monitor urine output and lactate."
+        ],
+        [
+          "Act",
+          "Call senior surgery and anaesthesia."
+        ],
+        [
+          "Follow up",
+          "Proceed to urgent exploration based on viability risk."
+        ]
+      ],
+      "safety": "If peritonism or shock emerges, begin emergency resuscitation and operative source control without further waiting.",
+      "local": "Use current Australian/Victorian guidance and senior escalation."
+    },
+    "source": "https://aci.health.nsw.gov.au/networks/eci/clinical/clinical-tools/abdominal-pain"
+  },
+  {
+    "n": 99,
+    "domain": "Medicine",
+    "skill": "Digoxin toxicity / renal and potassium interaction",
+    "context": "Moonflower Garden · advanced original clinical reasoning",
+    "stem": "An 82-year-old on digoxin develops nausea, confusion and yellow-green visual halos after dehydration. Pulse is 42/min with AV block; renal function is impaired.",
+    "ask": "What is the safest initial management?",
+    "options": [
+      "Give the next digoxin dose to improve bradycardic contractility.",
+      "Administer routine potassium supplementation before checking its level.",
+      "Treat nausea alone and postpone cardiac monitoring until next week.",
+      "Stop digoxin, monitor ECG/electrolytes and urgently seek toxicology advice.",
+      "Increase a rate-limiting beta blocker to suppress rhythm instability."
+    ],
+    "key": "D",
+    "explanations": [
+      "Additional digoxin worsens toxicity.",
+      "Potassium may be high or low; replacement must be guided by tests.",
+      "Bradyarrhythmia may be life-threatening.",
+      "Correct. Renal impairment predisposes to digoxin accumulation; assess levels, potassium, dysrhythmias and Fab indication.",
+      "Extra AV nodal blockade can worsen severe bradycardia."
+    ],
+    "pearl": "renal and potassium interaction",
+    "pivot": "If life-threatening arrhythmia or significant hyperkalaemia occurs, discuss digoxin immune Fab and emergency resuscitation immediately.",
+    "management": {
+      "steps": [
+        [
+          "Recognise",
+          "Cease digoxin and interacting medicines."
+        ],
+        [
+          "Assess",
+          "Obtain ECG, electrolytes, renal function and digoxin level."
+        ],
+        [
+          "Act",
+          "Consult toxicology and monitor continuously."
+        ],
+        [
+          "Follow up",
+          "Treat complications and review long-term indication."
+        ]
+      ],
+      "safety": "If life-threatening arrhythmia or significant hyperkalaemia occurs, discuss digoxin immune Fab and emergency resuscitation immediately.",
+      "local": "Use current Australian/Victorian guidance and senior escalation."
+    },
+    "source": "https://www.health.qld.gov.au/__data/assets/pdf_file/0016/1067011/emergency.pdf"
+  },
+  {
+    "n": 100,
+    "domain": "Cardiology",
+    "skill": "Pre-excited AF / avoid AV nodal blockers",
+    "context": "Moonflower Garden · advanced original clinical reasoning",
+    "stem": "A 24-year-old with known WPW develops palpitations. ECG shows very rapid irregular wide-complex tachycardia with changing QRS morphology. BP is 104/66 mmHg but he is dizzy.",
+    "ask": "Which pharmacological caution is critical?",
+    "options": [
+      "Give repeated adenosine to block conduction through the AV node.",
+      "Use digoxin to slow the ventricular rate in all AF patterns.",
+      "Give verapamil first without assessing pre-excitation.",
+      "Discharge because irregular wide-complex rhythm is benign in the young.",
+      "Avoid AV nodal blockers such as adenosine, verapamil and digoxin."
+    ],
+    "key": "E",
+    "explanations": [
+      "Adenosine is contraindicated when this rhythm is suspected.",
+      "Digoxin may accelerate conduction down the accessory pathway.",
+      "Verapamil also risks dangerous acceleration.",
+      "A very rapid irregular wide complex rhythm is potentially lethal.",
+      "Correct. In pre-excited AF, AV nodal block can favour accessory-pathway conduction and precipitate ventricular fibrillation."
+    ],
+    "pearl": "avoid AV nodal blockers",
+    "pivot": "If haemodynamic compromise develops, perform urgent synchronised electrical cardioversion with resuscitation support.",
+    "management": {
+      "steps": [
+        [
+          "Recognise",
+          "Identify irregular wide-complex pre-excitation."
+        ],
+        [
+          "Assess",
+          "Attach monitoring and call emergency cardiology."
+        ],
+        [
+          "Act",
+          "Avoid AV nodal blockers; follow local antiarrhythmic pathway."
+        ],
+        [
+          "Follow up",
+          "Arrange definitive electrophysiology assessment."
+        ]
+      ],
+      "safety": "If haemodynamic compromise develops, perform urgent synchronised electrical cardioversion with resuscitation support.",
+      "local": "Use current Australian/Victorian guidance and senior escalation."
+    },
+    "source": "https://www.anzcor.org/home/adult-advanced-life-support/guideline-11-9-managing-acute-dysrhythmias"
   }
 ]
