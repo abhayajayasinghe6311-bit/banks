@@ -309,7 +309,7 @@
       "Oral fluids and antipyretics are inadequate for an ill child with organ hypoperfusion. A reassuring BP cannot override the combined red flags."
     ],
     "pearl": "A child can be in septic shock with a normal blood pressure; observe perfusion, conscious state and urine output.",
-    "pivot": "A well-appearing child with isolated fever, normal perfusion and no concerning rash is evaluated on a different risk pathway.",
+    "pivot": "If the child is WELL appearing with normal perfusion, no non-blanching rash and no sepsis features, assess fever source, age and vaccination status, treat discomfort, and consider outpatient care with clear return precautions and review; do not automatically activate septic-shock fluids or IV antibiotics unless clinical risk warrants.",
     "management": {
       "steps": [
         [
@@ -549,7 +549,7 @@
       "Renal investigations may contribute later; imaging should not delay urgent antihypertensive care and seizure-risk assessment in a symptomatic patient."
     ],
     "pearl": "New postpartum severe headache with BP at least 160 systolic or 110 diastolic is a maternal emergency even after an uncomplicated pregnancy.",
-    "pivot": "An afebrile postpartum patient with normal BP, no neurologic red flags and a typical benign headache may follow a less urgent assessment pathway.",
+    "pivot": "If the postpartum patient has a typical mild headache, NORMAL repeat BP and NO neurological or pre-eclampsia warning signs, assess common causes (sleep deprivation, dehydration, tension headache), provide appropriate analgesia and arrange review with strict return advice. Severe headache, visual changes or BP ≥160/110 requires immediate obstetric assessment.",
     "management": {
       "steps": [
         [
@@ -742,7 +742,7 @@
       "Sedation may suppress respiratory drive or airway protection and masks progression. Anxiety should not be assumed when cough, bulbar function and muscle power are worsening."
     ],
     "pearl": "In neuromuscular respiratory failure, oxygen saturation may remain normal until late; serial vital capacity and cough strength matter.",
-    "pivot": "A stable patient with a chronic length-dependent neuropathy and no bulbar or respiratory progression follows a different diagnostic urgency.",
+    "pivot": "If symptoms are chronic, length-dependent and stable WITHOUT bulbar weakness or worsening respiratory function, investigate common neuropathy causes in primary care (glucose/HbA1c, B12, thyroid, medication review), arrange neurology review according to findings, and safety-net for new weakness. Do not routinely admit to ICU for GBS-style monitoring.",
     "management": {
       "steps": [
         [
@@ -1030,7 +1030,7 @@
       "Antitussives have no reliable benefit in infant pertussis and may be unsafe. Delaying review risks recurrent apnoea, bradycardia or respiratory failure."
     ],
     "pearl": "In infants, pertussis may present as apnoea or cyanosis without a whoop or fever; household cough is a useful clue.",
-    "pivot": "A healthy older child with mild uncomplicated cough and no high-risk contacts may have a different admission threshold.",
+    "pivot": "If an older child has only a mild cough, normal respiratory effort and adequate feeding, assess exposure history and local pertussis probability, manage symptomatically with outpatient follow-up or targeted testing/treatment as indicated. Admit urgently for apnoea, hypoxia, dehydration or concerning infant symptoms.",
     "management": {
       "steps": [
         [
@@ -1126,7 +1126,7 @@
       "Severe disease is defined by organ injury, not just the absolute blood-pressure level. Expectant care to term without specialist review risks catastrophic maternal deterioration."
     ],
     "pearl": "HELLP is haemolysis, elevated liver enzymes and low platelets; dangerous disease may occur without severe-range BP.",
-    "pivot": "Uncomplicated gestational hypertension with normal platelets, liver enzymes and no severe symptoms follows a different surveillance pathway.",
+    "pivot": "If the patient has gestational hypertension WITHOUT severe BP, symptoms or HELLP laboratory changes, confirm BP, check urine protein/FBC/renal/liver function and arrange ongoing maternal BP and fetal-growth surveillance, antihypertensives when indicated and a planned delivery discussion; do not automatically activate emergency delivery for HELLP.",
     "management": {
       "steps": [
         [
@@ -1702,7 +1702,7 @@
       "Anticoagulation is indicated for specific cardioembolic causes such as atrial fibrillation, not as a routine substitute for treating symptomatic high-grade atherosclerotic carotid stenosis."
     ],
     "pearl": "Symptomatic 70–99% carotid stenosis after a nondisabling TIA is an early endarterectomy indication, ideally within 14 days.",
-    "pivot": "A patient with complete carotid occlusion or a disabling large infarct needs a different specialist risk-benefit discussion, not automatic early endarterectomy.",
+    "pivot": "If the carotid is COMPLETELY occluded, carotid endarterectomy usually offers no benefit; optimise stroke secondary prevention and seek specialist vascular/stroke advice. If there is a large disabling infarct, defer automatic early surgery and individualise the decision based on imaging, stability and haemorrhagic risk.",
     "management": {
       "steps": [
         [
@@ -2422,7 +2422,7 @@
       "Routine stool culture does not investigate bile flow. Infectious causes may be evaluated alongside the urgent cholestasis work-up, not before referral."
     ],
     "pearl": "Any acholic stool in a jaundiced infant warrants urgent biliary-atresia exclusion even when ultrasound appears normal.",
-    "pivot": "An otherwise thriving infant with isolated unconjugated jaundice, normal stool colour and normal direct bilirubin follows a different pathway.",
+    "pivot": "If jaundice is isolated UNCONJUGATED hyperbilirubinaemia, the baby is thriving and stools/urine are normal, assess age and bilirubin level, exclude haemolysis and other causes as indicated, then offer feeding support, phototherapy if thresholds are met and scheduled bilirubin review rather than a biliary-atresia surgical pathway.",
     "management": {
       "steps": [
         [
