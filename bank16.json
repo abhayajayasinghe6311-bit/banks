@@ -1918,5 +1918,485 @@
       "local": "NSW ACI Universal Aftercare guidance."
     },
     "source": "https://aci.health.nsw.gov.au/projects/universal-aftercare/entry/initiating-care"
+  },
+  {
+    "n": 41,
+    "domain": "General practice & medical ethics",
+    "skill": "Coronial reporting / traumatic cause of death",
+    "context": "Revision Blossom Garden · original case inspired by 2024–2025 Monash paper themes",
+    "stem": "An 82-year-old man is admitted to a Victorian hospital after slipping on wet steps and fracturing his hip. Despite treatment, he develops complications of immobility and dies three weeks later. His treating team knows his medical history and the death was expected during his last hospital day. A junior doctor is asked to complete the routine medical certificate of cause of death without contacting anyone else.",
+    "ask": "What is the most appropriate response by the treating doctor?",
+    "options": [
+      "Notify the coroner because the death followed an accidental injury, even after a delay.",
+      "Complete the ordinary certificate because the terminal illness was predictable during admission.",
+      "Complete the certificate because verification of death was performed by a senior doctor.",
+      "Treat the death as entirely natural because there was no immediate operative complication.",
+      "Await written family consent before deciding whether a coroner report is legally needed."
+    ],
+    "key": "A",
+    "explanations": [
+      "Correct. In Victoria, a death arising directly or indirectly from an accident or injury is reportable, even if the person dies much later from complications. Verify the death and follow the coroner notification process.",
+      "A predictable terminal course does not override the requirement to report a death connected to accidental injury. Do not assume that predictable means natural.",
+      "Verification confirms that death occurred; certification addresses its probable medical cause. Neither verification by a senior nor familiarity with the patient removes coronial duties.",
+      "The original traumatic injury remains relevant in the causal chain. A natural-looking terminal event does not by itself convert an injury-related death into a non-reportable one.",
+      "The family should receive respectful communication, but their consent is not a prerequisite for meeting a legal reporting obligation. Escalate uncertainty to the coronial service."
+    ],
+    "pearl": "Verification of death, medical certification and coronial reporting are different tasks; an injury-related death may require reporting weeks later.",
+    "pivot": "An expected death due solely to advanced naturally occurring disease may be certifiable by the treating team if the cause is known and no reporting criteria apply.",
+    "management": {
+      "steps": [
+        [
+          "Recognise",
+          "Verify and document the death, circumstances and causal sequence."
+        ],
+        [
+          "Assess",
+          "Review clinical records and discuss the accidental fall with a senior clinician."
+        ],
+        [
+          "Act",
+          "Notify Victoria's coronial service rather than issuing a routine certificate."
+        ],
+        [
+          "Follow up",
+          "Communicate with family and comply with coronial documentation and local policy."
+        ]
+      ],
+      "safety": "Australian coronial rules differ by jurisdiction; this stem is specifically Victorian.",
+      "local": "Current Australian practice; assess with senior clinicians and local pathways."
+    },
+    "source": "https://www.coronerscourt.vic.gov.au/report-death-or-fire/reportable-deaths"
+  },
+  {
+    "n": 42,
+    "domain": "Surgery & postoperative management",
+    "skill": "Stoma ischaemia / urgent senior surgical escalation",
+    "context": "Revision Blossom Garden · original case inspired by 2024–2025 Monash paper themes",
+    "stem": "Four days after formation of an end colostomy, a 73-year-old reports mild worsening abdominal discomfort. The ward nurse says the stoma looks increasingly dark purple and almost black at its tip. The surface is dry and does not bleed when gently touched; output has fallen. He is mildly tachycardic but has no frank hypotension. The appliance has leaked once overnight.",
+    "ask": "Which action should take priority?",
+    "options": [
+      "Request routine stoma-therapy review for a new appliance and skin-barrier fitting.",
+      "Escalate immediately to the surgical registrar for possible stoma ischaemia.",
+      "Administer a large laxative dose to increase output through the new colostomy.",
+      "Order routine abdominal radiography before notifying the responsible surgical team.",
+      "Observe the colour until the next morning because darkening is usual in new stomas."
+    ],
+    "key": "B",
+    "explanations": [
+      "Stoma nursing is useful for skin and appliance care, but a dry dark stoma with absent bleeding raises concern for compromised blood supply, not just leakage.",
+      "Correct. Dusky, black or non-bleeding mucosa suggests stoma ischaemia/necrosis. Prompt senior surgical assessment determines depth and the need for urgent intervention; resuscitation and investigations proceed as indicated.",
+      "A laxative does not restore blood flow and may worsen discomfort or risk in a patient with possible postoperative complications.",
+      "Imaging may help clarify deeper complications, but should not be a prerequisite for calling the surgeon about possible ischaemic tissue.",
+      "Normal stomas are typically viable and moist red/pink. Progressive darkening without contact bleeding is not a routine expected postoperative change."
+    ],
+    "pearl": "Colour, moisture, bleeding and output tell you more about stoma viability than the condition of the bag.",
+    "pivot": "Peristomal skin irritation with a pink, moist functioning stoma can be managed with routine stoma nursing advice.",
+    "management": {
+      "steps": [
+        [
+          "Recognise",
+          "Assess vitals, abdominal findings, stoma colour and output."
+        ],
+        [
+          "Assess",
+          "Check perfusion, blood tests and whether there are signs of systemic compromise."
+        ],
+        [
+          "Act",
+          "Call the treating surgical registrar immediately and keep the patient fasting if theatre is possible."
+        ],
+        [
+          "Follow up",
+          "Monitor for worsening pain, peritonitis and deterioration while the surgical plan is made."
+        ]
+      ],
+      "safety": "Do not allow an appliance problem to distract from stoma necrosis; delay may cost viable bowel.",
+      "local": "Current Australian practice; assess with senior clinicians and local pathways."
+    },
+    "source": "https://aci.health.nsw.gov.au/"
+  },
+  {
+    "n": 43,
+    "domain": "Transfusion medicine & critical care",
+    "skill": "TRALI / noncardiogenic pulmonary oedema after blood products",
+    "context": "Revision Blossom Garden · original case inspired by 2024–2025 Monash paper themes",
+    "stem": "A 38-year-old receives packed red cells during major abdominal surgery. Two hours into recovery he becomes breathless, febrile and hypoxaemic. Chest radiography shows new bilateral airspace opacities. Blood pressure is 92/56 mmHg, JVP is not elevated, and fluid balance is only mildly positive. Bedside echocardiography does not indicate raised left-sided filling pressures.",
+    "ask": "Which process best explains the acute deterioration?",
+    "options": [
+      "A transfusion-associated circulatory overload syndrome causing hydrostatic pulmonary oedema.",
+      "A delayed haemolytic transfusion reaction producing isolated renal damage days later.",
+      "Transfusion-related acute lung injury producing bilateral noncardiogenic pulmonary oedema.",
+      "Unilateral re-expansion pulmonary oedema following evacuation of a large pneumothorax.",
+      "Fat embolism related to fracture of a major long bone during a separate injury."
+    ],
+    "key": "C",
+    "explanations": [
+      "TACO more often presents with hypertension, positive fluid balance, raised JVP or other signs of circulatory overload; these are not supported here.",
+      "Delayed haemolytic reactions typically occur later and have features such as falling haemoglobin or jaundice; they do not neatly explain new acute bilateral infiltrates within two hours.",
+      "Correct. TRALI can cause acute hypoxaemia and bilateral infiltrates during or within six hours of transfusion, without left-sided volume overload. Stop the transfusion and give respiratory and haemodynamic support.",
+      "Re-expansion oedema generally follows re-expansion of the affected lung, which is not described, and often has a unilateral pattern.",
+      "Fat embolism generally follows long-bone or pelvic trauma and commonly develops later with neurological signs or petechiae; none is described."
+    ],
+    "pearl": "TRALI is acute noncardiogenic respiratory deterioration within six hours of transfusion; compare with TACO before prescribing diuretics.",
+    "pivot": "If raised JVP, fluid overload and hypertension dominate after transfusion, TACO is more likely and fluid reduction/diuresis can help.",
+    "management": {
+      "steps": [
+        [
+          "Recognise",
+          "Stop any ongoing transfusion and activate a transfusion reaction response."
+        ],
+        [
+          "Assess",
+          "Provide oxygen and critical-care assessment, then evaluate imaging and cardiac filling pressures."
+        ],
+        [
+          "Act",
+          "Support breathing and circulation; discuss findings with haematology and the transfusion service."
+        ],
+        [
+          "Follow up",
+          "Document reaction and coordinate Lifeblood notification and component investigation."
+        ]
+      ],
+      "safety": "Diuretics are not beneficial for TRALI and can worsen hypotension; avoid assuming all post-transfusion pulmonary oedema is TACO.",
+      "local": "Current Australian practice; assess with senior clinicians and local pathways."
+    },
+    "source": "https://www.lifeblood.com.au/health-professionals/clinical-practice/adverse-events/TRALI"
+  },
+  {
+    "n": 44,
+    "domain": "Respiratory medicine & blood-gas interpretation",
+    "skill": "Acute hypercapnic respiratory acidosis / limited renal compensation",
+    "context": "Revision Blossom Garden · original case inspired by 2024–2025 Monash paper themes",
+    "stem": "A 76-year-old with chronic lung disease arrives with marked increased work of breathing. An arterial blood gas shows pH 7.21, PaCO₂ 64 mmHg, HCO₃⁻ 26 mmol/L and PaO₂ 53 mmHg on room air. The admitting doctor notes that bicarbonate is near normal despite severe acidaemia. The patient was alert earlier but is becoming fatigued.",
+    "ask": "What is the most accurate interpretation of this gas?",
+    "options": [
+      "Primary metabolic acidosis with inadequate respiratory compensation and concomitant normal oxygenation.",
+      "Chronic compensated respiratory acidosis with a near-normal hydrogen ion concentration.",
+      "Predominant respiratory alkalosis causing reduced bicarbonate from chronic renal compensation.",
+      "Acute hypercapnic respiratory acidosis with associated hypoxaemia and little metabolic compensation.",
+      "Mixed metabolic alkalosis and hyperventilation explaining low oxygenation in this patient."
+    ],
+    "key": "D",
+    "explanations": [
+      "A primary metabolic acidosis would generally involve a reduced bicarbonate; here marked carbon dioxide elevation explains the low pH, and oxygenation is also poor.",
+      "Chronic renal compensation would tend to raise bicarbonate more, and the low pH argues against a well-compensated chronic state.",
+      "Respiratory alkalosis requires reduced rather than raised PaCO₂, and renal bicarbonate reduction does not match these data.",
+      "Correct. CO₂ is high and pH is low, while bicarbonate has risen little, indicating acute respiratory acidaemia with hypoxaemia. Escalate support according to clinical status and local ventilatory criteria.",
+      "There is no evidence of a raised bicarbonate indicating metabolic alkalosis, nor of low CO₂ from hyperventilation."
+    ],
+    "pearl": "Acute respiratory acidosis: low pH, high PaCO₂ and only modest bicarbonate change; rising CO₂ with fatigue signals danger.",
+    "pivot": "A chronic CO₂ retainer may have a higher baseline bicarbonate and a less depressed pH even at similar PaCO₂.",
+    "management": {
+      "steps": [
+        [
+          "Recognise",
+          "Rapidly assess consciousness, ventilation, oxygenation and airway protection."
+        ],
+        [
+          "Assess",
+          "Review blood gas, baseline gases, imaging and reversible respiratory triggers."
+        ],
+        [
+          "Act",
+          "Provide controlled oxygen and consider ventilatory support through the appropriate team."
+        ],
+        [
+          "Follow up",
+          "Repeat gases and escalate for worsening fatigue, acidaemia or hypercapnia."
+        ]
+      ],
+      "safety": "Do not assume normal oxygen saturation on supplemental oxygen excludes carbon dioxide narcosis or ventilatory failure.",
+      "local": "Current Australian practice; assess with senior clinicians and local pathways."
+    },
+    "source": "https://www.safetyandquality.gov.au/standards/clinical-care-standards/chronic-obstructive-pulmonary-disease-clinical-care-standard"
+  },
+  {
+    "n": 45,
+    "domain": "Emergency & burns",
+    "skill": "Burn involving the hand / specialist referral for function",
+    "context": "Revision Blossom Garden · original case inspired by 2024–2025 Monash paper themes",
+    "stem": "A 42-year-old spills boiling tea across the back of his dominant hand. He receives appropriate first aid, and the injured area is very painful, pink, moist and blanches with light pressure. Several small blisters are present; the affected area covers much less than 1% of total body surface area. He has full finger movement at present.",
+    "ask": "Which feature most strengthens the need for early specialist assessment?",
+    "options": [
+      "The presence of severe pain despite reassuring capillary refill and pink appearance.",
+      "The blistered appearance despite preserved movement and minimal body surface area.",
+      "The brief blanching after pressure that indicates dermal perfusion remains present.",
+      "The small proportion of total body surface area involved in the injury.",
+      "The involvement of a functionally important hand with risk of scarring and contracture."
+    ],
+    "key": "E",
+    "explanations": [
+      "Pain helps assess and treat the injury but does not independently determine the referral threshold.",
+      "Blisters suggest partial-thickness injury, but size and depth must be interpreted with function and anatomical site.",
+      "Blanching may indicate a more superficial dermal component; it does not outweigh anatomical function considerations.",
+      "A small total area often means fluid resuscitation is unnecessary, but does not remove risk of hand contracture or functional impairment.",
+      "Correct. Even small burns of hands warrant early specialist discussion because healing, movement and scarring can impair grip and fine motor function. Cooling, analgesia, dressings and hand therapy remain relevant."
+    ],
+    "pearl": "Burn referral depends on the site and function as well as area and depth.",
+    "pivot": "Extensive burns or suspected inhalation injury require a separate major-burn resuscitation pathway.",
+    "management": {
+      "steps": [
+        [
+          "Recognise",
+          "Provide appropriate cool running water first aid, analgesia and initial assessment."
+        ],
+        [
+          "Assess",
+          "Assess depth, circulation, finger movement and tetanus status."
+        ],
+        [
+          "Act",
+          "Apply suitable dressings and seek early burns/hand specialist advice."
+        ],
+        [
+          "Follow up",
+          "Plan functional rehabilitation, dressings and scar prevention."
+        ]
+      ],
+      "safety": "Do not dismiss a hand burn simply because it occupies a tiny percentage of body surface area.",
+      "local": "Current Australian practice; assess with senior clinicians and local pathways."
+    },
+    "source": "https://www.rch.org.au/trauma-service/manual/Burns/"
+  },
+  {
+    "n": 46,
+    "domain": "Obstetrics & haemorrhage",
+    "skill": "Painless late-pregnancy bleeding / placenta previa precautions",
+    "context": "Revision Blossom Garden · original case inspired by 2024–2025 Monash paper themes",
+    "stem": "A 30-year-old at 35 weeks' gestation arrives after sudden bright-red vaginal bleeding while resting. She has no uterine tenderness, contractions or trauma. Her booking ultrasound report is unavailable. Heart rate is 115/min and blood pressure is 105/67 mmHg. A student proposes an immediate digital vaginal examination to check cervical dilation.",
+    "ask": "What is the safest next management direction?",
+    "options": [
+      "Resuscitate and assess fetal wellbeing while avoiding digital vaginal examination until placental site is known.",
+      "Perform a digital vaginal examination first because painless bleeding usually arises from the cervix.",
+      "Prescribe tocolysis and send her home as absence of contractions excludes obstetric bleeding risk.",
+      "Begin labour induction immediately without ultrasound or specialist obstetric assessment.",
+      "Reassure and observe at home because significant bleeding from placental abruption is always painful."
+    ],
+    "key": "A",
+    "explanations": [
+      "Correct. Painless late pregnancy bleeding suggests possible placenta previa. Assess maternal stability, fetal status, blood loss and placental localisation with urgent obstetric involvement; avoid digital examination until previa is excluded.",
+      "A finger examination could trigger catastrophic haemorrhage if placenta covers the cervical os and should not precede placental localisation.",
+      "Absence of contractions does not make third-trimester bleeding benign. Tocolysis and discharge are unsafe before diagnosing the source.",
+      "Delivery planning depends on haemodynamics, gestation, placental position and fetal condition; immediate unsupervised induction could be dangerous.",
+      "Abruption is often painful but not universally so. The bleeding requires urgent maternity assessment regardless of differential diagnosis."
+    ],
+    "pearl": "Painless antepartum haemorrhage suggests placenta previa; do not perform digital vaginal examination until placental location is established.",
+    "pivot": "Painful bleeding with a tender or rigid uterus raises concern for abruption, but either presentation demands urgent assessment.",
+    "management": {
+      "steps": [
+        [
+          "Recognise",
+          "Initiate obstetric emergency assessment and appropriate monitoring."
+        ],
+        [
+          "Assess",
+          "Establish maternal IV access, blood tests and fetal wellbeing assessment."
+        ],
+        [
+          "Act",
+          "Request urgent ultrasound placental localisation and senior management."
+        ],
+        [
+          "Follow up",
+          "Arrange observation, haemorrhage readiness and delivery planning based on findings."
+        ]
+      ],
+      "safety": "Placenta previa must be excluded before a digital vaginal examination in late pregnancy bleeding.",
+      "local": "Current Australian practice; assess with senior clinicians and local pathways."
+    },
+    "source": "https://www.health.qld.gov.au/qcg/publications"
+  },
+  {
+    "n": 47,
+    "domain": "General medicine & geriatrics",
+    "skill": "Fever and delirium with catheter / source evaluation",
+    "context": "Revision Blossom Garden · original case inspired by 2024–2025 Monash paper themes",
+    "stem": "An 86-year-old usually living independently becomes abruptly confused and drowsy at his nursing facility. He has a long-term urinary catheter and a temperature of 38.7°C. BP is 125/76 mmHg, lungs are clear and abdominal examination is non-tender. A bag specimen collected from the catheter two weeks ago grew mixed bacteria, and staff assume it confirms the current source.",
+    "ask": "Which approach best tests the suspected cause while avoiding a misleading result?",
+    "options": [
+      "Start treatment based solely on the older bag culture because long-term catheters remain sterile.",
+      "Use a newly collected catheter-system specimen for culture while assessing other causes of febrile delirium.",
+      "Send a swab of the old urine drainage bag because it preserves bacterial growth over time.",
+      "Order immediate CT brain as the only investigation because urinary infection cannot cause delirium.",
+      "Assume bacteriuria proves symptomatic infection and omit blood tests and clinical reassessment."
+    ],
+    "key": "B",
+    "explanations": [
+      "A two-week-old bag result is not a reliable current culture and cannot prove symptomatic infection. Long-term catheters commonly develop colonisation.",
+      "Correct. Fever and delirium warrant prompt sepsis/delirium assessment, cultures and source investigation; replace the long-standing catheter when indicated and obtain a fresh urine sample from the appropriate sampling port or new system.",
+      "The drainage bag is commonly contaminated and should not be used as the source of a diagnostic urine culture.",
+      "Neuroimaging is considered when there are focal signs, trauma or another neurological indication; it is not automatically the most useful first test here.",
+      "Bacteriuria is frequent with long-term catheters. The clinical context matters, and simultaneous examination for alternative infection or metabolic triggers is required."
+    ],
+    "pearl": "Long-term urinary catheters often harbour bacteria; symptoms and a properly collected culture are essential to interpret the result.",
+    "pivot": "Asymptomatic bacteriuria in catheter users generally should not be treated except for specific clinical indications.",
+    "management": {
+      "steps": [
+        [
+          "Recognise",
+          "Assess delirium, sepsis physiology, glucose, medications and hydration."
+        ],
+        [
+          "Assess",
+          "Review catheter age and obtain a fresh appropriate urine specimen and other cultures as indicated."
+        ],
+        [
+          "Act",
+          "Treat clinically suspected infection using local antibiotic protocol while assessing other sources."
+        ],
+        [
+          "Follow up",
+          "Review cultures, replace catheter when appropriate and plan delirium recovery care."
+        ]
+      ],
+      "safety": "Do not culture an old drainage bag or equate a positive result with symptomatic catheter infection.",
+      "local": "Current Australian practice; assess with senior clinicians and local pathways."
+    },
+    "source": "https://www.safetyandquality.gov.au/clinical-care-standards/urinary-tract-infections-clinical-care-standard"
+  },
+  {
+    "n": 48,
+    "domain": "Ophthalmology & emergency medicine",
+    "skill": "New photopsia/floaters / retinal tear risk",
+    "context": "Revision Blossom Garden · original case inspired by 2024–2025 Monash paper themes",
+    "stem": "A 61-year-old notices dozens of new black spots drifting across the vision of one eye, followed by brief flashes of light in the temporal field. There is no headache, eye pain or drug use. She can still read normal-sized print, but describes a small dark shadow beginning at the far peripheral field. The GP can offer review in two weeks or contact an acute eye service today.",
+    "ask": "What is the most appropriate next action?",
+    "options": [
+      "Treat as visual hallucinations related to stress and arrange routine psychological review.",
+      "Recommend lubricating drops and observe because visual acuity remains largely preserved.",
+      "Arrange urgent dilated retinal examination for a possible retinal tear or detachment.",
+      "Request a routine visual field appointment before considering any retinal examination.",
+      "Begin empirical systemic corticosteroids because photopsia indicates optic neuritis."
+    ],
+    "key": "C",
+    "explanations": [
+      "New floaters and flashes, especially with a shadow, have an ocular pattern that is not characteristic of primary psychiatric visual hallucinations.",
+      "Artificial tears may relieve surface irritation but do not address a potentially detached or torn retina.",
+      "Correct. New flashes, floaters and a curtain or shadow warrant urgent ophthalmic assessment to detect a retinal tear or developing detachment before sight is lost.",
+      "Formal field testing may document deficit but must not delay dilated fundus examination when retinal detachment is possible.",
+      "Optic neuritis usually presents with reduced central vision and pain on eye movement; these symptoms more strongly suggest vitreoretinal traction."
+    ],
+    "pearl": "Flashes, new floaters and a curtain-like shadow are retinal-detachment warning signs, even if central vision remains good.",
+    "pivot": "Longstanding unchanged floaters without flashes, shadow or reduction in vision may be less urgent but still deserve appropriate history.",
+    "management": {
+      "steps": [
+        [
+          "Recognise",
+          "Record onset, laterality, field shadow, trauma and visual acuity."
+        ],
+        [
+          "Assess",
+          "Contact urgent ophthalmic assessment for dilated retinal examination."
+        ],
+        [
+          "Act",
+          "Avoid delaying specialist referral for routine optometry waiting lists."
+        ],
+        [
+          "Follow up",
+          "Advise immediate return with worsening shadow or visual loss and document plan."
+        ]
+      ],
+      "safety": "Retinal detachment can progress despite preserved reading vision; do not defer evaluation because acuity is normal.",
+      "local": "Current Australian practice; assess with senior clinicians and local pathways."
+    },
+    "source": "https://www.ranzco.edu/"
+  },
+  {
+    "n": 49,
+    "domain": "Endocrinology & general medicine",
+    "skill": "Primary aldosteronism / hypertension with spontaneous hypokalaemia",
+    "context": "Revision Blossom Garden · original case inspired by 2024–2025 Monash paper themes",
+    "stem": "A 47-year-old has repeated blood pressure readings around 184/102 mmHg despite no regular medication. She reports increasing muscle weakness and cramps. Potassium is 2.7 mmol/L, sodium 141 mmol/L, glucose 6.0 mmol/L and creatinine is normal. She has no vomiting, diarrhoea, diuretic use or episodes of palpitations with headache and sweating.",
+    "ask": "Which investigation most directly evaluates the likely secondary cause of hypertension?",
+    "options": [
+      "A single resting plasma metanephrine concentration without any endocrine preparation.",
+      "A random urinary cortisol measurement to diagnose glucocorticoid excess immediately.",
+      "A thyroid-stimulating hormone assay as the sole test for renal potassium wasting.",
+      "An aldosterone-to-renin ratio with correction of potassium and medication review.",
+      "A 24-hour urine catecholamine screen as the only initial diagnostic investigation."
+    ],
+    "key": "D",
+    "explanations": [
+      "Phaeochromocytoma can cause episodic headache, sweating and palpitations, but the sustained hypertension plus low potassium is more characteristic of aldosterone excess.",
+      "A random urinary cortisol cannot diagnose Cushing syndrome, and the hallmark pattern here is mineralocorticoid-related sodium retention with potassium loss.",
+      "Thyroid dysfunction may affect blood pressure, but does not typically cause this severe unexplained hypokalaemia and sustained hypertension.",
+      "Correct. Screen for primary aldosteronism with aldosterone-renin testing, after correcting hypokalaemia where possible and accounting for medicines that distort the ratio.",
+      "Catecholamine testing can evaluate suspected phaeochromocytoma but is not most targeted when spontaneous hypokalaemia accompanies sustained severe hypertension."
+    ],
+    "pearl": "Severe or resistant hypertension with unexplained hypokalaemia should prompt primary aldosteronism screening.",
+    "pivot": "Hypokalaemia can suppress aldosterone and mislead testing; sample conditions and medication interference matter.",
+    "management": {
+      "steps": [
+        [
+          "Recognise",
+          "Assess severe hypertension and symptoms of end-organ injury."
+        ],
+        [
+          "Assess",
+          "Correct low potassium and review medicines affecting renin or aldosterone."
+        ],
+        [
+          "Act",
+          "Order aldosterone-renin ratio and specialist confirmatory pathway."
+        ],
+        [
+          "Follow up",
+          "Manage blood pressure and arrange subtype classification if confirmed."
+        ]
+      ],
+      "safety": "Do not rush to CT of adrenal glands without biochemical work-up and specialist interpretation.",
+      "local": "Current Australian practice; assess with senior clinicians and local pathways."
+    },
+    "source": "https://www.racgp.org.au/afp/2017/october/screening-for-primary-aldosteronism"
+  },
+  {
+    "n": 50,
+    "domain": "Emergency & ENT",
+    "skill": "Epistaxis after warfarin / tests after bleeding stops",
+    "context": "Revision Blossom Garden · original case inspired by 2024–2025 Monash paper themes",
+    "stem": "A 78-year-old with atrial fibrillation and previous stroke takes warfarin. She comes to the ED after prolonged unilateral epistaxis; a nurse has applied 15 minutes of correct pressure and topical vasoconstrictor, and bleeding has now ceased. BP is 99/62 mmHg, HR 112/min, she looks pale, and nobody knows her latest INR. She is not currently choking or bleeding briskly.",
+    "ask": "What should be prioritised next?",
+    "options": [
+      "Discharge immediately because successful direct pressure means further assessment is unnecessary.",
+      "Reverse warfarin with IV vitamin K before checking whether anticoagulation is excessive.",
+      "Insert bilateral nasal packs despite cessation of bleeding to prevent any possible recurrence.",
+      "Begin a routine observation period without assessing blood loss or anticoagulation status.",
+      "Obtain haemoglobin, coagulation/INR and appropriate blood bank testing while reassessing perfusion."
+    ],
+    "key": "E",
+    "explanations": [
+      "Successful local control does not exclude important blood loss or excessive anticoagulation; pallor, tachycardia and low BP demand evaluation.",
+      "Reversal may be required for major ongoing bleeding or a dangerous coagulopathy, but not every controlled nosebleed warrants automatic reversal without assessing INR, severity and thrombotic risk.",
+      "Packing is generally for bleeding that continues or recurs despite first aid and targeted treatments; unnecessary packing can cause harm.",
+      "Observation may ultimately be needed, but deciding its location and safety requires assessment of blood loss and anticoagulation.",
+      "Correct. Reassess haemodynamics, check haemoglobin and INR/coagulation and consider group-and-hold or crossmatch depending on severity, then decide on reversal and observation with senior input."
+    ],
+    "pearl": "After epistaxis stops, assess volume loss and anticoagulation before discharge or automatic reversal.",
+    "pivot": "Active life-threatening epistaxis requires haemorrhage control, resuscitation and urgent ENT support before waiting for test results.",
+    "management": {
+      "steps": [
+        [
+          "Recognise",
+          "Reassess airway, bleeding, BP, pulse and clinical perfusion."
+        ],
+        [
+          "Assess",
+          "Check FBC, INR/coagulation and blood bank sample when indicated."
+        ],
+        [
+          "Act",
+          "Plan observation, anticoagulant management or ENT treatment based on severity."
+        ],
+        [
+          "Follow up",
+          "Document return advice and review of thrombotic and bleeding risks."
+        ]
+      ],
+      "safety": "Warfarin reversal decisions weigh haemorrhage severity and stroke risk; never reverse reflexively without clinical assessment.",
+      "local": "Current Australian practice; assess with senior clinicians and local pathways."
+    },
+    "source": "https://aci.health.nsw.gov.au/networks/eci/clinical/tools/ent/epistaxis"
   }
 ]
