@@ -3358,5 +3358,389 @@
       "local": "Use current Australian guidelines and local senior-led management."
     },
     "source": "https://www.thanz.org.au/"
+  },
+  {
+    "n": 71,
+    "domain": "Paediatrics & gastrointestinal surgery",
+    "skill": "Intussusception / stable child and air-enema reduction",
+    "context": "Revision Blossom Garden · original Australian-guideline Monash-style scenario",
+    "stem": "A 14-month-old has five episodes of sudden crying with knees drawn to the abdomen, each followed by a period of relative calm. She vomited twice but is alert and well perfused. Ultrasound shows an ileocolic intussusception without free fluid or perforation. Her abdomen is soft between episodes and there is no guarding. The emergency registrar has arranged intravenous access and analgesia.",
+    "ask": "What is the best next definitive treatment approach?",
+    "options": [
+      "Discuss radiologically guided air-enema reduction with paediatric surgery available.",
+      "Proceed directly to emergency laparotomy despite stable perfusion and no peritonitis.",
+      "Administer broad-spectrum intravenous antibiotics and repeat ultrasound the next morning.",
+      "Discharge after oral fluids because intermittent pain suggests a transient benign illness.",
+      "Perform diagnostic colonoscopy before involving the surgical and radiology services."
+    ],
+    "key": "A",
+    "explanations": [
+      "Correct. In a stable child without shock, peritonitis or perforation, pneumatic or hydrostatic enema reduction is first-line after surgical discussion and with surgical backup because perforation is a recognised complication.",
+      "Immediate surgery is appropriate when reduction is contraindicated or unsuccessful, or when perforation, peritonitis or instability exists. None of those features is currently present.",
+      "Routine prophylactic antibiotics are not recommended for uncomplicated radiological reduction; antibiotics and surgery may be needed if bowel compromise or perforation is suspected.",
+      "Symptoms can fluctuate even while bowel is trapped, and untreated intussusception risks ischaemia. Tolerating fluids briefly cannot justify discharge without reduction.",
+      "Colonoscopy is not the standard method for reducing paediatric ileocolic intussusception. Ultrasound has already supported the diagnosis and enema therapy is more appropriate."
+    ],
+    "pearl": "Intussusception is intermittent, not necessarily continuously painful; a well-looking interval does not exclude bowel ischaemia.",
+    "pivot": "If there is peritonitis, shock or free intraperitoneal air, do NOT attempt air-enema reduction; resuscitate, give indicated antibiotics and arrange urgent paediatric surgery instead.",
+    "management": {
+      "steps": [
+        [
+          "Recognise",
+          "Confirm stability, analgesia, venous access and ultrasound findings."
+        ],
+        [
+          "Assess",
+          "Contact paediatric surgery and radiology, explaining the absence of perforation."
+        ],
+        [
+          "Act",
+          "Arrange monitored pneumatic or hydrostatic reduction where theatre backup is available."
+        ],
+        [
+          "Reassess",
+          "Observe for recurrence, re-examine abdomen and plan feeding/disposition with the surgical team."
+        ]
+      ],
+      "safety": "Air enema is contraindicated in shock, peritonitis, perforation or an unstable child.",
+      "local": "Apply current Australian guidance with senior review and local hospital pathways."
+    },
+    "source": "https://www.rch.org.au/clinicalguide/guideline_index/intussusception_guideline/"
+  },
+  {
+    "n": 72,
+    "domain": "Paediatrics & safeguarding",
+    "skill": "Unexplained bruise in a non-mobile infant / safety assessment",
+    "context": "Revision Blossom Garden · original Australian-guideline Monash-style scenario",
+    "stem": "A 10-week-old infant is brought for a routine feeding concern. During examination you notice a 2-cm bruise on the lateral upper arm. The infant cannot roll or crawl. The caregiver says it may have occurred while lifting the baby but is unsure when. The infant is feeding well, with normal observations, and there are no known bleeding disorders in the family.",
+    "ask": "What is the most appropriate clinical response?",
+    "options": [
+      "Reassure the caregiver that a single small bruise is expected at this age.",
+      "Seek senior paediatric and safeguarding assessment with careful injury documentation.",
+      "Order a full blood count only, then discharge if the platelet count is normal.",
+      "Photograph the bruise privately and report the caregiver directly to police without assessment.",
+      "Defer investigation until another bruise appears to establish a pattern of injury."
+    ],
+    "key": "B",
+    "explanations": [
+      "Accidental bruises are unusual in a pre-mobile infant. A small isolated bruise warrants evaluation rather than reassurance based on normal vital signs.",
+      "Correct. The RCH/Victorian forensic guidance treats any unexplained bruise in a non-mobile infant as concerning. Conduct a sensitive, non-accusatory assessment, document findings and obtain senior child-protection advice, including investigation for occult injury or bleeding disorder as appropriate.",
+      "A normal platelet count does not exclude inflicted injury or all coagulation disorders. The broader clinical and safeguarding assessment is still required.",
+      "Photographs may be part of approved documentation, but bypassing clinical evaluation, confidentiality processes and statutory procedures is inappropriate. Escalation should follow hospital safeguarding policy and legal reporting duties.",
+      "Waiting for further injury exposes the infant to potential harm. An unexplained sentinel bruise can precede more serious injury and requires assessment now."
+    ],
+    "pearl": "Any unexplained bruise in a non-mobile infant is a safeguarding red flag, even without other symptoms.",
+    "pivot": "If an independently mobile toddler has a single bruise over the anterior shin with a consistent witnessed fall, document and manage the minor injury; safeguarding referral is guided by the full history and examination.",
+    "management": {
+      "steps": [
+        [
+          "Recognise",
+          "Record developmental abilities, the caregiver's explanation and a full head-to-toe examination."
+        ],
+        [
+          "Assess",
+          "Discuss urgently with senior paediatrics and the child protection/forensic team."
+        ],
+        [
+          "Act",
+          "Investigate occult injury and bleeding disorders as advised, documenting objectively."
+        ],
+        [
+          "Reassess",
+          "Agree a safe disposition and follow mandatory reporting and family communication processes."
+        ]
+      ],
+      "safety": "Do not accuse a caregiver or discharge a pre-mobile infant with unexplained bruising without an appropriate safety assessment.",
+      "local": "Apply current Australian guidance with senior review and local hospital pathways."
+    },
+    "source": "https://www.rch.org.au/vfpms/guidelines/Bruising/"
+  },
+  {
+    "n": 73,
+    "domain": "Paediatrics & endocrinology",
+    "skill": "Known adrenal insufficiency / vomiting and impending adrenal crisis",
+    "context": "Revision Blossom Garden · original Australian-guideline Monash-style scenario",
+    "stem": "An 8-year-old with congenital adrenal hyperplasia usually takes oral hydrocortisone and fludrocortisone. After repeated vomiting, he cannot keep his morning tablets down. He is lethargic, tachycardic and hypotensive, with capillary glucose 2.9 mmol/L. Sodium is 127 mmol/L and potassium 5.7 mmol/L. A parent has brought his emergency steroid plan but is uncertain whether to wait for cortisol testing.",
+    "ask": "What intervention must be given without waiting for endocrine test results?",
+    "options": [
+      "Continue his usual oral maintenance hydrocortisone after giving an antiemetic.",
+      "Administer fludrocortisone alone and reassess his blood pressure in an hour.",
+      "Give emergency parenteral hydrocortisone with resuscitation and glucose correction.",
+      "Delay all steroid replacement until serum cortisol and ACTH samples return.",
+      "Start insulin for potassium reduction before addressing suspected cortisol deficiency."
+    ],
+    "key": "C",
+    "explanations": [
+      "Ongoing vomiting makes oral steroid absorption unreliable, and maintenance doses are insufficient for shock. Waiting for antiemetic effect is unsafe.",
+      "Fludrocortisone treats mineralocorticoid deficiency but does not replace the urgent stress glucocorticoid dose needed in adrenal crisis.",
+      "Correct. Administer the child's emergency IM/IV hydrocortisone promptly (RCH age 3–12 initial dose 50 mg if no individual plan), while treating shock and hypoglycaemia and arranging senior paediatric/endocrine input.",
+      "Baseline bloods may be collected immediately if this causes no delay, but adrenal crisis is a clinical emergency and treatment must not wait for results.",
+      "Potassium is moderately raised and may improve with hydrocortisone and fluids. Obtain an ECG and treat severe ECG-positive hyperkalaemia when indicated, but glucocorticoid resuscitation is the immediate priority."
+    ],
+    "pearl": "Repeated vomiting in a steroid-dependent child is a red flag: oral sick-day dosing may fail and IM/IV hydrocortisone is needed.",
+    "pivot": "If the child has only a mild intercurrent illness, is well perfused and tolerates oral medicines, use the individual sick-day oral hydrocortisone plan with extra fluids and clear escalation advice.",
+    "management": {
+      "steps": [
+        [
+          "Recognise",
+          "Assess airway, circulation, bedside glucose and the individual emergency steroid plan."
+        ],
+        [
+          "Assess",
+          "Obtain glucose, electrolytes and ECG while establishing IV access without delaying steroids."
+        ],
+        [
+          "Act",
+          "Give IM/IV stress-dose hydrocortisone, isotonic resuscitation and dextrose as indicated."
+        ],
+        [
+          "Reassess",
+          "Monitor glucose, electrolytes and haemodynamics; involve paediatric endocrinology for ongoing doses."
+        ]
+      ],
+      "safety": "Never delay parenteral hydrocortisone for confirmatory tests in suspected adrenal crisis.",
+      "local": "Apply current Australian guidance with senior review and local hospital pathways."
+    },
+    "source": "https://www.rch.org.au/clinicalguide/guideline_index/Adrenal_crisis_and_acute_adrenal_insufficiency/"
+  },
+  {
+    "n": 74,
+    "domain": "Paediatrics & diabetes",
+    "skill": "Resolving DKA / safe transition from IV to subcutaneous insulin",
+    "context": "Revision Blossom Garden · original Australian-guideline Monash-style scenario",
+    "stem": "A 15-year-old with type 1 diabetes has been treated with intravenous fluids and insulin for diabetic ketoacidosis. He is now alert, eating a sandwich, and haemodynamically stable. Blood glucose is 8.4 mmol/L, venous pH 7.35 and bicarbonate 20 mmol/L; ketones have fallen substantially. A nurse asks whether the insulin infusion should be stopped at the moment the first subcutaneous rapid-acting dose is administered.",
+    "ask": "Which transition plan best prevents recurrent ketoacidosis?",
+    "options": [
+      "Stop IV insulin immediately and wait until the next scheduled subcutaneous meal dose.",
+      "Continue IV insulin overnight despite resolved acidosis and normal oral intake.",
+      "Replace IV insulin with oral metformin because glucose is now within target.",
+      "Give subcutaneous insulin and overlap the infusion for 30–60 minutes before stopping.",
+      "Cease all insulin until blood glucose rises above 15 mmol/L again."
+    ],
+    "key": "D",
+    "explanations": [
+      "Abrupt cessation risks an insulin-free interval before subcutaneous insulin is absorbed, permitting renewed ketogenesis.",
+      "An unnecessary prolonged infusion can cause hypoglycaemia and electrolyte shifts; transition is appropriate when alert, eating and metabolically stable.",
+      "Metformin does not replace insulin in type 1 diabetes and cannot prevent ketone production. This option would expose the patient to recurrent DKA.",
+      "Correct. The RCH guideline advises continuing IV insulin for 30–60 minutes after the first rapid-acting subcutaneous injection when the child is eating and acidosis has resolved; coordinate the basal regimen with endocrinology.",
+      "Insulin must continue even when glucose normalises during DKA treatment. Holding all insulin until severe hyperglycaemia recurs invites rebound ketones."
+    ],
+    "pearl": "Resolution of acidosis, oral intake and overlap—not glucose alone—determine a safe IV-to-SC insulin transition.",
+    "pivot": "If the patient remains vomiting, acidotic or unable to eat, continue IV insulin with appropriate dextrose-containing fluids and repeat biochemical monitoring instead of transitioning.",
+    "management": {
+      "steps": [
+        [
+          "Recognise",
+          "Verify alertness, oral intake, corrected acidosis and falling ketones."
+        ],
+        [
+          "Assess",
+          "Confirm the planned basal and meal-time regimen with paediatric endocrinology."
+        ],
+        [
+          "Act",
+          "Give the first SC insulin dose and maintain IV infusion for a 30–60 minute overlap."
+        ],
+        [
+          "Reassess",
+          "Recheck bedside glucose/ketones and teach pump or sick-day failure prevention."
+        ]
+      ],
+      "safety": "Do not leave a gap between IV insulin cessation and effective subcutaneous insulin action.",
+      "local": "Apply current Australian guidance with senior review and local hospital pathways."
+    },
+    "source": "https://www.rch.org.au/clinicalguide/guideline_index/Diabetic_ketoacidosis/"
+  },
+  {
+    "n": 75,
+    "domain": "Vascular surgery & emergency medicine",
+    "skill": "Acute limb ischaemia / sensory loss requires immediate vascular treatment",
+    "context": "Revision Blossom Garden · original Australian-guideline Monash-style scenario",
+    "stem": "A 74-year-old with atrial fibrillation not taking anticoagulation develops sudden severe pain in the right calf while watching television. Three hours later the foot is cold and pale, with no palpable pedal pulses. Doppler signals are absent distally, and he now reports reduced sensation across the forefoot with mild ankle weakness. Blood pressure is stable and there is no active bleeding.",
+    "ask": "Which immediate plan best protects limb viability?",
+    "options": [
+      "Arrange routine outpatient arterial duplex and begin antiplatelet monotherapy.",
+      "Apply compression bandaging and elevate the leg while monitoring calf circumference.",
+      "Start a direct oral anticoagulant and book a vascular clinic review next week.",
+      "Request CT angiography first and withhold treatment until its formal report is available.",
+      "Contact vascular surgery immediately and commence IV unfractionated heparin if safe."
+    ],
+    "key": "E",
+    "explanations": [
+      "A cold pulseless limb with new sensory and motor changes is threatened, not a chronic outpatient vascular complaint. Delay risks irreversible injury.",
+      "Compression and elevation do not restore arterial inflow and may worsen distal perfusion. This is not a routine venous thrombosis presentation.",
+      "Oral anticoagulants are not the immediate treatment for a threatened limb requiring emergency vascular intervention and possible surgery.",
+      "CTA can guide intervention but should be coordinated with the vascular surgeon; delaying consultation and anticoagulation solely for imaging risks lost time.",
+      "Correct. NSW ACI recommends early vascular consultation, resuscitation, analgesia, nil by mouth, IV heparin bolus/infusion when not contraindicated and urgent viability-directed revascularisation planning."
+    ],
+    "pearl": "Pain plus pulselessness plus new sensory or motor deficit is an immediately threatened limb, not simply peripheral arterial disease.",
+    "pivot": "If pulses and Doppler signals are preserved with longstanding exertional claudication but no rest pain or neurological deficit, arrange ABI assessment, cardiovascular risk treatment and vascular follow-up rather than emergency revascularisation.",
+    "management": {
+      "steps": [
+        [
+          "Recognise",
+          "Document six Ps, distal Doppler signals, sensation, movement and onset time."
+        ],
+        [
+          "Assess",
+          "Resuscitate if needed, provide analgesia, ECG, coagulation and renal blood tests."
+        ],
+        [
+          "Act",
+          "Call vascular surgery urgently and initiate protocolised IV heparin if safe."
+        ],
+        [
+          "Reassess",
+          "Keep nil by mouth, monitor neurovascular changes and expedite definitive intervention."
+        ]
+      ],
+      "safety": "New weakness or sensory loss can precede irreversible tissue damage; imaging must not postpone vascular escalation.",
+      "local": "Apply current Australian guidance with senior review and local hospital pathways."
+    },
+    "source": "https://aci.health.nsw.gov.au/networks/eci/clinical/tools/acute-limb-ischaemia"
+  },
+  {
+    "n": 76,
+    "domain": "Emergency medicine & electrolytes",
+    "skill": "Severe symptomatic hyponatraemia / seizure-directed hypertonic saline",
+    "context": "Revision Blossom Garden · original Australian-guideline Monash-style scenario",
+    "stem": "A 69-year-old taking hydrochlorothiazide is brought to hospital after a witnessed generalised seizure. She remains confused after the convulsion. Point-of-care glucose is 6.2 mmol/L; laboratory sodium is 113 mmol/L and serum osmolality is low. Her family says she has been drinking large amounts of water during a febrile illness. Airway and circulation are being supported.",
+    "ask": "Which treatment should be initiated for the sodium-related neurological emergency?",
+    "options": [
+      "Give monitored hypertonic 3% saline with urgent senior/critical-care involvement.",
+      "Restrict oral fluid only and repeat sodium the following morning without intervention.",
+      "Infuse a large volume of 5% dextrose to minimise cerebral osmotic changes.",
+      "Give oral sodium tablets and discharge once the seizure has clinically ceased.",
+      "Use isotonic maintenance fluids alone regardless of ongoing severe neurological features."
+    ],
+    "key": "A",
+    "explanations": [
+      "Correct. Seizure and profound hypotonic hyponatraemia warrant emergency monitored hypertonic saline, with frequent sodium and neurological checks and strict prevention of overcorrection, especially when chronicity is uncertain.",
+      "Fluid restriction may be used for some stable euvolaemic cases, but does not adequately treat an acute seizure from severe hyponatraemia.",
+      "Hypotonic dextrose can lower sodium further and worsen cerebral oedema. Dextrose is for hypoglycaemia, which is absent here.",
+      "Oral tablets cannot rapidly and predictably reverse life-threatening cerebral symptoms and are unsafe as sole treatment in a confused patient.",
+      "Isotonic fluid is useful in hypovolaemic hyponatraemia and shock, but severe seizures require hypertonic therapy and careful cause-specific management."
+    ],
+    "pearl": "Seizures change hyponatraemia from a laboratory problem to a hypertonic-saline emergency; correction must be closely controlled.",
+    "pivot": "If sodium is 128 mmol/L and the patient is asymptomatic, investigate volume status and medicines, stop the offending diuretic, consider fluid restriction or isotonic saline as indicated, and monitor rather than give 3% saline.",
+    "management": {
+      "steps": [
+        [
+          "Recognise",
+          "Protect airway, treat ongoing seizures and verify hypotonic hyponatraemia."
+        ],
+        [
+          "Assess",
+          "Seek senior/ICU input, review medications and establish frequent sodium monitoring."
+        ],
+        [
+          "Act",
+          "Administer protocolised 3% saline for severe neurological symptoms."
+        ],
+        [
+          "Reassess",
+          "Track sodium correction and urine output closely; prevent rapid overcorrection."
+        ]
+      ],
+      "safety": "Overly rapid correction can cause osmotic demyelination, especially if the low sodium has been present for more than 48 hours.",
+      "local": "Apply current Australian guidance with senior review and local hospital pathways."
+    },
+    "source": "https://www.health.qld.gov.au/clinical-practice/guidelines-procedures/medicines/safety/electrolyte-disturbances/hypo"
+  },
+  {
+    "n": 77,
+    "domain": "Obstetrics & medication safety",
+    "skill": "Magnesium sulphate toxicity / absent reflexes and respiratory depression",
+    "context": "Revision Blossom Garden · original Australian-guideline Monash-style scenario",
+    "stem": "A 29-year-old with severe pre-eclampsia is receiving a magnesium sulphate infusion after a loading dose. Over the next hour, urine output falls to 15 mL/hour. She becomes drowsy, respiratory rate falls to 8/min, and patellar reflexes are no longer elicitable. The infusion pump is still running. Blood pressure is 146/92 mmHg and the fetal heart rate is present.",
+    "ask": "What is the most appropriate immediate response?",
+    "options": [
+      "Increase the magnesium infusion because the patient remains hypertensive and seizure-prone.",
+      "Stop magnesium, support ventilation and give IV calcium gluconate for toxicity.",
+      "Give another magnesium bolus while checking the serum magnesium concentration.",
+      "Treat with intravenous furosemide alone and continue the current infusion unchanged.",
+      "Observe reflexes for another hour because absent reflexes are expected with therapy."
+    ],
+    "key": "B",
+    "explanations": [
+      "Persistent hypertension does not justify increasing magnesium when there are signs of toxicity. Antihypertensive management is a separate decision.",
+      "Correct. Stop the infusion immediately, call for obstetric/anaesthetic help, support airway and breathing, and administer IV calcium gluconate as an antidote for significant magnesium toxicity. Check magnesium and renal function.",
+      "Additional magnesium worsens neuromuscular blockade and respiratory suppression. Obtain levels but do not delay immediate supportive care and antidote.",
+      "Diuresis may help elimination in selected patients after stabilisation, but furosemide alone is not an antidote and does not protect breathing.",
+      "Loss of tendon reflexes and respiratory depression are red flags for dangerous accumulation, particularly with oliguria. Waiting risks respiratory arrest."
+    ],
+    "pearl": "Magnesium toxicity: absent reflexes, respiratory depression and low urine output mean stop the infusion and prepare calcium gluconate.",
+    "pivot": "If reflexes, respiration and urine output remain normal but BP is still severely elevated, continue indicated seizure prophylaxis with monitoring and separately treat severe BP according to obstetric guidance.",
+    "management": {
+      "steps": [
+        [
+          "Recognise",
+          "Stop magnesium and activate obstetric/anaesthetic emergency assistance."
+        ],
+        [
+          "Assess",
+          "Assess airway, breathing, oxygenation, reflexes and urine output."
+        ],
+        [
+          "Act",
+          "Give IV calcium gluconate as prescribed while supporting ventilation."
+        ],
+        [
+          "Reassess",
+          "Monitor magnesium, renal function and recurrence risk; review subsequent seizure prophylaxis."
+        ]
+      ],
+      "safety": "Calcium antagonises toxicity transiently; respiratory support and ongoing monitoring remain essential.",
+      "local": "Apply current Australian guidance with senior review and local hospital pathways."
+    },
+    "source": "https://www.health.qld.gov.au/clinical-practice/guidelines-procedures/medicines/safety/electrolyte-disturbances/hyper"
+  },
+  {
+    "n": 78,
+    "domain": "Obstetrics & blood group prevention",
+    "skill": "RhD-negative pregnancy / sensitising abdominal trauma",
+    "context": "Revision Blossom Garden · original Australian-guideline Monash-style scenario",
+    "stem": "A 27-year-old at 23 weeks' gestation attends after a low-speed vehicle collision with a seatbelt bruise across her abdomen. She has no vaginal bleeding, and ultrasound shows a viable fetus with a normal heartbeat. Her blood group is O RhD-negative, antibody screen at booking was negative, and no fetal RhD prediction result is available. She received no anti-D since booking.",
+    "ask": "Which preventive step is most appropriate after maternal and fetal assessment?",
+    "options": [
+      "Withhold anti-D because the ultrasound shows no placental separation or visible bleeding.",
+      "Wait until routine 28-week prophylaxis because minor trauma cannot cause fetomaternal bleeding.",
+      "Obtain maternal blood group/antibody and fetomaternal haemorrhage testing, and give indicated anti-D.",
+      "Give anti-D only if the fetal ultrasound subsequently confirms structural injury or distress.",
+      "Start daily oral iron and repeat haemoglobin because anti-D is reserved for postpartum care."
+    ],
+    "key": "C",
+    "explanations": [
+      "Occult fetomaternal haemorrhage may occur after abdominal trauma even without vaginal bleeding or sonographic abruption.",
+      "Routine prophylaxis does not replace an additional dose after a sensitising event. Waiting can allow alloimmunisation.",
+      "Correct. In an unsensitised RhD-negative patient with abdominal trauma after 20 weeks, obtain group/antibody and fetomaternal haemorrhage assessment, give anti-D promptly when indicated, and adjust dose if a large haemorrhage is found.",
+      "Ultrasound is not sufficiently sensitive to exclude fetal blood entering maternal circulation. Anti-D decisions depend on RhD risk and the sensitising event, not fetal structural damage.",
+      "Iron treats iron deficiency and does not prevent maternal anti-D antibody formation. Antenatal sensitising events require separate immunoprophylaxis consideration."
+    ],
+    "pearl": "Anti-D after a sensitising event is additional to routine antenatal prophylaxis; a normal ultrasound does not rule out fetomaternal haemorrhage.",
+    "pivot": "If the patient is already immune anti-D positive (genuine alloimmunisation), prophylactic anti-D will not reverse sensitisation; refer to specialist obstetric fetal anaemia surveillance instead.",
+    "management": {
+      "steps": [
+        [
+          "Recognise",
+          "Assess maternal trauma, gestation, fetal heart and any obstetric warning signs."
+        ],
+        [
+          "Assess",
+          "Confirm RhD status, antibody screen and perform fetomaternal haemorrhage testing when indicated."
+        ],
+        [
+          "Act",
+          "Give appropriate RhD immunoglobulin promptly per the local obstetric protocol."
+        ],
+        [
+          "Reassess",
+          "Review laboratory quantification for extra doses and arrange ongoing fetal/maternal follow-up."
+        ]
+      ],
+      "safety": "Do not delay indicated anti-D beyond the preferred early post-event window while waiting for quantification results.",
+      "local": "Apply current Australian guidance with senior review and local hospital pathways."
+    },
+    "source": "https://www.health.qld.gov.au/__data/assets/pdf_file/0013/1215031/6.Obstetrics-and-neonatal.pdf"
   }
 ]
