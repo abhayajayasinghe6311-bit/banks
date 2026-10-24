@@ -1,0 +1,482 @@
+[
+  {
+    "n": 1,
+    "domain": "Emergency & ophthalmology",
+    "skill": "Chemical eye injury / priority is irrigation",
+    "context": "New Monash-style 2024–2025 review remix · original case",
+    "stem": "A laboratory assistant accidentally splashes a concentrated cleaning solution into her left eye. She reaches the emergency department 12 minutes later, unable to keep the eyelids open because of severe pain. Her colleague asks whether the team should first measure the ocular surface pH, stain the cornea or phone ophthalmology.",
+    "ask": "What action should begin immediately?",
+    "options": [
+      "Apply topical anaesthetic and commence copious ocular irrigation without delaying for further tests.",
+      "Record baseline visual acuity and perform fluorescein staining before irrigating the ocular surface.",
+      "Wait for ophthalmology to examine the eye before choosing a suitable irrigation fluid.",
+      "Check the ocular surface pH repeatedly before giving any anaesthetic eye drops.",
+      "Begin prophylactic topical antibiotics and arrange prompt outpatient eye-clinic review."
+    ],
+    "key": "A",
+    "explanations": [
+      "Correct. Continuous irrigation is the time-critical intervention that removes the chemical. Topical local anaesthetic helps open the lids; use available saline or water immediately, then check pH and refer.",
+      "Baseline vision and fluorescein matter after the chemical is removed, but documenting these first prolongs contact between the chemical and cornea.",
+      "Ophthalmology is needed urgently, yet irrigation must be started by the team already present. Waiting for a specialist allows ongoing tissue damage.",
+      "pH measurement helps guide how long irrigation continues, not whether it begins. Anaesthesia can facilitate safe, effective washing.",
+      "Antibiotics may later be appropriate for epithelial damage but cannot neutralise ongoing chemical exposure; outpatient-only management may miss severe ocular injury."
+    ],
+    "pearl": "With ocular chemical injury, treatment begins before detailed examination; measure pH during and after irrigation.",
+    "pivot": "A foreign body without chemical exposure needs careful visual acuity and slit-lamp assessment, not chemical neutralisation.",
+    "management": {
+      "steps": [
+        [
+          "Recognise",
+          "Protect staff, identify the agent if possible and begin immediate irrigation."
+        ],
+        [
+          "Assess",
+          "Instil topical anaesthetic if available, evert lids and clear visible particulate matter."
+        ],
+        [
+          "Act",
+          "Monitor ocular pH and continue lavage until it remains near neutral."
+        ],
+        [
+          "Follow up",
+          "Reassess acuity and epithelial damage and involve ophthalmology urgently."
+        ]
+      ],
+      "safety": "Never postpone ocular irrigation for formal pH testing, imaging or referral.",
+      "local": "Apply current Australian/local protocols; reviewed against the supplied 2024–2025 practice notes, which are educational rather than authoritative."
+    },
+    "source": "https://www.rch.org.au/clinicalguide/guideline_index/Eye_trauma/"
+  },
+  {
+    "n": 2,
+    "domain": "Surgery & gastrointestinal emergencies",
+    "skill": "Small-bowel obstruction / failed NG clamp trial",
+    "context": "New Monash-style 2024–2025 review remix · original case",
+    "stem": "A 63-year-old is improving after conservative treatment of adhesive small-bowel obstruction. She has had a nasogastric tube on free drainage for two days, so the team clamps it as a trial. Three hours later she becomes increasingly nauseated and develops repeated dry retching; abdomen is mildly more distended but she remains afebrile.",
+    "ask": "Which action is most appropriate now?",
+    "options": [
+      "Give an additional antiemetic and keep the nasogastric tube clamped for the planned interval.",
+      "Restore nasogastric drainage and re-examine for persistent or worsening bowel obstruction.",
+      "Remove the nasogastric tube now to prevent additional discomfort and throat irritation.",
+      "Obtain an abdominal radiograph before changing the current nasogastric management plan.",
+      "Offer small sips of oral clear fluids to assess whether intestinal transit has returned."
+    ],
+    "key": "B",
+    "explanations": [
+      "Adding drugs treats the symptom but ignores likely accumulation above a persistent obstruction. A clamp trial should be stopped when intolerance develops.",
+      "Correct. Unclamping provides decompression and relief. Reassess abdominal pain, distension, output and systemic signs, then update the surgical team.",
+      "Removing the tube sacrifices decompression just when the patient demonstrates ongoing need for it; this may increase vomiting and aspiration risk.",
+      "Imaging may be needed if obstruction worsens or is uncertain, but reopening an existing drain is the immediate low-risk bedside step.",
+      "Oral fluids after recurrent retching risk vomiting and aspiration. Return to nil by mouth until the treating team reassesses obstruction resolution."
+    ],
+    "pearl": "Recurrent nausea after NG clamping is evidence of an unsuccessful clamp trial, not automatically a need for more antiemetics.",
+    "pivot": "A patient tolerating a clamp without nausea or distension may proceed toward removal under the surgical plan.",
+    "management": {
+      "steps": [
+        [
+          "Recognise",
+          "Check observations, abdominal signs and whether the tube was deliberately clamped."
+        ],
+        [
+          "Assess",
+          "Reopen the tube to gravity or suction as prescribed and document volume."
+        ],
+        [
+          "Act",
+          "Assess hydration, electrolytes and signs of strangulation or peritonitis."
+        ],
+        [
+          "Follow up",
+          "Notify surgery and document why the clamp trial was abandoned."
+        ]
+      ],
+      "safety": "Severe increasing pain, fever, shock or peritonism demands urgent senior surgical review.",
+      "local": "Apply current Australian/local protocols; reviewed against the supplied 2024–2025 practice notes, which are educational rather than authoritative."
+    },
+    "source": "https://aci.health.nsw.gov.au/networks/eci"
+  },
+  {
+    "n": 3,
+    "domain": "Emergency & physiology",
+    "skill": "Haemorrhage / impaired autonomic response",
+    "context": "New Monash-style 2024–2025 review remix · original case",
+    "stem": "Five different adults experience a comparable proportion of acute blood loss in simulated trauma scenarios. One is a healthy endurance cyclist, one is in late pregnancy, one is a healthy older adult, another uses a low-dose beta-blocker, and the final patient has advanced diabetic autonomic neuropathy with severe orthostatic hypotension.",
+    "ask": "Who is most likely to have the poorest reflex blood-pressure compensation?",
+    "options": [
+      "A fit endurance cyclist with a low resting pulse but normal vasoconstrictor reflexes.",
+      "An adult with autonomic failure and markedly impaired baroreceptor-mediated vasoconstriction.",
+      "A person in late pregnancy with expanded circulating blood volume before delivery.",
+      "A healthy older adult with intact postural responses and no regular medications.",
+      "A middle-aged patient whose low-dose beta-blocker modestly limits tachycardic compensation."
+    ],
+    "key": "B",
+    "explanations": [
+      "Athletic bradycardia changes resting pulse interpretation, but intact sympathetic vasoconstriction can maintain blood pressure early in haemorrhage.",
+      "Correct. Autonomic neuropathy impairs reflex tachycardia and peripheral vasoconstriction, so comparatively modest blood loss may cause disproportionate hypotension.",
+      "Pregnancy alters haemodynamic reserve and can mask early bleeding; it does not by itself abolish the compensatory autonomic response.",
+      "Age can reduce physiological reserve, but preserved reflexes generally provide more compensation than established severe autonomic failure.",
+      "Beta-blockade may blunt a heart-rate response and complicate assessment, but marked multisystem autonomic failure affects both rate and vascular resistance."
+    ],
+    "pearl": "Do not use heart rate alone to estimate blood loss: drugs, fitness and autonomic dysfunction alter expected signs.",
+    "pivot": "Profound hypotension after trauma requires haemorrhage control and resuscitation regardless of the theoretical compensatory mechanism.",
+    "management": {
+      "steps": [
+        [
+          "Recognise",
+          "Identify concealed and visible haemorrhage and activate an appropriate trauma response."
+        ],
+        [
+          "Assess",
+          "Control bleeding and establish blood-product access while monitoring consciousness and perfusion."
+        ],
+        [
+          "Act",
+          "Use serial observations, lactate and clinical examination rather than pulse alone."
+        ],
+        [
+          "Follow up",
+          "Treat the cause of haemorrhage and monitor for ongoing shock."
+        ]
+      ],
+      "safety": "Autonomic neuropathy can mask tachycardia and precipitate early hypotension.",
+      "local": "Apply current Australian/local protocols; reviewed against the supplied 2024–2025 practice notes, which are educational rather than authoritative."
+    },
+    "source": "https://www.anzcor.org/home/education-and-implementation"
+  },
+  {
+    "n": 4,
+    "domain": "Emergency & plastic surgery",
+    "skill": "Laceration over joint / appropriate closure",
+    "context": "New Monash-style 2024–2025 review remix · original case",
+    "stem": "An eight-year-old falls against a fence and sustains a clean 3.5-cm curved forearm skin flap immediately adjacent to the elbow. After anaesthesia and irrigation, there is no foreign body or exposed tendon; the flap remains well perfused and the margins can be approximated without undue tension. The area repeatedly flexes with normal movement.",
+    "ask": "Which closure method is most suitable?",
+    "options": [
+      "Leave the wound entirely open despite healthy edges and no contamination or tissue loss.",
+      "Apply a thin tissue-adhesive layer alone across the actively flexing elbow crease.",
+      "Close with appropriate sutures after careful neurovascular and tendon examination.",
+      "Apply adhesive strips only because the laceration is close to a major joint.",
+      "Refer for split-thickness skin grafting despite the availability of tension-free closure."
+    ],
+    "key": "C",
+    "explanations": [
+      "Secondary intention may be appropriate for contaminated or non-closable wounds, but adds unnecessary healing time here.",
+      "Tissue glue works best on dry low-tension cuts. Repeated elbow movement raises the risk of dehiscence in this deeper flap wound.",
+      "Correct. Sutures secure viable tissue across a mobile area when edges can be approximated; assess function, circulation and injury depth before closure.",
+      "Strips are less secure when the area moves, becomes moist or has a flap with significant tension. They are useful for simpler low-tension wounds.",
+      "A graft is unnecessary when healthy tissue allows primary approximation; grafts add a donor-site wound and may contract across a joint."
+    ],
+    "pearl": "Closure choice depends on tension, depth, contamination and location—not simply patient age or length.",
+    "pivot": "An infected or devitalised wound may need debridement and delayed closure rather than immediate suturing.",
+    "management": {
+      "steps": [
+        [
+          "Recognise",
+          "Confirm tetanus protection and examine distal nerve, tendon and perfusion function."
+        ],
+        [
+          "Assess",
+          "Irrigate thoroughly, explore for foreign material and check flap viability."
+        ],
+        [
+          "Act",
+          "Perform low-tension suture closure and apply a suitable protective dressing."
+        ],
+        [
+          "Follow up",
+          "Arrange wound checks, mobilisation advice and timely suture removal."
+        ]
+      ],
+      "safety": "Do not close over unrecognised tendon injury, retained foreign bodies or compromised flap perfusion.",
+      "local": "Apply current Australian/local protocols; reviewed against the supplied 2024–2025 practice notes, which are educational rather than authoritative."
+    },
+    "source": "https://www.rch.org.au/clinicalguide/guideline_index/Lacerations/"
+  },
+  {
+    "n": 5,
+    "domain": "Acute medicine & endocrinology",
+    "skill": "Severe hypoglycaemia / no intravenous access",
+    "context": "New Monash-style 2024–2025 review remix · original case",
+    "stem": "A 69-year-old receiving insulin is found profoundly drowsy in a rehabilitation ward. He does not reliably swallow or obey commands and his bedside glucose is 1.6 mmol/L. Two nurses have already failed to obtain peripheral venous access, and an experienced cannulator is several minutes away.",
+    "ask": "What is the best immediate glucose-raising intervention?",
+    "options": [
+      "Give oral glucose gel between the teeth while the team prepares another cannulation attempt.",
+      "Wait for venous access so concentrated dextrose can be administered by an IV route.",
+      "Administer intramuscular glucagon now while continuing airway care and vascular-access attempts.",
+      "Deliver intramuscular concentrated dextrose because intravenous access is not currently available.",
+      "Give a rapid subcutaneous insulin dose to reverse the neuroglycopenic effect immediately."
+    ],
+    "key": "C",
+    "explanations": [
+      "Giving oral carbohydrate to a patient unable to protect the airway risks aspiration and cannot be reliably administered.",
+      "IV dextrose is effective once access exists; continuing repeated failed cannulation without treatment allows neuroglycopenia to persist.",
+      "Correct. IM glucagon can raise glucose when IV access is delayed. Continue resuscitation support and obtain access for dextrose if response is inadequate.",
+      "Concentrated dextrose is not a routine intramuscular preparation; tissue injury and unpredictable absorption make this unsafe.",
+      "Insulin further lowers glucose, worsening the problem. Hypoglycaemia should be treated with glucose or glucagon, never additional insulin."
+    ],
+    "pearl": "An unconscious hypoglycaemic patient without IV access needs a parenteral rescue route, not oral feeding.",
+    "pivot": "After prolonged fasting or liver glycogen depletion, glucagon may be ineffective and IV/IO dextrose becomes more important.",
+    "management": {
+      "steps": [
+        [
+          "Recognise",
+          "Assess airway and protect against aspiration; activate urgent clinical assistance."
+        ],
+        [
+          "Assess",
+          "Administer IM glucagon according to adult protocol while IV or IO access is sought."
+        ],
+        [
+          "Act",
+          "Recheck capillary glucose promptly and use IV dextrose if response is inadequate."
+        ],
+        [
+          "Follow up",
+          "After recovery, provide food or infusion and investigate insulin, intake and renal factors."
+        ]
+      ],
+      "safety": "Glucagon can fail when glycogen stores are depleted; ensure repeat glucose checks and definitive carbohydrate replacement.",
+      "local": "Apply current Australian/local protocols; reviewed against the supplied 2024–2025 practice notes, which are educational rather than authoritative."
+    },
+    "source": "https://www.rch.org.au/clinicalguide/guideline_index/Hypoglycaemia_Guideline/"
+  },
+  {
+    "n": 6,
+    "domain": "Obstetrics & gynaecology",
+    "skill": "Early pregnancy bleeding / cervical shock",
+    "context": "New Monash-style 2024–2025 review remix · original case",
+    "stem": "A 26-year-old with a positive pregnancy test at eight weeks develops heavy bleeding and pelvic cramps. A paramedic reports BP 88/50 mmHg and pulse 48/min despite ongoing blood loss. After immediate emergency resuscitation is activated, a clinician notes tissue at the cervical opening and suspects a vagally mediated bradycardic response.",
+    "ask": "Which targeted bedside action could promptly reverse the suspected mechanism?",
+    "options": [
+      "Arrange a routine pelvic sonogram before any internal examination of the bleeding source.",
+      "Administer a long-acting oral antihypertensive to counter the hypotension and bradycardia.",
+      "Give anti-D prophylaxis as the sole urgent intervention before uterine assessment.",
+      "Perform an urgent speculum examination and remove tissue obstructing the os with skilled help.",
+      "Discharge after a single fluid bolus if the pulse and pressure transiently improve."
+    ],
+    "key": "D",
+    "explanations": [
+      "Ultrasound informs localisation and viability but should not postpone stabilisation and urgent skilled assessment of suspected cervical shock.",
+      "Antihypertensive medication would worsen circulatory compromise and does not treat tissue at the cervical os.",
+      "Rh prophylaxis may be considered according to gestation and local guidance; it cannot reverse current haemodynamic compromise.",
+      "Correct. Tissue distending the cervix can trigger profound vagal bradycardia and hypotension. With resuscitation and gynaecology support, speculum assessment and removal of visible products can relieve the trigger.",
+      "A transient improvement does not establish control of bleeding or exclude ectopic pregnancy and retained tissue; discharge is unsafe."
+    ],
+    "pearl": "Bradycardia rather than tachycardia during early pregnancy haemorrhage raises concern for cervical vagal shock; resuscitate concurrently.",
+    "pivot": "Unstable pregnancy with no visible cervical products still requires rapid ectopic-pregnancy exclusion and senior gynaecology input.",
+    "management": {
+      "steps": [
+        [
+          "Recognise",
+          "Activate major bleeding assessment, IV access, monitoring and urgent gynaecology assistance."
+        ],
+        [
+          "Assess",
+          "Assess pregnancy location if not confirmed and consider ectopic as a competing diagnosis."
+        ],
+        [
+          "Act",
+          "Under appropriate supervision, perform speculum examination and manage products visible at the os."
+        ],
+        [
+          "Follow up",
+          "Monitor bleeding and haemodynamics and arrange definitive uterine assessment and Rh care as needed."
+        ]
+      ],
+      "safety": "Do not mistake possible cervical shock for absence of blood loss; treat circulation and exclude ectopic pregnancy.",
+      "local": "Apply current Australian/local protocols; reviewed against the supplied 2024–2025 practice notes, which are educational rather than authoritative."
+    },
+    "source": "https://www.ranzcog.edu.au/"
+  },
+  {
+    "n": 7,
+    "domain": "Paediatrics & fluid therapy",
+    "skill": "Maintenance fluids / Holliday–Segar calculation",
+    "context": "New Monash-style 2024–2025 review remix · original case",
+    "stem": "A 26-kg child with gastroenteritis has been assessed as requiring inpatient IV maintenance after a separate plan for dehydration correction has been made. There are no cardiac, renal or neurological conditions requiring a fluid restriction. You are asked to prescribe the standard full-maintenance hourly volume.",
+    "ask": "What is the calculated hourly maintenance rate before any separate adjustments?",
+    "options": [
+      "Approximately 60 mL/hour for physiological daily maintenance only.",
+      "Approximately 62 mL/hour for physiological daily maintenance only.",
+      "Approximately 64 mL/hour for physiological daily maintenance only.",
+      "Approximately 66 mL/hour for physiological daily maintenance only.",
+      "Approximately 68 mL/hour for physiological daily maintenance only."
+    ],
+    "key": "D",
+    "explanations": [
+      "This underestimates the 4–2–1 calculation for 26 kg: 40 + 20 + 6 = 66 mL/hour.",
+      "62 mL/hour would correspond to 22 kg under the standard rule, not a child weighing 26 kg.",
+      "64 mL/hour would correspond to 24 kg under the standard rule; it leaves out 2 mL/hour here.",
+      "Correct. The first 10 kg contribute 40 mL/h, the second 10 kg contribute 20 mL/h, and the remaining 6 kg contribute 6 mL/h.",
+      "68 mL/hour would fit a 28-kg child using the usual rule and slightly overstates this child's calculated maintenance."
+    ],
+    "pearl": "4–2–1: 4 mL/kg/h for first 10 kg, 2 for next 10 kg, and 1 for each remaining kilogram.",
+    "pivot": "Deficit replacement, ongoing GI losses and reduced maintenance in unwell children are separate prescribing decisions.",
+    "management": {
+      "steps": [
+        [
+          "Recognise",
+          "Confirm weight, hydration and whether IV fluid is necessary."
+        ],
+        [
+          "Assess",
+          "Calculate maintenance by the 4–2–1 rule, separately from fluid deficits."
+        ],
+        [
+          "Act",
+          "Select isotonic maintenance solution and glucose content per local paediatric guidance."
+        ],
+        [
+          "Follow up",
+          "Monitor intake/output, electrolytes and clinical response; modify the prescription."
+        ]
+      ],
+      "safety": "A numerically correct full-maintenance rate may still need reduction in an unwell child with non-osmotic ADH secretion.",
+      "local": "Apply current Australian/local protocols; reviewed against the supplied 2024–2025 practice notes, which are educational rather than authoritative."
+    },
+    "source": "https://www.rch.org.au/clinicalguide/guideline_index/Intravenous_fluids/"
+  },
+  {
+    "n": 8,
+    "domain": "Acute care & infectious diseases",
+    "skill": "Sepsis-associated hypotension / avoid dehydration anchoring",
+    "context": "New Monash-style 2024–2025 review remix · original case",
+    "stem": "A 54-year-old treated with IV antibiotics for urinary-source infection remains dizzy on standing. Her BP is 88/54 mmHg, pulse 116/min and temperature 39°C. She has received appropriate initial crystalloid, mucous membranes are moist, lungs are clear, extremities remain warm, and urine output is declining.",
+    "ask": "What best explains the ongoing circulatory problem?",
+    "options": [
+      "Acute pulmonary embolism producing obstructive shock despite preserved oxygen saturation.",
+      "Drug-triggered anaphylaxis causing vasodilatation without any allergic features.",
+      "Simple dehydration that should resolve entirely after one more large fluid bolus.",
+      "Sepsis-related vasoplegia with altered vascular resistance despite fluid replacement.",
+      "Chronic autonomic neuropathy presenting as an isolated new febrile illness."
+    ],
+    "key": "D",
+    "explanations": [
+      "PE is an important shock differential but does not explain the infectious syndrome as directly as persistent sepsis-related circulatory failure.",
+      "Anaphylaxis is plausible after a new drug, but no temporal association, wheeze, rash or angioedema is described.",
+      "Fluid deficit may coexist, yet persistent low pressure after resuscitation with warm peripheries should prompt reassessment for vasodilatory shock.",
+      "Correct. Infection can trigger vasodilatation, capillary leakage and maldistributed perfusion. Reassess fluid responsiveness and consider vasopressors while treating the infection source.",
+      "Autonomic dysfunction can blunt pressure regulation but is not the most supported acute diagnosis without relevant history."
+    ],
+    "pearl": "Warm shock with infection can remain hypotensive even when hydration appears adequate; classify the shock physiology.",
+    "pivot": "If perfusion deteriorates despite appropriate fluid assessment, initiate critical-care vasopressor support, not endless blind boluses.",
+    "management": {
+      "steps": [
+        [
+          "Recognise",
+          "Activate sepsis escalation and assess organ perfusion, lactate and urine output."
+        ],
+        [
+          "Assess",
+          "Review cultures, antibiotic timing, and source-control requirements."
+        ],
+        [
+          "Act",
+          "Reassess fluid responsiveness and provide tailored resuscitation."
+        ],
+        [
+          "Follow up",
+          "Start specialist-led vasopressors for persistent shock and transfer to higher care."
+        ]
+      ],
+      "safety": "An apparently warm patient can have severe sepsis; normal SpO₂ does not rule out shock.",
+      "local": "Apply current Australian/local protocols; reviewed against the supplied 2024–2025 practice notes, which are educational rather than authoritative."
+    },
+    "source": "https://www.rch.org.au/clinicalguide/guideline_index/SEPSIS_assessment_and_management/"
+  },
+  {
+    "n": 9,
+    "domain": "General medicine & electrolytes",
+    "skill": "Hyperkalaemia / confirmation and urgent ECG",
+    "context": "New Monash-style 2024–2025 review remix · original case",
+    "stem": "A 66-year-old with stage 3 chronic kidney disease has an unexpectedly reported serum potassium of 6.1 mmol/L. He is comfortable, denies weakness or palpitations, and the sample note mentions difficult venepuncture with possible haemolysis. He has not yet had an ECG or repeat potassium measurement.",
+    "ask": "What is the best immediate diagnostic response?",
+    "options": [
+      "Administer calcium gluconate before assessing the ECG because any potassium over six requires it.",
+      "Order an urgent ECG and rapidly repeat potassium using an appropriately collected sample.",
+      "Begin a potassium-binding resin and defer rhythm assessment until laboratory confirmation arrives.",
+      "Restrict dietary potassium only and repeat the chemistry panel at his next clinic visit.",
+      "Start insulin-dextrose therapy without ECG or a repeat sample in every asymptomatic patient."
+    ],
+    "key": "B",
+    "explanations": [
+      "IV calcium stabilises cardiac membranes when dangerous ECG changes or instability exist, but it does not lower potassium. Obtain ECG immediately while assessing the need for emergency therapy.",
+      "Correct. ECG identifies cardiac toxicity, and prompt non-haemolysed repeat testing checks a potentially spurious result. Treat immediately if ECG changes or clinical instability demand it.",
+      "Binders act more slowly and do not address imminent arrhythmia risk. They cannot replace an urgent ECG in possible severe hyperkalaemia.",
+      "Diet modification has no role as the only response to a potentially dangerous acute potassium level.",
+      "Insulin shifts potassium intracellularly but risks hypoglycaemia and should be guided by confirmed or strongly suspected true hyperkalaemia and local emergency thresholds."
+    ],
+    "pearl": "Unexpected hyperkalaemia needs ECG and prompt confirmation; never use a normal-looking patient to dismiss the result.",
+    "pivot": "If ECG shows widening QRS or other toxicity, give cardiac stabilisation without waiting for repeat lab confirmation.",
+    "management": {
+      "steps": [
+        [
+          "Recognise",
+          "Assess symptoms, medications, renal function and sample quality."
+        ],
+        [
+          "Assess",
+          "Perform immediate 12-lead ECG with monitoring while obtaining repeat potassium."
+        ],
+        [
+          "Act",
+          "Treat life-threatening ECG changes or confirmed severe hyperkalaemia per local protocol."
+        ],
+        [
+          "Follow up",
+          "Identify ACEi, potassium supplements, AKI or other causes and trend levels."
+        ]
+      ],
+      "safety": "Serious hyperkalaemia can produce few symptoms; hemolysis and pseudohyperkalaemia must not delay ECG.",
+      "local": "Apply current Australian/local protocols; reviewed against the supplied 2024–2025 practice notes, which are educational rather than authoritative."
+    },
+    "source": "https://www.health.qld.gov.au/clinical-practice/guidelines-procedures"
+  },
+  {
+    "n": 10,
+    "domain": "Clinical epidemiology",
+    "skill": "Positive predictive value / low prevalence false positives",
+    "context": "New Monash-style 2024–2025 review remix · original case",
+    "stem": "In a screening population of 2,000 people, exactly 100 have a disease. A rapid test detects every affected person and produces a positive result in 5% of the people without the disease. Assume there are no other sources of test error and round to the nearest whole percentage point.",
+    "ask": "What is the approximate probability of disease after a positive test?",
+    "options": [
+      "Approximately 40% of all people returning a positive result.",
+      "Approximately 45% of all people returning a positive result.",
+      "Approximately 50% of all people returning a positive result.",
+      "Approximately 55% of all people returning a positive result.",
+      "Approximately 60% of all people returning a positive result."
+    ],
+    "key": "C",
+    "explanations": [
+      "At 40%, there would need to be about 150 false positives alongside 100 true positives; the stated specificity produces only 95.",
+      "At 45%, approximately 122 false positives would be needed, more than expected from the 1,900 unaffected people.",
+      "Correct. True positives are 100; false positives are 95. PPV = 100/(100+95) ≈ 51%, so 50% is the closest estimate.",
+      "At 55%, there would need to be fewer than 82 false positives; the test's 5% false-positive rate predicts 95.",
+      "At 60%, there would need to be around 67 false positives; this is inconsistent with the prevalence and stated false-positive rate."
+    ],
+    "pearl": "PPV depends on prevalence, not just sensitivity and specificity: draw a 2×2 table before choosing.",
+    "pivot": "The same test has different PPV in populations with different disease prevalence, even if sensitivity and specificity remain unchanged.",
+    "management": {
+      "steps": [
+        [
+          "Recognise",
+          "Build a 2×2 table using a convenient population size."
+        ],
+        [
+          "Assess",
+          "Calculate true positives from prevalence and sensitivity."
+        ],
+        [
+          "Act",
+          "Calculate false positives from unaffected people and false-positive rate."
+        ],
+        [
+          "Follow up",
+          "Divide true positives by all positive results and explain uncertainty to the patient."
+        ]
+      ],
+      "safety": "A highly sensitive test with imperfect specificity can still yield nearly half false positives in low-prevalence populations.",
+      "local": "Apply current Australian/local protocols; reviewed against the supplied 2024–2025 practice notes, which are educational rather than authoritative."
+    },
+    "source": "https://www.aihw.gov.au/reports/australias-health/screening"
+  }
+]
