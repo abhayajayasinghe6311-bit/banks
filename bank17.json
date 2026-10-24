@@ -238,5 +238,485 @@
       "local": "Use current hospital-specific Victorian/Australian protocols and senior escalation for deterioration."
     },
     "source": "https://www.rch.org.au/clinicalguide/guideline_index/Febrile_seizure/"
+  },
+  {
+    "n": 6,
+    "domain": "Medicine",
+    "skill": "DKA / falling potassium after insulin",
+    "context": "Moonflower Garden · advanced original clinical reasoning",
+    "stem": "A 26-year-old with type 1 diabetes is receiving intravenous insulin for DKA. Ketones are falling, but potassium has decreased from 4.7 to 3.1 mmol/L and ECG shows new prominent U waves. Blood glucose is 15 mmol/L.",
+    "ask": "What adjustment is the immediate priority?",
+    "options": [
+      "Pause insulin temporarily and urgently replace potassium with cardiac monitoring.",
+      "Double insulin infusion to correct remaining ketonaemia more rapidly.",
+      "Give intravenous bicarbonate to reverse presumed potassium loss.",
+      "Stop all IV fluids and repeat electrolytes at routine morning rounds.",
+      "Commence a potassium-wasting diuretic for the ECG changes."
+    ],
+    "key": "A",
+    "explanations": [
+      "Correct. Significant hypokalaemia risks fatal arrhythmia, and insulin drives potassium intracellularly; replenish potassium before resuming insulin per DKA protocol.",
+      "Escalating insulin further lowers circulating potassium and may precipitate dysrhythmia.",
+      "Bicarbonate is not routine DKA therapy and can worsen hypokalaemia.",
+      "DKA treatment needs frequent electrolyte checks and fluids tailored to status.",
+      "Diuresis aggravates potassium depletion and is not a treatment for U waves."
+    ],
+    "pearl": "falling potassium after insulin",
+    "pivot": "If potassium becomes severely low or arrhythmia occurs, obtain immediate critical-care support and IV replacement with continuous ECG monitoring.",
+    "management": {
+      "steps": [
+        [
+          "Recognise",
+          "Repeat potassium, magnesium, ECG and assess urine output."
+        ],
+        [
+          "Assess",
+          "Temporarily hold insulin under local protocol for significant hypokalaemia."
+        ],
+        [
+          "Act",
+          "Replace potassium in appropriate monitored IV fluid."
+        ],
+        [
+          "Follow up",
+          "Recheck potassium frequently and restart insulin safely."
+        ]
+      ],
+      "safety": "If potassium becomes severely low or arrhythmia occurs, obtain immediate critical-care support and IV replacement with continuous ECG monitoring.",
+      "local": "Follow current relevant Victorian/Australian guidance and senior escalation."
+    },
+    "source": "https://www.diabetessociety.com.au/guideline/emergency-management-of-hyperglycaemia-in-primary-care/"
+  },
+  {
+    "n": 7,
+    "domain": "Surgery",
+    "skill": "Mesenteric ischaemia / pain out of proportion",
+    "context": "Moonflower Garden · advanced original clinical reasoning",
+    "stem": "A 79-year-old with atrial fibrillation and no anticoagulation develops sudden severe diffuse abdominal pain. The abdomen is soft with only mild tenderness; lactate is initially 2.1 mmol/L and no peritonism is present.",
+    "ask": "What investigation and escalation are most appropriate?",
+    "options": [
+      "Reassure because the abdominal examination is relatively benign.",
+      "Arrange urgent CT angiography and immediate vascular or general surgical review.",
+      "Wait for lactate to rise above five before ordering any imaging.",
+      "Order plain abdominal radiography alone and discharge if normal.",
+      "Treat constipation empirically and assess response the next morning."
+    ],
+    "key": "B",
+    "explanations": [
+      "A benign early examination does not exclude threatened intestine.",
+      "Correct. Early acute mesenteric ischaemia can produce severe pain with few signs; urgent CTA and surgical discussion are time critical.",
+      "Lactate may be normal early and cannot safely rule out ischaemia.",
+      "Plain films are nonspecific and do not show mesenteric arterial occlusion.",
+      "A delay for laxatives risks irreversible infarction and sepsis."
+    ],
+    "pearl": "pain out of proportion",
+    "pivot": "If peritonitis or haemodynamic collapse develops, initiate immediate resuscitation and emergency operative source-control planning, without delay for repeat routine investigations.",
+    "management": {
+      "steps": [
+        [
+          "Recognise",
+          "Recognise embolic risk and disproportionate pain."
+        ],
+        [
+          "Assess",
+          "Resuscitate, take bloods and provide analgesia."
+        ],
+        [
+          "Act",
+          "Obtain urgent arterial-phase CT and contact surgical services."
+        ],
+        [
+          "Follow up",
+          "Prepare anticoagulation or reperfusion strategy with specialists."
+        ]
+      ],
+      "safety": "If peritonitis or haemodynamic collapse develops, initiate immediate resuscitation and emergency operative source-control planning, without delay for repeat routine investigations.",
+      "local": "Follow current relevant Victorian/Australian guidance and senior escalation."
+    },
+    "source": "https://aci.health.nsw.gov.au/networks/eci/clinical/clinical-tools/abdominal-pain"
+  },
+  {
+    "n": 8,
+    "domain": "Paediatrics",
+    "skill": "DKA / cerebral injury red flags",
+    "context": "Moonflower Garden · advanced original clinical reasoning",
+    "stem": "A 10-year-old with newly diagnosed DKA becomes increasingly irritable and develops headache and a slowing heart rate during treatment. The glucose is improving, but the child is less responsive than an hour earlier.",
+    "ask": "Which response is safest?",
+    "options": [
+      "Increase the insulin rate because improving glucose excludes complications.",
+      "Offer an oral analgesic and wait for the next scheduled observation.",
+      "Treat suspected cerebral injury immediately and urgently involve intensive-care staff.",
+      "Stop neurological checks because vital signs remain approximately stable.",
+      "Request elective outpatient brain imaging after DKA has fully resolved."
+    ],
+    "key": "C",
+    "explanations": [
+      "Biochemical glucose improvement does not rule out brain injury; more insulin can worsen shifts.",
+      "Progressive neurological abnormalities are emergencies, not routine discomfort.",
+      "Correct. Worsening consciousness, headache and relative bradycardia during paediatric DKA warrant immediate cerebral injury treatment and expert escalation.",
+      "Serial neurological observations are integral to safe DKA treatment.",
+      "Imaging must not delay emergency therapy for suspected cerebral oedema."
+    ],
+    "pearl": "cerebral injury red flags",
+    "pivot": "If seizure or impending herniation occurs, stabilise airway with expert support and administer protocol-directed hyperosmolar therapy urgently rather than awaiting CT.",
+    "management": {
+      "steps": [
+        [
+          "Recognise",
+          "Perform immediate ABCDE and repeated neurological assessment."
+        ],
+        [
+          "Assess",
+          "Call senior paediatrics and PICU urgently."
+        ],
+        [
+          "Act",
+          "Give hyperosmolar therapy and adjust fluids per local DKA protocol."
+        ],
+        [
+          "Follow up",
+          "Monitor closely, investigate alternatives and document response."
+        ]
+      ],
+      "safety": "If seizure or impending herniation occurs, stabilise airway with expert support and administer protocol-directed hyperosmolar therapy urgently rather than awaiting CT.",
+      "local": "Follow current relevant Victorian/Australian guidance and senior escalation."
+    },
+    "source": "https://www.rch.org.au/clinicalguide/guideline_index/Diabetic_Ketoacidosis/"
+  },
+  {
+    "n": 9,
+    "domain": "Obstetrics",
+    "skill": "PPROM / confirm and avoid digital examination",
+    "context": "Moonflower Garden · advanced original clinical reasoning",
+    "stem": "At 30 weeks a pregnant woman reports a sudden painless gush of fluid followed by persistent leakage. She is afebrile, fetal movements are normal and contractions are absent. The fetal heart trace is reassuring.",
+    "ask": "What is the safest initial assessment pathway?",
+    "options": [
+      "Perform repeated digital cervical examinations to estimate dilation accurately.",
+      "Discharge because a reassuring fetal heart rate excludes membrane rupture.",
+      "Commence elective induction immediately before confirming gestational risk.",
+      "Use sterile speculum examination and test for rupture while avoiding digital examination.",
+      "Give an oral tocolytic without assessing infection or membrane status."
+    ],
+    "key": "D",
+    "explanations": [
+      "Digital examination can increase infection risk and should be avoided unless labour management requires it.",
+      "A reassuring CTG does not confirm or exclude membrane rupture.",
+      "At 30 weeks management requires individualised prematurity and infection assessment, not routine immediate delivery.",
+      "Correct. PPROM evaluation uses a sterile speculum and appropriate testing; minimise infection risk from digital examinations.",
+      "Tocolysis decisions follow specialist evaluation and are not automatic."
+    ],
+    "pearl": "confirm and avoid digital examination",
+    "pivot": "If chorioamnionitis, non-reassuring fetal status or established labour develops, escalate urgently and reconsider expectant management and delivery timing.",
+    "management": {
+      "steps": [
+        [
+          "Recognise",
+          "Record symptoms, gestation, observations and fetal wellbeing."
+        ],
+        [
+          "Assess",
+          "Perform sterile speculum assessment and collect appropriate swabs."
+        ],
+        [
+          "Act",
+          "Discuss corticosteroids, antibiotics and magnesium indications with obstetrics."
+        ],
+        [
+          "Follow up",
+          "Monitor infection, labour, fetal growth and delivery plan."
+        ]
+      ],
+      "safety": "If chorioamnionitis, non-reassuring fetal status or established labour develops, escalate urgently and reconsider expectant management and delivery timing.",
+      "local": "Follow current relevant Victorian/Australian guidance and senior escalation."
+    },
+    "source": "https://www.safercare.vic.gov.au/best-practice-improvement/clinical-guidance/maternity/preterm-pre-labour-rupture-of-membranes"
+  },
+  {
+    "n": 10,
+    "domain": "GP",
+    "skill": "Suspected colorectal cancer / negative FIT limits",
+    "context": "Moonflower Garden · advanced original clinical reasoning",
+    "stem": "A 62-year-old reports six weeks of altered bowel habit, unexplained weight loss and iron deficiency anaemia. A recent home faecal immunochemical screening test was negative.",
+    "ask": "What is the most appropriate next step?",
+    "options": [
+      "Reassure that a negative screening result excludes colorectal cancer.",
+      "Repeat the screening test annually without addressing symptoms now.",
+      "Treat iron deficiency alone and abandon cancer evaluation after improvement.",
+      "Prescribe laxatives for a month before considering specialist referral.",
+      "Arrange diagnostic colorectal assessment despite the negative screening test."
+    ],
+    "key": "E",
+    "explanations": [
+      "Screening performance differs from diagnostic certainty in a high-risk symptomatic individual.",
+      "Annual population screening is not the correct pathway for concerning current symptoms.",
+      "Treating anaemia does not reveal its cause or exclude malignancy.",
+      "Empiric symptom management must not delay cancer investigation.",
+      "Correct. Symptomatic red flags require diagnostic evaluation; a screening FIT is not a definitive rule-out test in this scenario."
+    ],
+    "pearl": "negative FIT limits",
+    "pivot": "If obstruction, significant bleeding or perforation signs develop, send the patient for emergency hospital evaluation rather than routine outpatient endoscopy.",
+    "management": {
+      "steps": [
+        [
+          "Recognise",
+          "Assess anaemia severity, bowel symptoms and family history."
+        ],
+        [
+          "Assess",
+          "Arrange urgent diagnostic referral and appropriate endoscopy."
+        ],
+        [
+          "Act",
+          "Correct iron deficiency while investigating its source."
+        ],
+        [
+          "Follow up",
+          "Safety-net obstructive and bleeding red flags and follow results."
+        ]
+      ],
+      "safety": "If obstruction, significant bleeding or perforation signs develop, send the patient for emergency hospital evaluation rather than routine outpatient endoscopy.",
+      "local": "Follow current relevant Victorian/Australian guidance and senior escalation."
+    },
+    "source": "https://www.cancer.org.au/clinical-guidelines/colorectal-cancer/colorectal-cancer-screening"
+  },
+  {
+    "n": 11,
+    "domain": "Medicine",
+    "skill": "Myasthenic crisis / airway reserve",
+    "context": "Moonflower Garden · advanced original clinical reasoning",
+    "stem": "A 38-year-old with myasthenia gravis develops worsening dysphagia and breathlessness during a respiratory infection. Respiratory rate is 28/min and the patient cannot count beyond eight on a single breath.",
+    "ask": "What action is most important next?",
+    "options": [
+      "Obtain urgent senior airway and intensive-care assessment with respiratory monitoring.",
+      "Give oral pyridostigmine alone and reassess in two days at home.",
+      "Reassure because resting oxygen saturation remains in the normal range.",
+      "Delay escalation until arterial oxygen tension becomes markedly reduced.",
+      "Prescribe sedative medication to ease the distress and reduce respiratory rate."
+    ],
+    "key": "A",
+    "explanations": [
+      "Correct. Bulbar weakness and poor respiratory reserve can herald rapid ventilatory failure; early monitored escalation is essential.",
+      "Oral medication may be inadequate or unsafe in significant bulbar crisis and aspiration risk.",
+      "Pulse oximetry may remain reassuring until late in neuromuscular hypoventilation.",
+      "Waiting for hypoxaemia risks unplanned respiratory arrest.",
+      "Sedation can further depress breathing and airway protection."
+    ],
+    "pearl": "airway reserve",
+    "pivot": "If forced vital capacity falls or secretions cannot be managed, plan controlled airway support with ICU and neurology; consider IVIg or plasma exchange for crisis.",
+    "management": {
+      "steps": [
+        [
+          "Recognise",
+          "Assess bulbar function, cough, speech and aspiration."
+        ],
+        [
+          "Assess",
+          "Measure serial vital capacity or bedside respiratory parameters."
+        ],
+        [
+          "Act",
+          "Call neurology and ICU, review triggering medicines and infection."
+        ],
+        [
+          "Follow up",
+          "Provide disease-specific rescue therapy and airway support as needed."
+        ]
+      ],
+      "safety": "If forced vital capacity falls or secretions cannot be managed, plan controlled airway support with ICU and neurology; consider IVIg or plasma exchange for crisis.",
+      "local": "Follow current relevant Victorian/Australian guidance and senior escalation."
+    },
+    "source": "https://www.health.qld.gov.au/cpc/neurology/myasthenia-gravis"
+  },
+  {
+    "n": 12,
+    "domain": "Surgery",
+    "skill": "Necrotising infection / normal imaging not exclusion",
+    "context": "Moonflower Garden · advanced original clinical reasoning",
+    "stem": "A 54-year-old with diabetes develops rapidly spreading thigh erythema, severe pain and a rising creatinine after a puncture wound. CT reports no obvious soft-tissue gas. The patient has increasing tachycardia and tenderness.",
+    "ask": "What should be done next?",
+    "options": [
+      "Rule out necrotising infection because CT shows no gas.",
+      "Seek immediate surgical exploration advice and give broad-spectrum sepsis therapy.",
+      "Treat with topical antibiotics while awaiting a follow-up CT.",
+      "Discharge on oral antibiotics because no abscess was identified.",
+      "Wait for skin necrosis to develop before contacting surgery."
+    ],
+    "key": "B",
+    "explanations": [
+      "Absence of radiographic gas does not exclude early necrotising infection.",
+      "Correct. Rapid progression and pain out of proportion warrant immediate surgical assessment even without gas; source control is time critical.",
+      "Topicals cannot treat deep fascial infection.",
+      "Systemic toxicity and organ injury require hospital treatment.",
+      "Necrosis and crepitus are late signs; waiting risks mortality."
+    ],
+    "pearl": "normal imaging not exclusion",
+    "pivot": "If hypotension or altered consciousness develops, activate severe sepsis/critical-care response and proceed urgently to operative source control.",
+    "management": {
+      "steps": [
+        [
+          "Recognise",
+          "Assess pain, progression and shock markers."
+        ],
+        [
+          "Assess",
+          "Call general surgery and critical care immediately."
+        ],
+        [
+          "Act",
+          "Give IV broad antimicrobials and resuscitate."
+        ],
+        [
+          "Follow up",
+          "Arrange urgent debridement and repeated reassessment."
+        ]
+      ],
+      "safety": "If hypotension or altered consciousness develops, activate severe sepsis/critical-care response and proceed urgently to operative source control.",
+      "local": "Follow current relevant Victorian/Australian guidance and senior escalation."
+    },
+    "source": "https://www.safercare.vic.gov.au/best-practice-improvement/clinical-guidance/emergency/sepsis"
+  },
+  {
+    "n": 13,
+    "domain": "Psychiatry",
+    "skill": "Serotonin toxicity / neuromuscular signs",
+    "context": "Moonflower Garden · advanced original clinical reasoning",
+    "stem": "A 29-year-old taking sertraline started tramadol yesterday. They now have agitation, sweating, diarrhoea, fever and inducible ankle clonus with brisk reflexes. There is no lead-pipe rigidity.",
+    "ask": "Which treatment principle is most appropriate?",
+    "options": [
+      "Increase the antidepressant dose because agitation indicates undertreated mood disorder.",
+      "Treat this as uncomplicated anxiety and discharge after brief reassurance.",
+      "Stop serotonergic drugs and give supportive treatment with urgent medical assessment.",
+      "Start another serotonergic analgesic to relieve muscle discomfort.",
+      "Give an antipsychotic depot injection as the sole first-line intervention."
+    ],
+    "key": "C",
+    "explanations": [
+      "Increasing exposure risks severe hyperthermia and organ dysfunction.",
+      "Autonomic and neuromuscular abnormalities demand medical assessment.",
+      "Correct. Clonus and hyperreflexia after serotonergic exposure strongly suggest serotonin toxicity; stop agents, support ABCDE and control agitation/temperature.",
+      "Adding serotonergic medication can worsen toxicity.",
+      "Long-acting antipsychotics do not reverse the toxic mechanism and complicate care."
+    ],
+    "pearl": "neuromuscular signs",
+    "pivot": "If hyperthermia, rigidity or organ dysfunction develops, involve toxicology/ICU for active cooling, sedation and advanced supportive care.",
+    "management": {
+      "steps": [
+        [
+          "Recognise",
+          "Identify all serotonergic medicines and timing."
+        ],
+        [
+          "Assess",
+          "Assess vital signs, clonus, rigidity and complications."
+        ],
+        [
+          "Act",
+          "Cease agents and institute supportive care and benzodiazepines as directed."
+        ],
+        [
+          "Follow up",
+          "Monitor recovery and review safe future prescribing."
+        ]
+      ],
+      "safety": "If hyperthermia, rigidity or organ dysfunction develops, involve toxicology/ICU for active cooling, sedation and advanced supportive care.",
+      "local": "Follow current relevant Victorian/Australian guidance and senior escalation."
+    },
+    "source": "https://www.health.qld.gov.au/__data/assets/pdf_file/0016/1067011/emergency.pdf"
+  },
+  {
+    "n": 14,
+    "domain": "Paediatrics",
+    "skill": "Supracondylar fracture / neurovascular compromise",
+    "context": "Moonflower Garden · advanced original clinical reasoning",
+    "stem": "A 6-year-old falls onto an outstretched hand and has a displaced supracondylar fracture. The hand is pink and warm but radial pulse is absent; capillary refill is two seconds. The child has significant pain.",
+    "ask": "What is the safest immediate plan?",
+    "options": [
+      "Discharge because warm fingers prove there is no vascular risk.",
+      "Apply a tightly circumferential cast and review in one week.",
+      "Obtain routine physiotherapy before seeking surgical advice.",
+      "Arrange urgent orthopaedic review, repeat neurovascular assessment and reduction planning.",
+      "Wait until the hand turns blue before repeating pulse checks."
+    ],
+    "key": "D",
+    "explanations": [
+      "Adequate colour does not exclude arterial compromise or future deterioration.",
+      "Tight immobilisation can exacerbate swelling and compartment pressure.",
+      "Physiotherapy has no role before acute reduction and vascular safety assessment.",
+      "Correct. A perfused pulseless hand still needs urgent specialist assessment; displacement can injure brachial vessels and nerves.",
+      "Delayed neurovascular monitoring risks ischaemia and nerve damage."
+    ],
+    "pearl": "neurovascular compromise",
+    "pivot": "If the hand becomes pale/cool or pain escalates despite analgesia, activate emergency vascular/orthopaedic reassessment for threatened limb or compartment syndrome.",
+    "management": {
+      "steps": [
+        [
+          "Recognise",
+          "Document pulse, perfusion and median/radial/ulnar nerve function."
+        ],
+        [
+          "Assess",
+          "Provide analgesia, elevation and safe splinting."
+        ],
+        [
+          "Act",
+          "Contact urgent paediatric orthopaedic service."
+        ],
+        [
+          "Follow up",
+          "Repeat and document neurovascular checks before and after intervention."
+        ]
+      ],
+      "safety": "If the hand becomes pale/cool or pain escalates despite analgesia, activate emergency vascular/orthopaedic reassessment for threatened limb or compartment syndrome.",
+      "local": "Follow current relevant Victorian/Australian guidance and senior escalation."
+    },
+    "source": "https://www.rch.org.au/clinicalguide/guideline_index/fractures/Supracondylar_fracture_of_the_humerus_Emergency_Department/"
+  },
+  {
+    "n": 15,
+    "domain": "Obstetrics",
+    "skill": "Severe hypertension / maternal stabilisation",
+    "context": "Moonflower Garden · advanced original clinical reasoning",
+    "stem": "At 36 weeks, a woman with gestational hypertension now has persistent BP 170/112 mmHg, new headache and visual disturbance. Platelets are 110 × 10⁹/L and creatinine is rising.",
+    "ask": "What is the next priority?",
+    "options": [
+      "Wait for a 24-hour urine collection before treating the pressure.",
+      "Discharge for home BP recording because fetal movements are normal.",
+      "Prescribe a diuretic alone and defer repeat maternal blood tests.",
+      "Give oral paracetamol and reassess neurological symptoms tomorrow.",
+      "Treat severe blood pressure urgently, assess magnesium need and escalate delivery planning."
+    ],
+    "key": "E",
+    "explanations": [
+      "Protein quantification cannot delay treatment for dangerous hypertension.",
+      "Normal movements do not exclude maternal stroke or eclampsia risk.",
+      "Diuretics are not routine definitive treatment for preeclampsia.",
+      "Headache relief alone does not address end-organ risk.",
+      "Correct. Severe features require admission, antihypertensive therapy, magnesium consideration and urgent senior obstetric review."
+    ],
+    "pearl": "maternal stabilisation",
+    "pivot": "If eclampsia occurs, protect airway, give magnesium sulphate per protocol and expedite delivery planning after maternal stabilisation.",
+    "management": {
+      "steps": [
+        [
+          "Recognise",
+          "Confirm BP and assess neurological features."
+        ],
+        [
+          "Assess",
+          "Check maternal bloods, urine and fetal wellbeing."
+        ],
+        [
+          "Act",
+          "Start appropriate acute BP therapy and seizure prophylaxis."
+        ],
+        [
+          "Follow up",
+          "Agree delivery timing with senior obstetric and anaesthetic teams."
+        ]
+      ],
+      "safety": "If eclampsia occurs, protect airway, give magnesium sulphate per protocol and expedite delivery planning after maternal stabilisation.",
+      "local": "Follow current relevant Victorian/Australian guidance and senior escalation."
+    },
+    "source": "https://www.safercare.vic.gov.au/best-practice-improvement/clinical-guidance/maternity/hypertension-in-pregnancy"
   }
 ]
