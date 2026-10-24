@@ -478,5 +478,245 @@
       "local": "Apply current Australian/local protocols; reviewed against the supplied 2024–2025 practice notes, which are educational rather than authoritative."
     },
     "source": "https://www.aihw.gov.au/reports/australias-health/screening"
+  },
+  {
+    "n": 11,
+    "domain": "Ophthalmology & GP",
+    "skill": "Visual acuity / habitual glasses and pinhole",
+    "context": "Original Monash 2024–2025 review-inspired final-year decision",
+    "stem": "A 29-year-old woman attends after gardening with a gritty right eye. She usually wears spectacles for distance. With spectacles, acuity is 6/12 in each eye; each eye improves to 6/6 with pinhole. Her pupil reactions and visual fields are normal. A student says her glasses should have been removed for the first chart reading.",
+    "ask": "Which statement about the initial acuity assessment is correct?",
+    "options": [
+      "Testing with habitual spectacles was appropriate and the correction should be documented.",
+      "Improvement with pinhole proves that no corneal abrasion or foreign body is present.",
+      "Bilateral 6/12 acuity confirms that this right-eye injury has reduced her vision.",
+      "A result of 6/12 means that she sees twice as far as someone with 6/6.",
+      "Routine acuity testing must always be performed first with prescription glasses removed."
+    ],
+    "key": "A",
+    "explanations": [
+      "Correct. Test and record each eye with its normal correction; pinhole helps estimate how much reduced acuity is explained by refractive error.",
+      "Pinhole improvement does not inspect the corneal surface. Fluorescein examination and lid eversion may still be needed.",
+      "Similar bilateral acuity with improvement through pinhole is not evidence of an injury-induced unilateral deficit.",
+      "The interpretation is reversed: at six metres she sees what a person with standard vision sees at twelve metres.",
+      "Unaided acuity may also be documented, but habitual corrected acuity is a clinically useful initial measurement."
+    ],
+    "pearl": "Always record whether acuity is corrected, unaided or pinhole; examine each eye separately.",
+    "pivot": "Sudden unilateral acuity loss, severe pain or photophobia requires urgent ophthalmic assessment even if pinhole helps.",
+    "management": {
+      "steps": [
+        [
+          "Recognise",
+          "Ask about mechanism, contact lenses and visual symptoms."
+        ],
+        [
+          "Assess",
+          "Record each eye's acuity with correction and pinhole."
+        ],
+        [
+          "Treat",
+          "Assess cornea, pupil, lid and fluorescein findings."
+        ],
+        [
+          "Follow up",
+          "Treat and refer according to ocular red flags."
+        ]
+      ],
+      "safety": "A better pinhole result does not exclude a painful retained foreign body.",
+      "local": "Australian clinical practice: apply local policy and senior advice."
+    },
+    "source": "https://www.rch.org.au/clinicalguide/guideline_index/Eye_trauma/"
+  },
+  {
+    "n": 12,
+    "domain": "Surgery & reconstructive medicine",
+    "skill": "Skin graft / large defect and contraction",
+    "context": "Original Monash 2024–2025 review-inspired final-year decision",
+    "stem": "A road-trauma patient has a clean vascularised 18-by-14-cm soft-tissue defect over the lateral thigh. Direct closure would place excessive tension on the remaining skin. The surgical team discusses harvesting either a split-thickness graft or a full-thickness graft from a donor site.",
+    "ask": "Which characteristic favours the split-thickness graft here?",
+    "options": [
+      "It routinely provides a closer cosmetic match than a thicker skin graft.",
+      "It can be meshed and expanded to cover relatively large wound surfaces.",
+      "It produces the least contraction of all skin-graft types during healing.",
+      "It is always more durable under repeated daily friction after incorporation.",
+      "It has higher oxygen demands than a full-thickness graft during initial take."
+    ],
+    "key": "B",
+    "explanations": [
+      "Full-thickness grafts often give better cosmetic match and less contraction, though results depend on the wound and site.",
+      "Correct. Split-thickness grafts cover large defects more efficiently and can be meshed, making limited donor skin go further.",
+      "Split-thickness grafts are more likely to contract secondarily; rehabilitation and joint positioning may be important.",
+      "These thinner grafts can be more fragile than thicker skin and are not automatically more trauma-resistant.",
+      "A thinner graft generally takes more reliably on a suitable bed than a more metabolically demanding full-thickness graft."
+    ],
+    "pearl": "Split-thickness for extensive coverage; full-thickness may offer better cosmesis and reduced late contraction.",
+    "pivot": "Exposed unvascularised tendon or bone may require a flap or wound-bed preparation rather than a simple graft.",
+    "management": {
+      "steps": [
+        [
+          "Recognise",
+          "Assess depth, infection and vascularity of the wound bed."
+        ],
+        [
+          "Assess",
+          "Discuss donor-site availability and functional site risks."
+        ],
+        [
+          "Treat",
+          "Secure the graft after debridement and coverage planning."
+        ],
+        [
+          "Follow up",
+          "Monitor take, dressings and rehabilitation to limit contracture."
+        ]
+      ],
+      "safety": "Do not graft onto avascular tissue without appropriate reconstructive planning.",
+      "local": "Australian clinical practice: apply local policy and senior advice."
+    },
+    "source": "https://www.rch.org.au/clinicalguide/guideline_index/Burns/"
+  },
+  {
+    "n": 13,
+    "domain": "Emergency medicine & trauma",
+    "skill": "Haemorrhage / direct pressure before investigations",
+    "context": "Original Monash 2024–2025 review-inspired final-year decision",
+    "stem": "A worker arrives pale and clammy with active spurting blood from a deep forearm laceration. The towel covering the wound has become saturated and his radial pulse is weak. Before anyone has obtained blood samples, an intern asks whether they should first secure IV access or measure blood pressure.",
+    "ask": "What is the single most urgent action?",
+    "options": [
+      "Measure a complete set of observations before disturbing the wound covering.",
+      "Take crossmatch blood immediately while continuing to observe the blood loss.",
+      "Apply firm direct pressure over the bleeding source and summon resuscitation help.",
+      "Give intravenous opioid analgesia before manipulating the painful wound.",
+      "Request vascular ultrasound to identify the damaged artery prior to compression."
+    ],
+    "key": "C",
+    "explanations": [
+      "Observations quantify severity but cannot replace immediate control of visible catastrophic bleeding.",
+      "Crossmatching is vital to transfusion planning, but it can occur alongside haemorrhage control rather than delaying it.",
+      "Correct. Direct pressure is fast and lifesaving; an appropriate tourniquet may follow if limb haemorrhage remains uncontrolled.",
+      "Analgesia improves comfort but does not stop exsanguination and should follow immediate haemorrhage control.",
+      "Imaging may guide later repair but is not necessary to start compression on an obvious external bleeding site."
+    ],
+    "pearl": "In life-threatening external bleeding, immediate control of haemorrhage comes before routine diagnostic tasks.",
+    "pivot": "Uncontrolled life-threatening limb bleeding after pressure warrants an arterial tourniquet if available and correctly applied.",
+    "management": {
+      "steps": [
+        [
+          "Recognise",
+          "Recognise catastrophic visible blood loss and activate the trauma team."
+        ],
+        [
+          "Assess",
+          "Press firmly on the bleeding wound with suitable protection."
+        ],
+        [
+          "Treat",
+          "Establish access and initiate blood-product resuscitation."
+        ],
+        [
+          "Follow up",
+          "Arrange definitive surgical haemostasis and perfusion checks."
+        ]
+      ],
+      "safety": "Do not delay pressure while waiting for tests or repeatedly lifting the dressing.",
+      "local": "Australian clinical practice: apply local policy and senior advice."
+    },
+    "source": "https://www.anzcor.org/home/first-aid/guideline-9-1-1-first-aid-for-management-of-bleeding"
+  },
+  {
+    "n": 14,
+    "domain": "Emergency medicine & procedural care",
+    "skill": "Major GI haemorrhage / wide peripheral access",
+    "context": "Original Monash 2024–2025 review-inspired final-year decision",
+    "stem": "A 58-year-old with severe haematemesis is hypotensive at 83/46 mmHg and tachycardic at 132/min. Two antecubital veins are accessible. One junior proposes a standard triple-lumen central line as the fastest route for urgent packed red blood cell transfusion.",
+    "ask": "Which access should be established first?",
+    "options": [
+      "A single 22-gauge hand cannula with an infusion pump attached.",
+      "A routine triple-lumen neck central catheter as sole vascular access.",
+      "A pair of small hand cannulas used together to reduce puncture size.",
+      "Two short, large-bore peripheral cannulas allowing rapid blood delivery.",
+      "No cannula until the cause of bleeding is confirmed by endoscopy."
+    ],
+    "key": "D",
+    "explanations": [
+      "A narrow cannula limits rapid volume delivery and does not give access redundancy.",
+      "A standard triple lumen is long and relatively narrow, often offering less rapid flow than a short wide peripheral catheter.",
+      "Two very small cannulas may still be insufficient during major haemorrhage when large peripheral veins are available.",
+      "Correct. Two wide short peripheral IV cannulas offer high flow and redundancy; commonly use 14–16G when safely possible.",
+      "Endoscopy may stop the bleeding but resuscitation cannot wait until diagnostic or therapeutic procedures begin."
+    ],
+    "pearl": "Short, wide peripheral IV access can outperform ordinary multilumen central access for rapid transfusion.",
+    "pivot": "When large peripheral veins cannot be accessed, seek IO or specialist rapid-infusion access.",
+    "management": {
+      "steps": [
+        [
+          "Recognise",
+          "Recognise shock and activate a major haemorrhage protocol."
+        ],
+        [
+          "Assess",
+          "Establish two wide IVs and obtain key blood tests."
+        ],
+        [
+          "Treat",
+          "Begin blood products and monitor perfusion and haemodynamics."
+        ],
+        [
+          "Follow up",
+          "Arrange urgent definitive bleeding control and reassess volume status."
+        ]
+      ],
+      "safety": "Central venous catheters are not automatically the highest-flow resuscitation access.",
+      "local": "Australian clinical practice: apply local policy and senior advice."
+    },
+    "source": "https://www.anzcor.org/home/adult-advanced-life-support/"
+  },
+  {
+    "n": 15,
+    "domain": "Anaesthetics & acute resuscitation",
+    "skill": "Upper airway obstruction / jaw thrust before tests",
+    "context": "Original Monash 2024–2025 review-inspired final-year decision",
+    "stem": "Thirty minutes after surgery, a sedated patient becomes difficult to rouse, develops noisy inspiratory breathing and has visibly inadequate chest movement. Cyanosis is developing. Emergency help has been summoned. A colleague wants to take an arterial blood gas before deciding whether to intervene.",
+    "ask": "What immediate bedside intervention is best?",
+    "options": [
+      "Obtain a blood gas to determine whether there is carbon dioxide retention.",
+      "Give an intravenous sedative to suppress distress and reduce breathing effort.",
+      "Transfer for urgent neck imaging before attempting basic airway manoeuvres.",
+      "Apply a chest monitor and defer manoeuvres until a full observation set returns.",
+      "Open the airway with jaw thrust and assist oxygenation and ventilation as needed."
+    ],
+    "key": "E",
+    "explanations": [
+      "Blood gas analysis may help later but must not delay the restoration of airflow.",
+      "Additional sedation can worsen upper-airway obstruction, reduce protective reflexes and suppress respiratory drive.",
+      "Imaging is unsafe as the initial plan when ventilation is ineffective; the airway must be managed clinically.",
+      "Monitoring is useful while resuscitating but does not replace manoeuvres that reopen the airway.",
+      "Correct. Jaw thrust can relieve soft-tissue obstruction rapidly, followed by appropriate suction, oxygen, bag-mask ventilation and experienced airway assistance."
+    ],
+    "pearl": "Call for help, open the obstructed airway and ventilate; investigation comes after oxygenation.",
+    "pivot": "Persistent stridor despite positioning may be laryngospasm or swelling requiring anaesthetic expertise.",
+    "management": {
+      "steps": [
+        [
+          "Recognise",
+          "Recognise obstructed respiration and confirm emergency activation."
+        ],
+        [
+          "Assess",
+          "Open the airway using jaw thrust and positioning."
+        ],
+        [
+          "Treat",
+          "Use bag-mask ventilation with oxygen when required."
+        ],
+        [
+          "Follow up",
+          "Escalate for an advanced airway if obstruction persists."
+        ]
+      ],
+      "safety": "A jaw thrust does not reliably relieve true laryngeal oedema or laryngospasm.",
+      "local": "Australian clinical practice: apply local policy and senior advice."
+    },
+    "source": "https://www.anzcor.org/home/basic-life-support/"
   }
 ]
