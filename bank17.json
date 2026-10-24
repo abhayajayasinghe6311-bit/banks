@@ -1,0 +1,242 @@
+[
+  {
+    "n": 1,
+    "domain": "Paediatrics",
+    "skill": "Kawasaki disease / incomplete presentation",
+    "context": "Moonflower Garden · advanced original Monash-style clinical reasoning",
+    "stem": "A 3-year-old has had fever for six days, bilateral non-purulent conjunctivitis, cracked lips and swollen hands. There is no cervical lymphadenopathy or rash. CRP is markedly elevated, platelets are rising and no infective focus has been identified. The child remains febrile despite supportive care.",
+    "ask": "Which next step best addresses the important diagnosis and complication risk?",
+    "options": [
+      "Seek paediatric assessment for incomplete Kawasaki disease and arrange echocardiography.",
+      "Discharge with oral antihistamine because four classic features are absent.",
+      "Treat presumed bacterial conjunctivitis and reassess only if purulent discharge appears.",
+      "Wait for coronary changes on imaging before considering immunoglobulin treatment.",
+      "Start empirical oral antibiotics alone and defer inflammatory disease assessment."
+    ],
+    "key": "A",
+    "explanations": [
+      "Correct. Incomplete Kawasaki disease is possible with prolonged fever and fewer classical criteria; paediatric review, inflammatory work-up and echo are indicated, with IVIg and aspirin decisions by a specialist.",
+      "The full feature count is not required to suspect incomplete Kawasaki disease; untreated coronary inflammation can progress.",
+      "Conjunctivitis is typically bilateral and non-exudative; topical treatment does not address systemic vasculitis.",
+      "A normal early echo does not exclude Kawasaki disease or justify withholding indicated treatment; repeat cardiac assessment may be necessary.",
+      "Antibiotics may address a documented infection but cannot substitute for assessment of vasculitis when the clinical pattern is characteristic."
+    ],
+    "pearl": "Incomplete Kawasaki disease is not excluded by having fewer than four principal features.",
+    "pivot": "If shock or myocardial dysfunction develops, initiate monitored resuscitation and urgent paediatric cardiology/intensive-care involvement; fluid boluses need caution.",
+    "management": {
+      "steps": [
+        [
+          "Recognise",
+          "Review fever course and Kawasaki clinical criteria."
+        ],
+        [
+          "Assess",
+          "Check inflammatory markers, blood count, renal/liver profile and differential diagnoses."
+        ],
+        [
+          "Act",
+          "Arrange paediatric specialist review and echocardiography without delay."
+        ],
+        [
+          "Follow up",
+          "Provide specialist-directed IVIg/aspirin when criteria are met and schedule cardiac follow-up."
+        ]
+      ],
+      "safety": "If shock or myocardial dysfunction develops, initiate monitored resuscitation and urgent paediatric cardiology/intensive-care involvement; fluid boluses need caution.",
+      "local": "Use current hospital-specific Victorian/Australian protocols and senior escalation for deterioration."
+    },
+    "source": "https://www.rch.org.au/clinicalguide/guideline_index/Kawasaki_disease/"
+  },
+  {
+    "n": 2,
+    "domain": "Obstetrics",
+    "skill": "Postpartum haemorrhage / firm uterus suggests trauma",
+    "context": "Moonflower Garden · advanced original Monash-style clinical reasoning",
+    "stem": "Twenty minutes after an uncomplicated vaginal birth, a woman continues to bleed heavily. Her pulse is 118/min and blood pressure is 100/64 mmHg. The placenta was inspected and appears complete; abdominal examination finds a well-contracted uterus. A midwife reports brisk fresh bleeding despite uterine massage.",
+    "ask": "Which action should be prioritised alongside resuscitation?",
+    "options": [
+      "Continue uterine massage alone for another thirty minutes before examining the vagina.",
+      "Undertake urgent examination for genital tract laceration and repair the bleeding source.",
+      "Administer repeated uterotonics as the only measure despite a persistently firm uterus.",
+      "Arrange routine delayed ultrasound after bleeding settles without direct source assessment.",
+      "Assume retained placental tissue is certain and proceed to blind uterine curettage."
+    ],
+    "key": "B",
+    "explanations": [
+      "Massage helps atony but continued heavy bleeding despite a firm uterus requires assessment of trauma and other causes immediately.",
+      "Correct. Ongoing PPH with a contracted uterus suggests genital-tract trauma, although multiple causes may coexist; examine cervix/vagina/perineum and repair with senior assistance.",
+      "Uterotonics may be part of a haemorrhage bundle but do not repair an actively bleeding laceration.",
+      "Imaging cannot replace timely examination and haemostasis in ongoing haemorrhage.",
+      "Retained tissue remains a differential, but complete placenta and firm uterus make blind curettage without evaluation inappropriate."
+    ],
+    "pearl": "For PPH, a firm uterus shifts attention toward trauma, tissue and thrombin rather than tone alone.",
+    "pivot": "If the uterus becomes boggy, treat concurrent atony with massage, uterotonics and escalation; if coagulopathy is suspected, obtain clotting studies and replace blood components under major-haemorrhage protocol.",
+    "management": {
+      "steps": [
+        [
+          "Recognise",
+          "Activate obstetric haemorrhage response, quantify loss and assess circulation."
+        ],
+        [
+          "Assess",
+          "Provide two large-bore IVs, bloods/crossmatch and appropriate resuscitation."
+        ],
+        [
+          "Act",
+          "Inspect genital tract promptly and repair trauma or examine under anaesthesia."
+        ],
+        [
+          "Follow up",
+          "Continue surveillance, assess the four Ts and correct coagulopathy if present."
+        ]
+      ],
+      "safety": "If the uterus becomes boggy, treat concurrent atony with massage, uterotonics and escalation; if coagulopathy is suspected, obtain clotting studies and replace blood components under major-haemorrhage protocol.",
+      "local": "Use current hospital-specific Victorian/Australian protocols and senior escalation for deterioration."
+    },
+    "source": "https://www.safercare.vic.gov.au/best-practice-improvement/clinical-guidance/maternity/postpartum-haemorrhage-pph-prevention-assessment-and-management"
+  },
+  {
+    "n": 3,
+    "domain": "Medicine",
+    "skill": "Adrenal crisis / treatment before confirmation",
+    "context": "Moonflower Garden · advanced original Monash-style clinical reasoning",
+    "stem": "A 46-year-old with known primary adrenal insufficiency presents with vomiting and fever, unable to keep down hydrocortisone. She is confused, blood pressure is 78/46 mmHg, sodium 126 mmol/L, potassium 5.8 mmol/L and capillary glucose 3.2 mmol/L.",
+    "ask": "What should the treating intern initiate immediately?",
+    "options": [
+      "Delay steroids until a stimulation test definitively confirms adrenal insufficiency.",
+      "Give oral maintenance hydrocortisone despite ongoing vomiting and circulatory shock.",
+      "Give parenteral hydrocortisone and isotonic resuscitation while treating hypoglycaemia.",
+      "Start potassium-lowering therapy alone and defer the endocrine emergency treatment.",
+      "Restrict intravenous fluid because hyponatraemia is present and observe closely."
+    ],
+    "key": "C",
+    "explanations": [
+      "Testing is valuable when feasible but must not delay lifesaving corticosteroid replacement.",
+      "Oral absorption is unreliable with vomiting and is inadequate for crisis-level physiological stress.",
+      "Correct. Adrenal crisis is life-threatening; give immediate IV/IM hydrocortisone, crystalloid and glucose as needed, then treat the precipitant. A Queensland pathway specifies an initial adult 100 mg dose.",
+      "Hyperkalaemia requires ECG assessment and may need treatment, but steroid and fluid deficiency are central causes.",
+      "Hypovolaemic shock requires fluid resuscitation; hyponatraemia here is not an indication for withholding isotonic fluid."
+    ],
+    "pearl": "Treat suspected adrenal crisis first; confirm the diagnosis after immediate stabilisation.",
+    "pivot": "If severe hyperkalaemic ECG changes develop, administer IV calcium and potassium-shifting therapy immediately alongside hydrocortisone and resuscitation.",
+    "management": {
+      "steps": [
+        [
+          "Recognise",
+          "Recognise refractory hypotension, vomiting and steroid interruption."
+        ],
+        [
+          "Assess",
+          "Give 100 mg IV/IM hydrocortisone immediately per adult emergency guidance."
+        ],
+        [
+          "Act",
+          "Resuscitate with isotonic saline, correct glucose and monitor potassium/ECG."
+        ],
+        [
+          "Follow up",
+          "Continue stress-dose replacement, treat infection and obtain endocrine review."
+        ]
+      ],
+      "safety": "If severe hyperkalaemic ECG changes develop, administer IV calcium and potassium-shifting therapy immediately alongside hydrocortisone and resuscitation.",
+      "local": "Use current hospital-specific Victorian/Australian protocols and senior escalation for deterioration."
+    },
+    "source": "https://www.health.qld.gov.au/cpc/diabetes-and-endocrinology/adrenal-insufficiency"
+  },
+  {
+    "n": 4,
+    "domain": "Sexual health",
+    "skill": "Epididymo-orchitis / empiric STI coverage",
+    "context": "Moonflower Garden · advanced original Monash-style clinical reasoning",
+    "stem": "A sexually active 22-year-old develops gradual unilateral scrotal discomfort and dysuria over three days. Examination shows posterior testicular tenderness and swelling without a high-riding testis. Urine NAAT for gonorrhoea/chlamydia is pending, and the patient is systemically well.",
+    "ask": "After promptly considering and excluding torsion, what management is most appropriate?",
+    "options": [
+      "Withhold all antibiotics until nucleic acid results return several days later.",
+      "Treat with a single topical antifungal preparation and discharge without review.",
+      "Give urinary alkaliniser alone because the discomfort began with dysuria.",
+      "Commence empiric gonorrhoea/chlamydia treatment and arrange partner management.",
+      "Prescribe a prostate-specific medication as the sole treatment for scrotal pain."
+    ],
+    "key": "D",
+    "explanations": [
+      "Waiting may prolong symptoms and transmission and increase the risk of complications.",
+      "Topical antifungal medication does not penetrate or treat bacterial epididymal infection.",
+      "Symptomatic urinary measures cannot eradicate gonorrhoea or chlamydia.",
+      "Correct. Australian STI guidance supports presumptive treatment for sexually active men with epididymo-orchitis; use current combination regimen, test for STIs and arrange partner care.",
+      "Prostatic therapy does not address the likely pathogen and site of infection."
+    ],
+    "pearl": "A negative initial urine dipstick does not exclude sexually transmitted epididymo-orchitis.",
+    "pivot": "If onset is sudden, severe or torsion remains possible, obtain emergency urological review immediately; do not let Doppler imaging delay exploration when suspicion is high.",
+    "management": {
+      "steps": [
+        [
+          "Recognise",
+          "Assess onset, torsion red flags, fever and urinary symptoms."
+        ],
+        [
+          "Assess",
+          "Collect first-pass urine NAAT and other indicated STI tests."
+        ],
+        [
+          "Act",
+          "Begin guideline-based empiric antibiotics plus analgesia/scrotal support."
+        ],
+        [
+          "Follow up",
+          "Arrange early reassessment, sexual abstinence advice and partner notification."
+        ]
+      ],
+      "safety": "If onset is sudden, severe or torsion remains possible, obtain emergency urological review immediately; do not let Doppler imaging delay exploration when suspicion is high.",
+      "local": "Use current hospital-specific Victorian/Australian protocols and senior escalation for deterioration."
+    },
+    "source": "https://sti.guidelines.org.au/syndromes/epididymo-orchitis/"
+  },
+  {
+    "n": 5,
+    "domain": "Paediatrics",
+    "skill": "Complex febrile seizure / post-event assessment",
+    "context": "Moonflower Garden · advanced original Monash-style clinical reasoning",
+    "stem": "An 18-month-old with fever has a focal right-arm seizure lasting seven minutes at home. In the emergency department the seizure has stopped, but the child remains unusually drowsy 35 minutes later and has reduced right-hand movement. Blood glucose is normal.",
+    "ask": "Which assessment is now most important?",
+    "options": [
+      "Classify this as simple febrile seizure and discharge once temperature improves.",
+      "Give prophylactic long-term antiepileptic medication without further examination.",
+      "Order no tests because all febrile seizures have a uniformly benign course.",
+      "Attribute the asymmetry to sleepiness alone and review in several days.",
+      "Obtain urgent senior neurological assessment for persistent focal deficit and CNS disease."
+    ],
+    "key": "E",
+    "explanations": [
+      "Simple febrile seizures are generalised, brief and without persistent focal findings; this case needs further evaluation.",
+      "Long-term antiseizure therapy is not automatically indicated after a first complex febrile seizure, and would not clarify the cause.",
+      "Investigation is driven by the clinical signs and fever source; ongoing altered state is a red flag.",
+      "Todd paresis is possible but should not be assumed without exclusion of dangerous neurological disease.",
+      "Correct. Focal seizure and persistent neurological abnormality are complex features; assess meningitis/encephalitis, structural causes and need for neuroimaging or lumbar puncture after expert review."
+    ],
+    "pearl": "A persistent focal deficit after a febrile seizure changes the assessment from routine reassurance to urgent evaluation.",
+    "pivot": "If seizure activity recurs and lasts five minutes or longer, start the paediatric status-epilepticus pathway with airway support and protocol-directed benzodiazepine.",
+    "management": {
+      "steps": [
+        [
+          "Recognise",
+          "Reassess ABCDE, glucose, temperature and seizure chronology."
+        ],
+        [
+          "Assess",
+          "Repeat focused neurological examination and evaluate meningism and fever source."
+        ],
+        [
+          "Act",
+          "Discuss urgent investigations and potential imaging with senior paediatrics."
+        ],
+        [
+          "Follow up",
+          "Observe until neurological recovery and provide a seizure safety plan."
+        ]
+      ],
+      "safety": "If seizure activity recurs and lasts five minutes or longer, start the paediatric status-epilepticus pathway with airway support and protocol-directed benzodiazepine.",
+      "local": "Use current hospital-specific Victorian/Australian protocols and senior escalation for deterioration."
+    },
+    "source": "https://www.rch.org.au/clinicalguide/guideline_index/Febrile_seizure/"
+  }
+]
