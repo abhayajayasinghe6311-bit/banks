@@ -1,33 +1,28 @@
 # Bank 17 — Moonflower Garden 🌙
 
-**Status: DRAFT ONLY — 5/100 questions. Not included in manifest and not published.**
+**Status: 100/100 authored and structurally validated on draft branch.**
 
 Repository: abhayajayasinghe6311-bit/banks
 Draft branch: codex/bank17-moonflower-garden-draft
 Question file: bank17.json
 
-## Brief
-100 original, challenging Monash SPA-W final-year five-option questions aimed at safe first-year doctor clinical decisions. Mixed adult medicine, surgery, paediatrics, O&G, general practice/ethics/EBM, psychiatry. Prefer current Victorian guidelines (RCH Melbourne, Safer Care Victoria, Victorian trauma guidance) and, where needed, national or other Australian state sources. No copied past-paper stems.
+## Goal
+100 original, challenging Monash SPA-W final-year clinical reasoning questions. Mixed medicine, surgery, paediatrics, O&G, GP, psychiatry, ethics and EBM. Australian guidance prioritized, Victorian where clinically applicable. Each includes five options and five distinct explanations, four management stages, a safety note, pearl, concrete management pivot and source URL.
 
-Every question:
-- realistic clinical stem requiring one best next action, interpretation or disposition;
-- five plausible options of similar length, without giveaway detail;
-- separate clinically detailed explanations for all five choices, including when wrong answers become appropriate;
-- pearl, diagnostic/management pivot naming both the new trigger and concrete alternative action;
-- four management stages plus safety note and topic-specific guideline URL;
-- one unambiguous correct answer under the cited guidance.
+## 2026-10-24 final draft checkpoint
+- **100 questions**, all sequential and unique.
+- Correct answer keys **A=20 B=20 C=20 D=20 E=20**.
+- Every question has five options, five nonempty authored explanations and exactly four management stages.
+- Option word-count spread no more than eight words for all questions.
+- Compared all stems with **1,490 published questions across Banks 1–16**; after editorial rewrites, maximum stem token Jaccard similarity is 0.4091, no overlap >=0.42. No within-bank stem pairs over 0.42.
+- Rewrote 23 near-duplicate cases to require different clinical decisions and management pivots.
+- Improved source specificity with targeted official RCH, Safer Care Victoria, Queensland Health, Heart Foundation/CSANZ, RACGP, RANZCOG-related, WA Health, SOMANZ and other authoritative resources.
+- **83 unique source URLs.** Some topics use related clinical standards or academic evidence instead of direct state-specific guidance; ongoing link-freshness review remains important.
+- No independent clinician peer review has occurred. Educational content only; not a substitute for local protocols.
 
-## Progress
-- 2026-10-24: Questions 1–5 committed. Five answer positions A–E each represented once. Option-length spreads 1, 1, 1, 3, 4 words.
-- Topics: incomplete Kawasaki disease; postpartum haemorrhage with firm uterus; adrenal crisis; sexually transmitted epididymo-orchitis; complex febrile seizure with focal deficit.
-- Source pages for these cases located through official Australian/Victorian guideline search.
-- **95 questions remain.** Preserve all Banks 1–16 and saved study progress.
-
-## Quality gates before publishing
-1. 100 distinct numbered cases, broadly balanced across specialties and cognitive tasks.
-2. Keys A–E exactly 20 each; options generally within five words of one another (hard maximum eight).
-3. Five meaningful, individually tailored rationale paragraphs, four practical action steps, clear pivot and safety warnings.
-4. Verify every medical claim and direct guideline URL, recording uncertainty where guidance differs.
-5. Compare stem similarity with all existing Banks 1–16, revise near-duplicates and avoid repetitive clinical pivots.
-6. External clinical peer review recommended; do not claim it has occurred.
-7. Only then append Bank 17 to main manifest, merge the final question file and verify GitHub Pages build.
+## Publishing
+Publish by placing only the final `bank17.json` on `main` and appending this entry in `manifest.json`:
+```json
+{"id":17,"name":"Moonflower Garden","emoji":"🌙","description":"100 original advanced final-year cases with close-call options, practical management and Australian clinical guidance","count":100}
+```
+Preserve the exact existing Banks 1–16 and answer state. Verify GitHub Pages workflow success and final main file/manifest before claiming publication.
