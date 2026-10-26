@@ -1,0 +1,858 @@
+[
+  {
+    "n": 1,
+    "type": "PWS",
+    "typeLabel": "Prescription writing",
+    "case": "A 24-year-old with confirmed uncomplicated chlamydia has no pregnancy, allergy or interacting medication. Weight 64 kg, normal renal function.",
+    "task": "Write ONE complete oral antimicrobial prescription, including drug, dose, route, frequency and duration.",
+    "answer": "Doxycycline 100 mg orally twice daily for 7 days.",
+    "rationale": "Doxycycline is a recommended first-line option for uncomplicated chlamydial infection in a non-pregnant adult. Confirm site of infection, pregnancy possibility, allergy and follow-up requirements.",
+    "pivot": "If pregnancy is confirmed, do not use doxycycline; select a pregnancy-appropriate regimen such as azithromycin according to current sexual-health guidance.",
+    "references": [
+      "https://www.safetyandquality.gov.au/our-work/medication-safety",
+      "https://www.tg.org.au/"
+    ],
+    "scoring": 10
+  },
+  {
+    "n": 2,
+    "type": "PWS",
+    "typeLabel": "Prescription writing",
+    "case": "A 46-year-old with established type 2 diabetes has symptomatic hyperglycaemia without ketosis; eGFR 90, no heart or renal failure and is not taking glucose-lowering treatment.",
+    "task": "Write an initial oral metformin prescription for a patient starting treatment.",
+    "answer": "Metformin immediate-release 500 mg orally once daily with the evening meal initially; titrate gradually as tolerated.",
+    "rationale": "A low starting dose reduces gastrointestinal intolerance; review renal function and glycaemic response before titrating, and give sick-day advice.",
+    "pivot": "If eGFR is markedly reduced or acute illness causes dehydration/AKI, review or withhold metformin and choose an appropriate alternative.",
+    "references": [
+      "https://www.safetyandquality.gov.au/our-work/medication-safety",
+      "https://www.tg.org.au/"
+    ],
+    "scoring": 10
+  },
+  {
+    "n": 3,
+    "type": "PWS",
+    "typeLabel": "Prescription writing",
+    "case": "A 28-year-old adult presents to ED with moderate acute asthma exacerbation. He can swallow, has no diabetes or contraindication, and has already received inhaled salbutamol.",
+    "task": "Write ONE oral corticosteroid prescription for the acute episode.",
+    "answer": "Prednisolone 40 mg orally once daily for 5 days.",
+    "rationale": "Short-course oral corticosteroid treatment reduces relapse in moderate/severe asthma exacerbations alongside inhaled bronchodilator treatment and reassessment.",
+    "pivot": "If life-threatening features emerge, do not rely on an oral course alone; activate emergency escalation and intensive bronchodilator/oxygen care.",
+    "references": [
+      "https://www.safetyandquality.gov.au/our-work/medication-safety",
+      "https://www.tg.org.au/"
+    ],
+    "scoring": 10
+  },
+  {
+    "n": 4,
+    "type": "PWS",
+    "typeLabel": "Prescription writing",
+    "case": "A 72-year-old postoperative patient has mild pain despite regular paracetamol, no renal impairment, peptic ulcer or allergy, and is eating normally.",
+    "task": "Write an appropriate regular oral paracetamol prescription, avoiding overdose.",
+    "answer": "Paracetamol 1 g orally every 6 hours regularly, maximum 4 g in 24 hours; review lower limits in frailty or low body weight.",
+    "rationale": "A complete order states dose, route, frequency and maximum daily exposure; check combination analgesics before charting.",
+    "pivot": "For body weight under 50 kg, liver disease or significant frailty, reduce the maximum dose according to local policy.",
+    "references": [
+      "https://www.safetyandquality.gov.au/our-work/medication-safety",
+      "https://www.tg.org.au/"
+    ],
+    "scoring": 10
+  },
+  {
+    "n": 5,
+    "type": "PWS",
+    "typeLabel": "Prescription writing",
+    "case": "A 63-year-old with acute cardiogenic pulmonary oedema is hypertensive, has bilateral crackles, normal potassium and no sulfonamide-type loop diuretic reaction. A senior has authorised IV loop diuresis.",
+    "task": "Write ONE initial intravenous loop-diuretic prescription.",
+    "answer": "Furosemide 40 mg IV once now; reassess urine output, blood pressure, renal function and potassium.",
+    "rationale": "IV furosemide can relieve congestion but must be accompanied by treatment of hypoxia, precipitant and close reassessment; dose depends on prior diuretic exposure.",
+    "pivot": "If hypotension or cardiogenic shock is present, urgently escalate and reconsider diuresis strategy before giving empirically.",
+    "references": [
+      "https://www.safetyandquality.gov.au/our-work/medication-safety",
+      "https://www.tg.org.au/"
+    ],
+    "scoring": 10
+  },
+  {
+    "n": 6,
+    "type": "PWS",
+    "typeLabel": "Prescription writing",
+    "case": "A healthy 32-year-old has a documented anaphylactic reaction after peanut exposure with wheeze, stridor and hypotension. A nurse asks you to chart the immediate medicine.",
+    "task": "Write the emergency intramuscular adrenaline prescription for an adult.",
+    "answer": "Adrenaline 500 micrograms IM (0.5 mL of 1 mg/mL [1:1000]) into the anterolateral thigh immediately; repeat after 5 minutes if required.",
+    "rationale": "IM adrenaline is first-line; use the correct concentration, route and location. Activate emergency response, position safely and provide oxygen/fluids as appropriate.",
+    "pivot": "If cardiac arrest occurs, transition to the resuscitation algorithm; IV adrenaline is not substituted for IM dosing without an appropriate monitored expert protocol.",
+    "references": [
+      "https://www.safetyandquality.gov.au/our-work/medication-safety",
+      "https://www.tg.org.au/"
+    ],
+    "scoring": 10
+  },
+  {
+    "n": 7,
+    "type": "PWS",
+    "typeLabel": "Prescription writing",
+    "case": "A 30-year-old at 29 weeks' gestation has uncomplicated iron-deficiency anaemia with Hb 103 g/L and ferritin 8 micrograms/L. She tolerates oral medicines.",
+    "task": "Write an initial oral iron prescription including elemental iron information.",
+    "answer": "Ferrous sulfate preparation supplying about 60–100 mg elemental iron orally once daily; specify local product/tablet strength and reassess Hb.",
+    "rationale": "Products contain different elemental iron amounts; verify the selected product rather than prescribing an ambiguous number of tablets.",
+    "pivot": "If severe symptomatic anaemia, poor response or oral intolerance occurs, reassess diagnosis and consider IV iron in appropriate pregnancy care.",
+    "references": [
+      "https://www.safetyandquality.gov.au/our-work/medication-safety",
+      "https://www.tg.org.au/"
+    ],
+    "scoring": 10
+  },
+  {
+    "n": 8,
+    "type": "PWS",
+    "typeLabel": "Prescription writing",
+    "case": "A 69-year-old with a proximal DVT has no active bleeding, normal renal function and no antiphospholipid syndrome. The decision is to use apixaban.",
+    "task": "Write the initial apixaban regimen, including the dose change.",
+    "answer": "Apixaban 10 mg orally twice daily for 7 days, then 5 mg orally twice daily; document intended duration and review.",
+    "rationale": "The higher initial dose is a treatment phase, not a maintenance error. Confirm interaction, bleeding and kidney considerations.",
+    "pivot": "With haemodynamic instability from suspected massive PE, escalate urgently; oral anticoagulation alone may be insufficient.",
+    "references": [
+      "https://www.safetyandquality.gov.au/our-work/medication-safety",
+      "https://www.tg.org.au/"
+    ],
+    "scoring": 10
+  },
+  {
+    "n": 9,
+    "type": "REV",
+    "typeLabel": "Prescription review",
+    "case": "An 81-year-old with eGFR 18 takes metformin 1 g twice daily, ramipril 10 mg daily and amlodipine 5 mg daily. They are admitted with vomiting and AKI.",
+    "task": "Identify the most urgent medicine-related problem and action.",
+    "answer": "Withhold metformin during AKI and significant renal impairment; review renal function, lactate if clinically indicated, and other sick-day medicines.",
+    "rationale": "Accumulation raises metformin-associated lactic acidosis risk during acute renal dysfunction; do not continue full dose uncritically.",
+    "pivot": "If renal function recovers, reassess eligibility and restart only at an appropriate dose, not automatically.",
+    "references": [
+      "https://www.safetyandquality.gov.au/our-work/medication-safety"
+    ],
+    "scoring": 4
+  },
+  {
+    "n": 10,
+    "type": "REV",
+    "typeLabel": "Prescription review",
+    "case": "A 79-year-old with AF takes apixaban 5 mg twice daily and was newly prescribed ibuprofen 400 mg three times daily for osteoarthritis.",
+    "task": "Identify the medication-related hazard and a safer plan.",
+    "answer": "Avoid routine ibuprofen with apixaban because bleeding risk rises; assess pain and use alternatives such as topical therapy and non-drug measures.",
+    "rationale": "Combined NSAID and anticoagulant exposure increases gastrointestinal and other bleeding; gastroprotection cannot eliminate the risk.",
+    "pivot": "If an NSAID is unavoidable, seek senior/pharmacy review, minimise exposure and consider gastroprotection with monitoring.",
+    "references": [
+      "https://www.safetyandquality.gov.au/our-work/medication-safety"
+    ],
+    "scoring": 4
+  },
+  {
+    "n": 11,
+    "type": "REV",
+    "typeLabel": "Prescription review",
+    "case": "A patient takes lithium 800 mg nightly. A prescriber adds hydrochlorothiazide 25 mg daily for hypertension without a lithium-level plan.",
+    "task": "Identify the prescribing error and appropriate response.",
+    "answer": "Flag the lithium–thiazide interaction; do not start routinely without specialist review and a lithium/renal monitoring plan.",
+    "rationale": "Thiazides can increase lithium concentrations and toxicity. Consider a different blood-pressure medicine.",
+    "pivot": "If tremor, vomiting, ataxia or confusion develops, withhold lithium and seek urgent toxicity assessment.",
+    "references": [
+      "https://www.safetyandquality.gov.au/our-work/medication-safety"
+    ],
+    "scoring": 4
+  },
+  {
+    "n": 12,
+    "type": "REV",
+    "typeLabel": "Prescription review",
+    "case": "A 76-year-old with chronic kidney disease is charted gentamicin every 8 hours for presumed sepsis without a weight, kidney function or drug-level plan.",
+    "task": "Identify the most important chart problem.",
+    "answer": "Withhold unsafe automatic repeat dosing pending weight-based, renal-adjusted aminoglycoside advice and therapeutic drug monitoring.",
+    "rationale": "Gentamicin is high-risk for nephrotoxicity/ototoxicity; empiric regimens and intervals depend on indication and renal function.",
+    "pivot": "In life-threatening sepsis, do not delay effective antibiotics: obtain urgent senior/pharmacist input for a safe initial dose.",
+    "references": [
+      "https://www.safetyandquality.gov.au/our-work/medication-safety"
+    ],
+    "scoring": 4
+  },
+  {
+    "n": 13,
+    "type": "REV",
+    "typeLabel": "Prescription review",
+    "case": "A 67-year-old discharged after a coronary stent has aspirin, clopidogrel and an inadvertently retained regular naproxen order.",
+    "task": "What prescription should be challenged and why?",
+    "answer": "Challenge regular naproxen because dual antiplatelet therapy plus NSAID substantially raises bleeding risk; assess alternatives.",
+    "rationale": "Risk mitigation should address unnecessary NSAIDs and consider gastrointestinal protection according to risk.",
+    "pivot": "If there is active gastrointestinal bleeding, urgently assess resuscitation and antithrombotic decisions with the appropriate specialists.",
+    "references": [
+      "https://www.safetyandquality.gov.au/our-work/medication-safety"
+    ],
+    "scoring": 4
+  },
+  {
+    "n": 14,
+    "type": "REV",
+    "typeLabel": "Prescription review",
+    "case": "An inpatient receives long-acting insulin glargine 24 units nightly. The chart also includes a second duplicated glargine order for 24 units nightly.",
+    "task": "Identify the chart error and immediate action.",
+    "answer": "Cancel/clarify the duplicate glargine order before administration and check actual doses given and bedside glucose.",
+    "rationale": "Duplicate basal insulin can cause prolonged hypoglycaemia. Verify one active order and document handover.",
+    "pivot": "If both doses were administered, institute frequent glucose surveillance and manage impending hypoglycaemia promptly.",
+    "references": [
+      "https://www.safetyandquality.gov.au/our-work/medication-safety"
+    ],
+    "scoring": 4
+  },
+  {
+    "n": 15,
+    "type": "REV",
+    "typeLabel": "Prescription review",
+    "case": "A 41-year-old taking methotrexate 15 mg once weekly for rheumatoid arthritis has been prescribed 15 mg daily on admission.",
+    "task": "What is the most important correction?",
+    "answer": "Stop the daily methotrexate order and verify the intended once-weekly schedule with the treating service.",
+    "rationale": "Daily dosing of low-dose methotrexate can cause life-threatening marrow suppression and mucositis; check folic acid and drug interactions.",
+    "pivot": "If extra doses have already been taken, urgently assess FBC, renal/liver tests and specialist toxicology advice, including possible folinic acid.",
+    "references": [
+      "https://www.safetyandquality.gov.au/our-work/medication-safety"
+    ],
+    "scoring": 4
+  },
+  {
+    "n": 16,
+    "type": "REV",
+    "typeLabel": "Prescription review",
+    "case": "A 25-year-old with a documented immediate penicillin anaphylaxis is prescribed IV flucloxacillin for cellulitis.",
+    "task": "Identify the problem and propose an action.",
+    "answer": "Do not administer flucloxacillin until allergy is urgently clarified; select an appropriate alternative with local guidance.",
+    "rationale": "Immediate-type severe beta-lactam allergy is a major safety issue and requires explicit communication across the medication chart.",
+    "pivot": "If the history is only a non-allergic side effect, reassess the label rather than permanently excluding all beta-lactams.",
+    "references": [
+      "https://www.safetyandquality.gov.au/our-work/medication-safety"
+    ],
+    "scoring": 4
+  },
+  {
+    "n": 17,
+    "type": "MAN",
+    "typeLabel": "Planning management",
+    "case": "An adult with acute pyelonephritis has fever, flank pain and vomiting but stable blood pressure. Urinalysis supports infection; no prior cultures are available.",
+    "task": "Outline immediate antibiotic management decisions, including investigations and review.",
+    "answer": "Send urine culture before antibiotics when feasible; give empiric therapy guided by local resistance/severity and inability to tolerate oral medication, then narrow to culture.",
+    "rationale": "Pyelonephritis needs systemic therapy; a urine-only agent such as nitrofurantoin is inadequate for renal parenchymal infection.",
+    "pivot": "If septic shock, obstruction or deterioration develops, resuscitate, provide prompt IV antibiotics and seek urgent source control.",
+    "references": [
+      "https://www.safetyandquality.gov.au/our-work/medication-safety",
+      "https://www.tg.org.au/"
+    ],
+    "scoring": 2
+  },
+  {
+    "n": 18,
+    "type": "MAN",
+    "typeLabel": "Planning management",
+    "case": "A 79-year-old with community-acquired pneumonia is febrile, newly confused, RR 32, BP 86/50 and SpO2 89% room air.",
+    "task": "State the priority antimicrobial and supportive management sequence.",
+    "answer": "Recognise sepsis/severe pneumonia; provide oxygen, cultures if not delaying treatment, prompt IV antibiotics per local guideline, resuscitation and escalation.",
+    "rationale": "Instability overrides outpatient oral-antibiotic pathways. Reassess lactate, fluids and respiratory support.",
+    "pivot": "If allergy or prior resistant organisms are known, choose an alternative empiric regimen and involve infectious diseases.",
+    "references": [
+      "https://www.safetyandquality.gov.au/our-work/medication-safety",
+      "https://www.tg.org.au/"
+    ],
+    "scoring": 2
+  },
+  {
+    "n": 19,
+    "type": "MAN",
+    "typeLabel": "Planning management",
+    "case": "A 58-year-old with atrial fibrillation on warfarin presents with a major intracranial haemorrhage and INR 4.8.",
+    "task": "Plan the urgent medication-related response.",
+    "answer": "Stop warfarin, activate major bleeding/neurosurgical pathways, give IV vitamin K and four-factor prothrombin complex concentrate per protocol.",
+    "rationale": "Vitamin K alone acts too slowly for life-threatening warfarin-associated bleeding; reversal and resuscitation are time-critical.",
+    "pivot": "If bleeding is non-major, reversal intensity differs; do not use major-haemorrhage doses reflexively.",
+    "references": [
+      "https://www.safetyandquality.gov.au/our-work/medication-safety",
+      "https://www.tg.org.au/"
+    ],
+    "scoring": 2
+  },
+  {
+    "n": 20,
+    "type": "MAN",
+    "typeLabel": "Planning management",
+    "case": "A patient with type 1 diabetes is nil by mouth for emergency surgery. A junior proposes withholding all insulin until eating.",
+    "task": "Plan an appropriate perioperative insulin approach.",
+    "answer": "Continue basal insulin in an adjusted plan, monitor glucose and ketones, and use a supervised variable-rate infusion if indicated with dextrose/electrolyte management.",
+    "rationale": "Type 1 diabetes requires background insulin to prevent ketoacidosis even when fasting.",
+    "pivot": "If ketones rise or acidosis develops, manage as possible DKA with dedicated protocol and senior input.",
+    "references": [
+      "https://www.safetyandquality.gov.au/our-work/medication-safety",
+      "https://www.tg.org.au/"
+    ],
+    "scoring": 2
+  },
+  {
+    "n": 21,
+    "type": "MAN",
+    "typeLabel": "Planning management",
+    "case": "A pregnant patient at 34 weeks has sustained severe hypertension 170/115 with headache and visual changes.",
+    "task": "Outline immediate antihypertensive and obstetric priorities.",
+    "answer": "Call senior obstetric help, treat severe BP promptly with protocol agents, evaluate pre-eclampsia, consider magnesium sulfate and plan fetal assessment/delivery.",
+    "rationale": "Do not defer treatment while waiting for proteinuria or blood results; maternal stroke and seizure prevention are urgent.",
+    "pivot": "If eclampsia occurs, manage airway and seizures immediately with magnesium sulfate per protocol and expedited delivery planning.",
+    "references": [
+      "https://www.safetyandquality.gov.au/our-work/medication-safety",
+      "https://www.tg.org.au/"
+    ],
+    "scoring": 2
+  },
+  {
+    "n": 22,
+    "type": "MAN",
+    "typeLabel": "Planning management",
+    "case": "A patient with suspected opioid overdose is unconscious, RR 5/min, pinpoint pupils and oxygen saturation 80%.",
+    "task": "Outline immediate medicine and airway management.",
+    "answer": "Call resuscitation team, support ventilation and oxygenation, administer titrated naloxone per protocol and reassess for recurrent sedation.",
+    "rationale": "Naloxone duration can be shorter than the opioid; airway support precedes reliance on antidote alone.",
+    "pivot": "If long-acting opioids are involved, repeated naloxone or infusion and prolonged monitoring may be necessary.",
+    "references": [
+      "https://www.safetyandquality.gov.au/our-work/medication-safety",
+      "https://www.tg.org.au/"
+    ],
+    "scoring": 2
+  },
+  {
+    "n": 23,
+    "type": "MAN",
+    "typeLabel": "Planning management",
+    "case": "A 64-year-old has potassium 6.8 mmol/L with broad QRS complexes while taking spironolactone and an ACE inhibitor.",
+    "task": "State the immediate sequence of medication-related management.",
+    "answer": "Urgent ECG-monitored emergency response; give IV calcium for ECG changes, shift potassium with insulin/dextrose and other protocol measures, remove potassium and withhold contributors.",
+    "rationale": "Cardiac membrane stabilisation is immediate; insulin shifts potassium but does not remove it from the body.",
+    "pivot": "If refractory, severe renal failure or ongoing ECG changes, involve renal/critical care for definitive potassium removal.",
+    "references": [
+      "https://www.safetyandquality.gov.au/our-work/medication-safety",
+      "https://www.tg.org.au/"
+    ],
+    "scoring": 2
+  },
+  {
+    "n": 24,
+    "type": "MAN",
+    "typeLabel": "Planning management",
+    "case": "A patient with acute severe ulcerative colitis has ten bloody stools/day and systemic toxicity; regular oral mesalazine has not controlled symptoms.",
+    "task": "Outline early medication and monitoring steps.",
+    "answer": "Admit, exclude infection including C. difficile, give appropriate IV corticosteroid under gastroenterology care, prescribe VTE prophylaxis if safe and monitor response.",
+    "rationale": "Severe colitis can deteriorate to toxic megacolon and requires multidisciplinary assessment, not simply escalation of oral mesalazine.",
+    "pivot": "If steroid response is inadequate after a short supervised trial, urgent rescue therapy or surgery must be considered.",
+    "references": [
+      "https://www.safetyandquality.gov.au/our-work/medication-safety",
+      "https://www.tg.org.au/"
+    ],
+    "scoring": 2
+  },
+  {
+    "n": 25,
+    "type": "COM",
+    "typeLabel": "Patient communication",
+    "case": "A 70-year-old is starting warfarin for a mechanical valve and asks what matters most at home.",
+    "task": "Provide key counselling about dosing, INR, bleeding, interactions and missed doses.",
+    "answer": "Take as charted at a consistent time; attend INR tests; report bleeding; check new medicines/herbals; keep vitamin K intake consistent; do not double missed doses.",
+    "rationale": "Warfarin requires monitoring and interaction counselling; the target INR is valve-specific.",
+    "pivot": "If serious bleeding or head trauma occurs, seek urgent assessment regardless of apparent symptom severity.",
+    "references": [
+      "https://www.nps.org.au/"
+    ],
+    "scoring": 2
+  },
+  {
+    "n": 26,
+    "type": "COM",
+    "typeLabel": "Patient communication",
+    "case": "A 26-year-old newly prescribed an inhaled corticosteroid for asthma is unsure how to use it.",
+    "task": "Explain technique-related safety and adherence counselling.",
+    "answer": "Demonstrate device-specific technique and teach-back, use regularly as prescribed, rinse mouth after use, review reliever plan and written asthma action plan.",
+    "rationale": "Technique errors and non-adherence often cause poor control; demonstrate rather than just supply a leaflet.",
+    "pivot": "If worsening breathlessness or reliever dependence develops, arrange urgent review and reassess treatment intensity.",
+    "references": [
+      "https://www.nps.org.au/"
+    ],
+    "scoring": 2
+  },
+  {
+    "n": 27,
+    "type": "COM",
+    "typeLabel": "Patient communication",
+    "case": "A patient is discharged on apixaban for a provoked DVT and asks about missed doses and bleeding.",
+    "task": "Counsel on adherence, precautions and red flags.",
+    "answer": "Take twice daily as prescribed; follow product-specific missed-dose advice without doubling; avoid OTC NSAIDs without review; seek urgent help for serious bleeding or head injury.",
+    "rationale": "DOACs have anticoagulant effect without routine INR checks, but renal function, adherence and interactions still matter.",
+    "pivot": "If pregnancy, new renal impairment or major surgery arises, discuss anticoagulant substitution/interruption with the treating team.",
+    "references": [
+      "https://www.nps.org.au/"
+    ],
+    "scoring": 2
+  },
+  {
+    "n": 28,
+    "type": "COM",
+    "typeLabel": "Patient communication",
+    "case": "A person starting oral doxycycline for acne reports that tablets sometimes stick in the throat.",
+    "task": "Explain safe administration and important adverse effects.",
+    "answer": "Swallow with a full glass of water upright, avoid lying down shortly afterwards, discuss photosensitivity, separate from interacting antacids/iron and review pregnancy risk.",
+    "rationale": "Oesophagitis is preventable by administration advice; absorption may be affected by cations.",
+    "pivot": "If severe painful swallowing or suspected pregnancy occurs, stop and seek prompt prescribing review.",
+    "references": [
+      "https://www.nps.org.au/"
+    ],
+    "scoring": 2
+  },
+  {
+    "n": 29,
+    "type": "COM",
+    "typeLabel": "Patient communication",
+    "case": "A 55-year-old is starting oral prednisolone 40 mg daily for a 5-day asthma flare.",
+    "task": "Explain key use and safety instructions.",
+    "answer": "Take in the morning with food if tolerated, follow the written duration, monitor for mood/glucose effects, continue inhaled treatment and seek help for deterioration.",
+    "rationale": "A brief course usually does not require a taper in a steroid-naïve person, but repeated/prolonged exposure changes the plan.",
+    "pivot": "If frequent bursts or long-term steroids have been used, reassess adrenal suppression and taper needs with clinician.",
+    "references": [
+      "https://www.nps.org.au/"
+    ],
+    "scoring": 2
+  },
+  {
+    "n": 30,
+    "type": "COM",
+    "typeLabel": "Patient communication",
+    "case": "A patient with type 2 diabetes newly prescribed an SGLT2 inhibitor asks what to do when unwell.",
+    "task": "Give practical sick-day and adverse-effect advice.",
+    "answer": "Explain genital infection symptoms, hydration, temporary withholding during acute illness/fasting and urgent evaluation for nausea, abdominal pain or rapid breathing even with normal glucose.",
+    "rationale": "SGLT2 inhibitors can cause euglycaemic ketoacidosis, particularly around surgery, starvation and illness.",
+    "pivot": "Before major surgery or prolonged fasting, withhold according to local perioperative guidance and restart only when well and eating.",
+    "references": [
+      "https://www.nps.org.au/"
+    ],
+    "scoring": 2
+  },
+  {
+    "n": 31,
+    "type": "CAL",
+    "typeLabel": "Calculation skills",
+    "case": "An infusion contains 1 g vancomycin in 250 mL. The order is to infuse the full dose over 120 minutes.",
+    "task": "Calculate the infusion pump rate in mL/hour. Enter a number.",
+    "answer": "125",
+    "rationale": "250 mL divided by 2 hours = 125 mL/hour. Check local infusion-rate limits and concentration policies.",
+    "pivot": "If an infusion reaction occurs, stop/slow according to protocol and assess the patient.",
+    "references": [
+      "https://www.safetyandquality.gov.au/our-work/medication-safety"
+    ],
+    "scoring": 2
+  },
+  {
+    "n": 32,
+    "type": "CAL",
+    "typeLabel": "Calculation skills",
+    "case": "An oral liquid contains 125 mg amoxicillin per 5 mL. A prescribed dose is 375 mg.",
+    "task": "Calculate how many mL should be given for one dose.",
+    "answer": "15",
+    "rationale": "125 mg/5 mL = 25 mg/mL. 375 mg ÷ 25 mg/mL = 15 mL. Verify product concentration.",
+    "pivot": "If the bottle is 250 mg/5 mL, only 7.5 mL is needed; always recheck concentration.",
+    "references": [
+      "https://www.safetyandquality.gov.au/our-work/medication-safety"
+    ],
+    "scoring": 2
+  },
+  {
+    "n": 33,
+    "type": "CAL",
+    "typeLabel": "Calculation skills",
+    "case": "An adult weighs 72 kg. An infusion is ordered at 0.1 microgram/kg/min of a medicine supplied as 4 mg in 50 mL.",
+    "task": "Calculate the rate in mL/hour. Round to one decimal place.",
+    "answer": "5.4",
+    "rationale": "0.1 × 72 = 7.2 microgram/min; ×60 = 432 microgram/hour. 4 mg/50 mL = 80 microgram/mL; 432/80 = 5.4 mL/hour.",
+    "pivot": "If the prepared concentration differs, recompute before programming the pump.",
+    "references": [
+      "https://www.safetyandquality.gov.au/our-work/medication-safety"
+    ],
+    "scoring": 2
+  },
+  {
+    "n": 34,
+    "type": "CAL",
+    "typeLabel": "Calculation skills",
+    "case": "A patient is prescribed 40 mmol potassium chloride over 4 hours in a monitored setting, prepared in a total volume of 1000 mL.",
+    "task": "Calculate the pump rate in mL/hour.",
+    "answer": "250",
+    "rationale": "1000 mL ÷ 4 hours = 250 mL/hour. This tests volume/time, not endorsement of the concentration or route; local potassium limits and line requirements must be checked.",
+    "pivot": "If peripheral concentration/rate exceeds policy, use an approved preparation/route and senior advice.",
+    "references": [
+      "https://www.safetyandquality.gov.au/our-work/medication-safety"
+    ],
+    "scoring": 2
+  },
+  {
+    "n": 35,
+    "type": "CAL",
+    "typeLabel": "Calculation skills",
+    "case": "A medicine is prescribed 15 mg/kg orally for a child weighing 18 kg. Suspension strength is 250 mg/5 mL.",
+    "task": "Calculate the volume in mL per dose. Round to one decimal place.",
+    "answer": "5.4",
+    "rationale": "15 × 18 = 270 mg; 250 mg/5 mL = 50 mg/mL; 270/50 = 5.4 mL. Verify indication and maximum dose.",
+    "pivot": "If renal impairment or a maximum adult dose applies, use the relevant adjusted dose first.",
+    "references": [
+      "https://www.safetyandquality.gov.au/our-work/medication-safety"
+    ],
+    "scoring": 2
+  },
+  {
+    "n": 36,
+    "type": "CAL",
+    "typeLabel": "Calculation skills",
+    "case": "A 90 mg dose of medicine is required. Available tablets contain 30 mg each.",
+    "task": "How many tablets are needed for one dose?",
+    "answer": "3",
+    "rationale": "90 mg ÷ 30 mg/tablet = 3 tablets. Check formulation and whether tablets are suitable for administration.",
+    "pivot": "If the product is modified-release, do not crush or split without product-specific authority.",
+    "references": [
+      "https://www.safetyandquality.gov.au/our-work/medication-safety"
+    ],
+    "scoring": 2
+  },
+  {
+    "n": 37,
+    "type": "CAL",
+    "typeLabel": "Calculation skills",
+    "case": "A continuous infusion contains 500 mg in 100 mL. The target dose is 25 mg/hour.",
+    "task": "What rate in mL/hour is required?",
+    "answer": "5",
+    "rationale": "500/100 = 5 mg/mL; 25 mg/hour ÷ 5 mg/mL = 5 mL/hour.",
+    "pivot": "If the concentration changes during bag replacement, reprogram and independently check the pump.",
+    "references": [
+      "https://www.safetyandquality.gov.au/our-work/medication-safety"
+    ],
+    "scoring": 2
+  },
+  {
+    "n": 38,
+    "type": "CAL",
+    "typeLabel": "Calculation skills",
+    "case": "An antibiotic course requires one 500 mg capsule three times a day for seven days.",
+    "task": "How many capsules should be supplied?",
+    "answer": "21",
+    "rationale": "3 capsules/day × 7 days = 21 capsules. Ensure the drug and frequency are clinically appropriate for the specified infection.",
+    "pivot": "If therapy changes after cultures, amend quantity and counsel on the revised course.",
+    "references": [
+      "https://www.safetyandquality.gov.au/our-work/medication-safety"
+    ],
+    "scoring": 2
+  },
+  {
+    "n": 39,
+    "type": "ADR",
+    "typeLabel": "Adverse reactions",
+    "case": "A 68-year-old started trimethoprim while taking perindopril and spironolactone. Three days later potassium is 6.5 mmol/L.",
+    "task": "Identify the likely drug-related cause and immediate response.",
+    "answer": "Trimethoprim can contribute to severe hyperkalaemia, amplified by ACE inhibitor and spironolactone; stop/review implicated medicines and treat hyperkalaemia urgently.",
+    "rationale": "Trimethoprim has an amiloride-like potassium-retaining effect. Check ECG, renal function and alternative antibiotic.",
+    "pivot": "If ECG changes occur, give urgent IV calcium according to the emergency hyperkalaemia protocol.",
+    "references": [
+      "https://www.tga.gov.au/safety"
+    ],
+    "scoring": 2
+  },
+  {
+    "n": 40,
+    "type": "ADR",
+    "typeLabel": "Adverse reactions",
+    "case": "After an IV antibiotic begins, a 38-year-old develops widespread urticaria, wheeze and hypotension.",
+    "task": "Identify the syndrome and first-line medicine.",
+    "answer": "Anaphylaxis: stop the trigger and give IM adrenaline immediately, with airway/oxygen/fluids and emergency help.",
+    "rationale": "Do not wait for rash progression or try antihistamines as sole first-line treatment.",
+    "pivot": "If repeated IM adrenaline is insufficient, escalate to an expert-led refractory anaphylaxis pathway.",
+    "references": [
+      "https://www.tga.gov.au/safety"
+    ],
+    "scoring": 2
+  },
+  {
+    "n": 41,
+    "type": "ADR",
+    "typeLabel": "Adverse reactions",
+    "case": "A patient taking sertraline receives tramadol and develops hyperreflexia, clonus, diaphoresis and fever.",
+    "task": "Identify the likely reaction and management.",
+    "answer": "Serotonin toxicity: cease serotonergic triggers, assess severity and provide supportive care with urgent medical review.",
+    "rationale": "Clonus and hyperreflexia distinguish serotonin toxicity from many alternatives; medication interactions are central.",
+    "pivot": "If severe hyperthermia or rigidity occurs, escalate to critical-care management.",
+    "references": [
+      "https://www.tga.gov.au/safety"
+    ],
+    "scoring": 2
+  },
+  {
+    "n": 42,
+    "type": "ADR",
+    "typeLabel": "Adverse reactions",
+    "case": "A 74-year-old with Parkinson disease takes metoclopramide for nausea and develops marked rigidity and worsened tremor.",
+    "task": "Identify the likely medicine problem and substitute approach.",
+    "answer": "Metoclopramide's dopamine antagonism can worsen Parkinsonism; stop it and choose a safer antiemetic after specialist/pharmacy review.",
+    "rationale": "Avoid dopamine-blocking antiemetics where possible in Parkinson disease.",
+    "pivot": "If fever, severe rigidity and autonomic instability develop, assess urgently for neuroleptic malignant syndrome or related complications.",
+    "references": [
+      "https://www.tga.gov.au/safety"
+    ],
+    "scoring": 2
+  },
+  {
+    "n": 43,
+    "type": "ADR",
+    "typeLabel": "Adverse reactions",
+    "case": "A 64-year-old on atorvastatin develops severe proximal myalgia and dark urine, with CK 12,000 U/L after clarithromycin is added.",
+    "task": "Identify the likely harm and immediate plan.",
+    "answer": "Suspect statin-associated rhabdomyolysis potentiated by drug interaction; stop offending agents, assess renal function and manage fluids/complications.",
+    "rationale": "Macrolides can inhibit metabolism of some statins and raise exposure; monitor for AKI and hyperkalaemia.",
+    "pivot": "If hyperkalaemia or oliguria occurs, urgent renal/emergency escalation is required.",
+    "references": [
+      "https://www.tga.gov.au/safety"
+    ],
+    "scoring": 2
+  },
+  {
+    "n": 44,
+    "type": "ADR",
+    "typeLabel": "Adverse reactions",
+    "case": "A woman taking an ACE inhibitor develops sudden lip and tongue swelling without itch, wheeze or urticaria.",
+    "task": "Identify the adverse effect and initial action.",
+    "answer": "ACE inhibitor–related angioedema: stop ACE inhibitor permanently, assess airway immediately and get senior emergency help.",
+    "rationale": "Bradykinin-mediated angioedema may respond poorly to routine allergy medications; airway preparation is paramount.",
+    "pivot": "If airway compromise is imminent, expert airway management takes priority over medication trials.",
+    "references": [
+      "https://www.tga.gov.au/safety"
+    ],
+    "scoring": 2
+  },
+  {
+    "n": 45,
+    "type": "ADR",
+    "typeLabel": "Adverse reactions",
+    "case": "A 55-year-old receives haloperidol for agitation, then develops sustained painful upward eye deviation but remains alert and afebrile.",
+    "task": "Identify the adverse drug effect and treatment principle.",
+    "answer": "Acute dystonic reaction (oculogyric crisis): stop/review haloperidol and give an appropriate anticholinergic agent per protocol.",
+    "rationale": "Acute dopamine blockade can cause dystonia; distinguish from seizure and other neurological pathology.",
+    "pivot": "If reduced consciousness, high fever or marked autonomic changes occur, broaden assessment for serious syndromes.",
+    "references": [
+      "https://www.tga.gov.au/safety"
+    ],
+    "scoring": 2
+  },
+  {
+    "n": 46,
+    "type": "ADR",
+    "typeLabel": "Adverse reactions",
+    "case": "After a course of broad-spectrum antibiotics, an 82-year-old develops profuse watery diarrhoea, abdominal pain and leukocytosis.",
+    "task": "Identify the suspected adverse complication and management.",
+    "answer": "Suspect Clostridioides difficile infection: isolate, test appropriate stool sample, review inciting antibiotics and treat per local severity guideline.",
+    "rationale": "Avoid reflexive antidiarrhoeals in severe infectious colitis; assess dehydration, renal function and sepsis.",
+    "pivot": "If ileus, shock or toxic megacolon features develop, escalate urgently to surgical/critical care input.",
+    "references": [
+      "https://www.tga.gov.au/safety"
+    ],
+    "scoring": 2
+  },
+  {
+    "n": 47,
+    "type": "MON",
+    "typeLabel": "Drug monitoring",
+    "case": "A 75-year-old starts ramipril for heart failure. Baseline creatinine and potassium are normal.",
+    "task": "Which parameters should be rechecked shortly after initiation or dose increase?",
+    "answer": "Check blood pressure, creatinine/eGFR and serum potassium, usually within about 1–2 weeks or sooner if high risk.",
+    "rationale": "ACE inhibitors may raise creatinine and potassium; thresholds for adjustment depend on magnitude and clinical context.",
+    "pivot": "If acute hypotension, dehydration or significant hyperkalaemia occurs, reassess immediately rather than waiting for routine bloods.",
+    "references": [
+      "https://www.nps.org.au/"
+    ],
+    "scoring": 2
+  },
+  {
+    "n": 48,
+    "type": "MON",
+    "typeLabel": "Drug monitoring",
+    "case": "A patient with bipolar disorder starts lithium maintenance treatment.",
+    "task": "Specify key drug monitoring and clinical safety checks.",
+    "answer": "Measure trough lithium concentration at appropriate steady state and after dose changes; monitor renal function, thyroid function, calcium, interactions, hydration and toxicity symptoms.",
+    "rationale": "Lithium has a narrow therapeutic index; level timing and target depend on treatment context.",
+    "pivot": "If toxicity is suspected, withhold lithium and urgently check level, UEC and clinical status.",
+    "references": [
+      "https://www.nps.org.au/"
+    ],
+    "scoring": 2
+  },
+  {
+    "n": 49,
+    "type": "MON",
+    "typeLabel": "Drug monitoring",
+    "case": "A 66-year-old begins warfarin after a mechanical valve replacement.",
+    "task": "Describe treatment monitoring and how targets are chosen.",
+    "answer": "Monitor INR frequently during initiation and adjust dosing; establish valve-specific target INR and check bleeding, medicines and diet changes.",
+    "rationale": "The target varies by valve type, location and risk factors; never assume a universal INR range.",
+    "pivot": "If INR is very high or there is bleeding, follow a severity-based reversal protocol.",
+    "references": [
+      "https://www.nps.org.au/"
+    ],
+    "scoring": 2
+  },
+  {
+    "n": 50,
+    "type": "MON",
+    "typeLabel": "Drug monitoring",
+    "case": "A 68-year-old is prescribed gentamicin for serious Gram-negative infection.",
+    "task": "What should be monitored to minimise preventable harm?",
+    "answer": "Monitor renal function, dose timing, indicated gentamicin levels using local protocol, hearing/vestibular symptoms and clinical response.",
+    "rationale": "The exact sampling time depends on local dosing strategy; a single generic 'trough' rule is inadequate.",
+    "pivot": "With AKI or elevated drug concentrations, hold further dosing until reviewed.",
+    "references": [
+      "https://www.nps.org.au/"
+    ],
+    "scoring": 2
+  },
+  {
+    "n": 51,
+    "type": "MON",
+    "typeLabel": "Drug monitoring",
+    "case": "A 35-year-old with rheumatoid arthritis starts low-dose weekly methotrexate.",
+    "task": "What routine safety monitoring and counselling is essential?",
+    "answer": "Monitor FBC, liver enzymes and renal function regularly, ensure weekly dosing and folic acid, check interactions and pregnancy plans.",
+    "rationale": "Myelosuppression and hepatotoxicity risk increase with renal impairment and interacting drugs.",
+    "pivot": "If mouth ulcers, fever or bruising develop, suspend treatment and obtain urgent blood tests.",
+    "references": [
+      "https://www.nps.org.au/"
+    ],
+    "scoring": 2
+  },
+  {
+    "n": 52,
+    "type": "MON",
+    "typeLabel": "Drug monitoring",
+    "case": "A patient with severe hypothyroidism starts levothyroxine replacement.",
+    "task": "What measure is used to guide dose adjustment, and when is it typically reassessed?",
+    "answer": "Recheck TSH after an appropriate steady-state interval, usually about 6–8 weeks, plus symptoms and adherence; free T4 may help in specific situations.",
+    "rationale": "TSH changes slowly after dose changes; daily dose adjustments based on early values are inappropriate.",
+    "pivot": "For central hypothyroidism, guide with free T4 rather than TSH alone.",
+    "references": [
+      "https://www.nps.org.au/"
+    ],
+    "scoring": 2
+  },
+  {
+    "n": 53,
+    "type": "MON",
+    "typeLabel": "Drug monitoring",
+    "case": "An 84-year-old with heart failure receives oral furosemide after recent fluid overload.",
+    "task": "List the most useful response and toxicity measures.",
+    "answer": "Monitor daily weight, fluid status, urine output when relevant, blood pressure, creatinine/eGFR, sodium and potassium.",
+    "rationale": "Both over-diuresis and residual congestion are harmful; clinical volume assessment matters as much as lab values.",
+    "pivot": "If symptomatic hypotension or AKI occurs, reassess dose and alternative causes immediately.",
+    "references": [
+      "https://www.nps.org.au/"
+    ],
+    "scoring": 2
+  },
+  {
+    "n": 54,
+    "type": "MON",
+    "typeLabel": "Drug monitoring",
+    "case": "A person taking long-term amiodarone for arrhythmia attends routine follow-up.",
+    "task": "Name the important organ toxicities and relevant surveillance.",
+    "answer": "Review thyroid and liver tests, pulmonary symptoms, ECG/rhythm, and ocular or other toxicity symptoms; follow local specialist surveillance policy.",
+    "rationale": "Amiodarone has long tissue persistence and multi-organ effects; ask about new cough or breathlessness.",
+    "pivot": "If suspected pulmonary toxicity occurs, arrange urgent specialist assessment rather than simply continuing unchanged.",
+    "references": [
+      "https://www.nps.org.au/"
+    ],
+    "scoring": 2
+  },
+  {
+    "n": 55,
+    "type": "DAT",
+    "typeLabel": "Data interpretation",
+    "case": "A patient on warfarin has INR 7.2, no bleeding and stable observations. Target INR is 2.0–3.0.",
+    "task": "Interpret the result and select the safest immediate prescribing principle.",
+    "answer": "INR is substantially supratherapeutic: withhold warfarin, assess bleeding risk and follow an INR-specific local protocol for vitamin K/rechecking.",
+    "rationale": "Management of a high INR without bleeding differs from major bleeding; avoid automatic PCC in stable patients.",
+    "pivot": "If intracranial or major bleeding is suspected, urgent factor replacement plus IV vitamin K is indicated.",
+    "references": [
+      "https://www.safetyandquality.gov.au/our-work/medication-safety"
+    ],
+    "scoring": 2
+  },
+  {
+    "n": 56,
+    "type": "DAT",
+    "typeLabel": "Data interpretation",
+    "case": "A patient taking digoxin has nausea, yellow vision, creatinine rising from 80 to 210 micromol/L and potassium 5.8 mmol/L.",
+    "task": "Interpret the combined findings and act.",
+    "answer": "Suspect digoxin toxicity with AKI: withhold digoxin, assess ECG, electrolytes and level with timing, and consult toxicology/cardiology.",
+    "rationale": "A level can support diagnosis but severity is clinical; hyperkalaemia in acute severe toxicity is concerning.",
+    "pivot": "If life-threatening arrhythmia or severe toxicity is present, seek urgent digoxin-specific antibody advice.",
+    "references": [
+      "https://www.safetyandquality.gov.au/our-work/medication-safety"
+    ],
+    "scoring": 2
+  },
+  {
+    "n": 57,
+    "type": "DAT",
+    "typeLabel": "Data interpretation",
+    "case": "A patient on unfractionated heparin develops platelets falling from 240 to 85 ×10^9/L on day 7 and a new DVT.",
+    "task": "Interpret the results and prescribe the next principle.",
+    "answer": "Suspect heparin-induced thrombocytopenia: stop all heparin exposures, assess clinical probability and use a non-heparin anticoagulant with specialist advice.",
+    "rationale": "New thrombosis plus appropriately timed platelet drop is dangerous; do not simply stop anticoagulation.",
+    "pivot": "If the pre-test probability is low, avoid unnecessary HIT labelling; use a validated scoring approach.",
+    "references": [
+      "https://www.safetyandquality.gov.au/our-work/medication-safety"
+    ],
+    "scoring": 2
+  },
+  {
+    "n": 58,
+    "type": "DAT",
+    "typeLabel": "Data interpretation",
+    "case": "A 70-year-old on spironolactone and perindopril has K 6.1 mmol/L, creatinine 195 from 110 and mild weakness.",
+    "task": "Interpret the biochemical pattern and choose immediate review priorities.",
+    "answer": "Significant hyperkalaemia and AKI: obtain ECG, check for haemolysis if safe, withhold potassium-raising medicines and manage urgently based on ECG/severity.",
+    "rationale": "Even without symptoms, high potassium may cause arrhythmia; repeat bloods must not delay urgent care.",
+    "pivot": "If ECG changes or higher potassium are present, give immediate membrane stabilisation and emergency potassium-lowering therapy.",
+    "references": [
+      "https://www.safetyandquality.gov.au/our-work/medication-safety"
+    ],
+    "scoring": 2
+  },
+  {
+    "n": 59,
+    "type": "DAT",
+    "typeLabel": "Data interpretation",
+    "case": "A patient on insulin has bedside glucose 2.3 mmol/L, is alert, cooperative and can swallow.",
+    "task": "Interpret the result and state the immediate medication/glucose response.",
+    "answer": "Conscious hypoglycaemia: give fast-acting oral carbohydrate, recheck glucose promptly, follow with longer-acting carbohydrate when appropriate and adjust cause.",
+    "rationale": "This is not a situation for IV therapy by default if oral intake is safe; recurrence risk must be addressed.",
+    "pivot": "If unconscious, fitting or unsafe to swallow, use IV glucose or glucagon according to setting and resuscitation protocol.",
+    "references": [
+      "https://www.safetyandquality.gov.au/our-work/medication-safety"
+    ],
+    "scoring": 2
+  },
+  {
+    "n": 60,
+    "type": "DAT",
+    "typeLabel": "Data interpretation",
+    "case": "A 66-year-old with hypertension taking thiazide has Na 121 mmol/L, headache and new confusion.",
+    "task": "Interpret the result and identify immediate safety priorities.",
+    "answer": "Severe symptomatic hyponatraemia: stop potential contributor, urgently assess, arrange monitored hypertonic saline strategy with expert input and controlled correction.",
+    "rationale": "Neurological symptoms make this time-critical; overly rapid correction risks osmotic demyelination.",
+    "pivot": "If seizures or coma occur, follow an emergency hypertonic-saline protocol with intensive monitoring.",
+    "references": [
+      "https://www.safetyandquality.gov.au/our-work/medication-safety"
+    ],
+    "scoring": 2
+  }
+]
